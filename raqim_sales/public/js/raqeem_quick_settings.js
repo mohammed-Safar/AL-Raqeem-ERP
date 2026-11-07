@@ -241,7 +241,8 @@
 
 	function inject() {
 		document
-			.querySelectorAll(".page-head .standard-items-section:not(.rq-has-qs)")
+			// every page header, plus the top bar of RAQEEM Home (page/raqeem_home)
+			.querySelectorAll(".page-head .standard-items-section:not(.rq-has-qs), .rq-home-actions:not(.rq-has-qs)")
 			.forEach((section) => {
 				section.classList.add("rq-has-qs");
 				section.insertBefore(make_button(), section.firstChild);

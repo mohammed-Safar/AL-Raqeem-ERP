@@ -5,12 +5,20 @@
 * The RAQEEM print formats become the default print format of their doctype,
   but only where nobody has chosen a default yet.
 
+* RAQEEM Home (page/raqeem_home) becomes the page /desk opens (Raqeem V1.1).
+
 ROLLBACK for print formats: Customize Form → <doctype> → Default Print Format.
+ROLLBACK for the home page: set HOME_PAGE_ENABLED = False below and migrate again;
+/desk then goes back to Frappe's own home ("workspace" → the Apps screen).
 """
 
 import frappe
 
 BRAND = "RAQEEM"
+
+HOME_PAGE_ENABLED = True
+HOME_PAGE = "raqeem-home"
+FRAPPE_HOME_PAGE = "workspace"  # what this site had before; Frappe falls back to its Apps screen
 
 DEFAULT_PRINT_FORMATS = {
 	"Sales Invoice": "RAQEEM Sales Invoice",
@@ -24,6 +32,18 @@ DEFAULT_PRINT_FORMATS = {
 def after_migrate():
 	set_app_name()
 	set_default_print_formats()
+	set_home_page()
+
+
+def set_home_page():
+	current = frappe.db.get_default("desktop:home_page")
+	if HOME_PAGE_ENABLED:
+		if frappe.db.exists("Page", HOME_PAGE) and current != HOME_PAGE:
+			frappe.db.set_default("desktop:home_page", HOME_PAGE)
+			frappe.clear_cache()  # the home page is part of every user's cached boot
+	elif current == HOME_PAGE:
+		frappe.db.set_default("desktop:home_page", FRAPPE_HOME_PAGE)
+		frappe.clear_cache()
 
 
 def set_app_name():

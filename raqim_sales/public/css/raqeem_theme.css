@@ -1848,6 +1848,136 @@ html[data-theme="dark"] .rq-head-brand::before {
 .layout-main-section .flex-col.min-h-48 .es-button { margin-top: var(--rq-sp-1); }
 
 /* --------------------------------------------------------------------------
+   11o. Smarter sidebar (raqeem_sidebar.js) — Raqeem V1.1
+   Home + live filter row, section counts, active indicator — قائمة جانبية أذكى
+   -------------------------------------------------------------------------- */
+.rq-sb-tools {
+    display: flex; align-items: center; gap: var(--rq-sp-2);
+    padding: var(--rq-sp-2) var(--rq-sp-2) var(--rq-sp-1);
+}
+.rq-sb-home {
+    flex: 0 0 40px;
+    width: 40px; height: 40px;
+    display: grid; place-items: center;
+    border-radius: var(--rq-r-sm);
+    color: var(--rq-text-2) !important;
+    background: var(--rq-surface-2);
+    box-shadow: inset 0 0 0 1px var(--rq-line-strong);
+    text-decoration: none !important;
+    transition: background .2s var(--rq-ease), color .2s var(--rq-ease), box-shadow .2s var(--rq-ease);
+}
+.rq-sb-home:hover {
+    color: var(--rq-accent) !important;
+    background: var(--rq-hover);
+    box-shadow: inset 0 0 0 1px var(--rq-hover-line);
+}
+.rq-sb-home:focus-visible { outline: 2px solid var(--rq-accent-2); outline-offset: 2px; }
+.rq-sb-filter {
+    flex: 1; min-width: 0;
+    display: flex; align-items: center; gap: 8px;
+    height: 40px;
+    margin: 0;
+    padding-inline: 12px 6px;
+    border-radius: var(--rq-r-sm);
+    background: var(--rq-surface-1);
+    box-shadow: inset 0 0 0 1px var(--rq-line-strong);
+    cursor: text;
+    transition: box-shadow .2s var(--rq-ease);
+}
+.rq-sb-filter:focus-within { box-shadow: inset 0 0 0 1px var(--rq-accent), 0 0 0 3px var(--rq-accent-ring); }
+.rq-sb-lens { display: grid; place-items: center; color: var(--rq-text-3); }
+.rq-sb-filter input {
+    flex: 1; min-width: 0;
+    height: 100%;
+    padding: 0 !important;
+    border: 0 !important; outline: 0 !important; box-shadow: none !important;
+    background: transparent !important;
+    font: inherit; font-size: .92rem;
+    color: var(--rq-strong);
+}
+.rq-sb-filter input::placeholder { color: var(--rq-placeholder); }
+.rq-sb-k {
+    flex: 0 0 auto;
+    height: 26px;
+    padding: 0 7px !important;
+    border-radius: var(--rq-r-xs) !important;
+    font: 600 .7rem/1 var(--rq-font);
+    direction: ltr;
+    white-space: nowrap;
+    color: var(--rq-text-3) !important;
+    background: var(--rq-surface-3) !important;
+    box-shadow: inset 0 -1px 0 var(--rq-line-strong);
+    cursor: pointer;
+}
+.rq-sb-k:hover { color: var(--rq-accent) !important; background: var(--rq-hover) !important; }
+
+/* Frappe's own "Search" row is replaced by our filter + Ctrl K chip in the expanded sidebar */
+.body-sidebar-container.expanded .rq-sb-smart .standard-items-band .sidebar-item-container:has(.navbar-modal-search-mobile) { display: none !important; }
+
+/* collapsed rail: only the Home button, centred like the other rail tiles */
+@media (min-width: 768px) {
+    .body-sidebar-container:not(.expanded) .rq-sb-tools { justify-content: center; padding-inline: 0; }
+    .body-sidebar-container:not(.expanded) .rq-sb-filter { display: none; }
+    .body-sidebar-container:not(.expanded) .rq-sb-home { flex-basis: 44px; width: 44px; height: 44px; border-radius: var(--rq-r); }
+}
+
+/* filtering: hide misses, open collapsed sections */
+.rq-sb-filtering .rq-sb-miss { display: none !important; }
+.rq-sb-filtering .sidebar-item-container:not(.rq-sb-miss) > .nested-container.hidden { display: block !important; }
+.rq-sb-empty {
+    margin: var(--rq-sp-3) var(--rq-sp-2);
+    padding: var(--rq-sp-4) var(--rq-sp-3);
+    border-radius: var(--rq-r-sm);
+    text-align: center;
+    font-size: .88rem;
+    color: var(--rq-text-3);
+    background: var(--rq-surface-2);
+    box-shadow: inset 0 0 0 1px var(--rq-line);
+}
+
+/* section headings: label · count · thin rule · chevron */
+.body-sidebar .item-anchor.section-break {
+    gap: 8px;
+    margin-block-start: var(--rq-sp-2);
+}
+.body-sidebar .item-anchor.section-break::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    order: 2;
+    background: var(--rq-line-strong);
+    opacity: .8;
+}
+.body-sidebar .item-anchor.section-break .sidebar-item-label { order: 0; margin-inline-start: 6px !important; }
+.body-sidebar .item-anchor.section-break .rq-sb-count { order: 1; }
+.body-sidebar .item-anchor.section-break .sidebar-item-control { order: 3; }
+html[lang="ar"] .body-sidebar .section-break .sidebar-item-label { letter-spacing: 0 !important; text-transform: none; font-size: .78rem !important; }
+.rq-sb-count {
+    min-width: 20px; height: 18px;
+    padding: 0 6px;
+    display: inline-grid; place-items: center;
+    border-radius: 999px;
+    font: 700 .68rem/1 var(--rq-font);
+    color: var(--rq-text-3);
+    background: var(--rq-surface-3);
+}
+.body-sidebar .item-anchor.section-break .drop-icon svg { transition: transform .2s var(--rq-ease); }
+.body-sidebar-container:not(.expanded) .rq-sb-count { display: none; }
+
+/* active link: a small accent bar on the inline-start edge */
+.body-sidebar .standard-sidebar-item.active-sidebar .item-anchor { position: relative; }
+.body-sidebar .standard-sidebar-item.active-sidebar .item-anchor::before {
+    content: "";
+    position: absolute;
+    inset-inline-start: 2px;
+    top: 12px; bottom: 12px;
+    width: 3px;
+    border-radius: 3px;
+    background: var(--rq-a-500);
+}
+.body-sidebar-container:not(.expanded) .standard-sidebar-item.active-sidebar .item-anchor::before { display: none; }
+
+/* --------------------------------------------------------------------------
    12. Scrollbar — شريط تمرير رفيع
    -------------------------------------------------------------------------- */
 * { scrollbar-width: thin; scrollbar-color: var(--rq-surface-5) transparent; }

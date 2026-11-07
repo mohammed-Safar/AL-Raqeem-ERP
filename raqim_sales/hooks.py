@@ -37,9 +37,10 @@ app_license = "mit"
 app_include_css = [
     "/assets/raqim_sales/css/raqeem_fonts.css?v=33",
     "/assets/raqim_sales/css/raqeem_palette.css?v=33",
-    "/assets/raqim_sales/css/raqeem_theme.css?v=33",
+    "/assets/raqim_sales/css/raqeem_theme.css?v=35",
     # dock icons drawn in CSS (ROLLBACK: delete the next line)
-    "/assets/raqim_sales/css/raqeem_icons.css?v=33"
+    "/assets/raqim_sales/css/raqeem_icons.css?v=33",
+    "/assets/raqim_sales/css/raqeem_home.css?v=34"
 ]
 # raqeem_icons.js -> swaps stock sidebar icons for the Raqeem duotone set
 #   (ROLLBACK: delete the two raqeem_icon* lines below and the app_include_icons line)
@@ -50,7 +51,8 @@ app_include_js = [
     "/assets/raqim_sales/js/raqeem_sidebar_rail.js?v=33",
     # one header button -> panel with light/dark, theme colour and language
     # (replaces raqeem_theme_toggle.js, raqeem_accent.js, raqeem_lang_switch.js)
-    "/assets/raqim_sales/js/raqeem_quick_settings.js?v=33",
+    "/assets/raqim_sales/js/raqeem_quick_settings.js?v=34",
+    "/assets/raqim_sales/js/raqeem_sidebar.js?v=35",
     "/assets/raqim_sales/js/raqeem_brand_title.js?v=33",
     "/assets/raqim_sales/js/raqeem_icon_names.js?v=33",
     "/assets/raqim_sales/js/raqeem_icons.js?v=33"
