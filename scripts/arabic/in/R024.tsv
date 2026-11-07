@@ -1,0 +1,120 @@
+R5199	Filter Duration (Months)	مدة الفلتر (شهور)
+R5200	Help Text	نص المساعدة
+R5201	PDF Name	اسم ملف PDF
+R5202	Show Remarks	إظهار الملاحظات
+R5203	Categorize By	التصنيف حسب
+R5204	Categorize by Voucher	التصنيف حسب القسيمة
+R5205	Show Future Payments	إظهار المدفوعات المستقبلية
+R5206	Show Opening Entries	إظهار إدخالات الافتتاح
+R5207	Biweekly	كل أسبوعين
+R5208	Customers not selected.	العملاء لم يتم اختيارهم.
+R5209	<li>{}</li>	<li>{}</li>
+R5210	Primary Contact Email	البريد الإلكتروني لجهة الاتصال الأساسية
+R5211	Billing Email	البريد الالكتروني لقوائم الدفع
+R5212	Process Subscription	عملية الاشتراك
+R5213	Price Discount Slabs	ألواح سعر الخصم
+R5214	Product Discount Slabs	ألواح خصم المنتج
+R5215	Threshold for Suggestion	عتبة الاقتراح
+R5216	Min Qty	الحد الأدنى من الكمية
+R5217	Max Qty	أعلى الكمية
+R5218	PSOA Cost Center	مركز تكلفة PSOA
+R5219	PSOA Project	مشروع PSOA
+R5220	Debit Notes	إشعارات مدينة
+R5221	To Pay	للدفع
+R5222	Hold Invoice	عقد الفاتورة
+R5223	Unblock Invoice	الافراج عن الفاتورة
+R5224	Block Invoice	حظر الفاتورة
+R5225	Release Date	تاريخ النشر
+R5226	Landed Cost Voucher	هبطت التكلفة قسيمة
+R5227	Change Release Date	تغيير تاريخ الإصدار
+R5228	Get Advances Paid	الحصول على السلف المدفوعة
+R5229	Is Internal Supplier	هو المورد الداخلي
+R5230	Credit To	دائن الى
+R5231	Against Expense Account	مقابل حساب المصاريف
+R5232	Debit Note Issued	تم اصدار إشعار الخصم
+R5233	Accounting Dimensions 	الأبعاد المحاسبية
+R5234	Select Billing Address	اختر عنوان الفواتير
+R5235	Represents Company	يمثل الشركة
+R5236	Set From Warehouse	مجموعة من المستودع
+R5237	Supplier Warehouse	المورد مستودع
+R5238	Per Received	لكل مستلم
+R5239	Company Billing Address	عنوان الشركة للفواتير
+R5240	Incoterm	مصطلحات التجارة الدولية
+R5241	Named Place	مكان مسمى
+R5242	Dispatch Address	عنوان الإرسال
+R5243	Select Dispatch Address 	حدد عنوان الإرسال 
+R5244	Totals (Company Currency)	الإجماليات (عملة الشركة)
+R5245	Supplier Name	اسم المورد
+R5246	Is Paid	هل مدفوع
+R5247	Supplier Invoice	فاتورة المورد
+R5248	Supplier Address	عنوان المورد
+R5249	Select Supplier Address	حدد مزود العناوين
+R5250	Select Shipping Address	حدد عنوان الشحن
+R5251	Set Accepted Warehouse	حدد المخزن المعتمد
+R5252	Rejected Warehouse	رفض مستودع
+R5253	Is Subcontracted	وتعاقد من الباطن
+R5254	Raw Materials Supplied	المواد الخام الموردة
+R5255	Supplied Items	الأصناف الموردة
+R5256	TDS Deducted	تم خصم ضريبة الدخل المقتطعة
+R5257	Purchase Invoices	فواتير الشراء
+R5258	Buying Settings	إعدادات الشراء
+R5259	dated {0}	مؤرخة {0}
+R5260	Invalid Account	حساب غير صالح
+R5261	Expense Head Changed	تغيير رأس المصاريف
+R5262	Purchase Order Required	أمر الشراء مطلوب
+R5263	Mandatory Purchase Order	أمر شراء إلزامي
+R5264	Purchase Receipt Required	إيصال استلام المشتريات مطلوب
+R5265	Mandatory Purchase Receipt	إيصال الشراء الإلزامي
+R5266	Temporarily on Hold	مؤقت في الانتظار
+R5267	Reference Exchange Rate	سعر الصرف المرجعي
+R5268	Purchase Invoice Advance	عربون  فاتورة الشراء
+R5269	Advance Amount	المبلغ مقدما
+R5270	Delivered by Supplier	تم التسليم بواسطة المورد
+R5271	Quantity and Rate	كمية وقيم
+R5272	Received Qty	تلقى الكمية
+R5273	Accepted Qty	الكمية المطلوبة
+R5274	Rejected Qty	الكمية المرفوضة
+R5275	Accepted Warehouse	مستودع مقبول
+R5276	Rejected Serial No	رقم المسلسل رفض
+R5277	Expense Head	عنوان المصروف
+R5278	Deferred Expense Account	حساب المصروفات المؤجلة
+R5279	Enable Deferred Expense	تمكين المصروفات المؤجلة
+R5280	BOM	قائمة مكونات المواد
+R5281	Include Exploded Items	تشمل البنود المستبعدة
+R5282	Asset Location	موقع الأصول
+R5283	Purchase Order Item	صنف امر الشراء
+R5284	Purchase Receipt Detail	شراء إيصال التفاصيل
+R5285	Valuation Rate	سعر التقييم
+R5286	Manufacture	صناعة
+R5287	Manufacturer	الصانع
+R5288	Manufacturer Part Number	رقم قطعة المُصَنِّع
+R5289	Asset Category	فئة الأصول
+R5290	From Warehouse	من المخزن
+R5291	Purchase Invoice Item	اصناف فاتورة المشتريات
+R5292	Sales Invoice Item	بند فاتورة مبيعات
+R5293	WIP Composite Asset	أصول مركبة قيد الإنشاء
+R5294	Material Request	طلب مواد
+R5295	Material Request Item	صنف المواد المطلوبة
+R5296	Sales Incoming Rate	معدل المبيعات الواردة
+R5297	Don't Recompute Tax	لا تعيد حساب الضريبة
+R5298	Valuation	تقييم
+R5299	Valuation and Total	التقييم والمجموع
+R5300	Add or Deduct	إضافة أو خصم
+R5301	On Item Quantity	على كمية البند
+R5302	On Net Total	على صافي الاجمالي
+R5303	Start Reposting	ابدأ إعادة النشر
+R5304	Generating Preview	إنشاء معاينة
+R5305	Repost Accounting Ledger	دفتر حسابات إعادة النشر
+R5306	Vouchers	قسائم
+R5307	Partially Reposted	أُعيد ترحيله جزئيًا
+R5308	Reposting {0} {1}	جاري إعادة ترحيل {0} {1}
+R5309	Reposting Status	حالة إعادة الترحيل
+R5310	Reposted	أُعيد ترحيله
+R5311	Repost Allowed Types	أنواع إعادة النشر المسموح بها
+R5312	Repost in background	إعادة نشر في الخلفية
+R5313	Repost Payment Ledger	دفتر مدفوعات إعادة النشر
+R5314	Selected Vouchers	قسائم مختارة
+R5315	Repost Status	حالة إعادة النشر
+R5316	Add Manually	إضافة يدويًا
+R5317	Repost Error Log	سجل أخطاء إعادة النشر
+R5318	Credit Notes	إشعارات دائنة

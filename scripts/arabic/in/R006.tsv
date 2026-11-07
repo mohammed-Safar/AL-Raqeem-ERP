@@ -1,0 +1,120 @@
+R600	Source Text	النص المصدر
+R601	Change Password	تغيير كلمة المرور
+R602	Reset Password	إعادة تعيين كلمة المرور
+R603	New Password	كلمة مرور جديدة
+R604	Confirm New Password	تأكيد كلمة المرور الجديدة
+R605	Confirm	أكد
+R606	Username	اسم االمستخدم
+R607	Set New Password	وضع كلمة سر جديدة
+R608	Send Read Receipt	إرسال مقروءة إيصال
+R609	Email Signature	توقيع البريد الالكترونى
+R610	Automatic	معادلة
+R611	Light	ضوء
+R612	Dark	مظلم
+R613	Notifications	إخطارات
+R614	Active Sessions	الجلسات النشطة
+R615	Show navigation buttons	عرض أزرار التنقل
+R616	Profile	حساب تعريفي
+R617	Activity	نشاط
+R618	Welcome to {0}	أهلا وسهلا بك إلى {0}
+R619	Role Permissions	اذونات الصلاحيات
+R620	Allow	السماح
+R621	For Value	للقيمة
+R622	Advanced Control	تحكم متقدم
+R623	Applicable For	قابل للتطبيق ل
+R624	Hide Descendants	أحفاد الاختباء
+R625	Row Values Changed	تم تغيير قيم الصفوف
+R626	Table Field	حقل الجدول
+R627	Row #	صف #
+R628	Values Changed	القيم التي تم تغييرها
+R629	Property	ممتلكات
+R630	Original Value	القيمة الأصلية
+R631	New Value	قيمة جديدة
+R632	Top	أعلى
+R633	Bottom	الأسفل
+R634	Owner	مالك
+R635	Apply	تقديم
+R636	{0} Dashboard	{0} لوحة المعلومات
+R637	Loading	تحميل
+R638	Submit an Issue	تقديم مشكلة
+R639	Permission	صلاحية
+R640	Example	مثال
+R641	Setup > User	الإعداد > المستخدم
+R642	Permission Levels	مستويات الأذونات
+R643	User Permissions	ضوابط المستخدم
+R644	List	قائمة
+R645	Rename	إعادة تسمية
+R646	Insert After	إدراج بعد
+R647	Field Type	نوع الحقل
+R648	Reload	تحديث
+R649	Reset Layout	إعادة ضبط التخطيط
+R650	Sort Field	نوع الحقل
+R651	Sort Order	ترتيب
+R652	{0} updated	{0}  تم تحديث
+R653	Cannot update {0}	لا يمكن تحديث {0}
+R654	All Day	كل يوم
+R655	Private	خاص
+R656	Site	الموقع
+R657	Cards	بطاقات
+R658	Created On	منشئه في
+R659	Last Modified On	آخر تعديل ل
+R660	Set Filters	ضبط المرشحات
+R661	Set	مجموعة
+R662	Timespan	الفترة الزمنية
+R663	Last Week	الاسبوع الماضي
+R664	Last Month	الشهر الماضي
+R665	Last Quarter	الربع الأخير
+R666	Last Year	العام الماضي
+R667	Chart Name	اسم المخطط
+R668	Chart Type	نوع الرسم البياني
+R669	Average	معدل
+R670	Sum	مجموع
+R671	Count	عد
+R672	Y Field	Y الميدان
+R673	Link Type	نوع الرابط
+R674	Link To	رابط ل
+R675	URL	رابط الانترنت
+R676	{0}	{0}
+R677	Public	جمهور
+R678	Reset	إعادة تعيين
+R679	Select Dashboard	اختر لوحة القيادة
+R680	Tree	شجرة
+R681	Calendar	تقويم
+R682	Gantt	جانت
+R683	Top Center	أعلى المنتصف
+R684	Top Right	أعلى اليمين
+R685	Bottom Center	أسفل المنتصف
+R686	Bottom Right	أسفل اليمين
+R687	Save	حفظ
+R688	Show Labels	عرض التصنيفات
+R689	Kanban Board Name	اسم لوح كانبان
+R690	Invalid column	عمود غير صالح
+R691	Indicator	مؤشر
+R692	List View Settings	إعدادات عرض القائمة
+R693	Please enable pop-ups	يرجى تمكين النوافذ المنبثقة
+R694	New Notification	إخطار جديد
+R695	Assignments	تعيينات
+R696	Clear Filters	مسح الفلاتر
+R697	Stats	احصائيات
+R698	Number Card	بطاقة رقم
+R699	Function	وظيفة
+R700	Show Arrow	إظهار السهم
+R701	Spacer	فاصل
+R702	Indent	مسافة بادئة
+R703	System Console	وحدة تحكم النظام
+R704	Low	منخفض
+R705	Medium	متوسط
+R706	High	مستوى عالي
+R707	Open {0}	مفتوحة {0}
+R708	Number Cards	عدد البطاقات
+R709	External Link	رابط خارجي
+R710	Shortcuts	اختصارات
+R711	Is Query Report	تقرير الاستعلام
+R712	Dependencies	التبعيات
+R713	Only for	فقط لـ
+R714	Onboard	صعد على متنها
+R715	DocType View	طريقة عرض DocType
+R716	Count Filter	عد مرشح
+R717	Format	شكل
+R718	{0} viewed this	{0} شاهد هذا
+R719	Cloud settings	إعدادات السحابة

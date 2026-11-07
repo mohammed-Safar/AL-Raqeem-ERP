@@ -1,0 +1,120 @@
+R1986	Payload Count	عدد الحمولة
+R1987	Delimiter Options	خيارات الفاصل
+R1988	Custom Delimiters	محددات مخصصة
+R1989	Detect CSV type	الكشف عن نوع CSV
+R1990	Import Type	نوع الاستيراد
+R1991	Insert New Records	أدخل سجلات جديدة
+R1992	Update Existing Records	تحديث السجلات الموجودة
+R1993	Import File	استيراد ملف
+R1994	Import Preview	استيراد معاينة
+R1995	Scheduler Inactive	المجدول غير نشط
+R1996	Job stopped successfully	تم إيقاف المهمة بنجاح
+R1997	Insert	إدراج
+R1998	Skipping column {0}	عمود التخطي {0}
+R1999	Skipping Untitled Column	تخطي العمود بلا عنوان
+R2000	via Data Import	عبر استيراد البيانات
+R2001	Template Error	خطأ في القالب
+R2002	row {0}	الصف {0}
+R2003	Row Indexes	فهارس الصفوف
+R2004	Log Index	فهرس السجل
+R2005	Messages	رسائل
+R2006	Data Import Log	سجل استيراد البيانات
+R2007	Row Number	رقم الصف
+R2008	Fieldtype	نوع الحقل
+R2009	Parent Field	الحقل الأب
+R2010	Key	مفتاح
+R2011	DefaultValue	القيمة الافتراضية
+R2012	Deleted Name	الاسم المحذوف
+R2013	Deleted DocType	DocType المحذوفة
+R2014	Restored	رمم
+R2015	Deleted Document	المستند المحذوف
+R2016	Restoring Deleted Document	استعادة المستند المحذوف
+R2017	Document Restored	تمت استعادة المستند
+R2018	Documents restored successfully	تمت استعادة المستندات بنجاح
+R2019	Document Restoration Summary	ملخص استعادة المستند
+R2020	Dynamic Link	الارتباط الحيوي
+R2021	Duration	المدة الزمنية
+R2022	Time	زمن
+R2023	JSON	JSON
+R2024	Currency	العملة
+R2025	Fold	طية
+R2026	Datetime	التاريخ والوقت
+R2027	Float	رقم عشري
+R2028	Check	التحقق من
+R2029	Int	الباحث
+R2030	Autocomplete	إكمال تلقائي
+R2031	Button	زر
+R2032	Geolocation	تحديد الموقع الجغرافي
+R2033	HTML Editor	محرر HTML
+R2034	Long Text	نص طويل
+R2035	Percent	في المئة
+R2036	Tab Break	فاصل علامات الجدولة
+R2037	Table MultiSelect	الجدول MultiSelect
+R2038	Section Break	فاصل قسم
+R2039	Signature	توقيع
+R2040	Heading	الترويسة
+R2041	Rating	تقييم
+R2042	Text Editor	محرر النصوص
+R2043	Attach Image	إرفاق صورة
+R2044	Column Break	فاصل عمودي
+R2045	Small Text	نص صغير
+R2046	Markdown Editor	محرر تخفيض السعر
+R2047	Mandatory	إلزامي
+R2048	Precision	دقة
+R2049	Length	طول
+R2050	In List View	في عرض القائمة
+R2051	In Standard Filter	في التصفية الرئيسية
+R2052	In Global Search	في البحث العالمية
+R2053	In Preview	في المعاينة
+R2054	Translatable	للترجمة
+R2055	Unique	فريد من نوعه
+R2056	Set only once	قم بالتعيين مرة واحدة فقط
+R2057	Allow Bulk Edit	السماح بتحرير الكل
+R2058	Perm Level	مستوى الصلاحيات
+R2059	Ignore User Permissions	تجاهل صلاحيات المستخدم
+R2060	Allow on Submit	السماح بالإعتماد
+R2061	Report Hide	إخفاء التقرير
+R2062	Ignore XSS Filter	تجاهل فلتر XSS
+R2063	Display	عرض
+R2064	In Filter	في تصفية
+R2065	No Copy	اي نسخة
+R2066	Print Hide	اخفاء الطباعة
+R2067	Print Width	طباعة العرض
+R2068	Center	مركز
+R2069	Hide Days	إخفاء الأيام
+R2070	Hide Seconds	إخفاء الثواني
+R2071	Hide Border	إخفاء الحدود
+R2072	Non Negative	غير سلبي
+R2073	Defaults	الافتراضات
+R2074	Constraints	قيود
+R2075	Max Height	أقصى ارتفاع
+R2076	Show Dashboard	عرض لوحة القيادة
+R2077	Virtual	افتراضي
+R2078	Documentation URL	URL التوثيق
+R2079	Sort Options	خيارات الفرز
+R2080	Not Nullable	غير قابل للإلغاء
+R2081	Show on Timeline	عرض على الجدول الزمني
+R2082	Placeholder	عنصر نائب
+R2083	Button Color	لون الزر
+R2084	Danger	خطر
+R2085	DocField	DocField
+R2086	DocPerm	DocPerm
+R2087	Notify by email	إبلاغ عبر البريد الإلكتروني
+R2088	DocShare	DocShare
+R2089	Go to {0}	اذهب إلى {0}
+R2090	In Grid View	في شبكة عرض
+R2091	Is Submittable	يستطيع الاعتماد
+R2092	Is Child Table	هو الجدول التابع
+R2093	Is Single	مفردة
+R2094	Editable Grid	قابلة للتعديل Grid
+R2095	Quick Entry	إدخال سريع
+R2096	Track Changes	تعقب التغيرات
+R2097	Track Seen	المسار رأيت
+R2098	Track Views	طرق العرض المسار
+R2099	Custom?	مخصص
+R2100	Beta	بيتا
+R2101	Auto Name	الإسم التلقائي
+R2102	Form Settings	إعدادات النموذج
+R2103	Timeline Field	الجدول الزمني الميدان
+R2104	Max Attachments	الحد الأقصى للمرفقات
+R2105	Hide Copy	إخفاء النسخة

@@ -1,0 +1,120 @@
+R7359	Invalid Priority	أولوية غير صالحة
+R7360	Invalid Warehouse	مستودع غير صالح
+R7361	Insufficient Capacity	سعة غير كافية
+R7362	Item Serial No	الرقم التسلسلي للصنف
+R7363	Verified By	التحقق من
+R7364	Readings	قراءات
+R7365	Manual Inspection	الفحص اليدوي
+R7366	Invalid Sample Size	حجم عينة غير صالح
+R7367	Invalid Reading	قراءة غير صالحة
+R7368	Missing Formula	الصيغة المفقودة
+R7369	Invalid Formula	صيغة غير صالحة
+R7370	Parameter Group Name	اسم مجموعة المعلمات
+R7371	Reading 7	قراءة 7
+R7372	Reading 8	قراءة 8
+R7373	Reading 9	قراءة 9
+R7374	Reading 10	قراءة 10
+R7375	Value Based Inspection	التفتيش القائم على القيمة
+R7376	Reading Value	قيمة القراءة
+R7377	Numeric Inspection	الفحص الرقمي
+R7378	Quality Inspection Reading	جودة التفتيش القراءة
+R7379	Reading 1	قراءة 1
+R7380	Reading 2	القراءة 2
+R7381	Reading 3	قراءة 3
+R7382	Reading 4	قراءة 4
+R7383	Reading 5	قراءة 5
+R7384	Reading 6	قراءة 6
+R7385	Stock Balance Report	تقرير رصيد المخزون
+R7386	Quick Stock Balance	رصيد سريع الأسهم
+R7387	Reposting Progress	إعادة نشر التقدم
+R7388	Reposting Vouchers Progress	تقدم إعادة ترحيل السندات
+R7389	Restart	إعادة تشغيل
+R7390	Allow Zero Rate	السماح بالسعر الصفري
+R7391	GL reposting index	فهرس إعادة النشر GL
+R7392	Recreate Stock Ledgers	إعادة إنشاء سجلات المخزون
+R7393	Reposting Reference	مرجع إعادة النشر
+R7394	Reposting Vouchers	إعادة ترحيل السندات
+R7395	Total Ledgers	إجمالي دفاتر الأستاذ
+R7396	Ledgers Posted	دفاتر الأستاذ المُرحّلة
+R7397	Reposting Data File	إعادة نشر ملف البيانات
+R7398	Recalculate Valuation Rate	إعادة حساب سعر التقييم
+R7399	Repost Item Valuation	إعادة تقييم العنصر
+R7400	Pending processing	في انتظار المعالجة
+R7401	Hi,	أهلاً،
+R7402	Restart Failed Entries	إعادة تشغيل الإدخالات الفاشلة
+R7403	Avg Rate	المعدل المتوسط
+R7404	Total Qty	إجمالي الكمية
+R7405	Is Rejected	مرفوض
+R7406	Returned Against	تم رفضها
+R7407	Is Packed	معبأة
+R7408	Posting Datetime	تاريخ ووقت النشر
+R7409	Serial and Batch	التسلسل والدفعة
+R7410	as of {0}	اعتبارًا من {0}
+R7411	Negative Stock Error	خطأ في المخزون السالب
+R7412	Serial No Reserved	الرقم التسلسلي محجوز
+R7413	Is Outward	هو خارجي
+R7414	Reference for Reservation	مرجع للحجز
+R7415	Rate Section	قسم الأسعار
+R7416	Outgoing Rate	أسعار المنتهية ولايته
+R7417	Warranty Expiring	انتهاء الضمان
+R7418	View Ledgers	عرض السجلات
+R7419	Asset Details	تفاصيل الأصول
+R7420	Asset Status	حالة الأصول
+R7421	Out of AMC	من AMC
+R7422	Out of Warranty	لا تغطيه الضمان
+R7423	Under AMC	تحت AMC
+R7424	Under Warranty	تحت الضمان
+R7425	Warranty Period (Days)	فترة الضمان (أيام)
+R7426	Warranty Expiry Date	ضمان تاريخ الانتهاء
+R7427	AMC Expiry Date	AMC تاريخ انتهاء الاشتراك
+R7428	Consumed	مستهلك
+R7429	Source Document	وثيقة المصدر
+R7430	Pickup From	الاستلام من
+R7431	Delivery to	التسليم إلى
+R7432	Delivery To	التسليم إلى
+R7433	Parcels	الطرود
+R7434	Shipment Parcel	طرد الشحن
+R7435	Parcel Template	نموذج طرد
+R7436	Add Template	إضافة قالب
+R7437	Shipment details	تفاصيل الشحنة
+R7438	Pallets	المنصات
+R7439	Value of Goods	قيمة البضائع
+R7440	Pickup Date	تاريخ الاستلام
+R7441	Pickup to	الاستلام من
+R7442	Shipment Type	نوع الشحنة
+R7443	Goods	البضائع
+R7444	Pickup Type	نوع الاستلام
+R7445	Pickup	يلتقط
+R7446	Self delivery	التوصيل الذاتي
+R7447	Description of Content	وصف المحتوى
+R7448	Shipment Information	معلومات الشحن
+R7449	Shipment ID	معرف الشحنة
+R7450	Shipment Amount	مبلغ الشحنة
+R7451	Booked	حجز
+R7452	Tracking URL	رابط التتبع
+R7453	Carrier	الناقل
+R7454	Carrier Service	خدمة النقل
+R7455	AWB Number	رقم AWB
+R7456	Tracking Status	حالة التتبع
+R7457	Tracking Status Info	معلومات حالة التتبع
+R7458	Shipment Delivery Note	إشعار تسليم الشحنة
+R7459	Pickup Contact Person	جهة الاتصال الخاصة بالاستلام
+R7460	Total Weight (kg)	الوزن الإجمالي (كجم)
+R7461	Pickup from	الاستلام من
+R7462	Length (cm)	الطول (سم)
+R7463	Width (cm)	العرض (سم)
+R7464	Height (cm)	الطول (سم)
+R7465	Weight (kg)	الوزن (كجم)
+R7466	Parcel Template Name	اسم قالب الطرد
+R7467	Shipment Parcel Template	نموذج طرد الشحنة
+R7468	Balance Stock Value	قيمة المخزون المتوازن
+R7469	Stock Closing Entry	قيد إغلاق المخزون
+R7470	Inventory Dimension key	مفتاح أبعاد المخزون
+R7471	Stock Ageing	التبويب التاريخي للمخزن
+R7472	FIFO Queue	طابور FIFO
+R7473	Stock Closing Balance	رصيد المخزون الختامي
+R7474	Closed Period	فترة مغلقة
+R7475	Stock Closing Log	سجل إغلاق المخزون
+R7476	Issues and Receipts	المشكلات والاستلام
+R7477	Excise Invoice	المكوس الفاتورة
+R7478	End Transit	نهاية النقل

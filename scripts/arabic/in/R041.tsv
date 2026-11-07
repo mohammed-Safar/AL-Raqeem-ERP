@@ -1,0 +1,120 @@
+R7239	Purchase Time	وقت الشراء
+R7240	Per Day	يوم واحد
+R7241	No of Workstations	عدد محطات العمل
+R7242	Item Lead Time	مدة تجهيز المنتج
+R7243	Buffer Time	وقت التخزين المؤقت
+R7244	No of Shift	عدد الورديات
+R7245	Manufacturing Time	وقت التصنيع
+R7246	Item Manufacturer	مادة المصنع
+R7247	Import in Bulk	استيراد بكميات كبيرة
+R7248	Item Price	سعر الصنف
+R7249	Packing Unit	وحدة التعبئة
+R7250	Acceptance Criteria Value	قيمة معايير القبول
+R7251	Acceptance Criteria Formula	صيغة معايير القبول
+R7252	Formula Based Criteria	معايير قائمة على الصيغة
+R7253	Minimum Value	الحد الأدنى
+R7254	Maximum Value	القيمة القصوى
+R7255	Numeric	رقمي
+R7256	Parameter Group	مجموعة المعلمات
+R7257	Request for	طلب ل
+R7258	Re-order Level	إعادة ترتيب مستوى
+R7259	Re-order Qty	إعادة ترتيب الكميه
+R7260	Item Reorder	البند إعادة ترتيب
+R7261	Maximum Net Rate	الحد الأقصى للسعر الصافي
+R7262	Minimum Net Rate	الحد الأدنى الصافي
+R7263	Item Variant Attribute	وصف متغير الصنف
+R7264	Item Website Specification	مواصفات الموقع الإلكتروني للصنف
+R7265	Stock Entry Item	بند إدخال المخزون
+R7266	Landed Cost Item	هبوط تكلفة صنف
+R7267	Receipt Document Type	استلام نوع الوثيقة
+R7268	Receipt Document	وثيقة استلام
+R7269	Applicable Charges	الرسوم المطبقة
+R7270	Has Corrective Cost	تكلفة تصحيحية
+R7271	Has Operating Cost	تتضمن تكاليف التشغيل
+R7272	Vendor Invoice	فاتورة المورد
+R7273	Distribute Manually	التوزيع اليدوي
+R7274	Landed Cost Help	هبطت التكلفة مساعدة
+R7275	Vendor Invoices	فواتير الموردين
+R7276	Receipt Items	بنود الإيصال
+R7277	Landed Cost	تكلفة الهبوط
+R7278	Invalid Document	مستند غير صالح
+R7279	Incorrect Company	شركة غير صحيحة
+R7280	Incorrect Invoice	فاتورة غير صحيحة
+R7281	Incorrect Account	حساب غير صحيح
+R7282	Missing Accounting Dimension	البعد المحاسبي مفقود
+R7283	Invalid Query	استعلام غير صالح
+R7284	Invalid search query	استعلام بحث غير صالح
+R7285	Short Name	الاسم المختصر
+R7286	To Order	للطلب
+R7287	To Transfer	للتحويل
+R7288	Issue Material	قضية المواد
+R7289	Subcontracted Purchase Order	أمر شراء من الباطن
+R7290	In Transit Warehouse	مستودع النقل
+R7291	In Transit Transfer	النقل أثناء العبور
+R7292	Partially Received	تلقى جزئيا
+R7293	Transferred	نقل
+R7294	% Ordered	% تم طلبه
+R7295	Printing Details	تفاصيل الطباعة
+R7296	Transfer Status	حالة نقل
+R7297	Auto Created (Reorder)	تم الإنشاء تلقائيًا (إعادة ترتيب)
+R7298	Quantity and Warehouse	الكمية والنماذج
+R7299	Lead Time Date	تاريخ و وقت المهلة
+R7300	Reorder Level	مستوى اعادة الطلب
+R7301	Reorder Qty	الكمية المحددة عند اعادة الطلب
+R7302	Projected On Hand	عرض على اليد
+R7303	Picked Qty	الكمية المختارة
+R7304	Packed Item	عنصر معبأ
+R7305	To Warehouse (Optional)	إلى مستودع (اختياري)
+R7306	Prevdoc DocType	Prevdoc DOCTYPE
+R7307	Parent Detail docname	الأم تفاصيل docname
+R7308	Actual Batch Quantity	كمية الدفعة الفعلية
+R7309	Package Weight Details	تفاصيل وزن الحزمة
+R7310	Net Weight UOM	الوزن الصافي لوحدة القياس
+R7311	Gross Weight	الوزن الإجمالي
+R7312	Gross Weight UOM	الوزن الإجمالي UOM
+R7313	From Package No.	من رقم الحزمة
+R7314	To Package No.	لحزم رقم
+R7315	Packing Slip Item	مادة كشف التعبئة
+R7316	For Delivery	للتسليم
+R7317	Update Current Stock	تحديث المخزون الحالي
+R7318	Setting Item Locations...	تحديد مواقع العناصر...
+R7319	Get Item Locations	الحصول على مواقع البند
+R7320	Group Same Items	تجميع العناصر المتشابهة
+R7321	Scan Mode	وضع المسح
+R7322	Prompt Qty	الكمية المطلوبة
+R7323	Consider Rejected Warehouses	ضع في اعتبارك المستودعات المرفوضة
+R7324	Pick Manually	التقط يدويا
+R7325	% Delivered	% تسليم
+R7326	Item Locations	مواقع البند
+R7327	Already Picked	منتقى مسبقاً
+R7328	Missing Warehouse	مستودع مفقود
+R7329	Pick List Incomplete	قائمة الاختيارات غير مكتملة
+R7330	Expired Batches	دفعات منتهية الصلاحية
+R7331	Out of Stock	إنتهى من المخزن
+R7332	Price List Name	قائمة الأسعار اسم
+R7333	Applicable for Countries	ينطبق على البلدان
+R7334	Price List Country	قائمة الأسعار البلد
+R7335	Purchase Return	شراء العودة
+R7336	Make Stock Entry	جعل دخول الأسهم
+R7337	Return Qty	كمية الإرجاع
+R7338	Make Return Entry	إعادة إدخال البيانات
+R7339	<div class="columnHeading">Other Details</div>	<div class="columnHeading">تفاصيل أخرى</div>
+R7340	Vehicle Number	عدد المركبات
+R7341	Vehicle Date	تاريخ تسجيل المركبة
+R7342	Apply Putaway Rule	تطبيق قاعدة التخزين
+R7343	Dispatch Address Template	نموذج عنوان الإرسال
+R7344	Supplier Delivery Note	المورد تسليم مذكرة
+R7345	Shipping Address Template	نموذج عنوان الشحن
+R7346	Get Current Stock	الحصول على المخزون الحالي
+R7347	Raw Materials Consumed	المواد الخام المستهلكة
+R7348	Consumed Items	العناصر المستهلكة
+R7349	Provisional Expense Account	حساب المصروفات المؤقتة
+R7350	Subcontract BOM	قائمة مواد المقاول الفرعي
+R7351	Subcontracting Receipt Item	بند إيصال التعاقد من الباطن
+R7352	Received and Accepted	تلقت ومقبول
+R7353	Rejected Quantity	الكمية المرفوضة
+R7354	Sample Quantity	كمية العينة
+R7355	Rate and Amount	معدل والمبلغ
+R7356	Putaway Rule	قاعدة التخزين
+R7357	Applied putaway rules.	تم تطبيق قواعد التخزين.
+R7358	Unassigned Qty	كمية غير محددة

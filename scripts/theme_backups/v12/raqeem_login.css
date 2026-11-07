@@ -1,0 +1,503 @@
+/* ==========================================================================
+   ALRAQEEM — LOGIN PAGE (v2: split layout, light + dark)
+   صفحة الدخول: لوحة هوية برتقالية + بطاقة دخول، تتبع وضع الجهاز (فاتح/داكن)
+   Scoped to the login / update-password pages. The brand panel and the
+   language switch are injected by public/js/raqeem_login.js.
+   ========================================================================== */
+
+body[data-path="login"],
+body[data-path="update-password"] {
+    /* light (default) */
+    --lg-bg: #f4f5f7;
+    --lg-card: rgba(255, 255, 255, 0.92);
+    --lg-input: #f8f9fb;
+    --lg-input-focus: #ffffff;
+    --lg-line: rgba(15, 23, 42, 0.10);
+    --lg-line-strong: rgba(15, 23, 42, 0.16);
+    --lg-text: #1f2329;
+    --lg-text-2: #4a515c;
+    --lg-text-3: #6b7280;
+    --lg-strong: #0d0f13;
+    --lg-placeholder: #8a9099;
+    --lg-link: #c2410c;
+    --lg-link-hover: #9a3412;
+    --lg-grid: rgba(15, 23, 42, 0.05);
+    --lg-glow: .55;
+    --lg-card-shadow: 0 1px 2px rgba(15,23,42,.06), 0 24px 60px rgba(15,23,42,.12);
+    --lg-error-bg: #fef2f2;
+    --lg-error-line: #fecaca;
+    --lg-error-text: #b91c1c;
+
+    --lg-accent: #f97316;
+    --lg-ring: rgba(249, 115, 22, 0.30);
+    --lg-ease: cubic-bezier(.2, .8, .2, 1);
+    --lg-panel: 44vw;
+
+    /* Frappe tokens the login page reads */
+    --bg-color: transparent;
+    --ink-gray-4: var(--lg-text-3);
+    --ink-gray-5: var(--lg-text-2);
+    --ink-gray-6: var(--lg-text-3);
+    --ink-gray-9: var(--lg-strong);
+    --ink-red-8: var(--lg-error-text);
+    --text-color: var(--lg-text);
+
+    color-scheme: light;
+    min-height: 100svh;
+    background-color: var(--lg-bg) !important;
+    color: var(--lg-text) !important;
+    font-family: 'IBM Plex Sans Arabic', 'Cairo', system-ui, sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    overflow-x: hidden;
+}
+@media (prefers-color-scheme: dark) {
+    body[data-path="login"],
+    body[data-path="update-password"] {
+        --lg-bg: #0b0d11;
+        --lg-card: rgba(21, 24, 30, 0.78);
+        --lg-input: rgba(27, 31, 39, 0.85);
+        --lg-input-focus: rgba(21, 24, 30, 0.95);
+        --lg-line: rgba(255, 255, 255, 0.08);
+        --lg-line-strong: rgba(255, 255, 255, 0.16);
+        --lg-text: #e8eaed;
+        --lg-text-2: #b4bac4;
+        --lg-text-3: #8a919c;
+        --lg-strong: #ffffff;
+        --lg-placeholder: #7a828f;
+        --lg-link: #fb923c;
+        --lg-link-hover: #fdba74;
+        --lg-grid: rgba(255, 255, 255, 0.035);
+        --lg-glow: 1;
+        --lg-card-shadow: 0 1px 0 rgba(255,255,255,.05) inset, 0 30px 80px rgba(0,0,0,.55), 0 0 0 1px rgba(0,0,0,.3);
+        --lg-error-bg: rgba(220, 38, 38, .12);
+        --lg-error-line: rgba(239, 68, 68, .35);
+        --lg-error-text: #fca5a5;
+        color-scheme: dark;
+    }
+}
+
+/* --- background: soft orange glows + faint grid --- */
+body[data-path="login"]::before,
+body[data-path="update-password"]::before {
+    content: "";
+    position: fixed;
+    inset: -20%;
+    z-index: 0;
+    pointer-events: none;
+    opacity: var(--lg-glow);
+    background:
+        radial-gradient(35% 35% at 20% 25%, rgba(249, 115, 22, .22), transparent 70%),
+        radial-gradient(30% 30% at 80% 75%, rgba(234, 88, 12, .18), transparent 70%),
+        radial-gradient(25% 25% at 75% 15%, rgba(251, 146, 60, .10), transparent 70%);
+    filter: blur(20px);
+    animation: rq-login-drift 18s ease-in-out infinite alternate;
+}
+body[data-path="login"]::after,
+body[data-path="update-password"]::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image:
+        linear-gradient(var(--lg-grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--lg-grid) 1px, transparent 1px);
+    background-size: 44px 44px;
+    -webkit-mask-image: radial-gradient(ellipse at center, #000 20%, transparent 75%);
+    mask-image: radial-gradient(ellipse at center, #000 20%, transparent 75%);
+}
+@keyframes rq-login-drift {
+    0%   { transform: translate(0, 0) scale(1); }
+    50%  { transform: translate(3%, -2%) scale(1.06); }
+    100% { transform: translate(-3%, 2%) scale(1); }
+}
+
+body[data-path="login"] .page-content-wrapper,
+body[data-path="login"] main,
+body[data-path="login"] .container,
+body[data-path="update-password"] main {
+    position: relative;
+    z-index: 1;
+    background: transparent !important;
+}
+body[data-path="login"] main,
+body[data-path="update-password"] main {
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 32px;
+}
+body[data-path="login"] .navbar,
+body[data-path="login"] .web-footer,
+body[data-path="update-password"] .web-footer {
+    background: transparent !important;
+    border: 0 !important;
+    position: relative;
+    z-index: 1;
+}
+body[data-path="login"] .web-footer,
+body[data-path="login"] .web-footer a { color: var(--lg-text-3) !important; }
+
+/* --- the card --- */
+@keyframes rq-card-rise {
+    from { opacity: 0; transform: translateY(18px) scale(.98); }
+    to   { opacity: 1; transform: none; }
+}
+body[data-path="login"] .page-card,
+body[data-path="update-password"] .page-card {
+    position: relative;
+    max-width: 420px !important;
+    padding: 36px 32px 28px !important;
+    background: var(--lg-card) !important;
+    backdrop-filter: blur(22px) saturate(140%);
+    -webkit-backdrop-filter: blur(22px) saturate(140%);
+    border: 1px solid var(--lg-line) !important;
+    border-radius: 22px !important;
+    box-shadow: var(--lg-card-shadow);
+    animation: rq-card-rise .6s var(--lg-ease) both;
+}
+body[data-path="login"] .page-card::before,
+body[data-path="update-password"] .page-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: inherit;
+    background: linear-gradient(140deg, rgba(251,146,60,.65), rgba(249,115,22,0) 35%, rgba(249,115,22,0) 65%, rgba(251,146,60,.45));
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+/* logo + heading */
+body[data-path="login"] .page-card-head img.app-logo,
+body[data-path="update-password"] .page-card-head img.app-logo {
+    max-height: 48px !important;
+    filter: drop-shadow(0 0 18px rgba(249,115,22,.35));
+}
+body[data-path="login"] .page-card-head h4,
+body[data-path="login"] .page-card-head .text-3xl-bold,
+body[data-path="update-password"] .page-card-head h4,
+body[data-path="update-password"] .page-card-head .text-3xl-bold {
+    font-family: 'Cairo', 'IBM Plex Sans Arabic', sans-serif !important;
+    font-size: 1.9rem !important;
+    font-weight: 800 !important;
+    line-height: 1.4;
+    background: linear-gradient(90deg, var(--lg-strong) 0%, var(--lg-strong) 45%, #fb923c 80%, #ea580c 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+body[data-path="login"] .page-card-subtitle,
+body[data-path="update-password"] .page-card-subtitle {
+    color: var(--lg-text-3) !important;
+    font-size: .98rem !important;
+}
+
+/* labels + inputs */
+body[data-path="login"] label,
+body[data-path="update-password"] label {
+    color: var(--lg-text-2) !important;
+    font-weight: 600 !important;
+    font-size: .9rem !important;
+}
+body[data-path="login"] .form-control,
+body[data-path="update-password"] .form-control {
+    height: 46px !important;
+    padding-inline: 14px !important;
+    background: var(--lg-input) !important;
+    border: 1px solid var(--lg-line-strong) !important;
+    border-radius: 12px !important;
+    color: var(--lg-strong) !important;
+    font-size: 1rem !important;
+    transition: border-color .15s var(--lg-ease), box-shadow .15s var(--lg-ease), background .15s var(--lg-ease);
+}
+body[data-path="login"] .form-control:hover,
+body[data-path="update-password"] .form-control:hover { border-color: rgba(249,115,22,.45) !important; }
+body[data-path="login"] .form-control:focus,
+body[data-path="update-password"] .form-control:focus {
+    background: var(--lg-input-focus) !important;
+    border-color: var(--lg-accent) !important;
+    box-shadow: 0 0 0 4px var(--lg-ring) !important;
+    outline: 0 !important;
+}
+body[data-path="login"] .form-control::placeholder,
+body[data-path="update-password"] .form-control::placeholder { color: var(--lg-placeholder) !important; }
+body[data-path="login"] .form-control:-webkit-autofill,
+body[data-path="update-password"] .form-control:-webkit-autofill {
+    -webkit-text-fill-color: var(--lg-strong) !important;
+    -webkit-box-shadow: 0 0 0 1000px var(--lg-input-focus) inset !important;
+    caret-color: var(--lg-strong);
+}
+body[data-path="login"] .toggle-password { color: var(--lg-text-3); cursor: pointer; }
+body[data-path="login"] .toggle-password:hover { color: var(--lg-accent); }
+
+/* links */
+body[data-path="login"] a,
+body[data-path="update-password"] a { color: var(--lg-link) !important; transition: color .15s; }
+body[data-path="login"] a:hover,
+body[data-path="update-password"] a:hover { color: var(--lg-link-hover) !important; }
+body[data-path="login"] .sign-up-message { color: var(--lg-text-3) !important; }
+
+/* buttons */
+body[data-path="login"] .es-button,
+body[data-path="update-password"] .es-button,
+body[data-path="login"] .btn,
+body[data-path="update-password"] .btn {
+    height: 46px !important;
+    border-radius: 12px !important;
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+    position: relative;
+    overflow: hidden;
+    transition: transform .12s var(--lg-ease), box-shadow .2s var(--lg-ease), filter .15s;
+}
+body[data-path="login"] .es-button[data-variant="solid"],
+body[data-path="update-password"] .es-button[data-variant="solid"],
+body[data-path="login"] .btn-primary,
+body[data-path="update-password"] .btn-primary {
+    background: linear-gradient(135deg, #fb923c 0%, #f97316 45%, #ea580c 100%) !important;
+    color: #1a0d03 !important;
+    border: 0 !important;
+    box-shadow: 0 8px 24px rgba(249,115,22,.35), inset 0 1px 0 rgba(255,255,255,.3) !important;
+}
+body[data-path="login"] .es-button[data-variant="solid"]:hover,
+body[data-path="update-password"] .es-button[data-variant="solid"]:hover,
+body[data-path="login"] .btn-primary:hover {
+    filter: brightness(1.06);
+    box-shadow: 0 10px 30px rgba(249,115,22,.5), inset 0 1px 0 rgba(255,255,255,.35) !important;
+}
+body[data-path="login"] .es-button:active,
+body[data-path="login"] .btn:active { transform: translateY(1px) scale(.985); }
+body[data-path="login"] .es-button[data-variant="solid"]::after,
+body[data-path="update-password"] .es-button[data-variant="solid"]::after {
+    content: "";
+    position: absolute;
+    inset-block: 0;
+    left: -60%;
+    width: 50%;
+    background: linear-gradient(100deg, transparent, rgba(255,255,255,.5), transparent);
+    transform: skewX(-20deg);
+    animation: rq-sweep 3.8s ease-in-out 1.2s infinite;
+    pointer-events: none;
+}
+@keyframes rq-sweep {
+    0%, 70% { left: -60%; }
+    100%    { left: 130%; }
+}
+body[data-path="login"] .es-button:not([data-variant="solid"]),
+body[data-path="login"] .btn-default,
+body[data-path="login"] .btn-login-option {
+    background: var(--lg-input) !important;
+    color: var(--lg-text) !important;
+    border: 1px solid var(--lg-line-strong) !important;
+    box-shadow: none !important;
+}
+body[data-path="login"] .es-button:not([data-variant="solid"]):hover,
+body[data-path="login"] .btn-login-option:hover {
+    border-color: rgba(249,115,22,.5) !important;
+    background: var(--lg-input-focus) !important;
+}
+
+/* error banners */
+body[data-path="login"] .alert,
+body[data-path="login"] [class*="alert-banner"] {
+    border-radius: 12px !important;
+    background: var(--lg-error-bg) !important;
+    border: 1px solid var(--lg-error-line) !important;
+    color: var(--lg-error-text) !important;
+}
+body[data-path="login"] .field-error { color: var(--lg-error-text) !important; }
+
+/* --------------------------------------------------------------------------
+   Brand panel (desktop) — لوحة الهوية
+   -------------------------------------------------------------------------- */
+.rq-brand { display: none; }
+@media (min-width: 992px) {
+    body.rq-login-split main,
+    body.rq-login-split .web-footer { margin-inline-start: var(--lg-panel); }
+    body.rq-login-split::before { inset-inline-start: var(--lg-panel); }
+
+    .rq-brand {
+        display: flex;
+        position: fixed;
+        inset-block: 0;
+        inset-inline-start: 0;
+        width: var(--lg-panel);
+        z-index: 2;
+        overflow: hidden;
+        align-items: center;
+        padding: 56px clamp(32px, 5vw, 80px);
+        color: #fff;
+        background:
+            radial-gradient(60% 50% at 85% 10%, rgba(255,255,255,.18), transparent 70%),
+            radial-gradient(70% 60% at 0% 100%, rgba(124,45,18,.55), transparent 70%),
+            linear-gradient(155deg, #fb923c 0%, #ea580c 45%, #9a3412 100%);
+        box-shadow: 0 0 60px rgba(234,88,12,.25);
+    }
+    .rq-brand-inner { position: relative; z-index: 1; max-width: 460px; animation: rq-brand-in .8s var(--lg-ease) both; }
+    @keyframes rq-brand-in { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+    .rq-brand-mark {
+        width: 64px; height: 64px;
+        display: grid; place-items: center;
+        border-radius: 18px;
+        background: rgba(255,255,255,.18);
+        box-shadow: inset 0 0 0 1px rgba(255,255,255,.35), 0 10px 30px rgba(124,45,18,.35);
+        backdrop-filter: blur(8px);
+        margin-bottom: 28px;
+    }
+    .rq-brand-mark img { max-width: 38px; max-height: 38px; filter: brightness(0) invert(1); }
+    .rq-brand-name {
+        font-family: 'Cairo', 'IBM Plex Sans Arabic', sans-serif;
+        font-size: clamp(2.4rem, 3.6vw, 3.4rem);
+        font-weight: 800;
+        line-height: 1.2;
+        margin: 0 0 12px;
+        color: #fff;
+        text-shadow: 0 6px 30px rgba(124,45,18,.35);
+    }
+    .rq-brand-tagline {
+        font-size: 1.15rem;
+        line-height: 1.7;
+        color: rgba(255,255,255,.92);
+        margin: 0 0 34px;
+        max-width: 26ch;
+    }
+    .rq-brand-points { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+    .rq-brand-points li {
+        display: flex; align-items: center; gap: 14px;
+        font-size: 1rem; font-weight: 600;
+        color: #fff;
+        animation: rq-brand-in .7s var(--lg-ease) both;
+    }
+    .rq-brand-points li:nth-child(1) { animation-delay: .15s; }
+    .rq-brand-points li:nth-child(2) { animation-delay: .25s; }
+    .rq-brand-points li:nth-child(3) { animation-delay: .35s; }
+    .rq-point-icon {
+        flex: 0 0 40px; height: 40px;
+        display: grid; place-items: center;
+        border-radius: 12px;
+        background: rgba(255,255,255,.16);
+        box-shadow: inset 0 0 0 1px rgba(255,255,255,.28);
+    }
+    .rq-brand-foot {
+        margin-top: 56px;
+        font-size: .85rem;
+        color: rgba(255,255,255,.75);
+    }
+    /* slow orbit rings in the corner */
+    .rq-brand-orbit { position: absolute; inset-block-end: -18vh; inset-inline-end: -18vh; width: 60vh; height: 60vh; pointer-events: none; }
+    .rq-brand-orbit span {
+        position: absolute; inset: 0;
+        border-radius: 50%;
+        border: 1px solid rgba(255,255,255,.22);
+        animation: rq-orbit 40s linear infinite;
+    }
+    .rq-brand-orbit span::after {
+        content: ""; position: absolute; top: 50%; left: -5px;
+        width: 10px; height: 10px; border-radius: 50%;
+        background: #fff; box-shadow: 0 0 14px #fff;
+    }
+    .rq-brand-orbit span:nth-child(2) { inset: 14%; animation-duration: 28s; animation-direction: reverse; border-color: rgba(255,255,255,.16); }
+    .rq-brand-orbit span:nth-child(3) { inset: 28%; animation-duration: 20s; border-color: rgba(255,255,255,.12); }
+    @keyframes rq-orbit { to { transform: rotate(360deg); } }
+}
+@media (min-width: 992px) and (prefers-color-scheme: dark) {
+    .rq-brand {
+        background:
+            radial-gradient(60% 50% at 85% 10%, rgba(251,146,60,.30), transparent 70%),
+            radial-gradient(70% 60% at 0% 100%, rgba(234,88,12,.25), transparent 70%),
+            linear-gradient(155deg, #1b1209 0%, #120c07 55%, #0b0d11 100%);
+        border-inline-end: 1px solid rgba(249,115,22,.25);
+    }
+    .rq-brand-name {
+        background: linear-gradient(90deg, #fff 0%, #fff 40%, #fdba74 80%, #f97316 100%);
+        -webkit-background-clip: text; background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .rq-point-icon { color: #fb923c; background: rgba(249,115,22,.12); box-shadow: inset 0 0 0 1px rgba(249,115,22,.35); }
+    .rq-brand-mark img { filter: none; }
+    .rq-brand-orbit span { border-color: rgba(249,115,22,.25); }
+    .rq-brand-orbit span::after { background: #fb923c; box-shadow: 0 0 14px #f97316; }
+}
+
+/* language switch (top corner) */
+.rq-lang-switch {
+    position: fixed;
+    inset-block-start: 18px;
+    inset-inline-end: 18px;
+    z-index: 5;
+    display: inline-flex; align-items: center; gap: 8px;
+    height: 38px; padding-inline: 14px;
+    border-radius: 999px;
+    border: 1px solid var(--lg-line-strong);
+    background: var(--lg-card);
+    color: var(--lg-text);
+    font: 600 .92rem 'IBM Plex Sans Arabic', 'Cairo', system-ui, sans-serif;
+    cursor: pointer;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 14px rgba(15,23,42,.08);
+    transition: border-color .15s, color .15s, transform .15s;
+}
+.rq-lang-switch:hover { border-color: rgba(249,115,22,.55); color: var(--lg-accent); transform: translateY(-1px); }
+.rq-lang-switch:focus-visible { outline: 2px solid var(--lg-accent); outline-offset: 2px; }
+
+/* --------------------------------------------------------------------------
+   Arabic & RTL
+   -------------------------------------------------------------------------- */
+html[dir="rtl"] body[data-path="login"] *,
+html[dir="rtl"] body[data-path="update-password"] *,
+html[lang^="ar"] body[data-path="login"] * {
+    letter-spacing: normal !important;
+}
+html[dir="rtl"] body[data-path="login"] .page-card-head .text-3xl-bold,
+html[dir="rtl"] body[data-path="login"] .page-card-head h4,
+html[dir="rtl"] body[data-path="update-password"] .page-card-head .text-3xl-bold {
+    background-image: linear-gradient(270deg, var(--lg-strong) 0%, var(--lg-strong) 45%, #fb923c 80%, #ea580c 100%);
+    line-height: 1.45;
+}
+html[dir="rtl"] body[data-path="login"] .es-button[data-variant="solid"]::after {
+    left: auto; right: -60%;
+    transform: skewX(20deg);
+    animation-name: rq-sweep-rtl;
+}
+@keyframes rq-sweep-rtl {
+    0%, 70% { right: -60%; }
+    100%    { right: 130%; }
+}
+html[dir="rtl"] body[data-path="login"] #login_email,
+html[dir="rtl"] body[data-path="login"] #login_password {
+    direction: ltr;
+    text-align: right;
+}
+html[dir="rtl"] body[data-path="login"] .form-control::placeholder { text-align: right; }
+html[dir="rtl"] .rq-brand { background-position: right; }
+html[dir="rtl"] .rq-brand-orbit span::after { left: auto; right: -5px; }
+body[data-path="login"] input, body[data-path="login"] button { font-family: inherit; }
+
+/* phones: full-screen card */
+@media (max-width: 575.98px) {
+    body[data-path="login"] .page-card,
+    body[data-path="update-password"] .page-card {
+        max-width: 100% !important;
+        min-height: 100svh;
+        border-radius: 0 !important;
+        border: 0 !important;
+        padding: 72px 22px 28px !important;
+    }
+    body[data-path="login"] .page-card::before { display: none; }
+    .rq-lang-switch { inset-block-start: 14px; inset-inline-end: 14px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body[data-path="login"]::before,
+    body[data-path="login"] .page-card,
+    body[data-path="login"] .es-button::after,
+    body[data-path="update-password"]::before,
+    body[data-path="update-password"] .page-card,
+    .rq-brand-inner, .rq-brand-points li, .rq-brand-orbit span { animation: none !important; }
+}

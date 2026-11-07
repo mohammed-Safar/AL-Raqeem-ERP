@@ -1,0 +1,120 @@
+R4026	Slideshow Name	اسم العرض
+R4027	Slideshow Items	عرض الشرائح عناصر
+R4028	Website Slideshow	موقع عرض الشرائح
+R4029	Website Slideshow Item	موقع السلعة عرض شرائح
+R4030	Default Theme	الموضوع الافتراضي
+R4031	Primary Color	لون أصلي
+R4032	Text Color	لون الخط
+R4033	Dark Color	لون غامق
+R4034	Stylesheet	ورقة الأنماط
+R4035	Custom SCSS	SCSS مخصص
+R4036	Light Color	لون فاتح
+R4037	Font Properties	خصائص الخط
+R4038	Button Rounded Corners	زوايا دائرية بأزرار
+R4039	Button Shadows	زر الظلال
+R4040	Button Gradients	تدرجات الزر
+R4041	Custom Overrides	تجاوزات مخصصة
+R4042	Ignored Apps	تطبيقات تم تجاهلها
+R4043	Theme URL	عنوان URL الموضوع
+R4044	JavaScript	جافا سكريبت
+R4045	Theme Configuration	تكوين الموضوع
+R4046	Compiled Successfully	جمعت بنجاح
+R4047	Range	نطاق
+R4048	Unknown	غير معروف
+R4049	Website Analytics	تحليلات الموقع
+R4050	Published Web Pages	صفحات الويب المنشورة
+R4051	Published Web Forms	نماذج الويب المنشورة
+R4052	Website Themes Available	قوالب مواقع الويب المتاحة
+R4053	Website Visits	زيارات الموقع الإلكتروني
+R4054	Save Anyway	حفظ على أي حال
+R4055	Workflow State Field	حقل حالة سير العمل
+R4056	Workflow Data	بيانات سير العمل
+R4057	Workflow Name	اسم سير العمل
+R4058	Don't Override Status	لا تجاوز الحالة
+R4059	Send Email Alert	إرسال تنبيه عبر البريد الإلكتروني
+R4060	Enable Action Confirmation	تفعيل تأكيد الإجراء
+R4061	Transition Rules	الانتقال قوانين
+R4062	Transitions	التحولات
+R4063	Build {0}	بناء {0}
+R4064	Not active	غير نشطة
+R4065	Workflow State	حالة سير العمل
+R4066	Completed By User	تم إكمالها بواسطة المستخدم
+R4067	Completed By Role	تم إكمالها حسب الدور
+R4068	Permitted Roles	الأدوار المسموح بها
+R4069	Workflow Action	إجراء سير العمل
+R4070	Workflow Action Name	سير العمل اسم العمل
+R4071	Workflow Action Master	سير العمل الاجراء الاساسي
+R4072	Workflow Builder ID	معرّف منشئ سير العمل
+R4073	Evaluate as Expression	التقييم كتعبير
+R4074	Workflow Document State	سير العمل الوثيقة الدولة
+R4075	Doc Status	حالة الوثيقة
+R4076	Update Field	تحديث الحقل
+R4077	Is Optional State	هو الدولة اختياري
+R4078	Inverse	معكوس
+R4079	Transition Tasks	مهام الانتقال
+R4080	Workflow Transition	الانتقال سير العمل
+R4081	Next State	الحالية التالية
+R4082	Allowed	سمح
+R4083	Allow Self Approval	اسمح بالموافقة الذاتية
+R4084	Asynchronous	غير متزامن
+R4085	Workflow Transition Task	مهمة انتقال سير العمل
+R4086	Tasks	المهام
+R4087	Workflow Transition Tasks	مهام تحويل سير العمل
+R4088	Edit Existing	تعديل موجود
+R4089	Select Document Type	حدد نوع الوثيقة
+R4090	New Workflow Name	اسم سير العمل الجديد
+R4091	Select Workflow	حدد سير العمل
+R7746	Select Account	اختر حسابًا
+R7747	Search account...	بحث عن حساب...
+R7748	No accounts found.	لم يتم العثور على أي حسابات.
+R7749	No results found.	لم يتم العثور على نتائج.
+R7750	Create New {0}	إنشاء {0} جديد
+R7751	Reconciliation History	سجل التسويات
+R7752	Spent	مصروف
+R7753	1 invoice	فاتورة واحدة
+R7754	No invoice linked	لا توجد فاتورة مرتبطة
+R7755	{} invoices	{} الفواتير
+R7756	Invoice No	رقم الفاتورة
+R7757	Match	تطابق
+R7758	Unmatched	أُلغي التطابق
+R7759	Undo {}?	التراجع عن {}؟
+R7760	Unmatch Transaction?	إلغاء مطابقة المعاملة؟
+R7761	Voucher Name	اسم السند
+R7762	Transfer Account	حساب النقل
+R7763	Bulk Payment	دفعة جماعية
+R7764	Bulk Transfer	نقل بالجملة
+R7765	Bulk Bank Entry	قيد بنكي بالجملة
+R7766	Closing (system)	الإغلاق (النظام)
+R7767	Closing (statement)	الإغلاق (كشف الحساب)
+R7768	As of {0}	اعتبارًا من {0}
+R7769	Closing balance set.	تم تعيين رصيد الإغلاق.
+R7770	Deleting closing balance...	جارٍ حذف الرصيد الختامي...
+R7771	Closing balance deleted.	تم حذف رصيد الإغلاق.
+R7772	Cheque/Reference Number	رقم الشيك/المرجع
+R7773	Cleared	تمت التسوية
+R7774	Not Cleared	غير مُسوّى
+R7775	No entries found	لم يتم العثور على إدخالات
+R7776	Force Clear	فرض التسوية
+R7777	Clearance date updated	تم تحديث تاريخ التسوية
+R7778	Force Clear Voucher	فرض تصفية السند
+R7779	Copied to clipboard	نسخ إلى الحافظة
+R7780	Bank Entry Created	تم إنشاء القيد البنكي
+R7781	Error uploading attachments	خطأ في تحميل المرفقات
+R7782	Reference is required	المرجع مطلوب
+R7783	No transaction selected	لم يتم اختيار أي معاملة
+R7784	Select all	تحديد الكل
+R7785	Select row {0}	تحديد الصف {0}
+R7786	Account is required	الحساب مطلوب
+R7787	e.g. Bank Charges	مثال: رسوم بنكية
+R7788	Add Row	إضافة صف
+R7789	Bank Entries Created	تم إنشاء إدخالات البنك
+R7790	GL Account	حساب دفتر الأستاذ العام
+R7791	Last Synced Transaction	آخر معاملة تمت مزامنتها
+R7792	Configure Bank Accounts	تكوين الحسابات البنكية
+R7793	FY	السنة المالية
+R7794	Matched date	التاريخ المطابق
+R7795	Q1	Q1
+R7796	Q2	الربع 2
+R7797	Q3	Q3
+R7798	Q4	Q4
+R7799	Reference #	مرجع #

@@ -1,0 +1,120 @@
+R1200	This Year	هذا العام
+R1201	Next 7 Days	الأيام السبعة القادمة
+R1202	Next 14 Days	الأيام الأربعة عشر القادمة
+R1203	Next 30 Days	الثلاثين يومًا القادمة
+R1204	Next Week	الأسبوع التالي
+R1205	Next Month	الشهر التالي
+R1206	Next Quarter	الربع التالي
+R1207	Next 6 Months	الـ ٦ أشهر المقبلة
+R1208	Next Year	السنة القادمة
+R1209	Yesterday	الأمسِ
+R1210	Tomorrow	غداً
+R1211	Filters {0}	الفلاتر {0}
+R1212	Invalid filter: {0}	مرشح غير صالح: {0}
+R1213	No filters selected	لم يتم تحديد أي فلاتر
+R1214	Add a Filter	إضافة تصفية
+R1215	Apply Filters	تطبيق عوامل التصفية
+R1216	Select Group By...	حدد التجميع حسب...
+R1217	Select Field...	اختر المجال...
+R1218	Add Group	إضافة مجموعة
+R1219	Sum of {0}	مجموع {0}
+R1220	Average of {0}	متوسط {0}
+R1221	Keyboard Shortcuts	اختصارات لوحة المفاتيح
+R1222	Open Awesomebar	افتح شريط ممتاز
+R1223	Open console	وحدة تحكم مفتوحة
+R1224	Global Shortcuts	اختصارات العالمية
+R1225	Page Shortcuts	اختصارات الصفحة
+R1226	Grid Shortcuts	اختصارات الشبكة
+R1227	Enter Value	أدخل القيمة
+R1228	Submit	تسجيل
+R1229	Message	رسالة
+R1230	Enter your password	ادخل رقمك السري
+R1231	Verify Password	التحقق من كلمة المرور
+R1232	Verify	تأكد من
+R1233	Confirm	أكد
+R1234	Yes	نعم
+R1235	No	لا
+R1236	Cancel	إلغاء
+R1237	Month	شهر
+R1238	Transaction	حركة
+R1239	Events	الفعاليات
+R1240	View Full Log	عرض السجل كاملاً
+R1241	Notifications Disabled	تم تعطيل الإشعارات
+R1242	See all Activity	عرض جميع الأنشطة
+R1243	{0} unread notifications	{0} إشعارات غير مقروءة
+R1244	No Upcoming Events	لا توجد فعاليات قادمة
+R1245	Menu	الخيارات
+R1246	Generate Tracking URL	إنشاء رابط تتبع
+R1247	Row #{0}	الصف #{0}
+R1248	Show	تبين
+R1249	User Menu	قائمة المستخدم
+R1250	Switch to CRM	التبديل إلى CRM
+R1251	Open Frappe CRM	فتح Frappe CRM
+R1252	Switch to Helpdesk	التبديل إلى Helpdesk
+R1253	Open Frappe Helpdesk	فتح Frappe Helpdesk
+R1254	Toggle sidebar	تبديل الشريط الجانبي
+R1255	Edit Sidebar	تعديل الشريط الجانبي
+R1256	For {0}	لـ {0}
+R1257	Back	خلف
+R1258	Complete Setup	إعداد كامل
+R1259	Continue	استمر
+R1260	Toggle Theme	تبديل المظهر
+R1261	descending	تنازلي
+R1262	ascending	صعودًا
+R1263	Switch Theme	تبديل المظهر
+R1264	Theme Changed	تم تغيير المظهر
+R1265	Light Theme	الوضع الفاتح
+R1266	Dark Theme	الوضع الداكن
+R1267	Source Code	شفرة المصدر
+R1268	Copy Apps Version	نسخ إصدار التطبيقات
+R1269	Search for {0}	ابحث عن {0}
+R1270	{0} = {1}	{0} = {1}
+R1271	Generate Random Password	توليد كلمة مرور عشوائية
+R1272	to navigate	للتنقل
+R1273	to select	للاختيار
+R1274	to close	للإغلاق
+R1275	result	نتيجة
+R1276	results	النتائج
+R1277	Searching ...	جاري البحث ...
+R1278	Search for anything	البحث عن أي شيء
+R1279	new	جديد
+R1280	{0} ${type}	{0} ${type}
+R1281	Report {0}	تقرير {0}
+R1282	calendar	التقويم
+R1283	hub	محور
+R1284	email inbox	البريد الوارد
+R1285	#{0}	#{0}
+R1286	Session Defaults Saved	تم حفظ الإعدادات الافتراضية للجلسة
+R1287	Balance	الموازنة
+R1288	Theme	موضوع
+R1289	Full Width	العرض الكامل
+R1290	Allow notifications	السماح بالإشعارات
+R1291	Show search bar	عرض شريط البحث
+R1292	Lists	قوائم
+R1293	Show sidebar	إظهار الشريط الجانبي
+R1294	Allow bulk actions	السماح بالإجراءات المجمعة
+R1295	Show view switcher	عرض مبدّل العرض
+R1296	Show timeline	عرض الجدول الزمني
+R1297	Show dashboard	عرض لوحة القيادة
+R1298	For example:	على سبيل المثال:
+R1299	Add to Dashboard	إضافة إلى لوحة القيادة
+R1300	{count} cell copied	تم نسخ الخلية {count}
+R1301	{count} cells copied	تم نسخ {count} خلية
+R1302	{count} row selected	تم تحديد الصف {count}
+R1303	{count} rows selected	تم تحديد {count} صف
+R1304	Sort Ascending	فرز تصاعدي
+R1305	Sort Descending	فرز تنازلي
+R1306	Reset sorting	إعادة ترتيب الفرز
+R1307	From version	من الإصدار
+R1308	To version	إلى الإصدار
+R1309	Diff	الفرق
+R1310	M	م
+R1311	K	ك
+R1312	Cr	Cr
+R1313	L	ل
+R1314	Kh	خ
+R1315	Ar	أر
+R1316	T	تي
+R1317	B	ب
+R1318	now	الآن
+R1319	{0} m	{0} م

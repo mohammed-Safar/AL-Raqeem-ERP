@@ -1,0 +1,121 @@
+
+/* ---------- base ---------- */
+SCOPE {
+    color-scheme: dark;
+    background-color: var(--rq-bg) !important;
+    background-image:
+        radial-gradient(900px 500px at 100% -10%, rgba(var(--rq-a-rgb),.07), transparent 60%),
+        radial-gradient(700px 400px at 0% 110%, rgba(var(--rq-a-rgb),.04), transparent 60%) !important;
+    background-attachment: fixed !important;
+    color: var(--rq-text) !important;
+    font-family: var(--rq-font) !important;
+    -webkit-font-smoothing: antialiased;
+}
+SCOPE h1, SCOPE h2, SCOPE h3, SCOPE h4, SCOPE h5, SCOPE h6 {
+    font-family: var(--rq-font-head) !important;
+    color: var(--rq-strong) !important;
+}
+SCOPE a { color: var(--rq-accent-2); }
+SCOPE a:hover { color: var(--rq-accent); }
+SCOPE .text-muted { color: var(--rq-text-3) !important; }
+html[dir="rtl"] SCOPE, html[dir="rtl"] SCOPE * { letter-spacing: normal !important; }
+SCOPE button, SCOPE input, SCOPE select, SCOPE textarea { font-family: inherit; }
+
+/* ---------- navbar & footer ---------- */
+SCOPE .navbar {
+    background: var(--rq-glass) !important;
+    backdrop-filter: blur(14px) saturate(160%);
+    -webkit-backdrop-filter: blur(14px) saturate(160%);
+    border-bottom: 1px solid var(--rq-line) !important;
+    box-shadow: none !important;
+}
+SCOPE .navbar .nav-link, SCOPE .navbar-brand { color: var(--rq-text-2) !important; }
+SCOPE .navbar .nav-link:hover { color: var(--rq-strong) !important; }
+SCOPE .web-footer {
+    background: transparent !important;
+    border-top: 1px solid var(--rq-line) !important;
+}
+SCOPE .web-footer, SCOPE .web-footer a { color: var(--rq-text-3) !important; }
+SCOPE .dropdown-menu {
+    background: var(--rq-glass-pop) !important;
+    border: 1px solid var(--rq-line-strong) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 16px 40px var(--rq-shadow-pop) !important;
+}
+SCOPE .dropdown-item { color: var(--rq-text-2) !important; border-radius: 8px; }
+SCOPE .dropdown-item:hover { background: var(--rq-accent-soft) !important; color: var(--rq-strong) !important; }
+
+/* ---------- cards: portal, /me, web forms, lists ---------- */
+SCOPE .portal-container,
+SCOPE .page-card,
+SCOPE .web-form-wrapper,
+SCOPE .web-form-container .web-form,
+SCOPE .list-view-container,
+SCOPE .page_content .card,
+SCOPE .card {
+    background: var(--rq-surface-1) !important;
+    border: 1px solid var(--rq-line) !important;
+    border-radius: var(--rq-r-lg) !important;
+    box-shadow: var(--rq-shadow) !important;
+    color: var(--rq-text) !important;
+}
+SCOPE .portal-section { border-color: var(--rq-line) !important; }
+SCOPE .portal-items .my-account-item-link,
+SCOPE .portal-items a {
+    border-radius: 12px;
+    transition: background .15s var(--rq-ease);
+}
+SCOPE .portal-items .my-account-item-link:hover { background: var(--rq-surface-2) !important; }
+SCOPE .my-account-name { color: var(--rq-strong) !important; font-weight: 700; }
+SCOPE .list-group-item, SCOPE .web-list-item, SCOPE .transaction-list-item {
+    background: var(--rq-surface-1) !important;
+    border-color: var(--rq-line) !important;
+    color: var(--rq-text) !important;
+}
+SCOPE .list-group-item:hover, SCOPE .transaction-list-item:hover { background: var(--rq-surface-2) !important; }
+SCOPE .web-sidebar .sidebar-item a { color: var(--rq-text-2) !important; border-radius: 10px; }
+SCOPE .web-sidebar .sidebar-item a.active,
+SCOPE .web-sidebar .sidebar-item a:hover { background: var(--rq-accent-soft) !important; color: var(--rq-strong) !important; }
+SCOPE table { color: var(--rq-text); }
+SCOPE .table td, SCOPE .table th { border-color: var(--rq-line) !important; }
+
+/* ---------- inputs ---------- */
+SCOPE .form-control,
+SCOPE input:not([type="checkbox"]):not([type="radio"]),
+SCOPE select, SCOPE textarea {
+    background: var(--rq-surface-2) !important;
+    border: 1px solid var(--rq-line-strong) !important;
+    border-radius: 10px !important;
+    color: var(--rq-strong) !important;
+}
+SCOPE .form-control:focus, SCOPE input:focus, SCOPE select:focus, SCOPE textarea:focus {
+    border-color: var(--rq-accent) !important;
+    box-shadow: 0 0 0 3px var(--rq-accent-ring) !important;
+    outline: 0 !important;
+}
+SCOPE .form-control::placeholder { color: var(--rq-placeholder) !important; }
+SCOPE label, SCOPE .control-label { color: var(--rq-text-2) !important; font-weight: 600; }
+SCOPE input[type="checkbox"]:checked { background-color: var(--rq-a-500) !important; }
+
+/* ---------- buttons ---------- */
+SCOPE .btn { border-radius: 10px !important; font-weight: 600; }
+SCOPE .btn-primary, SCOPE .es-button[data-variant="solid"] {
+    background: linear-gradient(135deg, var(--rq-a-400) 0%, var(--rq-a-500) 45%, var(--rq-a-600) 100%) !important;
+    color: var(--rq-a-ink) !important;
+    border: 0 !important;
+    box-shadow: 0 4px 14px rgba(var(--rq-a-rgb),.30), inset 0 1px 0 rgba(255,255,255,.25) !important;
+}
+SCOPE .btn-primary:hover, SCOPE .es-button[data-variant="solid"]:hover { filter: brightness(1.06); }
+SCOPE .btn-default, SCOPE .btn-secondary, SCOPE .es-button:not([data-variant="solid"]) {
+    background: var(--rq-surface-2) !important;
+    color: var(--rq-text) !important;
+    border: 1px solid var(--rq-line-strong) !important;
+}
+
+/* ---------- error / message pages ---------- */
+SCOPE .error-state, SCOPE .page-content-wrapper .message-page {
+    color: var(--rq-text-2) !important;
+}
+
+/* ---------- indicators ---------- */
+SCOPE .indicator-pill, SCOPE .badge, SCOPE .es-badge { border-radius: 999px !important; }

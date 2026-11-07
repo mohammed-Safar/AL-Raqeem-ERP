@@ -1,0 +1,120 @@
+R3186	Dr	د.
+R3187	Mrs	السيدة
+R3188	Madam	السيدة
+R3189	Miss	الآنسة
+R3190	Master	سيد
+R3191	Prof	أ.د.
+R3192	Try Again	حاول ثانية
+R3193	Select Language	اختار اللغة
+R3194	Select Country	اختر البلد
+R3195	Select Time Zone	اختر المنطقة الزمنية
+R3196	Select Currency	اختر العملة
+R3197	Update Password	تحديث كلمة المرور
+R3198	blue	أزرق
+R3199	{0} blocks	{0} كتلة
+R3200	{0} role changes	{0} تغييرات في الأدوار
+R3201	Overwritten	تم استبداله
+R3202	Not yet overwritten	لم تتم الكتابة فوقه بعد
+R3203	Restored with limits	تمت الاستعادة مع قيود
+R3204	Protect	حماية
+R3205	Customized since	مخصص منذ
+R3206	Restore again	استعادة مرة أخرى
+R3207	Restore Workspace	استعادة مساحة العمل
+R3208	Nothing to restore	لا يوجد ما يمكن استعادته
+R3209	Report updated successfully	تم تحديث التقرير بنجاح
+R3210	{0} saved successfully	تم حفظ {0} بنجاح
+R3211	Assigned To/Owner	تعيين ل / المالك
+R3212	Invalid aggregate function	دالة تجميع غير صالحة
+R3213	Report {0} saved	تم حفظ التقرير {0}
+R3214	Report {0} deleted	تم حذف التقرير {0}
+R3215	Deleting {0}	حذف {0}
+R3216	Bulk Operation Failed	فشلت عملية الشحن بالجملة
+R3217	Bulk Operation Successful	عملية الشحن بالجملة ناجحة
+R3218	Framework	إطار العمل
+R3219	Printing	طبع
+R3220	Send Now	أرسل الآن
+R3221	Scheduled to send	من المقرر أن ترسل
+R3222	Report Filters	مرشحات تقرير
+R3223	Filters Display	عرض المرشحات
+R3224	Filter Meta	تصفية ميتا
+R3225	Dynamic Report Filters	مرشحات تقرير ديناميكي
+R3226	From Date Field	من حقل التاريخ
+R3227	To Date Field	إلى تاريخ الحقل
+R3228	Period	فترة
+R3229	Email To	البريد الإلكتروني الى
+R3230	Day of Week	يوم من الأسبوع
+R3231	Weekdays	أيام الأسبوع
+R3232	XLSX	XLSX
+R3233	Filter Data	تصفية البيانات
+R3234	Report limit reached	تم الوصول إلى الحد الأقصى للإبلاغات
+R3235	Missing Filters Required	الفلاتر المفقودة مطلوبة
+R3236	Invalid Output Format	تنسيق الإخراج غير صالح
+R3237	Pull Emails	سحب رسائل البريد الإلكتروني
+R3238	Pulling emails...	جارٍ استخراج رسائل البريد الإلكتروني...
+R3239	Emails Pulled	تم استخراج رسائل البريد الإلكتروني
+R3240	Disabled Auto Reply	الرد التلقائي معطل
+R3241	Alternative Email ID	معرف بريد إلكتروني بديل
+R3242	Awaiting password	في انتظار كلمة المرور
+R3243	Email Account Name	البريد الإلكتروني اسم الحساب
+R3244	Service	خدمة
+R3245	Frappe Mail	بريد فرابيه
+R3246	GMail	بريد جوجل
+R3247	Outlook.com	Outlook.com
+R3248	Sendgrid	سيندغريد
+R3249	SparkPost	سبارك بوست
+R3250	Yahoo Mail	بريد ياهو
+R3251	Yandex.Mail	ياندكس.ميل
+R3252	Incoming (POP/IMAP) Settings	إعدادات البريد الوارد (POP/IMAP)
+R3253	Enable Incoming	تمكين الوارد
+R3254	Use IMAP	استخدام IMAP
+R3255	Incoming Server	الخادم الوارد
+R3256	Use SSL	استخدام SSL
+R3257	Attachment Limit (MB)	الحد مرفق (MB)
+R3258	Append To	إلحاق ل
+R3259	Default Incoming	الايرادات الافتراضية
+R3260	Email Sync Option	مزامنة البريد الإلكتروني الخيار
+R3261	ALL	جميع
+R3262	UNSEEN	غير مرئي
+R3263	Initial Sync Count	عدد مزامنة الأولي
+R3264	Notify if unreplied	يخطر إذا لا تحوي على ردود
+R3265	Send Notification to	إرسال إشعار إلى
+R3266	Outgoing (SMTP) Settings	إعدادات البريد الصادر (SMTP)
+R3267	e.g. smtp.gmail.com	على سبيل المثال، smtp.gmail.com
+R3268	Outgoing Server	خادم الإرسال
+R3269	Use TLS	استخدام TLS
+R3270	Port	المنفذ
+R3271	Default Outgoing	الافتراضي الصادر
+R3272	Track Email Status	تتبع حالة البريد الإلكتروني
+R3273	Add Signature	إضافة التوقيع
+R3274	Auto Reply	الرد التلقائي
+R3275	Enable Auto Reply	تمكين الرد التلقائي
+R3276	Auto Reply Message	رد تلقائي على الرسائل
+R3277	Footer Content	محتوى التذييل
+R3278	UIDVALIDITY	UIDVALIDITY
+R3279	UIDNEXT	يو آي دي نكست
+R3280	no failed attempts	محاولات فاشلة لا
+R3281	Document Linking	ربط المستندات
+R3282	Brand Logo	شعار العلامة التجارية
+R3283	Authentication	المصادقة
+R3284	Account	حساب
+R3285	IMAP Details	تفاصيل IMAP
+R3286	Authorize API Access	تفويض الوصول إلى واجهة برمجة التطبيقات (API)
+R3287	OAuth	OAuth
+R3288	Use STARTTLS	استخدم STARTTLS
+R3289	Connected App	تطبيق متصل
+R3290	Connected User	المستخدم المتصل
+R3291	Validate SSL Certificate	التحقق من صحة شهادة SSL
+R3292	Incoming	الوارد
+R3293	Frappe Mail Site	موقع بريد فرابيه
+R3294	Outgoing	الصادر
+R3295	Sent Folder Name	اسم المجلد المرسل
+R3296	Always BCC Address	عنوان BCC دائمًا
+R3297	Last Received At	آخر تاريخ للاستلام
+R3298	Add X-Original-From header	إضافة عنوان X-Original-From الرأسي
+R3299	Add Reply-To header	إضافة عنوان Reply-To الرأسي
+R3300	Headers	الترويسات
+R3301	Reply-To Addresses	عناوين الرد
+R3302	DELAY	تأخير
+R3303	FAILURE	فشل
+R3304	NEVER	أبداً
+R3305	SUCCESS	نجاح

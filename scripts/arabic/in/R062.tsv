@@ -1,0 +1,120 @@
+R3666	Font Size	حجم الخط
+R3667	Page Number	رقم الصفحة
+R3668	PDF Generator	مولد ملفات PDF
+R3669	chrome	الكروم
+R3670	wkhtmltopdf	wkhtmltopdf
+R3671	Print Format For	تنسيق الطباعة لـ
+R3672	{0} are required	{0} مطلوبة
+R3673	Renderer unavailable	محرك العرض غير متاح
+R3674	WeasyPrint renderer unavailable	محرك عرض WeasyPrint غير متاح
+R3675	Invalid Condition	شرط غير صالح
+R3676	Template File	ملف القالب
+R3677	Duplicate Entry	إدخال مكرر
+R3678	Print Heading	طباعة العنوان
+R3679	No Preview	لا يوجد معاينة
+R3680	Print Server	ملقم الطباعة
+R3681	Enable Print Server	تمكين خادم الطباعة
+R3682	Enable Raw Printing	تمكين الطباعة الخام
+R3683	Print Style	الطباعة ستايل
+R3684	Print Style Preview	معاينة قبل الطباعة ستايل
+R3685	Fonts	الخطوط
+R3686	Arial	أريال
+R3687	Helvetica	هلفتيكا
+R3688	Helvetica Neue	هيلفيتيكا نيو
+R3689	Inter	بين
+R3690	Monospace	معدل النصوص والشروط
+R3691	Verdana	فيردانا
+R3692	PDF Settings	إعدادات PDF
+R3693	PDF Page Size	حجم صفحة صيغة PDF
+R3694	A0	A0
+R3695	A1	A1
+R3696	A2	A2
+R3697	A3	A3
+R3698	A4	A4
+R3699	A5	A5
+R3700	A6	A6
+R3701	A7	A7
+R3702	A8	A8
+R3703	A9	A9
+R3704	B0	B0
+R3705	B1	ب1
+R3706	B10	B10
+R3707	B2	B2
+R3708	B3	ب3
+R3709	B4	ب٤
+R3710	B5	ب5
+R3711	B6	ب6
+R3712	B7	B7
+R3713	B8	B8
+R3714	B9	B9
+R3715	C5E	C5E
+R3716	Comm10E	Comm10E
+R3717	DLE	DLE
+R3718	Executive	تنفيذي
+R3719	Folio	فوليو
+R3720	Ledger	دفتر الأستاذ
+R3721	Legal	قانوني
+R3722	Letter	رسالة
+R3723	Tabloid	صحيفة شعبية
+R3724	Page Settings	إعدادات الصفحة
+R3725	Print with letterhead	طباعة مع ترويسة
+R3726	Print Style Name	اسم نمط الطباعة
+R3727	Invalid wkhtmltopdf version	إصدار غير صالح من wkhtmltopdf
+R3728	Correct version :	النسخة الصحيحة:
+R3729	No Preview Available	لا تتوفر معاينة
+R3730	Printer Settings	إعدادات الطابعة
+R3731	Printer Mapping	تعيين الطابعة
+R3732	Printer	طابعة
+R3733	Raw Printing Setting	إعدادات الطباعة الخام
+R3734	Select Network Printer	حدد طابعة الشبكة
+R3735	Zoom out	Zoom خارج
+R3736	Zoom in	Zoom في
+R3737	No of Columns	عدد الأعمدة
+R3738	Section Heading	قسم العنوان
+R3739	Remove Section	إزالة القسم
+R3740	Set Properties	تعيين الخصائص
+R3741	Align Value	محاذاة القيمة
+R3742	Left	ترك
+R3743	Right	حق
+R3744	Hide Label	إخفاء التسمية
+R3745	Remove Field	إزالة الميدان
+R3746	Edit Custom HTML	تحرير مخصص HTML
+R3747	Edit Properties	تحرير خصائص
+R3748	Invalid DocType: {0}	نوع المستند غير صالح: {0}
+R3749	Too Many Requests	طلبات كثيرة جدا
+R3750	Cache Cleared	تحديث الصفحة
+R3751	Jobs	وظائف
+R3752	Background Job Activity	نشاط الوظيفة الخلفية
+R3753	Message Sent	تم ارسال الرسالة
+R3754	Something went wrong.	حدث خطأ ما.
+R3755	Login token required	رمز تسجيل الدخول مطلوب
+R3756	Verification	تَحَقّق
+R3757	Verification Code	رمز التحقق
+R3758	Invalid Email.	البريد الإلكتروني خاطئ.
+R3759	Change	تغيير
+R3760	Change	تغيير
+R3761	this shouldn't break	لا ينبغي أن ينكسر هذا
+R3762	Trigger caching	تخزين المشغلات مؤقتًا
+R3763	1 second ago	منذ ثانية واحدة
+R3764	3 minutes ago	قبل 3 دقائق
+R3765	2 hours ago	منذ ساعتين
+R3766	1 day ago	قبل يوم
+R3767	5 days ago	قبل 5 أيام
+R3768	2 weeks ago	قبل أسبوعين
+R3769	2 months ago	منذ شهرين
+R3770	2 years ago	قبل عامين
+R3771	Incorrect Verification code	رمز التحقق غير صحيح
+R3772	Website Users	مستخدمو الموقع الإلكتروني
+R3773	System Users	مستخدمو النظام
+R3774	Failed Login Attempts	محاولات تسجيل دخول فاشلة
+R3775	Login Activity	نشاط تسجيل الدخول
+R3776	Invalid Phone Number	رقم هاتف غير صالح
+R3777	Country Code Required	رمز الدولة مطلوب
+R3778	Queue Overloaded	قائمة الانتظار مكتظة
+R3779	Incorrect URL	URL غير صحيح
+R3780	File not attached	الملف غير مرفق
+R3781	Invalid CSV Format	تنسيق CSV غير صالح
+R3782	Invalid Filter Value	قيمة تصفية غير صالحة
+R3783	Invalid Date	تاريخ غير صالح
+R3784	Zero	صفر
+R3785	Dinars	دينار

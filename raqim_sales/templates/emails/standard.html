@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{#- RAQEEM — branded wrapper for every email the site sends.
+    Overrides frappe/templates/emails/standard.html (raqim_sales is installed
+    last, so its templates/ folder is searched first). Styles are in
+    public/css/raqeem_email.css and are inlined by premailer (hooks.email_css).
+    ROLLBACK: delete this file. -#}
+{%- set rtl = (frappe.lang or "en").startswith("ar") -%}
+<html xmlns="http://www.w3.org/1999/xhtml" dir="{{ 'rtl' if rtl else 'ltr' }}" lang="{{ frappe.lang or 'en' }}">
+
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>{{ subject or "" }}</title>
+</head>
+
+<body class="rq-mail-body">
+	<table class="rq-mail-outer {% if header or with_container %}rq-boxed{% endif %}" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+		<tr>
+			<td align="center" valign="top" class="rq-mail-outer-cell">
+				<table class="rq-mail-card" border="0" cellpadding="0" cellspacing="0" role="presentation"
+					width="{% if header or with_container %}600{% else %}100%{% endif %}">
+					{% if header or with_container %}
+					<tr><td class="rq-mail-bar" height="4" style="font-size:0;line-height:0">&nbsp;</td></tr>
+					{% endif %}
+					{% if brand_logo or brand_name %}
+					<tr>
+						<td valign="middle" class="rq-mail-masthead" align="{{ 'right' if rtl else 'left' }}">
+							<a href="{{ site_url or '#' }}" class="rq-mail-brand">
+								{% if brand_logo %}
+								<img src="{{ brand_logo }}" height="30" class="rq-mail-logo" alt="{{ brand_name or '' }}" />
+								{% else %}
+								<span class="rq-mail-wordmark">{{ brand_name or "RAQEEM" }}</span>
+								{% endif %}
+							</a>
+						</td>
+					</tr>
+					{% endif %}
+					{% if header %}
+					<tr>
+						<td valign="top" class="rq-mail-title">
+							{{ header }}
+						</td>
+					</tr>
+					{% endif %}
+					<tr>
+						<td valign="top" class="rq-mail-content">
+							<div>{{ content }}</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top" class="rq-mail-footer {% if footer and 'with-divider' in footer %}filled{% endif %}">
+							<table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
+								<tr>
+									<td valign="top" data-email-footer="true">
+										{{ footer }}
+									</td>
+								</tr>
+								<tr>
+									<td valign="top">
+										<div class="print-html">{{ print_html or "" }}</div>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				{% if header or with_container %}
+				<table width="600" border="0" cellpadding="0" cellspacing="0" role="presentation">
+					<tr>
+						<td class="rq-mail-sent" align="center">
+							{%- if rtl -%}أُرسلت هذه الرسالة من {{ brand_name or "RAQEEM" }}{%- else -%}Sent from {{ brand_name or "RAQEEM" }}{%- endif -%}
+						</td>
+					</tr>
+				</table>
+				{% endif %}
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>

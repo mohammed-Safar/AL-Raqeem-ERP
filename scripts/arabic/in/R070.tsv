@@ -1,0 +1,120 @@
+R8280	Deal Owner	صاحب الصفقة
+R8281	Prospect Opportunity	فرصة محتملة
+R8282	Stage Name	اسم المرحلة
+R8283	Campaign Efficiency	كفاءة الحملة
+R8284	Lead Count	عد الزبون المحتمل
+R8285	Opp Count	أوب كونت
+R8286	Quot Count	عدد النقاط
+R8287	Order Count	عدد الطلبات
+R8288	Order Value	قيمة الطلب
+R8289	Opp/Lead %	نسبة الفرص/العملاء المحتملين
+R8290	Quot/Lead %	نسبة الاقتباس/العميل المحتمل
+R8291	Order/Quot %	نسبة الطلب/عرض السعر
+R8292	Lead Conversion Time	وقت تحويل العملاء المحتملين
+R8293	No of Interactions	لا من التفاعلات
+R8294	Duration in Days	المدة في أيام
+R8295	Support Tickets	تذاكر الدعم الفني
+R8296	Lead Details	تفاصيل الزبون المحتمل
+R8297	Lead Owner Efficiency	يؤدي كفاءة المالك
+R8298	Lost Opportunity	فرصة ضائعة
+R8299	Customer/Lead Name	اسم العميل / العميل المتوقع
+R8300	Data Based On	البيانات المستندة إلى
+R8301	Opportunity Source	مصدر الفرصة
+R8302	Number of Interaction	عدد مرات التفاعل
+R8303	Last Communication	آخر الاتصالات
+R8304	Last Communication Date	تاريخ الاتصال الأخير
+R8305	Pipeline By	خط الأنابيب بواسطة
+R8306	Sales Pipeline Analytics	تحليلات مسار المبيعات
+R8307	fieldname	اسم الحقل
+R8308	Warranty Claim	مطالبة بالضمان
+R8309	Lead Source	مصدر الزبون المحتمل
+R8310	Open Opportunity	فرصة مفتوحة
+R8311	Incoming Leads	العملاء المحتملون الواردون
+R8312	Accounts Setup	إعداد الحسابات
+R8313	Import Genericode File	استيراد ملف Genericode
+R8314	Publisher	الناشر
+R8315	Canonical URI	المعرف الموحد المتعارف عليه
+R8316	Publisher ID	معرف الناشر
+R8317	Default Common Code	الرمز المشترك الافتراضي
+R8318	Parsing Error	خطأ في التحليل
+R8319	as Title	كعنوان
+R8320	as Code	كشفرة برمجية
+R8321	as Description	كما هو موضح
+R8322	description	الوصف
+R8323	by {}	بواسطة {}
+R8324	Applies To	ينطبق على
+R8325	Additional Data	بيانات إضافية
+R8326	Importing Common Codes	استيراد الرموز الشائعة
+R8327	Authentication Failed	المصادقة فشلت
+R8328	Bank accounts added	الحسابات البنكية المضافة
+R8329	Select a company	اختر شركة
+R8330	Reset Plaid Link	إعادة ضبط رابط بلايد
+R8331	Sync Now	مزامنة الآن
+R8332	Sync Started	بدأت عملية المزامنة
+R8333	Plaid Client ID	معرف العميل منقوشة
+R8334	Plaid Secret	سر منقوشة
+R8335	Plaid Environment	بيئة منقوشة
+R8336	development	تطوير
+R8337	production	إنتاج
+R8338	sandbox	رمل
+R8339	Enable European Access	تمكين الوصول الأوروبي
+R8340	Plaid Link Failed	فشل ربط Plaid
+R8341	Unverified Webhook Data	بيانات Webhook لم يتم التحقق منها
+R8342	Scheduled Date	المقرر تاريخ
+R8343	Please save first	يرجى حفظ أولا
+R8344	Enter Visit Details	أدخل تفاصيل الزيارة
+R8345	Generate Schedule	إنشاء جدول
+R8346	Schedules	جداول
+R8347	Visits	الزيارات
+R8348	Item Reference	مرجع العنصر
+R8349	Maintenance Schedule Detail	تفاصيل جدول الصيانة
+R8350	Actual Date	التاريخ الفعلي
+R8351	Completion Status	استكمال الحالة
+R8352	Fully Completed	يكتمل
+R8353	Partially Completed	أنجزت جزئيا
+R8354	No of Visits	لا الزيارات
+R8355	Maintenance Schedule Item	جدول صيانة صنف
+R8356	Maintenance Date	تاريخ الصيانة
+R8357	Maintenance Time	وقت الصيانة
+R8358	Breakdown	انهيار
+R8359	Unscheduled	غير المجدولة
+R8360	Purposes	أغراض
+R8361	Customer Feedback	ملاحظات العميل
+R8362	Purposes Required	الأغراض المطلوبة
+R8363	Maintenance Visit Purpose	صيانة زيارة الغرض
+R8364	Work Done	العمل المنجز
+R8365	Maintenance Schedules	جداول الصيانة
+R8366	Quality Inspection Analysis	تحليل فحص الجودة
+R8367	Pending Work Order	أمر عمل معلق
+R8368	Job Card Analysis	تحليل بطاقة العمل
+R8369	Ongoing Job Cards	بطاقات العمل الجارية
+R8370	Monthly Quality Inspections	فحوصات الجودة الشهرية
+R8371	Completed Operation	العملية المكتملة
+R8372	Work Order Analysis	تحليل أمر العمل
+R8373	Order No	رقم الطلب
+R8374	Party Item Code	رمز عنصر الحفلة
+R8375	Blanket Order Item	صنف أمر بطانية
+R8376	Add Raw Materials	إضافة مواد خام
+R8377	Update Cost	تحديث التكلفة
+R8378	Browse BOM	تصفح قائمة المواد
+R8379	New Version	الإصدار الجديد
+R8380	Variant BOM	المتغير BOM
+R8381	Variant Item	عنصر متغير
+R8382	Qty To Manufacture	الكمية للتصنيع
+R8383	Template Item	عنصر القالب
+R8384	Select template item	حدد عنصر القالب
+R8385	Item to Manufacture	المنتج المراد تصنيعه
+R8386	Unit Of Measure	وحدة القياس
+R8387	Quantity (Output Qty)	الكمية (كمية الناتج)
+R8388	With Operations	مع عمليات
+R8389	Quality Inspection Required	فحص الجودة المطلوبة
+R8390	Cost Configuration	تكوين التكلفة
+R8391	Transfer Material Against	نقل المواد ضد
+R8392	Routing	التوجيه
+R8393	Costing	حساب التكاليف
+R8394	Operating Cost	تكاليف التشغيل
+R8395	Raw Material Cost	تكلفة المواد الخام
+R8396	Total Cost	التكلفة الكلية لل
+R8397	Exploded Items	العناصر المتفجرة
+R8398	Show in Website	عرض في الموقع
+R8399	Website Image	صورة الموقع

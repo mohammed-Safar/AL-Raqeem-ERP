@@ -1,0 +1,120 @@
+R6039	Select Items	اختيار العناصر
+R6040	Parent Warehouse	المستودع الأصل
+R6041	Planned Qty	المخطط الكمية
+R6042	Lead Time	المهلة
+R6043	Safety Stock	مخزونات السلامة
+R6044	Material Issue	صرف مواد
+R6045	Customer Provided	العملاء المقدمة
+R6046	To Warehouse	لمستودع
+R6047	Stock Summary	ملخص الأوراق المالية
+R6048	To Deliver	لتسليم
+R6049	{0} created	{0} تم انشاؤه
+R6050	Items Required	العناصر المطلوبة
+R6051	Produced Qty	الكمية المنتجة
+R6052	Product Bundle Item	المنتج حزمة البند
+R6053	Sales Order Date	تاريخ طلب المبيعات
+R6054	Item Details	بيانات الصنف
+R6055	Item and Warehouse	المنتج والمستودع
+R6056	Max: {0}	الحد الأقصى: {0}
+R6057	Disassemble	فكّك
+R6058	Select Quantity	إختيار الكمية
+R6059	Reserve	احتياطي
+R6060	Unreserve	بدون تحفظ
+R6061	Has Serial No	يحتوي على رقم تسلسلي
+R6062	Has Batch No	ودفعة واحدة لا
+R6063	Subcontracting Inward Order	طلب وارد من الباطن
+R6064	Work in Progress	التقدم في العمل
+R6065	Rent	إيجار
+R6066	Wages	أجور
+R6067	Production	الإنتاج
+R6068	Operating Component	مكون التشغيل
+R6069	Create Stock Entry	إنشاء إدخال المخزون
+R6070	Raw Material	المواد الخام
+R6071	Work Orders	طلبات العمل
+R6072	Id	هوية شخصية
+R6073	Min Order Qty	أقل كمية للطلب
+R6074	Capacity	سعة
+R6075	Inspected By	تفتيش من قبل
+R6076	Inspection Type	نوع التفتيش
+R6077	Subcontracting Receipt	إيصال التعاقد من الباطن
+R6078	BOM Search	BOM البحث
+R6079	Dispatch Notification	إعلام الإرسال
+R6080	All Supplier Groups	جميع مجموعات الموردين
+R6081	All Territories	جميع الأقاليم
+R6082	All Customer Groups	جميع مجموعات العملاء
+R6083	Inventory Dimension	بُعد المخزون
+R6084	Electricity	كهرباء
+R6085	Consumables	المواد الاستهلاكية
+R6086	Attribute	سمة
+R6087	Employee Name	اسم الموظف
+R6088	Default Cost Center	مركز التكلفة الافتراضي
+R6089	Create Sales Invoice	إنشاء فاتورة مبيعات
+R6090	% Amount Billed	% كمية تمت الفوترة
+R6091	Partially Billed	فاتورة جزئية
+R6092	Open Projects	فتح المشاريع
+R6093	Minute	دقيقة
+R6094	Quality Inspection Parameter	معايير فحص الجودة
+R6095	Link with Supplier	تواصل مع المورد
+R6096	Select a Supplier	حدد المورد
+R6097	Customer Type	نوع العميل
+R6098	Account Manager	إدارة حساب المستخدم
+R6099	Customer Primary Contact	جهة الاتصال الرئيسية للعميل
+R6100	Customer Primary Address	عنوان العميل الرئيسي
+R6101	Commission Rate	نسبة العمولة
+R6102	Customer POS ID	معرّف نقطة البيع للعميل
+R6103	Internal Customer Accounting	محاسبة العميل الداخلي
+R6104	Customer Portal Users	مستخدمو بوابة العملاء
+R6105	Supplier Numbers	أرقام الموردين
+R6106	Fulfillment User	وفاء المستخدم
+R6107	Invalid Customer Group	مجموعة العملاء غير صالحة
+R6108	Credit Limit Crossed	تم تجاوز الحد الائتماني
+R6109	Overdue Limit Crossed	تجاوز حد المتأخرات
+R6110	Subscriptions	الاشتراكات
+R6111	Individuals	الأفراد
+R6112	Credit Limit	الحد الائتماني
+R6113	Overdue Limit	حد المتأخرات
+R6114	Customer Credit Limit	حد ائتمان العميل
+R6115	Delivery Schedule Item	جدول التسليم
+R6116	Industry Type	نوع صناعة
+R6117	From Delivery Note	من اشعار التسليم
+R6118	Installation Date	تثبيت تاريخ
+R6119	Installation Time	تثبيت الزمن
+R6120	Installation Note	ملاحظة التثبيت
+R6121	Installation Note Item	ملاحظة تثبيت الإغلاق
+R6122	Installed Qty	الكميات الثابتة
+R6123	Based On Value	بناءً على القيمة
+R6124	Party Specific Item	عنصر خاص بالحزب
+R6125	Parent Item	البند الاصلي
+R6126	Is Alternative	هل البديل
+R6127	Alternative Items	أصناف بديلة
+R6128	 Address	 العنوان
+R6129	Quotation To	مناقصة لـ
+R6130	Shopping Cart	سلة التسوق
+R6131	Referral Sales Partner	شريك مبيعات الإحالة
+R6132	Term Details	تفاصيل الشروط
+R6133	Partially Ordered	طلبت جزئيًا
+R6134	Bundle Items	عناصر الحزمة
+R6135	Quotations	عروض مسعرة
+R6136	Mandatory Missing	إلزامي مفقود
+R6137	Stock Balance	رصيد المخزون
+R6138	Against Doctype	DOCTYPE ضد
+R6139	Against Docname	مقابل المستند
+R6140	Additional Notes	ملاحظات إضافية
+R6141	Has Alternative Item	يوجد عنصر بديل
+R6142	Quotation Item	بند المناقصة
+R6143	Pick List	قائمة الانتقاء
+R6144	Internal Purchase Order	أمر شراء داخلي
+R6145	Select BOM	حدد مكتب الإدارة
+R6146	Finished Goods	السلع تامة الصنع
+R6147	Set Supplier	مورد المجموعة
+R6148	Supplier Required	مطلوب مورد
+R6149	Reason for hold:	سبب التأجيل:
+R6150	Set Warehouse	مستودع المجموعة
+R6151	First Delivery Date	تاريخ التسليم الأول
+R6152	No of Deliveries	عدد عمليات التسليم
+R6153	Get Delivery Schedule	احصل على جدول التسليم
+R6154	Delivery Schedule	تفاصيل التسليم
+R6155	name	الاسم
+R6156	Add Schedule	إضافة جدول
+R6157	Creating Delivery Schedule...	تحديد موعد التسليم...
+R6158	Advance Paid	الدفعة المقدمة المدفوعة

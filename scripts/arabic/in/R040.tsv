@@ -1,0 +1,120 @@
+R7119	Select Attribute Values	حدد قيم السمات
+R7120	{0} variants created.	تم إنشاء المتغيرات {0}.
+R7121	Create Variant	إنشاء متغير
+R7122	Stock Projected Qty	كمية المخزون المتوقعة
+R7123	Set Opening Stock	تعيين مخزون أول المدة
+R7124	Show Variants	اظهار المتغيرات
+R7125	Item Variant Settings	إعدادات متنوع السلعة
+R7126	Variant Details Report	تفاصيل تقرير التقرير
+R7127	Single Variant	متغير واحد
+R7128	Multiple Variants	متغيرات متعددة
+R7129	Variant	مختلف
+R7130	Add Price	أضف السعر
+R7131	Buy & Sell	شراء وبيع
+R7132	Valid Upto	صالح حتى
+R7133	View All Prices	عرض جميع الأسعار
+R7134	No Company Found	لم يتم العثور على أي شركة
+R7135	Opening Stock	مخزون أول المدة
+R7136	Add Opening Stock	إضافة مخزون أول المدة
+R7137	Inventory Valuation	تقييم المخزون
+R7138	Stock Levels HTML	HTML مستويات المخزون
+R7139	<div id="stock-levels-placeholder"></div>	<div id="stock-levels-placeholder"></div>
+R7140	UOM Conversion Details	تفاصيل تحويل وحدة القياس
+R7141	Item Attributes	موصفات الصنف
+R7142	Prices HTML	HTML الأسعار
+R7143	<div id=\\"item-prices-container\\"></div>	<div id=\\"item-prices-container\\"></div>
+R7144	Item Prices	أسعار الصنف
+R7145	Variant Of	البديل من
+R7146	Maintain Stock	منتج يخزن
+R7147	Standard Selling Rate	مستوى البيع السعر
+R7148	Asset Naming Series	سلسلة تسمية الأصول
+R7149	Barcodes	الباركود
+R7150	End of Life	نهاية الحياة
+R7151	Valuation Method	طريقة التقييم
+R7152	Auto re-order	إعادة ترتيب تلقائي
+R7153	Batch Number Series	سلسلة رقم الدفعة
+R7154	Has Expiry Date	تاريخ انتهاء الصلاحية
+R7155	Retain Sample	الاحتفاظ عينة
+R7156	Max Sample Quantity	الحد الأقصى لعدد العينات
+R7157	Serial Number Series	المسلسل عدد سلسلة
+R7158	Variant Based On	البديل القائم على
+R7159	Item Attribute	موصفات الصنف
+R7160	Item Defaults	البند الافتراضي
+R7161	Allow Purchase	السماح بالشراء
+R7162	Minimum Order Qty	الحد الأدنى لطلب الكمية
+R7163	Item Supplier	مورد الصنف
+R7164	Foreign Trade Details	تفاصيل التجارة الخارجية
+R7165	Country of Origin	بلد المنشأ
+R7166	Allow Sales	السماح بالمبيعات
+R7167	Max Discount (%)	أقصى خصم (%)
+R7168	Customer Items	منتجات العميل
+R7169	Default BOM	الافتراضي BOM
+R7170	Is Subcontracted Item	بند متعاقد عليه من الباطن
+R7171	Customer Code	رمز العميل
+R7172	Total Projected Qty	توقعات مجموع الكمية
+R7173	Default Item Manufacturer	الشركة المصنعة الافتراضية للعنصر
+R7174	Create Grouped Asset	إنشاء أصول مجمعة
+R7175	Allow Negative Stock	السماح بالقيم السالبة للمخزون
+R7176	Inventory Settings	إعدادات المخزون
+R7177	Item has variants.	البند لديه متغيرات.
+R7178	Attributes	سمات
+R7179	Variant Items	العناصر المتغيرة
+R7180	Variant Attribute Error	خطأ في سمة المتغير
+R7181	Serial Nos Exist	الأرقام التسلسلية موجودة
+R7182	Invalid Valuation Method	طريقة تقييم غير صالحة
+R7183	Enable Auto Re-Order	تمكين إعادة الطلب التلقائي
+R7184	Updating Variants...	جارٍ تحديث المتغيرات ...
+R7185	Invalid Item Defaults	القيم الافتراضية للعناصر غير صالحة
+R7186	Stock Reconciliations	تسويات المخزون
+R7187	Stock Reconciliation	جرد المخزون
+R7188	Cannot Merge	لا يمكن الدمج
+R7189	Item Variants updated	تم تحديث متغيرات العنصر
+R7190	Groups	مجموعات
+R7191	Traceability	التتبع
+R7192	Stock Movement	حركة الأسهم
+R7193	Standard Cost	التكلفة المعيارية
+R7194	Sales & Purchase	مبيعات ومشتريات
+R7195	Batch Tracked	متتبع بالدفعة
+R7196	Serialized	مُسلسل
+R7197	Alternative Item Code	رمز الصنف البديل
+R7198	Two-way	في اتجاهين
+R7199	Alternative Item Name	اسم الصنف البديل
+R7200	Item Alternative	الصنف البديل
+R7201	Attribute Name	السمة اسم
+R7202	Numeric Values	قيم رقمية
+R7203	From Range	من المدى
+R7204	Increment	الزيادة
+R7205	To Range	تتراوح
+R7206	Item Attribute Values	قيم سمة العنصر
+R7207	Attribute Value	السمة القيمة
+R7208	Abbreviation	اسم مختصر
+R7209	Item Attribute Value	قيمة مواصفة الصنف
+R7210	Barcode Type	نوع الباركود
+R7211	CODE-39	الرمز 39
+R7212	EAN	EAN
+R7213	EAN-13	EAN-13
+R7214	EAN-8	EAN-8
+R7215	GS1	GS1
+R7216	GTIN	GTIN
+R7217	GTIN-14	GTIN-14
+R7218	ISBN	رقم الكتاب المعياري الدولي (ISBN)
+R7219	ISBN-10	ISBN-10
+R7220	ISBN-13	ISBN-13
+R7221	ISSN	ISSN
+R7222	JAN	يناير
+R7223	PZN	PZN
+R7224	UPC	رمز المنتج العالمي (UPC)
+R7225	UPC-A	UPC-A
+R7226	Item Barcode	باركود الصنف
+R7227	Ref Code	الرمز المرجعي
+R7228	Item Customer Detail	تفاصيل العميل لهذا البند
+R7229	Sales Defaults	القيم الافتراضية للمبيعات
+R7230	Default Discount Account	حساب الخصم الافتراضي
+R7231	Deferred Accounting Defaults	حالات التخلف عن سداد المحاسبة المؤجلة
+R7232	Default COGS Account	حساب تكلفة البضاعة المباعة الافتراضي
+R7233	Inventory Account Currency	عملة حساب المخزون
+R7234	Item Default	البند الافتراضي
+R7235	Purchase Defaults	المشتريات الافتراضية
+R7236	Default Supplier	المورد الافتراضي
+R7237	Default Expense Account	حساب المصروفات الافتراضي
+R7238	Daily Yield (%)	العائد اليومي (%)

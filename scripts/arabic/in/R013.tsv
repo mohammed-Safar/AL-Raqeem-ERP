@@ -1,0 +1,120 @@
+R1440	Totals Row	الصف الكلي
+R1441	Totals	المجاميع
+R1442	New Report name	اسم التقرير الجديد
+R1443	Save As	حفظ باسم
+R1444	Filters:	عوامل التصفية:
+R1445	Show Totals	مشاهدة المجاميع
+R1446	Toggle Chart	تبديل الرسم البياني
+R1447	Translate values	ترجمة القيم
+R1448	Report:	أبلغ عن:
+R1449	Select Column	حدد العمود
+R1450	Configure Chart	تكوين المخطط
+R1451	X Axis Field	X محور الحقل
+R1452	Y Axis Fields	حقول محور Y
+R1453	{0} Chart	{0} الرسم البياني
+R1454	Edit {0}	تحرير {0}
+R1455	Translate {0}	ترجمة {0}
+R1456	Update Translations	تحديث الترجمات
+R1457	Successfully updated translations	تم تحديث الترجمات بنجاح
+R1458	Translations	ترجمة
+R1459	{0} Tree	{0} شجرة
+R1460	Add Child	إضافة الطفل
+R1461	Is Group	هل مجموعة
+R1462	Add {0}	أضِف {0}
+R1463	View List	عرض القائمة
+R1464	Rebuild Tree	إعادة بناء الشجرة
+R1465	Setting	إعداد
+R1466	Drag	يجر
+R1467	Let's Get Started	هيا بنا نبدأ
+R1468	Templates	القوالب
+R1469	Customizations Discarded	تم تجاهل التخصيصات
+R1470	Workspace {0} created	تم إنشاء مساحة العمل {0}
+R1471	No changes made	لم يتم إجراء أي تغييرات
+R1472	New Workspace	مساحة عمل جديدة
+R1473	Manage	يدير
+R1474	Discard?	تجاهل?
+R1475	Deleted!	حذف!
+R1476	Mandatory fields required:	الحقول الإلزامية المطلوبة:
+R1477	Error	خطأ
+R1478	Validation Error	خطئ في التحقق
+R1479	Edit your response	عدّل ردك
+R1480	View your response	اطلع على ردك
+R1481	Expand	وسعت
+R1482	Reset Chart	إعادة تعيين المخطط
+R1483	{0} List	قائمة {0}
+R1484	{0} Report	{0} تقرير
+R1485	No Filters Set	لا توجد فلاتر
+R1486	Less	أقل
+R1487	Last synced {0}	آخر مزامنة {0}
+R1488	N/A	N / A
+R1489	since yesterday	منذ البارحة
+R1490	since last week	منذ الأسبوع الماضي
+R1491	since last month	منذ اخر شهر
+R1492	since last year	منذ السنة الماضية
+R1493	Dismiss	رفض
+R1494	No Data...	لا توجد بيانات...
+R1495	Add New	إضافة جديد
+R1496	Refresh List	تحديث القائمة
+R1497	Add/Update Filter	إضافة/تحديث عامل التصفية
+R1498	onboarding	تأهيل الموظف
+R1499	custom block	كتلة مخصصة
+R1500	Loading Filters...	جارٍ تحميل عوامل التصفية...
+R1501	Add Filters	إضافة عوامل تصفية
+R1502	Onboarding Name	اسم الإعداد
+R1503	Card Links	روابط البطاقات
+R1504	Edit Chart	تعديل المخطط البياني
+R1505	Edit Shortcut	تحرير الاختصار
+R1506	Edit Links	تعديل الروابط
+R1507	Edit Number Card	بطاقة رقم التعديل
+R1508	Edit Onboarding	تعديل عملية الإعداد
+R1509	Edit Quick List	تعديل القائمة السريعة
+R1510	Edit Custom Block	تعديل الكتلة المخصصة
+R1511	New Chart	مخطط جديد
+R1512	New Shortcut	اختصار جديد
+R1513	Count Customizations	عد التخصيصات
+R1514	New Links	روابط جديدة
+R1515	New Number Card	بطاقة رقم جديدة
+R1516	New Onboarding	عملية انضمام جديدة
+R1517	New Quick List	قائمة سريعة جديدة
+R1518	New Custom Block	كتلة مخصصة جديدة
+R1519	Function Based On	وظيفة على أساس
+R1520	chart	خريطة
+R1521	shortcut	الاختصار
+R1522	card	بطاقة
+R1523	Page Break	فاصل صفحات
+R1524	Divider	فاصل
+R1525	ID (name)	الهوية (الاسم)
+R1526	Letter head	ترويسة الرسالة
+R1527	Page numbers	أرقام الصفحات
+R1528	WeasyPrint cannot render:	لا يستطيع WeasyPrint عرض:
+R1529	Spacing (mm)	المسافات (مم)
+R1530	Margins	الهوامش
+R1531	PDF renderer	محرك عرض PDF
+R1532	Remove page break	قم بإزالة فاصل الصفحات
+R1533	{0} fields	{0} الحقول
+R1534	Change Image	تغيير الصورة
+R1535	Upload Image	تحميل صورة
+R1536	auto	تلقائى
+R1537	Colour	اللون
+R1538	Margin	هامش
+R1539	Both	على حد سواء
+R1540	none	لا شيء
+R1541	Add field...	إضافة حقل...
+R1542	e.g. doc.apply_discount	على سبيل المثال، doc.apply_discount
+R1543	Sr No.	الرقم التسلسلي
+R1544	Add column...	إضافة عمود...
+R1545	Edit Print Format	تعديل تنسيق الطباعة
+R1546	Visibility conditions	شروط الرؤية
+R1547	{0} block	كتلة {0}
+R1548	Table styling	تنسيق الجدول
+R1549	Merged table columns	أعمدة الجدول المدمجة
+R1550	Table column conditions	شروط أعمدة الجدول
+R1551	Field Template	نموذج الحقل
+R1552	Search...	بحث...
+R1553	Transition Properties	خصائص الانتقال
+R1554	State Properties	ممتلكات الدولة
+R1555	Workflow Details	تفاصيل سير العمل
+R1556	Workflow Builder	منشئ سير العمل
+R1557	Doc Status Reset	إعادة تعيين حالة المستند
+R1558	Invalid Transition	انتقال غير صالح
+R1559	Workflow updated successfully	تم تحديث سير العمل بنجاح

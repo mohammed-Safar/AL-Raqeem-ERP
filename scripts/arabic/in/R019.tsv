@@ -1,0 +1,120 @@
+R4599	Customer Address	عنوان العميل
+R4600	Contact Person	الشخص الذي يمكن الاتصال به
+R4601	Dunning Amount	مبلغ المطالبة
+R4602	Accounting Details	تفاصيل المحاسبة
+R4603	Printing Settings	إعدادات الطباعة
+R4604	Company Address	عنوان الشركة
+R4605	Conversion Rate	معدل التحويل
+R4606	Address & Contact	معلومات الاتصال والعنوان
+R4607	Dunning	إنذار بالدفع
+R4608	Customer Name	اسم العميل
+R4609	Is Default Language	هي اللغة الافتراضية
+R4610	Dunning Letter Text	طلب نص الرسالة
+R4611	Dunning Letter	رسالة تذكير
+R4612	Creating Journal Entries...	جارٍ إنشاء قيود اليومية...
+R4613	Reversing Journals...	جارٍ عكس دفاتر اليومية...
+R4614	Journal Entries	مدخلات دفتر اليومية
+R4615	Reversal Journal Entries	قيود عكس اليومية
+R4616	Rounding Loss Allowance	مخصص خسائر التقريب
+R4617	Exchange Rate Revaluation	إعادة تقييم سعر الصرف
+R4618	Get Entries	الحصول على مقالات
+R4619	Gain/Loss from Revaluation	الربح/الخسارة من إعادة التقييم
+R4620	Gain/Loss already booked	تم تسجيل الربح/الخسارة بالفعل
+R4621	Total Gain/Loss	إجمالي الربح / الخسارة
+R4622	Gain/Loss	الربح / الخسارة
+R4623	Zero Balance	رصيد صفري
+R4624	Current Exchange Rate	سعر الصرف الحالي
+R4625	New Exchange Rate	سعر صرف جديد
+R4626	Hide If Zero	إخفاء إذا كان الصفر
+R4627	Reverse Sign	عكس الإشارة
+R4628	Include in Charts	أدرج في المخططات
+R4629	Value Type	نوع القيمة
+R4630	Advanced Filtering	التصفية المتقدمة
+R4631	Financial Report Row	صف التقرير المالي
+R4632	Line Reference	مرجع الخط
+R4633	Display Name	اسم العرض
+R4634	Indent Level	مستوى المسافة البادئة
+R4635	Data Source	مصدر البيانات
+R4636	Account Data	بيانات الحسابات
+R4637	Blank Line	خط فارغ
+R4638	Calculated Amount	المبلغ المحسوب
+R4639	Custom API	واجهة برمجة تطبيقات مخصصة
+R4640	Balance Type	نوع التوازن
+R4641	Bold Text	نص غامق
+R4642	Italic Text	نص مائل
+R4643	Missing Company	شركة مفقودة
+R4644	Report Template	نموذج تقرير
+R4645	Missing Required Filter	فلتر مطلوب مفقود
+R4646	Not Supported	غير مدعوم
+R4647	Tip	نصيحة
+R4648	Account Filter	فلتر الحساب
+R4649	API Method Path	مسار طريقة واجهة برمجة التطبيقات
+R4650	Calculation Formula	صيغة الحساب
+R4651	View Account Coverage	عرض تغطية الحساب
+R4652	Cash Flow	التدفق النقدي
+R4653	Custom Financial Statement	بيان مالي مخصص
+R4654	Module (for Export)	وحدة (للتصدير)
+R4655	Report Line Items	بنود التقرير
+R4656	Financial Report Template	نموذج تقرير مالي
+R4657	Warnings	تحذيرات
+R4658	[{0}] {1}	[{0}] {1}
+R4659	Invalid operator '{0}'	معامل غير صالح '{0}'
+R4660	Stock User	عضو المخزن
+R4661	Year Start Date	تاريخ بدء العام
+R4662	Year End Date	تاريخ نهاية العام
+R4663	Auto Created	إنشاء تلقائي
+R4664	Is Short/Long Year	هل السنة قصيرة أم طويلة؟
+R4665	Target Details	تفاصيل الهدف
+R4666	Budgets	الميزانيات
+R4667	Fiscal Year Company	السنة المالية للشركة
+R4668	Against Voucher	مقابل إيصال
+R4669	Voucher Detail No	تفاصيل قسيمة لا
+R4670	Is Opening	هل قيد افتتاحي
+R4671	Is Advance	هل مقدم
+R4672	To Rename	لإعادة تسمية
+R4673	Is Cancelled	هل ملغي
+R4674	Transaction Currency	عملية العملات
+R4675	Transaction Exchange Rate	سعر صرف المعاملات
+R4676	Voucher Subtype	نوع القسيمة الفرعي
+R4677	Dates	التواريخ
+R4678	Transaction Details	تفاصيل الصفقه
+R4679	Amounts	المبالغ
+R4680	Dimensions	أبعاد
+R4681	GL Entry	GL الدخول
+R4682	Missing Cost Center	مركز التكلفة المفقود
+R4683	Get Invoices	الحصول على الفواتير
+R4684	Disburse Loan	صرف القرض
+R4685	Close Loan	إغلاق القرض
+R4686	Bank Charges Account	حساب الرسوم البنكية
+R4687	Invoice Discounting	خصم الفواتير
+R4688	Loan Start Date	تاريخ بدء القرض
+R4689	Loan Period (Days)	مدة القرض (بالأيام)
+R4690	Loan End Date	تاريخ انتهاء القرض
+R4691	Sanctioned	مقرر
+R4692	Disbursed	مصروف
+R4693	Item Manager	مدير الصنف
+R4694	Tax Rates	معدلات الضريبة
+R4695	Item Tax Template	قالب الضريبة البند
+R4696	Purchase	الشراء
+R4697	Pre Sales	قبل البيع
+R4698	Not Applicable	لا ينطبق
+R4699	Item Row	صف العنصر
+R4700	Tax Row	صف الضرائب
+R4701	Tax Amount	مبلغ الضريبة
+R4702	Taxable Amount	المبلغ الخاضع للضريبة
+R4703	Reverse Journal Entry	عكس دخول المجلة
+R4704	Make	سنة الصنع
+R4705	Select Company	حدد الشركة
+R4706	Please select Company	الرجاء اختيار شركة \\n<br>\\nPlease select Company
+R4707	Quick Journal Entry	قيد دفتر يومية سريع
+R4708	Debit Account	حساب مدين
+R4709	Credit Account	حساب دائن
+R4710	Remark	كلام
+R4711	Entry Type	نوع الدخول
+R4712	Asset Disposal	التخلص من الأصول
+R4713	Periodic Accounting Entry	قيد محاسبي دوري
+R4714	Cash Entry	الدخول النقدية
+R4715	Contra Entry	الدخول كونترا
+R4716	Credit Card Entry	إدخال بطاقة إئتمان
+R4717	Excise Entry	الدخول المكوس
+R4718	Opening Entry	فتح مدخل

@@ -1,0 +1,120 @@
+R2826	Sync on Migrate	المزامنة على ترحيل
+R2827	Export Custom Permissions	تصدير ضوابط مخصص
+R2828	Select Module	اختر وحدة
+R2829	Saving Customization...	حفظ التخصيص...
+R2830	Customizations Reset	التخصيصات إعادة تعيين
+R2831	Customize Child Table	تخصيص طاولة الأطفال
+R2832	Is Table	هو الجدول
+R2833	Link Filters	فلاتر الروابط
+R2834	Enter Form Type	أدخل نوع النموذج
+R2835	Data Too Long	البيانات طويلة جدًا
+R2836	Is Custom Field	هو حقل مخصص
+R2837	Property Depends On	الملكية تعتمد على
+R2838	Customize Form Field	تخصيص حقل نموذج
+R2839	Label and Type	التسمية و النوع
+R2840	Synced Fields	الحقول المتزامنة
+R2841	Sync {0} Fields	مزامنة {0} الحقول
+R2842	DocType Layout Field	حقل تخطيط نوع المستند
+R2843	Applied On	تم التطبيق
+R2844	Set Value	تعيين القيمة
+R2845	Field Name	اسم الحقل
+R2846	Property Type	نوع الملكية
+R2847	Row Name	اسم الصف
+R2848	Permission Error	خطأ في الإذن
+R2849	Unsupported {0}: {1}	غير مدعوم {0}: {1}
+R2850	Invalid Filter	فلتر غير صالح
+R2851	label	ملصق
+R2852	Custom Documents	المستندات المخصصة
+R2853	Custom Reports	تقارير مخصصة
+R2854	Updated Successfully	تم التحديث بنجاح
+R2855	Update Value	تحديث القيمة
+R2856	Limit	حد
+R2857	Cancelling {0}	الغاء {0}
+R2858	Updating {0}	تحديث {0}
+R2859	Too Many Documents	عدد كبير جداً من المستندات
+R2860	Submitting {0}	تقديم {0}
+R2861	Show Calendar	إظهار التقويم
+R2862	Start Date Field	تاريخ البدء الحقل
+R2863	End Date Field	حقل تاريخ الانتهاء
+R2864	Re-Run in Console	أعد التشغيل في وحدة التحكم
+R2865	Committed	ملتزم
+R2866	Console Log	سجل وحدة التحكم
+R2867	CSS	CSS
+R2868	JS Message	رسالة جافا سكريبت
+R2869	Custom HTML Block	كتلة HTML مخصصة
+R2870	Header Icon	أيقونة رأس الصفحة
+R2871	Sidebar Items	عناصر الشريط الجانبي
+R2872	Indicator Color	لون المؤشر
+R2873	blue	أزرق
+R2874	gray	رمادي
+R2875	cyan	سماوي
+R2876	darkgrey	الرمادي الداكن
+R2877	green	أخضر
+R2878	grey	رمادي
+R2879	light-blue	أزرق فاتح
+R2880	orange	البرتقالي
+R2881	pink	لون القرنفل
+R2882	purple	أرجواني
+R2883	red	أحمر
+R2884	yellow	الأصفر
+R2885	Dashboard Name	اسم لوحة القيادة
+R2886	Charts	الرسوم البيانية
+R2887	Chart Options	خيارات الرسم البياني
+R2888	Dashboard Manager	مدير لوحة القيادة
+R2889	Standard Not Set	المعيار غير محدد
+R2890	Set Dynamic Filters	تعيين عوامل التصفية الديناميكية
+R2891	Select Date Range	اختر نطاق التاريخ
+R2892	Time Interval	الفاصل الزمني
+R2893	Time Series	السلاسل الزمنية
+R2894	Filters JSON	مرشحات JSON
+R2895	Bar	شريط
+R2896	Donut	الدونات
+R2897	Heatmap	خريطة الحرارة
+R2898	Line	خط
+R2899	Percentage	النسبة المئوية
+R2900	Pie	فطيرة
+R2901	Last Synced On	آخر مزامنة في
+R2902	Group By Type	مجموعة حسب النوع
+R2903	Number of Groups	عدد المجموعات
+R2904	From Date	من تاريخ
+R2905	To Date	إلى تاريخ
+R2906	X Field	X الميدان
+R2907	Y Axis	المحور ص
+R2908	Custom Options	خيارات مخصصة
+R2909	Is Public	عام
+R2910	Year	عام
+R2911	Dynamic Filters JSON	المرشحات الديناميكية JSON
+R2912	Dynamic Filters	مرشحات ديناميكية
+R2913	Use Report Chart	استخدم مخطط التقرير
+R2914	Parent Document Type	نوع المستند الرئيسي
+R2915	Group By	مجموعة من
+R2916	Chart Source	مصدر الرسم البياني
+R2917	Value Based On	القيمة بناء على
+R2918	Dashboard Chart Field	حقل مخطط لوحة القيادة
+R2919	Chart	خريطة
+R2920	Full	ممتلئ
+R2921	Half	نصف
+R2922	Dashboard Chart Link	لوحة الرسم البياني رابط
+R2923	Source Name	اسم المصدر
+R2924	Timeseries	السلاسل الزمنية
+R2925	Chart Configuration	تكوين الرسم البياني
+R2926	Dashboard Settings	اعدادات اللوحة الرئيسية
+R2927	Parent Icon	أيقونة الوالدين
+R2928	External	خارجي
+R2929	Workspace Sidebar	شريط جانبي لمساحة العمل
+R2930	Icon Image	صورة أيقونة
+R2931	Restrict Removal	تقييد الإزالة
+R2932	Background Color	لون الخلفية
+R2933	Idx	IDX
+R2934	Logo URL	رابط الشعار
+R2935	Icon Type	نوع الأيقونة
+R2936	Desktop Layout	تخطيط سطح المكتب
+R2937	Visit Desktop	قم بزيارة سطح المكتب
+R2938	Icon Style	نمط الأيقونة
+R2939	Solid	صلب
+R2940	Subtle	دقيق
+R2941	Desktop Settings	إعدادات سطح المكتب
+R2942	title	عنوان
+R2943	Participants	المشاركين
+R2944	Add Contacts	اضف جهات اتصال
+R2945	Add Participants	أضف مشاركين

@@ -1,0 +1,120 @@
+R6999	Upper Income	أعلى دخل
+R7000	Products	المنتجات
+R7001	Sub Assemblies	المجمعات الفرعية
+R7002	Consumable	مستهلك
+R7003	Material Receipt	أستلام مواد
+R7004	Repack	أعد حزم
+R7005	Creating your company	جارٍ إنشاء شركتك
+R7006	Applying recommended settings	جارٍ تطبيق الإعدادات الموصى بها
+R7007	Personalizing your setup	جارٍ تخصيص الإعداد الخاص بك
+R7008	Rename Tool	إعادة تسمية أداة
+R7009	Incoming Call Settings	إعدادات المكالمات الواردة
+R7010	Voice Call Settings	إعدادات المكالمات الصوتية
+R7011	Call Log	سجل المكالمات
+R7012	Telephony Call Type	نوع المكالمة الهاتفية
+R7013	Item Variant	متغير الصنف
+R7014	Delivery	تسليم
+R7015	Appointment Booking	حجز المواعيد
+R7016	Stock Reposting	إعادة ترحيل المخزون
+R7017	Active Customers	العملاء النشطون
+R7018	Active Suppliers	الموردون النشطون
+R7019	Total Warehouses	توتال ويرهاوسز
+R7020	Top Customers	أكبر العملاء
+R7021	Total Stock Value	إجمالي قيمة الأسهم
+R7022	Move Item	حرك بند
+R7023	Available {0}	متاح {0}
+R7024	Stock Value	قيمة المخزون
+R7025	Select Target Warehouse	حدد مستودع الهدف
+R7026	New Batch Qty	جديد دفعة الكمية
+R7027	Split Batch	تقسيم دفعة
+R7028	Recalculate Batch Qty	إعادة حساب كمية الدفعة
+R7029	Stock Levels	مستوى المخزون
+R7030	Batch Description	وصف الباتش
+R7031	Batch Details	تفاصيل الدفعة
+R7032	Batch Quantity	كمية الدفعة
+R7033	Batch UOM	دفعة UOM
+R7034	Qty To Produce	الكمية المطلوب إنتاجها
+R7035	Use Batch-wise Valuation	استخدم التقييم على أساس الدفعات
+R7036	Batch	الدفعات
+R7037	Batch ID	هوية الباتش
+R7038	Parent Batch	دفعة الأم
+R7039	Manufacturing Date	تاريخ التصنيع
+R7040	Batch Expiry Date	تاريخ انتهاء صلاحية الدفعة
+R7041	Expiry Date Mandatory	تاريخ الانتهاء إلزامي
+R7042	Buy	الشراء
+R7043	Empty	فارغة
+R7044	Expiring Soon	تنتهي قريبًا
+R7045	Recalculate Values	إعادة حساب القيم
+R7046	Bin Values Recalculated	تمت إعادة حساب قيم Bin
+R7047	Reserved Inventory	المخزون المحجوز
+R7048	Bin	صندوق
+R7049	Tariff Number	عدد التعرفة
+R7050	Customs Tariff Number	رقم التعريفة الجمركية
+R7051	Shipment	شحنة
+R7052	Delivery Trip	رحلة التسليم
+R7053	Packing Slip	قائمة بمحتويات الشحنة
+R7054	Print Without Amount	طباعة بدون قيمة
+R7055	Return Issued	تم إصدار الإرجاع
+R7056	% Installed	% مثبت
+R7057	Installation Status	حالة التركيب
+R7058	Excise Page Number	رقم صفحة الضريبة
+R7059	Inter Company Reference	بين شركة مرجع
+R7060	% Returned	% تم إرجاعه
+R7061	Issue Credit Note	إصدار إشعار الائتمان
+R7062	Billing Address Name	اسم عنوان تقديم الفواتير
+R7063	Transporter Info	نقل معلومات
+R7064	Transport Receipt No	إيصالات النقل
+R7065	Vehicle No	رقم المركبة
+R7066	Transporter Name	نقل اسم
+R7067	Driver Name	اسم السائق
+R7068	Transport Receipt Date	تاريخ استلام النقل
+R7069	Packing Slip(s) cancelled	تم إلغاء قائمة الشحنة
+R7070	Shipments	شحنات
+R7071	Create Delivery Trip	استحداث رحلة تسليم
+R7072	Against Sales Order	مقابل طلب مبيعات
+R7073	Against Sales Invoice	مقابل فاتورة المبيعات
+R7074	Incoming Rate	معدل الواردة
+R7075	Packed Qty	الكمية المعبأة
+R7076	Dispatch Settings	إعدادات الإرسال
+R7077	Dispatch Notification Template	قالب إعلام الإرسال
+R7078	Dispatch Notification Attachment	مرفق إعلام الإرسال
+R7079	Send with Attachment	إرسال مع المرفقات
+R7080	Delivery Settings	إعدادات التسليم
+R7081	Contact Information	معلومات الاتصال
+R7082	Email sent to	تم ارسال الايميل الي
+R7083	Dispatch Information	معلومات الإرسال
+R7084	Distance	مسافه: بعد
+R7085	Estimated Arrival	الوصول المتوقع
+R7086	Delivery Stop	توقف التسليم
+R7087	Address Name	اسم العنوان
+R7088	Locked	مغلق
+R7089	Visited	زار
+R7090	Order Information	معلومات الطلب
+R7091	Get stops from	احصل على نقاط التوقف من
+R7092	Departure Time	وقت المغادرة
+R7093	Delivery Stops	توقف التسليم
+R7094	Optimize Route	تحسين الطريق
+R7095	In Transit	في مرحلة انتقالية
+R7096	Driver Address	عنوان السائق
+R7097	Driver Email	سائق البريد الإلكتروني
+R7098	Delivery Details	تفاصيل التسليم
+R7099	Total Estimated Distance	مجموع المسافة المقدرة
+R7100	Distance UOM	المسافة UOM
+R7101	Delete Dimension	حذف البعد
+R7102	Source Fieldname	اسم حقل المصدر
+R7103	Field Mapping	رسم الخرائط الميدانية
+R7104	Type of Transaction	نوع المعاملة
+R7105	Fetch Value From	استرجاع القيمة من
+R7106	Conditional Rule Examples	أمثلة على القواعد الشرطية
+R7107	Mandatory Section	القسم الإلزامي
+R7108	Validate Negative Stock	التحقق من صحة المخزون السلبي
+R7109	Dimension Details	تفاصيل الأبعاد
+R7110	Apply to Document	تطبيق على المستند
+R7111	 Is Child Table	 هل هو جدول فرعي
+R7112	Conditional Rule	القاعدة الشرطية
+R7113	Rejected 	مرفوض 
+R7114	Search values...	البحث عن القيم...
+R7115	Invalid Attribute Values	قيم السمات غير صالحة
+R7116	Create Variants	إنشاء المتغيرات
+R7117	Make {0} Variant	إنشاء نسخة {0}
+R7118	Make {0} Variants	إنشاء متغيرات {0}

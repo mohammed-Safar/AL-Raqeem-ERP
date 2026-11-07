@@ -1,0 +1,120 @@
+R2946	Repeat this Event	كرر هذا الحدث
+R2947	Starts on	يبدأ يوم
+R2948	Ends on	ينتهي في
+R2949	Repeat On	كرر على
+R2950	Half Yearly	نصف سنوي
+R2951	Repeat Till	تكرار حتى
+R2952	Event Participants	المشاركون في الحدث
+R2953	Google Calendar	تقويم جوجل
+R2954	Google Calendar ID	معرف تقويم Google
+R2955	Sender	مرسل
+R2956	via Google Meet	عبر جوجل ميت
+R2957	Add Video Conferencing	إضافة مؤتمرات الفيديو
+R2958	Google Meet Link	رابط جوجل ميت
+R2959	Reference Doc	المستند المرجعي
+R2960	Attending	الحضور
+R2961	Maybe	ربما
+R2962	Event Category	فئة الحدث
+R2963	Sent/Received Email	البريد المرسل / المستلم
+R2964	Interval	الفاصل الزمني
+R2965	Event Notifications	إشعارات الأحداث
+R2966	Show Tour	جولة تعريفية
+R2967	UI Tour	جولة واجهة المستخدم
+R2968	Page Route	مسار الصفحة
+R2969	Select Workspace	حدد مساحة العمل
+R2970	Select Page	اختر الصفحة
+R2971	Select List View	عرض قائمة التحديد
+R2972	Map	خريطه
+R2973	Kanban	لوحة المهام
+R2974	Inbox	صندوق الوارد
+R2975	Select Report	حدد التقرير
+R2976	Track Steps	تتبع الخطوات
+R2977	New Document Form	نموذج مستند جديد
+R2978	Form Tour	تشكيل
+R2979	Save on Completion	وفر عند الانتهاء
+R2980	Include Name Field	تضمين حقل الاسم
+R2981	Is Table Field	حقل جدولي
+R2982	Hidden Fields	الحقول الخفية
+R2983	Child Doctype	نوع المستند الفرعي
+R2984	Element Selector	محدد العناصر
+R2985	Parent Element Selector	محدد العنصر الأب
+R2986	Next Form Tour	جولة النموذج التالي
+R2987	Hide Buttons	إخفاء الأزرار
+R2988	Next on Click	انقر التالي
+R2989	Popover Element	عنصر البوبون
+R2990	Offset X	إزاحة X
+R2991	Offset Y	إزاحة Y
+R2992	Modal Trigger	مشغل مشروط
+R2993	Form Tour Step	جولات سياحية
+R2994	Position	موضع
+R2995	Left Bottom	أسفل اليسار
+R2996	Left Center	وسط اليسار
+R2997	Mid Center	منتصف المركز
+R2998	Right Bottom	أسفل اليمين
+R2999	Right Center	وسط اليمين
+R3000	Next Step Condition	شرط الخطوة التالية
+R3001	Has Next Condition	لديه الشرط التالي
+R3002	Global Search DocType	البحث العالمي DocType
+R3003	Search Priorities	أولويات البحث
+R3004	Show Board	عرض اللوحة
+R3005	Creation	الخلق
+R3006	Archived	أرشفة
+R3007	Order	طلب
+R3008	Kanban Board Column	عمود لوح كانبان
+R3009	Filter Name	اسم الفلتر
+R3010	Disable Count	تعطيل العد
+R3011	Disable Sidebar Stats	تعطيل إحصائيات الشريط الجانبي
+R3012	Disable Auto Refresh	تعطيل التحديث التلقائي
+R3013	Disable Comment Count	تعطيل عداد التعليقات
+R3014	Allow Bulk Editing	السماح بالتحرير الجماعي
+R3015	Disable Scrolling	تعطيل التمرير
+R3016	Show Tags	أضهر العلامات
+R3017	Is Complete	كاملة
+R3018	Read mode	وضع القراءة
+R3019	Edit mode	وضع التحرير
+R3020	Expire Notification On	تنتهي الإعلام على
+R3021	Seen By	تمت رؤيته بواسطة
+R3022	Seen By Table	ينظر من خلال الجدول
+R3023	Note Seen By	ملاحظة يراها
+R3024	Open Reference Document	افتح مستند مرجعي
+R3025	From User	من المستخدم
+R3026	Attached File	ملف مرفق
+R3027	Attachment Link	رابط المرفقات
+R3028	Email Header	رأس البريد الإلكتروني
+R3029	Source Document Type	نوع المستند المصدر
+R3030	Source Document Name	اسم المستند المصدر
+R3031	Enable System Notification	تفعيل إعلام النظام
+R3032	Open Documents	المستندات المفتوحة
+R3033	Enable Email Notifications	تمكين إشعارات البريد الإلكتروني
+R3034	Mentions	يذكر
+R3035	Document Share	مشاركة المستند
+R3036	Event Reminders	رسائل التذكير بالأحداث
+R3037	Notification Subscribed Document	وثيقة الاشتراك المكتوبة
+R3038	Show Percentage Stats	إظهار إحصائيات النسبة المئوية
+R3039	Stats Time Interval	الفاصل الزمني للإحصائيات
+R3040	Dynamic Filters Section	قسم المرشحات الديناميكية
+R3041	Custom Configuration	التكوين المخصص
+R3042	Filters Configuration	تكوين المرشحات
+R3043	Show Full Number	إظهار الرقم الكامل
+R3044	Maximum	أقصى
+R3045	Minimum	الحد الأدنى
+R3046	Filters Section	قسم المرشحات
+R3047	Card	بطاقة
+R3048	Number Card Link	رابط بطاقة الرقم
+R3049	Onboarding Permission	إذن على متن الطائرة
+R3050	Is Skipped	تم تخطي
+R3051	Value to Validate	قيمة للتحقق من صحتها
+R3052	Report Description	وصف تقرير
+R3053	Report Reference Doctype	تقرير مرجع Doctype
+R3054	Example: #Tree/Account	مثال: # شجرة / حساب
+R3055	Callback Title	عنوان رد الاتصال
+R3056	Callback Message	رسالة رد
+R3057	Validate Field	تحقق من صحة الحقل
+R3058	Show Full Form?	إظهار الشكل الكامل؟
+R3059	Intro Video URL	رابط الفيديو التعريفي
+R3060	Action Label	تسمية الإجراء
+R3061	Route Options	خيارات المسار
+R3062	Onboarding Step	خطوة Onboarding
+R3063	Create Entry	إنشاء الدخول
+R3064	Go to Page	انتقل إلى صفحة
+R3065	Update Settings	إعدادات التحديث

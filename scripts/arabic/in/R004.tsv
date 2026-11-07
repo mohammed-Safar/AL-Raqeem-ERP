@@ -1,0 +1,120 @@
+R360	Appointment Created Successfully	تم إنشاء الموعد بنجاح
+R361	Select Time	حدد الوقت
+R362	Appointment Scheduling Disabled	تم تعطيل جدولة المواعيد
+R363	Frequently Read Articles	اقرأ المقالات بشكل متكرر
+R364	Not Permitted	لا يسمح
+R365	Session Expired	انتهت الجلسة
+R366	Not Found	لم يتم العثور على
+R367	Server Error	خطأ في الخادم
+R368	Invalid Request	طلب غير صالح
+R369	Field	حقل
+R370	Document Type	نوع الوثيقة
+R371	Priority	أفضلية
+R372	Disabled	معطل
+R373	Description	وصف
+R374	Day	يوم
+R375	User	المستعمل
+R376	Customize Form	تخصيص نموذج
+R377	Notification	إعلام
+R378	Subject	موضوع
+R379	Message	رسالة
+R380	Print Format	تنسيق الطباعة
+R381	Status	الحالة
+R382	Completed	أكتمل
+R383	Active	نشط
+R384	Auto Repeat	تكرار تلقائي
+R385	Reference Document	وثيقة مرجعية
+R386	Start Date	تاريخ البدء
+R387	End Date	نهاية التاريخ
+R388	Frequency	تكرر
+R389	Daily	يوميا
+R390	Weekly	الأسبوعية
+R391	Monthly	شهريا
+R392	Yearly	سنويا
+R393	Quarterly	فصلي
+R394	Half-yearly	نصف سنوي
+R395	Note	ملاحظات
+R396	Next Scheduled Date	الموعد المحدد التالي
+R397	Cancelled	ألغيت
+R398	Before	قبل
+R399	After	بعد
+R400	Actions	الإجراءات
+R401	Settings	إعدادات
+R402	Title	اللقب
+R403	Enabled	تمكين
+R404	Steps	خطوات
+R405	Skipped	تم التخطي
+R406	Success	نجاح
+R407	Condition	الحالة
+R408	General	عام
+R409	Done	مُنجز
+R410	Document	وثيقة
+R411	Value	القيمة
+R412	Document Name	اسم المستند
+R413	Remind At	تذكير في
+R414	{0} ({1})	{0} ({1})
+R415	Home	الصفحة الرئيسية
+R416	Report	تقرير
+R417	Dashboard	لوحة القيادة
+R418	Kanban Board	لوح كانبان
+R419	Calendar View	عرض التقويم
+R420	Page	الصفحة
+R421	Workspace	مساحة العمل
+R422	DocType	نوع المستند
+R423	Event	حدث
+R424	Modules	وحدات برمجية
+R425	Package	طَرد
+R426	Notification Settings	إعدادات الإشعار
+R427	Reports	تقارير
+R428	Background Jobs	خلفية عن الخبرات السابقة
+R429	Read	قرأ
+R430	Links	الروابط
+R431	Email Address	البريد الالكتروني
+R432	Phone	هاتف
+R433	Reference	مرجع
+R434	Address	عنوان
+R435	All	الكل
+R436	Other	آخر
+R437	Shipping	الشحن
+R438	Billing	الفواتير
+R439	Personal	الشخصية
+R440	Open	فتح
+R441	Image	صورة
+R442	Designation	تعيين
+R443	Middle Name	الاسم الأوسط
+R444	Mobile No	رقم الجوال
+R445	Full Name	الاسم الكامل
+R446	Contact	اتصال
+R447	First Name	الاسم الأول
+R448	Last Name	اسم العائلة
+R449	Error	خطأ
+R450	File Type	نوع الملف
+R451	Report Name	تقرير الاسم
+R452	Date	تاريخ
+R453	Login	دخول
+R454	Logout	تسجيل خروج
+R455	Action	حدث
+R456	Rows Added	واضاف الصفوف
+R457	Rows Removed	الصفوف إزالتها
+R458	Date Range	نطاق التاريخ
+R459	Module	وحدة
+R460	Comment	تعليق
+R461	Updated	محدّث
+R462	Label	ملصق
+R463	Workflow	سير العمل
+R464	Edit	تصحيح
+R465	Deleted	حذف
+R466	Like	مثل
+R467	Submitted	مسجلة
+R468	Created	أنشأ
+R469	Shared	مشتركة
+R470	Published	نشرت
+R471	Content	محتوى
+R472	Create	انشاء
+R473	Reference Doctype	مرجع Doctype
+R474	Re: {0}	رد: {0}
+R475	Close	أغلق
+R476	Reply	رد
+R477	Move	حرك
+R478	CC	نسخة
+R479	BCC	بي سي سي

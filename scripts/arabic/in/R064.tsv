@@ -1,0 +1,120 @@
+R3906	Meta description	وصف الميتا
+R3907	Meta image	صورة ميتا
+R3908	Anonymous responses	ردود مجهولة
+R3909	Condition description	وصف الحالة
+R3910	Condition JSON	JSON الشرطي
+R3911	Hide navbar	إخفاء شريط التنقل
+R3912	Hide footer	إخفاء التذييل
+R3913	Allowed embedding domains	نطاقات التضمين المسموح بها
+R3914	Access Control	إعدادات التحكم
+R3915	Web Form	نموذج ويب
+R3916	Mandatory Information missing:	معلومات إلزامية مفقود:
+R3917	Not Published	لم تنشر
+R3918	Max Length	الحد الاقصى للطول
+R3919	Max Value	القيمة القصوى
+R3920	Web Form Field	حقل نموذج الويب
+R3921	Custom Label	ملصق مخصص
+R3922	Display Depends On	العرض يعتمد على
+R3923	Show in filter	اعرض في الفلتر
+R3924	References	المراجع
+R3925	Used	مستخدم
+R3926	Meta Title	عنوان الفوقية
+R3927	Meta Description	ميتا الوصف
+R3928	Meta Image	صورة ميتا
+R3929	Rich Text	نص منسق
+R3930	Page Builder	منشئ الصفحة
+R3931	Show Title	اظهار العنوان
+R3932	Content Type	نوع المحتوى
+R3933	Main Section	القسم العام
+R3934	Main Section (Markdown)	القسم الرئيسي (تخفيض السعر)
+R3935	Main Section (HTML)	القسم الرئيسي (HTML)
+R3936	Insert Style	إدراج نمط
+R3937	Text Align	محاذاة النص
+R3938	Sidebar and Comments	الشريط الجانبي وتعليقات
+R3939	Show Sidebar	مشاهدة الشريط الجانبي
+R3940	Enable Comments	تمكين تعليقات
+R3941	0 is highest	0 أعلى قيمة
+R3942	Header and Breadcrumbs	رأس وفتات الخبز
+R3943	Add Custom Tags	إضافة علامات مخصصة
+R3944	Dynamic Template	قالب ديناميكي
+R3945	Page Building Blocks	كتل إنشاء الصفحة
+R3946	Meta Tags	العلامات الفوقية
+R3947	Dynamic Route	الطريق الديناميكي
+R3948	Context Script	سيناريو السياق
+R3949	Publishing Dates	تواريخ النشر
+R3950	Web Page	صفحة على الإنترنت
+R3951	Slideshow	عرض الشرائح
+R3952	Add Background Image	إضافة صورة خلفية
+R3953	Background Image	صورة الخلفية
+R3954	Section ID	معرف القسم
+R3955	Web Page Block	كتلة صفحة الويب
+R3956	Web Template	قالب الويب
+R3957	Web Template Values	قيم قالب الويب
+R3958	CSS Class	فئة CSS
+R3959	Add Gray Background	أضف خلفية رمادية
+R3960	Add Container	أضف الحاوية
+R3961	Hide Block	إخفاء الحظر
+R3962	Web Page View	عرض صفحة الويب
+R3963	Referrer	المرجع
+R3964	Browser	المستعرض
+R3965	Browser Version	إصدار المستعرض
+R3966	Is Unique	فريد من نوعة
+R3967	Visitor ID	معرف الزائر
+R3968	Navbar	نافبار
+R3969	Table Break	فاصل الجدول
+R3970	Web Template Field	حقل قالب الويب
+R3971	Website Meta Tag	موقع العلامة الوصفية
+R3972	Visit Web Page	زيارة صفحة الويب
+R3973	Website Route Meta	موقع ميتا الطريق
+R3974	Redirect HTTP Status	حالة إعادة التوجيه HTTP
+R3975	Forward Query Parameters	معلمات الاستعلام الأمامي
+R3976	Website Route Redirect	إعادة توجيه مسار الموقع
+R3977	Website Script	نص الموقع البرمجي
+R3978	Please select {0}	الرجاء اختيار {0}
+R3979	View Website	مشاهدة الموقع
+R3980	Title Prefix	عنوان الاختصار
+R3981	Website Theme	شكل الموقع
+R3982	Website Theme Image	موضوع الموقع صورة
+R3983	Brand	العلامة التجارية
+R3984	Brand Image	صورة العلامة التجارية
+R3985	Brand HTML	العلامة التجارية HTML
+R3986	Top Bar Items	قطع الشريط العلوي
+R3987	Banner	الترويسة
+R3988	Banner HTML	راية HTML
+R3989	Footer Items	تذييل العناصر
+R3990	Copyright	حق النشر
+R3991	Hide footer signup	إخفاء التسجيل في أسفل الصفحة
+R3992	Google Analytics ID	جوجل تحليلات ID
+R3993	Login Page	صفحة تسجيل الدخول
+R3994	FavIcon	أيقونة المفضلة
+R3995	Subdomain	مجال فرعي
+R3996	Disable signups	تعطيل عمليات التسجيل
+R3997	Header, Robots	رأس الصفحة، الروبوتات
+R3998	&lt;head&gt; HTML	HTML
+R3999	Robots.txt	ملف robots.txt
+R4000	Route Redirects	إعادة توجيه الطريق
+R4001	Enable Google indexing	تفعيل فهرسة جوجل
+R4002	Indexing refresh token	رمز تحديث الفهرسة
+R4003	Indexing authorization code	رمز تفويض الفهرسة
+R4004	Footer Logo	تذييل الشعار
+R4005	Call To Action	دعوة للعمل
+R4006	Hide Login	إخفاء تسجيل الدخول
+R4007	Navbar Template	قالب نافبار
+R4008	Navbar Template Values	قيم قالب نافبار
+R4009	Footer Template	قالب التذييل
+R4010	Footer Template Values	قيم قالب التذييل
+R4011	Show Language Picker	إظهار منتقي اللغة
+R4012	Account Deletion Settings	إعدادات حذف الحساب
+R4013	Footer "Powered By"	تذييل الصفحة "مدعوم بواسطة"
+R4014	Splash Image	صورة الغلاف
+R4015	Footer Details	تفاصيل التذييل
+R4016	Custom Footer	تذييل مخصص
+R4017	Redirects	إعادة التوجيه
+R4018	Analytics	التحليلات
+R4019	Website Settings	إعدادات الموقع
+R4020	Landing Page	الصفحة المقصودة
+R4021	Log out	تسجيل الخروج
+R4022	Invalid Home Page	الصفحة الرئيسية غير صالحة
+R4023	Website Sidebar Item	موقع الشريط الجانبي البند
+R4024	Fetch Images	جلب الصور
+R4025	Add to table	إضافة إلى الجدول

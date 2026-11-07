@@ -1,0 +1,120 @@
+R960	Table updated	الجدول محدث
+R961	Bulk Edit {0}	تعديل بالجمله {0}
+R962	Delete row	حذف الصف
+R963	Duplicate row	صف مكرر
+R964	Delete {0} rows	حذف {0} صفوف
+R965	Duplicate {0} rows	صفوف مكررة {0}
+R966	of	ل
+R967	First	الأول
+R968	Cannot move row	لا يمكن نقل الصف
+R969	Move To	الانتقال إلى
+R970	Edit	تصحيح
+R971	Configure Columns	تكوين الأعمدة
+R972	Column Width	عرض العمود
+R973	{0} Fields	{0} الحقول
+R974	Select Fields	حدد الحقول
+R975	Editing Row	صف التحرير
+R976	Insert Above	أدخل أعلاه
+R977	Insert Below	أدخل أدناه
+R978	Ctrl + Down	Ctrl + السهم لأسفل
+R979	Ctrl + Up	Ctrl + لأعلى
+R980	ESC	خروج
+R981	Show more details	إظهار مزيد من التفاصيل
+R982	Hide details	إخفاء التفاصيل
+R983	No Results	لا يوجد نتائج
+R984	Added {0} ({1})	وأضاف {0} ({1})
+R985	Set Quantity	ضبط الكمية
+R986	{0} {1} added	تمت إضافة {0} {1}
+R987	{0} added	{0} أضيف
+R988	value	القيمة
+R989	Select {0}	حدد {0}
+R990	Beginning with	بداية من
+R991	More	أكثر
+R992	{0} restricted document	{0} مستند مقيد
+R993	{0} restricted documents	{0} مستندات مقيدة
+R994	Get Items	احصل على البنود
+R995	Make {0}	اصنع {0}
+R996	QZ Tray Failed:	فشل درج QZ:
+R997	New Format Name	اسم التنسيق الجديد
+R998	{0} (New Builder)	{0} (المنشئ الجديد)
+R999	Create copy	إنشاء نسخة
+R1000	With Letter head	مع رئيس رسالة
+R1001	Include filters	تضمين عوامل التصفية
+R1002	Pick Columns	اختيار الأعمدة
+R1003	{0} Name	{0} الاسم
+R1004	New {0}	{0} جديد
+R1005	{1} saved	تم الحفظ {1}
+R1006	Remind Me In	ذكرني في
+R1007	30 minutes	٣٠ دقيقة
+R1008	1 hour	ساعة واحدة
+R1009	4 hours	٤ ساعات
+R1010	1 Day	يوم واحد
+R1011	Create a Reminder	إنشاء تذكير
+R1012	Saving	حفظ
+R1013	Submitting	تقديم
+R1014	Updating	يتم التحديث
+R1015	Amending	المعدل
+R1016	Cancelling	إلغاء
+R1017	{0} is required.	{0} مطلوب.
+R1018	Missing Fields	حقول مفقودة
+R1019	Invalid "mandatory_depends_on" expression	تعبير "mandatory_depends_on" غير صالح
+R1020	Add to ToDo	أضف إلى ToDo
+R1021	Assign to me	تعيين لي
+R1022	Assign To	تكليف إلى
+R1023	Complete By	الكامل من جانب
+R1024	Assign a user	تخصيص مستخدم
+R1025	Assigning...	جاري التعيين...
+R1026	There were errors	كانت هناك أخطاء
+R1027	Created By You	من صنعك
+R1028	Created By {0}	تم إنشاؤه بواسطة {0}
+R1029	Repeats {0}	يكرر {0}
+R1030	Share With	مشاركة مع
+R1031	Share {0} with	مشاركة {0} مع
+R1032	New Address	عنوان جديد
+R1033	Primary Phone	رقم الهاتف الرئيسي
+R1034	Primary Mobile	الهاتف المحمول الأساسي
+R1035	Primary Email	البريد الإلكتروني الرئيسي
+R1036	New Contact	جهة اتصال جديدة
+R1037	Overview	نظرة عامّة
+R1038	Assign	عين
+R1039	Show All	عرض الكل
+R1040	Experimental	تجريبي
+R1041	Feedback	الملاحظات
+R1042	Raw Printing Settings	إعدادات الطباعة الخام
+R1043	commented	علّق
+R1044	Open Communication	التواصل المفتوح
+R1045	Notification sent to	تم إرسال الإشعار إلى
+R1046	Copy Link	نسخ الوصلة
+R1047	Follow	إتبع
+R1048	Unfollow	الغاء المتابعة
+R1049	Unchanged	دون تغيير
+R1050	Updating related fields...	جارٍ تحديث الحقول ذات الصلة...
+R1051	Merge with existing	دمج مع الحالي
+R1052	Not Saved	لم يتم الحفظ
+R1053	Previous Document	المستند السابق
+R1054	Next Document	المستند التالي
+R1055	Jump to field	القفز الى الميدان
+R1056	Show Links	عرض الروابط
+R1057	Toggle Sidebar	تبديل الشريط الجانبي
+R1058	Remind Me	ذكّرني
+R1059	Undo	تراجع
+R1060	Undo last action	التراجع عن الإجراء الأخير
+R1061	Redo	إعادة
+R1062	Repeat	كرر
+R1063	View Audit Trail	عرض سجل التدقيق
+R1064	Edit DocType	تعديل القائمة
+R1065	Documentation	الوثائق
+R1066	Go	اذهب
+R1067	by Role	حسب الدور
+R1068	Current status	الحالة الحالية
+R1069	Next actions	الخطوات التالية
+R1070	Search for icons...	البحث عن الأيقونات...
+R1071	Confirm	أكد
+R1072	No filters found	لم يتم العثور على مرشحات
+R1073	Equals	تساوي
+R1074	List View	عرض منسدل
+R1075	Report View	عرض التقرير
+R1076	Dashboard View	عرض لوحة التحكم
+R1077	Gantt View	عرض جانت
+R1078	Kanban View	عرض كانبان
+R1079	Image View	عرض الصورة

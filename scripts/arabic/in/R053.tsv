@@ -1,0 +1,120 @@
+R2586	Document Unlocked	تم فتح المستند
+R2587	Next Actions	الخطوات التالية
+R2588	First Success Message	رسالة النجاح الأولى
+R2589	Next Actions HTML	العمليات القادمة HTML
+R2590	Action Timeout (Seconds)	مهلة الإجراء (ثانية)
+R2591	Success Action	نجاح العمل
+R2592	OAuth Settings	إعدادات OAuth
+R2593	Refreshing...	يحديث ...
+R2594	Setup Complete	الإعداد كاملة
+R2595	Float Precision	دقة الرقم  العشري
+R2596	Currency Precision	دقة العملة
+R2597	Number of Backups	عدد النسخ الاحتياطية
+R2598	Background Workers	قائمة العمليات
+R2599	Enable Scheduled Jobs	تمكين المهام المجدولة
+R2600	In Days	في الايام
+R2601	Enable Password Policy	تمكين سياسة كلمة المرور
+R2602	Minimum Password Score	الحد الأدنى من كلمة المرور
+R2603	Brute Force Security	القوة الغاشمة للأمن
+R2604	In seconds	في ثوان
+R2605	OTP App	تطبيق كلمة السر الفريدة
+R2606	OTP Issuer Name	اسم جهة مكتب المدعي العام
+R2607	Email Footer Address	تذييل البريد الإلكتروني
+R2608	Enable Onboarding	تمكين Onboarding
+R2609	Encrypt Backups	تشفير النسخ الاحتياطية
+R2610	Email Retry Limit	حد إعادة إرسال البريد الإلكتروني
+R2611	Disable Username/Password Login	تعطيل تسجيل الدخول باستخدام اسم المستخدم/كلمة المرور
+R2612	Rounding Method	طريقة التقريب
+R2613	Banker's Rounding	تقريب المصرفي
+R2614	Banker's Rounding (legacy)	تقريب المصرفيين (النظام القديم)
+R2615	Commercial Rounding	التقريب التجاري
+R2616	Disable Document Sharing	تعطيل مشاركة المستندات
+R2617	Telemetry	القياس عن بعد
+R2618	Welcome Email Template	ترحيب قالب البريد الإلكتروني
+R2619	Reset Password Template	نموذج إعادة تعيين كلمة المرور
+R2620	Allowed File Extensions	امتدادات الملفات المسموح بها
+R2621	Files	الملفات
+R2622	Backups	النسخ الاحتياطية
+R2623	Login Methods	طرق تسجيل الدخول
+R2624	App	تطبيق
+R2625	Default App	التطبيق الافتراضي
+R2626	Default display currency	العملة الافتراضية للعرض
+R2627	Max Report Rows	أقصى عدد من صفوف التقرير
+R2628	API Logging	تسجيل واجهة برمجة التطبيقات
+R2629	Log API Requests	طلبات واجهة برمجة تطبيقات تسجيل الطلبات
+R2630	Always	دائماً
+R2631	Ask	بسأل
+R2632	Never	أبداً
+R2633	OTP SMS Template	نموذج رسالة نصية قصيرة لرمز التحقق لمرة واحدة
+R2634	Disable Product Suggestion	تعطيل اقتراحات المنتجات
+R2635	Sync In Batches	مزامنة على دفعات
+R2636	System Settings	إعدادات النظام
+R2637	Test Data	بيانات الاختبار
+R2638	Test Spanish	اختبار اللغة الإسبانية
+R2639	Translator	مترجم
+R2640	Context	سياق الكلام
+R2641	Contributed	ساهم
+R2642	Contribution Status	حالة المساهمة
+R2643	Verified	التحقق
+R2644	Contribution Document Name	اسم وثيقة المساهمة
+R2645	Translated Text	ترجمة النص
+R2646	Translation	ترجمة
+R2647	Set User Permissions	تعيين صلاحيات المستخدم
+R2648	View Permitted Documents	عرض المستندات المسموح بها
+R2649	View Doctype Permissions	عرض أذونات نوع المستند
+R2650	Reset LDAP Password	إعادة تعيين كلمة مرور LDAP
+R2651	Logout All Sessions	تسجيل الخروج من جميع الجلسات
+R2652	Reset OTP Secret	إعادة تعيين مكتب المدعي العام سر
+R2653	Create User Email	انشاء بريد إلكتروني
+R2654	Impersonate as {0}	انتحال شخصية {0}
+R2655	API Keys	مفاتيح واجهة برمجة التطبيقات
+R2656	API Key	مفتاح API
+R2657	API Secret	كلمة مرور API
+R2658	Basic Info	معلومات أساسية
+R2659	Send Welcome Email	إرسال رسالة ترحيبية
+R2660	User Image	صورة المستخدم
+R2661	Birth Date	تاريخ الميلاد
+R2662	Location	الموقع
+R2663	Banner Image	راية صورة
+R2664	Interests	الإهتمامات او الفوائد
+R2665	Bio	السيرة الذاتية
+R2666	Mute Sounds	كتم الصوتيات
+R2667	Reset Password Key	إعادة تعيين كلمة المرور الرئيسية
+R2668	Redirect URL	إعادة توجيه URL
+R2669	Document Follow	متابعة المستند
+R2670	Allowed In Mentions	سمح في المذكرات
+R2671	User Emails	مراسلات المستخدم
+R2672	Allow Modules	السماح للوحدات النمطية
+R2673	Modules HTML	وحدات HTML
+R2674	Home Settings	الإعدادات الرئيسية
+R2675	User Defaults	المستخدم الافتراضي
+R2676	Simultaneous Sessions	جلسات متزامنة
+R2677	User Type	نوع المستخدم
+R2678	Login After	بعد الدخول
+R2679	Login Before	تسجيل الدخول قبل
+R2680	Restrict IP	تقييد IP
+R2681	Last Login	آخر تسجيل دخول
+R2682	Last IP	أخر IP
+R2683	Last Active	آخر تواجد في
+R2684	Last Known Versions	المعروفة إصدارات مشاركة
+R2685	Third Party Authentication	إثبات أصالة الطرف الثالث
+R2686	Social Logins	تسجيل الدخول الاجتماعي
+R2687	API Access	الوصول إلى API
+R2688	Generate Keys	توليد مفاتيح
+R2689	Desk Theme	تصميم المكاتب
+R2690	User Details	تفاصيل المستخدم
+R2691	Roles & Permissions	الأدوار والصلاحيات
+R2692	Desk Settings	إعدادات المكتب
+R2693	Onboarding Status	حالة الانضمام
+R2694	Default Workspace	مساحة العمل الافتراضية
+R2695	Code Editor Type	نوع محرر الأكواد
+R2696	emacs	إيماكس
+R2697	vim	همة
+R2698	vscode	في إس كود
+R2699	Navigation Settings	إعدادات التنقل
+R2700	Search Bar	شريط البحث
+R2701	List Settings	إعدادات القائمة
+R2702	Sidebar	الشريط الجانبي
+R2703	Bulk Actions	الإجراءات الجماعية
+R2704	View Switcher	مبدل العرض
+R2705	Sessions	الجلسات

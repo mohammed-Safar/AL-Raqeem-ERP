@@ -1,0 +1,120 @@
+R5679	Customer Credit Balance	رصيد العميل
+R5680	Registers & Profitability	السجلات والربحية
+R5681	Tax & Compliance	الضرائب والامتثال
+R5682	UAE VAT 201	ضريبة القيمة المضافة في الإمارات العربية المتحدة 201
+R5683	VAT Audit Report	تقرير تدقيق ضريبة القيمة المضافة
+R5684	IRS 1099	مصلحة الضرائب 1099
+R5685	Electronic Invoice Register	تسجيل الفاتورة الإلكترونية
+R5686	Invoicing & Payments	الفوترة والمدفوعات
+R5687	Bank Reconciliation (old)	تسوية بنكية (قديم)
+R5688	Plaid Settings	إعدادات منقوشة
+R5689	Reconciliation	التسوية
+R5690	COA Importer	مستورد دليل الحسابات
+R5691	Opening Invoice Tool	أداة الفاتورة الافتتاحية
+R5692	FX Revaluation	إعادة تقييم العملات الأجنبية
+R5693	Ledger Tools	أدوات دفتر الأستاذ
+R5694	Share Management	إدارة المشاركة
+R5695	Deduction Certificate	شهادة خصم
+R5696	Total Outgoing Bills	إجمالي الفواتير الصادرة
+R5697	Total Incoming Bills	إجمالي الفواتير الواردة
+R5698	Total Incoming Payment	إجمالي الدفع الوارد
+R5699	Financial Reports	التقارير المالية
+R5700	Total Outgoing Payment	إجمالي الدفع الصادر
+R5701	Invoicing	الفوترة
+R5702	Bank Balance	الرصيد المصرفي
+R5703	Asset Repair	إصلاح الأصول
+R5704	Sell	باع
+R5705	Split	انشق، مزق
+R5706	Work In Progress	التقدم في العمل
+R5707	Receipt	إيصال
+R5708	Default Finance Book	دفتر المالية الافتراضي
+R5709	Purchase Receipt Item	اصناف استلام الشراء
+R5710	Maintenance	الصيانة
+R5711	Invalid document type	نوع المستند غير صالح
+R5712	Stock Items	أصناف المخزن
+R5713	Services	الخدمات
+R5714	Accumulated Depreciation Account	حساب الاستهلاك المتراكم
+R5715	Depreciation Expense Account	حساب نفقات الاهلاك
+R5716	Maintenance Status	حالة الصيانة
+R5717	Asset Movement	حركة الأصول
+R5718	Purpose	غرض
+R5719	Tree Details	تفاصيل شجرة
+R5720	Latitude	خط العرض
+R5721	Longitude	خط الطول
+R5722	Area	منطقة
+R5723	Bulk Transaction Log	سجل المعاملات المجمعة
+R5724	Request for Quotation	طلب للحصول على الاقتباس
+R5725	Subcontracting Settings	إعدادات التعاقد من الباطن
+R5726	Transaction Settings	إعدادات المعاملات
+R5727	Each Transaction	كل عملية
+R5728	Supplier Defaults	الإعدادات الافتراضية للمورد
+R5729	Blanket Orders	الطلبات الإطارية
+R5730	Zero-Quantity Line Items	بنود السطور بكمية صفر
+R5731	Purchase Invoice Settings	إعدادات فاتورة الشراء
+R5732	Pricing	التسعير
+R5733	Configure Series	تكوين السلسلة
+R5734	Naming Series options	خيارات سلسلة التسمية
+R5735	Supplier Naming By	المورد تسمية بواسطة
+R5736	Default Supplier Group	مجموعة الموردين الافتراضية
+R5737	Customer Number	رقم العميل
+R5738	Subcontracted	متعاقد عليه من الباطن
+R5739	To Bill	على فاتورة
+R5740	To Receive	للأستلام
+R5741	Return of Components	إعادة المكونات
+R5742	Creating Stock Entry	إنشاء إدخال المخزون
+R5743	Select Finished Good	اختر المنتج النهائي
+R5744	Finished Good	جيد جيد
+R5745	Hold	معلق
+R5746	Deliver (Dropship)	تسليم (شحن مباشر)
+R5747	Re-open	اعادة فتح
+R5748	Material to Supplier	مواد للمورد
+R5749	Subcontracting Order	أمر التعاقد من الباطن
+R5750	Internal Sales Order	أمر بيع داخلي
+R5751	Supplier Quotation	التسعيرة من المورد
+R5752	Tools	أدوات
+R5753	Reason for Hold	سبب الانتظار
+R5754	Qty Change	تغيير الكمية
+R5755	Quantities updated successfully.	تم تحديث الكميات بنجاح.
+R5756	Set Reserve Warehouse	تعيين مستودع الاحتياطي
+R5757	Order Status	حالة الطلب
+R5758	Billing Address Details	تفاصيل عنوان الفوترة
+R5759	Advance Payment Status	حالة الدفع المسبّق
+R5760	Not Initiated	لم يبدأ
+R5761	Fully Paid	مدفوع بالكامل
+R5762	Dispatch Address Details	تفاصيل عنوان الشحن
+R5763	MPS	MPS
+R5764	Required By	المطلوبة من قبل
+R5765	Order Confirmation No	رقم تأكيد الطلب
+R5766	Order Confirmation Date	تاريخ تأكيد الطلب
+R5767	Customer Mobile No	رقم محمول العميل
+R5768	Customer Contact Email	البريد الالكتروني للعميل
+R5769	Supplier Contact	جهة اتصال المورد
+R5770	Supplier Address Details	تفاصيل عنوان المورد
+R5771	Contact Name	اسم جهة الاتصال
+R5772	Contact Mobile No	الاتصال المحمول لا
+R5773	Shipping Address Details	تفاصيل عنوان الشحن
+R5774	Terms & Conditions	الشروط والأحكام
+R5775	% Received	% تم استلامه
+R5776	% Billed	% تمت الفوترة
+R5777	Purchase Orders	طلبات الشراء
+R5778	Submit Action Failed	فشل إرسال الإجراء
+R5779	Caution	الحذر
+R5780	Invalid name	اسم غير صالح
+R5781	Related	ذات صلة
+R5782	Sub-contracting	التعاقد من الباطن
+R5783	Advance Payment	دفعة مقدمة
+R5784	Supplier Part Number	رقم قطعة المورد
+R5785	Expected Delivery Date	تاريخ التسليم المتوقع
+R5786	Last Purchase Rate	آخر سعر الشراء
+R5787	Warehouse Settings	إعدادات المستودعات
+R5788	Supplier Quotation Item	المورد اقتباس الإغلاق
+R5789	Blanket Order	أمر بطانية
+R5790	Blanket Order Rate	بطالة سعر النظام
+R5791	Against Blanket Order	ضد بطانية النظام
+R5792	Production Plan	خطة الإنتاج
+R5793	Production Plan Item	خطة إنتاج السلعة
+R5794	Finished Good Qty	جودة جيدة نهائية
+R5795	Job Card	بطاقة عمل
+R5796	Subcontracted Quantity	الكمية المتعاقد عليها من الباطن
+R5797	Stock Uom	وحدة قياس السهم
+R5798	Reserve Warehouse	احتياطي مستودع

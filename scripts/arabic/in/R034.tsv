@@ -1,0 +1,120 @@
+R6399	From Currency	من العملة
+R6400	To Currency	إلى العملات
+R6401	Customer Group Name	أسم فئة العميل
+R6402	Parent Customer Group	مجموعة عملاء أولياء الأمور
+R6403	Academics User	المستخدمين الأكادميين
+R6404	Parent Department	قسم الآباء
+R6405	New Department	القسم الجديدة
+R6406	Driving License Categories	فئات رخصة القيادة
+R6407	Driving License Category	رخصة قيادة الفئة
+R6408	Fleet Manager	مدير قافلة المركبات
+R6409	Suspended	موقوف
+R6410	Transporter	الناقل
+R6411	Cellphone Number	رقم الهاتف المحمول
+R6412	License Details	تفاصيل الترخيص
+R6413	License Number	رقم الرخصة
+R6414	Issuing Date	تاريخ الإصدار
+R6415	Driver licence class	فئة رخصة القيادة
+R6416	Email Digest: {0}	ملخص البريد الإلكتروني: {0}
+R6417	View Now	عرض الآن
+R6418	Profit & Loss	الخسارة و الأرباح
+R6419	New Income	دخل جديد
+R6420	New Expenses	مصاريف او نفقات جديدة
+R6421	Annual Income	الدخل السنوي
+R6422	Annual Expenses	المصروفات السنوية
+R6423	Bank Credit Balance	رصيد رصيد البنك
+R6424	Receivables	المستحقات للغير (مدينة)
+R6425	Payables	الواجب دفعها (دائنة)
+R6426	New Sales Orders	طلب مبيعات جديد
+R6427	New Purchase Orders	أوامر شراء جديدة
+R6428	New Sales Invoice	فاتورة مبيعات جديدة
+R6429	New Purchase Invoice	فاتورة شراء جديدة
+R6430	New Quotations	عرض مسعر جديد
+R6431	Open Quotations	فتح الاقتباسات
+R6432	Open Issues	القضايا المفتوحة
+R6433	Upcoming Calendar Events	أحداث التقويم القادمة
+R6434	Open To Do	افتح To Do
+R6435	Add Quote	إضافة  عرض سعر
+R6436	Email Digest	ملخص مرسل عن طريق الايميل
+R6437	Email Digest Settings	إعدادات الملخصات المرسله عبر الايميل
+R6438	For Company	للشركة
+R6439	How frequently?	عدد المرات؟
+R6440	{0} Digest	{0} الملخص
+R6441	Daily Reminders	تذكير يومي
+R6442	This Week's Summary	ملخص هذا الأسبوع
+R6443	This Month's Summary	ملخص هذا الشهر
+R6444	Email Digest Recipient	مستلم ملخص البريد الإلكتروني
+R6445	Create User	إنشاء مستخدم جديد
+R6446	Create User Permission	إنشاء صلاحية المستخدم
+R6447	Creating User...	جارٍ إنشاء المستخدم...
+R6448	Employee Number	رقم الموظف
+R6449	Date of Birth	تاريخ الميلاد
+R6450	Date of Joining	تاريخ الالتحاق
+R6451	Emergency Contact	الاتصال في حالات الطوارئ
+R6452	Emergency Phone	هاتف حالات الطوارئ
+R6453	Emergency Contact Name	الطوارئ اسم الاتصال
+R6454	Relation	علاقة
+R6455	Create User Automatically	إنشاء المستخدم تلقائيًا
+R6456	Joining	الانضمام
+R6457	Offer Date	تاريخ العرض
+R6458	Confirmation Date	تاريخ التأكيد
+R6459	Contract End Date	تاريخ نهاية العقد
+R6460	Notice (days)	إشعار (أيام)
+R6461	Date Of Retirement	تاريخ التقاعد
+R6462	Reports to	إرسال التقارير إلى
+R6463	Applicable Holiday List	قائمة العطلات القابلة للتطبيق
+R6464	Salary Mode	طريقة تحصيل الراتب
+R6465	Cheque	شيك
+R6466	Bank A/C No.	رقم الحساب المصرفي.
+R6467	Preferred Contact Email	البريد الإلكتروني المفضل للتواصل
+R6468	Company Email	البريد الإلكتروني الخاص بالشركة
+R6469	Personal Email	البريد الالكتروني الشخصية
+R6470	Preferred Email	البريد الإلكتروني المفضل
+R6471	Permanent Address Is	العنوان الدائم هو
+R6472	Owned	مملوك
+R6473	Rented	مؤجر
+R6474	Permanent Address	العنوان الدائم
+R6475	Current Address Is	العنوان الحالي هو
+R6476	Current Address	العنوان الحالي
+R6477	Personal Details	البيانات الشخصية
+R6478	Passport Number	رقم جواز السفر
+R6479	Date of Issue	تاريخ الإصدار
+R6480	Place of Issue	مكان الإصدار
+R6481	Marital Status	الحالة الإجتماعية
+R6482	Divorced	مطلق
+R6483	Married	متزوج
+R6484	Single	أعزب
+R6485	Widowed	ارمل
+R6486	Blood Group	فصيلة الدم
+R6487	A+	+A
+R6488	A-	-A
+R6489	AB+	+AB
+R6490	AB-	-AB
+R6491	B+	ب+
+R6492	B-	ب-
+R6493	O+	O+
+R6494	O-	O-
+R6495	Family Background	معلومات عن العائلة
+R6496	Health Details	تفاصيل الحالة الصحية
+R6497	Educational Qualification	المؤهلات العلمية
+R6498	Education	التعليم
+R6499	Previous Work Experience	خبرة العمل السابق
+R6500	External Work History	سجل العمل الخارجي
+R6501	History In Company	الحركة التاريخيه في الشركة
+R6502	Internal Work History	سجل العمل الداخلي
+R6503	Exit	خروج
+R6504	Resignation Letter Date	تاريخ رسالة الاستقالة
+R6505	Relieving Date	تاريخ إنهاء الخدمة
+R6506	Reason for Leaving	سبب ترك العمل
+R6507	Leave Encashed?	إجازات مصروفة نقداً؟
+R6508	Encashment Date	تاريخ الصرف النقدي
+R6509	New Workplace	مكان العمل الجديد
+R6510	Attendance & Leaves	الحضور والانصراف
+R6511	Salary Currency	عملة الراتب
+R6512	Company Details	تفاصيل الشركة
+R6513	Passport Details	تفاصيل جواز السفر
+R6514	Cannot Relieve Employee	لا يمكن إعفاء الموظف
+R6515	Please enter {0}	الرجاء إدخال {0}
+R6516	Employee is required	الموظف مطلوب
+R6517	Missing Parameter	معلمة مفقودة
+R6518	Import Employees	استيراد الموظفين

@@ -1,0 +1,120 @@
+R7479	Received Stock Entries	تلقى إدخالات الأسهم
+R7480	Qty to Disassemble	الكمية المراد تفكيكها
+R7481	Transit Entry	مدخل النقل
+R7482	Mapping saved	تم حفظ التعيين
+R7483	Auto Assign	إسناد تلقائي
+R7484	Stock Entry Type	نوع إدخال الأسهم
+R7485	Delivery Note No	رقم إشعار التسليم
+R7486	Sales Invoice No	رقم فاتورة المبيعات
+R7487	Purchase Receipt No	لا شراء استلام
+R7488	Finished Good Quantity 	كمية جيدة من المنتج النهائي 
+R7489	Source Warehouse Address	عنوان مستودع المصدر
+R7490	Target Warehouse Address	عنوان المستودع المستهدف
+R7491	Additional Costs	تكاليف إضافية
+R7492	Total Additional Costs	مجموع التكاليف الإضافية
+R7493	Per Transferred	لكل نقل
+R7494	Add to Transit	أضف إلى Transit
+R7495	BOM Info	معلومات BOM
+R7496	Other Info	معلومات أخرى
+R7497	Supplier Info	معلومات المورد
+R7498	Process Loss	خسائر العملية
+R7499	Work Order Mismatch	عدم تطابق أمر العمل
+R7500	Excess Disassembly	تفكيك زائد
+R7501	Invalid Disassembly Quantity	كمية التفكيك غير صالحة
+R7502	Invalid Disassembly Item	صنف التفكيك غير صالح
+R7503	Missing Item	العنصر المفقود
+R7504	Incorrect Component Quantity	كمية المكونات غير صحيحة
+R7505	Excess Material Transfer	نقل المواد الزائدة
+R7506	Missing Finished Good	مفقود، تم الانتهاء منه، جيد
+R7507	Raw Materials Missing	المواد الخام مفقودة
+R7508	Zero quantity	الكمية صفر
+R7509	Goods Transferred	نقل البضائع
+R7510	Basic Amount	المبلغ الأساسي
+R7511	Additional Cost	تكلفة إضافية
+R7512	Against Stock Entry	ضد دخول الأسهم
+R7513	Stock Entry Child	الأسهم دخول الطفل
+R7514	Reference Purchase Receipt	مرجع شراء إيصال
+R7515	PO Supplied Item	PO الموردة البند
+R7516	SCO Supplied Item	المنتج الذي توفره شركة SCO
+R7517	Is Finished Item	المنتج النهائي
+R7518	Against Finished Good	مقابل منتج تام
+R7519	Stock Entry Detail	تفاصيل ادخال المخزون
+R7520	Qty After Transaction	الكمية بعد إتمام العملية
+R7521	Recalculate Incoming/Outgoing Rate	إعادة حساب معدل الوارد/الصادر
+R7522	Is Adjustment Entry	هل هو قيد التسوية؟
+R7523	Stock Ledger Entry	حركة سجل المخزن
+R7524	Incorrect Inventory Dimension	بُعد مخزون غير صحيح
+R7525	Backdated Stock Entry	إدخال مخزون مؤرخ
+R7526	Ignore Empty Stock	تجاهل المخزون الفارغ
+R7527	Missing	مفتقد
+R7528	Before reconciliation	قبل المصالحة
+R7529	Current Qty	الكمية الحالية
+R7530	Current Serial No	الرقم التسلسلي الحالي
+R7531	Current Valuation Rate	معدل التقييم الحالي
+R7532	Current Amount	المبلغ الحالي
+R7533	Quantity Difference	الكمية الفرق
+R7534	Amount Difference	مقدار الفرق
+R7535	Stock Reconciliation Item	جرد عناصر المخزون
+R7536	Stock Reposting Settings	إعدادات إعادة نشر المخزون
+R7537	Scheduling	الجدولة
+R7538	Errors Notification	إشعار بالأخطاء
+R7539	Enable Parallel Reposting	تفعيل إعادة النشر المتوازية
+R7540	No account set	لم يتم تعيين حساب
+R7541	Partially Delivered	تم التسليم جزئياً
+R7542	Partially Reserved	محجوز جزئياً
+R7543	Partially Used	مستخدم جزئياً
+R7544	Reserved	محجوز
+R7545	Voucher Qty	عدد القسائم
+R7546	Transaction Information	معلومات المعاملة
+R7547	Reservation Based On	الحجز مبني على
+R7548	From Voucher Type	من نوع القسيمة
+R7549	From Voucher No	من رقم القسيمة
+R7550	Item Information	معلومات المنتج
+R7551	Partial Stock Reservation	حجز جزئي للأسهم
+R7552	Incompatible Setting Detected	تم الكشف عن إعدادات غير متوافقة
+R7553	Default Item Group	المجموعة الافتراضية للمواد
+R7554	Default Stock UOM	افتراضي وحدة قياس السهم
+R7555	Default Valuation Method	أسلوب التقييم الافتراضي
+R7556	Serial Item settings	إعدادات الصنف التسلسلي
+R7557	Allow negative stock	السماح بالمخزون السالب
+R7558	Auto Material Request	طلب مواد تلقائي
+R7559	Naming Series Prefix	بادئة سلسلة التسمية
+R7560	Quantity Tolerance	تسامح الكمية
+R7561	Stock Validations	التحقق من صحة المخزون
+R7562	Stock Planning	تخطيط المخزون
+R7563	Stock Closing	إغلاق المخزون
+R7564	Price List Defaults	قائمة الأسعار الافتراضية
+R7565	Enable stock reservation	تمكين حجز المخزون
+R7566	Allow partial reservation	السماح بالحجز الجزئي
+R7567	Expiry	تاريخ الانتهاء
+R7568	UOM Defaults	الإعدادات الافتراضية لوحدة القياس
+R7569	Auto reserve stock	حجز المخزون تلقائياً
+R7570	Batch Item settings	إعدادات صنف الدفعة
+R7571	Internal Transfer Rules	قواعد التحويل الداخلي
+R7572	Negative Stock	مخزون سالب
+R7573	Item Naming By	تسمية السلعة بواسطة
+R7574	UOM Category	تصنيف وحدة القياس
+R7575	UOM Conversion Detail	تفاصيل تحويل وحدة القياس
+R7576	Variant Field	الحقل البديل
+R7577	Convert to Ledger	التحويل إلى دفتر الأستاذ
+R7578	Convert to Group	تحويل إلى تصنيف (مجموعة)
+R7579	General Ledger	دفتر الأستاذ العام
+R7580	Warehouse Contact Info	معلومات الأتصال بالمستودع
+R7581	PIN	دبوس
+R7582	Transit	عبور
+R7583	Is Rejected Warehouse	مستودع مرفوض
+R7584	Warehouse Detail	تفاصيل المستودع
+R7585	Warehouse Name	اسم المستودع
+R7586	Is Group Warehouse	مستودع المجموعة
+R7587	New Warehouse Name	اسم المخزن الجديد
+R7588	Please specify Company	يرجى تحديد شركة
+R7589	Template Item Selected	تم تحديد عنصر القالب
+R7590	Create Delivery Note	إنشاء إشعار التسليم
+R7591	Create Stock Reconciliation	إنشاء جرد المخزون
+R7592	Create Purchase Receipt	إنشاء استلام المشتريات
+R7593	Review your warehouses	مراجعة المستودعات الخاصة بك
+R7594	Open Warehouse	فتح المستودع
+R7595	Open Stock Balance	فتح رصيد المخزون
+R7596	Follow every movement	تابع كل حركة
+R7597	Open Stock Ledger	فتح سجل المخزن
+R7598	Warehouse Capacity Summary	ملخص سعة المستودع

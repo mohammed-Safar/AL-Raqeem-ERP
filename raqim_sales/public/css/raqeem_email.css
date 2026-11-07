@@ -1,0 +1,60 @@
+/* RAQEEM — email styles, inlined into every outgoing email by premailer
+   (hooks.email_css, after Frappe's own email.bundle.css).
+   Email clients ignore variables and most modern CSS: plain values only. */
+.rq-mail-body {
+	margin: 0;
+	padding: 0;
+	background-color: #f4f2ef;
+	color: #27231f;
+	font-family: 'RQ Latin', 'IBM Plex Sans Arabic', 'Segoe UI', Tahoma, Arial, sans-serif;
+	font-size: 15px;
+	line-height: 1.6;
+}
+.rq-mail-outer { background-color: #ffffff; }
+.rq-mail-outer.rq-boxed { background-color: #f4f2ef; }
+.rq-mail-outer-cell { padding: 0; }
+.rq-boxed .rq-mail-outer-cell { padding: 32px 12px; }
+.rq-mail-card { max-width: 600px; background-color: #ffffff; }
+.rq-boxed .rq-mail-card {
+	border: 1px solid #e8e3dc;
+	border-radius: 12px;
+	overflow: hidden;
+}
+.rq-mail-bar { background-color: #ea580c; }
+.rq-mail-masthead { padding: 22px 32px 6px; }
+.rq-mail-brand { text-decoration: none; color: #16120f; }
+.rq-mail-logo { display: inline-block; border: 0; height: 30px; }
+.rq-mail-wordmark {
+	font-family: 'Orbitron', 'Arial Black', Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	letter-spacing: 4px;
+	color: #16120f;
+}
+.rq-mail-title { padding: 14px 32px 0; }
+.rq-mail-title .email-header-title {
+	margin: 0;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.4;
+	color: #16120f;
+}
+.rq-mail-content { padding: 16px 32px 24px; font-size: 15px; color: #27231f; }
+.rq-mail-outer:not(.rq-boxed) .rq-mail-content { padding: 0; }
+.rq-mail-content a { color: #c2410c; }
+.rq-mail-content p { margin: 0 0 12px; }
+.rq-mail-content .btn,
+.rq-mail-content .btn-primary {
+	display: inline-block;
+	background-color: #ea580c;
+	color: #ffffff !important;
+	border-radius: 8px;
+	padding: 10px 20px;
+	font-weight: 600;
+	text-decoration: none;
+}
+.rq-mail-footer { padding: 0 32px 22px; font-size: 13px; color: #736b64; }
+.rq-mail-outer:not(.rq-boxed) .rq-mail-footer { padding: 0; }
+.rq-mail-footer.filled { border-top: 1px solid #efebe6; padding-top: 16px; }
+.rq-mail-footer a { color: #736b64; }
+.rq-mail-sent { padding: 14px 12px 0; font-size: 12px; color: #a39b92; }

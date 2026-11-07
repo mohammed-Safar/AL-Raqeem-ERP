@@ -1,0 +1,120 @@
+R5919	Purchase Order Date	تاريخ أمر الشراء
+R5920	Estimated Cost	التكلفة التقديرية
+R5921	Entity	كيان
+R5922	based_on	مرتكز على
+R5923	Value Or Qty	القيمة أو الكمية
+R5924	Tree Type	نوع الشجرة
+R5925	Curves	منحنيات
+R5926	Non-Zeros	غير الصفر
+R5927	Total Only	الإجمالي فقط
+R5928	Purchase Analytics	تحليلات المشتريات
+R5929	Purchase Order Analysis	تحليل أوامر الشراء
+R5930	Amount to Bill	كمية للفوترة
+R5931	Pending Qty	الكمية التي قيد الانتظار
+R5932	Billed Qty	الفواتير الكمية
+R5933	Qty to Bill	الكمية للفاتورة
+R5934	Received Qty Amount	الكمية المستلمة
+R5935	Include Closed Orders	تضمين الطلبات المغلقة
+R5936	Purchase Order Trends	اتجهات امر الشراء
+R5937	Purchase Value	قيمة الشراء
+R5938	Qty to Order	الكمية للطلب
+R5939	Ordered Qty	أمرت الكمية
+R5940	Qty to Receive	الكمية للاستلام
+R5941	Order Type	نوع الطلب
+R5942	Subcontract Order	طلب مقاولة فرعية
+R5943	Subcontract Order Summary	ملخص أمر التعاقد من الباطن
+R5944	Subcontracted Item	البند من الباطن
+R5945	Order Qty	الكمية النظام
+R5946	Supplied Item	المنتج المورد
+R5947	Item name	اسم السلعة
+R5948	Required Quantity	الكمية المطلوبة
+R5949	Pending Quantity	في انتظار الكمية
+R5950	Transferred Quantity	الكمية المنقولة
+R5951	Returned Quantity	الكمية المرتجعة
+R5952	Include Expired	تشمل منتهية الصلاحية
+R5953	Select Default Supplier	حدد الافتراضي مزود
+R5954	Set Default Supplier	تعيين المورد الافتراضي
+R5955	Successfully Set Supplier	بنجاح تعيين المورد
+R5956	Categorize by Supplier	التصنيف حسب المورد
+R5957	Categorize by Item	التصنيف حسب العنصر
+R5958	Price ({0})	السعر ({0})
+R5959	Lead Time (Days)	ايام القيادة)
+R5960	Item Wise Consumption	الاستهلاك حسب الصنف
+R5961	Order Status Reports	تقارير حالة الطلب
+R5962	Supplier Reports	تقارير الموردين
+R5963	Subcontracting Reports	تقارير التعاقد من الباطن
+R5964	Purchase Reports	تقارير المشتريات
+R5965	Tax Template	قالب الضريبة
+R5966	Annual Purchase	المشتريات السنوية
+R5967	Purchase Receipt Trends	شراء اتجاهات الإيصال
+R5968	Communication Medium	الاتصالات متوسطة
+R5969	Employee Group	مجموعة الموظفين
+R5970	Projects	مشاريع
+R5971	Inspection Required	التفتيش مطلوب
+R5972	Customer Details	تفاصيل العميل
+R5973	Holiday List	قائمة العطلات
+R5974	Competitor	منافس
+R5975	Prospect	احتمال
+R5976	Converted	تحويل
+R5977	Consultant	مستشار
+R5978	Channel Partner	شريك القناة
+R5979	Market Segment	سوق القطاع
+R5980	Industry	صناعة
+R5981	Qualification	المؤهل
+R5982	Additional Information	معلومة اضافية
+R5983	In Process	قيد العملية
+R5984	Address & Contacts	معلومات الاتصال والعنوان
+R5985	Organization	منظمة
+R5986	Support Team	فريق الدعم
+R5987	Opportunity Amount	مبلغ الفرصة
+R5988	Opportunity Item	فرصة السلعة
+R5989	Lost Reason	فقد السبب
+R5990	Opportunities	الفرص
+R5991	Sales Funnel	هرم المبيعات
+R5992	Maintenance Visit	زيارة صيانة
+R5993	Sales Pipeline	خط أنابيب المبيعات
+R5994	SMS Center	مركز رسائل SMS
+R5995	CRM	إدارة علاقات الزبائن
+R5996	Sales Analytics	تحليل المبيعات
+R5997	ERPNext Settings	إعدادات النظام
+R5998	Quality	جودة
+R5999	Subcontracting	التعاقد من الباطن
+R6000	Support	الدعم
+R6001	Code List	قائمة الرموز
+R6002	Common Code	الكود المشترك
+R6003	Against Document No	مقابل المستند رقم
+R6004	Produced Quantity	أنتجت الكمية
+R6005	Order Date	تاريخ الطلب
+R6006	Purchasing	المشتريات
+R6007	Ordered Quantity	الكمية التي تم طلبها
+R6008	From BOM	من BOM
+R6009	Use Multi-Level BOM	استخدام متعدد المستويات BOM
+R6010	Allow Alternative Item	السماح لصنف بديل
+R6011	Quality Inspection Template	قالب فحص الجودة
+R6012	Item Description	وصف الصنف
+R6013	Has Variants	يحتوي على متغيرات
+R6014	% Process Loss	% الفاقد في العملية
+R6015	Process Loss Qty	كمية الفاقد في العملية
+R6016	Default Source Warehouse	المستودع المصدر الافتراضي
+R6017	Default Target Warehouse	المخزن الوجهة الافتراضي
+R6018	Default Warehouse	النماذج الافتراضية
+R6019	Bill of Materials	فاتورة المواد
+R6020	BOM No	رقم قائمة مكونات المواد
+R6021	Original Item	البند الأصلي
+R6022	Is Stock Item	منتج متوفر في المخزون
+R6023	Operation ID	معرف العملية
+R6024	In minutes	في دقائق
+R6025	Valuation Type	نوع التقييم
+R6026	BOM Secondary Item	صنف ثانوي لقائمة المواد
+R6027	Additional Finished Good	منتج تام إضافي
+R6028	By-Product	منتج ثانوي
+R6029	Co-Product	منتج مشترك
+R6030	Scrap	خردة
+R6031	Material Transfer	نقل المواد
+R6032	End Time	وقت الانتهاء
+R6033	Requested Qty	الكمية المطلبة
+R6034	Partially Transferred	نُقل جزئيًا
+R6035	Transferred Qty	نقل الكمية
+R6036	Job Card Item	صنف بطاقة العمل
+R6037	Completed Qty	الكمية المكتملة
+R6038	Planning	التخطيط

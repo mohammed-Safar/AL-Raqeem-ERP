@@ -1,0 +1,120 @@
+R5319	Generate E-Invoice	إنشاء فاتورة إلكترونية
+R5320	Adjustment Against	تسوية مقابل
+R5321	Select Loyalty Program	اختر برنامج الولاء
+R5322	Set Loyalty Program	برنامج الولاء
+R5323	Maintenance Schedule	جدول الصيانة
+R5324	Fetch Timesheet	جلب جدول الدوام
+R5325	Get Timesheets	الحصول على جداول الدوام
+R5326	Is Consolidated	موحّدة
+R5327	Is Internal Customer	هو عميل داخلي
+R5328	Company Tax ID	رقم التعريف الضريبي للشركة
+R5329	Discount Account	حساب الخصم
+R5330	Dispatch Address Name	اسم عنوان الإرسال
+R5331	Total Billing Hours	إجمالي ساعات العمل المدفوعة
+R5332	Has Subcontracted	تعاقد من الباطن
+R5333	Account Missing	الحساب مفقود
+R5334	returned	تم إرجاعه
+R5335	sold	تم البيع
+R5336	Asset returned	تم إرجاع الأصل
+R5337	Asset sold	تم بيع الأصل
+R5338	Mandatory Field	حقل إلزامي
+R5339	Invalid doctype {0}	DocType غير صالح {0}
+R5340	Missing Asset	أصل مفقود
+R5341	Internal Transfers	التحويلات الداخلية
+R5342	Sales Invoice Advance	فاتورة مبيعات المقدمة
+R5343	Advance amount	المبلغ مقدما
+R5344	Allocated amount	المبلغ المخصص
+R5345	SCIO Detail	تفاصيل SCIO
+R5346	Against Pick List	مقابل قائمة الاختيار
+R5347	Pick List Item	اختيار عنصر القائمة
+R5348	Target Warehouse	المخزن المستهدف
+R5349	Qty (Warehouse)	الكمية (المستودع)
+R5350	Incoming Rate (Costing)	معدل الوارد (التكلفة)
+R5351	Available Quantity	الكمية المتوفرة
+R5352	Qty (Company)	الكمية (الشركة)
+R5353	Reference No	رقم المرجع
+R5354	Sales Invoice Reference	رقم مرجع فاتورة المبيعات
+R5355	Project Name	اسم المشروع
+R5356	Sales Invoice Timesheet	السجل الزمني لفاتورة المبيعات
+R5357	Time Sheet	سجل الوقت
+R5358	Billing Hours	ساعات الفواتير
+R5359	Billing Amount	قيمة الفواتير
+R5360	Timesheet Detail	تفاصيل الجدول الزمني
+R5361	Sales Partner 	شريك المبيعات 
+R5362	Sales Partner Item	منتج شريك المبيعات
+R5363	Share Type	نوع المشاركة
+R5364	From No	من رقم
+R5365	No of Shares	عدد األسهم
+R5366	To No	إلى لا
+R5367	Is Company	هي الشركة
+R5368	Current State	الوضع الحالي
+R5369	Purchased	اشترى
+R5370	Issued	نشر
+R5371	Share Balance	رصيد السهم
+R5372	Create Journal Entry	إنشاء إدخال دفتر اليومية
+R5373	To Folio No	إلى الورقة رقم
+R5374	(including)	(تتضمن)
+R5375	Share Transfer	نقل المشاركة
+R5376	Transfer Type	نوع النقل
+R5377	From Shareholder	من المساهم
+R5378	From Folio No	من فوليو نو
+R5379	Equity/Liability Account	حساب الأسهم / المسؤولية
+R5380	Asset Account	حساب الأصول
+R5381	To Shareholder	للمساهم
+R5382	Share Ledger	مشاركة دفتر الأستاذ
+R5383	Contact List	قائمة جهات الاتصال
+R5384	Shareholder	المساهم
+R5385	Folio no.	فوليو نو.
+R5386	Address and Contacts	عناوين واتصالات
+R5387	Shipping Amount	مبلغ الشحن
+R5388	Shipping Rule Conditions	شروط قاعدة الشحن
+R5389	Restrict to Countries	تقييد البلدان
+R5390	Valid for Countries	صالحة للبلدان
+R5391	Shipping Rule Label	ملصق قاعدة الشحن
+R5392	Shipping Rule Type	نوع القاعدة الشحن
+R5393	Shipping Account	حساب الشحن
+R5394	Calculate Based On	إحسب الربح بناء على
+R5395	Fixed	ثابت
+R5396	Net Weight	الوزن الصافي
+R5397	Invalid Shipping Account	حساب الشحن غير صالح
+R5398	Shipping Rule Condition	حالة قاعدة الشحن
+R5399	Shipping Rule Country	بلد قاعدة الشحن
+R5400	Fetch Subscription Updates	جلب تحديثات الاشتراك
+R5401	Force-Fetch Subscription Updates	تحديثات اشتراك الجلب الإجباري
+R5402	Cancel Subscription	إلغاء الاشتراك
+R5403	Restart Subscription	إعادة تشغيل الاشتراك
+R5404	Days Until Due	أيام حتى موعد الاستحقاق
+R5405	Plans	خطط
+R5406	Discounts	الخصومات
+R5407	Follow Calendar Months	اتبع التقويم الأشهر
+R5408	Subscription End Date	تاريخ انتهاء الاشتراك
+R5409	Subscription Start Date	تاريخ بدء الاشتراك
+R5410	Submit Generated Invoices	إرسال الفواتير المُنشأة
+R5411	Generate Invoice At	إنشاء فاتورة في
+R5412	Number of Days	عدد الأيام
+R5413	Trialing	تجربة
+R5414	Grace Period	فترة سماح
+R5415	Subscription Period	فترة الاكتتاب
+R5416	Cancelation Date	تاريخ الإلغاء
+R5417	Past Due Date	تاريخ الاستحقاق السابق
+R5418	Document Type 	نوع الوثيقة
+R5419	Subscription Invoice	فاتورة الاشتراك
+R5420	Billing Interval	فواتير الفوترة
+R5421	Billing Interval Count	عدد الفواتير الفوترة
+R5422	Payment Plan	خطة الدفع
+R5423	Product Price ID	معرف سعر المنتج
+R5424	Subscription Plan	خطة الاشتراك
+R5425	Plan Name	اسم الخطة
+R5426	Fixed Rate	سعر الصرف الثابت
+R5427	Monthly Rate	المعدل الشهري
+R5428	Cost	تكلفة
+R5429	Plan	خطة
+R5430	Subscription Plan Detail	تفاصيل خطة الاشتراك
+R5431	Prorate	بنسبة كذا
+R5432	Subscription Settings	إعدادات الاشتراك
+R5433	Supplier Group Item	عنصر مجموعة الموردين
+R5434	Supplier Item	منتج المورد
+R5435	Billing City	مدينة الفوترة
+R5436	Billing County	إقليم الفواتير
+R5437	Billing State	الدولة الفواتير
+R5438	Billing Zipcode	الرمز البريدي للفواتير

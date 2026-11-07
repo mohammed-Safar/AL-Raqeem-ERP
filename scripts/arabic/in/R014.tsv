@@ -1,0 +1,120 @@
+R1560	Editing {0}	تعديل {0}
+R1561	Reset Changes	إعادة ضبط التغييرات
+R1562	Go to Workflow	انتقل إلى سير العمل
+R1563	Post	بعد
+R1564	Type title	اكتب العنوان
+R1565	Want to discuss?	هل ترغب في المناقشة؟
+R1566	Dear User,	عزيزي المستخدم،
+R1567	Time:	زمن:
+R1568	Reference: {0} {1}	إشارة: {0} {1}
+R1569	Confirm Request	تأكيد الطلب
+R1570	Verification Link	رابط التحقق
+R1571	Dear {0}	عزيزي {0}
+R1572	Download Data	تحميل البيانات
+R1573	Download Link	رابط التحميل
+R1574	to your browser	إلى متصفحك
+R1575	Hello,	مرحبًا,
+R1576	Public Files Backup:	النسخ الاحتياطي للملفات العامة:
+R1577	Private Files Backup:	نسخ احتياطي للملفات الخاصة:
+R1578	Login to {0}	سجّل الدخول إلى {0}
+R1579	Open Document	افتح المستند
+R1580	Reset your password	اعد ضبط كلمه السر
+R1581	Days Remaining	الأيام المتبقية
+R1582	Accept Invitation	قَبُول الدعوة
+R1583	Login to comment	سجل الدخول للتعليق
+R1584	Your Name	اسمك
+R1585	Add a comment	إضافة تعليق
+R1586	No comments yet.	لا تعليقات بعد.
+R1587	Built on {0}	مبني على {0}
+R1588	Send login link	أرسل رابط تسجيل الدخول
+R1589	Read Only Mode	وضع القراءة فقط
+R1590	Switch To Desk	التبديل إلى مكتب
+R1591	 Search...	 بحث...
+R1592	Search results for	نتائج البحث عن
+R1593	My Account	حسابي
+R1594	Back to Desk	العودة الى المكتب
+R1595	Connection Success	نجاح الاتصال
+R1596	DRAFT	مسودة
+R1597	CANCELLED	ملغي
+R1598	Get PDF	احصل على ملف PDF
+R1599	jane@example.com	jane@example.com
+R1600	Jane Doe	جين دو
+R1601	Team Members	أعضاء الفريق
+R1602	Company History	نبذة عن تاريخ الشركة
+R1603	Knowledge Base	قاعدة المعرفة
+R1604	Filtered by "{0}"	تمت تصفيتها من قبل &quot;{0}&quot;
+R1605	Click here	انقر هنا
+R1606	See previous responses	راجع الردود السابقة
+R1607	Submit another response	أرسل ردًا آخر
+R1608	Edit	تصحيح
+R1609	Discard	تجاهل
+R1610	Submit	تسجيل
+R1611	Delete	حذف
+R1612	No {0}	لا {0}
+R1613	Back to Home	العودة إلى المنزل
+R1614	About Us	نبذه عنا
+R1615	Authors	المؤلفون
+R1616	Authors / Maintainers	المؤلفون / القائمون على الصيانة
+R1617	Attribution	الإسناد
+R1618	One Last Step	خطوة أخيرة واحدة
+R1619	View document	عرض المستند
+R1620	Note:	ملحوظة:
+R1621	Your email address	عنوان بريدك الإلكتروني
+R1622	Contact Us	اتصل بنا
+R1623	Show Error	إظهار الخطأ
+R1624	Hide Error	إخفاء الخطأ
+R1625	Dynamic Filter Error	خطأ في المرشح الديناميكي
+R1626	Invalid DocType	نوع المستند غير صالح
+R1627	Sign up	سجل
+R1628	Signup Disabled	تم تعطيل التسجيل
+R1629	Forgot Password?	هل نسيت كلمة المرور؟
+R1630	Continue	استمر
+R1631	Login with LDAP	تسجيل الدخول مع LDAP
+R1632	Login with {0}	سجّل الدخول باستخدام {0}
+R1633	Mobile	متحرك
+R1634	Invalid Login Token	صالح رمز الدخول
+R1635	Login To {0}	تسجيل الدخول إلى {0}
+R1636	Edit Profile	تعديل الملف الشخصي
+R1637	Delete Account	حذف الحساب
+R1638	Portal	البوابة
+R1639	Desktop	سطح المكتب
+R1640	Status: {0}	الحالة: {0}
+R1641	Login to view	سجّل الدخول للعرض
+R1642	QR Code	رمز الاستجابة السريعة
+R1643	Hi {0}	أهلا{0}
+R1644	Page has expired!	انتهت صلاحية الصفحة!
+R1645	Third Party Apps	تطبيقات الجهات الخارجية
+R1646	logged in	تسجيل الدخول
+R1647	Revoke	سحب
+R1648	No Active Sessions	ليست هناك جلسات نشطة
+R1649	Poor	ضعيف
+R1650	Great	عظيم
+R1651	Old Password	كلمة المرور القديمة
+R1652	Set Password	تعيين كلمة المرور
+R4092	Transaction Date	تاريخ المعاملة
+R4093	Allocated	تخصيص
+R4094	Payment	دفع
+R4095	Transfer	نقل
+R4096	Bank Entry	حركة بنكية
+R4097	Opening Balance	الرصيد الافتتاحي
+R4098	Reconciled	فرضت عليه
+R4099	Payment Document	وثيقة الدفع
+R4100	Against Account	مقابل الحساب
+R4101	Total Debit	مجموع الخصم
+R4102	Total Credit	إجمالي الائتمان
+R4103	Unallocated	غير مخصص
+R4104	Partially Reconciled	تم التوفيق جزئياً
+R4105	Unreconciled	لم تتم تسويتها
+R4106	Reconciliation Type	نوع التسوية
+R4107	Reconcile	توفيق
+R4108	Bank Transaction	المعاملات المصرفية
+R4109	Custom Remarks	ملاحظات مخصصة
+R4110	Invoices	الفواتير
+R4111	Outstanding	معلقة
+R4112	Transaction Type	نوع المعاملة
+R4113	Contains	يحتوي على
+R4114	Regex	تعبير نمطي
+R4115	Single Account	حساب واحد
+R4116	Rule Name	اسم القاعدة
+R4117	Rule Description	وصف القاعدة
+R4118	Company is required	الشركة مطلوبة

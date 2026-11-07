@@ -1,0 +1,120 @@
+R6519	New Employee	موظف جديد
+R6520	School/University	مدرسة / جامعة
+R6521	Graduate	التخرج
+R6522	Post Graduate	إجازة عاليه
+R6523	Under Graduate	غير متخرج
+R6524	Year of Passing	سنة التخرج
+R6525	Class / Percentage	الفئة / النسبة المئوية
+R6526	Major/Optional Subjects	المواد الرئيسية والاختيارية التي تم دراستها
+R6527	Employee Education	المستوى التعليمي للموظف
+R6528	Total Experience	مجموع الخبرة
+R6529	ERPNext User ID	معرف المستخدم ERPNext
+R6530	Employee Group Table	جدول مجموعة الموظفين
+R6531	Global Defaults	افتراضيات العالمية
+R6532	Default Company	الشركة الافتراضية
+R6533	Default Distance Unit	وحدة قياس المسافة الافتراضية
+R6534	Hide Currency Symbol	إخفاء رمز العملة
+R6535	Disable In Words	تعطيل خاصية التفقيط
+R6536	Demo Company	شركة تجريبية
+R6537	Weekly Off	العطلة الأسبوعية
+R6538	Is Half Day	نصف يوم
+R6539	Holiday	عطلة
+R6540	Clear Table	مسح الجدول
+R6541	Subdivision	تقسيم فرعي
+R6542	Add Local Holidays	إضافة العطلات المحلية
+R6543	Holiday List Name	اسم قائمة العطلات
+R6544	Total Holidays	إجمالي العطلات
+R6545	Add Weekly Holidays	أضف عطلات أسبوعية
+R6546	Add to Holidays	أضف إلى الإجازات
+R6547	Holidays	العطلات
+R6548	Delivered At Place	تم التسليم في المكان المحدد
+R6549	Delivered Duty Paid	تم التسليم مع دفع الرسوم الجمركية
+R6550	Ex Works	من المصنع
+R6551	Free Carrier	شركة الشحن المجانية
+R6552	Free Alongside Ship	مجاناً بجانب السفينة
+R6553	Free On Board	مجاناً على متن الطائرة
+R6554	Carriage Paid To	تم دفع تكاليف النقل إلى
+R6555	Cost and Freight	التكلفة والشحن
+R6556	Item Group Tree	شجرة فئات البنود
+R6557	General Settings	الإعدادات العامة
+R6558	Item Group Name	اسم مجموعة السلعة
+R6559	Parent Item Group	الأم الإغلاق المجموعة
+R6560	Item Group Defaults	افتراضيات مجموعة العناصر
+R6561	Item Tax	ضريبة الصنف
+R6562	Quotation Lost Reason	سبب خسارة المناقصة
+R6563	Contact Desc	الاتصال التفاصيل
+R6564	Sales Partner Target	المبلغ المطلوب للمندوب
+R6565	Targets	أهداف
+R6566	Show In Website	تظهر في الموقع
+R6567	Referral Code	كود الإحالة
+R6568	Logo	شعار
+R6569	Partner website	موقع الشريك
+R6570	Sales Partner Name	اسم المندوب
+R6571	Partner Type	نوع الشريك
+R6572	Address Desc	معالجة التفاصيل
+R6573	Sales Person Targets	اهداف رجل المبيعات
+R6574	Sales Person Name	اسم رجل المبيعات
+R6575	Parent Sales Person	رجل المبيعات الرئيسي
+R6576	Group Node	عقدة المجموعة
+R6577	Supplier Group Name	اسم مجموعة الموردين
+R6578	Parent Supplier Group	مجموعة موردي الآباء
+R6579	Target Qty	الهدف الكمية
+R6580	Target  Amount	المبلغ المستهدف
+R6581	Target Distribution	هدف التوزيع
+R6582	Target Detail	تفاصل الهدف
+R6583	Applicable Modules	وحدات قابلة للتطبيق
+R6584	Territory Targets	الاقاليم المستهدفة
+R6585	Territory Name	اسم الاقليم
+R6586	Parent Territory	الأم الأرض
+R6587	For reference	للرجوع إليها
+R6588	Territory Manager	مدير إقليمي
+R6589	Remove Zero Counts	إزالة الأعداد الصفرية
+R6590	Processing import...	جارٍ معالجة الاستيراد...
+R6591	Imported {0} DocTypes	تم استيراد {0} من DocTypes
+R6592	Deletion process restarted	تمت إعادة تشغيل عملية الحذف
+R6593	(none)	(لا شيء)
+R6594	Clear Notifications	إشعارات واضحة
+R6595	Initialize Summary Table	تهيئة جدول الملخص
+R6596	Transaction Deletion Record	سجل حذف المعاملة
+R6597	DocTypes To Delete	DocTypes للحذف
+R6598	Excluded DocTypes	أنواع المستندات المستبعدة
+R6599	Delete Bins	حذف سلة المهملات
+R6600	Invalid file URL	رابط الملف غير صالح
+R6601	File not found	الملف غير موجود
+R6602	Deletion in Progress!	جارٍ الحذف!
+R6603	Duplicate entry: {0}{1}	إدخال مكرر: {0}{1}
+R6604	Duplicate DocType	تكرار DocType
+R6605	Protected DocType	DocType محمي
+R6606	Virtual DocType	DocType افتراضي
+R6607	Invalid Company Field	حقل الشركة غير صالح
+R6608	{0}: Protected DocType	{0}: DocType محمي
+R6609	{0}: Not found	{0}: غير موجود
+R6610	Skipped {0} DocType(s):<br>{1}	تم تخطي {0} من DocType:<br>{1}
+R6611	Import Summary	ملخص الاستيراد
+R6612	Company Field	حقل الشركة
+R6613	Document Count	عدد المستندات
+R6614	Child DocTypes	DocTypes الفرعية
+R6615	UOM Name	اسم وحدة القايس
+R6616	Vehicle Value	قيمة المركبة
+R6617	Insurance Details	تفاصيل التأمين
+R6618	Insurance Company	تفاصيل التأمين
+R6619	Policy No	رقم البوليصة
+R6620	Additional Details	تفاصيل اضافية
+R6621	Fuel Type	نوع الوقود
+R6622	Diesel	ديزل
+R6623	Electric	كهربائي
+R6624	Natural Gas	غاز طبيعي
+R6625	Petrol	بنزين
+R6626	Fuel UOM	وحدة قياس الوقود
+R6627	Last Carbon Check	آخر تحقق للكربون
+R6628	Wheels	عجلات
+R6629	Doors	الأبواب
+R6630	Vehicle	مركبة
+R6631	License Plate	لوحة الترخيص
+R6632	Model	الطراز
+R6633	Odometer Value (Last)	قراءة عداد المسافات (الأخيرة)
+R6634	Acquisition Date	تاريخ شراء المركبة
+R6635	Chassis No	رقم الشاسيه
+R6636	Website Item Group	مجموعة الأصناف للموقع
+R6637	Compact Item Print	مدمجة البند طباعة
+R6638	Messaging CRM Campaign	حملة CRM للرسائل

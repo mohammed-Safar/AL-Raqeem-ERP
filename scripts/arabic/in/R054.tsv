@@ -1,0 +1,120 @@
+R2706	Logs	السجلات
+R2707	Integrations	التكاملات
+R2708	Not Allowed	غير مسموح
+R2709	Already Registered	مسجل بالفعل
+R2710	Registered but disabled	سجل لكن المعوقين
+R2711	Temporarily Disabled	موقوف مؤقتا
+R2712	Administrator Logged In	تسجيل دخول مسؤول النظام
+R2713	Throttled	مخنوق
+R2714	Successfully signed out	تم تسجيل الخروج بنجاح
+R2715	Welcome email sent	رسالة الترحيب تم أرسالها
+R2716	Password Reset	إعادة تعيين كلمة المرور
+R2717	Complete Registration	أكمال التسجيل
+R2718	Suggested Username: {0}	اسم المستخدم اقترح: {0}
+R2719	No Roles Specified	لم يتم تحديد أي أدوار
+R2720	Add Roles	إضافة قاعدة
+R2721	User Document Type	نوع مستند المستخدم
+R2722	Awaiting Password	في انتظار كلمة المرور
+R2723	Enable Outgoing	تمكين البريد الصادر
+R2724	Used OAuth	تم استخدام OAuth
+R2725	User Email	بريد المستخدم
+R2726	User Group Members	أعضاء مجموعة المستخدم
+R2727	User Group	مجموعة المستخدمين
+R2728	User Group Member	عضو في مجموعة المستخدمين
+R2729	User Invitation	دعوة المستخدم
+R2730	Invited By	مدعو من قبل
+R2731	Accepted	مقبول
+R2732	Email Sent At	أرسل البريد الإلكتروني إلى
+R2733	Accepted At	مقبولة في
+R2734	Redirect To Path	إعادة التوجيه إلى المسار
+R2735	Invitation already exists	الدعوة موجودة بالفعل
+R2736	User is disabled	المستخدم معطل
+R2737	Invitation is expired	انتهت صلاحية الدعوة
+R2738	Invitation is cancelled	تم إلغاء الدعوة
+R2739	Invalid role	دور غير صالح
+R2740	Invalid app	تطبيق غير صالح
+R2741	Invitation already accepted	تم قبول الدعوة بالفعل
+R2742	User Permission	إذن المستخدم
+R2743	For User	للمستخدم
+R2744	Applicable Document Types	أنواع المستندات القابلة للتطبيق
+R2745	Nothing to update	لا شيء للتحديث
+R2746	Bulk Delete	حذف بالجملة
+R2747	Clear User Permissions	مسح أذونات المستخدم
+R2748	For Document Type	لنوع المستند
+R2749	No records deleted	لا توجد سجلات محذوفة
+R2750	{0} record deleted	تم حذف السجل {0}
+R2751	{0} records deleted	{0} تم حذف السجلات
+R2752	Add / Update	إضافة / تحديث
+R2753	Add User Permissions	إضافة أذونات المستخدم
+R2754	User Role	دور المستخدم
+R2755	User Role Profile	ملف تعريف دور المستخدم
+R2756	Session Created	تم إنشاء الجلسة
+R2757	Last Updated	آخر تحديث
+R2758	Sign Out	تسجيل الخروج
+R2759	User Agent	وكيل المستخدم
+R2760	Is Current	هو محدّث
+R2761	User Session Display	عرض جلسة المستخدم
+R2762	Provider	المزود
+R2763	User ID	تعريف المستخدم
+R2764	User Social Login	المستخدم تسجيل الدخول الاجتماعي
+R2765	Document Types	أنواع المستندات
+R2766	User Id Field	حقل معرف المستخدم
+R2767	Allowed Modules	الوحدات النمطية المسموح بها
+R2768	User Type Module	وحدة نوع المستخدم
+R2769	Show all Versions	عرض كل الإصدارات
+R2770	Table HTML	جدول HTML
+R2771	Version	الإصدار
+R2772	Original	إبداعي
+R2773	Viewed By	تمت المشاهدة بواسطة
+R2774	Reference name	اسم المرجع
+R2775	View Log	عرض السجل
+R2776	Variants	المتغيرات
+R2777	Component	مكون
+R2778	Basic	الأساسي
+R2779	Refresh All	تحديث كافة
+R2780	dashboard	لوحة القيادة
+R2781	Standard Permissions	الأذونات القياسية
+R2782	Did not remove	لم تقم بإزالة
+R2783	Did not add	لم تضف
+R2784	Restore Original Permissions	استعادة ضوابط الأصل
+R2785	Cannot Remove	لا يمكن إزالة
+R2786	Document Share Report	وثيقة حصة تقرير
+R2787	Show Permissions	مشاهدة ضوابط
+R2788	Top 10	أفضل 10
+R2789	In Minutes	في دقائق
+R2790	Prepared Report Analytics	تحليلات التقارير المُعدة
+R2791	End	النهاية
+R2792	Runtime in Minutes	مدة التشغيل بالدقائق
+R2793	Runtime in Seconds	مدة التشغيل بالثواني
+R2794	User Doctype Permissions	أذونات نوع مستند المستخدم
+R2795	Mobile Number	رقم الهاتف المحمول
+R2796	Profile updated successfully.	تم تحديث المَلف الشخصي بنجاح.
+R2797	Update Profile	تحديث الملف الشخصي
+R2798	Middle Name (Optional)	الاسم الأوسط (اختياري)
+R2799	Profile Picture	صورة الملف الشخصي
+R2800	Select Child Table	حدد جدول الطفل
+R2801	Sample	عينة
+R2802	Apply To	التقديم إلى
+R2803	Option 1	الخيار 1
+R2804	Option 2	الخيار 2
+R2805	Option 3	الخيار 3
+R2806	Rename Fieldname	إعادة تسمية اسم الحقل
+R2807	e.g.:	على سبيل المثال:
+R2808	Label Help	التسمية تعليمات
+R2809	Options Help	خيارات مساعدة
+R2810	Collapsible Depends On	الضم يعتمد على
+R2811	Default Value	القيمة الافتراضية
+R2812	Depends On	يعتمد على
+R2813	Field Description	وصف الحقل
+R2814	Is Mandatory Field	هو حقل إلزامي
+R2815	Mandatory Depends On	إلزامي يعتمد على
+R2816	Is System Generated	هل تم إنشاؤه بواسطة النظام؟
+R2817	Label is mandatory	التسمية إلزامية
+R2818	Set Permissions	تعيين أذونات
+R2819	Reset All Customizations	إعادة ضبط جميع التخصيصات
+R2820	Remove all customizations?	إزالة كافة التخصيصات ؟
+R2821	Trim Table	طاولة التشذيب
+R2822	Layout Reset	إعادة ضبط التخطيط
+R2823	Table Trimmed	طاولة مُهذبة
+R2824	Export Customizations	تصدير تخصيصات
+R2825	Module to Export	وحدة لتصدير

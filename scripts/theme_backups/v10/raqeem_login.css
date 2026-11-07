@@ -1,0 +1,333 @@
+/* ==========================================================================
+   ALRAQEEM — LOGIN PAGE (Carbon-Orange)
+   صفحة الدخول: خلفية كربونية متحركة، بطاقة زجاجية، زر برتقالي متوهج
+   Every rule is scoped to the login / password pages so the rest of the
+   website is untouched.
+   ========================================================================== */
+
+
+body[data-path="login"],
+body[data-path="update-password"] {
+    --rq-bg: #0b0d11;
+    --rq-card: rgba(21, 24, 30, 0.72);
+    --rq-line: rgba(255, 255, 255, 0.08);
+    --rq-line-strong: rgba(255, 255, 255, 0.16);
+    --rq-text: #e8eaed;
+    --rq-text-2: #b4bac4;
+    --rq-text-3: #8a919c;
+    --rq-accent: #f97316;
+    --rq-accent-2: #fb923c;
+    --rq-ring: rgba(249, 115, 22, 0.35);
+    --rq-ease: cubic-bezier(.2, .8, .2, 1);
+
+    /* Frappe tokens the login page reads */
+    --bg-color: transparent;
+    --ink-gray-4: #6b7280;
+    --ink-gray-5: #b4bac4;
+    --ink-gray-6: #c9ced6;
+    --ink-gray-9: #ffffff;
+    --ink-red-8: #ff7575;
+    --text-color: #e8eaed;
+
+    color-scheme: dark;
+    min-height: 100svh;
+    background-color: var(--rq-bg) !important;
+    color: var(--rq-text) !important;
+    font-family: 'IBM Plex Sans Arabic', 'Cairo', system-ui, sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* --- animated background: two drifting orange glows + a faint grid --- */
+body[data-path="login"]::before,
+body[data-path="update-password"]::before {
+    content: "";
+    position: fixed;
+    inset: -20%;
+    z-index: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(35% 35% at 20% 25%, rgba(249, 115, 22, .22), transparent 70%),
+        radial-gradient(30% 30% at 80% 75%, rgba(234, 88, 12, .18), transparent 70%),
+        radial-gradient(25% 25% at 75% 15%, rgba(251, 146, 60, .10), transparent 70%);
+    filter: blur(20px);
+    animation: rq-login-drift 18s ease-in-out infinite alternate;
+}
+body[data-path="login"]::after,
+body[data-path="update-password"]::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image:
+        linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+    background-size: 44px 44px;
+    -webkit-mask-image: radial-gradient(ellipse at center, #000 20%, transparent 75%);
+    mask-image: radial-gradient(ellipse at center, #000 20%, transparent 75%);
+}
+@keyframes rq-login-drift {
+    0%   { transform: translate(0, 0) scale(1); }
+    50%  { transform: translate(3%, -2%) scale(1.06); }
+    100% { transform: translate(-3%, 2%) scale(1); }
+}
+
+body[data-path="login"] .page-content-wrapper,
+body[data-path="login"] main,
+body[data-path="login"] .container,
+body[data-path="update-password"] main {
+    position: relative;
+    z-index: 1;
+    background: transparent !important;
+}
+body[data-path="login"] main,
+body[data-path="update-password"] main {
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 32px;
+}
+
+/* website navbar / footer, when they show */
+body[data-path="login"] .navbar,
+body[data-path="login"] .web-footer,
+body[data-path="update-password"] .web-footer {
+    background: transparent !important;
+    border: 0 !important;
+    position: relative;
+    z-index: 1;
+}
+body[data-path="login"] .web-footer,
+body[data-path="login"] .web-footer a { color: var(--rq-text-3) !important; }
+
+/* --- the card --- */
+@keyframes rq-card-rise {
+    from { opacity: 0; transform: translateY(18px) scale(.98); }
+    to   { opacity: 1; transform: none; }
+}
+body[data-path="login"] .page-card,
+body[data-path="update-password"] .page-card {
+    position: relative;
+    max-width: 420px !important;
+    padding: 36px 32px 28px !important;
+    background: var(--rq-card) !important;
+    backdrop-filter: blur(22px) saturate(140%);
+    -webkit-backdrop-filter: blur(22px) saturate(140%);
+    border: 1px solid var(--rq-line) !important;
+    border-radius: 22px !important;
+    box-shadow:
+        0 1px 0 rgba(255,255,255,.05) inset,
+        0 30px 80px rgba(0,0,0,.55),
+        0 0 0 1px rgba(0,0,0,.3);
+    animation: rq-card-rise .6s var(--rq-ease) both;
+}
+/* glowing gradient rim */
+body[data-path="login"] .page-card::before,
+body[data-path="update-password"] .page-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: inherit;
+    background: linear-gradient(140deg, rgba(251,146,60,.65), rgba(249,115,22,0) 35%, rgba(249,115,22,0) 65%, rgba(251,146,60,.45));
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+/* logo + heading */
+body[data-path="login"] .page-card-head img.app-logo,
+body[data-path="update-password"] .page-card-head img.app-logo {
+    max-height: 48px !important;
+    filter: drop-shadow(0 0 18px rgba(249,115,22,.45));
+}
+body[data-path="login"] .page-card-head h4,
+body[data-path="login"] .page-card-head .text-3xl-bold,
+body[data-path="update-password"] .page-card-head h4,
+body[data-path="update-password"] .page-card-head .text-3xl-bold {
+    font-family: 'Cairo', 'IBM Plex Sans Arabic', sans-serif !important;
+    font-size: 1.9rem !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.01em;
+    background: linear-gradient(90deg, #ffffff 0%, #ffffff 45%, #fdba74 80%, #f97316 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+body[data-path="login"] .page-card-subtitle,
+body[data-path="update-password"] .page-card-subtitle {
+    color: var(--rq-text-3) !important;
+    font-size: .98rem !important;
+}
+
+/* labels + inputs */
+body[data-path="login"] label,
+body[data-path="update-password"] label {
+    color: var(--rq-text-2) !important;
+    font-weight: 600 !important;
+    font-size: .9rem !important;
+}
+body[data-path="login"] .form-control,
+body[data-path="update-password"] .form-control {
+    height: 46px !important;
+    padding-inline: 14px !important;
+    background: rgba(27, 31, 39, .85) !important;
+    border: 1px solid var(--rq-line-strong) !important;
+    border-radius: 12px !important;
+    color: #f3f4f6 !important;
+    font-size: 1rem !important;
+    transition: border-color .15s var(--rq-ease), box-shadow .15s var(--rq-ease), background .15s var(--rq-ease);
+}
+body[data-path="login"] .form-control:hover,
+body[data-path="update-password"] .form-control:hover { border-color: rgba(255,255,255,.26) !important; }
+body[data-path="login"] .form-control:focus,
+body[data-path="update-password"] .form-control:focus {
+    background: rgba(21, 24, 30, .95) !important;
+    border-color: var(--rq-accent) !important;
+    box-shadow: 0 0 0 4px var(--rq-ring) !important;
+    outline: 0 !important;
+}
+body[data-path="login"] .form-control::placeholder,
+body[data-path="update-password"] .form-control::placeholder { color: #5b6370 !important; }
+/* browser autofill would paint inputs pale yellow/blue */
+body[data-path="login"] .form-control:-webkit-autofill,
+body[data-path="update-password"] .form-control:-webkit-autofill {
+    -webkit-text-fill-color: #f3f4f6 !important;
+    -webkit-box-shadow: 0 0 0 1000px #1b1f27 inset !important;
+    caret-color: #f3f4f6;
+}
+body[data-path="login"] .toggle-password { color: var(--rq-text-3); cursor: pointer; }
+body[data-path="login"] .toggle-password:hover { color: var(--rq-accent-2); }
+
+/* links */
+body[data-path="login"] a,
+body[data-path="update-password"] a { color: var(--rq-accent-2) !important; transition: color .15s; }
+body[data-path="login"] a:hover,
+body[data-path="update-password"] a:hover { color: #fdba74 !important; }
+body[data-path="login"] .sign-up-message { color: var(--rq-text-3) !important; }
+
+/* buttons */
+body[data-path="login"] .es-button,
+body[data-path="update-password"] .es-button,
+body[data-path="login"] .btn,
+body[data-path="update-password"] .btn {
+    height: 46px !important;
+    border-radius: 12px !important;
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+    position: relative;
+    overflow: hidden;
+    transition: transform .12s var(--rq-ease), box-shadow .2s var(--rq-ease), filter .15s;
+}
+body[data-path="login"] .es-button[data-variant="solid"],
+body[data-path="update-password"] .es-button[data-variant="solid"],
+body[data-path="login"] .btn-primary,
+body[data-path="update-password"] .btn-primary {
+    background: linear-gradient(135deg, #fb923c 0%, #f97316 45%, #ea580c 100%) !important;
+    color: #1a0d03 !important;
+    border: 0 !important;
+    box-shadow: 0 8px 24px rgba(249,115,22,.35), inset 0 1px 0 rgba(255,255,255,.3) !important;
+}
+body[data-path="login"] .es-button[data-variant="solid"]:hover,
+body[data-path="update-password"] .es-button[data-variant="solid"]:hover,
+body[data-path="login"] .btn-primary:hover {
+    filter: brightness(1.06);
+    box-shadow: 0 10px 30px rgba(249,115,22,.5), inset 0 1px 0 rgba(255,255,255,.35) !important;
+}
+body[data-path="login"] .es-button:active,
+body[data-path="login"] .btn:active { transform: translateY(1px) scale(.985); }
+body[data-path="login"] .es-button[data-variant="solid"]::after,
+body[data-path="update-password"] .es-button[data-variant="solid"]::after {
+    content: "";
+    position: absolute;
+    inset-block: 0;
+    left: -60%;
+    width: 50%;
+    background: linear-gradient(100deg, transparent, rgba(255,255,255,.5), transparent);
+    transform: skewX(-20deg);
+    animation: rq-sweep 3.8s ease-in-out 1.2s infinite;
+    pointer-events: none;
+}
+@keyframes rq-sweep {
+    0%, 70% { left: -60%; }
+    100%    { left: 130%; }
+}
+/* secondary buttons (email link, social logins) */
+body[data-path="login"] .es-button:not([data-variant="solid"]),
+body[data-path="login"] .btn-default,
+body[data-path="login"] .btn-login-option {
+    background: rgba(27, 31, 39, .85) !important;
+    color: var(--rq-text) !important;
+    border: 1px solid var(--rq-line-strong) !important;
+    box-shadow: none !important;
+}
+body[data-path="login"] .es-button:not([data-variant="solid"]):hover,
+body[data-path="login"] .btn-login-option:hover {
+    border-color: rgba(249,115,22,.5) !important;
+    background: rgba(35, 40, 51, .9) !important;
+}
+
+/* error banners & shake */
+body[data-path="login"] .alert,
+body[data-path="login"] [class*="alert-banner"] {
+    border-radius: 12px !important;
+    background: rgba(220, 38, 38, .12) !important;
+    border: 1px solid rgba(239, 68, 68, .35) !important;
+    color: #fca5a5 !important;
+}
+body[data-path="login"] .field-error { color: #ff7575 !important; }
+
+/* Arabic: joined script, no tracking; gradient starts where the text starts */
+html[dir="rtl"] body[data-path="login"] *,
+html[dir="rtl"] body[data-path="update-password"] *,
+html[lang^="ar"] body[data-path="login"] * {
+    letter-spacing: normal !important;
+}
+html[dir="rtl"] body[data-path="login"] .page-card-head .text-3xl-bold,
+html[dir="rtl"] body[data-path="login"] .page-card-head h4,
+html[dir="rtl"] body[data-path="update-password"] .page-card-head .text-3xl-bold {
+    background-image: linear-gradient(270deg, #ffffff 0%, #ffffff 45%, #fdba74 80%, #f97316 100%);
+    line-height: 1.45;
+}
+html[dir="rtl"] body[data-path="login"] .es-button[data-variant="solid"]::after {
+    left: auto; right: -60%;
+    transform: skewX(20deg);
+    animation-name: rq-sweep-rtl;
+}
+@keyframes rq-sweep-rtl {
+    0%, 70% { right: -60%; }
+    100%    { right: 130%; }
+}
+html[dir="rtl"] body[data-path="login"] #login_email,
+html[dir="rtl"] body[data-path="login"] #login_password {
+    direction: ltr;
+    text-align: right;
+}
+html[dir="rtl"] body[data-path="login"] .form-control::placeholder { text-align: right; }
+body[data-path="login"] input, body[data-path="login"] button { font-family: inherit; }
+
+/* phones: full-screen card */
+@media (max-width: 575.98px) {
+    body[data-path="login"] .page-card,
+    body[data-path="update-password"] .page-card {
+        max-width: 100% !important;
+        min-height: 100svh;
+        border-radius: 0 !important;
+        border: 0 !important;
+        padding: 64px 22px 28px !important;
+        background: rgba(15, 17, 22, .78) !important;
+    }
+    body[data-path="login"] .page-card::before { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body[data-path="login"]::before,
+    body[data-path="login"] .page-card,
+    body[data-path="login"] .es-button::after,
+    body[data-path="update-password"]::before,
+    body[data-path="update-password"] .page-card { animation: none !important; }
+}

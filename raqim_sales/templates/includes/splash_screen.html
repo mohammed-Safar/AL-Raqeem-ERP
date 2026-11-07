@@ -1,0 +1,82 @@
+{#- RAQEEM — loading screen shown right after sign-in (login.js) and while the
+    desk starts (desk.html). Overrides frappe/templates/includes/splash_screen.html.
+    Shows the logo if one is set in Website Settings → Splash Image, otherwise
+    the «RAQEEM» wordmark.
+    Smooth hand-off:
+      • after sign-in it fades in over the login page (body[data-path="login"]);
+      • it uses the user's saved light/dark choice (html[data-rq-theme], set by
+        raqeem_login.js) instead of the device setting, so no colour flash;
+      • in the desk, raqeem_splash.js keeps it on screen and fades it out once
+        the desk is ready (Frappe would otherwise delete it in one frame).
+    WARNING: Frappe's login.js pastes this file inside a JS template string in a
+    script block, so it must never contain a script tag, a backtick or a
+    dollar-brace: closing the script early breaks the whole login page.
+    ROLLBACK: delete this file. -#}
+<style>
+	/* the element also has Frappe's .centered (absolute, top/left 50%,
+	   translate -50%): undo all of it so the screen covers the whole window */
+	.rq-splash, .centered.rq-splash {
+		position: fixed; inset: 0; top: 0; left: 0; right: 0; bottom: 0; z-index: 2000;
+		transform: none; -webkit-transform: none;
+		display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 22px;
+		background: var(--rq-bg, #f7f5f2);
+		color: var(--rq-strong, #16120f);
+		transition: opacity .45s cubic-bezier(.4, 0, .2, 1), visibility 0s linear .45s;
+	}
+	@media (prefers-color-scheme: dark) {
+		html[data-theme="automatic"] .rq-splash,
+		html:not([data-theme]):not([data-rq-theme="light"]) .rq-splash { background: #0e1014; color: #fff; }
+	}
+	html:not([data-theme])[data-rq-theme="dark"] .rq-splash { background: #0e1014; color: #fff; }
+	html:not([data-theme])[data-rq-theme="light"] .rq-splash { background: #f7f5f2; color: #16120f; }
+
+	/* after sign-in: fade in over the login page instead of a hard cut */
+	body[data-path="login"] .rq-splash { animation: rq-splash-in .35s cubic-bezier(.4, 0, .2, 1) both; }
+	@keyframes rq-splash-in { from { opacity: 0; } to { opacity: 1; } }
+
+	/* desk ready: fade out (raqeem_splash.js adds .rq-splash-out) */
+	.rq-splash.rq-splash-out { opacity: 0; visibility: hidden; pointer-events: none; }
+	.rq-splash.rq-splash-out .rq-splash-inner { transform: scale(.97); }
+
+	.rq-splash-inner {
+		display: flex; flex-direction: column; align-items: center; gap: 22px;
+		transition: transform .45s cubic-bezier(.4, 0, .2, 1);
+	}
+	.rq-splash-word {
+		font-family: 'Orbitron', 'Cairo', sans-serif;
+		font-weight: 800;
+		font-size: 30px;
+		letter-spacing: .22em;
+		margin-inline-start: .22em;     /* balance the trailing letter-spacing */
+		direction: ltr;
+		background: linear-gradient(90deg, currentColor 0%, currentColor 50%, var(--rq-a-500, #f97316) 100%);
+		-webkit-background-clip: text; background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	.rq-splash img { width: auto; max-width: 200px; max-height: 72px; }
+	.rq-splash-track {
+		width: 140px; height: 3px; border-radius: 3px; overflow: hidden;
+		background: rgba(128, 128, 128, .18);
+	}
+	.rq-splash-track span {
+		display: block; width: 40%; height: 100%; border-radius: inherit;
+		background: var(--rq-a-500, #f97316);
+		animation: rq-splash-run 1.4s cubic-bezier(.65, 0, .35, 1) infinite;
+	}
+	@keyframes rq-splash-run { from { transform: translateX(-100%); } to { transform: translateX(250%); } }
+	@media (prefers-reduced-motion: reduce) {
+		.rq-splash, .rq-splash-inner { transition: none; animation: none; }
+		.rq-splash-track span { animation: none; width: 100%; opacity: .5; }
+	}
+</style>
+<div class="centered splash rq-splash" role="status" aria-label="Loading">
+	<div class="rq-splash-inner">
+		{#- ERPNext's hooks set its own logo here; only a logo uploaded in Website Settings counts -#}
+		{%- if splash_image and "/assets/erpnext/" not in splash_image and "/assets/frappe/" not in splash_image %}
+		<img src="{{ splash_image }}" alt="">
+		{%- else %}
+		<div class="rq-splash-word">RAQEEM</div>
+		{%- endif %}
+		<div class="rq-splash-track"><span></span></div>
+	</div>
+</div>

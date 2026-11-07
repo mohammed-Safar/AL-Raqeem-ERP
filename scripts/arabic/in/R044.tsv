@@ -1,0 +1,120 @@
+R7599	Capacity (Stock UOM)	السعة (وحدة قياس المخزون)
+R7600	Balance Qty (Stock)	الكمية المتبقية (المخزون)
+R7601	Dear System Manager,	عزيزي مدير النظام،
+R7602	Regards,	مع تحياتي،
+R7603	On This Date	في هذا التاريخ
+R7604	Include Expired Batches	يشمل الدفعات منتهية الصلاحية
+R7605	Show Item Name	عرض اسم العنصر
+R7606	Available Batch Report	تقرير الدفعة المتاحة
+R7607	Balance Qty	كمية الرصيد
+R7608	Voucher #	سند #
+R7609	Available Serial No	الرقم التسلسلي المتاح
+R7610	In Qty	كمية قادمة
+R7611	Out Qty	كمية خارجة
+R7612	Serial No (In/Out)	الرقم التسلسلي (داخل/خارج)
+R7613	Balance Serial No	الرقم التسلسلي للميزان
+R7614	Balance Value	قيمة الرصيد
+R7615	Expiry (In Days)	انتهاء (في يوم)
+R7616	Batch-Wise Balance History	دفعة الحكيم التاريخ الرصيد
+R7617	Opening Qty	الكمية الافتتاحية
+R7618	Item 2	صنف رقم 2
+R7619	Item 3	صنف رقم 3
+R7620	Item 4	صنف رقم 4
+R7621	Item 5	صنف رقم 5
+R7622	Search Sub Assemblies	بحث التجميعات الفرعية
+R7623	Item 1	صنف رقم 1
+R7624	COGS Debit	مدين تكلفة البضائع المباعة
+R7625	Delayed Item Report	تأخر تقرير البند
+R7626	Delayed Days	الأيام المتأخرة
+R7627	Customer PO	PO العملاء
+R7628	Delayed Order Report	تأخر تقرير الطلب
+R7629	Delivery Note Trends	توجهات إشعارات التسليم
+R7630	Total Delivered Amount	إجمالي المبلغ الذي تم تسليمه
+R7631	Batchwise Valuation	التقييم على أساس الدفعة
+R7632	FIFO/LIFO Queue	قائمة انتظار FIFO/LIFO
+R7633	A - C	A - C
+R7634	D - E	د - هـ
+R7635	(H) Valuation Rate	(H) سعر التقييم
+R7636	Expected Balance Qty	الكمية المتوقعة للتوازن
+R7637	Actual Balance Qty	كمية الرصيد الفعلية
+R7638	Fix SABB Entry	إصلاح دخول SABB
+R7639	Stock Ledger ID	معرف دفتر الأستاذ
+R7640	Expected Stock Value	القيمة المتوقعة للسهم
+R7641	Difference Value	قيمة الفرق
+R7642	Item Balance (Simple)	البند الرصيد (بسيط)
+R7643	Item Price Stock	سعر صنف المخزون
+R7644	Stock Available	مخزون متاح
+R7645	Buying Price List	قائمة أسعار الشراء
+R7646	Buying Rate	معدل الشراء
+R7647	Selling Price List	قائمة أسعار البيع
+R7648	Items Filter	تصفية الاصناف
+R7649	Sales Price List	قائمة مبيعات الأسعار
+R7650	Purchase Price List	قائمة أسعار الشراء
+R7651	BOM Rate	سعر او معدل قائمة مكونات المواد
+R7652	Item Shortage Report	تقرير نقص الصنف
+R7653	Actual Quantity	الكمية الفعلية
+R7654	Reserved Quantity	الكمية المحجوزة
+R7655	Projected Quantity	الكمية المتوقعة
+R7656	Item Variant Details	الصنف تفاصيل متغير
+R7657	In Production	في الانتاج
+R7658	Open Sales Orders	أوامر بيع مفتوحة
+R7659	Item Where Used	مكان استخدام الصنف
+R7660	BOM Component	مكون قائمة المواد
+R7661	BOM Output	ناتج قائمة المواد
+R7662	Product Bundle Component	مكوّن حزمة المنتجات
+R7663	Product Bundle Parent	الأصل لحزمة المنتجات
+R7664	Subcontracting Service Item	بند خدمة التعاقد من الباطن
+R7665	Subcontracting Finished Good	منتج تام للتعاقد من الباطن
+R7666	Alternative For Item	بديل للصنف
+R7667	Related Item	صنف ذو صلة
+R7668	Consumed Amount	القيمة المستهلكة
+R7669	Delivered Amount	القيمة التي تم تسليمها
+R7670	Supplier(s)	المورد (ق)
+R7671	Lead Time Days	المدة الزمنية بين بدء وإنهاء عملية الإنتاج
+R7672	Total Outgoing	مجموع المنتهية ولايته
+R7673	Avg Daily Outgoing	متوسط الصادرات اليومية
+R7674	Landed Cost Report	تقرير تكلفة الهبوط
+R7675	Landed Cost Id	معرف تكلفة الهبوط
+R7676	Purchase Voucher Type	نوع قسيمة الشراء
+R7677	Purchase Voucher No	رقم قسيمة الشراء
+R7678	Negative Batch Report	تقرير الدفعات السالبة
+R7679	Previous Qty	الكمية السابقة
+R7680	Transaction Qty	كمية المعاملة
+R7681	Document No	رقم المستند
+R7682	Product Bundle Balance	حزمة المنتج الرصيد
+R7683	Bundle Qty	حزمة الكمية
+R7684	Minimum Qty	الكمية الدنيا
+R7685	Total Received Amount	إجمالي المبلغ المستلم
+R7686	Tracebility Direction	اتجاه التتبع
+R7687	Missing Filters	فلاتر مفقودة
+R7688	Source Document No	رقم المستند الأصلي
+R7689	Warranty Expiry (Serial)	تاريخ انتهاء الضمان (الرقم التسلسلي)
+R7690	AMC Expiry (Serial)	انتهاء الصلاحية لعقد الصيانة السنوي (تسلسلي)
+R7691	As On Date	كما هو بتاريخ
+R7692	Serial No Ledger	دفتر الأستاذ ذو الرقم التسلسلي
+R7693	Serial No Status	حالة رقم المسلسل
+R7694	Show Warehouse-wise Stock	عرض المستودع الحكيمة
+R7695	Average Age	متوسط العمر
+R7696	Earliest	أولا
+R7697	Latest	اخير
+R7698	Age ({0})	السن ({0})
+R7699	Value ({0})	القيمة ({0})
+R7700	Reposting Entries	قيود إعادة الترحيل
+R7701	Repost GL Entries	إعادة ترحيل قيود دفتر الأستاذ العام
+R7702	GL Reposting Entries	إدخالات إعادة ترحيل دفتر الأستاذ العام
+R7703	Ledger Type	نوع دفتر الأستاذ
+R7704	Account Value	قيمة الحساب
+R7705	Opening Value	القيمة الافتتاحية
+R7706	In Value	القيمة القادمة
+R7707	Out Value	القيمة الخارجه
+R7708	Earliest Age	أقدم عمر
+R7709	Latest Age	مرحلة متأخرة
+R7710	Alt UOM	وحدة القياس البديلة
+R7711	View Stock Balance	عرض رصيد الأسهم
+R7712	'Opening'	'افتتاحي'
+R7713	Create Reposting Entry	إنشاء إدخال إعادة نشر
+R7714	Consumption Rate	معدل الاستهلاك
+R7715	A - B	A - B
+R7716	G - D	جي - دي
+R7717	H - F	H - F
+R7718	(I) Valuation Rate	(I) سعر التقييم

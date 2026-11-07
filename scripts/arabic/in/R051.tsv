@@ -1,0 +1,120 @@
+R2346	Changed by	تم التغيير بواسطة
+R2347	Changed at	تم التغيير في
+R2348	Changes	التغييرات
+R2349	More Info	المزيد من المعلومات
+R2350	For DocType	لنوع المستند
+R2351	For Document	للمستند
+R2352	Applies To (DocType)	ينطبق على (نوع المستند)
+R2353	Download as CSV	قم بالتنزيل كملف CSV
+R2354	Cancel Prepared Report	إلغاء التقرير المُعدّ
+R2355	Queued At	في قائمة الانتظار
+R2356	Peak Memory Usage	ذروة استخدام الذاكرة
+R2357	Prepared Report	أعد التقرير
+R2358	Prepared Report User	إعداد تقرير المستخدم
+R2359	Started	بدأت
+R2360	Queued	قائمة الانتظار
+R2361	Finished At	انتهى في
+R2362	Error Message	رسالة خطأ
+R2363	Filter Values	قيم التصفية
+R2364	Job ID	رقم الوظيفة
+R2365	Queued By	تمت إضافته إلى قائمة الانتظار بواسطة
+R2366	Invalid Operation	عملية غير صالحة
+R2367	Report timed out.	انتهت مهلة التقرير.
+R2368	Attachment Not Found	المرفق غير موجود
+R2369	Suggest Optimizations	اقتراح تحسينات
+R2370	Add Indexes	إضافة فهرس
+R2371	Stack Trace	تتبع المكدس
+R2372	SQL Explain	شرح SQL
+R2373	GET	يحصل
+R2374	HEAD	رأس
+R2375	OPTIONS	خيارات
+R2376	PATCH	رقعة
+R2377	DELETE	يمسح
+R2378	POST	بريد
+R2379	PUT	يضع
+R2380	SQL Queries	استعلامات SQL
+R2381	Event Type	نوع الحدث
+R2382	Apps Involved	التطبيقات المعنية
+R2383	Timeline	الخط الزمني
+R2384	cProfile Output	مخرجات cProfile
+R2385	Suggested Indexes	الفهارس المقترحة
+R2386	Recorder	مسجل
+R2387	CMD	CMD
+R2388	Number of Queries	عدد الاستفسارات
+R2389	Time in Queries	الوقت في الاستعلامات
+R2390	Number of Events	عدد الأحداث
+R2391	Request Headers	رؤوس الطلب
+R2392	Form Dict	نموذج قاموس
+R2393	No Suggestions	لا توجد اقتراحات
+R2394	Configure Recorder	تهيئة المسجل
+R2395	Start Recording	ابدأ التسجيل
+R2396	Inactive	غير نشط
+R2397	Stop	قف
+R2398	Start	بداية
+R2399	Raw Method	الطريقة الخام
+R2400	Depth	العمق
+R2401	Sequence	تسلسل
+R2402	Handlers	المعالجات
+R2403	Recorder Event	حدث المسجل
+R2404	Recorder Query	استعلام المُسجِّل
+R2405	Query	سؤال
+R2406	Normalized Query	استعلام مُنمذج
+R2407	Exact Copies	نسخ طبق الأصل
+R2408	Normalized Copies	نسخ موحدة
+R2409	Recorder Suggested Index	فهرس مقترح للمسجل
+R2410	Column 1	العمود 1
+R2411	Column 2	العمود 2
+R2412	Disable Report	تعطيل تقرير
+R2413	Enable Report	تمكين تقرير
+R2414	Report Type	نوع التقرير
+R2415	Custom Report	تقرير مخصص
+R2416	Script Report	تقرير النصي
+R2417	Report Builder	تقرير منشئ
+R2418	Query / Script	استعلام / برنامج نصي
+R2419	Javascript	جافا سكريبت
+R2420	Script	سيناريو
+R2421	Client Code	رمز العميل
+R2422	Timeout (In Seconds)	مهلة زمنية (بالثواني)
+R2423	Add Translate Data	إضافة بيانات الترجمة
+R2424	Report Manager	مدير التقارير
+R2425	Ref DocType	المرجع DOCTYPE
+R2426	Reference Report	تقرير مرجعي
+R2427	Add Total Row	إضافة صف الإجمالي
+R2428	Report Document Error	تقرير خطأ في المستند
+R2429	User Activity Report	تقرير نشاط المستخدمين
+R2430	Report Column	عمود التقرير
+R2431	Wildcard Filter	مرشح البدل
+R2432	Report Filter	عامل تصفية التقرير
+R2433	View	عرض
+R2434	Replicate Role	تكرار الدور
+R2435	Role Profile	الملف الشخصي
+R2436	Add Permission	إضافة إذن
+R2437	Add Report	إضافة تقرير
+R2438	Add Page	إضافة صفحة
+R2439	Add Workspace	إضافة مساحة عمل
+R2440	New Role Name	اسم الدور الجديد
+R2441	Replicating Role...	جارٍ تكرار الدور...
+R2442	Replicate	تكرار
+R2443	Role Permissions Manager	مدير ضوابط الصلاحيات
+R2444	Workspaces	مساحات العمل
+R2445	Role Name	اسم الدور
+R2446	Route: Example "/desk"	المسار: مثال &quot;/ مكتب&quot;
+R2447	Home Page	الصفحة الرئيسية
+R2448	Is Custom	جمارك
+R2449	Desk Access	الوصول للمكتب
+R2450	Two Factor Authentication	توثيق ذو عاملين
+R2451	Role Profiles	نبذة عن الأدوار
+R2452	Successfully Updated	تم التحديث بنجاح
+R2453	Mandatory field: {0}	حقل إلزامي: {0}
+R2454	Reset to defaults	إعادة تعيين إلى الإعدادات الافتراضية
+R2455	Set Role For	تعيين صلاحية لل
+R2456	Allow Roles	الصلاحيات المسموح بها
+R2457	Roles Html	أدوار Html
+R2458	Enable Prepared Report	تفعيل التقرير المُعدّ
+R2459	Roles HTML	الأدوار HTML
+R2460	Roles Assigned	الصلاحيات المسندة
+R2461	Force Stop job	إيقاف الوظيفة بالقوة
+R2462	RQ Job	وظيفة RQ
+R2463	Queue	طابور
+R2464	default	الافتراضي
+R2465	long	طويل

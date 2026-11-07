@@ -1,0 +1,120 @@
+R720	Discard	تجاهل
+R721	App Logo	شعار التطبيق
+R722	Something went wrong	حدث خطأ ما
+R723	Total	الاجمالي غير شامل الضريبة
+R724	Sr	ر.ت
+R725	ID	هوية شخصية
+R726	No Tags	لا علامات
+R727	PDF	ملف PDF
+R728	Footer	تذييل الصفحة
+R729	Attachments	المرفقات
+R730	Retry	إعادة المحاولة
+R731	Meets Condition?	هل يستوفي الشروط؟
+R732	Channel	قناة
+R733	Frappe Support	دعم فرابيه
+R734	About	معلومات عن النظام
+R735	Enable	تمكين
+R736	None	لا شيء
+R737	Config	التكوين
+R738	Deny	ينكر
+R739	Frappe	فرابي
+R740	Request Timeout	انتهت مهلة الطلب
+R741	Document Status	حالة المستند
+R742	Last Updated On	آخر تحديث يوم
+R743	Last Updated By	آخر تحديث بواسطة
+R744	Created By	منشئه بواسطه
+R745	Tags	بطاقات
+R746	Liked By	أحب بواسطة
+R747	Assigned To	كلف إلى
+R748	Saved	حفظ
+R749	Align	محاذاة
+R750	Custom CSS	مخصصةCSS
+R751	Set as Default	تعيين كافتراضي
+R752	Hide	إخفاء
+R753	Top Left	أعلى اليسار
+R754	Bottom Left	أسفل اليسار
+R755	WeasyPrint	WeasyPrint
+R756	Section	الجزء
+R757	Font	الخط
+R758	Print Settings	إعدادات الطباعة
+R759	No Letterhead	بدون ترويسة
+R760	Download PDF	تحميل PDF
+R761	{0} is disabled	{0} معطل
+R762	Orientation	توجيه
+R763	Portrait	صورة
+R764	Landscape	المناظر الطبيعيه
+R765	Style	النمط
+R766	Full Page	صفحة كاملة
+R767	Refresh	تحديث
+R768	Customize	تخصيص
+R769	Fit	ملائم
+R770	Custom HTML	مخصصةHTML
+R771	Edit Section	تعديل القسم
+R772	Edit Heading	تحرير العنوان
+R773	Edit HTML	تعديل HTML
+R774	Select Columns	تحديد الأعمدة
+R775	Filter...	فلتر...
+R776	Manage Billing	إدارة الفواتير
+R777	Back	خلف
+R778	Next	التالي
+R779	Cancel Import	إلغاء الاستيراد
+R780	Upload file	تحميل الملف
+R781	Untitled {0}	بدون عنوان {0}
+R782	Removed Icons	الأيقونات المُزالة
+R783	Search fieldtypes...	ابحث عن أنواع الحقول...
+R784	Add field	إضافة حقل
+R785	No Label	بدون ملصق
+R786	Reset To Default	إعادة الضبط إلى الإعدادات الافتراضية
+R787	DocType Missing	نوع المستند مفقود
+R788	Duplicate field	حقل مكرر
+R789	Remove field	إزالة الحقل
+R790	Close properties	عقارات قريبة
+R791	Search properties...	ابحث عن العقارات...
+R792	Delete Section	حذف القسم
+R793	Delete section	حذف القسم
+R794	Delete Column	حذف العمود
+R795	Delete column	حذف العمود
+R796	Add section below	أضف القسم أدناه
+R797	Remove section	إزالة القسم
+R798	Add column	إضافة عمود
+R799	Remove column	إزالة العمود
+R800	Remove last column	قم بإزالة العمود الأخير
+R801	Section Title	عنوان القسم
+R802	Empty column	عمود فارغ
+R803	Add new tab	إضافة تبويب جديد
+R804	Add tab	إضافة علامة تبويب
+R805	Tab Label	علامة تبويب
+R806	Remove tab	إزالة علامة التبويب
+R807	OR	أو
+R808	Delete Tab	حذف علامة التبويب
+R809	Delete tab	حذف علامة التبويب
+R810	Choose a color	اختر لونًا
+R811	Choose an icon	اختر رمزًا
+R812	Select DocType	حدد نوع المستند
+R813	Select Field	اختر المجال
+R814	Grid Empty State	حالة الشبكة الفارغة
+R815	Create Child Doctype	إنشاء نوع مستند فرعي
+R816	Show Preview	عرض معاينة
+R817	Hide Preview	إخفاء المعاينة
+R818	Preview Mode	وضع المعاينة
+R819	Saving...	إنقاذ...
+R820	No.	لا.
+R821	Invalid "depends_on" expression	تعبير &quot;under_on&quot; غير صالح
+R822	updated to {0}	تم التحديث إلى {0}
+R823	Select All	حدد الكل
+R824	Select Mandatory	حدد إلزامية
+R825	Unselect All	إلغاء تحديد الكل
+R826	Export 1 record	تصدير 1 سجل
+R827	Export {0} records	تصدير {0} السجلات
+R828	Export Data	تصدير البيانات
+R829	(Mandatory)	(إلزامي)
+R830	Export Type	نوع التصدير
+R831	All Records	جميع السجلات
+R832	Filtered Records	السجلات التي تمت تصفيتها
+R833	5 Records	5 السجلات
+R834	Blank Template	نموذج فارغ
+R835	Untitled Column	عمود بلا عنوان
+R836	Don't Import	لا تستورد
+R837	unlinked	غير مرتبط
+R838	Version Updated	تحديث الإصدار
+R839	Browser not supported	المتصفح غير مدعوم

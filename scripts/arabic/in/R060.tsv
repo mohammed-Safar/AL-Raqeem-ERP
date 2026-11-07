@@ -1,0 +1,120 @@
+R3426	Query Parameters	معلمات الاستعلام
+R3427	Provider Name	اسم المزود
+R3428	OpenID Configuration	تكوين OpenID
+R3429	Client Credentials	وثائق تفويض العميل
+R3430	Client Id	معرف العميل
+R3431	Redirect URI	عنوان إعادة التوجيه
+R3432	Client Secret	سر العميل
+R3433	Scopes	نطاقات
+R3434	Endpoints	نقاط النهاية
+R3435	Invalid Parameters.	معلمات غير صالحة.
+R3436	Geoapify	Geoapify
+R3437	HERE	هنا
+R3438	Nomatim	نوماتيم
+R3439	Enable Address Autocompletion	تفعيل الإكمال التلقائي للعناوين
+R3440	Base URL	الرابط الأساسي
+R3441	Geolocation Settings	إعدادات تحديد الموقع الجغرافي
+R3442	Sync Calendar	مزامنة التقويم
+R3443	Syncing	المزامنة
+R3444	Calendar Name	اسم التقويم
+R3445	Refresh Token	تحديث رمز
+R3446	Authorization Code	رمز الترخيص
+R3447	Next Sync Token	رمز المزامنة التالي
+R3448	Sync	مزامنة
+R3449	Sync Contacts	مزامنة جهات الاتصال
+R3450	Last Sync On	آخر مزامنة تشغيل
+R3451	Client ID	رمز العميل
+R3452	OAuth Client ID	معرف عميل OAuth
+R3453	App ID	معرف التطبيق
+R3454	Google Drive Picker	أداة اختيار جوجل درايف
+R3455	Google Settings	إعدادات جوجل
+R3456	Response Headers	رؤوس الاستجابة
+R3457	Integration Request	التكامل طلب
+R3458	Authorized	مخول
+R3459	Request Data	طلب البيانات
+R3460	Is Remote Request?	هل هذا طلب عن بعد؟
+R3461	Request Description	وصف الطلب
+R3462	Request ID	رقم الطلب
+R3463	LDAP Group	مجموعة LDAP
+R3464	LDAP Group Mapping	تعيين مجموعة LDAP
+R3465	LDAP Email Field	LDAP البريد الإلكتروني الميدان
+R3466	LDAP Username Field	LDAP اسم المستخدم الميدان
+R3467	LDAP Phone Field	حقل هاتف LDAP
+R3468	LDAP Mobile Field	حقل LDAP المحمول
+R3469	LDAP Security	أمان LDAP
+R3470	SSL/TLS Mode	وضع SSL / TLS
+R3471	Off	إيقاف
+R3472	StartTLS	STARTTLS
+R3473	Require Trusted Certificate	طلب شهادة موثوق بها
+R3474	LDAP Group Mappings	تعيينات LDAP
+R3475	LDAP Group Field	حقل مجموعة LDAP
+R3476	LDAP Server Settings	إعدادات خادم LDAP
+R3477	LDAP Auth	مصادقة LDAP
+R3478	LDAP Custom Settings	إعدادات LDAP المخصصة
+R3479	Directory Server	خادم الدليل
+R3480	Active Directory	الدليل النشط
+R3481	OpenLDAP	OpenLDAP
+R3482	Group Object Class	فئة كائن المجموعة
+R3483	Custom Group Search	بحث مخصص للمجموعات
+R3484	Default User Type	نوع المستخدم الافتراضي
+R3485	LDAP Settings	إعدادات LDAP
+R3486	LDAP Server Url	خادم LDAP رابط
+R3487	Default User Role	دور المستخدم الافتراضي
+R3488	LDAP Search String	LDAP بحث سلسلة
+R3489	Misconfigured	إعدادات خاطئة
+R3490	LDAP Not Installed	لم يتم تثبيت لداب
+R3491	Password changed successfully.	تم تغيير الرقم السري بنجاح.
+R3492	Client	عميل
+R3493	Expiration time	وقت انتهاء الصلاحية
+R3494	Validity	الصلاحية
+R3495	Invalid	غير صالحة
+R3496	Valid	صالح
+R3497	nonce	نونسي
+R3498	Code Challenge	تحدي البرمجة
+R3499	Code challenge method	أسلوب تحدي الكود
+R3500	plain	سهل
+R3501	s256	s256
+R3502	OAuth Authorization Code	مصادقة رمز التفويض
+R3503	Access Token	رمز وصول
+R3504	Expires In	ينتهي في
+R3505	Revoked	إلغاء
+R3506	OAuth Bearer Token	حامل رمز المصادقة
+R3507	Grant Type	منحة نوع
+R3508	Implicit	ضمني
+R3509	Response Type	نوع الاستجابة
+R3510	Token	رمز
+R3511	Client Metadata	بيانات تعريف العميل
+R3512	Client URI	عنوان URL الخاص بالعميل
+R3513	Logo URI	شعار URI
+R3514	Software ID	معرف البرنامج
+R3515	Software Version	إصدار البرنامج
+R3516	TOS URI	عنوان URL لشروط الخدمة
+R3517	Policy URI	معرّف سياسة الموارد الموحدة
+R3518	Client Secret Basic	لغة سيكريت بيسك الخاصة بالعميل
+R3519	Client Secret Post	منشور سري للعميل
+R3520	OAuth Client	عميل OAuth
+R3521	Skip Authorization	تجاهل حق الوصول
+R3522	Redirect URIs	إعادة توجيه محددات
+R3523	Default Redirect URI	رابط اعادة التوجيه الافتراضي
+R3524	Advanced Settings	إعدادات متقدمة
+R3525	OAuth Client Role	دور عميل OAuth
+R3526	Auto	تلقائى
+R3527	OAuth Provider Settings	إعدادات موفرOAuth
+R3528	Scope	نِطَاق
+R3529	OAuth Scope	نطاق OAuth
+R3530	Authorization	التفويض
+R3531	Resource	مورد
+R3532	Resource Name	اسم المورد
+R3533	Resource Documentation	وثائق الموارد
+R3534	Resource Policy URI	معرّف موارد سياسة الموارد
+R3535	Resource TOS URI	مورد TOS URI
+R3536	Scopes Supported	النطاقات المدعومة
+R3537	Relay Settings	إعدادات المرحل
+R3538	Push Notification Settings	إعدادات الإشعارات الفورية
+R3539	Webhook URL	رابط الويب هوك
+R3540	Slack Webhook URL	رابط ويب هوك سلاك
+R3541	Slack Webhook Error	خطأ Slack Webhook
+R3542	Client URLs	الروابط للعميل
+R3543	Authorize URL	مصادقة عنوان ورل
+R3544	Access Token URL	رابط رمز الدخول
+R3545	API Endpoint	نقطة وصولAPI

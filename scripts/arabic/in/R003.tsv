@@ -1,0 +1,120 @@
+R240	Ignore Closing Balance	تجاهل الرصيد الختامي
+R241	View Stock Ledger	عرض سجل المخزون
+R242	Warehouse Type	نوع المستودع
+R243	Valuation Field Type	نوع حقل التقييم
+R244	Reserving Stock...	حجز المخزون...
+R245	Stock Unreservation	عدم وجود حجز على الأسهم
+R246	Unreserve Stock	مخزون غير محجوز
+R247	Unreserving Stock...	إلغاء الحجز على الأسهم...
+R248	Stock Reservation Entry	إدخال حجز المخزون
+R249	Items to Reserve	العناصر المراد حجزها
+R250	Make a call	إجراء مكالمة
+R251	Open Call Log	سجل المكالمات المفتوح
+R252	No Summary	لا يوجد ملخص
+R253	Open Events	الفعاليات المفتوحة
+R254	Open Event	فعالية مفتوحة
+R255	No open event	لا يوجد حدث مفتوح
+R256	Past Events	الأحداث السابقة
+R257	Open Tasks	المهام المفتوحة
+R258	Open Task	مهمة مفتوحة
+R259	Mark As Closed	تم إغلاق الملف
+R260	Allocated To:	مخصص إلى:
+R261	No open task	لا توجد عمليات مفتوحة
+R262	New Task	مهمة جديدة
+R263	No Notes	لا توجد ملاحظات
+R264	New Note	ملاحظة جديدة
+R265	Variant Attributes	سمات متفاوتة
+R266	Mapping {0} ...	رسم الخرائط {0}...
+R267	Annual Billing: {0}	الفواتير السنوية:  {0}
+R268	Total Unpaid: {0}	عدد غير مدفوع: {0}
+R269	Loyalty Points: {0}	نقاط الولاء: {0}
+R270	Total Advance Paid	إجمالي الدفعة المقدمة المدفوعة
+R271	Total Advance Received	إجمالي الدفعة المقدمة المستلمة
+R272	Total Unpaid	إجمالي غير المدفوع
+R273	Select Alternate Item	اختر البند البديل
+R274	Reqd by date	مطلوب بالتاريخ
+R275	Finished Good Item	منتج نهائي جيد
+R276	Quantity to Scan	الكمية المراد مسحها ضوئيًا
+R277	Scanned Quantity	الكمية الممسوحة ضوئياً
+R278	Serial Nos	الأرقام التسلسلية
+R279	Primary Contact Details	تفاصيل الاتصال الأساسية
+R280	Primary Address Details	تفاصيل العنوان الرئيسي
+R281	ZIP Code	الرمز البريدي
+R282	Add a Note	إضافة ملاحظة
+R283	Edit Note	ملاحظة تحريرية
+R284	Clearing Demo Data...	جارٍ مسح بيانات العرض التوضيحي...
+R285	Demo data cleared	تم مسح البيانات التجريبية
+R286	Add Items	إضافة بنود
+R287	Cannot apply taxes	لا يمكن تطبيق الضرائب
+R288	Select company first	اختر الشركة أولا
+R289	Set Source Warehouse	تعيين المخزن المصدر
+R290	For Work Order	لأمر العمل
+R291	Scan Serial No	رقم المسح التسلسلي
+R292	Scan Batch No	رقم دفعة المسح
+R293	Enter Manually	أدخل يدويًا
+R294	Download CSV Template	قم بتنزيل قالب CSV
+R295	Batch Nos	أرقام الدفعات
+R296	Attach CSV File	إرفاق ملف CSV
+R297	{0} {1} Manually	{0} {1} يدويًا
+R298	Serial No Range	نطاق الأرقام التسلسلية
+R299	Enter Serial Nos	أدخل الأرقام التسلسلية
+R300	Auto Fetch	الجلب التلقائي
+R301	Qty to Fetch	الكمية المطلوب جلبها
+R302	Fetch Based On	جلب البيانات بناءً على
+R303	UnReconcile Allocations	تخصيصات غير متوافقة
+R304	No Selection	لا يوجد اختيار
+R305	UnReconcile	عدم المصالحة
+R306	Open Notifications	فتح الإشعارات
+R307	Open To Do 	فتح قائمة المهام
+R308	Open Issues 	القضايا المفتوحة
+R309	Open Projects 	مشاريع مفتوحة
+R310	Pending Activities	الأنشطة المعلقة
+R311	Upcoming Calendar Events 	أحداث التقويم القادمة
+R312	Edit Capacity	سعة التحرير
+R313	% Occupied	% مشغول
+R314	Stock Capacity	الطاقة الإنتاجية للمخزون
+R315	Balance Stock Qty	كمية المخزون المتبقي
+R316	Dear	العزيز
+R317	Verify Email	التحقق من البريد الإلكتروني
+R318	hidden	مخفي
+R319	Reqd By Date	تاريخ الاستحقاق
+R320	Required On	مطلوب في
+R321	Not in Stock	غير متوفر في المخزون
+R322	Time(in mins)	الوقت (دقيقة)
+R323	No description given	لم يتم اعطاء وصف
+R324	Powered by {0}	مدعوم من {0}
+R325	Move to Cart	أضف إلى السلة
+R326	Out of stock	إنتهى من المخزن
+R327	ratings	التقييمات
+R328	out of 5	من أصل 5
+R329	No values	لا توجد قيم
+R330	Savings	المدخرات
+R331	Applied Coupon Code	رمز القسيمة المطبق
+R332	In stock	في المخزن
+R333	Not in stock	ليس في الأسهم
+R334	See All Articles	انظر جميع المقالات
+R335	Forum Activity	نشاط المنتدى
+R336	Visit the forums	زيارة المنتديات
+R337	Your tickets	تذاكرك
+R338	Delivered: {0}	تسليم: {0}
+R339	Qty 	الكمية 
+R340	Make Purchase Invoice	إنشاء فاتورة شراء
+R341	Pay	دفع
+R342	Project Progress:	تقدم المشروع:
+R343	Hours Spent	الساعات التي تم قضاؤها
+R344	New task	مهمة جديدة
+R345	Modified On	تم التعديل بتاريخ
+R346	Make Quotation	اطلب عرض سعر
+R347	Notes: 	الملاحظات :
+R348	Quotations: 	عروض مسعرة:
+R349	on	على
+R350	Total (Without Tax)	الإجمالي (بدون ضريبة)
+R351	Book an appointment	احجز موعدًا
+R352	Book Appointment	موعد الكتاب
+R353	Add details	أضف التفاصيل
+R354	Selected date is	التاريخ المحدد هو
+R355	at	في
+R356	Your Name (required)	اسمك (مطلوب)
+R357	Email Address (required)	عنوان البريد الإلكتروني (مطلوب)
+R358	Go back	عُد
+R359	to	إلى

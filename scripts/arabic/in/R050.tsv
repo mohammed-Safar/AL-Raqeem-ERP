@@ -1,0 +1,120 @@
+R2226	Domain Settings	إعدادات النطاق
+R2227	Amended From	معدل من
+R2228	Link Document Type	رابط نوع الوثيقة
+R2229	Occurrences	الأحداث
+R2230	Open reference document	افتح المستند المرجعي
+R2231	Error Log	سجل الأخطاء
+R2232	Trace ID	معرف التتبع
+R2233	Metadata	البيانات الوصفية
+R2234	Clear Error Logs	مسح سجلات سجلات الاخطاء
+R2235	Not Seen	لا أرى
+R2236	Optimizing image...	جارٍ تحسين الصورة...
+R2237	Image optimized	صورة مُحسّنة
+R2238	View File	عرض الملف
+R2239	Unzip	فك الضغط
+R2240	Thumbnail URL	URL المصغرة
+R2241	Folder	مجلد
+R2242	Is Folder	هو مجلد
+R2243	Attached To DocType	مرفق بDocType
+R2244	Attached To Name	أرفقت للأسم
+R2245	Attached To Field	مرفق إلى الحقل
+R2246	old_parent	الوالد_القديم
+R2247	Content Hash	تجزئة المحتوى
+R2248	Uploaded To Dropbox	تم التحميل إلى Dropbox
+R2249	File Name	اسم الملف
+R2250	Is Private	غير الخاصة
+R2251	Preview HTML	معاينة HTML
+R2252	Is Home Folder	هو المجلد الرئيسي
+R2253	Is Attachments Folder	هو مجلد المرفقات
+R2254	File Size	حجم الملف
+R2255	File URL	ملف URL
+R2256	Invalid File URL	عنوان URL للملف غير صالح
+R2257	Protected File	ملف محمي
+R2258	Home/Test Folder 1	الصفحة الرئيسية / اختبار المجلد 1
+R2259	Home/Test Folder 2	الصفحة الرئيسية / مجلد اختبار 2
+R2260	Test_Folder	إختبار_المجلد
+R2261	Has Domain	لديه نطاق
+R2262	Has Role	له صلاحية
+R2263	Git Branch	فرع جيت
+R2264	Application Name	اسم التطبيق
+R2265	Application Version	إصدار التطبيق
+R2266	Has Setup Wizard	يحتوي على معالج إعداد
+R2267	Is Setup Complete?	هل اكتملت عملية الإعداد؟
+R2268	Installed Application	التطبيق المثبت
+R2269	App Name	اسم التطبيق
+R2270	Update Order	تحديث الطلب
+R2271	Installed Applications	التطبيقات المثبتة
+R2272	Language Code	كود اللغة
+R2273	Language Name	اسم اللغة
+R2274	Flag	علم
+R2275	Based On	وبناء على
+R2276	Date Format	تنسيق التاريخ
+R2277	dd-mm-yyyy	DD-MM-YYYY
+R2278	dd.mm.yyyy	يوم/شهر/سنة
+R2279	dd/mm/yyyy	اليوم / الشهر / السنة
+R2280	mm-dd-yyyy	شهر-يوم-سنة
+R2281	mm/dd/yyyy	شهر/يوم/سنة
+R2282	yyyy-mm-dd	yyyy-mm-dd
+R2283	Time Format	تنسيق الوقت
+R2284	HH:mm	HH: مم
+R2285	HH:mm:ss	HH: MM: SS
+R2286	Number Format	تنسيق الرقم
+R2287	Log Setting User	مستخدم إعداد السجل
+R2288	Logs to Clear	سجلات للتنظيف
+R2289	Log DocType	نوع مستند السجل
+R2290	Logs To Clear	سجلات للتنظيف
+R2291	Module Name	اسم وحدة
+R2292	Module Profile Name	اسم ملف تعريف الوحدة
+R2293	Module HTML	وحدة HTML
+R2294	Block Modules	كتلة وحدات
+R2295	Module Profile	ملف تعريف الوحدة
+R2296	Item Label	تسمية العنصر
+R2297	Item Type	نوع العنصر
+R2298	Separator	فاصل
+R2299	Navbar Item	عنصر Navbar
+R2300	Application Logo	شعار التطبيق
+R2301	Settings Dropdown	قائمة الإعدادات المنسدلة
+R2302	Help Dropdown	قائمة المساعدة المنسدلة
+R2303	Dropdowns	هبوط قطرة
+R2304	Announcements	الإعلانات
+R2305	Announcement Widget	أداة الإعلان
+R2306	Widget Color	لون الأداة
+R2307	Is Dismissible	قابل للإغلاق
+R2308	Readme	اقرأني
+R2309	Package Name	اسم الحزمة
+R2310	License Type	نوع الترخيص
+R2311	MIT License	رخصة MIT
+R2312	Release	يطلق
+R2313	Attach Package	إرفاق الحزمة
+R2314	Activate	فعل
+R2315	Log	سجل
+R2316	Force	فرض
+R2317	Major	رئيسي
+R2318	Minor	صغير
+R2319	Patch	بقعة
+R2320	Release Notes	ملاحظات الإصدار
+R2321	Package Release	إصدار الحزمة
+R2322	System Page	صفحة النظام
+R2323	Page HTML	صفحة HTML
+R2324	Page Name	اسم الصفحة
+R2325	icon	رمز
+R2326	Patch Log	سجل التصحيح
+R2327	Permission Type	نوع الإذن
+R2328	amend	تعديل
+R2329	cancel	إلغاء
+R2330	create	إنشاء
+R2331	delete	حذف
+R2332	import	استيراد
+R2333	print	طباعة
+R2334	read	قرأ
+R2335	report	أبلغ عن
+R2336	select	حدد
+R2337	share	مشاركة
+R2338	submit	تسجيل
+R2339	write	الكتابة
+R2340	email	البريد الإلكتروني
+R2341	Permission Inspector	مفتش التراخيص
+R2342	Reference Type	نوع المرجع
+R2343	Removed	تمت إزالته
+R2344	Added	مضاف
+R2345	Permission Log	سجل الأذونات

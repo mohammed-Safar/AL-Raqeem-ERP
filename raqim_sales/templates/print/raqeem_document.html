@@ -1,0 +1,210 @@
+{#- RAQEEM — bilingual (Arabic / English) print layout for selling documents.
+    Used by the "RAQEEM …" print formats (Sales Invoice, Quotation, Sales Order,
+    Delivery Note) through {% include %}. Every label is printed in both
+    languages; the page direction follows the print language.
+    Layout is table-based so it works in both PDF generators (wkhtmltopdf, Chrome). -#}
+{%- set rtl = (frappe.lang or "en").startswith("ar") -%}
+{%- macro L(en, ar) -%}<span class="rq-l"><span class="rq-l-ar">{{ ar }}</span><span class="rq-l-en">{{ en }}</span></span>{%- endmacro -%}
+{%- set dt = doc.doctype -%}
+{%- if dt == "Sales Invoice" -%}
+	{%- if doc.is_return -%}{%- set t_en, t_ar = "Credit Note", "إشعار دائن" -%}
+	{%- elif doc.taxes and doc.total_taxes_and_charges -%}{%- set t_en, t_ar = "Tax Invoice", "فاتورة ضريبية" -%}
+	{%- else -%}{%- set t_en, t_ar = "Invoice", "فاتورة" -%}{%- endif -%}
+	{%- set d1 = ("Invoice Date", "تاريخ الفاتورة", "posting_date") -%}
+	{%- set d2 = ("Due Date", "تاريخ الاستحقاق", "due_date") -%}
+	{%- set party = doc.customer_name -%}
+{%- elif dt == "Quotation" -%}
+	{%- set t_en, t_ar = "Quotation", "عرض سعر" -%}
+	{%- set d1 = ("Date", "التاريخ", "transaction_date") -%}
+	{%- set d2 = ("Valid Till", "صالح حتى", "valid_till") -%}
+	{%- set party = doc.customer_name or doc.party_name -%}
+{%- elif dt == "Sales Order" -%}
+	{%- set t_en, t_ar = "Sales Order", "أمر بيع" -%}
+	{%- set d1 = ("Order Date", "تاريخ الأمر", "transaction_date") -%}
+	{%- set d2 = ("Delivery Date", "تاريخ التسليم", "delivery_date") -%}
+	{%- set party = doc.customer_name -%}
+{%- else -%}
+	{%- set t_en, t_ar = "Delivery Note", "إذن تسليم" -%}
+	{%- set d1 = ("Date", "التاريخ", "posting_date") -%}
+	{%- set d2 = ("", "", "") -%}
+	{%- set party = doc.customer_name -%}
+{%- endif -%}
+{%- if doc.select_print_heading -%}{%- set t_en, t_ar = doc.select_print_heading, _(doc.select_print_heading) -%}{%- endif -%}
+{%- set company_tax_id = frappe.db.get_value("Company", doc.company, "tax_id") if doc.company else "" -%}
+{%- set show_rates = dt != "Delivery Note" or (print_settings and not print_settings.print_without_amount) -%}
+
+<link rel="stylesheet" href="/assets/raqim_sales/css/raqeem_fonts.css">
+<style>
+	.rq-doc { --pf-accent: #ea580c; --pf-ink: #1f2328; --pf-muted: #6b7280; --pf-line: #e5e7eb; --pf-soft: #f8f7f5;
+		font-family: 'RQ Latin', 'IBM Plex Sans Arabic', 'Cairo', sans-serif; color: var(--pf-ink); font-size: 12.5px; line-height: 1.55; }
+	.rq-doc table { width: 100%; border-collapse: collapse; }
+	.rq-doc td, .rq-doc th { vertical-align: top; padding: 0; }
+	.rq-doc .rq-l-ar { font-family: 'IBM Plex Sans Arabic', 'Cairo', sans-serif; }
+	.rq-doc .rq-l-en { color: var(--pf-muted); font-size: .86em; font-weight: 500; }
+	.rq-doc .rq-l-ar + .rq-l-en::before { content: " / "; color: #c7c9cf; }
+	.rq-doc .rq-bar { height: 4px; background: var(--pf-accent); border-radius: 2px; margin-bottom: 18px; }
+	.rq-doc .rq-company { font-size: 19px; font-weight: 700; color: #111; margin-bottom: 2px; }
+	.rq-doc .rq-small { color: var(--pf-muted); font-size: 11.5px; }
+	.rq-doc .rq-title { font-size: 21px; font-weight: 700; color: #111; line-height: 1.3; }
+	.rq-doc .rq-title .rq-l-en { display: block; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--pf-accent); font-weight: 600; }
+	.rq-doc .rq-title .rq-l-ar + .rq-l-en::before { content: none; }
+	.rq-doc .rq-docno { font-size: 13px; font-weight: 600; margin-top: 4px; direction: ltr; unicode-bidi: isolate; }
+	.rq-doc .rq-box { border: 1px solid var(--pf-line); border-radius: 8px; padding: 10px 12px; }
+	.rq-doc .rq-box-label { font-size: 11px; font-weight: 600; margin-bottom: 4px; }
+	.rq-doc .rq-party { font-size: 14px; font-weight: 700; color: #111; }
+	.rq-doc .rq-meta td { padding: 3px 0; }
+	.rq-doc .rq-meta td.rq-v { text-align: end; font-weight: 600; white-space: nowrap; }
+	.rq-doc .rq-items { margin-top: 16px; }
+	.rq-doc .rq-items th { background: var(--pf-soft); font-size: 11px; font-weight: 600; padding: 8px 8px; border-bottom: 1px solid var(--pf-line); text-align: start; }
+	.rq-doc .rq-items th .rq-l-en, .rq-doc .rq-items th .rq-l-ar { display: block; }
+	.rq-doc .rq-items th .rq-l-ar + .rq-l-en::before { content: none; }
+	.rq-doc .rq-items td { padding: 8px; border-bottom: 1px solid var(--pf-line); }
+	.rq-doc .rq-items tr { page-break-inside: avoid; }
+	.rq-doc .rq-num { text-align: end !important; white-space: nowrap; font-variant-numeric: tabular-nums; }
+	.rq-doc .rq-idx { width: 28px; color: var(--pf-muted); }
+	.rq-doc .rq-item-name { font-weight: 600; }
+	.rq-doc .rq-item-code { color: var(--pf-muted); font-size: 11px; }
+	.rq-doc .rq-totals td { padding: 5px 10px; }
+	.rq-doc .rq-totals td.rq-v { text-align: end; white-space: nowrap; font-variant-numeric: tabular-nums; }
+	.rq-doc .rq-grand td { background: #111; color: #fff; font-size: 14px; font-weight: 700; padding: 9px 10px; }
+	.rq-doc .rq-grand .rq-l-en { color: #d1d5db; }
+	.rq-doc .rq-words { margin-top: 10px; background: var(--pf-soft); border-radius: 6px; padding: 8px 12px; font-size: 12px; }
+	.rq-doc .rq-terms { margin-top: 18px; font-size: 11.5px; color: #374151; }
+	.rq-doc .rq-sign td { padding-top: 34px; }
+	.rq-doc .rq-sign-line { border-top: 1px solid #9ca3af; padding-top: 6px; width: 85%; font-size: 11px; }
+	.rq-doc .rq-foot { margin-top: 22px; border-top: 1px solid var(--pf-line); padding-top: 8px; text-align: center; font-size: 10.5px; color: #9ca3af; }
+	.rq-doc[dir="rtl"] { text-align: right; }
+	.rq-doc[dir="ltr"] { text-align: left; }
+</style>
+
+<div class="rq-doc" dir="{{ 'rtl' if rtl else 'ltr' }}">
+	{%- if letter_head and not no_letterhead %}
+	<div class="rq-letterhead">{{ letter_head }}</div>
+	{%- endif %}
+	<div class="rq-bar"></div>
+
+	<table>
+		<tr>
+			<td style="width: 58%">
+				<div class="rq-company">{{ doc.company }}</div>
+				{%- if doc.company_address_display %}<div class="rq-small">{{ doc.company_address_display }}</div>{% endif %}
+				{%- if company_tax_id %}<div class="rq-small">{{ L("VAT No.", "الرقم الضريبي") }}: <b style="direction:ltr;unicode-bidi:isolate">{{ company_tax_id }}</b></div>{% endif %}
+			</td>
+			<td style="width: 42%; text-align: end">
+				<div class="rq-title">{{ L(t_en, t_ar) }}</div>
+				<div class="rq-docno">{{ doc.name }}</div>
+				{%- if doc.docstatus == 0 %}<div class="rq-small" style="color:#b45309">{{ L("Draft", "مسودة") }}</div>{% endif %}
+				{%- if doc.docstatus == 2 %}<div class="rq-small" style="color:#b91c1c">{{ L("Cancelled", "ملغى") }}</div>{% endif %}
+			</td>
+		</tr>
+	</table>
+
+	<table style="margin-top: 16px">
+		<tr>
+			<td style="width: 58%; padding-inline-end: 12px">
+				<div class="rq-box">
+					<div class="rq-box-label">{{ L("Bill To", "العميل") }}</div>
+					<div class="rq-party">{{ party or "" }}</div>
+					{%- if doc.address_display %}<div class="rq-small">{{ doc.address_display }}</div>{% endif %}
+					{%- if doc.contact_display %}<div class="rq-small">{{ doc.contact_display }}{% if doc.contact_mobile %} · <span style="direction:ltr;unicode-bidi:isolate">{{ doc.contact_mobile }}</span>{% endif %}</div>{% endif %}
+					{%- if doc.tax_id %}<div class="rq-small">{{ L("VAT No.", "الرقم الضريبي") }}: <b style="direction:ltr;unicode-bidi:isolate">{{ doc.tax_id }}</b></div>{% endif %}
+				</div>
+			</td>
+			<td style="width: 42%">
+				<div class="rq-box">
+					<table class="rq-meta">
+						<tr><td>{{ L(d1[0], d1[1]) }}</td><td class="rq-v">{{ doc.get_formatted(d1[2]) }}</td></tr>
+						{%- if d2[2] and doc.get(d2[2]) %}
+						<tr><td>{{ L(d2[0], d2[1]) }}</td><td class="rq-v">{{ doc.get_formatted(d2[2]) }}</td></tr>
+						{%- endif %}
+						{%- if doc.po_no %}
+						<tr><td>{{ L("Customer PO", "أمر شراء العميل") }}</td><td class="rq-v">{{ doc.po_no }}</td></tr>
+						{%- endif %}
+						{%- if doc.currency %}
+						<tr><td>{{ L("Currency", "العملة") }}</td><td class="rq-v">{{ doc.currency }}</td></tr>
+						{%- endif %}
+					</table>
+				</div>
+			</td>
+		</tr>
+	</table>
+
+	<table class="rq-items">
+		<thead>
+			<tr>
+				<th class="rq-idx">#</th>
+				<th>{{ L("Item", "الصنف") }}</th>
+				<th class="rq-num">{{ L("Qty", "الكمية") }}</th>
+				{%- if show_rates %}
+				<th class="rq-num">{{ L("Rate", "السعر") }}</th>
+				<th class="rq-num">{{ L("Amount", "المبلغ") }}</th>
+				{%- endif %}
+			</tr>
+		</thead>
+		<tbody>
+			{%- for item in doc.items %}
+			<tr>
+				<td class="rq-idx">{{ item.idx }}</td>
+				<td>
+					<div class="rq-item-name">{{ item.item_name }}</div>
+					{%- if item.item_code and item.item_code != item.item_name %}<div class="rq-item-code">{{ item.item_code }}</div>{% endif %}
+					{%- if item.description and item.description|striptags|trim != item.item_name %}<div class="rq-item-code">{{ item.description|striptags|truncate(160) }}</div>{% endif %}
+				</td>
+				<td class="rq-num">{{ item.get_formatted("qty", doc) }} {{ _(item.uom) if item.uom else "" }}</td>
+				{%- if show_rates %}
+				<td class="rq-num">{{ item.get_formatted("rate", doc) }}</td>
+				<td class="rq-num">{{ item.get_formatted("amount", doc) }}</td>
+				{%- endif %}
+			</tr>
+			{%- endfor %}
+		</tbody>
+	</table>
+
+	{%- if show_rates %}
+	<table style="margin-top: 14px">
+		<tr>
+			<td style="width: 50%"></td>
+			<td style="width: 50%">
+				<table class="rq-totals">
+					<tr><td>{{ L("Subtotal", "المجموع") }}</td><td class="rq-v">{{ doc.get_formatted("total") }}</td></tr>
+					{%- if doc.discount_amount %}
+					<tr><td>{{ L("Discount", "الخصم") }}</td><td class="rq-v">− {{ doc.get_formatted("discount_amount") }}</td></tr>
+					{%- endif %}
+					{%- for tax in doc.taxes %}
+					{%- if tax.tax_amount or (print_settings and print_settings.print_taxes_with_zero_amount) %}
+					<tr><td>{{ _(tax.description) }}</td><td class="rq-v">{{ tax.get_formatted("tax_amount", doc) }}</td></tr>
+					{%- endif %}
+					{%- endfor %}
+					{%- set show_rounded = doc.rounded_total and doc.rounded_total != doc.grand_total -%}
+					{%- if show_rounded %}
+					<tr><td>{{ L("Rounding", "التقريب") }}</td><td class="rq-v">{{ doc.get_formatted("rounding_adjustment") }}</td></tr>
+					{%- endif %}
+					<tr class="rq-grand"><td>{{ L("Total", "الإجمالي") }}</td><td class="rq-v">{{ doc.get_formatted("rounded_total" if show_rounded else "grand_total") }}</td></tr>
+					{%- if dt == "Sales Invoice" and doc.docstatus == 1 and doc.outstanding_amount and not doc.is_return %}
+					<tr><td>{{ L("Balance Due", "المتبقي") }}</td><td class="rq-v"><b>{{ doc.get_formatted("outstanding_amount") }}</b></td></tr>
+					{%- endif %}
+				</table>
+			</td>
+		</tr>
+	</table>
+	{%- if doc.in_words %}
+	<div class="rq-words">{{ L("Amount in words", "المبلغ كتابةً") }}: <b>{{ doc.in_words }}</b></div>
+	{%- endif %}
+	{%- endif %}
+
+	{%- if doc.terms %}
+	<div class="rq-terms">
+		<div class="rq-box-label">{{ L("Terms and Conditions", "الشروط والأحكام") }}</div>
+		{{ doc.terms }}
+	</div>
+	{%- endif %}
+
+	<table class="rq-sign">
+		<tr>
+			<td style="width: 50%"><div class="rq-sign-line">{{ L("Prepared by", "إعداد") }}</div></td>
+			<td style="width: 50%"><div class="rq-sign-line">{{ L("Received by", "المستلم") }}</div></td>
+		</tr>
+	</table>
+
+	<div class="rq-foot">{{ doc.company }} · {{ doc.name }}</div>
+</div>

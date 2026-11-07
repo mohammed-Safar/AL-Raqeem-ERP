@@ -1,0 +1,120 @@
+R6279	Lost Value %	نسبة القيمة المفقودة
+R6280	Invalid Group By	تجميع غير صالح
+R6281	From Due Date	من تاريخ الاستحقاق
+R6282	To Due Date	حتى تاريخ الاستحقاق
+R6283	S.O. No.	S.O. رقم
+R6284	SO Qty	كمية طلبات الشراء
+R6285	Quotation Trends	مؤشرات المناقصة
+R6286	Quoted Amount	المبلغ المذكور
+R6287	Week {0} {1}	الأسبوع {0} {1}
+R6288	Quarter {0} {1}	الربع {0} {1}
+R6289	Group by Item	تجميع حسب البند
+R6290	Sales Order Analysis	تحليل أوامر المبيعات
+R6291	Qty to Deliver	الكمية للتسليم
+R6292	Amount Delivered	المبلغ الذي تم تسليمه
+R6293	Delay (in Days)	التأخير (بالأيام)
+R6294	Sales Order Trends	مجرى طلبات البيع
+R6295	Sales Value	قيمة المبيعات
+R6296	Commission Rate %	نسبة العمولة %
+R6297	Target ({})	استهداف ({})
+R6298	Achieved ({})	حقق ({})
+R6299	Variance ({})	التباين ({})
+R6300	Total Target	إجمالي المستهدف
+R6301	Total Achieved	الإجمالي المحقق
+R6302	Target On	الهدف في
+R6303	doc_type	نوع المستند
+R6304	Contribution %	المساهمة %
+R6305	Contribution Amount	قيمة المساهمة
+R6306	Show Return Entries	إظهار إرجاع الإدخالات
+R6307	SO Total Qty	إذن إجمالي الكمية
+R6308	Contribution Qty	كمية المساهمة
+R6309	Territory-wise Sales	المبيعات الحكيمة
+R6310	Quotation Amount	كمية الاقتباس
+R6311	Order Amount	كمية الطلب
+R6312	POS	نقطة البيع
+R6313	Customer Reports	تقارير العملاء
+R6314	Sales Team Reports	تقارير فريق المبيعات
+R6315	Sales Reports	تقارير المبيعات
+R6316	Annual Sales	المبيعات السنوية
+R6317	Authorization Control	التحكم في الترخيص
+R6318	Applicable To (Role)	قابلة للتطبيق على (الدور الوظيفي)
+R6319	Applicable To (Employee)	قابلة للتطبيق على (الموظف)
+R6320	Applicable To (User)	قابلة للتطبيق على (المستخدم)
+R6321	Applicable To (Designation)	قابلة للتطبيق على (المسمى الوظيفي)
+R6322	Authorization Rule	قاعدة الترخيص
+R6323	Average Discount	متوسط الخصم
+R6324	Customerwise Discount	التخفيض من ناحية الزبائن
+R6325	Itemwise Discount	التخفيض وفقاً للصنف
+R6326	Customer or Item	عميل أو بند
+R6327	Authorized Value	القيمة المرخص بها
+R6328	Brand Defaults	افتراضيات العلامة التجارية
+R6329	Cost Centers	مراكز التكلفة
+R6330	Create Tax Template	إنشاء قالب الضريبة
+R6331	Delete Transactions	حذف المعاملات
+R6332	Wrong Password	كلمة مرور خاطئة\\n<br>\\nWrong Password
+R6333	Moving Average	المتوسط المتحرك
+R6334	FIFO	FIFO
+R6335	LIFO	LIFO
+R6336	Default Scrap Warehouse	مستودع الخردة الافتراضي
+R6337	Default Sales Contact	جهة اتصال المبيعات الافتراضية
+R6338	Abbr	الاختصار
+R6339	Parent Company	الشركة الام
+R6340	Company Description	وصف الشركة
+R6341	Sales Monthly History	التاريخ الشهري للمبيعات
+R6342	Transactions Annual History	المعاملات السنوية التاريخ
+R6343	Monthly Sales Target	هدف المبيعات الشهرية
+R6344	Total Monthly Sales	إجمالي المبيعات الشهرية
+R6345	Default Currency	العملة الافتراضية
+R6346	Default Holiday List	قائمة العطل الافتراضية
+R6347	Existing Company	الشركة القائمة
+R6348	Standard Template	قالب قياسي
+R6349	Existing Company 	الشركة الحالية
+R6350	Date of Establishment	تاريخ التأسيس
+R6351	Default Bank Account	حساب المصرف الافتراضي
+R6352	Default Cash Account	حساب النقد الافتراضي
+R6353	Default Receivable Account	حساب المدينون الافتراضي
+R6354	Round Off Account	جولة قبالة حساب
+R6355	Default Payable Account	حساب الدائنون الافتراضي
+R6356	Default Income Account	حساب الدخل الافتراضي
+R6357	Enable Perpetual Inventory	تمكين المخزون الدائم
+R6358	Default Inventory Account	حساب المخزون الافتراضي
+R6359	Stock Adjustment Account	حساب تسوية الأوراق المالية
+R6360	Budget Detail	تفاصيل الميزانية
+R6361	Date of Incorporation	تاريخ التأسيس
+R6362	Date of Commencement	تاريخ البدء
+R6363	Registration Details	تفاصيل التسجيل
+R6364	Default Selling Terms	شروط البيع الافتراضية
+R6365	Default Buying Terms	شروط الشراء الافتراضية
+R6366	Default In-Transit Warehouse	مستودع النقل الافتراضي
+R6367	Warehouse Defaults	الإعدادات الافتراضية للمستودع
+R6368	Sample Retention Warehouse	مستودع الاحتفاظ بالعينات
+R6369	Fixed Asset Defaults	حالات التخلف عن سداد الأصول الثابتة
+R6370	Default Provisional Account	الحساب المؤقت الافتراضي
+R6371	Submit ERR Journals?	هل يمكن تقديم سجلات الأخطاء؟
+R6372	Buying and Selling	البيع والشراء
+R6373	Stock Expense	مصروف المخزون
+R6374	Stock and Manufacturing	المخزون والتصنيع
+R6375	Deferred Accounting	المحاسبة المؤجلة
+R6376	Advance Payment Date	تاريخ الدفعة المقدمة
+R6377	Reporting Currency	عملة الإبلاغ
+R6378	Purchase Expense	مصاريف الشراء
+R6379	Purchase Expense Account	حساب مصروفات الشراء
+R6380	For service item	لعنصر الخدمة
+R6381	Service Expense Account	حساب مصروفات الخدمة
+R6382	Incorrect Warehouse	مستودع غير صحيح
+R6383	Abbreviation is mandatory	الاسم المختصر إلزامي
+R6384	All Warehouses	جميع المخازن
+R6385	Stores	مخازن
+R6386	Goods In Transit	البضائع في العبور
+R6387	Marketing	التسويق
+R6388	Dispatch	ارسال
+R6389	Customer Service	خدمة العملاء
+R6390	Human Resources	الموارد البشرية
+R6391	Management	الإدارة
+R6392	Quality Management	إدارة الجودة
+R6393	Research & Development	البحث و التطوير
+R6394	Provisional Account	الحساب المؤقت
+R6395	Sales Account	حساب مبيعات
+R6396	Main	رئيسي
+R6397	For Buying	للشراء
+R6398	For Selling	للبيع

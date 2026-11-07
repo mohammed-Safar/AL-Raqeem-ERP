@@ -1,0 +1,120 @@
+R4359	Address HTML	عنوان HTML
+R4360	Contact HTML	الاتصال HTML
+R4361	Data Import Configuration	تكوين استيراد البيانات
+R4362	Bank Transaction Mapping	رسم المعاملات المصرفية
+R4363	Unlink external integrations	إلغاء ربط التكامل الخارجي
+R4364	Is Company Account	هو حساب الشركة
+R4365	Party Details	تفاصيل الحزب
+R4366	Account Details	تفاصيل الحساب
+R4367	IBAN	رقم الحساب البنكي
+R4368	Bank Account No	رقم الحساب البنكي
+R4369	Statement PDF Password	كلمة مرور PDF لكشف الحساب
+R4370	Integration Details	تفاصيل التكامل
+R4371	Integration ID	معرف التكامل
+R4372	Last Integration Date	تاريخ التكامل الأخير
+R4373	Branch Code	رمز الفرع
+R4374	Is Credit Card	هل هي بطاقة ائتمان
+R4375	Company Account	حساب الشركة
+R4376	Account Subtype	نوع الحساب الفرعي
+R4377	Is Default Account	هو الحساب الافتراضي
+R4378	Bank Account Balance	رصيد الحساب البنكي
+R4379	Bank Account Subtype	النوع الفرعي للحساب المصرفي
+R4380	Bank Account Type	نوع الحساب المصرفي
+R4381	Get Payment Entries	الحصول على مدخلات الدفع
+R4382	Update Clearance Date	تحديث تاريخ التخليص
+R4383	Include Reconciled Entries	تضمن القيود التي تم تسويتها
+R4384	Include POS Transactions	تشمل معاملات نقطه البيع
+R4385	Payment Entries	ادخال دفعات
+R4386	Bank Clearance	تخليص البنك
+R4387	Clearance Date updated	تم تحديث تاريخ التخليص\\n<br>\\nClearance Date updated
+R4388	Bank Clearance Detail	تفاصيل التخليص المصرفي
+R4389	Cheque Number	رقم الشيك
+R4390	Cheque Date	تاريخ الشيك
+R4391	Validity in Days	الصلاحية في أيام
+R4392	Bank Account Info	معلومات الحساب البنكي
+R4393	Clauses and Conditions	الشروط والأحكام
+R4394	Other Details	تفاصيل أخرى
+R4395	Bank Guarantee Number	رقم ضمان البنك
+R4396	Name of Beneficiary	اسم المستفيد
+R4397	Margin Money	المال الهامش
+R4398	Charges Incurred	الرسوم المتكبدة
+R4399	Fixed Deposit Number	رقم الوديعة الثابتة
+R4400	Bank Guarantee	ضمان بنكي
+R4401	Bank Guarantee Type	نوع الضمان المصرفي
+R4402	Providing	توفير
+R4403	Receiving	يستلم
+R4404	Upload Bank Statement	قم بتحميل كشف حسابك البنكي
+R4405	Auto Reconcile	المطابقة التلقائية
+R4406	Get Unreconciled Entries	الحصول على مدخلات لم تتم تسويتها
+R4407	To Reference Date	إلى تاريخ المرجع
+R4408	Bank Reconciliation Tool	أداة تسوية الحسابات المصرفية
+R4409	Account Opening Balance	الرصيد الافتتاحي للحساب
+R4410	From Reference Date	من تاريخ المرجع
+R4411	Auto Reconciliation	التسوية التلقائية
+R4412	{0} Transaction(s) Reconciled	{0} تمت مطابقة المعاملة (المعاملات)
+R4413	Start Import	بدء الاستيراد
+R4414	Report Error	الإبلاغ عن خطأ
+R4415	Loading import file...	جارٍ تحميل ملف الاستيراد ...
+R4416	Show Traceback	عرض تتبع الأخطاء
+R4417	No failed logs	لا توجد سجلات فاشلة
+R4418	Export Errored Rows	تصدير الصفوف الخطأ
+R4419	Show Failed Logs	إظهار السجلات الفاشلة
+R4420	<h5 class="text-muted uppercase">Or</h5>	<h5 class="text-muted uppercase">أو</h5>
+R4421	Custom delimiters	محددات مخصصة
+R4422	Delimiter options	خيارات الفاصل
+R4423	Use CSV Sniffer	استخدم أداة تحليل ملفات CSV
+R4424	Import MT940 Fromat	استيراد تنسيق MT940
+R4425	Bank Statement Import	استيراد كشوفات الحسابات البنكية
+R4426	Detected Header Index	فهرس الترويسة المكتشف
+R4427	Column Mapping	تعيين الأعمدة
+R4428	PDF Tables	جداول PDF
+R4429	Not Started	لم تبدأ
+R4430	Total Debit Transactions	إجمالي معاملات المدين
+R4431	Total Credit Transactions	إجمالي معاملات الدائن
+R4432	Statement Format	تنسيق كشف الحساب
+R4433	No Tables Detected	لم يتم اكتشاف أي جداول
+R4434	Already Imported	تم الاستيراد مسبقًا
+R4435	Invalid File Type	نوع ملف غير صالح
+R4436	Permission Denied	تم رفض الإذن
+R4437	Invalid Bank Account	حساب بنكي غير صالح
+R4438	Missing Dependency	تبعية مفقودة
+R4439	Disabled Bank Account	حساب بنكي معطل
+R4440	Password Required	كلمة المرور مطلوبة
+R4441	Header Text	نص الترويسة
+R4442	Debit/Credit	مدين/دائن
+R4443	Do not import	عدم الاستيراد
+R4444	Party Account No.	رقم حساب الطرف
+R4445	Party IBAN	IBAN الطرف
+R4446	Party Name/Account Holder	اسم الطرف/صاحب الحساب
+R4447	Included Fee	الرسوم المشمولة
+R4448	Excluded Fee	الرسوم المستثناة
+R4449	Variable	متغير
+R4450	Unreconcile Transaction	معاملة غير قابلة للتسوية
+R4451	Transaction ID	رقم المعاملات
+R4452	Extended Bank Statement	كشف حساب بنكي موسع
+R4453	Is Rule Evaluated	هل تم تقييم القاعدة
+R4454	Matched Transaction Rule	قاعدة المعاملة المطابقة
+R4455	Settled	تسوية
+R4456	Voucher Created	تم إنشاء السند
+R4457	Bank Transaction Payments	مدفوعات المعاملات المصرفية
+R4458	Bank Entry Type	نوع القيد البنكي
+R4459	Multiple Accounts	حسابات متعددة
+R4460	Bank Transaction Rule	قاعدة المعاملة البنكية
+R4461	Any	أي
+R4462	Min Amount	الحد الأدنى للمبلغ
+R4463	Max Amount	أقصى مبلغ
+R4464	Description Rules	قواعد الوصف
+R4465	Classify As	صنّف كـ
+R4466	Invalid regex pattern.	نمط التعبير النمطي غير صالح.
+R4467	User Remark	ملاحظة المستخدم
+R4468	Ends With	ينتهي بـ
+R4469	Starts With	يبدأ بـ
+R4470	Bisect Right	قسم اليمين
+R4471	Up	أعلى
+R4472	Build Tree	بناء الشجرة
+R4473	Bisecting Left ...	تقسيم اليسار ...
+R4474	Bisecting Right ...	تقسيم اليمين ...
+R4475	Bisect Left	يقسم اليسار
+R4476	Balance Sheet Summary	ملخص الميزانية العمومية
+R4477	Bisecting From	يقسم من
+R4478	Bisecting To	تقسيم إلى نصفين

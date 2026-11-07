@@ -1,0 +1,120 @@
+R8160	Delete Permanently	حذف نهائي
+R8161	Mark as Closed	وضع علامة كمغلق
+R8162	Appointment Booking Settings	إعدادات حجز المواعيد
+R8163	Availability Of Slots	توافر فتحات
+R8164	Notify Via Email	إخطار عبر البريد الإلكتروني
+R8165	Agents	عملاء
+R8166	Enable Appointment Scheduling	تمكين جدولة موعد
+R8167	Appointment Scheduling	جدولة المواعيد
+R8168	Day Of Week	يوم من الأسبوع
+R8169	From Time 	من وقت
+R8170	Appointment Booking Slots	حجز موعد الشقوق
+R8171	View Leads	مشاهدة العملاء المحتملون
+R8172	Campaign Name	اسم الحملة
+R8173	Campaign Schedules	جداول الحملة
+R8174	Send After (days)	إرسال بعد (أيام)
+R8175	Campaign Email Schedule	جدول البريد الإلكتروني للحملة
+R8176	Competitor Name	اسم المنافس
+R8177	Competitor Detail	تفاصيل المنافس
+R8178	Lapsed	ساقطا
+R8179	N/A	N / A
+R8180	Partially Fulfilled	تمت جزئيا
+R8181	Unfulfilled	لم تتحقق
+R8182	Fulfilled	استيفاء
+R8183	Contract Period	مدة العقد
+R8184	Signee Details	تفاصيل المنشور
+R8185	Signee	الموقع
+R8186	Signed On	تم تسجيل الدخول
+R8187	Contract Details	تفاصيل العقد
+R8188	Contract Template	قالب العقد
+R8189	Contract Terms	شروط العقد
+R8190	Fulfilment Details	تفاصيل الاستيفاء
+R8191	Requires Fulfilment	يتطلب وفاء
+R8192	Fulfilment Deadline	الموعد النهائي للوفاء
+R8193	Fulfilment Terms	شروط الوفاء
+R8194	Signee (Company)	التوقيع (شركة)
+R8195	Signed By (Company)	موقع من قبل (الشركة)
+R8196	Authorised By	مرخص بها من
+R8197	Party Full Name	الاسم الكامل للحزب
+R8198	Contract	عقد
+R8199	Signed	وقعت
+R8200	Party User	مستخدم الحزب
+R8201	Unsigned	غير موقعة
+R8202	Fulfilment Status	حالة الوفاء
+R8203	Requirement	المتطلبات
+R8204	Contract Fulfilment Checklist	قائمة مراجعة إنجاز العقد
+R8205	Contract Template Help	مساعدة في نموذج العقد
+R8206	Added By	أضيف من قبل
+R8207	Added On	تمت الإضافة في
+R8208	CRM Note	ملاحظة إدارة علاقات العملاء
+R8209	Allowed Users	المستخدمون المسموح لهم
+R8210	CRM Settings	إعدادات إدارة علاقات العملاء
+R8211	Campaign Naming By	حملة التسمية بواسطة
+R8212	Email Campaign For 	حملة البريد الإلكتروني ل
+R8213	Email Campaign	حملة البريد الإلكتروني
+R8214	Email Campaign Error	خطأ في حملة البريد الإلكتروني
+R8215	Lead Pipeline	مسار العملاء المحتملين
+R8216	Create Opportunity	خلق الفرص
+R8217	Add to Prospect	إضافة إلى عميل محتمل
+R8218	Organization Name	اسم المنظمة
+R8219	Lead Owner	مالك الزبون المحتمل
+R8220	Lost Quotation	تسعيرة خسر
+R8221	Interested	مهتم
+R8222	Do Not Contact	عدم الاتصال
+R8223	From Customer	من العملاء
+R8224	Contact Info	معلومات الاتصال
+R8225	Lead Type	نوع الزبون المحتمل
+R8226	Request Type	طلب نوع
+R8227	Product Enquiry	الإستفسار عن المنتج
+R8228	Request for Information	طلب المعلومات
+R8229	Suggestions	اقتراحات
+R8230	Blog Subscriber	مدونه المشترك
+R8231	No of Employees	عدد الموظفين
+R8232	1-10	1-10
+R8233	1000+	1000+
+R8234	11-50	11-50
+R8235	201-500	201-500
+R8236	501-1000	501-1000
+R8237	51-200	51-200
+R8238	WhatsApp	ال WhatsApp
+R8239	Phone Ext.	رقم الهاتف الداخلي
+R8240	Qualified By	مؤهل من قبل
+R8241	Qualified on	مؤهل في
+R8242	Qualification Status	حالة التأهيل
+R8243	Qualified	مؤهَل
+R8244	Unqualified	غير مؤهل
+R8245	Job Title	المسمى الوظيفي
+R8246	Annual Revenue	الإيرادات السنوية
+R8247	Activities	الأنشطة
+R8248	Notes HTML	ملاحظات HTML
+R8249	Open Activities HTML	أنشطة مفتوحة HTML
+R8250	All Activities	جميع الأنشطة
+R8251	All Activities HTML	جميع الأنشطة HTML
+R8252	Lead -> Prospect	عميل محتمل -> عميل متوقع
+R8253	Create Prospect	إنشاء عميل محتمل
+R8254	New This Week	جديد هذا الأسبوع
+R8255	Unassigned	غير مُعيّن
+R8256	Opportunity Lost Reason	فرصة ضائعة السبب
+R8257	Lost Reason Detail	تفاصيل السبب المفقود
+R8258	Opportunity Pipeline	مسار فرص البيع
+R8259	Closing This Month	الإغلاق هذا الشهر
+R8260	Request For Quotation	طلب عرض أسعار
+R8261	Opportunity From	فرصة من
+R8262	Opportunity Type	نوع الفرصة
+R8263	Expected Closing Date	تاريخ الإغلاق المتوقع
+R8264	Opportunity Value	قيمة الفرصة
+R8265	Sales Stage	مرحلة المبيعات
+R8266	Probability (%)	الاحتمالية (%)
+R8267	Contact Mobile	جوال جهة الاتصال
+R8268	Opportunity Date	تاريخ الفرصة
+R8269	First Response Time	وقت الاستجابة الأول
+R8270	Opportunity Owner	فرصة استثمارية
+R8271	Set as Open	على النحو المفتوحة
+R8272	Set as Closed	على النحو مغلق
+R8273	Prospect Owner	مالك محتمل
+R8274	Leads	العملاء المحتملين
+R8275	No. of Employees	عدد الموظفين
+R8276	Lead Name	اسم الزبون المحتمل
+R8277	Prospect Lead	عميل محتمل
+R8278	Probability	احتمال
+R8279	Closing	الإغلاق

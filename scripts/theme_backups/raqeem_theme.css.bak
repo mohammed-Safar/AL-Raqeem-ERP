@@ -1,0 +1,106 @@
+/* ==========================================================================
+   ALRAQEEM CORE VARIABLE INVERSION & CARBON-ORANGE THEME (v16.5)
+   إعادة توجيه متغيرات النظام الجذرية لتغيير الثيم بالكامل من الجذور
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
+
+:root,
+[data-theme="light"],
+[data-theme="dark"],
+[data-theme-mode="light"],
+[data-theme-mode="dark"] {
+    /* 1. قلب الألوان الأساسية للجهاز (الأبيض يصبح أسود كربوني، والأسود يصبح برتقالياً) */
+    --white: #111317 !important;
+    --black: #ffffff !important;
+    
+    /* 2. إعادة تعريف درجات الرمادي لتصبح داكنة وفخمة */
+    --gray-50: #14161b !important;
+    --gray-100: #181a20 !important;
+    --gray-200: #1e2128 !important;
+    --gray-300: #262a34 !important;
+    --gray-400: #3b4252 !important;
+    --gray-500: #6b7280 !important;
+    --gray-600: #9ca3af !important;
+    --gray-700: #d1d5db !important;
+    --gray-800: #f3f4f6 !important;
+    --gray-900: #ffffff !important;
+    --gray-950: #ffffff !important;
+
+    /* 3. إعادة توجيه متغيرات الواجهات (Surfaces) لقتل أي خلفية بيضاء */
+    --surface-base: #111317 !important;
+    --surface-gray-1: #14161b !important;
+    --surface-gray-2: #181a20 !important;
+    --surface-gray-3: #1e2128 !important;
+    --surface-gray-4: #262a34 !important;
+    --surface-sidebar: #14161b !important;
+    --surface-elevation-1: #181a20 !important;
+    --surface-elevation-2: #1e2128 !important;
+    --surface-elevation-3: #262a34 !important;
+
+    /* 4. توجيه الأحبار والنصوص (Inks) لتعمل بالدرجات البرتقالية الساطعة */
+    --ink-base: #fb923c !important;
+    --ink-gray-1: #fdba74 !important;
+    --ink-gray-2: #f97316 !important;
+    --ink-gray-3: #ea580c !important;
+    --ink-gray-4: #c2410c !important;
+    --ink-gray-5: #9a3412 !important;
+    --ink-gray-6: #7c2d12 !important;
+    --ink-gray-7: #ffffff !important;
+    --ink-gray-8: #ffffff !important;
+    --ink-gray-9: #ffffff !important;
+
+    /* 5. تخصيص الألوان التفاعلية للبرتقالي والأسود */
+    --primary: #f97316 !important;
+    --primary-hover: #ea580c !important;
+    --btn-primary: #f97316 !important;
+    --border-color: #3b2818 !important;
+}
+
+/* ==========================================================================
+   تثبيت الخطوط والخلفيات العامة الشاملة
+   ========================================================================== */
+html,
+body,
+.page-container,
+.page-body,
+.layout-main,
+.layout-main-section-wrapper,
+.workspace-container,
+.frappe-card,
+.widget,
+.modal-content {
+    background-color: #111317 !important;
+    color: #fb923c !important;
+    font-family: 'IBM Plex Sans Arabic', 'Cairo', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.page-title .title-text,
+.section-head,
+.widget .widget-title,
+label {
+    font-family: 'Cairo', sans-serif !important;
+    color: #f97316 !important;
+    font-weight: 700 !important;
+}
+
+/* الشريط العلوي والقائمة الجانبية */
+header.navbar, .navbar, .page-head, .desk-sidebar, .layout-side-section {
+    background-color: #14161b !important;
+    border-color: #3b2818 !important;
+}
+
+/* الأزرار والحقول */
+.btn-primary, button.btn-primary {
+    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%) !important;
+    color: #111317 !important;
+    font-weight: 800 !important;
+    border: none !important;
+}
+
+.form-control, input, select, textarea {
+    background-color: #181a20 !important;
+    border: 1px solid #4a301d !important;
+    color: #fb923c !important;
+}

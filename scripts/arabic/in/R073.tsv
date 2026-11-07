@@ -1,0 +1,120 @@
+R8640	Work-in-Progress Warehouse	مستودع العمل قيد التنفيذ
+R8641	Scrap Warehouse	الخردة مستودع
+R8642	Planned End Date	تاريخ الانتهاء المخطط لها
+R8643	Operation Cost	التكلفة العملية
+R8644	Planned Operating Cost	المخطط تكاليف التشغيل
+R8645	Actual Operating Cost	الفعلية تكاليف التشغيل
+R8646	Additional Operating Cost	تكاليف تشغيل  اضافية
+R8647	Total Operating Cost	إجمالي تكاليف التشغيل
+R8648	Default source Warehouse	المستودع المصدر الافتراضي
+R8649	Corrective Operation Cost	تكلفة العملية التصحيحية
+R8650	Scheduling & Costing	الجدولة وحساب التكاليف
+R8651	Required Items	الأصناف المطلوبة
+R8652	Disassembled Qty	الكمية المفككة
+R8653	Additional Transferred Qty	الكمية المنقولة الإضافية
+R8654	Max Producible Qty	أقصى كمية قابلة للإنتاج
+R8655	Job Cards	بطاقات عمل
+R8656	Stock Entries	قيود المخزون
+R8657	Returned Qty 	الكمية المرتجعة 
+R8658	Operation Row Id	معرف صف العملية
+R8659	Is Additional Item	عنصر إضافي
+R8660	Voucher Detail Reference	رقم مرجع تفاصيل القسيمة
+R8661	Work Order Item	بند أمر العمل
+R8662	Planned Start Time	المخططة بداية
+R8663	Planned End Time	وقت الانتهاء المخطط له
+R8664	Actual Start Time	الفعلي وقت البدء
+R8665	Actual End Time	الفعلي وقت الانتهاء
+R8666	Actual Operation Time	الفعلي وقت التشغيل
+R8667	WIP WH	قيد التطوير WH
+R8668	Work Order Operation	عملية ترتيب العمل
+R8669	Workstation Status	حالة محطة العمل
+R8670	Enter Value	أدخل القيمة
+R8671	Employees	الموظفون
+R8672	Make Transfer Entry	إنشاء إدخال نقل
+R8673	Reqired Qty	الكمية المطلوبة
+R8674	Available	متاح
+R8675	Job Capacity	القدرة الوظيفية
+R8676	Status Illustration	رسم توضيحي للحالة
+R8677	Idle	عاطل
+R8678	Problem	مشكلة
+R8679	Active Status	الحالة النشطة
+R8680	Inactive Status	حالة غير نشطة
+R8681	Total Working Hours	إجمالي ساعات العمل
+R8682	Workstation Dashboard	لوحة تحكم محطة العمل
+R8683	Operating Components Cost	تكلفة مكونات التشغيل
+R8684	Workstation Name	اسم محطة العمل
+R8685	Operating Costs	تكاليف التشغيل
+R8686	per hour	كل ساعة
+R8687	Net Hour Rate	صافي سعر الساعة
+R8688	Working Hours	ساعات العمل
+R8689	Workstation Cost	تكلفة محطة العمل
+R8690	Component Name	اسم المكون
+R8691	Component Expense Account	حساب مصروفات المكونات
+R8692	Workstation Operating Component	مكونات تشغيل محطة العمل
+R8693	Workstation Working Hour	محطة العمل ساعة العمل
+R8694	Create BOM	إنشاء BOM
+R8695	Create Production Plan	إنشاء خطة الإنتاج
+R8696	Create Work Order	إنشاء أمر العمل
+R8697	Finish making it	إنهاء التصنيع
+R8698	Changes in {0}	التغييرات في {0}
+R8699	BOM 1	BOM 1
+R8700	BOM 2	BOM 2
+R8701	BOM Comparison Tool	أداة مقارنة BOM
+R8702	Fetching...	جارٍ الجلب...
+R8703	BOM Explorer	مستكشف قائمة المواد
+R8704	BOM Level	مستوى قائمة المواد
+R8705	Standard Description	الوصف القياسي
+R8706	BOM ID	معرف BOM
+R8707	BOM Operations Time	وقت عمليات BOM
+R8708	Sub-assembly BOM Count	التجميع الفرعي BOM Count
+R8709	BOM Stock Analysis	تحليل المخزون لقائمة المواد
+R8710	From BOM No	من رقم BOM
+R8711	Qty Per Unit	الكمية لكل وحدة
+R8712	Difference Qty	كمية الفرق
+R8713	Maximum Producible Items	الحد الأقصى للأصناف القابلة للتصنيع
+R8714	BOM Variance Report	تقرير الفرق BOM
+R8715	Completed Work Orders	أوامر العمل المكتملة
+R8716	Downtime Analysis	تحليل وقت التعطل
+R8717	Downtime (In Hours)	التوقف (بالساعات)
+R8718	Based On Document	بناء على المستند
+R8719	Smoothing Constant	تجانس ثابت
+R8720	Exponential Smoothing Forecasting	تنبؤ تجانس أسي
+R8721	(Forecast)	(توقعات)
+R8722	Forecast	توقعات
+R8723	From Posting Date	من تاريخ النشر
+R8724	To Posting Date	إلى تاريخ الإرسال
+R8725	Job Card Summary	ملخص بطاقة العمل
+R8726	Total Completed Qty	إجمالي الكمية المكتملة
+R8727	Bucket Size	حجم الدلو
+R8728	Use Default Warehouse	استخدام المستودع الافتراضي
+R8729	Type of Material	نوع المادة
+R8730	Add Safety Stock	إضافة مخزون الأمان
+R8731	Ad-hoc Qty	الكَميَّة المخصصة
+R8732	On Hand	متوفر
+R8733	Planned Purchase Order	أمر شراء مخطط له
+R8734	Planned Work Order	أمر عمل مخطط
+R8735	Supply	إمداد
+R8736	Demand vs Supply	الطلب مقابل العرض
+R8737	Open Work Orders	فتح أوامر العمل
+R8738	Process Loss Report	تقرير خسائر العملية
+R8739	Process Loss Value	قيمة خسارة العملية
+R8740	Finished Goods Value	قيمة السلع التامة الصنع
+R8741	Raw Material Value	قيمة المواد الخام
+R8742	Production Analytics	تحليلات إنتاج
+R8743	Raw Material Warehouse	مستودع المواد الخام
+R8744	Order By	ترتيب حسب
+R8745	Production Planning Report	تقرير تخطيط الإنتاج
+R8746	Raw Material Code	كود المواد الخام
+R8747	Raw Material Name	اسم المادة الخام
+R8748	Allotted Qty	الكمية المخصصة
+R8749	Expected Arrival Date	وصول التاريخ المتوقع
+R8750	Arrival Quantity	كمية الوصول
+R8751	Quality Inspection Summary	ملخص فحص الجودة
+R8752	Qty Wise Chart	مخطط الكمية
+R8753	Excess Materials Consumed	المواد الزائدة المستهلكة
+R8754	Qty to Produce	الكمية المطلوب إنتاجها
+R8755	Raw Material Item	مادة خام
+R8756	Extra Consumed Qty	كمية إضافية مستهلكة
+R8757	Qty to Build	الكمية المطلوبة للبناء
+R8758	# Req'd Items	# الأصناف المطلوبة
+R8759	# In Stock	# في المخزن

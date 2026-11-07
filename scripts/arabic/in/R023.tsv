@@ -1,0 +1,120 @@
+R5079	Weight Per Unit	الوزن لكل وحدة
+R5080	Total Weight	الوزن الكلي
+R5081	Weight UOM	وحدة قياس الوزن
+R5082	Stock Details	تفاصيل المخزون
+R5083	Customer Warehouse (Optional)	مستودع العميل (اختياري)
+R5084	Quality Inspection	فحص الجودة
+R5085	Item Tax Rate	معدل ضريبة الصنف
+R5086	Sales Order Item	مواد طلب المبيعات
+R5087	Delivery Note	إشعار التسليم
+R5088	Delivery Note Item	ملاحظة تسليم السلعة
+R5089	Delivered Qty	الكمية المستلمة
+R5090	POS Invoice Item	بند فاتورة نقاط البيع
+R5091	Grant Commission	لجنة المنح
+R5092	Has Item Scanned	هل تم مسح العنصر ضوئياً؟
+R5093	Distributed Discount Amount	مبلغ الخصم الموزع
+R5094	POS Invoices	فواتير نقاط البيع
+R5095	Consolidated Credit Note	مذكرة ائتمان موحدة
+R5096	Is Return	مرتجع؟
+R5097	POS Invoice Reference	مرجع فاتورة نقاط البيع
+R5098	POS Item Group	مجموعة المواد لنقطة البيع
+R5099	Set Posting Date	حدد تاريخ النشر
+R5100	Opening Balance Details	تفاصيل الرصيد الافتتاحي
+R5101	Cannot Assign Cashier	لا يمكن تعيين أمين صندوق
+R5102	Missing Account	حساب مفقود
+R5103	Allow In Returns	السماح في المرتجعات
+R5104	POS Payment Method	طريقة الدفع في نقاط البيع
+R5105	Applicable for Users	ينطبق على المستخدمين
+R5106	Payment Methods	طرق الدفع
+R5107	Item Groups	مجموعات السلعة
+R5108	Customer Groups	مجموعات العميل
+R5109	Miscellaneous	متنوع
+R5110	Apply Discount On	تطبيق تخفيض على
+R5111	Hide Unavailable Items	إخفاء العناصر غير المتوفرة
+R5112	Hide Images	إخفاء الصور
+R5113	Write Off Limit	حد الشطب
+R5114	Disable Rounded Total	تعطيل الإجمالي المقرب
+R5115	Always Ask	اسأل دائمًا
+R5116	Allow Partial Payment	السماح بالدفع الجزئي
+R5117	POS Configurations	إعدادات نقطة البيع
+R5118	Income and Expense	الإيرادات والمصروفات
+R5119	POS Item Selector	محدد أصناف نقطة البيع
+R5120	POS Item Details	تفاصيل صنف نقطة البيع
+R5121	Opening & Closing	الافتتاح والإغلاق
+R5122	Mandatory Accounting Dimension	البعد المحاسبي الإلزامي
+R5123	Duplicate Item Group	مجموعة العناصر المكررة
+R5124	Duplicate Customer Group	مجموعة عملاء مكررة
+R5125	POS Profile User	نقاط البيع الشخصية الملف الشخصي
+R5126	POS Search Fields	حقول البحث في نقاط البيع
+R5127	Invalid POS Fields	حقول نقطة البيع غير صالحة
+R5128	POS Additional Fields	حقول إضافية لنظام نقاط البيع
+R5129	POS Settings	إعدادات نقاط البيع
+R5130	Invalid POS Field	حقل نقطة البيع غير صالح
+R5131	Duplicate POS Fields	حقول نقاط البيع المكررة
+R5132	Apply On	تنطبق على
+R5133	Product	المنتج
+R5134	Price	السعر
+R5135	Mixed Conditions	ظروف مختلطة
+R5136	Is Cumulative	هو التراكمي
+R5137	Coupon Code Based	كود الكوبون
+R5138	Party Information	معلومات الحزب
+R5139	Selling	المبيعات
+R5140	Buying	المشتريات
+R5141	Quantity and Amount	الكمية والكمية
+R5142	Min Amt	مين امت
+R5143	Max Amt	ماكس امت
+R5144	Period Settings	إعدادات الفترة
+R5145	Price Discount Scheme	مخطط سعر الخصم
+R5146	Rate or Discount	معدل أو خصم
+R5147	Discount Percentage	نسبة الخصم
+R5148	For Price List	لائحة الأسعار
+R5149	Product Discount Scheme	مخطط خصم المنتج
+R5150	Same Item	نفس البند
+R5151	Free Item	بند مجاني
+R5152	Free Item Rate	معدل العناصر المجاني
+R5153	Validate Applied Rule	التحقق من صحة القاعدة المطبقة
+R5154	Pricing Rule Help	تعليمات قاعدة التسعير
+R5155	Promotional Scheme Id	معرف المخطط الترويجي
+R5156	Promotional Scheme	مخطط ترويجي
+R5157	Is Recursive	هل هي دالة تكرارية؟
+R5158	Round Free Qty	كمية القضبان المستديرة
+R5159	Dynamic Condition	حالة ديناميكية
+R5160	Validate Pricing Rule	التحقق من صحة قاعدة التسعير
+R5161	Has Priority	له الأولوية
+R5162	Please Set Priority	يرجى تحديد الأولوية
+R5163	Priority is mandatory	الأولوية إلزامية
+R5164	Invalid condition expression	تعبير شرط غير صالح
+R5165	Invalid doctype	DocType غير صالح
+R5166	Invalid {0}	غير صالح {0}
+R5167	Pricing Rule Brand	قاعدة تسعير العلامة التجارية
+R5168	Child Docname	اسم الطفل
+R5169	Rule Applied	تطبق القاعدة
+R5170	Job Paused	المهمة متوقفة مؤقتًا
+R5171	Start / Resume	بدء / استئناف
+R5172	Job Started	بدأ العمل
+R5173	Bank/Cash Account	حساب مصرفي/نقدي
+R5174	Process Payment Reconciliation	معالجة تسوية المدفوعات
+R5175	Receivable/Payable Account	حساب القبض/الدفع
+R5176	Reconciliation Logs	سجلات المصالحة
+R5177	Reconciliation Progress	التقدم المحرز في المصالحة
+R5178	Total Allocations	إجمالي المخصصات
+R5179	Reconciled Entries	القيود المُطابقة
+R5180	Reconciliation Error Log	سجل أخطاء المطابقة
+R5181	Parent Document	المستند الأب
+R5182	PCV Paused	تم إيقاف تشغيل نظام تهوية علبة المرافق
+R5183	PCV Resumed	استؤنفت فعاليات PCV
+R5184	PCV	حجم الخلايا المكدسة
+R5185	P&L Closing Balance	رصيد الأرباح والخسائر الختامي
+R5186	Dates to Process	مواعيد المعالجة
+R5187	Opening Balances	أرصدة افتتاحية
+R5188	Normal Balances	الأرصدة الطبيعية
+R5189	Processing Date	تاريخ المعالجة
+R5190	Send Emails	إرسال رسائل البريد الإلكتروني
+R5191	Emails Queued	رسائل البريد الإلكتروني في قائمة الانتظار
+R5192	Customers	العملاء
+R5193	Select Customers By	حدد العملاء حسب
+R5194	Print Preferences	تفضيلات الطباعة
+R5195	Include Ageing Summary	قم بتضمين ملخص الشيخوخة
+R5196	Enable Auto Email	تفعيل البريد الإلكتروني التلقائي
+R5197	Fetch Customers	جلب العملاء
+R5198	CC To	CC إلى

@@ -1,0 +1,120 @@
+R9000	Getting Secondary Items	جاري جلب الأصناف الثانوية
+R9001	Subcontract Return	إرجاع عقد من الباطن
+R9002	Auto Repeat Detail	تكرار تلقائي للتفاصيل
+R9003	Transporter Details	تفاصيل نقل
+R9004	Raw Materials Actions	إجراءات المواد الخام
+R9005	Get Secondary Items	جلب الأصناف الثانوية
+R9006	Split Issue	تقسيم القضية
+R9007	Raised By (Email)	التي أثارها (بريد إلكتروني)
+R9008	Issue Type	نوع القضية
+R9009	Service Level Agreement	اتفاقية مستوى الخدمة
+R9010	Response By	الرد بواسطة
+R9011	Response Details	تفاصيل الرد
+R9012	First Responded On	أجاب أولا على
+R9013	Resolution Details	تفاصيل الحل
+R9014	Opening Date	تاريخ الفتح
+R9015	Opening Time	يفتح من الساعة
+R9016	Via Customer Portal	عبر بوابة العملاء
+R9017	Issue Split From	قضية الانقسام من
+R9018	Average Response Time	متوسط وقت الاستجابة
+R9019	Resolution Time	وفر الوقت
+R9020	User Resolution Time	وقت قرار المستخدم
+R9021	On Hold Since	معلق منذ
+R9022	Total Hold Time	إجمالي وقت الانتظار
+R9023	First Response Due	الاستجابة الأولى مطلوبة
+R9024	Resolution Due	موعد صدور القرار
+R9025	Resolution By	القرار بواسطة
+R9026	Resolution Date	تاريخ الحل
+R9027	Issue Status	حالة المشكلة
+R9028	SLA Failed	فشل SLA
+R9029	Waiting on Customer	بانتظار العميل
+R9030	Issue Priority	أولوية الإصدار
+R9031	Workday	يوم عمل
+R9032	Service Day	يوم الخدمة
+R9033	or its descendants	أو ذريتها
+R9034	Default Priority	الأولوية الافتراضية
+R9035	SLA Paused On	تم إيقاف اتفاقية مستوى الخدمة مؤقتًا
+R9036	Status Details	تفاصيل الحالة
+R9037	SLA Fulfilled On	تم الوفاء باتفاقية مستوى الخدمة في
+R9038	Assignment Conditions	شروط التعيين
+R9039	Service Level Name	اسم مستوى الخدمة
+R9040	Response and Resolution	الرد والحل
+R9041	Priorities	أولويات
+R9042	Invalid Document Type	نوع المستند غير صالح
+R9043	Service Level Priority	أولوية مستوى الخدمة
+R9044	Post Title Key	عنوان العنوان الرئيسي
+R9045	Post Description Key	وظيفة الوصف
+R9046	Link Options	خيارات الارتباط
+R9047	Source DocType	المصدر DocType
+R9048	Result Title Field	النتيجة عنوان الحقل
+R9049	Result Preview Field	حقل معاينة النتيجة
+R9050	Result Route Field	النتيجة مجال التوجيه
+R9051	Support Search Source	دعم مصدر البحث
+R9052	Source Type	نوع المصدر
+R9053	Query Route String	سلسلة مسار الاستعلام
+R9054	Response Options	خيارات الاستجابة
+R9055	Post Route String	Post Post String
+R9056	Post Route Key	وظيفة الطريق الرئيسي
+R9057	Search APIs	بحث واجهات برمجة التطبيقات
+R9058	Service Level Agreements	اتفاقيات مستوى الخدمة
+R9059	Greeting Title	عنوان الترحيب
+R9060	Greeting Subtitle	الترجمة التحية
+R9061	Greetings Section	قسم التحيات
+R9062	Support Settings	إعدادات الدعم
+R9063	Support Portal	بوابة الدعم
+R9064	Get Started Sections	تبدأ الأقسام
+R9065	Forum Posts	مشاركات المنتدى
+R9066	Forum URL	رابط المنتدى
+R9067	Get Latest Query	احصل على آخر استفسار
+R9068	Response Key List	قائمة مفتاح الاستجابة
+R9069	Warranty Claim Status	حالة مطالبة الضمان
+R9070	Resolved By	تم الحل بواسطة
+R9071	Service Address	عنوان الخدمة
+R9072	Raised By	تم الرفع بواسطة
+R9073	From Company	من شركة
+R9074	Issue Date	تاريخ القضية
+R9075	Customer is required	العميل مطلوب
+R9076	Issue Analytics	تحليلات المشكلات
+R9077	Issue Summary	ملخص العدد
+R9078	Total Issues	إجمالي الإصدارات
+R9079	Support Hour Distribution	دعم توزيع ساعة
+R9080	Overdue Issues	المشكلات المتأخرة
+R9081	Resolved Issues	المشكلات المحلولة
+R9082	Issues Opened	المشكلات المفتوحة
+R9083	Call Again	معاودة الاتصال
+R9084	Call Details	تفاصيل المكالمة
+R9085	Employee User Id	معرف مستخدم الموظف
+R9086	Type Of Call	نوع المكالمة
+R9087	Call Received By	تم استلام المكالمة بواسطة
+R9088	Busy	مشغول
+R9089	No Answer	لا يوجد رد
+R9090	Ringing	رنين
+R9091	Recording URL	تسجيل URL
+R9092	Recording HTML	تسجيل HTML
+R9093	Agent Group	مجموعة الوكيل
+R9094	Call Routing	توجيه المكالمات
+R9095	Sequential	تسلسلي
+R9096	Simultaneous	متزامن
+R9097	Greeting Message	رسالة ترحيب
+R9098	Agent Busy Message	رسالة انشغال الوكيل
+R9099	Agent Unavailable Message	رسالة عدم توفر الوكيل
+R9100	Call Handling Schedule	جدول التعامل مع المكالمات
+R9101	Call Type	نوع المكالمة
+R9102	Call Receiving Device	جهاز استقبال المكالمات
+R9103	No products found.	لم يتم العثور على منتجات.
+R9104	Show Completed	عرض مكتمل
+R9105	Show Open	عرض مفتوح
+R9106	Help Results for	مساعدة نتائج
+R9107	Docs Search	بحث المستندات
+R9108	Missing Payments App	تطبيق المدفوعات المفقودة
+R9109	Create Purchase Orders	إنشاء أمر شراء
+R9110	Create Users	إنشاء المستخدمين
+R9111	Add Timesheets	إضافة جداول زمنية
+R9112	Create Employee Records	إنشاء سجلات موظف
+R9113	Create Employee records.	إنشاء سجلات الموظفين.
+R9114	Create Employee	إنشاء موظف
+R9115	Create Leads	إنشاء زبائن محتملين
+R9116	Create Lead	إنشاء عميل محتمل
+R9117	Create customer quotes	إنشاء عروض مسعرة للزبائن
+R9118	Manage your orders	إدارة طلباتك
+R9119	Portal User	مستخدم البوابة

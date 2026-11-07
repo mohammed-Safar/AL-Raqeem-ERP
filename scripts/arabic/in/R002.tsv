@@ -1,0 +1,120 @@
+R120	Authorized Signatory	المخول بالتوقيع
+R121	Payment Receipt Note	إشعار إيصال الدفع
+R122	Received On	وردت في
+R123	Received From	مستلم من
+R124	All Parties	جميع الأطراف
+R125	Report Date	تقرير تاريخ
+R126	As on Date	اعتبارًا من التاريخ
+R127	Period Based On	الفترة على أساس
+R128	Periodicity	دورية
+R129	Statement Of Accounts	كشف الحساب
+R130	Statement Period	فترة الكشف
+R131	Voucher Details	تفاصيل السند
+R132	Opening	افتتاحي
+R133	Financial Statements	البيانات المالية
+R134	Select Batch No	حدد رقم الدفعة
+R135	Select Serial No	حدد الرقم التسلسلي
+R136	Add Item	اضافة بند
+R137	Update Items	تحديث العناصر
+R138	Manufacturing	التصنيع
+R139	Opportunity	فرصة
+R140	Add Suppliers	إضافة الموردين
+R141	Supplier Part No	رقم قطعة المورد
+R142	Valid Till	صالح حتى
+R143	Received Quantity	الكمية المستلمة
+R144	Analysis Chart	الرسم البياني التحليلي
+R145	Lead	مبادرة البيع
+R146	Detailed Reason	سبب مفصل
+R147	Lost Reasons	أسباب ضائعة
+R148	Competitors	المنافسون
+R149	Set as Lost	على النحو المفقودة
+R150	Declare Lost	أعلن فقدت
+R151	Delete Demo Data	حذف البيانات التجريبية
+R152	Work Order	أمر العمل
+R153	Alternate Item	صنف بديل
+R154	Raw Materials	مواد أولية
+R155	Operations	العمليات
+R156	Phantom Item	عنصر شبح
+R157	Open BOM {0}	افتح قائمة المواد {0}
+R158	Open Item {0}	العنصر المفتوح {0}
+R159	Workstation	محطة العمل
+R160	In Stock	في الأوراق المالية
+R161	Expected Start Date	تاريخ البدأ المتوقع
+R162	Expected End Date	تاريخ الإنتهاء المتوقع
+R163	Delivery Date	تاريخ التسليم
+R164	For Warehouse	لمستودع
+R165	Projected Qty	الكمية المتوقعة
+R166	Plant Floor	أرضيات المصانع
+R167	Actual Qty	الكمية الفعلية
+R168	Reserved Stock	المخزون المحجوز
+R169	Reserved Qty	الكمية المحجوزة
+R170	Stock Reservation	حجز الأسهم
+R171	Warehouses	المستودعات
+R172	Reserve Stock	مخزون احتياطي
+R173	Available Qty	الكمية المتاحة
+R174	Timer	مؤقت
+R175	Transfer Materials	مواد النقل
+R176	Hours	ساعات
+R177	Material Request Type	نوع طلب المواد
+R178	Order Summary	ملخص الطلب
+R179	Machine	آلة
+R180	Sample Size	حجم العينة
+R181	hours	ساعات
+R182	{0} hours	{0} ساعات
+R183	Total hours: {0}	إجمالي الساعات: {0}
+R184	Timesheets	الجداول الزمنية
+R185	Expected Hrs	الساعات المتوقعة
+R186	Completed Tasks	المهام المكتملة
+R187	Remaining	المتبقية
+R188	<div class="text-muted text-center">{0}</div>	<div class="text-muted text-center">{0}</div>
+R189	Reconciliation Failed	فشلت التسوية
+R190	Edit BOM	تعديل قائمة المواد
+R191	Add Raw Material	إضافة مادة خام
+R192	Add Sub Assembly	إضافة تجميع فرعي
+R193	Add Phantom Item	إضافة عنصر وهمي
+R194	Delete Item	حذف الصنف
+R195	Sub Assembly Item	عناصر التجميع الفرعي
+R196	Configure Product Assembly	تكوين تجميع المنتج
+R197	Unknown Caller	غير معروف المتصل
+R198	Open Contact	فتح الاتصال
+R199	Create New Contact	إنشاء اتصال جديد
+R200	Create New Customer	إنشاء عميل جديد
+R201	Create New Lead	إنشاء عميل محتمل
+R202	Call Summary	ملخص الاتصال
+R203	Call Summary Saved	تم حفظ ملخص المكالمة
+R204	View call log	عرض سجل المكالمات
+R205	Call Connected	اتصال متصل
+R206	Call Missed	دعوة غاب
+R207	Call Ended	انتهت المكالمة
+R208	Opportunity {0} created	تم إنشاء الفرصة {0}
+R209	Select a Company	حدد شركة
+R210	Invalid Part Number	رقم الجزء غير صالح
+R211	Stock Ledger	سجل المخزن
+R212	Accepted Quantity	كمية مقبولة
+R213	Child Row Reference	مرجع صف الطفل
+R214	Quality Inspection(s)	فحص الجودة
+R215	Select Payment Schedule	حدد جدول الدفع
+R216	Payment Schedules	جداول الدفع
+R217	Schedule Name	اسم الجدول الزمني
+R218	Create Payment Request	إنشاء طلب دفع
+R219	Send SMS	SMS أرسل رسالة
+R220	Add Leads	إضافة العملاء المحتملين
+R221	Add Customers	إضافة العملاء
+R222	Add Employees	إضافة موظفين
+R223	Add Sales Partners	إضافة شركاء المبيعات
+R224	Cash Flow Statement	بيان التدفق النقدي
+R225	Machine Type	نوع الآلة
+R226	Select Company Address	حدد عنوان الشركة
+R227	Updating details.	جارٍ تحديث التفاصيل.
+R228	Enter Company Details	أدخل تفاصيل الشركة
+R229	Company Logo	شعار الشركة
+R230	Phone No	رقم الهاتف
+R231	Please set {0}	الرجاء تعيين {0}
+R232	Company Abbreviation	اختصار الشركة
+R233	Project Management	إدارة المشاريع
+R234	Value or Qty	القيمة أو الكمية
+R235	Select Brand...	اختر الماركة ...
+R236	Stock Analytics	تحليلات المخازن
+R237	Select Warehouse...	حدد مستودع ...
+R238	Include UOM	تضمين UOM
+R239	Show Variant Attributes	عرض سمات متغير

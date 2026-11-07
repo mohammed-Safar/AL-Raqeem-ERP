@@ -1,0 +1,120 @@
+R4119	Bank Account	حساب مصرفي
+R4120	Number of Transactions	عدد المعاملات
+R4121	Total Debits	إجمالي المدين
+R4122	Total Credits	إجمالي الدائن
+R4123	Detected Amount Format	تنسيق الكمية المكتشف
+R4124	Detected Date Format	تنسيق التاريخ المكتشف
+R4125	Transactions	المعاملات
+R4126	Banking	الخدمات المصرفية
+R4127	Maps To	يُعيَّن إلى
+R4128	Closing Balance	الرصيد الختامي
+R4129	Company Not Linked	شركة غير مرتبطة
+R4130	General Ledger	دفتر الأستاذ العام
+R4131	Convert to Group	تحويل إلى تصنيف (مجموعة)
+R4132	Merge	دمج
+R4133	Merge Account	دمج الحساب
+R4134	Convert to Non-Group	تحويل الي تصنيف (غير المجموعه)
+R4135	Parent Account	حساب اب
+R4136	Account Type	نوع الحساب
+R4137	Current Asset	الأصول المتداولة
+R4138	Current Liability	الخصوم المتداولة
+R4139	Direct Expense	المصاريف المباشرة
+R4140	Indirect Expense	المصاريف غير المباشرة
+R4141	Depreciation	إهلاك
+R4142	Round Off	تقريب
+R4143	Direct Income	إيراد مباشر
+R4144	Indirect Income	دخل غير مباشرة
+R4145	Cash	نقد
+R4146	Accumulated Depreciation	إستهلاك متراكم
+R4147	Stock Adjustment	تسوية المخزون
+R4148	Bank	مصرف
+R4149	Income Account	حساب الدخل
+R4150	Tax	ضريبة
+R4151	Expense Account	حساب النفقات
+R4152	Payable	واجب الدفع
+R4153	Receivable	مستحق
+R4154	Chargeable	خاضع للرسوم
+R4155	Fixed Asset	الأصول الثابتة
+R4156	Temporary	مؤقت
+R4157	Frozen	مجمد
+R4158	Balance must be	يجب أن يكون الرصيد
+R4159	Lft	يسار
+R4160	Rgt	فوج
+R4161	Old Parent	الأصل القديم
+R4162	Include in gross	تدرج في الإجمالي
+R4163	Account Category	تصنيف الحساب
+R4164	Auditor	مدقق الحسابات
+R4165	HR User	مستخدم الموارد البشرية
+R4166	HR Manager	مدير الموارد البشرية
+R4167	Delivery Manager	مدير التوصيل
+R4168	Delivery User	مستخدم التوصيل
+R4169	Manufacturing Manager	مدير التصنيع
+R4170	Manufacturing User	مستخدم التصنيع
+R4171	Quality Manager	مدير الجودة
+R4172	Stock Manager	مدير المخزن
+R4173	Account Name	اسم الحساب
+R4174	Account Number	رقم الحساب
+R4175	Root Type	نوع الجذر
+R4176	Equity	حقوق الملكية
+R4177	Liability	الخصوم
+R4178	Income	الإيرادات
+R4179	Expense	نفقة
+R4180	Asset	الأصول
+R4181	Account Not Found	الحساب غير موجود
+R4182	Invalid Parent Account	حساب الوالد غير صالح
+R4183	Rename Not Allowed	إعادة تسمية غير مسموح به
+R4184	System In Use	النظام قيد الاستخدام
+R4185	New Company	شركة جديدة
+R4186	New Account Name	اسم الحساب الجديد
+R4187	View Ledger	عرض القيود
+R4188	{0} converted	تم تحويل {0}
+R4189	Root Company	شركة الجذر
+R4190	Indirect Expenses	نفقات غير مباشرة
+R4191	Administrative Expenses	نفقات إدارية
+R4192	Commission on Sales	عمولة على المبيعات
+R4193	Entertainment Expenses	نفقات الترفيه
+R4194	Current Assets	أصول متداولة
+R4195	Legal Expenses	نفقات قانونية
+R4196	Marketing Expenses	نفقات تسويقية
+R4197	Miscellaneous Expenses	نفقات متنوعة
+R4198	Accounts Receivable	الحسابات المدينة
+R4199	Office Maintenance Expenses	نفقات صيانة المكاتب
+R4200	Office Rent	ايجار مكتب
+R4201	Postal Expenses	نفقات بريدية
+R4202	Print and Stationery	طباعة وقرطاسية
+R4203	Salary	الراتب
+R4204	Sales Expenses	نفقات المبيعات
+R4205	Telephone Expenses	نفقات الهاتف
+R4206	Travel Expenses	نفقات السفر
+R4207	Utility Expenses	نفقات المرافق
+R4208	Debtors	مدينون
+R4209	Write Off	لا تصلح
+R4210	Exchange Gain/Loss	أرباح / خسائر الناتجة عن صرف العملة
+R4211	Interest Expense	مصروفات الفائدة
+R4212	Bank Charges	الرسوم المصرفية
+R4213	Impairment	ضعف
+R4214	Tax Expense	مصروفات الضرائب
+R4215	Sales	مبيعات
+R4216	Interest Income	دخل الفوائد
+R4217	Bank Accounts	حسابات مصرفية
+R4218	Current Liabilities	الخصوم المتداولة
+R4219	Accounts Payable	الحسابات الدائنة
+R4220	Creditors	الدائنين
+R4221	Payroll Payable	رواتب واجبة الدفع
+R4222	Accrued Expenses	مصروفات مستحقة
+R4223	Customer Advances	تقدم العملاء
+R4224	Stock Liabilities	خصوم المخزون
+R4225	Duties and Taxes	الرسوم والضرائب
+R4226	Short-term Provisions	أحكام قصيرة الأجل
+R4227	Loans (Liabilities)	القروض (الخصوم)
+R4228	Secured Loans	القروض المضمونة
+R4229	Unsecured Loans	القروض غير المضمونة
+R4230	Bank Overdraft Account	حساب السحب من البنك بدون رصيد
+R4231	Non-Current Liabilities	الالتزامات غير المتداولة
+R4232	Long-term Provisions	أحكام طويلة الأجل
+R4233	Employee Benefits Obligation	التزامات مزايا الموظفين
+R4234	Capital Stock	رأس المال
+R4235	Dividends Paid	توزيع الأرباح
+R4236	Opening Balance Equity	الرصيد الافتتاحي لحقوق الملكية
+R4237	Retained Earnings	أرباح محتجزة
+R4238	Revaluation Surplus	فائض إعادة التقييم

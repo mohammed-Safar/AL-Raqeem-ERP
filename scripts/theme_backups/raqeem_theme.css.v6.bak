@@ -1,0 +1,580 @@
+/* ==========================================================================
+   ALRAQEEM — MODERN CARBON-ORANGE THEME (v6)
+   ثيم حديث: خلفية كربونية، بطاقات ناعمة، نص فاتح مقروء، والبرتقالي للتمييز فقط
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
+
+/* --------------------------------------------------------------------------
+   1. Design tokens — الألوان والمقاسات
+   -------------------------------------------------------------------------- */
+:root {
+    --rq-bg:          #0e1014;
+    --rq-surface-1:   #15181e;
+    --rq-surface-2:   #1b1f27;
+    --rq-surface-3:   #232833;
+    --rq-line:        rgba(255, 255, 255, 0.07);
+    --rq-line-strong: rgba(255, 255, 255, 0.14);
+
+    --rq-text:        #e8eaed;
+    --rq-text-2:      #b4bac4;
+    --rq-text-3:      #8a919c;
+
+    --rq-accent:      #f97316;
+    --rq-accent-2:    #fb923c;
+    --rq-accent-deep: #ea580c;
+    --rq-accent-soft: rgba(249, 115, 22, 0.12);
+    --rq-accent-ring: rgba(249, 115, 22, 0.35);
+
+    --rq-r-sm: 8px;
+    --rq-r:    12px;
+    --rq-r-lg: 16px;
+
+    --rq-shadow:       0 1px 0 rgba(255,255,255,.03) inset, 0 1px 2px rgba(0,0,0,.35), 0 8px 24px rgba(0,0,0,.25);
+    --rq-shadow-hover: 0 1px 0 rgba(255,255,255,.05) inset, 0 6px 14px rgba(0,0,0,.4), 0 16px 36px rgba(249,115,22,.10);
+    --rq-ease: cubic-bezier(.2, .8, .2, 1);
+
+    --rq-font: 'IBM Plex Sans Arabic', 'Cairo', system-ui, sans-serif;
+    --rq-font-head: 'Cairo', 'IBM Plex Sans Arabic', system-ui, sans-serif;
+}
+
+/* --------------------------------------------------------------------------
+   2. Frappe variable overrides — توجيه متغيرات فرابي لكل الوضعين
+   -------------------------------------------------------------------------- */
+:root,
+[data-theme="light"],
+[data-theme="dark"],
+[data-theme-mode="light"],
+[data-theme-mode="dark"] {
+    color-scheme: dark;
+
+    --white: #15181e !important;
+    --black: #ffffff !important;
+
+    --gray-50:  #121419 !important;
+    --gray-100: #15181e !important;
+    --gray-200: #1b1f27 !important;
+    --gray-300: #232833 !important;
+    --gray-400: #343a46 !important;
+    --gray-500: #6b7280 !important;
+    --gray-600: #8a919c !important;
+    --gray-700: #b4bac4 !important;
+    --gray-800: #e8eaed !important;
+    --gray-900: #ffffff !important;
+    --gray-950: #ffffff !important;
+
+    --surface-base:        #15181e !important;
+    --surface-white:       #15181e !important;
+    --surface-gray-1:      #15181e !important;
+    --surface-gray-2:      #1b1f27 !important;
+    --surface-gray-3:      #232833 !important;
+    --surface-gray-4:      #2c3240 !important;
+    --surface-sidebar:     #111317 !important;
+    --surface-elevation-1: #1b1f27 !important;
+    --surface-elevation-2: #232833 !important;
+    --surface-elevation-3: #2c3240 !important;
+
+    --ink-base:   #e8eaed !important;
+    --ink-gray-1: #3b4250 !important;
+    --ink-gray-2: #5b6370 !important;
+    --ink-gray-3: #8a919c !important;
+    --ink-gray-4: #9ba2ad !important;
+    --ink-gray-5: #b4bac4 !important;
+    --ink-gray-6: #c9ced6 !important;
+    --ink-gray-7: #dde0e5 !important;
+    --ink-gray-8: #e8eaed !important;
+    --ink-gray-9: #ffffff !important;
+
+    --outline-gray-1: rgba(255,255,255,.07) !important;
+    --outline-gray-2: rgba(255,255,255,.10) !important;
+    --outline-gray-3: rgba(255,255,255,.16) !important;
+
+    --text-color:        #e8eaed !important;
+    --heading-color:     #ffffff !important;
+    --text-muted:        #9ba2ad !important;
+    --text-light:        #8a919c !important;
+    --text-on-gray:      #e8eaed !important;
+    --placeholder-color: #5b6370 !important;
+
+    --primary:       #f97316 !important;
+    --primary-hover: #ea580c !important;
+    --btn-primary:   #f97316 !important;
+    --border-color:  rgba(255,255,255,.08) !important;
+    --dark-border-color: rgba(255,255,255,.12) !important;
+    --highlight-color: rgba(249,115,22,.10) !important;
+    --fg-color: #15181e !important;
+    --bg-color: #0e1014 !important;
+    --card-bg:  #15181e !important;
+    --control-bg: #1b1f27 !important;
+    --control-bg-on-gray: #232833 !important;
+}
+
+/* --------------------------------------------------------------------------
+   3. Base — الخطوط والخلفية
+   -------------------------------------------------------------------------- */
+html, body {
+    background-color: var(--rq-bg) !important;
+    color: var(--rq-text) !important;
+    font-family: var(--rq-font) !important;
+    -webkit-font-smoothing: antialiased;
+}
+body {
+    background-image:
+        radial-gradient(900px 500px at 100% -10%, rgba(249,115,22,.07), transparent 60%),
+        radial-gradient(700px 400px at 0% 110%, rgba(249,115,22,.04), transparent 60%) !important;
+    background-attachment: fixed !important;
+}
+.page-container, .page-body, .layout-main, .layout-main-section-wrapper,
+.workspace-container, .layout-main-section {
+    background-color: transparent !important;
+    color: var(--rq-text) !important;
+}
+
+h1, h2, h3, h4, h5, h6, .page-title .title-text, .section-head {
+    font-family: var(--rq-font-head) !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.01em;
+}
+.page-title .title-text { font-weight: 800 !important; }
+
+label, .control-label {
+    color: var(--rq-text-2) !important;
+    font-weight: 600 !important;
+    font-size: .85rem !important;
+}
+.text-muted, .help-box, .frappe-control .help-box { color: var(--rq-text-3) !important; }
+a { color: var(--rq-accent-2); }
+a:hover { color: var(--rq-accent); }
+::selection { background: var(--rq-accent-ring); color: #fff; }
+hr { border-color: var(--rq-line) !important; }
+
+/* --------------------------------------------------------------------------
+   4. Navbar & page header — شريط علوي زجاجي
+   -------------------------------------------------------------------------- */
+header.navbar, .navbar {
+    background: rgba(14, 16, 20, 0.72) !important;
+    backdrop-filter: saturate(160%) blur(14px);
+    -webkit-backdrop-filter: saturate(160%) blur(14px);
+    border-bottom: 1px solid var(--rq-line) !important;
+    box-shadow: none !important;
+}
+.page-head {
+    background: rgba(14, 16, 20, 0.72) !important;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--rq-line) !important;
+}
+.search-bar input, .navbar .awesomplete input {
+    background: var(--rq-surface-2) !important;
+    border: 1px solid var(--rq-line) !important;
+    border-radius: 999px !important;
+    color: var(--rq-text) !important;
+}
+
+/* --------------------------------------------------------------------------
+   5. Sidebar — قائمة جانبية بعناصر ناعمة
+   -------------------------------------------------------------------------- */
+.body-sidebar, .desk-sidebar, .layout-side-section, .body-sidebar-container {
+    background-color: #111317 !important;
+    border-color: var(--rq-line) !important;
+}
+.body-sidebar .standard-sidebar-item,
+.desk-sidebar .standard-sidebar-item {
+    border-radius: 10px !important;
+    margin-block: 2px !important;
+    transition: background .15s var(--rq-ease), color .15s var(--rq-ease);
+}
+.standard-sidebar-item .item-anchor,
+.standard-sidebar-item .sidebar-item-label {
+    color: var(--rq-text-2) !important;
+    font-weight: 500 !important;
+}
+.standard-sidebar-item .sidebar-item-icon svg { stroke: var(--rq-text-3); }
+.standard-sidebar-item:hover {
+    background: var(--rq-surface-2) !important;
+}
+.standard-sidebar-item:hover .sidebar-item-label { color: #fff !important; }
+.standard-sidebar-item.active-sidebar,
+.standard-sidebar-item.selected {
+    background: var(--rq-accent-soft) !important;
+    box-shadow: inset 3px 0 0 var(--rq-accent);
+}
+[dir="rtl"] .standard-sidebar-item.active-sidebar,
+[dir="rtl"] .standard-sidebar-item.selected {
+    box-shadow: inset -3px 0 0 var(--rq-accent);
+}
+.standard-sidebar-item.active-sidebar .sidebar-item-label,
+.standard-sidebar-item.selected .sidebar-item-label {
+    color: var(--rq-accent-2) !important;
+    font-weight: 700 !important;
+}
+.standard-sidebar-item.active-sidebar .sidebar-item-icon svg,
+.standard-sidebar-item.selected .sidebar-item-icon svg { stroke: var(--rq-accent); }
+.body-sidebar .section-break .sidebar-item-label {
+    color: var(--rq-text-3) !important;
+    font-size: .72rem !important;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+}
+
+/* --------------------------------------------------------------------------
+   6. Buttons — أزرار حديثة
+   -------------------------------------------------------------------------- */
+.btn {
+    border-radius: 10px !important;
+    font-weight: 600 !important;
+    transition: transform .12s var(--rq-ease), box-shadow .15s var(--rq-ease), background .15s var(--rq-ease) !important;
+}
+.btn:active { transform: translateY(1px) scale(.98); }
+.btn-primary, button.btn-primary {
+    background: linear-gradient(135deg, #fb923c 0%, #f97316 45%, #ea580c 100%) !important;
+    color: #1a0d03 !important;
+    font-weight: 700 !important;
+    border: 0 !important;
+    box-shadow: 0 4px 14px rgba(249,115,22,.30), inset 0 1px 0 rgba(255,255,255,.25) !important;
+}
+.btn-primary:hover {
+    box-shadow: 0 6px 20px rgba(249,115,22,.42), inset 0 1px 0 rgba(255,255,255,.3) !important;
+    filter: brightness(1.05);
+}
+.btn-default, .btn-secondary {
+    background: var(--rq-surface-2) !important;
+    color: var(--rq-text) !important;
+    border: 1px solid var(--rq-line) !important;
+    box-shadow: none !important;
+}
+.btn-default:hover, .btn-secondary:hover {
+    background: var(--rq-surface-3) !important;
+    border-color: var(--rq-line-strong) !important;
+}
+
+/* --------------------------------------------------------------------------
+   7. Inputs — حقول بحلقة تركيز برتقالية
+   -------------------------------------------------------------------------- */
+.form-control, input.form-control, select.form-control, textarea.form-control,
+.frappe-control input, .frappe-control select, .frappe-control textarea {
+    background-color: var(--rq-surface-2) !important;
+    border: 1px solid var(--rq-line) !important;
+    border-radius: 10px !important;
+    color: #f3f4f6 !important;
+    transition: border-color .15s var(--rq-ease), box-shadow .15s var(--rq-ease), background .15s var(--rq-ease);
+}
+.form-control:hover, .frappe-control input:hover { border-color: var(--rq-line-strong) !important; }
+.form-control:focus, .frappe-control input:focus,
+.frappe-control select:focus, .frappe-control textarea:focus {
+    background-color: var(--rq-surface-1) !important;
+    border-color: var(--rq-accent) !important;
+    box-shadow: 0 0 0 3px var(--rq-accent-ring) !important;
+    outline: 0 !important;
+}
+.form-control::placeholder, input::placeholder { color: #5b6370 !important; }
+.form-control[disabled], .form-control[readonly], .like-disabled-input {
+    background: var(--rq-surface-1) !important;
+    color: var(--rq-text-2) !important;
+    border-style: dashed !important;
+}
+
+/* --------------------------------------------------------------------------
+   8. Workspace — بطاقات + قوائم
+   -------------------------------------------------------------------------- */
+.workspace-container .ce-header,
+.workspace-container .widget-group-title {
+    font-family: var(--rq-font-head) !important;
+    color: #ffffff !important;
+    font-size: 1.05rem !important;
+    display: flex; align-items: center; gap: 10px;
+    margin-block: 22px 12px !important;
+}
+.workspace-container .ce-header::before,
+.workspace-container .widget-group-title::before {
+    content: "";
+    width: 8px; height: 8px; border-radius: 3px;
+    background: var(--rq-accent);
+    box-shadow: 0 0 12px var(--rq-accent);
+}
+
+/* common widget card */
+.widget {
+    background: var(--rq-surface-1) !important;
+    border: 1px solid var(--rq-line) !important;
+    border-radius: var(--rq-r-lg) !important;
+    box-shadow: var(--rq-shadow) !important;
+    color: var(--rq-text) !important;
+    transition: transform .18s var(--rq-ease), box-shadow .18s var(--rq-ease), border-color .18s var(--rq-ease) !important;
+}
+.widget .widget-title {
+    font-family: var(--rq-font-head) !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+}
+.widget .widget-subtitle { color: var(--rq-text-3) !important; }
+
+/* shortcuts — cards */
+.widget.shortcut-widget-box {
+    background: linear-gradient(160deg, var(--rq-surface-2) 0%, var(--rq-surface-1) 100%) !important;
+    padding: 16px 18px !important;
+    min-height: 68px;
+    position: relative;
+    overflow: hidden;
+}
+.widget.shortcut-widget-box::after {
+    content: "";
+    position: absolute;
+    inset-block: 14px;
+    inset-inline-start: 0;
+    width: 3px;
+    border-radius: 0 3px 3px 0;
+    background: var(--rq-accent);
+    opacity: .55;
+    transition: opacity .18s var(--rq-ease), inset .18s var(--rq-ease);
+}
+.widget.shortcut-widget-box:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--rq-shadow-hover) !important;
+    border-color: rgba(249,115,22,.35) !important;
+}
+.widget.shortcut-widget-box:hover::after { opacity: 1; inset-block: 8px; }
+.widget.shortcut-widget-box .widget-title { font-size: .98rem !important; color: var(--rq-text) !important; }
+.widget.shortcut-widget-box:hover .widget-title { color: #ffffff !important; }
+.widget.shortcut-widget-box:focus-visible {
+    outline: 0 !important;
+    box-shadow: 0 0 0 3px var(--rq-accent-ring), var(--rq-shadow) !important;
+}
+
+/* number cards — stat cards */
+.widget.number-widget-box {
+    position: relative;
+    overflow: hidden;
+    padding: 18px 20px !important;
+}
+.widget.number-widget-box::before {
+    content: "";
+    position: absolute;
+    inset-block-start: -40px;
+    inset-inline-end: -40px;
+    width: 120px; height: 120px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(249,115,22,.18), transparent 70%);
+    pointer-events: none;
+}
+.widget.number-widget-box:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--rq-shadow-hover) !important;
+    border-color: rgba(249,115,22,.30) !important;
+}
+.widget.number-widget-box .widget-title {
+    color: var(--rq-text-3) !important;
+    font-family: var(--rq-font) !important;
+    font-size: .82rem !important;
+    font-weight: 600 !important;
+}
+.widget.number-widget-box .number {
+    color: #ffffff !important;
+    font-family: var(--rq-font-head) !important;
+    font-size: 2rem !important;
+    font-weight: 800 !important;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.02em;
+}
+
+/* charts etc. */
+.widget.dashboard-widget-box,
+.widget.quick-list-widget-box,
+.widget.onboarding-widget-box,
+.widget.custom-block-widget-box { padding: 16px 18px !important; }
+
+/* link cards — list panels */
+.widget.links-widget-box {
+    padding: 0 !important;
+    overflow: hidden;
+}
+.widget.links-widget-box .widget-head {
+    padding: 14px 18px !important;
+    border-bottom: 1px solid var(--rq-line) !important;
+    background: linear-gradient(180deg, rgba(255,255,255,.02), transparent) !important;
+}
+.widget.links-widget-box .widget-head .widget-title {
+    color: #ffffff !important;
+    font-size: .95rem !important;
+}
+.widget.links-widget-box .widget-body {
+    margin: 0 !important;
+    padding: 6px !important;
+}
+.widget.links-widget-box .link-item {
+    display: flex !important;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 12px !important;
+    border-radius: 10px;
+    color: var(--rq-text-2) !important;
+    text-decoration: none !important;
+    transition: background .12s var(--rq-ease), color .12s var(--rq-ease);
+}
+.widget.links-widget-box .link-item::before {
+    content: "";
+    flex: 0 0 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--rq-surface-3);
+    box-shadow: 0 0 0 1px var(--rq-line-strong);
+    transition: background .12s var(--rq-ease), box-shadow .12s var(--rq-ease);
+}
+.widget.links-widget-box .link-item::after {
+    content: "›";
+    margin-inline-start: auto;
+    color: var(--rq-text-3);
+    opacity: 0;
+    transform: translateX(-4px);
+    transition: opacity .12s var(--rq-ease), transform .12s var(--rq-ease);
+}
+[dir="rtl"] .widget.links-widget-box .link-item::after { content: "‹"; transform: translateX(4px); }
+.widget.links-widget-box .link-item:hover,
+.widget.links-widget-box .link-item:focus-visible {
+    background: var(--rq-surface-2) !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+.widget.links-widget-box .link-item:hover::before { background: var(--rq-accent); box-shadow: 0 0 8px var(--rq-accent); }
+.widget.links-widget-box .link-item:hover::after { opacity: 1; transform: none; color: var(--rq-accent-2); }
+.widget.links-widget-box .link-item .disabled-link { color: #5b6370 !important; }
+.widget.links-widget-box .link-description { color: var(--rq-text-3) !important; }
+
+/* --------------------------------------------------------------------------
+   9. List view — صفوف بشكل بطاقات رفيعة
+   -------------------------------------------------------------------------- */
+.frappe-list, .frappe-list .frappe-card, .layout-main-section.frappe-card {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+.frappe-list .result { background: transparent !important; padding: 6px 4px !important; }
+.frappe-list .list-row-head {
+    background: var(--rq-surface-1) !important;
+    border: 1px solid var(--rq-line) !important;
+    border-radius: var(--rq-r) !important;
+    color: var(--rq-text-3) !important;
+    margin-bottom: 8px;
+}
+.frappe-list .list-row-head .list-row-col,
+.frappe-list .list-row-head .list-subject {
+    color: var(--rq-text-3) !important;
+    font-size: .78rem !important;
+    font-weight: 600 !important;
+    letter-spacing: .03em;
+}
+.frappe-list .list-row-container {
+    background: var(--rq-surface-1) !important;
+    border: 1px solid var(--rq-line) !important;
+    border-radius: var(--rq-r) !important;
+    margin-bottom: 6px !important;
+    position: relative;
+    transition: border-color .15s var(--rq-ease), box-shadow .15s var(--rq-ease), transform .15s var(--rq-ease), background .15s var(--rq-ease);
+}
+.frappe-list .list-row-container:hover {
+    background: var(--rq-surface-2) !important;
+    border-color: rgba(249,115,22,.30) !important;
+    box-shadow: var(--rq-shadow-hover) !important;
+    transform: translateY(-1px);
+}
+.frappe-list .list-row, .frappe-list .list-row:hover {
+    background: transparent !important;
+    border: 0 !important;
+}
+.frappe-list .list-subject a, .frappe-list .list-subject .bold {
+    color: var(--rq-text) !important;
+    font-weight: 600 !important;
+}
+.frappe-list .list-row-container:hover .list-subject a { color: #ffffff !important; }
+.frappe-list .list-row-col, .frappe-list .list-row-activity { color: var(--rq-text-2) !important; }
+.list-paging-area { background: transparent !important; border: 0 !important; }
+
+/* --------------------------------------------------------------------------
+   10. Forms & tables — النماذج والجداول
+   -------------------------------------------------------------------------- */
+.form-page .form-section, .form-layout .form-section, .frappe-card {
+    background: var(--rq-surface-1) !important;
+    border-color: var(--rq-line) !important;
+}
+.form-layout, .form-page {
+    border-radius: var(--rq-r-lg) !important;
+}
+.form-section .section-head { color: #ffffff !important; }
+.form-tabs-list {
+    background: transparent !important;
+    border-bottom: 1px solid var(--rq-line) !important;
+}
+.form-tabs-list .nav-link { color: var(--rq-text-3) !important; border: 0 !important; }
+.form-tabs-list .nav-link.active {
+    color: #ffffff !important;
+    box-shadow: inset 0 -2px 0 var(--rq-accent) !important;
+}
+.form-grid {
+    border: 1px solid var(--rq-line) !important;
+    border-radius: var(--rq-r) !important;
+    overflow: hidden;
+}
+.grid-heading-row { background: var(--rq-surface-2) !important; color: var(--rq-text-3) !important; }
+.grid-row { border-color: var(--rq-line) !important; }
+.grid-body .rows .grid-row:hover { background: var(--rq-surface-2) !important; }
+
+/* --------------------------------------------------------------------------
+   11. Badges, dropdowns, modals — شارات وقوائم ونوافذ
+   -------------------------------------------------------------------------- */
+.indicator-pill, .badge, .indicator-pill-round {
+    border-radius: 999px !important;
+    font-weight: 600 !important;
+}
+.dropdown-menu, .awesomplete > ul, .popover {
+    background: rgba(27, 31, 39, .96) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--rq-line-strong) !important;
+    border-radius: var(--rq-r) !important;
+    box-shadow: 0 16px 40px rgba(0,0,0,.5) !important;
+    padding: 6px !important;
+}
+.dropdown-item, .awesomplete > ul > li {
+    border-radius: 8px !important;
+    color: var(--rq-text-2) !important;
+}
+.dropdown-item:hover, .dropdown-item:focus, .awesomplete > ul > li:hover,
+.awesomplete > ul > li[aria-selected="true"] {
+    background: var(--rq-accent-soft) !important;
+    color: #ffffff !important;
+}
+.modal-content {
+    background: var(--rq-surface-1) !important;
+    border: 1px solid var(--rq-line-strong) !important;
+    border-radius: 18px !important;
+    box-shadow: 0 30px 80px rgba(0,0,0,.6) !important;
+    color: var(--rq-text) !important;
+}
+.modal-header, .modal-footer { border-color: var(--rq-line) !important; background: transparent !important; }
+.modal-backdrop.show { opacity: .7 !important; backdrop-filter: blur(4px); }
+
+/* --------------------------------------------------------------------------
+   12. Scrollbar — شريط تمرير رفيع
+   -------------------------------------------------------------------------- */
+* { scrollbar-width: thin; scrollbar-color: #343a46 transparent; }
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+    background: #2c3240;
+    border-radius: 999px;
+    border: 2px solid var(--rq-bg);
+}
+::-webkit-scrollbar-thumb:hover { background: #3b4250; }
+
+/* --------------------------------------------------------------------------
+   13. Motion & phones — حركة وجوال
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+    .widget:hover, .frappe-list .list-row-container:hover { transform: none !important; }
+}
+@media (max-width: 576px) {
+    .widget.shortcut-widget-box { min-height: 58px; padding: 12px 14px !important; }
+    .widget.number-widget-box .number { font-size: 1.55rem !important; }
+    .frappe-list .list-row-container { border-radius: 10px !important; }
+}

@@ -1,0 +1,120 @@
+R840	Submit	تسجيل
+R841	Checking one moment	فحص لحظة واحدة
+R842	Creating {0}	إنشاء {0}
+R843	User Changed	المستخدمون الذين قاموا بالتغيير
+R844	Search Results	نتائج البحث
+R845	Crop	اقتصاص
+R846	Camera	الة تصوير
+R847	Google Drive	محرك جوجل
+R848	Drop files here	قم بإسقاط الملفات هنا
+R849	Upload {0} files	تحميل {0} ملفات
+R850	Upload	تحميل
+R851	My Device	جهازي
+R852	Not permitted. {0}.	غير مسموح. {0}.
+R853	File upload failed.	فشل تحميل الملف.
+R854	Upload Failed	فشل الرفع
+R855	XMLHttpRequest Error	خطأ في طلب XMLHttp
+R856	Library	مكتبة
+R857	Free	حر
+R858	Load more	تحميل المزيد
+R859	Loading...	تحميل ...
+R860	Set all public	تعيين جميع البيانات العامة
+R861	Set all private	اجعل جميع الإعدادات خاصة
+R862	Delete attachment	حذف المرفق
+R863	Open Translation	فتح الترجمة
+R864	Collapse	انهيار
+R865	Expand	وسعت
+R866	Copy to Clipboard	نسخ إلى الحافظة
+R867	Comments	تعليقات
+R868	Scan	مسح
+R869	this form	هذا النموذج
+R870	Data Clipped	تم اقتطاع البيانات
+R871	Open Link	فتح الرابط
+R872	Today	اليوم
+R873	{0} to {1}	{0} إلى {1}
+R874	Now	الآن
+R875	d	د
+R876	h	ح
+R877	m	م
+R878	s	س
+R879	Days	أيام
+R880	Hours	ساعات
+R881	Minutes	الدقائق
+R882	Seconds	ثوانٍ
+R883	Advanced Search	البحث المتقدم
+R884	empty	فارغة
+R885	is enabled	تم التفعيل
+R886	is disabled	معاق
+R887	{0} is enabled	{0} مُفعّل
+R888	{0} equals {1}	{0} يساوي {1}
+R889	{0} contains {1}	{0} يحتوي على {1}
+R890	{0} is set	تم تعيين {0}
+R891	{0} is {1}	{0} هو {1}
+R892	Filtered by: {0}.	تمت التصفية بواسطة: {0}.
+R893	Clear All	إزالة الكل
+R894	{0} values selected	{0} القيم المحددة
+R895	Weak	ضعيف
+R896	Strong	قوي
+R897	Excellent	ممتاز
+R898	Processing	معالجة
+R899	Insert Table	إدراج جدول
+R900	Insert Row Above	إدراج صف أعلى
+R901	Insert Row Below	إدراج صف أسفل
+R902	Insert Column Right	إدراج عمود إلى اليمين
+R903	Insert Column Left	إدراج عمود إلى اليسار
+R904	Delete Row	حذف صف
+R905	Delete Column	حذف العمود
+R906	Delete Table	حذف جدول
+R907	Type something...	اكتب شيئا...
+R908	Graph	رسم بياني
+R909	Email Templates	قوالب البريد الإلكتروني
+R910	Search fields	حقول البحث
+R911	Series	سلسلة التسمية
+R912	Duplicate	مكررة
+R913	Set as default	تعيين افتراضي
+R914	Reset to default	إعادة الضبط إلى الوضع الافتراضي
+R915	You created this	أنت أنشأت هذا المستند
+R916	{0} created this	{0} أنشأ هذا المستند
+R917	You viewed this	لقد شاهدت هذا
+R918	Load More Communications	تحميل المزيد من الاتصالات
+R919	New Email	بريد إلكتروني جديد
+R920	You attached {0}	لقد قمت بإرفاق {0}
+R921	{0} attached {1}	{0} أرفق {1}
+R922	You Liked	أعجبك
+R923	{0} Liked	{0} أعجبني
+R924	New Event	حدث جديد
+R925	Unpublish	إلغاء النشر
+R926	Dismiss	رفض
+R927	Delete comment?	حذف التعليق؟
+R928	Show all activity	عرض جميع الأنشطة
+R929	via {0}	عبر {0}
+R930	Impersonated by {0}	انتحل شخصيته {0}
+R931	Cancel All Documents	الغاء جميع الوثائق
+R932	Cancel All	إلغاء الكل
+R933	Permanently Cancel {0}?	الغاء دائم {0} ؟
+R934	Permanently Discard {0}?	هل تريد حذف {0}نهائياً؟
+R935	Report bug	الإبلاغ عن خطأ
+R936	See on Website	ترى على الموقع
+R937	Redo last action	أعد تنفيذ الإجراء الأخير
+R938	Print document	مستند الطباعة
+R939	Previous Submission	التقديم السابق
+R940	All Submissions	جميع المشاركات
+R941	Duplicate current row	كرر الصف الحالي
+R942	{} Complete	{} اكتمال
+R943	Discard {0}	تجاهل {0}
+R944	Permanently Submit {0}?	إرسال دائم {0} ؟
+R945	Previous	سابق
+R946	Add a Row	إضافة صف
+R947	Collapse	انهيار
+R948	Save the document.	احفظ المستند.
+R949	Select an Image	اختر صورة
+R950	Currently Viewing	يطلع عليها حاليا
+R951	No rows	لا توجد صفوف
+R952	No rows selected	لم يتم تحديد أي صفوف
+R953	Delete all	حذف الكل
+R954	Bulk Edit	تعديل مجموعة
+R955	Duplicate rows	صفوف مكررة
+R956	row	صف
+R957	rows	الصفوف
+R958	Add row	إضافة صف
+R959	Add multiple	أضف عدة

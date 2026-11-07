@@ -1,0 +1,120 @@
+R6159	Partly Delivered	سلمت جزئيا
+R6160	Fully Delivered	سلمت بالكامل
+R6161	Not Delivered	ولا يتم توريدها
+R6162	%  Delivered	% تم التسليم
+R6163	Billing Status	حالة الفواتير
+R6164	Fully Billed	وصفت تماما
+R6165	Not Billed	لا صفت
+R6166	Partly Billed	تم فوترتها جزئيا
+R6167	Skip Delivery Note	تخطي ملاحظة التسليم
+R6168	% Picked	% منتقى
+R6169	Not Requested	غير مطلوب
+R6170	Invalid Delivery Date	تاريخ تسليم غير صالح
+R6171	Fulfillment	استيفاء
+R6172	Subcontracting Inward	التعاقد من الباطن داخلياً
+R6173	Sales Order Schedule	جدول أوامر المبيعات
+R6174	Billed Amt	فوترة AMT
+R6175	Work Order Qty	رقم أمر العمل
+R6176	For Production	للإنتاج
+R6177	Planned Quantity	المخطط الكمية
+R6178	Manufacturing Section	قسم التصنيع
+R6179	Inter Transfer Reference	مرجع التحويل الداخلي
+R6180	quotation_item	عنصر_اقتباس
+R6181	Production Plan Qty	كمية خطة الإنتاج
+R6182	Sales Partner Type	نوع شريك المبيعات
+R6183	Contact No.	رقم الاتصال
+R6184	Contribution (%)	المساهمة (%)
+R6185	Incentives	الحوافز
+R6186	Enable UTM	تمكين UTM
+R6187	Deliver secondary Items	تسليم الأصناف الثانوية
+R6188	Customer Defaults	حالات تخلف العملاء عن السداد
+R6189	Advanced Features	الميزات المتقدمة
+R6190	Selling Settings	إعدادات البيع
+R6191	Customer Naming By	تسمية العملاء بواسطة
+R6192	Default Customer Group	المجموعة الافتراضية العملاء
+R6193	Default Territory	الإقليم الافتراضي
+R6194	Default Price List	قائمة الأسعار الافتراضي
+R6195	Stock Settings	إعدادات المخزون
+R6196	Total Message(s)	مجموع الرسائل ( ق )
+R6197	Send To	أرسل إلى
+R6198	All Contact	جميع جهات الاتصال
+R6199	All Customer Contact	كافة جهات اتصال العميل
+R6200	All Employee (Active)	جميع الموظفين (نشط)
+R6201	All Lead (Open)	(جميع الزبائن المحتملين (مفتوح
+R6202	All Sales Person	كل مندوبي المبيعات
+R6203	All Supplier Contact	بيانات اتصال جميع الموردين
+R6204	Create Receiver List	إنشاء قائمة استقبال
+R6205	Receiver List	قائمة الاستقبال
+R6206	Total Characters	مجموع أحرف
+R6207	Supplier Number	رقم المورد
+R6208	Add a customer	إضافة عميل
+R6209	Add Customer	إضافة العميل
+R6210	Get paid	استلام المدفوعات
+R6211	Quote a price	إنشاء عرض سعر
+R6212	Create Quotation	إنشاء اقتباس
+R6213	Create Sales Order	إنشاء أمر مبيعات
+R6214	Open Accounts Receivable	فتح الحسابات المدينة
+R6215	Open Sales Analytics	فتح تحليلات المبيعات
+R6216	Point of Sale	نقطة البيع
+R6217	POS Closed	تم إغلاق نقطة البيع
+R6218	Open Form View	افتح طريقة عرض النموذج
+R6219	Close the POS	أغلق POS
+R6220	New Invoice	فاتورة جديدة
+R6221	Recent Orders	الطلبات الأخيرة
+R6222	Hide Recent Orders	إخفاء الطلبات الأخيرة
+R6223	Not Available	غير متوفرة
+R6224	Last transacted	آخر عملية تم إجراؤها
+R6225	Checkout	الدفع
+R6226	Edit Cart	تعديل سلة التسوق
+R6227	Add Order Discount	أضف خصم الطلب
+R6228	Enter discount percentage.	أدخل نسبة الخصم.
+R6229	Invalid Discount	خصم غير صالح
+R6230	Additional	الإضافية
+R6231	discount applied	تم تطبيق الخصم
+R6232	Item Cart	سلة التسوق
+R6233	Recent Transactions	المعاملات الأخيرة
+R6234	Add Discount	إضافة خصم
+R6235	Enter customer's email	أدخل البريد الإلكتروني الخاص بالعميل
+R6236	Total Items	إجمالي السلع
+R6237	Discount (%)	الخصم (%)
+R6238	Items not found.	لم يتم العثور على العناصر.
+R6239	Quantity Available	الكمية المتوفرة
+R6240	Select item group	حدد مجموعة العناصر
+R6241	All Items	جميع العناصر
+R6242	Invoice Status	حالة الفاتورة
+R6243	Returned	مرتجع
+R6244	Invalid Return	إرجاع غير صالح
+R6245	Edit Receipt	تحرير الإيصال
+R6246	Email sent successfully.	تم إرسال البريد الإلكتروني بنجاح.
+R6247	Email Receipt	إيصال البريد الإلكتروني
+R6248	Print Receipt	اطبع الايصال
+R6249	Sold by	يباع بواسطة
+R6250	Update Additional Information	تحديث معلومات إضافية
+R6251	Payment Received	تم استلام الدفعة
+R6252	Payment Failed	عملية الدفع فشلت
+R6253	Complete Order	إتمام الطلب
+R6254	Enter {0} amount.	أدخل مبلغ {0}.
+R6255	Remaining Amount	المبلغ المتبقي
+R6256	Opportunities by Source	الفرص حسب المصدر
+R6257	Opportunities by Campaign	الفرص المتاحة حسب الحملة
+R6258	Opportunities by Medium	فرص حسب المنصة
+R6259	Active Leads	العروض النشطة
+R6260	Address And Contacts	العنوان وجهات الاتصال
+R6261	View Type	نوع العرض
+R6262	New Customers	العملاء الجدد
+R6263	Repeat Customers	الزبائن المكررين
+R6264	New Customer Revenue	ايرادات الزبائن الجدد
+R6265	Repeat Customer Revenue	ايرادات الزبائن المكررين
+R6266	Total Revenue	إجمالي الإيرادات
+R6267	Outstanding Amt	القيمة القائمة
+R6268	Credit Balance	رصيد الإئتمان
+R6269	Customer-wise Item Price	سعر البند العملاء الحكيم
+R6270	Selling Rate	معدل البيع
+R6271	Available Stock	المخزون المتوفر
+R6272	Inactive Customers	العملاء الغير النشطين
+R6273	Item-wise Sales History	الحركة التاريخية للمبيعات وفقاً للصنف
+R6274	Delivered Quantity	كمية تسليمها
+R6275	Total Sales Amount	إجمالي مبلغ المبيعات
+R6276	Lost Quotations	اقتباسات مفقودة
+R6277	Not Specified	غير محدد
+R6278	Lost Value	القيمة المفقودة

@@ -1,0 +1,120 @@
+R3786	{0}.	{0}.
+R3787	{0} only.	{0} فقط.
+R3788	{0} or {1}	{0} أو {1}
+R3789	{0} and {1}	{0} و {1}
+R3790	Syntax Error	خطأ في بناء الجملة
+R3791	No file attached	أي ملف مرفق
+R3792	Invalid Upload	رفع غير صالح
+R3793	Invalid file name	اسم الملف غير صالح
+R3794	This month	هذا الشهر
+R3795	Goal	الهدف
+R3796	Illegal template	قالب غير قانوني
+R3797	Invalid Action	إجراء غير صالح
+R3798	Avoid recent years.	تجنب السنوات الأخيرة.
+R3799	Print Format Error	خطأ في تنسيق الطباعة
+R3800	Printing failed	فشلت الطباعة
+R3801	Updating	يتم التحديث
+R3802	Unsafe SQL query	استعلام SQL غير آمن
+R3803	Invalid Link	رابط غير صالح
+R3804	Company Introduction	مقدمة الشركة
+R3805	Org History	تاريخ المنظمة
+R3806	"Company History"	"نبذة عن الشركة"
+R3807	Org History Heading	عنوان تاريخ المنظمة
+R3808	Team Members Heading	عنوان أعضاء الفريق
+R3809	Page Title	عنوان الصفحة
+R3810	Team Members Subtitle	أعضاء الفريق (ترجمة)
+R3811	About Us Settings	إعدادات صفحة من نحن
+R3812	Image Link	رابط الصورة
+R3813	Highlight	أبرز النقاط
+R3814	Skype	سكايب
+R3815	Send Acknowledgement Email	إرسال بريد إلكتروني لتأكيد الاستلام
+R3816	Contact Us Settings	إعدادات الاتصال بنا
+R3817	Introduction	مقدمة
+R3818	Default: "Contact Us"	الافتراضي: &quot;اتصل بنا&quot;
+R3819	Query Options	خيارات الاستعلام
+R3820	Pincode	رمز Pin
+R3821	Topic	موضوع
+R3822	Discussion Reply	ردود المناقشة
+R3823	Discussion Topic	موضوع النقاش
+R3824	Not Helpful	غير مفيد
+R3825	Help Article	صفحة المساعدة
+R3826	Knowledge Base Editor	محرر قاعدة المعرفة
+R3827	Knowledge Base Contributor	مشارك قاعدة المعرفة
+R3828	Author	مؤلف
+R3829	Beginner	مبتدئ
+R3830	Expert	خبير
+R3831	Intermediate	متوسط
+R3832	Likes	اعجابات
+R3833	Helpful	متعاون
+R3834	Category Name	اسم التصنيف
+R3835	Category Description	وصف الفئة
+R3836	Help Articles	مقالات المساعدة
+R3837	Help Category	فئة المساعدة
+R3838	Delete Data	حذف البيانات
+R3839	Put on Hold	تم تعليق العملية
+R3840	On Hold	معلق
+R3841	Pending Approval	ما زال يحتاج بتصدير
+R3842	Pending Verification	في انتظار التحقق
+R3843	Anonymization Matrix	مصفوفة إخفاء الهوية
+R3844	Deletion Steps	خطوات الحذف
+R3845	Approval Required	الموافقة مطلوبة
+R3846	Confirmed	مؤكد
+R3847	Link Expired	انتهت صلاحية الرابط
+R3848	Partial	جزئي
+R3849	Filtered By	تمت التصفية بواسطة
+R3850	User Name	اسم المستخدم
+R3851	Download Your Data	قم بتنزيل بياناتك
+R3852	Portal Menu Item	بوابة عنصر القائمة
+R3853	Standard Sidebar Menu	قائمة الشريط الجانبي الرئيسية
+R3854	Hide Standard Menu	إخفاء القائمة الرئيسية
+R3855	Portal Menu	البوابة القائمة
+R3856	Custom Sidebar Menu	قائمة الشريط الجانبي المخصص
+R3857	Custom Menu Items	قائمة مخصصة عناصر
+R3858	Example: "/desk"	مثال: &quot;/ desk&quot;
+R3859	Default Portal Home	الصفحة الرئيسية للمدخل الافتراضي
+R3860	Portal Settings	إعدادات البوابة
+R3861	Social Link Type	نوع الارتباط الاجتماعي
+R3862	facebook	موقع التواصل الاجتماعي الفيسبوك
+R3863	linkedin	ينكدين
+R3864	twitter	تويتر
+R3865	Social Link Settings	إعدادات الارتباط الاجتماعي
+R3866	Parent Label	الإسم الأصل
+R3867	Align Right	محاذاة اليمين
+R3868	Top Bar Item	أفضل شريط الإغلاق
+R3869	Campaign Description (Optional)	وصف الحملة (اختياري)
+R3870	Slug	سبيكة
+R3871	UTM Campaign	حملة UTM
+R3872	Marketing Manager	مدير التسويق
+R3873	UTM Medium	وسط UTM
+R3874	UTM Source	مصدر UTM
+R3875	Copy embed code	انسخ رمز التضمين
+R3876	Embed code copied	تم نسخ رمز التضمين
+R3877	Login Required	تسجيل الدخول مطلوب
+R3878	Key Required	المفتاح مطلوب
+R3879	Get Fields	احصل على الحقول
+R3880	Is standard	معيار
+R3881	Login required	تسجيل الدخول مطلوب
+R3882	Allow multiple responses	السماح بإرسال عدة ردود
+R3883	Allow delete	السماح بالحذف
+R3884	Allow print	السماح بالطباعة
+R3885	Allow comments	السماح بالتعليقات
+R3886	Show attachments	عرض المرفقات
+R3887	Allow incomplete forms	السماح بالنماذج غير المكتملة
+R3888	Web Form Fields	الحقول نموذج ويب
+R3889	Max attachment size	أقصى حجم للملحق
+R3890	Client script	نص العميل
+R3891	Submit button label	تسمية زر الإرسال
+R3892	Success message	رسائل النجاح
+R3893	Success URL	رابط النجاح
+R3894	Breadcrumbs	مسار التصفح
+R3895	Apply document permissions	تطبيق أذونات المستند
+R3896	Show list	عرض القائمة
+R3897	List Columns	أعمدة القائمة
+R3898	Website Sidebar	موقع الشريط الجانبي
+R3899	List setting message	رسالة إعداد القائمة
+R3900	Success title	عنوان النجاح
+R3901	Sidebar Settings	إعدادات الشريط الجانبي
+R3902	After Submission	بعد تقديم الطلب
+R3903	Scripting / Style	كتابة النصوص / الأسلوب
+R3904	Meta	ميتا
+R3905	Meta title	عنوان ميتا

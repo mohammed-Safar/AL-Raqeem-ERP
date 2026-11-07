@@ -1,0 +1,120 @@
+R4719	Write Off Entry	شطب الدخول
+R4720	Depreciation Entry	حركة الإهلاك
+R4721	Deferred Revenue	الإيرادات المؤجلة
+R4722	Deferred Expense	المصروفات المؤجلة
+R4723	Accounting Entries	القيود المحاسبة
+R4724	Make Difference Entry	جعل دخول الفرق
+R4725	Multi Currency	متعدد العملات
+R4726	Total Amount Currency	عملة إجمالي المبلغ
+R4727	Bill No	رقم الفاتورة
+R4728	Bill Date	تاريخ الفاتورة
+R4729	Get Outstanding Invoices	الحصول على فواتير معلقة
+R4730	Write Off Amount	شطب المبلغ
+R4731	Additional Info	معلومات اضافية
+R4732	Payment Order	أمر دفع
+R4733	Stock Entry	قيد مخزون
+R4734	From Template	من القالب
+R4735	Tax Withholding Category	فئة حجب الضرائب
+R4736	Reversal Of	عكس
+R4737	Process Deferred Accounting	عملية المحاسبة المؤجلة
+R4738	Periodic Accounting	المحاسبة الدورية
+R4739	Stock Asset Account	حساب أصول الأسهم
+R4740	Get Balance	استعد توازنك
+R4741	Party Not Required	لا يشترط وجود طرف ثالث
+R4742	Tax Withholding Group	مجموعة حجز الضرائب
+R4743	Tax Withholding Entries	قيود اقتطاع الضرائب
+R4744	Tax Withholding	استقطاع الضريبة
+R4745	Custom Remark	ملاحظة مخصصة
+R4746	Invalid filter	عامل تصفية غير صالح
+R4747	No Permission	لا يوجد تصريح
+R4748	Bank and Cash	بنك ونقد
+R4749	Drafts	المسودات
+R4750	Opening Entries	قيود افتتاحية
+R4751	Employee Advance	سلفة الموظف
+R4752	Expense Claim	مطالبة النفقات
+R4753	Fees	رسوم
+R4754	Loan	قرض
+R4755	Payroll Entry	قيد الرواتب
+R4756	Sales Order	طلب المبيعات
+R4757	Reference Due Date	تاريخ الاستحقاق المرجعي
+R4758	Reference Detail No	تفاصيل المرجع رقم
+R4759	Advance Voucher Type	نوع سند الدفعة المقدمة
+R4760	Advance Voucher No	رقم سند الدفعة المقدمة
+R4761	Journal Entry Account	حساب إدخال القيود اليومية
+R4762	Journal Entry Type	نوع إدخال دفتر اليومية
+R4763	Template Title	عنوان النموذج
+R4764	Journal Entry Template	قالب إدخال دفتر اليومية
+R4765	Debit-Credit mismatch	عدم تطابق بين المدين والدائن
+R4766	Checked On	تم التحقق منه
+R4767	Ledger Health	ليدجر هيلث
+R4768	Enable Health Monitor	تفعيل مراقب الصحة
+R4769	Debit-Credit Mismatch	عدم تطابق الرصيد الدائن
+R4770	Ledger Health Monitor	مراقبة صحة دفتر الأستاذ
+R4771	Merge Progress	دمج التقدم
+R4772	Please set Company	يرجى تعيين الشركة
+R4773	Please set Account	يرجى إنشاء حساب
+R4774	Start Merge	بدء الدمج
+R4775	Ledger Merge	دمج دفتر الأستاذ
+R4776	Accounts to Merge	الحسابات المراد دمجها
+R4777	Merged	تم الدمج
+R4778	Ledger Merge Accounts	دمج حسابات دفتر الأستاذ
+R4779	Loyalty Point Entry	دخول نقطة الولاء
+R4780	Loyalty Program	برنامج الولاء
+R4781	Loyalty Program Tier	مستوى برنامج الولاء
+R4782	Redeem Against	استبدال مقابل
+R4783	Loyalty Points	نقاط الولاء
+R4784	Purchase Amount	قيمة الشراء
+R4785	Expiry Date	تاريخ انتهاء الصلاحية
+R4786	Discretionary Reason	سبب تقديري
+R4787	Redemption Date	تاريخ الاسترداد
+R4788	Redeemed Points	النقاط المستردة
+R4789	Help Section	قسم المساعدة
+R4790	Loyalty Program Help	مساعدة برنامج الولاء
+R4791	Loyalty Program Name	اسم برنامج الولاء
+R4792	Loyalty Program Type	نوع برنامج الولاء
+R4793	Multiple Tier Program	برنامج متعدد الطبقات
+R4794	Single Tier Program	برنامج الطبقة الواحدة
+R4795	Customer Territory	منطقة العملاء
+R4796	Collection Tier	مجموعة الصف
+R4797	Collection Rules	قواعد الجمع
+R4798	Redemption	فداء
+R4799	Tier Name	اسم الطبقة
+R4800	Minimum Total Spent	الحد الأدنى لإجمالي الإنفاق
+R4801	Loyalty Program Collection	مجموعة برامج الولاء
+R4802	Default Account	الحساب الافتراضي
+R4803	Distribution Name	توزيع الاسم
+R4804	Monthly Distribution Percentages	النسب المئوية للتوزيع الشهري
+R4805	Percentage Allocation	نسبة توزيع
+R4806	Monthly Distribution Percentage	النسبة المئوية للتوزيع الشهري
+R4807	Opening Invoices Summary	ملخص الفواتير الافتتاحية
+R4808	Create Invoices	إنشاء الفواتير
+R4809	Create Missing Party	إنشاء طرف مفقود
+R4810	Opening Invoice Item	فتح الفاتورة البند
+R4811	Error Occurred	حدث خطأ
+R4812	Invoice Number	رقم الفاتورة
+R4813	Supplier Invoice Date	المورد فاتورة التسجيل
+R4814	Party Name	اسم الطرف
+R4815	Party ID	معرّف الطرف
+R4816	Temporary Opening Account	حساب الافتتاح المؤقت
+R4817	Discounted Amount	المبلغ المخفض
+R4818	Payment Schedule	جدول الدفع
+R4819	Overdue Days	الأيام المتأخرة
+R4820	Dunning Level	مستوى الدانينج
+R4821	Interest	الفائدة
+R4822	Overdue Payment	الدفع المتأخر
+R4823	Invoice Portion	جزء الفاتورة
+R4824	Payment Amount	دفع مبلغ
+R4825	Advance Account	حساب الدفعات المقدمة
+R4826	Party Account	حساب طرف
+R4827	Primary Role	الدور الرئيسي
+R4828	Secondary Role	دور ثانوي
+R4829	Primary Party	الحزب الأساسي
+R4830	Secondary Party	الطرف الثانوي
+R4831	Party Link	رابط الحفلة
+R4832	Invalid Primary Role	دور أساسي غير صالح
+R4833	Paid	مدفوع
+R4834	Transfers	التحويلات
+R4835	Allocate Payment Request	تخصيص طلب دفع
+R4836	Please Specify Account	يرجى تحديد الحساب
+R4837	Greater Than Amount	أكبر من المبلغ
+R4838	Less Than Amount	أقل من المبلغ

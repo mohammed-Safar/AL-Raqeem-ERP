@@ -1,0 +1,120 @@
+R1320	{0} h	{0} ح
+R1321	{0} d	{0} د
+R1322	{0} w	{0} ث
+R1323	{0} M	{0} م
+R1324	{0} y	{0} ص
+R1325	just now	الآن فقط
+R1326	1 minute ago	منذ 1 دقيقة
+R1327	{0} minutes ago	قبل {0} دقائق
+R1328	1 hour ago	منذ 1 ساعة
+R1329	{0} hours ago	{0} قبل ساعات
+R1330	yesterday	في الامس
+R1331	{0} days ago	قبل {0} أيام
+R1332	1 week ago	1 قبل أسبوع
+R1333	{0} weeks ago	قبل {0} أسبوع /أسابيع
+R1334	1 month ago	قبل شهر
+R1335	{0} months ago	قبل {0} أشهر
+R1336	1 year ago	منذ سنة
+R1337	{0} years ago	قبل {0} سنة
+R1338	You	أنت
+R1339	Copied to clipboard.	نسخ إلى الحافظة.
+R1340	Web Page URL	رابط صفحة الويب
+R1341	Source	المصدر
+R1342	Campaign	حملة
+R1343	or	أو
+R1344	and	و
+R1345	Edit Values	تحرير القيم
+R1346	Week	أسبوع
+R1347	Hide Weekends	إخفاء عطلة نهاية الأسبوع
+R1348	Show Weekends	عرض عطلة نهاية الاسبوع
+R1349	{0} Calendar	{0} التقويم
+R1350	{0} missing	{0} مفقود
+R1351	Video	فيديو
+R1352	Email Sent	إرسال البريد الإلكتروني
+R1353	Email sending undone	تم التراجع عن إرسال البريد الإلكتروني
+R1354	Message clipped	رسالة قص
+R1355	Send	إرسال
+R1356	Schedule Send At	جدولة الإرسال في
+R1357	Send	إرسال
+R1358	Discard	تجاهل
+R1359	To	إلى
+R1360	CC	نسخة
+R1361	BCC	بي سي سي
+R1362	HTML Message	رسالة HTML
+R1363	Attach Document Print	إرفاق طباعة المستند
+R1364	Select Print Format	حدد تنسيق طباعة
+R1365	Print Language	لغة الطباعة
+R1366	Select Attachments	حدد المرفقات
+R1367	From	من
+R1368	Page not found	لم يتم العثور على الصفحة
+R1369	Customize Dashboard	تخصيص لوحة التحكم
+R1370	Reset Dashboard Customizations	إعادة ضبط تخصيصات لوحة التحكم
+R1371	Save Customizations	حفظ التخصيصات
+R1372	Enter folder name	أدخل اسم المجلد
+R1373	Import Zip	استيراد الرمز البريدي
+R1374	Unzipping files...	فك ضغط الملفات ...
+R1375	Unzipped {0} files	الملفات غير المضغوطة {0}
+R1376	Cut	قطع
+R1377	Paste	لصق
+R1378	Export as zip	تصدير كملف مضغوط
+R1379	Toggle Grid View	تبديل عرض الشبكة
+R1380	Copy File URL	نسخ رابط الملف
+R1381	Size	حجم
+R1382	File Manager	مدير الملفات
+R1383	New Folder	ملف جديد
+R1384	Incorrect configuration	إعدادات غير صحيحة
+R1385	Images	صور
+R1386	Has Attachments	يحتوي على مرفقات
+R1387	Linked with {0}	مرتبط بـ {0}
+R1388	No {0} mail	لا {0} الإلكتروني
+R1389	No Email Account	ليس لديك حساب البريد الإلكتروني
+R1390	Compose Email	كتابة رسالة الكترونية
+R1391	No Emails	لا رسائل البريد الإلكتروني
+R1392	New Activity	نشاط جديد
+R1393	Add Attachment	إضافة مرفق
+R1394	{0} created successfully	تم إنشاء {0} بنجاح
+R1395	Category	فئة
+R1396	Summary	ملخص
+R1397	Archived Columns	أعمدة من الأرشيف
+R1398	Add Column	إضافة عمود
+R1399	Archive	أرشيف
+R1400	Add {0}	أضِف {0}
+R1401	{0} Settings	{0} الإعدادات
+R1402	DocType required	نوع المستند مطلوب
+R1403	Save filters	حفظ المرشحات
+R1404	Delete Kanban Board	حذف لوحة كانبان
+R1405	Filters saved	مرشحات حفظ
+R1406	Kanban Settings	إعدادات كانبان
+R1407	New Kanban Board	مجلس كانبان جديدة
+R1408	Columns based on	أعمدة بناء على
+R1409	Project	مشروع
+R1410	Kanban Settings	إعدادات كانبان
+R1411	{0} Map	{0} خريطة
+R1412	Preview on {0}	معاينة على {0}
+R1413	Generate New Report	توليد تقرير جديد
+R1414	Rebuild	إعادة بناء
+R1415	Reload Report	تقرير إعادة التحميل
+R1416	Proceed Anyway	المتابعة على أية حال
+R1417	1 Report	تقرير واحد
+R1418	{0} Reports	{0} تقارير
+R1419	Please set filters	يرجى تعيين المرشحات
+R1420	Include indentation	تشمل المسافة البادئة
+R1421	Include hidden columns	تضمين الأعمدة المخفية
+R1422	Setup Auto Email	الإعداد التلقائي البريد الإلكتروني
+R1423	From Document Type	من نوع المستند
+R1424	Save Report	احفظ التقرير
+R1425	Set Level	ضبط المستوى
+R1426	Expand All	توسيع الكل
+R1427	Collapse All	طي الجميع
+R1428	Translate Data	ترجمة البيانات
+R1429	Create Card	إنشاء بطاقة
+R1430	Set Chart	مجموعة الرسم البياني
+R1431	Card Label	ملصق البطاقة
+R1432	Create Chart	إنشاء مخطط
+R1433	Please Set Chart	يرجى وضع الرسم البياني
+R1434	New {0} Created	جديد {0} تم إنشاؤه
+R1435	Preparing Report	إعداد التقرير
+R1436	Download Report	تحميل التقرير
+R1437	Export in Background	تصدير في الخلفية
+R1438	Export Report: {0}	تصدير التقرير: {0}
+R1439	Download	تحميل

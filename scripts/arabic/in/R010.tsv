@@ -1,0 +1,120 @@
+R1080	Inbox View	عرض البريد الوارد
+R1081	Tree View	عرض الشجرة
+R1082	Map View	عرض الخريطة
+R1083	Reload List	أعد تحميل القائمة
+R1084	Nothing to show	لا شيء لإظهار
+R1085	Page Size	حجم الصفحة
+R1086	Load More	تحميل المزيد
+R1087	Not Set	غير محدد
+R1088	Me	أنا
+R1089	Bulk PDF Export	تصدير ملفات PDF بالجملة
+R1090	Deleting {0} records...	حذف {0} سجلات...
+R1091	Cannot delete {0}	لا يمكن حذف {0}
+R1092	Doctype required	Doctype المطلوبة
+R1093	Cannot submit {0}.	لا يمكن الإرسال {0}.
+R1094	Cannot cancel {0}.	لا يمكن الإلغاء {0}.
+R1095	Cannot {0} {1}.	لا يمكن {0} {1}.
+R1096	Updated successfully	تم التحديث بنجاح
+R1097	Update {0} records	تحديث {0} سجلات
+R1098	Add Tags	إضافة وسوم
+R1099	Print Documents	طباعة الوثائق
+R1100	Most Used	الأكثر استخداما
+R1101	Reset Fields	تصفير البيانات في الحقول
+R1102	Saving	حفظ
+R1103	Edit Filters	تعديل عامل التصفية
+R1104	No records tagged.	لا توجد سجلات مصنفة.
+R1105	Liked by me	أعجبني
+R1106	Navigate list down	انتقل القائمة لأسفل
+R1107	Navigate list up	انتقل القائمة لأعلى
+R1108	Open list item	فتح عنصر القائمة
+R1109	Select list item	حدد عنصر القائمة
+R1110	{0} items selected	{0} العناصر المحددة
+R1111	Import	استيراد
+R1112	User Permissions	ضوابط المستخدم
+R1113	Role Permissions Manager	مدير ضوابط الصلاحيات
+R1114	Customize	تخصيص
+R1115	Edit DocType	تعديل القائمة
+R1116	Restrictions	قيود
+R1117	Customize Quick Filters	تخصيص الفلاتر السريعة
+R1118	Select Filters	اختر المرشحات
+R1119	Saving Changes...	جارٍ حفظ التغييرات...
+R1120	List Settings	إعدادات القائمة
+R1121	Assign To	تكليف إلى
+R1122	Clear Assignment	مسح المهمة
+R1123	Apply Assignment Rule	تطبيق قاعدة الواجب
+R1124	Add Tags	إضافة وسوم
+R1125	Print	طباعة
+R1126	Delete	حذف
+R1127	Cancel	إلغاء
+R1128	Cancel {0} documents?	إلغاء {0} وثائق؟
+R1129	Submit	تسجيل
+R1130	Submit {0} documents?	إرسال {0} وثائق؟
+R1131	Edit	تصحيح
+R1132	Export	تصدير
+R1133	Add {0}	أضِف {0}
+R1134	No {0} found	لم يتم العثور على {0}
+R1135	Refreshing	منعش
+R1136	New Email Account	حساب بريد إلكتروني جديد
+R1137	Select Kanban	حدد كانبان
+R1138	Generating PDF...	جارٍ إنشاء ملف PDF...
+R1139	Draft	مشروع
+R1140	Parent	رقم الاب
+R1141	Unknown Column: {0}	عمود غير معروف: {0}
+R1142	Permanently delete {0}?	حذف بشكل دائم {0} ؟
+R1143	Deleting {0}...	حذف {0}...
+R1144	Rename {0}	إعادة تسمية {0}
+R1145	Please specify	رجاء حدد
+R1146	No thanks	لا، شكرًا
+R1147	Search for countries...	البحث عن الدول...
+R1148	Not found	لم يتم العثور على
+R1149	Please try again	حاول مرة اخرى
+R1150	File too big	الملف كبير جدا
+R1151	Request Timed Out	طلب مهلة
+R1152	Internal Server Error	خطأ في الخادم الداخلي
+R1153	Deadlock Occurred	حدث طريق مسدود
+R1154	Connection Lost	انقطع الاتصال
+R1155	Scan QRCode	امسح رمز الاستجابة السريعة
+R1156	Progress	تقدم
+R1157	Create Address	إنشاء عنوان
+R1158	{0} results found	تم العثور على {0} نتيجة
+R1159	Take Photo	تصوير
+R1160	Total Images	إجمالي الصور
+R1161	No Images	لا توجد صور
+R1162	Switch Camera	كاميرا التبديل
+R1163	Switching Camera	تبديل الكاميرا
+R1164	Capture	يأسر
+R1165	Deleting...	حذف...
+R1166	Submitting...	تقديم...
+R1167	Submit	تسجيل
+R1168	Executing Code	تنفيذ التعليمات البرمجية
+R1169	No.	لا.
+R1170	Missing Values Required	قيم مفقودة مطلوبة
+R1171	Invalid Values	قيم غير صالحة
+R1172	Not Equals	لا تساوي
+R1173	Not Like	لا تعجبني
+R1174	In	في
+R1175	Not In	ليس في
+R1176	Is	هل
+R1177	Greater Than	أكبر من
+R1178	Less Than	أقل من
+R1179	Between	ما بين
+R1180	Descendants Of	أحفاد من
+R1181	Descendants Of (inclusive)	أحفاد (شاملة)
+R1182	Not Descendants Of	ليس من أحفاد
+R1183	Ancestors Of	أجداد
+R1184	Not Ancestors Of	ليس الأجداد من
+R1185	On or Before	في أو قبل
+R1186	On or After	في أو بعد
+R1187	Remove Filter	إزالة المنقي
+R1188	Yes	نعم
+R1189	No	لا
+R1190	Set	مجموعة
+R1191	Not Set	غير محدد
+R1192	Last 7 Days	آخر 7 أيام
+R1193	Last 14 Days	آخر 14 يومًا
+R1194	Last 30 Days	آخر 30 يومًا
+R1195	Last 90 Days	آخر 90 يومًا
+R1196	Last 6 Months	آخر 6 أشهر
+R1197	This Week	هذا الأسبوع
+R1198	This Month	الشهر الجاري
+R1199	This Quarter	ربع السنة الجاري

@@ -1,0 +1,120 @@
+R4479	Bisect Accounting Statements	تقسيم البيانات المحاسبية
+R4480	Algorithm	الخوارزمية
+R4481	BFS	بي إف إس
+R4482	DFS	DFS
+R4483	Current Node	العقدة الحالية
+R4484	Reached Root	وصل إلى الجذر
+R4485	Root	جذر
+R4486	Left Child	الطفل الأيسر
+R4487	Right Child	الطفل الأيمن
+R4488	Period_from_date	الفترة_من_تاريخ
+R4489	Period To Date	الفترة حتى تاريخه
+R4490	Generated	تم إنشاؤه
+R4491	Bisect Nodes	تقسيم العقد
+R4492	Revise Budget	مراجعة الميزانية
+R4493	Revision cancelled	تم إلغاء المراجعة
+R4494	Control Action	التحكم في العمل
+R4495	Ignore	تجاهل
+R4496	Budget Distribution	توزيع الميزانية
+R4497	Budget Amount	قيمة الميزانية
+R4498	Revision Of	مراجعة
+R4499	Distribute Equally	وزّع بالتساوي
+R4500	From Fiscal Year	من السنة المالية
+R4501	To Fiscal Year	إلى السنة المالية
+R4502	Budget Start Date	تاريخ بدء الميزانية
+R4503	Budget End Date	تاريخ انتهاء الميزانية
+R4504	Distribution Frequency	تردد التوزيع
+R4505	Budget Distribution Total	إجمالي توزيع الميزانية
+R4506	Budget Against	الميزانية مقابل
+R4507	Account is mandatory	الحساب إلزامي
+R4508	Budget Limit Exceeded	تم تجاوز الحد الأقصى للميزانية
+R4509	Accumulated Monthly	متراكمة شهريا
+R4510	Budget Exceeded	تجاوز الميزانية
+R4511	Actual Expenses	المصروفات الفعلية
+R4512	Material Requests	طلبات المواد
+R4513	Unbilled Orders	الطلبات غير المفوترة
+R4514	Budget Account	حساب الميزانية
+R4515	Campaign Item	عنصر الحملة
+R4516	Cashier Closing	إغلاق أمين الصندوق
+R4517	Custody	عهدة
+R4518	Returns	النتائج
+R4519	Cashier Closing Payments	مدفوعات إغلاق أمين الصندوق
+R4520	Creating Accounts...	إنشاء حسابات ...
+R4521	Import Successful	استيراد ناجح
+R4522	Chart Preview	معاينة الرسم البياني
+R4523	Chart Tree	شجرة الرسم البياني
+R4524	Parent Account Missing	حساب الوالدين مفقود
+R4525	Wrong Template	قالب خاطئ
+R4526	Wrong Company	شركة خاطئة
+R4527	Create Print Format	إنشاء تنسيق طباعة
+R4528	Update Print Format	تحديث تنسيق الطباعة
+R4529	Cheque Height	ارتفاع الصك
+R4530	Scanned Cheque	الممسوحة ضوئيا شيك
+R4531	Is Account Payable	هل هو حساب دائن
+R4532	Message to show	رسالة للإظهار
+R4533	Date Settings	إعدادات التاريخ
+R4534	Payer Settings	إعدادات الدافع
+R4535	Amount In Figure	المبلغ في الشكل
+R4536	Signatory Position	الوظيفة الموقعة
+R4537	Cheque Print Template	نمودج طباعة الشيك
+R4538	Has Print Format	لديها تنسيق طباعة
+R4539	Primary Settings	الإعدادات الأولية
+R4540	Cheque Size	مقاس الصك
+R4541	Regular	منتظم
+R4542	Cheque Width	عرض الشيك
+R4543	Account Pay Only	حساب الدفع فقط
+R4544	Closed Document	وثيقة مغلقة
+R4545	rgt	RGT
+R4546	Employee	الموظف
+R4547	Projects Manager	مدير المشاريع
+R4548	Projects User	عضو المشاريع
+R4549	Cost Center Name	اسم مركز تكلفة
+R4550	Cost Center Number	رقم مركز التكلفة
+R4551	Parent Cost Center	مركز التكلفة الأب
+R4552	lft	LFT
+R4553	Budget List	قائمة الميزانية
+R4554	Monthly Distribution	التوزيع الشهري
+R4555	Budget Variance Report	تقرير إنحرافات الموازنة
+R4556	Main Cost Center	مركز التكلفة الرئيسي
+R4557	Valid From	صالح من تاريخ
+R4558	Cost Center Allocation	توزيع مركز التكلفة
+R4559	Warning!	تحذير!
+R4560	Percentage (%)	النسبة المئوية (%)
+R4561	Add/Edit Coupon Conditions	إضافة / تحرير شروط القسيمة
+R4562	Coupon Description	وصف القسيمة
+R4563	Coupon Name	اسم القسيمة
+R4564	Coupon Type	نوع الكوبون
+R4565	Gift Card	كرت هدية
+R4566	Promotional	الترويجية
+R4567	Coupon Code	رمز الكوبون
+R4568	Pricing Rule	قاعدة التسعير
+R4569	Validity and Usage	الصلاحية والاستخدام
+R4570	Valid Up To	صالحة حتى
+R4571	Maximum Use	الاستخدام الأقصى
+R4572	Use HTTP Protocol	استخدم بروتوكول HTTP
+R4573	API Details	تفاصيل واجهة برمجة التطبيقات
+R4574	Example URL	مثال على عنوان URL
+R4575	Request Parameters	معلمات الطلب
+R4576	Result Key	مفتاح النتائج
+R4577	Service Provider	مزود الخدمة
+R4578	exchangerate.host	exchangerate.host
+R4579	frankfurter.dev	frankfurter.dev
+R4580	frankfurter.dev - v2	frankfurter.dev - v2
+R4581	Access Key	مفتاح الوصول
+R4582	Customer Group Item	عنصر مجموعة العملاء
+R4583	Customer 	العميل 
+R4584	Customer Item	منتج العميل
+R4585	Debit to	الخصم إلى
+R4586	Discounted Invoice	فاتورة مخفضة
+R4587	Resolve	حل
+R4588	Fetch Overdue Payments	تحصيل المدفوعات المتأخرة
+R4589	Dunning Type	نوع الطلب
+R4590	Dunning Fee	رسوم المطالبة
+R4591	Body Text	نص أساسي
+R4592	Closing Text	نص ختامي
+R4593	Posting Time	نشر التوقيت
+R4594	Company Address Display	عرض عنوان الشركة
+R4595	Resolved	تم الحل
+R4596	Unresolved	لم تحل
+R4597	Overdue Payments	المدفوعات المتأخرة
+R4598	Total Interest	إجمالي الفائدة

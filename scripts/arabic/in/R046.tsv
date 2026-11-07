@@ -1,0 +1,120 @@
+R1746	Custom Translation	ترجمة مخصصة
+R1747	Navbar Settings	إعدادات Navbar
+R1748	Scripting	كتابة البرامج النصية
+R1749	Server Script	خادم النصي
+R1750	Client Script	العميل النصي
+R1751	Views	المشاهدات
+R1752	Dashboard Chart	مخطط لوحة القيادة
+R1753	Dashboard Chart Source	مصدر مخطط لوحة القيادة
+R1754	List Filter	تصفية القائمة
+R1755	Desk	مكتب
+R1756	Tag	بطاقة شعار
+R1757	Bulk Update	تحديث بالجمله
+R1758	Desktop Icon	أيقونة سطح المكتب
+R1759	Route History	سجل الطريق
+R1760	Notification Log	سجل الإخطار
+R1761	Module Def	تعريف وحدة برمجية
+R1762	Module Onboarding	وحدة Onboarding
+R1763	Customization	التخصيص
+R1764	Packages	الطرود
+R1765	Package Import	استيراد الحزمة
+R1766	Global Search Settings	إعدادات البحث العالمية
+R1767	Audit System Hooks	خطافات نظام التدقيق
+R1768	Build	إنشاء
+R1769	DocType Layout	تخطيط نوع المستند
+R1770	Custom Field	حقل مخصص
+R1771	Scheduled Job Type	نوع الوظيفة المجدولة
+R1772	System Logs	سجلات النظام
+R1773	Scheduled Jobs Logs	سجلات المهام المجدولة
+R1774	Error Logs	سجلات الأخطاء
+R1775	Activity Log	سجل النشاط
+R1776	Communication Logs	سجلات الاتصالات
+R1777	Webhook Request Log	سجل طلبات Webhook
+R1778	Cannot Fetch Values	لا يمكن جلب القيم
+R1779	{0}: {1}	{0}: {1}
+R1780	Postal Code	الرمز البريدي
+R1781	Fax	فاكس
+R1782	Preferred Billing Address	عنوان الفواتير المفضل
+R1783	Preferred Shipping Address	عنوان النقل البحري المفضل
+R1784	Sales User	عضو المبيعات
+R1785	Purchase User	عضو الشراء
+R1786	Maintenance User	عضو الصيانة
+R1787	Address Title	إسم العنوان
+R1788	Address Type	نوع العنوان
+R1789	Current	تيار
+R1790	Office	مكتب
+R1791	Permanent	دائم
+R1792	Plant	مصنع
+R1793	Postal	بريدي
+R1794	Shop	تسوق
+R1795	Subsidiary	شركة فرعية
+R1796	Warehouse	المستودعات
+R1797	Address Line 1	العنوان سطر 1
+R1798	Address Line 2	العنوان سطر 2
+R1799	City/Town	المدينة / البلدة
+R1800	County	مقاطعة
+R1801	State/Province	الولاية / المقاطعة
+R1802	Country	الدولة
+R1803	Addresses	عناوين
+R1804	Is Default	افتراضي
+R1805	Address Template	نموذج العنوان
+R1806	Invite as User	دعوة كمستخدم
+R1807	Call	أتصال
+R1808	Download vCard	تنزيل بطاقة vCard
+R1809	Passive	غير فعال
+R1810	Replied	رد
+R1811	Salutation	اللقب
+R1812	Gender	جنس
+R1813	Is Primary Contact	هو جهة الاتصال الرئيسية
+R1814	More Information	المزيد من المعلومات
+R1815	Department	قسم
+R1816	Unsubscribed	إلغاء اشتراكك
+R1817	Google Contacts	اتصالات جوجل
+R1818	Email IDs	البريد الإلكتروني معرفات
+R1819	Contact Numbers	ارقام التواصل
+R1820	Contact Details	تفاصيل الاتصال
+R1821	Google Contacts Id	معرف جهات اتصال Google
+R1822	Company Name	اسم الشركة
+R1823	Sales Master Manager	المدير الرئيسي للمبيعات
+R1824	Purchase Master Manager	المدير الرئيسي للمشتريات
+R1825	Sales Manager	مدير المبيعات
+R1826	Purchase Manager	مدير المشتريات
+R1827	Maintenance Manager	مدير الصيانة
+R1828	User Id	تعريف المستخدم
+R1829	Email ID	عنوان الايميل
+R1830	Download vCards	تنزيل بطاقات vCard
+R1831	Is Primary	هو الابتدائية
+R1832	Contact Email	عنوان البريد الإلكتروني
+R1833	Number	رقم
+R1834	Is Primary Phone	هو الهاتف الأساسي
+R1835	Is Primary Mobile	هو المحمول الأساسي
+R1836	Contact Phone	هاتف الاتصال
+R1837	Administrator	مدير
+R1838	Entity Name	اسم الكيان
+R1839	Entity Type	نوع الكيان
+R1840	Addresses And Contacts	العناوين و جهات الاتصال
+R1841	City	مدينة
+R1842	State	حالة
+R1843	Is Primary Address	عنوان IS الأساسي
+R1844	Email Id	البريد الإلكتروني
+R1845	Contacts	جهات الاتصال
+R1846	Invalid input	إدخال غير صالح
+R1847	Invitation not found	لم يتم العثور على الدعوة
+R1848	RAW Information Log	سجل معلومات RAW
+R1849	Method	طريقة
+R1850	Show Report	عرض تقرير
+R1851	Show Document	عرض المستند
+R1852	Columns / Fields	الأعمدة / الحقول
+R1853	Access Log	سجل الوصول
+R1854	Export From	تصدير من
+R1855	Timestamp	الطابع الزمني
+R1856	HTML Page	صفحة HTML
+R1857	Log Data	تسجيل البيانات
+R1858	File Information	معلومات الملف
+R1859	Report Information	تقرير المعلومات
+R1860	Reference Owner	إشارة المالك
+R1861	Timeline DocType	DOCTYPE الزمني
+R1862	Timeline Name	اسم الزمني
+R1863	Link DocType	رابط الاستمارة
+R1864	Link Name	اسم الرابط
+R1865	IP Address	عنوان IP

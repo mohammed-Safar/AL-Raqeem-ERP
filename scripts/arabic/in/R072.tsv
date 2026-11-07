@@ -1,0 +1,120 @@
+R8520	Is Paused	متوقف مؤقتًا
+R8521	Serial / Batch	الرقم التسلسلي / الدفعة
+R8522	Status and Reference	الحالة والمرجع
+R8523	Pending qty	الكمية المعلقة
+R8524	{0} {1}	{0} {1}
+R8525	Excess Transfer	التحويل الزائد
+R8526	In mins	في دقائق
+R8527	Completed Time	وقت التنفيذ
+R8528	Job Card Operation	تشغيل بطاقة العمل
+R8529	Time (In Mins)	الوقت (بالدقائق)
+R8530	Secondary Item Code	رمز الصنف الثانوي
+R8531	Secondary Item Name	اسم الصنف الثانوي
+R8532	Time In Mins	الوقت في دقيقة
+R8533	Backflush Raw Materials	المواد الخام Backflush
+R8534	Disable Capacity Planning	تعطيل تخطيط القدرات
+R8535	Raw Materials Consumption	استهلاك المواد الخام
+R8536	Other Settings	إعدادات أخرى
+R8537	BOM and Production	قائمة المواد والإنتاج
+R8538	Enforce Time Logs	فرض استخدام سجلات الوقت
+R8539	Extra Material Transfer	نقل مواد إضافية
+R8540	Manufacturing Settings	إعدادات التصنيع
+R8541	Capacity Planning	القدرة على التخطيط
+R8542	Allow Overtime	تسمح العمل الإضافي
+R8543	Default: 10 mins	الافتراضي: 10 دقائق
+R8544	Delivery From Date	تاريخ التسليم
+R8545	Delivery To Date	التسليم حتى تاريخه
+R8546	Get Sales Orders	الحصول على أوامر البيع
+R8547	Fetching Sales Orders...	جلب طلبات المبيعات...
+R8548	Get Material Requests	الحصول على طلبات المواد
+R8549	Fetching Material Requests...	جاري جلب طلبات المواد...
+R8550	View MRP	عرض سعر التجزئة المقترح
+R8551	Demand	يطلب
+R8552	Sales Orders	أوامر البيع
+R8553	Open Orders	الطلبات المفتوحة
+R8554	Sales Forecast	توقعات المبيعات
+R8555	Get Actual Demand	احصل على الطلب الفعلي
+R8556	Forecast Demand	توقعات الطلب
+R8557	Master Production Schedule	جدول الإنتاج الرئيسي
+R8558	Actual Demand	الطلب الفعلي
+R8559	Qty In Stock	الكمية المتوفرة
+R8560	Minimum Order Quantity	أقل كمية ممكن طلبها
+R8561	Reqd Qty (BOM)	الكمية المطلوبة (قائمة المواد)
+R8562	BIN Qty	الكمية في الصندوق
+R8563	Stock Reserved Qty	الكمية المحجوزة من المخزون
+R8564	Main Item Code	رمز المنتج الرئيسي
+R8565	Is Corrective Operation	هل هي عملية تصحيحية؟
+R8566	Default Workstation	محطة العمل الافتراضية
+R8567	Operation Description	وصف العملية
+R8568	Time in mins.	الوقت بالدقائق.
+R8569	Total Operation Time	إجمالي وقت التشغيل
+R8570	Create Workstation	إنشاء محطة عمل
+R8571	For Item	للمنتج
+R8572	Add Stock	إضافة مخزون
+R8573	Move Stock	نقل المخزون
+R8574	Quantity is required	الكمية المطلوبة
+R8575	Floor Name	أو الاسم
+R8576	Workstations	محطات العمل
+R8577	Plant Dashboard	لوحة معلومات النبات
+R8578	Floor	أرضية
+R8579	Production Plan Summary	ملخص خطة الإنتاج
+R8580	Projected Quantity Formula	صيغة الكمية المتوقعة
+R8581	Reserve for Sub-assembly	مخصص للتجميع الفرعي
+R8582	Unreserve for Sub-assembly	إلغاء الحجز للتجميع الفرعي
+R8583	Select the Warehouse	اختر المستودع
+R8584	Transfer From Warehouses	النقل من المستودعات
+R8585	Get Stock	احصل على الأسهم
+R8586	Material Request Detail	المواد طلب التفاصيل
+R8587	Get Material Request	الحصول على المواد طلب
+R8588	Get Finished Goods	احصل على المنتجات الجاهزة
+R8589	Assembly Items	عناصر التجميع
+R8590	For Raw Materials	للمواد الخام
+R8591	Include Subcontracted Items	تضمين العناصر من الباطن
+R8592	Download Required Materials	تنزيل المواد المطلوبة
+R8593	Total Planned Qty	مجموع الكمية المخطط لها
+R8594	Total Produced Qty	إجمالي الكمية المنتجة
+R8595	Material Requested	المواد المطلوبة
+R8596	Sales Order Status	حالة طلب المبيعات
+R8597	Sub Assembly Items	مكونات التجميع الفرعي
+R8598	From Delivery Date	من تاريخ التسليم
+R8599	To Delivery Date	تاريخ التسليم
+R8600	Preview Required Materials	معاينة المواد المطلوبة
+R8601	Sub Assembly Warehouse	مستودع التجميع الفرعي
+R8602	Sales Orders Required	أوامر المبيعات مطلوبة
+R8603	Material Requests Required	طلبات المواد المطلوبة
+R8604	Reservation	حجز
+R8605	Quantity and Description	الكمية والوصف
+R8606	material_request_item	طلب المواد
+R8607	temporary name	اسم مؤقت
+R8608	Planned Start Date	المخطط لها تاريخ بدء
+R8609	Sales Order Reference	رقم مرجع طلب المبيعات
+R8610	Level (BOM)	المستوى (قائمة المواد)
+R8611	Manufacturing Type	نوع التصنيع
+R8612	In House	داخليًا
+R8613	Routing Name	اسم التوجيه
+R8614	Create MPS	إنشاء MPS
+R8615	Generate Demand	توليد الطلب
+R8616	MPS Generated	تم إنشاء MPS
+R8617	Demand Qty	كمية الطلب
+R8618	Sales Forecast Item	بند توقعات المبيعات
+R8619	Time in mins	الوقت بالدقائق
+R8620	Completed This Month	مكتمل هذا الشهر
+R8621	Source Manufacture Entry	قيد التصنيع المصدر
+R8622	Qty for {0}	الكمية ل {0}
+R8623	For Qty	للكمية
+R8624	Create Material Request	إنشاء طلب مواد
+R8625	Create Job Card	إنشاء بطاقة العمل
+R8626	Disassemble Order	ترتيب التفكيك
+R8627	Return Components	مكونات الإرجاع
+R8628	Quantity to Manufacture	كمية لتصنيع
+R8629	Skip Material Transfer	نقل المواد المتخطي
+R8630	{0} items produced	{0} عناصر منتجة
+R8631	{0} items returned	{0} أصناف مرتجعة
+R8632	{0} items disassembled	تم تفكيك {0} صنف
+R8633	{0} Operations: {1}	{0} العمليات: {1}
+R8634	Create Pick List	إنشاء قائمة انتقاء
+R8635	Additional Material Transfer	نقل مواد إضافية
+R8636	Material Consumption	اهلاك المواد
+R8637	Finish	إنهاء
+R8638	Stock Partially Reserved	الأسهم محجوزة جزئياً
+R8639	Item To Manufacture	الصنف لتصنيع

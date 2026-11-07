@@ -1,0 +1,120 @@
+R8400	Thumbnail	المصغرات
+R8401	Website Specifications	موقع المواصفات
+R8402	Website Description	وصف الموقع
+R8403	Show Items	إظهار العناصر
+R8404	Show Operations	مشاهدة العمليات
+R8405	Production Item	بند انتاج
+R8406	BOM Creator	منشئ قائمة المواد
+R8407	BOM Creator Item	عنصر منشئ قائمة المواد
+R8408	Is Phantom BOM	هل Phantom BOM
+R8409	Production Item Info	معلومات صنف الإنتاج
+R8410	Secondary Items	أصناف ثانوية
+R8411	Secondary Items Cost	تكلفة الأصناف الثانوية
+R8412	Cost Allocation	تخصيص التكلفة
+R8413	% Cost Allocation	% تخصيص التكلفة
+R8414	BOM Configuration	إعدادات قائمة المواد
+R8415	Consume Components	استهلاك المكونات
+R8416	Missing value	قيمة مفقودة
+R8417	Non stock items	البنود غير الأسهم
+R8418	All BOMs	كل الأصناف المركبة
+R8419	Subcontract	قام بمقاولة فرعية
+R8420	New BOM	قائمة مواد جديدة
+R8421	Default BOMs	قوائم المواد الافتراضية
+R8422	Create Multi-level BOM	إنشاء قائمة مواد متعددة المستويات
+R8423	Multi-level BOM Creator	منشئ قوائم المواد متعددة المستويات
+R8424	Costing Details	تفاصيل التكلفة
+R8425	BOM Tree	شجرة BOM
+R8426	Final Product	المنتج النهائي
+R8427	Operations Routing	توجيه العمليات
+R8428	Is Phantom Item	عنصر وهمي
+R8429	BOMs created successfully	تم إنشاء قوائم المواد بنجاح
+R8430	BOMs creation failed	فشل إنشاء قوائم المواد
+R8431	Do Not Explode	ممنوع الانفجار
+R8432	Instruction	تعليمات
+R8433	Base Amount	المبلغ الأساسي
+R8434	Base Rate	سعر الفائدة الأساسي
+R8435	Sourced by Supplier	مصدرها المورد
+R8436	Finished Goods Reference	مرجع المنتجات النهائية
+R8437	Parent Row No	رقم صف الوالدين
+R8438	BOM Created	تم إنشاء قائمة المواد
+R8439	Finished Goods Item	منتج نهائي
+R8440	Is Expandable	قابل للتوسيع
+R8441	BOM Explosion Item	قائمة المواد للصنف المفصص
+R8442	Rate & Amount	معدل وكمية
+R8443	BOM Item	صنف قائمة المواد
+R8444	Item operation	عملية الصنف
+R8445	Fixed Time	وقت محدد
+R8446	Operating Cost(Company Currency)	تكاليف التشغيل (عملة الشركة)
+R8447	Batch Size	حجم الدفعة
+R8448	Sequence ID	معرف التسلسل
+R8449	Cost Per Unit	تكلفة الوحدة
+R8450	Workstation Type	نوع محطة العمل
+R8451	WIP Warehouse	مستودع WIP
+R8452	Finished Goods Warehouse	مستودع البضائع الجاهزة
+R8453	 Skip Material Transfer	 تخطي نقل المواد
+R8454	BOM Operation	عملية قائمة المواد
+R8455	Hour Rate	سعر الساعة
+R8456	Operation Time	وقت العملية
+R8457	Cost Allocation %	تخصيص التكلفة %
+R8458	Process Loss %	خسائر العملية %
+R8459	Batch No.	رقم الدفعة.
+R8460	BOMs Updated	تم تحديث قوائم المواد
+R8461	BOM Update Batch	دفعة تحديث قائمة المواد
+R8462	BOM Update Log	سجل تحديثات قائمة المواد
+R8463	Current BOM	قائمة المواد الحالية
+R8464	Update Type	نوع التحديث
+R8465	Replace BOM	استبدال بوم
+R8466	Processed BOMs	قوائم المواد المعالجة
+R8467	Current Level	المستوى الحالي
+R8468	BOM Update Initiated	تم البدء بتحديث قائمة المواد
+R8469	Replace	استبدل
+R8470	BOM Update Tool	أداة تحديث بوم
+R8471	BOM Website Item	صنف الموقع الالكتروني بقائمة المواد
+R8472	BOM Website Operation	عملية الموقع الالكتروني بقائمة المواد
+R8473	Downtime Entry	دخول وقت التوقف
+R8474	Workstation / Machine	محطة العمل / الآلة
+R8475	Operator	المشغل أو العامل
+R8476	Downtime Reason	سبب التوقف
+R8477	In Mins	في دقائق
+R8478	Stop Reason	توقف السبب
+R8479	Electricity down	انقطاع الكهرباء
+R8480	Machine malfunction	عطل الآلة
+R8481	Machine operator errors	أخطاء مشغل الآلة
+R8482	On-machine press checks	الشيكات الصحفية على الجهاز
+R8483	Unplanned machine maintenance	صيانة الآلة غير المخطط لها
+R8484	Save as Draft	حفظ كمسودة
+R8485	Start Job	ابدأ العمل
+R8486	Complete Job	إنجاز العمل
+R8487	Short	ناقص
+R8488	Completed Quantity	الكمية المكتملة
+R8489	Process Loss Quantity	كمية الفاقد في العملية
+R8490	Sub Operation	عملية فرعية
+R8491	Make Subcontracting PO	إنشاء أمر شراء للتعاقد من الباطن
+R8492	Corrective Job Card	بطاقة عمل تصحيحية
+R8493	Corrective Operation	عملية تصحيحية
+R8494	For Operation	للتشغيل
+R8495	Select Corrective Operation	حدد العملية التصحيحية
+R8496	Operation Row	صف العملية
+R8497	Select Operation Row	اختر صف العملية
+R8498	Resume Job	سيرة ذاتية للوظيفة
+R8499	Pause Job	إيقاف العمل مؤقتًا
+R8500	Elapsed Time	الوقت المنقضي
+R8501	Select Employees	حدد الموظفين
+R8502	Final BOM	قائمة المواد النهائية
+R8503	Qty to Manufacture	الكمية للتصنيع
+R8504	Time Logs	سجلات الوقت
+R8505	Actual Time	الوقت الفعلي
+R8506	Total Completed qty	إجمالي الكمية المكتملة
+R8507	Transferred Raw Materials	المواد الخام المنقولة
+R8508	To Manufacture	للتصنيع
+R8509	Material Transferred	نقل المواد
+R8510	Sub Operations	العمليات الفرعية
+R8511	For Job Card	للحصول على بطاقة العمل
+R8512	Process Loss qty	كمية الفاقد في العملية
+R8513	Scheduled Time Logs	سجلات الوقت المجدولة
+R8514	Actual Start Date	تاريخ البدء الفعلي
+R8515	Actual End Date	تاريخ الإنتهاء الفعلي
+R8516	Operation Row ID	رقم صف العملية
+R8517	Manufacturing BOM	قائمة مكونات التصنيع
+R8518	Time logs	سجلات الوقت
+R8519	Manufactured Qty	الكمية المصنعة

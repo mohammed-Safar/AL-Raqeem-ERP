@@ -1,0 +1,120 @@
+R4239	Cash In Hand	النقدية الحاضرة
+R4240	Employee Advances	سلف الموظفين
+R4241	Securities and Deposits	الأوراق المالية و الودائع
+R4242	Earnest Money	العربون
+R4243	Prepaid Expenses	المصاريف المدفوعة مسبقاً
+R4244	Short-term Investments	الاستثمارات قصيرة الأجل
+R4245	Stock Assets	اصول المخزون
+R4246	Stock In Hand	الأسهم، إلى داخل، أعطى
+R4247	Tax Assets	ضريبية الأصول
+R4248	Fixed Assets	الاصول الثابتة
+R4249	Capital Equipment	معدات رأسمالية
+R4250	Electronic Equipment	المعدات الإلكترونية
+R4251	Furniture and Fixtures	الأثاث والتجهيزات
+R4252	Office Equipment	معدات مكتبية
+R4253	Plants and Machineries	وحدات التصنيع  والآلات
+R4254	Buildings	المباني
+R4255	Software	برمجة
+R4256	CWIP Account	حساب CWIP
+R4257	Investments	الاستثمارات
+R4258	Temporary Accounts	حسابات مؤقتة
+R4259	Temporary Opening	افتتاحي مؤقت
+R4260	Expenses	النفقات
+R4261	Direct Expenses	النفقات المباشرة
+R4262	Stock Expenses	مصاريف المخزون
+R4263	TDS Payable	ضريبة الدخل المستحقة
+R4264	Account Category Name	اسم تصنيف الحساب
+R4265	Period Closing Voucher	قيد إغلاق الفترة
+R4266	Account Closing Balance	رصيد إغلاق الحساب
+R4267	Closing Date	تاريخ الاغلاق
+R4268	Debit Amount	مبلغ مدين
+R4269	Credit Amount	مبلغ دائن
+R4270	Account Currency	عملة الحساب
+R4271	Show {0}	عرض {0}
+R4272	Dimension Name	اسم البعد
+R4273	Dimension Defaults	افتراضيات البعد
+R4274	Accounting Dimension	البعد المحاسبي
+R4275	Fieldname Conflict	تعارض في اسم الحقل
+R4276	Creating Dimensions...	إنشاء الأبعاد ...
+R4277	Default Dimension	البعد الافتراضي
+R4278	Offsetting Account	حساب المقاصة
+R4279	Accounting Dimension Detail	البعد المحاسبي التفاصيل
+R4280	Accounting Dimension Filter	مرشح بُعد المحاسبة
+R4281	Restrict	يقيد
+R4282	Applicable On Account	ينطبق على الحساب
+R4283	Applicable Dimension	البُعد المطبق
+R4284	Dimension Filter Help	مساعدة في فلتر الأبعاد
+R4285	Period Name	اسم الفترة
+R4286	Closed Documents	وثائق مغلقة
+R4287	Exempted Role	الدور المعفى
+R4288	Accounting Period	فترة المحاسبة
+R4289	Purchase Order	أمر الشراء
+R4290	Purchase Receipt	إستلام المشتريات
+R4291	Shipping Address	عنوان الشحن
+R4292	Billing Address	العنوان الذي ترسل به الفواتير
+R4293	Currency Exchange Settings	إعدادات صرف العملات
+R4294	Stale Days	أيام قديمة
+R4295	Deferred Accounting Settings	إعدادات المحاسبة المؤجلة
+R4296	Submit Journal entries	تسجيل قيود اليومية
+R4297	Days	أيام
+R4298	Months	الشهور
+R4299	Tax Settings	إعدادات الضرائب
+R4300	Invoice Cancellation	إلغاء الفاتورة
+R4301	Asset Settings	إعدادات الأصل
+R4302	Credit Limits	حدود الائتمان
+R4303	Assets	الأصول
+R4304	Accounts Closing	إغلاق الحسابات
+R4305	Invoice and Billing	الفواتير والمحاسبة
+R4306	Invoicing Features	ميزات إصدار الفواتير
+R4307	Others	بدلات أخرى
+R4308	Journals	المجلات
+R4309	Payment Reconciliation Settings	إعدادات مطابقة المدفوعات
+R4310	Auto reconcile Payments	التسوية التلقائية للمدفوعات
+R4311	Enable Fuzzy Matching	تفعيل المطابقة التقريبية
+R4312	General Ledger Report	تقرير دفتر الأستاذ العام
+R4313	Enable Immutable Ledger	تفعيل دفتر الأستاذ غير القابل للتغيير
+R4314	Reconciliation queue size	حجم قائمة انتظار التسوية
+R4315	Invoice	فاتورة
+R4316	Reconciliation Date	تاريخ المصالحة
+R4317	Data fetch method	طريقة جلب البيانات
+R4318	Buffered Cursor	مؤشر مُخزّن مؤقتًا
+R4319	UnBuffered Cursor	مؤشر غير مخزن مؤقتًا
+R4320	Legacy Fields	ملاعب ليجاسي
+R4321	Warn	تحذير
+R4322	Item Price Settings	إعدادات سعر المنتج
+R4323	Default Ageing Range	نطاق العمر الافتراضي
+R4324	Payment Request	طلب الدفع من قبل المورد
+R4325	Budget	ميزانية
+R4326	Analytical Accounting	المحاسبة التحليلية
+R4327	Payments	المدفوعات
+R4328	Payment Options	خيارات الدفع
+R4329	Enable Accounting Dimensions	تمكين الأبعاد المحاسبية
+R4330	Enable Subscription	تمكين الاشتراك
+R4331	Repost	إعادة الترحيل
+R4332	Allowed DocTypes	أنواع DocType المسموح بها
+R4333	Stock Expense Accounting	محاسبة مصروفات المخزون
+R4334	Accounts Settings	إعدادات الحسابات
+R4335	Against Voucher Type	مقابل إيصال  نوع
+R4336	Against Voucher No	مقابل القسيمة رَقْم
+R4337	DeLinked	تم فصل الارتباط
+R4338	Amount (Company Currency)	المبلغ (عملة الشركة)
+R4339	Exchange Rate	سعر الصرف
+R4340	Total (Company Currency)	مجموع (شركة العملات)
+R4341	Add Or Deduct	إضافة أو خصم
+R4342	Deduct	خصم
+R4343	Net Amount	صافي القيمة
+R4344	On Paid Amount	المبلغ المدفوع
+R4345	Actual	الفعلية
+R4346	Reference Row #	مرجع صف #
+R4347	Account Head	حساب Head
+R4348	Accounting Dimensions	أبعاد المحاسبة
+R4349	Allowed Dimension	البُعد المسموح به
+R4350	Accounts	الحسابات
+R4351	Is Mandatory	إلزامي
+R4352	Plaid Link Updated	تم تحديث رابط Plaid
+R4353	Refresh Plaid Link	تحديث رابط منقوش
+R4354	Plaid Access Token	منقوشة رمز الوصول
+R4355	Bank Name	اسم البنك
+R4356	Bank Details	تفاصيل البنك
+R4357	SWIFT number	رقم سويفت
+R4358	Address and Contact	العناوين و التواصل

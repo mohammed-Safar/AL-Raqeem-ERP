@@ -1,0 +1,120 @@
+R8040	Team	فريق
+R8041	Maintenance Team Members	أعضاء فريق الصيانة
+R8042	Asset Maintenance Team	فريق صيانة الأصول
+R8043	Transfer and Issue	التحويل والإصدار
+R8044	Source Location	موقع المصدر
+R8045	Target Location	الموقع المستهدف
+R8046	From Employee	من الموظف
+R8047	To Employee	إلى الموظف
+R8048	Asset Movement Item	بند حركة الأصول
+R8049	Downtime	التوقف
+R8050	Repair Cost	تكلفة الإصلاح
+R8051	Capitalize Repair Cost	رسملة تكلفة الإصلاح
+R8052	Total Repair Cost	إجمالي تكلفة الإصلاح
+R8053	Repair Purchase Invoices	فواتير شراء الإصلاح
+R8054	Consumed Items Cost	تكلفة المواد المستهلكة
+R8055	Connection	اتصال
+R8056	Failure Date	تاريخ الفشل
+R8057	Repair Status	حالة الإصلاح
+R8058	Error Description	وصف خاطئ
+R8059	Consumed Quantity	الكمية المستهلكة
+R8060	Asset Shift Allocation	تخصيص تحويل الأصول
+R8061	Shift Name	اسم الوردية
+R8062	Shift Factor	عامل التحول
+R8063	Asset Shift Factor	عامل تحويل الأصول
+R8064	Value Details	تفاصيل القيمة
+R8065	New Asset Value	قيمة الأصول الجديدة
+R8066	Make Depreciation Entry	انشئ قيد اهلاك
+R8067	Linked Location	الموقع المرتبط
+R8068	Area UOM	وحدة قياس المساحة
+R8069	Location Name	اسم الموقع
+R8070	Parent Location	الموقع الأم
+R8071	Is Container	حاوية
+R8072	Location Details	تفاصيل الموقع
+R8073	New Location	موقع جديد
+R8074	Team Member	أعضاء الفريق
+R8075	Maintenance Role	صلاحية الصيانة
+R8076	Maintenance Team Member	عضو فريق الصيانة
+R8077	Create Asset Category	إنشاء فئة الأصول
+R8078	Schedule its upkeep	جدولة صيانته
+R8079	Create Asset Maintenance	إنشاء صيانة الأصول
+R8080	Create Asset Movement	إنشاء حركة الأصول
+R8081	Add Asset	إضافة أصل
+R8082	Check its depreciation	تحقق من إهلاكه
+R8083	Only existing assets	الأصول الموجودة فقط
+R8084	Date Based On	تاريخ بناء على
+R8085	Fixed Asset Register	سجل الأصول الثابتة
+R8086	Depreciated Amount	المبلغ المستهلك
+R8087	{}	{}
+R8088	Asset ID	معرّف الأصل
+R8089	Vendor Name	اسم البائع
+R8090	Value Changes	تغييرات القيمة
+R8091	Total Assets	إجمالي الأصول
+R8092	Asset Reports	تقارير الأصول
+R8093	Asset Value Analytics	تحليلات قيمة الأصول
+R8094	Asset Maintenance Report	تقرير صيانة الأصول
+R8095	Failed Entries	الإدخالات الفاشلة
+R8096	Retry Failed Transactions	إعادة محاولة المعاملات الفاشلة
+R8097	Succeeded Entries	المشاركات الناجحة
+R8098	Log Entries	إدخالات السجل
+R8099	Succeeded	نجح
+R8100	From Doctype	من نوع المستند
+R8101	To Doctype	لتحويل نوع المستند
+R8102	Date 	التاريخ 
+R8103	Retried	تمت إعادة المحاولة
+R8104	Communication Medium Type	الاتصالات المتوسطة النوع
+R8105	Voice	صوت
+R8106	Catch All	قبض على الكل
+R8107	Timeslots	فتحات الوقت
+R8108	Communication Channel	قناة اتصال
+R8109	Communication Medium Timeslot	الاتصالات المتوسطة Timeslot
+R8110	Project master.	المدير الرئيسي بالمشروع.
+R8111	Define Project type.	تعريف نوع المشروع.
+R8112	Project Update.	تحديث المشروع.
+R8113	Time Tracking	تتبع الوقت
+R8114	Timesheet for tasks.	الجدول الزمني للمهام.
+R8115	Invalid Quantity	كمية غير صحيحة
+R8116	Stock Reserved	الأسهم محجوزة
+R8117	Insufficient Permissions	أذونات غير كافية
+R8118	Invalid Qty	كمية غير صالحة
+R8119	Unit Price	سعر الوحدة
+R8120	Disabled Price List	قائمة أسعار معطلة
+R8121	Invalid Price List	قائمة أسعار غير صالحة
+R8122	Mismatch	عدم تطابق
+R8123	Invalid Attribute	خاصية غير صالحة
+R8124	Invalid Value	قيمة غير صالحة
+R8125	Edit Not Allowed	تحرير غير مسموح به
+R8126	Invalid reference	مرجع غير صالح
+R8127	Warehouse is mandatory	المستودع إلزامي
+R8128	Party Mismatch	عدم توافق الحزب
+R8129	Cannot Create Return	لا يمكن إنشاء إرجاع
+R8130	Invalid Selling Price	سعر البيع غير صالح
+R8131	target_ref_field	حقل مرجع الهدف
+R8132	Limit Crossed	الحدود تجاوزت
+R8133	Expense Account Missing	حساب المصاريف مفقود
+R8134	Reserved Batch Conflict	تعارض الدُفعات المحجوزة
+R8135	Inspection Submission	طلب فحص
+R8136	Inspection Rejected	تم رفض التفتيش
+R8137	Over Receipt	إيصال زائد
+R8138	Incorrect Batch Consumed	تم استهلاك دفعة غير صحيحة
+R8139	Invalid Discount Amount	مبلغ الخصم غير صالح
+R8140	Amt	الإجمالي
+R8141	Total(Amt)	إجمالي (AMT)
+R8142	Total(Qty)	إجمالي (الكمية)
+R8143	{0}% Billed	{0}% تم تحصيلها
+R8144	Billed	تمت الفوترة
+R8145	{0}% Delivered	تم تسليم {0}%
+R8146	Appointment With	موعد مع
+R8147	Created through Portal	تم الإنشاء عبر البوابة
+R8148	Email Verified	تم التحقق من البريد الإلكتروني
+R8149	Verification Token	رمز التحقق المميز
+R8150	Appointment	موعد
+R8151	Skype ID	هوية السكايب
+R8152	Scheduled Time	جدول زمني
+R8153	Unverified	غير مثبت عليه
+R8154	Calendar Event	حدث التقويم
+R8155	Linked Documents	المستندات المرتبطة
+R8156	Appointment Confirmation	تأكيد الموعد
+R8157	Appointment Confirmed	تم تأكيد الموعد
+R8158	Appointment Details	تفاصيل الموعد
+R8159	Success Redirect URL	نجاح إعادة توجيه URL

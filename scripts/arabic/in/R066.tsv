@@ -1,0 +1,120 @@
+R7800	Not Reconciled	غير تمت التسوية
+R7801	Import Bank Statement	استيراد كشف حساب بنكي
+R7802	Search transactions	البحث في المعاملات
+R7803	Filter by amount	تصفية حسب المبلغ
+R7804	Debits	المدينات
+R7805	Credits	الدائن
+R7806	Undo Transaction Reconciliation	التراجع عن تسوية المعاملة
+R7807	Unreconcile	إلغاء التسوية
+R7808	Transaction Unreconciled	تم إلغاء تسوية المعاملة
+R7809	Search company...	ابحث عن شركة...
+R7810	No company found.	لم يتم العثور على أي شركة.
+R7811	Reset Clearing Date	إعادة تعيين تاريخ المقاصة
+R7812	It's all good!	كل شيء على ما يرام!
+R7813	Ref	المرجع
+R7814	Matched by rule	مطابق حسب القاعدة
+R7815	transaction selected	معاملة محددة
+R7816	transactions selected	معاملات محددة
+R7817	Record Payment	تسجيل دفعة
+R7818	Unreconciled Transactions	المعاملات غير المسوّاة
+R7819	Match or Create	مطابقة أو إنشاء
+R7820	Recommended Action	الإجراء الموصى به
+R7821	Posted On	مُرحّل في
+R7822	Complete Match	تطابق كامل
+R7823	No Match	لا يوجد تطابق
+R7824	Partial Match	تطابق جزئي
+R7825	Reconciling	جارٍ التسوية
+R7826	Suggested	مقترح
+R7827	View older transaction	عرض المعاملة الأقدم
+R7828	View older transactions	عرض المعاملات الأقدم
+R7829	Payment Recorded	تم تسجيل الدفعة
+R7830	Party is required	الطرف مطلوب
+R7831	Payment Entry Created	تم إنشاء قيد الدفع
+R7832	Paid to	مدفوع إلى
+R7833	Received from	مستلم من
+R7834	Rule created successfully	تم إنشاء القاعدة بنجاح
+R7835	New Rule	قاعدة جديدة
+R7836	Rule updated.	تم تحديث القاعدة.
+R7837	Edit this rule	تعديل هذه القاعدة
+R7838	Type of check	نوع التحقق
+R7839	This is required	هذا الحقل مطلوب
+R7840	Starts with	يبدأ بـ
+R7841	Ends with	ينتهي بـ
+R7842	Add Rule	إضافة قاعدة
+R7843	Suggest creating a	اقترح إنشاء
+R7844	Journal Template Accounts	حسابات قالب دفتر اليومية
+R7845	Configure Accounts	تكوين الحسابات
+R7846	No accounts configured	لم يتم تكوين أي حسابات
+R7847	Minimum Amount	الحد الأدنى للمبلغ
+R7848	Will be auto-populated	سيتم ملؤه تلقائياً
+R7849	Maximum Amount	الحد الأقصى للمبلغ
+R7850	Transferred from	محوّل من
+R7851	Transferred to	محوّل إلى
+R7852	Paid From	مدفوع من
+R7853	Paid To	مدفوع إلى
+R7854	Transferred Out	مُحوَّل للخارج
+R7855	Use Suggestion	استخدم الاقتراح
+R7856	Transfer Recorded	تم تسجيل النقل
+R7857	Importing...	جارٍ الاستيراد...
+R7858	Import 1 transaction	استيراد معاملة واحدة
+R7859	Import {0} transactions	استيراد {0} معاملة
+R7860	Statement Details	تفاصيل كشف الحساب
+R7861	Importing 1 transaction	جارٍ استيراد معاملة واحدة
+R7862	Statement File	ملف كشف الحساب
+R7863	Transaction Dates	تواريخ المعاملات
+R7864	{0} to {1}	{0} إلى {1}
+R7865	transaction	حركة
+R7866	transactions	المعاملات
+R7867	Preview Transactions	معاينة المعاملات
+R7868	Ref.	المرجع
+R7869	Conflicting Transactions	معاملات متعارضة
+R7870	View transaction	عرض المعاملة
+R7871	View transactions	عرض المعاملات
+R7872	Bank statement imported.	تم استيراد كشف الحساب البنكي.
+R7873	Detected Tables	الجداول المكتشفة
+R7874	Re-extracting	جارٍ إعادة الاستخراج
+R7875	Table {0}	جدول {0}
+R7876	Page preview	معاينة الصفحة
+R7877	Include	تضمين
+R7878	Accept Matching Rule	قبول القاعدة المطابقة
+R7879	Transaction Matching Rules	قواعد مطابقة المعاملات
+R7880	Preferences updated	تم تحديث التفضيلات
+R7881	Same day	في نفس اليوم
+R7882	Within 1 day	خلال يوم واحد
+R7883	Within 2 days	خلال يومين
+R7884	Within 3 days	خلال 3 أيام
+R7885	Within 4 days	خلال 4 أيام
+R7886	Within 5 days	خلال 5 أيام
+R7887	Updating...	يتم التحديث...
+R7888	Run rules automatically	تشغيل القواعد تلقائياً
+R7889	Deleting rule...	جارٍ حذف القاعدة...
+R7890	Rule deleted.	تم حذف القاعدة.
+R7891	Rule priorities updated	تم تحديث أولويات القواعد
+R7892	Applies to deposits	ينطبق على الإيداعات
+R7893	Applies to withdrawals	ينطبق على عمليات السحب
+R7894	Rules evaluation completed	اكتمل تقييم القواعد
+R7895	Rules evaluation started	بدأ تقييم القواعد
+R7896	Run Rules	تشغيل القواعد
+R7897	Running...	قيد التشغيل...
+R7898	Force evaluate all	فرض تقييم الكل
+R7899	Matching Rules	قواعد المطابقة
+R7900	Select date	اختر التاريخ
+R7901	Match and Reconcile	مطابقة وتسوية
+R7902	Reconciliation Statement	كشف التسوية
+R7903	Clearance Summary	ملخص التسوية
+R7904	Incorrectly Cleared	تمت التسوية بشكل غير صحيح
+R7905	Go to Desktop	الانتقال إلى سطح المكتب
+R7906	PDF Password	كلمة مرور PDF
+R7907	Uploading...	جارٍ الرفع...
+R7908	View Instructions	عرض التعليمات
+R7909	Statement Import Instructions	تعليمات استيراد كشف الحساب
+R7910	Previous Imports	عمليات الاستيراد السابقة
+R7911	Imported On	تاريخ الاستيراد
+R7912	Bank Statement	كشف حساب بنكي
+R7913	Asset Value Adjustment	تعديل قيمة الأصول
+R7914	Maintain Asset	صيانة الأصول
+R7915	Split Asset	تقسيم الأصول
+R7916	Transfer Asset	نقل الأصول
+R7917	Scrap Asset	أصول خردة
+R7918	Sell Asset	بيع الأصل
+R7919	Restore Asset	استعادة الأصول

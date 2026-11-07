@@ -1,0 +1,120 @@
+R4959	Period End Date	تاريخ انتهاء الفترة
+R4960	Period Start Date	تاريخ بداية الفترة
+R4961	Closing Account Head	اقفال حساب المركز الرئيسي
+R4962	Stock Value Mismatch	عدم تطابق قيمة المخزون
+R4963	POS Closing Failed	فشل إغلاق نقطة البيع
+R4964	Cashier	أمين الصندوق
+R4965	Modes of Payment	طرق الدفع
+R4966	Linked Invoices	الفواتير المرتبطة
+R4967	POS Opening Entry	دخول فتح نقاط البيع
+R4968	Period Details	تفاصيل الفترة
+R4969	Failure Description	وصف العطل
+R4970	POS Transactions	معاملات نقاط البيع
+R4971	Sales Invoice Transactions	معاملات فواتير المبيعات
+R4972	POS Closing Entry	دخول إغلاق نقاط البيع
+R4973	POS Profile	الملف الشخصي لنقطة البيع
+R4974	Row #{}: {}	الصف #{}: {}
+R4975	Invalid POS Invoices	فواتير نقاط البيع غير صالحة
+R4976	Invalid Sales Invoices	فواتير مبيعات غير صالحة
+R4977	Invalid Opening Entry	إدخال فتح غير صالح
+R4978	Expected Amount	المبلغ المتوقع
+R4979	Opening Amount	مبلغ الافتتاح
+R4980	Closing Amount	مبلغ الإغلاق
+R4981	POS Customer Group	مجموعة عملاء نقطة البيع
+R4982	POS Field	نقاط البيع الميدانية
+R4983	Collect Outstanding Amount	تحصيل المبلغ المستحق
+R4984	Change Amount	تغيير المبلغ
+R4985	Payments updated.	تم تحديث المدفوعات.
+R4986	Waiting for payment...	في انتظار الدفع...
+R4987	Payment request failed	فشلت عملية الدفع
+R4988	Return	عودة
+R4989	Total Advance	إجمالي المقدمة
+R4990	Advance Payments	دفعات مقدمة
+R4991	Get Advances Received	الحصول على السلف المتلقاة
+R4992	Advances	دفعات مقدمة
+R4993	Cash/Bank Account	حساب النقد / البنك
+R4994	Sales Invoice Payment	دفع فاتورة المبيعات
+R4995	Write Off Account	شطب حساب
+R4996	Terms and Conditions	الشروط والأحكام
+R4997	Terms	الشروط
+R4998	Group same items	مادة نفس المجموعة
+R4999	Is Discounted	هو مخفضة
+R5000	Consolidated	موحّد
+R5001	Overdue	تأخير
+R5002	Unpaid	غير مدفوع
+R5003	Partly Paid	مدفوع جزئياً
+R5004	Overdue and Discounted	المتأخرة و مخفضة
+R5005	Unpaid and Discounted	غير مدفوعة ومخصومة
+R5006	Credit Note Issued	الائتمان مذكرة صادرة
+R5007	Debit To	الخصم ل
+R5008	Is Opening Entry	تم افتتاح الدخول
+R5009	Commission	عمولة
+R5010	Sales Partner	شريك المبيعات
+R5011	Commission Rate (%)	سعر العمولة (%)
+R5012	Total Commission	مجموع العمولة
+R5013	Sales Team	فريق المبيعات
+R5014	Against Income Account	مقابل حساب الدخل
+R5015	Consolidated Sales Invoice	فاتورة المبيعات الموحدة
+R5016	Company Contact Person	جهة الاتصال بالشركة
+R5017	Last Scanned Warehouse	آخر مستودع تم مسحه ضوئيًا
+R5018	UTM Analytics	تحليلات UTM
+R5019	POS Invoice	فاتورة نقاط البيع
+R5020	Tax Id	الرقم الضريبي
+R5021	Include Payment (POS)	تشمل الدفع (POS)
+R5022	Payment Due Date	تاريخ استحقاق السداد
+R5023	Return Against	العائد مقابل
+R5024	Customer PO Details	تفاصيل طلب شراء العميل
+R5025	Customer's Purchase Order	طلب شراء الزبون
+R5026	Shipping Address Name	الشحن العنوان الاسم
+R5027	Company Address Name	اسم عنوان الشركة
+R5028	Price List	قائمة الأسعار
+R5029	Price List Currency	قائمة الأسعار العملات
+R5030	Ignore Pricing Rule	تجاهل (قاعدة التسعير)
+R5031	Update Stock	تحديث المخزون
+R5032	Pricing Rules	قواعد التسعير
+R5033	Pricing Rule Detail	تفاصيل قاعدة التسعير
+R5034	Packing List	قائمة التعبئة
+R5035	Packed Items	عناصر معبأة
+R5036	Product Bundle Help	المنتج حزمة مساعدة
+R5037	Time Sheet List	الساعة قائمة ورقة
+R5038	Time Sheets	جداول زمنية
+R5039	Total Billing Amount	المبلغ الكلي الفواتير
+R5040	Total Net Weight	مجموع الوزن الصافي
+R5041	Shipping Rule	قواعد الشحن
+R5042	Tax Category	الفئة الضريبية
+R5043	Tax Breakup	تفكيك الضرائب
+R5044	Loyalty Points Redemption	نقاط الولاء الفداء
+R5045	Loyalty Amount	مبلغ الولاء
+R5046	Redeem Loyalty Points	استبدل نقاط الولاء
+R5047	Redemption Account	حساب الاسترداد
+R5048	Redemption Cost Center	مركز تكلفة الاسترداد
+R5049	Additional Discount	خصم إضافي
+R5050	Additional Discount Percentage	نسبة الخصم الإضافية
+R5051	Additional Discount Amount	مبلغ الخصم الإضافي
+R5052	Rounding Adjustment	تعديل التقريب
+R5053	Rounded Total	تقريب إجمالي
+R5054	Include Payment	يشمل الدفع
+R5055	Insufficient Stock	المالية غير كافية
+R5056	Invalid Item	عنصر غير صالح
+R5057	Invoice Paid	تم دفع الفاتورة
+R5058	Customer's Item Code	كود صنف العميل
+R5059	Brand Name	العلامة التجارية اسم
+R5060	Stock UOM	وحدة قياس السهم
+R5061	UOM Conversion Factor	عامل تحويل وحدة القياس
+R5062	Price List Rate	سعر السلعة حسب قائمة الأسعار
+R5063	Discount and Margin	الخصم والهامش
+R5064	Margin Type	نوع الهامش
+R5065	Rate With Margin	معدل مع الهامش
+R5066	Discount Amount	قيمة الخصم
+R5067	Rate (Company Currency)	معدل (عملة الشركة)
+R5068	Is Free Item	هو البند الحرة
+R5069	Net Rate	صافي معدل
+R5070	Drop Ship	إسقاط الشحن
+R5071	Delivered By Supplier	سلمت من قبل المورد
+R5072	Is Fixed Asset	هو الأصول الثابتة
+R5073	Deferred Revenue Account	حساب الإيرادات المؤجلة
+R5074	Service Stop Date	تاريخ توقف الخدمة
+R5075	Enable Deferred Revenue	تمكين الإيرادات المؤجلة
+R5076	Service Start Date	تاريخ بدء الخدمة
+R5077	Service End Date	تاريخ انتهاء الخدمة
+R5078	Item Weight Details	تفاصيل وزن الصنف

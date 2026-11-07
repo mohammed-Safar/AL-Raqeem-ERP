@@ -1,0 +1,120 @@
+R5439	Billing Country	بلد إرسال الفواتير
+R5440	Shipping City	مدينة الشحن
+R5441	Shipping County	مقاطعة البريدية
+R5442	Shipping State	الدولة الشحن
+R5443	Shipping Zipcode	الشحن الرمز البريدي
+R5444	Shipping Country	دولة الشحن
+R5445	Tax Rule	القاعدة الضريبية
+R5446	Tax Type	نوع الضريبة
+R5447	Sales Tax Template	قالب ضريبة المبيعات
+R5448	Purchase Tax Template	قالب الضرائب على المشتريات
+R5449	Invalid address	عنوان غير صالح
+R5450	Tax Withholding Account	حساب حجب الضرائب
+R5451	Disable Transaction Threshold	تعطيل حد المعاملات
+R5452	Tax Withholding Rates	أسعار الخصم الضريبي
+R5453	Rates	معدلات
+R5454	Category Details	تفاصيل التصنيف
+R5455	Gross Total	الإجمالي
+R5456	Disable Cumulative Threshold	تعطيل العتبة التراكمية
+R5457	Lower Deduction Certificate	شهادة الاستقطاع الأدنى
+R5458	Over Withheld	مبالغ محجوزة
+R5459	Under Withheld	تم حجب المبلغ
+R5460	Withholding Document Type	نوع مستند الحجب
+R5461	Withholding Document Name	اسم مستند الحجز
+R5462	Taxable Document Type	نوع المستند الخاضع للضريبة
+R5463	Taxable Document Name	اسم المستند الخاضع للضريبة
+R5464	Taxable Date	تاريخ استحقاق الضريبة
+R5465	Withholding Date	تاريخ الحجب
+R5466	Under Withheld Reason	تحت سبب محجوب
+R5467	Threshold Exemption	الإعفاء من الحد الأدنى
+R5468	Base Tax Withheld	الضريبة الأساسية المقتطعة
+R5469	Created By Migration	تم إنشاؤه بواسطة الهجرة
+R5470	Tax ID	الرقم الضريبي
+R5471	Base Taxable Amount	المبلغ الأساسي الخاضع للضريبة
+R5472	Deducted From	تم خصمها من
+R5473	Group Name	اسم المجموعة
+R5474	Tax Withholding Rate	سعر الخصم الضريبي
+R5475	Transaction Threshold	عتبة المعاملة
+R5476	Cumulative Threshold	العتبة التراكمية
+R5477	Territory Item	عنصر إقليمي
+R5478	No of Docs	عدد المستندات
+R5479	Get Allocations	الحصول على التخصيصات
+R5480	Unreconcile Payment	دفعة غير متطابقة
+R5481	Unlinked	غير مرتبط
+R5482	Unreconcile Payment Entries	قيود الدفع غير المطابقة
+R5483	Disabled Account Selected	تم تحديد حساب معطل
+R5484	Read the docs	اقرأ الوثائق
+R5485	Period Closed	فترة الإغلاق
+R5486	Add Bank Account	إضافة حساب بنكي
+R5487	Create Purchase Invoice	إنشاء فاتورة شراء
+R5488	Open Banking	فتح الخدمات المصرفية
+R5489	Review your taxes	مراجعة الضرائب الخاصة بك
+R5490	Open Balance Sheet	فتح الميزانية العمومية
+R5491	Trace every posting	تتبّع كل ترحيل
+R5492	Open General Ledger	فتح دفتر الأستاذ العام
+R5493	Check your profit	تحقق من أرباحك
+R5494	Debtor/Creditor	المدين/الدائن
+R5495	Debtor/Creditor Advance	سلفة المدين/الدائن
+R5496	Account Balance	رصيد حسابك
+R5497	Group By Supplier	المجموعة حسب المورد
+R5498	In Party Currency	عملة الحزب
+R5499	Include Revaluation Journals	تضمين دفاتر إعادة التقييم
+R5500	Group by Voucher	المجموعة بواسطة قسيمة
+R5501	Handle Employee Advances	التعامل مع سلف الموظفين
+R5502	Accounts Payable Summary	ملخص الحسابات المستحقة للدفع
+R5503	Payable Account	حساب الدائنين
+R5504	Age as on	العمر حسب تاريخ
+R5505	Ageing Range	مدى العمر
+R5506	Show GL Balance	عرض رصيد دفتر الأستاذ العام
+R5507	Group By Customer	المجموعة حسب العميل
+R5508	Show Sales Person	عرض شخص المبيعات
+R5509	Accounts Receivable Summary	ملخص الحسابات المدينة
+R5510	Receivable Account	حساب مدين
+R5511	Customer Contact	معلومات اتصال العميل
+R5512	Invoice Grand Total	الفاتورة الكبرى المجموع
+R5513	Customer LPO	العميل لبو
+R5514	Delivery Notes	مذكرات التسليم
+R5515	Above	فوق
+R5516	<0	<0
+R5517	GL Balance	GL Balance
+R5518	Total Amount Due	إجمالي المبلغ المستحق
+R5519	Asset Depreciation Ledger	دفتر حسابات استهلاك الأصول
+R5520	Asset Name	اسم الأصول
+R5521	Depreciation Date	تاريخ الإهلاك
+R5522	Opening Accumulated Depreciation	الاهلاك التراكمي الافتتاحي
+R5523	Depreciation Amount	قيمة الإهلاك
+R5524	Accumulated Depreciation Amount	قيمة الاستهلاك المتراكمة
+R5525	Value After Depreciation	القيمة بعد الاستهلاك
+R5526	Current Status	الحالة الحالية
+R5527	Purchase Date	تاريخ الشراء
+R5528	Value as on	القيمة كما في
+R5529	Group by Dimension	تجميع حسب البعد
+R5530	Account Detail Level	مستوى تفاصيل الحساب
+R5531	Select View	حدد العرض
+R5532	Growth View	منظور النمو
+R5533	Accumulated Values	القيم المتراكمة
+R5534	Show zero values	إظهار القيم صفر
+R5535	Total (Credit)	الإجمالي (الائتمان)
+R5536	Total Asset	إجمالي الأصول
+R5537	Total Liability	المسؤولية الكلية
+R5538	Total Equity	إجمالي حقوق الملكية
+R5539	Liabilities	المطلوبات
+R5540	Bank Clearance Summary	ملخص التخليص البنكى
+R5541	Payment Document Type	نوع مستند الدفع
+R5542	Ref Date	تاريخ المرجع
+R5543	Invoiced Qty	الكمية المفوترة
+R5544	Returned Qty	عاد الكمية
+R5545	Show Cumulative Amount	إظهار المبلغ التراكمي
+R5546	variance	انحراف
+R5547	Dimension Filter	مرشح البعد
+R5548	Variance	فرق
+R5549	Total Actual	الإجمالي الفعلي
+R5550	Total Budget	الميزانية الإجمالية
+R5551	Total Variance	مجموع الفروق
+R5552	Invalid Accounting Dimension	بُعد محاسبي غير صالح
+R5553	Actual Expense	المصروفات الفعلية
+R5554	Calculated Discount Mismatch	عدم تطابق الخصم المحسوب
+R5555	Transaction Name	اسم المعاملة
+R5556	Suspected Discount Amount	مبلغ الخصم المتوقع
+R5557	Revaluation Journals	دفاتر إعادة التقييم
+R5558	Group By Company	تجميع حسب الشركة

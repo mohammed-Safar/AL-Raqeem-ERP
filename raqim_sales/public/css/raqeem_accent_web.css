@@ -1,0 +1,151 @@
+/* ==========================================================================
+   RAQEEM — theme colour sets for website pages (login, portal)
+   Same colours as raqeem_theme.css section 1b (orange, blue, green, cyber purple, mono), plus the extra shades the
+   login page uses. raqeem_login.js sets html[data-accent] from the choice
+   saved in the desk (localStorage "raqeem_accent"). No attribute = black & white
+   (the default); orange is data-accent="orange" and uses the :root values.
+   Website pages have no data-theme, so black & white follows the device
+   setting: black accent in light, white accent in dark.
+   ========================================================================== */
+:root {
+    --rq-a-300: #fdba74;
+    --rq-a-400: #fb923c;
+    --rq-a-500: #f97316;
+    --rq-a-600: #ea580c;
+    --rq-a-700: #c2410c;
+    --rq-a-800: #9a3412;
+    --rq-a-900: #7c2d12;
+    --rq-a-rgb: 249, 115, 22;
+    --rq-a-400-rgb: 251, 146, 60;
+    --rq-a-600-rgb: 234, 88, 12;
+    --rq-a-900-rgb: 124, 45, 18;
+    --rq-a-ink: #1a0d03;
+    --rq-a-tint: #1b1209;        /* very dark tint for the dark brand panel */
+}
+html[data-accent="blue"] {
+    --rq-a-300: #93c5fd;
+    --rq-a-400: #3b82f6;
+    --rq-a-500: #2563eb;
+    --rq-a-600: #1d4ed8;
+    --rq-a-700: #1e40af;
+    --rq-a-800: #1e3a8a;
+    --rq-a-900: #172554;
+    --rq-a-rgb: 37, 99, 235;
+    --rq-a-400-rgb: 59, 130, 246;
+    --rq-a-600-rgb: 29, 78, 216;
+    --rq-a-900-rgb: 23, 37, 84;
+    --rq-a-ink: #ffffff;
+    --rq-a-tint: #0b1222;
+}
+html[data-accent="green"] {
+    --rq-a-300: #b4e05a;
+    --rq-a-400: #8ccf1a;
+    --rq-a-500: #76b900;
+    --rq-a-600: #5e9400;
+    --rq-a-700: #4a7500;
+    --rq-a-800: #3d6000;
+    --rq-a-900: #243900;
+    --rq-a-rgb: 118, 185, 0;
+    --rq-a-400-rgb: 140, 207, 26;
+    --rq-a-600-rgb: 94, 148, 0;
+    --rq-a-900-rgb: 36, 57, 0;
+    --rq-a-ink: #0b1400;
+    --rq-a-tint: #0f1606;
+}
+html[data-accent="purple"] {   /* cyber purple */
+    --rq-a-300: #d8b4fe;
+    --rq-a-400: #c084fc;
+    --rq-a-500: #a855f7;
+    --rq-a-600: #9333ea;
+    --rq-a-700: #7e22ce;
+    --rq-a-800: #6b21a8;
+    --rq-a-900: #3b0764;
+    --rq-a-rgb: 168, 85, 247;
+    --rq-a-400-rgb: 192, 132, 252;
+    --rq-a-600-rgb: 147, 51, 234;
+    --rq-a-900-rgb: 59, 7, 100;
+    --rq-a-ink: #ffffff;
+    --rq-a-tint: #150a22;
+}
+/* ---- EXTRA COLOURS: gold / yellow / red ----------------------------------
+   To remove one: delete its rules in this block (and in raqeem_theme.css /
+   raqeem_accent_web.css), then its name in api.py ACCENTS,
+   raqeem_quick_settings.js ACCENTS and raqeem_login.js. */
+html[data-accent="gold"] {
+    --rq-a-300: #f3d98b;
+    --rq-a-400: #e6c15a;
+    --rq-a-500: #d4a72c;
+    --rq-a-600: #b8891a;
+    --rq-a-700: #946c12;
+    --rq-a-800: #74540f;
+    --rq-a-900: #4a360a;
+    --rq-a-rgb: 212, 167, 44;
+    --rq-a-400-rgb: 230, 193, 90;
+    --rq-a-600-rgb: 184, 137, 26;
+    --rq-a-900-rgb: 74, 54, 10;
+    --rq-a-ink: #1a1303;
+    --rq-a-tint: #1a150a;
+}
+html[data-accent="yellow"] {
+    --rq-a-300: #fde68a;
+    --rq-a-400: #fcd34d;
+    --rq-a-500: #facc15;
+    --rq-a-600: #eab308;
+    --rq-a-700: #a16207;
+    --rq-a-800: #854d0e;
+    --rq-a-900: #422006;
+    --rq-a-rgb: 250, 204, 21;
+    --rq-a-400-rgb: 252, 211, 77;
+    --rq-a-600-rgb: 234, 179, 8;
+    --rq-a-900-rgb: 66, 32, 6;
+    --rq-a-ink: #1c1500;
+    --rq-a-tint: #1a1704;
+}
+html[data-accent="red"] {
+    --rq-a-300: #fca5a5;
+    --rq-a-400: #f87171;
+    --rq-a-500: #ef4444;
+    --rq-a-600: #dc2626;
+    --rq-a-700: #b91c1c;
+    --rq-a-800: #991b1b;
+    --rq-a-900: #7f1d1d;
+    --rq-a-rgb: 239, 68, 68;
+    --rq-a-400-rgb: 248, 113, 113;
+    --rq-a-600-rgb: 220, 38, 38;
+    --rq-a-900-rgb: 127, 29, 29;
+    --rq-a-ink: #ffffff;
+    --rq-a-tint: #1f0b0b;
+}
+/* ---- end EXTRA COLOURS ---- */
+:is(html:not([data-accent]), html[data-accent="mono"]) {
+    --rq-a-300: #a1a1aa;
+    --rq-a-400: #52525b;
+    --rq-a-500: #27272a;
+    --rq-a-600: #18181b;
+    --rq-a-700: #09090b;
+    --rq-a-800: #000000;
+    --rq-a-900: #000000;
+    --rq-a-rgb: 24, 24, 27;
+    --rq-a-400-rgb: 82, 82, 91;
+    --rq-a-600-rgb: 24, 24, 27;
+    --rq-a-900-rgb: 0, 0, 0;
+    --rq-a-ink: #ffffff;
+    --rq-a-tint: #111113;
+}
+@media (prefers-color-scheme: dark) {
+    :is(html:not([data-accent]), html[data-accent="mono"]) {
+        --rq-a-300: #f4f4f5;
+        --rq-a-400: #ffffff;
+        --rq-a-500: #f4f4f5;
+        --rq-a-600: #d4d4d8;
+        --rq-a-700: #a1a1aa;
+        --rq-a-800: #71717a;
+        --rq-a-900: #3f3f46;
+        --rq-a-rgb: 244, 244, 245;
+        --rq-a-400-rgb: 255, 255, 255;
+        --rq-a-600-rgb: 212, 212, 216;
+        --rq-a-900-rgb: 0, 0, 0;
+        --rq-a-ink: #09090b;
+        --rq-a-tint: #121214;
+    }
+}

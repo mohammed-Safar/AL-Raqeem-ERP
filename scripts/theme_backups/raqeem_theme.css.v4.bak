@@ -1,0 +1,317 @@
+/* ==========================================================================
+   ALRAQEEM CORE VARIABLE INVERSION & CARBON-ORANGE THEME (v16.5)
+   إعادة توجيه متغيرات النظام الجذرية لتغيير الثيم بالكامل من الجذور
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
+
+:root,
+[data-theme="light"],
+[data-theme="dark"],
+[data-theme-mode="light"],
+[data-theme-mode="dark"] {
+    /* 1. قلب الألوان الأساسية للجهاز (الأبيض يصبح أسود كربوني، والأسود يصبح برتقالياً) */
+    --white: #111317 !important;
+    --black: #ffffff !important;
+    
+    /* 2. إعادة تعريف درجات الرمادي لتصبح داكنة وفخمة */
+    --gray-50: #14161b !important;
+    --gray-100: #181a20 !important;
+    --gray-200: #1e2128 !important;
+    --gray-300: #262a34 !important;
+    --gray-400: #3b4252 !important;
+    --gray-500: #6b7280 !important;
+    --gray-600: #9ca3af !important;
+    --gray-700: #d1d5db !important;
+    --gray-800: #f3f4f6 !important;
+    --gray-900: #ffffff !important;
+    --gray-950: #ffffff !important;
+
+    /* 3. إعادة توجيه متغيرات الواجهات (Surfaces) لقتل أي خلفية بيضاء */
+    --surface-base: #111317 !important;
+    --surface-gray-1: #14161b !important;
+    --surface-gray-2: #181a20 !important;
+    --surface-gray-3: #1e2128 !important;
+    --surface-gray-4: #262a34 !important;
+    --surface-sidebar: #14161b !important;
+    --surface-elevation-1: #181a20 !important;
+    --surface-elevation-2: #1e2128 !important;
+    --surface-elevation-3: #262a34 !important;
+
+    /* 4. توجيه الأحبار والنصوص (Inks) لتعمل بالدرجات البرتقالية الساطعة */
+    --ink-base: #fb923c !important;
+    --ink-gray-1: #fdba74 !important;
+    --ink-gray-2: #f97316 !important;
+    --ink-gray-3: #ea580c !important;
+    --ink-gray-4: #c2410c !important;
+    --ink-gray-5: #9a3412 !important;
+    --ink-gray-6: #7c2d12 !important;
+    --ink-gray-7: #ffffff !important;
+    --ink-gray-8: #ffffff !important;
+    --ink-gray-9: #ffffff !important;
+
+    /* 5. تخصيص الألوان التفاعلية للبرتقالي والأسود */
+    --primary: #f97316 !important;
+    --primary-hover: #ea580c !important;
+    --btn-primary: #f97316 !important;
+    --border-color: #3b2818 !important;
+}
+
+/* ==========================================================================
+   تثبيت الخطوط والخلفيات العامة الشاملة
+   ========================================================================== */
+html,
+body,
+.page-container,
+.page-body,
+.layout-main,
+.layout-main-section-wrapper,
+.workspace-container,
+.frappe-card,
+.widget,
+.modal-content {
+    background-color: #111317 !important;
+    color: #fb923c !important;
+    font-family: 'IBM Plex Sans Arabic', 'Cairo', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.page-title .title-text,
+.section-head,
+.widget .widget-title,
+label {
+    font-family: 'Cairo', sans-serif !important;
+    color: #f97316 !important;
+    font-weight: 700 !important;
+}
+
+/* الشريط العلوي والقائمة الجانبية */
+header.navbar, .navbar, .page-head, .desk-sidebar, .layout-side-section {
+    background-color: #14161b !important;
+    border-color: #3b2818 !important;
+}
+
+/* الأزرار والحقول */
+.btn-primary, button.btn-primary {
+    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%) !important;
+    color: #111317 !important;
+    font-weight: 800 !important;
+    border: none !important;
+}
+
+.form-control, input, select, textarea {
+    background-color: #181a20 !important;
+    border: 1px solid #4a301d !important;
+    color: #fb923c !important;
+}
+/* ==========================================================================
+   v4 — CARD + LIST HYBRID WORKSPACE
+   البطاقات للاختصارات والأرقام، والقوائم للروابط وعرض السجلات
+   ========================================================================== */
+
+:root {
+    --rq-bg: #111317;
+    --rq-card: #181a20;
+    --rq-card-2: #1e2128;
+    --rq-line: #2a2219;
+    --rq-line-strong: #4a301d;
+    --rq-orange: #f97316;
+    --rq-orange-soft: rgba(249, 115, 22, 0.12);
+    --rq-text: #e5e7eb;
+    --rq-muted: #9ca3af;
+    --rq-radius: 14px;
+    --rq-shadow: 0 1px 2px rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.25);
+    --rq-shadow-hover: 0 4px 10px rgba(0,0,0,.45), 0 12px 28px rgba(249,115,22,.12);
+}
+
+/* ---------- Workspace section titles ---------- */
+.workspace-container .widget-group-title,
+.workspace-container h2.ce-header,
+.workspace-container .ce-header {
+    font-family: 'Cairo', sans-serif !important;
+    color: var(--rq-text) !important;
+    font-size: 1.05rem !important;
+    padding-inline-start: 12px;
+    border-inline-start: 3px solid var(--rq-orange);
+    margin-block: 18px 10px !important;
+}
+
+/* ---------- CARDS: shortcuts ---------- */
+.widget.shortcut-widget-box {
+    background: linear-gradient(160deg, var(--rq-card-2) 0%, var(--rq-card) 100%) !important;
+    border: 1px solid var(--rq-line) !important;
+    border-inline-start: 3px solid var(--rq-orange) !important;
+    border-radius: var(--rq-radius) !important;
+    box-shadow: var(--rq-shadow) !important;
+    padding: 14px 16px !important;
+    min-height: 64px;
+    transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease !important;
+}
+.widget.shortcut-widget-box:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--rq-shadow-hover) !important;
+    border-color: var(--rq-line-strong) !important;
+    border-inline-start-color: var(--rq-orange) !important;
+}
+.widget.shortcut-widget-box .widget-title,
+.widget.shortcut-widget-box:hover .widget-label .widget-title {
+    color: var(--rq-text) !important;
+    font-size: 0.98rem !important;
+    font-weight: 700 !important;
+}
+.widget.shortcut-widget-box:hover .widget-title { color: var(--rq-orange) !important; }
+
+/* ---------- CARDS: number cards ---------- */
+.widget.number-widget-box {
+    background: var(--rq-card) !important;
+    border: 1px solid var(--rq-line) !important;
+    border-radius: var(--rq-radius) !important;
+    box-shadow: var(--rq-shadow) !important;
+    position: relative;
+    overflow: hidden;
+    transition: transform .15s ease, box-shadow .15s ease !important;
+}
+.widget.number-widget-box::before {
+    content: "";
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--rq-orange), #ea580c 60%, transparent);
+}
+.widget.number-widget-box:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--rq-shadow-hover) !important;
+}
+.widget.number-widget-box .widget-title {
+    color: var(--rq-muted) !important;
+    font-size: .85rem !important;
+    font-weight: 600 !important;
+}
+.widget.number-widget-box .number {
+    color: #ffffff !important;
+    font-family: 'Cairo', sans-serif !important;
+    font-size: 1.9rem !important;
+    font-weight: 800 !important;
+    font-variant-numeric: tabular-nums;
+}
+
+/* ---------- CARDS: charts / quick lists / onboarding ---------- */
+.widget.dashboard-widget-box,
+.widget.quick-list-widget-box,
+.widget.onboarding-widget-box,
+.widget.custom-block-widget-box {
+    background: var(--rq-card) !important;
+    border: 1px solid var(--rq-line) !important;
+    border-radius: var(--rq-radius) !important;
+    box-shadow: var(--rq-shadow) !important;
+}
+
+/* ---------- LIST PANELS: link cards ---------- */
+.widget.links-widget-box {
+    background: var(--rq-card) !important;
+    border: 1px solid var(--rq-line) !important;
+    border-radius: var(--rq-radius) !important;
+    box-shadow: var(--rq-shadow) !important;
+    padding: 0 !important;
+    overflow: hidden;
+}
+.widget.links-widget-box .widget-head {
+    padding: 12px 16px !important;
+    background: var(--rq-card-2) !important;
+    border-bottom: 1px solid var(--rq-line) !important;
+}
+.widget.links-widget-box .widget-head .widget-title {
+    color: var(--rq-orange) !important;
+    font-family: 'Cairo', sans-serif !important;
+    font-size: .95rem !important;
+    font-weight: 700 !important;
+}
+.widget.links-widget-box .widget-body {
+    margin: 0 !important;
+    padding: 4px 0 !important;
+}
+.widget.links-widget-box .link-item {
+    display: flex !important;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 16px !important;
+    color: var(--rq-text) !important;
+    border-bottom: 1px solid rgba(255,255,255,.04);
+    text-decoration: none !important;
+    transition: background .12s ease, padding .12s ease;
+}
+.widget.links-widget-box .link-item:last-child { border-bottom: 0; }
+.widget.links-widget-box .link-item::before {
+    content: "";
+    flex: 0 0 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--rq-line-strong);
+    transition: background .12s ease;
+}
+.widget.links-widget-box .link-item:hover,
+.widget.links-widget-box .link-item:focus-visible {
+    background: var(--rq-orange-soft) !important;
+    color: #ffffff !important;
+    padding-inline-start: 20px !important;
+    text-decoration: none !important;
+}
+.widget.links-widget-box .link-item:hover::before { background: var(--rq-orange); }
+.widget.links-widget-box .link-item .disabled-link { color: #6b7280 !important; }
+.widget.links-widget-box .link-description { color: var(--rq-muted) !important; }
+
+/* ---------- LIST VIEW: rows as slim cards ---------- */
+.frappe-list .result {
+    background: transparent !important;
+    padding: 6px 8px !important;
+}
+.frappe-list .list-row-head {
+    background: var(--rq-card-2) !important;
+    border-radius: 10px !important;
+    border: 1px solid var(--rq-line) !important;
+    color: var(--rq-muted) !important;
+    margin-bottom: 6px;
+}
+.frappe-list .list-row-container {
+    background: var(--rq-card) !important;
+    border: 1px solid var(--rq-line) !important;
+    border-radius: 10px !important;
+    margin-bottom: 6px !important;
+    transition: border-color .12s ease, box-shadow .12s ease, transform .12s ease;
+}
+.frappe-list .list-row-container:hover {
+    border-color: var(--rq-line-strong) !important;
+    box-shadow: var(--rq-shadow-hover) !important;
+    transform: translateY(-1px);
+}
+.frappe-list .list-row,
+.frappe-list .list-row:hover {
+    background: transparent !important;
+    border: 0 !important;
+}
+.frappe-list .list-row-container:hover {
+    border-inline-start: 3px solid var(--rq-orange) !important;
+}
+.frappe-list .list-subject a,
+.frappe-list .list-subject .bold {
+    color: var(--rq-text) !important;
+    font-weight: 600 !important;
+}
+.frappe-list .list-row-container:hover .list-subject a { color: var(--rq-orange) !important; }
+.frappe-list .list-row-col,
+.frappe-list .list-row-activity { color: var(--rq-muted) !important; }
+
+/* ---------- Readability: body text softer, orange stays for accents ---------- */
+.workspace-container,
+.frappe-list,
+.widget .widget-body {
+    color: var(--rq-text) !important;
+}
+
+/* ---------- Phones ---------- */
+@media (max-width: 576px) {
+    .widget.shortcut-widget-box { min-height: 56px; padding: 12px !important; }
+    .widget.number-widget-box .number { font-size: 1.5rem !important; }
+    .frappe-list .list-row-container { border-radius: 8px !important; }
+}

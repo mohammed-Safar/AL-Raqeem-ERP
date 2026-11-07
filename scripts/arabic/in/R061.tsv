@@ -1,0 +1,120 @@
+R3546	Custom Base URL	عنوان ورل لقاعدة مخصصة
+R3547	Client Information	معلومات العميل
+R3548	API Endpoint Args	نقطة وصول API Args
+R3549	Auth URL Data	بيانات عنوان المصادقة
+R3550	User ID Property	خاصية معرف المستخدم
+R3551	Configuration	إعدادات
+R3552	Sign ups	التسجيلات
+R3553	Social Login Key	مفتاح تسجيل الدخول الاجتماعي
+R3554	Enable Social Login	تمكين تسجيل الدخول الاجتماعي
+R3555	Social Login Provider	موفر تسجيل الدخول الاجتماعي
+R3556	Facebook	الفيسبوك
+R3557	GitHub	جت هب (GITHUB)
+R3558	Keycloak	عباءة المفاتيح
+R3559	Office 365	مكتب 365
+R3560	Salesforce	قوة المبيعات
+R3561	fairlogin	fairlogin
+R3562	Google	جوجل
+R3563	Identity Details	تفاصيل الهوية
+R3564	Success URI	عنوان URL للنجاح
+R3565	Token Type	نوع الرمز المميز
+R3566	Token Cache	ذاكرة التخزين المؤقت للرموز المميزة
+R3567	Request Body	نص الطلب
+R3568	Name (Doc Name)	الاسم (اسم الطبيب)
+R3569	Webhook Data	بيانات ويبهوك
+R3570	Request Structure	طلب هيكل
+R3571	Form URL-Encoded	نموذج URL المشفرة
+R3572	JSON Request Body	طلب JSON الجسم
+R3573	Webhook Security	Webhook الأمن
+R3574	Enable Security	تمكين الأمن
+R3575	Webhook Secret	سرّ الويب هوك
+R3576	Request Method	طريقة الطلب
+R3577	Is Dynamic URL?	هل هو عنوان URL ديناميكي؟
+R3578	Background Jobs Queue	قائمة انتظار الوظائف الخلفية
+R3579	Webhook	رابط الويب
+R3580	Doc Events	دوك الأحداث
+R3581	Doc Event	حدث دوك
+R3582	after_insert	أدخل_بعد
+R3583	on_cancel	إلغاء
+R3584	on_change	على التغيير
+R3585	on_submit	on_submit
+R3586	on_trash	on_trash
+R3587	on_update	تحديث
+R3588	on_update_after_submit	on_update_after_submit
+R3589	workflow_transition	انتقال سير العمل
+R3590	Webhook Trigger	مُشغِّل Webhook
+R3591	Webhook Request	طلب ويبهوك
+R3592	Request URL	طلب عنوان ورل
+R3593	Webhook Headers	رؤوس ويبهوك
+R3594	Check Request URL	تحقق من عنوان الرابط المطلوب
+R3595	Invalid Webhook Secret	سر Webhook غير صالح
+R3596	Invalid Condition: {}	شرط غير صالح: {}
+R3597	Webhook Header	رأس ويبهوك
+R3598	Domain is required.	النطاق مطلوب.
+R3599	Confirm Access	تأكيد الوصول
+R3600	OAuth Provider	مزود OAuth
+R3601	Push Notification	إشعار فوري
+R3602	Push Notifications	الإشعارات الفورية
+R3603	Google Services	خدمات جوجل
+R3604	Illegal SQL Query	استعلام SQL غير قانوني
+R3605	Negative Value	قيمة سالبة
+R3606	Invalid docstatus	حالة المستند غير صالحة
+R3607	Invalid Override	تجاوز غير صالح
+R3608	Incorrect value:	قيمة غير صحيحة:
+R3609	{0} row #{1}:	{0} صف #{1}:
+R3610	Duplicate Name	اسم مكرر
+R3611	Value Too Long	القيمة طويلة جدًا
+R3612	Row #{0}:	الصف # {0}:
+R3613	{0}, Row {1}	{0}، الصف {1}
+R3614	Value too big	قيمة كبيرة جدا
+R3615	Action Failed	فشل العمل
+R3616	Document Queued	المستند في قائمة الانتظار
+R3617	Amendment Not Allowed	التعديل غير مسموح به
+R3618	Naming Series mandatory	تسمية سلسلة إلزامية
+R3619	Workflow Evaluation Error	خطأ في تقييم سير العمل
+R3620	Applying: {0}	التطبيق: {0}
+R3621	Failed Transactions	المعاملات الفاشلة
+R3622	Successful Transactions	المعاملات الناجحة
+R3623	Workflow Status	حالة سير العمل
+R3624	Your Shortcuts	اختصاراتك
+R3625	Reports & Masters	التقارير والماجستير
+R3626	empty	فارغة
+R3627	Letter Head Scripts	أوراق كتابة الرسائل
+R3628	Header HTML	رأس HTML
+R3629	Footer HTML	تذييل HTML
+R3630	Image Height (px)	ارتفاع الصورة (بكسل)
+R3631	Image Width (px)	عرض الصورة (بكسل)
+R3632	Footer Image	صورة التذييل
+R3633	Footer Based On	تذييل مبني على
+R3634	Header Script	نص رأس الصفحة
+R3635	Footer Script	نص تذييل الصفحة
+R3636	Scripts	النصوص
+R3637	Instructions	تعليمات
+R3638	Letter Head Name	اسم ترئيس الرسالة
+R3639	Default Letter Head	رأس الرسالة الأفتراضي
+R3640	Letter Head Image	صورة رأس الرسالة
+R3641	Server IP	خادم IP
+R3642	Printer Name	اسم الطابعة
+R3643	Network Printer Settings	إعدادات طابعة الشبكة
+R3644	Edit Format	تحرير تنسيق
+R3645	Restore classic layout	استعادة التخطيط الكلاسيكي
+R3646	Custom Format	تنسيق مخصص
+R3647	Print Format Type	نوع تنسيق الطباعة
+R3648	JS	JS
+R3649	Jinja	جينجا
+R3650	Raw Printing	الطباعة الخام
+R3651	Raw Commands	أوامر الخام
+R3652	Style Settings	نمط الضبط
+R3653	Show Section Headings	عرض عناوين القسم
+R3654	Default Print Language	لغة الطباعة الافتراضية
+R3655	Preview Image	معاينة الصورة
+R3656	Google Font	خط جوجل
+R3657	Custom HTML Help	مخصصةHTML مساعدة
+R3658	Print Format Help	تنسيق الطباعة مساعدة
+R3659	Format Data	تنسيق البيانات
+R3660	Print Format Builder	منشئ تنسيق الطباعة
+R3661	Show Absolute Values	عرض القيم المطلقة
+R3662	Margin Top	هامش علوي
+R3663	Margin Bottom	هامش سفلي
+R3664	Margin Left	الهامش الأيسر
+R3665	Margin Right	الهامش الأيمن

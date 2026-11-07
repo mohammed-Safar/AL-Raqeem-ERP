@@ -1,0 +1,120 @@
+R1866	Operation	عملية
+R1867	Impersonate	انتحال الشخصية
+R1868	Linked	مرتبط
+R1869	Closed	مغلق
+R1870	{0} logged in	{0} تم تسجيل الدخول
+R1871	Amend Counter	تعديل مضاد
+R1872	Default Naming	التسمية الافتراضية
+R1873	Path	مسار
+R1874	API Request Log	سجل طلبات واجهة برمجة التطبيقات
+R1875	Audit Trail	سجل التدقيق
+R1876	version_table	جدول الإصدارات
+R1877	Block Module	كتلة الوحدة
+R1878	Website Manager	مدير الموقع
+R1879	Comment Type	تعليق نوع
+R1880	Assigned	تم تحديد المهمة
+R1881	Assignment Completed	تم إنجاز المهمة
+R1882	Attachment Removed	تم حذف المرفق
+R1883	Bot	آلي
+R1884	Relinked	إعادة ربط
+R1885	Unshared	غير مشارك
+R1886	Info	معلومات
+R1887	Attachment	مرفق
+R1888	Comment Email	تعليق البريد الإلكتروني
+R1889	Comment By	تعليق من جانب
+R1890	Seen	رأيت
+R1891	Move To Trash	ارسال الى سلة المحذوفات
+R1892	Add Contact	إضافة جهة اتصال
+R1893	Relink Communication	الاتصالات إعادة ربط
+R1894	Document not Relinked	لم يتم إعادة ربط المستند
+R1895	Email Account	حساب البريد الإلكتروني
+R1896	Res: {0}	الدقة: {0}
+R1897	Fw: {0}	FW: {0}
+R1898	Reopen	إعادة فتح
+R1899	Relink	إعادة ربط
+R1900	Reply All	الرد على الجميع
+R1901	Forward	إلى الأمام
+R1902	Mark as Read	ضع إشارة مقروء
+R1903	Mark as Unread	حدده كغير مقروء
+R1904	Mark as Spam	علامة كدعاية
+R1905	Phone No.	رقم الهاتف
+R1906	Delivery Status	حالة التسليم
+R1907	Bounced	وثب
+R1908	Clicked	النقر
+R1909	Delayed	مؤجل
+R1910	Marked As Spam	محددة كدعايات
+R1911	Opened	افتتح
+R1912	Recipient Unsubscribed	المتلقي غير المشتركين
+R1913	Soft-Bounced	لينة المرتجعة
+R1914	Sent	أرسلت
+R1915	Rejected	مرفوض
+R1916	Expired	انتهى
+R1917	Sending	إرسال
+R1918	Text Content	محتوى النص
+R1919	Communication Type	نوع الإتصال
+R1920	Automated Message	رسالة آلية
+R1921	Sent or Received	المرسلة أو المتلقاة
+R1922	Received	تلقيت
+R1923	Sent Read Receipt	أرسلت مقروءة إيصال
+R1924	From Full Name	من الاسم الكامل
+R1925	Read by Recipient	قراءة من قبل المتلقي
+R1926	In Reply To	ردا على
+R1927	Unread Notification Sent	إرسال الإشعارات غير المقروءة
+R1928	User Tags	بطاقات المستخدم
+R1929	Message ID	معرف الرسالة
+R1930	UID	رمز المستخدم
+R1931	Email Status	حالة البريد الإلكتروني
+R1932	Spam	بريد مؤذي
+R1933	Trash	قمامة، يدمر، يهدم
+R1934	Has  Attachment	لديها مرفق
+R1935	Timeline Links	الجدول الزمني وصلات
+R1936	IMAP Folder	مجلد IMAP
+R1937	Send After	إرسال بعد
+R1938	Inbox User	مسؤل علبة الوارد
+R1939	To and CC	لوCC
+R1940	Chat	الدردشة
+R1941	SMS	رسالة قصيرة
+R1942	Meeting	لقاء
+R1943	Leave this conversation	ترك هذه المحادثة
+R1944	Link Title	لينك تيتل
+R1945	Communication Date	تاريخ التواصل
+R1946	Communication Link	حلقة اتصال
+R1947	Additional Permissions	ضوابط إضافية
+R1948	Custom DocPerm	DocPerm مخصص
+R1949	Role and Level	مستوى الصلاحية
+R1950	Permission Rules	إذن قوانين
+R1951	response	استجابة
+R1952	Custom Role	تخصيص صلاحية
+R1953	Select Doctype	حدد نوع المستند
+R1954	Excel	تفوق
+R1955	CSV	ملف CSV
+R1956	Filter List	قائمة تصفية
+R1957	Fields Multicheck	الحقول متعددة
+R1958	Data Export	تصدير البيانات
+R1959	Column Labels:	تسميات العمود:
+R1960	Mandatory:	إلزامية:
+R1961	Type:	النوع:
+R1962	Info:	معلومات:
+R1963	Data Import Template	قالب ادخال البيانات
+R1964	Notes:	ملاحظات:
+R1965	Parent Table	الجدول الرئيسي
+R1966	One of	واحد من
+R1967	Successfully updated {0}	تم التحديث بنجاح {0}
+R1968	Successfully imported {0}	تم استيراد {0}بنجاح
+R1969	Job Stopped Successfully	تم إيقاف المهمة بنجاح
+R1970	Row {0}	الصف {0}
+R1971	Issues	قضايا
+R1972	Failure	بالفشل
+R1973	Row	صف
+R1974	Export Import Log	سجل التصدير والاستيراد
+R1975	Import Progress	استيراد التقدم
+R1976	In Progress	في تَقَدم
+R1977	Template Options	خيارات القالب
+R1978	Import Log	سجل الاستيراد
+R1979	Import Log Preview	استيراد سجل معاينة
+R1980	Partial Success	نجاح جزئي
+R1981	Template Warnings	تحذيرات القالب
+R1982	Submit After Import	إرسال بعد الاستيراد
+R1983	Import Warnings	استيراد تحذيرات
+R1984	Don't Send Emails	لا ترسل رسائل البريد الإلكتروني
+R1985	Refresh Google Sheet	قم بتحديث ورقة Google

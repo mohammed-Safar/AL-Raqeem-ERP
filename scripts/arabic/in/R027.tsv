@@ -1,0 +1,120 @@
+R5559	Consolidated Accounts Payable	الحسابات الدائنة الموحدة
+R5560	Consolidated Accounts Receivable	الحسابات المدينة الموحّدة
+R5561	Consolidated Financial Statement	القوائم المالية الموحدة
+R5562	Total {0} ({1})	إجمالي {0} ({1})
+R5563	Show Group Accounts	عرض حسابات المجموعة
+R5564	Consolidated Trial Balance	ميزان المراجعة الموحد
+R5565	Opening (Dr)	افتتاحي  (Dr)
+R5566	Opening (Cr)	افتتاحي (Cr)
+R5567	Closing (Dr)	إغلاق (مدين)
+R5568	Closing (Cr)	إغلاق (دائن)
+R5569	Customer Ledger Summary	ملخص دفتر الأستاذ
+R5570	 Name	 الاسم
+R5571	Dr/Cr	دكتور/كريم
+R5572	Revenue	ربح
+R5573	Actual Posting	الترحيل الفعلي
+R5574	Expected	مُتوقع
+R5575	Billed Amount	القيمة المقدم فاتورة بها
+R5576	Returned Amount	المبلغ المرتجع
+R5577	Pending Amount	في انتظار المبلغ
+R5578	Select Dimension	حدد الأبعاد
+R5579	Liquidity Ratios	نسب السيولة
+R5580	Solvency Ratios	نسب الملاءة المالية
+R5581	Turnover Ratios	معدلات دوران الموظفين
+R5582	Financial Ratios	النسب المالية
+R5583	Current Ratio	نسبة التيار
+R5584	Quick Ratio	نسبة السيولة السريعة
+R5585	Debt Equity Ratio	نسبة الدين إلى حقوق الملكية
+R5586	Gross Profit Ratio	نسبة الربح الإجمالي
+R5587	Net Profit Ratio	نسبة صافي الربح
+R5588	Debtor Turnover Ratio	نسبة دوران المدينين
+R5589	Creditor Turnover Ratio	نسبة دوران الدائنين
+R5590	Inventory Turnover Ratio	معدل دوران المخزون
+R5591	Ratios	النسب
+R5592	Payment Ledger Balance	رصيد دفتر المدفوعات
+R5593	Categorize by	التصنيف حسب
+R5594	Categorize by Account	التصنيف حسب الحساب
+R5595	Categorize by Party	التصنيف حسب الحزب
+R5596	Consider Accounting Dimensions	ضع في اعتبارك أبعاد المحاسبة
+R5597	Show Cancelled Entries	إظهار الإدخالات الملغاة
+R5598	Invalid {0}: {1}	{0} غير صالح : {1}\\n<br>\\nInvalid {0}: {1}
+R5599	Debit ({0})	مدين ({0})
+R5600	Credit ({0})	الائتمان ({0})
+R5601	Balance ({0})	الرصيد ({0})
+R5602	Debit (Transaction)	مدين (معاملة)
+R5603	Credit (Transaction)	الائتمان (المعاملة)
+R5604	Net Profit	صافي الربح
+R5605	Gross Profit	الربح الإجمالي
+R5606	Sales Return	مبيعات المعاده
+R5607	No Terms	لا توجد شروط
+R5608	Avg. Selling Rate	متوسط معدل البيع
+R5609	Selling Amount	كمية البيع
+R5610	Buying Amount	قيمة الشراء
+R5611	Gross Profit Percent	نسبة الربح الإجمالي
+R5612	Inactive Sales Items	عناصر المبيعات غير النشطة
+R5613	Last Order Date	تاريخ أخر أمر بيع
+R5614	Invalid Ledger Entries	إدخالات دفتر الأستاذ غير صالحة
+R5615	Filters missing	الفلاتر مفقودة
+R5616	Company is mandatory	الشركة إلزامية
+R5617	Item-wise Purchase Register	سجل حركة المشتريات وفقاً للصنف
+R5618	Mode Of Payment	طريقة الدفع
+R5619	Stock Qty	الأسهم الكمية
+R5620	Item-wise Sales Register	سجل حركة مبيعات وفقاً للصنف
+R5621	 Rate	 سعر السلعة المفردة
+R5622	 Amount	 مبلغ
+R5623	Total Tax	مجموع الضرائب
+R5624	Total Other Charges	إجمالي الرسوم الأخرى
+R5625	Include Account Currency	تضمين عملة الحساب
+R5626	Group by Party	مجموعة حسب الحزب
+R5627	Payment Ledger	دفتر المدفوعات
+R5628	Invoice Posting Date	تاريخ ترحيل الفاتورة
+R5629	Age	عمر
+R5630	0-30	0-30
+R5631	30-60	30-60
+R5632	60-90	60-90
+R5633	90 Above	أكثر من 90
+R5634	Payment Method	طريقة الدفع او السداد
+R5635	Group by	المجموعة حسب
+R5636	POS Register	سجل نقاط البيع
+R5637	Margin View	عرض الهامش
+R5638	Profit This Year	الربح هذا العام
+R5639	Total Income	إجمالي الدخل
+R5640	Total Expense	المصاريف الكلية
+R5641	Net Profit/Loss	صافي الربح (الخسارة
+R5642	Profitability Analysis	تحليل الربحية
+R5643	Select Accounting Dimension.	حدد بُعد المحاسبة.
+R5644	Billing Date	تاريخ الفواتير
+R5645	Period based On	فترة بناء على
+R5646	Purchase Invoice Trends	اتجهات فاتورة الشراء
+R5647	Show Ledger View	عرض دفتر الأستاذ
+R5648	Purchase Register	سجل شراء
+R5649	Voucher	سند
+R5650	No record found	لم يتم العثور على أي سجل
+R5651	Sales Invoice Trends	اتجاهات فاتورة المبيعات
+R5652	Sales Partners Commission	عمولة المناديب
+R5653	Show only POS	إظهار نقاط البيع فقط
+R5654	Show Payment Details	إظهار تفاصيل الدفع
+R5655	Sales Payment Summary	ملخص دفع المبيعات
+R5656	Payment Mode	طريقة الدفع
+R5657	Sales and Returns	المبيعات والمرتجعات
+R5658	Sales Register	سجل مبيعات
+R5659	Tax Total	مجموع الضرائب
+R5660	Please select date	يرجى تحديد التاريخ
+R5661	Average Rate	المعدل المتوسط
+R5662	Supplier Ledger Summary	ملخص دفتر الأستاذ
+R5663	Tax Withholding Details	تفاصيل حجب الضرائب
+R5664	Tax Rate %	معدل الضريبة %
+R5665	Reference No.	رقم المرجع.
+R5666	Date of Transaction	تاريخ المعاملة
+R5667	Withholding Document	وثيقة الحجز
+R5668	TDS Computation Summary	ملخص حساب TDS
+R5669	Total Taxable Amount	إجمالي الكمية الخاضعة للضريبة
+R5670	Trial Balance	ميزان المراجعة
+R5671	Trial Balance (Simple)	ميزان المراجعة (بسيط)
+R5672	Voucher-wise Balance	الرصيد حسب القسيمة
+R5673	Consolidated Report	تقرير موحّد
+R5674	Budgeting	الميزانية
+R5675	Budget Variance	انحراف الميزانية
+R5676	Currency Exchange	تصريف العملات
+R5677	Payment Unlink Error	خطأ في إلغاء ربط الدفع
+R5678	Receivables & Payables	الذمم المدينة والدائنة

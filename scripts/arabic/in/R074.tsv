@@ -1,0 +1,120 @@
+R8760	Buildable Qty	الكمية القابلة للبناء
+R8761	Build All?	بناء الكل؟
+R8762	Charts Based On	الرسوم البيانية على أساس
+R8763	Work Order Summary	ملخص أمر العمل
+R8764	0-30 Days	0-30 يومًا
+R8765	30-60 Days	30-60 يومًا
+R8766	60-90 Days	60-90 يومًا
+R8767	Produce Qty	إنتاج الكمية
+R8768	Subcontracting BOM	قائمة مواد التعاقد من الباطن
+R8769	Planning Reports	تقارير التخطيط
+R8770	Forecasting	التنبؤ
+R8771	BOM Reports	تقارير قائمة المواد
+R8772	Production Reports	تقارير الإنتاج
+R8773	Visual Plant Floor	أرضية المصنع المرئية
+R8774	WIP Work Orders	أوامر العمل قيد التنفيذ
+R8775	All Departments	جميع الاقسام
+R8776	Website Attribute	سمة الموقع
+R8777	Website Filter Field	حقل تصفية الموقع
+R8778	Billing Rate	سعر الفوترة
+R8779	Costing Rate	سعر التكلفة
+R8780	Activity Cost	تكلفة النشاط
+R8781	Default Costing Rate	سعر التكلفة الافتراضي
+R8782	Default Billing Rate	سعر الفوترة الافتراضي
+R8783	Dependent Task	مهمة تابعة
+R8784	Due This Month	مستحقة هذا الشهر
+R8785	Gantt Chart	مخطط جانت
+R8786	Set Project Status	تحديد حالة المشروع
+R8787	Project Type	نوع المشروع
+R8788	% Complete Method	طريقة إكمال %
+R8789	Task Completion	إنجاز المهمة
+R8790	Task Weight	وزن المهمة
+R8791	% Completed	% مكتمل
+R8792	Copied From	تم نسخها من
+R8793	Costing and Billing	التكلفة و الفواتير
+R8794	Gross Margin	هامش الربح الإجمالي
+R8795	Gross Margin %	الهامش الإجمالي %
+R8796	Collect Progress	اجمع التقدم
+R8797	Twice Daily	مرتين يوميا
+R8798	First Email	البريد الإلكتروني الأول
+R8799	Second Email	البريد الإلكتروني الثاني
+R8800	Day to Send	يوم لإرسال
+R8801	On hold	معلّق
+R8802	Project Collaboration Invitation	دعوة للمشاركة في المشاريع
+R8803	Material	مواد
+R8804	{0}%	{0}%
+R8805	Project Template	قالب المشروع
+R8806	Project Template Task	مهمة قالب المشروع
+R8807	Project Update	تحديث المشروع
+R8808	 Summary	 ملخص
+R8809	View attachments	عرض المرفقات
+R8810	Hide timesheets	إخفاء جداول الدوام
+R8811	Project Status	حالة المشروع
+R8812	Project User	عضو المشروع
+R8813	Projects Settings	إعدادات المشاريع
+R8814	Task Status	حالة المهمة
+R8815	Pending Review	في انتظار المراجعة
+R8816	Working	عامل
+R8817	Urgent	عاجل
+R8818	Parent Task	المهمة الرئيسية
+R8819	% Progress	% التقدم
+R8820	Is Milestone	هو معلم
+R8821	Task Description	وصف المهمة
+R8822	Dependent Tasks	المهام التابعة
+R8823	Depends on Tasks	تعتمد على المهام
+R8824	Review Date	مراجعة تاريخ
+R8825	Completed By	اكتمل بواسطة
+R8826	Is Template	هل القالب
+R8827	Begin On (Days)	البدء في (أيام)
+R8828	Duration (Days)	المدة (بالأيام)
+R8829	Completed On	اكتمل في
+R8830	Template Task	مهمة نموذجية
+R8831	Circular Reference Error	خطأ المرجع الدائري
+R8832	Set as Completed	تعيين كـ مكتمل
+R8833	Add Multiple	إضافة متعددة
+R8834	Add Multiple Tasks	إضافة مهام متعددة
+R8835	Task Depends On	المهمة تعتمد على
+R8836	Task Type	نوع المهمة
+R8837	Start Timer	بدء المؤقت
+R8838	Resume Timer	مؤقت الاستئناف
+R8839	Employee Detail	تفاصيل الموظف
+R8840	Billing Details	تفاصيل الفاتورة
+R8841	Total Billable Hours	مجموع الساعات فوترة
+R8842	Total Billed Hours	إجمالي الساعات المفوترة
+R8843	Total Costing Amount	المبلغ الكلي التكاليف
+R8844	Total Billable Amount	المبلغ الكلي القابل للمحاسبة
+R8845	Total Billed Amount	المبلغ الكلي وصفت
+R8846	Payslip	قسيمة الدفع
+R8847	Costing Amount	أجمالي الكلفة
+R8848	Is Billable	هو قابل للفوترة
+R8849	Hrs	ساعات
+R8850	Start a project	ابدأ مشروعًا
+R8851	Create Project	إنشاء مشروع
+R8852	Create Project Template	إنشاء قالب المشروع
+R8853	Create Task	إنشاء مهمة
+R8854	Create Timesheet	إنشاء الجدول الزمني
+R8855	Spot delayed tasks	تحديد المهام المتأخرة
+R8856	Open Project Summary	فتح ملخص المشروع
+R8857	Daily Timesheet Summary	ملخص سجل الدوام اليومي
+R8858	From Datetime	من (التاريخ والوقت)
+R8859	To Datetime	إلى التاريخ والوقت
+R8860	Delayed Tasks Summary	ملخص المهام المؤجلة
+R8861	Progress (%)	تقدم (٪)
+R8862	Delay (In Days)	التأخير (بالأيام)
+R8863	On Track	على المسار الصحيح
+R8864	Project Summary	ملخص المشروع
+R8865	Average Completion	متوسط الإنجاز
+R8866	Overdue Tasks	المهام المتأخرة
+R8867	Total Tasks	إجمالي المهام
+R8868	Tasks Completed	اكتملت المهام
+R8869	Tasks Overdue	المهام المتأخرة
+R8870	Completion	إكمال
+R8871	Project Id	هوية المشروع
+R8872	Project Value	قيمة المشروع
+R8873	Project Start Date	تاريخ بدء المشروع
+R8874	Timesheet Billing Summary	ملخص فواتير جداول الدوام
+R8875	Employee ID	هوية الموظف
+R8876	Project Reports	تقارير المشاريع
+R8877	Non Completed Tasks	المهام غير المكتملة
+R8878	Timesheet Working Hours	ساعات العمل بسجل ساعات العمل
+R8879	Procedure	إجراء

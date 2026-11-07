@@ -1,0 +1,120 @@
+R7719	I - J	أنا - ي
+R7720	I - K	أنا - ك
+R7721	Difference In	الفرق في
+R7722	Include Disabled	يشمل ذوي الاحتياجات الخاصة
+R7723	Create Reposting Entries	إنشاء إدخالات إعادة النشر
+R7724	Stock Ledger Variance	تباين دفتر الأستاذ للمخزون
+R7725	Reserved for Production	محجوز للإنتاج
+R7726	Shortage Qty	نقص الكمية
+R7727	Update Batch Qty	تحديث كمية الدفعة
+R7728	Batch Qty	كمية الدفعة
+R7729	Show Disabled Items	عرض العناصر المعطلة
+R7730	Serial No Count	المسلسل لا عد
+R7731	Total Stock Summary	ملخص إجمالي المخزون
+R7732	Show Disabled Warehouses	عرض المستودعات المخصصة لذوي الاحتياجات الخاصة
+R7733	Warehouse Disabled?	هل المستودع معطل؟
+R7734	Serial & Batch	الرقم التسلسلي والدفعة
+R7735	Stock Frozen	المخزون مجمد
+R7736	Invalid operator {0}	المعامل {0} غير صالح
+R7737	after	بعد
+R7738	Valuation Rate Missing	معدل التقييم مفقود
+R7739	Reserved Serial No.	رقم تسلسلي محجوز
+R7740	Show pending entries	عرض الإدخالات المعلقة
+R7741	Stock Reports	تقارير الأسهم
+R7742	Movement Reports	تقارير الحركة
+R7743	Item Reports	تقارير الصنف
+R7744	Audit Reports	تقارير التدقيق
+R7745	Total Active Items	إجمالي العناصر النشطة
+R1653	Method Not Allowed	الطريقة غير مسموح بها
+R1654	Invalid request body	نص الطلب غير صالح
+R1655	Invalid request arguments	وسائط الطلب غير صالحة
+R1656	Uncaught Exception	استثناء غير معالج
+R1657	Incomplete login details	تفاصيل تسجيل الدخول غير مكتملة
+R1658	Unknown User	مستخدم غير معروف
+R1659	Rule	قاعدة
+R1660	Based on Field	على أساس الميدان
+R1661	Load Balancing	تحميل موازنة
+R1662	Round Robin	جولة روبن
+R1663	Weighted Distribution	التوزيع الموزون
+R1664	Users	المستخدمين
+R1665	Last User	آخر مستخدم
+R1666	Close Condition	أغلق الشرط
+R1667	Assignment Days	أيام الواجب
+R1668	Current Index	المؤشر الحالي
+R1669	Assignment Rule	قاعدة الاحالة
+R1670	System Manager	مدير النظام
+R1671	Assignment Rules	قواعد الاحالة
+R1672	Assign Condition	تعيين الشرط
+R1673	Unassign Condition	إلغاء تعيين الشرط
+R1674	Assign To Users	تخصيص للمستخدمين
+R1675	via Assignment Rule	عبر قاعدة التنازل
+R1676	ToDo	قائمة المهام
+R1677	Monday	يوم الاثنين
+R1678	Tuesday	الثلاثاء
+R1679	Wednesday	الأربعاء
+R1680	Thursday	الخميس
+R1681	Friday	الجمعة
+R1682	Saturday	السبت
+R1683	Sunday	الأحد
+R1684	Assignment Rule Day	يوم قاعدة الواجب
+R1685	Weight	وزن
+R1686	Assignment Rule User	قاعدة مستخدم الاحالة
+R1687	Message not setup	رسالة لا الإعداد
+R1688	Auto Repeat Schedule	جدولة التكرار التلقائي
+R1689	View {0}	عرض {0}
+R1690	Repeat on Day	كرر يوم
+R1691	Next Schedule Date	تاريخ الجدول التالي
+R1692	Notify by Email	الإخطار عن طريق البريد الإلكتروني
+R1693	Recipients	المستلمين
+R1694	Get Contacts	الحصول على اتصالات
+R1695	Template	قالب
+R1696	Preview Message	عرض الرسالة
+R1697	Repeat on Days	كرر ذلك في الأيام
+R1698	Submit on Creation	تقديم طلب إنشاء
+R1699	Assignee	المُحال إليه
+R1700	Accounts Manager	مدير حسابات
+R1701	Accounts User	حسابات المستخدمين
+R1702	Reference Document Type	مرجع نوع الوثيقة
+R1703	Schedule	جدول
+R1704	Fortnightly	مرة كل اسبوعين
+R1705	'Recipients' not specified	لم يتم تحديد &quot;المستلمين&quot;
+R1706	via Auto Repeat	عبر خاصية التكرار التلقائي
+R1707	New {0}: {1}	جديد {0}: {1}
+R1708	Auto Repeat Day	يوم التكرار التلقائي
+R1709	Auto Repeat User	مستخدم التكرار التلقائي
+R1710	Action Type	نوع العمل
+R1711	Target	الهدف
+R1712	Parameters	المعلمات
+R1713	Branch	فرع
+R1714	Event Name	إسم الحدث
+R1715	Timed Out	انتهت مهلة الجلسة
+R1716	From Value	من القيمة
+R1717	To Value	إلى القيمة
+R1718	Conditions	الظروف
+R1719	Filters	فلاتر
+R1720	Manual	يدوي
+R1721	Scheduled	من المقرر
+R1722	Started At	بدأ في
+R1723	Ended At	انتهى عند
+R1724	Failed	باءت بالفشل
+R1725	Running	جري
+R1726	Reference Name	اسم الإشارة
+R1727	Timing	توقيت
+R1728	Step	خطوة
+R1729	Duration (ms)	المدة (ms)
+R1730	Exception	استثناء
+R1731	Traceback	تتبع الأخطاء
+R1732	Output	الناتج
+R1733	Pending	معلق
+R1734	Track Field	حقل المسار
+R1735	Milestone Tracker	معلما المقتفي
+R1736	Milestone	معلم
+R1737	Field to Track	حقل لتعقب
+R1738	notified	تم إخطاري
+R1739	Reminder	تذكير
+R1740	Desk User	مستخدم المكتب
+R1741	Automation	التشغيل الآلي
+R1742	Auto Email Report	ارسال التقارير عبر البريد الالكتروني الياً
+R1743	Assignees	المكلفين
+R1744	event	حدث
+R1745	Property Setter	الملكية واضعة

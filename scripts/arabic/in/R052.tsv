@@ -1,0 +1,120 @@
+R2466	short	قصير
+R2467	canceled	ألغيت
+R2468	deferred	مؤجل
+R2469	failed	باءت بالفشل
+R2470	finished	تم الانتهاء من
+R2471	queued	قائمة الانتظار
+R2472	scheduled	من المقرر
+R2473	started	بدأت
+R2474	Job Name	اسم الوظيفة
+R2475	Arguments	الحجج
+R2476	Timeout	نفذ الوقت
+R2477	Time Taken	الوقت المستغرق
+R2478	Job Info	معلومات الوظيفة
+R2479	Job Status	حالة الوظيفة
+R2480	Scheduler: Active	المجدول: نشط
+R2481	Scheduler: Inactive	المجدول: غير نشط
+R2482	Enable Scheduler	تفعيل المجدول
+R2483	Enabled Scheduler	مُجدول مُفعّل
+R2484	Remove Failed Jobs	إزالة المهام الفاشلة
+R2485	Utilization %	نسبة الاستخدام
+R2486	RQ Worker	عامل RQ
+R2487	Worker Name	اسم العامل
+R2488	Current Job ID	رقم الوظيفة الحالي
+R2489	PID	PID
+R2490	Last Heartbeat	آخر نبضة قلب
+R2491	Start Time	بداية الوقت
+R2492	Successful Job Count	عدد الوظائف الناجحة
+R2493	Failed Job Count	عدد الوظائف الفاشلة
+R2494	Total Working Time	إجمالي وقت العمل
+R2495	Queue(s)	قائمة الانتظار (قوائم الانتظار)
+R2496	Queue Type(s)	نوع (أنواع) قائمة الانتظار
+R2497	Worker Information	معلومات العامل
+R2498	Statistics	إحصائيات
+R2499	Scheduled Job	الوظيفة المجدولة
+R2500	Debug Log	سجل تصحيح الأخطاء
+R2501	Scheduled Job Log	سجل الوظائف المجدولة
+R2502	Scheduler Event	حدث المجدول
+R2503	Stopped	توقف
+R2504	Create Log	إنشاء سجل
+R2505	Last Execution	آخر تنفيذ
+R2506	Cron Format	تنسيق كرون
+R2507	Annual	سنوي
+R2508	Daily Maintenance	الصيانة اليومية
+R2509	Hourly Maintenance	الصيانة بالساعة
+R2510	Cron	كرون
+R2511	Daily Long	يوميا طويلة
+R2512	Hourly Long	كل ساعة طويلة
+R2513	Monthly Long	الشهرية الطويلة
+R2514	Weekly Long	أسبوعي طويل
+R2515	Hourly	باستمرار
+R2516	Next Execution	التنفيذ التالي
+R2517	Bad Cron Expression	تعبير كرون سيئ
+R2518	Scheduled Against	مُجدول ضد
+R2519	Defaults to `en`	القيمة الافتراضية `en`
+R2520	Preferred Language	اللغة المفضلة
+R2521	Policy	سياسة
+R2522	Security Settings	إعدادات الأمان
+R2523	Security Settings Contact	جهة اتصال إعدادات الأمان
+R2524	Security Settings Language	لغة إعدادات الأمان
+R2525	Official Documentation	الوثائق الرسمية
+R2526	Event Frequency	تكرار الحدث
+R2527	Module (for export)	وحدة (للتصدير)
+R2528	Rate Limiting	تحديد معدل الاستخدام
+R2529	Enable Rate Limit	تفعيل حد المعدل
+R2530	Request Limit	حد الطلبات
+R2531	Time Window (Seconds)	نافذة زمنية (بالثواني)
+R2532	Script Manager	مدير البرنامج النصي
+R2533	Script Type	نوع البرنامج النصي
+R2534	API	واجهة برمجة التطبيقات
+R2535	Permission Query	استعلام عن الإذن
+R2536	Workflow Task	مهمة سير العمل
+R2537	DocType Event	حدث DocType
+R2538	After Cancel	بعد الغاء
+R2539	After Delete	بعد الحذف
+R2540	After Discard	بعد التجاهل
+R2541	After Insert	بعد الإدراج
+R2542	After Rename	بعد إعادة التسمية
+R2543	After Save	بعد الحفظ
+R2544	After Submit	بعد تقديم
+R2545	Before Cancel	قبل الإلغاء
+R2546	Before Delete	قبل الحذف
+R2547	Before Discard	قبل التخلص منه
+R2548	Before Insert	قبل إدراج
+R2549	Before Print	قبل الطباعة
+R2550	Before Rename	قبل إعادة التسمية
+R2551	Before Save	قبل الحفظ
+R2552	Before Submit	قبل إرسال
+R2553	Before Validate	قبل التحقق
+R2554	On Payment Authorization	عند تفويض الدفع
+R2555	On Payment Failed	في حالة فشل الدفع
+R2556	On Payment Paid	بعد سداد المبلغ
+R2557	API Method	طريقة API
+R2558	Allow Guest	اسمح للضيف
+R2559	Compilation warning	تحذير بشأن التجميع
+R2560	Session Default	الجلسة الافتراضية
+R2561	Session Default Settings	إعدادات الجلسة الافتراضية
+R2562	Default {0}	الافتراضي {0}
+R2563	Sender Name	اسم المرسل
+R2564	Sent On	تم الإرسال
+R2565	Requested Numbers	الأرقام المطلوبة
+R2566	Sent To	أُرسل إلى
+R2567	SMS Log	سجل الرسائل النصية القصيرة
+R2568	Parameter	المعلمة
+R2569	SMS Parameter	SMS متغيرات
+R2570	Eg. smsgateway.com/api/send_sms.cgi	على سبيل المثال، smsgateway.com / API / send_sms.cgi
+R2571	SMS Gateway URL	SMS بوابة URL
+R2572	Message Parameter	معامل الرسالة
+R2573	Receiver Parameter	معامل المستقبل
+R2574	Static Parameters	ثابت معلمات
+R2575	Use POST	استخدم POST
+R2576	Allowed Roles	الأدوار المسموح بها
+R2577	SMS Settings	SMS إعدادات
+R2578	SMS sent successfully	تم إرسال الرسالة النصية القصيرة بنجاح
+R2579	Unlock Reference Document	فتح مستند مرجعي
+R2580	Job Id	معرف الوظيفة
+R2581	Reference Docname	إشارة DocName
+R2582	Finished	تم الانتهاء من
+R2583	Enqueued By	تمت إضافته إلى قائمة الانتظار بواسطة
+R2584	Created At	تم الإنشاء في
+R2585	Submission Queue	قائمة الانتظار للإرسال

@@ -1,0 +1,120 @@
+R8880	Process Owner	صاحب العملية
+R8881	Corrective Action	اجراء تصحيحي
+R8882	Preventive Action	إجراءات وقائية
+R8883	Non Conformance	غير مطابقة
+R8884	Quality Action	جودة العمل
+R8885	Corrective/Preventive	التصحيحية / الوقائية
+R8886	Corrective	تصحيحي
+R8887	Preventive	وقائي
+R8888	Resolution	قرار
+R8889	Resolutions	قرارات
+R8890	Review	إعادة النظر
+R8891	Responsible	مسؤول
+R8892	Completion By	اكتمال بواسطة
+R8893	Quality Action Resolution	قرار جودة العمل
+R8894	Feedback By	ردود الفعل من
+R8895	Quality Feedback	ردود فعل الجودة
+R8896	Quality Feedback Parameter	نوعية ردود الفعل المعلمة
+R8897	Records	تسجيل
+R8898	Quality Feedback Template	قالب ملاحظات الجودة
+R8899	Monitoring Frequency	مراقبة التردد
+R8900	Weekday	يوم من أيام الأسبوع
+R8901	Objectives	الأهداف
+R8902	Quality Goal	هدف الجودة
+R8903	Objective	موضوعي
+R8904	Quality Goal Objective	هدف جودة الهدف
+R8905	Minutes	الدقائق
+R8906	Agenda	جدول أعمال
+R8907	Quality Meeting	اجتماع الجودة
+R8908	Quality Meeting Agenda	جدول أعمال اجتماع الجودة
+R8909	Quality Review	مراجعة جودة
+R8910	Quality Meeting Minutes	محضر اجتماع الجودة
+R8911	Reviews	التعليقات
+R8912	Goals	الأهداف
+R8913	Parent Procedure	الإجراء الرئيسي
+R8914	Left Index	الفهرس الأيسر
+R8915	Right Index	الفهرس الأيمن
+R8916	Processes	العمليات
+R8917	Quality Procedure	إجراءات الجودة
+R8918	Invalid Child Procedure	إجراء الطفل غير صالح
+R8919	New Quality Procedure	إجراءات الجودة الجديدة
+R8920	Process Description	وصف العملية
+R8921	Sub Procedure	الإجراء الفرعي
+R8922	Quality Procedure Process	عملية إجراءات الجودة
+R8923	Passed	تم الاجتياز بنجاح
+R8924	No Action	لا رد فعل
+R8925	Action Initialised	العمل مهيأ
+R8926	Quality Review Objective	هدف مراجعة الجودة
+R8927	Plan maintenance visits	خطط لزيارات الصيانة
+R8928	Create Maintenance Schedule	إنشاء جدول الصيانة
+R8929	Log a problem	سجّل مشكلة
+R8930	Create Non Conformance	إنشاء غير مطابقة
+R8931	Create Quality Goal	إنشاء هدف الجودة
+R8932	Create Quality Inspection	إنشاء فحص الجودة
+R8933	Create Quality Procedure	إنشاء إجراء الجودة
+R8934	Create Quality Review	إنشاء مراجعة جودة
+R8935	Meetings & Feedback	الاجتماعات والملاحظات
+R8936	Feedback Template	قالب الملاحظات
+R8937	Open Quality Reviews	مراجعات جودة مفتوحة
+R8938	Quality Reports	تقارير الجودة
+R8939	Quality Inspections	عمليات فحص الجودة
+R8940	Open Quality Actions	جودة العمل المفتوحة
+R8941	Open Non Conformances	حالات عدم المطابقة المفتوحة
+R8942	Import Supplier Invoice	استيراد فاتورة المورد
+R8943	Tax Account	حساب الضرائب
+R8944	Zip File	ملف مضغوط
+R8945	Import Invoices	استيراد الفواتير
+R8946	Invoice Series	سلسلة الفاتورة
+R8947	ACC-PINV-.YYYY.-	ACC-PINV-.YYYY.-
+R8948	Upload XML Invoices	تحميل فواتير XML
+R8949	Processing XML Files	معالجة ملفات XML
+R8950	XML Files Processed	ملفات XML المعالجة
+R8951	Certificate No	شهادة رقم
+R8952	Deductee Details	تفاصيل الخصم
+R8953	PAN No	PAN لا
+R8954	Validity Details	تفاصيل الصلاحية
+R8955	Certificate Limit	حد الشهادة
+R8956	Certificate Details	تفاصيل الشهادة
+R8957	VAT Accounts	حسابات ضريبة القيمة المضافة
+R8958	UAE VAT Account	حساب ضريبة القيمة المضافة في الإمارات العربية المتحدة
+R8959	UAE VAT Accounts	حسابات ضريبة القيمة المضافة في الإمارات العربية المتحدة
+R8960	UAE VAT Settings	إعدادات ضريبة القيمة المضافة في الإمارات العربية المتحدة
+R8961	E-Invoicing Information Missing	الفواتير الإلكترونية معلومات مفقودة
+R8962	Export E-Invoices	تصدير الفواتير الإلكترونية
+R8963	Total Payments	مجموع المدفوعات
+R8964	1{0}	1{0}
+R8965	Standard Rated Expenses	المصاريف الخاضعة للضريبة القياسية
+R8966	Legend	أسطورة
+R8967	Amount (AED)	المبلغ (بالدرهم الإماراتي)
+R8968	VAT Amount (AED)	مبلغ ضريبة القيمة المضافة (بالدرهم الإماراتي)
+R8969	Zero Rated	معدل صفري
+R8970	Exempt Supplies	اللوازم المعفاة
+R8971	Purchases	المشتريات
+R8972	Service Item UOM	وحدة قياس عنصر الخدمة
+R8973	Finished Good UOM	وحدة قياس جيدة منتهية
+R8974	Finished Good BOM	تم الانتهاء من المنتج بنجاح.
+R8975	Service Item	بند الخدمة
+R8976	Service Item Qty	كمية عنصر الخدمة
+R8977	Material from Customer	مواد من العميل
+R8978	Finished Goods Return	إرجاع المنتجات النهائية
+R8979	Service Items	بنود الخدمة
+R8980	Raw Materials Required	المواد الخام المطلوبة
+R8981	Produced	Produced
+R8982	% Produced	% تم إنتاجه
+R8983	Set Delivery Warehouse	مستودع توصيل المجموعات
+R8984	Customer Warehouse	مستودع العملاء
+R8985	Secondary Items Generated	تم إنشاء الأصناف الثانوية
+R8986	Customer Currency	عملة العميل
+R8987	Subcontracting Sales Order	أمر بيع تعاقد من الباطن
+R8988	Subcontracting Conversion Factor	معامل تحويل التعاقد من الباطن
+R8989	Delivery Warehouse	مستودع تسليم
+R8990	Subcontracting Order Item	بند طلب التعاقد من الباطن
+R8991	Job Worker	عامل مؤقت
+R8992	Job Worker Name	اسم العامل
+R8993	Job Worker Warehouse	مستودع عامل التوظيف
+R8994	Job Worker Address	عنوان العامل
+R8995	Job Worker Contact	جهة اتصال العامل
+R8996	Partial Material Transferred	تم نقل جزء من المواد
+R8997	Job Worker Currency	عملة العامل المستقل
+R8998	Subcontracting Purchase Order	أمر شراء تعاقد من الباطن
+R8999	Warehouse Details	تفاصيل المستودع

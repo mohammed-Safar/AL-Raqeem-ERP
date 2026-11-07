@@ -1,0 +1,120 @@
+R3066	View Docs	عرض المستندات
+R3067	View Report	عرض التقرير
+R3068	Show Form Tour	إظهار جولة في النموذج
+R3069	Video URL	رابط الفيديو
+R3070	Onboarding Step Map	خريطة خطوة Onboarding
+R3071	Items	الاصناف
+R3072	Keep Closed	أبقِهِ مغلقاً
+R3073	Tab	فاتورة غير مدفوعة
+R3074	Filter Area	منطقة التصفية
+R3075	Child Item	عنصر الطفل
+R3076	Sidebar Item Group	مجموعة عناصر الشريط الجانبي
+R3077	Execute Console script	تنفيذ البرنامج النصي لوحدة التحكم
+R3078	Execute	نفذ - اعدم
+R3079	Executing...	جارٍ التنفيذ...
+R3080	Console	وحدة التحكم
+R3081	Commit	ارتكب
+R3082	Database Processes	عمليات قاعدة البيانات
+R3083	Show Processlist	عرض قائمة العمليات
+R3084	processlist	قائمة العمليات
+R3085	SQL	SQL
+R3086	Python	بايثون
+R3087	SQL Output	مخرجات SQL
+R3088	Queue Status	حالة قائمة الانتظار
+R3089	SocketIO Ping Check	فحص اتصال SocketIO
+R3090	Fail	يفشل
+R3091	Pass	يمر
+R3092	SocketIO Transport Mode	وضع نقل SocketIO
+R3093	Polling	استطلاعات الرأي
+R3094	Websocket	Websocket
+R3095	Failed Emails	رسائل البريد الإلكتروني الفاشلة
+R3096	Total Outgoing Emails	إجمالي رسائل البريد الإلكتروني الصادرة
+R3097	Pending Emails	رسائل البريد الإلكتروني المعلقة
+R3098	Unhandled Emails	رسائل البريد الإلكتروني غير المعالجة
+R3099	Handled Emails	معالجة رسائل البريد الإلكتروني
+R3100	Errors	أخطاء
+R3101	Top Errors	أبرز الأخطاء
+R3102	Database	قاعدة البيانات
+R3103	Storage Usage (MB)	استخدام مساحة التخزين (ميغابايت)
+R3104	Database Version	إصدار قاعدة البيانات
+R3105	MariaDB Variables	متغيرات MariaDB
+R3106	Bufferpool Size	حجم المخزن المؤقت
+R3107	Binary Logging	التسجيل الثنائي
+R3108	Number of keys	عدد المفاتيح
+R3109	Memory Usage	استخدام الذاكرة
+R3110	Backups (MB)	النسخ الاحتياطية (ميغابايت)
+R3111	Private Files (MB)	الملفات الخاصة (ميغابايت)
+R3112	Public Files (MB)	الملفات العامة (ميغابايت)
+R3113	Total Users	إجمالي المستخدمين
+R3114	Emails	رسائل البريد الإلكتروني
+R3115	Cache	مخبأ
+R3116	File Storage	تخزين الملفات
+R3117	Realtime (SocketIO)	الوقت الحقيقي (SocketIO)
+R3118	Background Jobs Check	التحقق من خلفية الوظائف
+R3119	Test Job ID	معرّف مهمة الاختبار
+R3120	Scheduler	جدولة
+R3121	Oldest Unscheduled Job	أقدم وظيفة غير مجدولة
+R3122	System Health Report	تقرير صحة النظام
+R3123	Total Background Workers	عمال الخلفية الكاملة
+R3124	Scheduler Status	حالة جدولة المهام
+R3125	Failure Rate	معدل الفشل
+R3126	Pending Jobs	الوظائف المعلقة
+R3127	Size (MB)	الحجم (ميغابايت)
+R3128	Queues	الطوابير
+R3129	Utilization	الاستخدام
+R3130	Failed Jobs	الوظائف الفاشلة
+R3131	Document Title	عنوان المستند
+R3132	Document Tag	علامة المستند
+R3133	Tag Link	علامة الارتباط
+R3134	Assigned By	تعيين بواسطة
+R3135	Allocated To	المخصصة ل
+R3136	Due Date	بسبب تاريخ
+R3137	Task	مهمة
+R3138	Open	فتح
+R3139	To Do	قائمة المهام
+R3140	Go to Workspace	انتقل إلى مساحة العمل
+R3141	Link Cards	بطاقات الارتباط
+R3142	Parent Page	الصفحة الرئيسية
+R3143	Sequence Id	معرف التسلسل
+R3144	Quick Lists	قوائم سريعة
+R3145	Is Hidden	مخفي تمامًا
+R3146	Custom Blocks	كتل مخصصة
+R3147	Dashboards	لوحات
+R3148	Restrict to Domain	تقييد النطاق
+R3149	Workspace Chart	مخطط مساحة العمل
+R3150	Custom Block Name	اسم الكتلة المخصصة
+R3151	Workspace Custom Block	كتلة مخصصة لمساحة العمل
+R3152	Link Count	عدد الروابط
+R3153	Report Ref DocType	رقم التقرير نوع المستند
+R3154	Workspace Link	رابط مساحة العمل
+R3155	Card Break	كسر الورق
+R3156	Link Details	تفاصيل الرابط
+R3157	Number Card Name	رقم البطاقة اسم البطاقة
+R3158	Workspace Number Card	بطاقة رقم مساحة العمل
+R3159	Quick List Filter	تصفية القائمة السريعة
+R3160	Workspace Quick List	قائمة سريعة لمساحة العمل
+R3161	Workspace Shortcut	اختصار مساحة العمل
+R3162	Workspace Sidebar Item	عنصر الشريط الجانبي لمساحة العمل
+R3163	{0} liked	{0} أعجبني
+R3164	Missing Permission	إذن مفقود
+R3165	Document Follow Notification	وثيقة متابعة الإخطار
+R3166	Administrator can't follow	لا يستطيع المسؤول المتابعة
+R3167	Following document {0}	المستند التالي {0}
+R3168	Un-following document {0}	إلغاء متابعة المستند {0}
+R3169	Cancelling documents	إلغاء الوثائق
+R3170	Missing DocType	نوع المستند مفقود
+R3171	Discarded	تم التخلص منه
+R3172	No further records	لا توجد سجلات أخرى
+R3173	Liked	أحب
+R3174	Download Files Backup	تحميل الملفات النسخ الاحتياطي
+R3175	Backup Encryption Key	مفتاح تشفير النسخ الاحتياطي
+R3176	Download Backups	تحميل النسخ الاحتياطية
+R3177	Toggle Awesomebar	تبديل شريط البحث
+R3178	Male	ذكر
+R3179	Female	أنثى
+R3180	Transgender	متحوّل جنسيًا
+R3181	Genderqueer	جندر كوير
+R3182	Non-Conforming	غير مطابق
+R3183	Mr	السيد
+R3184	Ms	السيدة
+R3185	Mx	Mx

@@ -1,0 +1,120 @@
+R5799	Supplied Qty	الموردة الكمية
+R5800	Consumed Qty	تستهلك الكمية
+R5801	Total Supplied Qty	إجمالي الكمية الموردة
+R5802	Required Qty	مطلوب الكمية
+R5803	BOM Detail No	رقم تفاصيل فاتورة الموارد
+R5804	Current Stock	المخزون الحالية
+R5805	Supplier Quotation Comparison	مقارنة عروض أسعار الموردين
+R5806	Create Supplier Quotation	إنشاء اقتباس مورد
+R5807	Preview Email	معاينة البريد الإلكتروني
+R5808	Possible Supplier	مورد محتمل
+R5809	Select Possible Supplier	اختار المورد المحتمل
+R5810	Get Suppliers	الحصول على الموردين
+R5811	Get Suppliers By	الحصول على الموردين من قبل
+R5812	Suppliers	الموردين
+R5813	Email Details	تفاصيل البريد الإلكتروني
+R5814	Message for Supplier	رسالة لمزود
+R5815	Required Date	تاريخ المطلوبة
+R5816	Send Attached Files	إرسال الملفات المرفقة
+R5817	Send Document Print	إرسال نسخة مطبوعة من المستند
+R5818	Company Shipping Address	عنوان شحن الشركة
+R5819	For individual supplier	عن مورد فردي
+R5820	Submit your Quotation	أرسل عرض الأسعار الخاص بك
+R5821	Quantity & Stock	الكمية والمخزون
+R5822	Warehouse and Reference	مستودع والمراجع
+R5823	Send Email	إرسال بريد الإلكتروني
+R5824	Quote Status	حالة المناقصة
+R5825	Link with Customer	التواصل مع العميل
+R5826	Select a Customer	اختر عميلاً
+R5827	Linking Failed	فشل الربط
+R5828	Create Link	إنشاء رابط
+R5829	Alias	اسم مستعار
+R5830	Is Transporter	هو الناقل
+R5831	Supplier Type	المورد نوع
+R5832	Partnership	شراكة
+R5833	Individual	فرد
+R5834	Warn RFQs	تحذير رفق
+R5835	Warn POs	تحذير نقاط الشراء
+R5836	Prevent RFQs	منع رفق
+R5837	Prevent POs	منع نقاط الشراء
+R5838	Billing Currency	الفواتير العملات
+R5839	Block Supplier	كتلة المورد
+R5840	Hold Type	نوع التعليق
+R5841	Per-Company Accounts	الحسابات لكل شركة
+R5842	Supplier Details	تفاصيل المورد
+R5843	Is Frozen	مجمدة
+R5844	Primary Contact	جهة الاتصال الرئيسية
+R5845	Primary Address Preview	معاينة العنوان الأساسي
+R5846	Primary Address	عنوان أساسي
+R5847	Internal Supplier Details	تفاصيل المورد الداخلي
+R5848	Default Accounts	الحسابات الافتراضية
+R5849	Portal Users	مستخدمو البوابة
+R5850	Supplier Portal Users	مستخدمو بوابة الموردين
+R5851	Customer Numbers	أرقام العملاء
+R5852	Tax Identification	تعريف الضريبة
+R5853	Allowed Items	الأصناف المسموح بها
+R5854	Series is mandatory	الترقيم المتسلسل إلزامي
+R5855	Invalid type	نوع غير صالح
+R5856	Procurement	الشراء
+R5857	Orders	أوامر
+R5858	Terms Template	نموذج الشروط
+R5859	Quotation Number	رقم عرض الأسعار
+R5860	Ordered	تم طلبه
+R5861	Lost	مفقود
+R5862	Load All Criteria	تحميل جميع المعايير
+R5863	Scoring Criteria	معايير التسجيل
+R5864	Scorecard Actions	إجراءات بطاقة الأداء
+R5865	Notify Supplier	إعلام المورد
+R5866	Notify Employee	إعلام الموظف
+R5867	Supplier Scorecard	بطاقة أداء المورد
+R5868	Supplier Score	المورد نقاط
+R5869	Evaluation Period	فترة التقييم
+R5870	Per Month	كل شهر
+R5871	Per Week	في الاسبوع
+R5872	Per Year	كل سنة
+R5873	Scoring Setup	سجل الإعداد
+R5874	Weighting Function	وظيفة الترجيح
+R5875	Scoring Standings	ترتيب الترتيب
+R5876	Criteria Setup	إعداد المعايير
+R5877	Scorecards	بطاقات الأداء
+R5878	Criteria Name	اسم المعايير
+R5879	Max Score	أقصى درجة
+R5880	Criteria Formula	معايير الصيغة
+R5881	Criteria Weight	معايير الوزن
+R5882	Supplier Scorecard Criteria	معايير بطاقة تقييم الموردين
+R5883	Supplier Scorecard Period	المورد بطاقة الأداء
+R5884	Period Score	فترة النتيجة
+R5885	Calculations	العمليات الحسابية
+R5886	Criteria	المعايير
+R5887	Variables	المتغيرات
+R5888	Supplier Scorecard Setup	إعداد بطاقة الأداء المورد
+R5889	Score	أحرز هدفاً
+R5890	Employee 	موظف
+R5891	Standing Name	اسم الدائمة
+R5892	Min Grade	دقيقة الصف
+R5893	Max Grade	ماكس الصف
+R5894	Warn Purchase Orders	تحذير أوامر الشراء
+R5895	Prevent Purchase Orders	منع أوامر الشراء
+R5896	Variable Name	اسم المتغير
+R5897	Parameter Name	اسم المعلمة
+R5898	Supplier Scorecard Standing	المورد بطاقة الأداء الدائمة
+R5899	Notify Other	إعلام الآخرين
+R5900	Supplier Scorecard Variable	مورد بطاقة الأداء المتغير
+R5901	Enter their bill	أدخل فاتورتهم
+R5902	Create Purchase Order	إنشاء أمر الشراء
+R5903	Add a supplier	إضافة مورد
+R5904	Add Supplier	إضافة المورد
+R5905	Pay your supplier	ادفع لمورّدك
+R5906	Open Accounts Payable	فتح الحسابات الدائنة
+R5907	Track your orders	تتبع طلباتك
+R5908	Item-wise Purchase History	الحركة التاريخية للمشتريات وفقاً للصنف
+R5909	Total Purchase Amount	إجمالي مبلغ الشراء
+R5910	Procurement Tracker	المقتفي المشتريات
+R5911	Actual Cost	التكلفة الفعلية
+R5912	Purchase Order Amount	مبلغ أمر الشراء
+R5913	Actual Delivery Date	تاريخ التسليم الفعلي
+R5914	Material Request Date	تاريخ طلب المادة
+R5915	Material Request No	طلب مواد لا
+R5916	Requesting Site	طلب موقع
+R5917	Requestor	الطالب
+R5918	Unit of Measure	وحدة القياس

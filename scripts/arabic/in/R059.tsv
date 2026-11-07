@@ -1,0 +1,120 @@
+R3306	SUCCESS,FAILURE	نجاح,فشل
+R3307	SUCCESS,FAILURE,DELAY	نجاح,فشل,تأخير
+R3308	{0} is mandatory	{0} إلزامي
+R3309	Defaults Updated	تم تحديث الإعدادات الافتراضية
+R3310	{0} is required	{0} مطلوب
+R3311	Email Account Disabled.	تم تعطيل حساب البريد الإلكتروني.
+R3312	Re:	يكرر:
+R3313	Default Inbox	علبة الوارد الافتراضية
+R3314	Default Sending	إرسال الافتراضي
+R3315	Email Domain	المجال البريد الإلكتروني
+R3316	Domain Name	اسم النطاق
+R3317	Incoming Settings	إعدادات الاستقبال
+R3318	Outgoing Settings	إعدادات الاتصال الصادر
+R3319	Is Completed	قد اكتمل
+R3320	Unread	غير مقروء
+R3321	Email Flag Queue	البريد الإلكتروني العلم قائمة الانتظار
+R3322	Import Email From	استيراد البريد الإلكتروني من
+R3323	Add Subscribers	إضافة المشتركين
+R3324	Email Addresses	عناوين البريد الإلكتروني
+R3325	Import Subscribers	المشتركون استيراد
+R3326	Preview:	معاينة:
+R3327	Total Subscribers	إجمالي عدد المشتركين
+R3328	Confirmation Email Template	نموذج البريد الإلكتروني للتأكيد
+R3329	Welcome URL	رابط الترحيب
+R3330	Add Query Parameters	إضافة معلمات الاستعلام
+R3331	Members	أعضاء
+R3332	Email Group	البريد الإلكتروني المجموعة
+R3333	Newsletter Manager	مدير النشرة الإخبارية
+R3334	Invalid Doctype	نوع المستند غير صالح
+R3335	{0} subscribers added	{0}  مشتركين تم اضافتهم
+R3336	Email Group Member	أرسل عضو المجموعة
+R3337	Retry Sending	إعادة محاولة الإرسال
+R3338	Add Unsubscribe Link	إضافة رابط إلغاء الاشتراك
+R3339	Unsubscribe Method	طريقة إلغاء الاشتراك
+R3340	Expose Recipients	كشف المستلمين
+R3341	Unsubscribe Params	إلغاء الاشتراك في المعلمات
+R3342	Email Queue	قائمة إنتظار البريد الإلكتروني
+R3343	Recipient	مستلم
+R3344	Show as cc	كما تظهر سم مكعب
+R3345	Email Queue records.	سجلات قائمة انتظار البريد الإلكتروني.
+R3346	Partially Sent	تم إرسال جزء منه
+R3347	Not Sent	لا ترسل
+R3348	Reference DocName	مرجع DocName
+R3349	Resume Sending	استئناف إرسال
+R3350	Suspend Sending	تعليق إرسال
+R3351	Processing...	معالجة...
+R3352	Email Queue Recipient	البريد الإلكتروني المستلم قائمة الانتظار
+R3353	Is Spam	هو المزعج
+R3354	Email Rule	البريد الإلكتروني القاعدة
+R3355	Response	الإستجابة
+R3356	Email Reply Help	البريد الالكتروني رد مساعدة
+R3357	Use HTML	استخدم لغة HTML
+R3358	Global Unsubscribe	إلغاء الاشتراك العالمية
+R3359	Email Unsubscribe	البريد الإلكتروني إلغاء الاشتراك
+R3360	{0} already unsubscribed	{0} غير مشترك أصلاً
+R3361	Left this conversation	تركت هذه المحادثة
+R3362	Folder Name	اسم المجلد
+R3363	Last Modified Date	تاريخ آخر تعديل
+R3364	Send Alert On	إرسال تنبيه في
+R3365	Days After	أيام بعد
+R3366	Days Before	أيام قبل
+R3367	Minutes After	بعد دقائق
+R3368	Minutes Before	قبل دقائق
+R3369	Value Change	قيمة التغير
+R3370	Trigger Method	الطريقة الزناد
+R3371	Reference Date	المرجع تاريخ
+R3372	Value Changed	تم تغير القيمة
+R3373	Sender Email	البريد الإلكتروني المرسل
+R3374	Message Examples	أمثلة رسالة
+R3375	Attachment Settings	إعدادات المرفقات
+R3376	Attach Print	إرفق طباعة
+R3377	Send System Notification	إرسال إشعار النظام
+R3378	Message Type	نوع الرسالة
+R3379	Plain Text	نص عادي
+R3380	Markdown	مصغر
+R3381	Reference Datetime	التاريخ والوقت المرجعيان
+R3382	Minutes Offset	فرق الدقائق
+R3383	Last Run	الجولة الأخيرة
+R3384	Condition Type	نوع الحالة
+R3385	Filters Editor	محرر الفلاتر
+R3386	Attach Files	إرفاق الملفات
+R3387	From Field	من الميدان
+R3388	From Attach Field	من حقل الإرفاق
+R3389	Slack	تثاقل
+R3390	System Notification	إعلام النظام
+R3391	Slack Channel	قناة سلاك
+R3392	No subject	لا يوجد موضوع
+R3393	via Notification	عبر الإخطار
+R3394	Error in Notification	خطأ في الإخطار
+R3395	Expression, Optional	التعبير والاختياري
+R3396	Receiver By Role	المتلقي حسب الدور
+R3397	Notification Recipient	مستلم الإعلام
+R3398	Reply To Address	عنوان الرد
+R3399	Reason	سبب
+R3400	Message-id	معرف الرسالة
+R3401	Raw Email	البريد الإلكتروني الخام
+R3402	Unhandled Email	البريد الإلكتروني غير معالج
+R3403	Error {0}: {1}	خطأ {0}: {1}
+R3404	OAuth Error	خطأ في OAuth
+R3405	Emails are muted	رسائل البريد الإلكتروني هي صامتة
+R3406	Unsubscribe	إلغاء الاشتراك
+R3407	Incorrect Configuration	التكوين غير الصحيح
+R3408	Invalid Credentials	بيانات الاعتماد غير صالحة
+R3409	Country Name	اسم الدولة
+R3410	Time format	تنسيق الوقت
+R3411	Time Zones	من المناطق الزمنية
+R3412	Currency Name	اسم العملة
+R3413	Fraction	جزء
+R3414	Fraction Units	جزء الوحدات
+R3415	Symbol	رمز
+R3416	Logged Out	تسجيل الخروج
+R3417	System Health	صحة النظام
+R3418	Connect to {}	اتصل بـ {}
+R3419	Get OpenID Configuration	الحصول على إعدادات OpenID
+R3420	Authorization URI	معرّف الموارد الموحد للتفويض
+R3421	Token URI	رمز URI
+R3422	Revocation URI	معرّف الموارد الموحد للإلغاء
+R3423	Userinfo URI	عنوان URI لمعلومات المستخدم
+R3424	Introspection URI	معرّف الموارد الموحد للاستبطان
+R3425	Extra Parameters	معلمات إضافية

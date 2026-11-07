@@ -1,0 +1,120 @@
+R2106	Allow Rename	السماح بإعادة التسمية
+R2107	Allow Auto Repeat	السماح للتكرار التلقائي
+R2108	View Settings	عرض إعدادات
+R2109	Search Fields	البحث الحقول
+R2110	Default Print Format	طباعة شكل الافتراضي
+R2111	Default Sort Field	حقل التصنيف الافتراضي
+R2112	Default Sort Order	ترتيب الافتراضي
+R2113	ASC	تصاعدي
+R2114	DESC	تنازلي
+R2115	Setup	الإعدادات
+R2116	System	نظام
+R2117	Show Preview Popup	إظهار معاينة المنبثقة
+R2118	Restrict To Domain	تقييد على المجال
+R2119	User Cannot Search	المستخدم لا يستطيع أن يبحث
+R2120	User Cannot Create	المستخدم لا يستطيع أن ينشئ
+R2121	Web View	عرض ويب
+R2122	Has Web View	لديه عرض الويب
+R2123	Route	مسار
+R2124	Is Published Field	ونشرت الميدان
+R2125	Advanced	متقدم
+R2126	Database Engine	محرك قاعدة البيانات
+R2127	InnoDB	إنود بي
+R2128	MyISAM	MYISAM
+R2129	Is Tree	هي شجرة
+R2130	Parent Field (Tree)	حقل الأصل (شجرة)
+R2131	Documentation Link	رابط التوثيق
+R2132	Document Actions	وثيقة الإجراءات
+R2133	Document Links	روابط الوثيقة
+R2134	Subject Field	حقل الموضوع
+R2135	Sender Email Field	حقل البريد الإلكتروني للمرسل
+R2136	Email Settings	إعدادات البريد الإلكتروني
+R2137	Is Virtual	هو افتراضي
+R2138	Default Email Template	قالب البريد الإلكتروني الافتراضي
+R2139	Website Search Field	حقل البحث في الموقع الإلكتروني
+R2140	Naming Rule	قاعدة التسمية
+R2141	Autoincrement	الزيادة التلقائية
+R2142	UUID	UUID
+R2143	By fieldname	حسب اسم الحقل
+R2144	By script	حسب النص
+R2145	Expression (old style)	التعبير (النمط القديم)
+R2146	Random	عشوائي
+R2147	Set by user	يتم تعيينه بواسطة المستخدم
+R2148	Expression	تعبير
+R2149	Document States	الولايات ثيقة
+R2150	States	الحالات
+R2151	Translate Link Fields	ترجمة حقول الروابط
+R2152	Default View	العرض الافتراضي
+R2153	Form	استمارة
+R2154	Form Builder	منشئ النماذج
+R2155	Sender Name Field	حقل اسم المرسل
+R2156	Row Format	تنسيق الصف
+R2157	Compressed	مضغوط
+R2158	Dynamic	متحرك
+R2159	Grid Page Length	طول صفحة الشبكة
+R2160	Protect Attached Files	حماية الملفات المرفقة
+R2161	Recipient Account Field	حقل حساب المستلم
+R2162	Rules	القواعد
+R2163	Field Missing	الحقل مفقود
+R2164	Parent Missing	أحد الوالدين مفقود
+R2165	Table Fieldname Missing	اسم حقل الجدول مفقود
+R2166	Invalid Table Fieldname	اسم حقل الجدول غير صالح
+R2167	Invalid Fieldname	اسم حقل غير صالح
+R2168	Missing Field	حقل مفقود
+R2169	Invalid {0} condition	حالة {0} غير صالحة
+R2170	Recursive Fetch From	جلب متكرر من
+R2171	Invalid Option	خيار غير صالح
+R2172	No Permissions Specified	لا الأذونات المحددة
+R2173	Permissions Error	خطأ في الأذونات
+R2174	Insufficient attachment limit	حد المرفقات غير كافٍ
+R2175	Create New DocType	إنشاء نوع مستند جديد
+R2176	Create & Continue	إنشاء ومتابعة
+R2177	Server Action	عمل الخادم
+R2178	Action / Route	العمل / الطريق
+R2179	DocType Action	عمل DocType
+R2180	Link Fieldname	اسم الحقل الرابط
+R2181	Parent DocType	نوع المستند الأصلي
+R2182	Table Fieldname	اسم حقل الجدول
+R2183	DocType Link	رابط نوع الوثيقة
+R2184	Is Standard	هو معيار
+R2185	Is Active	نشط
+R2186	Blue	أزرق
+R2187	Cyan	سماوي
+R2188	Gray	رمادي
+R2189	Green	أخضر
+R2190	Light Blue	أزرق فاتح
+R2191	Orange	البرتقالي
+R2192	Pink	لون القرنفل
+R2193	Purple	أرجواني
+R2194	Red	أحمر
+R2195	Yellow	أصفر
+R2196	DocType State	حالة نوع المستند
+R2197	Are you sure?	هل أنت واثق؟
+R2198	Proceed	يتابع
+R2199	Example: 00001	مثال: 00001
+R2200	Digits	أرقام
+R2201	Rule Conditions	شروط القاعدة
+R2202	Document Naming Rule	قاعدة تسمية الوثيقة
+R2203	!=	!=
+R2204	<	<
+R2205	<=	≤
+R2206	=	=
+R2207	>	>
+R2208	>=	≥
+R2209	Amended Documents	الوثائق المعدلة
+R2210	Default Amendment Naming	تسمية التعديل الافتراضي
+R2211	Amendment Naming Override	تجاوز تسمية التعديل
+R2212	Update Amendment Naming	تحديث تسمية التعديل
+R2213	Document Naming Settings	إعدادات تسمية المستندات
+R2214	Help HTML	مساعدة HTML
+R2215	Update Series Counter	تحديث عداد السلسلة
+R2216	Current Value	القيمة الحالية
+R2217	Update Series Number	تحديث الرقم المتسلسل
+R2218	Select Transaction	حدد المعاملات
+R2219	Reference Document Name	اسم المستند المرجعي
+R2220	Expires On	تاريخ الانتهاء
+R2221	Document Share Key	مفتاح مشاركة المستندات
+R2222	Domain	شبكة النطاق
+R2223	Workspace Manager	مدير مساحة العمل
+R2224	Active Domains	المجالات النشطة
+R2225	Domains HTML	النطاقات هتمل

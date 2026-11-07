@@ -1,0 +1,120 @@
+R0	Debit	مدين
+R1	Credit	دائن
+R2	Grand Total	المجموع الإجمالي
+R3	Voucher Type	نوع السند
+R4	Posting Date	تاريخ الترحيل
+R5	Difference	فرق
+R6	Clearance Date	تاريخ الاستحقاق
+R7	Amount	كمية
+R8	Remarks	ملاحظات
+R9	Party	الطرف المعني
+R10	Cost Center	مركز التكلفة
+R11	Party Type	نوع الطرف
+R12	Bank Reconciliation Statement	بيان تسوية حساب بنكية
+R13	Withdrawal	انسحاب
+R14	Deposit	إيداع
+R15	Mode of Payment	طريقة الدفع
+R16	Total Amount	الاعتماد الأساسي
+R17	Payment Entry	تدوينات المدفوعات
+R18	Company	شركة
+R19	Stock	المخازن
+R20	Tax Rate	معدل الضريبة
+R21	Balance Sheet	المركز المالي
+R22	Profit and Loss	الربح والخسارة
+R23	Cr	Cr
+R24	Finance Book	كتاب المالية
+R25	Journal Entry	القيود اليومية
+R26	Purchase Invoice	فاتورة شراء
+R27	Sales Invoice	فاتورة مبيعات
+R28	Voucher No	رقم السند
+R29	Accounting	المحاسبة
+R30	Customer	العميل
+R31	Supplier	المورد
+R32	Reference Number	رقم الارتباط
+R33	Allocated Amount	المبلغ المخصص
+R34	Unallocated Amount	المبلغ غير المخصصة
+R35	Half-Yearly	نصف سنوية
+R36	From Time	من وقت
+R37	To Time	إلى وقت
+R38	Outstanding Amount	المبلغ المستحق
+R39	All Accounts	جميع الحسابات
+R40	Customer Group	مجموعة العميل
+R41	Total Outstanding	إجمالي المعلقة
+R42	Filter Based On	عامل التصفية على أساس
+R43	Start Year	بداية السنة
+R44	End Year	نهاية السنة
+R45	Year Name	اسم العام
+R46	Companies	شركات
+R47	Fiscal Year	السنة المالية
+R48	Against	مقابل
+R49	Accounting Ledger	موازنة دفتر الأستاذ
+R50	Credit Note	إشعار دائن
+R51	Debit Note	إشعار مدين
+R52	Invoice Type	نوع الفاتورة
+R53	Notes	ملاحظات
+R54	Conversion Factor	معامل التحويل
+R55	Opening Invoices	فتح الفواتير
+R56	Quantity	كمية
+R57	Item Name	اسم السلعة
+R58	Paid Amount	المبلغ المدفوع
+R59	Payment Term	مصطلح الدفع
+R60	Cheque/Reference Date	تاريخ الصك / السند المرجع
+R61	Supplier Invoice No	رقم فاتورة المورد
+R62	Discount	خصم
+R63	Net Total	صافي المجموع
+R64	Total Quantity	الكمية الإجمالية
+R65	Mode of Payments	طريقة الدفع
+R66	Taxes	الضرائب
+R67	Sales Summary	ملخص المبيعات
+R68	Territory	إقليم
+R69	Source Warehouse	مصدر مستودع
+R70	Scan Barcode	مسح الباركود
+R71	Item Group	مجموعة الصنف
+R72	UOM	وحدة القياس
+R73	Rate	سعر السلعة المفردة
+R74	Batch No	رقم دفعة
+R75	Serial No	رقم المسلسل
+R76	Item Code	رمز السلعة
+R77	Supplier Group	مجموعة الموردين
+R78	Qty	الكمية
+R79	Pause	وقفة
+R80	Allocations	المخصصات
+R81	Resume	استئنف
+R82	Above 120 Days	فوق 120 يوما
+R83	STATEMENT OF ACCOUNTS	بيان الحسابات
+R84	Customer: 	العميل: 
+R85	Customer Name: 	اسم العميل: 
+R86	Remarks:	ملاحظات:
+R87	Sales Person	مندوب مبيعات
+R88	Ageing Based On	العمرعلى أساس
+R89	Future Payments	المدفوعات المستقبلية
+R90	Cheques Required	الشيكات المطلوبة
+R91	Age (Days)	(العمر (أيام
+R92	Invoiced Amount	قيمة الفواتير
+R93	Customer LPO No.	العميل لبو رقم
+R94	Future Payment Ref	الدفع في المستقبل المرجع
+R95	Future Payment Amount	مبلغ الدفع المستقبلي
+R96	Remaining Balance	الرصيد المتبقي
+R97	Total Invoiced Amount	إجمالي مبلغ الفاتورة
+R98	Total Paid Amount	إجمالي المبلغ المدفوع
+R99	Credit Note Amount	ملاحظة الائتمان المبلغ
+R100	Debit Note Amount	مبلغ إشعار المدين
+R101	Total Outstanding Amount	إجمالي المبلغ المستحق
+R102	Tax Id: {0}	رقم التعريف الضريبي: {0}
+R103	{0} until {1}	{0} حتى {1}
+R104	Printed on {0}	طُبع في {0}
+R105	Payment Terms:	شروط الدفع:
+R106	Credit Limit:	الحد الائتماني:
+R107	Amount in {0}	المبلغ في {0}
+R108	Get Items From	الحصول على البنود من
+R109	Product Bundle	حزم المنتجات
+R110	Timesheet	ساعات العمل
+R111	Quotation	عرض أسعار
+R112	Set Target Warehouse	حدد المخزن الوجهة
+R113	Activity Type	نوع النشاط
+R114	Issue	المشكلات
+R115	Contact:	اتصال:
+R116	Website:	الموقع الإلكتروني:
+R117	Email:	البريد الإلكتروني:
+R118	Fiscal Year Details	تفاصيل السنة المالية
+R119	For	لأجل

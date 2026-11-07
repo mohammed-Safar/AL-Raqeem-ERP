@@ -1,0 +1,120 @@
+R4839	Allocate Payment Amount	تخصيص مبلغ الدفع
+R4840	Type of Payment	نوع الدفع
+R4841	Payment Type	نوع الدفع
+R4842	Pay	دفع
+R4843	Internal Transfer	نقل داخلي
+R4844	Receive	تسلم
+R4845	Account Paid From	حساب مدفوع من
+R4846	Account Currency (From)	عملة الحساب (من)
+R4847	Account Paid To	حساب مدفوع ل
+R4848	Account Currency (To)	عملة الحساب (إلى)
+R4849	Source Exchange Rate	سعر صرف المصدر
+R4850	Received Amount	المبلغ الوارد
+R4851	Target Exchange Rate	سعر الصرف المستهدف
+R4852	Payment References	المراجع الدفع
+R4853	Writeoff	لا تصلح
+R4854	Total Allocated Amount	إجمالي المبلغ المخصص
+R4855	Deductions or Loss	الخصومات أو الخسارة
+R4856	Cheque/Reference No	رقم الصك / السند المرجع
+R4857	Company Bank Account	حساب بنك الشركة
+R4858	Party Bank Account	حساب بنك الحزب
+R4859	Payment Order Status	حالة طلب الدفع
+R4860	Payment Ordered	دفع أمر
+R4861	Initiated	بدأت
+R4862	Taxes and Charges	الضرائب والرسوم
+R4863	Get Outstanding Orders	استلام الطلبات المعلقة
+R4864	In Words	في كلمات
+R4865	Tax Withholding Entry	قيد اقتطاع الضريبة
+R4866	paid to	مدفوع لـ
+R4867	received from	مستلم من
+R4868	Incorrect Payment Type	نوع الدفع غير صحيح
+R4869	Invalid Allocated Amount	مبلغ مخصص غير صالح
+R4870	Party is mandatory	حقل المستفيد إلزامي\\n<br>\\nParty is mandatory
+R4871	Invalid Purchase Invoice	فاتورة شراء غير صالحة
+R4872	Payment Entry Deduction	دفع الاشتراك خصم
+R4873	Payment Term Outstanding	شروط الدفع المستحقة
+R4874	Payment Request Outstanding	طلب دفع معلق
+R4875	Reconcile Effect On	تأثير التوفيق على
+R4876	Payment Entry Reference	دفع الدخول المرجعي
+R4877	Payment Gateway	بوابة الدفع
+R4878	Payment Account	حساب الدفع
+R4879	Payment Channel	قناة الدفع
+R4880	Payment Gateway Account	دفع حساب البوابة
+R4881	Payment Ledger Entry	إدخال بيانات دفتر المدفوعات
+R4882	For Supplier	للمورد
+R4883	Get Payments from	احصل على المدفوعات من
+R4884	Create Journal Entries	إنشاء قيود اليومية
+R4885	Payment Order Reference	مرجع أمر الدفع
+R4886	Payment Order Type	نوع طلب الدفع
+R4887	{0} {1} created	{0} {1} إنشاء
+R4888	Payment Reference	إشارة دفع
+R4889	Bank Account Details	تفاصيل الحساب البنكي
+R4890	Allocate	تخصيص
+R4891	Select Difference Account	حدد حساب الفرق
+R4892	Allocation	توزيع
+R4893	Difference Account	حساب الفرق
+R4894	Difference Amount	مقدار الفرق
+R4895	Reconcile Entries	التوفيق بين المدخلات
+R4896	Allocated Entries	الإدخالات المخصصة
+R4897	From Invoice Date	من تاريخ الفاتورة
+R4898	To Invoice Date	إلى تاريخ الفاتورة
+R4899	Minimum Invoice Amount	الحد الأدنى للمبلغ الفاتورة
+R4900	Invoice Limit	حد الفاتورة
+R4901	From Payment Date	من تاريخ الدفع
+R4902	To Payment Date	تاريخ الدفع
+R4903	Minimum Payment Amount	الحد الأدنى لمبلغ الدفع
+R4904	Maximum Payment Amount	الحد الأقصى لمبلغ الدفع
+R4905	Payment Limit	حد الدفع
+R4906	Maximum Invoice Amount	الحد الأقصى لمبلغ الفاتورة
+R4907	Default Advance Account	الحساب الافتراضي المتقدم
+R4908	Filter on Invoice	تصفية الفاتورة
+R4909	Filter on Payment	تصفية الدفع
+R4910	Accounting Dimensions Filter	فلتر الأبعاد المحاسبية
+R4911	Payment Reconciliation	دفع المصالحة
+R4912	Unreconciled Entries	إدخالات غير مُطابقة
+R4913	Successfully Reconciled	تمت التسوية بنجاح\\n<br>\\nSuccessfully Reconciled
+R4914	Unreconciled Amount	المبلغ غير المُسوّى
+R4915	Reference Row	إشارة الصف
+R4916	Difference Posting Date	تاريخ النشر المختلف
+R4917	Payment Reconciliation Allocation	تخصيص تسوية المدفوعات
+R4918	Invoice Date	تاريخ الفاتورة
+R4919	Payment Reconciliation Invoice	دفع فاتورة المصالحة
+R4920	Payment Reconciliation Payment	دفع المصالحة الدفع
+R4921	Failure: {0}	فشل: {0}
+R4922	Resend Payment Email	إعادة إرسال الدفعة عبر البريد الإلكتروني
+R4923	Sending Email	جارٍ إرسال البريد الإلكتروني
+R4924	Create Payment Entry	إنشاء إدخال الدفع
+R4925	Is a Subscription	هو الاشتراك
+R4926	Subscription	اشتراك
+R4927	Subscription Plans	خطط الاشتراك
+R4928	SWIFT Number	رقم سويفت
+R4929	Partially Paid	مدفوعاً جزئياً
+R4930	Requested	طلب
+R4931	Make Sales Invoice	انشاء فاتورة المبيعات
+R4932	Mute Email	كتم البريد الإلكتروني
+R4933	Payment URL	رابط الدفع
+R4934	Payment Gateway Details	تفاصيل الدفع بوابة
+R4935	Reason for Failure	سبب الفشل
+R4936	Party Account Currency	عملة حساب الطرف
+R4937	Phone Number	رقم الهاتف
+R4938	Payment Request Type	نوع طلب الدفع
+R4939	Inward	نحو الداخل
+R4940	Outward	نحو الخارج
+R4941	<strong>Grand Total:</strong> {0}	<strong>المجموع الإجمالي:</strong> {0}
+R4942	<strong>Outstanding Amount:</strong> {0}	<strong>المبلغ المستحق:</strong> {0}
+R4943	Invalid Print Format	تنسيق طباعة غير صالح
+R4944	Invalid Amount	مبلغ غير صالح
+R4945	Discount Date	تاريخ الخصم
+R4946	Discount Type	نوع الخصم
+R4947	Outstanding (Company Currency)	الرصيد المستحق (عملة الشركة)
+R4948	Credit Days	الائتمان أيام
+R4949	Credit Months	أشهر الائتمان
+R4950	Discount Validity	صلاحية الخصم
+R4951	Payment Term Name	اسم مصطلح الدفع
+R4952	Invoice Portion (%)	حصة الفاتورة (%)
+R4953	Discount Settings	إعدادات الخصم
+R4954	Payment Terms	شروط الدفع
+R4955	Payment Terms Template	نموذج شروط الدفع
+R4956	Pegged Currencies	العملات المرتبطة
+R4957	Pegged Against	مُثبّت ضد
+R4958	Pegged Currency Details	تفاصيل العملة المرتبطة

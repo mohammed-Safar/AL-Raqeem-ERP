@@ -1,0 +1,120 @@
+R7920	Capitalize Asset	رسملة الأصول
+R7921	Schedule Date	جدول التسجيل
+R7922	Shift	يحول
+R7923	Asset Value	قيمة الأصول
+R7924	Sell Qty	بيع الكمية
+R7925	Split Qty	تقسيم الكمية
+R7926	Select the date	حدد التاريخ
+R7927	Asset Owner	مالك الأصول
+R7928	Asset Owner Company	شركة أسيت أونر
+R7929	Custodian	وصي
+R7930	Disposal Date	تاريخ التخلص
+R7931	Calculate Depreciation	حساب الاهلاك
+R7932	Finance Books	كتب المالية
+R7933	Depreciation Details	تفاصيل الاستهلاك
+R7934	Depreciation Method	طريقة الإهلاك
+R7935	Double Declining Balance	اهلاك تناقصي
+R7936	Straight Line	خط مستقيم
+R7937	Written Down Value	القيمة المكتوبة
+R7938	Next Depreciation Date	تاريخ االاستهالك التالي
+R7939	Policy number	رقم مركز الشرطه
+R7940	Insurer	شركة التأمين
+R7941	Insured value	قيمة المؤمن
+R7942	Insurance Start Date	تاريخ بداية التأمين
+R7943	Insurance End Date	تاريخ انتهاء التأمين
+R7944	Comprehensive Insurance	تأمين شامل
+R7945	Maintenance Required	صيانة مطلوبة
+R7946	Sold	تم البيع
+R7947	Capitalized	الأحرف الكبيرة
+R7948	Scrapped	ألغت
+R7949	In Maintenance	في الصيانة
+R7950	Out of Order	خارج عن السيطرة
+R7951	Fully Depreciated	استهلكت بالكامل
+R7952	Partially Depreciated	استهلكت جزئيا
+R7953	Booked Fixed Asset	حجز الأصول الثابتة
+R7954	Purchase Details	تفاصيل شراء
+R7955	Split From	انفصل عن
+R7956	Asset Quantity	كَمَيَّة الأصول
+R7957	Successful	ناجح
+R7958	Depreciation Schedule	جدول الاهلاك الزمني
+R7959	Depreciation Schedule View	عرض جدول الإهلاك
+R7960	Is Fully Depreciated	تم استهلاكها بالكامل
+R7961	Total Asset Cost	إجمالي تكلفة الأصول
+R7962	Additional Asset Cost	تكلفة الأصول الإضافية
+R7963	Net Purchase Amount	صافي مبلغ الشراء
+R7964	Asset Type	نوع الأصل
+R7965	Composite Asset	أصل مركب
+R7966	Composite Component	مكون مركّب
+R7967	Existing Asset	أصل موجود
+R7968	Insurance	تأمين
+R7969	Ownership	الملكية
+R7970	Repair	بصلح
+R7971	Asset Capitalization	رسملة الأصول
+R7972	Asset submitted	تم تقديم الأصل
+R7973	Asset cancelled	تم إلغاء الأصل
+R7974	Asset created	تم إنشاء الأصل
+R7975	Asset deleted	تم حذف الأصل
+R7976	Invalid Cost Center	مركز تكلفة غير صالح
+R7977	Incorrect Date	تاريخ غير صحيح
+R7978	Duplicate Finance Book	دفتر التمويل المكرر
+R7979	Missing Finance Book	كتاب التمويل المفقود
+R7980	Enter depreciation details	أدخل تفاصيل الاستهلاك
+R7981	Invalid Schedule	جدول غير صالح
+R7982	Fixed Asset Account	حساب الأصول الثابتة
+R7983	Account not Found	تعذر العثور على الحساب
+R7984	Movement	حركة
+R7985	Make Asset Movement	تحريك الأصول
+R7986	Asset scrapped	الأصول الملغاة
+R7987	Asset restored	تم استعادة الأصل
+R7988	Disposed	مُستبعَد
+R7989	In Use	قيد الاستخدام
+R7990	Needs Attention	يحتاج إلى اهتمام
+R7991	Asset Activity	نشاط الأصل
+R7992	Consumed Stock Items	الأصناف المستهلكة
+R7993	Consumed Assets	الأصول المستهلكة
+R7994	Service Expenses	مصاريف الخدمة
+R7995	Total Value	القيمة الإجمالية
+R7996	Target Incoming Rate	معدل الوارد المستهدف
+R7997	Target Item Code	رمز المنتج المستهدف
+R7998	Target Asset	الأصل المستهدف
+R7999	Current Asset Value	قيمة الأصول الحالية
+R8000	Qty and Rate	الكمية والسعر
+R8001	Asset Category Name	اسم فئة الأصول
+R8002	Finance Book Detail	كتاب المالية التفاصيل
+R8003	Depreciation Options	خيارات الإهلاك
+R8004	Non Depreciable Category	فئة غير قابلة للاستهلاك
+R8005	Asset Category Account	حساب فئة الأصول
+R8006	Finance Book Id	رقم دفتر تمويل
+R8007	Asset Depreciation Schedule	جدول استهلاك الأصول
+R8008	In Percentage	في المئة
+R8009	Rate of Depreciation	معدل الاستهلاك
+R8010	via Asset Repair	عن طريق إصلاح الأصول
+R8011	Asset Finance Book	كتاب الأصول المالية
+R8012	Depreciation Posting Date	تاريخ ترحيل الإهلاك
+R8013	Salvage Value	قيمة الإنقاذ
+R8014	Salvage Value Percentage	نسبة قيمة الإنقاذ
+R8015	Maintenance Log	سجل الصيانة
+R8016	Maintenance Tasks	مهام الصيانة
+R8017	Asset Maintenance	صيانة الأصول
+R8018	Maintenance Team	فريق الصيانة
+R8019	Maintenance Manager Name	اسم مدير الصيانة
+R8020	Completion Date	تاريخ الانتهاء
+R8021	Planned	مخطط
+R8022	Has Certificate 	لديه شهادة
+R8023	Certificate	شهادة
+R8024	Actions performed	الإجراءات المنجزة
+R8025	Task Assignee Email	البريد الإلكتروني للشخص المُسند إليه المهمة
+R8026	Asset Maintenance Log	سجل صيانة الأصول
+R8027	Maintenance Details	تفاصيل الصيانة
+R8028	Maintenance Type	نوع الصيانة
+R8029	Assign to Name	تعيين للاسم
+R8030	Next Due Date	موعد الاستحقاق التالي
+R8031	Last Completion Date	تاريخ الانتهاء الأخير
+R8032	Asset Maintenance Task	مهمة صيانة الأصول
+R8033	Maintenance Task	مهمة الصيانة
+R8034	Calibration	معايرة
+R8035	Preventive Maintenance	الصيانة الوقائية
+R8036	2 Yearly	عامين
+R8037	3 Yearly	كل 3 سنوات
+R8038	Certificate Required	الشهادة مطلوبة
+R8039	Maintenance Team Name	اسم فريق الصيانة

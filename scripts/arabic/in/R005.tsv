@@ -1,0 +1,120 @@
+R480	Communication	الاتصالات
+R481	Email Inbox	البريد الوارد
+R482	Email Template	قالب البريد الإلكتروني
+R483	Type	النوع
+R484	Email	البريد الإلكتروني
+R485	Visit	زيارة
+R486	From	من
+R487	To	إلى
+R488	Delete	حذف
+R489	Submit	تسجيل
+R490	Cancel	إلغاء
+R491	Amend	تعديل
+R492	Mask	قناع
+R493	Export	تصدير
+R494	Import	استيراد
+R495	Share	مشاركة
+R496	Print	طباعة
+R497	Select	حدد
+R498	Role	صلاحية
+R499	Level	المستوى
+R500	Permissions	الصلاحيات
+R501	Write	الكتابة
+R502	No Data	لا توجد بيانات
+R503	Table	جدول
+R504	Column Name	اسم العمود
+R505	{0} of {1}	{0} من {1}
+R506	Column {0}	العمود {0}
+R507	Skip	تخطى
+R508	Result	نتيجة
+R509	Details	تفاصيل
+R510	Download Template	تحميل الوثيقة
+R511	Data Import	استيراد البيانات
+R512	Preview	معاينة
+R513	Update	تحديث
+R514	ID	هوية شخصية
+R515	Link	حلقة الوصل
+R516	Column	عمود
+R517	Create New	انشاء جديد
+R518	Fieldname	اسم الحقل
+R519	Restore	استعادة
+R520	New Name	اسم جديد
+R521	Data	البيانات
+R522	Read Only	للقراءة فقط
+R523	Icon	أيقونة
+R524	Color	اللون
+R525	Password	كلمة السر
+R526	HTML	HTML
+R527	Code	رمز
+R528	Attach	إرفاق
+R529	Barcode	الرمز الشريطي
+R530	Text	نص
+R531	Name	اسم
+R532	Index	مؤشر
+R533	Bold	بالخط العريض
+R534	Collapsible	للطي
+R535	Options	خيارات
+R536	Default	الافتراضي
+R537	Fetch From	إحضار من
+R538	Hidden	مخفي
+R539	Width	عرض
+R540	Columns	الأعمدة
+R541	Alignment	تنسيق
+R542	Right	حق
+R543	Left	ترك
+R544	Visibility	الرؤية
+R545	Sticky	لزج
+R546	Warning	تحذير
+R547	Primary	أساسي
+R548	Everyone	كل شخص
+R549	Fields	الحقول
+R550	Naming	التسمية
+R551	Image Field	صورة الميدان
+R552	Title Field	حقل العنوان
+R553	Connections	الاتصالات
+R554	If Owner	إذا المالك
+R555	Group	مجموعة
+R556	Custom	مخصص
+R557	Prefix	بادئة
+R558	Counter	عداد
+R559	Naming Series	سلسلة التسمية
+R560	Doctype	DOCTYPE
+R561	Reference DocType	مرجع DOCTYPE
+R562	Download	تحميل
+R563	Optimize	تحسين
+R564	File	ملف
+R565	Invalid URL	URL غير صالح
+R566	Attachment Limit Reached	تم الوصول إلى الحد الأقصى للمرفقات
+R567	Installed Apps	التطبيقات المُثبَّتة
+R568	Language	اللغة
+R569	Log Settings	إعدادات السجل
+R570	Website	الموقع
+R571	License	رخصة
+R572	Publish	نشر
+R573	Standard	اساسي
+R574	Yes	نعم
+R575	No	لا
+R576	Roles	الصلاحيات
+R577	export	تصدير
+R578	Filter	منقي
+R579	Clear	واضح
+R580	Apps	التطبيقات
+R581	Query Report	الاستعلام عن
+R582	Letter Head	ترئيس الرسالة
+R583	Remove	حذف
+R584	Add	إضافة
+R585	Edit Full Form	تعديل النموذج الكامل
+R586	Permission Level	مستوى الصلاحيات
+R587	Documents	وثائق
+R588	Complete	أكمال
+R589	Learn more	يتعلم أكثر
+R590	Expires	تاريخ الانتهاء
+R591	Compare Versions	مقارنة الإصدارات
+R592	Help	مساعدة
+R593	Session Defaults	الجلسة الافتراضية
+R594	Header	العنوان الرأسي
+R595	New	جديد
+R596	View All	عرض الكل
+R597	Time Zone	منطقة زمنية
+R598	Search	البحث
+R599	Not permitted	غير مسموح به
