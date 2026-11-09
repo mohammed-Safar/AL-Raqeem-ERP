@@ -1,0 +1,35 @@
+/* RAQEEM logo «R» in the theme colour (raqeem_logo.js) — desk + website.
+   ROLLBACK: remove raqeem_logo.css from app_include_css / web_include_css in hooks.py. */
+.rq-logo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: var(--rq-a-500, #2d4583);
+    overflow: visible;
+    transition: color .3s ease;
+}
+.rq-logo-holder {
+    display: inline-grid;
+    place-items: center;
+    flex: 0 0 auto;
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+}
+/* places that size their logo by the container */
+.header-logo .rq-logo-holder,
+.dock-logo .rq-logo-holder,
+.shell-header .rq-logo-holder,
+.app-logo-wrapper .rq-logo-holder {
+    width: 100%;
+    height: 100%;
+    max-width: 36px;
+    max-height: 36px;
+}
+.header-logo:has(.rq-logo-holder) { background: transparent !important; box-shadow: none !important; }
+#brand-logo.rq-logo-holder,
+.navbar-home .rq-logo-holder { width: 34px; height: 34px; }
+.navbar-brand .rq-logo-holder { width: 30px; height: 30px; }
+.page-card-head .rq-logo-holder,
+.rq-logo-holder.app-logo { width: 56px; height: 56px; margin: 0 auto 12px; display: grid; }
+.about-dialog .rq-logo-holder, .modal .rq-logo-holder { width: 48px; height: 48px; }

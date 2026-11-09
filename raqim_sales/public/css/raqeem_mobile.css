@@ -1,0 +1,73 @@
+/* ==========================================================================
+   RAQEEM phone layout
+   Everything is inside the one media query below, at Frappe's own phone
+   breakpoint (frappe.is_mobile() is innerWidth < 768), so a PC never applies
+   any of it. Must load last in app_include_css.
+   ROLLBACK: remove this file's line from app_include_css in hooks.py.
+   ========================================================================== */
+@media (max-width: 767px) {
+
+    /* 0. Closed menu drawer. On phones Frappe keeps it on the page and makes it
+       transparent, but the theme's solid sidebar background (!important) beat
+       that, so a closed drawer painted a blank panel over the left of every page. */
+    .body-sidebar-container:not(.expanded) { background: transparent !important; }
+    .body-sidebar-container:not(.expanded) .body-sidebar {
+        background: transparent !important;
+        border-color: transparent !important;
+        box-shadow: none !important;
+        visibility: hidden;
+    }
+
+    /* 1. Dock. Frappe pins it on phones too, as an in-flow column (82px wide in
+       this theme), which took about a quarter of the screen. Switch modules
+       from the menu button's drawer and the RAQEEM Home launcher instead. */
+    .dock { display: none !important; }
+
+    /* 2. Page header: one row of title + buttons. The desktop three-column grid
+       with the centred wordmark has no room here. */
+    .page-head .page-head-content.rq-has-brand {
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+    }
+    .rq-head-brand { display: none !important; }
+    .rq-has-brand > .page-title { flex: 1 1 auto; min-width: 0; }
+    .rq-has-brand > .standard-items-section { flex: 0 0 auto; }
+    /* raqeem_brand_title.js moves this into the title; Frappe hides it on phones */
+    .rq-has-brand > .page-title > .view-switcher { display: none; }
+    .page-head .title-area { min-width: 0; overflow: hidden; }
+    .page-head .es-breadcrumbs li:last-child .es-breadcrumbs__item { font-size: 1.05rem !important; }
+    .page-head .page-title .title-text { font-size: 1.1rem !important; }
+
+    /* Solid bars: live blur behind sticky bars is slow on phones */
+    header.navbar, .navbar, .page-head {
+        background: var(--bg-color) !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+    }
+
+    /* 3. List filters: Frappe stacks them on phones, and the desktop
+       align-items: center shrank each stacked row to its content */
+    .page-container:has(.frappe-list) .page-form.list-page-form {
+        align-items: stretch !important;
+    }
+
+    /* 4. Form header: long document names must wrap, not push the page wider */
+    .rq-sheet-name { font-size: 1.35rem; overflow-wrap: anywhere; }
+    .rq-kpi-value { font-size: 1.1rem; overflow-wrap: anywhere; }
+
+    /* 5. Touch */
+    /* below 16px, iPhones zoom the whole page when a field is tapped */
+    input:not([type="checkbox"]):not([type="radio"]),
+    textarea,
+    select { font-size: 16px !important; }
+    /* a tap leaves :hover stuck on, so rows must not stay lifted */
+    .frappe-list .list-row-container:hover,
+    .widget:hover { transform: none !important; }
+    .page-container { animation: none !important; }
+
+    /* 6. Nothing may make the page scroll sideways.
+       clip rather than hidden, because hidden would break the sticky header. */
+    body { overflow-x: clip; }
+    .rq-qs-pop { max-width: calc(100vw - 16px); }
+}

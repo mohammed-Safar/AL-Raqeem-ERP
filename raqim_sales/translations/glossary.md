@@ -48,7 +48,8 @@ installed after them. Strings added through the Translation doctype override thi
 | User | المستخدم |
 | Tags | الوسوم |
 | Assign / Assigned To | إسناد / مُسند إلى |
-| Like / Follow / Pin | إعجاب / متابعة / تثبيت |
+| Like / Not Like (filter operator) | يشابه / لا يشابه |
+| Follow / Pin | متابعة / تثبيت |
 | Import / Export | استيراد / تصدير |
 | Download / Upload / Attach | تنزيل / رفع / إرفاق |
 | Print Format / Letter Head | تنسيق الطباعة / الترويسة |

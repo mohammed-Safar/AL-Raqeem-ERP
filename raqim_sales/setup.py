@@ -33,6 +33,18 @@ def after_migrate():
 	set_app_name()
 	set_default_print_formats()
 	set_home_page()
+	set_dinar_format()
+
+
+def set_dinar_format():
+	"""Libyan dinar: LYD in English, د.ل in Arabic (translations/ar.csv: LYD,د.ل).
+
+	It is shown after the amount, which is its left side in Arabic.
+	Only replaces Frappe's stock symbol, so a later manual change in Currency is kept.
+	"""
+	if frappe.db.get_value("Currency", "LYD", "symbol") in ("ل.د", "د.ل"):
+		frappe.db.set_value("Currency", "LYD", {"symbol": "LYD", "symbol_on_right": 1})
+		frappe.clear_cache()  # currencies are part of every user's cached boot
 
 
 def set_home_page():

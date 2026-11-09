@@ -52,8 +52,8 @@ body[data-path="update-password"] {
     overflow-x: hidden;
 }
 @media (prefers-color-scheme: dark) {
-    body[data-path="login"],
-    body[data-path="update-password"] {
+    html:not([data-rq-theme="light"]) body[data-path="login"],
+    html:not([data-rq-theme="light"]) body[data-path="update-password"] {
         --lg-bg: #0b0d11;
         --lg-card: rgba(21, 24, 30, 0.78);
         --lg-input: rgba(27, 31, 39, 0.85);
@@ -76,6 +76,31 @@ body[data-path="update-password"] {
         color-scheme: dark;
     }
 }
+/* rq: dark-choice copy */
+    html[data-rq-theme="dark"] body[data-path="login"],
+    html[data-rq-theme="dark"] body[data-path="update-password"] {
+        --lg-bg: #0b0d11;
+        --lg-card: rgba(21, 24, 30, 0.78);
+        --lg-input: rgba(27, 31, 39, 0.85);
+        --lg-input-focus: rgba(21, 24, 30, 0.95);
+        --lg-line: rgba(255, 255, 255, 0.08);
+        --lg-line-strong: rgba(255, 255, 255, 0.16);
+        --lg-text: #e8eaed;
+        --lg-text-2: #b4bac4;
+        --lg-text-3: #8a919c;
+        --lg-strong: #ffffff;
+        --lg-placeholder: #7a828f;
+        --lg-link: var(--rq-a-400);
+        --lg-link-hover: var(--rq-a-300);
+        --lg-grid: rgba(255, 255, 255, 0.035);
+        --lg-glow: 1;
+        --lg-card-shadow: 0 1px 0 rgba(255,255,255,.05) inset, 0 30px 80px rgba(0,0,0,.55), 0 0 0 1px rgba(0,0,0,.3);
+        --lg-error-bg: rgba(220, 38, 38, .12);
+        --lg-error-line: rgba(239, 68, 68, .35);
+        --lg-error-text: #fca5a5;
+        color-scheme: dark;
+    }
+
 
 /* --- background: soft orange glows + faint grid --- */
 body[data-path="login"]::before,
@@ -405,23 +430,118 @@ body[data-path="login"] .field-error { color: var(--lg-error-text) !important; }
     .rq-brand-orbit span:nth-child(3) { inset: 28%; animation-duration: 20s; border-color: rgba(255,255,255,.12); }
     @keyframes rq-orbit { to { transform: rotate(360deg); } }
 }
+
+/* Brand panel in LIGHT mode: a light panel tinted with the theme colour
+   (the colour gradient made it black with the black & white colour, so it
+   looked dark whatever the mode). Dark mode keeps the dark panel below. */
+@media (min-width: 992px) and (prefers-color-scheme: light) {
+    html:not([data-rq-theme="dark"]) .rq-brand {
+        color: var(--lg-strong);
+        background:
+            radial-gradient(60% 50% at 85% 10%, rgba(var(--rq-a-400-rgb), .22), transparent 70%),
+            radial-gradient(70% 60% at 0% 100%, rgba(var(--rq-a-600-rgb), .16), transparent 70%),
+            linear-gradient(155deg, #fffdfa 0%, #f6f1ea 55%, #ece5db 100%);
+        border-inline-end: 1px solid rgba(68, 51, 34, .12);
+        box-shadow: none;
+    }
+    html:not([data-rq-theme="dark"]) .rq-brand-mark {
+        background: #fffdfa;
+        box-shadow: inset 0 0 0 1px rgba(68, 51, 34, .12), 0 10px 30px rgba(68, 51, 34, .10);
+    }
+    html:not([data-rq-theme="dark"]) .rq-brand-mark img { filter: none; }
+    html:not([data-rq-theme="dark"]) .rq-brand-logo .rq-logo,
+    html:not([data-rq-theme="dark"]) .rq-brand-monogram { color: var(--rq-a-500); }
+    html:not([data-rq-theme="dark"]) .rq-brand-name {
+        text-shadow: none;
+        background: linear-gradient(90deg, var(--lg-strong) 0%, var(--lg-strong) 45%, var(--rq-a-500) 100%);
+        -webkit-background-clip: text; background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    html:not([data-rq-theme="dark"]) .rq-brand-tagline { color: var(--lg-text-2); }
+    html:not([data-rq-theme="dark"]) .rq-brand-points li { color: var(--lg-text); }
+    html:not([data-rq-theme="dark"]) .rq-point-icon {
+        color: var(--rq-a-600);
+        background: rgba(var(--rq-a-rgb), .10);
+        box-shadow: inset 0 0 0 1px rgba(var(--rq-a-rgb), .25);
+    }
+    html:not([data-rq-theme="dark"]) .rq-brand-foot { color: var(--lg-text-3); }
+    html:not([data-rq-theme="dark"]) .rq-brand-orbit span { border-color: rgba(var(--rq-a-rgb), .20); }
+    html:not([data-rq-theme="dark"]) .rq-brand-orbit span:nth-child(2) { border-color: rgba(var(--rq-a-rgb), .14); }
+    html:not([data-rq-theme="dark"]) .rq-brand-orbit span:nth-child(3) { border-color: rgba(var(--rq-a-rgb), .10); }
+    html:not([data-rq-theme="dark"]) .rq-brand-orbit span::after { background: var(--rq-a-500); box-shadow: 0 0 14px rgba(var(--rq-a-rgb), .6); }
+}
+@media (min-width: 992px) {
+    html[data-rq-theme="light"] .rq-brand {
+        color: var(--lg-strong);
+        background:
+            radial-gradient(60% 50% at 85% 10%, rgba(var(--rq-a-400-rgb), .22), transparent 70%),
+            radial-gradient(70% 60% at 0% 100%, rgba(var(--rq-a-600-rgb), .16), transparent 70%),
+            linear-gradient(155deg, #fffdfa 0%, #f6f1ea 55%, #ece5db 100%);
+        border-inline-end: 1px solid rgba(68, 51, 34, .12);
+        box-shadow: none;
+    }
+    html[data-rq-theme="light"] .rq-brand-mark {
+        background: #fffdfa;
+        box-shadow: inset 0 0 0 1px rgba(68, 51, 34, .12), 0 10px 30px rgba(68, 51, 34, .10);
+    }
+    html[data-rq-theme="light"] .rq-brand-mark img { filter: none; }
+    html[data-rq-theme="light"] .rq-brand-logo .rq-logo,
+    html[data-rq-theme="light"] .rq-brand-monogram { color: var(--rq-a-500); }
+    html[data-rq-theme="light"] .rq-brand-name {
+        text-shadow: none;
+        background: linear-gradient(90deg, var(--lg-strong) 0%, var(--lg-strong) 45%, var(--rq-a-500) 100%);
+        -webkit-background-clip: text; background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    html[data-rq-theme="light"] .rq-brand-tagline { color: var(--lg-text-2); }
+    html[data-rq-theme="light"] .rq-brand-points li { color: var(--lg-text); }
+    html[data-rq-theme="light"] .rq-point-icon {
+        color: var(--rq-a-600);
+        background: rgba(var(--rq-a-rgb), .10);
+        box-shadow: inset 0 0 0 1px rgba(var(--rq-a-rgb), .25);
+    }
+    html[data-rq-theme="light"] .rq-brand-foot { color: var(--lg-text-3); }
+    html[data-rq-theme="light"] .rq-brand-orbit span { border-color: rgba(var(--rq-a-rgb), .20); }
+    html[data-rq-theme="light"] .rq-brand-orbit span:nth-child(2) { border-color: rgba(var(--rq-a-rgb), .14); }
+    html[data-rq-theme="light"] .rq-brand-orbit span:nth-child(3) { border-color: rgba(var(--rq-a-rgb), .10); }
+    html[data-rq-theme="light"] .rq-brand-orbit span::after { background: var(--rq-a-500); box-shadow: 0 0 14px rgba(var(--rq-a-rgb), .6); }
+}
 @media (min-width: 992px) and (prefers-color-scheme: dark) {
-    .rq-brand {
+    html:not([data-rq-theme="light"]) .rq-brand {
         background:
             radial-gradient(60% 50% at 85% 10%, rgba(var(--rq-a-400-rgb),.30), transparent 70%),
             radial-gradient(70% 60% at 0% 100%, rgba(var(--rq-a-600-rgb),.25), transparent 70%),
             linear-gradient(155deg, var(--rq-a-tint) 0%, var(--rq-a-tint) 55%, #0b0d11 100%);
         border-inline-end: 1px solid rgba(var(--rq-a-rgb),.25);
     }
-    .rq-brand-name {
+    html:not([data-rq-theme="light"]) .rq-brand-name {
         background: linear-gradient(90deg, #fff 0%, #fff 40%, var(--rq-a-300) 80%, var(--rq-a-500) 100%);
         -webkit-background-clip: text; background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    .rq-point-icon { color: var(--rq-a-400); background: rgba(var(--rq-a-rgb),.12); box-shadow: inset 0 0 0 1px rgba(var(--rq-a-rgb),.35); }
-    .rq-brand-mark img { filter: none; }
-    .rq-brand-orbit span { border-color: rgba(var(--rq-a-rgb),.25); }
-    .rq-brand-orbit span::after { background: var(--rq-a-400); box-shadow: 0 0 14px var(--rq-a-500); }
+    html:not([data-rq-theme="light"]) .rq-point-icon { color: var(--rq-a-400); background: rgba(var(--rq-a-rgb),.12); box-shadow: inset 0 0 0 1px rgba(var(--rq-a-rgb),.35); }
+    html:not([data-rq-theme="light"]) .rq-brand-mark img { filter: none; }
+    html:not([data-rq-theme="light"]) .rq-brand-orbit span { border-color: rgba(var(--rq-a-rgb),.25); }
+    html:not([data-rq-theme="light"]) .rq-brand-orbit span::after { background: var(--rq-a-400); box-shadow: 0 0 14px var(--rq-a-500); }
+}
+/* rq: dark-choice copy */
+@media (min-width: 992px) {
+    html[data-rq-theme="dark"] .rq-brand {
+        background:
+            radial-gradient(60% 50% at 85% 10%, rgba(var(--rq-a-400-rgb),.30), transparent 70%),
+            radial-gradient(70% 60% at 0% 100%, rgba(var(--rq-a-600-rgb),.25), transparent 70%),
+            linear-gradient(155deg, var(--rq-a-tint) 0%, var(--rq-a-tint) 55%, #0b0d11 100%);
+        border-inline-end: 1px solid rgba(var(--rq-a-rgb),.25);
+    }
+    html[data-rq-theme="dark"] .rq-brand-name {
+        background: linear-gradient(90deg, #fff 0%, #fff 40%, var(--rq-a-300) 80%, var(--rq-a-500) 100%);
+        -webkit-background-clip: text; background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    html[data-rq-theme="dark"] .rq-point-icon { color: var(--rq-a-400); background: rgba(var(--rq-a-rgb),.12); box-shadow: inset 0 0 0 1px rgba(var(--rq-a-rgb),.35); }
+    html[data-rq-theme="dark"] .rq-brand-mark img { filter: none; }
+    html[data-rq-theme="dark"] .rq-brand-orbit span { border-color: rgba(var(--rq-a-rgb),.25); }
+    html[data-rq-theme="dark"] .rq-brand-orbit span::after { background: var(--rq-a-400); box-shadow: 0 0 14px var(--rq-a-500); }
 }
 
 /* language switch (top corner) */
@@ -543,8 +663,11 @@ html[lang] body .rq-card-wordmark {
     color: #fff;
 }
 @media (prefers-color-scheme: dark) {
-    .rq-brand-monogram { color: var(--rq-a-400); }
+    html:not([data-rq-theme="light"]) .rq-brand-monogram { color: var(--rq-a-400); }
 }
+/* rq: dark-choice copy */
+    html[data-rq-theme="dark"] .rq-brand-monogram { color: var(--rq-a-400); }
+
 
 /* --------------------------------------------------------------------------
    Centre the sign-in card in the free area beside the brand panel.
@@ -578,4 +701,98 @@ body[data-path="update-password"] .page-card {
 @media (max-width: 991.98px) {
     body[data-path="login"] main,
     body[data-path="update-password"] main { margin-inline-start: 0 !important; }
+}
+
+/* RAQEEM «R» logo (raqeem_logo.js): sign-in card + brand panel */
+.rq-card-brand { display: flex; flex-direction: column; align-items: center; gap: 12px; margin-bottom: 18px; }
+.rq-card-brand .rq-card-wordmark { margin-bottom: 0; }
+.rq-card-logo { width: 54px; height: 54px; display: block; }
+.rq-card-logo .rq-logo { color: var(--rq-a-500, #2d4583); filter: drop-shadow(0 6px 14px rgba(var(--rq-a-rgb, 45, 69, 131), .30)); }
+.rq-brand-logo { width: 38px; height: 38px; display: block; }
+.rq-brand-logo .rq-logo { color: #fff; }
+@media (prefers-color-scheme: dark) {
+    html:not([data-rq-theme="light"]) .rq-brand-logo .rq-logo { color: var(--rq-a-400); }
+}
+/* rq: dark-choice copy */
+    html[data-rq-theme="dark"] .rq-brand-logo .rq-logo { color: var(--rq-a-400); }
+
+
+/* --------------------------------------------------------------------------
+   Display settings on the login page (raqeem_login.js): light / dark / auto,
+   theme colour, language — same choices as the desk's panel
+   -------------------------------------------------------------------------- */
+.rq-web-qs-btn svg { color: var(--lg-accent); }
+.rq-web-qs {
+    position: fixed;
+    inset-block-start: 64px;
+    inset-inline-end: 18px;
+    z-index: 6;
+    width: 270px;
+    padding: 14px;
+    border-radius: 16px;
+    background: var(--lg-card);
+    border: 1px solid var(--lg-line-strong);
+    box-shadow: var(--lg-card-shadow);
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
+    color: var(--lg-text);
+    font-family: 'RQ Latin', 'IBM Plex Sans Arabic', 'Cairo', system-ui, sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-6px);
+    transition: opacity .2s var(--lg-ease), transform .2s var(--lg-ease), visibility 0s linear .2s;
+}
+.rq-web-qs.is-open { opacity: 1; visibility: visible; transform: none; transition-delay: 0s; }
+.rq-web-qs-title { font-weight: 800; font-size: 1rem; color: var(--lg-strong); margin-bottom: 10px; }
+.rq-web-qs-label { font-size: .78rem; font-weight: 700; color: var(--lg-text-3); margin: 12px 0 6px; }
+.rq-web-qs-seg {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 4px;
+    padding: 4px;
+    border-radius: 12px;
+    background: var(--lg-input);
+    border: 1px solid var(--lg-line);
+}
+.rq-web-qs-seg button {
+    height: 32px;
+    border: 0;
+    border-radius: 9px;
+    background: transparent;
+    color: var(--lg-text-2);
+    font: 600 .86rem 'RQ Latin', 'IBM Plex Sans Arabic', 'Cairo', system-ui, sans-serif;
+    cursor: pointer;
+    transition: background .15s, color .15s;
+}
+.rq-web-qs-seg button:hover { color: var(--lg-strong); }
+.rq-web-qs-seg button.is-on {
+    color: var(--rq-a-ink, #fff);
+    background: linear-gradient(135deg, var(--rq-a-400), var(--rq-a-600));
+    box-shadow: 0 3px 10px rgba(var(--rq-a-rgb), .30);
+}
+.rq-web-qs-swatches { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.rq-web-sw {
+    height: 34px;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    background: var(--sw);
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .12);
+    transition: transform .15s, box-shadow .15s;
+}
+.rq-web-sw[data-accent-pick="mono"] { background: linear-gradient(135deg, #111 0 50%, #f4f4f5 50% 100%); }
+.rq-web-sw:hover { transform: translateY(-2px); }
+.rq-web-sw.is-on { box-shadow: 0 0 0 2px var(--lg-card), 0 0 0 4px var(--lg-strong); }
+.rq-web-qs button:focus-visible { outline: 2px solid var(--lg-accent); outline-offset: 2px; }
+/* smooth fade when switching light/dark or colour */
+html.rq-web-fading body[data-path="login"],
+html.rq-web-fading body[data-path="login"] *,
+html.rq-web-fading body[data-path="update-password"],
+html.rq-web-fading body[data-path="update-password"] * {
+    transition: background-color .4s ease, color .4s ease, border-color .4s ease, fill .4s ease !important;
+}
+@media (max-width: 560px) {
+    .rq-web-qs-btn span { display: none; }
+    .rq-web-qs { inset-inline: 12px; width: auto; }
 }

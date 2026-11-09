@@ -133,7 +133,8 @@ html[data-accent="red"] {
     --rq-a-tint: #111113;
 }
 @media (prefers-color-scheme: dark) {
-    :is(html:not([data-accent]), html[data-accent="mono"]) {
+    :is(html:not([data-accent]):not([data-rq-theme="light"]),
+    html[data-accent="mono"]:not([data-rq-theme="light"])) {
         --rq-a-300: #f4f4f5;
         --rq-a-400: #ffffff;
         --rq-a-500: #f4f4f5;
@@ -149,3 +150,21 @@ html[data-accent="red"] {
         --rq-a-tint: #121214;
     }
 }
+/* rq: dark-choice copy */
+    :is(html:not([data-accent])[data-rq-theme="dark"],
+    html[data-accent="mono"][data-rq-theme="dark"]) {
+        --rq-a-300: #f4f4f5;
+        --rq-a-400: #ffffff;
+        --rq-a-500: #f4f4f5;
+        --rq-a-600: #d4d4d8;
+        --rq-a-700: #a1a1aa;
+        --rq-a-800: #71717a;
+        --rq-a-900: #3f3f46;
+        --rq-a-rgb: 244, 244, 245;
+        --rq-a-400-rgb: 255, 255, 255;
+        --rq-a-600-rgb: 212, 212, 216;
+        --rq-a-900-rgb: 0, 0, 0;
+        --rq-a-ink: #09090b;
+        --rq-a-tint: #121214;
+    }
+

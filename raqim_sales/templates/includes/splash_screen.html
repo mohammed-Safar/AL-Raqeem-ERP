@@ -1,7 +1,7 @@
 {#- RAQEEM — loading screen shown right after sign-in (login.js) and while the
     desk starts (desk.html). Overrides frappe/templates/includes/splash_screen.html.
     Shows the logo if one is set in Website Settings → Splash Image, otherwise
-    the «RAQEEM» wordmark.
+    the «AL-RAQEEM» wordmark.
     Smooth hand-off:
       • after sign-in it fades in over the login page (body[data-path="login"]);
       • it uses the user's saved light/dark choice (html[data-rq-theme], set by
@@ -54,6 +54,12 @@
 		-webkit-text-fill-color: transparent;
 	}
 	.rq-splash img { width: auto; max-width: 200px; max-height: 72px; }
+	.rq-splash-logo {
+		width: 64px; height: 64px;
+		color: var(--rq-a-500, #2d4583);
+		animation: rq-splash-logo 1.6s cubic-bezier(.4, 0, .2, 1) infinite alternate;
+	}
+	@keyframes rq-splash-logo { from { opacity: .75; transform: scale(.96); } to { opacity: 1; transform: scale(1); } }
 	.rq-splash-track {
 		width: 140px; height: 3px; border-radius: 3px; overflow: hidden;
 		background: rgba(128, 128, 128, .18);
@@ -65,17 +71,18 @@
 	}
 	@keyframes rq-splash-run { from { transform: translateX(-100%); } to { transform: translateX(250%); } }
 	@media (prefers-reduced-motion: reduce) {
-		.rq-splash, .rq-splash-inner { transition: none; animation: none; }
+		.rq-splash, .rq-splash-inner, .rq-splash-logo { transition: none; animation: none; }
 		.rq-splash-track span { animation: none; width: 100%; opacity: .5; }
 	}
 </style>
 <div class="centered splash rq-splash" role="status" aria-label="Loading">
 	<div class="rq-splash-inner">
 		{#- ERPNext's hooks set its own logo here; only a logo uploaded in Website Settings counts -#}
-		{%- if splash_image and "/assets/erpnext/" not in splash_image and "/assets/frappe/" not in splash_image %}
+		{%- if splash_image and "/assets/erpnext/" not in splash_image and "/assets/frappe/" not in splash_image and "/assets/raqim_sales/" not in splash_image %}
 		<img src="{{ splash_image }}" alt="">
 		{%- else %}
-		<div class="rq-splash-word">RAQEEM</div>
+		<svg class="rq-splash-logo" viewBox="0 0 100 100" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M99.46,99.5Q98.67,95.89 97.26,92.39Q95.85,88.9 94.34,86.27Q92.83,83.63 89.94,80.17Q87.06,76.71 84.32,74.73Q81.58,72.75 78.51,71.52Q75.45,70.3 73.18,70.01Q70.91,69.72 56.06,69.68L41.2,69.65L41.13,99.71Q98.59,100.0 99.03,99.75L99.46,99.5Z M30.46,99.28Q30.1,70.01 29.27,69.32Q28.44,68.64 22.82,66.26Q17.2,63.88 14.24,62.08Q11.28,60.27 8.87,58.29Q6.45,56.31 3.6,52.96L0.76,49.6L0.61,99.42Q29.38,99.86 29.92,99.57L30.46,99.28Z M98.59,57.46Q99.1,56.31 99.03,51.73Q98.95,47.15 98.63,40.37Q98.31,33.6 97.37,28.91Q96.43,24.22 95.21,21.27Q93.98,18.31 92.11,15.54Q90.23,12.76 88.68,11.18Q87.13,9.59 83.99,7.39Q80.86,5.19 77.04,3.57Q73.22,1.95 68.64,1.12Q64.06,0.29 32.98,0.14Q1.91,0.0 1.44,0.29L0.97,0.58Q1.41,21.63 3.03,28.59Q4.65,35.54 6.49,39.44Q8.33,43.33 9.66,45.28Q10.99,47.22 13.3,49.53Q15.61,51.84 17.23,52.92Q18.85,54.0 21.67,55.19Q24.48,56.38 27.47,56.89Q30.46,57.39 63.95,57.53Q97.44,57.68 98.02,57.57L98.59,57.46Z"/></svg>
+		<div class="rq-splash-word">AL-RAQEEM</div>
 		{%- endif %}
 		<div class="rq-splash-track"><span></span></div>
 	</div>

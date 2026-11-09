@@ -6,7 +6,7 @@
 	// ---- edit these to change the brand text ----------------------------
 	const BRAND = {
 		ar: {
-			name: "RAQEEM",
+			name: "AL-RAQEEM",
 			tagline: "مبيعاتك ومخزونك وحساباتك في مكان واحد",
 			points: [
 				"فواتير وعروض أسعار بضغطة زر",
@@ -17,7 +17,7 @@
 			switch_to: "en",
 		},
 		en: {
-			name: "RAQEEM",
+			name: "AL-RAQEEM",
 			tagline: "Your sales, stock and accounts in one place",
 			points: [
 				"Invoices and quotations in a click",
@@ -53,8 +53,10 @@
 	const stock = (src) => !src || /\/assets\/(erpnext|frappe)\//.test(src);
 	if (logo && stock(logo.getAttribute("src"))) {
 		const word = document.createElement("div");
-		word.className = "rq-card-wordmark";
-		word.textContent = "RAQEEM";
+		word.className = "rq-card-brand";
+		word.innerHTML =
+			(window.RAQEEM_LOGO_SVG ? `<span class="rq-card-logo">${window.RAQEEM_LOGO_SVG()}</span>` : "") +
+			'<span class="rq-card-wordmark">AL-RAQEEM</span>';
 		logo.replaceWith(word);
 		logo = null;
 	}
@@ -73,7 +75,7 @@
 	aside.setAttribute("aria-hidden", "true");
 	aside.innerHTML = `
 		<div class="rq-brand-inner">
-			<div class="rq-brand-mark">${logo ? `<img src="${esc(logo.getAttribute("src"))}" alt="">` : `<span class="rq-brand-monogram">R</span>`}</div>
+			<div class="rq-brand-mark">${logo ? `<img src="${esc(logo.getAttribute("src"))}" alt="">` : (window.RAQEEM_LOGO_SVG ? `<span class="rq-brand-logo">${window.RAQEEM_LOGO_SVG()}</span>` : `<span class="rq-brand-monogram">R</span>`)}</div>
 			<h1 class="rq-brand-name">${esc(t.name)}</h1>
 			<p class="rq-brand-tagline">${esc(t.tagline)}</p>
 			<ul class="rq-brand-points">
@@ -85,16 +87,95 @@
 	document.body.appendChild(aside);
 	document.body.classList.add("rq-login-split");
 
-	// language switch (guests: Frappe reads the preferred_language cookie)
-	const sw = document.createElement("button");
-	sw.type = "button";
-	sw.className = "rq-lang-switch";
-	sw.innerHTML = `${svg('<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/>')}<span>${esc(t.switch_label)}</span>`;
-	sw.addEventListener("click", () => {
-		document.cookie = `preferred_language=${t.switch_to}; path=/; max-age=31536000; SameSite=Lax`;
-		const url = new URL(window.location.href);
-		url.searchParams.delete("_lang");
-		window.location.replace(url.toString());
+	// display settings (guests): light / dark / automatic, theme colour, language.
+	// Saved in this browser (localStorage raqeem_theme / raqeem_accent and Frappe's
+	// preferred_language cookie); the desk reads the same keys.
+	const ar = lang === "ar";
+	const L = ar
+		? { title: "إعدادات العرض", appearance: "المظهر", light: "فاتح", dark: "داكن", auto: "تلقائي", colour: "لون الواجهة", language: "اللغة",
+			names: { mono: "أبيض وأسود", orange: "برتقالي", gold: "ذهبي", yellow: "أصفر", red: "أحمر", purple: "بنفسجي سايبر", blue: "أزرق", green: "أخضر" } }
+		: { title: "Display settings", appearance: "Appearance", light: "Light", dark: "Dark", auto: "Auto", colour: "Theme colour", language: "Language",
+			names: { mono: "Black & White", orange: "Orange", gold: "Gold", yellow: "Yellow", red: "Red", purple: "Cyber Purple", blue: "Blue", green: "Green" } };
+	const SWATCH = { mono: "", orange: "#f97316", gold: "#d4a72c", yellow: "#facc15", red: "#ef4444", purple: "#a855f7", blue: "#2563eb", green: "#76b900" };
+	const root = document.documentElement;
+	const store = (k, v) => {
+		try {
+			v == null ? localStorage.removeItem(k) : localStorage.setItem(k, v);
+		} catch (e) {}
+	};
+	const cur_theme = () => root.getAttribute("data-rq-theme") || "auto";
+	const cur_accent = () => root.getAttribute("data-accent") || "mono";
+
+	const btn = document.createElement("button");
+	btn.type = "button";
+	btn.className = "rq-lang-switch rq-web-qs-btn";
+	btn.setAttribute("aria-haspopup", "dialog");
+	btn.setAttribute("aria-expanded", "false");
+	btn.title = L.title;
+	btn.innerHTML = `${svg('<circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor" stroke="none"/>')}<span>${esc(L.title)}</span>`;
+
+	const pop = document.createElement("div");
+	pop.className = "rq-web-qs";
+	pop.setAttribute("role", "dialog");
+	pop.setAttribute("aria-label", L.title);
+	const render = () => {
+		const th = cur_theme();
+		const ac = cur_accent();
+		pop.innerHTML = `
+			<div class="rq-web-qs-title">${esc(L.title)}</div>
+			<div class="rq-web-qs-label">${esc(L.appearance)}</div>
+			<div class="rq-web-qs-seg">
+				${["light", "dark", "auto"].map((m) => `<button type="button" data-theme-pick="${m}" class="${th === m ? "is-on" : ""}">${esc(L[m])}</button>`).join("")}
+			</div>
+			<div class="rq-web-qs-label">${esc(L.colour)}</div>
+			<div class="rq-web-qs-swatches">
+				${Object.keys(SWATCH).map((a) => `<button type="button" data-accent-pick="${a}" class="rq-web-sw ${ac === a ? "is-on" : ""}" title="${esc(L.names[a])}" aria-label="${esc(L.names[a])}" style="${SWATCH[a] ? `--sw:${SWATCH[a]}` : ""}"></button>`).join("")}
+			</div>
+			<div class="rq-web-qs-label">${esc(L.language)}</div>
+			<div class="rq-web-qs-seg">
+				<button type="button" data-lang-pick="ar" class="${ar ? "is-on" : ""}">العربية</button>
+				<button type="button" data-lang-pick="en" class="${!ar ? "is-on" : ""}">English</button>
+			</div>`;
+	};
+	const open = (yes) => {
+		pop.classList.toggle("is-open", yes);
+		btn.setAttribute("aria-expanded", yes ? "true" : "false");
+		if (yes) render();
+	};
+	btn.addEventListener("click", () => open(!pop.classList.contains("is-open")));
+	document.addEventListener("pointerdown", (e) => {
+		if (pop.classList.contains("is-open") && !pop.contains(e.target) && !btn.contains(e.target)) open(false);
 	});
-	document.body.appendChild(sw);
+	document.addEventListener("keydown", (e) => e.key === "Escape" && open(false));
+	pop.addEventListener("click", (e) => {
+		const b = e.target.closest("button");
+		if (!b) return;
+		if (b.dataset.themePick) {
+			const m = b.dataset.themePick;
+			root.classList.add("rq-web-fading");
+			if (m === "auto") {
+				root.removeAttribute("data-rq-theme");
+				store("raqeem_theme", null);
+			} else {
+				root.setAttribute("data-rq-theme", m);
+				store("raqeem_theme", m);
+			}
+			setTimeout(() => root.classList.remove("rq-web-fading"), 450);
+			render();
+		} else if (b.dataset.accentPick) {
+			const a = b.dataset.accentPick;
+			root.classList.add("rq-web-fading");
+			a === "mono" ? root.removeAttribute("data-accent") : root.setAttribute("data-accent", a);
+			store("raqeem_accent", a);
+			setTimeout(() => root.classList.remove("rq-web-fading"), 450);
+			render();
+		} else if (b.dataset.langPick && b.dataset.langPick !== lang) {
+			document.cookie = `preferred_language=${b.dataset.langPick}; path=/; max-age=31536000; SameSite=Lax`;
+			const url = new URL(window.location.href);
+			url.searchParams.delete("_lang");
+			window.location.replace(url.toString());
+		}
+	});
+	document.body.appendChild(btn);
+	document.body.appendChild(pop);
 })();

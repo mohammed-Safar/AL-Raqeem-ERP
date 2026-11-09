@@ -1727,11 +1727,26 @@ input[type="checkbox"]:not(:checked):hover { background-color: var(--rq-hover) !
    — شعار الرقيم في منتصف رأس الصفحة، يتبع لون الواجهة
    -------------------------------------------------------------------------- */
 .page-head .page-head-content { position: relative; }
+/* page title | brand | buttons: equal sides keep the brand in the true centre */
+.page-head .page-head-content.rq-has-brand {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    column-gap: 12px;
+    align-items: center;
+}
+.rq-has-brand > .page-title {
+    grid-column: 1; grid-row: 1;
+    display: flex; align-items: center;
+    min-width: 0;
+}
+.rq-has-brand > .page-title > .title-area { min-width: 0; }
+.rq-has-brand > .page-title > .view-switcher { flex: none; margin-inline-start: 10px; }
+.rq-has-brand > .standard-items-section { grid-column: 3; grid-row: 1; justify-self: end; }
 .rq-head-brand {
-    position: absolute;
-    left: 50%; top: 50%;
-    transform: translate(-50%, -50%);
-    direction: ltr;               /* fixed physical order for the ornaments */
+    position: relative;
+    grid-column: 2; grid-row: 1;
+    justify-self: center;
+    direction: ltr;              /* fixed physical order for the ornaments */
     display: inline-flex; align-items: center; gap: 10px;
     padding: 2px 16px;
     text-decoration: none !important;
@@ -1753,14 +1768,33 @@ input[type="checkbox"]:not(:checked):hover { background-color: var(--rq-hover) !
 html[data-theme="dark"] .rq-head-brand::before {
     background: radial-gradient(closest-side, rgba(var(--rq-a-rgb), .22), transparent);
 }
+/* «AL-[R logo]AQEEM.ERP»: the logo stands in for the R, sitting on the text
+   baseline at capital-letter height */
+.rq-hb-word {
+    display: inline-flex;
+    align-items: baseline;
+    font-size: 1.12rem;
+    margin-right: -.14em;         /* cancel trailing spacing so it stays centred */
+}
+.rq-hb-logo {
+    display: inline-block;
+    width: .72em; height: .72em;  /* exactly Orbitron's capitals (720/1000); the R fills its box, bottom on the baseline */
+    margin-inline-start: .1em;    /* small gap after the «-» */
+    margin-inline-end: .14em;     /* same gap as the letter-spacing */
+    align-self: baseline;
+    filter: drop-shadow(0 2px 6px rgba(var(--rq-a-rgb), .30));
+    transition: transform .35s var(--rq-ease);
+}
+.rq-hb-logo .rq-logo { display: block; color: var(--rq-accent); }
+.rq-head-brand:hover .rq-hb-logo { transform: translateY(-1px) scale(1.08); }
+.rq-hb-erp { opacity: .72; }
 .rq-hb-text {
     font-family: 'Orbitron', var(--rq-font-head);
     font-weight: 800;
-    font-size: 1.3rem;
+    font-size: 1em;
     line-height: 1.5;
     text-transform: uppercase;
-    letter-spacing: .18em;        /* Latin wordmark only — never on Arabic */
-    margin-right: -.18em;         /* cancel trailing spacing so it stays centred */
+    letter-spacing: .14em;        /* Latin wordmark only — never on Arabic */
     background-image: linear-gradient(110deg,
         var(--rq-accent-deep) 0%, var(--rq-accent) 30%, var(--rq-a-400) 50%,
         var(--rq-accent) 70%, var(--rq-accent-deep) 100%);
@@ -1795,9 +1829,23 @@ html[data-theme="dark"] .rq-head-brand::before {
 .rq-head-brand:hover .rq-hb-line { width: 52px; }
 .rq-head-brand:hover .rq-hb-mark { transform: rotate(45deg) scale(1.2); }
 .rq-head-brand:focus-visible { outline: 2px solid var(--rq-accent-2) !important; outline-offset: 2px; border-radius: var(--rq-r); }
-/* collides with title/buttons (JS) or phone width: hide */
-.rq-head-brand.rq-hb-hidden { opacity: 0; visibility: hidden; pointer-events: none; }
-@media (max-width: 767px) { .rq-head-brand { display: none; } }
+/* crowded header (JS): never hide, only fold — wordmark alone, then logo alone */
+.rq-head-brand.rq-hb-compact { gap: 0; padding: 2px 6px; }
+.rq-head-brand.rq-hb-compact .rq-hb-line,
+.rq-head-brand.rq-hb-compact .rq-hb-mark { display: none; }
+.rq-head-brand.rq-hb-mini { padding: 2px; }
+.rq-head-brand.rq-hb-mini .rq-hb-text { display: none; }
+.rq-head-brand.rq-hb-mini .rq-hb-word { margin-right: 0; }
+.rq-head-brand.rq-hb-mini .rq-hb-logo { width: 22px; height: 22px; margin: 0; }
+.rq-head-brand.rq-hb-hidden { display: none !important; }
+@media (max-width: 767px) {
+    .rq-head-brand { gap: 0; padding: 2px; }
+    .rq-head-brand .rq-hb-line,
+    .rq-head-brand .rq-hb-mark,
+    .rq-head-brand .rq-hb-text { display: none; }
+    .rq-head-brand .rq-hb-word { margin-right: 0; }
+    .rq-head-brand .rq-hb-logo { width: 22px; height: 22px; margin: 0; }
+}
 @media print { .rq-head-brand { display: none; } }
 
 /* --------------------------------------------------------------------------

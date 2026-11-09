@@ -54,6 +54,9 @@ class RaqeemHome {
 				count: (n) => (n === 1 ? "تطبيق واحد متاح لك" : n === 2 ? "تطبيقان متاحان لك" : `${n} تطبيقات متاحة لك`),
 				notifications: "الإشعارات",
 				account: "الحساب",
+				quick: "إنشاء سريع",
+				recent: "تابع من حيث توقفت",
+				recent_hint: "آخر المستندات التي فتحتها على هذا الجهاز",
 			},
 			en: {
 				search: "Search apps…",
@@ -67,6 +70,9 @@ class RaqeemHome {
 				count: (n) => `${n} app${n === 1 ? "" : "s"} available to you`,
 				notifications: "Notifications",
 				account: "Account",
+				quick: "Quick create",
+				recent: "Continue where you left off",
+				recent_hint: "Documents you opened recently on this device",
 			},
 		};
 		return STR[this.lang][key];
@@ -79,7 +85,7 @@ class RaqeemHome {
 			<div class="rq-home">
 				<header class="rq-home-bar">
 					<a class="rq-home-brand" href="/desk" aria-label="RAQEEM">
-						<span class="rq-home-mono" aria-hidden="true">R</span>
+						<span class="rq-home-mono" aria-hidden="true">${window.RAQEEM_LOGO_SVG ? window.RAQEEM_LOGO_SVG() : "R"}</span>
 						<span class="rq-home-word">RAQEEM</span>
 					</a>
 					<label class="rq-home-search">
@@ -106,6 +112,13 @@ class RaqeemHome {
 				<section class="rq-home-hero">
 					<h1 class="rq-home-hello"></h1>
 					<p class="rq-home-sub"></p>
+				</section>
+				<div class="rq-home-quick" hidden></div>
+				<section class="rq-home-recent" hidden>
+					<div class="rq-home-recent-head">
+						<h2 class="rq-home-group-title">${esc(this.t("recent"))}</h2>
+					</div>
+					<div class="rq-home-recent-list"></div>
 				</section>
 				<div class="rq-home-groups"></div>
 				<div class="rq-home-empty" hidden>
@@ -181,6 +194,9 @@ class RaqeemHome {
 			this.render_groups();
 		}
 		this.filter();
+		this.render_quick();
+		this.render_recent();
+		this.load_badges();
 		const count = (this.groups || []).reduce((n, g) => n + g.entries.length, 0);
 		this.$root.find(".rq-home-sub").text(`${this.date_text()} · ${this.t("count")(count)}`);
 		// focus the search box so the user can just type (not on phones: it opens the keyboard)
@@ -219,6 +235,7 @@ class RaqeemHome {
 	render_groups() {
 		const sidebar = frappe.app.sidebar;
 		const esc = frappe.utils.escape_html;
+		this._badges_at = 0; // tiles are new: fetch their badges again
 		this.$groups.empty();
 		let i = 0;
 		(this.groups || []).forEach((group) => {
@@ -234,8 +251,8 @@ class RaqeemHome {
 				const route = sidebar.dock_entry_route(entry) || "/desk";
 				const href = route.startsWith("http") || route.startsWith("/") ? route : "/desk/" + route;
 				const $tile = $(`
-					<a class="rq-tile" role="listitem" href="${esc(href)}" style="--i:${Math.min(i++, 24)}">
-						<span class="rq-tile-icon">${this.icon_html(entry.icon, label)}</span>
+					<a class="rq-tile" role="listitem" href="${esc(href)}" style="--i:${Math.min(i++, 24)}" data-module="${esc(entry.link_to || "")}">
+						<span class="rq-tile-icon">${this.icon_html(entry.icon, label)}<span class="rq-tile-badge" hidden></span></span>
 						<span class="rq-tile-label">${esc(label)}</span>
 					</a>
 				`);
@@ -249,6 +266,134 @@ class RaqeemHome {
 				});
 				$grid.append($tile);
 			});
+		});
+	}
+
+	/* ---------- quick create ---------- */
+	render_quick() {
+		const QUICK = [
+			["Sales Invoice", "receipt-text", "فاتورة مبيعات"],
+			["Quotation", "scroll-text", "عرض سعر"],
+			["Sales Order", "notepad-text", "أمر بيع"],
+			["Payment Entry", "wallet", "قيد دفع"],
+			["Customer", "users", "عميل"],
+			["Item", "package", "صنف"],
+			["Purchase Invoice", "receipt", "فاتورة مشتريات"],
+			["Lead", "funnel", "عميل محتمل"],
+		];
+		const esc = frappe.utils.escape_html;
+		const $q = this.$root.find(".rq-home-quick");
+		const allowed = QUICK.filter(([dt]) => {
+			try {
+				return frappe.model.can_create(dt);
+			} catch (e) {
+				return false;
+			}
+		}).slice(0, 6);
+		if (!allowed.length) return $q.prop("hidden", true);
+		const html =
+			`<span class="rq-home-quick-label">${esc(this.t("quick"))}</span>` +
+			allowed
+				.map(([dt, icon, ar]) => {
+					const label = this.lang === "ar" ? ar : __(dt);
+					const glyph = document.getElementById("rq-" + icon)
+						? `<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#rq-${icon}"></use></svg>`
+						: "";
+					return `<button type="button" class="btn-reset rq-quick" data-doctype="${esc(dt)}">
+						<span class="rq-quick-plus" aria-hidden="true">+</span>${glyph}<span>${esc(label)}</span>
+					</button>`;
+				})
+				.join("");
+		if ($q.data("html") !== html) {
+			$q.html(html).data("html", html);
+			$q.find(".rq-quick").on("click", function () {
+				frappe.new_doc(this.getAttribute("data-doctype"));
+			});
+		}
+		$q.prop("hidden", false);
+	}
+
+	/* ---------- recent documents (recorded by raqeem_form.js) ---------- */
+	render_recent() {
+		const esc = frappe.utils.escape_html;
+		const $sec = this.$root.find(".rq-home-recent");
+		let list = [];
+		try {
+			list = JSON.parse(localStorage.getItem("raqeem_recent") || "[]");
+		} catch (e) {}
+		list = (Array.isArray(list) ? list : []).filter((x) => x && x.user === frappe.session.user && x.doctype && x.name).slice(0, 6);
+		if (!list.length) return $sec.prop("hidden", true);
+		const ar = this.lang === "ar";
+		const ago = (ts) => {
+			const m = Math.max(0, Math.round((Date.now() - ts) / 60000));
+			if (m < 1) return ar ? "الآن" : "just now";
+			if (m < 60) return ar ? `قبل ${m} دقيقة` : `${m} min ago`;
+			const h = Math.round(m / 60);
+			if (h < 24) return ar ? `قبل ${h} ساعة` : `${h} h ago`;
+			const d = Math.round(h / 24);
+			return ar ? `قبل ${d} يوم` : `${d} day${d === 1 ? "" : "s"} ago`;
+		};
+		const html = list
+			.map((x) => {
+				const href = `/desk/${frappe.router.slug(x.doctype)}/${encodeURIComponent(x.name)}`;
+				return `<a class="rq-recent" href="${esc(href)}">
+					<span class="rq-recent-type">${esc(__(x.doctype))}</span>
+					<span class="rq-recent-name" dir="auto">${esc(x.title || x.name)}</span>
+					<span class="rq-recent-foot">
+						${x.status ? `<span class="rq-recent-status" data-color="${esc(x.color)}">${esc(x.status)}</span>` : ""}
+						<span class="rq-recent-ago">${esc(ago(x.ts))}</span>
+					</span>
+				</a>`;
+			})
+			.join("");
+		$sec.find(".rq-home-recent-list").html(html);
+		$sec.prop("hidden", false);
+	}
+
+	/* ---------- live badges on app tiles ---------- */
+	load_badges() {
+		if (this._badges_at && Date.now() - this._badges_at < 60000) return;
+		this._badges_at = Date.now();
+		const ar = this.lang === "ar";
+		const BADGES = {
+			Accounts: { dt: "Sales Invoice", filters: { status: "Overdue", docstatus: 1 }, label: ar ? "متأخرة" : "overdue", tone: "bad" },
+			Selling: { dt: "Sales Order", filters: { status: ["in", ["To Deliver and Bill", "To Deliver"]] }, label: ar ? "للتسليم" : "to deliver" },
+			Buying: { dt: "Purchase Order", filters: { status: ["in", ["To Receive and Bill", "To Receive"]] }, label: ar ? "للاستلام" : "to receive" },
+			Stock: { dt: "Material Request", filters: { status: "Pending", docstatus: 1 }, label: ar ? "طلبات معلقة" : "pending" },
+			Manufacturing: { dt: "Work Order", filters: { status: ["in", ["Not Started", "In Process"]] }, label: ar ? "قيد التنفيذ" : "in progress" },
+			Projects: { dt: "Task", filters: { status: ["in", ["Open", "Working", "Overdue"]] }, label: ar ? "مهام مفتوحة" : "open tasks" },
+			CRM: { dt: "Lead", filters: { status: ["in", ["Lead", "Open"]] }, label: ar ? "عملاء جدد" : "new leads" },
+			Support: { dt: "Issue", filters: { status: "Open" }, label: ar ? "بلاغات مفتوحة" : "open issues", tone: "warn" },
+		};
+		this.$groups.find(".rq-tile[data-module]").each((_, tile) => {
+			const conf = BADGES[tile.getAttribute("data-module")];
+			if (!conf) return;
+			try {
+				if (!frappe.model.can_read(conf.dt)) return;
+			} catch (e) {
+				return;
+			}
+			frappe
+				.xcall("frappe.client.get_count", { doctype: conf.dt, filters: conf.filters })
+				.then((n) => {
+					const badge = tile.querySelector(".rq-tile-badge");
+					if (!badge) return;
+					n = cint(n);
+					badge.hidden = !n;
+					badge.textContent = n > 99 ? "99+" : n;
+					badge.className = "rq-tile-badge" + (conf.tone ? " tone-" + conf.tone : "");
+					tile.title = n ? `${n} ${conf.label}` : "";
+					let note = tile.querySelector(".rq-tile-note");
+					if (n) {
+						if (!note) {
+							note = document.createElement("span");
+							note.className = "rq-tile-note" + (conf.tone ? " tone-" + conf.tone : "");
+							tile.appendChild(note);
+						}
+						note.textContent = `${n > 99 ? "99+" : n} ${conf.label}`;
+					} else if (note) note.remove();
+				})
+				.catch(() => {});
 		});
 	}
 

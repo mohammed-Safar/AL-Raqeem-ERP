@@ -1,0 +1,209 @@
+/* ==========================================================================
+   RAQEEM smarter lists (Raqeem V1.1) — قوائم أذكى
+   1. control panel: the filter row as one Odoo-style bar
+   2. quick filter chips (raqeem_list.js)
+   3. totals bar (raqeem_list.js)
+   4. status stripe on every row (from the row's status badge)
+   ROLLBACK: remove raqeem_list.css and raqeem_list.js from hooks.py.
+   ========================================================================== */
+
+/* ---------- 1. control panel ---------- */
+.page-container:has(.frappe-list) .page-form.list-page-form {
+    margin: 0 0 var(--rq-sp-3) !important;
+    padding: 10px 12px !important;
+    gap: var(--rq-sp-2);
+    border-radius: var(--rq-r-lg) !important;
+    background: var(--rq-surface-1) !important;
+    border: 1px solid var(--rq-line-strong) !important;
+    box-shadow: var(--rq-shadow) !important;
+    align-items: center;
+}
+.page-container:has(.frappe-list) .page-form.list-page-form .form-control,
+.page-container:has(.frappe-list) .page-form.list-page-form input {
+    height: 38px !important;
+    border-radius: var(--rq-r-sm) !important;
+    background: var(--rq-surface-2) !important;
+}
+.page-container:has(.frappe-list) .page-form.list-page-form .filter-section .btn {
+    height: 38px;
+    border-radius: var(--rq-r-sm) !important;
+}
+
+/* ---------- 2. quick filter chips ---------- */
+.rq-chips {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--rq-sp-2);
+    margin: 0 4px var(--rq-sp-3);
+}
+.rq-chips-label {
+    font-size: .78rem;
+    font-weight: 700;
+    color: var(--rq-text-3);
+    margin-inline-end: 4px;
+}
+.rq-chip {
+    display: inline-flex; align-items: center; gap: 6px;
+    height: 32px;
+    padding: 0 14px !important;
+    border-radius: 999px !important;
+    font-size: .86rem;
+    font-weight: 600;
+    color: var(--rq-text-2) !important;
+    background: var(--rq-surface-1) !important;
+    box-shadow: inset 0 0 0 1px var(--rq-line-strong);
+    cursor: pointer;
+    transition: background .18s var(--rq-ease), color .18s var(--rq-ease), box-shadow .18s var(--rq-ease), transform .18s var(--rq-ease);
+}
+.rq-chip::before {
+    content: "";
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--rq-dim);
+}
+.rq-chip--overdue::before { background: #dc2626; }
+.rq-chip--unpaid::before { background: #f59e0b; }
+.rq-chip--drafts::before { background: var(--rq-text-3); }
+.rq-chip:is(.rq-chip--open, .rq-chip--to_deliver, .rq-chip--to_receive, .rq-chip--to_bill)::before { background: #2563eb; }
+.rq-chip:is(.rq-chip--week, .rq-chip--month)::before { background: #16a34a; }
+.rq-chip--mine::before { background: var(--rq-a-500); }
+.rq-chip:hover {
+    color: var(--rq-strong) !important;
+    background: var(--rq-hover) !important;
+    box-shadow: inset 0 0 0 1px var(--rq-hover-line);
+    transform: translateY(-1px);
+}
+.rq-chip.is-on {
+    color: var(--rq-a-ink) !important;
+    background: linear-gradient(135deg, var(--rq-a-400), var(--rq-a-600)) !important;
+    box-shadow: 0 4px 14px rgba(var(--rq-a-rgb), .30);
+}
+.rq-chip.is-on::before { content: "✓"; width: auto; height: auto; background: none; font-weight: 800; }
+.rq-chip:focus-visible { outline: 2px solid var(--rq-accent-2); outline-offset: 2px; }
+
+/* ---------- 3. totals bar ---------- */
+.rq-totals {
+    margin: var(--rq-sp-2) 4px var(--rq-sp-3);
+    padding: 14px 18px;
+    border-radius: var(--rq-r-lg);
+    background:
+        linear-gradient(135deg, rgba(var(--rq-a-rgb), .10), transparent 60%),
+        var(--rq-surface-1);
+    box-shadow: inset 0 0 0 1px var(--rq-line-strong), var(--rq-shadow);
+    animation: rq-totals-in .35s var(--rq-ease) backwards;
+}
+.rq-totals-head {
+    display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+.rq-totals-title { font-size: .82rem; font-weight: 700; color: var(--rq-text-3); }
+.rq-totals-count {
+    padding: 2px 10px;
+    border-radius: 999px;
+    font-size: .78rem; font-weight: 700;
+    color: var(--rq-text-2);
+    background: var(--rq-surface-3);
+}
+.rq-totals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--rq-sp-3);
+}
+.rq-total {
+    display: flex; flex-direction: column; gap: 2px;
+    padding: 10px 14px;
+    border-radius: var(--rq-r);
+    background: var(--rq-surface-2);
+    box-shadow: inset 0 0 0 1px var(--rq-line);
+}
+.rq-total-label { font-size: .8rem; font-weight: 600; color: var(--rq-text-3); }
+.rq-total-value {
+    font-family: var(--rq-font-head);
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--rq-strong);
+    font-variant-numeric: tabular-nums;
+    text-align: start;
+    unicode-bidi: plaintext;
+}
+@keyframes rq-totals-in { from { opacity: 0; transform: translateY(6px); } }
+
+/* ---------- 4. status stripe on rows ---------- */
+.frappe-list .list-row-container { overflow: hidden; }
+.frappe-list .list-row-container::before {
+    content: "";
+    position: absolute;
+    inset-block: 8px;
+    inset-inline-start: 0;
+    width: 4px;
+    border-radius: 0 4px 4px 0;
+    background: transparent;
+    transition: background .2s var(--rq-ease);
+}
+html[dir="rtl"] .frappe-list .list-row-container::before { border-radius: 4px 0 0 4px; }
+.frappe-list .list-row-container:has(.es-badge[data-theme="red"])::before    { background: #dc2626; }
+.frappe-list .list-row-container:has(.es-badge[data-theme="amber"])::before,
+.frappe-list .list-row-container:has(.es-badge[data-theme="orange"])::before { background: #f59e0b; }
+.frappe-list .list-row-container:has(.es-badge[data-theme="yellow"])::before { background: #eab308; }
+.frappe-list .list-row-container:has(.es-badge[data-theme="green"])::before  { background: #16a34a; }
+.frappe-list .list-row-container:has(.es-badge[data-theme="blue"])::before   { background: #2563eb; }
+.frappe-list .list-row-container:has(.es-badge[data-theme="purple"])::before { background: #9333ea; }
+.frappe-list .list-row-container:has(.es-badge:not([data-theme]))::before    { background: var(--rq-dim); }
+/* overdue rows get a faint red wash too */
+.frappe-list .list-row-container:has(.es-badge[data-theme="red"]) {
+    background: linear-gradient(90deg, rgba(220, 38, 38, .06), transparent 40%), var(--rq-surface-1) !important;
+}
+html[dir="rtl"] .frappe-list .list-row-container:has(.es-badge[data-theme="red"]) {
+    background: linear-gradient(270deg, rgba(220, 38, 38, .06), transparent 40%), var(--rq-surface-1) !important;
+}
+/* drafts and cancelled documents are red in Frappe; here they stay calm grey */
+.frappe-list .list-row-container:has(.es-badge[data-filter^="docstatus,=,0"], .es-badge[data-filter^="docstatus,=,2"])::before { background: var(--rq-dim); }
+.frappe-list .list-row-container:has(.es-badge[data-filter^="docstatus,=,0"], .es-badge[data-filter^="docstatus,=,2"]) { background: var(--rq-surface-1) !important; }
+
+@media (prefers-reduced-motion: reduce) { .rq-totals { animation: none; } }
+@media (max-width: 640px) {
+    .rq-chips { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+    .rq-chips::-webkit-scrollbar { display: none; }
+    .rq-chip { flex: 0 0 auto; }
+    .rq-totals-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* ---------- filter fields: the ≈ / = button sits inside its own field ---------- */
+.page-container:has(.frappe-list) .page-form.list-page-form .input-group {
+    position: relative;
+    flex-wrap: nowrap;
+}
+.page-container:has(.frappe-list) .page-form.list-page-form .input-group > .awesomplete {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+.page-container:has(.frappe-list) .page-form.list-page-form .input-group input {
+    width: 100%;
+    margin: 0 !important;
+    padding-inline-end: 36px !important;
+}
+.page-container:has(.frappe-list) .page-form.list-page-form .input-group > .input-group-btn {
+    position: absolute;
+    inset-inline-end: 4px;
+    top: 0; bottom: 0;
+    display: flex;
+    align-items: center;
+    margin: 0 !important;
+    z-index: 4;
+}
+.page-container:has(.frappe-list) .page-form.list-page-form .match-type-dropdown-btn {
+    width: 28px;
+    height: 28px !important;
+    padding: 0;
+    justify-content: center;
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: var(--rq-r-sm) !important;
+    box-shadow: none !important;
+}
+.page-container:has(.frappe-list) .page-form.list-page-form .match-type-dropdown-btn:hover,
+.page-container:has(.frappe-list) .page-form.list-page-form .match-type-dropdown-btn[aria-expanded="true"] {
+    background: rgba(var(--rq-a-rgb), .16) !important;
+}

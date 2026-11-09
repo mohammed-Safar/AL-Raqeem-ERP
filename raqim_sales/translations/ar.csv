@@ -191,7 +191,7 @@ About,حول النظام
 About Us,من نحن
 Above,أكثر من
 Above 120 Days,أكثر من 120 يوماً
-Academics User,مستخدم الأكاديميات
+Academics User,موظف الشؤون الأكاديمية
 Accept Invitation,قبول الدعوة
 Accept emit() calls for events no app registered through the automation_events hook.,قبول استدعاءات emit() لأحداث لم يسجّلها أي تطبيق عبر خطاف automation_events.
 Accepted At,قُبلت في
@@ -229,7 +229,7 @@ Accounts Payable,الذمم الدائنة
 Accounts Payable Summary,ملخص الذمم الدائنة
 Accounts Receivable,الذمم المدينة
 Accounts Receivable Summary,ملخص الذمم المدينة
-Accounts User,مستخدم الحسابات
+Accounts User,موظف الحسابات
 Accumulated Depreciation,مجمع الإهلاك
 Accumulated Depreciation Account,حساب مجمع الإهلاك
 Accumulated Depreciation Amount,مبلغ مجمع الإهلاك
@@ -2352,7 +2352,7 @@ From Warehouse,من المستودع
 Frozen,مجمّد
 Fulfilled,مستوفى
 Fulfillment,التنفيذ
-Fulfillment User,مستخدم التنفيذ
+Fulfillment User,موظف تنفيذ الطلبات
 Fulfilment Deadline,الموعد النهائي للوفاء
 Fulfilment Details,تفاصيل الوفاء بالعقد
 Fulfilment Status,حالة الوفاء
@@ -2695,7 +2695,7 @@ In stock,متوفر
 "In {0}, {1} is required in {2} rows.",في {0}، الحقل {1} مطلوب في {2} صفوف.
 Inactive Customers,العملاء غير النشطين
 Inactive Sales Items,أصناف المبيعات غير النشطة
-Inbox User,مستخدم صندوق الوارد
+Inbox User,مستخدم البريد الوارد
 Inch Pound-Force,بوصة باوند قوة
 Inches Of Mercury,بوصات زئبق
 Include Ageing Summary,تضمين ملخص التقادم
@@ -2963,7 +2963,7 @@ Item Information,معلومات الصنف
 Item Label,تسمية العنصر
 Item Lead Time,مدة توريد الصنف
 Item Locations,مواقع الأصناف
-Item Manager,مدير الأصناف
+Item Manager,مسؤول بيانات الأصناف
 Item Manufacturer,مصنّع الصنف
 Item Name,اسم الصنف
 Item Naming By,تسمية الأصناف حسب
@@ -3074,7 +3074,7 @@ Kilogram-Force,كيلوغرام قوة
 Kilopound-Force,كيلو باوند قوة
 Kind,النوع
 Knot,عقدة بحرية
-Knowledge Base Contributor,مساهم قاعدة المعرفة
+Knowledge Base Contributor,كاتب مقالات المساعدة
 LDAP Email Field,حقل البريد الإلكتروني في LDAP
 LDAP Group Mapping,ربط مجموعة LDAP
 LDAP Group Mappings,روابط مجموعات LDAP
@@ -3196,7 +3196,7 @@ License,الترخيص
 License Plate,لوحة المركبة
 Light,فاتح
 Light Theme,السمة الفاتحة
-Like,إعجاب
+Like,يشابه
 Liked,أُعجب به
 Liked By,أُعجب به
 Liked by me,أعجبتني
@@ -3283,7 +3283,7 @@ Maintain Asset,صيانة الأصل
 Maintain Stock,صنف مخزني
 Maintenance Role,دور الصيانة
 Maintenance Schedule Item,صنف جدول الصيانة
-Maintenance User,مستخدم الصيانة
+Maintenance User,موظف الصيانة
 Maintenance Visit Purpose,غرض زيارة الصيانة
 Major/Optional Subjects,التخصص / المواد الاختيارية
 Make,إنشاء
@@ -3694,7 +3694,7 @@ Not Editable,غير قابل للتعديل
 Not Enough Stock,المخزون غير كافٍ
 Not Found,غير موجود
 Not In,ليس ضمن
-Not Like,لا يشبه
+Not Like,لا يشابه
 Not Nullable,لا يقبل القيم الفارغة
 Not Permitted,غير مسموح
 Not Published,غير منشور
@@ -4278,7 +4278,7 @@ Preferred Shipping Address,عنوان الشحن المفضل
 Prefix and suffix (rich content per option),بادئة ولاحقة (محتوى غني لكل خيار)
 "Prefix, suffix and icon-only crumbs",عناصر مسار بادئة ولاحقة وأيقونة فقط
 Prepared Report,التقرير المُعدّ
-Prepared Report User,مستخدم التقرير المُعدّ
+Prepared Report User,مستخدم التقارير المجهزة
 Preparing Report,جارٍ إعداد التقرير
 Preparing import...,جارٍ تجهيز الاستيراد...
 Prevdoc DocType,نوع المستند السابق
@@ -4393,7 +4393,7 @@ Project master.,البيانات الرئيسية للمشروع.
 Project {0} is only {1} complete. Complete or cancel its tasks first.,المشروع {0} مكتمل بنسبة {1} فقط. أكمل مهامه أو ألغِها أولاً.
 Projected On Hand,المتوقع في المخزون
 Projects,المشاريع
-Projects User,مستخدم المشاريع
+Projects User,موظف المشاريع
 Promise that fails,وعد يفشل
 Promise that succeeds,وعد ينجح
 Promotional,ترويجية
@@ -4446,7 +4446,7 @@ Purchase Receipt {0} is closed and cannot be invoiced,إيصال الاستلا�
 Purchase Register,سجل المشتريات
 Purchase Return,مرتجع مشتريات
 Purchase Tax Template,قالب ضريبة المشتريات
-Purchase User,مستخدم المشتريات
+Purchase User,موظف المشتريات
 Purchase Voucher No,رقم سند الشراء
 Purchase Voucher Type,نوع سند الشراء
 Purchased,مُشترى
@@ -5119,7 +5119,7 @@ Sales Pipeline,مسار المبيعات
 Sales Price List,قائمة أسعار البيع
 Sales Register,سجل المبيعات
 Sales Return,مرتجع المبيعات
-Sales User,مستخدم المبيعات
+Sales User,موظف المبيعات
 Salesforce,Salesforce
 Salvage Value,قيمة الخردة
 Salvage Value Percentage,نسبة قيمة الخردة
@@ -5196,7 +5196,7 @@ Scrap Asset,تخريد الأصل
 Scrap Warehouse,مستودع الخردة
 Scrapped,مُخرَّد
 Script,السكربت
-Script Manager,مدير السكربتات
+Script Manager,مسؤول البرمجيات النصية
 Script Report,تقرير برمجي
 Script Type,نوع السكربت
 Scripting,البرمجة النصية
@@ -5770,7 +5770,7 @@ Stock Summary,ملخص المخزون
 Stock UOM,وحدة قياس المخزون
 Stock Unreservation,إلغاء حجز المخزون
 Stock Uom,وحدة قياس المخزون
-Stock User,مستخدم المخزون
+Stock User,موظف المخزون
 Stock Validations,التحقق من المخزون
 Stock Valuation Comparison,مقارنة تقييم المخزون
 Stock Value Difference,فرق قيمة المخزون
@@ -7117,4 +7117,167 @@ yesterday,أمس
 Blue,أزرق
 Green,أخضر
 Black & White,أبيض وأسود
-"Theme colour: {0} — click for {1}","لون الواجهة: {0} — انقر للتبديل إلى {1}"
+Theme colour: {0} — click for {1},لون الواجهة: {0} — انقر للتبديل إلى {1}
+Chart of Accounts,دليل الحسابات
+Delivered,تم التسليم
+Paused,متوقف مؤقتًا
+Stage,المرحلة
+Template Name,اسم القالب
+Driver,السائق
+{0} Request for {1},طلب {0}: {1}
+{0} List View Settings,إعدادات عرض القائمة لـ {0}
+{0} Reports,تقارير {0}
+{0} Not allowed to change {1} after submission from {2} to {3},{0} غير مسموح بتغيير {1} بعد الاعتماد من {2} إلى {3}
+Asset Depreciations and Balances,إهلاك الأصول والأرصدة
+Available Stock for Packing Items,المخزون المتاح للأصناف المعبأة
+Batch Item Expiry Status,حالة انتهاء صلاحية دفعات الصنف
+Billed Items To Be Received,الأصناف المفوترة بانتظار الاستلام
+Cost of Poor Quality Report,تقرير تكلفة الجودة الرديئة
+Customer Acquisition and Loyalty,اكتساب العملاء والولاء
+Customer Addresses And Contacts,عناوين العملاء وجهات الاتصال
+Customers Without Any Sales Transactions,عملاء بدون أي معاملات مبيعات
+Incorrect Serial and Batch Bundle,حزمة رقم تسلسلي ودفعة غير صحيحة
+Incorrect Stock Value Report,تقرير قيمة المخزون غير الصحيحة
+Issued Items Against Work Order,الأصناف المصروفة مقابل أمر العمل
+Item-wise Price List Rate,سعر قائمة الأسعار حسب الصنف
+Items To Be Requested,الأصناف المطلوب طلبها
+Itemwise Recommended Reorder Level,مستوى إعادة الطلب الموصى به حسب الصنف
+Payment Period Based On Invoice Date,فترة الدفع بناءً على تاريخ الفاتورة
+Pending SO Items For Purchase Request,أصناف أوامر البيع المعلقة لطلب الشراء
+Permitted Documents For User,المستندات المسموح بها للمستخدم
+Process Statement Of Accounts,معالجة كشف الحسابات
+Project wise Stock Tracking,تتبع المخزون حسب المشروع
+Prospects Engaged But Not Converted,العملاء المحتملون المتفاعلون غير المحوَّلين
+Received Items To Be Billed,الأصناف المستلمة بانتظار الفوترة
+Requested Items To Be Transferred,الأصناف المطلوبة بانتظار النقل
+Requested Items to Order and Receive,الأصناف المطلوبة للطلب والاستلام
+Sales Partner Target Variance Based On Item Group,تباين أهداف شريك المبيعات حسب مجموعة الأصناف
+Sales Partner Target Variance based on Item Group,تباين أهداف شريك المبيعات حسب مجموعة الأصناف
+Sales Person Commission Summary,ملخص عمولة مندوب المبيعات
+Sales Person Target Variance Based On Item Group,تباين أهداف مندوب المبيعات حسب مجموعة الأصناف
+Sales Person-wise Transaction Summary,ملخص المعاملات حسب مندوب المبيعات
+Serial No Service Contract Expiry,انتهاء عقد الخدمة حسب الرقم التسلسلي
+Serial No Warranty Expiry,انتهاء الضمان حسب الرقم التسلسلي
+Stock and Account Value Comparison,مقارنة قيمة المخزون والحساب
+Territory Target Variance Based On Item Group,تباين أهداف المنطقة حسب مجموعة الأصناف
+Trial Balance for Party,ميزان المراجعة حسب الطرف
+Warehouse Wise Stock Balance,رصيد المخزون حسب المستودع
+Warehouse wise Item Balance Age and Value,رصيد الصنف وعمره وقيمته حسب المستودع
+Work Orders in Progress,أوامر العمل قيد التنفيذ
+Chart of Accounts Importer,مستورد دليل الحسابات
+Advance Payment Ledger Entry,قيد دفتر الدفعات المقدمة
+Process Period Closing Voucher,معالجة سند إقفال الفترة
+All Sales Partner Contact,جميع جهات اتصال شركاء المبيعات
+Amount column has positive/negative values,يحتوي عمود المبلغ على قيم موجبة/سالبة
+Asset Received But Not Billed,أصل مستلم غير مفوتر
+Capital Work in Progress,أعمال رأسمالية قيد التنفيذ
+Categorize by Voucher (Consolidated),التصنيف حسب السند (موحّد)
+Expenses Included In Valuation,مصروفات مدرجة في التقييم
+Inter Company Journal Entry,قيد يومية بين الشركات
+Material Consumption for Manufacture,استهلاك المواد للتصنيع
+Material Transfer for Manufacture,نقل المواد للتصنيع
+Profit and Loss Statement,قائمة الأرباح والخسائر
+Round Off for Opening,تقريب الأرصدة الافتتاحية
+Service Received But Not Billed,خدمة مستلمة غير مفوترة
+Stock Received But Not Billed,مخزون مستلم غير مفوتر
+To Receive and Bill,للاستلام والفوترة
+To Deliver and Bill,للتسليم والفوترة
+Not Started,لم يبدأ
+Months,أشهر
+Partly Paid and Discounted,مدفوع جزئياً ومخصوم
+Equals,يساوي
+Not Equals,لا يساوي
+How far along your open projects are.,مدى تقدّم مشاريعك المفتوحة.
+How long your customers' unpaid invoices have been due.,مدة استحقاق الفواتير غير المسددة على عملائك.
+How long your open work orders have been waiting.,مدة انتظار أوامر العمل المفتوحة.
+How long your unpaid supplier bills have been due.,مدة استحقاق فواتير الموردين غير المسددة.
+How long your workstations were down last month.,مدة توقف محطات العمل خلال الشهر الماضي.
+How many inspections you run each month.,عدد عمليات الفحص التي تجريها كل شهر.
+How many of your inspections pass or fail.,عدد عمليات الفحص الناجحة والفاشلة.
+How many opportunities each territory brings in.,عدد الفرص التي تأتي من كل منطقة.
+"How much money sits in your bank accounts, month by month.",رصيد حساباتك المصرفية شهراً بعد شهر.
+How much you order from suppliers each month.,قيمة ما تطلبه من الموردين كل شهر.
+How much you produce each month.,كمية إنتاجك كل شهر.
+How much your customers order each month.,قيمة ما يطلبه عملاؤك كل شهر.
+Items you're about to run short of.,الأصناف التي أوشكت على النفاد.
+New leads coming in each week.,العملاء المحتملون الجدد كل أسبوع.
+New opportunities coming in each week.,الفرص الجديدة كل أسبوع.
+Operations completed on your work orders each quarter.,العمليات المنجزة في أوامر العمل كل ربع سنة.
+Sales orders still waiting to be delivered or billed.,أوامر البيع التي تنتظر التسليم أو الفوترة.
+Support issues opened each month.,بلاغات الدعم المفتوحة كل شهر.
+The opportunities you win each month.,الفرص التي تكسبها كل شهر.
+The projects you finish each month.,المشاريع التي تنجزها كل شهر.
+The stock that has sat longest in your warehouses.,المخزون الأقدم بقاءً في مستودعاتك.
+The value of opportunities you win in each territory.,قيمة الفرص التي تكسبها في كل منطقة.
+What you bill your customers each month.,ما تفوتره لعملائك كل شهر.
+What you deliver to your customers each month.,ما تسلّمه لعملائك كل شهر.
+What you receive from suppliers each month.,ما تستلمه من الموردين كل شهر.
+What you send out for subcontracting each month.,ما ترسله للتصنيع الخارجي كل شهر.
+"What your assets are worth, by category.",قيمة أصولك حسب الفئة.
+"What your assets are worth, by location.",قيمة أصولك حسب الموقع.
+"What your assets are worth, year by year.",قيمة أصولك سنة بعد سنة.
+What your stock is worth in each warehouse.,قيمة مخزونك في كل مستودع.
+"What your stock is worth, by item group.",قيمة مخزونك حسب مجموعة الأصناف.
+What your suppliers bill you each month.,ما يفوتره لك الموردون كل شهر.
+What your work orders planned against what they produced.,الكميات المخططة في أوامر العمل مقارنةً بالمنتَجة فعلياً.
+Where your leads come from.,مصادر عملائك المحتملين.
+"Where your purchase orders stand: to receive, to bill, or done.",حالة أوامر الشراء: بانتظار الاستلام أو الفوترة أو مكتملة.
+Which campaigns bring in your opportunities.,الحملات التي تجلب لك الفرص.
+Your best-selling items over the year.,الأصناف الأكثر مبيعاً خلال السنة.
+Your budgets against what you actually spent.,ميزانياتك مقارنةً بما أنفقته فعلياً.
+"Your customers, ranked by what you deliver to them.",عملاؤك مرتبون حسب ما تسلّمه لهم.
+"Your income and expenses over the year, and what's left as profit.",إيراداتك ومصروفاتك خلال السنة، وما يتبقى منها ربحاً.
+"Your job cards each month, by status.",بطاقات العمل كل شهر حسب الحالة.
+"Your material requests by status, from pending to ordered.",طلبات المواد حسب الحالة، من قيد الانتظار إلى تم الطلب.
+"Your suppliers, ranked by what they deliver to you.",مورّدوك مرتبون حسب ما يسلّمونه لك.
+"Your work orders by status, from planned to completed.",أوامر العمل حسب الحالة، من المخطط لها إلى المكتملة.
+Accounts Payable Ageing,أعمار الذمم الدائنة
+Accounts Receivable Ageing,أعمار الذمم المدينة
+Category-wise Asset Value,قيمة الأصول حسب الفئة
+Completed Projects,المشاريع المكتملة
+Delivery Trends,اتجاهات التسليم
+Email Activity,نشاط البريد الإلكتروني
+Incoming Bills (Purchase Invoice),الفواتير الواردة (فاتورة مشتريات)
+Item Shortage Summary,ملخص نقص الأصناف
+Item-wise Annual Sales,المبيعات السنوية حسب الصنف
+Location-wise Asset Value,قيمة الأصول حسب الموقع
+Material Request Analysis,تحليل طلبات المواد
+Oldest Items,الأصناف الأقدم
+Opportunities via Campaigns,الفرص من الحملات
+Opportunity Trends,اتجاهات الفرص
+Territory Wise Opportunity Count,عدد الفرص حسب المنطقة
+Territory Wise Sales,المبيعات حسب المنطقة
+Top Suppliers,أكبر الموردين
+Warehouse wise Stock Value,قيمة المخزون حسب المستودع
+Webpage Views,مشاهدات صفحات الويب
+Won Opportunities,الفرص المكتسبة
+Active RQ Worker,العمليات الخلفية النشطة
+Active Subcontracted Items,الأصناف النشطة المصنّعة خارجياً
+Average Order Values,متوسط قيم الطلبات
+Average Sales Order Value,متوسط قيمة أمر البيع
+Manufactured Items Value,قيمة الأصناف المصنّعة
+New Opportunity (Last 1 Month),الفرص الجديدة (آخر شهر)
+Purchase Orders Count,عدد أوامر الشراء
+Sales Orders Count,عدد أوامر البيع
+Subcontracting Inward Order Count,عدد أوامر التصنيع الخارجي الواردة
+Subcontracting Outward Order Count,عدد أوامر التصنيع الخارجي الصادرة
+Total System Users,إجمالي مستخدمي النظام
+Total Website Users,إجمالي مستخدمي الموقع
+Bank Reconciliation,التسوية البنكية
+Banking Setup,إعداد الخدمات المصرفية
+Item Standard Cost,التكلفة المعيارية للصنف
+Enter the Full Name of the Customer,أدخل الاسم الكامل للعميل
+Enter the Full Name of the Supplier,أدخل الاسم الكامل للمورد
+Empty uses the size in Print Settings. A receipt size prints one page as tall as the content.,عند تركه فارغاً يُستخدم المقاس المحدد في إعدادات الطباعة. ومقاس الإيصال يطبع صفحة واحدة بطول المحتوى.
+LYD,د.ل
+Delivery User,موظف التوصيل
+Desk User,مستخدم داخلي للنظام
+HR User,موظف الموارد البشرية
+Manufacturing User,موظف التصنيع
+Newsletter Manager,مدير النشرات البريدية
+Purchase Master Manager,مسؤول بيانات المشتريات الأساسية
+Sales Master Manager,مسؤول بيانات المبيعات الأساسية
+Website Manager,مدير الموقع الإلكتروني
+Workspace Manager,مدير مساحات العمل
+Knowledge Base Editor,محرر مقالات المساعدة
+Knowledge Base,مقالات المساعدة
