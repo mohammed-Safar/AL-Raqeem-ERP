@@ -70,4 +70,119 @@
        clip rather than hidden, because hidden would break the sticky header. */
     body { overflow-x: clip; }
     .rq-qs-pop { max-width: calc(100vw - 16px); }
+
+    /* 7. Bottom bar (raqeem_tabbar.js). Stays under Frappe's drawer, panels (1020)
+       and popups (1050+). ROLLBACK: delete this section and the script's line in hooks.py. */
+    :root { --rq-tabbar-h: 58px; --rq-tabbar-total: calc(var(--rq-tabbar-h) + env(safe-area-inset-bottom, 0px)); }
+    .rq-tabbar {
+        position: fixed;
+        inset-inline: 0;
+        bottom: 0;
+        z-index: 1018;
+        display: flex;
+        align-items: stretch;
+        height: var(--rq-tabbar-total);
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+        background: var(--rq-surface-1);
+        border-top: 1px solid var(--rq-line-strong);
+    }
+    .rq-tab,
+    .rq-tab:hover,
+    .rq-tab:focus {
+        flex: 1 1 0;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+        color: color-mix(in srgb, var(--rq-strong) 62%, transparent);
+        text-decoration: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .rq-tab[hidden] { display: none; }
+    .rq-tab.is-active,
+    .rq-tab.is-active:hover,
+    .rq-tab.is-active:focus,
+    .rq-tab[aria-expanded="true"] { color: var(--rq-accent); }
+    .rq-tab-icon { position: relative; display: block; width: 22px; height: 22px; }
+    .rq-tab-icon > svg { display: block; width: 22px; height: 22px; }
+    .rq-tab-label {
+        max-width: 100%;
+        font-size: 10.5px;
+        line-height: 1.2;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .rq-tab-plus {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        margin-top: -17px;
+        border-radius: 50%;
+        color: var(--rq-a-ink);
+        background: var(--rq-a-500);
+        border: 3px solid var(--rq-surface-1);
+        transition: transform .15s ease;
+    }
+    .rq-tab-plus > svg { width: 22px; height: 22px; }
+    .rq-tab-create[aria-expanded="true"] .rq-tab-plus { transform: rotate(45deg); }
+    .rq-tab .notification-count {
+        position: absolute;
+        top: -5px;
+        inset-inline-end: -9px;
+        min-width: 16px;
+        height: 16px;
+        padding: 0 4px;
+        border-radius: 8px;
+        font-size: 10px;
+        line-height: 16px;
+        text-align: center;
+        color: #fff;
+        background: #ef4444;
+    }
+
+    .rq-tb-sheet { position: fixed; inset: 0; z-index: 1016; }
+    .rq-tb-sheet[hidden] { display: none; }
+    .rq-tb-back { position: absolute; inset: 0; background: rgba(0, 0, 0, .45); }
+    .rq-tb-panel {
+        position: absolute;
+        inset-inline: 10px;
+        bottom: calc(var(--rq-tabbar-total) + 12px);
+        padding: 14px;
+        border-radius: 18px;
+        background: var(--rq-surface-1);
+        border: 1px solid var(--rq-line-strong);
+        animation: rq-tb-up .18s ease-out backwards;
+    }
+    @keyframes rq-tb-up { from { opacity: 0; transform: translateY(14px); } }
+    .rq-tb-title { margin-bottom: 10px; font-size: 13px; color: var(--rq-dim); }
+    .rq-tb-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .rq-tb-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        min-height: 46px;
+        padding: 6px 12px;
+        border-radius: 12px;
+        border: 1px solid var(--rq-line-strong);
+        color: var(--rq-strong);
+        font-size: 14px;
+        text-align: start;
+    }
+    .rq-tb-item > svg { flex: 0 0 auto; width: 20px; height: 20px; color: var(--rq-accent); }
+
+    body.modal-open .rq-tabbar,
+    body.rq-tb-typing .rq-tabbar,
+    body:has(.body-sidebar-container.expanded) .rq-tabbar,
+    body[data-route^="point-of-sale"] .rq-tabbar { display: none; }
+
+    /* the end of every page must scroll clear of the bar, toasts must sit above it */
+    .main-section,
+    body.full-height-page .main-section { padding-bottom: var(--rq-tabbar-total) !important; }
+    .es-toast-container,
+    .scroll-to-top.show { bottom: calc(var(--rq-tabbar-total) + 12px) !important; }
 }

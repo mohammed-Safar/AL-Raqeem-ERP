@@ -46,7 +46,7 @@ app_include_css = [
     "/assets/raqim_sales/css/raqeem_home.css?v=39",
     "/assets/raqim_sales/css/raqeem_form.css?v=38",
     "/assets/raqim_sales/css/raqeem_list.css?v=47",
-    "/assets/raqim_sales/css/raqeem_mobile.css?v=2"
+    "/assets/raqim_sales/css/raqeem_mobile.css?v=3"
 ]
 # raqeem_icons.js -> swaps stock sidebar icons for the Raqeem duotone set
 #   (ROLLBACK: delete the two raqeem_icon* lines below and the app_include_icons line)
@@ -61,6 +61,8 @@ app_include_js = [
     # (replaces raqeem_theme_toggle.js, raqeem_accent.js, raqeem_lang_switch.js)
     "/assets/raqim_sales/js/raqeem_quick_settings.js?v=34",
     "/assets/raqim_sales/js/raqeem_sidebar.js?v=35",
+    # phone-only bottom bar (ROLLBACK: delete the next line)
+    "/assets/raqim_sales/js/raqeem_tabbar.js?v=1",
     "/assets/raqim_sales/js/raqeem_form.js?v=38",
     "/assets/raqim_sales/js/raqeem_list.js?v=38",
     "/assets/raqim_sales/js/raqeem_brand_title.js?v=44",
