@@ -34,6 +34,25 @@ def after_migrate():
 	set_default_print_formats()
 	set_home_page()
 	set_dinar_format()
+	set_erpnext_dock()
+
+
+def set_erpnext_dock():
+	"""The left icon rail on a new site: show CRM and Support, drop Portal.
+
+	Portal being on the rail means it is still ERPNext's stock rail, so a rail someone has
+	arranged in Manage Dock is left alone.
+	ROLLBACK: remove the call above; Manage Dock restores any rail by hand.
+	"""
+	stock_rail = {"parenttype": "Dock", "parent": "erpnext"}
+	if not frappe.db.exists("Dock Item", {**stock_rail, "title": "Portal"}):
+		return
+	from frappe.desk.doctype.dock.dock import drop_dock_caches
+
+	frappe.db.delete("Dock Item", {**stock_rail, "title": "Portal"})
+	frappe.db.set_value("Dock Item", stock_rail, {"hidden": 0, "added": 1})
+	drop_dock_caches(None)
+	frappe.clear_cache()
 
 
 def set_dinar_format():

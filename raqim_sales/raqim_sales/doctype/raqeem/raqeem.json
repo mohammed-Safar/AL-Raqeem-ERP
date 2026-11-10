@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-11-01 21:18:28.309785",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "\u0627\u0633\u0645_\u0627\u0644\u0639\u0645\u064a\u0644",
+  "\u0631\u0642\u0645_\u0627\u0644\u0647\u0627\u062a\u0641",
+  "\u0627\u0644\u0631\u0635\u064a\u062f",
+  "select_qoua"
+ ],
+ "fields": [
+  {
+   "fieldname": "\u0627\u0633\u0645_\u0627\u0644\u0639\u0645\u064a\u0644",
+   "fieldtype": "Data",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0639\u0645\u064a\u0644"
+  },
+  {
+   "fieldname": "\u0631\u0642\u0645_\u0627\u0644\u0647\u0627\u062a\u0641",
+   "fieldtype": "Data",
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0647\u0627\u062a\u0641"
+  },
+  {
+   "fieldname": "\u0627\u0644\u0631\u0635\u064a\u062f",
+   "fieldtype": "Float",
+   "label": "\u0627\u0644\u0631\u0635\u064a\u062f"
+  },
+  {
+   "fieldname": "select_qoua",
+   "fieldtype": "Select",
+   "options": "\u0645\u0647\u0646\u062f\u0633 \u0643\u0647\u0631\u0628\u0627\u0626\u064a\n\u0645\u0647\u0646\u062f\u0633 \u062a\u0642\u0646\u064a\n\u0645\u0647\u0646\u062f\u0633 \u0645\u064a\u0643\u0627\u0646\u064a\u0643\u064a\n\u0645\u0647\u0646\u062f\u0633 \u0627\u0644\u0643\u062a\u0631\u0648\u0646\u064a"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-11-02 17:14:21.463005",
+ "modified_by": "safarm978@gmail.com",
+ "module": "Raqim Sales",
+ "name": "raqeem",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
