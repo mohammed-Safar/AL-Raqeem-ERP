@@ -125,6 +125,16 @@ ICONS = {
                     '<circle cx="12" cy="12" r="9"/><path d="M7.5 15l3-3 2 2 4-4.5"/><path d="M14 9.5h2.5V12"/>'),
     "scroll-text": ('<rect x="7" y="3" width="13" height="15" rx="2.5"/>',
                     '<rect x="7" y="3" width="13" height="15" rx="2.5"/><path d="M4 7v11.5A2.5 2.5 0 0 0 6.5 21H16"/><path d="M10.5 8h6M10.5 12h6"/>'),
+    # Sales / Purchase Invoice: own names (not Lucide ones), so Quotation, Purchase Order
+    # and others that share "receipt"/"receipt-text" keep their icon. Used by raqeem_icons.js
+    # (sidebar rows by link), the Home launcher and the phone bar.
+    # Sales = arrow leaving the receipt (money/goods out); Purchase = arrow coming in.
+    "invoice-sales": ('<path d="M3 3h11.5v18l-1.9-1.4-1.9 1.4-1.9-1.4-1.9 1.4-1.9-1.4L3 21z"/>',
+                      '<path d="M3 3h11.5v18l-1.9-1.4-1.9 1.4-1.9-1.4-1.9 1.4-1.9-1.4L3 21z"/><path d="M6.3 8h5M6.3 12h5M6.3 16h2.8"/>'
+                      '<path d="M15.8 15.2 21.5 9.5M17 9.5h4.5V14"/>'),
+    "invoice-purchase": ('<path d="M3 3h11.5v18l-1.9-1.4-1.9 1.4-1.9-1.4-1.9 1.4-1.9-1.4L3 21z"/>',
+                         '<path d="M3 3h11.5v18l-1.9-1.4-1.9 1.4-1.9-1.4-1.9 1.4-1.9-1.4L3 21z"/><path d="M6.3 8h5M6.3 12h5M6.3 16h2.8"/>'
+                         '<path d="M21.5 9.5 15.8 15.2M15.8 10.7v4.5h4.5"/>'),
 }
 
 # Dock (app rail) icons: Frappe 16 names them "<thing>-soft" (module-icons.svg).

@@ -19,13 +19,13 @@
 		en: { home: "Home", search: "Search", create: "Create", bell: "Notifications", menu: "Menu", quick: "Quick create", none: "You can't create any of these documents" },
 	};
 	const QUICK = [
-		["Sales Invoice", "receipt-text", "فاتورة مبيعات"],
+		["Sales Invoice", "invoice-sales", "فاتورة مبيعات"],
 		["Quotation", "scroll-text", "عرض سعر"],
 		["Sales Order", "notepad-text", "أمر بيع"],
 		["Payment Entry", "wallet", "قيد دفع"],
 		["Customer", "users", "عميل"],
 		["Item", "package", "صنف"],
-		["Purchase Invoice", "receipt", "فاتورة مشتريات"],
+		["Purchase Invoice", "invoice-purchase", "فاتورة مشتريات"],
 		["Lead", "funnel", "عميل محتمل"],
 	];
 	const lang = () => ((frappe.boot && frappe.boot.lang) || document.documentElement.lang || "en").split("-")[0];

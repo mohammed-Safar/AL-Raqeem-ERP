@@ -55,6 +55,8 @@ window.RAQEEM_ICON_NAMES = [
 	"book-text",
 	"dollar-sign",
 	"scroll-text",
+	"invoice-sales",
+	"invoice-purchase",
 	"sliders-soft",
 	"calculator-soft",
 	"storefront-soft",

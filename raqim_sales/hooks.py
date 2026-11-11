@@ -40,7 +40,7 @@ app_include_css = [
     "/assets/raqim_sales/css/raqeem_fonts.css?v=33",
     "/assets/raqim_sales/css/raqeem_logo.css?v=39",
     "/assets/raqim_sales/css/raqeem_palette.css?v=33",
-    "/assets/raqim_sales/css/raqeem_theme.css?v=47",
+    "/assets/raqim_sales/css/raqeem_theme.css?v=49",
     # dock icons drawn in CSS (ROLLBACK: delete the next line)
     "/assets/raqim_sales/css/raqeem_icons.css?v=33",
     "/assets/raqim_sales/css/raqeem_home.css?v=39",
@@ -52,24 +52,24 @@ app_include_css = [
 #   (ROLLBACK: delete the two raqeem_icon* lines below and the app_include_icons line)
 app_include_js = [
     # must stay first: fades the loading screen out once the desk is ready
-    "/assets/raqim_sales/js/raqeem_splash.js?v=33",
+    "/assets/raqim_sales/js/raqeem_splash.js?v=35",
     # RAQEEM «R» logo in the theme colour + coloured browser-tab icon
     "/assets/raqim_sales/js/raqeem_logo.js?v=39",
     # pinned dock: a collapsed sidebar folds to the icon rail instead of vanishing
     "/assets/raqim_sales/js/raqeem_sidebar_rail.js?v=33",
     # one header button -> panel with light/dark, theme colour and language
     # (replaces raqeem_theme_toggle.js, raqeem_accent.js, raqeem_lang_switch.js)
-    "/assets/raqim_sales/js/raqeem_quick_settings.js?v=34",
+    "/assets/raqim_sales/js/raqeem_quick_settings.js?v=36",
     "/assets/raqim_sales/js/raqeem_sidebar.js?v=35",
     # phone-only bottom bar (ROLLBACK: delete the next line)
-    "/assets/raqim_sales/js/raqeem_tabbar.js?v=1",
+    "/assets/raqim_sales/js/raqeem_tabbar.js?v=2",
     "/assets/raqim_sales/js/raqeem_form.js?v=38",
     "/assets/raqim_sales/js/raqeem_list.js?v=38",
     "/assets/raqim_sales/js/raqeem_brand_title.js?v=44",
-    "/assets/raqim_sales/js/raqeem_icon_names.js?v=33",
-    "/assets/raqim_sales/js/raqeem_icons.js?v=33"
+    "/assets/raqim_sales/js/raqeem_icon_names.js?v=34",
+    "/assets/raqim_sales/js/raqeem_icons.js?v=34"
 ]
-app_include_icons = ["/assets/raqim_sales/icons/raqeem-sidebar.svg?r=3"]
+app_include_icons = ["/assets/raqim_sales/icons/raqeem-sidebar.svg?r=4"]
 
 # include js, css files in header of web template
 # raqeem_login.css  -> login / update-password pages only
@@ -86,7 +86,7 @@ web_include_css = [
 # raqeem_login.js -> brand panel + language switch on the login page only
 web_include_js = [
     "/assets/raqim_sales/js/raqeem_logo.js?v=39",
-    "/assets/raqim_sales/js/raqeem_login.js?v=41"
+    "/assets/raqim_sales/js/raqeem_login.js?v=43"
 ]
 
 # RAQEEM «R» as the browser-tab icon (overrides ERPNext's);
@@ -281,6 +281,8 @@ website_context = {
 # ----------------
 # before_request = ["raqim_sales.utils.before_request"]
 # after_request = ["raqim_sales.utils.after_request"]
+# RAQEEM skin + shared theme memory for the CRM screen (/crm); see web_inject.py
+after_request = ["raqim_sales.web_inject.after_request"]
 
 # Job Events
 # ----------
@@ -336,4 +338,19 @@ website_context = {
 email_css = ["/assets/raqim_sales/css/raqeem_email.css"]
 
 # RAQEEM: app name + default print formats, see setup.py
-after_migrate = ["raqim_sales.setup.after_migrate"]
+after_migrate = ["raqim_sales.setup.after_migrate", "raqim_sales.cheques_setup.after_migrate"]
+
+# ---- raqeem cheques (ROLLBACK: delete this block and the cheques_setup entry above) ----
+_CHEQUE = "raqim_sales.raqim_sales.doctype.raqeem_cheque.raqeem_cheque"
+doc_events = {
+	"Journal Entry": {"before_cancel": f"{_CHEQUE}.guard_journal_entry_cancel"},
+	"Company": {"on_update": "raqim_sales.cheques_setup.on_company_update"},
+}
+scheduler_events = {"daily": [f"{_CHEQUE}.send_due_reminders"]}
+override_doctype_dashboards = {
+	"Customer": "raqim_sales.cheques_setup.dashboard_party",
+	"Supplier": "raqim_sales.cheques_setup.dashboard_party",
+	"Sales Invoice": "raqim_sales.cheques_setup.dashboard_invoice",
+	"Purchase Invoice": "raqim_sales.cheques_setup.dashboard_invoice",
+}
+# ---- end raqeem cheques ----

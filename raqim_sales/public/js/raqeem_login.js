@@ -155,7 +155,7 @@
 			root.classList.add("rq-web-fading");
 			if (m === "auto") {
 				root.removeAttribute("data-rq-theme");
-				store("raqeem_theme", null);
+				store("raqeem_theme", "auto"); // one memory with the desk: see raqeem_quick_settings.js
 			} else {
 				root.setAttribute("data-rq-theme", m);
 				store("raqeem_theme", m);

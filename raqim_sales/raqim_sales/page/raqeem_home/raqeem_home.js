@@ -12,6 +12,10 @@
    ROLLBACK: set HOME_PAGE_ENABLED = False in raqim_sales/setup.py and run
    `bench --site site2.local migrate` (the /desk home goes back to Frappe's Apps screen). */
 
+// tiles that get their own drawing instead of the sidebar's icon name (both invoices
+// share ERPNext's receipt icon); drawings are in scripts/gen_icons.py
+const TILE_ICONS = { "Sales Invoice": "invoice-sales", "Purchase Invoice": "invoice-purchase" };
+
 frappe.pages["raqeem-home"].on_page_load = function (wrapper) {
 	const page = frappe.ui.make_app_page({
 		parent: wrapper,
@@ -252,7 +256,7 @@ class RaqeemHome {
 				const href = route.startsWith("http") || route.startsWith("/") ? route : "/desk/" + route;
 				const $tile = $(`
 					<a class="rq-tile" role="listitem" href="${esc(href)}" style="--i:${Math.min(i++, 24)}" data-module="${esc(entry.link_to || "")}">
-						<span class="rq-tile-icon">${this.icon_html(entry.icon, label)}<span class="rq-tile-badge" hidden></span></span>
+						<span class="rq-tile-icon">${this.icon_html(TILE_ICONS[entry.link_to] || entry.icon, label)}<span class="rq-tile-badge" hidden></span></span>
 						<span class="rq-tile-label">${esc(label)}</span>
 					</a>
 				`);
@@ -272,13 +276,14 @@ class RaqeemHome {
 	/* ---------- quick create ---------- */
 	render_quick() {
 		const QUICK = [
-			["Sales Invoice", "receipt-text", "فاتورة مبيعات"],
+			["Sales Invoice", "invoice-sales", "فاتورة مبيعات"],
 			["Quotation", "scroll-text", "عرض سعر"],
 			["Sales Order", "notepad-text", "أمر بيع"],
 			["Payment Entry", "wallet", "قيد دفع"],
+			["Raqeem Cheque", "coins", "شيك"],
 			["Customer", "users", "عميل"],
 			["Item", "package", "صنف"],
-			["Purchase Invoice", "receipt", "فاتورة مشتريات"],
+			["Purchase Invoice", "invoice-purchase", "فاتورة مشتريات"],
 			["Lead", "funnel", "عميل محتمل"],
 		];
 		const esc = frappe.utils.escape_html;

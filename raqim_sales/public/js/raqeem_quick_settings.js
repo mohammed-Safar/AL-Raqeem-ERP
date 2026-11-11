@@ -35,16 +35,87 @@
 	}
 	apply_accent(stored_accent());
 
+	/* ---------- ONE memory for login page + desk ----------
+	   This browser's localStorage (raqeem_theme = light/dark/auto, raqeem_accent) is the
+	   single memory; the login page (raqeem_login.js) reads and writes the same keys.
+	   The user record (desk_theme, raqeem_accent default) is only a copy for other
+	   devices: on start the desk applies the local choice and updates that copy. */
+	const THEME_KEY = "raqeem_theme";
+	const MODES = { light: "Light", dark: "Dark", auto: "Automatic" };
+	const ls_get = (k) => {
+		try {
+			return localStorage.getItem(k);
+		} catch (e) {
+			return null;
+		}
+	};
+	const ls_set = (k, v) => {
+		try {
+			localStorage.setItem(k, v);
+		} catch (e) {}
+	};
+	const mode_now = () => {
+		const m = root.getAttribute("data-theme-mode");
+		return m === "automatic" ? "auto" : m === "dark" || m === "light" ? m : root.getAttribute("data-theme") === "dark" ? "dark" : "light";
+	};
+	function apply_mode(m) {
+		const dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+		root.setAttribute("data-theme-mode", m === "auto" ? "automatic" : m);
+		root.setAttribute("data-theme", m === "auto" ? (dark ? "dark" : "light") : m);
+	}
+	const server_saves = [];
+	(function sync_from_memory() {
+		const t = ls_get(THEME_KEY);
+		if (MODES[t]) {
+			if (t !== mode_now()) apply_mode(t);
+			let saved = null;
+			try {
+				saved = frappe.boot.user.desk_theme;
+			} catch (e) {}
+			if (saved !== MODES[t]) {
+				try {
+					frappe.boot.user.desk_theme = MODES[t];
+				} catch (e) {}
+				server_saves.push(["frappe.core.doctype.user.user.switch_theme", { theme: MODES[t] }]);
+			}
+		} else ls_set(THEME_KEY, mode_now());
+
+		const a = ls_get(KEY);
+		if (ACCENTS.includes(a)) {
+			let saved = null;
+			try {
+				saved = frappe.boot.user.defaults[KEY];
+			} catch (e) {}
+			if (a !== current_accent()) apply_accent(a);
+			if (saved !== a) {
+				try {
+					frappe.boot.user.defaults[KEY] = a;
+				} catch (e) {}
+				server_saves.push(["raqim_sales.api.set_accent", { accent: a }]);
+			}
+		} else ls_set(KEY, current_accent());
+
+		if (!server_saves.length) return;
+		const save = () => server_saves.forEach(([m, args]) => frappe.xcall(m, args).catch(() => {}));
+		if (window.jQuery) jQuery(document).one("app_ready", save);
+		else window.addEventListener("load", save);
+	})();
+	// Frappe's own "Toggle Theme" dialog also changes the mode: keep the memory in step
+	new MutationObserver(() => ls_set(THEME_KEY, mode_now())).observe(root, {
+		attributes: true,
+		attributeFilter: ["data-theme-mode"],
+	});
+
 	/* ---------- text (bilingual, so it never depends on translations) ---------- */
 	const lang = () => ((window.frappe && frappe.boot && frappe.boot.lang) || root.lang || "en").split("-")[0];
 	const STR = {
 		ar: {
-			title: "إعدادات العرض", appearance: "المظهر", light: "فاتح", dark: "داكن",
+			title: "إعدادات العرض", appearance: "المظهر", light: "فاتح", dark: "داكن", auto: "تلقائي",
 			colour: "لون الواجهة", language: "اللغة",
 			orange: "برتقالي", gold: "ذهبي", yellow: "أصفر", red: "أحمر", blue: "أزرق", green: "أخضر", purple: "بنفسجي سايبر", mono: "أبيض وأسود",
 		},
 		en: {
-			title: "Display settings", appearance: "Appearance", light: "Light", dark: "Dark",
+			title: "Display settings", appearance: "Appearance", light: "Light", dark: "Dark", auto: "Auto",
 			colour: "Theme colour", language: "Language",
 			orange: "Orange", gold: "Gold", yellow: "Yellow", red: "Red", blue: "Blue", green: "Green", purple: "Cyber Purple", mono: "Black & White",
 		},
@@ -62,23 +133,26 @@
 		16
 	);
 	const ICON_MOON = svg('<path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"/>', 16);
+	const ICON_AUTO = svg('<rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/><path d="M12 7v6a3 3 0 0 0 0-6z" fill="currentColor" stroke="none"/>', 16);
 	const ICON_CHECK = svg('<path d="M5 12.5l4.2 4.2L19 7"/>', 14);
 
 	/* ---------- light / dark ---------- */
-	const current_theme = () => (root.getAttribute("data-theme") === "dark" ? "dark" : "light");
+	const current_theme = () => mode_now(); // light / dark / auto
 	function set_theme(next) {
-		if (next === current_theme()) return;
+		if (!MODES[next] || next === current_theme()) return;
 		root.classList.add("rq-theme-fading");
-		root.setAttribute("data-theme-mode", next);
-		if (frappe.ui && frappe.ui.set_theme) frappe.ui.set_theme(next);
-		else root.setAttribute("data-theme", next);
+		apply_mode(next); // the observer above writes it to the shared memory
 		setTimeout(() => root.classList.remove("rq-theme-fading"), 450);
-		const label = next === "dark" ? "Dark" : "Light";
 		try {
-			frappe.boot.user.desk_theme = label;
+			frappe.boot.user.desk_theme = MODES[next];
 		} catch (e) {}
-		frappe.xcall("frappe.core.doctype.user.user.switch_theme", { theme: label }).catch(() => {});
+		frappe.xcall("frappe.core.doctype.user.user.switch_theme", { theme: MODES[next] }).catch(() => {});
 	}
+	// "Auto" follows the device: react when the device switches light/dark
+	if (window.matchMedia)
+		window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
+			if (current_theme() === "auto") apply_mode("auto");
+		});
 
 	function set_accent(next) {
 		if (next === current_accent()) return;
@@ -129,6 +203,7 @@
 				<div class="rq-qs-seg" role="radiogroup" aria-label="${s("appearance")}">
 					<button type="button" class="rq-qs-opt" data-theme-opt="light" role="radio">${ICON_SUN}<span>${s("light")}</span></button>
 					<button type="button" class="rq-qs-opt" data-theme-opt="dark" role="radio">${ICON_MOON}<span>${s("dark")}</span></button>
+					<button type="button" class="rq-qs-opt" data-theme-opt="auto" role="radio">${ICON_AUTO}<span>${s("auto")}</span></button>
 				</div>
 			</div>
 			<div class="rq-qs-group">

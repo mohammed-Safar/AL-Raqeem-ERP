@@ -1,0 +1,78 @@
+/* ==========================================================================
+   RAQEEM — CRM-only rules (appended to raqeem_crm.css by gen_crm_css.py)
+   CRM is built with frappe-ui: Tailwind classes over the SAME colour variables
+   the desk uses (--surface-*, --ink-*, --outline-*), switched by
+   html[data-theme="dark"]. The token blocks above recolour it; this part adds
+   the RAQEEM fonts, the accent on primary buttons and the active sidebar row.
+   Only stable frappe-ui class names are used (bg-surface-gray-10 = "solid"
+   primary button, [data-state="active"] = current sidebar row).
+   ========================================================================== */
+
+/* focus ring + Frappe-wide primary in the accent */
+html.rq-crm {
+    --primary: var(--rq-a-500) !important;
+    --focus-outline-default: 3px solid rgba(var(--rq-a-rgb), .45) !important;
+}
+
+/* fonts: IBM Plex Sans Arabic / Cairo (Arabic) + RQ Latin, like the desk */
+html.rq-crm,
+html.rq-crm body,
+html.rq-crm button,
+html.rq-crm input,
+html.rq-crm textarea,
+html.rq-crm select {
+    font-family: var(--rq-font) !important;
+}
+html.rq-crm h1, html.rq-crm h2, html.rq-crm h3 {
+    font-family: var(--rq-font-head) !important;
+}
+/* never letter-space Arabic */
+html.rq-crm[lang^="ar"] * { letter-spacing: 0 !important; }
+
+/* warm cream (light) / carbon (dark) page behind the panels */
+html.rq-crm body { background-color: var(--rq-bg) !important; }
+html.rq-crm ::selection { background: rgba(var(--rq-a-rgb), .25); }
+
+/* primary ("solid" gray) buttons take the RAQEEM accent */
+html.rq-crm button.bg-surface-gray-10,
+html.rq-crm a.bg-surface-gray-10 {
+    background-color: var(--rq-a-500) !important;
+    color: var(--rq-a-ink) !important;
+}
+html.rq-crm button.bg-surface-gray-10:hover,
+html.rq-crm a.bg-surface-gray-10:hover {
+    background-color: var(--rq-a-600) !important;
+}
+html.rq-crm button.bg-surface-gray-10:active,
+html.rq-crm a.bg-surface-gray-10:active {
+    background-color: var(--rq-a-700) !important;
+}
+html.rq-crm button.bg-surface-gray-10 svg,
+html.rq-crm a.bg-surface-gray-10 svg { color: currentColor !important; }
+
+/* sidebar: current row = accent tint + accent bar + accent icon */
+html.rq-crm [data-state="active"].group\/sidebar-item {
+    background-color: rgba(var(--rq-a-rgb), .12) !important;
+    box-shadow: inset 3px 0 0 var(--rq-a-500) !important;
+}
+html.rq-crm[dir="rtl"] [data-state="active"].group\/sidebar-item {
+    box-shadow: inset -3px 0 0 var(--rq-a-500) !important;
+}
+html.rq-crm [data-state="active"].group\/sidebar-item svg { color: var(--rq-accent) !important; }
+html.rq-crm [data-state="active"].group\/sidebar-item .truncate { color: var(--rq-strong) !important; font-weight: 600; }
+
+/* checkboxes / switches / progress in the accent */
+html.rq-crm input[type="checkbox"]:checked {
+    background-color: var(--rq-a-500) !important;
+    border-color: var(--rq-a-500) !important;
+}
+html.rq-crm button[role="switch"][aria-checked="true"] { background-color: var(--rq-a-500) !important; }
+
+/* links inside content */
+html.rq-crm .prose a, html.rq-crm a.text-ink-blue-link { color: var(--rq-accent-2) !important; }
+
+/* rounder, softer dialogs and dropdown panels */
+html.rq-crm [role="dialog"] > div,
+html.rq-crm [role="menu"] {
+    border-radius: 14px !important;
+}

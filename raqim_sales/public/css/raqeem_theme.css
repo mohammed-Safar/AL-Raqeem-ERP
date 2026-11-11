@@ -1599,6 +1599,7 @@ html:not([data-theme="dark"]) .body-sidebar, html:not([data-theme="dark"]) .desk
     border-radius: var(--rq-r-sm);
     background: var(--rq-surface-3);
 }
+.rq-qs-seg:has([data-theme-opt="auto"]) { grid-template-columns: repeat(3, 1fr); }
 .rq-qs-opt {
     all: unset;
     box-sizing: border-box;
@@ -2024,6 +2025,39 @@ html[lang="ar"] .body-sidebar .section-break .sidebar-item-label { letter-spacin
     background: var(--rq-a-500);
 }
 .body-sidebar-container:not(.expanded) .standard-sidebar-item.active-sidebar .item-anchor::before { display: none; }
+
+/* --------------------------------------------------------------------------
+   11p. Frappe HR (hrms) — الموارد البشرية
+   HR's own CSS (hrms.bundle.css) loads after ours and paints the org chart
+   (Organizational Chart page) in literal white; these keep it on the theme's
+   surfaces in light and dark, with the accent for the selected person.
+   Harmless when HR is not installed (the classes never appear).
+   -------------------------------------------------------------------------- */
+.node-card,
+.node-card.collapsed,
+.node-group {
+    background: var(--rq-surface-1) !important;
+    border: 1px solid var(--rq-line) !important;
+    color: var(--rq-text) !important;
+}
+.node-card.active {
+    background: var(--rq-surface-2) !important;
+    border-color: var(--rq-a-500) !important;
+    box-shadow: 0 0 0 3px rgba(var(--rq-a-rgb), .18), var(--rq-shadow) !important;
+}
+.node-card.active-path {
+    background: var(--rq-surface-2) !important;
+    border-color: rgba(var(--rq-a-rgb), .45) !important;
+}
+.node-card.active .btn-edit-node {
+    background: var(--rq-a-500) !important;
+    color: var(--rq-a-ink) !important;
+}
+.node-card .node-name { color: var(--rq-strong) !important; }
+.node-card .node-title, .node-card .node-info { color: var(--rq-text-2) !important; }
+.active-connector { stroke: var(--rq-a-500) !important; }
+.collapsed-connector { stroke: var(--rq-line-strong) !important; }
+.feedback-summary .progress-bar-cosmetic { background-color: var(--rq-a-500) !important; }
 
 /* --------------------------------------------------------------------------
    12. Scrollbar — شريط تمرير رفيع

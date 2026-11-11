@@ -1,0 +1,74 @@
+# RAQEEM's own strings (cheques, …): English<TAB>Arabic. build.py adds these to ar.csv last, so they win.
+Raqeem Cheque	شيك
+Raqeem Cheque Log	سجل الشيك
+Cheques	الشيكات
+Cheque	شيك
+Cheque Type	نوع الشيك
+Received / Issued On	تاريخ الاستلام / الإصدار
+Cheque No	رقم الشيك
+Cheque Date	تاريخ الشيك
+The date written on the cheque. It can be cashed from this date.	التاريخ المكتوب على الشيك، ويمكن صرفه ابتداءً من هذا التاريخ.
+In Hand	في الخزينة
+Deposited	مودَع بالمصرف
+Cleared	تم صرفه
+Bounced	مرتجع
+Returned	مُعاد
+Re-presented	أُعيد تقديمه
+Drawn On (Bank)	المصرف المسحوب عليه
+The bank printed on the cheque.	المصرف المطبوع على الشيك.
+Against Invoice	مقابل فاتورة
+Optional. Leave empty to record the cheque on the party's account; you can link it to invoices later with Payment Reconciliation.	اختياري. اتركه فارغاً لتسجيل الشيك على حساب الطرف، ويمكنك ربطه بالفواتير لاحقاً من «مطابقة المدفوعات».
+Invoice Type	نوع الفاتورة
+Invoice Outstanding	المتبقي على الفاتورة
+Party Account	حساب الطرف
+Cheques Account	حساب الشيكات
+Holds the cheque's value until the bank pays it. Set per company in Company > Cheques.	يحفظ قيمة الشيك حتى يصرفه المصرف. يُضبط لكل شركة من: الشركة ← الشيكات.
+Company Bank Account	حساب مصرف الشركة
+Issued cheques: the account the cheque is drawn on. Received cheques: the account it was deposited into.	الشيكات الصادرة: الحساب المسحوب عليه الشيك. الشيكات الواردة: الحساب الذي أُودع فيه.
+Tracking	المتابعة
+Deposited On	تاريخ الإيداع
+Cleared On	تاريخ الصرف
+Bounced On	تاريخ الارتجاع
+Returned On	تاريخ الإعادة
+Bounce / Return Reason	سبب الارتجاع / الإعادة
+History	السجل
+Undone	تم التراجع
+Deposit in Bank	إيداع في المصرف
+Mark Cleared (Paid)	تم الصرف
+Mark Bounced	شيك مرتجع
+Return Cheque	إعادة الشيك
+Re-present	إعادة تقديم
+Undo Last Step	تراجع عن آخر خطوة
+Undo «{0}» of {1}? Its journal entry will be cancelled.	التراجع عن «{0}» بتاريخ {1}؟ سيتم إلغاء القيد المرتبط به.
+Due in {0} days	يستحق بعد {0} يوم
+Due today	يستحق اليوم
+Due {0} days ago	استحق منذ {0} يوم
+Bounce Reason	سبب الارتجاع
+Cheques Under Collection Account	حساب شيكات برسم التحصيل
+Received cheques wait here until the bank pays them.	تبقى الشيكات الواردة هنا حتى يصرفها المصرف.
+Cheques Payable Account	حساب شيكات مستحقة الدفع
+Issued cheques wait here until the bank pays them.	تبقى الشيكات الصادرة هنا حتى يصرفها المصرف.
+A cheque that is {0} cannot be marked {1}.	لا يمكن تحويل شيك حالته «{0}» إلى «{1}».
+Submit the cheque first.	اعتمد الشيك أولاً.
+Select the Company Bank Account.	اختر حساب مصرف الشركة.
+Select the Company Bank Account this cheque is drawn on.	اختر حساب مصرف الشركة المسحوب عليه هذا الشيك.
+Nothing to undo. To reverse receiving or issuing the cheque, cancel it.	لا يوجد ما يمكن التراجع عنه. لعكس استلام الشيك أو إصداره، قم بإلغاء الشيك.
+The date cannot be in the future.	لا يمكن أن يكون التاريخ في المستقبل.
+The date cannot be before {0}, the date of the previous step.	لا يمكن أن يكون التاريخ قبل {0}، تاريخ الخطوة السابقة.
+Cheque No {0} is already recorded in {1}.	الشيك رقم {0} مسجّل مسبقاً في {1}.
+The cheque amount {0} is more than the outstanding amount {1} of {2}. Clear the invoice field to record it on the party's account instead.	مبلغ الشيك {0} أكبر من المتبقي {1} على {2}. أفرغ حقل الفاتورة لتسجيله على حساب الطرف بدلاً من ذلك.
+This entry was made by cheque {0}. Use Undo Last Step or Cancel on the cheque instead.	هذا القيد أنشأه الشيك {0}. استخدم «تراجع عن آخر خطوة» أو «إلغاء» من الشيك نفسه.
+Amount must be greater than zero.	يجب أن يكون المبلغ أكبر من صفر.
+Undid: {0} ({1})	تم التراجع عن: {0} ({1})
+Cheque {0} ({1}) {2} - {3}	شيك {0} ({1}) {2} - {3}
+in 3 days	بعد 3 أيام
+Cheque {0} from {1} ({2}) is due {3}.	الشيك {0} من {1} ({2}) يستحق {3}.
+It has not been deposited yet.	لم يُودَع بالمصرف بعد.
+Cheque {0} issued to {1} ({2}) is due {3}. Make sure the bank account has enough funds.	الشيك {0} الصادر إلى {1} ({2}) يستحق {3}. تأكد من وجود رصيد كافٍ في الحساب المصرفي.
+Set the {0} in Company {1} (section Cheques).	اضبط {0} في الشركة {1} (قسم الشيكات).
+Company Bank Account must be an account of type Bank.	يجب أن يكون حساب مصرف الشركة من نوع «مصرف».
+{0} {1} is in {2}. Cheques are recorded in the company currency ({3}) only.	{0} {1} بعملة {2}. تُسجَّل الشيكات بعملة الشركة ({3}) فقط.
+{0} {1} belongs to another party or company.	{0} {1} يخص طرفاً أو شركة أخرى.
+{0} {1} has only {2} outstanding.	المتبقي على {0} {1} هو {2} فقط.
+Party Type must be one of {0}.	يجب أن يكون نوع الطرف أحد: {0}.
+Set a default receivable/payable account for {0} {1} or company {2}.	اضبط حساب مدينين/دائنين افتراضياً لـ {0} {1} أو للشركة {2}.

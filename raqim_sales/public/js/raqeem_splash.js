@@ -3,22 +3,11 @@
    real loading screen loses the "splash" class and a hidden stand-in takes it;
    when desk.js removes the stand-in, the real one fades out (CSS in
    templates/includes/splash_screen.html) and is then removed.
-   Also remembers the light/dark choice in localStorage so the screen after the
-   next sign-in starts in the right colours (read by raqeem_login.js).
+   (The light/dark memory shared with the login page lives in raqeem_quick_settings.js.)
    Must load before Frappe starts the desk (first entry of app_include_js).
    ROLLBACK: remove this file's line from app_include_js in hooks.py. */
 (function () {
 	const root = document.documentElement;
-
-	function remember_theme() {
-		const t = root.getAttribute("data-theme");
-		if (t !== "light" && t !== "dark") return;
-		try {
-			localStorage.setItem("raqeem_theme", t);
-		} catch (e) {}
-	}
-	remember_theme();
-	new MutationObserver(remember_theme).observe(root, { attributes: true, attributeFilter: ["data-theme"] });
 
 	const splash = document.querySelector(".splash.rq-splash");
 	if (!splash || !document.body) return;

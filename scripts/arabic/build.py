@@ -42,6 +42,14 @@ for en, ar in gl.items():
     for c in ctxs.get(en, {''}):
         rows[(en, c)] = ar
 print(f"glossary overrides: {len(gl)}")
+# RAQEEM's own strings (cheques, ...): kept in app_strings.tsv next to this script, added last
+import os
+_app = os.path.join(os.path.dirname(os.path.abspath(__file__)), "app_strings.tsv")
+for line in open(_app, encoding='utf-8'):
+    if line.strip() and not line.startswith('#'):
+        en, ar = line.rstrip('\n').split('\t')
+        rows[(en, '')] = ar
+print(f"app strings: {_app}")
 for p in problems: print("PROBLEM", p)
 with open(OUT, 'w', newline='', encoding='utf-8') as f:
     w = csv.writer(f)

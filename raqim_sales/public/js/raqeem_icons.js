@@ -16,11 +16,20 @@
 	const ENABLED = true;
 	if (!ENABLED) return;
 
-	const SPRITE = "/assets/raqim_sales/icons/raqeem-sidebar.svg?r=3";
+	const SPRITE = "/assets/raqim_sales/icons/raqeem-sidebar.svg?r=4";
 	const names = new Set(window.RAQEEM_ICON_NAMES || []);
 	const soft = [...names].filter((n) => n.endsWith("-soft"));
 	let replaced = 0;
 	let swapped = 0;
+
+	// rows that get their own drawing by WHERE they link, not by their icon name
+	// (Sales and Purchase Invoice share ERPNext's receipt icon with other items)
+	const BY_ROUTE = { "sales-invoice": "invoice-sales", "purchase-invoice": "invoice-purchase" };
+	function route_icon(el) {
+		const a = el.closest("a[href]");
+		const m = a && (a.getAttribute("href") || "").match(/\/([a-z0-9-]+)\/?(?:[?#].*)?$/);
+		return (m && BY_ROUTE[m[1]]) || null;
+	}
 
 	// 1) make sure the Raqeem sprite is in the page (Frappe's app_include_icons loads it
 	//    too; this is the fallback if that did not happen)
@@ -63,7 +72,7 @@
 		document
 			.querySelectorAll(".sidebar-item-icon[item-icon]:not([data-rq-icon])")
 			.forEach((span) => {
-				const name = span.getAttribute("item-icon");
+				const name = route_icon(span) || span.getAttribute("item-icon");
 				span.setAttribute("data-rq-icon", "0");
 				if (!names.has(name)) return;
 				const use = span.querySelector("use");
