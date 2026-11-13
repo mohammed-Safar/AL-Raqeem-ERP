@@ -1,0 +1,250 @@
+B10-000	crm		All Day Event Notifications	
+B10-001	crm		All available priorities have already been added	
+B10-002	crm		Amount after discount	
+B10-003	crm		An error occurred	
+B10-004	crm		An error occurred while updating the document	
+B10-005	crm		An icon file with .ico extension. Should be 16 x 16 px. Generated using a favicon generator. [favicon-generator.org]	ملف أيقونة بصيغة ico.  يجب أن تكون 16 × 16 بكسل. تم إنشاؤها باستخدام مولد أيقونات. [favicon-generator.org]
+B10-006	crm		An image with 1:1 & 2:1 ratio is preferred	
+B10-007	crm		And	
+B10-008	crm		Annual Revenue	الإيرادات السنوية
+B10-009	crm		Annual Revenue should be a number	
+B10-010	crm		Another CRM	
+B10-011	crm		Any failed lead syncs will show up here	
+B10-012	crm		App Name	اسم التطبيق
+B10-013	crm		Appears in the left sidebar. Recommended size is 32x32 px in PNG or SVG	
+B10-014	crm		Appears next to the title in your browser tab. Recommended size is 32x32 px in PNG or ICO	
+B10-015	crm		Apps	التطبيقات
+B10-016	crm		Are you sure you want to clear demo data? This action cannot be undone.	
+B10-017	crm		Are you sure you want to delete this attachment?	
+B10-018	crm		Are you sure you want to delete this contact?	
+B10-019	crm		Are you sure you want to delete this event?	
+B10-020	crm		Are you sure you want to delete this organization?	
+B10-021	crm		Are you sure you want to delete this task?	
+B10-022	crm		Are you sure you want to delete {0} linked item(s)?	
+B10-023	crm		Are you sure you want to discard unsaved changes to this event?	
+B10-024	crm		Are you sure you want to go back? Unsaved changes will be lost.	
+B10-025	crm		Are you sure you want to login to your Frappe Cloud dashboard?	هل أنت متأكد أنك تريد تسجيل الدخول إلى لوحة معلومات Frappe Cloud الخاصة بك؟
+B10-026	crm		Are you sure you want to remove this tab and all its content?	
+B10-027	crm		Are you sure you want to reset 'Create Quotation from CRM Deal' Form Script?	
+B10-028	crm		Are you sure you want to set the currency as {0}? This cannot be changed later.	
+B10-029	crm		Are you sure you want to unlink {0} linked item(s)?	
+B10-030	crm		Ask your manager to set up the Exchange Rate Provider, as default provider does not support currency conversion for {0} to {1}.	
+B10-031	crm		Assign Condition is required	
+B10-032	crm		Assign Conditions are invalid	
+B10-033	crm		Assign To Me	
+B10-034	crm		Assignee Rules	قواعد المكلف إليه
+B10-035	crm		Assignment Cleared Successfully	
+B10-036	crm		Assignment Condition	
+B10-037	crm		Assignment Days are required	
+B10-038	crm		Assignment Rule Created	
+B10-039	crm		Assignment Rule Deleted	
+B10-040	crm		Assignment Rule Duplicated	
+B10-041	crm		Assignment Rule Updated	
+B10-042	crm		Assignment Rule {0} Updated	
+B10-043	crm		Assignment Schedule	
+B10-044	crm		Assignment conditions	
+B10-045	crm		Assignment conditions are invalid or corrupt, recreate the conditions.	
+B10-046	crm		At least one field is required	
+B10-047	crm		At least one priority is required	
+B10-048	crm		At least one valid Workday with Workday, Start Time, and End Time is required	
+B10-049	crm		Attach	إرفاق
+B10-050	crm		Attach a File	
+B10-051	crm		Attach file…	
+B10-052	crm		Attachments	المرفقات
+B10-053	crm		Attending status updated	
+B10-054	crm		Auth Token	
+B10-055	crm		Auto Create Customer	
+B10-056	crm		Auto Update Expected Deal Value	
+B10-057	crm		Auto update Expected Deal Value	
+B10-058	crm		Auto-assign leads/deals to the right sales user based on predefined conditions	
+B10-059	crm		Auto-generated from the portal view — do not edit directly unless you know what you're doing! 	
+B10-060	crm		Autocomplete	إكمال تلقائي
+B10-061	crm		Automatically sets Communication Status to “Open” for the lead or deal when a new communication is created. Applies only when SLA is enabled	
+B10-062	crm		Automatically sets Communication Status to “Replied” for the lead or deal when a response is received. Applies only when SLA is enabled	
+B10-063	crm		Automatically update "Expected Deal Value" based on the total value of associated products in a deal	
+B10-064	crm		Automation & Rules	
+B10-065	crm		Average deal value of non won/lost deals	
+B10-066	crm		Average deal value of ongoing & won deals	
+B10-067	crm		Average deal value of won deals	
+B10-068	crm		Average time taken from deal creation to deal closure	
+B10-069	crm		Average time taken from lead creation to deal closure	
+B10-070	crm		Avg Deal Value	
+B10-071	crm		Avg Ongoing Deal Value	
+B10-072	crm		Avg Time to Close a Deal	
+B10-073	crm		Avg Time to Close a Lead	
+B10-074	crm		Avg Won Deal Value	
+B10-075	crm		Avg. deal value	
+B10-076	crm		Avg. ongoing deal value	
+B10-077	crm		Avg. time to close a deal	
+B10-078	crm		Avg. time to close a lead	
+B10-079	crm		Avg. won deal value	
+B10-080	crm		Axis Chart	
+B10-081	crm		Back to All Logs	
+B10-082	crm		Back to File Upload	
+B10-083	crm		Back to previous question	
+B10-084	crm		Background Sync Frequency	
+B10-085	crm		Backlog	
+B10-086	crm		Between	ما بين
+B10-087	crm		Bidirectional sync of existing CRM Products and ERPNext Items. Runs in the background.	
+B10-088	crm		Brand	العلامة التجارية
+B10-089	crm		Brand Logo	شعار العلامة التجارية
+B10-090	crm		Brand Settings	
+B10-091	crm		Branding	
+B10-092	crm		Busy	مشغول
+B10-093	crm		CRM Call Log	
+B10-094	crm		CRM Communication Status	
+B10-095	crm		CRM Contacts	
+B10-096	crm		CRM Dashboard	
+B10-097	crm		CRM Deal	
+B10-098	crm		CRM Deal Status	
+B10-099	crm		CRM Dropdown Item	
+B10-100	crm		CRM Exotel Settings	
+B10-101	crm		CRM Fields Layout	
+B10-102	crm		CRM Form Script	
+B10-103	crm		CRM Global Settings	
+B10-104	crm		CRM Holiday	
+B10-105	crm		CRM Holiday List	
+B10-106	crm		CRM Industry	
+B10-107	crm		CRM Invitation	
+B10-108	crm		CRM Lead	
+B10-109	crm		CRM Lead Source	
+B10-110	crm		CRM Lead Status	
+B10-111	crm		CRM Lost Reason	
+B10-112	crm		CRM Notification	
+B10-113	crm		CRM Organization	
+B10-114	crm		CRM Portal Page	
+B10-115	crm		CRM Product	
+B10-116	crm		CRM Product Sync Issue	
+B10-117	crm		CRM Products	
+B10-118	crm		CRM Rolling Response Time	
+B10-119	crm		CRM Sales Hierarchy	
+B10-120	crm		CRM Service Day	
+B10-121	crm		CRM Service Level Agreement	
+B10-122	crm		CRM Service Level Priority	
+B10-123	crm		CRM Status Change Log	
+B10-124	crm		CRM Task	
+B10-125	crm		CRM Telephony Agent	
+B10-126	crm		CRM Telephony Phone	
+B10-127	crm		CRM Territory	
+B10-128	crm		CRM Twilio Settings	
+B10-129	crm		CRM View Settings	
+B10-130	crm		CSV imports	
+B10-131	crm		Calendar	تقويم
+B10-132	crm		Calendar Settings	
+B10-133	crm		Call Details	تفاصيل المكالمة
+B10-134	crm		Call Log	سجل المكالمات
+B10-135	crm		Call log not found	
+B10-136	crm		Call using {0}	
+B10-137	crm		Call with John Doe	
+B10-138	crm		Caller	
+B10-139	crm		Calling Medium	
+B10-140	crm		Calling...	
+B10-141	crm		Can't retry sync for this without source!	
+B10-142	crm		Cancel	إلغاء
+B10-143	crm		Canceled	ألغيت
+B10-144	crm		Cannot assign this role	
+B10-145	crm		Cannot change role of user with Admin access	
+B10-146	crm		Cannot delete standard items {0}	
+B10-147	crm		Cannot delete: linked ERPNext Item {0} is referenced by a Quotation. Remove the reference or delete the Item in ERPNext first.	
+B10-148	crm		Cannot enable rule without adding users in it	
+B10-149	crm		Cannot invite for this role	
+B10-150	crm		Cannot move a manager under one of their own reports	
+B10-151	crm		Cannot rename: an unrelated {0} '{1}' already exists on the other side. Resolve manually first.	
+B10-152	crm		Capture my first lead	
+B10-153	crm		Capturing Leads	
+B10-154	crm		Capturing leads	
+B10-155	crm		Change	تغيير
+B10-156	crm		Change Image	تغيير الصورة
+B10-157	crm		Change Password	تغيير كلمة المرور
+B10-158	crm		Change Photo	
+B10-159	crm		Change Status	تغيير الوضع
+B10-160	crm		Change deal status	
+B10-161	crm		Change language of the application.	
+B10-162	crm		Change timezone of the application.	
+B10-163	crm		Change your account password for security.	
+B10-164	crm		Chart Type	نوع الرسم البياني
+B10-165	crm		Choose Existing	
+B10-166	crm		Choose Existing Contact	
+B10-167	crm		Choose Existing Organization	
+B10-168	crm		Choose how long this SLA policy will be active.	
+B10-169	crm		Choose how you want to use the application by setting your preferences.	
+B10-170	crm		Choose how {0} are assigned among salespeople.	
+B10-171	crm		Choose the Email Service Provider you want to configure.	
+B10-172	crm		Choose the days of the week when this rule should be active.	
+B10-173	crm		Choose which leads/deals are affected by this policy.	
+B10-174	crm		Choose which {0} are affected by this un-assignment rule.	
+B10-175	crm		Clear All Filters	
+B10-176	crm		Clear Assignment	مسح المهمة
+B10-177	crm		Clear Demo Data	مسح بيانات العرض التوضيحي
+B10-178	crm		Clear Sort	
+B10-179	crm		Clear Table	مسح الجدول
+B10-180	crm		Click on the link below to complete your registration and set a new password	انقر على الرابط أدناه لإكمال التسجيل وتعيين كلمة مرور جديدة
+B10-181	crm		Close Panel	
+B10-182	crm		Close my first deal	
+B10-183	crm		Closed Date	
+B10-184	crm		Collaborating with my team	
+B10-185	crm		Color	اللون
+B10-186	crm		Column	عمود
+B10-187	crm		Columns	الأعمدة
+B10-188	crm		Comment	تعليق
+B10-189	crm		Comment sent	تم إرسال التعليق
+B10-190	crm		Common reasons for losing deals	
+B10-191	crm		Communication Status	
+B10-192	crm		Communication Statuses	
+B10-193	crm		Company Name	اسم الشركة
+B10-194	crm		Company in ERPNext site	
+B10-195	crm		Company name is required	
+B10-196	crm		Computer	الحاسوب
+B10-197	crm		Conditions for this rule were created from	
+B10-198	crm		Configure Telephony Settings for your CRM	
+B10-199	crm		Configure actions that appear on the home dropdown	
+B10-200	crm		Configure default settings for your CRM system, including default currency, date formats, and other system-wide preferences to ensure consistency across your system.	
+B10-201	crm		Configure general settings for your application	
+B10-202	crm		Configure how your dashboard calculates, formats, and displays key metrics, including forecasting, deal values, and currency settings	
+B10-203	crm		Configure the Exchange Rate Provider for your CRM	
+B10-204	crm		Configure your Brand Name, Logo, and Favicon	
+B10-205	crm		Configure your Calendar Settings like Default View and Event Notifications here	
+B10-206	crm		Configure your Exotel Telephony Integration Settings here	
+B10-207	crm		Configure your Twilio Telephony Integration Settings here	
+B10-208	crm		Confirm Delete	
+B10-209	crm		Confirm Overwrite	
+B10-210	crm		Confirm Password	تأكيد كلمة المرور
+B10-211	crm		Connect ERPNext to Frappe CRM	
+B10-212	crm		Connect your Email	
+B10-213	crm		Contact Added	
+B10-214	crm		Contact Already Added	
+B10-215	crm		Contact Already Exists	
+B10-216	crm		Contact Image Updated	
+B10-217	crm		Contact Removed	
+B10-218	crm		Contact Support	
+B10-219	crm		Contact Updated	
+B10-220	crm		Contact Us	اتصل بنا
+B10-221	crm		Contact already exists with Email: {0}	
+B10-222	crm		Contact image updated	
+B10-223	crm		Contacts	جهات الاتصال
+B10-224	crm		Content Type	نوع المحتوى
+B10-225	crm		Content is required	
+B10-226	crm		Controls how numbers are displayed (e.g., commas, decimal separators)	
+B10-227	crm		Convert	
+B10-228	crm		Convert lead to deal	
+B10-229	crm		Convert to Deal	
+B10-230	crm		Converted Successfully	
+B10-231	crm		Copied to Clipboard	
+B10-232	crm		Could not create the Frappe CRM custom fields on {0} automatically. If it is running the latest ERPNext, enable <b>Frappe CRM Data Synchronization</b> in its CRM Settings, Otherwise check the Error Log.	
+B10-233	crm		Could not remove.	
+B10-234	crm		Could not update report to	
+B10-235	crm		Create Deal	
+B10-236	crm		Create Event	
+B10-237	crm		Create Lead	إنشاء عميل محتمل
+B10-238	crm		Create Lead from Incoming Emails	
+B10-239	crm		Create New Holiday List	
+B10-240	crm		Create New Template	
+B10-241	crm		Create View	
+B10-242	crm		Create an Event	
+B10-243	crm		Create customer in ERPNext when the deal status is changed	
+B10-244	crm		Create customer on status change	
+B10-245	crm		Create products as Items in ERPNext	
+B10-246	crm		Create quotation button on deal page and auto customer creation on deal status change will be disabled. Are you sure?	
+B10-247	crm		Create your first lead	
+B10-248	crm		Create your first note	
+B10-249	crm		Create your first task	

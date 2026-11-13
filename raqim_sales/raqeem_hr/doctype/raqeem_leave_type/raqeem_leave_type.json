@@ -1,0 +1,183 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "creation": "2026-11-12 23:30:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "leave_type_name",
+  "is_paid",
+  "days_per_year",
+  "allow_half_day",
+  "column_break_1",
+  "count_holidays",
+  "allow_negative",
+  "attachment_after_days",
+  "section_carry",
+  "carry_forward",
+  "max_carry_forward",
+  "column_break_2",
+  "color",
+  "disabled"
+ ],
+ "fields": [
+  {
+   "fieldname": "leave_type_name",
+   "fieldtype": "Data",
+   "label": "Leave Type Name",
+   "reqd": 1,
+   "unique": 1,
+   "in_list_view": 1,
+   "bold": 1
+  },
+  {
+   "fieldname": "is_paid",
+   "fieldtype": "Check",
+   "label": "Paid",
+   "default": "1",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "days_per_year",
+   "fieldtype": "Float",
+   "label": "Days per Year",
+   "in_list_view": 1,
+   "description": "Used when allocating leave for a year. 0 means no fixed balance (for example unpaid leave)."
+  },
+  {
+   "fieldname": "allow_half_day",
+   "fieldtype": "Check",
+   "label": "Allow Half Day",
+   "default": "1"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "count_holidays",
+   "fieldtype": "Check",
+   "label": "Count Weekends and Holidays",
+   "description": "Tick for leave such as sick leave, where every calendar day counts."
+  },
+  {
+   "fieldname": "allow_negative",
+   "fieldtype": "Check",
+   "label": "Allow More Than the Balance"
+  },
+  {
+   "fieldname": "attachment_after_days",
+   "fieldtype": "Int",
+   "label": "Require a Document After (Days)",
+   "description": "For example a medical certificate for sick leave longer than 2 days. 0 means never."
+  },
+  {
+   "fieldname": "section_carry",
+   "fieldtype": "Section Break",
+   "label": "Carry Forward"
+  },
+  {
+   "fieldname": "carry_forward",
+   "fieldtype": "Check",
+   "label": "Carry Unused Days to the Next Period"
+  },
+  {
+   "fieldname": "max_carry_forward",
+   "fieldtype": "Float",
+   "label": "Maximum Days Carried",
+   "depends_on": "carry_forward",
+   "description": "0 means no limit."
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Color",
+   "label": "Calendar Colour"
+  },
+  {
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-12 23:30:00.000000",
+ "modified_by": "Administrator",
+ "module": "Raqeem HR",
+ "name": "Raqeem Leave Type",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "HR Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "HR User",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 0,
+   "print": 1,
+   "email": 1,
+   "share": 0
+  },
+  {
+   "role": "Employee",
+   "read": 1,
+   "write": 0,
+   "create": 0,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 0,
+   "print": 1,
+   "email": 1,
+   "share": 0
+  }
+ ],
+ "sort_field": "leave_type_name",
+ "sort_order": "ASC",
+ "states": [],
+ "track_changes": 1,
+ "autoname": "field:leave_type_name",
+ "naming_rule": "By fieldname",
+ "title_field": "leave_type_name",
+ "show_title_field_in_link": 0
+}

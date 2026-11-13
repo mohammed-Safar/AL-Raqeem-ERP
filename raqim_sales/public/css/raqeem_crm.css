@@ -1006,3 +1006,159 @@ html.rq-crm [role="dialog"] > div,
 html.rq-crm [role="menu"] {
     border-radius: 14px !important;
 }
+
+/* ---- RAQEEM «R» logo (raqeem_logo.js turns the brand image into an inline mark) ---- */
+html.rq-crm .rq-logo-holder { display: inline-flex; align-items: center; justify-content: center; }
+html.rq-crm .rq-logo-holder .rq-logo, html.rq-crm .rq-logo { width: 100%; height: 100%; color: var(--rq-accent); }
+
+/* ---- RAQEEM header tools (raqeem_crm_tools.js): [Home] [display settings] at the header's end ---- */
+html.rq-crm .rq-hdr-tools { display: flex; align-items: center; gap: 6px; padding-inline: 4px 0; }
+html.rq-crm .rq-hdr-btn {
+    display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 10px;
+    color: var(--rq-text-2); background: var(--rq-surface-2); border: 1px solid var(--rq-line);
+    cursor: pointer; transition: background .2s var(--rq-ease), color .2s var(--rq-ease), transform .2s var(--rq-ease);
+}
+html.rq-crm .rq-hdr-btn:hover { background: var(--rq-hover); color: var(--rq-strong); border-color: var(--rq-hover-line); transform: translateY(-1px); }
+html.rq-crm .rq-hdr-btn[aria-expanded="true"] { color: var(--rq-accent); border-color: var(--rq-hover-line); background: var(--rq-accent-soft); }
+html.rq-crm .rq-hdr-home svg { color: var(--rq-accent); }
+html.rq-theme-fading, html.rq-theme-fading * { transition: background-color .4s var(--rq-ease), color .4s var(--rq-ease), border-color .4s var(--rq-ease) !important; }
+
+/* display-settings panel (same layout as the desk's) */
+.rq-qs-panel {
+    position: fixed; z-index: 1000; width: 272px; padding: 12px; border-radius: 16px;
+    background: var(--rq-glass-pop); border: 1px solid var(--rq-line-strong);
+    box-shadow: 0 18px 44px var(--rq-shadow-pop); color: var(--rq-text); font-family: var(--rq-font);
+    backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    animation: rq-qs-in .18s var(--rq-ease);
+}
+@keyframes rq-qs-in { from { opacity: 0; transform: translateY(-4px) scale(.98); } to { opacity: 1; transform: none; } }
+.rq-qs-title { font-family: var(--rq-font-head); font-weight: 700; font-size: 14px; color: var(--rq-strong); padding: 2px 4px 8px; }
+.rq-qs-label { font-size: 12px; color: var(--rq-text-3); padding: 8px 4px 6px; }
+.rq-qs-seg { display: flex; gap: 4px; padding: 3px; border-radius: 12px; background: var(--rq-surface-3); }
+.rq-qs-seg button {
+    flex: 1 1 0; display: flex; align-items: center; justify-content: center; gap: 6px; height: 32px;
+    border: 0; border-radius: 9px; background: transparent; color: var(--rq-text-2); font-size: 13px; cursor: pointer;
+}
+.rq-qs-seg button:hover { color: var(--rq-strong); }
+.rq-qs-seg button[aria-checked="true"] { background: var(--rq-surface-1); color: var(--rq-strong); font-weight: 600; box-shadow: var(--rq-shadow); }
+.rq-qs-seg button[aria-checked="true"] svg { color: var(--rq-accent); }
+.rq-qs-swatches { display: grid; grid-template-columns: repeat(8, 1fr); gap: 6px; padding: 2px; }
+.rq-qs-swatches button { display: grid; place-items: center; height: 28px; border: 0; border-radius: 50%; background: transparent; cursor: pointer; }
+.rq-qs-swatches i { display: block; width: 22px; height: 22px; border-radius: 50%; box-shadow: 0 0 0 1px var(--rq-line-strong); transition: transform .15s var(--rq-ease); }
+.rq-qs-swatches button:hover i { transform: scale(1.12); }
+.rq-qs-swatches button[aria-checked="true"] i { box-shadow: 0 0 0 2px var(--rq-surface-1), 0 0 0 4px var(--rq-a-500); }
+html.rq-crm .rq-onb-logo { width: 40px; height: 40px; margin-bottom: 16px; }
+
+/* ---- sidebar sized like the desk: 260px, 44px rows, 34px icon tiles ---- */
+html.rq-crm .bg-surface-sidebar[style*="width: 15rem"] { width: 260px !important; }
+html.rq-crm .bg-surface-sidebar[style*="width: 3rem"] { width: 64px !important; }
+html.rq-crm [data-slot="sidebar-item"] { height: 44px !important; border-radius: var(--rq-r) !important; margin-block: 1px; }
+html.rq-crm [data-slot="sidebar-item"] > :is(a, button) { padding-inline: 5px 10px !important; border-radius: var(--rq-r) !important; }
+html.rq-crm [data-slot="sidebar-item"] > :is(a, button) > .grid.shrink-0.place-items-center,
+html.rq-crm [data-slot="sidebar-item"] > :is(a, button) > * > .grid.shrink-0.place-items-center {
+    width: 34px; height: 34px; border-radius: var(--rq-r-sm);
+    background: var(--rq-surface-2); box-shadow: inset 0 0 0 1px var(--rq-line);
+    transition: transform .25s var(--rq-ease), box-shadow .25s var(--rq-ease), color .25s var(--rq-ease);
+}
+html.rq-crm [data-slot="sidebar-item"] .grid.shrink-0.place-items-center svg { width: 19px !important; height: 19px !important; }
+html.rq-crm [data-slot="sidebar-item"] span.ml-2.flex-1 { margin-inline-start: 12px !important; margin-inline-end: 0 !important; }
+html.rq-crm [data-slot="sidebar-item"] .truncate.text-sm { font-size: 14.5px !important; font-weight: 500; }
+html.rq-crm [data-slot="sidebar-item"][data-state="inactive"]:hover { background: var(--rq-hover) !important; }
+html.rq-crm [data-slot="sidebar-item"]:hover .grid.shrink-0.place-items-center { transform: scale(1.08) rotate(-4deg); color: var(--rq-accent-2); box-shadow: inset 0 0 0 1px rgba(var(--rq-a-rgb), .35); }
+html.rq-crm [data-slot="sidebar-item"][data-state="active"] {
+    background: linear-gradient(90deg, rgba(var(--rq-a-rgb), .16), rgba(var(--rq-a-rgb), .04)) !important; box-shadow: none !important;
+}
+html.rq-crm[dir="rtl"] [data-slot="sidebar-item"][data-state="active"] { background: linear-gradient(270deg, rgba(var(--rq-a-rgb), .16), rgba(var(--rq-a-rgb), .04)) !important; }
+html.rq-crm [data-slot="sidebar-item"][data-state="active"] .grid.shrink-0.place-items-center {
+    background: rgba(var(--rq-a-rgb), .18); box-shadow: inset 0 0 0 1px rgba(var(--rq-a-rgb), .45); color: var(--rq-accent);
+}
+html.rq-crm [data-slot="sidebar-item"][data-state="active"] .grid.shrink-0.place-items-center svg { color: var(--rq-accent) !important; }
+/* the older "active row" bar from the first CRM skin is replaced by the tile */
+html.rq-crm [data-state="active"].group\/sidebar-item, html.rq-crm[dir="rtl"] [data-state="active"].group\/sidebar-item { box-shadow: none !important; }
+/* keyboard hint "Ctrl K" keeps its reading order */
+html.rq-crm .inline-flex.items-center.gap-0\.5.text-sm { direction: ltr; }
+
+/* ---- dock (raqeem_crm_tools.js): the desk's module rail, same sizes as raqeem_theme.css 11l ---- */
+html.rq-crm .rq-has-dock { display: flex; }
+html.rq-crm .rq-dock {
+    flex: 0 0 82px; width: 82px; height: 100%; display: flex; flex-direction: column; align-items: center;
+    padding: 10px 0; gap: 10px; overflow: hidden auto; scrollbar-width: none;
+    background: var(--rq-glass-pop); border-inline-end: 1px solid var(--rq-line-strong);
+    backdrop-filter: blur(16px) saturate(150%); -webkit-backdrop-filter: blur(16px) saturate(150%);
+}
+html.rq-crm .rq-dock::-webkit-scrollbar { display: none; }
+html.rq-crm .rq-dock-top, html.rq-crm .rq-dock-items, html.rq-crm .rq-dock-bottom { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+html.rq-crm .rq-dock-top { padding-bottom: 10px; border-bottom: 1px solid var(--rq-line); }
+html.rq-crm .rq-dock-bottom { margin-top: auto; padding-top: 6px; }
+html.rq-crm .rq-dock-util, html.rq-crm .rq-dock-item, html.rq-crm .rq-dock-user {
+    position: relative; display: grid; place-items: center; border: 0; background: transparent; cursor: pointer;
+    color: var(--rq-text-2); border-radius: var(--rq-r);
+    transition: background .2s var(--rq-ease), transform .2s var(--rq-ease), box-shadow .2s var(--rq-ease), color .2s;
+}
+html.rq-crm .rq-dock-util { width: 48px; height: 48px; }
+html.rq-crm .rq-dock-util svg { width: 24px; height: 24px; }
+html.rq-crm .rq-dock-logo .rq-logo { width: 36px; height: 36px; color: var(--rq-accent); }
+html.rq-crm .rq-dock-item { width: 54px; height: 54px; --rq-icon-fill: var(--rq-accent); --rq-icon-fill-opacity: .20; }
+html.rq-crm .rq-dock-item svg { width: 30px; height: 30px; }
+html.rq-crm .rq-dock-util:hover, html.rq-crm .rq-dock-item:hover {
+    background: var(--rq-hover); color: var(--rq-accent); transform: scale(1.08);
+    box-shadow: inset 0 0 0 1px var(--rq-hover-line);
+}
+html.rq-crm .rq-dock-item:hover { --rq-icon-fill-opacity: .32; }
+html.rq-crm .rq-dock-item.active {
+    background: linear-gradient(135deg, var(--rq-a-400), var(--rq-a-600)); color: var(--rq-a-ink);
+    box-shadow: 0 6px 16px rgba(var(--rq-a-rgb), .45); --rq-icon-fill: var(--rq-a-ink); --rq-icon-fill-opacity: .18;
+}
+html.rq-crm .rq-dock-item.active:hover { color: var(--rq-a-ink); }
+html.rq-crm .rq-dock-dot { position: absolute; top: 11px; inset-inline-end: 11px; width: 8px; height: 8px; border-radius: 50%; background: var(--rq-accent); box-shadow: 0 0 6px var(--rq-accent); }
+html.rq-crm .rq-dock-user { width: 48px; height: 48px; }
+html.rq-crm .rq-dock-user img, html.rq-crm .rq-dock-user span {
+    width: 34px; height: 34px; border-radius: 50%; object-fit: cover; display: grid; place-items: center;
+    background: color-mix(in srgb, var(--rq-a-500) 70%, #7a2b52); color: #fff; font-size: 13px; font-weight: 600;
+}
+html.rq-crm .rq-dock-user:hover { background: var(--rq-hover); }
+
+/* ---- section sidebar beside the dock, like the desk's ---- */
+html.rq-crm .rq-has-dock .bg-surface-sidebar { background: linear-gradient(180deg, rgba(var(--rq-a-rgb), .05) 0%, transparent 30%), var(--rq-sidebar-bg) !important; }
+/* header = section title + chevron (logo and user move to the dock) */
+html.rq-crm .rq-sb-header > .h-8.max-w-16, html.rq-crm .rq-sb-header .mt-1.text-sm { display: none !important; }
+html.rq-crm .rq-sb-header { height: 44px !important; }
+html.rq-crm .rq-sb-header .text-base-medium { font-family: var(--rq-font-head); font-size: 18px !important; font-weight: 700 !important; color: var(--rq-strong) !important; }
+/* notifications live in the dock */
+html.rq-crm .rq-has-dock [data-slot="sidebar-item"].rq-moved { display: none !important; }
+/* search row = the desk's search box, with the home button beside it */
+html.rq-crm [data-slot="sidebar-item"].rq-sb-search { height: 46px !important; gap: 8px; background: transparent !important; margin-block: 4px 10px; }
+html.rq-crm [data-slot="sidebar-item"].rq-sb-search > :is(a, button) {
+    height: 42px; border-radius: 12px !important; background: var(--rq-surface-3) !important;
+    box-shadow: inset 0 0 0 1px var(--rq-line-strong); color: var(--rq-placeholder);
+}
+html.rq-crm [data-slot="sidebar-item"].rq-sb-search > :is(a, button):hover { box-shadow: inset 0 0 0 1px var(--rq-hover-line); }
+html.rq-crm [data-slot="sidebar-item"].rq-sb-search .grid.shrink-0.place-items-center { background: transparent !important; box-shadow: none !important; width: 26px; height: 26px; transform: none !important; }
+html.rq-crm [data-slot="sidebar-item"].rq-sb-search .truncate.text-sm { font-weight: 400; color: var(--rq-placeholder); }
+html.rq-crm .rq-sb-search kbd, html.rq-crm .rq-sb-search .inline-flex.items-center.gap-0\.5.text-sm {
+    padding: 2px 6px; border-radius: 6px; background: var(--rq-surface-1); box-shadow: inset 0 0 0 1px var(--rq-line-strong); font-size: 11px;
+}
+html.rq-crm .rq-sb-home {
+    flex: 0 0 42px; height: 42px; display: grid; place-items: center; border-radius: 12px;
+    background: var(--rq-surface-3); box-shadow: inset 0 0 0 1px var(--rq-line-strong); color: var(--rq-text-2);
+    transition: background .2s var(--rq-ease), color .2s var(--rq-ease);
+}
+html.rq-crm .rq-sb-home:hover { background: var(--rq-hover); color: var(--rq-accent); }
+/* active row: filled accent tile + bar on the outer edge, like the desk */
+html.rq-crm [data-slot="sidebar-item"][data-state="active"]:not(.rq-sb-search) .grid.shrink-0.place-items-center {
+    background: linear-gradient(135deg, var(--rq-a-400), var(--rq-a-600)) !important; color: var(--rq-a-ink) !important;
+    box-shadow: 0 4px 12px rgba(var(--rq-a-rgb), .35) !important;
+}
+html.rq-crm [data-slot="sidebar-item"][data-state="active"]:not(.rq-sb-search) .grid.shrink-0.place-items-center svg { color: var(--rq-a-ink) !important; }
+html.rq-crm [data-slot="sidebar-item"][data-state="active"]:not(.rq-sb-search) { box-shadow: inset 3px 0 0 var(--rq-a-500) !important; }
+html.rq-crm[dir="rtl"] [data-slot="sidebar-item"][data-state="active"]:not(.rq-sb-search) { box-shadow: inset -3px 0 0 var(--rq-a-500) !important; }
+html.rq-crm [data-slot="sidebar-item"][data-state="active"] .truncate.text-sm { font-weight: 700 !important; color: var(--rq-strong) !important; }
+/* the desk has no trial / getting-started cards in its sidebar */
+html.rq-crm .rq-has-dock .mt-auto.flex.flex-col.gap-1.pt-2 > .mb-1.flex.flex-col.gap-2 { display: none !important; }
+
+/* ---- right-to-left (Arabic): mirror the pieces CRM pins to the left ---- */
+html.rq-crm[dir="rtl"] .border-r.border-outline-gray-1 { border-right-width: 0 !important; border-left-width: 1px !important; }
+html.rq-crm[dir="rtl"] .absolute.z-20.h-screen.bg-surface-base { left: auto !important; right: calc(100% + 1px) !important; box-shadow: -8px 0 8px rgba(0,0,0,.1) !important; }
+html.rq-crm[dir="rtl"] .lucide-chevron-right, html.rq-crm[dir="rtl"] .lucide-chevron-left,
+html.rq-crm[dir="rtl"] .lucide-arrow-right, html.rq-crm[dir="rtl"] .lucide-arrow-left { transform: scaleX(-1); }
+html.rq-crm[dir="rtl"] input[type="email"], html.rq-crm[dir="rtl"] input[type="url"], html.rq-crm[dir="rtl"] input[type="tel"] { direction: ltr; text-align: right; }

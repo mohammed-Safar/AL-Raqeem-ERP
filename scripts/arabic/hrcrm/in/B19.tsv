@@ -1,0 +1,230 @@
+B19-000	crm		Unable to update assignment	
+B19-001	crm		Primary email address updated	
+B19-002	crm		Primary mobile number updated	
+B19-003	crm		Email address added	
+B19-004	crm		Mobile number added	
+B19-005	crm		Email address updated	
+B19-006	crm		Mobile number updated	
+B19-007	crm		Email address removed	
+B19-008	crm		Mobile number removed	
+B19-009	crm		Please enter a valid email address	
+B19-010	crm		Please enter a valid phone number	
+B19-011	crm		Unable to run command	
+B19-012	crm		Could not open Cloud Settings	
+B19-013	crm		No leads yet	
+B19-014	crm		A lead is someone who might buy from you. Add one yourself, import a list, or capture them from a web form.	
+B19-015	crm		No call logs yet	
+B19-016	crm		Calls made through Twilio or Exotel are logged here, along with calls you log by hand on a lead or deal.	
+B19-017	crm		New Deal	
+B19-018	crm		Use New Deal to create a deal for this contact.	
+B19-019	crm		Data Imports	
+B19-020	crm		Importing {0}	
+B19-021	crm		No deals yet	
+B19-022	crm		A deal is a sale you are working on. Create one, or convert a lead into a deal once it looks promising.	
+B19-023	crm		Cannot convert a lost lead to deal	
+B19-024	crm		Set status: {0}	
+B19-025	crm		No tasks yet	
+B19-026	crm		Tasks are to-dos for you and your team, like a follow-up call or sending a quote. Add them here or from a lead or deal.	
+B19-027	crm		No organizations yet	
+B19-028	crm		Organizations are the companies your contacts and deals belong to.	
+B19-029	crm		An Error Occurred	
+B19-030	crm		Imports you start from a list appear here.	
+B19-031	crm		Use New Deal to create a deal for this organization.	
+B19-032	crm		Contact added to {0}	
+B19-033	crm		Skip setup	
+B19-034	crm		Skip setup?	
+B19-035	crm		You won't see this guided setup again. You can still connect email, import leads and invite your team from Settings.	
+B19-036	crm		Set up Frappe CRM	
+B19-037	crm		No notes yet	
+B19-038	crm		Notes keep what you learned on a call or in a meeting next to the lead or deal it belongs to.	
+B19-039	crm		No contacts yet	
+B19-040	crm		Contacts are the people you talk to at your leads and customers. They are added when you convert a lead, or you can add them here.	
+B19-041	hrms		Back to Login	
+B19-042	hrms		No login methods are available. Please contact your administrator.	
+B19-043	hrms		Enter your email address and we'll send you a link to reset your password.	
+B19-044	hrms		Send Reset Link	
+B19-045	hrms		Password reset link has been sent to your email.	
+B19-046	hrms		Failed to send reset link	
+B19-047	hrms		Please enter your email address	
+B19-048	hrms		Request Compensatory Leave	
+B19-049	hrms		Your password has been updated.	
+B19-050	hrms		Please fill all fields	
+B19-051	hrms		New passwords do not match	
+B19-052	hrms		An error occurred while attempting to log out!	
+B19-053	hrms		Compensatory Leave Requests	
+B19-054	hrms		Claim History	
+B19-055	hrms		Failed to download PDF	
+B19-056	hrms		Shift Request History	
+B19-057	hrms		Download Failed	
+B19-058	hrms		Log Type: {0}	
+B19-059	hrms		Tap	
+B19-060	hrms		and then "Add to Home Screen"	
+B19-061	hrms		Document {0} successfully!	
+B19-062	hrms		fields are mandatory	
+B19-063	hrms		field is mandatory	
+B19-064	hrms		Failed to personalize your setup	
+B19-065	hrms		HR Setup	
+B19-066	hrms		Department Wise Employee Count	
+B19-067	hrms		No Holiday List was found for Employee {0} or their company {1} for date {2}. Please assign through {3}	
+B19-068	hrms		Leave(s) Allocated	
+B19-069	hrms		Include Shift Attendance Without Checkins	
+B19-070	hrms		Error in calculating project profitability	
+B19-071	hrms		Total Working Days must be greater than zero. Please review Salary Slip {0}.	
+B19-072	hrms		Daily Work Summary is deprecated and will be removed in an upcoming release.	
+B19-073	hrms		the selected company	
+B19-074	hrms		Cancelling Vehicle Log {0} will delete draft Expense Claim {1} because it only contains Vehicle Expenses.<br><br>Do you want to continue?	
+B19-075	hrms		Cancelling Vehicle Log {0} will update draft Expense Claim {1}.<br><br>Vehicle Expenses rows will be removed. Other expenses will remain.<br><br>Do you want to continue?	
+B19-076	hrms		HR-VLOG-.YYYY.-	
+B19-077	hrms		Current Odometer value	
+B19-078	hrms		Last Odometer Value	
+B19-079	hrms		Boarding Status	
+B19-080	hrms		Employee Onboarding: {0} already exists for Job Offer: {1}	
+B19-081	hrms		Closing this Job Opening for {1} may not be according to the Staffing Plan {0}.<br><br>	
+B19-082	hrms		Close Job Opening	
+B19-083	hrms		Reopen Job Opening	
+B19-084	hrms		Application Web Form Route	
+B19-085	hrms		Prevent Duplicate Applications	
+B19-086	hrms		Pay Details	
+B19-087	hrms		HR-EXIT-INT-	
+B19-088	hrms		You are not permitted to update another employee's goal.	
+B19-089	hrms		No attendance records to create due to following reasons	
+B19-090	hrms		There are multiple shifts assigned to the employee for the same period. Please mention the shift	
+B19-091	hrms		Changed the Status for Other Half from {0} to {1} via Attendance Request as the status is Half Day	
+B19-092	hrms		Updated Status for Other Half from {0} to {1} for date {2} in the attendance record {3}	
+B19-093	hrms		Allow Leave Application After (Calendar Days)	
+B19-094	hrms		Leave for optional holiday	
+B19-095	hrms		Interview Type Name	
+B19-096	hrms		Employee Responsible	
+B19-097	hrms		Job Applicants are not allowed to appear twice for the same Interview Type. Interview {0} already scheduled for Job Applicant {1}	
+B19-098	hrms		Interview Type {0} is only for Designation {1}. Job Applicant has applied for the role {2}	
+B19-099	hrms		Select Interview Type First	
+B19-100	hrms		Work Anniversaries	
+B19-101	hrms		Unlink Payment on Cancellation of Employee Advance	
+B19-102	hrms		Enable Multi-Currency Expense Claims	
+B19-103	hrms		Shift and Attendance	
+B19-104	hrms		Expenses Settings	
+B19-105	hrms		Leave Settings	
+B19-106	hrms		Employees will miss holiday reminders from {0} until {1}. <br> Do you want to proceed with this change?	
+B19-107	hrms		Confirm change in Frequency	
+B19-108	hrms		Are you sure you want to expire this allocation?	
+B19-109	hrms		HR-LAL-.YYYY.-	
+B19-110	hrms		Leave policy could not be assigned to the following employees:	
+B19-111	hrms		Assignment Failed	
+B19-112	hrms		Training Result {0} already exists for Training Event {1}	
+B19-113	hrms		Holiday List Assignment for {0} already exists for date {1}: {2}	
+B19-114	hrms		Duplicate Assignment	
+B19-115	hrms		Assignment start date cannot be outside holiday list dates	
+B19-116	hrms		Holiday List Assignment	
+B19-117	hrms		HR-HLA-.YYYY.-	
+B19-118	hrms		Employee Company	
+B19-119	hrms		Holiday List Start	
+B19-120	hrms		Holiday List End	
+B19-121	hrms		Assignment Starts From	
+B19-122	hrms		Job Offer {0} already exists for {1}	
+B19-123	hrms		Return Advance	
+B19-124	hrms		Optional. Leave blank to use the Mode of Payment set on this Advance, or the Company's Default Cash Account.	
+B19-125	hrms		Employee Advance return is scheduled via Additional Salary: {0} | <a href='{1}'> {2} </a>	
+B19-126	hrms		View Additional Salary entries	
+B19-127	hrms		HR-EAD-.YYYY.-	
+B19-128	hrms		Please set the Advance Account {0} or in {1}	
+B19-129	hrms		Advance Account Required	
+B19-130	hrms		Advance Account is mandatory. Please set the {0} in the Company {1} and submit this document.	
+B19-131	hrms		Advance Amount must be greater than zero.	
+B19-132	hrms		Couldn't automatically pick a Bank/Cash Account for this return. Please set one in the	
+B19-133	hrms		Bank/Cash Account Not Set	
+B19-134	hrms		HR-LAD-.YYYY.-	
+B19-135	hrms		HR-HIREQ-	
+B19-136	hrms		A Job Requisition already exists for {0} requested by {1} for the same department.<br> Do you want to continue?	
+B19-137	hrms		HR Telemetry Milestone	
+B19-138	hrms		Pay via Payment Entry	
+B19-139	hrms		Current Employer	
+B19-140	hrms		For Designation	
+B19-141	hrms		Selected employee advance is not of employee {0}	
+B19-142	hrms		Employee {0} does not belong to company: {1}	
+B19-143	hrms		You are not allowed to create or modify an Expense Claim for Employee {0}	
+B19-144	hrms		Selected employee advance is not of employee {}	
+B19-145	hrms		Row {0}: {1}, {2} and {3} are required against advance {4}.	
+B19-146	hrms		Employee Advance {0} is in currency {1} and can only be claimed in an Expense Claim of the same currency. This Expense Claim is in {2}.	
+B19-147	hrms		Cancel the Payment Entry made against it, correct the advance account to be of type Receivable, and create a new Payment Entry.	
+B19-148	hrms		Employee Advance {0} is linked to account {1}, which is not of type Receivable. {2}	
+B19-149	hrms		Employee Advance {0} is linked to account {1}, which is not of type Receivable. Please correct the account type before making a payment against it.	
+B19-150	hrms		Employee Advance {0}'s payment does not match its Receivable account. This can happen if the account's type was changed after the payment was made. {1}	
+B19-151	hrms		HR-EXP-.YYYY.-	
+B19-152	hrms		{0} applicable after {1} calendar days	
+B19-153	hrms		Leave Approver is mandatory	
+B19-154	hrms		HR-LAP-.YYYY.-	
+B19-155	hrms		Leave Policy Name	
+B19-156	hrms		Bulk Assignment	
+B19-157	hrms		Attendance marking has been queued. It may take a few minutes. You can monitor the job status {0}	
+B19-158	hrms		Attendance has been marked as per employee check-ins.	
+B19-159	hrms		An error occurred during marking attendance. Refer the full error log {0}	
+B19-160	hrms		HR-APR-.YYYY.-	
+B19-161	hrms		You have already applied for this position.	
+B19-162	hrms		Duplicate Application	
+B19-163	hrms		Interview Type {0} is only applicable for the Designation {1}	
+B19-164	hrms		Interview Type {0} is only applicable for Designation {1}	
+B19-165	hrms		Shortlisted	
+B19-166	hrms		Open Resume in New Tab	
+B19-167	hrms		Shortlist	
+B19-168	hrms		Schedule Interview	
+B19-169	hrms		View Job Offer	
+B19-170	hrms		Create Job Offer	
+B19-171	hrms		Interview scheduled successfully	
+B19-172	hrms		Employee must be a non-empty string.	
+B19-173	hrms		You do not have access to Employee {0}	
+B19-174	hrms		Employee {0} does not belong to Company {1}	
+B19-175	hrms		Unmarked days must be a list of dates.	
+B19-176	hrms		Bulk attendance marking is queued with a background job. It may take a while. You can monitor the job status {0}	
+B19-177	hrms		Bulk attendance marking is already in progress for employee {0}. You can monitor the job status {1}	
+B19-178	hrms		Attendance marked successfully.	
+B19-179	hrms		HR-ATT-.YYYY.-	
+B19-180	hrms		Checking Out...	
+B19-181	hrms		Checking In...	
+B19-182	hrms		Add Checkin for Another Employee	
+B19-183	hrms		No check-ins yet	
+B19-184	hrms		Check in to create your first log.	
+B19-185	hrms		{0} recorded outside shift hours. It will not be considered for attendance.	
+B19-186	hrms		{0} successful	
+B19-187	hrms		'employee_fieldname' must be one of {0}.	
+B19-188	hrms		Y-O-Y Promotions	
+B19-189	hrms		Leave Applications by Type	
+B19-190	hrms		Job Application Status	
+B19-191	hrms		Job Offer Status	
+B19-192	hrms		Employees by Age	
+B19-193	hrms		Shift Assignment Breakup	
+B19-194	hrms		Designation Wise Employee Count	
+B19-195	hrms		Department wise Expense Claims	
+B19-196	hrms		Claims by Type	
+B19-197	hrms		Employee Advance Status	
+B19-198	hrms		Designation Wise Openings	
+B19-199	hrms		Employees by Grade	
+B19-200	hrms		Training Type	
+B19-201	hrms		Job Application Frequency	
+B19-202	hrms		Y-O-Y Transfers	
+B19-203	hrms		Job Applicants by Country	
+B19-204	hrms		Gender Diversity Ratio	
+B19-205	hrms		Employees by Branch	
+B19-206	hrms		Department wise Timesheet Hours	
+B19-207	hrms		Timesheet Activity Breakup	
+B19-208	hrms		Job Applicant Pipeline	
+B19-209	hrms		Employees by Type	
+B19-210	hrms		Hiring vs Attrition Count	
+B19-211	hrms		New Hires (This Year)	
+B19-212	hrms		Trainings (This Month)	
+B19-213	hrms		Employees Joining (This Quarter)	
+B19-214	hrms		Total Applicants (This Month)	
+B19-215	hrms		Job Offer Acceptance Rate	
+B19-216	hrms		Transfers (This Month)	
+B19-217	hrms		Total Present (This Month)	
+B19-218	hrms		Early Exit (This Month)	
+B19-219	hrms		Active Employees	
+B19-220	hrms		Rejected Job Applicants	
+B19-221	hrms		Holidays in this month	
+B19-222	hrms		Number of Employees on Leave (Today)	
+B19-223	hrms		Appraisals (This Year)	
+B19-224	hrms		Late Entry (This Month)	
+B19-225	hrms		Employees Relieving (This Quarter)	
+B19-226	hrms		Expense Claims (This Month)	
+B19-227	hrms		Employee Exits (This Year)	
+B19-228	hrms		Separations (This Month)	
+B19-229	hrms		Applicant-to-Hire Percentage	

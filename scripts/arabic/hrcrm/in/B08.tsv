@@ -1,0 +1,250 @@
+B08-000	hrms		Shift Start Time	وقت بداية الوردية
+B08-001	hrms		Shift Status	حالة الوردية
+B08-002	hrms		Shift Timings	أوقات الوردية
+B08-003	hrms		Shift Tools	أدوات المناوبة
+B08-004	hrms		Shift Type	نوع التحول
+B08-005	hrms		Shift assignments for {0} after {1} are already created. Please change {2} date to a date later than {3} {4}	تعيينات المناوبات لـ {0} بعد {1} تم إنشاؤها بالفعل. يرجى تغيير تاريخ {2} إلى تاريخ لاحق لـ {3} {4}
+B08-006	hrms		Shift has been successfully updated to {0}.	تم تحديث الوردية بنجاح إلى {0}.
+B08-007	hrms		Shifts	الورديات
+B08-008	hrms		Show Employee	إظهار الموظف
+B08-009	hrms		Show Leave Balances in Salary Slip	عرض أرصدة الإجازات في قسيمة الراتب
+B08-010	hrms		Show Leaves Of All Department Members In Calendar	إظهار أوراق جميع أعضاء القسم في التقويم
+B08-011	hrms		Show Salary Slip	عرض كشف الراتب
+B08-012	hrms		Showing	عرض
+B08-013	hrms		Sick Leave	الإجازات المرضية
+B08-014	hrms		Single Assignment	تعيين مفرد
+B08-015	hrms		Skill	مهارة
+B08-016	hrms		Skill Assessment	تقييم المهارات
+B08-017	hrms		Skill Name	اسم المهارة
+B08-018	hrms		Skills	المهارات
+B08-019	hrms		Skip Auto Attendance	تخطي الحضور التلقائي
+B08-020	hrms		Skipping Salary Structure Assignment for the following employees, as Salary Structure Assignment records already exists against them. {0}	تخطي تعيين هيكل الرواتب للموظفين التاليين ، لأن سجلات تعيين هيكل الرواتب موجودة بالفعل ضدهم. {0}
+B08-021	hrms		Source and Rating	
+B08-022	hrms		Source and target shifts cannot be the same	لا يمكن أن تكون الوردية المصدر والوردية الهدف متطابقتين
+B08-023	hrms		Sponsored Amount	المبلغ المساند
+B08-024	hrms		Staffing Details	تفاصيل التوظيف
+B08-025	hrms		Staffing Plan	خطة التوظيف
+B08-026	hrms		Staffing Plan Detail	تفاصيل خطة التوظيف
+B08-027	hrms		Staffing Plan {0} already exist for designation {1}	خطة التوظيف {0} موجودة بالفعل للتسمية {1}
+B08-028	hrms		Standard Multiplier	المعامل القياسي
+B08-029	hrms		Standard Tax Exemption Amount	معيار الإعفاء الضريبي
+B08-030	hrms		Standard Working Hours	ساعات العمل القياسية
+B08-031	hrms		Start and end dates not in a valid Payroll Period, cannot calculate {0}.	تواريخ البدء والانتهاء ليست في فترة كشوف المرتبات الصالحة ، ولا يمكن حساب {0}.
+B08-032	hrms		Start date cannot be greater than end date	لا يمكن أن يكون تاريخ البدء أكبر من تاريخ الانتهاء
+B08-033	hrms		Start date cannot be greater than end date.	لا يمكن أن يكون تاريخ البدء بعد تاريخ الانتهاء.
+B08-034	hrms		Start date: {0}	تاريخ البدء: {0}
+B08-035	hrms		Start time and end time cannot be same.	لا يمكن أن يكون وقت البداية ووقت الانتهاء متماثلين.
+B08-036	hrms		Statistical Component	العنصر الإحصائي
+B08-037	hrms		Status for Other Half	الحالة للنصف الآخر
+B08-038	hrms		Stock Options	خيارات المخزون
+B08-039	hrms		Stop users from making Leave Applications on following days.	وقف المستخدمين من طلب إجازة في الأيام التالية.
+B08-040	hrms		Strictly based on Log Type in Employee Checkin	يعتمد بشكل صارم على نوع السجل في فحص الموظف
+B08-041	hrms		Structures have been assigned successfully	تم تخصيص الهياكل بنجاح
+B08-042	hrms		Submission Date	تاريخ التقديم
+B08-043	hrms		Submission Failed	فشل التسجيل
+B08-044	hrms		Submission of {0} before {1} is not allowed	لا يُسمح بتسجيل {0} قبل {1}
+B08-045	hrms		Submit Feedback	إرسال الملاحظات
+B08-046	hrms		Submit Now	سجّل الآن
+B08-047	hrms		Submit Overtime Slips	تسجيل قسائم العمل الإضافي
+B08-048	hrms		Submit Proof	تقديم دليل
+B08-049	hrms		Submit Salary Slip	الموافقة كشف الرواتب
+B08-050	hrms		Submit this Leave Application to confirm.	قم بتسجيل طلب الإجازة هذا للتأكيد.
+B08-051	hrms		Submit this to create the Employee record	إرسال هذا لإنشاء سجل الموظف
+B08-052	hrms		Submitted via Payroll Entry	مسجل عبر قيد الرواتب
+B08-053	hrms		Submitting Salary Slips and creating Journal Entry...	تقديم قسائم الرواتب وإنشاء قيد دفتر اليومية ...
+B08-054	hrms		Submitting Salary Slips...	تقديم قسائم الرواتب ...
+B08-055	hrms		Subsidiary companies have already planned for {1} vacancies at a budget of {2}. Staffing Plan for {0} should allocate more vacancies and budget for {3} than planned for its subsidiary companies	خططت الشركات التابعة بالفعل لـ {1} من الشواغر بميزانية قدرها {2}. يجب أن تخصص خطة التوظيف لـ {0} شواغر وميزانية أكبر لـ {3} من تلك المخططة لشركاتها التابعة
+B08-056	hrms		Successfully created {0} for employees:	تم إنشاء {0} للموظفين بنجاح:
+B08-057	hrms		Successfully {0} {1} for the following employees:	تم {0} {1} بنجاح للموظفين التالية أسماؤهم:
+B08-058	hrms		Sum of all previous slabs	مجموع جميع الشرائح السابقة
+B08-059	hrms		Sum of benefit amounts {0} exceeds maximum limit of {1}	مجموع مبالغ المزايا {0} يتجاوز الحد الأقصى البالغ {1}
+B08-060	hrms		Summarized View	عرض موجز
+B08-061	hrms		Sync {0}	مزامنة {0}
+B08-062	hrms		Syntax error	خطأ في بناء الجملة
+B08-063	hrms		Syntax error in condition: {0} in Income Tax Slab	خطأ في بناء الجملة في الشرط: {0} في شريحة ضريبة الدخل
+B08-064	hrms		Take Exact Completed Years	أخذ السنوات المكتملة بالضبط
+B08-065	hrms		Tax & Benefits	الضرائب والمزايا
+B08-066	hrms		Tax Deducted Till Date	الضريبة المخصومة حتى التاريخ
+B08-067	hrms		Tax Exemption Category	فئة الإعفاء الضريبي
+B08-068	hrms		Tax Exemption Declaration	إقرار الإعفاء الضريبي
+B08-069	hrms		Tax Exemption Proofs	الإعفاء من الضرائب
+B08-070	hrms		Tax Setup	إعداد الضريبة
+B08-071	hrms		Tax on additional salary	الضريبة على الراتب الإضافي
+B08-072	hrms		Tax on flexible benefit	الضريبة على الفائدة المرنة
+B08-073	hrms		Taxable Earnings Till Date	الاستحقاقات الخاضعة للضريبة حتى تاريخه
+B08-074	hrms		Taxable Income Relief Threshold Limit	حد عتبة إعفاء الدخل الخاضع للضريبة
+B08-075	hrms		Taxable Salary Slab	بلاطة الراتب الخاضع للضريبة
+B08-076	hrms		Taxable Salary Slabs	بلاطات الراتب الخاضعة للضريبة
+B08-077	hrms		Taxes & Charges	الضرائب والرسوم
+B08-078	hrms		Taxes and Charges on Income Tax	الضرائب والرسوم على ضريبة الدخل
+B08-079	hrms		Taxi	سيارة اجره
+B08-080	hrms		Team Advances	سلف الفريق
+B08-081	hrms		Team Claims	مطالبات الفريق
+B08-082	hrms		Team Leaves	إجازات الفريق
+B08-083	hrms		Team Requests	طلبات الفريق
+B08-084	hrms		Team Updates	تحديثات الفريق
+B08-085	hrms		Tenure	مدة الخدمة
+B08-086	hrms		Thank you for applying.	شكرًا لتقديمك طلبك.
+B08-087	hrms		The currency of {0} should be same as the company's default currency. Please select another account.	يجب أن تكون عملة {0} مماثلة للعملة الافتراضية للشركة. يرجى اختيار حساب آخر.
+B08-088	hrms		The date on which Salary Component with Amount will contribute for Earnings/Deduction in Salary Slip. 	التاريخ الذي سيساهم فيه مكون الراتب ذو المبلغ في الاستحقاق/الخصم في قسيمة الراتب. 
+B08-089	hrms		The day of the month when leaves should be allocated	يوم الشهر الذي يجب فيه تخصيص الإجازات
+B08-090	hrms		The day(s) on which you are applying for leave are holidays. You need not apply for leave.	فترة طلب اﻹجازة تقع في فترة عطلة رسمية، يجب إختيار فترة أخرى.\\n<br>\\nThe day(s) on which you are applying for leave are holidays. You need not apply for leave.
+B08-091	hrms		The days between {0} to {1} are not valid holidays.	الأيام الممتدة من {0} إلى {1} ليست عطلاً صالحة.
+B08-092	hrms		The first Approver in the list will be set as the default Approver.	سيتم تعيين المعتمد الأول في القائمة كالمعتمد الافتراضي.
+B08-093	hrms		The fraction of Daily Salary per Leave should be between 0 and 1	يجب أن تكون نسبة الراتب اليومي لكل إجازة بين 0 و1.
+B08-094	hrms		The fraction of daily wages to be paid for half-day attendance	جزء من الأجر اليومي الواجب دفعه مقابل حضور نصف يوم
+B08-095	hrms		The metrics for this report are calculated based on the {0}. Please set {0} in {1}.	يتم احتساب مقاييس هذا التقرير استنادًا إلى {0}. يرجى تعيين {0} في {1}.
+B08-096	hrms		The metrics for this report are calculated based on {0}. Please set {0} in {1}.	يتم احتساب مقاييس هذا التقرير استنادًا إلى {0}. يرجى تعيين {0} في {1}.
+B08-097	hrms		The salary slip emailed to the employee will be password protected, the password will be generated based on the password policy.	سيتم حماية كلمة مرور المرسل بالبريد الإلكتروني للموظف ، وسيتم إنشاء كلمة المرور بناءً على سياسة كلمة المرور.
+B08-098	hrms		The time after the shift start time when check-in is considered as late (in minutes).	الوقت بعد وقت بدء التحول عندما يُعتبر تسجيل الوصول متأخرًا (بالدقائق).
+B08-099	hrms		The time before the shift end time when check-out is considered as early (in minutes).	الوقت الذي يسبق وقت نهاية التحول عندما يتم تسجيل المغادرة في وقت مبكر (بالدقائق).
+B08-100	hrms		The time before the shift start time during which Employee Check-in is considered for attendance.	الوقت الذي يسبق وقت بدء التحول الذي يتم خلاله فحص تسجيل الموظف للحضور.
+B08-101	hrms		Theory	نظرية
+B08-102	hrms		There are more holidays than working days this month.	أيام العطل لهذا الشهر أكثر من أيام العمل.\\n<br>\\nThere are more holidays than working days this month.
+B08-103	hrms		There are no arrear differences between existing and new salary structure components.	لا توجد فروقات متأخرات بين مكونات هيكل الراتب الحالي والجديد.
+B08-104	hrms		There are no vacancies under staffing plan {0}	لا توجد وظائف شاغرة في إطار خطة التوظيف {0}
+B08-105	hrms		There is no Salary Structure assigned to {0}. First assign a Salary Structure.	لا يوجد هيكل راتب مُعيَّن لـ {0}. قم أولاً بتعيين هيكل راتب.
+B08-106	hrms		There's no Employee with Salary Structure: {0}. Assign {1} to an Employee to preview Salary Slip	لا يوجد موظف بهيكل الراتب: {0}. قم بتعيين {1} لموظف لمعاينة قسيمة الراتب
+B08-107	hrms		These leaves are holidays permitted by the company however, availing it is optional for an Employee.	هذه الإجازات هي عطلات تسمح بها الشركة، ولكن استخدامها اختياري للموظف.
+B08-108	hrms		This action will prevent making changes to the linked appraisal feedback/goals.	سيؤدي هذا الإجراء إلى منع إجراء تغييرات على ملاحظات/أهداف التقييم المرتبطة.
+B08-109	hrms		This check-in is outside assigned shift hours and will not be considered for attendance. If a shift is assigned, adjust its time window and Fetch Shift again.	تسجيل الحضور هذا خارج ساعات الوردية المُعيّنة ولن يُحتسب للحضور. إذا كانت هناك وردية مُعيّنة، فعدّل نافذتها الزمنية ثم اجلب الوردية مرة أخرى.
+B08-110	hrms		This compensatory leave will be applicable from {0}.	ستكون إجازة التعويض هذه سارية من {0}.
+B08-111	hrms		This employee already has a log with the same timestamp.{0}	هذا الموظف لديه بالفعل سجل بنفس الطابع الزمني. {0}
+B08-112	hrms		This error can be due to invalid formula or condition.	قد يرجع هذا الخطأ إلى صيغة أو شرط غير صالح.
+B08-113	hrms		This error can be due to invalid syntax.	قد يرجع هذا الخطأ إلى بناء جملة غير صالح.
+B08-114	hrms		This error can be due to missing or deleted field.	قد يرجع هذا الخطأ إلى حقل مفقود أو محذوف.
+B08-115	hrms		This field allows you to set the maximum number of consecutive leaves an Employee can apply for.	يتيح لك هذا الحقل تحديد الحد الأقصى لعدد الإجازات المتتالية التي يمكن للموظف طلبها.
+B08-116	hrms		This field allows you to set the maximum number of leaves that can be allocated annually for this Leave Type while creating the Leave Policy	يتيح لك هذا الحقل تحديد الحد الأقصى لعدد الإجازات التي يمكن تخصيصها سنويًا لنوع الإجازة هذا عند إنشاء سياسة الإجازات.
+B08-117	hrms		This is based on the attendance of this Employee	هذا يستند على حضور الموظف
+B08-118	hrms		This will overwrite the tax component {0} in the salary slip and tax won't be calculated based on the Income Tax Slabs	سيؤدي هذا إلى الكتابة فوق مكون الضريبة {0} في قسيمة الراتب، ولن يتم احتساب الضريبة استنادًا إلى شرائح ضريبة الدخل
+B08-119	hrms		This will submit Salary Slips and create accrual Journal Entry. Do you want to proceed?	سيؤدي هذا إلى تقديم قسائم الراتب وإنشاء الدخول إلى دفتر الأستحقاق. هل تريد المتابعة؟
+B08-120	hrms		Time after the end of shift during which check-out is considered for attendance.	الوقت بعد نهاية النوبة التي يتم خلالها تسجيل المغادرة للحضور.
+B08-121	hrms		Time taken to fill the open positions	الوقت المستغرق لشغل الوظائف الشاغرة
+B08-122	hrms		Time to Fill	مدة شغل الوظيفة
+B08-123	hrms		Timelines	الجداول الزمنية
+B08-124	hrms		Timesheet Details	تفاصيل سجل ساعات العمل
+B08-125	hrms		To Amount	لكمية
+B08-126	hrms		To Date should be greater than From Date	يجب أن يكون إلى تاريخ أكبر من من تاريخ
+B08-127	hrms		To User	إلى المستخدم
+B08-128	hrms		To allow this, enable {0} under {1}.	للسماح بذلك، قم بتمكين {0} ضمن {1}.
+B08-129	hrms		To apply for a Half Day check 'Half Day' and select the Half Day Date	لتقديم طلب إجازة نصف يوم، حدد 'نصف يوم' واختر تاريخ نصف اليوم
+B08-130	hrms		To date can not be equal or less than from date	حتى الآن لا يمكن أن يكون مساويا أو أقل من التاريخ
+B08-131	hrms		To date can not be greater than employee's relieving date.	حتى الآن لا يمكن أن يكون أكبر من تاريخ إعفاء الموظف.
+B08-132	hrms		To date can not be less than from date	حتى الآن لا يمكن أن يكون أقل من من تاريخ
+B08-133	hrms		To date can not greater than employee's relieving date	حتى الآن لا يمكن أن يكون أكبر من تاريخ تخفيف الموظف
+B08-134	hrms		To date cannot be before from date	لا يمكن أن يكون تاريخ الانتهاء قبل تاريخ البدء
+B08-135	hrms		To overwrite the salary component amount for a tax component, please enable {0}	لاستبدال مبلغ مكون الراتب لمكون ضريبة، يُرجى تفعيل {0}
+B08-136	hrms		To(Year)	إلى(عام)
+B08-137	hrms		To(Year) year can not be less than From(year)	لا يمكن أن تكون (إلى) السنة أقل من (من) السنة
+B08-138	hrms		Today is {0}'s birthday 🎉	اليوم هو عيد ميلاد {0} 🎉
+B08-139	hrms		Today {0} at our Company! 🎉	اليوم {0} في شركتنا! 🎉
+B08-140	hrms		Today {0} completed {1} {2} at our Company! 🎉	اليوم أتمّ {0} {1} {2} في شركتنا! 🎉
+B08-141	hrms		Total Absent	إجمالي الغياب
+B08-142	hrms		Total Accrued	إجمالي المستحق
+B08-143	hrms		Total Actual Amount	إجمالي المبلغ الفعلي
+B08-144	hrms		Total Advance Amount	إجمالي المبلغ المدفوع مقدما
+B08-145	hrms		Total Advance Amount (Company Currency)	إجمالي مبلغ الدفعة المقدمة (عملة الشركة)
+B08-146	hrms		Total Allocated Leave(s)	إجمالي الإجازات المخصصة
+B08-147	hrms		Total Allocated Leaves	إجمالي الإجازات المخصصة
+B08-148	hrms		Total Amount Reimbursed	مجموع المبلغ المسدد
+B08-149	hrms		Total Amount cannot be zero	لا يمكن أن يكون المبلغ الإجمالي صفرًا
+B08-150	hrms		Total Asset Recovery Cost	إجمالي تكلفة استرداد الأصل
+B08-151	hrms		Total Claimed Amount	إجمالي المبلغ المطالب به
+B08-152	hrms		Total Claimed Amount (Company Currency)	إجمالي المبلغ المطالب به (عملة الشركة)
+B08-153	hrms		Total Days Without Pay	إجمالي الأيام بدون أجر
+B08-154	hrms		Total Declared Amount	إجمالي المبلغ المعلن
+B08-155	hrms		Total Deduction	مجموع الخصم
+B08-156	hrms		Total Deduction (Company Currency)	إجمالي الخصم (عملة الشركة)
+B08-157	hrms		Total Early Exits	إجمالي المخارج المبكرة
+B08-158	hrms		Total Earning	إجمالي الدخل
+B08-159	hrms		Total Earnings	إجمالي الاستحقاقات
+B08-160	hrms		Total Estimated Budget	مجموع الميزانية التقديرية
+B08-161	hrms		Total Estimated Cost	مجموع التكلفة التقديرية
+B08-162	hrms		Total Exchange Gain/Loss	إجمالي أرباح/خسائر فرق العملة
+B08-163	hrms		Total Exemption Amount	مجموع مبلغ الإعفاء
+B08-164	hrms		Total Expense Claim (via Expense Claim)	إجمالي مطالبة النفقات (عبر مطالبة النفقات)
+B08-165	hrms		Total Expense Claim (via Expense Claims)	إجمالي مطالبات النفقات (عبر مطالبات النفقات)
+B08-166	hrms		Total Goal Score	إجمالي درجة الهدف
+B08-167	hrms		Total Gross Pay	إجمالي الراتب الإجمالي
+B08-168	hrms		Total Hours (T)	إجمالي الساعات (T)
+B08-169	hrms		Total Income Tax	إجمالي ضريبة الدخل
+B08-170	hrms		Total Interest Amount	إجمالي كمية الفائدة
+B08-171	hrms		Total Late Entries	مجموع الإدخالات المتأخرة
+B08-172	hrms		Total Leave Days	مجموع أيام الإجازة
+B08-173	hrms		Total Leaves	مجموع الإجازات
+B08-174	hrms		Total Leaves ({0})	إجمالي الإجازات ({0})
+B08-175	hrms		Total Leaves Allocated	إجمالي الاجازات المخصصة
+B08-176	hrms		Total Leaves Encashed	اجمالي الاوراق مقطوعه
+B08-177	hrms		Total Loan Repayment	إجمالي سداد القرض
+B08-178	hrms		Total Net Pay	إجمالي صافي الراتب
+B08-179	hrms		Total Non-Billed Hours	إجمالي الساعات غير المفوترة
+B08-180	hrms		Total Overtime Duration	إجمالي مدة العمل الإضافي
+B08-181	hrms		Total Payable Amount	إجمالي مبلغ مستحق الدفع
+B08-182	hrms		Total Payment	إجمالي الدفع
+B08-183	hrms		Total Payout	إجمالي الصرف
+B08-184	hrms		Total Present	إجمالي الحضور
+B08-185	hrms		Total Principal Amount	إجمالي المبلغ الأصلي
+B08-186	hrms		Total Receivable Amount	إجمالي مبلغ الذمم المدينة
+B08-187	hrms		Total Resignations	إجمالي الاستقالات
+B08-188	hrms		Total Sanctioned Amount	الإجمالي الكمية الموافق عليه
+B08-189	hrms		Total Sanctioned Amount (Company Currency)	إجمالي المبلغ المعتمد (عملة الشركة)
+B08-190	hrms		Total Score	مجموع النقاط
+B08-191	hrms		Total Self Score	إجمالي الدرجة الذاتية
+B08-192	hrms		Total advance amount cannot be greater than total sanctioned amount	لا يمكن أن يكون إجمالي المبلغ المدفوع أكبر من المبلغ الإجمالي المعتمد
+B08-193	hrms		Total allocated leaves are more than maximum allocation allowed for {0} leave type for employee {1} in the period	إجمالي الإجازات المخصصة يتجاوز الحد الأقصى للتخصيص المسموح به لنوع الإجازة {0} للموظف {1} في هذه الفترة
+B08-194	hrms		Total allocated leaves {0} cannot be less than already approved leaves {1} for the period	لا يمكن أن يكون إجمالي الإجازات المخصصة {0} أقل من الإجازات المعتمدة بالفعل {1} للفترة
+B08-195	hrms		Total in words	إجمالي بالحروف
+B08-196	hrms		Total in words (Company Currency)	الإجمالي بالحروف (عملة الشركة)
+B08-197	hrms		Total leaves allocated cannot exceed annual allocation of {0}.	لا يمكن أن يتجاوز إجمالي الإجازات المخصصة التخصيص السنوي البالغ {0}.
+B08-198	hrms		Total leaves allocated is mandatory for Leave Type {0}	إجمالي الإجازات المخصصة إلزامي لنوع الإجازة {0}
+B08-199	hrms		Total of all employee benefits cannot be greater that Max Benefits Amount {0}	لا يمكن أن يتجاوز إجمالي جميع مزايا الموظفين مبلغ المزايا القصوى {0}
+B08-200	hrms		Total salary booked against this component for this employee from the beginning of the year (payroll period or fiscal year) up to the current salary slip's end date.	إجمالي الراتب المُسجَّل مقابل هذا المكوّن لهذا الموظف من بداية السنة (فترة الرواتب أو السنة المالية) حتى تاريخ انتهاء قسيمة الراتب الحالية.
+B08-201	hrms		Total salary booked for this employee from the beginning of the month up to the current salary slip's end date.	إجمالي الراتب المُسجَّل لهذا الموظف من بداية الشهر حتى تاريخ انتهاء قسيمة الراتب الحالية.
+B08-202	hrms		Total salary booked for this employee from the beginning of the year (payroll period or fiscal year) up to the current salary slip's end date.	إجمالي الراتب المُسجَّل لهذا الموظف من بداية السنة (فترة الرواتب أو السنة المالية) حتى تاريخ انتهاء قسيمة الراتب الحالية.
+B08-203	hrms		Total weightage for all {0} must add up to 100. Currently, it is {1}%	يجب أن يكون مجموع الأوزان لجميع {0} 100. الحالي هو {1}%
+B08-204	hrms		Total working Days Per Year	إجمالي أيام العمل في السنة
+B08-205	hrms		Total working hours should not be greater than max working hours {0}	عدد ساعات العمل الكلي يجب ألا يكون أكثر من العدد الأقصى لساعات العمل {0}
+B08-206	hrms		Train	قطار
+B08-207	hrms		Trainer Email	بريد المدرب الإلكتروني
+B08-208	hrms		Trainer Name	اسم المدرب
+B08-209	hrms		Training	التدريب
+B08-210	hrms		Training Date	تاريخ التدريب
+B08-211	hrms		Training Event	حدث تدريب
+B08-212	hrms		Training Event Employee	تدريب الموظف للحدث
+B08-213	hrms		Training Event:	حدث التدريب:
+B08-214	hrms		Training Events	أحداث التدريب
+B08-215	hrms		Training Feedback	ردود الفعل على التدريب
+B08-216	hrms		Training Program	برنامج تدريب
+B08-217	hrms		Training Result	نتيجة التدريب
+B08-218	hrms		Training Result Employee	نتيجة تدريب الموظفين
+B08-219	hrms		Trainings	دورات تدريبية
+B08-220	hrms		Trainings (This Week)	التدريبات (هذا الأسبوع)
+B08-221	hrms		Transactions cannot be created for an Inactive Employee {0}.	لا يمكن إنشاء معاملات لموظف غير نشط {0}.
+B08-222	hrms		Transfer Date	تاريخ التحويل
+B08-223	hrms		Travel	السفر
+B08-224	hrms		Travel Advance Required	سلف السفر المطلوبة
+B08-225	hrms		Travel From	السفر من
+B08-226	hrms		Travel Funding	تمويل السفر
+B08-227	hrms		Travel Itinerary	خط سير الرحلة
+B08-228	hrms		Travel Request	طلب السفر
+B08-229	hrms		Travel Request Costing	تكاليف طلب السفر
+B08-230	hrms		Travel To	يسافر إلى
+B08-231	hrms		Travel Type	نوع السفر
+B08-232	hrms		Type of Proof	نوع من الإثبات
+B08-233	hrms		Unable to retrieve your location	تعذّر استرجاع موقعك
+B08-234	hrms		Unarchive	إلغاء الأرشفة
+B08-235	hrms		Unclaimed Amount	المبلغ غير المطالب به
+B08-236	hrms		Unclaimed Amount (Company Currency)	المبلغ غير المطالب به (عملة الشركة)
+B08-237	hrms		Under Review	قيد المراجعة
+B08-238	hrms		Unlink Payment	
+B08-239	hrms		Unlinked Attendance record from Employee Checkins: {}	تم إلغاء ربط سجل الحضور من تسجيلات حضور الموظفين: {}
+B08-240	hrms		Unlinked logs	سجلات غير مرتبطة
+B08-241	hrms		Unmarked Attendance for days	الحضور بدون علامات لعدة أيام
+B08-242	hrms		Unmarked Check-in Logs Found	تم العثور على سجلات تسجيل حضور غير مُعلَّمة
+B08-243	hrms		Unmarked Days	أيام غير محددة
+B08-244	hrms		Unmarked Employee Header	ترويسة الموظفين غير المسجلين
+B08-245	hrms		Unmarked Employees HTML	HTML الموظفين غير المسجلين
+B08-246	hrms		Unmarked days	أيام غير محددة
+B08-247	hrms		Unpaid Accrual	الاستحقاق غير المدفوع
+B08-248	hrms		Unpaid Expense Claim	غير المسددة المطالبة النفقات
+B08-249	hrms		Unsettled	غير مسوّى

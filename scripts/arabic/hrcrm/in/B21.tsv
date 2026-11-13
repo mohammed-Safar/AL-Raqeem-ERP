@@ -1,0 +1,140 @@
+B21-000	help:js		Enrich from Website	
+B21-001	help:js		No Website	
+B21-002	help:js		Set a Website on this record before enriching.	
+B21-003	help:js		Enrichment complete	
+B21-004	help:field-desc		Field values this run wrote to the reference record, kept so the run can be undone.	
+B21-005	help:field-desc		The value this rule resolves to when it matches (e.g. the social network "linkedin"). For Industry rules, use the Industry link instead.	
+B21-006	help:field-desc		Score contributed per matched pattern (Industry classification scoring).	
+B21-007	help:field-desc		Where the patterns are matched.	
+B21-008	help:field-desc		Substring matched against a candidate URL/anchor to prioritise crawling it (e.g. "about", "team", "contact").	
+B21-009	help:field-desc		A substring (default) or a regular expression matched against the rule's match scope.	
+B21-010	help:field-desc		Treat the pattern as a regular expression instead of a plain substring.	
+B21-011	help:field-desc		Master switch for the Domain Enrichment feature.	
+B21-012	help:field-desc		Automatically enrich a new CRM Lead, Deal or Organization in the background as soon as it is created (requires a website on the record). Only applies to the doctypes enabled above. When off, enrichment is triggered manually with the Enrich button.	
+B21-013	help:field-desc		Maximum number of pages crawled per enrichment.	
+B21-014	help:field-desc		Maximum link depth followed from the homepage.	
+B21-015	help:field-desc		Per-request timeout in seconds.	
+B21-016	help:field-desc		Seed the crawl queue from the site's sitemap (declared in robots.txt, or the conventional /sitemap.xml) so pages not reachable within Max Depth still get a chance to be crawled. This is an addition on top of ordinary link-following, not a replacement -- a site with no sitemap falls straight through to link-following with no error.	
+B21-017	help:field-desc		Maximum bytes downloaded per page (the stream is capped).	
+B21-018	help:field-desc		Number of retries on a failed request.	
+B21-019	help:field-desc		Crawl-ordering hints (not extraction). Links whose URL path or anchor text contain one of these are fetched first; higher weight = sooner. Lets the crawler spend its page budget on company pages (about/contact/team) before the cap. Defaults are seeded; edit or remove as needed.	
+B21-020	help:field-desc		Substrings that exclude a candidate link from the crawl.	
+B21-021	help:field-desc		Allowlist (subdomain-aware). If you add any domains here, the crawler may ONLY visit those domains and their subdomains — everything else is rejected by the SSRF guard. Leave empty (the normal case) to allow any public site; this is for locked-down deployments that should reach only specific domains.	
+B21-022	help:field-desc		Denylist (subdomain-aware). A host that equals or is a subdomain of any entry is always rejected by the SSRF guard — e.g. blocking "acme.com" also blocks "shop.acme.com". Use it to permanently exclude internal domains, known-bad hosts, or link shorteners. Always wins over the allowlist.	
+B21-023	help:field-desc		The fieldname on the run's reference record that this run wrote to.	
+B21-024	help:field-desc		Substring; a candidate URL containing it is skipped during the crawl (e.g. "/blog/", ".pdf", "?").	
+B21-025	help:field-desc		The enrichment result key to read the value from.	
+B21-026	help:field-desc		The fieldname on the target doctype to write the value to.	
+B21-027	help:field-desc		Fill if empty: only write when the field is blank. Always refresh: overwrite on every run (for fully enrichment-derived fields). Override defaults: write even when the current value is a known default (see Default Values).	
+B21-028	help:field-desc		If the value names a missing linked record (e.g. a CRM Industry), create it. Opt-in only.	
+B21-029	help:field-desc		Newline-separated values treated as "unset" defaults that may be overwritten, in addition to a truly empty field.	
+B21-030	help:field-desc		Set once the first admin finishes or skips the setup flow	
+B21-031	help:field-desc		Company logo discovered by Domain Enrichment.	
+B21-032	help:field-desc		Company description discovered by Domain Enrichment.	
+B21-033	help:field-desc		Auto-generated from the portal view — do not edit directly unless you know what you're doing!	
+B21-034	help:field-desc		Assignment rules prefer Active users, then Away, and use Unavailable users only when no one else is in the rule.	
+B21-035	help:ws-content		PORTAL	
+B21-036	help:ws-content		SHORTCUTS	
+B21-037	help:ws-content		META	
+B21-038	help:onb		Settle employee expenses	
+B21-039	help:onb		Give an employee an advance	
+B21-040	help:onb		Create Employee Advance	
+B21-041	help:onb		Money paid before the expense, settled later against the claim. See [Employee Advance](https://docs.frappe.io/hr/employee-advance).	
+B21-042	help:onb		See what is still owed	
+B21-043	help:onb		Open Unpaid Expense Claim	
+B21-044	help:onb		Approved claims that have not been paid back yet.	
+B21-045	help:onb		Plan a work trip	
+B21-046	help:onb		Create Travel Request	
+B21-047	help:onb		Approval and funding for a work trip before it happens. See [Travel Request](https://docs.frappe.io/hr/travel-request).	
+B21-048	help:onb		Approve an expense claim	
+B21-049	help:onb		Create Expense Claim	
+B21-050	help:onb		An employee's claim for money they spent on work. The expense approver approves and submits it. See [Expense Claim](https://docs.frappe.io/hr/expense-claim).	
+B21-051	help:onb		Pay the employee back	
+B21-052	help:onb		Open Unpaid Claims	
+B21-053	help:onb		Pick an approved claim from the list this opens and use Create > Payment on it. The payment is then linked to the claim and marks it paid. See [Expense Claim](https://docs.frappe.io/hr/expense-claim#payment-for-expense-claim).	
+B21-054	help:js		How many employees do you have?	
+B21-055	help:js		What do you use for HR today?	
+B21-056	help:js		Leave & Attendance	
+B21-057	help:js		Performance Management	
+B21-058	help:js		Assignment must start between {0} and {1}	
+B21-059	help:js		{0} was assigned {1}	
+B21-060	help:js		Create Assignments	
+B21-061	help:js		View Leave Balance	
+B21-062	help:js		User denied location prompt. Please allow access to your location in your browser settings and try again.	
+B21-063	help:js		An unknown error occurred while fetching your geolocation	
+B21-064	help:js		You haven't created a {0} for {1} yet.	
+B21-065	help:onb		Get to know Frappe HR	
+B21-066	help:ws-number_cards		Total Employees	
+B21-067	help:onb		Review performance	
+B21-068	help:onb		Open Performance	
+B21-069	help:onb		Set up what employees are measured on and run an appraisal cycle.	
+B21-070	help:onb		Add your employees	
+B21-071	help:onb		Add Employee	
+B21-072	help:onb		The people you manage, with their joining date, department and reporting manager. See [Employee](https://docs.frappe.io/hr/employee).	
+B21-073	help:onb		Welcome and see off employees	
+B21-074	help:onb		Open Tenure	
+B21-075	help:onb		Track the joining tasks for a new hire and the exit tasks when someone leaves.	
+B21-076	help:onb		Manage time off	
+B21-077	help:onb		Open Leaves	
+B21-078	help:onb		Set your holidays and leave types, give leave and approve a request.	
+B21-079	help:onb		Track attendance and shifts	
+B21-080	help:onb		Open Shift & Attendance	
+B21-081	help:onb		Define a shift, put an employee on it and mark their attendance.	
+B21-082	help:onb		Hire your first employee	
+B21-083	help:onb		Open Recruitment	
+B21-084	help:onb		Open a job, add an applicant and make them an offer.	
+B21-085	help:onb		Open Expenses	
+B21-086	help:onb		Approve an expense claim and pay the employee back.	
+B21-087	help:onb		Run your first payroll	
+B21-088	help:onb		Open Payroll	
+B21-089	help:onb		Build a salary structure, assign it and run payroll.	
+B21-090	help:onb		Deduct the right tax	
+B21-091	help:onb		Open Tax & Benefits	
+B21-092	help:onb		Set the payroll period and tax slabs, and record what employees declare.	
+B21-093	help:field-desc		If enabled, candidates who have already applied with the same email address will not be allowed to apply again	
+B21-094	help:field-desc		Select if any of the days selected for request are holidays	
+B21-095	help:field-desc		Minimum calendar days required since Date of Joining to apply for this leave	
+B21-096	help:field-desc		Fraction of one day's salary that is paid for each day of this leave. For example, 0.60 pays 60% of the daily salary for a leave day, and the remaining 40% is deducted as Leave Without Pay. Enter 1 for fully paid and 0 for fully unpaid.	
+B21-097	help:field-desc		Allow expense claims to be raised in a currency other than the company currency	
+B21-098	help:dt-desc		Bookkeeping for once-per-site activation telemetry. The document name is the event name, so the primary key makes claiming a milestone atomic across concurrent transactions.	
+B21-099	help:field-desc		Multipliers that adjust the hourly overtime amount for specific scenarios	
+B21-100	help:field-desc		Choose how the hourly overtime amount is calculated:\n<ol style="padding-left:15px"><li>Fixed Hourly Rate: A fixed, manually entered hourly rate.</li>\n<li>Salary Component-Based:\n\n(Sum of selected component amounts) ÷ (Payment Days) ÷ (Standard Daily Hours)</li></ol>	
+B21-101	help:onb		Request attendance	
+B21-102	help:onb		Create Attendance Request	
+B21-103	help:onb		An employee's request to be marked present for days on duty or working from home. See [Attendance Request](https://docs.frappe.io/hr/attendance-request).	
+B21-104	help:onb		Check the month's attendance	
+B21-105	help:onb		Open Monthly Attendance Sheet	
+B21-106	help:onb		Each employee's attendance for every day of the month.	
+B21-107	help:onb		Assign a shift	
+B21-108	help:onb		Puts an employee on a shift from a date. See [Shift Assignment](https://docs.frappe.io/hr/shift-assignment).	
+B21-109	help:onb		Mark attendance	
+B21-110	help:onb		Whether an employee was present, absent or on leave on a day. See [Attendance](https://docs.frappe.io/hr/attendance).	
+B21-111	help:onb		Define a shift	
+B21-112	help:onb		Create Shift Type	
+B21-113	help:onb		A shift's working hours and the rules for marking attendance from check-ins. See [Shift Type](https://docs.frappe.io/hr/shift-type).	
+B21-114	help:onb		Record a check-in	
+B21-115	help:onb		Add Checkin	
+B21-116	help:onb		A punch from a biometric device or the mobile app. Auto attendance turns these into attendance. See [Employee Checkin](https://docs.frappe.io/hr/employee-checkin).	
+B21-117	help:ws-number_cards		Total Applicants (This month)	
+B21-118	help:onb		Open a job	
+B21-119	help:onb		A role you are hiring for, which you can publish on your job portal. See [Job Opening](https://docs.frappe.io/hr/job-opening).	
+B21-120	help:onb		Track hiring against your plan	
+B21-121	help:onb		Open Recruitment Analytics	
+B21-122	help:onb		Openings, applicants and offers for each designation in a staffing plan.	
+B21-123	help:onb		Send an appointment letter	
+B21-124	help:onb		Create Appointment Letter	
+B21-125	help:onb		The formal letter that confirms the role and its terms. See [Appointment Letter](https://docs.frappe.io/hr/appointment-letter).	
+B21-126	help:onb		Add an applicant	
+B21-127	help:onb		Add Job Applicant	
+B21-128	help:onb		Someone who applied for a job opening. Applications from the job portal arrive here. See [Job Applicant](https://docs.frappe.io/hr/job-applicant).	
+B21-129	help:onb		Schedule an interview	
+B21-130	help:onb		An interview round with the applicant and the people interviewing them. See [Interview](https://docs.frappe.io/hr/interview).	
+B21-131	help:onb		Make an offer	
+B21-132	help:onb		The terms you offer the applicant. Submit it once they accept. See [Job Offer](https://docs.frappe.io/hr/job-offer).	
+B21-133	help:onb		Write an onboarding checklist	
+B21-134	help:onb		Create Template	
+B21-135	help:onb		The tasks to finish when someone joins, reused for every new hire. See [Employee Onboarding](https://docs.frappe.io/hr/employee-onboarding).	
+B21-136	help:onb		Schedule a training	
+B21-137	help:onb		Create Training Event	
+B21-138	help:onb		A session of a training program and the employees attending it. See [Training Event](https://docs.frappe.io/hr/training-event).	
+B21-139	help:onb		Onboard a new hire	

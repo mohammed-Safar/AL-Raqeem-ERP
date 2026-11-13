@@ -42,7 +42,7 @@ app_include_css = [
     "/assets/raqim_sales/css/raqeem_palette.css?v=33",
     "/assets/raqim_sales/css/raqeem_theme.css?v=49",
     # dock icons drawn in CSS (ROLLBACK: delete the next line)
-    "/assets/raqim_sales/css/raqeem_icons.css?v=33",
+    "/assets/raqim_sales/css/raqeem_icons.css?v=50",
     "/assets/raqim_sales/css/raqeem_home.css?v=39",
     "/assets/raqim_sales/css/raqeem_form.css?v=38",
     "/assets/raqim_sales/css/raqeem_list.css?v=47",
@@ -53,8 +53,10 @@ app_include_css = [
 app_include_js = [
     # must stay first: fades the loading screen out once the desk is ready
     "/assets/raqim_sales/js/raqeem_splash.js?v=35",
+    # RAQEEM HR / RAQEEM CRM names + logo for the companion apps (ROLLBACK: delete the next line)
+    "/assets/raqim_sales/js/raqeem_apps_brand.js?v=1",
     # RAQEEM «R» logo in the theme colour + coloured browser-tab icon
-    "/assets/raqim_sales/js/raqeem_logo.js?v=39",
+    "/assets/raqim_sales/js/raqeem_logo.js?v=40",
     # pinned dock: a collapsed sidebar folds to the icon rail instead of vanishing
     "/assets/raqim_sales/js/raqeem_sidebar_rail.js?v=33",
     # one header button -> panel with light/dark, theme colour and language
@@ -62,14 +64,19 @@ app_include_js = [
     "/assets/raqim_sales/js/raqeem_quick_settings.js?v=36",
     "/assets/raqim_sales/js/raqeem_sidebar.js?v=35",
     # phone-only bottom bar (ROLLBACK: delete the next line)
-    "/assets/raqim_sales/js/raqeem_tabbar.js?v=2",
+    "/assets/raqim_sales/js/raqeem_tabbar.js?v=3",
     "/assets/raqim_sales/js/raqeem_form.js?v=38",
     "/assets/raqim_sales/js/raqeem_list.js?v=38",
     "/assets/raqim_sales/js/raqeem_brand_title.js?v=44",
-    "/assets/raqim_sales/js/raqeem_icon_names.js?v=34",
-    "/assets/raqim_sales/js/raqeem_icons.js?v=34"
+    "/assets/raqim_sales/js/raqeem_icon_names.js?v=51",
+    "/assets/raqim_sales/js/raqeem_icons.js?v=51",
+    # dialog titles through __() (ROLLBACK: delete the next line)
+    "/assets/raqim_sales/js/raqeem_desk_i18n.js?v=1",
+    # open the desk section the CRM dock asked for (?rq_module=...) (ROLLBACK: delete the next line)
+    "/assets/raqim_sales/js/raqeem_open_module.js?v=1",
+    "/assets/raqim_sales/js/raqeem_crm_desk.js?v=3"
 ]
-app_include_icons = ["/assets/raqim_sales/icons/raqeem-sidebar.svg?r=4"]
+app_include_icons = ["/assets/raqim_sales/icons/raqeem-sidebar.svg?r=6"]
 
 # include js, css files in header of web template
 # raqeem_login.css  -> login / update-password pages only
@@ -85,7 +92,7 @@ web_include_css = [
 ]
 # raqeem_login.js -> brand panel + language switch on the login page only
 web_include_js = [
-    "/assets/raqim_sales/js/raqeem_logo.js?v=39",
+    "/assets/raqim_sales/js/raqeem_logo.js?v=40",
     "/assets/raqim_sales/js/raqeem_login.js?v=43"
 ]
 
@@ -150,6 +157,8 @@ website_context = {
 
 # before_install = "raqim_sales.install.before_install"
 # after_install = "raqim_sales.install.after_install"
+# a new client site: CRM <-> ERPNext connected and the deal tools installed from the start
+after_install = "raqim_sales.crm_integration.after_install"
 
 # Uninstallation
 # ------------
@@ -283,6 +292,9 @@ website_context = {
 # after_request = ["raqim_sales.utils.after_request"]
 # RAQEEM skin + shared theme memory for the CRM screen (/crm); see web_inject.py
 after_request = ["raqim_sales.web_inject.after_request"]
+# CRM -> ERPNext: reuse an existing customer instead of a duplicate (raqim_sales/crm_integration.py)
+before_request = ["raqim_sales.crm_integration.install_patches"]
+before_job = ["raqim_sales.crm_integration.install_patches"]
 
 # Job Events
 # ----------
@@ -338,13 +350,38 @@ after_request = ["raqim_sales.web_inject.after_request"]
 email_css = ["/assets/raqim_sales/css/raqeem_email.css"]
 
 # RAQEEM: app name + default print formats, see setup.py
-after_migrate = ["raqim_sales.setup.after_migrate", "raqim_sales.cheques_setup.after_migrate"]
+after_migrate = [
+	"raqim_sales.setup.after_migrate",
+	"raqim_sales.cheques_setup.after_migrate",
+	"raqim_sales.crm_integration.after_migrate",
+	# "Pipeline" link in ERPNext's CRM sidebar (ROLLBACK: delete the next line)
+	"raqim_sales.erp_crm.after_migrate",
+	# Employee Affairs (our own HR): approver field on Employee, starter leave types (ROLLBACK: delete the next line)
+	"raqim_sales.raqeem_hr.setup.after_migrate",
+]
+
+# CRM-app style tools on ERPNext's own Lead / Opportunity, no Frappe CRM app needed
+# (raqim_sales/erp_crm.py, public/js/raqeem_erp_crm.js, page raqeem-pipeline)
+# ROLLBACK: delete the next 4 lines and the "Lead" entry in doc_events
+doctype_js = {
+	"Lead": "public/js/raqeem_erp_crm.js",
+	"Opportunity": "public/js/raqeem_erp_crm.js",
+	# Employee Affairs: leave buttons on the Employee form (ROLLBACK: delete the next line)
+	"Employee": "public/js/raqeem_hr_employee.js",
+}
 
 # ---- raqeem cheques (ROLLBACK: delete this block and the cheques_setup entry above) ----
 _CHEQUE = "raqim_sales.raqim_sales.doctype.raqeem_cheque.raqeem_cheque"
 doc_events = {
 	"Journal Entry": {"before_cancel": f"{_CHEQUE}.guard_journal_entry_cancel"},
-	"Company": {"on_update": "raqim_sales.cheques_setup.on_company_update"},
+	# warn when a Lead's phone / email already exists (raqim_sales/erp_crm.py)
+	"Lead": {"validate": "raqim_sales.erp_crm.lead_validate"},
+	"Company": {
+		"on_update": [
+			"raqim_sales.cheques_setup.on_company_update",
+			"raqim_sales.crm_integration.on_company_update",
+		]
+	},
 }
 scheduler_events = {"daily": [f"{_CHEQUE}.send_due_reminders"]}
 override_doctype_dashboards = {

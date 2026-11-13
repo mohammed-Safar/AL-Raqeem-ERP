@@ -110,3 +110,63 @@ installed after them. Strings added through the Translation doctype override thi
 | Employee | الموظف |
 | Project / Task / Timesheet | مشروع / مهمة / سجل الوقت |
 | Asset / Depreciation | أصل / إهلاك |
+
+## HR — الموارد البشرية (V1.3, 2026-11-11)
+Approve ≠ Submit: Submit stays «اعتماد»; approval of a request is «الموافقة».
+| English | العربية |
+|---|---|
+| Employee / Employees | الموظف / الموظفون |
+| Department / Designation / Branch / Grade | القسم / المسمى الوظيفي / الفرع / الدرجة الوظيفية |
+| Employment Type | نوع التوظيف |
+| Attendance | الحضور |
+| Employee Checkin / Check-in / Check-out | سجل الحضور / تسجيل الحضور / تسجيل الانصراف |
+| Shift / Shift Type / Shift Assignment | الوردية / نوع الوردية / تعيين الوردية |
+| Holiday List / Holiday | قائمة العطلات / عطلة |
+| Leave / Leave Type / Leave Application | إجازة / نوع الإجازة / طلب إجازة |
+| Leave Allocation / Leave Balance | تخصيص الإجازات / رصيد الإجازات |
+| Leave Encashment / Leave Without Pay | صرف بدل الإجازة / إجازة بدون راتب |
+| Compensatory Leave | إجازة تعويضية |
+| Approve / Approved / Rejected | الموافقة / موافق عليه / مرفوض |
+| Approver / Leave Approver / Expense Approver | مسؤول الموافقة / مسؤول الموافقة على الإجازات / مسؤول الموافقة على المصروفات |
+| Payroll / Payroll Entry / Payroll Period | الرواتب / مسير الرواتب / فترة الرواتب |
+| Salary Slip / Salary Structure / Salary Structure Assignment | قسيمة الراتب / هيكل الراتب / تعيين هيكل الراتب |
+| Salary Component / Earning / Deduction | مكوّن الراتب / استحقاق / استقطاع |
+| Gross Pay / Net Pay / Base | إجمالي الراتب / صافي الراتب / الراتب الأساسي |
+| Additional Salary / Bonus / Incentive | راتب إضافي / مكافأة / حافز |
+| Employee Advance | سلفة موظف |
+| Expense Claim / Expense Claim Type | مطالبة مصروفات / نوع المطالبة |
+| Travel Request | طلب سفر |
+| Loan / Repayment | قرض / سداد |
+| Gratuity / Full and Final Statement | مكافأة نهاية الخدمة / التسوية النهائية |
+| Appraisal / Appraisal Cycle / Goal / KRA | تقييم الأداء / دورة التقييم / هدف / مجال النتائج الرئيسي (KRA) |
+| Employee Feedback | تقييم الموظف |
+| Job Opening / Job Applicant / Job Offer / Job Requisition | وظيفة شاغرة / متقدم للوظيفة / عرض عمل / طلب توظيف |
+| Interview / Interviewer / Interview Round | مقابلة / المُقابِل / جولة المقابلة |
+| Staffing Plan | خطة التوظيف |
+| Employee Onboarding / Separation / Exit Interview | تهيئة الموظف الجديد / إنهاء الخدمة / مقابلة نهاية الخدمة |
+| Promotion / Transfer / Training | ترقية / نقل / تدريب |
+| Overtime | العمل الإضافي |
+| Tax Exemption / Income Tax Slab | إعفاء ضريبي / شريحة ضريبة الدخل |
+| Tenure | مدة الخدمة |
+
+## CRM — إدارة العملاء (V1.3, 2026-11-11)
+| English | العربية |
+|---|---|
+| CRM | إدارة العملاء (CRM where a short acronym is needed) |
+| Lead / Leads | عميل محتمل / العملاء المحتملون |
+| Deal / Deals | صفقة / الصفقات |
+| Organization / Organizations | مؤسسة / المؤسسات |
+| Contact / Contacts | جهة اتصال / جهات الاتصال |
+| Lead Owner / Deal Owner | مسؤول العميل المحتمل / مسؤول الصفقة |
+| Convert to Deal | تحويل إلى صفقة |
+| Pipeline / Stage | مسار المبيعات / المرحلة |
+| Won / Lost / Lost Reason | مكسوبة / خاسرة / سبب الخسارة |
+| Probability / Expected Closure Date / Deal Value | الاحتمالية / تاريخ الإغلاق المتوقع / قيمة الصفقة |
+| Annual Revenue / No. of Employees | الإيرادات السنوية / عدد الموظفين |
+| Source / Industry / Territory | المصدر / القطاع / المنطقة |
+| Note / Task / Call Log / Activity | ملاحظة / مهمة / سجل المكالمات / النشاط |
+| Email Template / Assignment Rule | قالب البريد / قاعدة الإسناد |
+| Quick Filters / View / Saved View | تصفية سريعة / العرض / عرض محفوظ |
+| Telephony | الاتصال الهاتفي |
+| SLA | اتفاقية مستوى الخدمة (SLA) |
+| Brand / product names (Twilio, Exotel, WhatsApp, Frappe, ERPNext, Gmail, Google) | stay in Latin; WhatsApp may be «واتساب» in sentences |

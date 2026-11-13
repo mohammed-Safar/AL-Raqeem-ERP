@@ -1,0 +1,75 @@
+B20-000	hrms		Promotions (This Month)	
+B20-001	hrms		Goals In Progress	
+B20-002	hrms		Rejected Claims (This Month)	
+B20-003	hrms		Accepted Job Applicants	
+B20-004	hrms		Number of Employees on Leave (This Month)	
+B20-005	hrms		Job Offers (This Month)	
+B20-006	hrms		Onboardings (This Month)	
+B20-007	hrms		Total Absent (This Month)	
+B20-008	hrms		Ongoing Appraisal Cycles	
+B20-009	hrms		Approved Claims (This Month)	
+B20-010	hrms		Invalid employee filter: {0}	
+B20-011	hrms		Invalid shift filter: {0}	
+B20-012	hrms		Employee not found	
+B20-013	hrms		Employee Hours Utilization	
+B20-014	hrms		Employee CTC Break-up	
+B20-015	hrms		Leave Balance Summary	
+B20-016	hrms		Hiring Pipeline	
+B20-017	hrms		Job Portal	
+B20-018	hrms		Exemption Declaration	
+B20-019	hrms		Exemption Submission Proof	
+B20-020	hrms		Benefit Application	
+B20-021	hrms		Benefit Claim	
+B20-022	hrms		Linked Job Offer {0} was {1}. Please update the Job Offer status if this hire was intended.	
+B20-023	hrms		Job Offer Status Not Updated	
+B20-024	hrms		Updated the status of Job Offer {0} for {1} to {2}	
+B20-025	hrms		Timeline data is only available for Employee	
+B20-026	hrms		Please set a {0} on this document, or a Default Bank/Cash Account in the Company {1}	
+B20-027	hrms		Bank/Cash Account Required	
+B20-028	hrms		Please set a Default Bank/Cash Account in the Company {0}	
+B20-029	hrms		Employee Exit	
+B20-030	hrms		Benefit Claims	
+B20-031	hrms		Show Employer Contributions	
+B20-032	hrms		Total Employer Contribution	
+B20-033	hrms		Please set cost to company(CTC) for employee {0} in the {1}	
+B20-034	hrms		CTC Missing for Employee	
+B20-035	hrms		Formula/Amount	
+B20-036	hrms		Percent of CTC (%)	
+B20-037	hrms		Please set {0} to get CTC report	
+B20-038	hrms		Missing value for filters	
+B20-039	hrms		You are not permitted to access the CTC report of another employee.	
+B20-040	hrms		Fraction of Applicable Earnings	
+B20-041	hrms		Employee {0} has already claimed the benefit '{1}' for {2} ({3}).<br>	
+B20-042	hrms		Cannot calculate payroll correction for salary component {0} because salary slip {1} has zero {2}.	
+B20-043	hrms		payment days	
+B20-044	hrms		working days	
+B20-045	hrms		Overwrite Salary Structure Amount is disabled as the Salary Component: {0} not part of the Salary Structure: {1}	
+B20-046	hrms		From and to dates are mandatory for recurring type additional salaries.	
+B20-047	hrms		Payroll date is mandatory for non-recurring type additional salaries.	
+B20-048	hrms		Employee Advance {0} has {1} available for return. {2} has already been scheduled for deduction in {3}.	
+B20-049	hrms		The amount exceeds the available balance for Employee Advance {0}. Available amount for return: {1}.	
+B20-050	hrms		Amount Exceeds Available Balance	
+B20-051	hrms		HR-ADS-.YY.-.MM.-	
+B20-052	hrms		Employer Contributions	
+B20-053	hrms		Employer contribution accrual for salaries from {0} to {1}	
+B20-054	hrms		Employer Contribution	
+B20-055	hrms		Please set expense and liability accounts in Salary Component {0}	
+B20-056	hrms		Mandatory fields required in {0}	
+B20-057	hrms		Component properties and references	
+B20-058	hrms		Base, Variable & Leave Encashment	
+B20-059	hrms		Annual Gross Earning	
+B20-060	hrms		Total Cost To Company (CTC)	
+B20-061	hrms		See CTC Break-up	
+B20-062	hrms		Please set employee's total cost to company to see CTC breakup.	
+B20-063	hrms		Liability Account	
+B20-064	hrms		Cannot create Salary Slip: no active Salary Structure is assigned to employee {0}.	
+B20-065	hrms		The Assigned Salary Structure {0} for the employee {1} is not configured for Salary Slip based on Timesheet.	
+B20-066	hrms		The Assigned Salary Structure {0} for the employee {1} does not have a Salary Component configured for Salary Slip based on Timesheet.	
+B20-067	hrms		Department Wise Salary(Last Month)	
+B20-068	hrms		Designation Wise Salary(Last Month)	
+B20-069	hrms		Tax Exemption Proofs (This Year)	
+B20-070	hrms		Total Declaration Submitted	
+B20-071	hrms		Total Incentive Given(Last month)	
+B20-072	hrms		Benefit Claims (This Month)	
+B20-073	hrms		Total Salary Structure	
+B20-074	hrms		Total Outgoing Salary(Last month)	

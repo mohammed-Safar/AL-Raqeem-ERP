@@ -1,0 +1,130 @@
+/* ==========================================================================
+   RAQEEM — HR phone app (/hrms) + Shift Roster (/hr/roster) rules
+   (appended to raqeem_hrms.css by gen_crm_css.py, after the shared tokens)
+
+   Unlike CRM, these screens use frappe-ui 0.1.x + Ionic: plain Tailwind gray
+   classes (bg-white, text-gray-800 ...) and --ion-* variables, light only.
+   Here every such class and variable is pointed at the RAQEEM tokens, so the
+   screens follow the desk's light/dark mode and accent colour (html[data-theme],
+   html[data-accent] are set by the head script in web_inject.py).
+   Scope: html.rq-hrms only.
+   ========================================================================== */
+
+/* ---- Ionic colours (tab bar, toolbars, lists, modals) ---- */
+html.rq-hrms {
+    --ion-font-family: var(--rq-font) !important;
+    --ion-background-color: var(--rq-bg) !important;
+    --ion-text-color: var(--rq-text) !important;
+    --ion-border-color: var(--rq-line-strong) !important;
+    --ion-item-background: var(--rq-surface-1) !important;
+    --ion-toolbar-background: var(--rq-surface-1) !important;
+    --ion-toolbar-color: var(--rq-strong) !important;
+    --ion-toolbar-border-color: var(--rq-line) !important;
+    --ion-tab-bar-background: var(--rq-surface-1) !important;
+    --ion-tab-bar-background-focused: var(--rq-surface-3) !important;
+    --ion-tab-bar-border-color: var(--rq-line) !important;
+    --ion-tab-bar-color: var(--rq-text-3) !important;
+    --ion-tab-bar-color-selected: var(--rq-accent) !important;
+    --ion-color-primary: var(--rq-a-500) !important;
+    --ion-color-primary-contrast: var(--rq-a-ink) !important;
+    --ion-color-primary-shade: var(--rq-a-600) !important;
+    --ion-color-primary-tint: var(--rq-a-400) !important;
+    --primary: var(--rq-a-500) !important;
+    color-scheme: light;
+}
+html.rq-hrms[data-theme="dark"] { color-scheme: dark; }
+html.rq-hrms body { background-color: var(--rq-bg) !important; color: var(--rq-text); }
+html.rq-hrms ion-content { --background: var(--rq-bg); --color: var(--rq-text); }
+html.rq-hrms ion-header, html.rq-hrms ion-toolbar { --background: var(--rq-surface-1); --color: var(--rq-strong); --border-color: var(--rq-line); }
+html.rq-hrms ion-tab-bar { --background: var(--rq-surface-1); --border: 1px solid var(--rq-line); }
+html.rq-hrms ion-tab-button { --color: var(--rq-text-3); --color-selected: var(--rq-accent); }
+html.rq-hrms ion-modal, html.rq-hrms ion-popover { --background: var(--rq-surface-1); --backdrop-opacity: .45; }
+html.rq-hrms ion-action-sheet { --background: var(--rq-surface-1); --button-color: var(--rq-text); --color: var(--rq-text-3); }
+html.rq-hrms ion-item, html.rq-hrms ion-list { --background: var(--rq-surface-1); --color: var(--rq-text); --border-color: var(--rq-line); background: var(--rq-surface-1); }
+html.rq-hrms ion-segment-button { --indicator-color: var(--rq-a-500); --color-checked: var(--rq-accent); }
+html.rq-hrms ion-datetime { --background: var(--rq-surface-1); --background-rgb: 255,253,250; color: var(--rq-text); }
+html.rq-hrms[data-theme="dark"] ion-datetime { --background-rgb: 21,24,30; }
+
+/* ---- fonts, like the desk ---- */
+html.rq-hrms body, html.rq-hrms button, html.rq-hrms input, html.rq-hrms textarea, html.rq-hrms select {
+    font-family: var(--rq-font) !important;
+}
+html.rq-hrms h1, html.rq-hrms h2, html.rq-hrms h3 { font-family: var(--rq-font-head) !important; }
+html.rq-hrms[lang^="ar"] *, html.rq-hrms[dir="rtl"] * { letter-spacing: 0 !important; }
+html.rq-hrms ::selection { background: rgba(var(--rq-a-rgb), .25); }
+
+/* ---- surfaces (cards, panels, inputs) ---- */
+html.rq-hrms .bg-white, html.rq-hrms .hover\:bg-white:hover { background-color: var(--rq-surface-1) !important; }
+html.rq-hrms .bg-gray-50 { background-color: var(--rq-surface-2) !important; }
+html.rq-hrms .bg-gray-100 { background-color: var(--rq-surface-3) !important; }
+html.rq-hrms .bg-gray-200, html.rq-hrms .hover\:bg-gray-200:hover { background-color: var(--rq-surface-4) !important; }
+html.rq-hrms .bg-gray-300, html.rq-hrms .active\:bg-gray-300:active,
+html.rq-hrms .group:hover .group-hover\:bg-gray-400, html.rq-hrms .enabled\:hover\:bg-gray-400:hover:enabled {
+    background-color: var(--rq-surface-5) !important;
+}
+
+/* ---- text ---- */
+html.rq-hrms .text-black, html.rq-hrms .text-gray-900, html.rq-hrms .hover\:text-gray-900:hover { color: var(--rq-strong) !important; }
+html.rq-hrms .text-gray-800, html.rq-hrms .text-gray-700 { color: var(--rq-text) !important; }
+html.rq-hrms .text-gray-600, html.rq-hrms .hover\:text-gray-600:hover { color: var(--rq-text-2) !important; }
+html.rq-hrms .text-gray-500 { color: var(--rq-text-3) !important; }
+html.rq-hrms .text-gray-400 { color: var(--rq-dim) !important; }
+html.rq-hrms .placeholder-gray-500::placeholder, html.rq-hrms ::placeholder { color: var(--rq-placeholder) !important; }
+
+/* ---- lines ---- */
+html.rq-hrms .border-gray-100, html.rq-hrms .border-gray-200 { border-color: var(--rq-line-strong) !important; }
+html.rq-hrms .border-gray-300, html.rq-hrms .hover\:border-gray-300:hover { border-color: var(--rq-line-hover) !important; }
+html.rq-hrms .border-gray-400, html.rq-hrms .border-gray-500, html.rq-hrms .hover\:border-gray-600:hover { border-color: var(--rq-control-border) !important; }
+html.rq-hrms .border-white { border-color: var(--rq-surface-1) !important; }
+html.rq-hrms .divide-gray-200 > * + * { border-color: var(--rq-line) !important; }
+html.rq-hrms .border-gray-900, html.rq-hrms .focus\:border-gray-900:focus { border-color: var(--rq-a-500) !important; }
+
+/* ---- primary ("solid") buttons take the RAQEEM accent ---- */
+html.rq-hrms button.bg-gray-900, html.rq-hrms a.bg-gray-900,
+html.rq-hrms button.bg-black, html.rq-hrms a.bg-black {
+    background-color: var(--rq-a-500) !important;
+    color: var(--rq-a-ink) !important;
+}
+html.rq-hrms button.bg-gray-900:hover, html.rq-hrms button.hover\:bg-gray-800:hover,
+html.rq-hrms a.hover\:bg-gray-800:hover { background-color: var(--rq-a-600) !important; color: var(--rq-a-ink) !important; }
+html.rq-hrms button.active\:bg-gray-700:active { background-color: var(--rq-a-700) !important; }
+html.rq-hrms button.disabled\:bg-gray-700:disabled { background-color: var(--rq-a-500) !important; opacity: .55; color: var(--rq-a-ink) !important; }
+html.rq-hrms button.bg-gray-900 *, html.rq-hrms a.bg-gray-900 * { color: inherit !important; }
+
+/* ---- form controls (frappe-ui inputs) ---- */
+html.rq-hrms input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+html.rq-hrms textarea, html.rq-hrms select, html.rq-hrms .form-input, html.rq-hrms .form-select, html.rq-hrms .form-textarea {
+    background-color: var(--rq-surface-3) !important;
+    color: var(--rq-text) !important;
+    border-color: transparent;
+}
+html.rq-hrms input:focus, html.rq-hrms textarea:focus, html.rq-hrms select:focus {
+    background-color: var(--rq-surface-1) !important;
+    border-color: var(--rq-a-500) !important;
+    box-shadow: 0 0 0 3px var(--rq-accent-ring) !important;
+    outline: none !important;
+}
+html.rq-hrms input[type="checkbox"]:checked, html.rq-hrms input[type="radio"]:checked {
+    background-color: var(--rq-a-500) !important; border-color: var(--rq-a-500) !important;
+}
+html.rq-hrms button[role="switch"][aria-checked="true"] { background-color: var(--rq-a-500) !important; }
+html.rq-hrms .focus-visible\:ring-gray-400:focus-visible { --tw-ring-color: var(--rq-accent-ring) !important; }
+
+/* ---- links, dialogs, menus ---- */
+html.rq-hrms a.text-blue-600, html.rq-hrms .text-blue-600 { color: var(--rq-accent-2) !important; }
+html.rq-hrms [role="dialog"] > div, html.rq-hrms [role="menu"] { border-radius: 14px !important; }
+html.rq-hrms [role="menu"], html.rq-hrms [role="listbox"] {
+    background-color: var(--rq-glass-pop) !important; color: var(--rq-text);
+    border: 1px solid var(--rq-line-strong);
+}
+html.rq-hrms .shadow, html.rq-hrms .shadow-md, html.rq-hrms .shadow-sm { box-shadow: var(--rq-shadow) !important; }
+
+/* ---- pressed / hover states and menu outlines (completes the class map) ---- */
+html.rq-hrms .active\:bg-white:active { background-color: var(--rq-surface-1) !important; }
+html.rq-hrms .active\:bg-gray-500:active,
+html.rq-hrms .group:hover .group-hover\:enabled\:bg-gray-400:enabled { background-color: var(--rq-surface-5) !important; }
+html.rq-hrms .active\:border-gray-700:active { border-color: var(--rq-a-600) !important; }
+html.rq-hrms .hover\:text-gray-700:hover { color: var(--rq-text) !important; }
+html.rq-hrms .ring-black { --tw-ring-color: var(--rq-line-strong) !important; }
+html.rq-hrms button.bg-gray-800, html.rq-hrms a.bg-gray-800 { background-color: var(--rq-a-600) !important; color: var(--rq-a-ink) !important; }
+/* white text on dark chips/tooltips stays white (text-white, text-gray-200 left as they are) */

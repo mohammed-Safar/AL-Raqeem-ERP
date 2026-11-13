@@ -72,3 +72,361 @@ Company Bank Account must be an account of type Bank.	يجب أن يكون حس�
 {0} {1} has only {2} outstanding.	المتبقي على {0} {1} هو {2} فقط.
 Party Type must be one of {0}.	يجب أن يكون نوع الطرف أحد: {0}.
 Set a default receivable/payable account for {0} {1} or company {2}.	اضبط حساب مدينين/دائنين افتراضياً لـ {0} {1} أو للشركة {2}.
+# RAQEEM HR / CRM app names (V1.3)
+RAQEEM HR	الموارد البشرية
+RAQEEM CRM	إدارة العملاء
+Switch to CRM	الانتقال إلى إدارة العملاء
+Open Frappe CRM	فتح إدارة العملاء
+# HR desk dialogs whose texts were missing from every translation file (2026-11-12)
+Add Leave Block Dates	إضافة أيام حظر الإجازات
+Update Property	تحديث الخاصية
+Weightage	الوزن النسبي
+Adjust Leaves	تعديل رصيد الإجازات
+Leaves To Adjust	عدد الإجازات المراد تعديلها
+Schedule On	موعد الجدولة
+Reschedule	إعادة الجدولة
+# HR master records (shown in Arabic through "Translate Link Fields"; the stored names stay English) 2026-11-12
+Casual Leave	إجازة عارضة
+Compensatory Off	إجازة تعويضية
+Sick Leave	إجازة مرضية
+Privilege Leave	إجازة سنوية
+Leave Without Pay	إجازة بدون راتب
+Full-time	دوام كامل
+Part-time	دوام جزئي
+Probation	فترة تجربة
+Contract	عقد
+Commission	بالعمولة
+Piecework	بالقطعة
+Intern	متدرب
+Apprentice	متمرّن
+Arrear	متأخرات
+Basic	الراتب الأساسي
+Income Tax	ضريبة الدخل
+Leave Encashment	صرف بدل الإجازة
+Calls	مكالمات
+Food	طعام
+Medical	علاج طبي
+Others	أخرى
+Travel	سفر
+Accountant	محاسب
+Administrative Assistant	مساعد إداري
+Administrative Officer	موظف إداري
+Analyst	محلل
+Associate	مساعد
+Business Analyst	محلل أعمال
+Business Development Manager	مدير تطوير الأعمال
+Consultant	مستشار
+Chief Executive Officer	الرئيس التنفيذي
+Chief Financial Officer	المدير المالي
+Chief Operating Officer	مدير العمليات
+Chief Technology Officer	مدير التقنية
+Customer Service Representative	ممثل خدمة العملاء
+Designer	مصمم
+Engineer	مهندس
+Executive Assistant	مساعد تنفيذي
+Finance Manager	مدير مالي
+HR Manager	مدير الموارد البشرية
+Head of Marketing and Sales	رئيس التسويق والمبيعات
+Manager	مدير
+Managing Director	المدير العام
+Marketing Manager	مدير التسويق
+Marketing Specialist	أخصائي تسويق
+President	رئيس مجلس الإدارة
+Product Manager	مدير المنتج
+Project Manager	مدير المشروع
+Researcher	باحث
+Sales Representative	مندوب مبيعات
+Secretary	سكرتير
+Software Developer	مطور برمجيات
+Vice President	نائب الرئيس
+All Departments	جميع الأقسام
+Accounts - RM.co	الحسابات - RM.co
+Customer Service - RM.co	خدمة العملاء - RM.co
+Dispatch - RM.co	الشحن والتوزيع - RM.co
+Human Resources - RM.co	الموارد البشرية - RM.co
+Legal - RM.co	الشؤون القانونية - RM.co
+Management - RM.co	الإدارة - RM.co
+Marketing - RM.co	التسويق - RM.co
+Operations - RM.co	العمليات - RM.co
+Production - RM.co	الإنتاج - RM.co
+Purchase - RM.co	المشتريات - RM.co
+Quality Management - RM.co	إدارة الجودة - RM.co
+Research & Development - RM.co	البحث والتطوير - RM.co
+Sales - RM.co	المبيعات - RM.co
+Optional Leave	إجازة اختيارية
+# HR phone app branding (2026-11-12): Frappe HR shows as RAQEEM HR
+Frappe HR	الموارد البشرية
+Login to Frappe HR	تسجيل الدخول إلى الموارد البشرية
+Install Frappe HR	تثبيت تطبيق الموارد البشرية
+Frappe CRM	إدارة العملاء
+# CRM texts that CRM never marks for translation (safety net, 2026-11-12)
+Import could not start	تعذّر بدء الاستيراد
+Columns skipped	الأعمدة المتخطاة
+Import complete	اكتمل الاستيراد
+Import partly complete	اكتمل الاستيراد جزئيًا
+Import timed out	انتهت مهلة الاستيراد
+Remove filter	إزالة التصفية
+Skip all	تخطي الكل
+Reset onboarding steps	إعادة تعيين خطوات البدء
+Help centre	مركز المساعدة
+Is not	ليس
+Sign up now	سجّل الآن
+Upgrade plan	ترقية الخطة
+You are all set	كل شيء جاهز
+All steps are completed successfully	اكتملت جميع الخطوات بنجاح
+Connecting...	جارٍ الاتصال...
+Open docs	فتح الدليل
+Edit linked record	تعديل السجل المرتبط
+Open linked record	فتح السجل المرتبط
+Start now	ابدأ الآن
+Getting started	البدء
+CRM	إدارة العملاء
+# ERPNext CRM tools (erp_crm.py, raqeem_erp_crm.js, page raqeem-pipeline) 2026-11-12
+Pipeline	مسار المبيعات
+Leads Pipeline	مسار العملاء المحتملين
+Add a Sales Stage	إضافة مرحلة بيع
+Add items to this opportunity to see their stock.	أضف أصنافًا إلى هذه الفرصة لعرض مخزونها.
+Answered	تم الرد
+Balance due	الرصيد المستحق
+Call logged	تم تسجيل المكالمة
+Call logged: {0} ({1})	سُجّلت مكالمة: {0} ({1})
+Days without changes	أيام دون تحديث
+Drop here	أفلت هنا
+Duration (minutes)	المدة (بالدقائق)
+ERPNext kept the status {0}	أبقى النظام الحالة {0}
+Last bought	آخر شراء
+Last purchase	آخر عملية شراء
+Log call	تسجيل مكالمة
+Moved to {0}	نُقلت إلى {0}
+Next activity	النشاط التالي
+No Sales Stages yet.	لا توجد مراحل بيع بعد.
+No Stage	بلا مرحلة
+No phone number	لا يوجد رقم هاتف
+No sales to this customer yet.	لا توجد مبيعات لهذا العميل بعد.
+No stock in any warehouse	لا يوجد مخزون في أي مستودع
+Not a stock item	صنف غير مخزني
+Note added	تمت إضافة الملاحظة
+Only mine	الخاصة بي فقط
+Possible duplicate	تكرار محتمل
+Projected	المتوقع
+Sales Invoices	فواتير المبيعات
+Sales Stage {0} does not exist	مرحلة البيع {0} غير موجودة
+Sales this year	مبيعات هذا العام
+Set automatically	تُحدَّد تلقائيًا
+Show closed	إظهار المغلقة
+Showing the latest {0} only. Use the filters to narrow down.	يُعرض أحدث {0} فقط. استخدم عوامل التصفية لتضييق النتائج.
+Task added	تمت إضافة المهمة
+This lead may already exist:	قد يكون هذا العميل المحتمل مسجّلًا من قبل:
+This opportunity is not linked to a customer yet.	هذه الفرصة غير مرتبطة بعميل بعد.
+This opportunity's lead has not become a customer yet. It becomes one when a quotation is ordered, or with Create > Customer on the lead.	لم يتحوّل العميل المحتمل لهذه الفرصة إلى عميل بعد. يتحوّل عند طلب عرض سعر، أو من «إنشاء > عميل» في صفحة العميل المحتمل.
+This status is set automatically by ERPNext	هذه الحالة يحدّدها النظام تلقائيًا
+Wanted	المطلوب
+What needs to be done	ما المطلوب إنجازه
+What they buy most	الأكثر شراءً
+What was said	ملخص المكالمة
+You don't have access to items.	ليست لديك صلاحية الاطلاع على الأصناف.
+same email	نفس البريد الإلكتروني
+same phone	نفس رقم الهاتف
+{0} records	{0} سجل
+# Employee Affairs (raqim_sales/raqeem_hr) 2026-11-12
+Employee Affairs	شؤون الموظفين
+Raqeem Leave Request	طلب إجازة
+Raqeem Leave Allocation	تخصيص الإجازات
+Raqeem Leave Type	نوع الإجازة
+Raqeem Leave Balance	رصيد الإجازات
+Leave Request	طلب إجازة
+Leave Requests	طلبات الإجازة
+New Leave Request	طلب إجازة جديد
+Leave Calendar	تقويم الإجازات
+Leave Types	أنواع الإجازات
+Annual Leave	إجازة سنوية
+Unpaid Leave	إجازة بدون راتب
+0 means no limit.	0 يعني بلا حد.
+Allocate	تخصيص
+Allocate Leave for a Period	تخصيص الإجازات لفترة
+Allocate for a Period	تخصيص لفترة
+Allocating...	جارٍ التخصيص...
+Allow Half Day	السماح بنصف يوم
+Allow More Than the Balance	السماح بتجاوز الرصيد
+Approve leave	الموافقة على الإجازة
+Approve or reject the request first	وافق على الطلب أو ارفضه أولًا
+Approver Name	اسم مسؤول الموافقة
+Approver's Note	ملاحظة مسؤول الموافقة
+Balance Before This Request	الرصيد قبل هذا الطلب
+Balance {0}, allocated {1}, taken {2}	الرصيد {0}، المخصص {1}، المستهلك {2}
+Calendar Colour	اللون في التقويم
+Carried Forward	المرحَّل
+Carry Unused Days to the Next Period	ترحيل الأيام غير المستخدمة إلى الفترة التالية
+Count Weekends and Holidays	احتساب العطل الأسبوعية والرسمية
+Days cannot be negative	لا يمكن أن تكون الأيام سالبة
+Days per Year	الأيام في السنة
+Decided On	تاريخ القرار
+Document needed	مستند مطلوب
+For example a medical certificate for sick leave longer than 2 days. 0 means never.	مثل شهادة طبية للإجازة المرضية التي تزيد على يومين. 0 يعني عدم الطلب أبدًا.
+Leave Days	أيام الإجازة
+Leave approved	تمت الموافقة على الإجازة
+Leave empty for all departments	اتركه فارغًا لجميع الأقسام
+Leave empty for every leave type with days per year	اتركه فارغًا لكل نوع إجازة له أيام سنوية
+Leave rejected	رُفضت الإجازة
+Leave request from {0}: {1} ({2} days)	طلب إجازة من {0}: {1} ({2} أيام)
+Leave type {0} cannot be taken as a half day	لا يمكن أخذ {0} نصف يوم
+Leave type {0} is disabled	نوع الإجازة {0} معطَّل
+Maximum Days Carried	الحد الأقصى للأيام المرحَّلة
+New Days	الأيام الجديدة
+No holiday list covers some of these dates, so every day was counted. Set a holiday list on the employee or the company.	لا توجد قائمة عطلات تغطي بعض هذه التواريخ، لذا احتُسبت كل الأيام. حدِّد قائمة عطلات للموظف أو للشركة.
+No leave allocated for this period yet. Use Leave Allocation > Allocate for a Period.	لم تُخصَّص إجازات لهذه الفترة بعد. استخدم «تخصيص الإجازات > تخصيص لفترة».
+Not enough leave balance	رصيد الإجازات غير كافٍ
+Note to the employee	ملاحظة للموظف
+Only the approver ({0}) or an HR Manager can decide on this request	لا يبتّ في هذا الطلب إلا مسؤول الموافقة ({0}) أو مدير الموارد البشرية
+Only with days left	من لديهم أيام متبقية فقط
+Reject leave	رفض الإجازة
+Request Date	تاريخ الطلب
+Require a Document After (Days)	طلب مستند بعد (أيام)
+Supporting Document	المستند المؤيِّد
+Taken	المستهلك
+The half day must be between From Date and To Date	يجب أن يقع نصف اليوم بين «من تاريخ» و«إلى تاريخ»
+There are no working days between these dates	لا توجد أيام عمل بين هذين التاريخين
+This leave type has no balance limit	هذا النوع من الإجازات بلا حد للرصيد
+This request has already been decided	تم البتّ في هذا الطلب مسبقًا
+Tick for leave such as sick leave, where every calendar day counts.	فعِّله لإجازات مثل المرضية، حيث يُحتسب كل يوم تقويمي.
+To Date must be after From Date	يجب أن يكون «إلى تاريخ» بعد «من تاريخ»
+Unknown decision	قرار غير معروف
+Unused days from the previous period, when the leave type carries them forward.	الأيام غير المستخدمة من الفترة السابقة، إذا كان نوع الإجازة يرحِّلها.
+Used when allocating leave for a year. 0 means no fixed balance (for example unpaid leave).	يُستخدم عند تخصيص إجازات السنة. 0 يعني بلا رصيد ثابت (مثل الإجازة بدون راتب).
+Waiting for Approval	بانتظار الموافقة
+Working days only, unless the leave type counts weekends and holidays.	أيام العمل فقط، إلا إذا كان نوع الإجازة يحتسب العطل.
+Your leave request ({0}) was {1}	طلب إجازتك ({0}) {1}
+approved	تمت الموافقة عليه
+rejected	رُفض
+left after this request: {0}	المتبقي بعد هذا الطلب: {0}
+not allocated	غير مخصص
+not set	غير محدد
+{0} allocations created for {1} employees. {2} already existed and were skipped.	أُنشئ {0} تخصيصًا لـ {1} موظفًا، وتم تخطي {2} موجودة مسبقًا.
+{0} already has a leave request for these dates: {1}	لدى {0} طلب إجازة في هذه التواريخ: {1}
+{0} already has {1} for this period: {2}	لدى {0} تخصيص {1} لهذه الفترة: {2}
+{0} approved leave requests were inside this allocation. Their days now count against no balance.	كان {0} من طلبات الإجازة الموافق عليها ضمن هذا التخصيص، ولم تعد أيامها تُخصم من أي رصيد.
+{0} days waiting for approval	{0} أيام بانتظار الموافقة
+{0} has no {1} allocated for this period.	ليس لدى {0} تخصيص {1} لهذه الفترة.
+{0} has {1} days of {2} left, but this request is for {3} days.	بقي لدى {0} {1} أيام من {2}، لكن هذا الطلب لمدة {3} أيام.
+{0} leave days	{0} أيام إجازة
+{0} longer than {1} days needs a supporting document (for example a medical certificate).	{0} التي تزيد على {1} أيام تحتاج إلى مستند مؤيِّد (مثل شهادة طبية).
+# Employee Affairs payroll (raqim_sales/raqeem_hr/payroll.py) 2026-11-13
+30 Days	30 يومًا
+30 Days: a month is always 30 days when pay is reduced for unpaid leave or a partial month.	30 يومًا: يُعدّ الشهر دائمًا 30 يومًا عند خصم الإجازة غير المدفوعة أو الشهر الجزئي.
+Account / IBAN	الحساب / IBAN
+Account {0} belongs to another company	الحساب {0} يتبع شركة أخرى
+Accounting	المحاسبة
+Add at least one earning, such as the basic salary	أضف استحقاقًا واحدًا على الأقل، مثل الراتب الأساسي
+Calculate	احتساب
+Calculated by the System	يحتسبه النظام
+Calculating salaries...	جارٍ احتساب الرواتب...
+Calendar Days	أيام التقويم
+Cancel the payroll run instead	ألغِ مسير الرواتب بدلًا من ذلك
+Check the rates	راجع النِّسب
+Children	الأبناء
+Day Basis	أساس احتساب الأيام
+Days in Month	أيام الشهر
+Deduct Social Security Before Tax	خصم الضمان الاجتماعي قبل الضريبة
+Earnings without their own account are booked here.	تُقيَّد هنا الاستحقاقات التي ليس لها حساب خاص.
+Earnings: an expense account (empty = the salary expense account in Payroll Settings). Deductions: the account the deducted money goes to, e.g. employee advances.	الاستحقاقات: حساب مصروف (فارغ = حساب مصروف الرواتب في إعدادات الرواتب). الاستقطاعات: الحساب الذي يذهب إليه المبلغ المخصوم، مثل سُلف الموظفين.
+Employee Salary	راتب الموظف
+Employees	الموظفون
+Employer Social Security	حصة جهة العمل في الضمان الاجتماعي
+Employer Social Security Expense	مصروف حصة جهة العمل في الضمان
+Exemption per Child (Yearly)	الإعفاء عن كل ابن (سنويًا)
+First Band up to (Yearly)	الشريحة الأولى حتى (سنويًا)
+Fixed Deductions	استقطاعات ثابتة
+Fixed monthly deductions such as an advance repayment. Tax, social security and solidarity are calculated by the system.	استقطاعات شهرية ثابتة مثل سداد سلفة. يحتسب النظام الضريبة والضمان والتضامن تلقائيًا.
+For the income tax exemption.	لاحتساب الإعفاء من ضريبة الدخل.
+Include Drafts	تضمين المسودات
+Income Tax (Law 7 of 2010)	ضريبة الدخل (القانون رقم 7 لسنة 2010)
+Income Tax Payable	ضريبة الدخل المستحقة
+Jihad Tax	ضريبة الجهاد
+Jihad Tax Payable	ضريبة الجهاد المستحقة
+Leave empty for everyone.	اتركه فارغًا للجميع.
+Left out, with no salary set: {0}	استُبعد لعدم تحديد راتب: {0}
+Monthly Amount	المبلغ الشهري
+Monthly Gross	إجمالي الراتب الشهري
+Monthly Salary	الراتب الشهري
+Only a submitted, unpaid payroll run can be paid	لا يُدفع إلا مسير رواتب معتمد غير مدفوع
+Paid Days	الأيام المدفوعة
+Paid days	الأيام المدفوعة
+Paid From (Bank or Cash)	الدفع من (مصرف أو خزينة)
+Paid by the company on top of the gross pay; not deducted from the employee.	تدفعها الشركة فوق إجمالي الراتب، ولا تُخصم من الموظف.
+Paid by the company on top of the salary.	تدفعها الشركة فوق الراتب.
+Pay Salaries	صرف الرواتب
+Payment Journal Entry	قيد الصرف
+Payroll Journal Entry	قيد الرواتب
+Payroll Payable (Net Pay)	رواتب مستحقة الدفع (صافي الرواتب)
+Payroll Run	مسير الرواتب
+Payroll {0} to {1} ({2})	رواتب من {0} إلى {1} ({2})
+Personal Exemption, Married (Yearly)	الإعفاء الشخصي، متزوج (سنويًا)
+Personal Exemption, Single (Yearly)	الإعفاء الشخصي، أعزب (سنويًا)
+Press Calculate first	اضغط «احتساب» أولًا
+Preview This Month	معاينة هذا الشهر
+Raqeem Employee Salary	راتب الموظف
+Raqeem Payroll Run	مسير الرواتب
+Raqeem Payroll Run Employee	موظف في مسير الرواتب
+Raqeem Payroll Settings	إعدادات الرواتب
+Raqeem Salary Component	مكوّن الراتب
+Raqeem Salary Line	بند الراتب
+Raqeem Salary Slip	قسيمة الراتب
+Raqeem Salary Register	كشف الرواتب
+Salary Register	كشف الرواتب
+Salary Slips	قسائم الرواتب
+Salary Component	مكوّن الراتب
+Payroll Settings	إعدادات الرواتب
+Rate Above the First Band	النسبة فوق الشريحة الأولى
+Rate in the First Band	نسبة الشريحة الأولى
+Rates Checked by Our Accountant	راجع محاسبنا النِّسب
+Recalculate	إعادة الاحتساب
+Reference (transfer or cheque no.)	المرجع (رقم الحوالة أو الصك)
+Reported as abolished; leave 0 unless your accountant says otherwise.	أُفيد بإلغائها؛ اتركها 0 ما لم يقرر محاسبك غير ذلك.
+Row {0}: the amount cannot be negative	الصف {0}: لا يمكن أن يكون المبلغ سالبًا
+Row {0}: {1} is calculated by the system; do not add it here	الصف {0}: {1} يحتسبه النظام؛ لا تُضِفه هنا
+Row {0}: {1} is not an {2}	الصف {0}: {1} ليس {2}
+Salaries paid	تم صرف الرواتب
+Salaries paid for {0}	صرف رواتب {0}
+Salary Expense Account	حساب مصروف الرواتب
+Salary slips are submitted by their payroll run	تُعتمد قسائم الرواتب من خلال مسير الرواتب
+Set the account for salary component {0} (in the component, or in Payroll Settings)	حدِّد حساب مكوّن الراتب {0} (في المكوّن أو في إعدادات الرواتب)
+Set {0} in Raqeem Payroll Settings	حدِّد {0} في إعدادات الرواتب
+Social Security	الضمان الاجتماعي
+Social Security Payable	الضمان الاجتماعي المستحق
+Social Security and Other Deductions	الضمان الاجتماعي والاستقطاعات الأخرى
+Social Security, Employee Share	الضمان الاجتماعي، حصة الموظف
+Social Security, Employer Share	الضمان الاجتماعي، حصة جهة العمل
+Solidarity Fund	صندوق التضامن
+Solidarity Fund Payable	صندوق التضامن المستحق
+Stamp Duty	ضريبة الدمغة
+Stamp Duty Payable	ضريبة الدمغة المستحقة
+Statutory	قانوني
+Statutory deductions are calculated in every salary slip; their accounts are in Payroll Settings.	تُحتسب الاستقطاعات القانونية في كل قسيمة راتب، وحساباتها في إعدادات الرواتب.
+Subject to Income Tax	خاضع لضريبة الدخل
+Subject to Social Security	خاضع للضمان الاجتماعي
+Taxable Amount	الوعاء الخاضع للضريبة
+The rates below come from published sources that do not all agree. Tick this once your accountant has confirmed them; until then every payroll run shows a warning.	النِّسب أدناه مأخوذة من مصادر منشورة لا تتفق جميعها. فعِّل هذا الخيار بعد أن يؤكدها محاسبك؛ وحتى ذلك الحين يظهر تنبيه في كل مسير رواتب.
+The salary component for {0} is missing. Run bench migrate.	مكوّن الراتب الخاص بـ {0} غير موجود. شغّل bench migrate.
+The salary slips changed since they were calculated. Press Calculate again.	تغيّرت قسائم الرواتب منذ احتسابها. اضغط «احتساب» مرة أخرى.
+The tax and social security rates in Raqeem Payroll Settings have not been confirmed by your accountant yet.	لم يؤكد محاسبك بعدُ نِسب الضريبة والضمان في إعدادات الرواتب.
+This month's slip (preview)	قسيمة هذا الشهر (معاينة)
+This payroll run is already submitted	مسير الرواتب هذا معتمد مسبقًا
+Total net pay	إجمالي صافي الرواتب
+Unpaid Days	الأيام غير المدفوعة
+Unpaid leave and days before joining or after leaving.	الإجازات غير المدفوعة والأيام قبل التعيين أو بعد ترك العمل.
+{0} (already paid for this period)	{0} (صُرف راتبه لهذه الفترة)
+{0} already has a salary slip for this period: {1}	لدى {0} قسيمة راتب لهذه الفترة: {1}
+{0} already has a salary valid from this date: {1}	لدى {0} راتب ساري من هذا التاريخ: {1}
+{0} appears twice	{0} مكرر
+{0} has no salary set (Employee Salary)	لم يُحدَّد راتب لـ {0} (راتب الموظف)
+{0} has no salary set (Employee Salary) valid on {1}	لم يُحدَّد راتب لـ {0} (راتب الموظف) ساري في {1}
+{0} is calculated by the system and cannot be deleted	{0} يحتسبه النظام ولا يمكن حذفه
+{0} must be between 0 and 100	يجب أن تكون {0} بين 0 و100
+{0}: account {1} belongs to another company	{0}: الحساب {1} يتبع شركة أخرى
+Basic Salary	الراتب الأساسي
+Housing Allowance	بدل السكن
+Transport Allowance	بدل المواصلات
+Advance Repayment	سداد سلفة
+Employee signature	توقيع الموظف
+Approved by	اعتمده
+Payroll	الرواتب

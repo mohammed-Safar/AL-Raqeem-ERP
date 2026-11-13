@@ -1,0 +1,250 @@
+B12-000	crm		Favicon	
+B12-001	crm		Field	حقل
+B12-002	crm		Fields Order	
+B12-003	crm		File "{0}" was skipped because of invalid file type	تم تخطي الملف "{0}" بسبب نوع ملف غير صالح
+B12-004	crm		File "{0}" was skipped because only {1} uploads are allowed	
+B12-005	crm		File "{0}" was skipped because only {1} uploads are allowed for DocType "{2}"	
+B12-006	crm		Finish	إنهاء
+B12-007	crm		First Name	الاسم الأول
+B12-008	crm		First Name is mandatory	
+B12-009	crm		First Response TIme	
+B12-010	crm		First Response Time	وقت الاستجابة الأول
+B12-011	crm		First name	
+B12-012	crm		Following up consistently	
+B12-013	crm		For all-day events, <b>set a time</b> to send reminders before the event starts	
+B12-014	crm		Forecasted Revenue	
+B12-015	crm		Forecasted revenue	
+B12-016	crm		Form Name	
+B12-017	crm		Form Script updated successfully	
+B12-018	crm		Frappe CRM mobile	
+B12-019	crm		Friday	الجمعة
+B12-020	crm		From	من
+B12-021	crm		From Date	من تاريخ
+B12-022	crm		From Number	
+B12-023	crm		From Type	
+B12-024	crm		From User	من المستخدم
+B12-025	crm		Full Name	الاسم الكامل
+B12-026	crm		Funnel Conversion	
+B12-027	crm		Funnel conversion	
+B12-028	crm		GMT+5:30	
+B12-029	crm		General	عام
+B12-030	crm		General Settings	الإعدادات العامة
+B12-031	crm		Geographic distribution of deals and revenue	
+B12-032	crm		GitHub Repository	
+B12-033	crm		Go Back	عد
+B12-034	crm		Go to Invite Page	
+B12-035	crm		Go to Website	
+B12-036	crm		Going?	
+B12-037	crm		Google Ads	
+B12-038	crm		Greater than	
+B12-039	crm		Greater than or equal to	
+B12-040	crm		Grid Row	
+B12-041	crm		Group By Field	
+B12-042	crm		Group By: 	مجموعة من: 
+B12-043	crm		Hang Up	
+B12-044	crm		Hello	مرحبًا
+B12-045	crm		Help	مساعدة
+B12-046	crm		Hi John, \\n\\nCan you please provide more details on this...	
+B12-047	crm		Hidden	مخفي
+B12-048	crm		Hide	إخفاء
+B12-049	crm		Hide Border	إخفاء الحدود
+B12-050	crm		Hide Label	إخفاء التسمية
+B12-051	crm		Hide Password	
+B12-052	crm		Hide Preview	إخفاء المعاينة
+B12-053	crm		Hide Recording	
+B12-054	crm		Holiday List	قائمة العطلات
+B12-055	crm		Holiday List Name	اسم قائمة العطلات
+B12-056	crm		Holidays	العطلات
+B12-057	crm		Home Actions	
+B12-058	crm		How are you managing your sales today?	
+B12-059	crm		How do new leads usually come to you?	
+B12-060	crm		How many people will use Frappe CRM?	
+B12-061	crm		How timestamps are shown in the activity timeline for all users	
+B12-062	crm		HubSpot	
+B12-063	crm		I understand, Add Conditions	
+B12-064	crm		If enabled, a lead will be automatically created when an incoming email is received from an unknown contact.	
+B12-065	crm		If enabled, all outgoing emails will be sent from this account. Note: Only one account can be default outgoing.	
+B12-066	crm		If enabled, all replies to your company (eg: replies@yourcompany.com) will come to this account. Note: Only one account can be default incoming.	
+B12-067	crm		If enabled, emails will be pulled from this account.	
+B12-068	crm		If enabled, outgoing emails can be sent from this account.	
+B12-069	crm		Import	استيراد
+B12-070	crm		Import my existing data	
+B12-071	crm		In less than a minute	
+B12-072	crm		Inbound Call	
+B12-073	crm		Inbox	صندوق الوارد
+B12-074	crm		Incoming	الوارد
+B12-075	crm		Incoming call...	
+B12-076	crm		Incorrect current password. Please try again.	
+B12-077	crm		Industries	
+B12-078	crm		Initiating call...	
+B12-079	crm		Insert Email Template	
+B12-080	crm		Insert Emoji	
+B12-081	crm		Integration	
+B12-082	crm		Integration Not Enabled	
+B12-083	crm		Integrations	التكاملات
+B12-084	crm	FCRM	Integrations	التكاملات
+B12-085	crm		Introduction	مقدمة
+B12-086	crm		Invalid Account SID or Auth Token.	
+B12-087	crm		Invalid Email Address	
+B12-088	crm		Invalid Email or Password	
+B12-089	crm		Invalid Exotel Number	
+B12-090	crm		Invalid GeoJSON	
+B12-091	crm		Invalid Site URL	
+B12-092	crm		Invalid Start Or End Time	
+B12-093	crm		Invalid Twilio account	
+B12-094	crm		Invalid Twilio application	
+B12-095	crm		Invalid Website URL	
+B12-096	crm		Invalid access token provided for Facebook.	
+B12-097	crm		Invalid chart name	
+B12-098	crm		Invalid credentials	
+B12-099	crm		Invalid email ID	
+B12-100	crm		Invalid email address	
+B12-101	crm		Invalid field	
+B12-102	crm		Invalid fields, check if all are filled in and values are correct.	
+B12-103	crm		Invalid fields: {0}	
+B12-104	crm		Invalid format. Try: 1 hour 30 minutes, 2 hours, 45 seconds, 1:30:45, 90s	
+B12-105	crm		Invalid format. Try: 1h 30m 45s, 1:30:45, 90s	
+B12-106	crm		Invalid lead details supplied.	
+B12-107	crm		Invalid page or not permitted to access	
+B12-108	crm		Invitations sent successfully	
+B12-109	crm		Invite Agent	
+B12-110	crm		Invite As	
+B12-111	crm		Invite By Email	
+B12-112	crm		Invite New User	
+B12-113	crm		Invite User	
+B12-114	crm		Invite Users	
+B12-115	crm		Invite my team	
+B12-116	crm		Invite users to access CRM. Specify their roles to control access and permissions	
+B12-117	crm		Is Default	افتراضي
+B12-118	crm		Is ERPNext installed on a different site?	
+B12-119	crm		It appears that there are currently no {0} available. You can create more {0} by using the Create button.	
+B12-120	crm		It will make deal's "Expected Closure Date" & "Expected Deal Value" mandatory to get accurate forecasting insights	
+B12-121	crm		Items are required	
+B12-122	crm		Items must be a list	
+B12-123	crm		JSON	JSON
+B12-124	crm		Job Title	المسمى الوظيفي
+B12-125	crm		John Doe	
+B12-126	crm		John, Jane, Doe	
+B12-127	crm		Just exploring	
+B12-128	crm		Just me	
+B12-129	crm		Kanban Columns	
+B12-130	crm		Kanban Fields	
+B12-131	crm		Kanban Settings	إعدادات كانبان
+B12-132	crm		Kanban settings	
+B12-133	crm		Keeping my pipeline organized	
+B12-134	crm		Language	اللغة
+B12-135	crm		Language & Time	
+B12-136	crm		Last 30 Days	آخر 30 يومًا
+B12-137	crm		Last 6 Months	آخر 6 أشهر
+B12-138	crm		Last 60 Days	آخر 60 يومًا
+B12-139	crm		Last 7 Days	آخر 7 أيام
+B12-140	crm		Last 90 Days	آخر 90 يومًا
+B12-141	crm		Last Modified	
+B12-142	crm		Last Month	الشهر الماضي
+B12-143	crm		Last Name	اسم العائلة
+B12-144	crm		Last Responded On	
+B12-145	crm		Last Response Time	
+B12-146	crm		Last Status Change Log	
+B12-147	crm		Last Synced At	
+B12-148	crm		Last Year	العام الماضي
+B12-149	crm		Last name	
+B12-150	crm		Last user assigned by this rule	
+B12-151	crm		Lead Data	
+B12-152	crm		Lead Owner cannot be same as the Lead Email Address	لا يمكن أن يكون مالك العميل المحتمل هو نفسه عنوان البريد الإلكتروني للعميل المحتمل
+B12-153	crm		Lead Sources	
+B12-154	crm		Lead Statuses	
+B12-155	crm		Lead Sync Source	
+B12-156	crm		Lead Sync Source created successfully	
+B12-157	crm		Lead Syncing	
+B12-158	crm		Lead and deal visibility will no longer be restricted by the reporting tree. Are you sure?	
+B12-159	crm		Lead from call {0}	
+B12-160	crm		Lead generation channel analysis	
+B12-161	crm		Lead sync initiated.	
+B12-162	crm		Lead sync source deleted successfully	
+B12-163	crm		Lead to deal conversion pipeline	
+B12-164	crm		Leads by Source	
+B12-165	crm		Leads by source	
+B12-166	crm		Learn about conditions	
+B12-167	crm		Less than	
+B12-168	crm		Less than or equal to	
+B12-169	crm		Linked Item {0} no longer exists	
+B12-170	crm		Linked With	ترتبط
+B12-171	crm		Links	الروابط
+B12-172	crm		List	قائمة
+B12-173	crm		Listen	
+B12-174	crm		Load Default Columns	
+B12-175	crm		Load More	تحميل المزيد
+B12-176	crm		Location	الموقع
+B12-177	crm		Log ID	
+B12-178	crm		Log a Call	
+B12-179	crm		Login to Frappe Cloud?	تسجيل الدخول إلى Frappe Cloud؟
+B12-180	crm		Login with Different Account	
+B12-181	crm		Lost Deal Reasons	
+B12-182	crm		Lost Details	
+B12-183	crm		Lost Notes	
+B12-184	crm		Lost Notes are required when Lost Reason is "Other"	
+B12-185	crm		Lost Reason is required	
+B12-186	crm		Lost deal reasons	
+B12-187	crm		Low	منخفض
+B12-188	crm		Make Call	
+B12-189	crm		Make Private	
+B12-190	crm		Make Public	
+B12-191	crm		Make a Call	
+B12-192	crm		Make attachment {0}	
+B12-193	crm		Make {0} as default calling medium	
+B12-194	crm		Makes "Expected Closure Date" and "Expected Deal Value" mandatory for deal value forecasting	
+B12-195	crm		Manage CRM users by adding or inviting them, and assign roles to control their access and permissions	
+B12-196	crm		Manage ERPNext integration settings	
+B12-197	crm		Manage your account emails and email signature for communication.	
+B12-198	crm		Manage your email accounts to send and receive emails directly from CRM. You can add multiple accounts and set one as default for incoming and outgoing emails.	
+B12-199	crm		Manage your email signature	
+B12-200	crm		Manage your profile & login information.	
+B12-201	crm		Manage your service level agreement policies	
+B12-202	crm		Manager	مدير
+B12-203	crm		Managing contacts and companies	
+B12-204	crm		Mandatory field error: {0}	
+B12-205	crm		Mandatory field(s) {0} must be mapped	
+B12-206	crm		Mandatory fields required: {0}	
+B12-207	crm		Manual	يدوي
+B12-208	crm		Mapped to CRM Field	
+B12-209	crm		Mark all as read	وضع علامة "مقروءة" على الكل
+B12-210	crm		Mark lead/deal as replied on response	
+B12-211	crm		Masters	الرئيسية
+B12-212	crm		May 1, 2025	
+B12-213	crm		Maybe	ربما
+B12-214	crm		Medium	متوسط
+B12-215	crm		Mention	أشير
+B12-216	crm		Message	رسالة
+B12-217	crm		Middle Name	الاسم الأوسط
+B12-218	crm		Missed Call	
+B12-219	crm		Missing mandatory fields: {0}	
+B12-220	crm		Mobile App Installation	
+B12-221	crm		Mobile No.	رقم الجوال.
+B12-222	crm		Mobile No. should be a number	
+B12-223	crm		Mobile Number Missing	
+B12-224	crm		Month	شهر
+B12-225	crm		More Options	
+B12-226	crm		More than 20	
+B12-227	crm		Move Last Column to Next Section	
+B12-228	crm		Move Last Column to Next Tab	
+B12-229	crm		Move Last Column to Previous Section	
+B12-230	crm		Move Last Column to Previous Tab	
+B12-231	crm		Move to Next Tab	
+B12-232	crm		Move to Previous Tab	
+B12-233	crm		Move to top level	
+B12-234	crm		Move under {0}	
+B12-235	crm		My Open Deals	
+B12-236	crm		Name is required	
+B12-237	crm		Naming Series	سلسلة التسمية
+B12-238	crm		Nested Conditions	
+B12-239	crm		New	جديد
+B12-240	crm		New Assignment Rule	
+B12-241	crm		New Assignment Rule Name	
+B12-242	crm		New Comment	
+B12-243	crm		New Contact	جهة اتصال جديدة
+B12-244	crm		New Email	بريد إلكتروني جديد
+B12-245	crm		New Event	حدث جديد
+B12-246	crm		New Lead Sync Source	
+B12-247	crm		New Message	
+B12-248	crm		New Note	ملاحظة جديدة
+B12-249	crm		New Organization	

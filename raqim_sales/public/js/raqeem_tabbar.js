@@ -22,7 +22,7 @@
 		["Sales Invoice", "invoice-sales", "فاتورة مبيعات"],
 		["Quotation", "scroll-text", "عرض سعر"],
 		["Sales Order", "notepad-text", "أمر بيع"],
-		["Payment Entry", "wallet", "قيد دفع"],
+		["Payment Entry", "payment-entry", "قيد دفع"],
 		["Customer", "users", "عميل"],
 		["Item", "package", "صنف"],
 		["Purchase Invoice", "invoice-purchase", "فاتورة مشتريات"],

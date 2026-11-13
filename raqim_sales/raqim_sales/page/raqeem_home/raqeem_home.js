@@ -177,6 +177,8 @@ class RaqeemHome {
 				entries = [];
 			}
 			entries = entries.filter((e) => e && e.label && sidebar.dock_entry_route(e));
+			// apps with their own screen and no desk dock (Frappe CRM at /crm): our own tiles
+			if (!entries.length) entries = this.external_entries(app);
 			if (!entries.length) return;
 			groups.push({
 				app,
@@ -186,6 +188,37 @@ class RaqeemHome {
 			});
 		});
 		return groups;
+	}
+
+	// Tiles for an app that runs on its own screen (no desk dock). Only shown when Frappe
+	// gave the app a route, i.e. it is installed and this user passed its permission check.
+	external_entries(app) {
+		const route = app.app_route || "";
+		if (!route.startsWith("/") || route.startsWith("/desk") || route.startsWith("/app/")) return [];
+		const ar = this.lang === "ar";
+		const SCREENS = {
+			crm: [
+				["leads", "Leads", "العملاء المحتملون", "funnel", "CRM Lead"],
+				["deals", "Deals", "الصفقات", "handshake", "CRM Deal"],
+				["contacts", "Contacts", "جهات الاتصال", "contacts-cards-soft", ""],
+				["organizations", "Organizations", "المؤسسات", "building-2", ""],
+				["tasks", "Tasks", "المهام", "list-todo", "CRM Task"],
+				["notes", "Notes", "الملاحظات", "notepad-text", ""],
+				["call-logs", "Call Logs", "سجل المكالمات", "headset", ""],
+			],
+		};
+		const list = SCREENS[app.app_name];
+		if (!list) {
+			return [{ label: app.app_title || app.app_name, url: route, icon: "", rq_external: true, link_to: "" }];
+		}
+		return list.map(([path, en, arabic, icon, module]) => ({
+			label: ar ? arabic : en,
+			search: `${en} ${arabic}`,
+			url: `${route.replace(/\/$/, "")}/${path}/view/list`,
+			icon,
+			link_to: module,
+			rq_external: true,
+		}));
 	}
 
 	refresh() {
@@ -251,8 +284,8 @@ class RaqeemHome {
 			`).appendTo(this.$groups);
 			const $grid = $section.find(".rq-home-grid");
 			group.entries.forEach((entry) => {
-				const label = __(entry.label);
-				const route = sidebar.dock_entry_route(entry) || "/desk";
+				const label = entry.rq_external ? entry.label : __(entry.label);
+				const route = entry.rq_external ? entry.url : sidebar.dock_entry_route(entry) || "/desk";
 				const href = route.startsWith("http") || route.startsWith("/") ? route : "/desk/" + route;
 				const $tile = $(`
 					<a class="rq-tile" role="listitem" href="${esc(href)}" style="--i:${Math.min(i++, 24)}" data-module="${esc(entry.link_to || "")}">
@@ -261,9 +294,10 @@ class RaqeemHome {
 					</a>
 				`);
 				// search matches the shown label and the English name (so "stock" works in Arabic too)
-				$tile.data("search", this.normalize(`${label} ${entry.label} ${entry.link_to || ""}`));
+				$tile.data("search", this.normalize(`${label} ${entry.label} ${entry.search || ""} ${entry.link_to || ""} ${group.title}`));
 				$tile.on("click", (e) => {
 					if (e.ctrlKey || e.metaKey || e.shiftKey || e.button === 1) return; // new tab: let the browser do it
+					if (entry.rq_external) return; // its own app (e.g. /crm): a normal page load
 					if (entry.link_type === "URL" && /^https?:/.test(entry.url || "")) return;
 					e.preventDefault();
 					sidebar.open_dock_entry(entry);
@@ -279,8 +313,8 @@ class RaqeemHome {
 			["Sales Invoice", "invoice-sales", "فاتورة مبيعات"],
 			["Quotation", "scroll-text", "عرض سعر"],
 			["Sales Order", "notepad-text", "أمر بيع"],
-			["Payment Entry", "wallet", "قيد دفع"],
-			["Raqeem Cheque", "coins", "شيك"],
+			["Payment Entry", "payment-entry", "قيد دفع"],
+			["Raqeem Cheque", "cheque", "شيك"],
 			["Customer", "users", "عميل"],
 			["Item", "package", "صنف"],
 			["Purchase Invoice", "invoice-purchase", "فاتورة مشتريات"],
@@ -369,6 +403,14 @@ class RaqeemHome {
 			Projects: { dt: "Task", filters: { status: ["in", ["Open", "Working", "Overdue"]] }, label: ar ? "مهام مفتوحة" : "open tasks" },
 			CRM: { dt: "Lead", filters: { status: ["in", ["Lead", "Open"]] }, label: ar ? "عملاء جدد" : "new leads" },
 			Support: { dt: "Issue", filters: { status: "Open" }, label: ar ? "بلاغات مفتوحة" : "open issues", tone: "warn" },
+			// RAQEEM HR (dock entries are named after their sidebars)
+			Leaves: { dt: "Leave Application", filters: { status: "Open", docstatus: 0 }, label: ar ? "إجازات بانتظار الموافقة" : "awaiting approval", tone: "warn" },
+			Expenses: { dt: "Expense Claim", filters: { approval_status: "Draft", docstatus: 0 }, label: ar ? "مطالبات للمراجعة" : "to review" },
+			Recruitment: { dt: "Job Applicant", filters: { status: "Open" }, label: ar ? "متقدمون جدد" : "new applicants" },
+			// RAQEEM CRM (tiles from external_entries)
+			"CRM Lead": { dt: "CRM Lead", filters: { status: "New", converted: 0 }, label: ar ? "عملاء جدد" : "new leads" },
+			"CRM Deal": { dt: "CRM Deal", filters: { status: ["not in", ["Won", "Lost"]] }, label: ar ? "صفقات مفتوحة" : "open deals" },
+			"CRM Task": { dt: "CRM Task", filters: { status: ["in", ["Backlog", "Todo", "In Progress"]] }, label: ar ? "مهام مفتوحة" : "open tasks" },
 		};
 		this.$groups.find(".rq-tile[data-module]").each((_, tile) => {
 			const conf = BADGES[tile.getAttribute("data-module")];

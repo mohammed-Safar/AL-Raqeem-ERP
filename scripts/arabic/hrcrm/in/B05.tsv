@@ -1,0 +1,250 @@
+B05-000	hrms		Job Opening Template	قالب الوظيفة الشاغرة
+B05-001	hrms		Job Openings	الوظائف الشاغرة
+B05-002	hrms		Job Openings for the designation {0} are already open or the hiring is complete as per the Staffing Plan {1}	وظائف شاغرة للمسمى الوظيفي {0} مفتوحة بالفعل أو اكتمل التوظيف وفقًا لخطة التوظيف {1}
+B05-003	hrms		Job Requisition	طلب توظيف
+B05-004	hrms		Job Requisition {0} has been associated with Job Opening {1}	تم ربط طلب التوظيف {0} بالوظيفة الشاغرة {1}
+B05-005	hrms		Job profile, qualifications required etc.	الملف الوظيفي ، المؤهلات المطلوبة الخ
+B05-006	hrms		Joining Date	تاريخ الانضمام
+B05-007	hrms		July	يوليو
+B05-008	hrms		June	يونيو
+B05-009	hrms		KRA	KRA
+B05-010	hrms		KRA Evaluation Method	طريقة تقييم KRA
+B05-011	hrms		KRA updated for all child goals.	تم تحديث KRA لجميع الأهداف الفرعية.
+B05-012	hrms		KRA vs Goals	KRA مقابل الأهداف
+B05-013	hrms		KRAs	KRAs
+B05-014	hrms		Key Performance Area	وصف معيار التقييم
+B05-015	hrms		Key Responsibility Area	وصف معيار التقييم
+B05-016	hrms		Key Result Area	منطقة النتائج الرئيسية
+B05-017	hrms		LWP Days Reversed ({0}) does not match actual Payroll Corrections total ({1}) for employee {2} from {3} to {4}	أيام إجازة بدون راتب المعكوسة ({0}) لا تتطابق مع إجمالي Payroll Corrections الفعلي ({1}) للموظف {2} من {3} إلى {4}
+B05-018	hrms		Last Day	آخر يوم
+B05-019	hrms		Last Known Successful Sync of Employee Checkin. Reset this only if you are sure that all Logs are synced from all the locations. Please don't modify this if you are unsure.	آخر مزامنة ناجحة معروفة لفحص الموظف. أعد ضبط هذا فقط إذا كنت متأكدًا من مزامنة جميع السجلات من جميع المواقع. يرجى عدم تعديل هذا إذا كنت غير متأكد.
+B05-020	hrms		Last Odometer Value 	قيمة عداد المسافة الأخيرة 
+B05-021	hrms		Last Sync of Checkin	آخر مزامنة للفحص
+B05-022	hrms		Last {0} was at {1}	كان آخر {0} في {1}
+B05-023	hrms		Late Entries	حالات التأخير
+B05-024	hrms		Late Entry	تأخر الدخول
+B05-025	hrms		Late Entry & Early Exit Settings for Auto Attendance	إعدادات الحضور المتأخر والخروج المبكر للحضور التلقائي
+B05-026	hrms		Late Entry By	حضور متأخر بمقدار
+B05-027	hrms		Late Entry Grace Period	فترة سماح الدخول المتأخرة
+B05-028	hrms		Latitude and longitude values are required for checking in.	قيم خط العرض وخط الطول مطلوبة لتسجيل الحضور.
+B05-029	hrms		Latitude: {0}°	خط العرض: {0}°
+B05-030	hrms		Leave	غادر
+B05-031	hrms		Leave Adjustment	تعديل الإجازة
+B05-032	hrms		Leave Adjustment for this allocation already exists: {0}. Please amend existing adjustment.	يوجد Leave Adjustment لهذا التخصيص بالفعل: {0}. يرجى تعديل التسوية الحالية.
+B05-033	hrms		Leave Allocation	تخصيص إجازة
+B05-034	hrms		Leave Allocation Exists	يوجد تخصيص إجازة
+B05-035	hrms		Leave Allocations	اترك المخصصات
+B05-036	hrms		Leave Application	طلب اجازة
+B05-037	hrms		Leave Application period cannot be across two non-consecutive leave allocations {0} and {1}.	لا يمكن أن تمتد فترة طلب الإجازة عبر تخصيصين غير متتاليين للإجازات {0} و{1}.
+B05-038	hrms		Leave Approval Notification	اترك إشعار الموافقة
+B05-039	hrms		Leave Approval Notification Template	اترك قالب إعلام الموافقة
+B05-040	hrms		Leave Approver	معتمد الإجازات
+B05-041	hrms		Leave Approver Mandatory In Leave Application	إجازة الموافقة إلزامية في طلب الإجازة
+B05-042	hrms		Leave Approver Name	أسم الموافق علي الاجازة
+B05-043	hrms		Leave Balance	رصيد الاجازات
+B05-044	hrms		Leave Balance Before Application	رصيد الاجازات قبل الطلب
+B05-045	hrms		Leave Block List	قائمة حظر الإجازات
+B05-046	hrms		Leave Block List Allow	تفعيل قائمة الإجازات المحظورة
+B05-047	hrms		Leave Block List Allowed	قائمة اجازات محظورة مفعلة
+B05-048	hrms		Leave Block List Date	تواريخ الإجازات المحظورة
+B05-049	hrms		Leave Block List Dates	التواريخ الممنوع اخذ اجازة فيها
+B05-050	hrms		Leave Block List Name	اسم قائمة الإجازات المحظورة
+B05-051	hrms		Leave Blocked	إجازة محظورة
+B05-052	hrms		Leave Control Panel	لوحة تحكم الأجازات
+B05-053	hrms		Leave Details	تفاصيل الإجازة
+B05-054	hrms		Leave Encashment	الإجازات مدفوعة
+B05-055	hrms		Leave Encashment Amount Per Day	ترك Encshment المبلغ لكل يوم
+B05-056	hrms		Leave History	سجل الإجازات
+B05-057	hrms		Leave Ledger	دفتر أستاذ الإجازات
+B05-058	hrms		Leave Ledger Entry	ترك دخول دفتر الأستاذ
+B05-059	hrms		Leave Ledger Entry's To date needs to be after From date. Currently, From Date is {0} and To Date is {1}	يجب أن يكون تاريخ الانتهاء لإدخال دفتر الإجازات بعد تاريخ البداية. حاليًا، تاريخ البداية هو {0} وتاريخ الانتهاء هو {1}
+B05-060	hrms		Leave Period	اترك فترة
+B05-061	hrms		Leave Policy	سياسة الإجازة
+B05-062	hrms		Leave Policy Assignment	تعيين سياسة الإجازات
+B05-063	hrms		Leave Policy Assignment Overlap	تداخل تعيين سياسة الإجازات
+B05-064	hrms		Leave Policy Detail	ترك سياسة التفاصيل
+B05-065	hrms		Leave Policy Details	اترك تفاصيل السياسة
+B05-066	hrms		Leave Policy: {0} already assigned for Employee {1} for period {2} to {3}	سياسة الإجازات: {0} مُعيَّنة بالفعل للموظف {1} للفترة من {2} إلى {3}
+B05-067	hrms		Leave Status Notification	ترك إخطار الحالة
+B05-068	hrms		Leave Status Notification Template	ترك قالب إعلام الحالة
+B05-069	hrms		Leave Type	نوع الاجازة
+B05-070	hrms		Leave Type Name	اسم نوع الاجازة
+B05-071	hrms		Leave Type can either be compensatory or earned leave.	يمكن أن يكون نوع الإجازة إما تعويضيًا أو إجازة مكتسبة.
+B05-072	hrms		Leave Type can either be without pay or partial pay	يمكن أن يكون نوع الإجازة إما بدون أجر أو بأجر جزئي
+B05-073	hrms		Leave Type is mandatory	نوع الإجازة إلزامي
+B05-074	hrms		Leave Type {0} cannot be allocated since it is leave without pay	لا يمكن تخصيص نوع الاجازه {0}, لأنها إجازة بدون راتب\\n<br>\\nLeave Type {0} cannot be allocated since it is leave without pay
+B05-075	hrms		Leave Type {0} cannot be carry-forwarded	لا يمكن ترحيل نوع اﻹجازة {0}\\n<br>\\nلا يمكن ترحيل النوع {0} الخاص بالاجازه
+B05-076	hrms		Leave Type {0} is not encashable	نوع الإجازة {0} غير قابل للضبط
+B05-077	hrms		Leave Without Pay	اجازة من دون راتب
+B05-078	hrms		Leave Without Pay does not match with approved {} records	لا تتطابق الإجازة بدون أجر مع سجلات {} المعتمدة
+B05-079	hrms		Leave allocation is skipped for {0}, because number of leaves to be allocated is 0.	يتم تخطي تخصيص الإجازات لـ {0}، لأن عدد الإجازات المراد تخصيصها هو 0.
+B05-080	hrms		Leave allocation {0} is linked with the Leave Application {1}	تخصيص الإجازات {0} مرتبط بطلب الإجازة {1}
+B05-081	hrms		Leave already have been assigned for this Leave Policy Assignment	تم بالفعل تخصيص الإجازات لتعيين سياسة الإجازات هذا
+B05-082	hrms		Leave and Expense Claim Settings	
+B05-083	hrms		Leave application is linked with leave allocations {0}. Leave application cannot be set as leave without pay	إجازة التطبيق مرتبطة بمخصصات الإجازة {0}. لا يمكن تعيين طلب الإجازة كإجازة بدون أجر
+B05-084	hrms		Leave cannot be allocated before {0}, as leave balance has already been carry-forwarded in the future leave allocation record {1}	لا يمكن تخصيص اجازة قبل {0}، لان رصيد الإجازات قد تم تحوبله الي سجل تخصيص اجازات مستقبلي {1}
+B05-085	hrms		Leave cannot be applied/cancelled before {0}, as leave balance has already been carry-forwarded in the future leave allocation record {1}	الاجازة لا يمكن تطبيقها او إلغائها قبل {0}، لان رصيد الإجازات قد تم تحويله الي سجل تخصيص إجازات مستقبلي {1}
+B05-086	hrms		Leave of type {0} cannot be longer than {1}.	لا يمكن أن تكون الإجازة من نوع {0} أطول من {1}.
+B05-087	hrms		Leave(s) Expired	الإجازات منتهية الصلاحية
+B05-088	hrms		Leave(s) Pending Approval	الإجازات في انتظار الموافقة
+B05-089	hrms		Leave(s) Taken	الإجازات المأخوذة
+B05-090	hrms		Leaves	الاجازات
+B05-091	hrms		Leaves & Holidays	الإجازات والعطل
+B05-092	hrms		Leaves After Adjustment	الإجازات بعد التسوية
+B05-093	hrms		Leaves Allocated	الأوراق المخصصة
+B05-094	hrms		Leaves Expired	الإجازات منتهية الصلاحية
+B05-095	hrms		Leaves Pending Approval	الإجازات في انتظار الموافقة
+B05-096	hrms		Leaves for the Leave Type {0} won't be carry-forwarded since carry-forwarding is disabled.	لن يتم ترحيل الإجازات لنوع الإجازة {0} لأن ترحيل الإجازات معطل.
+B05-097	hrms		Leaves per Year	الأجزات في السنة
+B05-098	hrms		Leaves to Adjust	الإجازات المراد تعديلها
+B05-099	hrms		Leaves you can avail against a holiday you worked on. You can claim Compensatory Off Leave using Compensatory Leave Request. Click {0} to know more	الإجازات التي يمكنك الاستفادة منها مقابل عطلة عملت خلالها. يمكنك المطالبة بإجازة تعويضية باستخدام طلب الإجازة التعويضية. انقر {0} لمعرفة المزيد
+B05-100	hrms		Lifecycle	دورة الحياة
+B05-101	hrms		Lime	أخضر ليموني
+B05-102	hrms		Link the cycle and tag KRA to your goal to update the appraisal's goal score based on the goal progress	اربط الدورة والوسم KRA بهدفك لتحديث درجة الهدف في التقييم استناداً إلى تقدم الهدف
+B05-103	hrms		Linked Project {} and Tasks deleted.	تم حذف المشروع المرتبط {} والمهام.
+B05-104	hrms		Loan Account	حساب القرض
+B05-105	hrms		Loan Product	منتج القرض
+B05-106	hrms		Loan Repayment	سداد القرض
+B05-107	hrms		Loan Repayment Entry	إدخال سداد القرض
+B05-108	hrms		Loan cannot be repayed from salary for Employee {0} because salary is processed in currency {1}	لا يمكن سداد القرض من الراتب للموظف {0} لأن الراتب يُعالَج بالعملة {1}
+B05-109	hrms		Locating...	جارٍ تحديد الموقع...
+B05-110	hrms		Location / Device ID	الموقع / معرف الجهاز
+B05-111	hrms		Lodging Required	الإقامة المطلوبة
+B05-112	hrms		Log Out	تسجيل الخروج
+B05-113	hrms		Log Type	نوع السجل
+B05-114	hrms		Log Type is required for check-ins falling in the shift: {0}.	نوع السجل مطلوب لتسجيلات الوقوع في التحول: {0}.
+B05-115	hrms		Login Failed	فشل تسجيل الدخول
+B05-116	hrms		Login to Frappe HR	تسجيل الدخول إلى Frappe HR
+B05-117	hrms		Longitude: {0}°	خط الطول: {0}°
+B05-118	hrms		Lower Range	النطاق الأدنى
+B05-119	hrms		MICR	MICR
+B05-120	hrms		Make Bank Entry	إنشاء قيد بنكي
+B05-121	hrms		Mandatory Benefit Application	طلب ميزة إلزامي
+B05-122	hrms		Mandatory fields required for this action:	الحقول الإلزامية المطلوبة لهذا الإجراء:
+B05-123	hrms		Manual Rating	تقييم يدوي
+B05-124	hrms		Manually	يدويًا
+B05-125	hrms		Mar	مارس
+B05-126	hrms		Mark Attendance	تسجيل الحضور
+B05-127	hrms		Mark Auto Attendance on Holidays	تسجيل الحضور التلقائي في العطلات
+B05-128	hrms		Mark as Completed	وضع علامة كمكتمل
+B05-129	hrms		Mark as In Progress	وضع علامة كقيد التنفيذ
+B05-130	hrms		Mark as {0}	وضع علامة كـ {0}
+B05-131	hrms		Mark attendance as {0} for {1} on selected dates?	هل تريد تسجيل الحضور كـ {0} للموظف {1} في التواريخ المحددة؟
+B05-132	hrms		Mark attendance based on 'Employee Checkin' for Employees assigned to this shift.	حدد الحضور استنادًا إلى &quot;فحص الموظف&quot; للموظفين المعينين لهذا التحول.
+B05-133	hrms		Mark attendance for existing check-in/out logs before changing shift settings	قم بتسجيل الحضور للسجلات الحالية لتسجيل الحضور/الانصراف قبل تغيير إعدادات الوردية
+B05-134	hrms		Mark {0} as Completed?	هل تريد وضع علامة على {0} كمكتمل؟
+B05-135	hrms		Mark {0} {1} as {2}?	هل تريد تعيين {0} {1} كـ {2}؟
+B05-136	hrms		Marked Attendance	حضور مسجل
+B05-137	hrms		Marked Attendance HTML	حضور مسجل HTML
+B05-138	hrms		Marking Attendance	جارٍ تسجيل الحضور
+B05-139	hrms		Max Amount Eligible For Claim	الحد الأقصى للمبلغ المؤهل للمطالبة
+B05-140	hrms		Max Benefit Amount	أقصى فائدة المبلغ
+B05-141	hrms		Max Benefit Amount (Yearly)	أقصى فائدة المبلغ (سنويا)
+B05-142	hrms		Max Benefits (Amount)	أقصى الفوائد (المبلغ)
+B05-143	hrms		Max Benefits (Yearly)	أقصى الفوائد (سنويا)
+B05-144	hrms		Max Exemption Amount	أقصى مبلغ الإعفاء
+B05-145	hrms		Max Exemption Amount cannot be greater than maximum exemption amount {0} of Tax Exemption Category {1}	لا يمكن أن يكون أقصى مبلغ للإعفاء أكبر من الحد الأقصى لمبلغ الإعفاء {0} من فئة الإعفاء الضريبي {1}
+B05-146	hrms		Max Taxable Income	الحد الأقصى للدخل الخاضع للضريبة
+B05-147	hrms		Max working hours against Timesheet	اقصى عدد ساعات عمل بسجل التوقيت
+B05-148	hrms		Maximum Benefit Amount	الحد الأقصى لمبلغ المنفعة
+B05-149	hrms		Maximum Carry Forwarded Leaves	الحد الأقصى لحمل الأوراق المعاد توجيهها
+B05-150	hrms		Maximum Consecutive Leaves Allowed	الحد الأقصى للإجازات المتتالية المسموح بها
+B05-151	hrms		Maximum Consecutive Leaves Exceeded	تم تجاوز الحد الأقصى للإجازات المتتالية
+B05-152	hrms		Maximum Encashable Leaves	الحد الأقصى للإجازات القابلة للصرف النقدي
+B05-153	hrms		Maximum Exempted Amount	الحد الأقصى للمبلغ المعفى
+B05-154	hrms		Maximum Exemption Amount	الحد الأقصى للإعفاء المبلغ
+B05-155	hrms		Maximum Leave Allocation Allowed per Leave Period	الحد الأقصى لتخصيص الإجازات المسموح به لكل فترة إجازة
+B05-156	hrms		Maximum Overtime Hours Allowed	الحد الأقصى المسموح به لساعات العمل الإضافي
+B05-157	hrms		Maximum Overtime Hours Allowed Per Day	الحد الأقصى المسموح به لساعات العمل الإضافي يومياً
+B05-158	hrms		Maximum annual taxable income eligible for full tax relief. No tax is applied if income does not exceed this limit	الحد الأقصى للدخل السنوي الخاضع للضريبة المؤهل للإعفاء الضريبي الكامل. لا تُطبّق أي ضريبة إذا لم يتجاوز الدخل هذا الحد
+B05-159	hrms		Maximum encashable leaves for {0} are {1}	الحد الأقصى للإجازات القابلة للصرف النقدي لـ {0} هو {1}
+B05-160	hrms		Maximum leave allowed in the leave type {0} is {1}	الحد الأقصى للإجازة المسموح بها في نوع الإجازة {0} هو {1}
+B05-161	hrms		May	مايو
+B05-162	hrms		Meal Preference	تفضيل الوجبة
+B05-163	hrms		Medical	طبي
+B05-164	hrms		Mileage	المسافة المقطوعة
+B05-165	hrms		Min Taxable Income	الحد الأدنى من الدخل الخاضع للضريبة
+B05-166	hrms		Minimum Year for Gratuity	الحد الأدنى للسنوات لاستحقاق مكافأة نهاية الخدمة
+B05-167	hrms		Minimum working days required since Date of Joining to apply for this leave	
+B05-168	hrms		Missing Advance Account	حساب الدفعات المقدمة مفقود
+B05-169	hrms		Missing Mandatory Field	حقل إلزامي مفقود
+B05-170	hrms		Missing Opening Entries	قيود افتتاحية مفقودة
+B05-171	hrms		Missing Relieving Date	تاريخ إنهاء الخدمة مفقود
+B05-172	hrms		Missing Salary Components	مكونات الراتب المفقودة
+B05-173	hrms		Missing Tax Slab	شريحة ضريبية مفقودة
+B05-174	hrms		Mode of Travel	طريقة السفر
+B05-175	hrms		Mode of payment is required to make a payment	طريقه الدفع مطلوبه لإجراء الدفع\\n<br>\\nMode of payment is required to make a payment
+B05-176	hrms		Month To Date	الشهر حتى التاريخ
+B05-177	hrms		Month To Date(Company Currency)	الشهر حتى التاريخ (عملة الشركة)
+B05-178	hrms		Monthly Attendance Sheet	ورقة الحضور الشهرية
+B05-179	hrms		More than one selection for {0} not allowed	أكثر من اختيار واحد لـ {0} غير مسموح به
+B05-180	hrms		Multiple Additional Salaries with overwrite property exist for Salary Component {0} between {1} and {2}.	توجد عدة رواتب إضافية بخاصية الكتابة فوق لمكون الراتب {0} بين {1} و{2}.
+B05-181	hrms		Multiple Shift Assignments	تعيينات المناوبات المتعددة
+B05-182	hrms		Multipliers that adjust the hourly overtime amount for specific scenarios\n\n	المعاملات التي تعدّل مبلغ العمل الإضافي بالساعة لسيناريوهات محددة\n\n
+B05-183	hrms		My Advances	دفعاتي المقدمة
+B05-184	hrms		My Claims	مطالباتي
+B05-185	hrms		My Leaves	إجازاتي
+B05-186	hrms		My Requests	طلباتي
+B05-187	hrms		Name error	خطأ في الاسم
+B05-188	hrms		Name of Organizer	اسم المنظم
+B05-189	hrms		Net Pay	صافي الراتب
+B05-190	hrms		Net Pay (Company Currency)	صافي الراتب (عملة الشركة)
+B05-191	hrms		Net Pay Info	معلومات صافي الراتب
+B05-192	hrms		Net Pay cannot be less than 0	صافي الأجر لا يمكن أن يكون أقل من 0
+B05-193	hrms		Net Salary Amount	صافي الراتب المبلغ
+B05-194	hrms		Net pay cannot be negative	صافي الأجر لا يمكن أن يكون بالسالب\\n<br>\\nNet pay cannot be negative
+B05-195	hrms		New Employee ID	معرف الموظف الجديد
+B05-196	hrms		New Expense Item	بند مصروف جديد
+B05-197	hrms		New Expense Tax	ضريبة مصروف جديدة
+B05-198	hrms		New Feedback	ملاحظات جديدة
+B05-199	hrms		New Hires (This Month)	التعيينات الجديدة (هذا الشهر)
+B05-200	hrms		New Leave(s) Allocated	إجازات جديدة مخصصة
+B05-201	hrms		New Leaves Allocated	إنشاء تخصيص إجازة جديدة
+B05-202	hrms		New Leaves Allocated (In Days)	الإجازات الجديدة المخصصة (بالأيام)
+B05-203	hrms		New shift assignments will be created after this date.	سيتم إنشاء تعيينات مناوبات جديدة بعد هذا التاريخ.
+B05-204	hrms		No Bank/Cash Account found for currency {0}. Please create one under company {1}.	لم يتم العثور على حساب بنكي أو نقدي للعملة {0}. يرجى إنشاء واحد ضمن الشركة {1}.
+B05-205	hrms		No Employee Found	لم يتم العثور على أي موظف\\n<br>\\nNo employee found
+B05-206	hrms		No Employee found for the given employee field value. '{}': {}	لم يتم العثور على موظف لقيمة حقل الموظف المحدد. &#39;{}&#39;: {}
+B05-207	hrms		No Employees Selected	لم يتم اختيار أي موظفين
+B05-208	hrms		No Interview has been scheduled.	لم يتم جدولة أي مقابلة.
+B05-209	hrms		No Leave Period Found	لم يتم العثور على فترة إجازة
+B05-210	hrms		No Leaves Allocated to Employee: {0} for Leave Type: {1}	لا أوراق مخصصة للموظف: {0} لنوع الإجازة: {1}
+B05-211	hrms		No Salary Slip found for Employee: {0}	لم يتم العثور على قسيمة راتب للموظف: {0}
+B05-212	hrms		No Salary Slips with {0} found for employee {1} for payroll period {2}.	لم يتم العثور على قسائم رواتب تحتوي على {0} للموظف {1} في فترة الرواتب {2}.
+B05-213	hrms		No Salary Structure Assignment found for employee {0} on date {1}	لم يتم العثور على تعيين هيكل راتب للموظف {0} بتاريخ {1}
+B05-214	hrms		No Salary Structure Assignment found for employee {0} on or before {1}	لم يتم العثور على تعيين هيكل راتب للموظف {0} في تاريخ {1} أو قبله
+B05-215	hrms		No Salary Structure assigned to Employee {0} on the given date {1}	لم يتم تعيين هيكل راتب للموظف {0} في التاريخ المحدد {1}
+B05-216	hrms		No Salary Structures	لا توجد هياكل رواتب
+B05-217	hrms		No Shift Requests Selected	لم يتم تحديد أي طلبات مناوبة
+B05-218	hrms		No Staffing Plans found for this Designation	لم يتم العثور على خطط التوظيف لهذا التصنيف
+B05-219	hrms		No active Salary Structure Assignment found for employee {0} with salary structure {1} on or after arrear start date {2}	لم يتم العثور على تعيين نشط لهيكل الراتب للموظف {0} مع هيكل الراتب {1} في تاريخ بدء المتأخرات {2} أو بعده
+B05-220	hrms		No active employee found associated with the email ID {0}. Try logging in with your employee email ID or contact your HR manager for access.	لم يتم العثور على موظف نشط مرتبط بعنوان البريد الإلكتروني {0}. حاول تسجيل الدخول باستخدام عنوان بريدك الإلكتروني كموظف، أو تواصل مع مدير الموارد البشرية للحصول على الوصول.
+B05-221	hrms		No active or default Salary Structure found for employee {0} for the given dates	لم يتم العثور على أي نشاط أو هيكل راتب إفتراضي للموظف {0} للتواريخ المدخلة\\n<br>\\nNo active or default Salary Structure found for employee {0} for the given dates
+B05-222	hrms		No additional expenses has been added	لم يتم إضافة مصاريف إضافية
+B05-223	hrms		No advances found	لم يتم العثور على أي دفعات مقدمة
+B05-224	hrms		No applicable Earning component found in last salary slip for Gratuity Rule: {0}	لم يتم العثور على مكوّن استحقاق مناسب في آخر قسيمة راتب لقاعدة مكافأة نهاية الخدمة: {0}
+B05-225	hrms		No applicable Earning components found for Gratuity Rule: {0}	لم يتم العثور على مكونات استحقاق قابلة للتطبيق لقاعدة مكافأة نهاية الخدمة: {0}
+B05-226	hrms		No applicable slab found for the calculation of gratuity amount as per the Gratuity Rule: {0}	لم يتم العثور على شريحة قابلة للتطبيق لحساب كمية مكافأة نهاية الخدمة وفقًا لقاعدة مكافأة نهاية الخدمة: {0}
+B05-227	hrms		No arrear components found in the existing salary slips.	لم يتم العثور على مكونات متأخرات في قسائم الرواتب الحالية.
+B05-228	hrms		No arrear components found in the salary slip. Ensure Arrear Component is checked in the Salary Component master.	لم يتم العثور على مكونات متأخرات في قسيمة الراتب. تأكد من تحديد خيار مكون المتأخرات في البيانات الرئيسية لمكون الراتب.
+B05-229	hrms		No arrear details found	لم يتم العثور على تفاصيل المتأخرات
+B05-230	hrms		No attendance records found for employee {0} between {1} and {2}	لم يتم العثور على سجلات حضور للموظف {0} بين {1} و {2}
+B05-231	hrms		No attendance records found for this criteria.	لم يتم العثور على سجلات حضور لهذه المعايير.
+B05-232	hrms		No attendance records found.	لم يتم العثور على سجلات حضور.
+B05-233	hrms		No attendance records to create	
+B05-234	hrms		No changes found in timings.	لم يتم العثور على أي تغييرات في الأوقات.
+B05-235	hrms		No employees found	لم يتم العثور على موظفين
+B05-236	hrms		No employees found for the mentioned criteria:<br>Company: {0}<br> Currency: {1}<br>Payroll Payable Account: {2}	لم يتم العثور على موظفين للمعايير المذكورة:<br>الشركة: {0}<br> العملة: {1}<br>حساب الرواتب المستحقة: {2}
+B05-237	hrms		No employees found for the selected criteria	لم يتم العثور على موظفين للمعايير المحددة.
+B05-238	hrms		No employees found with selected filters and active salary structure	لم يتم العثور على موظفين باستخدام عوامل التصفية المحددة وهيكل الراتب النشط.
+B05-239	hrms		No expenses added	لم تتم إضافة أي مصروفات
+B05-240	hrms		No feedback has been received yet	لم يتم استلام أي ملاحظات بعد
+B05-241	hrms		No items selected	لم يتم تحديد أي عناصر.
+B05-242	hrms		No leave allocation found for {0} for {1} on given date.	لم يتم العثور على تخصيص إجازة لـ {0} من نوع {1} في التاريخ المحدد.
+B05-243	hrms		No leave record found for employee {0} on {1}	لم يتم العثور على سجل إجازة للموظف {0} في {1}
+B05-244	hrms		No leaves have been allocated.	لم يتم تخصيص أي إجازات.
+B05-245	hrms		No more updates	لا مزيد من التحديثات
+B05-246	hrms		No of. Positions	عدد الوظائف الشاغرة
+B05-247	hrms		No replies from	لا توجد ردود من
+B05-248	hrms		No salary slip found to submit for the above selected criteria OR salary slip already submitted	لم يتم العثور على أي زلة الراتب لتقديم المعايير المذكورة أعلاه أو زلة الراتب قدمت بالفعل
+B05-249	hrms		No salary slips found	لم يتم العثور على قسائم رواتب

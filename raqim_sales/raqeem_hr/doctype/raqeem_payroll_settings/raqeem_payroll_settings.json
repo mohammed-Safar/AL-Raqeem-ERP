@@ -1,0 +1,275 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "creation": "2026-11-13 00:30:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_check",
+  "rates_confirmed",
+  "days_basis",
+  "section_tax",
+  "tax_band_limit_annual",
+  "tax_rate_1",
+  "tax_rate_2",
+  "column_break_t",
+  "exemption_single_annual",
+  "exemption_married_annual",
+  "exemption_child_annual",
+  "tax_after_social_security",
+  "section_ss",
+  "ss_employee_rate",
+  "ss_employer_rate",
+  "column_break_s",
+  "solidarity_rate",
+  "jihad_rate",
+  "stamp_rate",
+  "section_acc",
+  "company",
+  "salary_expense_account",
+  "employer_ss_expense_account",
+  "payroll_payable_account",
+  "column_break_a",
+  "income_tax_account",
+  "social_security_account",
+  "solidarity_account",
+  "jihad_account",
+  "stamp_account"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_check",
+   "fieldtype": "Section Break",
+   "label": "Rates"
+  },
+  {
+   "fieldname": "rates_confirmed",
+   "fieldtype": "Check",
+   "label": "Rates Checked by Our Accountant",
+   "description": "The rates below come from published sources that do not all agree. Tick this once your accountant has confirmed them; until then every payroll run shows a warning."
+  },
+  {
+   "fieldname": "days_basis",
+   "fieldtype": "Select",
+   "label": "Day Basis",
+   "options": "30 Days\nCalendar Days",
+   "default": "30 Days",
+   "description": "30 Days: a month is always 30 days when pay is reduced for unpaid leave or a partial month."
+  },
+  {
+   "fieldname": "section_tax",
+   "fieldtype": "Section Break",
+   "label": "Income Tax (Law 7 of 2010)"
+  },
+  {
+   "fieldname": "tax_band_limit_annual",
+   "fieldtype": "Currency",
+   "label": "First Band up to (Yearly)",
+   "default": "12000"
+  },
+  {
+   "fieldname": "tax_rate_1",
+   "fieldtype": "Percent",
+   "label": "Rate in the First Band",
+   "default": "5"
+  },
+  {
+   "fieldname": "tax_rate_2",
+   "fieldtype": "Percent",
+   "label": "Rate Above the First Band",
+   "default": "10"
+  },
+  {
+   "fieldname": "column_break_t",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "exemption_single_annual",
+   "fieldtype": "Currency",
+   "label": "Personal Exemption, Single (Yearly)",
+   "default": "1800"
+  },
+  {
+   "fieldname": "exemption_married_annual",
+   "fieldtype": "Currency",
+   "label": "Personal Exemption, Married (Yearly)",
+   "default": "2400"
+  },
+  {
+   "fieldname": "exemption_child_annual",
+   "fieldtype": "Currency",
+   "label": "Exemption per Child (Yearly)",
+   "default": "300"
+  },
+  {
+   "fieldname": "tax_after_social_security",
+   "fieldtype": "Check",
+   "label": "Deduct Social Security Before Tax",
+   "default": "1"
+  },
+  {
+   "fieldname": "section_ss",
+   "fieldtype": "Section Break",
+   "label": "Social Security and Other Deductions"
+  },
+  {
+   "fieldname": "ss_employee_rate",
+   "fieldtype": "Percent",
+   "label": "Social Security, Employee Share",
+   "default": "5.125"
+  },
+  {
+   "fieldname": "ss_employer_rate",
+   "fieldtype": "Percent",
+   "label": "Social Security, Employer Share",
+   "default": "14.35",
+   "description": "Paid by the company on top of the salary."
+  },
+  {
+   "fieldname": "column_break_s",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "solidarity_rate",
+   "fieldtype": "Percent",
+   "label": "Solidarity Fund",
+   "default": "1"
+  },
+  {
+   "fieldname": "jihad_rate",
+   "fieldtype": "Percent",
+   "label": "Jihad Tax",
+   "default": "0",
+   "description": "Reported as abolished; leave 0 unless your accountant says otherwise."
+  },
+  {
+   "fieldname": "stamp_rate",
+   "fieldtype": "Percent",
+   "label": "Stamp Duty",
+   "default": "0"
+  },
+  {
+   "fieldname": "section_acc",
+   "fieldtype": "Section Break",
+   "label": "Accounts"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "salary_expense_account",
+   "fieldtype": "Link",
+   "label": "Salary Expense Account",
+   "options": "Account",
+   "description": "Earnings without their own account are booked here."
+  },
+  {
+   "fieldname": "employer_ss_expense_account",
+   "fieldtype": "Link",
+   "label": "Employer Social Security Expense",
+   "options": "Account"
+  },
+  {
+   "fieldname": "payroll_payable_account",
+   "fieldtype": "Link",
+   "label": "Payroll Payable (Net Pay)",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_break_a",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "income_tax_account",
+   "fieldtype": "Link",
+   "label": "Income Tax Payable",
+   "options": "Account"
+  },
+  {
+   "fieldname": "social_security_account",
+   "fieldtype": "Link",
+   "label": "Social Security Payable",
+   "options": "Account"
+  },
+  {
+   "fieldname": "solidarity_account",
+   "fieldtype": "Link",
+   "label": "Solidarity Fund Payable",
+   "options": "Account"
+  },
+  {
+   "fieldname": "jihad_account",
+   "fieldtype": "Link",
+   "label": "Jihad Tax Payable",
+   "options": "Account"
+  },
+  {
+   "fieldname": "stamp_account",
+   "fieldtype": "Link",
+   "label": "Stamp Duty Payable",
+   "options": "Account"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-13 00:30:00.000000",
+ "modified_by": "Administrator",
+ "module": "Raqeem HR",
+ "name": "Raqeem Payroll Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "HR Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "HR User",
+   "read": 1,
+   "write": 0,
+   "create": 0,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 0,
+   "print": 1,
+   "email": 1,
+   "share": 0
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "issingle": 1
+}

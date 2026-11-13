@@ -1,0 +1,250 @@
+B07-000	hrms		Push Notification permission denied	تم رفض إذن الإشعارات الفورية
+B07-001	hrms		Push notifications disabled	تم تعطيل الإشعارات الفورية
+B07-002	hrms		Push notifications have been disabled on your site	تم تعطيل الإشعارات الفورية على موقعك.
+B07-003	hrms		Questionnaire Email Sent	تم إرسال بريد الاستبيان الإلكتروني
+B07-004	hrms		Quick Filters	عوامل التصفية السريعة
+B07-005	hrms		Quick Links	روابط سريعة
+B07-006	hrms		Radius within which check-in is allowed (in meters)	نطاق السماح بتسجيل الحضور (بالأمتار)
+B07-007	hrms		Rate Goals Manually	تقييم الأهداف يدويًا
+B07-008	hrms		Rating Criteria	معايير التقييم
+B07-009	hrms		Ratings	التقييمات
+B07-010	hrms		Re-allocate Leaves	إعادة تخصيص الأوراق
+B07-011	hrms		Reason for Adjustment	سبب التسوية
+B07-012	hrms		Reason for Requesting	سبب الطلب
+B07-013	hrms		Reason for Withholding Salary	سبب استقطاع الراتب
+B07-014	hrms		Reason for skipping auto attendance:	سبب تخطي الحضور التلقائي:
+B07-015	hrms		Recent Attendance Requests	طلبات الحضور الأخيرة
+B07-016	hrms		Recent Expenses	المصروفات الأخيرة
+B07-017	hrms		Recent Leaves	الإجازات الأخيرة
+B07-018	hrms		Recent Shift Requests	طلبات المناوبة الأخيرة
+B07-019	hrms		Recommended for a single biometric device / checkins via mobile app	موصى به لجهاز بيومتري واحد / تسجيلات الحضور عبر تطبيق الجوال
+B07-020	hrms		Recover Cost	استرداد التكلفة
+B07-021	hrms		Recruitment	التوظيف
+B07-022	hrms		Recruitment Analytics	تحليلات التوظيف
+B07-023	hrms		Reduce	تقليل
+B07-024	hrms		Reducing maximum leaves allowed after allocation may cause scheduler to allocate incorrect number of earned leaves. Proceed with caution.	قد يؤدي تقليل الحد الأقصى للإجازات المسموح بها بعد التخصيص إلى قيام المجدول بتخصيص عدد غير صحيح من الإجازات المكتسبة. يرجى المتابعة بحذر.
+B07-025	hrms		Reduction is more than {0}'s available leave balance {1} for leave type {2}	التخفيض يتجاوز رصيد الإجازات المتاح لـ {0} وهو {1} لنوع الإجازة {2}
+B07-026	hrms		Reference: {0}	المرجع: {0}
+B07-027	hrms		Referral Bonus Payment Status	حالة دفع مكافأة الإحالة
+B07-028	hrms		Referral Details	تفاصيل الإحالة
+B07-029	hrms		Referrer Details	تفاصيل المُحيل
+B07-030	hrms		Referrer Name	اسم المُحيل
+B07-031	hrms		Reflections	التأملات
+B07-032	hrms		Refuelling Details	تفاصيل إعادة التزود بالوقود
+B07-033	hrms		Reject	رفض
+B07-034	hrms		Reject Employee Referral	رفض إحالة موظف
+B07-035	hrms		Rejection	الرفض
+B07-036	hrms		Release Withheld Salaries	إطلاق الرواتب المقتطعة
+B07-037	hrms		Released	تم الإفراج
+B07-038	hrms		Relieving Date 	تاريخ المغادرة 
+B07-039	hrms		Relieving Date Missing	تاريخ إنهاء الخدمة مفقود
+B07-040	hrms		Remaining Benefits (Yearly)	الفوائد المتبقية (سنوية)
+B07-041	hrms		Remind Before	تذكير من قبل
+B07-042	hrms		Reminded	ذكر
+B07-043	hrms		Reminders	رسائل التذكير
+B07-044	hrms		Remove if Zero Valued	إزالة إذا كانت القيمة صفرًا
+B07-045	hrms		Rented Car	سيارة مستأجرة
+B07-046	hrms		Repay From Salary	السداد من الراتب
+B07-047	hrms		Repay From Salary can be selected only for term loans	يمكن اختيار السداد من الراتب للقروض لأجل فقط
+B07-048	hrms		Repay Unclaimed Amount from Salary	سداد المبلغ غير المطالب به من الراتب
+B07-049	hrms		Repeat On Days	تكرار في الأيام
+B07-050	hrms		Replies	الردود
+B07-051	hrms		Reports To	يرفع تقاريره إلى
+B07-052	hrms		Request Attendance	طلب حضور
+B07-053	hrms		Request Leave	طلب إجازة
+B07-054	hrms		Request a Leave	طلب إجازة
+B07-055	hrms		Request a Shift	طلب وردية
+B07-056	hrms		Request an Advance	طلب دفعة مقدمة
+B07-057	hrms		Requested By	مطلوب من قبل
+B07-058	hrms		Requested By (Name)	طلب من قِبل (الاسم)
+B07-059	hrms		Require Full Funding	يتطلب التمويل الكامل
+B07-060	hrms		Required Skills	المهارات المطلوبة
+B07-061	hrms		Required for Employee Creation	مطلوب لإنشاء موظف
+B07-062	hrms		Reschedule Interview	إعادة جدولة المقابلة
+B07-063	hrms		Responsibilities	المسؤوليات
+B07-064	hrms		Restrict Backdated Leave Application	تقييد طلب الإجازة بأثر رجعي
+B07-065	hrms		Resume Attachment	السيرة الذاتية
+B07-066	hrms		Resume Link	رابط السيرة الذاتية
+B07-067	hrms		Resume link	رابط السيرة الذاتية
+B07-068	hrms		Retained	محتفظ به
+B07-069	hrms		Retention Bonus	مكافأة الاحتفاظ
+B07-070	hrms		Retirement Age (In Years)	سن التقاعد (بالسنوات)
+B07-071	hrms		Retry Failed	إعادة المحاولة للعمليات الفاشلة
+B07-072	hrms		Retry Failed Allocations	إعادة محاولة التخصيصات الفاشلة
+B07-073	hrms		Retry Successful	تمت إعادة المحاولة بنجاح
+B07-074	hrms		Retrying allocations	جارٍ إعادة محاولة التخصيصات
+B07-075	hrms		Return amount cannot be greater than unclaimed amount	لا يمكن أن يكون مبلغ الإرجاع أكبر من المبلغ غير المطالب به
+B07-076	hrms		Review various other settings related to Employee Leaves and Expense Claim	راجع الإعدادات الأخرى المتعلقة بإجازات الموظفين ومطالبة النفقات
+B07-077	hrms		Reviewer	المراجع
+B07-078	hrms		Reviewer Name	اسم المُراجع
+B07-079	hrms		Revised CTC	CTC المُعدَّل
+B07-080	hrms		Role Allowed to Create Backdated Leave Application	الدور المسموح به لإنشاء تطبيق إجازة Backdated
+B07-081	hrms		Roster	جدول المناوبات
+B07-082	hrms		Roster Color	لون الجدول الزمني
+B07-083	hrms		Round Name	
+B07-084	hrms		Round off Work Experience	تقريب الخبرة العملية
+B07-085	hrms		Round to the Nearest Integer	جولة إلى أقرب عدد صحيح
+B07-086	hrms		Rounding	التقريب
+B07-087	hrms		Route to the custom Job Application Webform	المسار إلى نموذج طلب الوظيفة المخصص على الويب
+B07-088	hrms		Row #{0}: Cannot set amount or formula for Salary Component {1} with Variable Based On Taxable Salary	الصف # {0}: لا يمكن تعيين المبلغ أو الصيغة لمكون الراتب {1} بمتغير قائم على الراتب الخاضع للضريبة
+B07-089	hrms		Row #{0}: The {1} Component has the options {2} and {3} enabled.	الصف #{0}: المكون {1} لديه الخيارات {2} و{3} مُفعّلة.
+B07-090	hrms		Row #{0}: Timesheet amount will overwrite the Earning component amount for the Salary Component {1}	الصف #{0}: مبلغ سجل ساعات العمل سيستبدل مبلغ مكوّن الاستحقاق لمكوّن الراتب {1}
+B07-091	hrms		Row No {0}: Amount cannot be greater than the Outstanding Amount against Expense Claim {1}. Outstanding Amount is {2}	الصف رقم {0}: لا يمكن أن يكون المبلغ أكبر من المبلغ المستحق مقابل مطالبة النفقات {1}. المبلغ المستحق هو {2}
+B07-092	hrms		Row {0}# Allocated amount {1} cannot be greater than unclaimed amount {2}	الصف {0} # المبلغ المخصص {1} لا يمكن أن يكون أكبر من المبلغ غير المطالب به {2}
+B07-093	hrms		Row {0}# Paid Amount cannot be greater than Encashment amount	الصف {0}# لا يمكن أن يكون المبلغ المدفوع أكبر من مبلغ الصرف النقدي
+B07-094	hrms		Row {0}# Paid Amount cannot be greater than Total amount	الصف {0}#: لا يمكن أن يكون المبلغ المدفوع أكبر من المبلغ الإجمالي
+B07-095	hrms		Row {0}# Paid Amount cannot be greater than requested advance amount	الصف {0} # المبلغ المدفوع لا يمكن أن يكون أكبر من المبلغ المطلوب مسبقا
+B07-096	hrms		Row {0}: From (Year) can not be greater than To (Year)	الصف {0}: لا يمكن أن يكون من (العام) أكبر من إلى (العام)
+B07-097	hrms		Row {0}: Goal Score cannot be greater than {1}	الصف {0}: لا يمكن أن تكون درجة الهدف أكبر من {1}
+B07-098	hrms		Row {0}: Paid amount {1} is greater than pending accrued amount {2} against loan {3}	الصف {0}: المبلغ المدفوع {1} أكبر من المبلغ المستحق المعلق {2} مقابل القرض {3}
+B07-099	hrms		Row {0}: {1} is required in the expenses table to book an expense claim.	الصف {0}: {1} مطلوب في جدول النفقات لحجز مطالبة بالنفقات.
+B07-100	hrms		Salary Component	مكون الراتب
+B07-101	hrms		Salary Component 	مكون الراتب 
+B07-102	hrms		Salary Component Account	حساب مكون الراتب
+B07-103	hrms		Salary Component Based	حسب مكون الراتب
+B07-104	hrms		Salary Component Type	نوع مكون الراتب
+B07-105	hrms		Salary Component for timesheet based payroll.	مكون الراتب لكشف المرتبات المبنية على أساس سجلات التوقيت
+B07-106	hrms		Salary Component {0} cannot be selected more than once in Employee Benefits	لا يمكن اختيار مكون الراتب {0} أكثر من مرة في مزايا الموظف
+B07-107	hrms		Salary Component {0} is currently not used in any Salary Structure.	مكون الراتب {0} غير مستخدم حاليًا في أي هيكل راتب.
+B07-108	hrms		Salary Component {0} must be of type 'Earning' to be used in Employee Benefit Ledger	يجب أن يكون مكون الراتب {0} من نوع 'استحقاق' ليتم استخدامه في دفتر مزايا الموظف
+B07-109	hrms		Salary Detail	تفاصيل الراتب
+B07-110	hrms		Salary Details	تفاصيل الراتب
+B07-111	hrms		Salary Expectation	توقعات الراتب
+B07-112	hrms		Salary Information	معلومات الراتب
+B07-113	hrms		Salary Paid Per	يُدفع الراتب لكل
+B07-114	hrms		Salary Payments Based On Payment Mode	دفع الرواتب على أساس طريقة الدفع
+B07-115	hrms		Salary Payments via ECS	دفع الرواتب عبر ECS
+B07-116	hrms		Salary Range	نطاق الراتب
+B07-117	hrms		Salary Register	راتب التسجيل
+B07-118	hrms		Salary Slip	قسيمة الراتب
+B07-119	hrms		Salary Slip Based on Timesheet	كشف الرواتب بناء على سجل التوقيت
+B07-120	hrms		Salary Slip ID	هوية كشف الراتب
+B07-121	hrms		Salary Slip Leave	إجازة قسيمة الراتب
+B07-122	hrms		Salary Slip Loan	قرض كشف الراتب
+B07-123	hrms		Salary Slip Reference	مرجع قسيمة الراتب
+B07-124	hrms		Salary Slip Timesheet	كشف راتب معتمد علي سجل التوقيت
+B07-125	hrms		Salary Slip already exists for {0} for the given dates	قسيمة راتب موجودة بالفعل لـ {0} للتواريخ المحددة
+B07-126	hrms		Salary Slip creation is queued. It may take a few minutes	تم وضع إنشاء قسيمة الراتب في قائمة الانتظار. قد يستغرق ذلك بضع دقائق
+B07-127	hrms		Salary Slip not found.	لم يتم العثور على قسيمة الراتب.
+B07-128	hrms		Salary Slip of employee {0} already created for this period	كشف الراتب للموظف {0} تم إنشاؤه لهذه الفترة
+B07-129	hrms		Salary Slip of employee {0} already created for time sheet {1}	كشف الراتب للموظف {0} تم إنشاؤه لسجل التوقيت {1}
+B07-130	hrms		Salary Slip submission is queued. It may take a few minutes	تم وضع تسجيل قسيمة الراتب في قائمة الانتظار. قد يستغرق ذلك بضع دقائق
+B07-131	hrms		Salary Slip {0} failed for Payroll Entry {1}	فشلت قسيمة الراتب {0} لقيد الرواتب {1}
+B07-132	hrms		Salary Slip {0} failed. You can resolve the {1} and retry {0}.	فشلت قسيمة الراتب {0}. يمكنك حل {1} وإعادة محاولة {0}.
+B07-133	hrms		Salary Slips	قسائم الرواتب
+B07-134	hrms		Salary Slips Created	تم استحداث كشوف الرواتب
+B07-135	hrms		Salary Slips Submitted	قسائم الرواتب المقدمة
+B07-136	hrms		Salary Slips already exist for employees {}, and will not be processed by this payroll.	قسائم الرواتب موجودة بالفعل للموظفين {}، ولن تتم معالجتها بواسطة كشف الرواتب هذا.
+B07-137	hrms		Salary Slips submitted for period from {0} to {1}	تم تسجيل قسائم الرواتب للفترة من {0} إلى {1}
+B07-138	hrms		Salary Structure	هيكل الراتب
+B07-139	hrms		Salary Structure Assignment	تعيين هيكل الراتب
+B07-140	hrms		Salary Structure Assignment field	حقل تعيين هيكل الراتب
+B07-141	hrms		Salary Structure Assignment for Employee already exists	تعيين هيكل الراتب للموظف موجود بالفعل
+B07-142	hrms		Salary Structure Assignment not found for employee {0} on date {1}	لم يتم العثور على تعيين هيكل الراتب للموظف {0} بتاريخ {1}
+B07-143	hrms		Salary Structure Missing	هيكلية الراتب مفقودة
+B07-144	hrms		Salary Structure must be submitted before submission of {0}	يجب تسجيل هيكل الراتب قبل تسجيل {0}
+B07-145	hrms		Salary Structure not assigned for employee {0} for date {1}	هيكل الراتب غير مُعيَّن للموظف {0} بتاريخ {1}
+B07-146	hrms		Salary Structure {0} does not belong to company {1}	هيكل الراتب {0} لا ينتمي إلى الشركة {1}
+B07-147	hrms		Salary Structures updated successfully	تم تحديث هياكل الرواتب بنجاح
+B07-148	hrms		Salary Withholding	اقتطاع الراتب
+B07-149	hrms		Salary Withholding Cycle	دورة اقتطاع الراتب
+B07-150	hrms		Salary Withholding {0} already exists for employee {1} for the selected period	يوجد استقطاع الراتب {0} بالفعل للموظف {1} للفترة المحددة
+B07-151	hrms		Salary already processed for period between {0} and {1}, Leave application period cannot be between this date range.	تمت معالجة الراتب بالفعل للفترة بين {0} و {1} ، لا يمكن أن تكون فترة طلب اﻹجازة بين نطاق هذا التاريخ.\\n<br>\\nSalary already processed for period between {0} and {1}, Leave application period cannot be between this date range.
+B07-152	hrms		Salary breakup based on Earning and Deduction.	تقسيم الراتب بناءَ على الكسب والاستقطاع.
+B07-153	hrms		Salary components of type Provident Fund, Additional Provident Fund or Provident Fund Loan are not set up.	لم يتم إعداد مكونات الراتب من نوع صندوق الادخار، أو صندوق الادخار الإضافي، أو قرض صندوق الادخار.
+B07-154	hrms		Salary components should be part of the Salary Structure.	يجب أن تكون مكونات الراتب جزءًا من هيكل الراتب.
+B07-155	hrms		Salary slip emails have been enqueued for sending. Check {0} for status.	تمت إضافة رسائل قسائم الرواتب إلى قائمة انتظار الإرسال. تحقق من {0} للاطلاع على الحالة.
+B07-156	hrms		Sanctioned Amount	المبلغ المعتمد
+B07-157	hrms		Sanctioned Amount (Company Currency)	المبلغ المعتمد (عملة الشركة)
+B07-158	hrms		Sanctioned Amount cannot be greater than Claim Amount in Row {0}.	لا يمكن أن يكون المبلغ الموافق عليه أكبر من مبلغ المطالبة في الصف {0}.
+B07-159	hrms		Scheduled On	مجدول في
+B07-160	hrms		Score Earned	نقاط المكتسبة
+B07-161	hrms		Score must be less than or equal to 5	يجب أن تكون النقاط أقل من أو تساوي 5\\n<br>\\nScore must be less than or equal to 5
+B07-162	hrms		Scores	الدرجات
+B07-163	hrms		Search for Jobs	ابحث عن الوظائف
+B07-164	hrms		Select Applicable Components for Overtime Type	حدد المكونات المطبقة لنوع العمل الإضافي
+B07-165	hrms		Select Interview Round First	
+B07-166	hrms		Select Interview first	الرجاء اختيار مقابلة أولاً
+B07-167	hrms		Select Month for LWP Reversal	اختر الشهر لعكس إجازة بدون راتب
+B07-168	hrms		Select Payment Account to make Bank Entry	اختار الحساب الذي سوف تدفع منه
+B07-169	hrms		Select Payroll Frequency.	اختر تكرار كشف الرواتب.
+B07-170	hrms		Select Payroll Period	اختر فترة الرواتب
+B07-171	hrms		Select Property	اختر الملكية
+B07-172	hrms		Select Shift Requests	اختر طلبات المناوبة
+B07-173	hrms		Select Terms and Conditions	اختر الشروط والأحكام
+B07-174	hrms		Select Users	حدد المستخدمون
+B07-175	hrms		Select an employee to get the employee advance.	حدد الموظف للحصول على تقدم الموظف.
+B07-176	hrms		Select the Employee for which you want to allocate leaves.	اختر الموظف الذي تريد تخصيص الإجازات له.
+B07-177	hrms		Select the Employee.	اختر الموظف.
+B07-178	hrms		Select the Leave Type like Sick leave, Privilege Leave, Casual Leave, etc.	اختر نوع الإجازة مثل الإجازة المرضية وإجازة الامتياز والإجازة العارضة وغيرها.
+B07-179	hrms		Select the date after which this Leave Allocation will expire.	اختر التاريخ الذي بعده ستنتهي صلاحية تخصيص الإجازات هذا.
+B07-180	hrms		Select the date from which this Leave Allocation will be valid.	اختر التاريخ الذي تبدأ منه صلاحية تخصيص الإجازات هذا.
+B07-181	hrms		Select the end date for your Leave Application.	اختر تاريخ انتهاء طلب الإجازة الخاص بك.
+B07-182	hrms		Select the salary components whose total will be used from the salary slip to calculate the hourly overtime rate.	اختر مكونات الراتب التي سيُستخدم مجموعها من قسيمة الراتب لحساب معدل العمل الإضافي بالساعة.
+B07-183	hrms		Select the start date for your Leave Application.	اختر تاريخ بدء طلب الإجازة الخاص بك.
+B07-184	hrms		Select this if you want shift assignments to be automatically created indefinitely.	اختر هذا الخيار إذا أردت إنشاء تعيينات المناوبات تلقائيًا بشكل غير محدود.
+B07-185	hrms		Select type of leave the employee wants to apply for, like Sick Leave, Privilege Leave, Casual Leave, etc.	اختر نوع الإجازة التي يرغب الموظف في التقدم بطلب لها، مثل الإجازة المرضية، وإجازة الامتياز، والإجازة العارضة، وغيرها.
+B07-186	hrms		Select your Leave Approver i.e. the person who approves or rejects your leaves.	اختر معتمد الإجازات الخاص بك، أي الشخص الذي يوافق على إجازاتك أو يرفضها.
+B07-187	hrms		Self Appraisal	التقييم الذاتي
+B07-188	hrms		Self Appraisal Pending: {0}	التقييم الذاتي المعلق: {0}
+B07-189	hrms		Self Appraisal Score	درجة التقييم الذاتي
+B07-190	hrms		Self Score	الدرجة الذاتية
+B07-191	hrms		Self-Study	دراسة ذاتية
+B07-192	hrms		Self-approval for Expense Claims is not allowed	الموافقة الذاتية على مطالبات النفقات غير مسموح بها
+B07-193	hrms		Self-approval for leaves is not allowed	الموافقة الذاتية على الإجازات غير مسموح بها
+B07-194	hrms		Seminar	ندوة
+B07-195	hrms		Send Emails At	إرسال رسائل البريد الإلكتروني في
+B07-196	hrms		Send Exit Questionnaire	إرسال استبيان إنهاء الخدمة
+B07-197	hrms		Send Exit Questionnaires	إرسال استبيانات إنهاء الخدمة
+B07-198	hrms		Send Interview Feedback Reminder	إرسال تذكير بملاحظات المقابلة
+B07-199	hrms		Send Interview Reminder	إرسال تذكير بالمقابلة
+B07-200	hrms		Send Leave Notification	إرسال إشعار الإجازة
+B07-201	hrms		Sender Copy	نسخة المرسل
+B07-202	hrms		Sending Failed due to missing email information for employee(s): {1}	فشل الإرسال بسبب غياب معلومات البريد الإلكتروني للموظف (الموظفين): {1}
+B07-203	hrms		Sent Successfully: {0}	مُرسَل بنجاح: {0}
+B07-204	hrms		Sep	سبتمبر
+B07-205	hrms		Separation Activities	أنشطة إنهاء الخدمة
+B07-206	hrms		Separation Begins On	يبدأ إنهاء الخدمة في
+B07-207	hrms		Service Details	تفاصيل الخدمة
+B07-208	hrms		Service Expense	نفقات الصيانة
+B07-209	hrms		Set "From(Year)" and "To(Year)" to 0 for no upper and lower limit.	عيّن "من (عام)" و"إلى (عام)" إلى 0 لعدم وجود حد أعلى أو أدنى.
+B07-210	hrms		Set Assignment Details	تعيين تفاصيل التعيين
+B07-211	hrms		Set Leave Details	تعيين تفاصيل الإجازة
+B07-212	hrms		Set Relieving Date for Employee: {0}	حدد تاريخ إنهاء الخدمة للموظف: {0}
+B07-213	hrms		Set filters to fetch employees	عيّن عوامل التصفية لجلب الموظفين
+B07-214	hrms		Set opening balances for earnings and taxes from the previous employer	عيّن الأرصدة الافتتاحية للاستحقاقات والضرائب من صاحب العمل السابق
+B07-215	hrms		Set optional filters to fetch employees in the appraisee list	عيّن عوامل تصفية اختيارية لجلب الموظفين في قائمة الموظفين الخاضعين للتقييم
+B07-216	hrms		Set the default account for the {0} {1}	تعيين الحساب الافتراضي لـ {0} {1}
+B07-217	hrms		Set the frequency for holiday reminders	عيّن تكرار تذكيرات العطلات
+B07-218	hrms		Set the properties that should be updated in the Employee master on promotion submission	عيّن الخصائص التي يجب تحديثها في البيانات الرئيسية للموظف عند تقديم الترقية
+B07-219	hrms		Set the status to {0} if required.	عيّن الحالة إلى {0} إذا لزم الأمر.
+B07-220	hrms		Set {0} for selected employees	تعيين {0} للموظفين المحددين
+B07-221	hrms		Settings Missing	الإعدادات مفقودة
+B07-222	hrms		Settle against Advances	التسوية مقابل الدفعات المقدمة
+B07-223	hrms		Settle all Payables and Receivables before submission	سوِّ جميع مستحقات الدفع والذمم المدينة قبل التسجيل.
+B07-224	hrms		Shared document with the user {0} with 'Submit' permission	تمت مشاركة المستند مع المستخدم {0} بصلاحية 'تسجيل'
+B07-225	hrms		Shift & Attendance	الدوام والحضور
+B07-226	hrms		Shift Actual End	التحول نهاية الفعلية
+B07-227	hrms		Shift Actual End Time	وقت الانتهاء الفعلي للوردية
+B07-228	hrms		Shift Actual Start	التحول الفعلي البداية
+B07-229	hrms		Shift Actual Start Time	وقت البداية الفعلي للوردية
+B07-230	hrms		Shift Assignment	مهمة التحول
+B07-231	hrms		Shift Assignment Details	تفاصيل تعيين المناوبة
+B07-232	hrms		Shift Assignment History	سجل تعيينات المناوبات
+B07-233	hrms		Shift Assignment Tool	أداة تعيين المناوبة
+B07-234	hrms		Shift Assignment: {0} created for Employee: {1}	واجب التحول: {0} تم إنشاؤه للموظف: {1}
+B07-235	hrms		Shift Assignments created for the schedule between {0} and {1} via background job	تم إنشاء تعيينات المناوبات للجدول الزمني بين {0} و{1} عبر مهمة في الخلفية
+B07-236	hrms		Shift Attendance	حضور المناوبات
+B07-237	hrms		Shift Details	تفاصيل المناوبة
+B07-238	hrms		Shift End	التحول نهاية
+B07-239	hrms		Shift End Time	وقت انتهاء المناوبة
+B07-240	hrms		Shift Location	موقع الوردية
+B07-241	hrms		Shift Request	طلب التغيير
+B07-242	hrms		Shift Request Approver	معتمد طلب المناوبة
+B07-243	hrms		Shift Request Filters	فلاتر طلب المناوبة
+B07-244	hrms		Shift Requests ending before this date will be excluded.	سيتم استبعاد طلبات المناوبة التي تنتهي قبل هذا التاريخ.
+B07-245	hrms		Shift Requests starting after this date will be excluded.	سيتم استبعاد طلبات المناوبة التي تبدأ بعد هذا التاريخ.
+B07-246	hrms		Shift Schedule	جدول المناوبات
+B07-247	hrms		Shift Schedule Assignment	تعيين جدول الورديات
+B07-248	hrms		Shift Settings	إعدادات الوردية
+B07-249	hrms		Shift Start	تحول البداية

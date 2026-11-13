@@ -1,0 +1,24 @@
+{
+ "app": "raqim_sales",
+ "creation": "2026-11-12 23:30:00",
+ "docstatus": 0,
+ "doctype": "Dock",
+ "idx": 0,
+ "items": [
+  {
+   "added": 0,
+   "hidden": 0,
+   "icon": "users-soft",
+   "link_to": "Employee Affairs",
+   "link_type": "Sidebar",
+   "title": "Employee Affairs"
+  }
+ ],
+ "modified": "2026-11-12 23:30:00",
+ "modified_by": "Administrator",
+ "mount_on": "erpnext",
+ "name": "raqim_sales",
+ "owner": "Administrator",
+ "standard": 1,
+ "user": ""
+}

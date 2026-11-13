@@ -1,0 +1,250 @@
+B01-000	hrms		 Salary slips starting on or after this date will be considered for arrear calculations	 ستُؤخذ في الاعتبار قسائم الرواتب التي تبدأ في هذا التاريخ أو بعده عند احتساب المتأخرات.
+B01-001	hrms		 Unlink Payment on Cancellation of Employee Advance	إلغاء ربط الدفع عند إلغاء سلفة الموظف
+B01-002	hrms		"From Date" can not be greater than or equal to "To Date"	لا يمكن أن يكون "من التاريخ" أكبر من أو يساوي "إلى التاريخ"
+B01-003	hrms		% Utilization (B + NB) / T	% الاستخدام (B + NB) / T
+B01-004	hrms		% Utilization (B / T)	% الاستخدام (المفوتر / الإجمالي)
+B01-005	hrms		'employee_field_value' and 'timestamp' are required.	مطلوب &quot;employee_field_value&quot; و &quot;الطابع الزمني&quot;.
+B01-006	hrms		) for {0}	) لـ {0}
+B01-007	hrms		...Fetching Employees	...جاري جلب الموظفين
+B01-008	hrms		0.25	0.25
+B01-009	hrms		0.5	0.5
+B01-010	hrms		00:00	00:00
+B01-011	hrms		01:00	01:00
+B01-012	hrms		02:00	02:00
+B01-013	hrms		03:00	03:00
+B01-014	hrms		04:00	04:00
+B01-015	hrms		05:00	05:00
+B01-016	hrms		06:00	06:00
+B01-017	hrms		07:00	07:00
+B01-018	hrms		08:00	08:00
+B01-019	hrms		09:00	09:00
+B01-020	hrms		1.0	1.0
+B01-021	hrms		10:00	10:00
+B01-022	hrms		11:00	11:00
+B01-023	hrms		12:00	12:00
+B01-024	hrms		13:00	13:00
+B01-025	hrms		14:00	14:00
+B01-026	hrms		15:00	15:00
+B01-027	hrms		16:00	16:00
+B01-028	hrms		17:00	17:00
+B01-029	hrms		18:00	18:00
+B01-030	hrms		19:00	19:00
+B01-031	hrms		20:00	20:00
+B01-032	hrms		21:00	21:00
+B01-033	hrms		22:00	22:00
+B01-034	hrms		23:00	23:00
+B01-035	hrms		<b>Base</b> amount has not been set for the following employee(s): {0}	لم يتم تعيين مبلغ <b>الأساس</b> للموظف (الموظفين) التالي: {0}
+B01-036	hrms		<b>Example:</b> SAL-{first_name}-{date_of_birth.year} <br>This will generate a password like SAL-Jane-1972	<b>مثال:</b> SAL- {first_name} - {date_of_birth.year} <br> سيؤدي هذا إلى إنشاء كلمة مرور مثل SAL-Jane-1972
+B01-037	hrms		<b>Total Leaves Allocated</b> are more than the number of days in the allocation period	<b>إجمالي الإجازات المخصصة</b> يزيد عن عدد الأيام في فترة التخصيص
+B01-038	hrms		<h3>Help</h3>\n\n<p>Notes:</p>\n\n<ol>\n<li>Use field <code>base</code> for using base salary of the Employee</li>\n<li>Use Salary Component abbreviations in conditions and formulas. <code>BS = Basic Salary</code></li>\n<li>Use field name for employee details in conditions and formulas. <code>Employment Type = employment_type</code><code>Branch = branch</code></li>\n<li>Use field name from Salary Slip in conditions and formulas. <code>Payment Days = payment_days</code><code>Leave without pay = leave_without_pay</code></li>\n<li>Direct Amount can also be entered based on Condition. See example 3</li></ol>\n\n<h4>Examples</h4>\n<ol>\n<li>Calculating Basic Salary based on <code>base</code>\n<pre><code>Condition: base &lt; 10000</code></pre>\n<pre><code>Formula: base * .2</code></pre></li>\n<li>Calculating HRA based on Basic Salary<code>BS</code> \n<pre><code>Condition: BS &gt; 2000</code></pre>\n<pre><code>Formula: BS * .1</code></pre></li>\n<li>Calculating TDS based on Employment Type<code>employment_type</code> \n<pre><code>Condition: employment_type=="Intern"</code></pre>\n<pre><code>Amount: 1000</code></pre></li>\n</ol>	<h3>مساعدة</h3>\n\n<p>ملاحظات:</p>\n\n<ol>\n<li>استخدم الحقل <code>base</code> لاستخدام الراتب الأساسي للموظف</li>\n<li>استخدم اختصارات مكونات الراتب في الشروط والصيغ. <code>BS = الراتب الأساسي</code></li>\n<li>استخدم اسم الحقل لتفاصيل الموظف في الشروط والصيغ. <code>نوع التوظيف = employment_type</code><code>الفرع = branch</code></li>\n<li>استخدم اسم الحقل من قسيمة الراتب في الشروط والصيغ. <code>أيام الدفع = payment_days</code><code>إجازة بدون راتب = leave_without_pay</code></li>\n<li>يمكن أيضًا إدخال المبلغ المباشر بناءً على الشرط. انظر المثال 3</li></ol>\n\n<h4>أمثلة</h4>\n<ol>\n<li>حساب الراتب الأساسي بناءً على <code>base</code>\n<pre><code>الشرط: base &lt; 10000</code></pre>\n<pre><code>الصيغة: base * .2</code></pre></li>\n<li>حساب HRA بناءً على الراتب الأساسي <code>BS</code> \n<pre><code>الشرط: BS &gt; 2000</code></pre>\n<pre><code>الصيغة: BS * .1</code></pre></li>\n<li>حساب TDS بناءً على نوع التوظيف <code>employment_type</code> \n<pre><code>الشرط: employment_type=="Intern"</code></pre>\n<pre><code>المبلغ: 1000</code></pre></li>\n</ol>
+B01-039	hrms		<h4>Condition Examples</h4>\n<ol>\n<li>Applying tax if employee born between 31-12-1937 and 01-01-1958 (Employees aged 60 to 80)<br>\n<code>Condition: date_of_birth&gt;date(1937, 12, 31) and date_of_birth&lt;date(1958, 01, 01)</code></li><br><li>Applying tax by employee gender<br>\n<code>Condition: gender=="Male"</code></li><br>\n<li>Applying tax by Salary Component<br>\n<code>Condition: base &gt; 10000</code></li></ol>	<h4>أمثلة على الشرط</h4>\n<ol>\n<li>تطبيق الضريبة إذا وُلد الموظف بين 31-12-1937 و 01-01-1958 (الموظفون الذين تتراوح أعمارهم بين 60 و 80 عامًا)<br>\n<code>الشرط: date_of_birth&gt;date(1937, 12, 31) and date_of_birth&lt;date(1958, 01, 01)</code></li><br><li>تطبيق الضريبة حسب جنس الموظف<br>\n<code>الشرط: gender=="Male"</code></li><br>\n<li>تطبيق الضريبة حسب مكون الراتب<br>\n<code>الشرط: base &gt; 10000</code></li></ol>
+B01-040	hrms		<h5>Employees on Half Day</h5>	<h5>الموظفون في نصف يوم</h5>
+B01-041	hrms		<h5>Unmarked Employees</h5>	<h5>الموظفون غير المسجلين</h5>
+B01-042	hrms		<hr>	<hr>
+B01-043	hrms		<span class="h4"><b>Transactions &amp; Reports</b></span>	<span class="h4"><b>المعاملات &amp; التقارير</b></span>
+B01-044	hrms		<span style="font-size: 18px;"><b>Masters &amp; Reports</b></span>	<span style="font-size: 18px;"><b>المعاملات &amp; التقارير</b></span>
+B01-045	hrms		<table class='table table-bordered'><tr><th>{0}</th><th>{1}</th></tr>	<table class='table table-bordered'><tr><th>{0}</th><th>{1}</th></tr>
+B01-046	hrms		A Job Requisition for {0} requested by {1} already exists: {2}	
+B01-047	hrms		A friendly reminder of an important date for our team.	تذكير ودّي بتاريخ مهم لفريقنا.
+B01-048	hrms		A {0} exists between {1} and {2} (	{0} موجود بين {1} و {2} (
+B01-049	hrms		Absent	غائب
+B01-050	hrms		Absent Days	أيام الغياب
+B01-051	hrms		Absent Records	السجلات الغائبة
+B01-052	hrms		Account No	رقم الحساب
+B01-053	hrms		Account type should be set {0} for payroll payable account {1}, please set and try again	يجب تعيين نوع الحساب على {0} لحساب الرواتب المستحقة {1}، يرجى التعيين والمحاولة مرة أخرى
+B01-054	hrms		Account {0} does not match with Company {1}	الحساب {0} لا يتطابق مع الشركة {1}
+B01-055	hrms		Accounting & Payment	المحاسبة والدفع
+B01-056	hrms		Accounting Reports	تقارير المحاسبة
+B01-057	hrms		Accounts not set for Salary Component {0}	لم يتم تعيين الحسابات لمكون الراتب {0}
+B01-058	hrms		Accrual	استحقاق
+B01-059	hrms		Accrual Arrears	متأخرات الاستحقاق
+B01-060	hrms		Accrual Component	مكون الاستحقاق
+B01-061	hrms		Accrual Component can only be set for Earning Salary Components.	يمكن تعيين مكون الاستحقاق فقط لمكونات الراتب من نوع الاستحقاق.
+B01-062	hrms		Accrual Component can only be set for Flexible Benefit Salary Components with accrual payout methods.	لا يمكن تعيين مكون الاستحقاق إلا لمكونات الراتب الخاصة بالميزة المرنة التي تستخدم طرق صرف الاستحقاق.
+B01-063	hrms		Accrual Component must be set for Flexible Benefit Salary Components with accrual payout methods.	يجب تعيين مكون الاستحقاق لمكونات الراتب الخاصة بالميزة المرنة ذات طرق الصرف القائمة على الاستحقاق.
+B01-064	hrms		Accrual Journal Entry for salaries from {0} to {1}	مدخل يومية تراكمية للرواتب من {0} إلى {1}
+B01-065	hrms		Accrue and payout at end of payroll period	يُحتسب ويُصرف في نهاية فترة الرواتب
+B01-066	hrms		Accrue per cycle, pay only on claim	يُحتسب في كل دورة، ويُصرف عند المطالبة فقط
+B01-067	hrms		Accrued Benefits	المزايا المستحقة
+B01-068	hrms		Accrued Earnings Report	تقرير الاستحقاقات المتراكمة
+B01-069	hrms		Accrued amount {0} is less than paid amount {1} for Benefit {2} in payroll period {3}	المبلغ المستحق {0} أقل من المبلغ المدفوع {1} للميزة {2} في فترة الرواتب {3}
+B01-070	hrms		Action on Submission	الإجراء عند التسجيل
+B01-071	hrms		Activity Name	اسم النشاط
+B01-072	hrms		Actual Amount	الكمية الفعلية
+B01-073	hrms		Actual Encashable Days	الأيام الفعلية القابلة للصرف نقداً
+B01-074	hrms		Actual Overtime Duration	المدة الفعلية للعمل الإضافي
+B01-075	hrms		Actual balances aren't available because the leave application spans over different leave allocations. You can still apply for leaves which would be compensated during the next allocation.	الأرصدة الفعلية غير متاحة لأن طلب الإجازة يمتد عبر تخصيصات إجازات مختلفة. لا يزال بإمكانك تقديم طلبات الإجازة التي سيتم تعويضها خلال التخصيص التالي.
+B01-076	hrms		Add Day-wise Dates	إضافة تواريخ يومية
+B01-077	hrms		Add Employee Property	إضافة خاصية موظف
+B01-078	hrms		Add Expense	إضافة مصروف
+B01-079	hrms		Add Feedback	إضافة ملاحظات
+B01-080	hrms		Add Tax	إضافة ضريبة
+B01-081	hrms		Add to Details	إضافة إلى التفاصيل
+B01-082	hrms		Add unused leaves from previous allocations	إضافة الاجازات غير المستخدمة من المخصصات السابقة
+B01-083	hrms		Add unused leaves from previous leave period's allocation to this allocation	إضافة الإجازات غير المستخدمة من تخصيص فترة الإجازة السابقة إلى هذا التخصيص
+B01-084	hrms		Added tax components from the Salary Component master as the salary structure didn't have any tax component.	تمت إضافة مكونات الضريبة من بيانات مكون الراتب الرئيسية لأن هيكل الراتب لم يكن يحتوي على أي مكون ضريبي.
+B01-085	hrms		Added to details	تم اضافته الى التفاصيل
+B01-086	hrms		Additional Amount	مبلغ إضافي
+B01-087	hrms		Additional Information 	معلومات إضافية 
+B01-088	hrms		Additional PF	PF إضافية
+B01-089	hrms		Additional Salary	راتب إضافي
+B01-090	hrms		Additional Salary 	الراتب الإضافي
+B01-091	hrms		Additional Salary for referral bonus can only be created against Employee Referral with status {0}	لا يمكن إنشاء راتب إضافي لمكافأة الإحالة إلا مقابل إحالة موظف بحالة {0}
+B01-092	hrms		Additional Salary for this salary component with {0} enabled already exists for this date	يوجد بالفعل راتب إضافي لمكون الراتب هذا مع تفعيل {0} لهذا التاريخ
+B01-093	hrms		Additional Salary: {0} already exist for Salary Component: {1} for period {2} and {3}	الراتب الإضافي: {0} موجود بالفعل لمكون الراتب: {1} للفترة {2} و {3}
+B01-094	hrms		Address of Organizer	عنوان المنظم
+B01-095	hrms		Adjust Allocation	تعديل التخصيص
+B01-096	hrms		Adjustment Created Successfully	تم إنشاء التسوية بنجاح
+B01-097	hrms		Adjustment Type	نوع التسوية
+B01-098	hrms		Advance	مقدما
+B01-099	hrms		Advance Account is mandatory. Please set the <a href="/app/company/{0}#default_employee_advance_account" target="_blank">Default Employee Advance Account</a> in the Company record {0} and submit this document.	
+B01-100	hrms		Advance Account {} currency should be same as Salary Currency of Employee {}. Please select same currency Advance Account	يجب أن تكون عملة حساب الدفعات المقدمة {} هي نفسها عملة الراتب للموظف {}. يرجى اختيار نفس العملة لحساب الدفعات المقدمة
+B01-101	hrms		Advance Paid (Company Currency)	الدفعة المقدمة المدفوعة (عملة الشركة)
+B01-102	hrms		Advanced Filters	عوامل التصفية المتقدمة
+B01-103	hrms		All Exchange Gain/Loss amount of {0} has been booked through {1}	تم قيد كامل مبلغ أرباح/خسائر فرق العملة لـ {0} من خلال {1}
+B01-104	hrms		All Goals	جميع الأهداف
+B01-105	hrms		All Jobs	جميع الوظائف
+B01-106	hrms		All allocated assets should be returned before submission	يجب إرجاع جميع الأصول المخصصة قبل التسجيل
+B01-107	hrms		All the mandatory tasks for employee creation are not completed yet.	لم تكتمل بعد جميع المهام الإلزامية لإنشاء الموظف.
+B01-108	hrms		Allocate Based On Leave Policy	التخصيص بناءً على سياسة الإجازات
+B01-109	hrms		Allocate Leave	تخصيص إجازة
+B01-110	hrms		Allocate leaves to {0} employee(s)?	هل تريد تخصيص الإجازات لـ {0} من الموظفين؟
+B01-111	hrms		Allocate on Day	التخصيص في اليوم
+B01-112	hrms		Allocated Amount (Company Currency)	المبلغ المخصص (عملة الشركة)
+B01-113	hrms		Allocated Leaves	الإجازات المخصصة
+B01-114	hrms		Allocated Via	مخصص عبر
+B01-115	hrms		Allocating Leave	جارٍ تخصيص الإجازة
+B01-116	hrms		Allocation Date	تاريخ التخصيص
+B01-117	hrms		Allocation Details	تفاصيل التخصيص
+B01-118	hrms		Allocation Expired!	تخصيص انتهت!
+B01-119	hrms		Allocation is greater than the maximum allowed {0} for leave type {1}	التخصيص أكبر من الحد الأقصى المسموح به {0} لنوع الإجازة {1}
+B01-120	hrms		Allocation to Adjust	التخصيص المراد تعديله
+B01-121	hrms		Allocation was skipped due to exceeding annual allocation set in leave policy	تم تخطي التخصيص بسبب تجاوز التخصيص السنوي المحدد في سياسة الإجازات
+B01-122	hrms		Allocation was skipped due to maximum leave allocation limit set in leave type. Please increase the limit and retry failed allocation.	تم تخطي التخصيص بسبب بلوغ الحد الأقصى لتخصيص الإجازات المحدد في نوع الإجازة. يرجى زيادة الحد ثم إعادة محاولة التخصيص الذي فشل.
+B01-123	hrms		Allow Employee Checkin from Mobile App	السماح بتسجيل حضور الموظف من تطبيق الجوال
+B01-124	hrms		Allow Encashment	السماح بالصرف
+B01-125	hrms		Allow Geolocation Tracking	السماح بتتبع الموقع الجغرافي
+B01-126	hrms		Allow Leave Application After (Working Days)	
+B01-127	hrms		Allow Multiple Shift Assignments for Same Date	السماح بتعيينات مناوبات متعددة لنفس التاريخ
+B01-128	hrms		Allow Negative Balance	السماح برصيد سالب
+B01-129	hrms		Allow Over Allocation	السماح بالتخصيص الزائد
+B01-130	hrms		Allow Tax Exemption	السماح بالإعفاء الضريبي
+B01-131	hrms		Allow User	تسمح للمستخدم
+B01-132	hrms		Allow Users	السماح للمستخدمين
+B01-133	hrms		Allow check-out after shift end time (in minutes)	السماح بتسجيل المغادرة بعد وقت انتهاء التحول (بالدقائق)
+B01-134	hrms		Allow claim for full benefit amount	السماح بالمطالبة بمبلغ الميزة الكامل
+B01-135	hrms		Allow the following users to approve Leave Applications for block days.	السماح للمستخدمين التاليين للموافقة على طلبات الحصول على إجازة في الأيام المحظورة
+B01-136	hrms		Allows allocating more leaves than the number of days in the allocation period.	يسمح بتخصيص إجازات تتجاوز عدد الأيام في فترة التخصيص.
+B01-137	hrms		Alternating entries as IN and OUT during the same shift	بالتناوب إدخالات مثل IN و OUT خلال نفس التحول
+B01-138	hrms		Amount Based on Formula	المبلغ بناءً على الصيغة
+B01-139	hrms		Amount based on formula	القيمة بناءا على الصيغة
+B01-140	hrms		Amount claimed via Expense Claim	المبلغ المطالب به عبر مطالبة النفقات
+B01-141	hrms		Amount of expense	مبلغ المصروف
+B01-142	hrms		Amount paid against this encashment	المبلغ المدفوع مقابل هذا الصرف النقدي
+B01-143	hrms		Amount scheduled for deduction via salary	الكمية المجدولة للخصم من الراتب
+B01-144	hrms		Amount should not be less than zero	يجب ألا تقل الكمية عن الصفر
+B01-145	hrms		Amount that has been paid against this advance	المبلغ المدفوع مقابل هذه الدفعة المقدمة
+B01-146	hrms		An Arrear document already exists for employee {0} with salary structure {1} in payroll period {2}	يوجد بالفعل مستند متأخرات للموظف {0} مع هيكل الراتب {1} في فترة الرواتب {2}
+B01-147	hrms		An attendance record is linked to this checkin. Please cancel the attendance before modifying time.	هناك سجل حضور مرتبط بتسجيل الحضور هذا. يرجى إلغاء الحضور قبل تعديل الوقت.
+B01-148	hrms		Annual Allocation	التخصيص السنوي
+B01-149	hrms		Annual Allocation Exceeded	تم تجاوز التخصيص السنوي
+B01-150	hrms		Annual Salary	الراتب السنوي
+B01-151	hrms		Annual Taxable Amount	المبلغ السنوي الخاضع للضريبة
+B01-152	hrms		Any other details	أي تفاصيل أخرى
+B01-153	hrms		Any other remarks, noteworthy effort that should go in the records	أي ملاحظات أخرى أو جهد جدير بالذكر ينبغي تسجيله في السجلات
+B01-154	hrms		Applicable Earnings Component	مكوّن الاستحقاق القابل للتطبيق
+B01-155	hrms		Applicable Salary Components	مكونات الراتب القابلة للتطبيق
+B01-156	hrms		Applicable in the case of Employee Onboarding	ينطبق على حالة تشغيل الموظف
+B01-157	hrms		Applicant Email Address	عنوان البريد الإلكتروني للمتقدم
+B01-158	hrms		Applicant Name	اسم المتقدم
+B01-159	hrms		Applicant Rating	تقييم المتقدم
+B01-160	hrms		Applicant for a Job	متقدم لوظيفة
+B01-161	hrms		Applicant name	اسم التطبيق
+B01-162	hrms		Application	التطبيق
+B01-163	hrms		Application Status	حالة الطلب
+B01-164	hrms		Application period cannot be across two allocation records	فترة الطلب لا يمكن ان تكون خلال سجلين مخصصين
+B01-165	hrms		Application period cannot be outside leave allocation period	فترة الاجازة لا يمكن أن تكون خارج فترة الاجازة المسموحة للموظف.\\n<br>\\nApplication period cannot be outside leave allocation period
+B01-166	hrms		Applications Received	الطلبات المستلمة
+B01-167	hrms		Applications received:	الطلبات المستلمة:
+B01-168	hrms		Applies to Company	ينطبق على شركة
+B01-169	hrms		Apply / Approve Leaves	تطبيق / الموافقة على الإجازات
+B01-170	hrms		Apply Now	التطبيق الآن
+B01-171	hrms		Apply for Public Holiday	تطبيق على عطلة عامة
+B01-172	hrms		Apply for Weekend	تطبيق على عطلة نهاية الأسبوع
+B01-173	hrms		Appointment Date	تاريخ الموعد
+B01-174	hrms		Appointment Letter	رسالة موعد
+B01-175	hrms		Appointment Letter Template	قالب رسالة التعيين
+B01-176	hrms		Appointment Letter content	محتوى رسالة التعيين
+B01-177	hrms		Appraisal	تقييم
+B01-178	hrms		Appraisal Cycle	دورة التقييم
+B01-179	hrms		Appraisal Goal	الغاية من التقييم
+B01-180	hrms		Appraisal KRA	KRA التقييم
+B01-181	hrms		Appraisal Linking	ربط التقييم
+B01-182	hrms		Appraisal Overview	نظرة عامة على التقييم
+B01-183	hrms		Appraisal Template	قالب التقييم
+B01-184	hrms		Appraisal Template Goal	الغاية من قالب التقييم
+B01-185	hrms		Appraisal Template Missing	قالب التقييم مفقود
+B01-186	hrms		Appraisal Template Title	عنوان قالب التقييم
+B01-187	hrms		Appraisal Template not found for some designations.	لم يتم العثور على قالب التقييم لبعض المسميات الوظيفية.
+B01-188	hrms		Appraisal creation is queued. It may take a few minutes.	تم وضع إنشاء التقييم في قائمة الانتظار. قد يستغرق ذلك بضع دقائق.
+B01-189	hrms		Appraisal {0} already exists for Employee {1} for this Appraisal Cycle or overlapping period	التقييم {0} موجود بالفعل للموظف {1} في دورة التقييم هذه أو في فترة متداخلة
+B01-190	hrms		Appraisal {0} does not belong to Employee {1}	التقييم {0} لا ينتمي إلى الموظف {1}
+B01-191	hrms		Appraisee	المُقيَّم
+B01-192	hrms		Appraisees: {0}	المُقيَّمون: {0}
+B01-193	hrms		Apprentice	وضع تحت التدريب
+B01-194	hrms		Approval	الموافقة
+B01-195	hrms		Approval Status	حالة الموافقة
+B01-196	hrms		Approval Status must be 'Approved' or 'Rejected'	حالة الموافقة يجب ان تكون (موافق عليه) او (مرفوض)
+B01-197	hrms		Approve	موافقة
+B01-198	hrms		Approved	تمت الموافقة
+B01-199	hrms		Approver	المخول بالموافقة
+B01-200	hrms		Approvers	المعتمدون
+B01-201	hrms		Apr	أبريل
+B01-202	hrms		Are you sure you want to delete the attachment	هل أنت متأكد أنك تريد حذف المرفق
+B01-203	hrms		Are you sure you want to delete the {0}	هل أنت متأكد أنك تريد حذف {0}
+B01-204	hrms		Are you sure you want to email the selected salary slips?	هل أنت متأكد أنك تريد إرسال قسائم الرواتب المحددة عبر البريد الإلكتروني؟
+B01-205	hrms		Are you sure you want to reject the Employee Referral?	هل أنت متأكد من أنك تريد رفض إحالة الموظف؟
+B01-206	hrms		Arrear	متأخرات
+B01-207	hrms		Arrear Component	مكون المتأخرات
+B01-208	hrms		Arrear Component cannot be set for Salary Components based on taxable salary.	لا يمكن تعيين مكون المتأخرات لمكونات الراتب المستندة إلى الراتب الخاضع للضريبة.
+B01-209	hrms		Arrear Start Date	تاريخ بدء المتأخرات
+B01-210	hrms		Arrears	المتأخرات
+B01-211	hrms		Arrival Datetime	تارخ الوصول
+B01-212	hrms		As per your assigned Salary Structure you cannot apply for benefits	حسب هيكل الرواتب المعيّن الخاص بك ، لا يمكنك التقدم بطلب للحصول على مخصصات
+B01-213	hrms		Asset Recovery Cost for {0}: {1}	تكلفة استرداد الأصل لـ {0}: {1}
+B01-214	hrms		Assets Allocated	الأصول المخصصة
+B01-215	hrms		Assign Salary Structure to {0} employee(s)?	هل تريد تعيين هيكل الراتب لـ {0} موظف/موظفين؟
+B01-216	hrms		Assign Shift	تعيين وردية
+B01-217	hrms		Assign Shift Schedule	تعيين جدول الورديات
+B01-218	hrms		Assign Structure	تعيين الهيكل
+B01-219	hrms		Assigning Salary Structure	جارٍ تعيين هيكل الراتب
+B01-220	hrms		Assigning Structure...	جارٍ تعيين الهيكل...
+B01-221	hrms		Assigning Structures...	هيكلية التخصيص...
+B01-222	hrms		Assignment based on	التعيين بناءً على
+B01-223	hrms		Associate Job Opening	ربط وظيفة شاغرة
+B01-224	hrms		Associated Document	المستند المرتبط
+B01-225	hrms		Associated Document Type	نوع المستند المرتبط
+B01-226	hrms		At least one interview has to be selected.	يجب اختيار مقابلة واحدة على الأقل.
+B01-227	hrms		Attach Proof	إرفاق الإثبات
+B01-228	hrms		Attempted	تمت المحاولة
+B01-229	hrms		Attendance	الحضور
+B01-230	hrms		Attendance Calendar	تقويم الحضور
+B01-231	hrms		Attendance Count	عدد الحضور
+B01-232	hrms		Attendance Date	تاريخ الحضور
+B01-233	hrms		Attendance From Date	الحضور من تاريخ
+B01-234	hrms		Attendance From Date and Attendance To Date is mandatory	الحقل الحضور من تاريخ والحضور إلى تاريخ إلزامية\\n<br>\\nAttendance From Date and Attendance To Date is mandatory
+B01-235	hrms		Attendance ID	معرّف الحضور
+B01-236	hrms		Attendance Marked	الحضور ملحوظ
+B01-237	hrms		Attendance Request	طلب حضور
+B01-238	hrms		Attendance Request History	سجل طلبات الحضور
+B01-239	hrms		Attendance Settings	إعدادات الحضور
+B01-240	hrms		Attendance To Date	الحضور إلى تاريخ
+B01-241	hrms		Attendance Updated	تم تحديث الحضور
+B01-242	hrms		Attendance Warnings	تحذيرات الحضور
+B01-243	hrms		Attendance date {0} can not be less than employee {1}'s joining date: {2}	لا يمكن أن يكون تاريخ الحضور {0} أقل من تاريخ انضمام الموظف {1}: {2}
+B01-244	hrms		Attendance for all the employees under this criteria has been marked already.	تم تسجيل الحضور لجميع الموظفين ضمن هذه المعايير بالفعل.
+B01-245	hrms		Attendance for employee {0} is already marked for an overlapping shift {1}: {2}	الحضور للموظف {0} مسجل بالفعل لوردية متداخلة {1}: {2}
+B01-246	hrms		Attendance for employee {0} is already marked for the date {1}: {2}	الحضور للموظف {0} مسجل بالفعل للتاريخ {1}: {2}
+B01-247	hrms		Attendance for employee {0} is already marked for the following dates: {1}	الحضور للموظف {0} مسجّل بالفعل للتواريخ التالية: {1}
+B01-248	hrms		Attendance for the following dates will be skipped/overwritten on submission	سيتم تخطي الحضور للتواريخ التالية أو الكتابة فوقه عند التسجيل
+B01-249	hrms		Attendance from {0} to {1} has already been marked for the Employee {2}	تم بالفعل تسجيل الحضور من {0} إلى {1} للموظف {2}

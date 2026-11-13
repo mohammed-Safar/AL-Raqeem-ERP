@@ -16,7 +16,7 @@
 	const ENABLED = true;
 	if (!ENABLED) return;
 
-	const SPRITE = "/assets/raqim_sales/icons/raqeem-sidebar.svg?r=4";
+	const SPRITE = "/assets/raqim_sales/icons/raqeem-sidebar.svg?r=6";
 	const names = new Set(window.RAQEEM_ICON_NAMES || []);
 	const soft = [...names].filter((n) => n.endsWith("-soft"));
 	let replaced = 0;
@@ -24,7 +24,12 @@
 
 	// rows that get their own drawing by WHERE they link, not by their icon name
 	// (Sales and Purchase Invoice share ERPNext's receipt icon with other items)
-	const BY_ROUTE = { "sales-invoice": "invoice-sales", "purchase-invoice": "invoice-purchase" };
+	const BY_ROUTE = {
+		"sales-invoice": "invoice-sales",
+		"purchase-invoice": "invoice-purchase",
+		"payment-entry": "payment-entry",
+		"raqeem-cheque": "cheque",
+	};
 	function route_icon(el) {
 		const a = el.closest("a[href]");
 		const m = a && (a.getAttribute("href") || "").match(/\/([a-z0-9-]+)\/?(?:[?#].*)?$/);

@@ -1,0 +1,140 @@
+B22-000	help:onb		Start Onboarding	
+B22-001	help:onb		Tracks the joining tasks for one new employee. Submit it once they are done. See [Employee Onboarding](https://docs.frappe.io/hr/employee-onboarding).	
+B22-002	help:onb		Handle an exit	
+B22-003	help:onb		Start Separation	
+B22-004	help:onb		Tracks the exit tasks when an employee leaves. Submit it once they are done. See [Employee Separation](https://docs.frappe.io/hr/employee-separation).	
+B22-005	help:onb		Plan a training program	
+B22-006	help:onb		Create Training Program	
+B22-007	help:onb		A course you run for employees, with its trainer and what it covers. See [Training Program](https://docs.frappe.io/hr/training-program).	
+B22-008	help:onb		Look at your workforce	
+B22-009	help:onb		Open Employee Analytics	
+B22-010	help:onb		Employees by branch, department, designation or grade.	
+B22-011	help:onb		Give feedback	
+B22-012	help:onb		Give Feedback	
+B22-013	help:onb		A reviewer's ratings and comments on an employee for the cycle. See [Employee Performance Feedback](https://docs.frappe.io/hr/employee-performance-feedback).	
+B22-014	help:onb		Set a goal	
+B22-015	help:onb		Create Goal	
+B22-016	help:onb		A measurable target for an employee, tracked against a KRA. See [Goal](https://docs.frappe.io/hr/goal).	
+B22-017	help:onb		Appraise an employee	
+B22-018	help:onb		Create Appraisal	
+B22-019	help:onb		One employee's ratings for a cycle. The cycle can create these for everyone in it. See [Appraisal](https://docs.frappe.io/hr/appraisal).	
+B22-020	help:onb		Compare scores across a cycle	
+B22-021	help:onb		Open Appraisal Overview	
+B22-022	help:onb		Each employee's goal, feedback and self appraisal scores in a cycle.	
+B22-023	help:onb		Build an appraisal template	
+B22-024	help:onb		Create Appraisal Template	
+B22-025	help:onb		The KRAs and rating criteria for a role, with their weightage. See [Appraisal Template](https://docs.frappe.io/hr/appraisal-template).	
+B22-026	help:onb		Start an appraisal cycle	
+B22-027	help:onb		Create Appraisal Cycle	
+B22-028	help:onb		The review period, and the employees and templates in it. See [Appraisal Cycle](https://docs.frappe.io/hr/appraisal-cycle).	
+B22-029	help:onb		Add a key result area	
+B22-030	help:onb		Create KRA	
+B22-031	help:onb		An area an employee is measured on, such as quality or delivery. See [Appraisal Template](https://docs.frappe.io/hr/appraisal-template).	
+B22-032	help:onb		Set your payroll period	
+B22-033	help:onb		Create Payroll Period	
+B22-034	help:onb		The financial year that tax is calculated over. See [Payroll Period](https://docs.frappe.io/hr/payroll-period).	
+B22-035	help:onb		Set up a gratuity rule	
+B22-036	help:onb		Create Gratuity Rule	
+B22-037	help:onb		How gratuity is calculated from years of service. See [Gratuity Rule](https://docs.frappe.io/hr/gratuity-rule).	
+B22-038	help:onb		Add income tax slabs	
+B22-039	help:onb		Create Income Tax Slab	
+B22-040	help:onb		The tax rate for each range of income. See [Income Tax Slab](https://docs.frappe.io/hr/income-tax-slab).	
+B22-041	help:onb		Choose flexible benefits	
+B22-042	help:onb		Create Benefit Application	
+B22-043	help:onb		How an employee splits their flexible benefit amount across components. See [Employee Benefit Application](https://docs.frappe.io/hr/employee-benefit-application).	
+B22-044	help:onb		Check each employee's tax	
+B22-045	help:onb		Open Income Tax Computation	
+B22-046	help:onb		Taxable income, exemptions and tax for each employee in a payroll period.	
+B22-047	help:onb		Declare tax exemptions	
+B22-048	help:onb		Create Declaration	
+B22-049	help:onb		The investments and expenses an employee plans to claim against tax. See [Employee Tax Exemption Declaration](https://docs.frappe.io/hr/employee-tax-exemption-declaration).	
+B22-050	help:onb		Submit proof of exemptions	
+B22-051	help:onb		Proof of what was declared, so the exemption counts in the final tax. See [Employee Tax Exemption Proof Submission](https://docs.frappe.io/hr/employee-tax-exemption-proof-submission).	
+B22-052	help:field-desc		The date on which Salary Component with Amount will contribute for Earnings/Deduction in Salary Slip.	
+B22-053	help:field-desc		If enabled, the value specified or calculated in this component will not contribute to the earnings or deductions. However, it's value can be referenced by other components that can be added or deducted.	
+B22-054	help:field-desc		If selected, the value specified or calculated in this component will not contribute to the earnings or deductions. However, it's value can be referenced by other components that can be added or deducted.	
+B22-055	help:field-desc		Liability account credited for employer contributions. Applicable only for Employer Contribution components, where Account is debited as the expense.	
+B22-056	help:field-desc		Salary slips starting on or after this date will be considered for arrear calculations	
+B22-057	help:onb		Build a salary structure	
+B22-058	help:onb		Create Salary Structure	
+B22-059	help:onb		The earnings and deductions that make up a salary, and how each is calculated. See [Salary Structure](https://docs.frappe.io/hr/salary-structure).	
+B22-060	help:onb		Add a salary component	
+B22-061	help:onb		Create Salary Component	
+B22-062	help:onb		An earning or deduction on the salary slip, such as Basic or Provident Fund. See [Salary Component](https://docs.frappe.io/hr/salary-component).	
+B22-063	help:onb		Run payroll	
+B22-064	help:onb		Create Payroll Entry	
+B22-065	help:onb		Creates salary slips for everyone in a period and books the salary. See [Payroll Entry](https://docs.frappe.io/hr/payroll-entry).	
+B22-066	help:onb		Review the salary register	
+B22-067	help:onb		Open Salary Register	
+B22-068	help:onb		Every salary slip in a period, component by component.	
+B22-069	help:onb		Pay a one-off amount	
+B22-070	help:onb		A bonus, arrear or deduction for one payroll period. See [Additional Salary](https://docs.frappe.io/hr/additional-salary).	
+B22-071	help:onb		Assign it to an employee	
+B22-072	help:onb		Assign Salary Structure	
+B22-073	help:onb		Puts an employee on a salary structure with their base pay from a date. See [Salary Structure Assignment](https://docs.frappe.io/hr/salary-structure-assignment).	
+B22-074	help:onb		Bundle leave types into a policy	
+B22-075	help:onb		Create Leave Policy	
+B22-076	help:onb		How many days of each leave type an employee gets in a year. See [Leave Policy](https://docs.frappe.io/hr/leave-policy).	
+B22-077	help:onb		Check leave balances	
+B22-078	help:onb		Open Employee Leave Balance	
+B22-079	help:onb		How much of each leave type every employee has left.	
+B22-080	help:onb		Approve a leave request	
+B22-081	help:onb		Apply for Leave	
+B22-082	help:onb		An employee's request for time off. Their leave approver approves and submits it. See [Leave Application](https://docs.frappe.io/hr/leave-application).	
+B22-083	help:onb		Give an employee leave	
+B22-084	help:onb		The days an employee can take of a leave type in a period. See [Leave Allocation](https://docs.frappe.io/hr/leave-allocation).	
+B22-085	help:onb		Add a leave type	
+B22-086	help:onb		Create Leave Type	
+B22-087	help:onb		A kind of leave, such as casual or sick, and its rules. See [Leave Type](https://docs.frappe.io/hr/leave-type).	
+B22-088	help:onb		Set your holidays	
+B22-089	help:onb		Create Holiday List	
+B22-090	help:onb		The weekly offs and public holidays your employees get. See [Holiday List](https://docs.frappe.io/hr/holiday-list).	
+B22-091	db:ws-content		Welcome to the rmc workspace	
+B22-092	db:ws-content		Click on the ⋯ menu to edit	
+B22-093	db:data:CRM Lead Status		Contacted	
+B22-094	db:data:CRM Lead Status		Nurture	
+B22-095	db:data:CRM Lead Status		Junk	
+B22-096	db:data:CRM Deal Status		Demo/Making	
+B22-097	db:data:CRM Deal Status		Proposal/Quotation	
+B22-098	db:data:CRM Deal Status		Negotiation	
+B22-099	db:data:CRM Deal Status		Ready to Close	
+B22-100	db:data:CRM Dropdown Item		Login to Frappe Cloud	
+B22-101	db:data:CRM Industry		Entertainment & Leisure, Executive Search	
+B22-102	db:data:CRM Industry		Beverage & Tobacco	
+B22-103	db:data:CRM Industry		ERP	
+B22-104	db:data:CRM Industry		Ecommerce	
+B22-105	db:data:CRM Industry		SaaS	
+B22-106	db:data:CRM Industry		Semiconductors	
+B22-107	db:data:CRM Industry		Healthcare	
+B22-108	db:data:CRM Industry		Finance	
+B22-109	db:data:CRM Industry		Logistics	
+B22-110	db:data:CRM Industry		Food & Beverage	
+B22-111	db:data:CRM Industry		Retail	
+B22-112	db:data:CRM Industry		Media	
+B22-113	db:data:CRM Industry		Telecom	
+B22-114	db:data:CRM Industry		Nonprofit	
+B22-115	db:data:CRM Lost Reason		Competition	
+B22-116	db:data:CRM Lost Reason		Budget Constraints	
+B22-117	db:data:CRM Lost Reason		Missing Features	
+B22-118	db:data:CRM Lost Reason		Long Sales Cycle	
+B22-119	db:data:CRM Lost Reason		No Decision-Maker	
+B22-120	db:data:CRM Lost Reason		Unresponsive Prospect	
+B22-121	db:data:CRM Lost Reason		Poor Fit	
+B22-122	db:data:Salary Component		Income Tax	
+B22-123	ui:IconPicker.vue		Search by keyword	
+B22-124	ui:SlaPolicyView.vue		Conditions for this SLA were created from	
+B22-125	ui:SlaPolicyList.vue		No SLA Policies Found	
+B22-126	ui:AssignmentRulesList.vue		No Assignment Rules Found	
+B22-127	ui:LeadSyncSources.vue		Add and manage your lead sources here.	
+B22-128	ui:LeadSyncSourceForm.vue		Lead Form	
+B22-129	ui:MonthView.vue		Roster:	
+B22-130	ui:MonthView.vue		Month View	
+B22-131	ui:MonthViewTable.vue		Search Employee	
+B22-132	ui:MonthViewTable.vue		WO	
+B22-133	ui:ShiftAssignmentDialog.vue		Schedule Settings	
+B22-134	ui:navigation.js(js)		Call Logs	
+B22-135	ui:model.js(js)		Modified By	
+B22-136	ui:ViewControls.vue(js)		Switch view	
+B22-137	ui:ViewControls.vue(js)		Filter list	
+B22-138	ui:ViewControls.vue(js)		Refresh list	
+B22-139	ui:AssignmentRuleListItem.vue(js)		Low-Medium	

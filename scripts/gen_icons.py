@@ -135,6 +135,15 @@ ICONS = {
     "invoice-purchase": ('<path d="M3 3h11.5v18l-1.9-1.4-1.9 1.4-1.9-1.4-1.9 1.4-1.9-1.4L3 21z"/>',
                          '<path d="M3 3h11.5v18l-1.9-1.4-1.9 1.4-1.9-1.4-1.9 1.4-1.9-1.4L3 21z"/><path d="M6.3 8h5M6.3 12h5M6.3 16h2.8"/>'
                          '<path d="M21.5 9.5 15.8 15.2M15.8 10.7v4.5h4.5"/>'),
+    # Payment Entry: a banknote with a two-way arrow under it (money in and out).
+    # Cheque: a long cheque slip with payee line, amount box and a signature.
+    # Own names, set by link in raqeem_icons.js (BY_ROUTE) and used on RAQEEM Home.
+    "payment-entry": ('<rect x="3" y="3.5" width="18" height="11" rx="2.5"/>',
+                      '<rect x="3" y="3.5" width="18" height="11" rx="2.5"/><circle cx="12" cy="9" r="2.4"/>'
+                      '<path d="M6.5 9h.01M17.5 9h.01"/><path d="M5 19.5h14M7.4 17.2 5 19.5l2.4 2.3M16.6 17.2l2.4 2.3-2.4 2.3"/>'),
+    "cheque": ('<rect x="2" y="5.5" width="20" height="13" rx="2.2"/>',
+               '<rect x="2" y="5.5" width="20" height="13" rx="2.2"/><path d="M7 8.3v1.6M7 11.2v1.6M7 14.1v1.6"/>'
+               '<path d="M10.5 9.6h8"/><path d="M10.5 15c1-1.9 2-1.9 2.6 0s1.7 1.8 2.6 0 1.7-1.8 2.8.3"/>'),
 }
 
 # Dock (app rail) icons: Frappe 16 names them "<thing>-soft" (module-icons.svg).
@@ -184,6 +193,98 @@ DOCK = {
     "system-monitor-soft": ('<rect x="3" y="4" width="18" height="12" rx="2.5"/>',
                             '<rect x="3" y="4" width="18" height="12" rx="2.5"/><path d="M9 20h6M12 16v4"/><path d="M6.5 10.5h2.5l1.5-2.5 2.5 5 1.5-2.5h3"/>'),
 }
+
+# ---- HR (Frappe HR / hrms) — added in V1.3 ---------------------------------
+_CAL = '<rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/>'
+_HEAD = '<circle cx="9" cy="8" r="4"/>'
+_BODY = '<path d="M2.5 20c.9-3.6 3.4-5.5 6.5-5.5 1.2 0 2.3.3 3.2.8"/>'
+_RHEAD = '<circle cx="10" cy="8" r="4"/>'
+_RBODY = '<path d="M3.5 20c.9-3.6 3.4-5.5 6.5-5.5 1.5 0 2.9.4 4 1.3"/>'
+_CLIP = '<rect x="5" y="4.5" width="14" height="16.5" rx="3"/><path d="M9 3h6v3H9z"/>'
+HR_ICONS = {
+    "align-start-horizontal": ('<rect x="4" y="6" width="6" height="14" rx="2"/>',
+                               '<path d="M3 3h18"/><rect x="4" y="6" width="6" height="14" rx="2"/><rect x="14" y="6" width="6" height="9" rx="2"/>'),
+    "arrow-down-from-line": ('<circle cx="12" cy="12" r="9"/>',
+                             '<circle cx="12" cy="12" r="9"/><path d="M8 7.5h8M12 10v7M9 14l3 3 3-3"/>'),
+    "arrow-up": ('<circle cx="12" cy="12" r="9"/>',
+                 '<circle cx="12" cy="12" r="9"/><path d="M12 17V7M8.5 10.5 12 7l3.5 3.5"/>'),
+    "badge-alert": ('<path d="M12 3l2.4 1.8 3-.2.9 2.9 2.5 1.7-1 2.8 1 2.8-2.5 1.7-.9 2.9-3-.2L12 21l-2.4-1.8-3 .2-.9-2.9-2.5-1.7 1-2.8-1-2.8 2.5-1.7.9-2.9 3 .2z"/>',
+                    '<path d="M12 3l2.4 1.8 3-.2.9 2.9 2.5 1.7-1 2.8 1 2.8-2.5 1.7-.9 2.9-3-.2L12 21l-2.4-1.8-3 .2-.9-2.9-2.5-1.7 1-2.8-1-2.8 2.5-1.7.9-2.9 3 .2z"/><path d="M12 8v4.5M12 16h.01"/>'),
+    "banknote-arrow-up": ('<rect x="2.5" y="8" width="15" height="11" rx="2.5"/>',
+                          '<rect x="2.5" y="8" width="15" height="11" rx="2.5"/><circle cx="10" cy="13.5" r="2.2"/><path d="M19.5 14V4M16.5 7l3-3 3 3"/>'),
+    "banknote-x": ('<rect x="2.5" y="6" width="14" height="12" rx="2.5"/>',
+                   '<rect x="2.5" y="6" width="14" height="12" rx="2.5"/><circle cx="9.5" cy="12" r="2.3"/><path d="M18.5 9.5l3.5 3.5M22 9.5l-3.5 3.5"/>'),
+    "bell-dot": ('<path d="M5 17h14l-1.5-2V11a5.5 5.5 0 0 0-11 0v4z"/>',
+                 '<path d="M5 17h14l-1.5-2V11a5.5 5.5 0 0 0-11 0v4z"/><path d="M10 20a2 2 0 0 0 4 0"/><circle cx="18.5" cy="5.5" r="2.5"/>'),
+    "building-2": ('<path d="M6 21V4a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v17z"/>',
+                   '<path d="M6 21V4a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v17"/><path d="M16 10h3a1 1 0 0 1 1 1v10M3 21h18M9.5 7h3M9.5 11h3M9.5 15h3"/>'),
+    "calendar-check": ICONS["calendar-check-2"],
+    "calendar-heart": ('<rect x="3" y="5" width="18" height="16" rx="3"/>',
+                       _CAL + '<path d="M12 18.5l-2.6-2.5a1.6 1.6 0 0 1 2.6-1.9 1.6 1.6 0 0 1 2.6 1.9z"/>'),
+    "calendar-range": ('<rect x="3" y="5" width="18" height="16" rx="3"/>',
+                       _CAL + '<path d="M7.5 14h5M11.5 17.5h5"/>'),
+    "circle-user-round": ('<circle cx="12" cy="12" r="9"/>',
+                          '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="10" r="3"/><path d="M6.5 18.5c1.2-2.2 3.2-3.3 5.5-3.3s4.3 1.1 5.5 3.3"/>'),
+    "clipboard-check": ('<rect x="5" y="4.5" width="14" height="16.5" rx="3"/>',
+                        _CLIP + '<path d="M9 13.5l2 2 4-4.5"/>'),
+    "clipboard-pen": ('<rect x="5" y="4.5" width="14" height="16.5" rx="3"/>',
+                      _CLIP + '<path d="M9 17l.5-2 4.5-4.5 1.5 1.5-4.5 4.5z"/>'),
+    "file-text": ('<path d="M6 3h8l4 4v14H6z"/>',
+                  '<path d="M14 3H7a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7z"/><path d="M14 3v4h4"/><path d="M9 11h6M9 14.5h6M9 18h3.5"/>'),
+    "globe": ICONS["earth"],
+    "graduation-cap": ('<path d="M12 4 2.5 9 12 14l9.5-5z"/>',
+                       '<path d="M12 4 2.5 9 12 14l9.5-5z"/><path d="M6.5 11.2V16c1.5 1.5 3.4 2.2 5.5 2.2s4-.7 5.5-2.2v-4.8M21.5 9v5.5"/>'),
+    "hand-coins": ('<circle cx="15.5" cy="7.5" r="4"/>',
+                   '<circle cx="15.5" cy="7.5" r="4"/><path d="M3 14h3l4 2h4a1.5 1.5 0 0 0 0-3h-3"/><path d="M14 16l5-2.2a1.6 1.6 0 0 1 1.5 2.8L14 20.5H3"/>'),
+    "kanban": ('<rect x="3" y="3" width="18" height="18" rx="5"/>',
+               '<rect x="3" y="3" width="18" height="18" rx="5"/><path d="M8 7.5v8M12 7.5v5M16 7.5v9.5"/>'),
+    "layout-dashboard": ('<rect x="3" y="3" width="8" height="10" rx="2"/><rect x="13" y="11" width="8" height="10" rx="2"/>',
+                         '<rect x="3" y="3" width="8" height="10" rx="2"/><rect x="13" y="3" width="8" height="6" rx="2"/><rect x="13" y="11" width="8" height="10" rx="2"/><rect x="3" y="15" width="8" height="6" rx="2"/>'),
+    "orbit": ('<circle cx="12" cy="12" r="3"/>',
+              '<circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="8.5"/><circle cx="18" cy="6" r="1.8"/>'),
+    "piggy-bank": ('<ellipse cx="11.5" cy="13" rx="7.5" ry="6"/>',
+                   '<ellipse cx="11.5" cy="13" rx="7.5" ry="6"/><path d="M8 18.5V21M15 18.5V21M19 12.5h2M9.5 7.3 10.5 4h3l.8 3.2"/><circle cx="15" cy="11.5" r=".4"/>'),
+    "plane": ('<path d="M21 3 3 10.5l7 3 3 7.5z"/>',
+              '<path d="M21 3 3 10.5l7 3 3 7.5z"/><path d="M21 3 10 13.5"/>'),
+    "pointer": ('<path d="M5 3l14 7-6 2-2 6z"/>',
+                '<path d="M5 3l14 7-6 2-2 6z"/><path d="M13 12l6 6"/>'),
+    "sliders-horizontal": ICONS["settings"],
+    "square-user-round": ('<rect x="3" y="3" width="18" height="18" rx="5"/>',
+                          '<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="10" r="3"/><path d="M6.5 21c.9-2.8 3-4.3 5.5-4.3s4.6 1.5 5.5 4.3"/>'),
+    "trending-up": ('<path d="M3 17l6-6 4 4 8-8v13H3z"/>',
+                    '<path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/>'),
+    "upload": ('<path d="M3 15v3a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-3z"/>',
+               '<path d="M3 15v3a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-3"/><path d="M12 15V3.5M7.5 8 12 3.5 16.5 8"/>'),
+    "user-lock": (_HEAD,
+                  _HEAD + _BODY + '<rect x="14.5" y="15" width="7" height="6" rx="1.5"/><path d="M16 15v-1.5a2 2 0 0 1 4 0V15"/>'),
+    "user-round-check": (_RHEAD, _RHEAD + _RBODY + '<path d="M15 18l2 2 4-4.5"/>'),
+    "user-round-minus": (_RHEAD, _RHEAD + _RBODY + '<path d="M15 17h6"/>'),
+    "user-round-plus": ICONS["users-round"],
+    "user-star": (_HEAD,
+                  _HEAD + _BODY + '<path d="M17.5 13l1.1 2.2 2.4.3-1.7 1.7.4 2.4-2.2-1.1-2.2 1.1.4-2.4-1.7-1.7 2.4-.3z"/>'),
+    "videotape": ('<rect x="3" y="5" width="18" height="14" rx="3"/>',
+                  '<rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3 9.5h18"/><circle cx="8.5" cy="14.5" r="2"/><circle cx="15.5" cy="14.5" r="2"/><path d="M8.5 16.5h7"/>'),
+}
+HR_DOCK = {
+    "briefcase-soft": ('<rect x="3" y="7" width="18" height="13" rx="3"/>',
+                       '<rect x="3" y="7" width="18" height="13" rx="3"/><path d="M9 7V5a1.5 1.5 0 0 1 1.5-1.5h3A1.5 1.5 0 0 1 15 5v2M3 12.5h18M11 12.5v2h2v-2"/>'),
+    "time-clock-soft": ('<circle cx="12" cy="12" r="9"/>',
+                        '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/>'),
+    "tree-palm-soft": ('<path d="M12 9C10 5.5 6.5 5 3.5 6.5 6 7 8 8 9 9.5z"/><path d="M12 9c2-3.5 5.5-4 8.5-2.5-2.5.5-4.5 1.5-5.5 3z"/>',
+                       '<path d="M12 9C10 5.5 6.5 5 3.5 6.5 6 7 8 8 9 9.5"/><path d="M12 9c2-3.5 5.5-4 8.5-2.5-2.5.5-4.5 1.5-5.5 3"/>'
+                       '<path d="M12 9c.5 4 0 8-1.5 12M7.5 21h9M12 9c-2 .3-3.8 1.5-5 3.5M12 9c2 .3 3.8 1.5 5 3.5"/>'),
+    "receipt-card-soft": ICONS["receipt"],
+    "wallet-soft": ICONS["wallet"],
+    "podium-soft": ('<path d="M9 9h6v12H9z"/>',
+                    '<path d="M9 9h6v12H9zM3 14h6v7H3zM15 12h6v9h-6z"/><path d="M12 2.8l.8 1.6 1.7.2-1.2 1.2.3 1.7-1.6-.8-1.6.8.3-1.7-1.2-1.2 1.7-.2z"/>'),
+    "user-clock-soft": (_HEAD,
+                        _HEAD + '<path d="M2.5 20c.9-3.6 3.4-5.5 6.5-5.5 1 0 1.9.2 2.7.5"/><circle cx="17.5" cy="17" r="4"/><path d="M17.5 15v2l1.3 1"/>'),
+    "user-search-soft": (_HEAD,
+                         _HEAD + _BODY + '<circle cx="17" cy="16.5" r="3"/><path d="M19.2 18.7 21.5 21"/>'),
+    "coins-percent-soft": ICONS["coins"][:1] + ('<circle cx="9" cy="9" r="5.5"/><path d="M14.4 9.6a5.5 5.5 0 1 1-4.8 4.8"/><path d="M7 11l4-4M7.3 7.3h.01M10.7 10.7h.01"/>',),
+}
+ICONS.update(HR_ICONS)
+DOCK.update(HR_DOCK)
 ICONS = {**ICONS, **DOCK}
 
 FILL = ('<g stroke="none" style="fill:var(--rq-icon-fill,currentColor);'

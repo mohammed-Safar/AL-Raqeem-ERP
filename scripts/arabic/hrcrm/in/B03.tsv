@@ -1,0 +1,250 @@
+B03-000	hrms		Earned Leaves	الإجازات المكتسبة
+B03-001	hrms		Earned Leaves are allocated as per the configured frequency via scheduler.	تُخصَّص الإجازات المكتسبة وفقًا للتكرار المُعدّ عبر المجدول.
+B03-002	hrms		Earned Leaves are auto-allocated via scheduler based on the annual allocation set in the Leave Policy: {0}	تُخصَّص الإجازات المكتسبة تلقائيًا عبر المجدول بناءً على التخصيص السنوي المحدد في سياسة الإجازات: {0}
+B03-003	hrms		Earned Leaves are leaves earned by an Employee after working with the company for a certain amount of time. Enabling this will allocate leaves on pro-rata basis by automatically updating Leave Allocation for leaves of this type at intervals set by 'Earned Leave Frequency.	الإجازات المكتسبة هي إجازات يكتسبها الموظف بعد العمل في الشركة لفترة زمنية محددة. يؤدي تفعيل هذا الخيار إلى تخصيص الإجازات بشكل تناسبي عن طريق تحديث تخصيص الإجازات لهذا النوع من الإجازات تلقائيًا على فترات محددة في 'Earned Leave Frequency.
+B03-004	hrms		Earning	مستحق
+B03-005	hrms		Earning Arrears	متأخرات الاستحقاقات
+B03-006	hrms		Earning Component	أحدى المستحقات
+B03-007	hrms		Earning Salary Component is required for Employee Referral Bonus.	مكون الراتب من نوع الاستحقاق مطلوب لمكافأة إحالة الموظف.
+B03-008	hrms		Earnings	المستحقات
+B03-009	hrms		Earnings & Deductions	الاستحقاقات والاستقطاعات
+B03-010	hrms		Edit Expense Item	تعديل صنف المصروف
+B03-011	hrms		Edit Expense Tax	تعديل ضريبة المصروف
+B03-012	hrms		Effective From	ساري من
+B03-013	hrms		Effective To	ساري حتى
+B03-014	hrms		Effective from	ساري المفعول من
+B03-015	hrms		Email Salary Slip to Employee	إرسال كشف الراتب للموظفين بالبريد الالكتروني
+B03-016	hrms		Email Salary Slips	إرسال قسائم الرواتب بالبريد الإلكتروني
+B03-017	hrms		Email Sent To	أرسل البريد الإلكتروني إلى
+B03-018	hrms		Emails salary slip to employee based on preferred email selected in Employee	ارسال كشف الراتب إلي البريد الاكتروني المفضل من قبل الموظف
+B03-019	hrms		Employee A/C Number	موظف A / C رقم
+B03-020	hrms		Employee Advance Account	حساب سلفة الموظف
+B03-021	hrms		Employee Advance Balance	رصيد سلفة الموظف
+B03-022	hrms		Employee Advance Summary	ملخص متقدم للموظف
+B03-023	hrms		Employee Analytics	تحليلات الموظف
+B03-024	hrms		Employee Attendance Tool	أداة الحضور للموظفين
+B03-025	hrms		Employee Benefit Application	تطبيق مزايا الموظف
+B03-026	hrms		Employee Benefit Application Detail	تفاصيل تطبيق استحقاق الموظف
+B03-027	hrms		Employee Benefit Claim	مطالبة مصلحة الموظف
+B03-028	hrms		Employee Benefit Detail	تفاصيل مزايا الموظف
+B03-029	hrms		Employee Benefit Ledger	دفتر أستاذ مزايا الموظف
+B03-030	hrms		Employee Benefits	الميزات للموظف
+B03-031	hrms		Employee Birthday	أعياد ميلاد الموظفين
+B03-032	hrms		Employee Boarding Activity	نشاط صعود الموظف
+B03-033	hrms		Employee Checkin	فحص الموظف
+B03-034	hrms		Employee Checkin History	سجل تسجيل حضور الموظف
+B03-035	hrms		Employee Cost Center	مركز تكلفة الموظف
+B03-036	hrms		Employee Details	موظف تفاصيل
+B03-037	hrms		Employee Emails	رسائل البريد الإلكتروني للموظفين
+B03-038	hrms		Employee Exit Settings	إعدادات إنهاء خدمة الموظف
+B03-039	hrms		Employee Exits	خروج الموظفين
+B03-040	hrms		Employee Feedback Criteria	معايير ملاحظات الموظف
+B03-041	hrms		Employee Feedback Rating	تقييم ملاحظات الموظف
+B03-042	hrms		Employee Grade	درجة الموظف
+B03-043	hrms		Employee Grievance	شكوى الموظف
+B03-044	hrms		Employee Health Insurance	التأمين الصحي للموظف
+B03-045	hrms		Employee Hours Utilization Based On Timesheet	استخدام ساعات الموظف بناءً على سجل ساعات العمل
+B03-046	hrms		Employee Image	صورة الموظف
+B03-047	hrms		Employee Incentive	حافز الموظف
+B03-048	hrms		Employee Info	معلومات الموظف
+B03-049	hrms		Employee Information	معلومات الموظف
+B03-050	hrms		Employee Journey	
+B03-051	hrms		Employee Leave Balance	رصيد إجازات الموظفين
+B03-052	hrms		Employee Leave Balance Summary	ملخص رصيد إجازات الموظف
+B03-053	hrms		Employee Loan	قرض موظف
+B03-054	hrms		Employee Naming By	تسمية الموظف حسب
+B03-055	hrms		Employee Onboarding	اعداد الموظف
+B03-056	hrms		Employee Onboarding Template	قالب Onboarding الموظف
+B03-057	hrms		Employee Onboarding: {0} already exists for Job Applicant: {1}	تهيئة الموظف: {0} موجود بالفعل للمتقدم للوظيفة: {1}
+B03-058	hrms		Employee Other Income	دخل الموظف الآخر
+B03-059	hrms		Employee Performance Feedback	ملاحظات أداء الموظف
+B03-060	hrms		Employee Promotion	ترقية الموظف
+B03-061	hrms		Employee Promotion Details	تفاصيل ترقية الموظف
+B03-062	hrms		Employee Promotion cannot be submitted before Promotion Date	لا يمكن تسجيل ترقية الموظف قبل تاريخ الترقية
+B03-063	hrms		Employee Property History	تاريخ الممتلكات الموظف
+B03-064	hrms		Employee Referral	إحالة موظف
+B03-065	hrms		Employee Referral {0} already exists for email: {1}	إحالة موظف {0} موجودة بالفعل للبريد الإلكتروني: {1}
+B03-066	hrms		Employee Referral {0} is not applicable for referral bonus.	إحالة موظف {0} غير مؤهلة لمكافأة الإحالة.
+B03-067	hrms		Employee Referrals	إحالات الموظفين
+B03-068	hrms		Employee Responsible 	الموظف المسؤول 
+B03-069	hrms		Employee Retained	تم الاحتفاظ بالموظف
+B03-070	hrms		Employee Separation	فصل الموظف
+B03-071	hrms		Employee Separation Template	قالب فصل الموظفين
+B03-072	hrms		Employee Settings	إعدادات الموظف
+B03-073	hrms		Employee Skill	مهارة الموظف
+B03-074	hrms		Employee Skill Map	خريطة مهارة الموظف
+B03-075	hrms		Employee Skills	مهارات الموظف
+B03-076	hrms		Employee Status	حالة الموظف
+B03-077	hrms		Employee Tax Exemption Category	فئة الإعفاء من ضريبة الموظف
+B03-078	hrms		Employee Tax Exemption Declaration	إعلان الإعفاء من ضريبة الموظف
+B03-079	hrms		Employee Tax Exemption Declaration Category	فئة الإعفاء من ضريبة الموظف
+B03-080	hrms		Employee Tax Exemption Proof Submission	إقرار الإعفاء من ضريبة الموظف
+B03-081	hrms		Employee Tax Exemption Proof Submission Detail	إعفاء من ضريبة الموظف
+B03-082	hrms		Employee Tax Exemption Sub Category	فئة الإعفاء من ضريبة الموظفين
+B03-083	hrms		Employee Training	تدريب الموظفين
+B03-084	hrms		Employee Transfer	نقل الموظفين
+B03-085	hrms		Employee Transfer Detail	نقل موظف التفاصيل
+B03-086	hrms		Employee Transfer Details	تفاصيل نقل الموظف
+B03-087	hrms		Employee Transfer cannot be submitted before Transfer Date	لا يمكن تسجيل نقل الموظفين قبل تاريخ النقل
+B03-088	hrms		Employee advance account {0} should be of type {1}.	يجب أن يكون حساب سلفة الموظف {0} من النوع {1}.
+B03-089	hrms		Employee can be named by Employee ID if you assign one, or via Naming Series. Select your preference here.	يمكن تسمية الموظف بمعرّف الموظف إذا قمت بتعيين واحد، أو عبر سلسلة التسمية. اختر تفضيلك هنا.
+B03-090	hrms		Employee name	اسم الموظف
+B03-091	hrms		Employee records are created using the selected option	يتم إنشاء سجلات الموظفين باستخدام الخيار المحدد
+B03-092	hrms		Employee was marked Absent due to missing Employee Checkins.	تم تسجيل الموظف غائباً بسبب عدم وجود تسجيلات حضور للموظف.
+B03-093	hrms		Employee was marked Absent for not meeting the working hours threshold.	تم تسجيل الموظف كغائب لعدم تحقيق حد ساعات العمل.
+B03-094	hrms		Employee was marked Absent for other half due to missing Employee Checkins.	تم تسجيل الموظف غائبًا عن النصف الآخر بسبب عدم وجود تسجيلات حضور للموظف.
+B03-095	hrms		Employee {0} : {1}	الموظف {0} : {1}
+B03-096	hrms		Employee {0} already has an Attendance Request {1} that overlaps with this period	الموظف {0} لديه بالفعل طلب حضور {1} يتداخل مع هذه الفترة
+B03-097	hrms		Employee {0} already has an active Shift {1}: {2} that overlaps within this period.	الموظف {0} لديه بالفعل وردية نشطة {1}: {2} تتداخل ضمن هذه الفترة.
+B03-098	hrms		Employee {0} already submitted an application {1} for the payroll period {2}	الموظف {0} قدّم بالفعل طلبًا {1} لفترة الرواتب {2}
+B03-099	hrms		Employee {0} has already applied for Shift {1}: {2} that overlaps within this period	قدّم الموظف {0} بالفعل طلباً لوردية {1}: {2} تتداخل ضمن هذه الفترة
+B03-100	hrms		Employee {0} has already applied for {1} between {2} and {3} : {4}	الموظف {0} قدّم طلبًا بالفعل لـ {1} بين {2} و {3} : {4}
+B03-101	hrms		Employee {0} has already claimed the benefit '{1}' for {2} ({3}).<br>To prevent overpayments, only one claim per benefit type is allowed in each payroll cycle.	الموظف {0} طالب بالفعل بالمزية '{1}' عن {2} ({3}).<br>لمنع المدفوعات الزائدة، يُسمح بمطالبة واحدة فقط لكل نوع من المزايا في كل دورة رواتب.
+B03-102	hrms		Employee {0} is not active or does not exist	الموظف {0} غير نشط أو غير موجود\\n<br>\\nEmployee {0} is not active or does not exist
+B03-103	hrms		Employee {0} is on Leave on {1}	الموظف {0} في وضع الإجازة على {1}
+B03-104	hrms		Employee {0} not found in Training Event Participants.	لم يتم العثور على الموظف {0} في المشاركين في الفعالية التدريبية.
+B03-105	hrms		Employee {0} on Half day on {1}	الموظف {0} لديه اجازة نصف يوم في {1}
+B03-106	hrms		Employee {0} relieved on {1} must be set as 'Left'	يجب تعيين الموظف {0} الذي أُعفي بتاريخ {1} على أنه 'يسار'
+B03-107	hrms		Employee: {0} have to complete minimum {1} years for gratuity	الموظف: {0} يجب أن يُكمل {1} سنوات على الأقل لاستحقاق مكافأة نهاية الخدمة
+B03-108	hrms		Employees HTML	الموظفين HTML
+B03-109	hrms		Employees Working on a Holiday	الموظفون العاملون في عطلة
+B03-110	hrms		Employees cannot give feedback to themselves. Use {0} instead: {1}	لا يمكن للموظفين تقديم ملاحظات لأنفسهم. استخدم {0} بدلاً من ذلك: {1}
+B03-111	hrms		Employees on Half Day HTML	الموظفون في نصف يوم (HTML)
+B03-112	hrms		Employees will miss holiday reminders from {} until {}. <br> Do you want to proceed with this change?	سيفوّت الموظفون تذكيرات العطلات من {} حتى {}. <br> هل تريد المتابعة بهذا التغيير؟
+B03-113	hrms		Employees without Feedback: {0}	موظفون بدون ملاحظات: {0}
+B03-114	hrms		Employees without Goals: {0}	موظفون بدون أهداف: {0}
+B03-115	hrms		Employees working on a holiday	الموظفون يعملون في يوم العطلة
+B03-116	hrms		Employment Type	نوع التوظيف
+B03-117	hrms		Enable Auto Attendance	تمكين الحضور التلقائي
+B03-118	hrms		Enable Early Exit Marking	تفعيل تمييز الخروج المبكر
+B03-119	hrms		Enable Late Entry Marking	تفعيل تمييز الحضور المتأخر
+B03-120	hrms		Enable Push Notifications	تمكين الإشعارات الفورية
+B03-121	hrms		Enable this to use a specific multiplier for public holidays. If unchecked, the standard multiplier will be used instead.	فعّل هذا الخيار لاستخدام مضاعف محدد لعطلات الأعمال الرسمية. إذا لم يتم تحديده، فسيتم استخدام المضاعف القياسي بدلاً من ذلك.
+B03-122	hrms		Enable this to use a specific multiplier for weekends. If unchecked, the standard multiplier will be used instead.	فعّل هذا الخيار لاستخدام مضاعف محدد لعطلات نهاية الأسبوع. إذا لم يتم تحديده، فسيتم استخدام المضاعف القياسي بدلاً من ذلك.
+B03-123	hrms		Enabled only for Employee Benefit components from Salary Structure Assignment	مفعّل فقط لمكونات مزايا الموظف من تعيين هيكل الراتب
+B03-124	hrms		Enabling Push Notifications...	جارٍ تمكين الإشعارات الفورية...
+B03-125	hrms		Encashment	المدفوعات النقدية
+B03-126	hrms		Encashment Amount	مبلغ مقطوع
+B03-127	hrms		Encashment Days	أيام الصرف النقدي
+B03-128	hrms		Encashment Days cannot exceed {0} {1} as per Leave Type settings	لا يمكن أن تتجاوز أيام الصرف النقدي {0} {1} وفقًا لإعدادات نوع الإجازة
+B03-129	hrms		Encashment Limit Applied	تم تطبيق حد الصرف النقدي
+B03-130	hrms		Encrypt Salary Slips in Emails	تشفير قسائم الرواتب في رسائل البريد الإلكتروني
+B03-131	hrms		End Date cannot be before Start Date	لا يمكن أن يكون تاريخ الانتهاء قبل تاريخ البدء
+B03-132	hrms		End date: {0}	تاريخ الانتهاء: {0}
+B03-133	hrms		End time cannot be before start time	لا يمكن أن يكون وقت الانتهاء قبل وقت البدء
+B03-134	hrms		Enter Interview Round	
+B03-135	hrms		Enter a non-zero value to adjust.	أدخل قيمة غير صفرية للتعديل.
+B03-136	hrms		Enter the Standard Working Hours for a normal work day. These hours will be used in calculations of reports such as Employee Hours Utilization and Project Profitability analysis.	أدخل ساعات العمل القياسية ليوم عمل عادي. ستُستخدم هذه الساعات في حسابات التقارير مثل استغلال ساعات الموظف وتحليل ربحية المشروع.
+B03-137	hrms		Enter the number of Leave Without Pay (LWP) days you want to reverse. This value cannot exceed the total LWP days recorded for the selected month	أدخل عدد أيام الإجازة بدون راتب (LWP) التي تريد عكسها. لا يمكن أن تتجاوز هذه القيمة إجمالي أيام LWP المسجلة للشهر المحدد
+B03-138	hrms		Enter the number of leaves you want to allocate for the period.	أدخل عدد الإجازات التي تريد تخصيصها للفترة.
+B03-139	hrms		Enter yearly benefit amounts	أدخل مبالغ المزايا السنوية
+B03-140	hrms		Enter {0}	أدخل {0}
+B03-141	hrms		Error creating {0}	خطأ في إنشاء {0}
+B03-142	hrms		Error deleting {0}	خطأ في حذف {0}
+B03-143	hrms		Error downloading PDF	خطأ أثناء تنزيل ملف PDF
+B03-144	hrms		Error in formula or condition	خطأ في الصيغة أو الشرط
+B03-145	hrms		Error in formula or condition: {0} in Income Tax Slab	خطأ في الصيغة أو الشرط: {0} في شريحة ضريبة الدخل
+B03-146	hrms		Error in some rows	خطأ في بعض الصفوف
+B03-147	hrms		Error updating {0}	خطأ في تحديث {0}
+B03-148	hrms		Error while evaluating the {doctype} {doclink} at row {row_id}. <br><br> <b>Error:</b> {error} <br><br> <b>Hint:</b> {description}	حدث خطأ أثناء تقييم {doctype} {doclink} في الصف {row_id}. <br><br> <b>الخطأ:</b> {error} <br><br> <b>تلميح:</b> {description}
+B03-149	hrms		Estimated Cost Per Position	التكلفة التقديرية لكل موضع
+B03-150	hrms		Evaluation	تقييم
+B03-151	hrms		Evaluation Date	تاريخ التقييم
+B03-152	hrms		Evaluation Method cannot be changed as there are existing appraisals created for this cycle	لا يمكن تغيير طريقة التقييم لوجود تقييمات منشأة لهذه الدورة
+B03-153	hrms		Event Details	تفاصيل الحدث
+B03-154	hrms		Event Link	رابط الحدث
+B03-155	hrms		Event Location	موقع الحدث
+B03-156	hrms		Event Status	حالة الحدث
+B03-157	hrms		Every 2 Weeks	كل أسبوعين
+B03-158	hrms		Every 3 Weeks	كل 3 أسابيع
+B03-159	hrms		Every 4 Weeks	كل 4 أسابيع
+B03-160	hrms		Every Valid Check-in and Check-out	كل صالح في الاختيار والمغادرة
+B03-161	hrms		Every Week	كل أسبوع
+B03-162	hrms		Everyone, let’s congratulate them on their work anniversary!	أيها الجميع، لنهنّئهم بمناسبة مرور سنة على عملهم معنا!
+B03-163	hrms		Everyone, let’s congratulate {0} on their birthday.	يرجى الجميع تهنئة {0} بعيد ميلاده.
+B03-164	hrms		Exam	امتحان
+B03-165	hrms		Exchange rate of Payment Entry against Employee Advance	سعر الصرف لقيد الدفع مقابل سلفة الموظف
+B03-166	hrms		Exclude Holidays	استبعاد العطلات
+B03-167	hrms		Excluded {0} Non-Encashable Leaves for {1}	تم استبعاد {0} من الإجازات غير القابلة للصرف النقدي لـ {1}
+B03-168	hrms		Exempted from Income Tax	معفى من ضريبة الدخل
+B03-169	hrms		Exemption	إعفاء
+B03-170	hrms		Exemption Category	فئة الإعفاء
+B03-171	hrms		Exemption Proofs	إثباتات الإعفاء
+B03-172	hrms		Exemption Sub Category	الإعفاء الفئة الفرعية
+B03-173	hrms		Existing Record	السجل الحالي
+B03-174	hrms		Existing Shift Assignments	تعيينات المناوبة الحالية
+B03-175	hrms		Exit Confirmed	تم تأكيد المغادرة
+B03-176	hrms		Exit Details	تفاصيل إنهاء الخدمة
+B03-177	hrms		Exit Interview	مقابلة إنهاء الخدمة
+B03-178	hrms		Exit Interview Pending	مقابلة إنهاء الخدمة معلقة
+B03-179	hrms		Exit Interview Summary	الخروج من ملخص المقابلة
+B03-180	hrms		Exit Interview {0} already exists for Employee: {1}	مقابلة إنهاء الخدمة {0} موجودة بالفعل للموظف: {1}
+B03-181	hrms		Exit Questionnaire	استبيان إنهاء الخدمة
+B03-182	hrms		Exit Questionnaire Notification	إشعار استبيان إنهاء الخدمة
+B03-183	hrms		Exit Questionnaire Notification Template	قالب إشعار استبيان إنهاء الخدمة
+B03-184	hrms		Exit Questionnaire Pending	استبيان إنهاء الخدمة معلق
+B03-185	hrms		Exit Questionnaire Web Form	نموذج ويب استبيان إنهاء الخدمة
+B03-186	hrms		Exits (This Month)	المغادرات (هذا الشهر)
+B03-187	hrms		Expected Average Rating	متوسط التقييم المتوقع
+B03-188	hrms		Expected By	المتوقع بحلول
+B03-189	hrms		Expected Compensation	التعويض المتوقع
+B03-190	hrms		Expected Salary Range per month	نطاق الراتب المتوقع شهرياً
+B03-191	hrms		Expected Skill Set	مجموعة المهارات المتوقعة
+B03-192	hrms		Expected Skillset	مجموعة المهارات المتوقعة
+B03-193	hrms		Expense Approver	معتمد المصروفات
+B03-194	hrms		Expense Approver Mandatory In Expense Claim	الموافقة على المصروفات إلزامية في مطالبة النفقات
+B03-195	hrms		Expense Claim Account	حساب المطالبة بالنفقات
+B03-196	hrms		Expense Claim Advance	النفقات المطالبة مقدما
+B03-197	hrms		Expense Claim Detail	تفاصيل  المطالبة بالنفقات
+B03-198	hrms		Expense Claim Summary	ملخص مطالبة النفقات
+B03-199	hrms		Expense Claim Type	نوع  المطالبة  بالنفقات
+B03-200	hrms		Expense Claim for Vehicle Log {0}	مطالبه المصروفات لسجل المركبات {0}
+B03-201	hrms		Expense Claim {0} already exists for the Vehicle Log	المطالبة بالنفقات {0} بالفعل موجوده في سجل المركبة
+B03-202	hrms		Expense Claims	مطالبات النفقات
+B03-203	hrms		Expense Date	تاريخ النفقات
+B03-204	hrms		Expense Item	بند المصروف
+B03-205	hrms		Expense Proof	إثبات المصاريف
+B03-206	hrms		Expense Tax	ضريبة المصروف
+B03-207	hrms		Expense Taxes and Charges	مصاريف الضرائب والرسوم
+B03-208	hrms		Expense Type	نوع المصاريف
+B03-209	hrms		Expenses & Advances	المصروفات والسلف
+B03-210	hrms		Expire Allocation	انتهاء الصلاحية التخصيص
+B03-211	hrms		Expire Carry Forwarded Leaves (Days)	تنتهي صلاحية حمل الأوراق المرسلة (بالأيام)
+B03-212	hrms		Expire Leaves	إنهاء صلاحية الإجازات
+B03-213	hrms		Expired Leave(s)	الإجازات المنتهية
+B03-214	hrms		Expired Leaves	الإجازات المنتهية
+B03-215	hrms		Explanation	تفسير
+B03-216	hrms		Exporting...	جارٍ التصدير...
+B03-217	hrms		Failed to create/submit {0} for employees:	فشل إنشاء/تسجيل {0} للموظفين:
+B03-218	hrms		Failed to delete defaults for country {0}.	فشل حذف الإعدادات الافتراضية للدولة {0}.
+B03-219	hrms		Failed to download PDF: {0}	فشل تنزيل ملف PDF: {0}
+B03-220	hrms		Failed to send the Interview Reschedule notification. Please configure your email account.	فشل إرسال إشعار إعادة جدولة المقابلة. يرجى تكوين حساب البريد الإلكتروني الخاص بك.
+B03-221	hrms		Failed to setup defaults for country {0}.	فشل إعداد الإعدادات الافتراضية للدولة {0}.
+B03-222	hrms		Failed to submit some leave policy assignments:	فشل إرسال بعض تعيينات سياسة الإجازات:
+B03-223	hrms		Failed to update the Job Applicant status	فشل تحديث حالة المتقدم للوظيفة
+B03-224	hrms		Failed to {0} {1} for employees:	فشل {0} {1} للموظفين:
+B03-225	hrms		Failure Details	تفاصيل الفشل
+B03-226	hrms		Failure Reason	سبب العطل
+B03-227	hrms		Failure of Automatic Allocation of Earned Leaves	فشل التخصيص التلقائي للإجازات المكتسبة
+B03-228	hrms		Feb	فبراير
+B03-229	hrms		Feedback Count	عدد الملاحظات
+B03-230	hrms		Feedback HTML	HTML الملاحظات
+B03-231	hrms		Feedback Ratings	تقييمات الملاحظات
+B03-232	hrms		Feedback Reminder Notification Template	قالب إشعار تذكير الملاحظات
+B03-233	hrms		Feedback Score	درجة الملاحظات
+B03-234	hrms		Feedback Submitted	تم تسليم التعليقات
+B03-235	hrms		Feedback Summary	ملخص الملاحظات
+B03-236	hrms		Feedback already submitted for the Interview {0}. Please cancel the previous Interview Feedback {1} to continue.	تم تسجيل ملاحظات مسبقاً للمقابلة {0}. يرجى إلغاء ملاحظات المقابلة السابقة {1} للمتابعة.
+B03-237	hrms		Feedback cannot be recorded for an absent Employee.	لا يمكن تسجيل الملاحظات لموظف غائب.
+B03-238	hrms		Feedback {0} added successfully	تمت إضافة الملاحظات {0} بنجاح
+B03-239	hrms		Fetch Geolocation	جلب الموقع الجغرافي
+B03-240	hrms		Fetch Overtime Details	جلب تفاصيل العمل الإضافي
+B03-241	hrms		Fetch Shift	جلب الوردية
+B03-242	hrms		Fetch Shifts	جلب الورديات
+B03-243	hrms		Fetching Employees	جارٍ جلب الموظفين
+B03-244	hrms		Fetching Shift	جارٍ جلب الوردية
+B03-245	hrms		Fetching your geolocation	جارٍ جلب موقعك الجغرافي
+B03-246	hrms		File Preview	معاينة الملف
+B03-247	hrms		Fill the form and save it	قم بتعبئة النموذج وحفظه
+B03-248	hrms		Filled	مشغولة
+B03-249	hrms		Filter Employees	تصفية الموظفين

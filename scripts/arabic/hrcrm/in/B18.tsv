@@ -1,0 +1,230 @@
+B18-000	crm		Pause the run	
+B18-001	crm		Configure action	
+B18-002	crm		Trigger record	
+B18-003	crm		Output of {0}	
+B18-004	crm		Nothing here	
+B18-005	crm		Wait for {0}	
+B18-006	crm		gives up after {0} {1}	
+B18-007	crm		{0} is not {1}	
+B18-008	crm		{0} is none of {1}	
+B18-009	crm		{0} is empty	
+B18-010	crm		Insert field	
+B18-011	crm		Date Offset	
+B18-012	crm		Untitled automation	
+B18-013	crm		Automation title	
+B18-014	crm		(required)	
+B18-015	crm		Unsaved	
+B18-016	crm		Save the flow before testing it.	
+B18-017	crm		Close inspector	
+B18-018	crm		Open inspector	
+B18-019	crm		Editor	
+B18-020	crm		Workflow Automation	
+B18-021	crm		Delete trigger	
+B18-022	crm		Delete step	
+B18-023	crm		Are you sure you want to delete the trigger and all workflow steps?	
+B18-024	crm		Are you sure you want to delete this step?	
+B18-025	crm		Automation saved	
+B18-026	crm		Could not save automation	
+B18-027	crm		Back to automations	
+B18-028	crm		Record is created	
+B18-029	crm		Start a run whenever a new record is created.	
+B18-030	crm		Record is updated	
+B18-031	crm		Start a run whenever an existing record is saved.	
+B18-032	crm		Field value changes	
+B18-033	crm		Watch one field and run when it moves to a new value.	
+B18-034	crm		Record is deleted	
+B18-035	crm		Start a run just after a record is deleted.	
+B18-036	crm		Record is submitted	
+B18-037	crm		Start a run when a submittable record is submitted.	
+B18-038	crm		Record is cancelled	
+B18-039	crm		Start a run when a submitted record is cancelled.	
+B18-040	crm		Launch manually	
+B18-041	crm		Run only when someone starts it from a record.	
+B18-042	crm		On a schedule	
+B18-043	crm		Run on a repeating schedule you define with cron.	
+B18-044	crm		On a date	
+B18-045	crm		Run before or after a date stored on the record.	
+B18-046	crm		Custom event	
+B18-047	crm		Run when the app raises a named event you pick.	
+B18-048	crm		All filters must match.	
+B18-049	crm		Python, evaluated against doc, target and context.	
+B18-050	crm		Not something filters can express. Edit it below.	
+B18-051	crm		Select users	
+B18-052	crm		doc.status == 'Qualified'	
+B18-053	crm		Belonging to	
+B18-054	crm		Choose what this step does	
+B18-055	crm		Record	
+B18-056	crm		Only run when	
+B18-057	crm		Step name	
+B18-058	crm		Names this step in run logs and in its result path.	
+B18-059	crm		Name the result	
+B18-060	crm		Lets a later step act on what this one produced.	
+B18-061	crm		Available to later steps	
+B18-062	crm		<step key>	
+B18-063	crm		Click to rename	
+B18-064	crm		Required by the record	
+B18-065	crm		Guests can't see {0} records yet. Open to grant access.	
+B18-066	crm		Edit field	
+B18-067	crm		Required	
+B18-068	crm		This field is required by the record and can't be made optional. Remove it to move it to hidden fields.	
+B18-069	crm		Helper text under the field (optional)	
+B18-070	crm		Conditional logic	
+B18-071	crm		Frappe expression referencing other fields as doc.<fieldname>, e.g. eval:doc.country == 'India'. Leave blank for no condition.	
+B18-072	crm		Visible if	
+B18-073	crm		Mandatory if	
+B18-074	crm		Read-only if	
+B18-075	crm		Guests can't see {0} records. Grant select access to list them publicly.	
+B18-076	crm		Grant Access	
+B18-077	crm		Form title	
+B18-078	crm		Add a description to help people fill out this form	
+B18-079	crm		Section title	
+B18-080	crm		Search fields…	
+B18-081	crm		Hidden required fields	
+B18-082	crm		These fields aren't shown to users. Default values are used when the form is submitted.	
+B18-083	crm		Default value	
+B18-084	crm		Set a default value for each field to publish this form.	
+B18-085	crm		Form details	
+B18-086	crm		Basic settings for this form.	
+B18-087	crm		Maps to	
+B18-088	crm		Shown after a successful submission	
+B18-089	crm		https://example.com/thank-you	
+B18-090	crm		Send visitors here after they submit. Leave blank to show the success message.	
+B18-091	crm		This form isn’t published yet. Turn on Publish to make the link and embeds live.	
+B18-092	crm		Send people straight to the hosted form.	
+B18-093	crm		Embed	
+B18-094	crm		Drop the form into your own website.	
+B18-095	crm		Sandboxed in a frame. Simplest, but a fixed height and its own styling.	
+B18-096	crm		Allowed domains	
+B18-097	crm		Sites where this form may be embedded, one per line. Browsers block the iframe on any site not listed here.	
+B18-098	crm		Not a valid domain and will be ignored: {0}	
+B18-099	crm		No domains added. The embed will only work on this site until you add one.	
+B18-100	crm		Thank you!	
+B18-101	crm		Preview again	
+B18-102	crm		Select an option	
+B18-103	crm		Add fields to see them here.	
+B18-104	crm		Guests can now select {0} records.	
+B18-105	crm		Could not grant guest access.	
+B18-106	crm		Form updated	
+B18-107	crm		A section can have up to {0} columns	
+B18-108	crm		{0} moved to hidden required fields. Set a default value.	
+B18-109	crm		Change form type?	
+B18-110	crm		Switching to {0} will remove {1} field(s) that don't exist on {0}. This can't be undone.	
+B18-111	crm		Change & remove fields	
+B18-112	crm		{0} field(s) removed. Not available on {1}.	
+B18-113	crm		Set a default value for hidden required field(s): {0}	
+B18-114	crm		Could not save	
+B18-115	crm		Capture leads and deals from public forms you embed on your website.	
+B18-116	crm		No web forms yet	
+B18-117	crm		Create one to start capturing leads.	
+B18-118	crm		New form	
+B18-119	crm		Contact sales	
+B18-120	crm		Create form	
+B18-121	crm		Title and route are required	
+B18-122	crm		Form created	
+B18-123	crm		Could not create form	
+B18-124	crm		Form published	
+B18-125	crm		Form unpublished	
+B18-126	crm		Could not update form	
+B18-127	crm		Form deleted	
+B18-128	crm		Set status	
+B18-129	crm		Availability	
+B18-130	crm		Set your availability so your team knows when you're reachable.	
+B18-131	crm		Profile updated successfully	
+B18-132	crm		Enrichment is off. These rules apply once it is turned on.	
+B18-133	crm		Social profile rules	
+B18-134	crm		Add social rule	
+B18-135	crm		Platform	
+B18-136	crm		Could not load social rules	
+B18-137	crm		No social rules yet	
+B18-138	crm		Add one to tell enrichment which profile links to look for.	
+B18-139	crm		e.g. mastodon\\\\.social/@\\\\w+	
+B18-140	crm		+{0} more pattern(s) on this rule	
+B18-141	crm		Industry rules	
+B18-142	crm		Add industry rule	
+B18-143	crm		Keywords	
+B18-144	crm		Could not load industry rules	
+B18-145	crm		No industry rules yet	
+B18-146	crm		Add one to tell enrichment which keywords point at which industry.	
+B18-147	crm		New industry, created on save	
+B18-148	crm		Keywords, comma separated	
+B18-149	crm		+{0} more keyword(s) on this rule	
+B18-150	crm		Delete this rule?	
+B18-151	crm		It will be removed when you click Update.	
+B18-152	crm		Enrichment Settings	
+B18-153	crm		Set up enrichment availability and match website data to CRM fields.	
+B18-154	crm		Could not save settings	
+B18-155	crm		Fix the highlighted fields before saving	
+B18-156	crm		Some changes could not be saved	
+B18-157	crm		Showing the first {0} rules	
+B18-158	crm		{0}. Save to try deleting it again.	
+B18-159	crm		Could not add social rule	
+B18-160	crm		Could not save social rule	
+B18-161	crm		Could not delete social rule	
+B18-162	crm		Platform is required	
+B18-163	crm		A rule for {0} already exists	
+B18-164	crm		Pattern is required	
+B18-165	crm		Enable enrichment	
+B18-166	crm		Fill in company details on Leads, Deals and Organizations from their website.	
+B18-167	crm		Maximum pages	
+B18-168	crm		Maximum number of pages that can be crawled during a single enrichment run.	
+B18-169	crm		Automatically enrich new Leads, Deals and Organizations in the background when they have a website. When off, use the Enrich button on the record.	
+B18-170	crm		Could not add industry rule	
+B18-171	crm		Could not save industry rule	
+B18-172	crm		Could not delete industry rule	
+B18-173	crm		Industry is required	
+B18-174	crm		At least one keyword is required	
+B18-175	crm		Are you sure you want to remove {0} from the hierarchy?	
+B18-176	crm		Sales hierarchy disabled	
+B18-177	crm		Sales hierarchy enabled	
+B18-178	crm		Assignment rule deleted	
+B18-179	crm		Assignment rule duplicated	
+B18-180	crm		Assignment rule {0} updated	
+B18-181	crm		Auto-assign leads/deals to the right sales user based on predefined conditions.	
+B18-182	crm		{0} routing	
+B18-183	crm		Choose how {0} are assigned among the selected assignees.	
+B18-184	crm		Choose which {0} are affected by this assignment rule.	
+B18-185	crm		Assign condition is required	
+B18-186	crm		Assign conditions are invalid	
+B18-187	crm		Unassign conditions are invalid	
+B18-188	crm		Assignment rule created	
+B18-189	crm		Assignment rule updated	
+B18-190	crm		Configure telephony settings for your CRM.	
+B18-191	crm		Default calling medium for logged-in user	
+B18-192	crm		Personal Mobile Number	
+B18-193	crm		Enter Personal Mobile Number	
+B18-194	crm		Configure your Twilio telephony integration settings here	
+B18-195	crm		Configure your Exotel telephony integration settings here	
+B18-196	crm		Select a Twilio app for your CRM	
+B18-197	crm		Add, edit, and manage sources for automatic lead syncing to your CRM.	
+B18-198	crm		Error updating lead sync source	
+B18-199	crm		Lead sync source created successfully	
+B18-200	crm		Error creating lead sync source	
+B18-201	crm		Sync successful!	
+B18-202	crm		Error syncing lead	
+B18-203	crm		Add, edit, and manage email templates for various CRM communications.	
+B18-204	crm		Template deleted successfully	
+B18-205	crm		<p>Dear {{ lead_name }},</p>\\n\\n<p>This is a reminder for the payment of {{ grand_total }}.</p>\\n\\n<p>Thanks,</p>\\n<p>Frappé</p>	
+B18-206	crm		Dear {{ lead_name }}, \\n\\nThis is a reminder for the payment of {{ grand_total }}. \\n\\nThanks, \\nFrappé	
+B18-207	crm		Table MultiSelect requires a Table with at least one Link field	
+B18-208	crm		Value already exists	
+B18-209	crm		Call connected, but the call log could not be saved. Please contact your administrator.	
+B18-210	crm		Mobile number should be a number	
+B18-211	crm		This note is empty.	
+B18-212	crm		Failed to update {0} record(s): {1}	
+B18-213	crm		Bulk operation is enqueued in background. Failures, if any, are recorded in Error Log.	
+B18-214	crm		Current icon	
+B18-215	crm		Replace with an icon...	
+B18-216	crm		Select an icon...	
+B18-217	crm		Recording not available	
+B18-218	crm		Edit deal's mandatory fields layout	
+B18-219	crm		Create {0}	
+B18-220	crm		Could not create document	
+B18-221	crm		Could not update document	
+B18-222	crm		Please provide a reason for marking this {0} as lost	
+B18-223	crm		Add your first lead	
+B18-224	crm		Schedule a follow-up task	
+B18-225	crm		{0} overdue	
+B18-226	crm		Search records or type a command...	
+B18-227	crm		Searching...	
+B18-228	crm		No results for "{0}"	
+B18-229	crm		Type to search	

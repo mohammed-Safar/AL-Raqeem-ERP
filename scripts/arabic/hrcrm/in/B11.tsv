@@ -1,0 +1,250 @@
+B11-000	crm		Currency	العملة
+B11-001	crm		Currency Precision	دقة العملة
+B11-002	crm		Currency set as {0} successfully	
+B11-003	crm		Current Password	
+B11-004	crm		Current pipeline distribution	
+B11-005	crm		Custom Actions	
+B11-006	crm		Custom Branding	
+B11-007	crm		Custom Fields	
+B11-008	crm		Custom List Actions	
+B11-009	crm		Custom Statuses	
+B11-010	crm		Customer Created Successfully	
+B11-011	crm		Customization	التخصيص
+B11-012	crm		Customize Quick Filters	تخصيص الفلاتر السريعة
+B11-013	crm		Daily performance of leads, deals, and wins	
+B11-014	crm		Dashboard Currency	
+B11-015	crm		Dashboard number cards & charts will show currency in the selected format. Once set, cannot be edited.	
+B11-016	crm		Dashboard settings updated successfully	
+B11-017	crm		Data	البيانات
+B11-018	crm		Data Fields	
+B11-019	crm		Data Import	استيراد البيانات
+B11-020	crm		Date & Time	
+B11-021	crm		Date Format	تنسيق التاريخ
+B11-022	crm		Day	يوم
+B11-023	crm		Deal	
+B11-024	crm		Deal Owner	صاحب الصفقة
+B11-025	crm		Deal Status	
+B11-026	crm		Deal Statuses	
+B11-027	crm		Deal Value	
+B11-028	crm		Deal generation channel analysis	
+B11-029	crm		Deal status is required	
+B11-030	crm		Deal value	
+B11-031	crm		Deals	
+B11-032	crm		Deals by Ongoing & Won Stage	
+B11-033	crm		Deals by Salesperson	
+B11-034	crm		Deals by Source	
+B11-035	crm		Deals by Stage	
+B11-036	crm		Deals by Territory	
+B11-037	crm		Deals by ongoing & won stage	
+B11-038	crm		Deals by salesperson	
+B11-039	crm		Deals by source	
+B11-040	crm		Deals by stage	
+B11-041	crm		Deals by territory	
+B11-042	crm		Dear {{ lead_name }}, \\n\\nThis is a reminder for the payment of {{ grand_total }}. \\n\\nThanks, \\nFrappé	
+B11-043	crm		Declined	
+B11-044	crm		Default	الافتراضي
+B11-045	crm		Default Calendar View	
+B11-046	crm		Default Calling Medium for Logged In User	
+B11-047	crm		Default Event Notifications	
+B11-048	crm		Default Inbox	علبة الوارد الافتراضية
+B11-049	crm		Default Medium	
+B11-050	crm		Default Priority	الأولوية الافتراضية
+B11-051	crm		Default Sending & Inbox	
+B11-052	crm		Default Service Level Agreement already exists for {0}	
+B11-053	crm		Default View	العرض الافتراضي
+B11-054	crm		Default calling medium set successfully to {0}	
+B11-055	crm		Default statuses, custom fields and layouts restored successfully.	
+B11-056	crm		Defines the default currency for all records, can be overridden at the field level	
+B11-057	crm		Delete	حذف
+B11-058	crm		Delete & Restore	
+B11-059	crm		Delete All	حذف الكل
+B11-060	crm		Delete Contact	
+B11-061	crm		Delete Event	
+B11-062	crm		Delete Invitation	
+B11-063	crm		Delete Linked Item	
+B11-064	crm		Delete Only User	
+B11-065	crm		Delete Organization	
+B11-066	crm		Delete Task	
+B11-067	crm		Delete View	
+B11-068	crm		Delete or unlink linked documents	
+B11-069	crm		Delete or unlink these linked documents before deleting this document	
+B11-070	crm		Delete {0} Item(s)	
+B11-071	crm		Delete {0} items	
+B11-072	crm		Deleting note...	
+B11-073	crm		Demo data restored successfully.	
+B11-074	crm		Description is required	
+B11-075	crm		Desk	مكتب
+B11-076	crm		Detected On	
+B11-077	crm		Device	
+B11-078	crm		Disable ERPNext Integration	
+B11-079	crm		Disable Sales Hierarchy	
+B11-080	crm		Disabled	معطل
+B11-081	crm		Discard	تجاهل
+B11-082	crm		Discard Changes	
+B11-083	crm		Discard Unsaved Changes?	
+B11-084	crm		Discount %	الخصم %
+B11-085	crm		Dismissed	
+B11-086	crm		Display format for dates across the system	
+B11-087	crm		DocType	نوع المستند
+B11-088	crm		Doctype is required	
+B11-089	crm		Document Not Found	
+B11-090	crm		Document created successfully	
+B11-091	crm		Document does not exist	
+B11-092	crm		Document not found	
+B11-093	crm		Document updated successfully	
+B11-094	crm		Documentation	الوثائق
+B11-095	crm		Donut Chart	
+B11-096	crm		Drag & Drop files here or upload from	
+B11-097	crm		Drag a section or a field here to get started	
+B11-098	crm		Dropdown items	
+B11-099	crm		Duplicate Assignment Rule	
+B11-100	crm		Duplicate Event	
+B11-101	crm		Duplicate SLA Policy	
+B11-102	crm		Duplicate Template	
+B11-103	crm		Duplicate View	
+B11-104	crm		Duplicate Workday found: {0}. Each Workday should be unique.	
+B11-105	crm		Duplicate an Event	
+B11-106	crm		ERPNext CRM Settings	
+B11-107	crm		ERPNext Site API's	
+B11-108	crm		ERPNext Site URL	
+B11-109	crm		ERPNext custom fields not created	
+B11-110	crm		ERPNext integration is active. Create an Item in ERPNext and it will appear in CRM Product automatically.	
+B11-111	crm		ERPNext integration must be enabled on the same site	
+B11-112	crm		ERPNext is not installed in the current site	
+B11-113	crm		ERPNext is not installed on this site either install it or enter the URL of your ERPNext site to connect	
+B11-114	crm		ERPNext is not integrated with the CRM	
+B11-115	crm		Edit Call Log	
+B11-116	crm		Edit Data Fields Layout	
+B11-117	crm		Edit Email	
+B11-118	crm		Edit Event	
+B11-119	crm		Edit Field Layout	
+B11-120	crm		Edit Fields Layout	
+B11-121	crm		Edit Grid Fields	
+B11-122	crm		Edit Grid Fields Layout	
+B11-123	crm		Edit Grid Row Fields Layout	
+B11-124	crm		Edit Quick Entry Layout	
+B11-125	crm		Edit Response & Resolution	
+B11-126	crm		Edit Row	
+B11-127	crm		Edit Task	
+B11-128	crm		Edit View	
+B11-129	crm		Edit Workday	
+B11-130	crm		Edit an Event	
+B11-131	crm		Editing Event	
+B11-132	crm		Editing Row {0}	
+B11-133	crm		Email	البريد الإلكتروني
+B11-134	crm		Email Account	حساب البريد الإلكتروني
+B11-135	crm		Email Account created successfully	
+B11-136	crm		Email Account updated successfully	
+B11-137	crm		Email Accounts	
+B11-138	crm		Email Already Exists	
+B11-139	crm		Email Communication	
+B11-140	crm		Email From Lead	
+B11-141	crm		Email ID is required	
+B11-142	crm		Email Settings	إعدادات البريد الإلكتروني
+B11-143	crm		Email Template	قالب البريد الإلكتروني
+B11-144	crm		Email Templates	قوالب البريد الإلكتروني
+B11-145	crm		Email already exists	
+B11-146	crm		Email sent	
+B11-147	crm		Email settings updated successfully	
+B11-148	crm		Emails	البريد الإلكتروني
+B11-149	crm		Emails & Signature	
+B11-150	crm		Empty - Choose a field to filter by	
+B11-151	crm		Empty - Choose a field to sort by	
+B11-152	crm		Enable Exotel integration to make and receive calls directly from your CRM	
+B11-153	crm		Enable Forecasting	
+B11-154	crm		Enable Sales Hierarchy	
+B11-155	crm		Enable Sales Hierarchy Permissions	
+B11-156	crm		Enable Twilio integration to make and receive calls directly from your CRM	
+B11-157	crm		Enable call recording for incoming and outgoing calls	
+B11-158	crm		Enable the integration to create quotations and auto create customers in ERPNext.	
+B11-159	crm		Enabled?	تمكين?
+B11-160	crm		End Date cannot be before start date	
+B11-161	crm		End Time	وقت الانتهاء
+B11-162	crm		End Time Should Be After Start Time	
+B11-163	crm		End Time is required	
+B11-164	crm		End Time must be after Start Time	
+B11-165	crm		End Time must be after Start Time for: {0}	
+B11-166	crm		Enter Access Key	
+B11-167	crm		Enter Access Token	
+B11-168	crm		Enter Brand Name	
+B11-169	crm		Enter Exotel Number	
+B11-170	crm		Enter Personal Mobile No.	
+B11-171	crm		Enter Source Name	
+B11-172	crm		Enter Twilio Number	
+B11-173	crm		Enter Value	أدخل القيمة
+B11-174	crm		Enter your Facebook Access Token	
+B11-175	crm		Enter your personal mobile number used by Exotel to make calls	
+B11-176	crm		Error Occurred	حدث خطأ
+B11-177	crm		Error Syncing Lead	
+B11-178	crm		Error converting to deal: {0}	
+B11-179	crm		Error creating Lead Sync Source	
+B11-180	crm		Error creating lead: {0}	
+B11-181	crm		Error occurred	
+B11-182	crm		Error syncing leads	
+B11-183	crm		Error updating Lead Sync Source	
+B11-184	crm		Error updating field	
+B11-185	crm		Event ID is required	
+B11-186	crm		Event Notifications	إشعارات الأحداث
+B11-187	crm		Event Title	
+B11-188	crm		Event created successfully	
+B11-189	crm		Event deleted successfully	
+B11-190	crm		Every 10 Minutes	
+B11-191	crm		Every 15 Minutes	
+B11-192	crm		Every 5 Minutes	
+B11-193	crm		Exact	
+B11-194	crm		Exchange Rate	سعر الصرف
+B11-195	crm		Exchange Rate Provider	
+B11-196	crm		Exotel	
+B11-197	crm		Exotel Exception	
+B11-198	crm		Exotel Integration Disabled	
+B11-199	crm		Exotel Number	
+B11-200	crm		Exotel Number Missing	
+B11-201	crm		Exotel Number {0} is not valid	
+B11-202	crm		Exotel Settings	
+B11-203	crm		Expected Closure Date	
+B11-204	crm		Expected Deal Value	
+B11-205	crm		Expected closure date is required.	
+B11-206	crm		Expected deal value is required.	
+B11-207	crm		Export	تصدير
+B11-208	crm		Export Type	نوع التصدير
+B11-209	crm		Export all {0} record(s)	
+B11-210	crm		FCRM Note	
+B11-211	crm		FCRM Settings	
+B11-212	crm		FROM	
+B11-213	crm		Facebook Form ID	
+B11-214	crm		Facebook Lead Form	
+B11-215	crm		Facebook Lead Form Question	
+B11-216	crm		Facebook Lead ID	
+B11-217	crm		Facebook Page	
+B11-218	crm		Facebook/Instagram Ads	
+B11-219	crm		Failed Lead Sync Log	
+B11-220	crm		Failed to Add Users	
+B11-221	crm		Failed to add reaction to the message	
+B11-222	crm		Failed to capture Twilio recording	
+B11-223	crm		Failed to create Email Account, Invalid credentials	
+B11-224	crm		Failed to create template	
+B11-225	crm		Failed to delete comment	
+B11-226	crm		Failed to delete lead sync source	
+B11-227	crm		Failed to delete note	
+B11-228	crm		Failed to delete template	
+B11-229	crm		Failed to fetch exchange rate from {0} to {1} on {2}. Please check your internet connection or try again later.	
+B11-230	crm		Failed to load fields layout	
+B11-231	crm		Failed to load file-based form controller: {0}	
+B11-232	crm		Failed to load form controller: {0}	
+B11-233	crm		Failed to rename template	
+B11-234	crm		Failed to save settings	
+B11-235	crm		Failed to save workday: {0}	
+B11-236	crm		Failed to send WhatsApp message	
+B11-237	crm		Failed to send WhatsApp template	
+B11-238	crm		Failed to send comment!	
+B11-239	crm		Failed to send email!	
+B11-240	crm		Failed to start sync	
+B11-241	crm		Failed to update Email Account, Invalid credentials	
+B11-242	crm		Failed to update Twilio call status	
+B11-243	crm		Failed to update attending status	
+B11-244	crm		Failed to update comment	
+B11-245	crm		Failed to update password	
+B11-246	crm		Failed to update setting	
+B11-247	crm		Failed to update source	
+B11-248	crm		Failed to update template	
+B11-249	crm		Failure Logs	

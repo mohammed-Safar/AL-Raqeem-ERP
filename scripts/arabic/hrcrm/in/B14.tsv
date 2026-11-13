@@ -1,0 +1,250 @@
+B14-000	crm		Salesperson	
+B14-001	crm		Salutation	اللقب
+B14-002	crm		Saturday	السبت
+B14-003	crm		Save	حفظ
+B14-004	crm		Save Changes	
+B14-005	crm		Saved View	
+B14-006	crm		Saved Views	
+B14-007	crm		Schedule a task...	
+B14-008	crm		Schedule an Event	
+B14-009	crm		Search Template	
+B14-010	crm		Search User	
+B14-011	crm		Search users	
+B14-012	crm		See All Participants	
+B14-013	crm		Select Currency	اختر العملة
+B14-014	crm		Select Holiday List	
+B14-015	crm		Select Medium	
+B14-016	crm		Select Priority	
+B14-017	crm		Select Provider	
+B14-018	crm		Select Range	
+B14-019	crm		Select Source Type	
+B14-020	crm		Select Type	
+B14-021	crm		Select Workday	
+B14-022	crm		Select a Twilio App for your CRM	
+B14-023	crm		Select a Value	
+B14-024	crm		Select all that apply	
+B14-025	crm		Select an Option	
+B14-026	crm		Select the assignees for {0}.	
+B14-027	crm		Select the deal status to trigger the auto customer creation in ERPNext	
+B14-028	crm		Select the default view for your calendar. This will be the initial view when you open the calendar	
+B14-029	crm		Select whether to display time with or without seconds	
+B14-030	crm		Select your ERPNext company to connect with	
+B14-031	crm		Send	إرسال
+B14-032	crm		Send Invites	
+B14-033	crm		Send Invites To	إرسال دعوات إلى
+B14-034	crm		Send Template	
+B14-035	crm		Send an Email	
+B14-036	crm		Send email	
+B14-037	crm		Sending comment...	
+B14-038	crm		Sending email...	
+B14-039	crm		Separator	فاصل
+B14-040	crm		Service Level Agreement	اتفاقية مستوى الخدمة
+B14-041	crm		Service Provider	مزود الخدمة
+B14-042	crm		Set As Default	
+B14-043	crm		Set As Primary	
+B14-044	crm		Set Currency	
+B14-045	crm		Set Default Priority	
+B14-046	crm		Set First Name	
+B14-047	crm		Set Location	
+B14-048	crm		Set all as private	
+B14-049	crm		Set all as public	
+B14-050	crm		Set an Organization	
+B14-051	crm		Set as Primary Contact	
+B14-052	crm		Set as default SLA	
+B14-053	crm		Set location…	
+B14-054	crm		Set once the first admin completes the onboarding persona questionnaire	
+B14-055	crm		Set the Exotel number to be used for outgoing calls.	
+B14-056	crm		Set the Twilio number to be used for outgoing calls.	
+B14-057	crm		Set the name of your brand. Appears in the left sidebar.	
+B14-058	crm		Set up my sales pipeline	
+B14-059	crm		Set working days, hours, and holidays by selecting a predefined schedule or creating a new one	
+B14-060	crm		Setting Up	
+B14-061	crm		Setting disabled successfully	
+B14-062	crm		Setting enabled successfully	
+B14-063	crm		Setting up Frappe Mail requires you to have an API key and API Secret of your email account. Read more	
+B14-064	crm		Setting up GMail requires you to enable two factor authentication and app specific passwords. Read more	
+B14-065	crm		Setting up Outlook requires you to enable two factor authentication and app specific passwords. Read more	
+B14-066	crm		Setting up Sendgrid requires you to enable two factor authentication and app specific passwords. Read more	
+B14-067	crm		Setting up Sparkpost requires you to enable two factor authentication and app specific passwords. Read more	
+B14-068	crm		Setting up Yahoo requires you to enable two factor authentication and app specific passwords. Read more	
+B14-069	crm		Setting up Yandex requires you to enable two factor authentication and app specific passwords. Read more	
+B14-070	crm		Setting updated successfully	
+B14-071	crm		Settings saved	
+B14-072	crm		Settings updated successfully	
+B14-073	crm		Setup Email	
+B14-074	crm		Setup the Exchange Rate Provider other than 'Frankfurter' in settings, as default provider does not support currency conversion for {0} to {1}.	
+B14-075	crm		Setup your password	
+B14-076	crm		Show Border	
+B14-077	crm		Show Label	
+B14-078	crm		Show Less	
+B14-079	crm		Show Password	
+B14-080	crm		Show timestamps in the activity timeline as relative time (5 mins ago) or an exact date & time	
+B14-081	crm		Side Panel	
+B14-082	crm		Sidebar Items	عناصر الشريط الجانبي
+B14-083	crm		Simple Python Expression, Example: doc.status == 'Open' and doc.lead_source == 'Ads'	
+B14-084	crm		Since you removed {0} from the assignee, the {0} has also been removed.	
+B14-085	crm		Since you removed {0} from the assignee, the {0} has been changed to the next available assignee {1}.	
+B14-086	crm		Site URL	
+B14-087	crm		Site URL is required	
+B14-088	crm		Site connection validated	
+B14-089	crm		Skip for now	
+B14-090	crm		Some error occurred while creating SLA Policy	
+B14-091	crm		Some error occurred while renaming SLA policy	
+B14-092	crm		Some error occurred while renaming assignment rule	
+B14-093	crm		Some error occurred while updating SLA policy	
+B14-094	crm		Some error occurred while updating assignment rule	
+B14-095	crm		Some users could not be added	
+B14-096	crm		Something went wrong	حدث خطأ ما
+B14-097	crm		Something went wrong, try again later	
+B14-098	crm		Sort	
+B14-099	crm		Source	المصدر
+B14-100	crm		Source Name	اسم المصدر
+B14-101	crm		Source Type	نوع المصدر
+B14-102	crm		Source disabled successfully	
+B14-103	crm		Source enabled successfully	
+B14-104	crm		Spacer	فاصل
+B14-105	crm		Spreadsheets	
+B14-106	crm		Standard Form Scripts can not be modified, duplicate the Form Script instead.	
+B14-107	crm		Standard Views	
+B14-108	crm		Start & End Time Are Required	
+B14-109	crm		Start Date	تاريخ البدء
+B14-110	crm		Start Date cannot be after end date	
+B14-111	crm		Start Time is required	
+B14-112	crm		Start with sample 10 leads	
+B14-113	crm		Status	الحالة
+B14-114	crm		Status Change Log	
+B14-115	crm		Status is required	
+B14-116	crm		Subject is required	
+B14-117	crm		Subject: {0}	
+B14-118	crm		Sunday	الأحد
+B14-119	crm		Support / Sales	
+B14-120	crm		Switch between outgoing email accounts when sending emails	
+B14-121	crm		Sync Now	مزامنة الآن
+B14-122	crm		Sync Products with ERPNext	
+B14-123	crm		Sync Successful!	
+B14-124	crm		Sync Successful, CRM Lead: {0}!	
+B14-125	crm		Sync your Contacts, Email and Calendars	
+B14-126	crm		Syncing	المزامنة
+B14-127	crm		Syncing started in background	
+B14-128	crm		System Configuration	
+B14-129	crm		System Defaults	
+B14-130	crm		System Manager	مدير النظام
+B14-131	crm		TO	
+B14-132	crm		Take a note...	
+B14-133	crm		Tasks	المهام
+B14-134	crm		Telephony	
+B14-135	crm		Telephony Medium	
+B14-136	crm		Telephony Settings	
+B14-137	crm		Template Deleted Successfully	
+B14-138	crm		Template created successfully	
+B14-139	crm		Template disabled successfully	
+B14-140	crm		Template enabled successfully	
+B14-141	crm		Template renamed successfully	
+B14-142	crm		Template updated successfully	
+B14-143	crm		Templates	القوالب
+B14-144	crm		Territories	
+B14-145	crm		Thanks	با تشکر
+B14-146	crm		The Condition '{0}' is invalid: {1}	
+B14-147	crm		The holiday on {0} is not between From Date and To Date	عطلة على {0} ليست بين من تاريخ وإلى تاريخ
+B14-148	crm		The rate used to convert the deal’s currency to your crm's base currency (set in CRM Settings). It is set once when the currency is first added and doesn't change automatically.	
+B14-149	crm		The rate used to convert the organization’s currency to your crm's base currency (set in CRM Settings). It is set once when the currency is first added and doesn't change automatically.	
+B14-150	crm		There can only be one default priority in Priorities table	
+B14-151	crm		This Month	الشهر الجاري
+B14-152	crm		This Week	هذا الأسبوع
+B14-153	crm		This Year	هذا العام
+B14-154	crm		This column contains fields. Are you sure you want to remove it?	
+B14-155	crm		This field is required	
+B14-156	crm		This is my first CRM	
+B14-157	crm		This section contains fields. Are you sure you want to remove it?	
+B14-158	crm		This section is not editable	
+B14-159	crm		This will delete selected items and items linked to it, are you sure?	
+B14-160	crm		This will delete selected items and unlink linked items to it, are you sure?	
+B14-161	crm		This will restore (if not exist) all the default statuses, custom fields and layouts. Delete & Restore will delete default layouts and then restore them.	
+B14-162	crm		This will restore the demo data. Are you sure you want to continue?	
+B14-163	crm		Thursday	الخميس
+B14-164	crm		Time Format	تنسيق الوقت
+B14-165	crm		Time before the event when a reminder notification will be sent by default. This will be applied to all events unless a custom notification is set for a specific event.	
+B14-166	crm		Timeline Sort Order	
+B14-167	crm		Timeline Timestamp Format	
+B14-168	crm		Timeline sort order	
+B14-169	crm		Timeline timestamp format	
+B14-170	crm		Timespan	الفترة الزمنية
+B14-171	crm		Timezone	
+B14-172	crm		Title Field	حقل العنوان
+B14-173	crm		Title is required	
+B14-174	crm		To	إلى
+B14-175	crm		To Date	إلى تاريخ
+B14-176	crm		To Date cannot be before From Date	(الى تاريخ) لا يمكن ان يكون قبل (من تاريخ)
+B14-177	crm		To Number	
+B14-178	crm		To Type	
+B14-179	crm		To know more about setting up email accounts, click	
+B14-180	crm		Today	اليوم
+B14-181	crm		Todo	
+B14-182	crm		Toggle on for Preview	
+B14-183	crm		Too many failed attempts. Please try again after some time.	
+B14-184	crm		Total Holidays	إجمالي العطلات
+B14-185	crm		Total Leads	
+B14-186	crm		Total after discount	
+B14-187	crm		Total leads	
+B14-188	crm		Total number of leads	
+B14-189	crm		Total number of non won/lost deals	
+B14-190	crm		Total number of won deals based on its closure date	
+B14-191	crm		Traceback	تتبع الأخطاء
+B14-192	crm		Tuesday	الثلاثاء
+B14-193	crm		Turn into a Group	
+B14-194	crm		TwiML SID	
+B14-195	crm		Twilio	
+B14-196	crm		Twilio API credential creation error.	
+B14-197	crm		Twilio App Name	
+B14-198	crm		Twilio Apps	
+B14-199	crm		Twilio Integration Disabled	
+B14-200	crm		Twilio Number	
+B14-201	crm		Twilio Settings	
+B14-202	crm		Twilio configuration is missing	
+B14-203	crm		Type	النوع
+B14-204	crm		Type an email address to add attendee	
+B14-205	crm		Type your message here...	
+B14-206	crm		Unable to connect to Twilio account to fetch applications.	
+B14-207	crm		Unassign Conditions are invalid	
+B14-208	crm		Unassignment Condition	
+B14-209	crm		Unauthorized request	
+B14-210	crm		Uncollapsible	
+B14-211	crm		Ungroup Conditions	
+B14-212	crm		Unknown	غير معروف
+B14-213	crm		Unknown telephony medium: {0}	
+B14-214	crm		Unlink	
+B14-215	crm		Unlink & Delete	
+B14-216	crm		Unlink & Delete {0} Users	
+B14-217	crm		Unlink & Delete {0} items	
+B14-218	crm		Unlink All	
+B14-219	crm		Unlink Linked Item	
+B14-220	crm		Unlink {0} Item(s)	
+B14-221	crm		Unpin View	
+B14-222	crm		Unsaved Changes	التغييرات غير المحفوظة
+B14-223	crm		Untitled	
+B14-224	crm		Update	تحديث
+B14-225	crm		Update Account	
+B14-226	crm		Update Configuration	
+B14-227	crm		Update the modified timestamp on new email communication & comment for leads & deals	
+B14-228	crm		Update the modified timestamp on new email communication & comments for leads & deals	
+B14-229	crm		Update timestamp on new communication	تحديث الطابع الزمني للرسالة الجديدة
+B14-230	crm		Update {0} Records	
+B14-231	crm		Updated reports to	
+B14-232	crm		Upload Attachment	
+B14-233	crm		Upload Document	
+B14-234	crm		Upload Video	
+B14-235	crm		Uploading {0}%	
+B14-236	crm		Use ERPNext to Create Products	
+B14-237	crm		User Configuration	
+B14-238	crm		User Management	
+B14-239	crm		User Name	اسم المستخدم
+B14-240	crm		User added to hierarchy	
+B14-241	crm		User {0} cannot be removed as it has a Role Profile assigned to it.	
+B14-242	crm		User {0} has been removed	
+B14-243	crm		User {0} has been removed from CRM roles.	
+B14-244	crm		User {0} is already mapped to hierarchy node {1}.	
+B14-245	crm		Users Added Successfully	
+B14-246	crm		Users are required	
+B14-247	crm		Valid conditions are required	
+B14-248	crm		Validity	الصلاحية
+B14-249	crm		Value	القيمة

@@ -18,7 +18,7 @@
 	};
 
 	/* ---------- stock logo images -> inline mark ---------- */
-	const STOCK = /\/assets\/(erpnext\/images\/erpnext-(logo|favicon)|frappe\/images\/frappe-(framework-logo|favicon|logo))[^"']*|\/assets\/raqim_sales\/images\/raqeem-logo/;
+	const STOCK = /\/assets\/(erpnext\/images\/erpnext-(logo|favicon)|frappe\/images\/(frappe-(framework-logo|favicon|logo)|framework\.png))[^"']*|\/assets\/raqim_sales\/images\/raqeem-logo/;
 	function swap_images(root) {
 		(root || document).querySelectorAll("img").forEach((img) => {
 			if (img.dataset.rqLogo) return;

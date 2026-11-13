@@ -1,0 +1,250 @@
+B09-000	hrms		Unsettled Transactions	معاملات غير مسددة
+B09-001	hrms		Unsubmitted Appraisals	تقييمات غير مُقدَّمة
+B09-002	hrms		Untracked Hours	ساعات غير متتبعة
+B09-003	hrms		Untracked Hours (U)	ساعات غير متتبعة (غ)
+B09-004	hrms		Unused leaves	إجازات غير مستخدمة
+B09-005	hrms		Upcoming Holidays	العطلات القادمة
+B09-006	hrms		Upcoming Holidays Reminder	تذكير بالعطلات القادمة
+B09-007	hrms		Upcoming Shifts	الورديات القادمة
+B09-008	hrms		Update Expense	تحديث المصروف
+B09-009	hrms		Update Job Applicant	تحديث المتقدم للوظيفة
+B09-010	hrms		Update Progress	تحديث التقدم
+B09-011	hrms		Update Response	تحديث الرد
+B09-012	hrms		Update Salary Structures	تحديث هياكل الرواتب
+B09-013	hrms		Update Status	تحديث الحالة
+B09-014	hrms		Update Tax	تحديث الضريبة
+B09-015	hrms		Updated status from {0} to {1} for date {2} in the attendance record {3}	تم تحديث الحالة من {0} إلى {1} للتاريخ {2} في سجل الحضور {3}
+B09-016	hrms		Updated the Job Applicant status to {0}	تم تحديث حالة المتقدم للوظيفة إلى {0}
+B09-017	hrms		Updated the status of Job Offer {0} for the linked Job Applicant {1} to {2}	تم تحديث حالة عرض العمل {0} للمتقدم للوظيفة المرتبط {1} إلى {2}
+B09-018	hrms		Updated the status of linked Job Applicant {0} to {1}	تم تحديث حالة متقدم الوظيفة المرتبط {0} إلى {1}
+B09-019	hrms		Upload Attendance	رفع الحضور
+B09-020	hrms		Upload HTML	رفع HTML
+B09-021	hrms		Upload images or documents	ارفع الصور أو المستندات
+B09-022	hrms		Uploading...	جارٍ الرفع...
+B09-023	hrms		Upper Range	النطاق الأعلى
+B09-024	hrms		Used Leave(s)	الإجازات المستخدمة
+B09-025	hrms		Used Leaves	الإجازات المستخدمة
+B09-026	hrms		Vacancies	الشواغر
+B09-027	hrms		Vacancies cannot be lower than the current openings	لا يمكن أن تكون الوظائف الشاغرة أقل من الفتحات الحالية
+B09-028	hrms		Vacancies fulfilled	تم شغل الشواغر
+B09-029	hrms		Validate Attendance	التحقق من صحة الحضور
+B09-030	hrms		Validating Employee Attendance...	التحقق من صحة حضور الموظف ...
+B09-031	hrms		Value / Description	القيمة / الوصف
+B09-032	hrms		Value missing	القيمة مفقودة
+B09-033	hrms		Variable	متغير
+B09-034	hrms		Variable Based On Taxable Salary	متغير على أساس الخاضع للضريبة
+B09-035	hrms		Vegetarian	نباتي
+B09-036	hrms		Vehicle Expenses	مصروفات المركبات
+B09-037	hrms		Vehicle Log	دخول السيارة
+B09-038	hrms		Vehicle Service	خدمة المركبة
+B09-039	hrms		Vehicle Service Item	عنصر خدمة المركبة
+B09-040	hrms		View Goals	عرض الأهداف
+B09-041	hrms		View Leave History	عرض سجل الإجازات
+B09-042	hrms		View Salary Slips	عرض قسائم الرواتب
+B09-043	hrms		Violet	بنفسجي
+B09-044	hrms		WARNING: Loan Management module has been separated from ERPNext.	تحذير: تم فصل وحدة إدارة القروض عن ERPNext.
+B09-045	hrms		Warning: Insufficient leave balance for Leave Type {0} in this allocation.	تحذير: رصيد الإجازات غير كافٍ لنوع الإجازة {0} في هذا التخصيص.
+B09-046	hrms		Warning: Insufficient leave balance for Leave Type {0}.	تحذير: رصيد الإجازات غير كافٍ لنوع الإجازة {0}.
+B09-047	hrms		Warning: Leave application contains following block dates	تحذير: طلب اﻹجازة يحتوي على الايام التالية الّتي يمنع فيها اﻹجازة\\n<br>\\nWarning: Leave application contains following block dates
+B09-048	hrms		Warning: {0} already has an active Shift Assignment {1} for some/all of these dates.	تحذير: {0} لديه بالفعل تعيين مناوبة نشط {1} لبعض هذه التواريخ أو جميعها.
+B09-049	hrms		Website Listing	إدراج موقع الويب
+B09-050	hrms		Weekend Multiplier	معامل عطلة نهاية الأسبوع
+B09-051	hrms		Weightage (%)	الوزن (%)
+B09-052	hrms		When set to 'Inactive', employees with conflicting active shifts will not be excluded.	عند التعيين على 'غير نشط'، لن يتم استبعاد الموظفين الذين لديهم ورديات نشطة متعارضة.
+B09-053	hrms		Whereas allocation for Compensatory Leaves is automatically created or updated on submission of Compensatory Leave Request.	في حين يتم إنشاء تخصيص الإجازات التعويضية أو تحديثه تلقائياً عند تقديم طلب الإجازة التعويضية.
+B09-054	hrms		Why is this Candidate Qualified for this Position?	لماذا يُعد هذا المرشح مؤهلاً لهذا المنصب؟
+B09-055	hrms		Withheld	مقتطع
+B09-056	hrms		Work Anniversaries 	الذكرى السنوية للعمل 
+B09-057	hrms		Work Anniversary Reminder	تذكير بذكرى بدء العمل
+B09-058	hrms		Work End Date	تاريخ انتهاء العمل
+B09-059	hrms		Work Experience Calculation Method	طريقة حساب خبرة العمل
+B09-060	hrms		Work From Date	العمل من التاريخ
+B09-061	hrms		Work From Home	العمل من المنزل
+B09-062	hrms		Work References	المراجع المهنية
+B09-063	hrms		Work Summary for {0}	ملخص العمل ل {0}
+B09-064	hrms		Worked On Holiday	عملت في عطلة
+B09-065	hrms		Working Days	أيام العمل
+B09-066	hrms		Working Days and Hours	أيام العمل وساعاته
+B09-067	hrms		Working Hours Calculation Based On	ساعات العمل حساب على أساس
+B09-068	hrms		Working Hours Threshold for Absent	ساعات العمل عتبة الغياب
+B09-069	hrms		Working Hours Threshold for Half Day	ساعات العمل عتبة لمدة نصف يوم
+B09-070	hrms		Working hours below which Absent is marked. (Zero to disable)	ساعات العمل أدناه التي يتم وضع علامة الغائب. (صفر لتعطيل)
+B09-071	hrms		Working hours below which Half Day is marked. (Zero to disable)	ساعات العمل أدناه التي يتم وضع علامة نصف يوم. (صفر لتعطيل)
+B09-072	hrms		Workshop	ورشة عمل
+B09-073	hrms		Year To Date	من بداية العام حتى تاريخه
+B09-074	hrms		Year To Date(Company Currency)	من بداية السنة (عملة الشركة)
+B09-075	hrms		Yearly Amount	المبلغ السنوي
+B09-076	hrms		Yearly Benefit	الميزة السنوية
+B09-077	hrms		Yes, Proceed	نعم، متابعة
+B09-078	hrms		You are not authorized to approve leaves on Block Dates	غير مصرح لك الموافقة على المغادرات التي في التواريخ المحظورة
+B09-079	hrms		You are not present all day(s) between compensatory leave request days	أنت لست موجودًا طوال اليوم (الأيام) بين أيام طلب الإجازة التعويضية
+B09-080	hrms		You can not define multiple slabs if you have a slab with no lower and upper limits.	لا يمكنك تحديد عدة شرائح إذا كانت لديك شريحة بلا حد أدنى وحد أعلى.
+B09-081	hrms		You can not request for your Default Shift: {0}	لا يمكنك طلب التحول الافتراضي الخاص بك: {0}
+B09-082	hrms		You can only plan for upto {0} vacancies and budget {1} for {2} as per staffing plan {3} for parent company {4}.	يمكنك التخطيط فقط لما يصل إلى {0} من الشواغر وميزانية {1} لـ {2} وفقًا لخطة التوظيف {3} للشركة الأم {4}.
+B09-083	hrms		You can only submit Leave Encashment for a valid encashment amount	يمكنك فقط إرسال ترك الإلغاء لمبلغ سداد صالح
+B09-084	hrms		You can only upload JPG, PNG, PDF, TXT or Microsoft documents.	يمكنك رفع مستندات JPG أو PNG أو PDF أو TXT أو Microsoft فقط.
+B09-085	hrms		You cannot reverse more than the total LWP days {0}. You have already reversed {1} days for this employee.	لا يمكنك عكس أكثر من إجمالي أيام إجازة بدون راتب {0}. لقد قمت بعكس {1} يوم لهذا الموظف بالفعل.
+B09-086	hrms		You do not have permission to complete this action	ليست لديك صلاحية لإكمال هذا الإجراء
+B09-087	hrms		You have no advances	ليس لديك أي دفعات مقدمة
+B09-088	hrms		You have no leaves allocated	ليس لديك أي إجازات مخصصة
+B09-089	hrms		You have no notifications	ليس لديك أي إشعارات
+B09-090	hrms		You have no requests	ليس لديك أي طلبات
+B09-091	hrms		You have no upcoming holidays	ليس لديك أي عطلات قادمة
+B09-092	hrms		You have no upcoming shifts	ليس لديك أي ورديات قادمة
+B09-093	hrms		You may add additional details, if any, and submit the offer.	يمكنك إضافة تفاصيل إضافية، إن وُجدت، ثم إرسال العرض.
+B09-094	hrms		You must be within {0} meters of your shift location to check in.	يجب أن تكون على بُعد {0} متر من موقع الوردية لتسجيل الحضور.
+B09-095	hrms		You were only present for Half Day on {}. Cannot apply for a full day compensatory leave	كنت حاضرًا لنصف يوم فقط في {}. لا يمكن التقدم بطلب إجازة تعويضية ليوم كامل
+B09-096	hrms		Your Interview session is rescheduled from {0} {1} - {2} to {3} {4} - {5}	تمت إعادة جدولة جلسة مقابلتك من {0} {1} - {2} إلى {3} {4} - {5}
+B09-097	hrms		Your password has expired. Please reset your password to continue	كلمة مرورك منتهية الصلاحية. يرجى إعادة تعيين كلمة المرور للمتابعة
+B09-098	hrms		active	نشطة
+B09-099	hrms		based on	بناءً على
+B09-100	hrms		cancellation	الإلغاء
+B09-101	hrms		cancelled	ألغيت
+B09-102	hrms		create/submit	إنشاء/تسجيل
+B09-103	hrms		created	أنشأ
+B09-104	hrms		johndoe@mail.com	johndoe@mail.com
+B09-105	hrms		modify_half_day_status	modify_half_day_status
+B09-106	hrms		or for the Employee's Department: {0}	أو لقسم الموظف: {0}
+B09-107	hrms		process	معالجة
+B09-108	hrms		processed	تمت المعالجة
+B09-109	hrms		result	نتيجة
+B09-110	hrms		results	النتائج
+B09-111	hrms		review	إعادة النظر
+B09-112	hrms		reviews	التعليقات
+B09-113	hrms		submitted	مسجلة
+B09-114	hrms		via Salary Component sync	عبر مزامنة مكون الراتب
+B09-115	hrms		year	عام
+B09-116	hrms		years	سنوات
+B09-117	hrms		{0} & {1}	{0} و{1}
+B09-118	hrms		{0} & {1} more	{0} و{1} أخرى
+B09-119	hrms		{0} : {1}	{0} : {1}
+B09-120	hrms		{0} <br> This error can be due to missing or deleted field.	{0} <br> قد يكون هذا الخطأ بسبب حقل مفقود أو محذوف.
+B09-121	hrms		{0} Appraisal(s) are not submitted yet	{0} من التقييم(ات) لم يتم تقديمها بعد
+B09-122	hrms		{0} Field	حقل {0}
+B09-123	hrms		{0} Missing	{0} مفقود
+B09-124	hrms		{0} Row #{1}: Formula is set but {2} is disabled for the Salary Component {3}.	{0} الصف #{1}: تم تعيين الصيغة لكن {2} معطّل لمكوّن الراتب {3}.
+B09-125	hrms		{0} Row #{1}: {2} needs to be enabled for the formula to be considered.	{0} الصف #{1}: يجب تفعيل {2} لكي تُؤخذ الصيغة في الاعتبار.
+B09-126	hrms		{0} Unread	{0} غير مقروء
+B09-127	hrms		{0} already allocated for Employee {1} for period {2} to {3}	{0} تم تخصيصه بالفعل للموظف {1} للفترة {2} إلى {3}
+B09-128	hrms		{0} already exists for employee {1} and period {2}	{0} موجود بالفعل للموظف {1} والمدة {2}
+B09-129	hrms		{0} already has an active Shift Assignment {1} for some/all of these dates.	{0} لديه بالفعل تعيين مناوبة نشط {1} لبعض هذه التواريخ أو جميعها.
+B09-130	hrms		{0} applicable after {1} working days	{0} صالح بعد {1} أيام عمل
+B09-131	hrms	Leave Type	{0} balance	رصيد {0}
+B09-132	hrms		{0} completed {1} {2}	أتمّ {0} {1} {2}
+B09-133	hrms		{0} created successfully!	تم إنشاء {0} بنجاح!
+B09-134	hrms		{0} deleted successfully!	تم حذف {0} بنجاح!
+B09-135	hrms		{0} failed!	فشل {0}!
+B09-136	hrms		{0} has {1} enabled	{0} لديه {1} مُفعّل
+B09-137	hrms		{0} is an Accrual Component and this will be recorded as a payout in Employee Benefits Ledger	{0} هو مكون الاستحقاق وسيتم تسجيل هذا كعملية صرف في دفتر أستاذ مزايا الموظف
+B09-138	hrms		{0} is an invalid Attendance Status.	{0} ليست حالة حضور صالحة.
+B09-139	hrms		{0} is not a holiday.	{0} ليس عطلة.
+B09-140	hrms		{0} is not allowed to submit Interview Feedback for the Interview: {1}	لا يُسمح لـ {0} بتقديم ملاحظات المقابلة للمقابلة: {1}
+B09-141	hrms		{0} is not in Optional Holiday List	{0} ليس في قائمة عطلات اختيارية
+B09-142	hrms		{0} leaves allocated successfully	تم تخصيص {0} من الإجازات بنجاح
+B09-143	hrms		{0} leaves from allocation for {1} leave type have expired and will be processed during the next scheduled job. It is recommended to expire them now before creating new leave policy assignments.	انتهت صلاحية {0} من الإجازات من التخصيص لنوع الإجازة {1} وستتم معالجتها خلال المهمة المجدولة التالية. يُنصح بإنهاء صلاحيتها الآن قبل إنشاء تعيينات جديدة لسياسة الإجازات.
+B09-144	hrms		{0} leaves were manually allocated by {1} on {2}	تم تخصيص {0} من الإجازات يدويًا بواسطة {1} في {2}
+B09-145	hrms		{0} must be submitted	{0} يجب تسليمها
+B09-146	hrms		{0} of {1} Completed	اكتمل {0} من {1}
+B09-147	hrms		{0} successful!	تم {0} بنجاح!
+B09-148	hrms		{0} successfully!	تم {0} بنجاح!
+B09-149	hrms		{0} to {1} employee(s)?	هل تريد {0} لـ {1} من الموظفين؟
+B09-150	hrms		{0} updated successfully!	تم تحديث {0} بنجاح!
+B09-151	hrms		{0} vacancies and {1} budget for {2} already planned for subsidiary companies of {3}. You can only plan for upto {4} vacancies and and budget {5} as per staffing plan {6} for parent company {3}.	{0} من الشواغر وميزانية {1} لـ {2} مخططة بالفعل للشركات التابعة للشركة {3}. يمكنك التخطيط فقط لما يصل إلى {4} من الشواغر وميزانية {5} وفقًا لخطة التوظيف {6} للشركة الأم {3}.
+B09-152	hrms		{0} will be updated for the following Salary Structures: {1}.	سيتم تحديث {0} لهياكل الرواتب التالية: {1}.
+B09-153	hrms		{0} {1} {2}?	{0} {1} {2}؟
+B09-154	hrms		{0}. Check error log for more details.	{0}. تحقق من سجل الأخطاء للحصول على مزيد من التفاصيل.
+B09-155	hrms		{0}: Employee email not found, hence email not sent	{0}: البريد الإلكتروني للموظف غير موجود، وبالتالي لن يتم إرسال البريد الإلكتروني
+B09-156	hrms		{0}: From {0} of type {1}	{0}: من {0} من نوع {1}
+B09-157	hrms		{0}d	{0} ي
+B09-158	hrms		{} 	
+B09-159	hrms		{} Accepted	{} مقبول
+B09-160	hrms		{} Active	
+B09-161	hrms		{} Draft	
+B09-162	hrms		{} Unclaimed	
+B09-163	hrms		{} {} open for this position.	{} {} مفتوح لهذه الوظيفة.
+B09-164	crm		 (New)	
+B09-165	crm		%John%	
+B09-166	crm		(No Title)	(بدون عنوان)
+B09-167	crm		01/01/2022 to 01/31/2022	
+B09-168	crm		01/04/2024 11:30 PM	
+B09-169	crm		08:00 AM	
+B09-170	crm		08:00 pm	
+B09-171	crm		1-10	1-10
+B09-172	crm		1000+	1000+
+B09-173	crm		11-50	11-50
+B09-174	crm		201-500	201-500
+B09-175	crm		501-1000	501-1000
+B09-176	crm		51-200	51-200
+B09-177	crm		<b>META</b>	
+B09-178	crm		<b>SHORTCUTS</b>	
+B09-179	crm		<p>Dear {{ lead_name }},</p>\\n\\n<p>This is a reminder for the payment of {{ grand_total }}.</p>\\n\\n<p>Thanks,</p>\\n<p>Frappé</p>	
+B09-180	crm		<span class="h5"><b>PORTAL</b></span>	
+B09-181	crm		@John, can you please check this?	
+B09-182	crm		A Lead requires either a person's name or an organization's name	يتطلب العميل المتوقع اسم شخص أو اسم مؤسسة
+B09-183	crm		A lead sync source is already enabled for this Facebook Lead Form!	
+B09-184	crm		A new account has been created for you at {0}	تم إنشاء حساب جديد لك في {0}
+B09-185	crm		A valid call log is required.	
+B09-186	crm		A {0} cannot report to a {1}	
+B09-187	crm		API Key	مفتاح API
+B09-188	crm		API Token	
+B09-189	crm		API key is required	
+B09-190	crm		API secret is required	
+B09-191	crm		Accept	
+B09-192	crm		Accept Call	
+B09-193	crm		Accepted	مقبول
+B09-194	crm		Access Denied	
+B09-195	crm		Access Key	مفتاح الوصول
+B09-196	crm		Access Key is required for Service Provider: {0}	مفتاح الوصول مطلوب لموفر الخدمة: {0}
+B09-197	crm		Access token is required	
+B09-198	crm		Account ID	
+B09-199	crm		Account Info & Security	
+B09-200	crm		Account Name	اسم الحساب
+B09-201	crm		Account SID	
+B09-202	crm		Account name is required	
+B09-203	crm		Accounts	الحسابات
+B09-204	crm		Actions	الإجراءات
+B09-205	crm		Activity Timeline	
+B09-206	crm		Add	إضافة
+B09-207	crm		Add ({0})	
+B09-208	crm		Add Assignee	إضافة معهود إليه
+B09-209	crm		Add Attendee	
+B09-210	crm		Add CRM Product	
+B09-211	crm		Add Chart	
+B09-212	crm		Add Column	إضافة عمود
+B09-213	crm		Add Condition	
+B09-214	crm		Add Condition Group	
+B09-215	crm		Add Description	
+B09-216	crm		Add Description.	
+B09-217	crm		Add Email	
+B09-218	crm		Add Existing User	
+B09-219	crm		Add Field	
+B09-220	crm		Add Lead or Deal	
+B09-221	crm		Add Location	
+B09-222	crm		Add Mobile Number...	
+B09-223	crm		Add Note	
+B09-224	crm		Add Notification	
+B09-225	crm		Add Organization...	
+B09-226	crm		Add Row	إضافة صف
+B09-227	crm		Add Sample Data	
+B09-228	crm		Add Sort	
+B09-229	crm		Add Tab	
+B09-230	crm		Add Task	
+B09-231	crm		Add Users	
+B09-232	crm		Add Weekly Holidays	أضف عطلات أسبوعية
+B09-233	crm		Add a Condition	
+B09-234	crm		Add a Custom Condition	
+B09-235	crm		Add a Note	إضافة ملاحظة
+B09-236	crm		Add a Task	
+B09-237	crm		Add a name for your source	
+B09-238	crm		Add description...	
+B09-239	crm		Add direct reports	
+B09-240	crm		Add existing system users to this CRM. Assign them a role to grant access with their current credentials.	
+B09-241	crm		Add one to get started.	
+B09-242	crm		Add svg code or use feather icons e.g 'settings'	
+B09-243	crm		Add time targets around support milestones like first response	
+B09-244	crm		Add your first comment	
+B09-245	crm		Add, edit, and manage email templates for various CRM communications	
+B09-246	crm		Add, edit, and manage sources for automatic lead syncing to your CRM	
+B09-247	crm		Admin	مسؤول
+B09-248	crm		Agent is unavailable to take the call, please call after some time.	
+B09-249	crm		All	الكل

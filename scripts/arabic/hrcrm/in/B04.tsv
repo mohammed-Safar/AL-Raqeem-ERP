@@ -1,0 +1,250 @@
+B04-000	hrms		Filter by Shift	تصفية حسب الوردية
+B04-001	hrms		Final Decision	القرار النهائي
+B04-002	hrms		Final Score	الدرجة النهائية
+B04-003	hrms		Final Score Formula	صيغة الدرجة النهائية
+B04-004	hrms		First Check-in and Last Check-out	تسجيل الوصول الأول وتسجيل المغادرة الأخير
+B04-005	hrms		First Day	اليوم الأول
+B04-006	hrms		First Name 	الاسم الأول 
+B04-007	hrms		Fiscal Year {0} not found	السنة المالية {0} غير موجودة\\n<br>\\nFiscal Year {0} not found
+B04-008	hrms		Fixed Hourly Rate	سعر الساعة الثابت
+B04-009	hrms		Fleet Management	إدارة الأسطول
+B04-010	hrms		Flexible Benefit	ميزة مرنة
+B04-011	hrms		Flexible Benefits	فوائد مرنة
+B04-012	hrms		Flexible Component	مكون مرن
+B04-013	hrms		Flight	طيران
+B04-014	hrms		FnF Pending	FnF معلق
+B04-015	hrms		Follow via Email	متابعة عبر البريد الإلكتروني
+B04-016	hrms		Food	طعام
+B04-017	hrms		For Designation 	للتعيين 
+B04-018	hrms		For Employee	للموظف
+B04-019	hrms		For a day of leave taken, if you still pay (say) 50% of the daily salary, then enter 0.50 in this field.	عن كل يوم إجازة مأخوذة، إذا كنت لا تزال تدفع (مثلاً) 50% من الراتب اليومي، فأدخل 0.50 في هذا الحقل.
+B04-020	hrms		Formula	صيغة
+B04-021	hrms		Fraction of Applicable Earnings 	نسبة الاستحقاقات القابلة للتطبيق
+B04-022	hrms		Fraction of Daily Salary for Half Day	جزء من الراتب اليومي لنصف يوم
+B04-023	hrms		Fraction of Daily Salary per Leave	نسبة الراتب اليومي لكل إجازة
+B04-024	hrms		Fractional Cost	التكلفة الجزئية
+B04-025	hrms		Frappe HR	Frappe HR
+B04-026	hrms		From Amount	من الكمية
+B04-027	hrms		From Date must come before To Date	يجب أن يكون التاريخ «من» قبل التاريخ «إلى»
+B04-028	hrms		From Date {0} cannot be after Payroll Period end date {1}	لا يمكن أن يكون تاريخ البداية {0} بعد تاريخ انتهاء فترة الرواتب {1}
+B04-029	hrms		From Date {0} cannot be after employee's relieving Date {1}	من تاريخ {0} لا يمكن أن يكون بعد تاريخ التخفيف من الموظف {1}
+B04-030	hrms		From Date {0} cannot be before Payroll Period start date {1}	لا يمكن أن يكون تاريخ البداية {0} قبل تاريخ بدء فترة الرواتب {1}
+B04-031	hrms		From Date {0} cannot be before employee's joining Date {1}	من تاريخ {0} لا يمكن أن يكون قبل تاريخ الانضمام للموظف {1}
+B04-032	hrms		From date can not be less than employee's joining date	من تاريخ لا يمكن أن يكون أقل من تاريخ انضمام الموظف
+B04-033	hrms		From date can not be less than employee's joining date.	من التاريخ لا يمكن أن يكون أقل من تاريخ انضمام الموظف.
+B04-034	hrms		From here, you can enable encashment for the balance leaves.	من هنا، يمكنك تمكين الصرف النقدي للإجازات المتبقية.
+B04-035	hrms		From {0} to {1}	من {0} إلى {1}
+B04-036	hrms		From(Year)	من (عام)
+B04-037	hrms		Fuchsia	فوشيا
+B04-038	hrms		Fuel Expense	حساب الوقود
+B04-039	hrms		Fuel Expenses	مصاريف الوقود
+B04-040	hrms		Fuel Price	سعر الوقود
+B04-041	hrms		Fuel Qty	كمية الوقود
+B04-042	hrms		Full and Final Asset	أصل التسوية النهائية
+B04-043	hrms		Full and Final Outstanding Statement	كشف المستحقات النهائية
+B04-044	hrms		Full-time	دوام كامل
+B04-045	hrms		Fully Sponsored	برعاية كاملة
+B04-046	hrms		Funded Amount	مبلغ التمويل
+B04-047	hrms		Future Income Tax	ضريبة الدخل المستقبلية
+B04-048	hrms		Future dates not allowed	التواريخ المستقبلية غير مسموح بها
+B04-049	hrms		Gain Loss Account	حساب الأرباح/الخسائر
+B04-050	hrms		Geolocation Error	خطأ في تحديد الموقع الجغرافي
+B04-051	hrms		Geolocation is not supported by your current browser	تحديد الموقع الجغرافي غير مدعوم في متصفحك الحالي
+B04-052	hrms		Get Details From Declaration	الحصول على تفاصيل من الإعلان
+B04-053	hrms		Get Employees	الحصول على الموظفين
+B04-054	hrms		Get Job Requisitions	الحصول على طلبات التوظيف
+B04-055	hrms		Get Template	الحصول على نموذج
+B04-056	hrms		Get the app on your device for easy access & a better experience!	احصل على التطبيق على جهازك للوصول السهل وتجربة أفضل!
+B04-057	hrms		Get the app on your iPhone for easy access & a better experience	احصل على التطبيق على جهاز iPhone الخاص بك للوصول السهل وتجربة أفضل
+B04-058	hrms		Gluten Free	خالي من الغلوتين
+B04-059	hrms		Go to Login	الانتقال إلى تسجيل الدخول
+B04-060	hrms		Go to Reset Password page	انتقل إلى صفحة إعادة تعيين كلمة المرور
+B04-061	hrms		Goal Completion (%)	إنجاز الهدف (%)
+B04-062	hrms		Goal Score	درجة الهدف
+B04-063	hrms		Goal Score (%)	درجة الهدف (%)
+B04-064	hrms		Goal Score (weighted)	درجة الهدف (موزونة)
+B04-065	hrms		Goal progress percentage cannot be more than 100.	لا يمكن أن تتجاوز نسبة تقدم الهدف 100.
+B04-066	hrms		Goal should be aligned with the same KRA as its parent goal.	يجب أن يتوافق الهدف مع مؤشر KRA نفسه الخاص بالهدف الرئيسي.
+B04-067	hrms		Goal should be owned by the same employee as its parent goal.	يجب أن يكون الهدف مملوكًا لنفس الموظف الذي يملك الهدف الرئيسي.
+B04-068	hrms		Goal should belong to the same Appraisal Cycle as its parent goal.	يجب أن ينتمي الهدف إلى دورة التقييم نفسها التي ينتمي إليها الهدف الرئيسي.
+B04-069	hrms		Goal updated successfully	تم تحديث الهدف بنجاح
+B04-070	hrms		Goals updated successfully	تم تحديث الأهداف بنجاح
+B04-071	hrms		Grade	الدرجة
+B04-072	hrms		Gratuity	مكافأة نهاية الخدمة
+B04-073	hrms		Gratuity Applicable Component	مكون مكافأة نهاية الخدمة المنطبق
+B04-074	hrms		Gratuity Rule	قاعدة مكافأة نهاية الخدمة
+B04-075	hrms		Gratuity Rule Slab	شريحة قاعدة مكافأة نهاية الخدمة
+B04-076	hrms		Grievance	تظلم
+B04-077	hrms		Grievance Against	تظلم ضد
+B04-078	hrms		Grievance Against Party	تظلم ضد الطرف
+B04-079	hrms		Grievance Details	تفاصيل التظلم
+B04-080	hrms		Grievance Type	نوع التظلم
+B04-081	hrms		Gross Earnings	إجمالي الاستحقاقات
+B04-082	hrms		Gross Pay	إجمالي الأجور
+B04-083	hrms		Gross Pay (Company Currency)	إجمالي الأجر (عملة الشركة)
+B04-084	hrms		Gross Year To Date	إجمالي السنة حتى التاريخ
+B04-085	hrms		Gross Year To Date(Company Currency)	إجمالي السنة حتى التاريخ (عملة الشركة)
+B04-086	hrms		Group goal's progress is auto-calculated based on the child goals.	يُحسب تقدم الهدف الجماعي تلقائياً بناءً على الأهداف الفرعية.
+B04-087	hrms		HR	الموارد البشرية
+B04-088	hrms		HR & Payroll	الموارد البشرية والرواتب
+B04-089	hrms		HR & Payroll Settings	إعدادات الموارد البشرية والرواتب
+B04-090	hrms		HR Dashboard	
+B04-091	hrms		HR Settings	إعدادات الموارد البشرية
+B04-092	hrms		HRMS	HRMS
+B04-093	hrms		Half Day	نصف يوم
+B04-094	hrms		Half Day Date	تاريخ نصف اليوم
+B04-095	hrms		Half Day Date is mandatory	تاريخ نصف اليوم إلزامي
+B04-096	hrms		Half Day Date should be between From Date and To Date	تاريخ نصف اليوم ينبغي أن يكون بين 'من تاريخ' و 'الى تاريخ'\\n<br>\\nHalf Day Date should be between From Date and To Date
+B04-097	hrms		Half Day Date should be in between Work From Date and Work End Date	يجب أن يكون تاريخ نصف يوم بين العمل من التاريخ وتاريخ انتهاء العمل
+B04-098	hrms		Half Day Marked Employee Header	ترويسة الموظفين المسجلين لنصف يوم
+B04-099	hrms		Half Day Records	سجلات نصف اليوم
+B04-100	hrms		Half day date should be in between from date and to date	يجب أن يكون تاريخ نصف يوم ما بين التاريخ والتاريخ
+B04-101	hrms		Has Certificate	لديه شهادة
+B04-102	hrms		Health Insurance	التأمين الصحي
+B04-103	hrms		Health Insurance Name	اسم التامين الصحي
+B04-104	hrms		Health Insurance No	رقم التأمين الصحي
+B04-105	hrms		Health Insurance Provider	مزوّد التأمين الصحي
+B04-106	hrms		Hey {}! This email is to remind you about the upcoming holidays.	مرحباً {}! هذه الرسالة الإلكترونية تذكير لك بالعطلات القادمة.
+B04-107	hrms		Hey, {0} 👋	مرحبًا، {0} 👋
+B04-108	hrms		Hiring Count	عدد التوظيف
+B04-109	hrms		Hiring Settings	إعدادات التوظيف
+B04-110	hrms		Holiday List for Optional Leave	قائمة العطلة للإجازة الاختيارية
+B04-111	hrms		Holidays this Month.	العطلات هذا الشهر.
+B04-112	hrms		Holidays this Week.	العطلات هذا الأسبوع.
+B04-113	hrms		Horizontal Break	فاصل أفقي
+B04-114	hrms		Hour Rate (Company Currency)	سعر الساعة (عملة الشركة)
+B04-115	hrms		Hourly Rate	السعر بالساعة
+B04-116	hrms		House rent paid days overlapping with {0}	أيام إيجار المنازل المدفوعة تتداخل مع {0}
+B04-117	hrms		House rented dates required for exemption calculation	التواريخ المستأجرة البيت المطلوبة لحساب الإعفاء
+B04-118	hrms		House rented dates should be atleast 15 days apart	يجب أن تكون تواريخ التأجير المنزل على الأقل 15 يوما بعيدا
+B04-119	hrms		IFSC	IFSC
+B04-120	hrms		IFSC Code	رمز IFSC
+B04-121	hrms		IN	في
+B04-122	hrms		Identification Document Number	رقم وثيقة التعريف
+B04-123	hrms		Identification Document Type	نوع وثيقة التعريف
+B04-124	hrms		If checked, Payroll Payable will be booked against each employee	عند التحديد، سيتم ترحيل مستحقات الرواتب مقابل كل موظف.
+B04-125	hrms		If checked, flexible benefits are considered only if benefit application exists	إذا تم تحديده، فسيتم أخذ الميزات المرنة في الاعتبار فقط إذا كان طلب ميزة موجودًا
+B04-126	hrms		If checked, hides and disables Rounded Total field in Salary Slips	إذا تم تحديده ، يقوم بإخفاء وتعطيل حقل Rounded Total في قسائم الرواتب
+B04-127	hrms		If checked, overtime slip creation can be handled as part of payroll processing	إذا تم تحديده، يمكن التعامل مع إنشاء قسيمة العمل الإضافي كجزء من معالجة الرواتب
+B04-128	hrms		If checked, the full amount will be deducted from taxable income before calculating income tax without any declaration or proof submission.	إذا تم تحديده ، فسيتم خصم المبلغ بالكامل من الدخل الخاضع للضريبة قبل حساب ضريبة الدخل دون تقديم أي إعلان أو إثبات.
+B04-129	hrms		If enabled, Tax Exemption Declaration will be considered for income tax calculation.	في حالة التمكين ، سيتم النظر في إقرار الإعفاء الضريبي لحساب ضريبة الدخل.
+B04-130	hrms		If enabled, auto attendance will be marked on holidays if Employee Checkins exist	إذا كان مفعّلاً، فسيتم تسجيل الحضور التلقائي في العطلات في حال وجود تسجيلات حضور للموظفين.
+B04-131	hrms		If enabled, deducts payment days for absent attendance on holidays. By default, holidays are considered as paid	عند التفعيل، يتم خصم أيام الدفع في حالة الغياب في أيام العطلات. افتراضياً، تُعتبر العطلات أياماً مدفوعة الأجر
+B04-132	hrms		If enabled, the amount will be excluded from accounting entries during Journal Entry creation.	إذا تم التفعيل، سيتم استبعاد المبلغ من القيود المحاسبية أثناء إنشاء قيد اليومية.
+B04-133	hrms		If enabled, the component will be considered as a tax component and the amount will be auto-calculated as per the configured income tax slabs	إذا تم التفعيل، سيُعتبر المكوّن مكوّناً ضريبياً وسيُحسب المبلغ تلقائياً وفقاً لشرائح ضريبة الدخل المُعدّة.
+B04-134	hrms		If enabled, the component will be considered in the Income Tax Deductions report	إذا كان مُفعّلًا، فسيُؤخذ المكوّن بعين الاعتبار في تقرير استقطاعات ضريبة الدخل
+B04-135	hrms		If enabled, the component will not be displayed in the salary slip if the amount is zero	إذا تم التفعيل، فلن يظهر المكوّن في قسيمة الراتب إذا كان المبلغ صفرًا.
+B04-136	hrms		If enabled, the total no. of applications received for this opening will be displayed on the website	إذا تم التفعيل، فسيتم عرض إجمالي عدد الطلبات المستلمة لهذه الوظيفة الشاغرة على الموقع الإلكتروني
+B04-137	hrms		If enabled, the value specified or calculated in this component will not contribute to the earnings or deductions. However, it's value can be referenced by other components that can be added or deducted. 	إذا كان مُفعّلًا، فلن تُسهم القيمة المحددة أو المحسوبة في هذا المكوّن في الاستحقاقات أو الاستقطاعات. ومع ذلك، يمكن الإشارة إلى قيمته من قِبل مكوّنات أخرى يمكن إضافتها أو خصمها.
+B04-138	hrms		If enabled, this component allows to accrue amounts without adding them to earnings. The accrued balance is tracked in the Employee Benefit Ledger and can be paid out later as needed.	إذا تم التفعيل، يتيح هذا المكون تراكم المبالغ دون إضافتها إلى الاستحقاقات. يتم تتبع الرصيد المستحق في Employee Benefit Ledger ويمكن صرفه لاحقًا عند الحاجة.
+B04-139	hrms		If enabled, this component will be included in arrear calculations	إذا تم التفعيل، سيتم تضمين هذا المكون في حسابات المتأخرات
+B04-140	hrms		If enabled, total no. of working days will include holidays, and this will reduce the value of Salary Per Day	إذا تم التفعيل، فسيشمل إجمالي أيام العمل العطلات، وسيؤدي ذلك إلى تقليل قيمة الراتب اليومي.
+B04-141	hrms		If greater than zero, this sets the maximum benefit amount assignable to any employee	إذا كانت القيمة أكبر من الصفر، فإنها تحدد الحد الأقصى لمبلغ الميزة الذي يمكن تخصيصه لأي موظف
+B04-142	hrms		If not checked, the list will have to be added to each Department where it has to be applied.	إذا لم يتم الاختيار، فان القائمة ستضاف إلى كل قسم حيث لابد من تطبيقها.
+B04-143	hrms		If selected, the value specified or calculated in this component will not contribute to the earnings or deductions. However, it's value can be referenced by other components that can be added or deducted. 	إذا تم تحديده، فإن القيمة المحددة أو المحسوبة في هذا المكون لن تساهم في الأرباح أو الاستقطاعات. ومع ذلك، فإنه يمكن الإشارة إلى القيمة من قبل المكونات الأخرى التي يمكن أن تضاف أو خصمها.
+B04-144	hrms		If set, the job opening will be closed automatically after this date	إذا تم تعيينه، فسيُغلق الشاغر الوظيفي تلقائيًا بعد هذا التاريخ
+B04-145	hrms		If you are using loans in salary slips, please install the {0} app from Frappe Cloud Marketplace or GitHub to continue using loan integration with payroll.	إذا كنت تستخدم القروض في قسائم الرواتب، فيرجى تثبيت تطبيق {0} من Frappe Cloud Marketplace أو GitHub لمواصلة استخدام تكامل القروض مع الرواتب.
+B04-146	hrms		Import Attendance	سجل الحضور
+B04-147	hrms		In Time	في الوقت المناسب
+B04-148	hrms		In case of any error during this background process, the system will add a comment about the error on this Payroll Entry and revert to the Submitted status	في حال حدوث أي خطأ أثناء هذه العملية الخلفية، سيضيف النظام تعليقًا حول الخطأ في قيد الرواتب هذا ويعيده إلى حالة مسجل
+B04-149	hrms		Incentive	الحافز
+B04-150	hrms		Incentive Amount	مبلغ الحافز
+B04-151	hrms		Include Company Descendants	تضمين فروع الشركة
+B04-152	hrms		Include Holidays	تضمين العطلات
+B04-153	hrms		Include holidays in Total no. of Working Days	العطلات تحسب من ضمن أيام العمل
+B04-154	hrms		Include holidays within leaves as leaves	ايام العطل التي ضمن الإجازات تحسب إجازة
+B04-155	hrms		Income Source	مصدر الإيرادات
+B04-156	hrms		Income Tax Amount	مبلغ ضريبة الدخل
+B04-157	hrms		Income Tax Breakup	تفصيل ضريبة الدخل
+B04-158	hrms		Income Tax Component	مكون ضريبة الدخل
+B04-159	hrms		Income Tax Computation	احتساب ضريبة الدخل
+B04-160	hrms		Income Tax Deducted Till Date	ضريبة الدخل المخصومة حتى التاريخ
+B04-161	hrms		Income Tax Deductions	استقطاعات ضريبة الدخل
+B04-162	hrms		Income Tax Slab	لوح ضريبة الدخل
+B04-163	hrms		Income Tax Slab Other Charges	لوحة ضريبة الدخل رسوم أخرى
+B04-164	hrms		Income Tax Slab is mandatory since the Salary Structure {0} has a tax component {1}	شريحة ضريبة الدخل إلزامية نظرًا لأن هيكل الراتب {0} يتضمن مكون الضريبة {1}
+B04-165	hrms		Income Tax Slab must be effective on or before Payroll Period Start Date: {0}	يجب أن يكون لوح ضريبة الدخل ساريًا في أو قبل تاريخ بدء فترة الرواتب: {0}
+B04-166	hrms		Income Tax Slab not set in Salary Structure Assignment: {0}	لم يتم تعيين لوح ضريبة الدخل في تعيين هيكل الرواتب: {0}
+B04-167	hrms		Income Tax Slab: {0} is disabled	شريحة ضريبة الدخل: {0} معطل
+B04-168	hrms		Income from Other Sources	الدخل من مصادر أخرى
+B04-169	hrms		Incorrect Weightage Allocation	تخصيص أوزان غير صحيح
+B04-170	hrms		Indicates the number of leaves that cannot be encashed from the leave balance. E.g. with a leave balance of 10 and 4 Non-Encashable Leaves, you can encash 6, while the remaining 4 can be carried forward or expired	يوضح عدد الإجازات التي لا يمكن صرفها نقدًا من رصيد الإجازات. على سبيل المثال: مع رصيد إجازات قدره 10 و4 إجازات غير قابلة للصرف النقدي، يمكنك صرف 6، بينما يمكن ترحيل الـ 4 المتبقية أو انتهاء صلاحيتها
+B04-171	hrms		Inspection	فحص
+B04-172	hrms		Install	تثبيت
+B04-173	hrms		Install Frappe HR	تثبيت Frappe HR
+B04-174	hrms		Insufficient Balance	رصيد غير كافٍ
+B04-175	hrms		Insufficient leave balance for Leave Type {0}	رصيد الإجازات غير كافٍ لنوع الإجازة {0}
+B04-176	hrms		Interest Amount	مبلغ الفائدة
+B04-177	hrms		Interest Income Account	حساب إيرادات الفائدة
+B04-178	hrms		Intern	المتدرب
+B04-179	hrms		International	دولي
+B04-180	hrms		Internet	الإنترنت
+B04-181	hrms		Interview	مقابلة
+B04-182	hrms		Interview Detail	تفاصيل المقابلة
+B04-183	hrms		Interview Details	تفاصيل المقابلة
+B04-184	hrms		Interview Feedback	ملاحظات المقابلة
+B04-185	hrms		Interview Feedback Reminder	تذكير بملاحظات المقابلة
+B04-186	hrms		Interview Feedback {0} submitted successfully	تم تقديم ملاحظات المقابلة {0} بنجاح
+B04-187	hrms		Interview Not Rescheduled	لم تتم إعادة جدولة المقابلة
+B04-188	hrms		Interview Reminder	تذكير بالمقابلة
+B04-189	hrms		Interview Reminder Notification Template	قالب إشعار تذكير المقابلة
+B04-190	hrms		Interview Rescheduled successfully	تمت إعادة جدولة المقابلة بنجاح
+B04-191	hrms		Interview Round	
+B04-192	hrms		Interview Round {0} is only applicable for the Designation {1}	
+B04-193	hrms		Interview Round {0} is only for Designation {1}. Job Applicant has applied for the role {2}	
+B04-194	hrms		Interview Scheduled Date	تاريخ المقابلة المجدول
+B04-195	hrms		Interview Status	حالة المقابلة
+B04-196	hrms		Interview Summary	ملخص المقابلة
+B04-197	hrms		Interview Type	نوع المقابلة
+B04-198	hrms		Interview: {0} Rescheduled	المقابلة: تمت إعادة جدولة {0}
+B04-199	hrms		Interviewer	المُحاوِر
+B04-200	hrms		Interviewers	المُحاوِرون
+B04-201	hrms		Interviews	مقابلات
+B04-202	hrms		Interviews (This Week)	المقابلات (هذا الأسبوع)
+B04-203	hrms		Invalid Accrual Component	مكون استحقاق غير صالح
+B04-204	hrms		Invalid Additional Salary	راتب إضافي غير صالح
+B04-205	hrms		Invalid Arrear Component	مكوّن متأخرات غير صالح
+B04-206	hrms		Invalid Benefit Amounts	مبالغ المزايا غير صالحة
+B04-207	hrms		Invalid Dates	تواريخ غير صالحة
+B04-208	hrms		Invalid LWP Days Reversed	أيام إجازة بدون راتب مُعكوسة غير صالحة
+B04-209	hrms		Invalid Leave Ledger Entry	إدخال دفتر أستاذ إجازة غير صالح
+B04-210	hrms		Invalid Payroll Payable Account. The account currency must be {0} or {1}	حساب الرواتب المستحقة غير صالح. يجب أن تكون عملة الحساب {0} أو {1}
+B04-211	hrms		Invalid Shift Times	أوقات وردية غير صالحة
+B04-212	hrms		Invalid parameters provided. Please pass the required arguments.	المعلمات المقدمة غير صالحة. يرجى تمرير الوسائط المطلوبة.
+B04-213	hrms		Investigated	تم التحقيق فيه
+B04-214	hrms		Investigation Details	تفاصيل التحقيق
+B04-215	hrms		Invited	دعوة
+B04-216	hrms		Invoice Ref	مرجع الفاتورة
+B04-217	hrms		Is Allocated	تم التخصيص
+B04-218	hrms		Is Applicable for Referral Bonus	ينطبق على مكافأة الإحالة
+B04-219	hrms		Is Carry Forward	هل تضاف في العام التالي
+B04-220	hrms		Is Compensatory	هو تعويض
+B04-221	hrms		Is Compensatory Leave	إجازة تعويضية
+B04-222	hrms		Is Earned Leave	هو إجازة مكتسبة
+B04-223	hrms		Is Expired	منتهي الصلاحية
+B04-224	hrms		Is Flexible Benefit	هو فائدة مرنة
+B04-225	hrms		Is Income Tax Component	هو مكون ضريبة الدخل
+B04-226	hrms		Is Leave Without Pay	إجازة بدون راتب
+B04-227	hrms		Is Optional Leave	هو اجازة اختيارية
+B04-228	hrms		Is Partially Paid Leave	إجازة مدفوعة الأجر جزئيًا
+B04-229	hrms		Is Recurring	متكرر
+B04-230	hrms		Is Recurring Additional Salary	هل هو راتب إضافي متكرر
+B04-231	hrms		Is Salary Released	هل تم إصدار الراتب
+B04-232	hrms		Is Salary Withheld	هل الراتب مقتطع
+B04-233	hrms		Is Tax Applicable	هي ضريبة قابلة للتطبيق
+B04-234	hrms		Jan	يناير
+B04-235	hrms		Job Applicant	متقدم للوظيفة
+B04-236	hrms		Job Applicant Source	مصدر طالب الوظيفة
+B04-237	hrms		Job Applicant {0} created successfully.	تم إنشاء المتقدم للوظيفة {0} بنجاح.
+B04-238	hrms		Job Applicants are not allowed to appear twice for the same Interview round. Interview {0} already scheduled for Job Applicant {1}	
+B04-239	hrms		Job Application	طلب التوظيف
+B04-240	hrms		Job Application Route	
+B04-241	hrms		Job Description	الوصف الوظيفي
+B04-242	hrms		Job Offer	عرض عمل
+B04-243	hrms		Job Offer Term	شرط عرض العمل
+B04-244	hrms		Job Offer Term Template	قالب شروط عرض الوظيفة
+B04-245	hrms		Job Offer Terms	شروط عرض الوظيفة
+B04-246	hrms		Job Offer status	حالة عرض العمل
+B04-247	hrms		Job Offer: {0} is already for Job Applicant: {1}	عرض الوظيفة: {0} مقدم بالفعل لمقدم طلب وظيفة: {1}
+B04-248	hrms		Job Opening	وظيفة شاغرة
+B04-249	hrms		Job Opening Associated	تم ربط الوظيفة الشاغرة

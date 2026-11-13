@@ -1,0 +1,230 @@
+B16-000	crm		Invalid recording URL	
+B16-001	crm		Recording URL is not allowed	
+B16-002	crm		Too many redirects while fetching recording	
+B16-003	crm		Your account is not configured with a phone number. Please contact your administrator.	
+B16-004	crm		We're unable to connect your call right now. Please try again later.	
+B16-005	crm		Cannot rename: an unrelated {0} '{1}' already exists on the	
+B16-006	crm		Please setup Exotel integration	
+B16-007	crm		LinkedIn	
+B16-008	crm		X (Twitter)	
+B16-009	crm		Instagram	
+B16-010	crm		Enrichment is not enabled for {0}.	
+B16-011	crm		Set a website on this record before enriching.	
+B16-012	crm		This run has no linked record to re-enrich.	
+B16-013	crm		Enrichment is still running for this record. Try again once it finishes.	
+B16-014	crm		There is no enrichment to undo for this record.	
+B16-015	crm		Enrichment failed. Check the error log.	
+B16-016	crm		Only a completed enrichment run can be undone.	
+B16-017	crm		This enrichment run did not change any fields.	
+B16-018	crm		CRM Enrichment Run	
+B16-019	crm		Reverted	
+B16-020	crm		Source Website	
+B16-021	crm		Started On	
+B16-022	crm		Finished On	
+B16-023	crm		Undone On	
+B16-024	crm		Undone By	
+B16-025	crm		Industry Confidence	
+B16-026	crm		Emails Found	
+B16-027	crm		Phones Found	
+B16-028	crm		Social Profiles	
+B16-029	crm		Raw	
+B16-030	crm		Raw JSON	
+B16-031	crm		Retry Enrichment	
+B16-032	crm		Domain Enrichment	
+B16-033	crm		Queued…	
+B16-034	crm		Enrichment complete — a new run was created	
+B16-035	crm		Enrichment Failed	
+B16-036	crm		See Error Log.	
+B16-037	crm		CRM Enrichment Rule	
+B16-038	crm		Rule Type	
+B16-039	crm		Social	
+B16-040	crm		Target Value	
+B16-041	crm		Match Scope	
+B16-042	crm		Headline	
+B16-043	crm		Full Text	
+B16-044	crm		Patterns	
+B16-045	crm		{0} is required for {1} rules	
+B16-046	crm		A {0} rule for {1} already exists	
+B16-047	crm		Row #{0}: Not a valid regular expression: {1}	
+B16-048	crm		CRM Enrichment Link Priority	
+B16-049	crm		Keyword	
+B16-050	crm		CRM Enrichment Rule Pattern	
+B16-051	crm		Pattern	
+B16-052	crm		Is Regex	
+B16-053	crm		CRM Enrichment Settings	
+B16-054	crm		Auto-enrich new records	
+B16-055	crm		Crawl	
+B16-056	crm		Max Pages	
+B16-057	crm		Max Depth	
+B16-058	crm		Request Timeout (s)	
+B16-059	crm		Use Sitemap	
+B16-060	crm		Max Download Bytes	
+B16-061	crm		Retry Count	
+B16-062	crm		Crawl Tuning	
+B16-063	crm		Link Priority Order	
+B16-064	crm		Skip Patterns	
+B16-065	crm		SSRF Guard	
+B16-066	crm		Allowed Domains	
+B16-067	crm		Blocked Domains	
+B16-068	crm		Maximum pages must be a whole number between 1 and {0}	
+B16-069	crm		Invalid maximum pages	
+B16-070	crm		CRM Enrichment Domain	
+B16-071	crm		CRM Enrichment Run Change	
+B16-072	crm		Old Value	
+B16-073	crm		CRM Enrichment Skip Pattern	
+B16-074	crm		Target Doctype must be one of: {0}	
+B16-075	crm		CRM Enrichment Field Mapping	
+B16-076	crm		Source Key	
+B16-077	crm		Target Doctype	
+B16-078	crm		Target Fieldname	
+B16-079	crm		Write Policy	
+B16-080	crm		Fill if empty	
+B16-081	crm		Always refresh	
+B16-082	crm		Override defaults	
+B16-083	crm		Create Missing Link	
+B16-084	crm		Default Values	
+B16-085	crm		{0} must act on {1}, not {2}	
+B16-086	crm		Deal field overrides must be a JSON object	
+B16-087	crm		Amount is required	
+B16-088	crm		Minimum score is above the maximum	
+B16-089	crm		Choose a lead temperature	
+B16-090	crm		Unsupported conversion policy	
+B16-091	crm		CRM Deal has no field {0}	
+B16-092	crm		Reused Deal {0}	
+B16-093	crm		Created Deal {0}	
+B16-094	crm		Pick a template or write a subject	
+B16-095	crm		{0} has no email address	
+B16-096	crm		Emailed {0}: {1}	
+B16-097	crm		Write the notification text	
+B16-098	crm		Lead score {0} → {1}{2}	
+B16-099	crm		Lead temperature must be one of {0}	
+B16-100	crm		Lead is now {0}	
+B16-101	crm		Unknown CRM relationship: {0}	
+B16-102	crm		You can only change emails you scheduled	
+B16-103	crm		This email is no longer scheduled	
+B16-104	crm		This email is already being sent	
+B16-105	crm		Forms can only map to: {0}	
+B16-106	crm		{0} isn't a linkable field on a CRM form.	
+B16-107	crm		Set a default value before publishing for: {0}	
+B16-108	crm		{0} can't be used as a layout break	
+B16-109	crm		{0} can't be collected by a form	
+B16-110	crm		Unnamed field	
+B16-111	crm		{0} can't be set as a hidden field	
+B16-112	crm		Not a CRM form	
+B16-113	crm		{0} is not an enabled availability status.	
+B16-114	crm		TIMESTAMPDIFF	
+B16-115	crm		Roles of user {0} are managed by a Role Profile. Update the Role Profile instead.	
+B16-116	crm		Role Profile Assigned	
+B16-117	crm		CRM-PROD-.YYYY.-	
+B16-118	crm		Cannot delete: linked ERPNext Item {0} is referenced by a Quotation.	
+B16-119	crm		Setup Completed	
+B16-120	crm		CRM-LEAD-.YYYY.-	
+B16-121	crm		Lead Score	
+B16-122	crm		Lead Temperature	
+B16-123	crm		Cold	
+B16-124	crm		Warm	
+B16-125	crm		Hot	
+B16-126	crm		Contact already exists with {0}	
+B16-127	crm		Cannot convert a lead with status {0}	
+B16-128	crm		Lead {0} is already converted to Deal {1}	
+B16-129	crm		CRM-DEAL-.YYYY.-	
+B16-130	crm		Bidirectional Product Sync	
+B16-131	crm		View Customer	
+B16-132	crm		Could not create the Frappe CRM custom fields on {0} automatically.	
+B16-133	crm		Invalid deal	
+B16-134	crm		Pinned By	
+B16-135	crm		Pinned On	
+B16-136	crm		mentioned you in a note on {0}	
+B16-137	crm		CRM Availability Status	
+B16-138	crm		Away	
+B16-139	crm		Unavailable	
+B16-140	crm		Keep at least one enabled status in the Active category.	
+B16-141	crm		Territory cannot be its own parent	
+B16-142	crm		Parent Territory {0} is not a group. Only group territories can have children.	
+B16-143	crm		Status set to {0}	
+B16-144	crm		Could not update your status	
+B16-145	crm		Your status was changed to {0}	
+B16-146	crm		Select Country to see state options	
+B16-147	crm		Failed to import	
+B16-148	crm		Your trial ends today	
+B16-149	crm		Your trial ends tomorrow	
+B16-150	crm		Your trial ends in {0} days	
+B16-151	crm		Your trial has ended	
+B16-152	crm		Your site will be deleted on {0}. Choose a plan to keep it.	
+B16-153	crm		Choose a plan to keep using your site.	
+B16-154	crm		Choose a plan	
+B16-155	crm		Your plan is over your spending limit	
+B16-156	crm		Raise the limit or choose a smaller plan to end your trial.	
+B16-157	crm		Manage billing	
+B16-158	crm		Choose a plan to keep your site after the trial.	
+B16-159	crm		Show all records	
+B16-160	crm		From import	
+B16-161	crm		Could not move the card. Reverting.	
+B16-162	crm		Move cancelled: a lost reason is required for this status.	
+B16-163	crm		Are you sure you want to delete "{0}" view?	
+B16-164	crm		(New)	
+B16-165	crm		{0} unsubscribed from emails for this record, so they won't receive this email.	
+B16-166	crm		Are you sure you want to convert {0} lead(s) to deal(s)?	
+B16-167	crm		Are you sure you want to clear assignment for {0} item(s)?	
+B16-168	crm		Hi John, \\n\\nCan you please provide more details on this...	
+B16-169	crm		Schedule email?	
+B16-170	crm		It will be sent on {0}.	
+B16-171	crm		Scheduling email...	
+B16-172	crm		Email scheduled for {0}	
+B16-173	crm		Failed to schedule email!	
+B16-174	crm		{0} is away right now	
+B16-175	crm		{0} is unavailable right now	
+B16-176	crm		Are you sure you want to delete {0} - {1}?	
+B16-177	crm		{0} deleted successfully	
+B16-178	crm		Schedule send	
+B16-179	crm		Pick date & time	
+B16-180	crm		Pick a time in the future	
+B16-181	crm		Morning	
+B16-182	crm		Afternoon	
+B16-183	crm		Evening	
+B16-184	crm		Custom date & time…	
+B16-185	crm		Remove and move columns to {0} section	
+B16-186	crm		Could not save, try again	
+B16-187	crm		Document ID, not the full name	
+B16-188	crm		Since you added a new assignee, the {0} has been set to {1}.	
+B16-189	crm		Group By:	
+B16-190	crm		Undo last enrichment	
+B16-191	crm		Add website to auto enrich	
+B16-192	crm		Enrich	
+B16-193	crm		Enriching…	
+B16-194	crm		Enrich from website	
+B16-195	crm		Enrichment successful	
+B16-196	crm		Filled: {0}	
+B16-197	crm		Enrichment failed.	
+B16-198	crm		Save your changes before enriching	
+B16-199	crm		Could not start enrichment.	
+B16-200	crm		This record was already enriched. Enriching again may update those fields with newer values from the website.	
+B16-201	crm		These fields you edited will be replaced: {0}	
+B16-202	crm		Re-enrich this record?	
+B16-203	crm		Save your changes before undoing	
+B16-204	crm		Undo enrichment?	
+B16-205	crm		This restores the values these fields had before the last enrichment.	
+B16-206	crm		Nothing to undo, you've edited all enriched fields	
+B16-207	crm		Enrichment undone. Kept your edits to: {0}	
+B16-208	crm		Enrichment undone	
+B16-209	crm		Could not undo enrichment.	
+B16-210	crm		Are you sure you want to delete {0} items?	
+B16-211	crm		Are you sure you want to delete {0} linked doc(s)?	
+B16-212	crm		Are you sure you want to unlink {0} linked doc(s)?	
+B16-213	crm		Import leads from CSV	
+B16-214	crm		Map columns	
+B16-215	crm		{0} leads are ready to import. Here are the first few rows.	
+B16-216	crm		Start over	
+B16-217	crm		Import {0} leads	
+B16-218	crm		Importing leads...	
+B16-219	crm		Importing {0} of {1} leads...	
+B16-220	crm		{0} leads imported.	
+B16-221	crm		{0} leads imported, {1} rows failed.	
+B16-222	crm		The import did not go through. Fix the issues below and try again.	
+B16-223	crm		Drag and drop a CSV file, or	
+B16-224	crm		choose one from your device	
+B16-225	crm		The first row should contain column names.	
+B16-226	crm		Download CSV template	
+B16-227	crm		Please upload a CSV file.	
+B16-228	crm		Could not upload the file.	
+B16-229	crm		Connect your email	

@@ -1,0 +1,230 @@
+B17-000	crm		Send and receive email from the CRM, and keep every conversation on the right lead or deal.	
+B17-001	crm		Email provider	
+B17-002	crm		Email address	
+B17-003	crm		Frappe Mail site	
+B17-004	crm		API key	
+B17-005	crm		API secret	
+B17-006	crm		App password	
+B17-007	crm		Sync options	
+B17-008	crm		Receive email	
+B17-009	crm		Pull replies into lead and deal timelines	
+B17-010	crm		Reply and send from the CRM	
+B17-011	crm		Set up later	
+B17-012	crm		Connect account	
+B17-013	crm		Skip email for now?	
+B17-014	crm		Emails won't show on leads and deals, you can't reply from the CRM, and incoming mail won't create leads. Connect it later from Settings.	
+B17-015	crm		Connect email	
+B17-016	crm		Skip anyway	
+B17-017	crm		Email account connected	
+B17-018	crm		Could not connect: check your credentials	
+B17-019	crm		Share usage data	
+B17-020	crm		Could not save your preference. Please try again.	
+B17-021	crm		Match each column in your file to a lead field.	
+B17-022	crm		Column in file	
+B17-023	crm		Lead field	
+B17-024	crm		Lead field for {0}	
+B17-025	crm		Map a column to First Name to continue.	
+B17-026	crm		Required fields not mapped: {0}. Rows without them may fail.	
+B17-027	crm		Don't import	
+B17-028	crm		You're all set	
+B17-029	crm		Before you dive in, tell us how setup went.	
+B17-030	crm		Difficult	
+B17-031	crm		Setup rating	
+B17-032	crm		Easy	
+B17-033	crm		Anything we could do better? (optional)	
+B17-034	crm		Share what was confusing or missing	
+B17-035	crm		Not now	
+B17-036	crm		Send feedback	
+B17-037	crm		The CRM works best when your whole sales team is in it.	
+B17-038	crm		No per-user pricing.	
+B17-039	crm		Invite your whole team.	
+B17-040	crm		Teammate email {0}	
+B17-041	crm		Role for teammate {0}	
+B17-042	crm		Enter a valid email address	
+B17-043	crm		Add more	
+B17-044	crm		Send invites	
+B17-045	crm		Could not send invites	
+B17-046	crm		Bring in your leads	
+B17-047	crm		Start with the leads you already have, or explore the CRM with sample data first.	
+B17-048	crm		I'll add leads later	
+B17-049	crm		Import from CSV	
+B17-050	crm		Upload a spreadsheet of your existing leads.	
+B17-051	crm		Try with sample data	
+B17-052	crm		Explore with sample leads, deals and tasks. Clear them anytime.	
+B17-053	crm		Could not load sample data	
+B17-054	crm		Enriched from website	
+B17-055	crm		Enter a valid phone number	
+B17-056	crm		No priority	
+B17-057	crm		Use custom value	
+B17-058	crm		Use "{0}"	
+B17-059	crm		e.g. @gmail.com	
+B17-060	crm		e.g. Open, Replied	
+B17-061	crm		Error Uploading File	
+B17-062	crm		File "{0}" was skipped because size exceeds {1} MB	
+B17-063	crm		Pin to top	
+B17-064	crm		Copy link	
+B17-065	crm		Pinned by {0} · {1}	
+B17-066	crm		Scheduled email actions	
+B17-067	crm		Send now	
+B17-068	crm		Send now?	
+B17-069	crm		It will be sent right away instead of on {0}.	
+B17-070	crm		Failed to send email	
+B17-071	crm		Send or discard the email you are writing first	
+B17-072	crm		Moved to the composer. Schedule it again when ready.	
+B17-073	crm		Failed to edit scheduled email	
+B17-074	crm		Delete scheduled email?	
+B17-075	crm		It won't be sent. This can't be undone.	
+B17-076	crm		Scheduled email deleted	
+B17-077	crm		Failed to delete scheduled email	
+B17-078	crm		Are you sure you want to make this attachment {0}?	
+B17-079	crm		No quotations yet	
+B17-080	crm		Create a quotation from this deal to see it here.	
+B17-081	crm		Valid till {0}	
+B17-082	crm		note updates from	
+B17-083	crm		added a note	
+B17-084	crm		pinned the note	
+B17-085	crm		unpinned the note	
+B17-086	crm		Failed to load activities	
+B17-087	crm		No Activities Found	
+B17-088	crm		No Emails Found	
+B17-089	crm		No Comments Found	
+B17-090	crm		No Data Fields Added Yet	
+B17-091	crm		No Call History	
+B17-092	crm		No Notes Found	
+B17-093	crm		No Tasks Found	
+B17-094	crm		No Attachments Found	
+B17-095	crm		No WhatsApp Messages Found	
+B17-096	crm		There are no activities to display here. Go ahead and make some changes.	
+B17-097	crm		No emails found in your inbox. New messages will appear here soon.	
+B17-098	crm		Be the first to add one.	
+B17-099	crm		No data fields have been added yet.	
+B17-100	crm		No recent calls to display. Log a call or call someone now!	
+B17-101	crm		Nothing here for now. Add a note to keep track of things.	
+B17-102	crm		Nothing to do at the moment. Start organizing by adding one here.	
+B17-103	crm		No files have been attached yet. Upload files to see them here.	
+B17-104	crm		Start a conversation now!	
+B17-105	crm		Configure general settings for your application.	
+B17-106	crm		Automatically sets communication status to “Replied” for the lead or deal when a response is received. Applies only when SLA is enabled	
+B17-107	crm		Automatically sets communication status to “Open” for the lead or deal when a new communication is created. Applies only when SLA is enabled	
+B17-108	crm		Add or invite users and choose their role to control what they can see and do.	
+B17-109	crm		{0} has been granted {1} access	
+B17-110	crm		Set the currency, number, date and time formats used across your CRM.	
+B17-111	crm		Preferences updated successfully	
+B17-112	crm		Connect email accounts to send and receive emails from CRM. Set one as the default for incoming and outgoing emails.	
+B17-113	crm		Configure your brand name, logo and favicon.	
+B17-114	crm		Workflow Automations	
+B17-115	crm		Enrichment	
+B17-116	crm		Setting up Frappe Mail requires you to have an API key and API secret for your email account. Read more	
+B17-117	crm		Configure actions that appear on the home dropdown.	
+B17-118	crm		Email account updated successfully	
+B17-119	crm		Failed to update email account: invalid credentials	
+B17-120	crm		Manage ERPNext integration settings.	
+B17-121	crm		ERPNext Items always sync into CRM Products. Turn this on to also sync CRM Product changes back to ERPNext Items.	
+B17-122	crm		Manual Sync	
+B17-123	crm		Run a manual bi-directional sync between ERPNext Items and CRM Products.	
+B17-124	crm		Run a manual synchronization to pull the latest Items from ERPNext.	
+B17-125	crm		Enable the integration to create quotations and more in ERPNext.	
+B17-126	crm		Product sync started.	
+B17-127	crm		{0} not yet synced	
+B17-128	crm		Invalid site URL	
+B17-129	crm		Choose how the dashboard forecasts deals and shows currency.	
+B17-130	crm		Currency for dashboard cards and charts. Can't be changed once set.	
+B17-131	crm		Configure the exchange rate provider for your CRM	
+B17-132	crm		Access key for {0}. Required for fetching exchange rates.	
+B17-133	crm		You can get your access key from	
+B17-134	crm		Please enter the {0} access key.	
+B17-135	crm		Choose the email service provider you want to configure.	
+B17-136	crm		Email account created successfully	
+B17-137	crm		Failed to create email account: invalid credentials	
+B17-138	crm		Invite users to access CRM. Specify their roles to control access and permissions.	
+B17-139	crm		User with email {0} already exists	
+B17-140	crm		User with email {0} already invited	
+B17-141	crm		Start time is required	
+B17-142	crm		End time is required	
+B17-143	crm		End time must be after start time	
+B17-144	crm		Please select a priority	
+B17-145	crm		Response time is required	
+B17-146	crm		I understand, add conditions	
+B17-147	crm		An SLA set as default cannot be disabled	
+B17-148	crm		SLA policy created	
+B17-149	crm		Some error occurred while creating SLA policy	
+B17-150	crm		SLA policy updated	
+B17-151	crm		SLA policy name is required	
+B17-152	crm		Priority {0}: priority name is required	
+B17-153	crm		Priority {0}: response time is required	
+B17-154	crm		Start date cannot be after end date	
+B17-155	crm		At least one valid workday with a day, start time, and end time is required	
+B17-156	crm		End time must be after start time for: {0}	
+B17-157	crm		Manage your service level agreement policies.	
+B17-158	crm		SLA policy duplicated	
+B17-159	crm		SLA policy deleted	
+B17-160	crm		SLA policy status updated	
+B17-161	crm		Select a record	
+B17-162	crm		Pick a {0}	
+B17-163	crm		Start test run	
+B17-164	crm		{0} of {1} steps ran	
+B17-165	crm		Show details	
+B17-166	crm		Before the first step	
+B17-167	crm		a field to watch	
+B17-168	crm		a schedule	
+B17-169	crm		a date field	
+B17-170	crm		an event	
+B17-171	crm		Pick {0}	
+B17-172	crm		Set a condition	
+B17-173	crm		Set how long to wait	
+B17-174	crm		Pick an event	
+B17-175	crm		Pick an action	
+B17-176	crm		Choose a field to set	
+B17-177	crm		This alias is not available at this step	
+B17-178	crm		One {0} record	
+B17-179	crm		DocType resolved at runtime	
+B17-180	crm		Create workflow automations for CRM documents.	
+B17-181	crm		No workflow automations yet	
+B17-182	crm		Any document	
+B17-183	crm		You have unsaved changes. Do you wish to exit?	
+B17-184	crm		Keep editing	
+B17-185	crm		Discard and exit	
+B17-186	crm		Automation updated	
+B17-187	crm		Could not update automation	
+B17-188	crm		Automation duplicated	
+B17-189	crm		Could not duplicate automation	
+B17-190	crm		Automation deleted	
+B17-191	crm		If / Else	
+B17-192	crm		Split the run into two arms on a condition.	
+B17-193	crm		Wait	
+B17-194	crm		Pause the run for a fixed amount of time.	
+B17-195	crm		Wait for event	
+B17-196	crm		Pause until an event is raised for this record.	
+B17-197	crm		Flow	
+B17-198	crm		Core	
+B17-199	crm		Choose field	
+B17-200	crm		Choose {0}	
+B17-201	crm		Choose value	
+B17-202	crm		Field Values	
+B17-203	crm		Clear to pick a record instead	
+B17-204	crm		Set more fields at once as JSON. These are applied together with the Field and Value above, in the same save.	
+B17-205	crm		Event happened	
+B17-206	crm		Timed out	
+B17-207	crm		True	
+B17-208	crm		False	
+B17-209	crm		A trigger runs only when these filters match.	
+B17-210	crm		Fit entire flow	
+B17-211	crm		Remove trigger	
+B17-212	crm		Remove step	
+B17-213	crm		Search triggers	
+B17-214	crm		Forced	
+B17-215	crm		Search blocks	
+B17-216	crm		Add block	
+B17-217	crm		Run {0}	
+B17-218	crm		After branches	
+B17-219	crm		Choose an event	
+B17-220	crm		Only start when the record's fields match these filters.	
+B17-221	crm		Extra check that must also pass; use Expression for Python logic.	
+B17-222	crm		doc.status == 'Open'	
+B17-223	crm		No runs yet	
+B17-224	crm		Start from scratch	
+B17-225	crm		on {0}	
+B17-226	crm		Pick initial trigger	
+B17-227	crm		Wait for	
+B17-228	crm		Action on {0}	
+B17-229	crm		Wait {0} {1}	

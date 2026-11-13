@@ -1,0 +1,116 @@
+B23-000	ui:AssignmentRuleListItem.vue(js)		Medium-High	
+B23-001	ui:AssigneeRules.vue(js)		Auto-rotate	
+B23-002	ui:AssigneeRules.vue(js)		Assign by workload	
+B23-003	ui:useCRMCommands.js(js)		My settings	
+B23-004	ui:useCRMCommands.js(js)		Record search is unavailable	
+B23-005	ui:CommandPalette.vue(js)		Navigate	
+B23-006	ui:recordCommands.js(js)		Assign to	
+B23-007	ui:recordCommands.js(js)		Add comment	
+B23-008	ui:recordCommands.js(js)		Insert email template	
+B23-009	ui:recordCommands.js(js)		Attach a file	
+B23-010	ui:recordCommands.js(js)		Go to tab	
+B23-011	ui:recordCommands.js(js)		Copy ID	
+B23-012	ui:Lead.vue(js)		Convert to deal	
+B23-013	ui:Lead.vue(js)		Change status	
+B23-014	ui:Lead.vue(js)		Delete lead	
+B23-015	ui:Deal.vue(js)		Add contact	
+B23-016	ui:Deal.vue(js)		Set primary contact	
+B23-017	ui:Deal.vue(js)		Delete deal	
+B23-018	ui:requestSummaryFields.js(js)		Leave Dates	
+B23-019	ui:requestSummaryFields.js(js)		Attendance Dates	
+B23-020	ui:requestSummaryFields.js(js)		Total Attendance Days	
+B23-021	ui:requestSummaryFields.js(js)		Shift Timing	
+B23-022	ui:requestSummaryFields.js(js)		Shift Dates	
+B23-023	ui:requestSummaryFields.js(js)		Total Shift Days	
+B23-024	ui:NavBar.vue(js)		Switch to Desk	
+B23-025	ui:ShiftAssignmentDialog.vue(js)		New Shift Assignment	
+B23-026	ui:ShiftAssignmentDialog.vue(js)		Delete Shift?	
+B23-027	ui:ShiftAssignmentDialog.vue(js)		All Consecutive Shifts	
+B23-028	ui:ShiftAssignmentDialog.vue(js)		Delete Shift Assignment?	
+B23-029	ui:ShiftAssignmentDialog.vue(js)		Delete Shift Schedule Assignment?	
+B23-030	ui:fu(js):commands.ts		Strike	
+B23-031	ui:fu(js):commands.ts		Bullet List	
+B23-032	ui:fu(js):commands.ts		Ordered List	
+B23-033	ui:fu(js):commands.ts		Align Left	
+B23-034	ui:fu(js):commands.ts		Align Center	
+B23-035	ui:fu(js):commands.ts		Font Color	
+B23-036	ui:fu(js):commands.ts		Image / Gallery	
+B23-037	ui:fu(js):commands.ts		Horizontal Rule	
+B23-038	ui:fu(js):commands.ts		Task List	
+B23-039	ui:fu(js):commands.ts		Code Block	
+B23-040	ui:fu(js):commands.ts		Table of Contents	
+B23-041	ui:fu(js):menu.ts		Cell color	
+B23-042	ui:fu:IframeNodeView.vue		Resize embed	
+B23-043	ui:fu:IframeNodeView.vue		Add caption	
+B23-044	ui:fu:IframeInsertDialog.vue		URL or Embed Code	
+B23-045	ui:fu:LinkEditorPopup.vue		Remove link	
+B23-046	ui:fu:CodeBlockComponent.vue		Copy code	
+B23-047	ui:fu:TocNodeView.vue		Remove table of contents	
+B23-048	ui:fu:TocNodeView.vue		There are no headings in this document.	
+B23-049	ui:fu:ImageGroupGridCell.vue		Remove image	
+B23-050	ui:fu:ImageGroupGridCell.vue		Add caption...	
+B23-051	ui:fu:ImageGroupGridCell.vue		Image caption	
+B23-052	ui:fu:ImageGroupGridCell.vue		Preview not available (HEIC)	
+B23-053	ui:fu:ImageGroupUploadDialog.vue		Some images failed to upload. Retry or remove the marked images to continue.	
+B23-054	ui:fu:ImageGroupUploadDialog.vue		Add images	
+B23-055	ui:fu:ImageGroupUploadDialog.vue		Drag images to reorder · hover an image to caption or remove it · drop files anywhere to add more	
+B23-056	ui:fu:ImageGroupUploadDialog.vue		Drag & drop images here or click to select	
+B23-057	ui:fu:ImageGroupUploadDialog.vue		Insert as separate images	
+B23-058	ui:fu:ImageGroupUploadDialog.vue		Drop images here	
+B23-059	ui:fu:ImageGroupNodeView.vue		Edit gallery	
+B23-060	ui:fu:AttachmentNodeView.vue		Cancel upload	
+B23-061	ui:fu:AttachmentNodeView.vue		Try again	
+B23-062	ui:fu:MediaToolbar.vue		Media options	
+B23-063	ui:fu(js):MediaToolbar.vue		Autoplay	
+B23-064	ui:fu(js):MediaToolbar.vue		Loop	
+B23-065	ui:fu(js):MediaToolbar.vue		Caption	
+B23-066	ui:fu(js):EditorDropZone.vue		Drop files to upload	
+B23-067	ui:fu:MediaNodeView.vue		Resize media	
+B23-068	ui:fu:MediaNodeView.vue		Add a caption	
+B23-069	ui:fu:MediaNodeView.vue		Choose another	
+B23-070	ui:fu:VideoControls.vue		Seek	
+B23-071	ui:fu:NumberCard.vue		Could not render this chart	
+B23-072	ui:fu:NumberCard.vue		No data	
+B23-073	ui:fu:ChartContainer.vue		Loading chart	
+B23-074	ui:fu:ChartContainer.vue		No data to show	
+B23-075	ui:fu(js):Combobox.vue		Select option	
+B23-076	ui:fu:SettingsDialog.vue		Manage your settings across the tabs in this dialog.	
+B23-077	ui:fu(js):SettingsDialog.vue		Toggle settings	
+B23-078	ui:fu:KeyboardShortcutsDialog.vue		Search shortcuts	
+B23-079	ui:fu:KeyboardShortcutsDialog.vue		No keyboard shortcuts available on this page.	
+B23-080	ui:fu:KeyboardShortcutsDialog.vue		No shortcuts match your search.	
+B23-081	ui:fu(js):TimePicker.vue		Select time	
+B23-082	ui:fu:CalendarPanel.vue		Calendar dates	
+B23-083	ui:fu:CalendarPanel.vue		Select month and year	
+B23-084	ui:fu:CalendarPanel.vue		Select year	
+B23-085	ui:fu:CalendarPanel.vue		Select month	
+B23-086	ui:fu(js):DateRangePicker.vue		Select range	
+B23-087	ui:fu(js):DateTimePicker.vue		Select date & time	
+B23-088	ui:fu:ListFilter.vue		Filter by...	
+B23-089	ui:fu:ListFilter.vue		Add filter	
+B23-090	ui:fu:ListFilter.vue		Clear all filter	
+B23-091	ui:fu(js):ListView.vue		No data available	
+B23-092	ui:fu:NewEventModal.vue		Venue	
+B23-093	ui:fu:NewEventModal.vue		Full Day Event?	
+B23-094	ui:fu(js):InsertLink.vue		Set Link	
+B23-095	ui:fu:InsertVideo.vue		Insert Video	
+B23-096	ui:fu(js):InsertVideo.vue		Add Video	
+B23-097	ui:fu:InsertImage.vue		Insert Image	
+B23-098	ui:fu(js):InsertImage.vue		Add Image	
+B23-099	ui:fu(js):commands.js		Heading 1	
+B23-100	ui:fu(js):commands.js		Heading 2	
+B23-101	ui:fu(js):commands.js		Heading 3	
+B23-102	ui:fu(js):commands.js		Heading 4	
+B23-103	ui:fu(js):commands.js		Heading 5	
+B23-104	ui:fu(js):commands.js		Heading 6	
+B23-105	ui:fu(js):commands.js		Numbered List	
+B23-106	ui:fu(js):commands.js		Add Column Before	
+B23-107	ui:fu(js):commands.js		Add Column After	
+B23-108	ui:fu(js):commands.js		Add Row Before	
+B23-109	ui:fu(js):commands.js		Add Row After	
+B23-110	ui:fu(js):commands.js		Merge Cells	
+B23-111	ui:fu(js):commands.js		Split Cell	
+B23-112	ui:fu(js):commands.js		Toggle Header Column	
+B23-113	ui:fu(js):commands.js		Toggle Header Row	
+B23-114	ui:fu(js):commands.js		Toggle Header Cell	
+B23-115	ui:fu(js):handlers.ts		Internal Server Error occurred	

@@ -1,0 +1,159 @@
+B15-000	crm		Verify Connection	
+B15-001	crm		View Contact	
+B15-002	crm		View Location	
+B15-003	crm		View Name	
+B15-004	crm		View documentation	
+B15-005	crm		Walk-ins	
+B15-006	crm		We are changing how permissions work in Frappe CRM	
+B15-007	crm		Web Form	نموذج ويب
+B15-008	crm		Webhook Verify Token	
+B15-009	crm		Website	الموقع
+B15-010	crm		Website forms	
+B15-011	crm		Wednesday	الأربعاء
+B15-012	crm		Week	أسبوع
+B15-013	crm		Weekly Off	العطلة الأسبوعية
+B15-014	crm		Welcome Message	
+B15-015	crm		Welcome to Frappe CRM	
+B15-016	crm		Welcome {0}, lets add your first lead	
+B15-017	crm		What are your biggest challenges with sales today?	
+B15-018	crm		What would you like to accomplish first?	
+B15-019	crm		WhatsApp Message	
+B15-020	crm		WhatsApp Templates	
+B15-021	crm		Where	
+B15-022	crm		Width can be in number, pixel or rem (eg. 3, 30px, 10rem)	
+B15-023	crm		Won	
+B15-024	crm		Won Deals	
+B15-025	crm		Won deals	
+B15-026	crm		Work Schedule & Holidays	
+B15-027	crm		Workday	يوم عمل
+B15-028	crm		Working Hours	ساعات العمل
+B15-029	crm		Yes	نعم
+B15-030	crm		You	أنت
+B15-031	crm		You are not allowed to invite Sales Managers	
+B15-032	crm		You are not allowed to invite System Managers	
+B15-033	crm		You are not permitted to access CRM resources.	
+B15-034	crm		You are not permitted to access this resource.	
+B15-035	crm		You are not permitted to create leads.	
+B15-036	crm		You are not permitted to update this call log.	
+B15-037	crm		You can also copy-paste following link in your browser	يمكنك أيضًا نسخ الرابط التالي ولصقه في متصفحك
+B15-038	crm		You can change the default calling medium from the settings	
+B15-039	crm		You can get your Access Key from 	
+B15-040	crm		You can invite multiple users by comma separating their email addresses	
+B15-041	crm		You cannot remove yourself.	
+B15-042	crm		You do not have Exotel Number set in your Telephony Agent	
+B15-043	crm		You do not have enough permissions to access Frappe CRM. Please contact your administrator if you believe this is an error.	
+B15-044	crm		You do not have mobile number set in your Telephony Agent	
+B15-045	crm		You do not have permission to access Frappe CRM	
+B15-046	crm		You do not have permission to access this document	
+B15-047	crm		You don't have permission to delete this attachment	
+B15-048	crm		You must be logged in to change your password	
+B15-049	crm		You need to be in developer mode to edit a Standard Form Script	
+B15-050	crm		You will be redirected to invite user page, unsaved changes will be lost.	
+B15-051	crm		You will need a Meta developer account and an access token to sync leads from Facebook. Read more	
+B15-052	crm		Your assignment on task {0} has been removed by {1}	
+B15-053	crm		Your assignment on {0} {1} has been removed by {2}	تمت إزالة واجبك في {0} {1} بواسطة {2}
+B15-054	crm		Your login id is	معرف تسجيل الدخول الخاص بك هو
+B15-055	crm		Your old condition will be overwritten. Are you sure you want to save?	
+B15-056	crm		Your old conditions will be overwritten. Are you sure you want to save?	
+B15-057	crm		Zoho CRM	
+B15-058	crm		added a	
+B15-059	crm		amber	
+B15-060	crm		assigned a new task {0} to you	
+B15-061	crm		assigned a {0} {1} to you	
+B15-062	crm		at	في
+B15-063	crm		before at	
+B15-064	crm		black	أسود
+B15-065	crm		blue	أزرق
+B15-066	crm		changes from	
+B15-067	crm		comment	تعليق
+B15-068	crm		converted the lead to this deal	
+B15-069	crm		created this deal	
+B15-070	crm		created this lead	
+B15-071	crm		cyan	أزرق سماوي
+B15-072	crm		day	يوم
+B15-073	crm		day before	
+B15-074	crm		days	أيام
+B15-075	crm		days before	
+B15-076	crm		deals	صفقات 
+B15-077	crm		desk	مكتب
+B15-078	crm		disabled	معطل
+B15-079	crm		exchangerate-api	
+B15-080	crm		exchangerate.host	exchangerate.host
+B15-081	crm		fawazahmed-exchange-api	
+B15-082	crm		field	حقل
+B15-083	crm		fields	الحقول
+B15-084	crm		frankfurter.app	
+B15-085	crm		gray	اللون الرمادي
+B15-086	crm		green	أخضر
+B15-087	crm		group_by	
+B15-088	crm		has made a call	
+B15-089	crm		has reached out	
+B15-090	crm		hour	ساعة
+B15-091	crm		hour before	
+B15-092	crm		hours	ساعات
+B15-093	crm		hours before	
+B15-094	crm		in 1 hour	
+B15-095	crm		in 1 minute	
+B15-096	crm		in 1 year	
+B15-097	crm		in {0} M	
+B15-098	crm		in {0} d	
+B15-099	crm		in {0} days	
+B15-100	crm		in {0} h	
+B15-101	crm		in {0} hours	
+B15-102	crm		in {0} m	
+B15-103	crm		in {0} minutes	
+B15-104	crm		in {0} months	
+B15-105	crm		in {0} w	
+B15-106	crm		in {0} weeks	
+B15-107	crm		in {0} y	
+B15-108	crm		in {0} years	
+B15-109	crm		john@doe.com	
+B15-110	crm		kanban	لوحة المهام
+B15-111	crm		leads	التوجيهات
+B15-112	crm		list	قائمة
+B15-113	crm		mentioned you in {0}	
+B15-114	crm		minute	دقيقة
+B15-115	crm		minute before	
+B15-116	crm		minutes	الدقائق
+B15-117	crm		minutes before	
+B15-118	crm		next	التالي
+B15-119	crm		now	الآن
+B15-120	crm		old_value	
+B15-121	crm		previous	سابق
+B15-122	crm		private	خاص
+B15-123	crm		public	جمهور
+B15-124	crm		purple	أرجواني
+B15-125	crm		received a whatsapp message in {0}	
+B15-126	crm		red	أحمر
+B15-127	crm		teal	
+B15-128	crm		to	إلى
+B15-129	crm		tomorrow	غداً
+B15-130	crm		unlinked_orphan	
+B15-131	crm		value	القيمة
+B15-132	crm		violet	بنفسجي
+B15-133	crm		week	أسبوع
+B15-134	crm		week before	
+B15-135	crm		weeks	
+B15-136	crm		weeks before	
+B15-137	crm		which are not compatible with this UI, you will need to recreate the conditions here if you want to manage and add new conditions from this UI.	
+B15-138	crm		{0} (Invalid time format)	
+B15-139	crm		{0} assigned a {1} {2} to you	
+B15-140	crm		{0} attendees	
+B15-141	crm		{0} awaiting	
+B15-142	crm		{0} hrs	
+B15-143	crm		{0} is an Invalid Value	
+B15-144	crm		{0} is an Invalid value	
+B15-145	crm		{0} is an invalid email address	
+B15-146	crm		{0} is required	{0} مطلوب
+B15-147	crm		{0} m	{0} م
+B15-148	crm		{0} maybe	
+B15-149	crm		{0} mins	
+B15-150	crm		{0} no	
+B15-151	crm		{0} users added to hierarchy	
+B15-152	crm		{0} yes	
+B15-153	crm		{0}% complete	
+B15-154	crm		⚠️ Avoid using "trigger" as a field name — it conflicts with the built-in trigger() method.	
+B15-155	crm		⚠️ Method "{0}" not found in class.	
+B15-156	crm		⚠️ No class found for doctype: {0}, it is mandatory to have a class for the parent doctype. it can be empty, but it should be present.	
+B15-157	crm		⚠️ No data found for parent field: {0}	
+B15-158	crm		⚠️ No row found for idx: {0} in parent field: {1}	

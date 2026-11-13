@@ -1,0 +1,250 @@
+B02-000	hrms		Attendance has been marked for all the employees between the selected payroll dates.	تم تسجيل الحضور لجميع الموظفين خلال تواريخ الرواتب المحددة.
+B02-001	hrms		Attendance is pending for these employees between the selected payroll dates. Mark attendance to proceed. Refer {0} for details.	الحضور معلق لهؤلاء الموظفين بين تواريخ الرواتب المحددة. سجّل الحضور للمتابعة. راجع {0} للتفاصيل.
+B02-002	hrms		Attendance marked successfully	تم تسجيل الحضور بنجاح
+B02-003	hrms		Attendance not submitted for {0} as it is a Holiday.	لم يتم إرسال الحضور إلى {0} لأنه عطلة.
+B02-004	hrms		Attendance not submitted for {0} as {1} is on leave.	لم يتم تسجيل الحضور لـ {0} لأن {1} في إجازة.
+B02-005	hrms		Attendance will be marked automatically only after this date.	سيتم تمييز الحضور تلقائيًا بعد هذا التاريخ فقط.
+B02-006	hrms		AttendanceRequestListView	AttendanceRequestListView
+B02-007	hrms		Attendees	الحضور
+B02-008	hrms		Attrition Count	عدد حالات مغادرة الموظفين
+B02-009	hrms		Aug	أغسطس
+B02-010	hrms		Auto Attendance Settings	إعدادات الحضور التلقائي
+B02-011	hrms		Auto Leave Encashment	إجازة مغادرة السيارات
+B02-012	hrms		Automated Based on Goal Progress	آلي بناءً على تقدم الهدف
+B02-013	hrms		Automatic Leave Allocation has failed for the following Earned Leaves: {0}. Please check {1} for more details.	فشل تخصيص الإجازات التلقائي للإجازات المكتسبة التالية: {0}. يُرجى التحقق من {1} للاطلاع على مزيد من التفاصيل.
+B02-014	hrms		Automatically fetches all assets allocated to the employee, if any	يجلب تلقائيًا جميع الأصول المخصصة للموظف، إن وُجدت.
+B02-015	hrms		Automatically update Last Sync of Checkin	تحديث آخر مزامنة لتسجيل الحضور تلقائياً
+B02-016	hrms		Available Leave(s)	الإجازات المتاحة
+B02-017	hrms		Available Leaves	الإجازات المتاحة
+B02-018	hrms		Average Feedback Score	متوسط درجة الملاحظات
+B02-019	hrms		Average Rating	متوسط التقييم
+B02-020	hrms		Average of Goal Score, Feedback Score, and Self Appraisal Score	متوسط درجة الهدف ودرجة الملاحظات ودرجة التقييم الذاتي
+B02-021	hrms		Average rating of demonstrated skills	متوسط تقييم المهارات المُظهَرة
+B02-022	hrms		Avg Feedback Score	متوسط درجة الملاحظات
+B02-023	hrms		Avg Utilization	متوسط الاستخدام
+B02-024	hrms		Avg Utilization (Billed Only)	متوسط الاستخدام (تمت الفوترة فقط)
+B02-025	hrms		Awaiting Response	انتظار الرد
+B02-026	hrms		Backdated Leave Application is restricted. Please set the {} in {}	طلب الإجازة بأثر رجعي مقيّد. يرجى تعيين {} في {}
+B02-027	hrms		Bank Entries	مدخلات البنك
+B02-028	hrms		Bank Remittance	التحويلات المصرفية
+B02-029	hrms		Base	الاساسي
+B02-030	hrms		Base & Variable	
+B02-031	hrms		Begin check-in before shift start time (in minutes)	ابدأ تسجيل الوصول قبل وقت بدء التحول (بالدقائق)
+B02-032	hrms		Below is the list of upcoming holidays for you:	فيما يلي قائمة بالعطلات القادمة الخاصة بك:
+B02-033	hrms		Benefit	فائدة
+B02-034	hrms		Benefit Amount	مبلغ الميزة
+B02-035	hrms		Benefit Details	تفاصيل الميزة
+B02-036	hrms		Benefit amount of component {0} exceeds {1}	مبلغ الميزة للمكون {0} يتجاوز {1}
+B02-037	hrms		Benefit amount of component {0} should be greater than 0	يجب أن يكون مبلغ الميزة للمكون {0} أكبر من 0
+B02-038	hrms		Benefit amount {0} for Salary Component {1} should not be greater than maximum benefit amount {2} set in {3}	لا يجب أن يكون مبلغ الميزة {0} لمكون الراتب {1} أكبر من الحد الأقصى لمبلغ الميزة {2} المحدد في {3}
+B02-039	hrms		Benefits	مزايا
+B02-040	hrms		Bill Amount	مبلغ الفاتورة
+B02-041	hrms		Billed Hours	الساعات المفوترة
+B02-042	hrms		Billed Hours (B)	الساعات المفوترة (B)
+B02-043	hrms		Bimonthly	نصف شهري
+B02-044	hrms		Birthday Reminder	تذكير عيد ميلاد
+B02-045	hrms		Birthday Reminder 🎂	تذكير عيد الميلاد 🎂
+B02-046	hrms		Birthdays	أعياد الميلاد
+B02-047	hrms		Block Date	تاريخ الحظر
+B02-048	hrms		Block Days	الأيام المحظورة
+B02-049	hrms		Block Holidays on important days.	حظر العطلات في الأيام المهمة.
+B02-050	hrms		Bonus	مكافأة
+B02-051	hrms		Bonus Amount	أجمالي المكافأة
+B02-052	hrms		Bonus Payment Date	تاريخ دفع المكافأة
+B02-053	hrms		Bonus Payment Date cannot be a past date	لا يمكن أن يكون تاريخ الدفع المكافأ تاريخًا سابقًا
+B02-054	hrms		Branch: {0}	فرع: {0}
+B02-055	hrms		Bulk Assignments	التعيينات بالجملة
+B02-056	hrms		Bulk Leave Policy Assignment	تعيين سياسة الإجازات بالجملة
+B02-057	hrms		Bulk Salary Structure Assignment	تعيين هيكل الرواتب بالجملة
+B02-058	hrms		By default, the Final Score is calculated as the average of Goal Score, Feedback Score, and Self Appraisal Score. Enable this to set a different formula	افتراضيًا، تُحسب الدرجة النهائية كمتوسط درجة الهدف ودرجة الملاحظات ودرجة التقييم الذاتي. فعّل هذا الخيار لتعيين صيغة مختلفة
+B02-059	hrms		CTC	CTC
+B02-060	hrms		Calculate Final Score based on Formula	احتساب الدرجة النهائية بناءً على الصيغة
+B02-061	hrms		Calculate Gratuity Amount Based On	احسب مبلغ مكافأة نهاية الخدمة بناءً على
+B02-062	hrms		Calculate Payroll Working Days Based On	حساب أيام عمل الرواتب على أساس
+B02-063	hrms		Calculated in days	تحسب بالأيام
+B02-064	hrms		Calls	مكالمات هاتفية
+B02-065	hrms		Cancellation Queued	الإلغاء في قائمة الانتظار
+B02-066	hrms		Cannot Modify Time	لا يمكن تعديل الوقت
+B02-067	hrms		Cannot allocate leaves outside the allocation period {0} - {1}	لا يمكن تخصيص الإجازات خارج فترة التخصيص {0} - {1}
+B02-068	hrms		Cannot allocate more leaves due to maximum leave allocation limit of {0} in leave policy assignment	لا يمكن تخصيص إجازات إضافية بسبب الحد الأقصى لتخصيص الإجازات البالغ {0} في تعيين سياسة الإجازات
+B02-069	hrms		Cannot allocate more leaves due to maximum leaves allowed limit of {0} in {1} leave type.	لا يمكن تخصيص إجازات إضافية بسبب الحد الأقصى المسموح به للإجازات البالغ {0} في نوع الإجازة {1}.
+B02-070	hrms		Cannot break shift after end date	لا يمكن تقسيم الوردية بعد تاريخ الانتهاء.
+B02-071	hrms		Cannot break shift before start date	لا يمكن تقسيم الوردية قبل تاريخ البدء.
+B02-072	hrms		Cannot cancel Shift Assignment: {0} as it is linked to Attendance: {1}	لا يمكن إلغاء تعيين المناوبة: {0} لأنه مرتبط بالحضور: {1}
+B02-073	hrms		Cannot cancel Shift Assignment: {0} as it is linked to Employee Checkin: {1}	لا يمكن إلغاء تعيين المناوبة: {0} لأنه مرتبط بتسجيل حضور الموظف: {1}
+B02-074	hrms		Cannot create Salary Slip for Employee joining after Payroll Period	لا يمكن إنشاء قسيمة راتب لموظف التحق بالعمل بعد فترة الرواتب
+B02-075	hrms		Cannot create Salary Slip for Employee who has left before Payroll Period	لا يمكن إنشاء قسيمة راتب لموظف ترك العمل قبل فترة الرواتب
+B02-076	hrms		Cannot create a Job Applicant against a closed Job Opening	لا يمكن إنشاء متقدم للوظيفة مقابل وظيفة شاغرة مغلقة
+B02-077	hrms		Cannot create or change transactions against an Appraisal Cycle with status {0}.	لا يمكن إنشاء المعاملات أو تعديلها مقابل دورة التقييم ذات الحالة {0}.
+B02-078	hrms		Cannot find active Leave Period	لا يمكن ايجاد فترة الاجازة النشطة
+B02-079	hrms		Cannot mark attendance for an Inactive employee {0}	لا يمكن تسجيل الحضور لموظف غير نشط {0}
+B02-080	hrms		Cannot submit. Attendance is not marked for some employees.	لا يمكن التسجيل. لم يتم تسجيل الحضور لبعض الموظفين.
+B02-081	hrms		Cannot update allocation for {0} after submission	لا يمكن تحديث التخصيص لـ {0} بعد التسجيل
+B02-082	hrms		Cannot update status of Goal groups	لا يمكن تحديث حالة مجموعات الأهداف
+B02-083	hrms		Carry Forward	المضي قدما
+B02-084	hrms		Carry Forwarded Leaves	تحمل أوراق واحال
+B02-085	hrms		Casual Leave	أجازة عادية
+B02-086	hrms		Cause of Grievance	سبب التظلم
+B02-087	hrms		Changed the status from {0} to {1} and Status for Other Half to {2} via Attendance Request	تم تغيير الحالة من {0} إلى {1} وحالة النصف الآخر إلى {2} عبر طلب الحضور
+B02-088	hrms		Changed the status from {0} to {1} via Attendance Request	تم تغيير الحالة من {0} إلى {1} عبر طلب الحضور
+B02-089	hrms		Changing '{0}' to {1}.	جارٍ تغيير '{0}' إلى {1}.
+B02-090	hrms		Changing KRA in this parent goal will align all the child goals to the same KRA, if any.	سيؤدي تغيير KRA في هذا الهدف الرئيسي إلى محاذاة جميع الأهداف الفرعية مع نفس KRA، إن وُجدت.
+B02-091	hrms		Check <a href='/app/List/Error Log?reference_doctype={0}'>{1}</a> for more details	تحقق من <a href='/app/List/Error Log?reference_doctype={0}'>{1}</a> لمزيد من التفاصيل
+B02-092	hrms		Check Error Log {0} for more details.	تحقق من سجل الأخطاء {0} لمزيد من التفاصيل.
+B02-093	hrms		Check In	تسجيل الحضور
+B02-094	hrms		Check Out	تسجيل الانصراف
+B02-095	hrms		Check Vacancies On Job Offer Creation	التحقق من الوظائف الشاغرة عند إنشاء عرض العمل
+B02-096	hrms		Check {0} for more details	تحقق من {0} للحصول على مزيد من التفاصيل
+B02-097	hrms		Check-in	تسجيل الحضور
+B02-098	hrms		Check-in Date	تاريخ الوصول
+B02-099	hrms		Check-out	تسجيل الانصراف
+B02-100	hrms		Check-out Date	موعد انتهاء الأقامة
+B02-101	hrms		Checkin Radius	نطاق تسجيل الحضور
+B02-102	hrms		Child nodes can only be created under 'Group' type nodes	لا يمكن إنشاء العقد الفرعية إلا ضمن العقد من النوع 'مجموعة'
+B02-103	hrms		Choose how the hourly overtime amount is calculated:\n<ol style="padding-left:15px;"><li>Fixed Hourly Rate: A fixed, manually entered hourly rate.</li>\n<li>Salary Component-Based:\n\n(Sum of selected component amounts) ÷ (Payment Days) ÷ (Standard Daily Hours)</li></ol>	
+B02-104	hrms		Choose the date on which you want to create these components as arrears.	اختر التاريخ الذي تريد فيه إنشاء هذه المكونات كمتأخرات.
+B02-105	hrms		Claim Benefit For	فائدة للمطالبة
+B02-106	hrms		Claim an Expense	المطالبة بمصروف
+B02-107	hrms		Claimed	ادعى
+B02-108	hrms		Claimed Amount	المبلغ المطالب به
+B02-109	hrms		Claimed amount of employee {0} exceeds maximum amount eligible for claim {1}	المبلغ المطالب به للموظف {0} يتجاوز الحد الأقصى للمبلغ المؤهل للمطالبة {1}
+B02-110	hrms		Claimed amount of employee {0} should be greater than 0	يجب أن يكون المبلغ المطالب به للموظف {0} أكبر من 0
+B02-111	hrms		Claims	المطالبات
+B02-112	hrms		Click {0} to change the configuration and then resave salary slip	انقر {0} لتغيير الإعدادات ثم أعد حفظ قسيمة الراتب
+B02-113	hrms		Closed On	أُغلق في
+B02-114	hrms		Closes On	يُغلق في
+B02-115	hrms		Closes on:	يغلق في:
+B02-116	hrms		Closing Notes	ملاحظات ختامية
+B02-117	hrms		Company Information	معلومات الشركة
+B02-118	hrms		Compensatory Leave Request	طلب الإجازة التعويضية
+B02-119	hrms		Compensatory Off	تعويض
+B02-120	hrms		Completing onboarding	جارٍ إكمال الإعداد الأولي
+B02-121	hrms		Component properties and references 	خصائص المكونات والمراجع
+B02-122	hrms		Condition & Formula	الشرط والصيغة
+B02-123	hrms		Condition and Formula Help	مساعدة الشرط والصيغة
+B02-124	hrms		Condition and formula	الشرط والصيغة
+B02-125	hrms		Conditions and Formula variable and example	متغير الشروط والصيغة والمثال
+B02-126	hrms		Conference	مؤتمر
+B02-127	hrms		Confirm {0}	تأكيد {0}
+B02-128	hrms		Consider Grace Period	أخذ فترة السماح بعين الاعتبار
+B02-129	hrms		Consider Marked Attendance on Holidays	أخذ الحضور المسجّل في الاعتبار في العطلات
+B02-130	hrms		Consider Tax Exemption Declaration	أخذ إقرار الإعفاء الضريبي في الاعتبار
+B02-131	hrms		Consider Unmarked Attendance As	ضع في اعتبارك الحضور غير المحدد باسم
+B02-132	hrms		Consolidate Leave Types	دمج أنواع الإجازات
+B02-133	hrms		Contact Number	رقم جهة الإتصال
+B02-134	hrms		Copy of Invitation/Announcement	نسخة من الدعوة / الإعلان
+B02-135	hrms		Could not submit some Salary Slips: {}	تعذّر تسجيل بعض قسائم الرواتب: {}
+B02-136	hrms		Could not update Goal	تعذر تحديث الهدف
+B02-137	hrms		Could not update goals	تعذر تحديث الأهداف
+B02-138	hrms		Country Fixture Deletion Failed	فشل حذف الإعدادات الافتراضية للدولة
+B02-139	hrms		Country Setup failed	فشل إعداد الدولة
+B02-140	hrms		Country of Residence	بلد الإقامة
+B02-141	hrms		Course	المقرر التعليمي
+B02-142	hrms		Cover Letter	محتويات الرسالة المرفقة
+B02-143	hrms		Create Additional Salary	إنشاء راتب إضافي
+B02-144	hrms		Create Appraisals	إنشاء التقييمات
+B02-145	hrms		Create Interview	إنشاء مقابلة
+B02-146	hrms		Create Job Applicant	إنشاء متقدم للوظيفة
+B02-147	hrms		Create Job Opening	إنشاء وظيفة شاغرة
+B02-148	hrms		Create New Employee Id	إنشاء رمز موظف جديد
+B02-149	hrms		Create Overtime Slip For Eligible Employee(s)	إنشاء قسيمة العمل الإضافي للموظفين المؤهلين
+B02-150	hrms		Create Overtime Slips	إنشاء قسائم العمل الإضافي
+B02-151	hrms		Create Salary Slip	إنشاء كشف الرواتب
+B02-152	hrms		Create Salary Slips	إنشاء قسائم الرواتب
+B02-153	hrms		Create Shifts After	إنشاء الورديات بعد
+B02-154	hrms		Creating Appraisals	جارٍ إنشاء التقييمات
+B02-155	hrms		Creating Payment Entries......	إنشاء إدخالات الدفع ......
+B02-156	hrms		Creating Salary Slips...	إنشاء قسائم الرواتب ...
+B02-157	hrms		Creating {0}...	إنشاء {0}...
+B02-158	hrms		Creation Date	تاريخ الإنشاء
+B02-159	hrms		Creation Failed	فشل الإنشاء
+B02-160	hrms		Creation of Salary Structure Assignments has been queued. It may take a few minutes.	تمت إضافة إنشاء تعيينات هيكل الرواتب إلى قائمة الانتظار. قد يستغرق ذلك بضع دقائق.
+B02-161	hrms		Creation of {0} has been queued. It may take a few minutes.	تم وضع إنشاء {0} في قائمة الانتظار. قد يستغرق ذلك بضع دقائق.
+B02-162	hrms		Criteria based on which employee should be rated in Performance Feedback and Self Appraisal	المعايير التي يجب على أساسها تقييم الموظف في ملاحظات الأداء والتقييم الذاتي
+B02-163	hrms		Currency 	العملة 
+B02-164	hrms		Currency of selected Income Tax Slab should be {0} instead of {1}	يجب أن تكون عملة شريحة ضريبة الدخل المحددة {0} بدلاً من {1}
+B02-165	hrms		Current CTC	CTC الحالي
+B02-166	hrms		Current Count	العدد الحالي
+B02-167	hrms		Current Employer 	صاحب العمل الحالي 
+B02-168	hrms		Current Job Title	المسمى الوظيفي الحالي
+B02-169	hrms		Current Month Income Tax	ضريبة الدخل للشهر الحالي
+B02-170	hrms		Current Odometer Value should be greater than Last Odometer Value {0}	يجب أن تكون قيمة عداد المسافات الحالية أكبر من قيمة آخر عداد المسافات {0}
+B02-171	hrms		Current Odometer value 	قيمة عداد المسافات الحالية
+B02-172	hrms		Current Openings	الفتحات الحالية
+B02-173	hrms		Current Payroll Period	فترة الرواتب الحالية
+B02-174	hrms		Current Slab	الشريحة الحالية
+B02-175	hrms		Current Work Experience	خبرة العمل الحالية
+B02-176	hrms		Currently, there is no {0} leave period for this date to create/update leave allocation.	لا توجد حاليًا فترة إجازة {0} لهذا التاريخ لإنشاء تخصيص الإجازات أو تحديثه.
+B02-177	hrms		Custom Range	نطاق مخصص
+B02-178	hrms		Cycle Name	اسم الدورة
+B02-179	hrms		Cycles	الدورات
+B02-180	hrms		Daily Work Summary	ملخص العمل اليومي
+B02-181	hrms		Daily Work Summary Group	مجموعة ملخص العمل اليومي
+B02-182	hrms		Daily Work Summary Group User	مستخدم مجموعة ملخص العمل اليومي
+B02-183	hrms		Daily Work Summary Replies	ملخص العمل اليومي الردود
+B02-184	hrms		Date Range Exceeded	تم تجاوز نطاق التاريخ
+B02-185	hrms		Date is repeated	تاريخ متكرر\\n<br>\\nDate is repeated
+B02-186	hrms		Date {0} is repeated in Overtime Details	التاريخ {0} مكرر في تفاصيل العمل الإضافي
+B02-187	hrms		Dates & Reason	التواريخ والسبب
+B02-188	hrms		Dates Based On	التواريخ بناءً على
+B02-189	hrms		Days for which Holidays are blocked for this department.	الأيام التي تكون فيها العطلات محظورة لهذا القسم.
+B02-190	hrms		Days to Reverse	الأيام المراد عكسها
+B02-191	hrms		Days to Reverse must be greater than zero.	يجب أن تكون الأيام المراد عكسها أكبر من الصفر.
+B02-192	hrms		Debit A/C Number	رقم الخصم
+B02-193	hrms		Dec	ديسمبر
+B02-194	hrms		Decision Pending	القرار معلق
+B02-195	hrms		Declarations	التصريحات
+B02-196	hrms		Declared Amount	المبلغ المعلن
+B02-197	hrms		Deduct Full Tax on Selected Payroll Date	خصم الضريبة الكاملة على تاريخ الرواتب المحدد
+B02-198	hrms		Deduct Tax For Unsubmitted Tax Exemption Proof	خصم الضريبة للحصول على إعفاء من الضرائب غير معتمد
+B02-199	hrms		Deduction	خصم
+B02-200	hrms		Deduction Arrears	متأخرات الخصومات
+B02-201	hrms		Deduction Reports	تقارير الخصم
+B02-202	hrms		Deduction from Salary	خصم من الراتب
+B02-203	hrms		Deductions	استقطاعات
+B02-204	hrms		Deductions before tax calculation	الاستقطاعات قبل حساب الضريبة
+B02-205	hrms		Default Amount	المبلغ الافتراضي
+B02-206	hrms		Default Bank / Cash account will be automatically updated in Salary Journal Entry when this mode is selected.	حساب الخزنة / البنك المعتاد سوف يعدل تلقائيا في القيود اليومية للمرتب عند اختيار هذا الوضع.
+B02-207	hrms		Default Base Pay	الراتب الأساسي الافتراضي
+B02-208	hrms		Default Employee Advance Account	حساب سلفة الموظف الافتراضي
+B02-209	hrms		Default Expense Claim Payable Account	حساب المستحقات الافتراضي لمطالبة النفقات
+B02-210	hrms		Default Payroll Payable Account	حساب الرواتب المستحقة الافتراضي
+B02-211	hrms		Default Salary Structure	هيكل الراتب الافتراضي
+B02-212	hrms		Default Shift	الوردية الافتراضية
+B02-213	hrms		Delete Attachment	حذف المرفق
+B02-214	hrms		Delete {0}	حذف {0}
+B02-215	hrms		Department Approver	موافقة القسم
+B02-216	hrms		Department Wise Openings	الوظائف الشاغرة حسب القسم
+B02-217	hrms		Department {0} does not belong to company: {1}	القسم {0} لا ينتمي إلى الشركة: {1}
+B02-218	hrms		Department: {0}	القسم: {0}
+B02-219	hrms		Departure Datetime	موعد المغادرة
+B02-220	hrms		Depends On Payment Days	يعتمد على أيام الدفع
+B02-221	hrms		Depends on Payment Days	يعتمد على أيام الدفع
+B02-222	hrms		Description of a Job Opening	وصف وظيفة شاغرة
+B02-223	hrms		Designation Skill	مهارة التعيين
+B02-224	hrms		Designation: {0}	التعيين: {0}
+B02-225	hrms		Details of Sponsor (Name, Location)	تفاصيل الراعي (الاسم والموقع)
+B02-226	hrms		Determine Check-in and Check-out	تحديد الوصول والمغادرة
+B02-227	hrms		Disable {0} for the {1} component, to prevent the amount from being deducted twice, as its formula already uses a payment-days-based component.	قم بتعطيل {0} للمكون {1}، لمنع خصم المبلغ مرتين، لأن صيغته تستخدم بالفعل مكونًا يعتمد على أيام الدفع.
+B02-228	hrms		Disable {0} or {1} to proceed.	قم بتعطيل {0} أو {1} للمتابعة.
+B02-229	hrms		Disabling Push Notifications...	جارٍ تعطيل الإشعارات الفورية...
+B02-230	hrms		Do Not Include in Accounting Entries	عدم التضمين في القيود المحاسبية
+B02-231	hrms		Do Not Include in Total	لا تدرج في المجموع
+B02-232	hrms		Do not include in total	لا تدرج في المجموع
+B02-233	hrms		Do you want to update the Job Applicant {0} as {1} based on this interview result?	هل تريد تحديث المتقدم للوظيفة {0} إلى {1} بناءً على نتيجة هذه المقابلة؟
+B02-234	hrms		Document {0} failed!	فشل المستند {0}!
+B02-235	hrms		Domestic	المنزلي
+B02-236	hrms		Duplicate Attendance	حضور مكرر
+B02-237	hrms		Duplicate Claim Detected	تم اكتشاف مطالبة مكررة
+B02-238	hrms		Duplicate Job Requisition	
+B02-239	hrms		Duplicate Leave Adjustment	تكرار تعديل الإجازة
+B02-240	hrms		Duplicate Overwritten Salary	تكرار الراتب المستبدل
+B02-241	hrms		Duplicate Salary Withholding	استقطاع راتب مكرر
+B02-242	hrms		ERROR({0}): {1}	خطأ ({0}): {1}
+B02-243	hrms		Early Exit	الخروج المبكر
+B02-244	hrms		Early Exit By	الخروج المبكر بمقدار
+B02-245	hrms		Early Exit Grace Period	الخروج المبكر فترة سماح
+B02-246	hrms		Early Exits	حالات الخروج المبكر
+B02-247	hrms		Earned Leave	إجازة مكتسبة
+B02-248	hrms		Earned Leave Frequency	تكرار الإجازات المكتسبة
+B02-249	hrms		Earned Leave Schedule	جدول الإجازات المكتسبة

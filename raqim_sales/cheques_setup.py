@@ -122,7 +122,7 @@ def get_holding_account(company, cheque_type):
 
 
 SIDEBAR_ITEM = {"type": "Link", "label": "Cheques", "link_type": "DocType", "link_to": "Raqeem Cheque",
-	"icon": "banknote", "child": 1, "open_in_new_tab": 0}
+	"icon": "cheque", "child": 1, "open_in_new_tab": 0}
 SIDEBAR_AFTER = "Payment Entry"
 
 

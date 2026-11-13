@@ -1,0 +1,250 @@
+B06-000	hrms		No salary slips found for the selected employee from {0}	لم يتم العثور على قسائم رواتب للموظف المحدد اعتبارًا من {0}
+B06-001	hrms		No taxes added	لم تتم إضافة أي ضرائب
+B06-002	hrms		No valid shift found for log time	لم يتم العثور على وردية صالحة لوقت السجل
+B06-003	hrms		No {0} Selected	لم يتم تحديد {0}
+B06-004	hrms		No {0} added	لم تتم إضافة {0}
+B06-005	hrms		Non Diary	غير يوميات
+B06-006	hrms		Non Taxable Earnings	الاستحقاقات غير الخاضعة للضريبة
+B06-007	hrms		Non-Billed Hours	ساعات غير مفوترة
+B06-008	hrms		Non-Billed Hours (NB)	ساعات غير مفوترة (NB)
+B06-009	hrms		Non-Encashable Leaves	الإجازات غير القابلة للصرف النقدي
+B06-010	hrms		Non-Vegetarian	غير نباتي
+B06-011	hrms		Note: Shift will not be overwritten in existing attendance records	ملاحظة: لن يتم استبدال الوردية في سجلات الحضور الحالية.
+B06-012	hrms		Note: Total allocated leaves {0} shouldn't be less than already approved leaves {1} for the period	ملاحظة: يجب ألا يقل إجمالي الإجازات المخصصة {0} عن الإجازات المعتمدة بالفعل {1} للفترة
+B06-013	hrms		Note: Your salary slip is password protected, the password to unlock the PDF is of the format {0}.	ملاحظة: قسيمة راتبك محمية بكلمة مرور، وتتبع كلمة المرور لفتح ملف PDF التنسيق {0}.
+B06-014	hrms		Nothing to change	لا شيء للتغيير
+B06-015	hrms		Notice Period	مدة الاشعار
+B06-016	hrms		Notification Template	قالب الإشعار
+B06-017	hrms		Notify users by email	أبلغ المستخدمين عن طريق البريد الإلكتروني
+B06-018	hrms		Nov	نوفمبر
+B06-019	hrms		Number Of Employees	عدد الموظفين
+B06-020	hrms		Number Of Positions	عدد المناصب
+B06-021	hrms		Number of Leaves	عدد الإجازات
+B06-022	hrms		Number of Withholding Cycles	عدد دورات الاستقطاع
+B06-023	hrms		Number of leaves eligible for encashment based on leave type settings	عدد الإجازات المؤهلة للصرف النقدي بناءً على إعدادات نوع الإجازة
+B06-024	hrms		OTP Code	رمز OTP
+B06-025	hrms		OTP Verification	التحقق من OTP
+B06-026	hrms		OUT	خارج
+B06-027	hrms		Obtained Average Rating	متوسط التقييم المحصل عليه
+B06-028	hrms		Oct	أكتوبر
+B06-029	hrms		Odometer Reading	قراءة عداد المسافات
+B06-030	hrms		Odometer Value	قيمة عداد المسافات
+B06-031	hrms		Off-Shift	خارج الوردية
+B06-032	hrms		Off-shift	خارج الوردية
+B06-033	hrms		Offer Term	شروط العرض
+B06-034	hrms		Offer Terms	شروط العرض
+B06-035	hrms		On Date	في تاريخ
+B06-036	hrms		On Duty	في الخدمة
+B06-037	hrms		On Leave	في إجازة
+B06-038	hrms		Onboarding	الإعداد الأولي
+B06-039	hrms		Onboarding Activities	أنشطة الإعداد الأولي
+B06-040	hrms		Onboarding Begins On	يبدأ الإعداد الأولي في
+B06-041	hrms		Only Approvers can Approve this Request.	الموافقون فقط هم من يمكنهم الموافقة على هذا الطلب.
+B06-042	hrms		Only Completed documents can be submitted	لا يمكن تسجيل سوى المستندات المكتملة
+B06-043	hrms		Only Employee Grievance with status {0} or {1} can be submitted	لا يمكن تقديم شكوى الموظف إلا عند الحالة {0} أو {1}
+B06-044	hrms		Only Interviewer Are allowed to submit Interview Feedback	يُسمح فقط للمُقابِل بتقديم ملاحظات المقابلة.
+B06-045	hrms		Only Interviews with Cleared or Rejected status can be submitted.	لا يمكن تسجيل إلا المقابلات ذات الحالة «تمت التسوية» أو «مرفوضة».
+B06-046	hrms		Only Leave Applications with status 'Approved' and 'Rejected' can be submitted	يمكن إعتماد الطلبات التي حالتها 'معتمدة' و 'مرفوضة' فقط\\n<br>\\nOnly Leave Applications with status 'Approved' and 'Rejected' can be submitted
+B06-047	hrms		Only Shift Request with status 'Approved' and 'Rejected' can be submitted	يمكن فقط تقديم طلب التحول بالحالة &quot;موافق عليه&quot; و &quot;مرفوض&quot;
+B06-048	hrms		Only expired allocation can be cancelled	يمكن فقط إلغاء التخصيص المنتهي
+B06-049	hrms		Only interviewers can submit feedback	يمكن للمُقابِلين فقط تقديم الملاحظات.
+B06-050	hrms		Only users with the {0} role can create backdated leave applications	يمكن فقط للمستخدمين الذين لديهم دور {0} إنشاء تطبيقات إجازة متأخرة
+B06-051	hrms		Only {0} Goals can be {1}	يمكن {1} أهداف {0} فقط
+B06-052	hrms		Open & Approved	مفتوح وتمت الموافقة
+B06-053	hrms		Open Feedback	فتح التغذية الراجعة
+B06-054	hrms		Open Now	افتح الآن
+B06-055	hrms		Opening closed.	تم إغلاق الوظيفة الشاغرة.
+B06-056	hrms		Optional Holiday List not set for leave period {0}	لم يتم تعيين قائمة العطلات الاختيارية لفترة الإجازة {0}
+B06-057	hrms		Optional Leaves are holidays that Employees can choose to avail from a list of holidays published by the company.	الإجازات الاختيارية هي عطلات يمكن للموظفين الاستفادة منها من قائمة العطلات المنشورة من قبل الشركة.
+B06-058	hrms		Organizational Chart	مخطط الهيكل التنظيمي
+B06-059	hrms		Other Taxes and Charges	ضرائب ورسوم أخرى
+B06-060	hrms		Out Time	وقت خروج
+B06-061	hrms		Outgoing Salary	الراتب الصادر
+B06-062	hrms		Over Allocation	تخصيص زائد
+B06-063	hrms		Overall Average Rating	متوسط التقييم الإجمالي
+B06-064	hrms		Overlapping Attendance Request	طلب حضور متداخل
+B06-065	hrms		Overlapping Shift Attendance	حضور وردية متداخل
+B06-066	hrms		Overlapping Shift Requests	طلبات مناوبة متداخلة
+B06-067	hrms		Overlapping Shifts	الورديات المتداخلة
+B06-068	hrms		Overtime	العمل الإضافي
+B06-069	hrms		Overtime Amount Calculation	حساب مبلغ العمل الإضافي
+B06-070	hrms		Overtime Details	تفاصيل العمل الإضافي
+B06-071	hrms		Overtime Duration	مدة العمل الإضافي
+B06-072	hrms		Overtime Duration for {0} is greater than Maximum Overtime Hours Allowed	مدة العمل الإضافي لـ {0} أكبر من الحد الأقصى المسموح به لساعات العمل الإضافي
+B06-073	hrms		Overtime Salary Component	مكون راتب العمل الإضافي
+B06-074	hrms		Overtime Slip	قسيمة العمل الإضافي
+B06-075	hrms		Overtime Slip Creation Error for {0}	خطأ في إنشاء قسيمة العمل الإضافي لـ {0}
+B06-076	hrms		Overtime Slip Creation Failed	فشل إنشاء قسيمة العمل الإضافي
+B06-077	hrms		Overtime Slip Step	خطوة قسيمة العمل الإضافي
+B06-078	hrms		Overtime Slip Submission Error for {0}	خطأ في تسجيل قسيمة العمل الإضافي لـ {0}
+B06-079	hrms		Overtime Slip Submission Failed	فشل تسجيل قسيمة العمل الإضافي
+B06-080	hrms		Overtime Slip Submitted	تم تسجيل قسيمة العمل الإضافي
+B06-081	hrms		Overtime Slip created for {0} employee(s)	تم إنشاء قسيمة العمل الإضافي لـ {0} موظف
+B06-082	hrms		Overtime Slip creation is queued. It may take a few minutes	تم وضع إنشاء قسيمة العمل الإضافي في قائمة الانتظار. قد يستغرق ذلك بضع دقائق
+B06-083	hrms		Overtime Slip submission is queued. It may take a few minutes	تم وضع تسجيل قسيمة العمل الإضافي في قائمة الانتظار. قد يستغرق ذلك بضع دقائق
+B06-084	hrms		Overtime Slip:{0} has been created between {1} and {2}	تم إنشاء قسيمة العمل الإضافي:{0} بين {1} و{2}
+B06-085	hrms		Overtime Slips Created	تم إنشاء قسائم العمل الإضافي
+B06-086	hrms		Overtime Slips submitted for {0} employee(s)	تم تسجيل قسائم العمل الإضافي لـ {0} موظف
+B06-087	hrms		Overtime Type	نوع العمل الإضافي
+B06-088	hrms		Overtime earnings will be booked under this salary component for payout.	سيتم تسجيل استحقاقات العمل الإضافي ضمن مكون الراتب هذا لغرض الصرف.
+B06-089	hrms		Overwrite Salary Structure Amount	الكتابة فوق هيكل الهيكل المرتب
+B06-090	hrms		PAN Number	رقم PAN
+B06-091	hrms		PF Account	حساب PF
+B06-092	hrms		PF Amount	مبلغ PF
+B06-093	hrms		PF Loan	قرض PF
+B06-094	hrms		PWA Notification	PWA Notification
+B06-095	hrms		Paid via Salary Slip	مدفوع عبر قسيمة الراتب
+B06-096	hrms		Parent Goal	الهدف الرئيسي
+B06-097	hrms		Part-time	دوام جزئى
+B06-098	hrms		Partially Sponsored, Require Partial Funding	برعاية جزئية ، يتطلب التمويل الجزئي
+B06-099	hrms		Partly Claimed and Returned	مطالب به جزئيًا ومرتجع
+B06-100	hrms		Password Policy	سياسة كلمة المرور
+B06-101	hrms		Password policy cannot contain spaces or simultaneous hyphens. The format will be restructured automatically	لا يمكن أن تحتوي سياسة كلمة المرور على مسافات أو واصلات متزامنة. سيتم إعادة هيكلة التنسيق تلقائيًا
+B06-102	hrms		Password policy for Salary Slips is not set	لم يتم تعيين سياسة كلمة المرور لمرتبات الراتب
+B06-103	hrms		Pay Rate Multipliers	معاملات معدلات الدفع
+B06-104	hrms		Pay Via Payment Entry	الدفع عبر قيد دفع
+B06-105	hrms		Pay via Salary Slip	ادفع عبر قسيمة الراتب
+B06-106	hrms		Payable Account is mandatory to submit an Expense Claim	حساب الدائنين إلزامي لتسجيل مطالبة النفقات
+B06-107	hrms		Payment Account is mandatory	حساب الدفع إلزامي
+B06-108	hrms		Payment Date	تاريخ الدفع
+B06-109	hrms		Payment Days	أيام الدفع
+B06-110	hrms		Payment Days Calculation Help	مساعدة حساب أيام الدفع
+B06-111	hrms		Payment Days Dependency	التبعية لأيام الدفع
+B06-112	hrms		Payment Days calculations are based on these Payroll Settings	حسابات أيام الدفع مبنية على إعدادات دفع الرواتب هذه
+B06-113	hrms		Payment and Accounting	الدفع والمحاسبة
+B06-114	hrms		Payment of {0} from {1} to {2}	دفع {0} من {1} إلى {2}
+B06-115	hrms		Payout	الصرف
+B06-116	hrms		Payout Method	طريقة الصرف
+B06-117	hrms		Payout Unclaimed Amount in Final Payroll Cycle	صرف المبلغ غير المطالب به في دورة الرواتب الأخيرة
+B06-118	hrms		Payroll	دفع الرواتب
+B06-119	hrms		Payroll Based On	الرواتب بناءً على
+B06-120	hrms		Payroll Correction	Payroll Correction
+B06-121	hrms		Payroll Correction Child	تصحيح الرواتب الفرعي
+B06-122	hrms		Payroll Cost Center	مركز تكلفة الرواتب
+B06-123	hrms		Payroll Cost Centers	مراكز تكلفة الرواتب
+B06-124	hrms		Payroll Dashboard	
+B06-125	hrms		Payroll Date	جدول الرواتب
+B06-126	hrms		Payroll Employee Detail	الرواتب الموظف التفاصيل
+B06-127	hrms		Payroll Entry cancellation is queued. It may take a few minutes	إلغاء قيد الرواتب في قائمة الانتظار. قد يستغرق ذلك بضع دقائق
+B06-128	hrms		Payroll Frequency	الدورة الزمنية لدفع الرواتب
+B06-129	hrms		Payroll Info	معلومات الرواتب
+B06-130	hrms		Payroll Number	رقم الراتب
+B06-131	hrms		Payroll Payable Account	حساب الرواتب المستحقة
+B06-132	hrms		Payroll Period	فترة المرتبات
+B06-133	hrms		Payroll Period Date	جدول الرواتب الفترة التاريخ
+B06-134	hrms		Payroll Periods	فترات الرواتب
+B06-135	hrms		Payroll Reports	تقارير الرواتب
+B06-136	hrms		Payroll Settings	إعدادات دفع الرواتب
+B06-137	hrms		Payroll date can not be greater than employee's relieving date.	لا يمكن أن يكون تاريخ كشوف المرتبات أكبر من تاريخ إعفاء الموظف.
+B06-138	hrms		Payroll date can not be less than employee's joining date.	لا يمكن أن يكون تاريخ كشوف المرتبات أقل من تاريخ انضمام الموظف.
+B06-139	hrms		Payroll date cannot be in the past. This is to ensure that claims are made for the current or future payroll cycles.	لا يمكن أن يكون تاريخ الرواتب في الماضي. وذلك لضمان تقديم المطالبات لدورات الرواتب الحالية أو المستقبلية.
+B06-140	hrms		Pending (unpaid) amount from previous advances	المبلغ المعلق (غير المدفوع) من السلف السابقة
+B06-141	hrms		Pending Asset Returns	مرتجعات الأصول المعلقة
+B06-142	hrms		Pending FnF	FnF معلق
+B06-143	hrms		Pending Interviews	المقابلات المعلقة
+B06-144	hrms		Pending Questionnaires	الاستبيانات المعلقة
+B06-145	hrms		Percent Deduction	خصم في المئة
+B06-146	hrms		Performance	الأداء
+B06-147	hrms		Permanently cancel {0}	إلغاء {0} بشكل دائم
+B06-148	hrms		Permanently submit {0}	اعتماد {0} نهائيًا
+B06-149	hrms		Piecework	الأجرة المدفوعة لكمية العمل المنجز
+B06-150	hrms		Planned number of Positions	العدد المخطط للمناصب
+B06-151	hrms		Please Enable Auto Attendance and complete the setup first.	يرجى تمكين الحضور التلقائي وإكمال الإعداد أولاً.
+B06-152	hrms		Please Select Company First	يرجى تحديد الشركة أولاً
+B06-153	hrms		Please assign a Salary Structure for Employee {0} applicable from or before {1} first	يرجى تعيين هيكل راتب للموظف {0} ساري المفعول من {1} أو قبله أولاً.
+B06-154	hrms		Please check if employee is on leave or attendance with the same status exists for selected day(s).	
+B06-155	hrms		Please confirm once you have completed your training	يرجى تأكيد بمجرد الانتهاء من التدريب الخاص بك
+B06-156	hrms		Please create a new {0} for the date {1} first.	يرجى إنشاء {0} جديد للتاريخ {1} أولاً.
+B06-157	hrms		Please delete the Employee {0} to cancel this document	يرجى حذف الموظف {0} لإلغاء هذا المستند
+B06-158	hrms		Please enable default incoming account before creating Daily Work Summary Group	الرجاء تمكين الحساب الوارد الافتراضي قبل إنشاء مجموعة ملخص العمل اليومي
+B06-159	hrms		Please enter the designation	الرجاء إدخال التسمية
+B06-160	hrms		Please fill in Employee, Posting Date, and Company before fetching overtime details.	يرجى تعبئة الموظف وتاريخ الترحيل والشركة قبل جلب تفاصيل العمل الإضافي.
+B06-161	hrms		Please reduce {0} to avoid shift time overlapping with itself	يرجى تقليل {0} لتجنب تداخل وقت الوردية مع نفسه
+B06-162	hrms		Please see attachment	يرجى الاطلاع على المرفق
+B06-163	hrms		Please select Company and Designation	يرجى تحديد الشركة والتسمية
+B06-164	hrms		Please select Employee	يرجى تحديد موظف
+B06-165	hrms		Please select Employee first.	الرجاء تحديد الموظف أولاً.
+B06-166	hrms		Please select Filter Based On	يرجى تحديد عامل التصفية بناءً على
+B06-167	hrms		Please select From Date and Payroll Frequency first	يرجى اختيار تاريخ "من" وتكرار الرواتب أولاً
+B06-168	hrms		Please select From Date.	يرجى اختيار تاريخ البداية.
+B06-169	hrms		Please select Shift Schedule and assignment date(s).	يرجى اختيار جدول المناوبات وتاريخ (تواريخ) التعيين.
+B06-170	hrms		Please select Shift Type and assignment date(s).	يرجى اختيار نوع التحول وتاريخ/تواريخ التعيين.
+B06-171	hrms		Please select a company first	يرجى تحديد الشركة أولاً
+B06-172	hrms		Please select a company first.	يرجى اختيار شركة أولاً.
+B06-173	hrms		Please select a csv file	يرجى اختيار ملف CSV
+B06-174	hrms		Please select a date.	يرجى اختيار تاريخ.
+B06-175	hrms		Please select an Applicant	يرجى اختيار متقدم
+B06-176	hrms		Please select at least one Shift Request to perform this action.	يرجى اختيار طلب مناوبة واحد على الأقل لتنفيذ هذا الإجراء.
+B06-177	hrms		Please select at least one employee to perform this action.	يرجى اختيار موظف واحد على الأقل لتنفيذ هذا الإجراء.
+B06-178	hrms		Please select at least one row to perform this action.	يرجى اختيار صف واحد على الأقل لتنفيذ هذا الإجراء.
+B06-179	hrms		Please select company.	يرجى تحديد الشركة.
+B06-180	hrms		Please select employee first	يرجى اختيار الموظف أولاً.
+B06-181	hrms		Please select employees to create appraisals for	يرجى تحديد الموظفين لإنشاء التقييمات لهم
+B06-182	hrms		Please select half day attendance status.	يرجى اختيار حالة حضور نصف اليوم.
+B06-183	hrms		Please select month and year.	يرجى تحديد الشهر والسنة.
+B06-184	hrms		Please select the Appraisal Cycle first.	يرجى تحديد دورة التقييم أولاً.
+B06-185	hrms		Please select the attendance status.	يرجى تحديد حالة الحضور.
+B06-186	hrms		Please select the employees you want to mark attendance for.	يرجى تحديد الموظفين الذين تريد تسجيل حضورهم.
+B06-187	hrms		Please select the salary slips to email	يرجى تحديد قسائم الرواتب لإرسالها عبر البريد الإلكتروني
+B06-188	hrms		Please set "Default Payroll Payable Account" in Company Defaults	يرجى تعيين "حساب الرواتب المستحقة الافتراضي" في القيم الافتراضية للشركة
+B06-189	hrms		Please set Basic and HRA component in Company {0}	يرجى تعيين مكوّني Basic وHRA في الشركة {0}.
+B06-190	hrms		Please set Earning Component for Leave type: {0}.	يرجى تعيين مكوّن الاستحقاق لنوع الإجازة: {0}.
+B06-191	hrms		Please set Payroll based on in Payroll settings	يرجى تعيين كشوف المرتبات على أساس إعدادات الرواتب
+B06-192	hrms		Please set Relieving Date for employee: {0}	يرجى تعيين تاريخ إنهاء الخدمة للموظف: {0}
+B06-193	hrms		Please set a date range less than 90 days.	يرجى تعيين نطاق تاريخ أقل من 90 يومًا.
+B06-194	hrms		Please set account in Salary Component {0}	يرجى تعيين حساب في مكون الراتب {0}
+B06-195	hrms		Please set default template for Leave Approval Notification in HR Settings.	يرجى تعيين القالب الافتراضي لإشعار إجازة الموافقة في إعدادات الموارد البشرية.
+B06-196	hrms		Please set default template for Leave Status Notification in HR Settings.	يرجى تعيين القالب الافتراضي لإشعار حالة الإجازات في إعدادات الموارد البشرية.
+B06-197	hrms		Please set the Appraisal Template for all the {0} or select the template in the Employees table below.	يرجى تعيين قالب التقييم لجميع {0} أو تحديد القالب في جدول الموظفين أدناه.
+B06-198	hrms		Please set the Company	يرجى تعيين الشركة
+B06-199	hrms		Please set the Date Of Joining for employee {0}	يرجى تحديد تاريخ الالتحاق بالموظف {0}
+B06-200	hrms		Please set the Holiday List.	يرجى تعيين قائمة العطلات.
+B06-201	hrms		Please set the date range.	يرجى تعيين نطاق التاريخ.
+B06-202	hrms		Please set the relieving date for employee {0}	يرجى تعيين تاريخ إنهاء الخدمة للموظف {0}
+B06-203	hrms		Please set {0} and {1} in {2}.	يرجى تعيين {0} و{1} في {2}.
+B06-204	hrms		Please set {0} for Employee {1}	يرجى تعيين {0} للموظف {1}
+B06-205	hrms		Please set {0} for the Employee: {1}	يرجى تعيين {0} للموظف: {1}
+B06-206	hrms		Please set {0}.	يرجى تعيين {0}.
+B06-207	hrms		Please setup Employee Naming System in Human Resource > HR Settings	يرجى إعداد نظام تسمية الموظفين في الموارد البشرية&gt; إعدادات الموارد البشرية
+B06-208	hrms		Please setup numbering series for Attendance via Setup > Numbering Series	يرجى إعداد سلسلة الترقيم للحضور عبر الإعداد&gt; سلسلة الترقيم
+B06-209	hrms		Please share your feedback to the training by clicking on 'Training Feedback' and then 'New'	يرجى حصة ملاحظاتك للتدريب من خلال النقر على &quot;التدريب ردود الفعل&quot; ثم &quot;جديد&quot;
+B06-210	hrms		Please specify the job applicant to be updated.	يرجى تحديد المتقدم للوظيفة المراد تحديثه.
+B06-211	hrms		Please specify {0} and {1} (if any), for the correct tax calculation in future salary slips.	يرجى تحديد {0} و{1} (إن وجد)، لضمان الحساب الصحيح للضريبة في قسائم الرواتب المستقبلية.
+B06-212	hrms		Please submit the {0} before marking the cycle as Completed	يرجى اعتماد {0} قبل تحديد الدورة كمكتملة
+B06-213	hrms		Please update your status for this training event	يرجى تحديث حالتك لهذا الحدث التدريبي
+B06-214	hrms		Posted On	مُرحّل في
+B06-215	hrms		Posting date	تاريخ الترحيل
+B06-216	hrms		Preferred Area for Lodging	المنطقة المفضلة للسكن
+B06-217	hrms		Present	حاضر
+B06-218	hrms		Present Records	السجلات الحاضرة
+B06-219	hrms		Prevent self approval for expense claims even if user has permissions	منع الموافقة الذاتية على مطالبات النفقات حتى لو كان لدى المستخدم الصلاحيات
+B06-220	hrms		Prevent self approval for leaves even if user has permissions	منع الموافقة الذاتية على الإجازات حتى إذا كان لدى المستخدم الصلاحيات
+B06-221	hrms		Preview Salary Slip	معاينة كشف الراتب
+B06-222	hrms		Principal Amount	مبلغ الأصل
+B06-223	hrms		Printed On {0}	طُبع في {0}
+B06-224	hrms		Privilege Leave	إجازة الامتياز
+B06-225	hrms		Probation	فترة التجربة
+B06-226	hrms		Probationary Period	فترة الاختبار
+B06-227	hrms		Process Attendance After	عملية الحضور بعد
+B06-228	hrms		Process Payroll Accounting Entry based on Employee	معالجة قيد محاسبي للرواتب حسب الموظف
+B06-229	hrms		Process Requests	معالجة الطلبات
+B06-230	hrms		Process Shift Requests	معالجة طلبات المناوبة
+B06-231	hrms		Process leave encashment via a separate Payment Entry instead of Salary Slip	معالجة صرف بدل الإجازات عبر قيد دفع منفصل بدلاً من قسيمة الراتب
+B06-232	hrms		Process {0} Shift Request(s) as <b>{1}</b>?	هل تريد معالجة {0} طلب مناوبة كـ <b>{1}</b>؟
+B06-233	hrms		Processing Requests	جارٍ معالجة الطلبات
+B06-234	hrms		Processing Requests...	جارٍ معالجة الطلبات...
+B06-235	hrms		Processing of Shift Requests has been queued. It may take a few minutes.	تمت إضافة معالجة طلبات المناوبة إلى قائمة الانتظار. قد تستغرق بضع دقائق.
+B06-236	hrms		Professional Tax Deductions	الخصومات الضريبية المهنية
+B06-237	hrms		Proficiency	مهارة
+B06-238	hrms		Profit	الربح
+B06-239	hrms		Project Profitability	ربح المشروع
+B06-240	hrms		Promotion	
+B06-241	hrms		Promotion Date	تاريخ العرض
+B06-242	hrms		Property already added	الخاصية المضافة بالفعل
+B06-243	hrms		Provident Fund Deductions	خصومات صندوق الادخار
+B06-244	hrms		Public Holiday Multiplier	معامل العطلة الرسمية
+B06-245	hrms		Publish Applications Received	نشر الطلبات المستلمة
+B06-246	hrms		Publish Salary Range	نشر نطاق الراتب
+B06-247	hrms		Publish on website	نشر على الموقع الإلكتروني
+B06-248	hrms		Purpose & Amount	الغرض والكمية
+B06-249	hrms		Purpose of Travel	الغرض من السفر
