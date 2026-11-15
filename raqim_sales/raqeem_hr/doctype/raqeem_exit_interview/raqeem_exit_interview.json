@@ -1,0 +1,243 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "creation": "2026-11-14 12:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "department",
+  "company",
+  "employee_exit",
+  "column_break_1",
+  "interview_date",
+  "interviewer",
+  "status",
+  "section_why",
+  "main_reason",
+  "would_recommend",
+  "would_return",
+  "column_break_why",
+  "rating_job",
+  "rating_manager",
+  "rating_pay",
+  "rating_environment",
+  "section_notes",
+  "liked_most",
+  "suggestions",
+  "notes",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1,
+   "in_standard_filter": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "fetch_from": "employee.employee_name",
+   "read_only": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "fetch_from": "employee.department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "fetch_from": "employee.company",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee_exit",
+   "fieldtype": "Link",
+   "label": "Exit",
+   "options": "Raqeem Employee Exit"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "interview_date",
+   "fieldtype": "Date",
+   "label": "Interview Date",
+   "reqd": 1,
+   "default": "Today",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "interviewer",
+   "fieldtype": "Link",
+   "label": "Interviewer",
+   "options": "User",
+   "default": "__user"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Scheduled\nCompleted\nCancelled",
+   "default": "Scheduled",
+   "read_only": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "allow_on_submit": 1,
+   "no_copy": 1
+  },
+  {
+   "fieldname": "section_why",
+   "fieldtype": "Section Break",
+   "label": "Why Is the Employee Leaving?"
+  },
+  {
+   "fieldname": "main_reason",
+   "fieldtype": "Select",
+   "label": "Main Reason",
+   "options": "\nBetter Offer\nSalary and Benefits\nManagement\nWork Environment\nCareer Growth\nWorkload\nPersonal or Family\nRelocation\nStudies\nRetirement\nOther",
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "would_recommend",
+   "fieldtype": "Check",
+   "label": "Would Recommend Us as an Employer"
+  },
+  {
+   "fieldname": "would_return",
+   "fieldtype": "Check",
+   "label": "Would Work Here Again"
+  },
+  {
+   "fieldname": "column_break_why",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rating_job",
+   "fieldtype": "Rating",
+   "label": "The Job Itself"
+  },
+  {
+   "fieldname": "rating_manager",
+   "fieldtype": "Rating",
+   "label": "Their Manager"
+  },
+  {
+   "fieldname": "rating_pay",
+   "fieldtype": "Rating",
+   "label": "Pay and Benefits"
+  },
+  {
+   "fieldname": "rating_environment",
+   "fieldtype": "Rating",
+   "label": "Work Environment"
+  },
+  {
+   "fieldname": "section_notes",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "liked_most",
+   "fieldtype": "Small Text",
+   "label": "What They Liked Most"
+  },
+  {
+   "fieldname": "suggestions",
+   "fieldtype": "Small Text",
+   "label": "What We Should Improve"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Interviewer Notes"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Raqeem Exit Interview",
+   "read_only": 1,
+   "no_copy": 1,
+   "print_hide": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-14 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Raqeem HR",
+ "name": "Raqeem Exit Interview",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "HR Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "HR User",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "autoname": "RQ-EXI-.YYYY.-.#####",
+ "naming_rule": "Expression (old style)",
+ "is_submittable": 1,
+ "title_field": "employee_name"
+}

@@ -1,0 +1,222 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "hash",
+ "creation": "2026-11-14 05:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "description",
+  "column_break_1",
+  "default_range",
+  "show_company_filter",
+  "show_department_filter",
+  "auto_refresh_minutes",
+  "section_roles",
+  "roles",
+  "section_layout",
+  "items",
+  "standard_key"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "reqd": 1,
+   "in_list_view": 1,
+   "bold": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "default_range",
+   "fieldtype": "Select",
+   "label": "Default Period",
+   "default": "this_year",
+   "options": "\nall\ntoday\nthis_week\nthis_month\nlast_month\nthis_quarter\nthis_year\nlast_year\nlast_30_days\nlast_90_days\nlast_12_months",
+   "description": "Empty: each chart keeps its own period."
+  },
+  {
+   "fieldname": "show_company_filter",
+   "fieldtype": "Check",
+   "label": "Company Filter",
+   "default": "0"
+  },
+  {
+   "fieldname": "show_department_filter",
+   "fieldtype": "Check",
+   "label": "Department Filter",
+   "default": "0"
+  },
+  {
+   "fieldname": "auto_refresh_minutes",
+   "fieldtype": "Int",
+   "label": "Refresh Every (Minutes)",
+   "default": "0",
+   "description": "0: only when opened or refreshed."
+  },
+  {
+   "fieldname": "section_roles",
+   "fieldtype": "Section Break",
+   "label": "Who Can See It"
+  },
+  {
+   "fieldname": "roles",
+   "fieldtype": "Table MultiSelect",
+   "label": "Roles",
+   "options": "Has Role",
+   "description": "Empty: everyone who can open Analytics. The numbers always follow each viewer's own permissions."
+  },
+  {
+   "fieldname": "section_layout",
+   "fieldtype": "Section Break",
+   "label": "Layout",
+   "collapsible": 1
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "JSON",
+   "label": "Charts",
+   "read_only": 1,
+   "description": "Arranged on the Analytics screen."
+  },
+  {
+   "fieldname": "standard_key",
+   "fieldtype": "Data",
+   "label": "Standard Key",
+   "read_only": 1,
+   "hidden": 1,
+   "no_copy": 1,
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-14 05:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Analytics",
+ "name": "Analytics Dashboard",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 1,
+   "print": 0,
+   "email": 0,
+   "share": 1
+  },
+  {
+   "role": "Dashboard Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 1,
+   "print": 0,
+   "email": 0,
+   "share": 1
+  },
+  {
+   "role": "Accounts Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 1,
+   "print": 0,
+   "email": 0,
+   "share": 1
+  },
+  {
+   "role": "Sales Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 1,
+   "print": 0,
+   "email": 0,
+   "share": 1
+  },
+  {
+   "role": "HR Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 1,
+   "print": 0,
+   "email": 0,
+   "share": 1
+  },
+  {
+   "role": "Report Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 1,
+   "print": 0,
+   "email": 0,
+   "share": 1
+  },
+  {
+   "role": "Desk User",
+   "read": 1,
+   "write": 0,
+   "create": 0,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 0,
+   "print": 0,
+   "email": 0,
+   "share": 0
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "title_field": "title",
+ "show_title_field_in_link": 1
+}

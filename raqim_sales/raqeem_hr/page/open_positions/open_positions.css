@@ -1,0 +1,56 @@
+/* Open Positions page (HR only). RAQEEM theme variables when present, Frappe's otherwise; logical properties for RTL. */
+.rqop { padding: 4px 0 24px; display: flex; flex-direction: column; gap: 14px; }
+.rqop-empty { padding: 32px; text-align: center; color: var(--text-muted); }
+.rqop-empty--big { display: flex; flex-direction: column; align-items: center; gap: 8px; background: var(--card-bg); border: 1px dashed var(--border-color); border-radius: 12px; }
+.rqop-tiles { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; }
+.rqop-tile { display: flex; align-items: center; gap: 12px; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 12px 14px; min-width: 0; }
+.rqop-tile-icon { display: inline-flex; padding: 8px; border-radius: 10px; color: var(--rq-accent, var(--primary)); background: color-mix(in srgb, var(--rq-accent, var(--primary)) 12%, transparent); }
+.rqop-tile-text { display: flex; flex-direction: column; min-width: 0; }
+.rqop-tile-text b { font-size: var(--text-xl); color: var(--text-color); line-height: 1.2; }
+.rqop-tile-text small { color: var(--text-muted); }
+.rqop-tile.is-good .rqop-tile-icon { color: var(--green-600, #16a34a); background: color-mix(in srgb, var(--green-600, #16a34a) 12%, transparent); }
+.rqop-tile.is-warn .rqop-tile-icon { color: var(--orange-600, #ea580c); background: color-mix(in srgb, var(--orange-600, #ea580c) 12%, transparent); }
+.rqop-funnel { display: flex; flex-wrap: wrap; gap: 8px; }
+.rqop-funnel-step { flex: 1 1 120px; display: flex; align-items: center; justify-content: space-between; gap: 8px; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 10px; padding: 8px 12px; color: var(--text-muted); }
+.rqop-funnel-step span { display: inline-flex; align-items: center; gap: 6px; }
+.rqop-funnel-step b { color: var(--text-color); font-size: var(--text-lg); }
+.rqop-warn { display: flex; align-items: center; gap: 6px; padding: 8px 12px; border-radius: 10px; color: var(--orange-700, #c2410c); background: color-mix(in srgb, var(--orange-500, #f97316) 10%, transparent); }
+.rqop-table-wrap { overflow-x: auto; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; }
+.rqop-table { width: 100%; border-collapse: collapse; }
+.rqop-table th, .rqop-table td { padding: 10px 12px; border-block-end: 1px solid var(--border-color); text-align: start; vertical-align: top; }
+.rqop-table th { color: var(--text-muted); font-weight: 600; font-size: var(--text-sm); white-space: nowrap; }
+.rqop-table tbody tr:last-child td { border-block-end: 0; }
+.rqop-table .num { text-align: center; }
+.rqop-table tr.is-oldest { background: color-mix(in srgb, var(--orange-500, #f97316) 6%, transparent); }
+.rqop-job-title { font-weight: 600; color: var(--text-color); }
+.rqop-sub { color: var(--text-muted); font-size: var(--text-xs); }
+.rqop-flags { display: flex; flex-wrap: wrap; gap: 4px; margin-block-start: 4px; }
+.rqop-flag { display: inline-flex; align-items: center; gap: 3px; border-radius: 99px; padding: 0 8px; font-size: var(--text-xs); line-height: 20px; background: var(--subtle-fg, rgba(127, 127, 127, .12)); color: var(--text-muted); }
+.rqop-flag.is-oldest { background: color-mix(in srgb, var(--orange-500, #f97316) 16%, transparent); color: var(--orange-700, #c2410c); font-weight: 600; }
+.rqop-flag.is-stale { background: color-mix(in srgb, var(--yellow-500, #eab308) 18%, transparent); color: var(--yellow-800, #854d0e); }
+.rqop-flag.is-overdue { background: color-mix(in srgb, var(--red-500, #ef4444) 14%, transparent); color: var(--red-700, #b91c1c); }
+.rqop-fill { min-width: 140px; }
+.rqop-bar { height: 8px; border-radius: 99px; background: var(--subtle-fg, rgba(127, 127, 127, .15)); overflow: hidden; margin-block: 4px; }
+.rqop-bar span { display: block; height: 100%; background: var(--green-500, #22c55e); border-radius: 99px; }
+.rqop-fill small { color: var(--text-muted); }
+.rqop-count { font-weight: 600; font-size: var(--text-lg); color: var(--rq-accent, var(--primary)); }
+.rqop-pill { display: inline-block; min-width: 28px; border-radius: 99px; padding: 0 8px; line-height: 22px; font-weight: 600; background: color-mix(in srgb, var(--rq-accent, var(--primary)) 14%, transparent); color: var(--text-color); }
+.rqop-pill-hired { background: color-mix(in srgb, var(--green-500, #22c55e) 20%, transparent); }
+.rqop-pill-offer { background: color-mix(in srgb, var(--blue-500, #3b82f6) 18%, transparent); }
+.rqop-pill:hover, .rqop-count:hover, .rqop-job-title:hover { text-decoration: underline; }
+.rqop-zero { color: var(--text-light, var(--text-muted)); opacity: .6; }
+.rqop-days b { white-space: nowrap; }
+.rqop-days b.is-stale { color: var(--orange-700, #c2410c); }
+@media (max-width: 991px) { .rqop-tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+/* phone: each opening becomes a card, stage cells labelled */
+@media (max-width: 640px) {
+	.rqop-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+	.rqop-table thead { display: none; }
+	.rqop-table, .rqop-table tbody, .rqop-table tr, .rqop-table td { display: block; width: 100%; }
+	.rqop-table tr { border-block-end: 1px solid var(--border-color); padding: 8px 0; }
+	.rqop-table td { border: 0; padding: 4px 12px; }
+	.rqop-table td.num, .rqop-table td.rqop-fill { display: flex; justify-content: space-between; align-items: center; gap: 8px; text-align: end; }
+	.rqop-table td[data-label]:not(.rqop-job)::before { content: attr(data-label); color: var(--text-muted); font-size: var(--text-sm); }
+	.rqop-table td.rqop-fill { flex-wrap: wrap; }
+	.rqop-table td.rqop-fill .rqop-bar { flex: 1 1 100%; order: 3; }
+}

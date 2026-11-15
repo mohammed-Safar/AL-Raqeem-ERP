@@ -1,0 +1,227 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "creation": "2026-11-14 12:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "department",
+  "company",
+  "column_break_1",
+  "transfer_date",
+  "applied",
+  "section_from",
+  "current_department",
+  "current_branch",
+  "current_reports_to",
+  "column_break_to",
+  "new_department",
+  "new_branch",
+  "new_reports_to",
+  "section_notes",
+  "reason",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1,
+   "in_standard_filter": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "fetch_from": "employee.employee_name",
+   "read_only": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "fetch_from": "employee.department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "fetch_from": "employee.company",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "transfer_date",
+   "fieldtype": "Date",
+   "label": "Effective From",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "applied",
+   "fieldtype": "Check",
+   "label": "Applied to the Employee",
+   "read_only": 1,
+   "allow_on_submit": 1,
+   "no_copy": 1
+  },
+  {
+   "fieldname": "section_from",
+   "fieldtype": "Section Break",
+   "label": "From"
+  },
+  {
+   "fieldname": "current_department",
+   "fieldtype": "Link",
+   "label": "Current Department",
+   "options": "Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "current_branch",
+   "fieldtype": "Link",
+   "label": "Current Branch",
+   "options": "Branch",
+   "read_only": 1
+  },
+  {
+   "fieldname": "current_reports_to",
+   "fieldtype": "Link",
+   "label": "Current Manager",
+   "options": "Employee",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_to",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "new_department",
+   "fieldtype": "Link",
+   "label": "New Department",
+   "options": "Department",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "new_branch",
+   "fieldtype": "Link",
+   "label": "New Branch",
+   "options": "Branch",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "new_reports_to",
+   "fieldtype": "Link",
+   "label": "New Manager (Reports To)",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "section_notes",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "label": "Reason / Notes"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Raqeem Transfer",
+   "read_only": 1,
+   "no_copy": 1,
+   "print_hide": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-14 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Raqeem HR",
+ "name": "Raqeem Transfer",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "HR Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "HR User",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "Employee",
+   "read": 1,
+   "write": 0,
+   "create": 0,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 0,
+   "print": 1,
+   "email": 1,
+   "share": 0
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "autoname": "RQ-TRF-.YYYY.-.#####",
+ "naming_rule": "Expression (old style)",
+ "is_submittable": 1,
+ "title_field": "employee_name"
+}

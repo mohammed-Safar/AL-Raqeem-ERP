@@ -40,13 +40,13 @@ app_include_css = [
     "/assets/raqim_sales/css/raqeem_fonts.css?v=33",
     "/assets/raqim_sales/css/raqeem_logo.css?v=39",
     "/assets/raqim_sales/css/raqeem_palette.css?v=33",
-    "/assets/raqim_sales/css/raqeem_theme.css?v=49",
+    "/assets/raqim_sales/css/raqeem_theme.css?v=56",
     # dock icons drawn in CSS (ROLLBACK: delete the next line)
     "/assets/raqim_sales/css/raqeem_icons.css?v=50",
     "/assets/raqim_sales/css/raqeem_home.css?v=39",
     "/assets/raqim_sales/css/raqeem_form.css?v=38",
     "/assets/raqim_sales/css/raqeem_list.css?v=47",
-    "/assets/raqim_sales/css/raqeem_mobile.css?v=3"
+    "/assets/raqim_sales/css/raqeem_mobile.css?v=4"
 ]
 # raqeem_icons.js -> swaps stock sidebar icons for the Raqeem duotone set
 #   (ROLLBACK: delete the two raqeem_icon* lines below and the app_include_icons line)
@@ -62,21 +62,30 @@ app_include_js = [
     # one header button -> panel with light/dark, theme colour and language
     # (replaces raqeem_theme_toggle.js, raqeem_accent.js, raqeem_lang_switch.js)
     "/assets/raqim_sales/js/raqeem_quick_settings.js?v=36",
-    "/assets/raqim_sales/js/raqeem_sidebar.js?v=35",
+    "/assets/raqim_sales/js/raqeem_sidebar.js?v=36",
     # phone-only bottom bar (ROLLBACK: delete the next line)
     "/assets/raqim_sales/js/raqeem_tabbar.js?v=3",
-    "/assets/raqim_sales/js/raqeem_form.js?v=38",
+    "/assets/raqim_sales/js/raqeem_form.js?v=40",
     "/assets/raqim_sales/js/raqeem_list.js?v=38",
     "/assets/raqim_sales/js/raqeem_brand_title.js?v=44",
     "/assets/raqim_sales/js/raqeem_icon_names.js?v=51",
     "/assets/raqim_sales/js/raqeem_icons.js?v=51",
     # dialog titles through __() (ROLLBACK: delete the next line)
     "/assets/raqim_sales/js/raqeem_desk_i18n.js?v=1",
+    # full chart legends, wrapped instead of cut to "Net Cash from O..." (ROLLBACK: delete the next line)
+    "/assets/raqim_sales/js/raqeem_chart_legend.js?v=1",
     # open the desk section the CRM dock asked for (?rq_module=...) (ROLLBACK: delete the next line)
     "/assets/raqim_sales/js/raqeem_open_module.js?v=1",
-    "/assets/raqim_sales/js/raqeem_crm_desk.js?v=3"
+    "/assets/raqim_sales/js/raqeem_crm_desk.js?v=3",
+    "/assets/raqim_sales/js/raqeem_banking_desk.js?v=1",
+    # "Analyse" (chart icon + menu item) on every list -> Analytics builder (ROLLBACK: delete the next line)
+    "/assets/raqim_sales/js/raqeem_analytics_list.js?v=1",
+    # Employee Affairs: Approve / Reject on employee requests (ROLLBACK: delete the next line)
+    "/assets/raqim_sales/js/raqeem_hr_approval.js?v=1",
+    # Employee Affairs: "Pay" dialog for expense claims and salary advances (ROLLBACK: delete the next line)
+    "/assets/raqim_sales/js/raqeem_hr_pay.js?v=1"
 ]
-app_include_icons = ["/assets/raqim_sales/icons/raqeem-sidebar.svg?r=6"]
+app_include_icons = ["/assets/raqim_sales/icons/raqeem-sidebar.svg?r=7"]
 
 # include js, css files in header of web template
 # raqeem_login.css  -> login / update-password pages only
@@ -358,6 +367,8 @@ after_migrate = [
 	"raqim_sales.erp_crm.after_migrate",
 	# Employee Affairs (our own HR): approver field on Employee, starter leave types (ROLLBACK: delete the next line)
 	"raqim_sales.raqeem_hr.setup.after_migrate",
+	# Analytics: "Analytics" link in the Accounts / Selling / Buying / Stock / CRM sidebars (ROLLBACK: delete the next line)
+	"raqim_sales.analytics.setup.after_migrate",
 ]
 
 # CRM-app style tools on ERPNext's own Lead / Opportunity, no Frappe CRM app needed
@@ -376,6 +387,10 @@ doc_events = {
 	"Journal Entry": {"before_cancel": f"{_CHEQUE}.guard_journal_entry_cancel"},
 	# warn when a Lead's phone / email already exists (raqim_sales/erp_crm.py)
 	"Lead": {"validate": "raqim_sales.erp_crm.lead_validate"},
+	# Employee Affairs: an employee made from an accepted job offer -> applicant Hired + salary (ROLLBACK: delete the next line)
+	# + the onboarding checklist of a new employee (Lifecycle Settings) (ROLLBACK: delete the second entry)
+	"Employee": {"after_insert": ["raqim_sales.raqeem_hr.recruitment.employee_after_insert",
+		"raqim_sales.raqeem_hr.lifecycle.employee_after_insert"]},
 	"Company": {
 		"on_update": [
 			"raqim_sales.cheques_setup.on_company_update",
@@ -383,7 +398,14 @@ doc_events = {
 		]
 	},
 }
-scheduler_events = {"daily": [f"{_CHEQUE}.send_due_reminders"]}
+scheduler_events = {
+	# Employee Affairs: promotions / transfers on their date, "Left" after the last working day (ROLLBACK: delete the second entry)
+	"daily": [f"{_CHEQUE}.send_due_reminders", "raqim_sales.raqeem_hr.lifecycle.daily"],
+	# Employee Affairs: fingerprints -> attendance (ROLLBACK: delete the next line)
+	"hourly": ["raqim_sales.raqeem_hr.attendance.process_recent",
+		# Analytics: alerts + scheduled emailed reports that are due (ROLLBACK: delete the next line)
+		"raqim_sales.analytics.alerts.run_due"],
+}
 override_doctype_dashboards = {
 	"Customer": "raqim_sales.cheques_setup.dashboard_party",
 	"Supplier": "raqim_sales.cheques_setup.dashboard_party",
@@ -391,3 +413,11 @@ override_doctype_dashboards = {
 	"Purchase Invoice": "raqim_sales.cheques_setup.dashboard_invoice",
 }
 # ---- end raqeem cheques ----
+
+# Employee Affairs: an employee sees only their own HR records (+ requests they approve), even
+# without ERPNext's user permission on Employee (raqim_sales/raqeem_hr/permissions.py).
+# ROLLBACK: delete the lines below.
+from raqim_sales.raqeem_hr.permissions import DOCTYPES as _RQ_HR_DOCTYPES  # noqa: E402
+
+permission_query_conditions = {dt: "raqim_sales.raqeem_hr.permissions.pqc" for dt in _RQ_HR_DOCTYPES}
+has_permission = {dt: "raqim_sales.raqeem_hr.permissions.has_permission" for dt in _RQ_HR_DOCTYPES}

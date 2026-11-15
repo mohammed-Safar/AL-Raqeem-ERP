@@ -182,7 +182,11 @@
 
     /* the end of every page must scroll clear of the bar, toasts must sit above it */
     .main-section,
-    body.full-height-page .main-section { padding-bottom: var(--rq-tabbar-total) !important; }
+    body.full-height-page .main-section { padding-bottom: calc(var(--rq-tabbar-total) + 28px) !important; }
+    .layout-main-section,
+    .form-footer,
+    .page-container .page-content { scroll-margin-bottom: calc(var(--rq-tabbar-total) + 28px); }
+    .layout-main-section { padding-bottom: 20px; }
     .es-toast-container,
-    .scroll-to-top.show { bottom: calc(var(--rq-tabbar-total) + 12px) !important; }
+    .scroll-to-top.show { bottom: calc(var(--rq-tabbar-total) + 24px) !important; }
 }

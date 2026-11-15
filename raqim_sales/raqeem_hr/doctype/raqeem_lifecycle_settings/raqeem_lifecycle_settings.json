@@ -1,0 +1,303 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "creation": "2026-11-14 12:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_check",
+  "rules_confirmed",
+  "section_exit",
+  "notice_days",
+  "make_exit_interview",
+  "column_break_exit",
+  "exit_template",
+  "onboarding_template",
+  "section_gr",
+  "gratuity_basis",
+  "month_days",
+  "min_service_years",
+  "column_break_gr",
+  "part_years",
+  "slab_method",
+  "exclude_unpaid_leave",
+  "section_slabs",
+  "slabs",
+  "section_factors",
+  "factors",
+  "section_final",
+  "pay_unused_leave",
+  "leave_type",
+  "column_break_final",
+  "deduct_loans",
+  "section_acc",
+  "gratuity_expense_account",
+  "leave_payout_account",
+  "column_break_acc",
+  "gratuity_payable_account"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_check",
+   "fieldtype": "Section Break",
+   "label": "Accountant Check",
+   "description": "Rules for onboarding, exits and the end-of-service gratuity. Every rule here is editable; ask your accountant or lawyer to check them for your country, then tick the box."
+  },
+  {
+   "fieldname": "rules_confirmed",
+   "fieldtype": "Check",
+   "label": "Rules Checked by Our Accountant",
+   "description": "Until this is ticked, every end-of-service calculation shows a warning."
+  },
+  {
+   "fieldname": "section_exit",
+   "fieldtype": "Section Break",
+   "label": "Exits"
+  },
+  {
+   "fieldname": "notice_days",
+   "fieldtype": "Int",
+   "label": "Notice Period (Days)",
+   "default": "30"
+  },
+  {
+   "fieldname": "make_exit_interview",
+   "fieldtype": "Check",
+   "label": "Make an Exit Interview When an Exit Is Approved",
+   "default": "1"
+  },
+  {
+   "fieldname": "column_break_exit",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "exit_template",
+   "fieldtype": "Link",
+   "label": "Exit Checklist",
+   "options": "Raqeem Checklist Template",
+   "description": "Made for the employee when an exit is approved (e.g. hand back laptop, clear custody)."
+  },
+  {
+   "fieldname": "onboarding_template",
+   "fieldtype": "Link",
+   "label": "Onboarding Checklist",
+   "options": "Raqeem Checklist Template",
+   "description": "Made for every new employee (e.g. contract, email account, social security registration)."
+  },
+  {
+   "fieldname": "section_gr",
+   "fieldtype": "Section Break",
+   "label": "End-of-Service Gratuity"
+  },
+  {
+   "fieldname": "gratuity_basis",
+   "fieldtype": "Select",
+   "label": "Pay Used",
+   "options": "Basic Salary\nGross Salary",
+   "default": "Basic Salary"
+  },
+  {
+   "fieldname": "month_days",
+   "fieldtype": "Int",
+   "label": "Days in a Month (One Day's Pay = Pay / This)",
+   "default": "30"
+  },
+  {
+   "fieldname": "min_service_years",
+   "fieldtype": "Float",
+   "label": "No Gratuity Below (Years of Service)",
+   "default": "1"
+  },
+  {
+   "fieldname": "column_break_gr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "part_years",
+   "fieldtype": "Select",
+   "label": "Part Years",
+   "options": "Pro Rata\nFull Years Only",
+   "default": "Pro Rata"
+  },
+  {
+   "fieldname": "slab_method",
+   "fieldtype": "Select",
+   "label": "How the Slabs Apply",
+   "options": "Each Part at Its Own Rate\nWhole Service at the Rate Reached",
+   "default": "Each Part at Its Own Rate"
+  },
+  {
+   "fieldname": "exclude_unpaid_leave",
+   "fieldtype": "Check",
+   "label": "Unpaid Leave Does Not Count as Service",
+   "default": "1"
+  },
+  {
+   "fieldname": "section_slabs",
+   "fieldtype": "Section Break",
+   "label": "Days of Pay per Year of Service"
+  },
+  {
+   "fieldname": "slabs",
+   "fieldtype": "Table",
+   "label": "Slabs",
+   "options": "Raqeem Gratuity Slab"
+  },
+  {
+   "fieldname": "section_factors",
+   "fieldtype": "Section Break",
+   "label": "Share Paid by Exit Type",
+   "description": "For an exit type with rows here, the row with the highest 'From Years' not above the service decides the share; no row for an exit type = 100%."
+  },
+  {
+   "fieldname": "factors",
+   "fieldtype": "Table",
+   "label": "Shares",
+   "options": "Raqeem Gratuity Factor"
+  },
+  {
+   "fieldname": "section_final",
+   "fieldtype": "Section Break",
+   "label": "Final Settlement"
+  },
+  {
+   "fieldname": "pay_unused_leave",
+   "fieldtype": "Check",
+   "label": "Pay Unused Leave Days With the Gratuity",
+   "default": "1"
+  },
+  {
+   "fieldname": "leave_type",
+   "fieldtype": "Link",
+   "label": "Leave Type Paid Out",
+   "options": "Raqeem Leave Type",
+   "depends_on": "pay_unused_leave"
+  },
+  {
+   "fieldname": "column_break_final",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "deduct_loans",
+   "fieldtype": "Check",
+   "label": "Deduct Open Loans and Advances",
+   "default": "1"
+  },
+  {
+   "fieldname": "section_acc",
+   "fieldtype": "Section Break",
+   "label": "Accounts"
+  },
+  {
+   "fieldname": "gratuity_expense_account",
+   "fieldtype": "Link",
+   "label": "Gratuity Expense Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "leave_payout_account",
+   "fieldtype": "Link",
+   "label": "Unused Leave Expense Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_break_acc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gratuity_payable_account",
+   "fieldtype": "Link",
+   "label": "End of Service Payable Account",
+   "options": "Account"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-14 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Raqeem HR",
+ "name": "Raqeem Lifecycle Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "HR Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "HR User",
+   "read": 1,
+   "write": 0,
+   "create": 0,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 0,
+   "print": 1,
+   "email": 1,
+   "share": 0
+  },
+  {
+   "role": "Accounts Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 0,
+   "print": 1,
+   "email": 1,
+   "share": 0
+  },
+  {
+   "role": "Accounts User",
+   "read": 1,
+   "write": 0,
+   "create": 0,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 0,
+   "print": 1,
+   "email": 1,
+   "share": 0
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "issingle": 1
+}

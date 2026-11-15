@@ -37,8 +37,7 @@ class RaqeemPayrollRun(Document):
 			frappe.throw(_("This payroll run is already submitted"))
 		if self.is_new() or not self.name or not frappe.db.exists(self.doctype, self.name):
 			self.insert()
-		for slip in self.slips(docstatus=0):
-			slip.delete(ignore_permissions=True)
+		self.drop_draft_slips()
 		filters = {"company": self.company, "status": ["in", ["Active", "Left"]]}
 		if self.department:
 			filters["department"] = self.department
@@ -105,9 +104,16 @@ class RaqeemPayrollRun(Document):
 			slip.cancel()
 		self.db_set("status", "Cancelled")
 
-	def on_trash(self):
+	def drop_draft_slips(self):
+		"""Delete the draft slips (Calculate again / delete the run). The run's own rows point at them,
+		which would block the delete, so those links go first."""
+		frappe.db.sql("""update `tabRaqeem Payroll Run Employee` set salary_slip=null
+			where parent=%s and parenttype='Raqeem Payroll Run'""", self.name)
 		for slip in self.slips(docstatus=0):
 			slip.delete(ignore_permissions=True)
+
+	def on_trash(self):
+		self.drop_draft_slips()
 
 	@frappe.whitelist()
 	def pay(self, account: str, posting_date: str | None = None, reference_no: str | None = None):

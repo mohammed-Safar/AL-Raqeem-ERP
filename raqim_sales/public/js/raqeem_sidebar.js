@@ -218,3 +218,19 @@
 	if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start);
 	else start();
 })();
+
+// Sidebar "URL" links that point inside the desk (/desk/...) open in the same window.
+// Frappe gives every URL-type sidebar link target="_blank"; dropping that attribute just before the
+// click lets the desk router open the route without a reload. Ctrl/Cmd-click still opens a new tab.
+(function () {
+	document.addEventListener(
+		"click",
+		(e) => {
+			const a = e.target && e.target.closest && e.target.closest("a.item-anchor[data-link-type='URL']");
+			if (!a || e.ctrlKey || e.metaKey || e.shiftKey || e.button) return;
+			const href = a.getAttribute("href") || "";
+			if (href.startsWith("/desk/") && a.getAttribute("target") === "_blank") a.removeAttribute("target");
+		},
+		true
+	);
+})();

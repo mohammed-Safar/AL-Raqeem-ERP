@@ -1887,7 +1887,7 @@ Chart Tree,شجرة الحسابات
 Chart Type,نوع الرسم البياني
 Chart of Accounts,دليل الحسابات
 Chart of Accounts Importer,مستورد دليل الحسابات
-Charts,الرسوم البيانية
+Charts,المخططات
 Charts Based On,الرسوم البيانية بناءً على
 Chat,محادثة
 Check,مربع اختيار
@@ -6477,7 +6477,7 @@ New Assignment Rule,قاعدة إسناد جديدة
 New Assignment Rule Name,اسم قاعدة الإسناد الجديدة
 New BOM {0} must be submitted and active,يجب أن تكون قائمة المواد الجديدة {0} معتمدة ونشطة
 New Batch Qty,كمية الدفعة الجديدة
-New Chart,رسم بياني جديد
+New Chart,مخطط جديد
 New Comment,تعليق جديد
 New Contact,جهة اتصال جديدة
 New Customer Revenue,إيرادات العملاء الجدد
@@ -12723,3 +12723,1113 @@ Transport Allowance,بدل المواصلات
 Advance Repayment,سداد سلفة
 Employee signature,توقيع الموظف
 Approved by,اعتمده
+Print Designer,مصمم الطباعة
+A field is missing,حقل مفقود
+A total must use a field of the document itself or of its table,يجب أن يكون الإجمالي من حقل في المستند نفسه أو في جدوله
+A → Z / oldest first,من أ إلى ي / الأقدم أولاً
+Z → A / newest first,من ي إلى أ / الأحدث أولاً
+Add a value,إضافة قيمة
+All Time,كل الفترات
+Analytics,التحليلات
+Analytics Chart,مخطط تحليلي
+Any date,أي تاريخ
+Area Chart,مساحي
+Best-Selling Items,الأصناف الأكثر مبيعاً
+Built on the Analytics screen.,يُنشأ من شاشة التحليلات.
+Cannot group by {0},لا يمكن التجميع حسب {0}
+Chart title,عنوان المخطط
+Charts made by your managers will show here.,ستظهر هنا المخططات التي ينشئها مديروك.
+Cheques Due by Month,الشيكات المستحقة حسب الشهر
+Cheques by Status,الشيكات حسب الحالة
+Choose what to analyse,اختر ما تريد تحليله
+Choose what to analyse first,اختر ما تريد تحليله أولاً
+"Click New Chart, or start from an example below.",اضغط «مخطط جديد» أو ابدأ من أحد الأمثلة أدناه.
+Compare with the period before,مقارنة بالفترة السابقة
+Could not load this chart,تعذّر تحميل هذا المخطط
+Data From,مصدر البيانات
+Data from,البيانات من
+Definition,التعريف
+Delete the chart {0}?,حذف المخطط {0}؟
+Employees by Department,الموظفون حسب القسم
+Give the chart a title,اكتب عنواناً للمخطط
+Group by a date of a linked document is not supported,التجميع حسب تاريخ مستند مرتبط غير مدعوم
+Highest,الأعلى
+Highest {0},أعلى {0}
+Lowest,الأدنى
+Lowest {0},أدنى {0}
+Sum of {0},مجموع {0}
+Average of {0},متوسط {0}
+Invalid field {0},حقل غير صالح {0}
+Largest first,الأكبر أولاً
+Smallest first,الأصغر أولاً
+Last 12 Months,آخر 12 شهراً
+Leave Days by Type,أيام الإجازات حسب النوع
+Line,خطي
+No charts yet,لا توجد مخططات بعد
+No data for these choices,لا توجد بيانات لهذه الاختيارات
+No split,بدون تقسيم
+Not Set,غير محدد
+Nothing (one total),لا شيء (إجمالي واحد)
+Only one table of the document can be used in a chart,يمكن استخدام جدول واحد فقط من المستند في المخطط
+Only submitted documents,المستندات المعتمدة فقط
+Opportunities by Stage,الفرص حسب المرحلة
+Payroll Cost by Month,تكلفة الرواتب حسب الشهر
+Percentage,نسب مئوية
+Purchases by Supplier,المشتريات حسب المورد
+Quarter,ربع سنة
+Q{0} {1},الربع {0} {1}
+Sales This Month,مبيعات هذا الشهر
+Sales by Month,المبيعات حسب الشهر
+Search charts,بحث في المخططات
+Show data,عرض البيانات
+Show only the top,عرض الأعلى فقط
+Sort and limit,الترتيب والحد
+Split by (optional),تقسيم حسب (اختياري)
+Start from an example,ابدأ من مثال جاهز
+Start by choosing what to analyse on the side.,ابدأ باختيار ما تريد تحليله من الجانب.
+Table,جدول
+Theme color,لون النظام
+This chart cannot be calculated.,لا يمكن حساب هذا المخطط.
+This chart type does not fit this data,نوع المخطط هذا لا يناسب هذه البيانات
+This chart was not found,لم يتم العثور على هذا المخطط
+This data has no date field,لا يوجد حقل تاريخ في هذه البيانات
+This is a copy. Save it to keep it.,هذه نسخة. احفظها للاحتفاظ بها.
+Too much data: only part of it is shown. Add a filter or a period.,البيانات كثيرة جداً: يظهر جزء منها فقط. أضف تصفية أو فترة.
+Top 10 Customers,أفضل 10 عملاء
+Unknown document type {0},نوع مستند غير معروف {0}
+Unknown field {0},حقل غير معروف {0}
+Unpaid Sales Invoices,فواتير المبيعات غير المسددة
+Week of {0},أسبوع {0}
+You are not allowed to read {0},غير مسموح لك بعرض {0}
+before: {0},سابقاً: {0}
+of records,من السجلات
+per,لكل
+show by,عرض حسب
+{0} (copy),{0} (نسخة)
+{0} cannot be analysed on its own,لا يمكن تحليل {0} بمفرده
+{0} groups,{0} مجموعة
+{0} is not a date,{0} ليس تاريخاً
+{0} is not a link field,{0} ليس حقل ربط
+{0} is not a number,{0} ليس رقماً
+{0} itself,{0} نفسه
+{0} would be counted once per row of {1}. Use a field of {1} instead.,سيُحتسب {0} مرة لكل سطر في {1}. استخدم حقلاً من {1} بدلاً منه.
+Analyse,تحليل
+Open the records,فتح السجلات
+The records of this group cannot be opened from here,لا يمكن فتح سجلات هذه المجموعة من هنا
+Click a bar or a row to open its records,اضغط على عمود أو سطر لفتح سجلاته
+0: never absent when there is a fingerprint.,0: لا يُسجَّل غياب أبداً عند وجود بصمة.
+A fingerprint cannot be in the future,لا يمكن أن تكون البصمة في المستقبل
+Absence and Lateness,الغياب والتأخير
+Absent Days Are Unpaid in Payroll,أيام الغياب غير مدفوعة في الرواتب
+Absent When Worked Less Than (Hours),غائب إذا عمل أقل من (ساعات)
+Absent hours must be less than half-day hours,ساعات الغياب يجب أن تكون أقل من ساعات نصف اليوم
+All attendance rules of the company. Every value here can be changed at any time; days already calculated keep their numbers until they are processed again.,كل قواعد الحضور في الشركة. يمكن تغيير أي قيمة هنا في أي وقت؛ الأيام المحسوبة سابقاً تبقى كما هي حتى تُعالَج من جديد.
+Amount per Overtime Hour,المبلغ لكل ساعة إضافية
+At least one day of the week must be a working day,يجب أن يكون يوم واحد على الأقل يوم عمل
+Attendance cannot be marked for a future date,لا يمكن تسجيل حضور لتاريخ في المستقبل
+"Attendance is created within the hour, or now with Process Fingerprints.",يُنشأ الحضور خلال ساعة، أو الآن من زر «معالجة البصمات».
+"Break (Minutes, Not Counted as Work)",الاستراحة (دقائق، لا تُحسب عملاً)
+Bulk,جماعي
+Calculate Overtime,حساب العمل الإضافي
+Choose at least one employee,اختر موظفاً واحداً على الأقل
+Choose at most three months at a time,اختر ثلاثة أشهر كحد أقصى في كل مرة
+Choose the month and year,اختر الشهر والسنة
+Could not find the ID and time columns. The first row must have titles such as AC-No and Time (or Date and Time).,لم يتم العثور على عمودي الرقم والوقت. يجب أن يحتوي الصف الأول على عناوين مثل AC-No و Time (أو Date و Time).
+Count Fingerprints From (Minutes Before Shift Start),احتساب البصمات من (دقائق قبل بداية الوردية)
+Count Fingerprints Until (Minutes After Shift End),احتساب البصمات حتى (دقائق بعد نهاية الوردية)
+Count Overtime After (Minutes Past Shift End),احتساب الإضافي بعد (دقائق من نهاية الوردية)
+Create Attendance from Fingerprints Automatically,إنشاء الحضور من البصمات تلقائياً
+Deduct (Hours of Pay per Late Hour),الخصم (ساعات أجر عن كل ساعة تأخير)
+Deduct Late Minutes from Salary,خصم دقائق التأخير من الراتب
+Device User ID,رقم الموظف في الجهاز
+"Done: {0} new, {1} absent, {2} updated.",تم: {0} جديد، {1} غياب، {2} محدَّث.
+Earlier than the start time: the shift ends the next day (night shift).,إذا كانت قبل وقت البداية: تنتهي الوردية في اليوم التالي (وردية ليلية).
+Early Leave Before (Minutes of Grace),خروج مبكر قبل (دقائق السماح)
+Employee,الموظف
+Employee Name,اسم الموظف
+Empty: all employees,فارغ: كل الموظفين
+"Empty: decided from the order of the fingerprints (first = in, last = out).",فارغ: يُحدَّد من ترتيب البصمات (الأولى = دخول، الأخيرة = خروج).
+Empty: until changed.,فارغ: حتى يتم التغيير.
+"Every hour, fingerprints are turned into attendance.",كل ساعة تتحول البصمات إلى حضور.
+Fingerprint Log,سجل البصمات
+Fingerprints Closer Than (Minutes) Are One,البصمات الأقرب من (دقائق) تُعد بصمة واحدة
+Fingerprints imported,تم استيراد البصمات
+Fingerprints that reach the system late (device synced later) still count for these days.,البصمات التي تصل متأخرة (مزامنة الجهاز لاحقاً) تُحتسب لهذه الأيام.
+Fixed Amount per Hour,مبلغ ثابت لكل ساعة
+For employees without a shift assignment. Empty: those employees get no late / early / overtime calculation.,للموظفين بدون وردية محددة. فارغ: لا يُحسب لهم تأخير أو خروج مبكر أو إضافي.
+Free Late Minutes per Month,دقائق تأخير مسموحة شهرياً
+Gross Salary,إجمالي الراتب
+Half Day When Worked Less Than (Hours),نصف يوم إذا عمل أقل من (ساعات)
+Half Days Count as Half an Unpaid Day,نصف اليوم يُحسب نصف يوم غير مدفوع
+Holiday,عطلة رسمية
+Hourly Pay Is Based On,أجر الساعة محسوب من
+Hourly pay = monthly salary ÷ these hours (and for late deductions).,أجر الساعة = الراتب الشهري ÷ هذه الساعات (ويُستخدم أيضاً لخصم التأخير).
+Import from File,استيراد من ملف
+In / Out,دخول / خروج
+Late (Minutes),التأخير (دقائق)
+Late After (Minutes of Grace),تأخير بعد (دقائق السماح)
+Lateness is always recorded. Tick this to also deduct it in payroll.,التأخير يُسجَّل دائماً. فعّل هذا الخيار لخصمه أيضاً من الراتب.
+Left Early (Minutes),خروج مبكر (دقائق)
+Mark,تسجيل
+Mark Absent When There Is No Fingerprint,تسجيل غياب عند عدم وجود بصمة
+Missing Fingerprint,بصمة ناقصة
+Monthly Attendance,الحضور الشهري
+Multiplier of Hourly Pay,مضاعف أجر الساعة
+No active employees,لا يوجد موظفون نشطون
+Not Marked,غير مسجَّل
+Only HR can do this,هذا الإجراء لشؤون الموظفين فقط
+"Only for employees who have an Attendance Device ID, on working days, when they are not on leave.",فقط للموظفين الذين لديهم رقم في جهاز البصمة، في أيام العمل، وليسوا في إجازة.
+Only one fingerprint that day: check with the employee.,بصمة واحدة فقط في ذلك اليوم: راجع الموظف.
+Out,خروج
+Out must be after In,وقت الخروج يجب أن يكون بعد الدخول
+Overtime (Hours),الإضافي (ساعات)
+Overtime (Minutes),الإضافي (دقائق)
+Overtime Needs Approval Before Payroll,العمل الإضافي يحتاج موافقة قبل الرواتب
+Overtime Pay,أجر العمل الإضافي
+Process,معالجة
+Process Fingerprints,معالجة البصمات
+Processed,تمت المعالجة
+Raqeem Attendance,الحضور
+Raqeem Attendance Settings,إعدادات الحضور
+Raqeem Checkin,بصمة
+Raqeem Monthly Attendance,الحضور الشهري
+Raqeem Shift Assignment,تعيين وردية
+Raqeem Shift Type,الوردية
+Rate on Official Holidays,المعدل في العطلات الرسمية
+Rate on Weekly Days Off,المعدل في أيام العطلة الأسبوعية
+Rate on Working Days,المعدل في أيام العمل
+Re-check the Last (Days),إعادة فحص آخر (أيام)
+Reading the file...,جارٍ قراءة الملف...
+Remarks,ملاحظات
+Request,طلب
+Round Overtime Down To (Minutes),تقريب الإضافي للأقل إلى (دقائق)
+Select all not marked,تحديد كل غير المسجَّلين
+"Send at most 20,000 fingerprints at a time","أرسل 20,000 بصمة كحد أقصى في كل مرة"
+Shift Hours,ساعات الوردية
+Shift Name,اسم الوردية
+Start and end time cannot be the same,لا يمكن أن يتساوى وقت البداية والنهاية
+The break is longer than the shift,الاستراحة أطول من الوردية
+The employee's number on the fingerprint device.,رقم الموظف في جهاز البصمة.
+The file is empty,الملف فارغ
+These device IDs belong to no employee (set Attendance Device ID on the employee):,هذه الأرقام لا تخص أي موظف (أدخل رقم جهاز البصمة في ملف الموظف):
+Times,الأوقات
+Turns the fingerprints of these days into attendance. Attendance typed by hand is not changed.,يحوّل بصمات هذه الأيام إلى حضور. الحضور المسجَّل يدوياً لا يتغير.
+Unknown status,حالة غير معروفة
+Use the Weekly Days Off of Attendance Settings,استخدام أيام العطلة الأسبوعية من إعدادات الحضور
+Weekly Days Off,أيام العطلة الأسبوعية
+Working Day,يوم عمل
+Working Hours per Month,ساعات العمل في الشهر
+Working Hours per Month must be more than 0,ساعات العمل في الشهر يجب أن تكون أكثر من 0
+{0} already has a fingerprint at {1},لدى {0} بصمة في {1} مسبقاً
+{0} already has a shift for some of these dates: {1},لدى {0} وردية في بعض هذه التواريخ: {1}
+{0} already has attendance on {1}: {2},لدى {0} حضور مسجَّل في {1}: {2}
+{0} cannot be negative,{0} لا يمكن أن يكون سالباً
+{0} employees had a problem (see Error Log).,{0} موظفين حدثت لديهم مشكلة (راجع سجل الأخطاء).
+{0} joined on {1},{0} التحق بالعمل في {1}
+{0} left on {1},{0} ترك العمل في {1}
+"{0} marked, {1} already had attendance",تم تسجيل {0}، و{1} لديهم حضور مسبقاً
+"{0} rows read: {1} new fingerprints, {2} were already there.",تمت قراءة {0} صف: {1} بصمة جديدة، و{2} موجودة مسبقاً.
+{0} minutes of overtime are waiting for approval.,{0} دقيقة عمل إضافي بانتظار الموافقة.
+Approve Overtime,اعتماد الإضافي
+Approved Overtime (Minutes),الإضافي المعتمد (دقائق)
+Overtime worked: {0} minutes,الإضافي المنجز: {0} دقيقة
+Reject Overtime,رفض الإضافي
+Reject the overtime of this day?,رفض العمل الإضافي لهذا اليوم؟
+Overtime approved ({0}),تم اعتماد الإضافي ({0})
+Overtime rejected ({0}),تم رفض الإضافي ({0})
+Tick the days first,حدد الأيام أولاً
+"{0} done, {1} had no overtime",تم {0}، و{1} بدون عمل إضافي
+Overtime Approval,اعتماد العمل الإضافي
+Only HR or the employee's approver can decide on overtime,فقط شؤون الموظفين أو المسؤول المباشر للموظف يمكنه البت في العمل الإضافي
+Approved overtime must be between 0 and the overtime worked ({0} minutes),الإضافي المعتمد يجب أن يكون بين 0 والإضافي المنجز ({0} دقيقة)
+Set the Overtime Component in Raqeem Attendance Settings,حدد بند العمل الإضافي في إعدادات الحضور
+Set the Late Deduction Component in Raqeem Attendance Settings,حدد بند خصم التأخير في إعدادات الحضور
+What payroll pays. Can be less than the overtime worked.,ما يُدفع في الرواتب. يمكن أن يكون أقل من الإضافي المنجز.
+Overtime Decided By,اعتمد الإضافي
+Salary Components,بنود الراتب
+Basic Salary Component,بند الراتب الأساسي
+Used when hourly pay is based on the basic salary.,يُستخدم عندما يُحسب أجر الساعة من الراتب الأساسي.
+Overtime Component,بند العمل الإضافي
+Late Deduction Component,بند خصم التأخير
+Late Deduction,خصم التأخير
+Rejected,مرفوض
+Add at least one expense,أضف مصروفاً واحداً على الأقل
+Advance Repayment Component,بند سداد السلفة
+Advance Status,حالة السلفة
+Advance {0} has no balance for this employee,السلفة {0} ليس لها رصيد لهذا الموظف
+Amount Repaid,المبلغ المسدد
+An attendance request is for days that have passed,طلب الحضور يكون لأيام مضت
+An expense claim is settled from this advance; cancel it first,توجد مطالبة مصروفات مسددة من هذه السلفة؛ ألغها أولاً
+An unpaid balance of this employee's advance pays this claim first.,رصيد سلفة الموظف غير المسدد يغطي هذه المطالبة أولاً.
+Approve this request?,اعتماد هذا الطلب؟
+Approved expense claims waiting to be paid to the employee.,مطالبات المصروفات المعتمدة التي لم تُدفع للموظف بعد.
+"Approved, Unpaid",معتمدة، غير مدفوعة
+Asset account holding the advances not yet repaid.,حساب أصول يحتفظ بالسلف غير المسددة.
+Attendance request from {0}: {1},طلب حضور من {0}: {1}
+Balance to repay: {0},المتبقي للسداد: {0}
+Cash Repayments,السداد النقدي
+Choose a bank or cash account,اختر حساب مصرف أو خزينة
+Days,الأيام
+Decision Note,ملاحظة القرار
+Deduct Each Month,الخصم الشهري
+Deduct from Salary,الخصم من الراتب
+Device Problem,عطل في الجهاز
+Employee Advances Account,حساب سلف الموظفين
+Employee Claims Payable Account,حساب مطالبات الموظفين المستحقة
+"Empty: the fingerprint of that day, or the shift end.",فارغ: بصمة ذلك اليوم، أو نهاية الوردية.
+"Empty: the fingerprint of that day, or the shift start.",فارغ: بصمة ذلك اليوم، أو بداية الوردية.
+Expense Claims and Advances,مطالبات المصروفات والسلف
+Expense claim from {0}: {1},مطالبة مصروفات من {0}: {1}
+Expense claim {0} of {1},مطالبة المصروفات {0} للموظف {1}
+Expenses and Advances,المصروفات والسلف
+Forgot to Punch,نسيان البصمة
+Fuel,وقود
+Meals and Hospitality,وجبات وضيافة
+Not an employee request,ليس طلب موظف
+Office Supplies,قرطاسية ولوازم مكتبية
+One request can cover at most a month,الطلب الواحد يغطي شهراً كحد أقصى
+Only HR or accounts can record payments,فقط شؤون الموظفين أو الحسابات يمكنهم تسجيل الدفعات
+Only an approved advance can be paid,لا تُدفع إلا السلفة المعتمدة
+Only an approved claim can be paid,لا تُدفع إلا المطالبة المعتمدة
+Paid,مدفوع
+Paid From (Bank / Cash),الدفع من (مصرف / خزينة)
+Paid from the Advance,المدفوع من السلفة
+Paid to the Employee,المدفوع للموظف
+Partly Repaid,مسددة جزئياً
+Pay Expense Claim,دفع مطالبة المصروفات
+Pay Salary Advance,دفع السلفة
+Payment of expense claim {0} to {1},دفع مطالبة المصروفات {0} إلى {1}
+Phone and Internet,هاتف وإنترنت
+Raqeem Advance Repayment,سداد سلفة
+Raqeem Attendance Request,طلب حضور
+Raqeem Employee Advance,سلفة موظف
+Raqeem Expense Claim,مطالبة مصروفات
+Raqeem Expense Claim Item,بند مطالبة المصروفات
+Raqeem Expense Type,نوع المصروف
+Receipt,الإيصال
+Record Repayment,تسجيل سداد
+Reference (cheque / transfer no.),المرجع (رقم الصك / الحوالة)
+Repaid,مسددة
+Repaid By,طريقة السداد
+Repay in Cash,السداد نقداً
+Repayment in Cash / Bank,سداد نقدي / مصرفي
+Repayment of salary advance {0} by {1},سداد السلفة {0} من {1}
+Row {0}: the amount must be more than 0,السطر {0}: المبلغ يجب أن يكون أكثر من 0
+Row {0}: the expense date cannot be in the future,السطر {0}: تاريخ المصروف لا يمكن أن يكون في المستقبل
+Row {0}: {1} is disabled,السطر {0}: {1} معطل
+Salary Advance,السلف
+Salary advance request from {0}: {1},طلب سلفة من {0}: {1}
+Salary advance {0} to {1},السلفة {0} إلى {1}
+Set how much to deduct each month,حدد مبلغ الخصم الشهري
+Set the Advance Repayment Component in Raqeem Payroll Settings,حدد بند سداد السلفة في إعدادات الرواتب
+Set the Employee Advances and Employee Claims Payable accounts in Raqeem Payroll Settings,حدد حسابي سلف الموظفين ومطالبات الموظفين المستحقة في إعدادات الرواتب
+Set the expense account of {0},حدد حساب المصروف لـ {0}
+Settle from Advance,التسوية من السلفة
+Settle with Expense Claims,التسوية بمطالبات المصروفات
+Start Deducting From,بدء الخصم من
+The amount must be more than 0,المبلغ يجب أن يكون أكثر من 0
+The payroll month that includes this date is the first deduction.,شهر الرواتب الذي يشمل هذا التاريخ هو أول خصم.
+The repayment must be more than 0 and at most the balance ({0}),السداد يجب أن يكون أكثر من 0 وبحد أقصى الرصيد ({0})
+The salary deduction line for advance repayments.,بند الخصم من الراتب لسداد السلف.
+This advance has repayments; it cannot be cancelled,لهذه السلفة دفعات سداد؛ لا يمكن إلغاؤها
+This advance is already paid,هذه السلفة مدفوعة مسبقاً
+This claim is already paid,هذه المطالبة مدفوعة مسبقاً
+To Pay the Employee,المستحق للموظف
+Waiting for approval by {0},بانتظار موافقة {0}
+Where this expense is booked. Empty: the company's default expense account.,الحساب الذي يُقيَّد عليه المصروف. فارغ: حساب المصروفات الافتراضي للشركة.
+Work Outside the Office,عمل خارج المكتب
+Your {0} was {1},{0}: {1}
+attendance request,طلب الحضور
+expense claim,مطالبة المصروفات
+salary advance request,طلب السلفة
+{0} already has an attendance request for these days: {1},لدى {0} طلب حضور لهذه الأيام: {1}
+{0} has an advance balance of {1}: choose it in Settle from Advance to pay this claim from it.,لدى {0} رصيد سلفة قدره {1}: اختره في «التسوية من السلفة» لتسديد هذه المطالبة منه.
+(you can still approve it as HR Manager),(يمكنك اعتماده بصفتك مدير شؤون الموظفين)
+0: no limit.,0: بدون حد.
+A weekly day off or an official holiday the employee worked.,يوم عطلة أسبوعية أو عطلة رسمية عمل فيه الموظف.
+At most {0} days of {1} can be paid out in a year ({2} already),يمكن صرف {0} يوماً كحد أقصى من {1} في السنة (تم صرف {2})
+Balance Before,الرصيد قبل
+Blocked dates,تواريخ ممنوعة
+Compensatory Leave,إجازة تعويضية
+Compensatory leave request from {0} for {1},طلب إجازة تعويضية من {0} عن يوم {1}
+Day Worked,يوم العمل
+Day's Pay Is Based On,أجر اليوم محسوب من
+Days Earned,الأيام المكتسبة
+Days Paid Out,الأيام المصروفة
+Days must be more than 0,الأيام يجب أن تكون أكثر من 0
+Earned Days Expire After (Days),تنتهي صلاحية الأيام المكتسبة بعد (أيام)
+Earned by Working a Day Off,تُكتسب بالعمل في يوم عطلة
+Empty: every company.,فارغ: كل الشركات.
+Empty: every department.,فارغ: كل الأقسام.
+Empty: every leave type.,فارغ: كل أنواع الإجازات.
+HR Manager Can Still Approve,يمكن لمدير شؤون الموظفين الاعتماد رغم ذلك
+Leave Blocked Dates,تواريخ منع الإجازات
+Leave Encashment Component,بند صرف رصيد الإجازات
+Leave encashment request from {0}: {1} days of {2},طلب صرف رصيد إجازات من {0}: {1} يوم من {2}
+Leave is not allowed from {0} to {1}: {2},الإجازات غير مسموحة من {0} إلى {1}: {2}
+Most Days Paid Out per Year,أقصى أيام تُصرف في السنة
+No yearly days: days are earned by approved compensatory requests (worked a weekly day off or holiday).,بدون رصيد سنوي: تُكتسب الأيام بطلبات التعويض المعتمدة (العمل في عطلة أسبوعية أو رسمية).
+One Day's Pay,أجر اليوم
+One day's pay = the monthly amount ÷ 30.,أجر اليوم = المبلغ الشهري ÷ 30.
+Paid With the Salary Of,يُصرف مع راتب
+Raqeem Compensatory Request,طلب إجازة تعويضية
+Raqeem Leave Block Period,فترة منع الإجازات
+Raqeem Leave Encashment,صرف رصيد الإجازات
+Set the Leave Encashment Component in Raqeem Payroll Settings,حدد بند صرف رصيد الإجازات في إعدادات الرواتب
+The day worked cannot be in the future,يوم العمل لا يمكن أن يكون في المستقبل
+The salary earning line for paid-out leave days.,بند الاستحقاق في الراتب لأيام الإجازة المصروفة.
+The salary of that month is already submitted with this amount; cancel the payroll first,راتب ذلك الشهر معتمد بهذا المبلغ؛ ألغِ مسير الرواتب أولاً
+The salary slip of the month containing this date pays it.,يُصرف مع قسيمة راتب الشهر الذي يشمل هذا التاريخ.
+There is already a compensatory request for this day: {0},يوجد طلب تعويض لهذا اليوم مسبقاً: {0}
+There is no attendance on {0}. Ask HR to mark it first.,لا يوجد حضور يوم {0}. اطلب من شؤون الموظفين تسجيله أولاً.
+Unused Days Can Be Paid Out,يمكن صرف الأيام غير المستخدمة نقداً
+What Was Done,العمل المنجز
+compensatory leave request,طلب الإجازة التعويضية
+leave encashment request,طلب صرف رصيد الإجازات
+{0} cannot be paid out,{0} لا يمكن صرفها نقداً
+"{0} days × {1} = {2}, paid with the salary of that month.",{0} يوم × {1} = {2}، تُصرف مع راتب ذلك الشهر.
+{0} has {1} days of {2} left (after requests waiting for approval),لدى {0} رصيد {1} يوم من {2} (بعد الطلبات المنتظرة)
+{0} is a working day for {1}: compensatory leave is for a weekly day off or a holiday that was worked,{0} يوم عمل لـ {1}: الإجازة التعويضية تكون عن عطلة أسبوعية أو رسمية تم العمل فيها
+{0} is not a compensatory leave type,{0} ليس نوع إجازة تعويضية
+Allocated {0} · Taken {1},المخصص {0} · المأخوذ {1}
+Balance {0},المتبقي {0}
+In {0},دخول {0}
+Last fingerprint {0},آخر بصمة {0}
+My Affairs,شؤوني
+My Payslips,قسائم راتبي
+No attendance this month yet,لا يوجد حضور مسجَّل هذا الشهر بعد
+No fingerprint yet today,لا توجد بصمة اليوم بعد
+No leave allocated yet,لا يوجد رصيد إجازات مخصص بعد
+No open advances,لا توجد سلف مفتوحة
+No payslips yet,لا توجد قسائم راتب بعد
+No requests in the last four months,لا توجد طلبات في آخر أربعة أشهر
+No shift set,لم تُحدَّد وردية
+This Month's Attendance,حضور هذا الشهر
+Today's shift {0}: {1} – {2},وردية اليوم {0}: {1} – {2}
+Waiting for Your Approval,بانتظار موافقتك
+Your user is not linked to an employee. Ask HR to set your user on your employee record.,حسابك غير مرتبط بموظف. اطلب من شؤون الموظفين ربط حسابك بملفك الوظيفي.
+late {0} min,تأخير {0} دقيقة
+{0} days,{0} يوم
+{0} days with a missing fingerprint: send an Attendance Request.,{0} أيام ببصمة ناقصة: أرسل طلب حضور.
+{0} waiting,{0} بانتظار الموافقة
+1 month,شهر واحد
+1 year,سنة واحدة
+Coming Up,القادم
+Could not load your page. Press Refresh to try again.,تعذّر تحميل صفحتك. اضغط «تحديث» للمحاولة مجدداً.
+Day off,يوم راحة
+Half day leave,إجازة نصف يوم
+In since {0},حاضر منذ {0}
+My Team Today,فريقي اليوم
+Not in yet,لم يحضر بعد
+Nothing planned,لا شيء مخطط
+and,و
+overtime {0} min,إضافي {0} دقيقة
+with us {0},معنا منذ {0}
+{0} absent,{0} غائب
+{0} in,{0} حاضر
+{0} months,{0} أشهر
+{0} not in yet,{0} لم يحضر بعد
+{0} on leave,{0} في إجازة
+{0} years,{0} سنوات
+0: only when opened or refreshed.,0: فقط عند الفتح أو التحديث.
+A dashboard puts several charts on one page with shared filters.,لوحة المعلومات تجمع عدة مخططات في صفحة واحدة بعوامل تصفية مشتركة.
+Absent Days This Month,أيام الغياب هذا الشهر
+Add a chart,إضافة مخطط
+Advances to Repay,سلف متبقية للسداد
+All Dashboards,كل اللوحات
+All your charts are already on this dashboard. Create a new one.,كل مخططاتك موجودة في هذه اللوحة. أنشئ مخططاً جديداً.
+Analytics Dashboard,لوحة تحليلات
+Approved Overtime by Month (Minutes),العمل الإضافي المعتمد حسب الشهر (دقائق)
+Arranged on the Analytics screen.,يُرتَّب من شاشة التحليلات.
+Attendance This Month,الحضور هذا الشهر
+Choose at least one chart,اختر مخططاً واحداً على الأقل
+Company Filter,تصفية حسب الشركة
+Create a new chart,إنشاء مخطط جديد
+Dashboards shared with you will show here.,ستظهر هنا اللوحات المشاركة معك.
+Default Period,الفترة الافتراضية
+Department Filter,تصفية حسب القسم
+Drag the charts to change their order.,اسحب المخططات لتغيير ترتيبها.
+Each chart's own period,فترة كل مخطط
+"Employees, attendance, leave, overtime, payroll and advances.",الموظفون، الحضور، الإجازات، العمل الإضافي، الرواتب والسلف.
+Empty: each chart keeps its own period.,فارغ: كل مخطط يحتفظ بفترته.
+Empty: everyone who can open Analytics. The numbers always follow each viewer's own permissions.,فارغ: كل من يستطيع فتح التحليلات. الأرقام تتبع دائماً صلاحيات كل مستخدم.
+Expense Claims by Type This Year,مطالبات المصروفات حسب النوع هذه السنة
+Full width,عرض كامل
+Half,نصف
+Invalid dashboard layout,ترتيب لوحة غير صالح
+Leave Days by Type This Year,أيام الإجازات حسب النوع هذه السنة
+Leave Requests Waiting,طلبات إجازة بانتظار الموافقة
+Most Late Minutes This Month,الأكثر تأخيراً هذا الشهر (دقائق)
+New Dashboard,لوحة جديدة
+New Employees by Month,الموظفون الجدد حسب الشهر
+No dashboards yet,لا توجد لوحات بعد
+Not available to you,غير متاح لك
+One third,ثلث
+Press Edit to add charts.,اضغط «تعديل» لإضافة مخططات.
+Refresh Every (Minutes),التحديث كل (دقائق)
+Standard Key,المفتاح القياسي
+This dashboard has no charts yet,لا توجد مخططات في هذه اللوحة بعد
+This dashboard was not found or is not shared with you,هذه اللوحة غير موجودة أو غير مشاركة معك
+Two thirds,ثلثان
+Who Can See It,من يمكنه رؤيتها
+{0} charts,{0} مخططات
+Owner Dashboard,لوحة المالك
+Sales Dashboard,لوحة المبيعات
+Accounts Dashboard,لوحة الحسابات
+"Sales, profit, cash, debts, cheques, stock, payroll and deals at a glance.",المبيعات والأرباح والنقدية والديون والشيكات والمخزون والرواتب والصفقات في نظرة واحدة.
+"Invoices, orders, quotations, customers and items.",الفواتير والطلبات وعروض الأسعار والعملاء والأصناف.
+"Cash, receivables, payables, payments, expenses and cheques.",النقدية والذمم المدينة والدائنة والمدفوعات والمصروفات والشيكات.
+"Leads, opportunities, pipeline and quotations.",العملاء المحتملون والفرص ومسار المبيعات وعروض الأسعار.
+Profit This Month,أرباح هذا الشهر
+Cash and Bank,النقدية والمصارف
+Customers Owe Us,ديون العملاء لنا
+We Owe Suppliers,ديوننا للموردين
+Cheques to Collect (Next 30 Days),شيكات للتحصيل (30 يوماً القادمة)
+Cheques We Pay (Next 30 Days),شيكات علينا دفعها (30 يوماً القادمة)
+Profit by Month,الأرباح حسب الشهر
+Top 10 Customers This Year,أفضل 10 عملاء هذه السنة
+Best-Selling Items This Year,الأصناف الأكثر مبيعاً هذه السنة
+Expenses This Month by Account,مصروفات هذا الشهر حسب الحساب
+Open Deals by Stage,الصفقات المفتوحة حسب المرحلة
+Payroll Cost This Month,تكلفة رواتب هذا الشهر
+Stock Value,قيمة المخزون
+Sales Orders This Month,أوامر البيع هذا الشهر
+Orders to Deliver,طلبات بانتظار التسليم
+Sales by Territory This Year,المبيعات حسب المنطقة هذه السنة
+Sales by Customer Group This Year,المبيعات حسب مجموعة العملاء هذه السنة
+Returns This Year,المرتجعات هذه السنة
+Payments Received This Month,المقبوضات هذا الشهر
+Payments Made This Month,المدفوعات هذا الشهر
+Overdue Customer Invoices,فواتير عملاء متأخرة السداد
+Customers Owing the Most,العملاء الأكثر مديونية
+Expenses by Month,المصروفات حسب الشهر
+New Leads This Month,عملاء محتملون جدد هذا الشهر
+Leads by Source This Year,العملاء المحتملون حسب المصدر هذه السنة
+Leads by Status,العملاء المحتملون حسب الحالة
+Opportunities by Month,الفرص حسب الشهر
+Won and Lost This Year,الصفقات الرابحة والخاسرة هذه السنة
+Open Deals by Salesperson,الصفقات المفتوحة حسب مندوب المبيعات
+Next 30 Days,الأيام 30 القادمة
+Next 90 Days,الأيام 90 القادمة
+Only a total or an average can subtract a field,فقط المجموع أو المتوسط يمكنه طرح حقل
+{0} cannot be subtracted here,لا يمكن طرح {0} هنا
+A hired applicant cannot be deleted,لا يمكن حذف متقدم تم توظيفه
+Accepted by the applicant,قبول المتقدم
+Add Applicant,إضافة متقدم
+Add My Feedback,إضافة تقييمي
+"Add the gender and date of birth, then save.",أضف الجنس وتاريخ الميلاد ثم احفظ.
+Advertisement,إعلان
+Agency,وكالة توظيف
+All positions are filled. You can close this opening.,تم شغل كل الوظائف. يمكنك إغلاق هذه الوظيفة الشاغرة.
+An employee was already created from this offer,تم إنشاء موظف من هذا العرض مسبقاً
+Answer Received On,تاريخ استلام الرد
+Applicant,المتقدم
+Applicant's Answer,رد المتقدم
+Applicants,المتقدمون
+Applicants Board,لوحة المتقدمين
+Basic Salary (Monthly),الراتب الأساسي (شهرياً)
+CV,السيرة الذاتية
+CV / Resume,السيرة الذاتية
+Closed,مغلقة
+Closes On must be after Posted On,تاريخ الإغلاق يجب أن يكون بعد تاريخ النشر
+Create Employee,إنشاء موظف
+Date and Time,التاريخ والوقت
+"Dear {0},",السيد/السيدة {0}،
+Declined the job offer {0},رفض عرض العمل {0}
+Do Not Hire,لا يُوظَّف
+Duration (Minutes),المدة (دقائق)
+Edit My Feedback,تعديل تقييمي
+Employee {0} was created from this offer.,تم إنشاء الموظف {0} من هذا العرض.
+Feedback,التقييمات
+For the company,عن الشركة
+Hire,يُوظَّف
+Hired,تم التوظيف
+Hired From Job Offer,مُعيَّن من عرض العمل
+Hired as employee {0},تم توظيفه برقم {0}
+Housing Allowance (Monthly),بدل السكن (شهرياً)
+Internship,تدريب
+Interview with {0} on {1},مقابلة مع {0} في {1}
+Make Job Offer,إعداد عرض عمل
+My Feedback,تقييمي
+No earning component with the abbreviation {0},لا يوجد بند استحقاق بالاختصار {0}
+Offer,عرض عمل
+Offer Date,تاريخ العرض
+Only a sent offer can be answered,لا يُسجَّل الرد إلا على عرض مُرسَل
+Place or Meeting Link,المكان أو رابط الاجتماع
+Positions,عدد الوظائف
+Probation (Months),فترة التجربة (أشهر)
+Raqeem Interview,مقابلة
+Raqeem Interview Feedback,تقييم المقابلة
+Raqeem Interviewer,مُقابِل
+Raqeem Job Applicant,متقدم لوظيفة
+Raqeem Job Offer,عرض عمل
+Raqeem Job Opening,وظيفة شاغرة
+Reason (Rejected / Withdrawn),السبب (مرفوض / منسحب)
+Recommendation,التوصية
+Referral,ترشيح
+Referred By,رشّحه
+Reject Applicant,رفض المتقدم
+Requirements,المتطلبات
+Round,الجولة
+Salary,الراتب
+Screening,الفرز
+Terms,الشروط
+Terms and Conditions,الشروط والأحكام
+The applicant declined this offer?,هل رفض المتقدم هذا العرض؟
+The basic salary must be more than 0,الراتب الأساسي يجب أن يكون أكثر من 0
+The employee is already created from this offer,تم إنشاء الموظف من هذا العرض مسبقاً
+"The employee is saved, but the salary could not be created from the offer. Add it in Employee Salary.",تم حفظ الموظف، لكن تعذّر إنشاء راتبه من العرض. أضفه من «راتب الموظف».
+The first {0} months are a probation period.,أول {0} أشهر فترة تجربة.
+The joining date must be after the offer date,تاريخ المباشرة يجب أن يكون بعد تاريخ العرض
+The offer must be accepted first,يجب قبول العرض أولاً
+The salary range starts above where it ends,بداية نطاق الراتب أعلى من نهايته
+This applicant already has an open offer: {0},لدى هذا المتقدم عرض مفتوح: {0}
+This applicant is already an employee: {0},هذا المتقدم موظف بالفعل: {0}
+This applicant is already hired,تم توظيف هذا المتقدم مسبقاً
+This applicant is {0}.,حالة هذا المتقدم: {0}.
+This job opening is closed.,هذه الوظيفة الشاغرة مغلقة.
+This offer is valid until {0}.,هذا العرض صالح حتى {0}.
+Total Monthly,الإجمالي الشهري
+Transport Allowance (Monthly),بدل المواصلات (شهرياً)
+Unknown answer,رد غير معروف
+Valid Until,صالح حتى
+Valid Until must be after the offer date,تاريخ الصلاحية يجب أن يكون بعد تاريخ العرض
+Walk-in,حضور شخصي
+"We are pleased to offer you the position of {0} in the {1} department at {2}, starting on {3}.",يسرّنا أن نعرض عليك وظيفة {0} في قسم {1} لدى {2}، اعتباراً من {3}.
+Withdrawn,منسحب
+the advertised job,الوظيفة المعلن عنها
+{0} already applied for this job with the same {1}: {2},{0} تقدم لهذه الوظيفة مسبقاً بنفس {1}: {2}
+Add at least one criterion,أضف معياراً واحداً على الأقل
+Appraisal of {0} to review,تقييم {0} بانتظار مراجعتك
+Appraisals,التقييمات
+Attended,حضر
+Average Score (of 5),متوسط الدرجة (من 5)
+Certificate,الشهادة
+Complete Review,إتمام التقييم
+Completed On,تاريخ الإتمام
+Completed appraisals belong to this cycle,توجد تقييمات مكتملة في هذه الدورة
+Cost per Person,التكلفة للفرد
+Create an appraisal for every active employee in this cycle's scope?,إنشاء تقييم لكل موظف نشط ضمن نطاق هذه الدورة؟
+Criteria,المعايير
+Criteria Score (of 5),درجة المعايير (من 5)
+Criterion,المعيار
+Duration (Hours),المدة (ساعات)
+Employee's Comments,ملاحظات الموظف
+Employee's Feedback,رأي الموظف
+Employee's Rating,تقييم الموظف
+Employees Review Themselves First,الموظفون يقيّمون أنفسهم أولاً
+Employees' Average Rating,متوسط تقييم الموظفين
+Ends,ينتهي
+External,خارجي
+Final Score (of 5),الدرجة النهائية (من 5)
+Final score {0} of 5 · criteria {1} · goals {2},الدرجة النهائية {0} من 5 · المعايير {1} · الأهداف {2}
+Goal,الهدف
+Goals,الأهداف
+Goals Count For (%),وزن الأهداف (%)
+Goals Score (of 5),درجة الأهداف (من 5)
+Goals can only be added during the self review,تُضاف الأهداف فقط أثناء التقييم الذاتي
+Internal,داخلي
+Manager Rating,تقييم المدير
+Manager Review,مراجعة المدير
+Manager Reviews Due,موعد مراجعات المدير
+Manager's Comments,ملاحظات المدير
+Manager: Achieved (%),المدير: نسبة الإنجاز (%)
+My Appraisals,تقييماتي
+My Training,تدريبي
+No appraisals yet,لا توجد تقييمات بعد
+No training yet,لا يوجد تدريب بعد
+Online,عن بُعد
+Only the employee or HR can send the self review,فقط الموظف أو شؤون الموظفين يمكنه إرسال التقييم الذاتي
+Only the reviewer or HR can complete the appraisal,فقط المُقيِّم أو شؤون الموظفين يمكنه إتمام التقييم
+Period From,الفترة من
+Period To,الفترة إلى
+Period To must be after Period From,نهاية الفترة يجب أن تكون بعد بدايتها
+Program,البرنامج
+Program Name,اسم البرنامج
+Provider / Trainer,الجهة / المدرب
+Raqeem Appraisal,تقييم أداء
+Raqeem Appraisal Criterion,معيار التقييم
+Raqeem Appraisal Cycle,دورة التقييم
+Raqeem Appraisal Goal,هدف التقييم
+Raqeem Appraisal Score,درجة المعيار
+Raqeem Appraisal Template,نموذج التقييم
+Raqeem Training Event,دورة تدريبية
+Raqeem Training Participant,متدرب
+Raqeem Training Program,برنامج تدريبي
+"Rate each criterion and the goals' achievement, then press Complete Review. Self score: {0} of 5.",قيّم كل معيار ونسبة إنجاز الأهداف ثم اضغط «إتمام التقييم». الدرجة الذاتية: {0} من 5.
+Rate every criterion first: {0},قيّم كل المعايير أولاً: {0}
+Rate the Training,تقييم التدريب
+Rate yourself,قيّم نفسك
+"Rate yourself on each criterion, add your goals, then press Send to Reviewer.",قيّم نفسك في كل معيار وأضف أهدافك ثم اضغط «إرسال للمُقيِّم».
+Rate yourself on every criterion first: {0},قيّم نفسك في كل المعايير أولاً: {0}
+Row {0}: a result needs attendance Attended,السطر {0}: النتيجة تتطلب أن يكون الحضور «حضر»
+Row {0}: achievement cannot be negative,السطر {0}: الإنجاز لا يمكن أن يكون سالباً
+Row {0}: you cannot change {1},السطر {0}: لا يمكنك تغيير {1}
+Row {0}: {1} is already in the list,السطر {0}: {1} موجود في القائمة مسبقاً
+Rules,القواعد
+Self Rating,التقييم الذاتي
+Self Review,التقييم الذاتي
+Self Reviews Due,موعد التقييمات الذاتية
+Self Score (of 5),الدرجة الذاتية (من 5)
+Self: Achieved (%),ذاتي: نسبة الإنجاز (%)
+Send to Reviewer,إرسال للمُقيِّم
+Sent to Reviewer On,تاريخ الإرسال للمُقيِّم
+Some participants are still marked Invited: mark them Attended or Absent.,بعض المتدربين ما زالوا «مدعوين»: حدد حضورهم أو غيابهم.
+Starts,يبدأ
+Target,المستهدف
+Template,النموذج
+Template {0} is disabled,النموذج {0} معطل
+Thank you,شكراً لك
+The criteria come from the template,المعايير تأتي من النموذج
+The employee has not sent the self review yet,لم يرسل الموظف تقييمه الذاتي بعد
+The end must be after the start,النهاية يجب أن تكون بعد البداية
+The final score = criteria × (100 − this) % + goals × this %. Without goals the criteria count fully.,الدرجة النهائية = المعايير × (100 − هذه) % + الأهداف × هذه %. بدون أهداف تُحتسب المعايير كاملة.
+The goals' weights must add up to 100%,مجموع أوزان الأهداف يجب أن يكون 100%
+The weights must add up to 100% (now {0}%),مجموع الأوزان يجب أن يكون 100% (حالياً {0}%)
+This appraisal is not waiting for a self review,هذا التقييم لا ينتظر تقييماً ذاتياً
+This cycle is completed,هذه الدورة مكتملة
+Total Weight,مجموع الأوزان
+Total weight: {0}%,مجموع الأوزان: {0}%
+Trainer,المدرب
+Training Session,دورة تدريبية
+Upcoming,قادم
+Waiting for the review by {0}.,بانتظار مراجعة {0}.
+Waiting for {0}'s self review.,بانتظار التقييم الذاتي لـ {0}.
+Weight (%),الوزن (%)
+What Is Looked At,ما يُنظر إليه
+What Is Taught,محتوى التدريب
+"What was good, what could be better?",ما الجيد، وما الذي يمكن تحسينه؟
+You are invited to the training {0} on {1},أنت مدعو إلى التدريب {0} في {1}
+You are not a participant of this training,لست مشاركاً في هذا التدريب
+You can rate a training after it starts,يمكنك تقييم التدريب بعد بدايته
+You cannot change {0},لا يمكنك تغيير {0}
+Your appraisal is completed: {0} of 5,اكتمل تقييمك: {0} من 5
+Your appraisal is open: please rate yourself,تقييمك مفتوح: يرجى تقييم نفسك
+Your user is not linked to an employee,حسابك غير مرتبط بموظف
+{0} already has an appraisal in this cycle: {1},لدى {0} تقييم في هذه الدورة: {1}
+"{0} appraisals created, {1} already existed.",تم إنشاء {0} تقييم، و{1} موجودة مسبقاً.
+{0} of {1} appraisals completed · average {2} of 5,اكتمل {0} من {1} تقييم · المتوسط {2} من 5
+{0} sent their self review,أرسل {0} تقييمه الذاتي
+0 = no limit,0 = بلا حد
+0 = no upper limit,0 = بلا حد أعلى
+A loan can have at most {0} instalments,لا يمكن أن يزيد عدد أقساط القرض على {0}
+Above {0} years,أكثر من {0} سنوات
+Add at least one task,أضف مهمة واحدة على الأقل
+Add at least one task (or choose a template),أضف مهمة واحدة على الأقل (أو اختر نموذجاً)
+Addition or Deduction,الإضافة أو الخصم
+Advances Deducted,السلف المخصومة
+After Approval,بعد الموافقة
+All {0} years at the rate of {1}+ years,كامل الـ {0} سنة بمعدّل فئة {1}+ سنوات
+Amount By,احتساب المبلغ حسب
+Amount Paid Back,المبلغ المُسدَّد
+An employee cannot report to themselves,لا يمكن أن يكون الموظف مديراً لنفسه
+Applied to the Employee,طُبّق على ملف الموظف
+Applied to the employee record.,طُبّق على ملف الموظف.
+Approved. Pay the loan out to start the salary deductions.,تمت الموافقة. اصرف القرض لتبدأ الخصومات من الراتب.
+Approved: the last working day is {0}. Attendance and payroll stop after it.,تمت الموافقة: آخر يوم عمل هو {0}. يتوقف الحضور والرواتب بعده.
+Approver of One-off Additions and Deductions,مسؤول الموافقة على الإضافات والخصومات لمرة واحدة
+Balance {0} · next instalment {1},الرصيد {0} · القسط التالي {1}
+Better Offer,عرض أفضل
+Bonus / Penalty,مكافأة / جزاء
+Calculate Gratuity,احتساب مكافأة نهاية الخدمة
+Calculation,الاحتساب
+Calendar Days of Service,أيام الخدمة التقويمية
+Career Growth,التطور الوظيفي
+Cash / Bank,نقداً / مصرف
+Change the Salary From the Same Date,تغيير الراتب من التاريخ نفسه
+"Check the figures, then press Submit to confirm: this posts the journal entry.",راجع الأرقام ثم اضغط اعتماد للتأكيد: يُنشئ ذلك قيد اليومية.
+Checklist Template,نموذج قائمة المهام
+Checklists,قوائم المهام
+Choose a salary component the system does not calculate by itself,اختر مكوّن راتب لا يحتسبه النظام تلقائياً
+Choose the main reason for leaving,اختر السبب الرئيسي لترك العمل
+Confirm the gratuity first,أكّد مكافأة نهاية الخدمة أولاً
+Confirmed By,أكّدها
+Current Branch,الفرع الحالي
+Current Department,القسم الحالي
+Current Designation,المسمى الوظيفي الحالي
+Current Manager,المدير الحالي
+Current Monthly Gross,إجمالي الراتب الشهري الحالي
+Current Salary,الراتب الحالي
+Days after the joining date (onboarding) or before the last working day when negative (exit).,أيام بعد تاريخ المباشرة (التهيئة)، أو قبل آخر يوم عمل إذا كانت سالبة (إنهاء الخدمة).
+Days in a Month (One Day's Pay = Pay / This),أيام الشهر (أجر اليوم = الأجر ÷ هذا العدد)
+Days of Basic Salary,أيام من الراتب الأساسي
+Days of Gross Salary,أيام من إجمالي الراتب
+Days of Pay,أيام الأجر
+Days of Pay per Year,أيام الأجر عن كل سنة
+Days of Pay per Year of Service,أيام الأجر عن كل سنة خدمة
+Death,الوفاة
+Deduct Open Loans and Advances,خصم القروض والسلف القائمة
+Department (Optional),القسم (اختياري)
+Done By,أنجزها
+Done On,تاريخ الإنجاز
+Due (Days From Start),الاستحقاق (أيام من البداية)
+Each Part at Its Own Rate,كل جزء بمعدّل فئته
+Early Settlement (Cash / Bank),سداد مبكر (نقداً / مصرف)
+Early Settlements,السداد المبكر
+Early settlement of loan {0} by {1},سداد مبكر للقرض {0} من {1}
+Employee Lifecycle,دورة حياة الموظف
+Employee Loans Account,حساب قروض الموظفين
+Employee Record Updated,حُدّث ملف الموظف
+Empty: an HR Manager approves them.,فارغ: يوافق عليها مدير الموارد البشرية.
+Empty: the notice date plus the notice period (Lifecycle Settings).,فارغ: تاريخ الإشعار مضافاً إليه مدة الإشعار (إعدادات دورة حياة الموظف).
+End of Contract,انتهاء العقد
+End of Service,نهاية الخدمة
+End of Service Gratuity,مكافأة نهاية الخدمة
+End of Service Payable Account,حساب مستحقات نهاية الخدمة
+End of service {0} of {1},نهاية خدمة {0} للموظف {1}
+End-of-Service Gratuity,مكافأة نهاية الخدمة
+Enter the new monthly earnings,أدخل الاستحقاقات الشهرية الجديدة
+Estimate End of Service,تقدير مكافأة نهاية الخدمة
+Exit,إنهاء الخدمة
+Exit Checklist,قائمة مهام إنهاء الخدمة
+Exit Type,نوع إنهاء الخدمة
+Exits,إنهاء الخدمة
+Final Settlement,التسوية النهائية
+First Instalment In,أول قسط في
+Fixed Amount,مبلغ ثابت
+"For an exit type with rows here, the row with the highest 'From Years' not above the service decides the share; no row for an exit type = 100%.",لكل نوع إنهاء له صفوف هنا، يحدّد النسبةَ الصفُّ ذو أعلى «من سنوات» لا يتجاوز مدة الخدمة؛ ونوع الإنهاء الذي لا صفوف له = 100%.
+"For example Bonus, One-off Allowance or Penalty. Earnings add to the salary, deductions take from it.",مثلاً: مكافأة أو بدل لمرة واحدة أو جزاء. الاستحقاقات تُضاف إلى الراتب، والخصومات تُقتطع منه.
+From Year,من سنة
+From Years of Service,من سنوات الخدمة
+Full Years Only,السنوات الكاملة فقط
+Fully repaid.,سُدّد بالكامل.
+Gratuity Before the Exit-Type Share,المكافأة قبل نسبة نوع الإنهاء
+Gratuity Expense Account,حساب مصروف مكافأة نهاية الخدمة
+How the Slabs Apply,طريقة تطبيق الفئات
+Included in Salary,أُدرج في الراتب
+Included in salary slip {0}.,أُدرج في قسيمة الراتب {0}.
+Instalment,القسط
+Instalment at Most (% of Gross Salary),أقصى قسط (% من إجمالي الراتب)
+Interview Date,تاريخ المقابلة
+Interviewer Notes,ملاحظات المُقابِل
+Joining date (onboarding) or last working day (exit).,تاريخ المباشرة (التهيئة) أو آخر يوم عمل (إنهاء الخدمة).
+Last Working Day,آخر يوم عمل
+Leave Type Paid Out,نوع الإجازة المصروف بدلها
+Less than {0} years of service: no gratuity,خدمة أقل من {0} سنوات: لا مكافأة
+Lifecycle Settings,إعدادات دورة حياة الموظف
+Loan,قرض
+Loan Amount,مبلغ القرض
+Loan Repayment Component,مكوّن سداد القروض
+Loan Status,حالة القرض
+Loan request from {0}: {1} in {2} instalments,طلب قرض من {0}: {1} على {2} أقساط
+Loan {0} to {1},القرض {0} للموظف {1}
+Loan {0}: instalment {1} of {2},القرض {0}: القسط {1} من {2}
+Loans,القروض
+Loans Deducted,القروض المخصومة
+Loans and One-off Additions,القروض والإضافات لمرة واحدة
+"Made for every new employee (e.g. contract, email account, social security registration).",تُنشأ لكل موظف جديد (مثل العقد، حساب البريد، التسجيل في الضمان الاجتماعي).
+"Made for the employee when an exit is approved (e.g. hand back laptop, clear custody).",تُنشأ للموظف عند الموافقة على إنهاء خدمته (مثل تسليم الحاسوب وإخلاء العُهد).
+Main Reason,السبب الرئيسي
+Make an Exit Interview When an Exit Is Approved,إنشاء مقابلة إنهاء خدمة عند الموافقة على الإنهاء
+Management,الإدارة
+Monthly Instalment,القسط الشهري
+Monthly Pay,الأجر الشهري
+Most Instalments for a Loan,أقصى عدد أقساط للقرض
+My Advances and Loans,سلفي وقروضي
+My Tasks,مهامي
+Net Payable to the Employee,الصافي المستحق للموظف
+New Branch,الفرع الجديد
+New Department (Optional),القسم الجديد (اختياري)
+New Designation,المسمى الوظيفي الجديد
+New Manager (Reports To),المدير الجديد (يرفع تقاريره إلى)
+New Monthly Earnings,الاستحقاقات الشهرية الجديدة
+New Monthly Gross,إجمالي الراتب الشهري الجديد
+New Salary Record,سجل الراتب الجديد
+Next Instalment,القسط التالي
+No Gratuity Below (Years of Service),لا مكافأة لخدمة أقل من (سنوات)
+Not Paid Out,لم يُصرف
+"Nothing changes: choose a new department, branch or manager",لا تغيير: اختر قسماً أو فرعاً أو مديراً جديداً
+"Nothing changes: choose a new designation, department or salary",لا تغيير: اختر مسمى وظيفياً أو قسماً أو راتباً جديداً
+Nothing is left to pay,لم يتبقَّ شيء للدفع
+Notice / Letter Date,تاريخ الإشعار / الخطاب
+Notice Period (Days),مدة الإشعار (أيام)
+Notice Short By (Days),نقص مدة الإشعار (أيام)
+Number of Instalments,عدد الأقساط
+Onboarding Checklist,قائمة مهام التهيئة
+One day = the monthly salary / 30.,اليوم الواحد = الراتب الشهري ÷ 30.
+One-off Allowance,بدل لمرة واحدة
+Only a loan that was paid out can be settled,لا يُسدَّد إلا قرض تم صرفه
+Only accounts can record payments,الحسابات فقط تسجّل المدفوعات
+Only an approved exit has an end-of-service gratuity,مكافأة نهاية الخدمة لإنهاء خدمة موافق عليه فقط
+Only an approved loan can be paid out,لا يُصرف إلا قرض موافق عليه
+Only {0} or HR can tick this task,لا يُنجز هذه المهمة إلا {0} أو الموارد البشرية
+Open Gratuity,فتح مكافأة نهاية الخدمة
+Or Anyone With Role,أو أي شخص له الدور
+Paid By,سُدّد عن طريق
+Paid From Salary,مدفوع من الراتب
+Part Years,أجزاء السنة
+Pay End of Service,صرف مستحقات نهاية الخدمة
+Pay Loan,صرف القرض
+Pay Out the Loan,صرف القرض
+Pay Unused Leave,صرف بدل الإجازات غير المستخدمة
+Pay Unused Leave Days With the Gratuity,صرف بدل أيام الإجازة غير المستخدمة مع المكافأة
+Pay Used,الأجر المعتمد
+Pay With the Salary Of,يُصرف مع راتب
+Pay and Benefits,الأجر والمزايا
+Payment Status,حالة الدفع
+Payment of end of service {0} to {1},صرف مستحقات نهاية الخدمة {0} للموظف {1}
+Payroll Status,حالة الرواتب
+"Pays the last instalments first, so the loan ends sooner.",يُسدّد الأقساط الأخيرة أولاً، فينتهي القرض أبكر.
+Penalty,جزاء
+Personal or Family,أسباب شخصية أو عائلية
+Pro Rata,بالتناسب
+Raqeem Checklist Task,مهمة قائمة
+Raqeem Checklist Template,نموذج قائمة المهام
+Raqeem Checklist Template Task,مهمة نموذج قائمة
+Raqeem Employee Checklist,قائمة مهام الموظف
+Raqeem Employee Exit,إنهاء خدمة موظف
+Raqeem Employee Loan,قرض موظف
+Raqeem Exit Interview,مقابلة إنهاء الخدمة
+Raqeem Gratuity,مكافأة نهاية الخدمة
+Raqeem Gratuity Factor,نسبة المكافأة حسب نوع الإنهاء
+Raqeem Gratuity Line,بند احتساب المكافأة
+Raqeem Gratuity Slab,فئة مكافأة نهاية الخدمة
+Raqeem Lifecycle Settings,إعدادات دورة حياة الموظف
+Raqeem Loan Instalment,قسط قرض
+Raqeem Loan Settlement,سداد مبكر لقرض
+Raqeem Promotion,ترقية
+Raqeem Salary Addition,إضافة / خصم على الراتب
+Raqeem Transfer,نقل موظف
+Reason / Notes,السبب / ملاحظات
+Relocation,الانتقال إلى مدينة أخرى
+Repay By,السداد عن طريق
+Repaying,قيد السداد
+Repayment Schedule,جدول السداد
+Resignation,استقالة
+Resignation / Exit,الاستقالة / إنهاء الخدمة
+Resignation / Termination,استقالة / إنهاء خدمة
+Responsible User,المستخدم المسؤول
+Retirement,التقاعد
+Row {0}: {1} is not an earning,الصف {0}: {1} ليس استحقاقاً
+Rules Checked by Our Accountant,راجع محاسبنا القواعد
+Rules Used,القواعد المطبّقة
+"Rules for onboarding, exits and the end-of-service gratuity. Every rule here is editable; ask your accountant or lawyer to check them for your country, then tick the box.",قواعد التهيئة وإنهاء الخدمة ومكافأة نهاية الخدمة. كل قاعدة هنا قابلة للتعديل؛ اطلب من محاسبك أو محاميك مراجعتها وفق قوانين بلدك ثم ضع علامة في المربع.
+Salary Addition / Deduction,إضافة / خصم على الراتب
+Salary Additions / Deductions,الإضافات والخصومات على الراتب
+Salary and Benefits,الراتب والمزايا
+Salary component {0} is disabled,مكوّن الراتب {0} معطّل
+Salary slip {0} already includes this; cancel the payroll run first,قسيمة الراتب {0} تتضمن هذا بالفعل؛ ألغِ مسير الرواتب أولاً
+Salary slips were already paid with the new salary {0}; cancel them first,صُرفت قسائم رواتب بالراتب الجديد {0}؛ ألغها أولاً
+Service Part,جزء الخدمة
+Set the Employee Loans account and the Loan Repayment component in Raqeem Payroll Settings,حدّد حساب قروض الموظفين ومكوّن سداد القروض في إعدادات الرواتب
+Set the Gratuity Expense and End of Service Payable accounts in Raqeem Lifecycle Settings,حدّد حسابي مصروف المكافأة ومستحقات نهاية الخدمة في إعدادات دورة حياة الموظف
+Set the Loan Repayment Component in Raqeem Payroll Settings,حدّد مكوّن سداد القروض في إعدادات الرواتب
+Set the monthly instalment,حدّد القسط الشهري
+Set the number of instalments,حدّد عدد الأقساط
+Settle Early,سداد مبكر
+Settled Early,سُدّد مبكراً
+Share Paid by Exit Type,النسبة المصروفة حسب نوع الإنهاء
+Share Paid for This Exit Type,النسبة المصروفة لهذا النوع من الإنهاء
+Share of the Gratuity Paid,نسبة المكافأة المصروفة
+Share row {0}: the share must be between 0 and 100%,صف النسبة {0}: يجب أن تكون النسبة بين 0 و100%
+Shares,النسب
+Slab row {0}: To Year must be above From Year (or 0 for no limit),صف الفئة {0}: يجب أن تكون «إلى سنة» أكبر من «من سنة» (أو 0 بلا حد)
+Slab row {0}: days cannot be negative,صف الفئة {0}: لا يمكن أن تكون الأيام سالبة
+Slabs,الفئات
+Studies,الدراسة
+Task not found,المهمة غير موجودة
+Template {0} is for {1},النموذج {0} مخصص لـ{1}
+Termination,إنهاء الخدمة من جهة العمل
+The Job Itself,طبيعة العمل
+The accountant confirms the end-of-service gratuity,المحاسب هو من يؤكّد مكافأة نهاية الخدمة
+The end-of-service gratuity {0} is confirmed; cancel it first,مكافأة نهاية الخدمة {0} مؤكَّدة؛ ألغها أولاً
+The end-of-service rules in Lifecycle Settings have not been confirmed by your accountant yet.,لم يؤكّد محاسبك بعدُ قواعد نهاية الخدمة في إعدادات دورة حياة الموظف.
+The exit belongs to another employee,إنهاء الخدمة هذا يخص موظفاً آخر
+The last working day cannot be before the joining date,لا يمكن أن يسبق آخر يوم عمل تاريخ المباشرة
+The last working day cannot be before the notice date,لا يمكن أن يسبق آخر يوم عمل تاريخ الإشعار
+The last working day is before the joining date,آخر يوم عمل يسبق تاريخ المباشرة
+The monthly instalment ({0}) is more than {1}% of the gross salary ({2}),القسط الشهري ({0}) أكبر من {1}% من إجمالي الراتب ({2})
+The notice is {0} days shorter than the notice period ({1} days).,الإشعار أقصر من مدة الإشعار بـ{0} يوماً ({1} يوماً).
+The payroll month that includes this date takes the first instalment; one instalment each month after it.,يُخصم القسط الأول في شهر الرواتب الذي يقع فيه هذا التاريخ، ثم قسط كل شهر بعده.
+The salary of that month is already submitted ({0}); choose a later month,راتب ذلك الشهر معتمد بالفعل ({0})؛ اختر شهراً لاحقاً
+The salary slip whose period includes this date adds or deducts the amount.,قسيمة الراتب التي تشمل فترتها هذا التاريخ تضيف المبلغ أو تخصمه.
+The settlement must be more than 0 and at most the balance ({0}),يجب أن يكون السداد أكبر من 0 وألا يتجاوز الرصيد ({0})
+The slabs overlap: {0}–{1} and {2}–,الفئات متداخلة: {0}–{1} و{2}–
+Their Manager,مديره المباشر
+This gratuity is already paid,صُرفت هذه المكافأة بالفعل
+This loan has repayments; it cannot be cancelled,لهذا القرض أقساط مسددة؛ لا يمكن إلغاؤه
+This loan is already paid out,صُرف هذا القرض بالفعل
+To Year,إلى سنة
+Total Due,إجمالي المستحق
+Transfer,نقل
+Unpaid Leave Days Left Out,أيام الإجازة غير المدفوعة المستبعدة
+Unpaid Leave Does Not Count as Service,الإجازة غير المدفوعة لا تُحتسب من الخدمة
+"Until this is ticked, every end-of-service calculation shows a warning.",إلى أن تُوضع العلامة هنا، يُظهر كل احتساب لنهاية الخدمة تنبيهاً.
+Unused Leave Days,أيام الإجازة غير المستخدمة
+Unused Leave Expense Account,حساب مصروف بدل الإجازات غير المستخدمة
+Unused Leave Pay,بدل الإجازات غير المستخدمة
+Waiting for Payroll,بانتظار مسير الرواتب
+Waiting for the accountant to confirm (submit).,بانتظار تأكيد المحاسب (الاعتماد).
+Waiting for the payroll of {0}.,بانتظار رواتب {0}.
+What They Liked Most,أكثر ما أعجبه
+What We Should Improve,ما يجب أن نحسّنه
+Whole Service at the Rate Reached,كامل الخدمة بمعدّل الفئة الأخيرة
+Why Is the Employee Leaving?,لماذا يغادر الموظف؟
+Will be applied to the employee record on {0}.,سيُطبَّق على ملف الموظف في {0}.
+Work Environment,بيئة العمل
+Workload,ضغط العمل
+Would Recommend Us as an Employer,ينصح بنا كجهة عمل
+Would Work Here Again,يعود للعمل لدينا
+Years,السنوات
+Years of Service Counted,سنوات الخدمة المحتسبة
+Years {0} to {1},السنوات من {0} إلى {1}
+You can only hand in your own resignation; HR records other exits,يمكنك تقديم استقالتك أنت فقط؛ وتسجّل الموارد البشرية حالات الإنهاء الأخرى
+last day {0},آخر يوم {0}
+loan request,طلب القرض
+next {0},التالي {0}
+with the salary of {0},مع راتب {0}
+{0} already has a confirmed end-of-service gratuity: {1},لدى {0} مكافأة نهاية خدمة مؤكَّدة: {1}
+{0} already has a salary valid from {1}; change that one instead,لدى {0} راتب ساري من {1}؛ عدّله بدلاً من ذلك
+{0} already has an exit: {1},لدى {0} إنهاء خدمة بالفعل: {1}
+{0} checklist of {1}: {2},قائمة {0} للموظف {1}: {2}
+{0} for {1}: {2},{0} للموظف {1}: {2}
+{0} instalments,{0} أقساط
+"{0} is filled in by the system (advances, loans, overtime ...); choose another component",{0} يملؤه النظام تلقائياً (السلف، القروض، العمل الإضافي ...)؛ اختر مكوّناً آخر
+{0} must be a template for {1},يجب أن يكون {0} نموذجاً لـ{1}
+{0} of {1} with your salary: {2},{0} بمبلغ {1} مع راتبك: {2}
+{0} of {1}: last working day {2},{0} للموظف {1}: آخر يوم عمل {2}
+"{0} still has employees reporting to them, so the status stays Active until they report to someone else. The relieving date is set, so attendance and payroll stop after the last working day.",ما زال موظفون يرفعون تقاريرهم إلى {0}، لذا تبقى حالته «نشط» حتى يُنقلوا إلى مدير آخر. تم تحديد تاريخ إخلاء الطرف، فيتوقف الحضور والرواتب بعد آخر يوم عمل.
+{0}% done,أُنجز {0}%
+{0}; one day = {1} / {2}; {3}; {4}: {5}% paid,{0}؛ اليوم الواحد = {1} ÷ {2}؛ {3}؛ {4}: تُصرف {5}%
+Onboarding (Standard),التهيئة (قياسي)
+Exit (Standard),إنهاء الخدمة (قياسي)
+Sign the employment contract,توقيع عقد العمل
+Create the system user and email,إنشاء مستخدم النظام والبريد الإلكتروني
+"Prepare the desk, computer and tools",تجهيز المكتب والحاسوب والأدوات
+Introduce to the team and the manager,التعريف بالفريق والمدير
+Explain the policies and working hours,شرح السياسات وساعات العمل
+Register with social security,التسجيل في الضمان الاجتماعي
+Set the salary and bank details,إدخال الراتب وبيانات المصرف
+Hand over the work and open tasks,تسليم العمل والمهام المفتوحة
+"Return the laptop, keys and custody",إرجاع الحاسوب والمفاتيح والعُهد
+Clear open advances and loans,تسوية السلف والقروض القائمة
+Disable the system user and email,تعطيل مستخدم النظام والبريد الإلكتروني
+Calculate and pay the end-of-service gratuity,احتساب مكافأة نهاية الخدمة وصرفها
+Open Job Openings,الوظائف الشاغرة المفتوحة
+New Applicants This Month,المتقدمون الجدد هذا الشهر
+Job Offers Accepted This Year,عروض العمل المقبولة هذا العام
+Applicants by Stage (Open Jobs),المتقدمون حسب المرحلة (الوظائف المفتوحة)
+Applicants per Open Job,المتقدمون لكل وظيفة مفتوحة
+Applicants by Month,المتقدمون حسب الشهر
+Applicants by Source This Year,المتقدمون حسب المصدر هذا العام
+Accountant Check,مراجعة المحاسب
+Open Positions,الوظائف الشاغرة
+Applicants per stage,المتقدمون حسب المرحلة
+Days Open,أيام الشغور
+Include On Hold,تضمين المعلّقة
+Job,الوظيفة
+Job openings with the status Open show here.,تظهر هنا الوظائف الشاغرة التي حالتها «مفتوحة».
+New Job Opening,وظيفة شاغرة جديدة
+No open positions,لا توجد وظائف شاغرة
+Oldest,الأقدم
+Only HR can see the open positions,الوظائف الشاغرة متاحة لشؤون الموظفين فقط
+Open the applicants,فتح المتقدمين
+Open the applicants at this stage,فتح المتقدمين في هذه المرحلة
+Open the longest,الأطول شغورًا
+Open too long,شاغرة منذ مدة طويلة
+Past closing date,تجاوزت تاريخ الإغلاق
+Unfilled,غير مشغولة
+closes {0},تُغلق {0}
+since {0},منذ {0}
+{0} filled · {1} unfilled,{0} مشغولة · {1} غير مشغولة
+{0} open for more than {1} days,{0} شاغرة منذ أكثر من {1} يومًا
+{0} past the closing date,{0} تجاوزت تاريخ الإغلاق
+{0} rejected / withdrawn,{0} مرفوض / منسحب
+Pivot Table,جدول محوري
+Pivot,جدول محوري
+Add at least one recipient,أضف مستلمًا واحدًا على الأقل
+Alert: {0},تنبيه: {0}
+Alerts and Scheduled Reports,التنبيهات والتقارير المجدولة
+Choose a chart or a dashboard,اختر رسمًا بيانيًا أو لوحة معلومات
+"Choose a chart or a dashboard, not both",اختر رسمًا بيانيًا أو لوحة معلومات، لا الاثنين معًا
+Choose the chart whose number is checked,اختر الرسم البياني الذي يُراقَب رقمه
+Could not make the image,تعذّر إنشاء الصورة
+Could not send: {0},تعذّر الإرسال: {0}
+Create an Alert,إنشاء تنبيه
+Download as PNG,تنزيل كصورة PNG
+Email This Chart Regularly,إرسال هذا الرسم بالبريد دوريًا
+Email This Dashboard Regularly,إرسال هذه اللوحة بالبريد دوريًا
+Error,خطأ
+Export to Excel,تصدير إلى Excel
+Nothing to export,لا يوجد ما يُصدَّر
+Nothing to save yet,لا يوجد ما يُحفظ بعد
+Open Chart,فتح الرسم البياني
+Open Dashboard,فتح اللوحة
+Open in Analytics,فتح في التحليلات
+Period: {0} to {1},الفترة: من {0} إلى {1}
+Preview,معاينة
+Send it to the recipients now?,إرساله إلى المستلمين الآن؟
+Sent (it leaves with the email queue),أُرسل (يخرج مع طابور البريد)
+Sent by the Analytics alert {0}.,أُرسل بواسطة تنبيه التحليلات {0}.
+The condition is not met: nothing was sent,الشرط غير متحقق: لم يُرسل شيء
+The day of the month must be between 1 and 28,يجب أن يكون يوم الشهر بين 1 و 28
+The hour must be between 0 and 23,يجب أن تكون الساعة بين 0 و 23
+The number is now {0} — the alert condition is {1} {2},الرقم الآن {0} — شرط التنبيه هو {1} {2}
+"The number is {0}: the condition is not met, nothing would be sent",الرقم {0}: الشرط غير متحقق، لن يُرسل شيء
+The user {0} is disabled,المستخدم {0} معطّل
+{0} cannot read the data of this chart,{0} لا يملك صلاحية قراءة بيانات هذا الرسم
+{0} cannot see this dashboard,{0} لا يملك صلاحية رؤية هذه اللوحة
+{0} is not a valid email address,{0} ليس عنوان بريد إلكتروني صالحًا
+{0} more rows in the attached Excel file,{0} صفًا إضافيًا في ملف Excel المرفق
+{0} — {1},{0} — {1}
+A scheduled report can send a whole dashboard instead of one chart.,يمكن للتقرير المجدول إرسال لوحة كاملة بدلًا من رسم واحد.
+Alert,تنبيه
+Analytics Alert,تنبيه تحليلات
+At Hour (0-23),في الساعة (0-23)
+Attach Excel File,إرفاق ملف Excel
+Condition Was True,كان الشرط متحققًا
+Day of the Month (1-28),يوم الشهر (1-28)
+Day of the Week,يوم الأسبوع
+Empty: the chart's own period.,فارغ: فترة الرسم نفسه.
+Last Checked,آخر فحص
+Last Error,آخر خطأ
+Last Sent,آخر إرسال
+Last Value,آخر قيمة
+Numbers As Seen By,الأرقام كما يراها
+One email address or user per line.,بريد إلكتروني أو مستخدم في كل سطر.
+Only When It Starts,فقط عند بدء تحقق الشرط
+Optional text at the top of the email.,نص اختياري في أعلى الرسالة.
+Scheduled Report,تقرير مجدول
+Scheduled Report: email the numbers regularly. Alert: email only when a number crosses a limit.,التقرير المجدول: يرسل الأرقام بالبريد دوريًا. التنبيه: يرسل فقط عندما يتجاوز رقم حدًّا معينًا.
+Send To,إرسال إلى
+"Send once when the condition becomes true, not again at every check until it is false again.",يُرسل مرة واحدة عندما يتحقق الشرط، ولا يتكرر عند كل فحص حتى يزول الشرط ثم يعود.
+The numbers are calculated with this user's permissions (the person who made it).,تُحسب الأرقام بصلاحيات هذا المستخدم (منشئ التنبيه).
+When,متى
+When the Number Is,عندما يكون الرقم
+The chart's own period,فترة الرسم نفسه
+Raqeem HRMS Migration Log,سجل نقل بيانات HRMS
+HRMS Document,مستند HRMS
+HRMS Document Type,نوع مستند HRMS
+Our Document,مستندنا
+Our Document Type,نوع مستندنا
+Migrated On,تاريخ النقل
+Copied from HRMS {0},منقول من HRMS {0}
+Decided in HRMS,تم البت فيه في HRMS
+HRMS is not installed: nothing to migrate,تطبيق HRMS غير مثبت: لا يوجد ما يُنقل
+"HRMS migration — DRY RUN, nothing was saved",نقل بيانات HRMS — تجربة فقط، لم يُحفظ شيء
+HRMS migration — saved,نقل بيانات HRMS — تم الحفظ
+Only a System Manager can run the HRMS migration,نقل بيانات HRMS متاح لمدير النظام فقط
+cancelled applications are not copied,الطلبات الملغاة لا تُنقل
+cancelled in HRMS,ملغى في HRMS
+compensatory leave is earned through Compensatory Requests in Employee Affairs; enter the open balance there,الإجازة التعويضية تُكتسب عبر طلبات التعويض في شؤون الموظفين؛ أدخل الرصيد المتبقي هناك
+copied before,نُقل سابقًا
+employer contribution: our payroll calculates it,حصة صاحب العمل: يحسبها نظام الرواتب لدينا
+gross {0},الإجمالي {0}
+income tax: our payroll calculates it,ضريبة الدخل: يحسبها نظام الرواتب لدينا
+leave type {0} was not copied,نوع الإجازة {0} لم يُنقل
+new component: check its Taxable / Social Security ticks and account,بند جديد: راجع خانتي «خاضع للضريبة» و«الضمان الاجتماعي» والحساب
+new leave type: check its days per year and carry forward,نوع إجازة جديد: راجع الأيام السنوية والترحيل
+no earning could be copied,لم يمكن نقل أي بند استحقاق
+nothing,لا شيء
+only submitted allocations are copied,تُنقل التخصيصات المعتمدة فقط
+this employee already has a salary from this date,لهذا الموظف راتب ساري من هذا التاريخ بالفعل
+this employee already has {0} for this period,لهذا الموظف {0} لهذه الفترة بالفعل
+unknown HRMS component {0},بند HRMS غير معروف {0}
+{0} cancelled,{0} ملغاة
+{0} drafts / cancelled,{0} مسودات / ملغاة
+{0} in HRMS but never submitted: decide it again,{0} في HRMS لكنه لم يُعتمد: قرّر فيه من جديد
+{0} is calculated by our payroll,{0} يحسبه نظام الرواتب لدينا
+{0} not copied: {1},{0} لم يُنقل: {1}
+{0} not copied: {1} is not an {2},{0} لم يُنقل: {1} ليس {2}
+"{0}, {1} days",{0}، {1} يوم
+{0}: could not calculate ({1}); add it by hand,{0}: تعذّر الحساب ({1})؛ أضفه يدويًا

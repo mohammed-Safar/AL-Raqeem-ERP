@@ -1,0 +1,465 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "creation": "2026-11-14 12:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "department",
+  "company",
+  "employee_exit",
+  "column_break_1",
+  "posting_date",
+  "exit_type",
+  "status",
+  "section_service",
+  "date_of_joining",
+  "relieving_date",
+  "service_days",
+  "column_break_s",
+  "unpaid_days",
+  "service_years",
+  "section_pay",
+  "basis",
+  "monthly_pay",
+  "column_break_pay",
+  "daily_pay",
+  "section_calc",
+  "lines",
+  "gratuity_full",
+  "factor_percent",
+  "column_break_calc",
+  "gratuity_amount",
+  "rules_note",
+  "section_final",
+  "pay_unused_leave",
+  "leave_days",
+  "leave_amount",
+  "deduct_loans",
+  "column_break_final",
+  "loan_deduction",
+  "advance_deduction",
+  "total_amount",
+  "net_payable",
+  "section_acc",
+  "journal_entry",
+  "confirmed_by",
+  "column_break_acc",
+  "payment_entry",
+  "payment_status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1,
+   "in_standard_filter": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "fetch_from": "employee.employee_name",
+   "read_only": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "fetch_from": "employee.department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "fetch_from": "employee.company",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee_exit",
+   "fieldtype": "Link",
+   "label": "Exit",
+   "options": "Raqeem Employee Exit",
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "reqd": 1,
+   "default": "Today"
+  },
+  {
+   "fieldname": "exit_type",
+   "fieldtype": "Select",
+   "label": "Exit Type",
+   "options": "Resignation\nTermination\nEnd of Contract\nRetirement\nDeath",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nConfirmed\nPaid\nCancelled",
+   "default": "Draft",
+   "read_only": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "allow_on_submit": 1,
+   "no_copy": 1
+  },
+  {
+   "fieldname": "section_service",
+   "fieldtype": "Section Break",
+   "label": "Service"
+  },
+  {
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "label": "Date of Joining",
+   "reqd": 1
+  },
+  {
+   "fieldname": "relieving_date",
+   "fieldtype": "Date",
+   "label": "Last Working Day",
+   "reqd": 1
+  },
+  {
+   "fieldname": "service_days",
+   "fieldtype": "Int",
+   "label": "Calendar Days of Service",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_s",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "unpaid_days",
+   "fieldtype": "Float",
+   "label": "Unpaid Leave Days Left Out",
+   "read_only": 1
+  },
+  {
+   "fieldname": "service_years",
+   "fieldtype": "Float",
+   "label": "Years of Service Counted",
+   "read_only": 1,
+   "precision": "3",
+   "bold": 1
+  },
+  {
+   "fieldname": "section_pay",
+   "fieldtype": "Section Break",
+   "label": "Pay Used"
+  },
+  {
+   "fieldname": "basis",
+   "fieldtype": "Data",
+   "label": "Pay Used",
+   "read_only": 1
+  },
+  {
+   "fieldname": "monthly_pay",
+   "fieldtype": "Currency",
+   "label": "Monthly Pay",
+   "options": "Company:company:default_currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_pay",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "daily_pay",
+   "fieldtype": "Currency",
+   "label": "One Day's Pay",
+   "options": "Company:company:default_currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_calc",
+   "fieldtype": "Section Break",
+   "label": "Calculation"
+  },
+  {
+   "fieldname": "lines",
+   "fieldtype": "Table",
+   "label": "Calculation",
+   "options": "Raqeem Gratuity Line",
+   "read_only": 1
+  },
+  {
+   "fieldname": "gratuity_full",
+   "fieldtype": "Currency",
+   "label": "Gratuity Before the Exit-Type Share",
+   "options": "Company:company:default_currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "factor_percent",
+   "fieldtype": "Percent",
+   "label": "Share Paid for This Exit Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_calc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gratuity_amount",
+   "fieldtype": "Currency",
+   "label": "Gratuity",
+   "options": "Company:company:default_currency",
+   "read_only": 1,
+   "bold": 1
+  },
+  {
+   "fieldname": "rules_note",
+   "fieldtype": "Small Text",
+   "label": "Rules Used",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_final",
+   "fieldtype": "Section Break",
+   "label": "Final Settlement"
+  },
+  {
+   "fieldname": "pay_unused_leave",
+   "fieldtype": "Check",
+   "label": "Pay Unused Leave"
+  },
+  {
+   "fieldname": "leave_days",
+   "fieldtype": "Float",
+   "label": "Unused Leave Days",
+   "read_only": 1
+  },
+  {
+   "fieldname": "leave_amount",
+   "fieldtype": "Currency",
+   "label": "Unused Leave Pay",
+   "options": "Company:company:default_currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "deduct_loans",
+   "fieldtype": "Check",
+   "label": "Deduct Open Loans and Advances"
+  },
+  {
+   "fieldname": "column_break_final",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "loan_deduction",
+   "fieldtype": "Currency",
+   "label": "Loans Deducted",
+   "options": "Company:company:default_currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "advance_deduction",
+   "fieldtype": "Currency",
+   "label": "Advances Deducted",
+   "options": "Company:company:default_currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Due",
+   "options": "Company:company:default_currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "net_payable",
+   "fieldtype": "Currency",
+   "label": "Net Payable to the Employee",
+   "options": "Company:company:default_currency",
+   "read_only": 1,
+   "bold": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "section_acc",
+   "fieldtype": "Section Break",
+   "label": "Accounting"
+  },
+  {
+   "fieldname": "journal_entry",
+   "fieldtype": "Link",
+   "label": "Journal Entry",
+   "options": "Journal Entry",
+   "read_only": 1,
+   "allow_on_submit": 1,
+   "no_copy": 1
+  },
+  {
+   "fieldname": "confirmed_by",
+   "fieldtype": "Link",
+   "label": "Confirmed By",
+   "options": "User",
+   "read_only": 1,
+   "allow_on_submit": 1,
+   "no_copy": 1
+  },
+  {
+   "fieldname": "column_break_acc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_entry",
+   "fieldtype": "Link",
+   "label": "Payment Entry",
+   "options": "Journal Entry",
+   "read_only": 1,
+   "allow_on_submit": 1,
+   "no_copy": 1
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "label": "Payment Status",
+   "options": "\nUnpaid\nPaid",
+   "in_standard_filter": 1,
+   "read_only": 1,
+   "allow_on_submit": 1,
+   "no_copy": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Raqeem Gratuity",
+   "read_only": 1,
+   "no_copy": 1,
+   "print_hide": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-14 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Raqeem HR",
+ "name": "Raqeem Gratuity",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "HR Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "HR User",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "Accounts Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "Accounts User",
+   "read": 1,
+   "write": 1,
+   "create": 0,
+   "delete": 0,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 0,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 0
+  },
+  {
+   "role": "Employee",
+   "read": 1,
+   "write": 0,
+   "create": 0,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 0,
+   "print": 1,
+   "email": 1,
+   "share": 0
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "autoname": "RQ-EOS-.YYYY.-.#####",
+ "naming_rule": "Expression (old style)",
+ "is_submittable": 1,
+ "title_field": "employee_name"
+}

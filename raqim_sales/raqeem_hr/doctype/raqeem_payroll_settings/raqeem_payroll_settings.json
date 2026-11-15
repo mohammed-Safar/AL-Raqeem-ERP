@@ -34,7 +34,20 @@
   "social_security_account",
   "solidarity_account",
   "jihad_account",
-  "stamp_account"
+  "stamp_account",
+  "section_exp",
+  "employee_advance_account",
+  "expense_payable_account",
+  "column_break_exp",
+  "advance_component",
+  "encashment_component",
+  "section_loan",
+  "loan_account",
+  "loan_component",
+  "max_loan_instalments",
+  "max_instalment_percent",
+  "column_break_loan",
+  "addition_approver"
  ],
  "fields": [
   {
@@ -211,11 +224,88 @@
    "fieldtype": "Link",
    "label": "Stamp Duty Payable",
    "options": "Account"
+  },
+  {
+   "fieldname": "section_exp",
+   "fieldtype": "Section Break",
+   "label": "Expense Claims and Advances"
+  },
+  {
+   "fieldname": "employee_advance_account",
+   "fieldtype": "Link",
+   "label": "Employee Advances Account",
+   "options": "Account",
+   "description": "Asset account holding the advances not yet repaid."
+  },
+  {
+   "fieldname": "expense_payable_account",
+   "fieldtype": "Link",
+   "label": "Employee Claims Payable Account",
+   "options": "Account",
+   "description": "Approved expense claims waiting to be paid to the employee."
+  },
+  {
+   "fieldname": "column_break_exp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "advance_component",
+   "fieldtype": "Link",
+   "label": "Advance Repayment Component",
+   "options": "Raqeem Salary Component",
+   "description": "The salary deduction line for advance repayments."
+  },
+  {
+   "fieldname": "encashment_component",
+   "fieldtype": "Link",
+   "label": "Leave Encashment Component",
+   "options": "Raqeem Salary Component",
+   "description": "The salary earning line for paid-out leave days."
+  },
+  {
+   "fieldname": "section_loan",
+   "fieldtype": "Section Break",
+   "label": "Loans and One-off Additions"
+  },
+  {
+   "fieldname": "loan_account",
+   "fieldtype": "Link",
+   "label": "Employee Loans Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "loan_component",
+   "fieldtype": "Link",
+   "label": "Loan Repayment Component",
+   "options": "Raqeem Salary Component"
+  },
+  {
+   "fieldname": "max_loan_instalments",
+   "fieldtype": "Int",
+   "label": "Most Instalments for a Loan",
+   "description": "0 = no limit"
+  },
+  {
+   "fieldname": "max_instalment_percent",
+   "fieldtype": "Percent",
+   "label": "Instalment at Most (% of Gross Salary)",
+   "description": "0 = no limit"
+  },
+  {
+   "fieldname": "column_break_loan",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "addition_approver",
+   "fieldtype": "Link",
+   "label": "Approver of One-off Additions and Deductions",
+   "options": "User",
+   "description": "Empty: an HR Manager approves them."
   }
  ],
  "index_web_pages_for_search": 0,
  "links": [],
- "modified": "2026-11-13 00:30:00.000000",
+ "modified": "2026-11-14 12:00:00.000000",
  "modified_by": "Administrator",
  "module": "Raqeem HR",
  "name": "Raqeem Payroll Settings",

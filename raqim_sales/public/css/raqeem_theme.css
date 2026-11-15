@@ -802,6 +802,11 @@ header.navbar, .navbar {
     color: var(--rq-text-3) !important;
     margin-bottom: 8px;
 }
+/* The sticky column-label row must stick BELOW the sticky page head, not at
+   top:0 behind it (it was fully hidden whenever you scrolled up). */
+.frappe-list .list-row-container:first-child {
+    top: calc(var(--page-head-height, 48px) + 1px) !important;
+}
 .frappe-list .list-row-head .list-row-col,
 .frappe-list .list-row-head .list-subject {
     color: var(--rq-text-3) !important;
@@ -850,7 +855,10 @@ header.navbar, .navbar {
     border: 1px solid var(--rq-line) !important;
     border-radius: var(--rq-r-lg) !important;
     box-shadow: var(--rq-shadow) !important;
-    overflow: hidden;
+    /* clip (not hidden): overflow:hidden turns .form-page into a scroll container, so the
+       sticky .form-tabs-list measured its top:48px inside the card instead of the scrolling
+       .main-section - it was pushed ~48px down and covered the first field labels and never stuck */
+    overflow: clip;
 }
 .form-section.card-section, .form-dashboard-section {
     border-bottom: 1px solid var(--rq-line) !important;
@@ -883,8 +891,17 @@ header.navbar, .navbar {
 .frappe-control[data-fieldtype="Currency"] .control-value,
 .frappe-control[data-fieldtype="Float"] .control-value { font-variant-numeric: tabular-nums; }
 .form-tabs-list {
-    background: transparent !important;
+    /* sticky strip: must be opaque, or the form text shows through while scrolling */
+    background: var(--card-bg) !important;
+    z-index: 6 !important;
     border-bottom: 1px solid var(--rq-line) !important;
+}
+/* Always sit BELOW the sticky page head (the page head sticks at top:0 of .main-section; Frappe put the strip at navbar height, so
+   the head covered the tabs while scrolling). Works only because .form-page uses overflow:clip (see section 10). */
+.form-tabs-list,
+.form-tabs-list.form-tabs-sticky-up,
+.form-tabs-list.form-tabs-sticky-down {
+    top: calc(var(--page-head-height, 48px) - 1px) !important;
 }
 .form-tabs-list .nav-link { color: var(--rq-text-3) !important; border: 0 !important; }
 .form-tabs-list .nav-link.active {
@@ -1113,6 +1130,16 @@ input[type="radio"] { accent-color: var(--rq-a-500); }
 }
 .datatable .dt-row:hover .dt-cell { background: var(--rq-hover) !important; }
 .datatable .dt-cell--focus .dt-cell__content { box-shadow: inset 0 0 0 2px var(--rq-accent); }
+/* row numbers: Frappe sizes this column with the small body font, so with our bigger table
+   font "10", "11"... became "1…". Tighter padding + slightly smaller digits, never cut. */
+.datatable .dt-cell__content--col-0,
+.datatable .dt-cell__content--header-0 {
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+    text-overflow: clip !important;
+    text-align: center;
+    font-size: .8rem;
+}
 .report-wrapper, .report-view .result, .chart-wrapper {
     background: transparent !important;
 }

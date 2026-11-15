@@ -5,6 +5,8 @@
 # submits it -> the employee is notified. Cancelling an approved request gives the days back.
 # Nobody approves their own request unless they are an HR Manager.
 # Days and balances: raqeem_hr/leave.py.
+# flags.hrms_migration (raqeem_hr/hrms_migration.py): history copied from HRMS keeps HRMS's day count
+# and decision date, and skips balance / blocked-date / document checks and notifications.
 import frappe
 from frappe import _
 from frappe.model.document import Document
@@ -28,17 +30,35 @@ class RaqeemLeaveRequest(Document):
 				frappe.throw(_("The half day must be between From Date and To Date"))
 		else:
 			self.half_day_date = None
-		self.total_days = count_leave_days(self.employee, self.company, self.leave_type, self.from_date,
-			self.to_date, self.half_day, self.half_day_date)
+		migrated = self.flags.get("hrms_migration") and flt(self.total_days) > 0
+		if not migrated:
+			self.total_days = count_leave_days(self.employee, self.company, self.leave_type, self.from_date,
+				self.to_date, self.half_day, self.half_day_date)
 		if self.total_days <= 0:
 			frappe.throw(_("There are no working days between these dates"))
 		self.validate_overlap()
+		if not migrated:
+			self.check_blocked()
 		if not self.approver:
 			self.approver = default_approver(self.employee)
 		if self.docstatus == 0:
 			self.status = "Open"
-			self.check_balance(throw=False)
-			self.check_attachment(throw=False)
+			if not migrated:
+				self.check_balance(throw=False)
+				self.check_attachment(throw=False)
+
+	def check_blocked(self):
+		from raqim_sales.raqeem_hr.leave import blocked_periods
+
+		if self.status == "Rejected":
+			return
+		for b in blocked_periods(self.employee, self.company, self.leave_type, self.from_date, self.to_date):
+			msg = _("Leave is not allowed from {0} to {1}: {2}").format(
+				frappe.format(b.from_date, "Date"), frappe.format(b.to_date, "Date"), b.title)
+			if b.hr_can_override and is_hr_manager():
+				frappe.msgprint(msg + " " + _("(you can still approve it as HR Manager)"), indicator="orange", alert=True)
+			else:
+				frappe.throw(msg, title=_("Blocked dates"))
 
 	def check_attachment(self, throw: bool):
 		after = cint(frappe.get_cached_value("Raqeem Leave Type", self.leave_type, "attachment_after_days"))
@@ -64,7 +84,7 @@ class RaqeemLeaveRequest(Document):
 		self.balance = b["balance"] if b["tracked"] else 0
 		if not b["tracked"] or b["allow_negative"]:
 			return
-		if not b["allocation"]:
+		if not b["allocation"] and not b.get("compensatory"):
 			msg = _("{0} has no {1} allocated for this period.").format(self.employee_name or self.employee, _(self.leave_type))
 		elif flt(self.total_days) > flt(b["balance"]):
 			msg = _("{0} has {1} days of {2} left, but this request is for {3} days.").format(
@@ -84,18 +104,25 @@ class RaqeemLeaveRequest(Document):
 		# the approver may open, edit and submit this request whatever their role
 		frappe.share.add_docshare(self.doctype, self.name, self.approver, read=1, write=1, submit=1,
 			flags={"ignore_share_permission": True}, notify=0)
+		if self.flags.get("hrms_migration"):
+			return
 		notify(self.approver, self, _("Leave request from {0}: {1} ({2} days)").format(
 			self.employee_name or self.employee, _(self.leave_type), flt(self.total_days)))
 
 	def before_submit(self):
 		if self.status not in ("Approved", "Rejected"):
 			frappe.throw(_("Approve or reject the request first"))
+		if self.flags.get("hrms_migration"):
+			self.decided_on = self.decided_on or now_datetime()
+			return
 		if self.status == "Approved":
 			self.check_balance(throw=True)
 			self.check_attachment(throw=True)
 		self.decided_on = now_datetime()
 
 	def on_submit(self):
+		if self.flags.get("hrms_migration"):
+			return
 		user = frappe.db.get_value("Employee", self.employee, "user_id")
 		if user and user != frappe.session.user:
 			notify(user, self, _("Your leave request ({0}) was {1}").format(

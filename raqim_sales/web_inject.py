@@ -84,6 +84,21 @@ HR_HEAD = (
 )
 
 
+# ERPNext Banking (/banking): raqeem_banking.css + the desk's light/dark choice (the app sets its
+# own html class "dark"; the script keeps it in step with the desk). ROLLBACK: BANKING_SKIN = False.
+BANKING_SKIN = True
+BANKING_HEAD = (
+	'<link rel="stylesheet" href="/assets/raqim_sales/css/raqeem_fonts.css?v=33">'
+	'<link rel="stylesheet" href="/assets/raqim_sales/css/raqeem_banking.css?v=1">'
+	"<script>(function(){try{var R=document.documentElement,L=localStorage,"
+	"mq=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)');"
+	"function want(){var m=L.getItem('raqeem_theme')||'light';return m==='dark'||(m==='auto'&&mq&&mq.matches);}"
+	"function fix(){var d=want();if(R.classList.contains('dark')!==d){R.classList.toggle('dark',d);R.classList.toggle('light',!d);}}"
+	"fix();new MutationObserver(fix).observe(R,{attributes:true,attributeFilter:['class']});"
+	"}catch(e){}})();</script>"
+)
+
+
 def _is_app_page(path: str, base: str) -> bool:
 	return path == base or (path.startswith(base + "/") and "." not in path.rsplit("/", 1)[-1])
 
@@ -110,8 +125,9 @@ def after_request(response=None, request=None):
 	path = request.path or ""
 	crm = _is_crm_page(path)
 	hr = HR_SKIN and any(_is_app_page(path, p) for p in HR_PAGES)
+	bank = BANKING_SKIN and _is_app_page(path, "/banking")
 	spa = SPA_I18N and any(_is_app_page(path, p) for p in SPA_PAGES)
-	if not (crm or hr or spa):
+	if not (crm or hr or spa or bank):
 		return
 	if response.status_code != 200 or response.mimetype != "text/html" or response.direct_passthrough:
 		return
@@ -133,6 +149,8 @@ def after_request(response=None, request=None):
 		body = body.replace("<title>Frappe HR</title>", "<title>RAQEEM HR</title>", 1)
 		body = body.replace('content="Frappe HR"', 'content="RAQEEM HR"', 1)
 		body = body.replace("<title>Roster</title>", "<title>RAQEEM HR · Roster</title>", 1)
+	if bank and "raqeem_banking.css" not in body:
+		head += BANKING_HEAD
 	# Arabic users: full safety net; everyone else: only the brand names (Frappe HR -> RAQEEM HR)
 	if spa and "raqeem_spa_i18n.js" not in body:
 		head += f"<script>window.__rq_ar={'true' if _is_arabic() else 'false'};</script>"

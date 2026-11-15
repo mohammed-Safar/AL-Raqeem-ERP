@@ -28,6 +28,22 @@ class RaqeemSalarySlip(Document):
 		if not self.flags.from_payroll_run:
 			frappe.throw(_("Salary slips are submitted by their payroll run"))
 
+	def on_submit(self):
+		self.update_advances()
+
+	def on_cancel(self):
+		self.update_advances()
+
+	def update_advances(self):
+		"""Advances, loans and one-off additions follow the slip (submitted: paid; cancelled: back to waiting)."""
+		from raqim_sales.raqeem_hr import additions, loans
+		from raqim_sales.raqeem_hr.expenses import update_advance
+
+		for adv in {d.advance for d in self.deductions if d.get("advance")}:
+			update_advance(adv)
+		loans.update_from_slip(self)
+		additions.update_from_slip(self, self.docstatus == 1)
+
 	def before_cancel(self):
 		if not self.flags.from_payroll_run:
 			frappe.throw(_("Cancel the payroll run instead"))

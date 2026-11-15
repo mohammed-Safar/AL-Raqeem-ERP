@@ -9,7 +9,11 @@
   "component_type",
   "full_amount",
   "amount",
-  "statutory"
+  "statutory",
+  "advance",
+  "note",
+  "salary_addition",
+  "loan"
  ],
  "fields": [
   {
@@ -52,11 +56,42 @@
    "label": "Statutory",
    "read_only": 1,
    "hidden": 1
+  },
+  {
+   "fieldname": "advance",
+   "fieldtype": "Link",
+   "label": "Advance",
+   "options": "Raqeem Employee Advance",
+   "read_only": 1,
+   "depends_on": "advance"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Data",
+   "label": "Note",
+   "read_only": 1,
+   "depends_on": "note"
+  },
+  {
+   "fieldname": "salary_addition",
+   "fieldtype": "Link",
+   "label": "Salary Addition / Deduction",
+   "options": "Raqeem Salary Addition",
+   "read_only": 1,
+   "depends_on": "salary_addition"
+  },
+  {
+   "fieldname": "loan",
+   "fieldtype": "Link",
+   "label": "Loan",
+   "options": "Raqeem Employee Loan",
+   "read_only": 1,
+   "depends_on": "loan"
   }
  ],
  "index_web_pages_for_search": 0,
  "links": [],
- "modified": "2026-11-13 00:30:00.000000",
+ "modified": "2026-11-14 12:00:00.000000",
  "modified_by": "Administrator",
  "module": "Raqeem HR",
  "name": "Raqeem Salary Line",

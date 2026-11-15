@@ -15,7 +15,7 @@ try:
             deductions=ded or [])).insert()
     s1=sal(a); ok('employee salary gross %s'%s1.gross, s1.gross==2700)
     sal(b); 
-    adv=frappe.get_doc(dict(doctype='Raqeem Salary Component', component_name='Advance Repayment', component_type='Deduction', account='Payroll Payable - RM.co')).insert()
+    adv=frappe.get_doc('Raqeem Salary Component','Advance Repayment') if frappe.db.exists('Raqeem Salary Component','Advance Repayment') else frappe.get_doc(dict(doctype='Raqeem Salary Component', component_name='Advance Repayment', component_type='Deduction', account='Payroll Payable - RM.co')).insert()
     sal(c, 'Married', 2, [dict(component='Advance Repayment', amount=100)])
     try: frappe.get_doc(dict(doctype='Raqeem Employee Salary', employee=d, from_date='2025-01-01', earnings=[dict(component='Income Tax', amount=5)])).insert(); ok('statutory row refused', False)
     except frappe.ValidationError: ok('statutory row refused', True)

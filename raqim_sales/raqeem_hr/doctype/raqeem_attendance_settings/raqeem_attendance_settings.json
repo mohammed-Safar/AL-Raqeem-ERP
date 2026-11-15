@@ -1,0 +1,382 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "creation": "2026-11-13 23:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "intro",
+  "section_week",
+  "off_saturday",
+  "off_sunday",
+  "off_monday",
+  "off_tuesday",
+  "column_break_week",
+  "off_wednesday",
+  "off_thursday",
+  "off_friday",
+  "default_shift",
+  "section_fp",
+  "auto_process",
+  "mark_absent",
+  "process_days_back",
+  "column_break_fp",
+  "window_before_minutes",
+  "window_after_minutes",
+  "duplicate_minutes",
+  "section_abs",
+  "absent_unpaid",
+  "half_day_unpaid",
+  "column_break_abs",
+  "late_deduction",
+  "free_late_minutes",
+  "late_deduction_factor",
+  "section_ot",
+  "overtime_enabled",
+  "overtime_after_minutes",
+  "overtime_round_minutes",
+  "overtime_needs_approval",
+  "column_break_ot",
+  "overtime_pay_basis",
+  "rate_working_day",
+  "rate_weekly_off",
+  "rate_holiday",
+  "fixed_amount_per_hour",
+  "hourly_pay_from",
+  "monthly_hours",
+  "section_pay",
+  "basic_component",
+  "column_break_pay",
+  "overtime_component",
+  "late_component"
+ ],
+ "fields": [
+  {
+   "fieldname": "intro",
+   "fieldtype": "HTML",
+   "options": "<p class='text-muted small'>All attendance rules of the company. Every value here can be changed at any time; days already calculated keep their numbers until they are processed again.</p>"
+  },
+  {
+   "fieldname": "section_week",
+   "fieldtype": "Section Break",
+   "label": "Weekly Days Off"
+  },
+  {
+   "fieldname": "off_saturday",
+   "fieldtype": "Check",
+   "label": "Saturday",
+   "default": "0"
+  },
+  {
+   "fieldname": "off_sunday",
+   "fieldtype": "Check",
+   "label": "Sunday",
+   "default": "0"
+  },
+  {
+   "fieldname": "off_monday",
+   "fieldtype": "Check",
+   "label": "Monday",
+   "default": "0"
+  },
+  {
+   "fieldname": "off_tuesday",
+   "fieldtype": "Check",
+   "label": "Tuesday",
+   "default": "0"
+  },
+  {
+   "fieldname": "column_break_week",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "off_wednesday",
+   "fieldtype": "Check",
+   "label": "Wednesday",
+   "default": "0"
+  },
+  {
+   "fieldname": "off_thursday",
+   "fieldtype": "Check",
+   "label": "Thursday",
+   "default": "0"
+  },
+  {
+   "fieldname": "off_friday",
+   "fieldtype": "Check",
+   "label": "Friday",
+   "default": "1"
+  },
+  {
+   "fieldname": "default_shift",
+   "fieldtype": "Link",
+   "label": "Default Shift",
+   "options": "Raqeem Shift Type",
+   "description": "For employees without a shift assignment. Empty: those employees get no late / early / overtime calculation."
+  },
+  {
+   "fieldname": "section_fp",
+   "fieldtype": "Section Break",
+   "label": "Fingerprint"
+  },
+  {
+   "fieldname": "auto_process",
+   "fieldtype": "Check",
+   "label": "Create Attendance from Fingerprints Automatically",
+   "default": "1",
+   "description": "Every hour, fingerprints are turned into attendance."
+  },
+  {
+   "fieldname": "mark_absent",
+   "fieldtype": "Check",
+   "label": "Mark Absent When There Is No Fingerprint",
+   "default": "1",
+   "description": "Only for employees who have an Attendance Device ID, on working days, when they are not on leave."
+  },
+  {
+   "fieldname": "process_days_back",
+   "fieldtype": "Int",
+   "label": "Re-check the Last (Days)",
+   "default": "7",
+   "description": "Fingerprints that reach the system late (device synced later) still count for these days."
+  },
+  {
+   "fieldname": "column_break_fp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "window_before_minutes",
+   "fieldtype": "Int",
+   "label": "Count Fingerprints From (Minutes Before Shift Start)",
+   "default": "240"
+  },
+  {
+   "fieldname": "window_after_minutes",
+   "fieldtype": "Int",
+   "label": "Count Fingerprints Until (Minutes After Shift End)",
+   "default": "480"
+  },
+  {
+   "fieldname": "duplicate_minutes",
+   "fieldtype": "Int",
+   "label": "Fingerprints Closer Than (Minutes) Are One",
+   "default": "2"
+  },
+  {
+   "fieldname": "section_abs",
+   "fieldtype": "Section Break",
+   "label": "Absence and Lateness"
+  },
+  {
+   "fieldname": "absent_unpaid",
+   "fieldtype": "Check",
+   "label": "Absent Days Are Unpaid in Payroll",
+   "default": "1"
+  },
+  {
+   "fieldname": "half_day_unpaid",
+   "fieldtype": "Check",
+   "label": "Half Days Count as Half an Unpaid Day",
+   "default": "1"
+  },
+  {
+   "fieldname": "column_break_abs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "late_deduction",
+   "fieldtype": "Check",
+   "label": "Deduct Late Minutes from Salary",
+   "default": "0",
+   "description": "Lateness is always recorded. Tick this to also deduct it in payroll."
+  },
+  {
+   "fieldname": "free_late_minutes",
+   "fieldtype": "Int",
+   "label": "Free Late Minutes per Month",
+   "default": "0",
+   "depends_on": "late_deduction"
+  },
+  {
+   "fieldname": "late_deduction_factor",
+   "fieldtype": "Float",
+   "label": "Deduct (Hours of Pay per Late Hour)",
+   "default": "1",
+   "depends_on": "late_deduction"
+  },
+  {
+   "fieldname": "section_ot",
+   "fieldtype": "Section Break",
+   "label": "Overtime"
+  },
+  {
+   "fieldname": "overtime_enabled",
+   "fieldtype": "Check",
+   "label": "Calculate Overtime",
+   "default": "1"
+  },
+  {
+   "fieldname": "overtime_after_minutes",
+   "fieldtype": "Int",
+   "label": "Count Overtime After (Minutes Past Shift End)",
+   "default": "30",
+   "depends_on": "overtime_enabled"
+  },
+  {
+   "fieldname": "overtime_round_minutes",
+   "fieldtype": "Int",
+   "label": "Round Overtime Down To (Minutes)",
+   "default": "15",
+   "depends_on": "overtime_enabled"
+  },
+  {
+   "fieldname": "overtime_needs_approval",
+   "fieldtype": "Check",
+   "label": "Overtime Needs Approval Before Payroll",
+   "default": "1",
+   "depends_on": "overtime_enabled"
+  },
+  {
+   "fieldname": "column_break_ot",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "overtime_pay_basis",
+   "fieldtype": "Select",
+   "label": "Overtime Pay",
+   "options": "Multiplier of Hourly Pay\nFixed Amount per Hour",
+   "default": "Multiplier of Hourly Pay",
+   "depends_on": "overtime_enabled"
+  },
+  {
+   "fieldname": "rate_working_day",
+   "fieldtype": "Float",
+   "label": "Rate on Working Days",
+   "default": "1.5",
+   "depends_on": "eval:doc.overtime_enabled && doc.overtime_pay_basis=='Multiplier of Hourly Pay'"
+  },
+  {
+   "fieldname": "rate_weekly_off",
+   "fieldtype": "Float",
+   "label": "Rate on Weekly Days Off",
+   "default": "2",
+   "depends_on": "eval:doc.overtime_enabled && doc.overtime_pay_basis=='Multiplier of Hourly Pay'"
+  },
+  {
+   "fieldname": "rate_holiday",
+   "fieldtype": "Float",
+   "label": "Rate on Official Holidays",
+   "default": "2",
+   "depends_on": "eval:doc.overtime_enabled && doc.overtime_pay_basis=='Multiplier of Hourly Pay'"
+  },
+  {
+   "fieldname": "fixed_amount_per_hour",
+   "fieldtype": "Currency",
+   "label": "Amount per Overtime Hour",
+   "depends_on": "eval:doc.overtime_enabled && doc.overtime_pay_basis=='Fixed Amount per Hour'"
+  },
+  {
+   "fieldname": "hourly_pay_from",
+   "fieldtype": "Select",
+   "label": "Hourly Pay Is Based On",
+   "options": "Basic Salary\nGross Salary",
+   "default": "Basic Salary",
+   "depends_on": "overtime_enabled"
+  },
+  {
+   "fieldname": "monthly_hours",
+   "fieldtype": "Float",
+   "label": "Working Hours per Month",
+   "default": "208",
+   "depends_on": "overtime_enabled",
+   "description": "Hourly pay = monthly salary ÷ these hours (and for late deductions)."
+  },
+  {
+   "fieldname": "section_pay",
+   "fieldtype": "Section Break",
+   "label": "Salary Components"
+  },
+  {
+   "fieldname": "basic_component",
+   "fieldtype": "Link",
+   "label": "Basic Salary Component",
+   "options": "Raqeem Salary Component",
+   "description": "Used when hourly pay is based on the basic salary."
+  },
+  {
+   "fieldname": "column_break_pay",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "overtime_component",
+   "fieldtype": "Link",
+   "label": "Overtime Component",
+   "options": "Raqeem Salary Component"
+  },
+  {
+   "fieldname": "late_component",
+   "fieldtype": "Link",
+   "label": "Late Deduction Component",
+   "options": "Raqeem Salary Component"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-14 00:30:00.000000",
+ "modified_by": "Administrator",
+ "module": "Raqeem HR",
+ "name": "Raqeem Attendance Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "HR Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "HR User",
+   "read": 1,
+   "write": 0,
+   "create": 0,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 0,
+   "print": 1,
+   "email": 1,
+   "share": 0
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "issingle": 1
+}

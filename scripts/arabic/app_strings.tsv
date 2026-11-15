@@ -430,3 +430,426 @@ Advance Repayment	سداد سلفة
 Employee signature	توقيع الموظف
 Approved by	اعتمده
 Payroll	الرواتب
+0 = no limit	0 = بلا حد
+0 = no upper limit	0 = بلا حد أعلى
+A loan can have at most {0} instalments	لا يمكن أن يزيد عدد أقساط القرض على {0}
+Above {0} years	أكثر من {0} سنوات
+Add at least one task	أضف مهمة واحدة على الأقل
+Add at least one task (or choose a template)	أضف مهمة واحدة على الأقل (أو اختر نموذجاً)
+Addition or Deduction	الإضافة أو الخصم
+Advances Deducted	السلف المخصومة
+After Approval	بعد الموافقة
+All {0} years at the rate of {1}+ years	كامل الـ {0} سنة بمعدّل فئة {1}+ سنوات
+Amount By	احتساب المبلغ حسب
+Amount Paid Back	المبلغ المُسدَّد
+An employee cannot report to themselves	لا يمكن أن يكون الموظف مديراً لنفسه
+Applied to the Employee	طُبّق على ملف الموظف
+Applied to the employee record.	طُبّق على ملف الموظف.
+Approved. Pay the loan out to start the salary deductions.	تمت الموافقة. اصرف القرض لتبدأ الخصومات من الراتب.
+Approved: the last working day is {0}. Attendance and payroll stop after it.	تمت الموافقة: آخر يوم عمل هو {0}. يتوقف الحضور والرواتب بعده.
+Approver of One-off Additions and Deductions	مسؤول الموافقة على الإضافات والخصومات لمرة واحدة
+Balance {0} · next instalment {1}	الرصيد {0} · القسط التالي {1}
+Better Offer	عرض أفضل
+Bonus / Penalty	مكافأة / جزاء
+Calculate Gratuity	احتساب مكافأة نهاية الخدمة
+Calculation	الاحتساب
+Calendar Days of Service	أيام الخدمة التقويمية
+Career Growth	التطور الوظيفي
+Cash / Bank	نقداً / مصرف
+Change the Salary From the Same Date	تغيير الراتب من التاريخ نفسه
+Check the figures, then press Submit to confirm: this posts the journal entry.	راجع الأرقام ثم اضغط اعتماد للتأكيد: يُنشئ ذلك قيد اليومية.
+Checklist Template	نموذج قائمة المهام
+Checklists	قوائم المهام
+Choose a salary component the system does not calculate by itself	اختر مكوّن راتب لا يحتسبه النظام تلقائياً
+Choose the main reason for leaving	اختر السبب الرئيسي لترك العمل
+Confirm the gratuity first	أكّد مكافأة نهاية الخدمة أولاً
+Confirmed By	أكّدها
+Current Branch	الفرع الحالي
+Current Department	القسم الحالي
+Current Designation	المسمى الوظيفي الحالي
+Current Manager	المدير الحالي
+Current Monthly Gross	إجمالي الراتب الشهري الحالي
+Current Salary	الراتب الحالي
+Days after the joining date (onboarding) or before the last working day when negative (exit).	أيام بعد تاريخ المباشرة (التهيئة)، أو قبل آخر يوم عمل إذا كانت سالبة (إنهاء الخدمة).
+Days in a Month (One Day's Pay = Pay / This)	أيام الشهر (أجر اليوم = الأجر ÷ هذا العدد)
+Days of Basic Salary	أيام من الراتب الأساسي
+Days of Gross Salary	أيام من إجمالي الراتب
+Days of Pay	أيام الأجر
+Days of Pay per Year	أيام الأجر عن كل سنة
+Days of Pay per Year of Service	أيام الأجر عن كل سنة خدمة
+Death	الوفاة
+Deduct Open Loans and Advances	خصم القروض والسلف القائمة
+Department (Optional)	القسم (اختياري)
+Done By	أنجزها
+Done On	تاريخ الإنجاز
+Due (Days From Start)	الاستحقاق (أيام من البداية)
+Each Part at Its Own Rate	كل جزء بمعدّل فئته
+Early Settlement (Cash / Bank)	سداد مبكر (نقداً / مصرف)
+Early Settlements	السداد المبكر
+Early settlement of loan {0} by {1}	سداد مبكر للقرض {0} من {1}
+Employee Lifecycle	دورة حياة الموظف
+Employee Loans Account	حساب قروض الموظفين
+Employee Record Updated	حُدّث ملف الموظف
+Empty: an HR Manager approves them.	فارغ: يوافق عليها مدير الموارد البشرية.
+Empty: the notice date plus the notice period (Lifecycle Settings).	فارغ: تاريخ الإشعار مضافاً إليه مدة الإشعار (إعدادات دورة حياة الموظف).
+End of Contract	انتهاء العقد
+End of Service	نهاية الخدمة
+End of Service Gratuity	مكافأة نهاية الخدمة
+End of Service Payable Account	حساب مستحقات نهاية الخدمة
+End of service {0} of {1}	نهاية خدمة {0} للموظف {1}
+End-of-Service Gratuity	مكافأة نهاية الخدمة
+Enter the new monthly earnings	أدخل الاستحقاقات الشهرية الجديدة
+Estimate End of Service	تقدير مكافأة نهاية الخدمة
+Exit	إنهاء الخدمة
+Exit Checklist	قائمة مهام إنهاء الخدمة
+Exit Type	نوع إنهاء الخدمة
+Exits	إنهاء الخدمة
+Final Settlement	التسوية النهائية
+First Instalment In	أول قسط في
+Fixed Amount	مبلغ ثابت
+For an exit type with rows here, the row with the highest 'From Years' not above the service decides the share; no row for an exit type = 100%.	لكل نوع إنهاء له صفوف هنا، يحدّد النسبةَ الصفُّ ذو أعلى «من سنوات» لا يتجاوز مدة الخدمة؛ ونوع الإنهاء الذي لا صفوف له = 100%.
+For example Bonus, One-off Allowance or Penalty. Earnings add to the salary, deductions take from it.	مثلاً: مكافأة أو بدل لمرة واحدة أو جزاء. الاستحقاقات تُضاف إلى الراتب، والخصومات تُقتطع منه.
+From Year	من سنة
+From Years of Service	من سنوات الخدمة
+Full Years Only	السنوات الكاملة فقط
+Fully repaid.	سُدّد بالكامل.
+Gratuity Before the Exit-Type Share	المكافأة قبل نسبة نوع الإنهاء
+Gratuity Expense Account	حساب مصروف مكافأة نهاية الخدمة
+How the Slabs Apply	طريقة تطبيق الفئات
+Included in Salary	أُدرج في الراتب
+Included in salary slip {0}.	أُدرج في قسيمة الراتب {0}.
+Instalment	القسط
+Instalment at Most (% of Gross Salary)	أقصى قسط (% من إجمالي الراتب)
+Interview Date	تاريخ المقابلة
+Interviewer Notes	ملاحظات المُقابِل
+Joining date (onboarding) or last working day (exit).	تاريخ المباشرة (التهيئة) أو آخر يوم عمل (إنهاء الخدمة).
+Last Working Day	آخر يوم عمل
+Leave Type Paid Out	نوع الإجازة المصروف بدلها
+Less than {0} years of service: no gratuity	خدمة أقل من {0} سنوات: لا مكافأة
+Lifecycle Settings	إعدادات دورة حياة الموظف
+Loan	قرض
+Loan Amount	مبلغ القرض
+Loan Repayment Component	مكوّن سداد القروض
+Loan Status	حالة القرض
+Loan request from {0}: {1} in {2} instalments	طلب قرض من {0}: {1} على {2} أقساط
+Loan {0} to {1}	القرض {0} للموظف {1}
+Loan {0}: instalment {1} of {2}	القرض {0}: القسط {1} من {2}
+Loans	القروض
+Loans Deducted	القروض المخصومة
+Loans and One-off Additions	القروض والإضافات لمرة واحدة
+Made for every new employee (e.g. contract, email account, social security registration).	تُنشأ لكل موظف جديد (مثل العقد، حساب البريد، التسجيل في الضمان الاجتماعي).
+Made for the employee when an exit is approved (e.g. hand back laptop, clear custody).	تُنشأ للموظف عند الموافقة على إنهاء خدمته (مثل تسليم الحاسوب وإخلاء العُهد).
+Main Reason	السبب الرئيسي
+Make an Exit Interview When an Exit Is Approved	إنشاء مقابلة إنهاء خدمة عند الموافقة على الإنهاء
+Management	الإدارة
+Monthly Instalment	القسط الشهري
+Monthly Pay	الأجر الشهري
+Most Instalments for a Loan	أقصى عدد أقساط للقرض
+My Advances and Loans	سلفي وقروضي
+My Tasks	مهامي
+Net Payable to the Employee	الصافي المستحق للموظف
+New Branch	الفرع الجديد
+New Department (Optional)	القسم الجديد (اختياري)
+New Designation	المسمى الوظيفي الجديد
+New Manager (Reports To)	المدير الجديد (يرفع تقاريره إلى)
+New Monthly Earnings	الاستحقاقات الشهرية الجديدة
+New Monthly Gross	إجمالي الراتب الشهري الجديد
+New Salary Record	سجل الراتب الجديد
+Next Instalment	القسط التالي
+No Gratuity Below (Years of Service)	لا مكافأة لخدمة أقل من (سنوات)
+Not Paid Out	لم يُصرف
+Nothing changes: choose a new department, branch or manager	لا تغيير: اختر قسماً أو فرعاً أو مديراً جديداً
+Nothing changes: choose a new designation, department or salary	لا تغيير: اختر مسمى وظيفياً أو قسماً أو راتباً جديداً
+Nothing is left to pay	لم يتبقَّ شيء للدفع
+Notice / Letter Date	تاريخ الإشعار / الخطاب
+Notice Period (Days)	مدة الإشعار (أيام)
+Notice Short By (Days)	نقص مدة الإشعار (أيام)
+Number of Instalments	عدد الأقساط
+Onboarding Checklist	قائمة مهام التهيئة
+One day = the monthly salary / 30.	اليوم الواحد = الراتب الشهري ÷ 30.
+One-off Allowance	بدل لمرة واحدة
+Only a loan that was paid out can be settled	لا يُسدَّد إلا قرض تم صرفه
+Only accounts can record payments	الحسابات فقط تسجّل المدفوعات
+Only an approved exit has an end-of-service gratuity	مكافأة نهاية الخدمة لإنهاء خدمة موافق عليه فقط
+Only an approved loan can be paid out	لا يُصرف إلا قرض موافق عليه
+Only {0} or HR can tick this task	لا يُنجز هذه المهمة إلا {0} أو الموارد البشرية
+Open Gratuity	فتح مكافأة نهاية الخدمة
+Or Anyone With Role	أو أي شخص له الدور
+Paid By	سُدّد عن طريق
+Paid From Salary	مدفوع من الراتب
+Part Years	أجزاء السنة
+Pay End of Service	صرف مستحقات نهاية الخدمة
+Pay Loan	صرف القرض
+Pay Out the Loan	صرف القرض
+Pay Unused Leave	صرف بدل الإجازات غير المستخدمة
+Pay Unused Leave Days With the Gratuity	صرف بدل أيام الإجازة غير المستخدمة مع المكافأة
+Pay Used	الأجر المعتمد
+Pay With the Salary Of	يُصرف مع راتب
+Pay and Benefits	الأجر والمزايا
+Payment Status	حالة الدفع
+Payment of end of service {0} to {1}	صرف مستحقات نهاية الخدمة {0} للموظف {1}
+Payroll Status	حالة الرواتب
+Pays the last instalments first, so the loan ends sooner.	يُسدّد الأقساط الأخيرة أولاً، فينتهي القرض أبكر.
+Penalty	جزاء
+Personal or Family	أسباب شخصية أو عائلية
+Pro Rata	بالتناسب
+Raqeem Checklist Task	مهمة قائمة
+Raqeem Checklist Template	نموذج قائمة المهام
+Raqeem Checklist Template Task	مهمة نموذج قائمة
+Raqeem Employee Checklist	قائمة مهام الموظف
+Raqeem Employee Exit	إنهاء خدمة موظف
+Raqeem Employee Loan	قرض موظف
+Raqeem Exit Interview	مقابلة إنهاء الخدمة
+Raqeem Gratuity	مكافأة نهاية الخدمة
+Raqeem Gratuity Factor	نسبة المكافأة حسب نوع الإنهاء
+Raqeem Gratuity Line	بند احتساب المكافأة
+Raqeem Gratuity Slab	فئة مكافأة نهاية الخدمة
+Raqeem Lifecycle Settings	إعدادات دورة حياة الموظف
+Raqeem Loan Instalment	قسط قرض
+Raqeem Loan Settlement	سداد مبكر لقرض
+Raqeem Promotion	ترقية
+Raqeem Salary Addition	إضافة / خصم على الراتب
+Raqeem Transfer	نقل موظف
+Reason / Notes	السبب / ملاحظات
+Relocation	الانتقال إلى مدينة أخرى
+Repay By	السداد عن طريق
+Repaying	قيد السداد
+Repayment Schedule	جدول السداد
+Resignation	استقالة
+Resignation / Exit	الاستقالة / إنهاء الخدمة
+Resignation / Termination	استقالة / إنهاء خدمة
+Responsible User	المستخدم المسؤول
+Retirement	التقاعد
+Row {0}: {1} is not an earning	الصف {0}: {1} ليس استحقاقاً
+Rules Checked by Our Accountant	راجع محاسبنا القواعد
+Rules Used	القواعد المطبّقة
+Rules for onboarding, exits and the end-of-service gratuity. Every rule here is editable; ask your accountant or lawyer to check them for your country, then tick the box.	قواعد التهيئة وإنهاء الخدمة ومكافأة نهاية الخدمة. كل قاعدة هنا قابلة للتعديل؛ اطلب من محاسبك أو محاميك مراجعتها وفق قوانين بلدك ثم ضع علامة في المربع.
+Salary Addition / Deduction	إضافة / خصم على الراتب
+Salary Additions / Deductions	الإضافات والخصومات على الراتب
+Salary and Benefits	الراتب والمزايا
+Salary component {0} is disabled	مكوّن الراتب {0} معطّل
+Salary slip {0} already includes this; cancel the payroll run first	قسيمة الراتب {0} تتضمن هذا بالفعل؛ ألغِ مسير الرواتب أولاً
+Salary slips were already paid with the new salary {0}; cancel them first	صُرفت قسائم رواتب بالراتب الجديد {0}؛ ألغها أولاً
+Service Part	جزء الخدمة
+Set the Employee Loans account and the Loan Repayment component in Raqeem Payroll Settings	حدّد حساب قروض الموظفين ومكوّن سداد القروض في إعدادات الرواتب
+Set the Gratuity Expense and End of Service Payable accounts in Raqeem Lifecycle Settings	حدّد حسابي مصروف المكافأة ومستحقات نهاية الخدمة في إعدادات دورة حياة الموظف
+Set the Loan Repayment Component in Raqeem Payroll Settings	حدّد مكوّن سداد القروض في إعدادات الرواتب
+Set the monthly instalment	حدّد القسط الشهري
+Set the number of instalments	حدّد عدد الأقساط
+Settle Early	سداد مبكر
+Settled Early	سُدّد مبكراً
+Share Paid by Exit Type	النسبة المصروفة حسب نوع الإنهاء
+Share Paid for This Exit Type	النسبة المصروفة لهذا النوع من الإنهاء
+Share of the Gratuity Paid	نسبة المكافأة المصروفة
+Share row {0}: the share must be between 0 and 100%	صف النسبة {0}: يجب أن تكون النسبة بين 0 و100%
+Shares	النسب
+Slab row {0}: To Year must be above From Year (or 0 for no limit)	صف الفئة {0}: يجب أن تكون «إلى سنة» أكبر من «من سنة» (أو 0 بلا حد)
+Slab row {0}: days cannot be negative	صف الفئة {0}: لا يمكن أن تكون الأيام سالبة
+Slabs	الفئات
+Studies	الدراسة
+Task not found	المهمة غير موجودة
+Template {0} is for {1}	النموذج {0} مخصص لـ{1}
+Termination	إنهاء الخدمة من جهة العمل
+The Job Itself	طبيعة العمل
+The accountant confirms the end-of-service gratuity	المحاسب هو من يؤكّد مكافأة نهاية الخدمة
+The end-of-service gratuity {0} is confirmed; cancel it first	مكافأة نهاية الخدمة {0} مؤكَّدة؛ ألغها أولاً
+The end-of-service rules in Lifecycle Settings have not been confirmed by your accountant yet.	لم يؤكّد محاسبك بعدُ قواعد نهاية الخدمة في إعدادات دورة حياة الموظف.
+The exit belongs to another employee	إنهاء الخدمة هذا يخص موظفاً آخر
+The last working day cannot be before the joining date	لا يمكن أن يسبق آخر يوم عمل تاريخ المباشرة
+The last working day cannot be before the notice date	لا يمكن أن يسبق آخر يوم عمل تاريخ الإشعار
+The last working day is before the joining date	آخر يوم عمل يسبق تاريخ المباشرة
+The monthly instalment ({0}) is more than {1}% of the gross salary ({2})	القسط الشهري ({0}) أكبر من {1}% من إجمالي الراتب ({2})
+The notice is {0} days shorter than the notice period ({1} days).	الإشعار أقصر من مدة الإشعار بـ{0} يوماً ({1} يوماً).
+The payroll month that includes this date takes the first instalment; one instalment each month after it.	يُخصم القسط الأول في شهر الرواتب الذي يقع فيه هذا التاريخ، ثم قسط كل شهر بعده.
+The salary of that month is already submitted ({0}); choose a later month	راتب ذلك الشهر معتمد بالفعل ({0})؛ اختر شهراً لاحقاً
+The salary slip whose period includes this date adds or deducts the amount.	قسيمة الراتب التي تشمل فترتها هذا التاريخ تضيف المبلغ أو تخصمه.
+The settlement must be more than 0 and at most the balance ({0})	يجب أن يكون السداد أكبر من 0 وألا يتجاوز الرصيد ({0})
+The slabs overlap: {0}–{1} and {2}–	الفئات متداخلة: {0}–{1} و{2}–
+Their Manager	مديره المباشر
+This gratuity is already paid	صُرفت هذه المكافأة بالفعل
+This loan has repayments; it cannot be cancelled	لهذا القرض أقساط مسددة؛ لا يمكن إلغاؤه
+This loan is already paid out	صُرف هذا القرض بالفعل
+To Year	إلى سنة
+Total Due	إجمالي المستحق
+Transfer	نقل
+Unpaid Leave Days Left Out	أيام الإجازة غير المدفوعة المستبعدة
+Unpaid Leave Does Not Count as Service	الإجازة غير المدفوعة لا تُحتسب من الخدمة
+Until this is ticked, every end-of-service calculation shows a warning.	إلى أن تُوضع العلامة هنا، يُظهر كل احتساب لنهاية الخدمة تنبيهاً.
+Unused Leave Days	أيام الإجازة غير المستخدمة
+Unused Leave Expense Account	حساب مصروف بدل الإجازات غير المستخدمة
+Unused Leave Pay	بدل الإجازات غير المستخدمة
+Waiting for Payroll	بانتظار مسير الرواتب
+Waiting for the accountant to confirm (submit).	بانتظار تأكيد المحاسب (الاعتماد).
+Waiting for the payroll of {0}.	بانتظار رواتب {0}.
+What They Liked Most	أكثر ما أعجبه
+What We Should Improve	ما يجب أن نحسّنه
+Whole Service at the Rate Reached	كامل الخدمة بمعدّل الفئة الأخيرة
+Why Is the Employee Leaving?	لماذا يغادر الموظف؟
+Will be applied to the employee record on {0}.	سيُطبَّق على ملف الموظف في {0}.
+Work Environment	بيئة العمل
+Workload	ضغط العمل
+Would Recommend Us as an Employer	ينصح بنا كجهة عمل
+Would Work Here Again	يعود للعمل لدينا
+Years	السنوات
+Years of Service Counted	سنوات الخدمة المحتسبة
+Years {0} to {1}	السنوات من {0} إلى {1}
+You can only hand in your own resignation; HR records other exits	يمكنك تقديم استقالتك أنت فقط؛ وتسجّل الموارد البشرية حالات الإنهاء الأخرى
+last day {0}	آخر يوم {0}
+loan request	طلب القرض
+next {0}	التالي {0}
+with the salary of {0}	مع راتب {0}
+{0} already has a confirmed end-of-service gratuity: {1}	لدى {0} مكافأة نهاية خدمة مؤكَّدة: {1}
+{0} already has a salary valid from {1}; change that one instead	لدى {0} راتب ساري من {1}؛ عدّله بدلاً من ذلك
+{0} already has an exit: {1}	لدى {0} إنهاء خدمة بالفعل: {1}
+{0} checklist of {1}: {2}	قائمة {0} للموظف {1}: {2}
+{0} for {1}: {2}	{0} للموظف {1}: {2}
+{0} instalments	{0} أقساط
+{0} is filled in by the system (advances, loans, overtime ...); choose another component	{0} يملؤه النظام تلقائياً (السلف، القروض، العمل الإضافي ...)؛ اختر مكوّناً آخر
+{0} must be a template for {1}	يجب أن يكون {0} نموذجاً لـ{1}
+{0} of {1} with your salary: {2}	{0} بمبلغ {1} مع راتبك: {2}
+{0} of {1}: last working day {2}	{0} للموظف {1}: آخر يوم عمل {2}
+{0} still has employees reporting to them, so the status stays Active until they report to someone else. The relieving date is set, so attendance and payroll stop after the last working day.	ما زال موظفون يرفعون تقاريرهم إلى {0}، لذا تبقى حالته «نشط» حتى يُنقلوا إلى مدير آخر. تم تحديد تاريخ إخلاء الطرف، فيتوقف الحضور والرواتب بعد آخر يوم عمل.
+{0}% done	أُنجز {0}%
+{0}; one day = {1} / {2}; {3}; {4}: {5}% paid	{0}؛ اليوم الواحد = {1} ÷ {2}؛ {3}؛ {4}: تُصرف {5}%
+Onboarding (Standard)	التهيئة (قياسي)
+Exit (Standard)	إنهاء الخدمة (قياسي)
+Sign the employment contract	توقيع عقد العمل
+Create the system user and email	إنشاء مستخدم النظام والبريد الإلكتروني
+Prepare the desk, computer and tools	تجهيز المكتب والحاسوب والأدوات
+Introduce to the team and the manager	التعريف بالفريق والمدير
+Explain the policies and working hours	شرح السياسات وساعات العمل
+Register with social security	التسجيل في الضمان الاجتماعي
+Set the salary and bank details	إدخال الراتب وبيانات المصرف
+Hand over the work and open tasks	تسليم العمل والمهام المفتوحة
+Return the laptop, keys and custody	إرجاع الحاسوب والمفاتيح والعُهد
+Clear open advances and loans	تسوية السلف والقروض القائمة
+Disable the system user and email	تعطيل مستخدم النظام والبريد الإلكتروني
+Calculate and pay the end-of-service gratuity	احتساب مكافأة نهاية الخدمة وصرفها
+Open Job Openings	الوظائف الشاغرة المفتوحة
+New Applicants This Month	المتقدمون الجدد هذا الشهر
+Job Offers Accepted This Year	عروض العمل المقبولة هذا العام
+Applicants by Stage (Open Jobs)	المتقدمون حسب المرحلة (الوظائف المفتوحة)
+Applicants per Open Job	المتقدمون لكل وظيفة مفتوحة
+Applicants by Month	المتقدمون حسب الشهر
+Applicants by Source This Year	المتقدمون حسب المصدر هذا العام
+Accountant Check	مراجعة المحاسب
+Open Positions	الوظائف الشاغرة
+Applicants per stage	المتقدمون حسب المرحلة
+Days Open	أيام الشغور
+Include On Hold	تضمين المعلّقة
+Job	الوظيفة
+Job openings with the status Open show here.	تظهر هنا الوظائف الشاغرة التي حالتها «مفتوحة».
+New Job Opening	وظيفة شاغرة جديدة
+No open positions	لا توجد وظائف شاغرة
+Oldest	الأقدم
+Only HR can see the open positions	الوظائف الشاغرة متاحة لشؤون الموظفين فقط
+Open the applicants	فتح المتقدمين
+Open the applicants at this stage	فتح المتقدمين في هذه المرحلة
+Open the longest	الأطول شغورًا
+Open too long	شاغرة منذ مدة طويلة
+Past closing date	تجاوزت تاريخ الإغلاق
+Unfilled	غير مشغولة
+closes {0}	تُغلق {0}
+since {0}	منذ {0}
+{0} filled · {1} unfilled	{0} مشغولة · {1} غير مشغولة
+{0} open for more than {1} days	{0} شاغرة منذ أكثر من {1} يومًا
+{0} past the closing date	{0} تجاوزت تاريخ الإغلاق
+{0} rejected / withdrawn	{0} مرفوض / منسحب
+Pivot Table	جدول محوري
+Pivot	جدول محوري
+Add at least one recipient	أضف مستلمًا واحدًا على الأقل
+Alert: {0}	تنبيه: {0}
+Alerts and Scheduled Reports	التنبيهات والتقارير المجدولة
+Choose a chart or a dashboard	اختر رسمًا بيانيًا أو لوحة معلومات
+Choose a chart or a dashboard, not both	اختر رسمًا بيانيًا أو لوحة معلومات، لا الاثنين معًا
+Choose the chart whose number is checked	اختر الرسم البياني الذي يُراقَب رقمه
+Could not make the image	تعذّر إنشاء الصورة
+Could not send: {0}	تعذّر الإرسال: {0}
+Create an Alert	إنشاء تنبيه
+Download as PNG	تنزيل كصورة PNG
+Email This Chart Regularly	إرسال هذا الرسم بالبريد دوريًا
+Email This Dashboard Regularly	إرسال هذه اللوحة بالبريد دوريًا
+Error	خطأ
+Export to Excel	تصدير إلى Excel
+Nothing to export	لا يوجد ما يُصدَّر
+Nothing to save yet	لا يوجد ما يُحفظ بعد
+Open Chart	فتح الرسم البياني
+Open Dashboard	فتح اللوحة
+Open in Analytics	فتح في التحليلات
+Period: {0} to {1}	الفترة: من {0} إلى {1}
+Preview	معاينة
+Send it to the recipients now?	إرساله إلى المستلمين الآن؟
+Sent (it leaves with the email queue)	أُرسل (يخرج مع طابور البريد)
+Sent by the Analytics alert {0}.	أُرسل بواسطة تنبيه التحليلات {0}.
+The condition is not met: nothing was sent	الشرط غير متحقق: لم يُرسل شيء
+The day of the month must be between 1 and 28	يجب أن يكون يوم الشهر بين 1 و 28
+The hour must be between 0 and 23	يجب أن تكون الساعة بين 0 و 23
+The number is now {0} — the alert condition is {1} {2}	الرقم الآن {0} — شرط التنبيه هو {1} {2}
+The number is {0}: the condition is not met, nothing would be sent	الرقم {0}: الشرط غير متحقق، لن يُرسل شيء
+The user {0} is disabled	المستخدم {0} معطّل
+{0} cannot read the data of this chart	{0} لا يملك صلاحية قراءة بيانات هذا الرسم
+{0} cannot see this dashboard	{0} لا يملك صلاحية رؤية هذه اللوحة
+{0} is not a valid email address	{0} ليس عنوان بريد إلكتروني صالحًا
+{0} more rows in the attached Excel file	{0} صفًا إضافيًا في ملف Excel المرفق
+{0} — {1}	{0} — {1}
+A scheduled report can send a whole dashboard instead of one chart.	يمكن للتقرير المجدول إرسال لوحة كاملة بدلًا من رسم واحد.
+Alert	تنبيه
+Analytics Alert	تنبيه تحليلات
+At Hour (0-23)	في الساعة (0-23)
+Attach Excel File	إرفاق ملف Excel
+Condition Was True	كان الشرط متحققًا
+Day of the Month (1-28)	يوم الشهر (1-28)
+Day of the Week	يوم الأسبوع
+Empty: the chart's own period.	فارغ: فترة الرسم نفسه.
+Last Checked	آخر فحص
+Last Error	آخر خطأ
+Last Sent	آخر إرسال
+Last Value	آخر قيمة
+Numbers As Seen By	الأرقام كما يراها
+One email address or user per line.	بريد إلكتروني أو مستخدم في كل سطر.
+Only When It Starts	فقط عند بدء تحقق الشرط
+Optional text at the top of the email.	نص اختياري في أعلى الرسالة.
+Scheduled Report	تقرير مجدول
+Scheduled Report: email the numbers regularly. Alert: email only when a number crosses a limit.	التقرير المجدول: يرسل الأرقام بالبريد دوريًا. التنبيه: يرسل فقط عندما يتجاوز رقم حدًّا معينًا.
+Send To	إرسال إلى
+Send once when the condition becomes true, not again at every check until it is false again.	يُرسل مرة واحدة عندما يتحقق الشرط، ولا يتكرر عند كل فحص حتى يزول الشرط ثم يعود.
+The numbers are calculated with this user's permissions (the person who made it).	تُحسب الأرقام بصلاحيات هذا المستخدم (منشئ التنبيه).
+When	متى
+When the Number Is	عندما يكون الرقم
+The chart's own period	فترة الرسم نفسه
+Raqeem HRMS Migration Log	سجل نقل بيانات HRMS
+HRMS Document	مستند HRMS
+HRMS Document Type	نوع مستند HRMS
+Our Document	مستندنا
+Our Document Type	نوع مستندنا
+Migrated On	تاريخ النقل
+Copied from HRMS {0}	منقول من HRMS {0}
+Decided in HRMS	تم البت فيه في HRMS
+HRMS is not installed: nothing to migrate	تطبيق HRMS غير مثبت: لا يوجد ما يُنقل
+HRMS migration — DRY RUN, nothing was saved	نقل بيانات HRMS — تجربة فقط، لم يُحفظ شيء
+HRMS migration — saved	نقل بيانات HRMS — تم الحفظ
+Only a System Manager can run the HRMS migration	نقل بيانات HRMS متاح لمدير النظام فقط
+cancelled applications are not copied	الطلبات الملغاة لا تُنقل
+cancelled in HRMS	ملغى في HRMS
+compensatory leave is earned through Compensatory Requests in Employee Affairs; enter the open balance there	الإجازة التعويضية تُكتسب عبر طلبات التعويض في شؤون الموظفين؛ أدخل الرصيد المتبقي هناك
+copied before	نُقل سابقًا
+employer contribution: our payroll calculates it	حصة صاحب العمل: يحسبها نظام الرواتب لدينا
+gross {0}	الإجمالي {0}
+income tax: our payroll calculates it	ضريبة الدخل: يحسبها نظام الرواتب لدينا
+leave type {0} was not copied	نوع الإجازة {0} لم يُنقل
+new component: check its Taxable / Social Security ticks and account	بند جديد: راجع خانتي «خاضع للضريبة» و«الضمان الاجتماعي» والحساب
+new leave type: check its days per year and carry forward	نوع إجازة جديد: راجع الأيام السنوية والترحيل
+no earning could be copied	لم يمكن نقل أي بند استحقاق
+nothing	لا شيء
+only submitted allocations are copied	تُنقل التخصيصات المعتمدة فقط
+this employee already has a salary from this date	لهذا الموظف راتب ساري من هذا التاريخ بالفعل
+this employee already has {0} for this period	لهذا الموظف {0} لهذه الفترة بالفعل
+unknown HRMS component {0}	بند HRMS غير معروف {0}
+{0} cancelled	{0} ملغاة
+{0} drafts / cancelled	{0} مسودات / ملغاة
+{0} in HRMS but never submitted: decide it again	{0} في HRMS لكنه لم يُعتمد: قرّر فيه من جديد
+{0} is calculated by our payroll	{0} يحسبه نظام الرواتب لدينا
+{0} not copied: {1}	{0} لم يُنقل: {1}
+{0} not copied: {1} is not an {2}	{0} لم يُنقل: {1} ليس {2}
+{0}, {1} days	{0}، {1} يوم
+{0}: could not calculate ({1}); add it by hand	{0}: تعذّر الحساب ({1})؛ أضفه يدويًا

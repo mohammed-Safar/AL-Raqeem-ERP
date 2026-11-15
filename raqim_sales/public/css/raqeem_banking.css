@@ -1,0 +1,16 @@
+/* RAQEEM skin for ERPNext Banking (/banking): the app's Frappe-UI grey ramp becomes the desk's
+   warm light / carbon dark palette, plus the RAQEEM fonts. Added by web_inject.py. */
+:root {
+  --gray-50:#faf8f5; --gray-100:#f4f1ec; --gray-200:#ebe6df; --gray-250:#ddd6cd; --gray-300:#ddd6cd;
+  --gray-400:#c2b9ae; --gray-450:#aaa29a; --gray-500:#8c847c; --gray-600:#736b64; --gray-700:#57504a;
+  --gray-800:#3a3530; --gray-900:#27231f; --gray-950:#16120f; --white:#fffdfa;
+}
+.dark {
+  --gray-50:#e8eaed; --gray-100:#d9dce1; --gray-200:#b4bac4; --gray-250:#9aa1ac; --gray-300:#8a919c;
+  --gray-400:#5b6370; --gray-450:#4b5563; --gray-500:#343a46; --gray-600:#2c3240; --gray-700:#232833;
+  --gray-800:#1b1f27; --gray-900:#15181e; --gray-950:#0e1014; --white:#0e1014;
+}
+html, body, button, input, select, textarea {
+  font-family: 'RQ Latin', 'IBM Plex Sans Arabic', 'Cairo', system-ui, sans-serif;
+}
+body { background-color: var(--surface-white); }

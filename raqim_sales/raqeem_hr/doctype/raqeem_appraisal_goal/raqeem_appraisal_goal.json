@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "creation": "2026-11-14 07:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "goal",
+  "weight",
+  "target",
+  "self_achievement",
+  "achievement"
+ ],
+ "fields": [
+  {
+   "fieldname": "goal",
+   "fieldtype": "Data",
+   "label": "Goal",
+   "reqd": 1,
+   "in_list_view": 1,
+   "columns": 3
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Percent",
+   "label": "Weight (%)",
+   "reqd": 1,
+   "in_list_view": 1,
+   "columns": 1
+  },
+  {
+   "fieldname": "target",
+   "fieldtype": "Data",
+   "label": "Target",
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "self_achievement",
+   "fieldtype": "Percent",
+   "label": "Self: Achieved (%)",
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "achievement",
+   "fieldtype": "Percent",
+   "label": "Manager: Achieved (%)",
+   "in_list_view": 1,
+   "columns": 2
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-14 07:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Raqeem HR",
+ "name": "Raqeem Appraisal Goal",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "istable": 1,
+ "editable_grid": 1
+}

@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "creation": "2026-11-14 12:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "description",
+  "years",
+  "days_per_year",
+  "days",
+  "amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Service Part",
+   "in_list_view": 1,
+   "columns": 3
+  },
+  {
+   "fieldname": "years",
+   "fieldtype": "Float",
+   "label": "Years",
+   "in_list_view": 1,
+   "columns": 1,
+   "precision": "3"
+  },
+  {
+   "fieldname": "days_per_year",
+   "fieldtype": "Float",
+   "label": "Days per Year",
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "days",
+   "fieldtype": "Float",
+   "label": "Days of Pay",
+   "in_list_view": 1,
+   "columns": 2,
+   "precision": "2"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount",
+   "in_list_view": 1,
+   "columns": 2
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-14 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Raqeem HR",
+ "name": "Raqeem Gratuity Line",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "istable": 1
+}

@@ -16,7 +16,11 @@ class RaqeemLeaveAllocation(Document):
 		if flt(self.new_days) < 0:
 			frappe.throw(_("Days cannot be negative"))
 		self.validate_overlap()
-		self.carried_forward = self.get_carry_forward()
+		if self.flags.get("hrms_migration") and self.flags.get("carried_forward") is not None:
+			# copied from HRMS (raqeem_hr/hrms_migration.py): keep the days HRMS carried forward
+			self.carried_forward = flt(self.flags.carried_forward)
+		else:
+			self.carried_forward = self.get_carry_forward()
 		self.total_days = flt(self.new_days) + flt(self.carried_forward)
 
 	def validate_overlap(self):

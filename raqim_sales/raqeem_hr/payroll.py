@@ -7,13 +7,21 @@ Monthly flow:
 
 A slip:
   paid days   = days in month (30, or calendar days — Payroll Settings) minus unpaid days
-                (approved leave of an unpaid leave type, days before joining / after leaving);
+                (approved leave of an unpaid leave type, days before joining / after leaving,
+                absent days and half days from Raqeem Attendance — see Attendance Settings);
   earnings    = monthly amount x paid days / days in month;
   social sec. = employee rate x earnings marked "Subject to Social Security";
   income tax  = taxable earnings - social security (if set) - personal exemption (single / married
                 + per child, yearly / 12), then rate 1 up to the first band (yearly / 12), rate 2 above;
   solidarity, jihad tax, stamp duty = their rate x gross (0 rates are left out);
-  fixed deductions (e.g. advance repayment) are taken in full.
+  fixed deductions (e.g. advance repayment) are taken in full;
+  overtime    = approved overtime hours x hourly pay x the day's rate (Attendance Settings), an
+                earning (taxable / social security per its component);
+  late        = late minutes over the free minutes x hourly pay x factor, a deduction, only when
+                late deduction is switched on in Attendance Settings.
+  one-off     = approved Raqeem Salary Addition of this period: earnings (bonus, one-month allowance)
+                count for tax / social security per their component; deductions (penalty) come after tax;
+  loans       = instalments of Raqeem Employee Loan due up to the end of the period (raqeem_hr/loans.py).
 All rates live in Raqeem Payroll Settings; none are hard-coded here.
 
 Journal Entry of a run: Dr each earning's expense account, Dr employer social security expense;
@@ -80,6 +88,10 @@ def unpaid_days(employee: str, company: str, from_date, to_date, total_days: flo
 			start, end = max(getdate(r.from_date), from_date), min(getdate(r.to_date), to_date)
 			hd = r.half_day and r.half_day_date and start <= getdate(r.half_day_date) <= end
 			days += count_leave_days(employee, company, r.leave_type, start, end, 1 if hd else 0, r.half_day_date)
+	# absent days (and half days) from attendance, per Raqeem Attendance Settings
+	from raqim_sales.raqeem_hr.attendance import absent_days
+
+	days += absent_days(employee, from_date, to_date)
 	return min(flt(days, 1), total_days)
 
 
@@ -131,6 +143,58 @@ def calculate(slip, sal=None):
 		if c.get("social_security"):
 			ss_base += paid
 
+	# overtime from attendance (Raqeem Attendance Settings: rates, approval, component)
+	from raqim_sales.raqeem_hr.attendance import late_deduction, overtime_pay
+	from raqim_sales.raqeem_hr.attendance import settings as att_settings
+
+	att = att_settings()
+	ot_amount, ot_hours = overtime_pay(slip.employee, from_date, to_date, sal)
+	slip.overtime_hours = flt(ot_hours, 2)
+	ot_amount = money(ot_amount)
+	if ot_amount > 0:
+		if not att.overtime_component:
+			frappe.throw(_("Set the Overtime Component in Raqeem Attendance Settings"))
+		slip.append("earnings", {"component": att.overtime_component, "component_type": "Earning",
+			"full_amount": ot_amount, "amount": ot_amount})
+		gross += ot_amount
+		c = comp.get(att.overtime_component) or {}
+		if c.get("taxable"):
+			taxable += ot_amount
+		if c.get("social_security"):
+			ss_base += ot_amount
+	late_amount, slip.late_minutes = late_deduction(slip.employee, from_date, to_date, sal)
+	# leave days paid out this month (Raqeem Leave Encashment)
+	enc = flt(frappe.db.sql("""select coalesce(sum(amount), 0) from `tabRaqeem Leave Encashment`
+		where employee=%s and docstatus=1 and status='Approved' and encashment_date between %s and %s""",
+		(slip.employee, from_date, to_date))[0][0])
+	if money(enc) > 0:
+		if not s.encashment_component:
+			frappe.throw(_("Set the Leave Encashment Component in Raqeem Payroll Settings"))
+		slip.append("earnings", {"component": s.encashment_component, "component_type": "Earning",
+			"full_amount": money(enc), "amount": money(enc)})
+		gross += money(enc)
+		c = comp.get(s.encashment_component) or {}
+		if c.get("taxable"):
+			taxable += money(enc)
+		if c.get("social_security"):
+			ss_base += money(enc)
+
+	# one-off additions approved for this month (Raqeem Salary Addition: bonus, one-month allowance ...)
+	from raqim_sales.raqeem_hr.additions import for_period as additions_for, note_for
+
+	one_off = additions_for(slip.employee, from_date, to_date)
+	for a in one_off:
+		if a.kind != "Earning" or money(a.amount) <= 0:
+			continue
+		slip.append("earnings", {"component": a.component, "component_type": "Earning", "full_amount": money(a.amount),
+			"amount": money(a.amount), "salary_addition": a.name, "note": note_for(a.reason)})
+		gross += money(a.amount)
+		c = comp.get(a.component) or {}
+		if c.get("taxable"):
+			taxable += money(a.amount)
+		if c.get("social_security"):
+			ss_base += money(a.amount)
+
 	def deduct(component, amount, full=None, statutory=None):
 		amount = money(amount)
 		if amount > 0:
@@ -151,8 +215,34 @@ def calculate(slip, sal=None):
 	for kind, field in (("Solidarity Fund", "solidarity_rate"), ("Jihad Tax", "jihad_rate"), ("Stamp Duty", "stamp_rate")):
 		if flt(s.get(field)):
 			deduct(statutory_component(kind), gross * flt(s.get(field)) / 100, statutory=kind)
+	if money(late_amount) > 0:
+		if not att.late_component:
+			frappe.throw(_("Set the Late Deduction Component in Raqeem Attendance Settings"))
+		deduct(att.late_component, late_amount)
 	for row in sal.deductions:
 		deduct(row.component, row.amount, full=row.amount)
+	# salary advances repaid by deduction (raqeem_hr/expenses.py)
+	from raqim_sales.raqeem_hr.expenses import salary_deductions
+
+	for adv, amount in salary_deductions(slip.employee, from_date, to_date):
+		if not s.advance_component:
+			frappe.throw(_("Set the Advance Repayment Component in Raqeem Payroll Settings"))
+		slip.append("deductions", {"component": s.advance_component, "component_type": "Deduction",
+			"full_amount": amount, "amount": money(amount), "advance": adv})
+
+	# one-off deductions (penalty ...) approved for this month
+	for a in one_off:
+		if a.kind == "Deduction" and money(a.amount) > 0:
+			slip.append("deductions", {"component": a.component, "component_type": "Deduction", "full_amount": money(a.amount),
+				"amount": money(a.amount), "salary_addition": a.name, "note": note_for(a.reason)})
+	# loan instalments due (raqeem_hr/loans.py)
+	from raqim_sales.raqeem_hr.loans import salary_deductions as loan_deductions
+
+	for loan, amount, note in loan_deductions(slip.employee, from_date, to_date):
+		if not s.get("loan_component"):
+			frappe.throw(_("Set the Loan Repayment Component in Raqeem Payroll Settings"))
+		slip.append("deductions", {"component": s.loan_component, "component_type": "Deduction",
+			"full_amount": amount, "amount": money(amount), "loan": loan, "note": note})
 
 	slip.gross = money(gross)
 	slip.total_deductions = money(sum(flt(d.amount) for d in slip.deductions))
@@ -171,6 +261,8 @@ def account_for(component: str, s=None) -> str:
 		acc = c.account
 	elif c.component_type == "Earning":
 		acc = s.salary_expense_account
+	elif component == frappe.db.get_single_value("Raqeem Attendance Settings", "late_component"):
+		acc = s.salary_expense_account  # a late deduction lowers the salary cost
 	else:
 		acc = None
 	if not acc:
@@ -185,28 +277,37 @@ def payroll_journal_entry(run, slips) -> str:
 			frappe.throw(_("Set {0} in Raqeem Payroll Settings").format(_(frappe.get_meta("Raqeem Payroll Settings").get_label(f))))
 	debit, credit = {}, {}
 	employer_ss = net = 0.0
+
+	def key(acc, employee):
+		# receivable / payable accounts (e.g. Employee Advances) need the employee as party: one line each
+		party = employee if frappe.get_cached_value("Account", acc, "account_type") in ("Receivable", "Payable") else None
+		return (acc, party)
+
 	for slip in slips:
 		for e in slip.earnings:
-			acc = account_for(e.component, s)
-			debit[acc] = debit.get(acc, 0) + flt(e.amount)
+			k = key(account_for(e.component, s), slip.employee)
+			debit[k] = debit.get(k, 0) + flt(e.amount)
 		for d in slip.deductions:
-			acc = account_for(d.component, s)
-			credit[acc] = credit.get(acc, 0) + flt(d.amount)
+			k = key(account_for(d.component, s), slip.employee)
+			credit[k] = credit.get(k, 0) + flt(d.amount)
 		employer_ss += flt(slip.employer_social_security)
 		net += flt(slip.net_pay)
 	if employer_ss:
-		debit[s.employer_ss_expense_account] = debit.get(s.employer_ss_expense_account, 0) + employer_ss
-		credit[s.social_security_account] = credit.get(s.social_security_account, 0) + employer_ss
-	credit[s.payroll_payable_account] = credit.get(s.payroll_payable_account, 0) + net
+		k = (s.employer_ss_expense_account, None)
+		debit[k] = debit.get(k, 0) + employer_ss
+		k = (s.social_security_account, None)
+		credit[k] = credit.get(k, 0) + employer_ss
+	k = (s.payroll_payable_account, None)
+	credit[k] = credit.get(k, 0) + net
 
 	cost_center = frappe.get_cached_value("Company", run.company, "cost_center")
 	rows = []
-	for acc, amt in debit.items():
+	for (acc, party), amt in debit.items():
 		if money(amt):
-			rows.append(_je_row(acc, debit=money(amt), cost_center=cost_center))
-	for acc, amt in credit.items():
+			rows.append(_je_row(acc, debit=money(amt), cost_center=cost_center, party=party))
+	for (acc, party), amt in credit.items():
 		if money(amt):
-			rows.append(_je_row(acc, credit=money(amt), cost_center=cost_center))
+			rows.append(_je_row(acc, credit=money(amt), cost_center=cost_center, party=party))
 	_balance(rows)
 	je = frappe.get_doc({"doctype": "Journal Entry", "voucher_type": "Journal Entry", "company": run.company,
 		"posting_date": run.posting_date, "accounts": rows,
@@ -234,10 +335,12 @@ def payment_journal_entry(run, account: str, posting_date=None, reference_no: st
 	return je.name
 
 
-def _je_row(account, debit=0.0, credit=0.0, cost_center=None):
+def _je_row(account, debit=0.0, credit=0.0, cost_center=None, party=None):
 	row = {"account": account, "debit_in_account_currency": debit, "credit_in_account_currency": credit}
 	if cost_center and frappe.get_cached_value("Account", account, "report_type") == "Profit and Loss":
 		row["cost_center"] = cost_center
+	if party:
+		row.update({"party_type": "Employee", "party": party})
 	return row
 
 

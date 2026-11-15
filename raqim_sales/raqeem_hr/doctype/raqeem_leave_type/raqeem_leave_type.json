@@ -18,7 +18,15 @@
   "max_carry_forward",
   "column_break_2",
   "color",
-  "disabled"
+  "disabled",
+  "section_comp",
+  "is_compensatory",
+  "compensatory_valid_days",
+  "section_encash",
+  "allow_encashment",
+  "max_encash_days",
+  "column_break_enc",
+  "encashment_basis"
  ],
  "fields": [
   {
@@ -101,11 +109,61 @@
    "fieldname": "disabled",
    "fieldtype": "Check",
    "label": "Disabled"
+  },
+  {
+   "fieldname": "section_comp",
+   "fieldtype": "Section Break",
+   "label": "Compensatory Leave"
+  },
+  {
+   "fieldname": "is_compensatory",
+   "fieldtype": "Check",
+   "label": "Earned by Working a Day Off",
+   "default": "0",
+   "description": "No yearly days: days are earned by approved compensatory requests (worked a weekly day off or holiday)."
+  },
+  {
+   "fieldname": "compensatory_valid_days",
+   "fieldtype": "Int",
+   "label": "Earned Days Expire After (Days)",
+   "default": "90",
+   "depends_on": "is_compensatory"
+  },
+  {
+   "fieldname": "section_encash",
+   "fieldtype": "Section Break",
+   "label": "Encashment"
+  },
+  {
+   "fieldname": "allow_encashment",
+   "fieldtype": "Check",
+   "label": "Unused Days Can Be Paid Out",
+   "default": "0"
+  },
+  {
+   "fieldname": "max_encash_days",
+   "fieldtype": "Float",
+   "label": "Most Days Paid Out per Year",
+   "depends_on": "allow_encashment",
+   "description": "0: no limit."
+  },
+  {
+   "fieldname": "column_break_enc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "encashment_basis",
+   "fieldtype": "Select",
+   "label": "Day's Pay Is Based On",
+   "options": "Basic Salary\nGross Salary",
+   "default": "Basic Salary",
+   "depends_on": "allow_encashment",
+   "description": "One day's pay = the monthly amount ÷ 30."
   }
  ],
  "index_web_pages_for_search": 0,
  "links": [],
- "modified": "2026-11-12 23:30:00.000000",
+ "modified": "2026-11-14 03:00:00.000000",
  "modified_by": "Administrator",
  "module": "Raqeem HR",
  "name": "Raqeem Leave Type",

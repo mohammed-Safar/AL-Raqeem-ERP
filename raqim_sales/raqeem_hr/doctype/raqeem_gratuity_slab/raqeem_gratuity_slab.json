@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "creation": "2026-11-14 12:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "from_year",
+  "to_year",
+  "days_per_year"
+ ],
+ "fields": [
+  {
+   "fieldname": "from_year",
+   "fieldtype": "Float",
+   "label": "From Year",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "to_year",
+   "fieldtype": "Float",
+   "label": "To Year",
+   "in_list_view": 1,
+   "description": "0 = no upper limit"
+  },
+  {
+   "fieldname": "days_per_year",
+   "fieldtype": "Float",
+   "label": "Days of Pay per Year",
+   "reqd": 1,
+   "in_list_view": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-14 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Raqeem HR",
+ "name": "Raqeem Gratuity Slab",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "istable": 1
+}

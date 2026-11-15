@@ -16,7 +16,7 @@
 	const ENABLED = true;
 	if (!ENABLED) return;
 
-	const SPRITE = "/assets/raqim_sales/icons/raqeem-sidebar.svg?r=6";
+	const SPRITE = "/assets/raqim_sales/icons/raqeem-sidebar.svg?r=7";
 	const names = new Set(window.RAQEEM_ICON_NAMES || []);
 	const soft = [...names].filter((n) => n.endsWith("-soft"));
 	let replaced = 0;

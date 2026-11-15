@@ -1,0 +1,357 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "hash",
+ "creation": "2026-11-14 20:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "kind",
+  "enabled",
+  "column_break_1",
+  "chart",
+  "dashboard",
+  "date_range",
+  "section_when",
+  "frequency",
+  "send_hour",
+  "column_break_2",
+  "weekday",
+  "day_of_month",
+  "section_condition",
+  "condition",
+  "threshold",
+  "column_break_3",
+  "notify_once",
+  "section_recipients",
+  "recipients",
+  "column_break_4",
+  "message",
+  "attach_excel",
+  "section_status",
+  "run_as",
+  "last_run",
+  "last_sent",
+  "column_break_5",
+  "last_value",
+  "last_state",
+  "last_error"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "reqd": 1,
+   "in_list_view": 1,
+   "bold": 1
+  },
+  {
+   "fieldname": "kind",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Scheduled Report\nAlert",
+   "default": "Scheduled Report",
+   "reqd": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "description": "Scheduled Report: email the numbers regularly. Alert: email only when a number crosses a limit."
+  },
+  {
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled",
+   "default": "1",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "chart",
+   "fieldtype": "Link",
+   "label": "Chart",
+   "options": "Analytics Chart",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "dashboard",
+   "fieldtype": "Link",
+   "label": "Dashboard",
+   "options": "Analytics Dashboard",
+   "depends_on": "eval:doc.kind==\"Scheduled Report\"",
+   "description": "A scheduled report can send a whole dashboard instead of one chart."
+  },
+  {
+   "fieldname": "date_range",
+   "fieldtype": "Select",
+   "label": "Period",
+   "options": "\nall\ntoday\nyesterday\nthis_week\nlast_week\nthis_month\nlast_month\nthis_quarter\nlast_quarter\nthis_year\nlast_year\nlast_7_days\nlast_30_days\nlast_90_days\nlast_12_months",
+   "description": "Empty: the chart's own period."
+  },
+  {
+   "fieldname": "section_when",
+   "fieldtype": "Section Break",
+   "label": "When"
+  },
+  {
+   "fieldname": "frequency",
+   "fieldtype": "Select",
+   "label": "Frequency",
+   "options": "Hourly\nDaily\nWeekly\nMonthly",
+   "default": "Daily",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "send_hour",
+   "fieldtype": "Int",
+   "label": "At Hour (0-23)",
+   "default": "7",
+   "depends_on": "eval:doc.frequency!=\"Hourly\""
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "weekday",
+   "fieldtype": "Select",
+   "label": "Day of the Week",
+   "options": "Saturday\nSunday\nMonday\nTuesday\nWednesday\nThursday\nFriday",
+   "default": "Sunday",
+   "depends_on": "eval:doc.frequency==\"Weekly\""
+  },
+  {
+   "fieldname": "day_of_month",
+   "fieldtype": "Int",
+   "label": "Day of the Month (1-28)",
+   "default": "1",
+   "depends_on": "eval:doc.frequency==\"Monthly\""
+  },
+  {
+   "fieldname": "section_condition",
+   "fieldtype": "Section Break",
+   "label": "Condition",
+   "depends_on": "eval:doc.kind==\"Alert\""
+  },
+  {
+   "fieldname": "condition",
+   "fieldtype": "Select",
+   "label": "When the Number Is",
+   "options": ">\n>=\n<\n<=\n=\n!=",
+   "default": ">",
+   "mandatory_depends_on": "eval:doc.kind==\"Alert\""
+  },
+  {
+   "fieldname": "threshold",
+   "fieldtype": "Float",
+   "label": "Limit"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "notify_once",
+   "fieldtype": "Check",
+   "label": "Only When It Starts",
+   "default": "1",
+   "description": "Send once when the condition becomes true, not again at every check until it is false again."
+  },
+  {
+   "fieldname": "section_recipients",
+   "fieldtype": "Section Break",
+   "label": "Recipients"
+  },
+  {
+   "fieldname": "recipients",
+   "fieldtype": "Small Text",
+   "label": "Send To",
+   "reqd": 1,
+   "description": "One email address or user per line."
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "message",
+   "fieldtype": "Small Text",
+   "label": "Message",
+   "description": "Optional text at the top of the email."
+  },
+  {
+   "fieldname": "attach_excel",
+   "fieldtype": "Check",
+   "label": "Attach Excel File",
+   "default": "1"
+  },
+  {
+   "fieldname": "section_status",
+   "fieldtype": "Section Break",
+   "label": "Status",
+   "collapsible": 1
+  },
+  {
+   "fieldname": "run_as",
+   "fieldtype": "Link",
+   "label": "Numbers As Seen By",
+   "options": "User",
+   "read_only": 1,
+   "description": "The numbers are calculated with this user's permissions (the person who made it)."
+  },
+  {
+   "fieldname": "last_run",
+   "fieldtype": "Datetime",
+   "label": "Last Checked",
+   "read_only": 1,
+   "no_copy": 1
+  },
+  {
+   "fieldname": "last_sent",
+   "fieldtype": "Datetime",
+   "label": "Last Sent",
+   "read_only": 1,
+   "no_copy": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_value",
+   "fieldtype": "Float",
+   "label": "Last Value",
+   "read_only": 1,
+   "no_copy": 1
+  },
+  {
+   "fieldname": "last_state",
+   "fieldtype": "Check",
+   "label": "Condition Was True",
+   "read_only": 1,
+   "no_copy": 1
+  },
+  {
+   "fieldname": "last_error",
+   "fieldtype": "Small Text",
+   "label": "Last Error",
+   "read_only": 1,
+   "no_copy": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-14 20:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Analytics",
+ "name": "Analytics Alert",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 1,
+   "print": 0,
+   "email": 0,
+   "share": 1
+  },
+  {
+   "role": "Dashboard Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 1,
+   "print": 0,
+   "email": 0,
+   "share": 1,
+   "if_owner": 1
+  },
+  {
+   "role": "Accounts Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 1,
+   "print": 0,
+   "email": 0,
+   "share": 1,
+   "if_owner": 1
+  },
+  {
+   "role": "Sales Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 1,
+   "print": 0,
+   "email": 0,
+   "share": 1,
+   "if_owner": 1
+  },
+  {
+   "role": "HR Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 1,
+   "print": 0,
+   "email": 0,
+   "share": 1,
+   "if_owner": 1
+  },
+  {
+   "role": "Report Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 1,
+   "print": 0,
+   "email": 0,
+   "share": 1,
+   "if_owner": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "title_field": "title",
+ "show_title_field_in_link": 1,
+ "search_fields": "kind,frequency"
+}

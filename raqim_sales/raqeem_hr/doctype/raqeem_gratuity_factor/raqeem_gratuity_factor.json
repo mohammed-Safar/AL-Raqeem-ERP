@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "creation": "2026-11-14 12:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "exit_type",
+  "min_years",
+  "percent"
+ ],
+ "fields": [
+  {
+   "fieldname": "exit_type",
+   "fieldtype": "Select",
+   "label": "Exit Type",
+   "options": "Resignation\nTermination\nEnd of Contract\nRetirement\nDeath",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "min_years",
+   "fieldtype": "Float",
+   "label": "From Years of Service",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "percent",
+   "fieldtype": "Percent",
+   "label": "Share of the Gratuity Paid",
+   "reqd": 1,
+   "in_list_view": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-14 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Raqeem HR",
+ "name": "Raqeem Gratuity Factor",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "istable": 1
+}

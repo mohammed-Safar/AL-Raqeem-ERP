@@ -2,8 +2,9 @@
 
 Built on ERPNext alone (Employee, Company, Holiday List). It does not use the Frappe HR app.
 
-Days: a leave day is a calendar day that is not a holiday in the employee's holiday list, unless the
-leave type counts holidays. Holiday lists cover one period each (e.g. «عطلات ليبيا 2026»), so for
+Days: a leave day is a calendar day that is not a weekly day off (the employee's shift, else Raqeem
+Attendance Settings) nor an official holiday of the employee's holiday list, unless the leave type
+counts holidays (the same rule as attendance: raqeem_hr/attendance.day_types). Holiday lists cover one period each (e.g. «عطلات ليبيا 2026»), so for
 every date the list is chosen in this order: the employee's own list, the company's default list,
 then any list covering that date that has weekly offs (a list without weekly offs, such as an
 optional-holidays list, is never used on its own).
@@ -27,8 +28,11 @@ def _holiday_lists_for(employee: str | None, company: str | None) -> list[str]:
 	return [x for x in (own, default) if x]
 
 
-def holidays_between(employee: str | None, company: str | None, from_date, to_date) -> tuple[set, list]:
-	"""(set of holiday dates, list of dates no holiday list covers) between the two dates."""
+def holidays_between(employee: str | None, company: str | None, from_date, to_date,
+		official_only: bool = False) -> tuple[set, list]:
+	"""(set of holiday dates, list of dates no holiday list covers) between the two dates.
+	official_only: leave out the rows the list marks as weekly offs (attendance takes its weekly
+	days off from Raqeem Attendance Settings / the shift instead)."""
 	from_date, to_date = getdate(from_date), getdate(to_date)
 	preferred = _holiday_lists_for(employee, company)
 	lists = frappe.get_all(
@@ -43,11 +47,10 @@ def holidays_between(employee: str | None, company: str | None, from_date, to_da
 	holidays, uncovered = set(), []
 	if not ordered:
 		return holidays, [add_days(from_date, i) for i in range(date_diff(to_date, from_date) + 1)]
-	rows = frappe.get_all(
-		"Holiday",
-		filters={"parent": ["in", [l.name for l in ordered]], "holiday_date": ["between", [from_date, to_date]]},
-		fields=["parent", "holiday_date"],
-	)
+	hfilters = {"parent": ["in", [l.name for l in ordered]], "holiday_date": ["between", [from_date, to_date]]}
+	if official_only:
+		hfilters["weekly_off"] = 0
+	rows = frappe.get_all("Holiday", filters=hfilters, fields=["parent", "holiday_date"])
 	per_list = {}
 	for r in rows:
 		per_list.setdefault(r.parent, set()).add(getdate(r.holiday_date))
@@ -61,6 +64,23 @@ def holidays_between(employee: str | None, company: str | None, from_date, to_da
 	return holidays, uncovered
 
 
+def non_working_days(employee, company, from_date, to_date) -> set:
+	"""Weekly days off (the employee's shift, else Attendance Settings — Friday by default) and
+	official holidays (the Holiday List rows not marked as weekly offs): the same days attendance
+	treats as not working, so leave and attendance never disagree."""
+	from raqim_sales.raqeem_hr.attendance import day_types, shift_for
+
+	cache = {}
+
+	def shift_of(d):
+		if d not in cache:
+			cache[d] = shift_for(employee, d) if employee else None
+		return cache[d]
+
+	types = day_types(employee, company, from_date, to_date, shift_of)
+	return {d for d, t in types.items() if t != "Working Day"}
+
+
 def count_leave_days(employee, company, leave_type, from_date, to_date, half_day=0, half_day_date=None) -> float:
 	from_date, to_date = getdate(from_date), getdate(to_date)
 	if to_date < from_date:
@@ -71,7 +91,7 @@ def count_leave_days(employee, company, leave_type, from_date, to_date, half_day
 		days = all_days
 		holidays = set()
 	else:
-		holidays, _uncovered = holidays_between(employee, company, from_date, to_date)
+		holidays = non_working_days(employee, company, from_date, to_date)
 		days = all_days - len(holidays)
 	if cint(half_day) and days:
 		hd = getdate(half_day_date) if half_day_date else from_date
@@ -94,7 +114,8 @@ def allocation_for(employee: str, leave_type: str, date) -> dict | None:
 
 
 def used_days(employee: str, leave_type: str, from_date, to_date, exclude: str | None = None) -> tuple[float, float]:
-	"""(approved days, open days) of requests that start inside the period."""
+	"""(approved days, open days) of requests that start inside the period; days paid out
+	(Raqeem Leave Encashment, by its date) count as taken / pending too."""
 	params = {"e": employee, "t": leave_type, "f": getdate(from_date), "to": getdate(to_date), "x": exclude or ""}
 	row = frappe.db.sql(
 		"""select
@@ -105,7 +126,16 @@ def used_days(employee: str, leave_type: str, from_date, to_date, exclude: str |
 			and name != %(x)s""",
 		params,
 	)[0]
-	return flt(row[0]), flt(row[1])
+	enc = frappe.db.sql(
+		"""select
+			coalesce(sum(case when docstatus = 1 and status = 'Approved' then days else 0 end), 0),
+			coalesce(sum(case when docstatus = 0 and status = 'Open' then days else 0 end), 0)
+		from `tabRaqeem Leave Encashment`
+		where employee = %(e)s and leave_type = %(t)s and encashment_date between %(f)s and %(to)s
+			and name != %(x)s""",
+		params,
+	)[0]
+	return flt(row[0]) + flt(enc[0]), flt(row[1]) + flt(enc[1])
 
 
 def get_balance(employee: str, leave_type: str, date=None, exclude: str | None = None) -> dict:
@@ -115,12 +145,45 @@ def get_balance(employee: str, leave_type: str, date=None, exclude: str | None =
 	out = {"leave_type": leave_type, "tracked": bool(alloc) or flt(lt.days_per_year) > 0,
 		"allocated": 0.0, "taken": 0.0, "pending": 0.0, "balance": 0.0, "allocation": None,
 		"allow_negative": cint(lt.allow_negative), "is_paid": cint(lt.is_paid)}
+	if cint(lt.get("is_compensatory")):
+		return compensatory_balance(employee, lt, date, exclude, out)
 	if not alloc:
 		return out
 	taken, pending = used_days(employee, leave_type, alloc.from_date, alloc.to_date, exclude)
 	out.update(allocated=flt(alloc.total_days), taken=taken, pending=pending,
 		balance=flt(alloc.total_days) - taken, allocation=alloc.name,
 		period=[str(alloc.from_date), str(alloc.to_date)])
+	return out
+
+
+def compensatory_balance(employee: str, lt, date, exclude, out) -> dict:
+	"""Earned-by-working leave: days of approved compensatory requests worked in the last
+	compensatory_valid_days (older ones expire), minus the leave taken since the oldest of them."""
+	valid = cint(lt.compensatory_valid_days) or 90
+	start = add_days(date, -valid)
+	earned = flt(frappe.db.sql("""select coalesce(sum(days), 0) from `tabRaqeem Compensatory Request`
+		where employee=%s and leave_type=%s and docstatus=1 and status='Approved' and work_date between %s and %s""",
+		(employee, lt.name, start, date))[0][0])
+	taken, pending = used_days(employee, lt.name, start, add_days(date, valid), exclude)
+	out.update(tracked=True, allocated=earned, taken=taken, pending=pending, balance=flt(earned - taken, 1),
+		period=[str(start), str(date)], compensatory=True)
+	return out
+
+
+def blocked_periods(employee: str, company: str | None, leave_type: str, from_date, to_date) -> list:
+	"""Raqeem Leave Block Periods that cover any of these dates for this employee and leave type."""
+	dept = frappe.db.get_value("Employee", employee, "department") if employee else None
+	out = []
+	for b in frappe.get_all("Raqeem Leave Block Period", filters={"disabled": 0,
+			"from_date": ["<=", to_date], "to_date": [">=", from_date]},
+			fields=["name", "title", "from_date", "to_date", "company", "department", "leave_type", "hr_can_override"]):
+		if b.company and b.company != company:
+			continue
+		if b.department and b.department != dept:
+			continue
+		if b.leave_type and b.leave_type != leave_type:
+			continue
+		out.append(b)
 	return out
 
 
@@ -139,6 +202,8 @@ def employee_balances(employee: str, date: str | None = None):
 	out = []
 	for t in types:
 		b = get_balance(employee, t, date)
+		if b.get("compensatory") and not (b["allocated"] or b["taken"] or b["pending"]):
+			continue  # nothing earned yet: not worth a line
 		if b["tracked"]:
 			out.append(b)
 	return out
