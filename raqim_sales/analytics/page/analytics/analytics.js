@@ -2,6 +2,10 @@
    /desk/analytics                 home: saved charts + ready examples
    /desk/analytics/chart/new       chart builder (?example=<key> starts from an example)
    /desk/analytics/chart/<name>    builder for a saved Analytics Chart
+   /desk/analytics/board/<name>    a dashboard (by name, or a ready-made one's key: owner, sales ...)
+   Not ".../dashboard/...": "analytics" is also a sidebar, and Frappe 16's router drops a sidebar
+   segment when the next word names something, so ".../analytics/dashboard/x" opened the Frappe
+   "Dashboard" form x. "chart" and "board" name nothing, so the URL stays on this page.
    Numbers come from raqim_sales.analytics.engine.run, always with the viewer's own permissions.
    Charts are drawn with frappe.Chart (already in the desk, no extra library).
    ROLLBACK: delete raqim_sales/analytics (module "Analytics" in modules.txt) and its dock item. */
@@ -11,10 +15,12 @@ frappe.provide("rq_analytics");
 (function () {
 	const API = "raqim_sales.analytics.engine.";
 	const API_D = "raqim_sales.analytics.dashboard.";
+	const BOARD = "board"; // route word for a dashboard (see the note at the top)
 	const TYPES = [
 		{ value: "Bar", icon: "chart-column" },
 		{ value: "Line", icon: "chart-line" },
 		{ value: "Area", icon: "chart-area", label: "Area Chart" },
+		{ value: "Mixed", icon: "chart-no-axes-combined", label: "Bar and Line" },
 		{ value: "Pie", icon: "chart-pie" },
 		{ value: "Donut", icon: "donut" },
 		{ value: "Percentage", icon: "chart-bar" },
@@ -130,12 +136,17 @@ frappe.provide("rq_analytics");
 		},
 		value(m, v, short) {
 			v = flt(v);
-			if (short && Math.abs(v) >= 10000) {
-				return F.short(v);
-			}
-			if (m && m.fieldtype === "Currency") return format_currency(v, frappe.defaults.get_default("currency"));
-			if (!m || m.agg === "count" || m.fieldtype === "Int") return format_number(v, null, m && m.agg === "avg" ? 2 : 0);
-			return format_number(v, null, 2);
+			let out;
+			if (short && Math.abs(v) >= 10000) out = F.short(v);
+			else if (m && m.fieldtype === "Currency") out = format_currency(v, frappe.defaults.get_default("currency"));
+			else if (!m || m.agg === "count" || m.fieldtype === "Int") out = format_number(v, null, m && m.agg === "avg" ? 2 : 0);
+			else out = format_number(v, null, 2);
+			return v < 0 ? F.ltr_number(out) : out;
+		},
+		// In Arabic (RTL) a leading minus is drawn after the digits ("100,905.000-"): keep the signed
+		// number left-to-right (LRI ... PDI) so it reads "-100,905.000"; the currency symbol stays where it was.
+		ltr_number(s) {
+			return String(s).replace(/[-−]\s*[\d.,٫٬  ]*\d/, (n) => "⁦" + n + "⁩");
 		},
 		short(v) {
 			try {
@@ -190,6 +201,16 @@ frappe.provide("rq_analytics");
 		} else {
 			datasets = res.datasets.map((ds, i) => ({ name: F.measure(measures[i]), values: ds.values }));
 		}
+		// "Bar and Line": each value as bars or a line (the builder's choice; else the first one bars,
+		// the others lines). Split series have no per-value choice: the first series bars, the rest lines.
+		const mixed = type === "Mixed";
+		if (mixed) {
+			const split = res.dims.length > 1;
+			datasets.forEach((ds, i) => {
+				const m = split ? null : measures[i];
+				ds.chartType = (m && m.as) || (i === 0 ? "bar" : "line");
+			});
+		}
 		const round = ["Pie", "Donut", "Percentage"].includes(type);
 		if (round) {
 			// one ring: the first measure (summed over series when split)
@@ -202,7 +223,7 @@ frappe.provide("rq_analytics");
 		const holder = $(`<div class="rqa-chart" dir="ltr"></div>`).appendTo($el)[0];
 		try {
 			const chart = new frappe.Chart(holder, {
-				type: { Bar: "bar", Line: "line", Area: "line", Pie: "pie", Donut: "donut", Percentage: "percentage" }[type] || "bar",
+				type: { Bar: "bar", Line: "line", Area: "line", Mixed: "axis-mixed", Pie: "pie", Donut: "donut", Percentage: "percentage" }[type] || "bar",
 				data: { labels, datasets },
 				height: opts.height || 280,
 				colors,
@@ -210,7 +231,8 @@ frappe.provide("rq_analytics");
 				maxSlices: 10,
 				axisOptions: { xIsSeries: !!d0.part, xAxisMode: "tick", shortenYAxisNumbers: 1 },
 				lineOptions: { regionFill: type === "Area" ? 1 : 0, hideDots: labels.length > 36 ? 1 : 0, spline: 0 },
-				barOptions: { stacked: res.dims.length > 1 ? 1 : 0, spaceRatio: 0.35 },
+				// a mixed chart is never stacked: a line drawn over stacked bars would read wrongly
+				barOptions: { stacked: res.dims.length > 1 && !mixed ? 1 : 0, spaceRatio: 0.35 },
 				tooltipOptions: { formatTooltipY: (v) => F.value(m0, v) },
 			});
 			if (opts.on_pick) make_clickable(chart, holder, round, labels, opts.on_pick);
@@ -245,6 +267,38 @@ frappe.provide("rq_analytics");
 		});
 	}
 
+	// a long amount ("-1,234,567.000 LYD") stays on one line: step the font down until it fits its card
+	function fit_numbers($el) {
+		$el.find(".rqa-num-value").each((_, n) => {
+			n.style.fontSize = "";
+			let size = parseFloat(getComputedStyle(n).fontSize) || 32;
+			while (n.scrollWidth > n.clientWidth + 1 && size > 14) {
+				size -= 2;
+				n.style.fontSize = size + "px";
+			}
+		});
+	}
+
+	/* Progress toward a Number chart's target: a bar plus "63% of 150,000.000 LYD". Full (and green)
+	   once the target is reached; the percentage keeps counting past 100 (e.g. 120%). The target
+	   is a fixed amount for the chart's period: a dashboard period filter does not rescale it. */
+	function target_html(m, value, color) {
+		const target = flt(m && m.target);
+		if (!target || target <= 0) return "";
+		const pct = (value / target) * 100;
+		const done = pct >= 100;
+		const width = Math.max(0, Math.min(100, pct));
+		const bar_color = done ? "" : color ? `background:${esc(color)};` : "";
+		// one decimal under 10% so a small start reads "0.1%", not a broken-looking "0%"
+		const pct_text = format_number(pct, null, Math.abs(pct) < 10 && pct !== 0 ? 1 : 0);
+		return `<div class="rqa-target ${done ? "is-done" : ""}" role="img"
+				aria-label="${esc(__("{0}% of the target {1}", [pct_text, F.value(m, target)]))}">
+			<div class="rqa-target-bar"><span style="width:${width.toFixed(1)}%;${bar_color}"></span></div>
+			<div class="rqa-target-text">${icon(done ? "circle-check" : "target", "xs")}
+				<span>${esc(__("{0}% of {1}", [pct_text, F.value(m, target)]))}</span></div>
+		</div>`;
+	}
+
 	function draw_number($el, res, opts) {
 		const vals = res.value || (res.datasets || []).map((ds) => ds.values.reduce((a, b) => a + flt(b), 0));
 		const prev = res.previous && res.previous.value;
@@ -264,10 +318,12 @@ frappe.provide("rq_analytics");
 				<div class="rqa-num-label">${esc(F.measure(m))}</div>
 				<div class="rqa-num-value ${opts.on_pick ? "is-clickable" : ""}" style="${opts.color ? `color:${esc(opts.color)}` : ""}"
 					${opts.on_pick ? `role="link" tabindex="0" title="${__("Open the records")}"` : ""}>${esc(F.value(m, vals[i]))}</div>
+				${target_html(m, flt(vals[i]), opts.color)}
 				${cmp}
 			</div>`;
 		});
 		$el.html(`<div class="rqa-nums">${html.join("")}</div>`);
+		fit_numbers($el);
 		if (opts.on_pick) {
 			$el.find(".rqa-num-value").on("click keydown", (e) => {
 				if (e.type === "keydown" && e.key !== "Enter") return;
@@ -561,7 +617,7 @@ frappe.provide("rq_analytics");
 
 		route() {
 			const r = frappe.get_route();
-			if (r[1] !== "dashboard") this.stop_dashboard();
+			if (r[1] !== BOARD) this.stop_dashboard();
 			this.page.clear_primary_action();
 			this.page.clear_secondary_action();
 			this.page.clear_menu();
@@ -578,7 +634,7 @@ frappe.provide("rq_analytics");
 				this.$main.empty();
 				this.home = null;
 				this.builder = new rq_analytics.Builder(this, key);
-			} else if (r[1] === "dashboard" && r[2]) {
+			} else if (r[1] === BOARD && r[2]) {
 				this.stop_dashboard();
 				this.$main.empty();
 				this.builder = null;
@@ -626,20 +682,32 @@ frappe.provide("rq_analytics");
 			if (can_read("Analytics Alert")) {
 				this.page.add_menu_item(__("Alerts and Scheduled Reports"), () => frappe.set_route("List", "Analytics Alert"));
 			}
-			let tab = "dashboards";
-			try {
-				tab = localStorage.getItem("rqa_home_tab") || tab;
-			} catch (e) { /* private mode */ }
+			// /desk/analytics = Dashboards; /desk/analytics?tab=charts = Charts (the sidebar's two links).
+			// The URL, not a remembered choice, decides: the sidebar's "Dashboards" link must open Dashboards.
+			const ro = frappe.route_options || {};
+			const tab = ro.tab === "charts" ? "charts" : "dashboards";
+			if (ro.tab) frappe.route_options = null;
 			this.show_tab(tab);
 		}
 
 		show_tab(tab) {
 			this.tab = tab === "charts" ? "charts" : "dashboards";
+			// keep the address in step with the tab (no new history entry), so a refresh, a copied
+			// link and the sidebar's highlighted row all match what is on screen
 			try {
-				localStorage.setItem("rqa_home_tab", this.tab);
-			} catch (e) { /* private mode */ }
-			this.$el.find(".rqa-tab").each((_, b) => b.classList.toggle("is-active", b.dataset.tab === this.tab));
-			this.$el.find(".rqa-pane").each((_, p) => (p.hidden = p.dataset.pane !== this.tab));
+				const url = new URL(window.location.href);
+				if (this.tab === "charts") url.searchParams.set("tab", "charts");
+				else url.searchParams.delete("tab");
+				if (url.href !== window.location.href) window.history.replaceState(window.history.state, "", url.pathname + url.search);
+			} catch (e) { /* old browser: the tab still switches */ }
+			this.$el.find(".rqa-tab").each((_, b) => {
+				b.classList.toggle("is-active", b.dataset.tab === this.tab);
+			});
+			// forEach, not jQuery .each: an arrow returning `false` (hidden = false) stops .each, which
+			// left the Charts pane (search box + examples) showing under the Dashboards tab
+			this.$el.find(".rqa-pane").toArray().forEach((p) => {
+				p.hidden = p.dataset.pane !== this.tab;
+			});
 			this.page.clear_primary_action();
 			this.page.set_secondary_action(__("Refresh"), () => (this.tab === "charts" ? this.load() : this.load_dashboards()), "refresh-cw");
 			if (this.tab === "charts") {
@@ -666,14 +734,14 @@ frappe.provide("rq_analytics");
 				<span class="rqa-example-icon">${icon("layout-dashboard", "md")}</span>
 				<span class="rqa-example-text"><b>${esc(__(d.title))}</b>
 				<small>${esc(d.description ? __(d.description) : __("{0} charts", [d.charts]))}</small></span></button>`).join(""));
-			$l.find(".rqa-dash-card").on("click", (e) => frappe.set_route("analytics", "dashboard", e.currentTarget.dataset.name));
+			$l.find(".rqa-dash-card").on("click", (e) => frappe.set_route("analytics", BOARD, e.currentTarget.dataset.name));
 		}
 
 		new_dashboard() {
 			frappe.prompt({ fieldname: "title", fieldtype: "Data", label: __("Title"), reqd: 1 }, async (v) => {
 				const name = await frappe.xcall(API_D + "create_dashboard", { title: v.title });
 				frappe.route_options = { edit: 1 };
-				frappe.set_route("analytics", "dashboard", name);
+				frappe.set_route("analytics", BOARD, name);
 			}, __("New Dashboard"), __("Create"));
 		}
 
@@ -770,7 +838,7 @@ frappe.provide("rq_analytics");
 	};
 
 	/* ================================================================ dashboard
-	   /desk/analytics/dashboard/<name>: the dashboard's charts in a grid (third / half / two thirds /
+	   /desk/analytics/board/<name>: the dashboard's charts in a grid (third / half / two thirds /
 	   full width; one column on a phone). The filter bar (period, company, department) is sent to
 	   every chart as "overrides" (engine.run): a period replaces each dated chart's own period, a
 	   company / department filter applies to the charts whose data has that field. Edit mode: add,
@@ -815,7 +883,10 @@ frappe.provide("rq_analytics");
 			this.set_actions();
 			this.render_filters();
 			this.render();
-			this.stop();
+			// only the old refresh timer: stop() would also disconnect the observer render() just made,
+			// and then no card is ever drawn (they all stayed on "Loading...")
+			if (this.timer) clearInterval(this.timer);
+			this.timer = null;
 			const every = cint(this.d.auto_refresh_minutes);
 			if (every > 0) {
 				this.timer = setInterval(() => {
@@ -1177,7 +1248,17 @@ frappe.provide("rq_analytics");
 					// "Analyse" on a list: same document type, same filters
 					this.$el.find(".rqa-title").val("");
 					await this.set_source(ro.source);
-					const f = (ro.source_filters || []).filter((x) => Array.isArray(x) && x.length >= 4);
+					// Frappe 16 writes route_options into the URL (?source_filters=[...]), so they can
+					// come back as a JSON string instead of the array the list put there
+					let sf = ro.source_filters || [];
+					if (typeof sf === "string") {
+						try {
+							sf = JSON.parse(sf);
+						} catch (e) {
+							sf = [];
+						}
+					}
+					const f = (Array.isArray(sf) ? sf : []).filter((x) => Array.isArray(x) && x.length >= 4);
 					if (f.length) {
 						this.cfg.filters = f;
 						this.render_panel();
@@ -1213,7 +1294,10 @@ frappe.provide("rq_analytics");
 		}
 
 		sync_types() {
-			this.$el.find(".rqa-type").each((_, b) => b.classList.toggle("is-active", b.dataset.type === this.doc.chart_type));
+			// braces: toggle() returns false for the inactive buttons, and a false return stops jQuery's .each
+			this.$el.find(".rqa-type").each((_, b) => {
+				b.classList.toggle("is-active", b.dataset.type === this.doc.chart_type);
+			});
 		}
 
 		/* ---------- meta */
@@ -1356,12 +1440,13 @@ frappe.provide("rq_analytics");
 
 		render_measures($b) {
 			const nums = this.field_options({ numeric: true });
+			const type = this.doc.chart_type;
 			const rows = this.cfg.measures.map((m, i) => `<div class="rqa-row" data-i="${i}">
 				<select class="form-control input-sm rqa-agg">${AGGS.filter((a) => a === "count" || nums.length)
 					.map((a) => `<option value="${a}" ${a === m.agg ? "selected" : ""}>${__(AGG_LABELS[a])}</option>`).join("")}</select>
 				${m.agg === "count" ? `<span class="rqa-hint">${__("of records")}</span>` : this.select_html(nums, m.field)}
 				${this.cfg.measures.length > 1 ? `<button class="btn btn-xs btn-default rqa-x" title="${__("Remove")}">${icon("x", "xs")}</button>` : ""}
-			</div>`);
+			</div>${this.measure_extra(type, m, i)}`);
 			const can_add = this.cfg.measures.length < 6 && this.doc.chart_type !== "Pie" && this.doc.chart_type !== "Donut" && this.doc.chart_type !== "Percentage" && !this.cfg.dims[1];
 			$b.html(rows.join("") + (can_add ? `<button class="btn btn-xs btn-default rqa-add">${icon("plus", "xs")} ${__("Add a value")}</button>` : ""));
 			$b.find(".rqa-agg").on("change", (e) => {
@@ -1373,6 +1458,21 @@ frappe.provide("rq_analytics");
 				else if (!m.field) m.field = nums[0] && nums[0].path;
 				this.changed();
 			});
+			$b.find(".rqa-target-input").on("change", (e) => {
+				const m = this.cfg.measures[$(e.target).data("i")];
+				const v = flt(e.target.value);
+				if (v > 0) m.target = v;
+				else delete m.target;
+				this.changed();
+			});
+			$b.find(".rqa-as").on("click", "button", (e) => {
+				const i = $(e.delegateTarget).data("i");
+				this.cfg.measures[i].as = e.currentTarget.dataset.as;
+				this.changed();
+			});
+			if (type === "Mixed" && this.cfg.measures.length < 2) {
+				$b.append(`<div class="rqa-hint rqa-hint--block">${__("Add a second value to draw it as a line over the bars.")}</div>`);
+			}
 			$b.find(".rqa-row select:not(.rqa-agg)").on("change", (e) => {
 				this.cfg.measures[$(e.target).closest(".rqa-row").data("i")].field = e.target.value;
 				this.changed();
@@ -1385,6 +1485,27 @@ frappe.provide("rq_analytics");
 				this.cfg.measures.push(nums.length ? { agg: "sum", field: nums[0].path } : { agg: "count" });
 				this.changed();
 			});
+		}
+
+		/* Under a value's row: its target (Number) or bars / line (Bar and Line). Both are kept in the
+		   measure ({target}, {as}), so switching the chart type back and forth loses nothing. */
+		measure_extra(type, m, i) {
+			if (type === "Number") {
+				return `<div class="rqa-row rqa-sub">${icon("target", "xs")}<span class="rqa-hint">${__("Target")}</span>
+					<input type="number" min="0" step="any" class="form-control input-sm rqa-target-input" data-i="${i}"
+						value="${m.target ? esc(String(m.target)) : ""}" placeholder="${__("Target (optional)")}" aria-label="${__("Target")}">
+				</div>`;
+			}
+			if (type === "Mixed" && !this.cfg.dims[1]) {
+				const as = m.as || (i === 0 ? "bar" : "line");
+				return `<div class="rqa-row rqa-sub"><span class="rqa-hint">${__("Show as")}</span>
+					<span class="rqa-as" data-i="${i}" role="group" aria-label="${__("Show as")}">
+						<button type="button" data-as="bar" class="${as === "bar" ? "is-active" : ""}" aria-pressed="${as === "bar"}">${icon("chart-column", "xs")}${__("Bars")}</button>
+						<button type="button" data-as="line" class="${as === "line" ? "is-active" : ""}" aria-pressed="${as === "line"}">${icon("chart-line", "xs")}${__("Line")}</button>
+					</span>
+				</div>`;
+			}
+			return "";
 		}
 
 		render_dim($b, i) {
@@ -1620,7 +1741,7 @@ frappe.provide("rq_analytics");
 				this.add_to_dashboard = null;
 				await frappe.xcall(API_D + "add_chart", { name: dash, chart: r.name });
 				frappe.route_options = { edit: 1 };
-				frappe.set_route("analytics", "dashboard", dash);
+				frappe.set_route("analytics", BOARD, dash);
 				return;
 			}
 			if (!this.doc.name) {

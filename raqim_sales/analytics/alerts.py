@@ -140,7 +140,7 @@ def build(doc):
 	ov = overrides_of(doc)
 	if doc.dashboard and doc.kind == "Scheduled Report":
 		d, sheets = export.dashboard_sheets(doc.dashboard, frappe.as_json(ov) if ov else None)
-		link = get_url(f"/desk/analytics/dashboard/{d['name']}")
+		link = get_url(f"/desk/analytics/board/{d['name']}")
 		return {"title": _(d["title"]), "sheets": sheets, "sections": [(t, tb, None) for t, tb, _n in sheets],
 			"link": link, "value": None}
 	chart = frappe.get_doc("Analytics Chart", doc.chart)

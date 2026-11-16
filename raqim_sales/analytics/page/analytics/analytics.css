@@ -49,6 +49,8 @@
 .rqa-sec { padding: 10px 14px; border-block-end: 1px solid var(--border-color); }
 .rqa-sec:last-child { border-block-end: 0; }
 .rqa-sec-title { display: flex; align-items: center; gap: 6px; font-size: var(--text-xs); font-weight: 600; text-transform: uppercase; letter-spacing: .03em; color: var(--text-muted); margin-block-end: 8px; }
+/* a global icon rule gives svg.icon margin: auto, which floated the icon to the middle of the row */
+.rqa-sec-title .icon, .rqa-dash-filter .icon, .rqa-tab .icon, .rqa-type .icon { margin: 0; flex: none; }
 .rqa-sec-body { display: flex; flex-direction: column; gap: 6px; }
 .rqa-row { display: flex; align-items: center; gap: 6px; min-width: 0; }
 .rqa-row > select, .rqa-row > input { flex: 1 1 0; min-width: 0; }
@@ -56,6 +58,16 @@
 .rqa-row:empty { display: none; }
 .rqa-row[hidden] { display: none; }
 .rqa-hint { flex: none; font-size: var(--text-xs); color: var(--text-muted); }
+.rqa-hint--block { display: block; margin-block-start: 2px; }
+/* the line under a value: its target (Number) or bars / line (Bar and Line) */
+.rqa-sub { padding-inline-start: 6px; margin-block-start: -2px; color: var(--text-muted); }
+.rqa-sub > .icon { margin: 0; flex: none; }
+.rqa-as { display: inline-flex; gap: 2px; padding: 2px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--control-bg); }
+.rqa-as button { display: inline-flex; align-items: center; gap: 4px; border: 0; background: none; border-radius: 6px;
+	padding: 2px 8px; font-size: var(--text-xs); color: var(--text-muted); cursor: pointer; }
+.rqa-as button .icon { margin: 0; }
+.rqa-as button:hover { color: var(--text-color); }
+.rqa-as button.is-active { background: var(--card-bg); color: var(--rq-accent, var(--primary)); box-shadow: var(--shadow-xs, 0 1px 2px rgba(0,0,0,.08)); }
 .rqa-chips { display: flex; flex-wrap: wrap; gap: 4px; margin-block-start: 6px; }
 .rqa-chip {
 	border: 1px solid var(--border-color); background: var(--control-bg); color: var(--text-muted);
@@ -89,12 +101,23 @@
 .rqa-chart { width: 100%; }
 .rqa-chart .chart-container .title { display: none; }
 .rqa-nums { display: flex; flex-wrap: wrap; gap: 14px 32px; justify-content: center; padding: 18px 8px; }
-.rqa-num { min-width: 160px; text-align: center; }
+.rqa-num { flex: 1 1 160px; min-width: 0; max-width: 100%; text-align: center; }
 .rqa-num-label { color: var(--text-muted); font-size: var(--text-sm); }
+/* one line always: draw_number shrinks the font (fit_numbers) when a long amount would not fit */
 .rqa-num-value {
 	font-size: clamp(26px, 4vw, 40px); font-weight: 700; line-height: 1.2; margin-block: 4px;
 	color: var(--rq-accent, var(--text-color)); font-variant-numeric: tabular-nums;
+	white-space: nowrap; overflow: hidden;
 }
+/* ---- target on a number card: bar + "63% of 150,000.000 LYD" */
+.rqa-target { margin: 8px auto 4px; max-width: 260px; }
+.rqa-target-bar { height: 6px; border-radius: 99px; background: var(--rq-hover, var(--subtle-fg, rgba(127, 127, 127, .18))); overflow: hidden; }
+.rqa-target-bar > span { display: block; height: 100%; border-radius: inherit; background: var(--rq-accent, var(--primary)); transition: width .4s ease; }
+.rqa-target.is-done .rqa-target-bar > span { background: var(--green-600, #16a34a); }
+.rqa-target-text { display: flex; align-items: center; justify-content: center; gap: 5px; margin-block-start: 5px;
+	font-size: var(--text-sm); color: var(--text-muted); font-variant-numeric: tabular-nums; }
+.rqa-target-text .icon { margin: 0; flex: none; }
+.rqa-target.is-done .rqa-target-text { color: var(--green-600, #16a34a); font-weight: 600; }
 .rqa-num-cmp { display: inline-flex; align-items: center; gap: 5px; font-size: var(--text-sm); font-weight: 600; }
 .rqa-num-cmp.is-up { color: var(--green-600, #16a34a); }
 .rqa-num-cmp.is-down { color: var(--red-600, #dc2626); }
@@ -144,6 +167,7 @@
 .rqa-dash-filter .icon { color: var(--text-muted); }
 .rqa-dash-filter select { min-width: 190px; }
 .rqa-dash-link { min-width: 190px; }
+.rqa-dash-link .frappe-control, .rqa-dash-link .form-group { margin: 0; } /* line up with the period select */
 .rqa-dash-custom { display: inline-flex; gap: 6px; }
 .rqa-dash-custom[hidden] { display: none; }
 .rqa-dash-desc { color: var(--text-muted); font-size: var(--text-sm); margin-block-end: 12px; }

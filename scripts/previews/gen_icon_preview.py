@@ -1,6 +1,6 @@
 """Write ~/raqeem_icon_preview.html: ERPNext's dock icons next to style options."""
 import re, os
-APPS = "/home/mohammed/bench2/apps"
+APPS = __import__('os').path.expanduser('~/')+"bench2/apps"
 orig_svg = open(f"{APPS}/erpnext/erpnext/public/icons/module-icons.svg", encoding="utf-8").read()
 mine_svg = open(f"{APPS}/raqim_sales/raqim_sales/public/icons/raqeem-sidebar.svg", encoding="utf-8").read()
 
@@ -72,6 +72,6 @@ td{{padding:0 18px;text-align:center}}
 <th>A<small>colourful app tiles</small></th><th>B<small>carbon tiles, orange icons</small></th><th>C<small>all-orange tiles</small></th></tr></thead>
 <tbody>{''.join(rows)}</tbody></table>
 </body></html>"""
-out = os.path.expanduser("/home/mohammed/raqeem_icon_preview.html")
+out = os.path.expanduser(__import__('os').path.expanduser('~/')+"raqeem_icon_preview.html")
 open(out, "w", encoding="utf-8").write(html)
 print("wrote", out, len(html))

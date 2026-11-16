@@ -1,7 +1,7 @@
 """Validate translated batches and build raqim_sales/translations/ar.csv"""
 import json, glob, re, csv, collections, sys
 SP = sys.argv[1]
-OUT = "/home/mohammed/bench2/apps/raqim_sales/raqim_sales/translations/ar.csv"
+OUT = __import__('os').path.expanduser('~/')+"bench2/apps/raqim_sales/raqim_sales/translations/ar.csv"
 items = {x['k']: x for x in json.load(open(f"{SP}/tr/items.json"))}
 
 def unesc(t): return t.replace('\\n', '\n').replace('\\t', '\t').replace('\\\\', '\\')

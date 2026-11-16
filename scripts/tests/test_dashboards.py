@@ -1,5 +1,5 @@
 """Analytics dashboards + the ready-made HR dashboard (rolled back). ./fr.sh test_dashboards.py"""
-exec(open('/home/mohammed/bench2/apps/raqim_sales/scripts/tests/boot.py').read())
+exec(open(__import__('os').path.expanduser('~/')+'bench2/apps/raqim_sales/scripts/tests/boot.py').read())
 import traceback, json
 frappe.db.commit = lambda *a, **k: None
 from raqim_sales.analytics import dashboard as DB, engine as E, standard as ST

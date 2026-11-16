@@ -1,6 +1,6 @@
 """Analytics extras (rolled back): pivot table, Excel export, alerts + scheduled emailed reports.
 ./fr.sh test_analytics_extras.py"""
-exec(open('/home/mohammed/bench2/apps/raqim_sales/scripts/tests/boot.py').read())
+exec(open(__import__('os').path.expanduser('~/')+'bench2/apps/raqim_sales/scripts/tests/boot.py').read())
 import traceback, json, io, csv, re, datetime
 frappe.db.commit = lambda *a, **k: None
 from raqim_sales.analytics import engine as E, export as X, alerts as A
@@ -224,7 +224,7 @@ try:
     A.send_now(dr.name)
     qd = frappe.get_all("Email Queue", filters={"reference_name": dr.name}, fields=["message", "attachments"])
     qb = body(qd[0].message) if qd else ""
-    ok("dashboard report: all charts in the email + one Excel", qb.count("<h3") == 3 and "/desk/analytics/dashboard/" in qb
+    ok("dashboard report: all charts in the email + one Excel", qb.count("<h3") == 3 and "/desk/analytics/board/" in qb
         and len(attachment_names(qd[0].message)) == 1, qb.count("<h3"))
     # ---------------------------------------------------------------- alerts with a condition
     numc = E.save_chart("RQT Applicants", "Number", json.dumps({**base, "dims": []}))
@@ -296,13 +296,13 @@ try:
     hooks = frappe.get_hooks("scheduler_events")
     ok("hourly hook registered", "raqim_sales.analytics.alerts.run_due" in (hooks.get("hourly") or []))
     ok("scheduled job type on the site", frappe.db.exists("Scheduled Job Type", {"method": "raqim_sales.analytics.alerts.run_due", "frequency": "Hourly"}))
-    ar = {r[0]: r[1] for r in csv.reader(open("/home/mohammed/bench2/apps/raqim_sales/raqim_sales/translations/ar.csv", encoding="utf-8")) if len(r) >= 2}
+    ar = {r[0]: r[1] for r in csv.reader(open(__import__('os').path.expanduser('~/')+"bench2/apps/raqim_sales/raqim_sales/translations/ar.csv", encoding="utf-8")) if len(r) >= 2}
     strings = set()
     for f in ["analytics/page/analytics/analytics.js", "analytics/export.py", "analytics/alerts.py", "analytics/doctype/analytics_alert/analytics_alert.py",
               "analytics/doctype/analytics_alert/analytics_alert.js", "analytics/doctype/analytics_alert/analytics_alert_list.js"]:
-        src = open("/home/mohammed/bench2/apps/raqim_sales/raqim_sales/" + f, encoding="utf-8").read()
+        src = open(__import__('os').path.expanduser('~/')+"bench2/apps/raqim_sales/raqim_sales/" + f, encoding="utf-8").read()
         strings |= set(m.group(1) for m in re.finditer(r'(?<![\w.])_{1,2}\(\s*"((?:[^"\\]|\\.)*)"', src))
-    meta = json.load(open("/home/mohammed/bench2/apps/raqim_sales/raqim_sales/analytics/doctype/analytics_alert/analytics_alert.json"))
+    meta = json.load(open(__import__('os').path.expanduser('~/')+"bench2/apps/raqim_sales/raqim_sales/analytics/doctype/analytics_alert/analytics_alert.json"))
     strings |= {x.get("label") for x in meta["fields"] if x.get("label")} | {x.get("description") for x in meta["fields"] if x.get("description")}
     strings |= {"Pivot Table", "Scheduled Report", "Alert", "Analytics Alert"}
     miss = sorted(s_ for s_ in strings if s_ and not ar.get(s_.replace('\\"', '"')))

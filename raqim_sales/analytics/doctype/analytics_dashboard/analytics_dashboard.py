@@ -1,4 +1,4 @@
-"""A page of Analytics Charts (/desk/analytics/dashboard/<name>). `items` holds the layout:
+"""A page of Analytics Charts (/desk/analytics/board/<name>). `items` holds the layout:
 [{"chart": "<Analytics Chart>", "width": "third" | "half" | "two_thirds" | "full"}] in display order.
 `roles` limits who sees it; the numbers always follow each viewer's own permissions."""
 

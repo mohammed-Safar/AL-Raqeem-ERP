@@ -39,7 +39,7 @@ def list_dashboards():
 
 
 def resolve(name: str) -> str:
-	"""A dashboard's name, or a ready-made one's key (/desk/analytics/dashboard/hr works on every site)."""
+	"""A dashboard's name, or a ready-made one's key (/desk/analytics/board/hr works on every site)."""
 	if name and not frappe.db.exists("Analytics Dashboard", name):
 		return frappe.db.get_value("Analytics Dashboard", {"standard_key": name}, "name") or name
 	return name

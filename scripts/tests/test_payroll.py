@@ -1,4 +1,4 @@
-exec(open('/home/mohammed/bench2/apps/raqim_sales/scripts/tests/boot.py').read())
+exec(open(__import__('os').path.expanduser('~/')+'bench2/apps/raqim_sales/scripts/tests/boot.py').read())
 import traceback
 frappe.db.commit = lambda *a, **k: None
 frappe.msgprint = lambda m=None,*a,**k: (_ for _ in ()).throw(frappe.ValidationError(m)) if k.get('raise_exception') else None
@@ -54,7 +54,7 @@ try:
     except frappe.ValidationError: ok('slip alone cannot be cancelled', True)
     html=frappe.get_print('Raqeem Salary Slip', sl.name, print_format=None, doc=sl) if False else None
     from frappe.www.printview import get_rendered_template
-    pf=frappe.get_doc(frappe.parse_json(open('/home/mohammed/bench2/apps/raqim_sales/raqim_sales/raqeem_hr/print_format/raqeem_payslip/raqeem_payslip.json').read()))
+    pf=frappe.get_doc(frappe.parse_json(open(__import__('os').path.expanduser('~/')+'bench2/apps/raqim_sales/raqim_sales/raqeem_hr/print_format/raqeem_payslip/raqeem_payslip.json').read()))
     out=frappe.render_template(pf.html, {'doc': sl, '_': frappe._})
     ok('payslip print renders (%d chars, has net)'%len(out), 'Net Pay' in out and str(sl.employee_name) in out)
     run.reload(); run.cancel(); run.reload()

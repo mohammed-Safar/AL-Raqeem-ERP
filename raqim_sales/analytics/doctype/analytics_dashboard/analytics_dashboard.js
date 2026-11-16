@@ -16,7 +16,7 @@ frappe.ui.form.on("Analytics Dashboard", {
 	},
 	refresh(frm) {
 		if (!frm.is_new()) {
-			frm.add_custom_button(__("Open Dashboard"), () => frappe.set_route("analytics", "dashboard", frm.doc.name)).addClass("btn-primary");
+			frm.add_custom_button(__("Open Dashboard"), () => frappe.set_route("analytics", "board", frm.doc.name)).addClass("btn-primary");
 		}
 	},
 });

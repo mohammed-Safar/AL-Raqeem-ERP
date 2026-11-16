@@ -13833,3 +13833,12 @@ unknown HRMS component {0},بند HRMS غير معروف {0}
 {0} not copied: {1} is not an {2},{0} لم يُنقل: {1} ليس {2}
 "{0}, {1} days",{0}، {1} يوم
 {0}: could not calculate ({1}); add it by hand,{0}: تعذّر الحساب ({1})؛ أضفه يدويًا
+Bar and Line,أعمدة وخط
+{0}% of the target {1},{0}% من المستهدف {1}
+{0}% of {1},{0}% من {1}
+Target (optional),المستهدف (اختياري)
+Show as,العرض كـ
+Bars,أعمدة
+Add a second value to draw it as a line over the bars.,أضف قيمة ثانية لرسمها خطاً فوق الأعمدة.
+Ready Dashboards,اللوحات الجاهزة
+Saved Charts,المخططات المحفوظة

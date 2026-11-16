@@ -7,7 +7,7 @@ Their Arabic must exist in ar.csv (check: the script prints the ones that have n
 """
 import csv, json, os, re
 
-APPS = "/home/mohammed/bench2/apps"
+APPS = __import__('os').path.expanduser('~/')+"bench2/apps"
 OUT = f"{APPS}/raqim_sales/raqim_sales/public/js/raqeem_spa_keys.js"
 SOURCES = [
 	f"{APPS}/crm/frontend/src",

@@ -1,5 +1,5 @@
 """Analytics engine tests (read-only; anything created is rolled back). ./fr.sh test_analytics.py"""
-exec(open('/home/mohammed/bench2/apps/raqim_sales/scripts/tests/boot.py').read())
+exec(open(__import__('os').path.expanduser('~/')+'bench2/apps/raqim_sales/scripts/tests/boot.py').read())
 import json, traceback, datetime
 frappe.db.commit = lambda *a, **k: None
 from raqim_sales.analytics import engine as E

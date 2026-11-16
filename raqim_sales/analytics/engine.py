@@ -432,7 +432,14 @@ class Chart:
 		measures = [
 			{"agg": m.agg, "field": m.get("field"),
 				"label": (f"{_(m.df.label)} − {_(m.df2.label)}" if m.get("df2") else m.df.label) if m.df else None,
-				"fieldtype": m.df.fieldtype if m.df else "Int", "options": m.df.options if m.df else None}
+				# "currency": 1 on a measure shows a plain number field as money (ERPNext keeps some
+				# amounts, e.g. Bin.stock_value, in Float fields)
+				"fieldtype": "Currency" if m.df and m.get("currency") else (m.df.fieldtype if m.df else "Int"),
+				"options": m.df.options if m.df else None,
+				# Number charts: a goal for this value (progress bar under it); None = no target
+				"target": flt(m.get("target")) or None,
+				# "Bar and Line" charts: draw this value as "bar" or "line" (None = first bars, rest lines)
+				"as": m.get("as") if m.get("as") in ("bar", "line") else None}
 			for m in self.measures
 		]
 		dims = [

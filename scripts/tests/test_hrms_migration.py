@@ -1,7 +1,7 @@
 """HRMS -> Employee Affairs data migration (rolled back). ./fr.sh test_hrms_migration.py
 HRMS records are made here with raw inserts (no HRMS validation), the migration runs dry and for real,
 and every HRMS table is compared byte for byte before / after: HRMS must never change."""
-exec(open('/home/mohammed/bench2/apps/raqim_sales/scripts/tests/boot.py').read())
+exec(open(__import__('os').path.expanduser('~/')+'bench2/apps/raqim_sales/scripts/tests/boot.py').read())
 import traceback, hashlib, json, csv, re
 frappe.db.commit = lambda *a, **k: None
 from raqim_sales.raqeem_hr import hrms_migration as M, leave as L
@@ -212,14 +212,14 @@ try:
     finally:
         frappe.set_user("Administrator")
     # the module never writes to HRMS DocTypes (static check of the source)
-    src = open("/home/mohammed/bench2/apps/raqim_sales/raqim_sales/raqeem_hr/hrms_migration.py", encoding="utf-8").read()
+    src = open(__import__('os').path.expanduser('~/')+"bench2/apps/raqim_sales/raqim_sales/raqeem_hr/hrms_migration.py", encoding="utf-8").read()
     writes = re.findall(r'(?:set_value|delete|db_set|db_insert|\.save\(|\.submit\(|\.cancel\()[^\n]*', src)
     hrms_names = ["\"Leave Type\"", "\"Leave Allocation\"", "\"Leave Application\"", "\"Salary Component\"", "\"Salary Structure\"", "\"Salary Structure Assignment\""]
     bad = [w for w in writes if any(n in w for n in hrms_names)]
     ok("no write call names an HRMS DocType", not bad, bad)
     # Arabic for the log DocType
-    ar = {r[0]: r[1] for r in csv.reader(open("/home/mohammed/bench2/apps/raqim_sales/raqim_sales/translations/ar.csv", encoding="utf-8")) if len(r) >= 2}
-    meta = json.load(open("/home/mohammed/bench2/apps/raqim_sales/raqim_sales/raqeem_hr/doctype/raqeem_hrms_migration_log/raqeem_hrms_migration_log.json"))
+    ar = {r[0]: r[1] for r in csv.reader(open(__import__('os').path.expanduser('~/')+"bench2/apps/raqim_sales/raqim_sales/translations/ar.csv", encoding="utf-8")) if len(r) >= 2}
+    meta = json.load(open(__import__('os').path.expanduser('~/')+"bench2/apps/raqim_sales/raqim_sales/raqeem_hr/doctype/raqeem_hrms_migration_log/raqeem_hrms_migration_log.json"))
     labels = {"Raqeem HRMS Migration Log"} | {f["label"] for f in meta["fields"] if f.get("label")} | {"Created", "Matched"}
     strings = set(m.group(1) for m in re.finditer(r'(?<![\w.])_\(\s*"((?:[^"\\]|\\.)*)"', src))
     miss = sorted(s_ for s_ in labels | strings if not ar.get(s_))

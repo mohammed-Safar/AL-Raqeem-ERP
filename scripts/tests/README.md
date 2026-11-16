@@ -20,7 +20,7 @@ HRMS data migration (not a test; dry run by default, nothing saved):
     ./fr.sh ../migrate_hrms.py --apply # copy for real (backup first)
 
 JS syntax check with a real parser (Frappe's own esbuild binary, runs without Node; stays after HRMS is removed):
-    /home/mohammed/bench2/apps/frappe/node_modules/esbuild-linux-64/bin/esbuild <file.js> --log-level=error > /dev/null
+    ~/bench2/apps/frappe/node_modules/esbuild-linux-64/bin/esbuild <file.js> --log-level=error > /dev/null
 
 Run the suites ONE AT A TIME (never in parallel: the laptop runs out of memory). Settings a test saves
 are cleared from the Redis cache in its finally block, after the rollback.

@@ -15,7 +15,8 @@ ITEM = {"type": "Link", "label": "Analytics", "link_type": "Page", "link_to": "a
 OUR_LINKS = {"analytics", "raqeem-pipeline", "Raqeem Cheque", None, ""}  # None / "": our URL links (dashboards)
 
 
-# ready-made dashboards linked from their module's sidebar (key -> /desk/analytics/dashboard/<key>)
+# ready-made dashboards linked from their module's sidebar (key -> /desk/analytics/board/<key>;
+# not ".../dashboard/...", which Frappe 16's router turns into the Frappe "Dashboard" form)
 DASHBOARD_LINKS = {
 	"Accounts": [("Accounts Dashboard", "accounts"), ("Owner Dashboard", "owner")],
 	"Selling": [("Sales Dashboard", "sales")],
@@ -24,11 +25,29 @@ DASHBOARD_LINKS = {
 
 
 def dashboard_item(label, key):
-	return {"type": "Link", "label": label, "link_type": "URL", "url": f"/desk/analytics/dashboard/{key}",
+	return {"type": "Link", "label": label, "link_type": "URL", "url": f"/desk/analytics/board/{key}",
 		"icon": "layout-dashboard", "child": 0, "open_in_new_tab": 0}
 
 
+OLD_PREFIX, NEW_PREFIX = "/desk/analytics/dashboard/", "/desk/analytics/board/"
+
+
+def fix_old_dashboard_links():
+	"""Links saved before 2026-11-15 used OLD_PREFIX (opened the wrong form): point them at NEW_PREFIX.
+	A linked sidebar row's identity is computed from its url, nothing stores it, so a plain update is safe."""
+	rows = frappe.get_all("Sidebar Item", filters={"url": ["like", OLD_PREFIX + "%"]}, fields=["name", "url"])
+	for r in rows:
+		frappe.db.set_value("Sidebar Item", r.name, "url", NEW_PREFIX + r.url[len(OLD_PREFIX):],
+			update_modified=False)
+	if rows:
+		frappe.clear_cache()
+
+
 def after_migrate():
+	try:
+		fix_old_dashboard_links()
+	except Exception:
+		frappe.log_error(title="Analytics: old dashboard links")
 	for sidebar in SIDEBARS:
 		try:
 			add_link(sidebar)

@@ -35,7 +35,7 @@ frappe.ui.form.on("Analytics Alert", {
 			});
 		});
 		if (frm.doc.chart) frm.add_custom_button(__("Open Chart"), () => frappe.set_route("analytics", "chart", frm.doc.chart));
-		if (frm.doc.dashboard) frm.add_custom_button(__("Open Dashboard"), () => frappe.set_route("analytics", "dashboard", frm.doc.dashboard));
+		if (frm.doc.dashboard) frm.add_custom_button(__("Open Dashboard"), () => frappe.set_route("analytics", "board", frm.doc.dashboard));
 		if (frm.doc.last_error) frm.dashboard.set_headline_alert(`<span class="text-danger">${frappe.utils.escape_html(frm.doc.last_error)}</span>`);
 	},
 	kind(frm) {

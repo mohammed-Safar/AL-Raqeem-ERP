@@ -1,5 +1,5 @@
 """HR-only Open Positions screen (rolled back). ./fr.sh test_open_positions.py"""
-exec(open('/home/mohammed/bench2/apps/raqim_sales/scripts/tests/boot.py').read())
+exec(open(__import__('os').path.expanduser('~/')+'bench2/apps/raqim_sales/scripts/tests/boot.py').read())
 import traceback, json, os
 frappe.db.commit = lambda *a, **k: None
 from raqim_sales.raqeem_hr import recruitment as R
@@ -103,7 +103,7 @@ try:
     ok("sidebar link under Recruitment (first child)", sec and link and link.idx == sec.idx + 1 and link.child == 1 and link.link_type == "Page", link)
     # Arabic
     import csv
-    ar = {r[0]: r[1] for r in csv.reader(open("/home/mohammed/bench2/apps/raqim_sales/raqim_sales/translations/ar.csv", encoding="utf-8")) if len(r) >= 2}
+    ar = {r[0]: r[1] for r in csv.reader(open(__import__('os').path.expanduser('~/')+"bench2/apps/raqim_sales/raqim_sales/translations/ar.csv", encoding="utf-8")) if len(r) >= 2}
     need = ["Open Positions", "Vacancies", "Filled", "Unfilled", "Days Open", "Oldest", "Open too long", "Past closing date",
         "Include On Hold", "No open positions", "Only HR can see the open positions", "{0} filled · {1} unfilled", "{0} days"]
     miss = [s for s in need if not ar.get(s)]
@@ -111,7 +111,7 @@ try:
     ok("title is الوظائف الشاغرة", ar.get("Open Positions") == "الوظائف الشاغرة", ar.get("Open Positions"))
     # every __("...") string of the page has Arabic
     import re
-    js = open("/home/mohammed/bench2/apps/raqim_sales/raqim_sales/raqeem_hr/page/open_positions/open_positions.js", encoding="utf-8").read()
+    js = open(__import__('os').path.expanduser('~/')+"bench2/apps/raqim_sales/raqim_sales/raqeem_hr/page/open_positions/open_positions.js", encoding="utf-8").read()
     strings = set(re.findall(r'__\("((?:[^"\\]|\\.)*)"', js))
     miss = sorted(s for s in strings if not ar.get(s))
     ok("all %d page strings translated" % len(strings), not miss, miss)

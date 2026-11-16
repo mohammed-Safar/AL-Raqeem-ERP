@@ -9,7 +9,7 @@ HRMS itself is only read, never changed. Take a backup first (bench --site site2
 """
 import sys
 
-exec(open('/home/mohammed/bench2/apps/raqim_sales/scripts/tests/boot.py').read())
+exec(open(__import__('os').path.expanduser('~/')+'bench2/apps/raqim_sales/scripts/tests/boot.py').read())
 from raqim_sales.raqeem_hr import hrms_migration
 
 args = sys.argv[1:]

@@ -122,7 +122,7 @@ C = {
 		"measures": [{"agg": "sum", "field": "base_opportunity_amount"}, {"agg": "count"}], "filters": OPEN_DEAL}),
 	"o_payroll_month": ("Payroll Cost This Month", "Number", {"doctype": "Raqeem Salary Slip",
 		"measures": [{"agg": "sum", "field": "gross"}], "date_range": {"field": "to_date", "range": "this_month"}, "compare": 1}),
-	"o_stock_value": ("Stock Value", "Number", {"doctype": "Bin", "measures": [{"agg": "sum", "field": "stock_value"}]}),
+	"o_stock_value": ("Stock Value", "Number", {"doctype": "Bin", "measures": [{"agg": "sum", "field": "stock_value", "currency": 1}]}),
 	# sales
 	"s_orders_month": ("Sales Orders This Month", "Number", {"doctype": "Sales Order", "measures": [{"agg": "sum", "field": "base_grand_total"}],
 		"date_range": {"field": "transaction_date", "range": "this_month"}, "compare": 1}),
@@ -210,6 +210,26 @@ def make_standard_dashboards():
 			make_dashboard(spec)
 		except Exception:
 			frappe.log_error(title=f"Analytics: ready-made dashboard {spec['key']}")
+	try:
+		mark_money("o_stock_value", "stock_value")
+	except Exception:
+		frappe.log_error(title="Analytics: Stock Value as money")
+
+
+def mark_money(key, field):
+	"""Charts made before 2026-11-15 showed Stock Value (a Float field) without the currency: add
+	"currency": 1 to that measure once. Nothing else in the chart is touched, so a user's edits stay."""
+	name = frappe.db.get_value("Analytics Chart", {"standard_key": key}, "name")
+	if not name:
+		return
+	cfg = json.loads(frappe.db.get_value("Analytics Chart", name, "config") or "{}")
+	changed = False
+	for m in cfg.get("measures") or []:
+		if m.get("field") == field and "currency" not in m:
+			m["currency"] = 1
+			changed = True
+	if changed:
+		frappe.db.set_value("Analytics Chart", name, "config", json.dumps(cfg), update_modified=False)
 
 
 def _chart(key, title, ctype, cfg) -> tuple[str, bool]:

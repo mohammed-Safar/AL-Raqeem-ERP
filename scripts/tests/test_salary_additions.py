@@ -1,6 +1,6 @@
 """One-off salary additions / deductions: bonus, penalty, one-month allowance (rolled back).
 ./fr.sh test_salary_additions.py"""
-exec(open('/home/mohammed/bench2/apps/raqim_sales/scripts/tests/boot.py').read())
+exec(open(__import__('os').path.expanduser('~/')+'bench2/apps/raqim_sales/scripts/tests/boot.py').read())
 import traceback
 frappe.db.commit = lambda *a, **k: None
 frappe.msgprint = lambda m=None, *a, **k: (_ for _ in ()).throw(frappe.ValidationError(m)) if k.get('raise_exception') else None
