@@ -5,25 +5,22 @@
    ROLLBACK: remove this file's line from app_include_js in hooks.py. */
 (function () {
 	const BRAND = "AL-RAQEEM.ERP"; // shown as «AL-» + R logo + «AQEEM» + «.ERP»
-	const DIAMOND =
-		'<svg viewBox="0 0 10 10" width="8" height="8" aria-hidden="true"><path d="M5 0 10 5 5 10 0 5z" fill="currentColor"/></svg>';
-
+	
 	function make() {
 		const a = document.createElement("a");
 		a.className = "rq-head-brand";
 		a.href = "/app";
 		a.setAttribute("aria-label", BRAND);
+		// stacked: «AL-[R]AQEEM» over «— E R P —» (Desktop/intrest/AL-RAQEEM-ERP-title-stacked-dark.png, without the big R)
 		a.innerHTML =
-			`<span class="rq-hb-line"></span><span class="rq-hb-mark">${DIAMOND}</span>` +
 			`<span class="rq-hb-word">` +
-			`<span class="rq-hb-text">AL-</span>` +
+			`<span class="rq-hb-text rq-hb-al">AL-</span>` +
 			(window.RAQEEM_LOGO_SVG
 				? `<span class="rq-hb-logo">${window.RAQEEM_LOGO_SVG()}</span>`
 				: `<span class="rq-hb-text">R</span>`) +
 			`<span class="rq-hb-text">AQEEM</span>` +
-			`<span class="rq-hb-text rq-hb-erp">.ERP</span>` +
 			`</span>` +
-			`<span class="rq-hb-mark">${DIAMOND}</span><span class="rq-hb-line"></span>`;
+			`<span class="rq-hb-sub"><span class="rq-hb-line"></span><span class="rq-hb-erp">ERP</span><span class="rq-hb-line"></span></span>`;
 		return a;
 	}
 

@@ -1846,110 +1846,85 @@ body.dock-pinned .dock {
 .rq-has-brand > .page-title > .title-area { min-width: 0; }
 .rq-has-brand > .page-title > .view-switcher { flex: none; margin-inline-start: 10px; }
 .rq-has-brand > .standard-items-section { grid-column: 3; grid-row: 1; justify-self: end; }
+/* stacked wordmark (2026-11-18): «AL-» grey, R logo + «AQEEM» bright, «— E R P —» orange below */
 .rq-head-brand {
+    --rq-hb-al: #7f8797;
+    --rq-hb-ink: var(--rq-strong);
+    --rq-hb-erp: var(--rq-accent);   /* follows the theme colour */
+    --rq-hb-rule: rgba(127, 135, 151, .45);
     position: relative;
     grid-column: 2; grid-row: 1;
     justify-self: center;
-    direction: ltr;              /* fixed physical order for the ornaments */
-    display: inline-flex; align-items: center; gap: 10px;
-    padding: 2px 16px;
+    direction: ltr;
+    display: inline-flex; flex-direction: column; align-items: stretch; gap: 3px;
+    padding: 2px 10px;
     text-decoration: none !important;
     white-space: nowrap;
     z-index: 1;
     transition: opacity .25s var(--rq-ease), visibility .25s;
 }
-/* soft halo behind the word */
-.rq-head-brand::before {
-    content: "";
-    position: absolute;
-    inset: -8px -10px;
-    background: radial-gradient(closest-side, rgba(var(--rq-a-rgb), .16), transparent);
-    opacity: .75;
-    pointer-events: none;
-    z-index: -1;
-    transition: opacity .35s var(--rq-ease);
-}
-html[data-theme="dark"] .rq-head-brand::before {
-    background: radial-gradient(closest-side, rgba(var(--rq-a-rgb), .22), transparent);
-}
-/* «AL-[R logo]AQEEM.ERP»: the logo stands in for the R, sitting on the text
-   baseline at capital-letter height */
+html:not([data-theme="dark"]) .rq-head-brand { --rq-hb-al: #8a909c; --rq-hb-rule: rgba(68, 51, 34, .22); }
 .rq-hb-word {
     display: inline-flex;
     align-items: baseline;
-    font-size: 1.12rem;
-    margin-right: -.14em;         /* cancel trailing spacing so it stays centred */
+    justify-content: center;
+    font-size: 1.3rem;
+    margin-right: -.2em;          /* cancel the trailing letter-spacing so it stays centred */
 }
-.rq-hb-logo {
-    display: inline-block;
-    width: .72em; height: .72em;  /* exactly Orbitron's capitals (720/1000); the R fills its box, bottom on the baseline */
-    margin-inline-start: .1em;    /* small gap after the «-» */
-    margin-inline-end: .14em;     /* same gap as the letter-spacing */
-    align-self: baseline;
-    filter: drop-shadow(0 2px 6px rgba(var(--rq-a-rgb), .30));
-    transition: transform .35s var(--rq-ease);
-}
-.rq-hb-logo .rq-logo { display: block; color: var(--rq-accent); }
-.rq-head-brand:hover .rq-hb-logo { transform: translateY(-1px) scale(1.08); }
-.rq-hb-erp { opacity: .72; }
 .rq-hb-text {
     font-family: 'Orbitron', var(--rq-font-head);
     font-weight: 800;
     font-size: 1em;
-    line-height: 1.5;
+    line-height: 1.05;
     text-transform: uppercase;
-    letter-spacing: .14em;        /* Latin wordmark only — never on Arabic */
-    background-image: linear-gradient(110deg,
-        var(--rq-accent-deep) 0%, var(--rq-accent) 30%, var(--rq-a-400) 50%,
-        var(--rq-accent) 70%, var(--rq-accent-deep) 100%);
-    background-size: 220% 100%;
-    background-position: 0% 50%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    filter: drop-shadow(0 2px 8px rgba(var(--rq-a-rgb), .25));
-    transition: background-position .9s var(--rq-ease), filter .35s var(--rq-ease);
+    letter-spacing: .2em;         /* wider look; Latin wordmark only, never on Arabic */
+    color: var(--rq-hb-ink);
 }
-.rq-hb-mark {
-    display: grid; place-items: center;
-    color: var(--rq-a-500);
-    transition: transform .35s var(--rq-ease);
+.rq-hb-al { color: var(--rq-hb-al); }
+.rq-hb-logo {
+    display: inline-block;
+    width: .72em; height: .72em;  /* Orbitron capital height; the R sits on the baseline */
+    margin-inline-start: .06em;
+    margin-inline-end: .2em;      /* same gap as the letter-spacing */
+    align-self: baseline;
 }
-.rq-hb-mark svg { display: block; }
-.rq-hb-line {
-    width: 34px; height: 2px;
-    border-radius: 2px;
-    transition: width .35s var(--rq-ease);
+.rq-hb-logo .rq-logo { display: block; color: var(--rq-hb-ink); }
+.rq-hb-sub { display: flex; align-items: center; gap: 10px; }
+.rq-hb-line { flex: 1; height: 2px; border-radius: 2px; background: var(--rq-hb-rule); }
+.rq-hb-erp {
+    font-family: 'Orbitron', var(--rq-font-head);
+    font-weight: 800;
+    font-size: .62rem;
+    line-height: 1;
+    letter-spacing: .9em;
+    margin-right: -.9em;          /* trailing spacing */
+    color: var(--rq-hb-erp);
 }
-.rq-hb-line:first-child { background: linear-gradient(to right, transparent, rgba(var(--rq-a-rgb), .85)); }
-.rq-hb-line:last-child  { background: linear-gradient(to left,  transparent, rgba(var(--rq-a-rgb), .85)); }
-/* hover: shimmer runs once across the word, lines stretch, halo brightens */
-.rq-head-brand:hover::before { opacity: 1; }
-.rq-head-brand:hover .rq-hb-text {
-    background-position: 100% 50%;
-    filter: drop-shadow(0 3px 12px rgba(var(--rq-a-rgb), .4));
-}
-.rq-head-brand:hover .rq-hb-line { width: 52px; }
-.rq-head-brand:hover .rq-hb-mark { transform: rotate(45deg) scale(1.2); }
+.rq-hb-word, .rq-hb-sub { transition: transform .3s var(--rq-ease); }
+.rq-head-brand:hover .rq-hb-logo { color: var(--rq-hb-erp); }
+.rq-head-brand:hover .rq-hb-logo .rq-logo { color: var(--rq-hb-erp); }
 .rq-head-brand:focus-visible { outline: 2px solid var(--rq-accent-2) !important; outline-offset: 2px; border-radius: var(--rq-r); }
-/* crowded header (JS): never hide, only fold — wordmark alone, then logo alone */
-.rq-head-brand.rq-hb-compact { gap: 0; padding: 2px 6px; }
-.rq-head-brand.rq-hb-compact .rq-hb-line,
-.rq-head-brand.rq-hb-compact .rq-hb-mark { display: none; }
+/* crowded header (JS): drop the ERP row, then logo alone, then hide */
+.rq-head-brand.rq-hb-compact .rq-hb-sub { display: none; }
+.rq-head-brand.rq-hb-compact .rq-hb-word { font-size: 1.1rem; }
 .rq-head-brand.rq-hb-mini { padding: 2px; }
 .rq-head-brand.rq-hb-mini .rq-hb-text { display: none; }
 .rq-head-brand.rq-hb-mini .rq-hb-word { margin-right: 0; }
 .rq-head-brand.rq-hb-mini .rq-hb-logo { width: 22px; height: 22px; margin: 0; }
 .rq-head-brand.rq-hb-hidden { display: none !important; }
 @media (max-width: 767px) {
-    .rq-head-brand { gap: 0; padding: 2px; }
-    .rq-head-brand .rq-hb-line,
-    .rq-head-brand .rq-hb-mark,
+    .rq-head-brand { padding: 2px; }
+    .rq-head-brand .rq-hb-sub,
     .rq-head-brand .rq-hb-text { display: none; }
     .rq-head-brand .rq-hb-word { margin-right: 0; }
     .rq-head-brand .rq-hb-logo { width: 22px; height: 22px; margin: 0; }
 }
+/* title and the quick-settings (theme) button sit 4px higher in the page head */
+.page-head .rq-head-brand { top: -4px; }
+.page-head .rq-qs-btn { position: relative; top: -4px; }
+/* the Arabic letter-spacing reset (html[dir="rtl"] body *) must not reach this Latin wordmark */
+html body .rq-head-brand .rq-hb-text { letter-spacing: .2em !important; }
+html body .rq-head-brand .rq-hb-erp { letter-spacing: .9em !important; }
 @media print { .rq-head-brand { display: none; } }
 
 /* --------------------------------------------------------------------------
@@ -2441,3 +2416,125 @@ html[dir="rtl"] .widget.links-widget-box .link-item:hover { padding-inline-start
     .widget.number-widget-box .number { font-size: 1.55rem !important; }
     .frappe-list .list-row-container { border-radius: var(--rq-r-sm) !important; }
 }
+
+/* --------------------------------------------------------------------------
+   11q. Sidebar refresh (2026-11-18) — قائمة جانبية أخف وأوضح
+   Expanded sidebar only (the collapsed rail keeps its tiles):
+   • module header as a small card: accent icon tile + bold title
+   • links: plain line icons (no boxed tile on every row), calmer rows, clear active state
+   • collapsible groups (التقارير، الأصناف…) read as headings, their links indented on a guide line
+   ROLLBACK: delete this section.
+   -------------------------------------------------------------------------- */
+.body-sidebar-container.expanded .body-sidebar .sidebar-header {
+    margin: 6px 8px 10px !important;
+    padding: 10px 12px !important;
+    min-height: 60px;
+    border-radius: var(--rq-r-lg) !important;
+    background:
+        radial-gradient(160px 80px at 100% 0%, rgba(var(--rq-a-rgb), .16), transparent 70%),
+        var(--rq-surface-1) !important;
+    box-shadow: inset 0 0 0 1px var(--rq-line), var(--rq-shadow-soft, 0 1px 2px rgba(0,0,0,.04));
+    gap: 12px;
+}
+.body-sidebar-container.expanded .body-sidebar .sidebar-header .header-logo {
+    width: 40px !important; height: 40px !important; flex: 0 0 40px;
+    display: grid !important; place-items: center;
+    border-radius: 12px;
+    background: linear-gradient(140deg, var(--rq-a-400), var(--rq-a-600));
+    color: var(--rq-a-ink) !important;
+    box-shadow: 0 6px 16px rgba(var(--rq-a-rgb), .32);
+}
+.body-sidebar-container.expanded .body-sidebar .sidebar-header .header-logo svg { width: 22px !important; height: 22px !important; color: var(--rq-a-ink) !important; }
+.body-sidebar-container.expanded .body-sidebar .sidebar-header .header-title {
+    font-size: 1.12rem !important; font-weight: 800 !important; color: var(--rq-strong) !important;
+}
+.body-sidebar-container.expanded .body-sidebar .sidebar-header .drop-icon {
+    width: 28px; height: 28px; border-radius: 8px; display: grid; place-items: center;
+    background: var(--rq-surface-2); color: var(--rq-text-3);
+}
+
+/* links */
+.body-sidebar-container.expanded .body-sidebar .sidebar-items .standard-sidebar-item { margin-block: 1px !important; }
+.body-sidebar-container.expanded .body-sidebar .sidebar-items .standard-sidebar-item .item-anchor {
+    height: 40px !important;
+    padding-inline: 12px 10px !important;
+    border-radius: 11px !important;
+    color: var(--rq-text-2) !important;
+}
+.body-sidebar-container.expanded .body-sidebar .sidebar-items .standard-sidebar-item .sidebar-item-icon {
+    flex: 0 0 22px; width: 22px !important; height: 22px !important;
+    background: none !important; box-shadow: none !important;
+    color: var(--rq-text-3) !important; transform: none !important;
+}
+.body-sidebar-container.expanded .body-sidebar .sidebar-items .standard-sidebar-item .sidebar-item-icon svg { width: 19px !important; height: 19px !important; }
+.body-sidebar-container.expanded .body-sidebar .sidebar-items .standard-sidebar-item .sidebar-item-label {
+    font-size: .95rem !important; font-weight: 500 !important; margin-inline-start: 12px !important;
+}
+.body-sidebar-container.expanded .body-sidebar .sidebar-items .standard-sidebar-item:not(.active-sidebar):hover .item-anchor {
+    background: var(--rq-hover) !important; color: var(--rq-strong) !important;
+}
+.body-sidebar-container.expanded .body-sidebar .sidebar-items .standard-sidebar-item:hover .sidebar-item-icon { color: var(--rq-accent) !important; }
+/* active link: soft accent pill + accent icon + bold label + edge bar */
+.body-sidebar-container.expanded .body-sidebar .sidebar-items .standard-sidebar-item.active-sidebar .item-anchor {
+    background: rgba(var(--rq-a-rgb), .13) !important;
+    box-shadow: inset 0 0 0 1px rgba(var(--rq-a-rgb), .22);
+}
+.body-sidebar-container.expanded .body-sidebar .sidebar-items .standard-sidebar-item.active-sidebar .sidebar-item-icon {
+    background: none !important; box-shadow: none !important; color: var(--rq-accent) !important;
+}
+.body-sidebar-container.expanded .body-sidebar .sidebar-items .standard-sidebar-item.active-sidebar .sidebar-item-label { font-weight: 800 !important; color: var(--rq-strong) !important; }
+.body-sidebar-container.expanded .body-sidebar .standard-sidebar-item.active-sidebar .item-anchor::before { top: 10px; bottom: 10px; inset-inline-start: 0; width: 3px; }
+
+/* collapsible groups read as headings */
+.body-sidebar-container.expanded .body-sidebar .section-item { margin-top: 10px; }
+.body-sidebar-container.expanded .body-sidebar .section-item > .standard-sidebar-item > .item-anchor {
+    height: 32px !important; padding-inline: 12px 8px !important; background: none !important; box-shadow: none !important;
+}
+.body-sidebar-container.expanded .body-sidebar .section-item > .standard-sidebar-item > .item-anchor .sidebar-item-icon { flex-basis: 16px; width: 16px !important; height: 16px !important; color: var(--rq-dim) !important; }
+.body-sidebar-container.expanded .body-sidebar .section-item > .standard-sidebar-item > .item-anchor .sidebar-item-icon svg { width: 15px !important; height: 15px !important; }
+.body-sidebar-container.expanded .body-sidebar .section-item > .standard-sidebar-item > .item-anchor .sidebar-item-label {
+    font-size: .8rem !important; font-weight: 800 !important; color: var(--rq-text-3) !important; margin-inline-start: 8px !important;
+}
+.body-sidebar-container.expanded .body-sidebar .section-item > .standard-sidebar-item > .item-anchor::after {
+    content: ""; flex: 1; height: 1px; margin-inline: 10px 6px; background: var(--rq-line-strong);
+}
+.body-sidebar-container.expanded .body-sidebar .section-item > .standard-sidebar-item > .item-anchor .sidebar-item-icon { order: 0; }
+.body-sidebar-container.expanded .body-sidebar .section-item > .standard-sidebar-item > .item-anchor .sidebar-item-label { order: 1; flex: 0 1 auto !important; width: auto !important; white-space: nowrap; }
+.body-sidebar-container.expanded .body-sidebar .section-item > .standard-sidebar-item > .item-anchor::after { order: 2; }
+.body-sidebar-container.expanded .body-sidebar .section-item > .standard-sidebar-item > .item-anchor .rq-sb-count { order: 2; }
+.body-sidebar-container.expanded .body-sidebar .section-item > .standard-sidebar-item > .item-anchor .sidebar-item-control { order: 3; margin: 0 !important; }
+.body-sidebar-container.expanded .body-sidebar .section-item > .standard-sidebar-item > .item-anchor:hover .sidebar-item-label { color: var(--rq-strong) !important; }
+.body-sidebar-container.expanded .body-sidebar .section-item .drop-icon svg { width: 14px; height: 14px; opacity: .7; transition: transform .2s var(--rq-ease); }
+/* links inside a group: indented on a thin guide line, a small dot instead of an icon */
+.body-sidebar-container.expanded .body-sidebar .section-item > .nested-container {
+    margin-inline-start: 22px; padding-inline-start: 8px;
+    border-inline-start: 1.5px solid var(--rq-line-strong);
+}
+.body-sidebar-container.expanded .body-sidebar .section-item > .nested-container .item-anchor {
+    height: 34px !important; padding-inline: 10px 8px !important;
+}
+.body-sidebar-container.expanded .body-sidebar .section-item > .nested-container .sidebar-item-label {
+    font-size: .9rem !important; margin-inline-start: 0 !important;
+}
+.body-sidebar-container.expanded .body-sidebar .section-item > .nested-container .item-anchor::before {
+    content: ""; width: 5px; height: 5px; border-radius: 50%; flex: none;
+    background: var(--rq-dim); margin-inline-end: 10px;
+    position: static !important; inset: auto !important;
+}
+.body-sidebar-container.expanded .body-sidebar .section-item > .nested-container .standard-sidebar-item.active-sidebar .item-anchor::before {
+    background: var(--rq-accent); box-shadow: 0 0 0 3px rgba(var(--rq-a-rgb), .2); width: 6px; height: 6px;
+}
+.body-sidebar-container.expanded .body-sidebar .section-item > .nested-container .standard-sidebar-item:hover .item-anchor::before { background: var(--rq-accent); }
+/* hover + click feel on every sidebar row (top links and links inside groups) */
+.body-sidebar-container.expanded .body-sidebar .sidebar-items .standard-sidebar-item .item-anchor {
+    transition: background .15s var(--rq-ease), color .15s var(--rq-ease), box-shadow .15s var(--rq-ease), transform .12s var(--rq-ease) !important;
+}
+.body-sidebar-container.expanded .body-sidebar .sidebar-items .standard-sidebar-item .sidebar-item-icon { transition: color .15s var(--rq-ease) !important; }
+.body-sidebar-container.expanded .body-sidebar .section-item > .nested-container .standard-sidebar-item:not(.active-sidebar):hover .item-anchor {
+    background: var(--rq-hover) !important; color: var(--rq-strong) !important;
+}
+.body-sidebar-container.expanded .body-sidebar .sidebar-items .standard-sidebar-item .item-anchor:active {
+    transform: scale(.97) !important;
+    background: rgba(var(--rq-a-rgb), .18) !important;
+}
+/* ---- end 11q ---- */
