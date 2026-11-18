@@ -26,7 +26,7 @@ import re
 
 import frappe
 
-V = "5"  # bump when raqeem_crm.css, raqeem_crm_tools.js or the script below changes
+V = "dock2-1118"  # bump when raqeem_crm.css, raqeem_crm_tools.js or the script below changes
 
 CRM_HEAD = (
 	'<link rel="stylesheet" href="/assets/raqim_sales/css/raqeem_fonts.css?v=33">'

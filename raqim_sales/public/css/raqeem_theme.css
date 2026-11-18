@@ -1787,6 +1787,45 @@ input[type="checkbox"]:not(:checked):hover { background-color: var(--rq-hover) !
 .dock .dock-item:hover .dock-item-icon.rq-icon { --rq-icon-fill-opacity: .32; }
 .dock .dock-item.active .dock-item-icon.rq-icon { --rq-icon-fill: var(--rq-a-ink); --rq-icon-fill-opacity: .18; }
 
+/* dock v2 (2026-11-18): thinner (82 -> 68px), darker, floating capsule with round ends.
+   Icons unchanged (30px glyphs); only the tray and tile boxes. Rollback: delete this block. */
+:root, html[data-theme="light"] {
+    --rq-dock-bg: linear-gradient(180deg, #ebe6df 0%, #e2dcd3 100%);
+    --rq-dock-edge: rgba(68, 51, 34, .12);
+    --rq-dock-shine: rgba(255, 255, 255, .7);
+    --rq-dock-sep: rgba(68, 51, 34, .14);
+}
+html[data-theme="dark"] {
+    --rq-dock-bg: linear-gradient(180deg, #0d0f13 0%, #08090c 100%);
+    --rq-dock-edge: rgba(255, 255, 255, .06);
+    --rq-dock-shine: rgba(255, 255, 255, .05);
+    --rq-dock-sep: rgba(255, 255, 255, .07);
+}
+:root, html[data-theme="light"], html[data-theme="dark"] {
+    --dock-tile: 50px !important;
+    --dock-width: 68px !important;
+}
+.dock {
+    background: radial-gradient(120% 80px at 50% 0%, rgba(var(--rq-a-rgb), .10), transparent 70%), var(--rq-dock-bg) !important;
+    border: 1px solid var(--rq-dock-edge) !important;
+    border-radius: 999px !important;
+    padding: 16px 9px 18px !important;
+    box-shadow: inset 0 1px 0 var(--rq-dock-shine), 0 18px 40px rgba(0, 0, 0, .35) !important;
+}
+body.dock-pinned .dock {
+    margin-block: 8px; margin-inline: 8px 0;
+    height: calc(100vh - 16px) !important;
+    height: calc(100dvh - 16px) !important;
+    border: 1px solid var(--rq-dock-edge) !important;
+    box-shadow: inset 0 1px 0 var(--rq-dock-shine), 0 10px 28px rgba(0, 0, 0, .28) !important;
+}
+.dock .dock-logo:not(:empty) { border-bottom-color: var(--rq-dock-sep) !important; }
+.dock .dock-item { border-radius: 16px !important; }
+.dock .dock-logo .dock-item,
+.dock .dock-utilities .dock-item { width: 44px !important; height: 44px !important; border-radius: 50% !important; }
+.dock .dock-item:hover { background: rgba(var(--rq-a-rgb), .12) !important; box-shadow: none; }
+.dock .dock-item.active { border-radius: 16px !important; }
+
 /* --------------------------------------------------------------------------
    11m. Brand wordmark «RAQEEM» (Orbitron) centred in the page head (raqeem_brand_title.js)
    — شعار الرقيم في منتصف رأس الصفحة، يتبع لون الواجهة
