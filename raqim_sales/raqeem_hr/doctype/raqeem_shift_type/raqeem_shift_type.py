@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): a work shift (hours, grace minutes, weekly days off).
+# RAQEEM HR (Human Resources): a work shift (hours, grace minutes, weekly days off).
 import frappe
 from frappe import _
 from frappe.model.document import Document

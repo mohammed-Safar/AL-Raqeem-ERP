@@ -1,4 +1,4 @@
-// RAQEEM HR (Employee Affairs): monthly payroll run — Calculate, Submit, Pay Salaries
+// RAQEEM HR (Human Resources): monthly payroll run — Calculate, Submit, Pay Salaries
 frappe.ui.form.on("Raqeem Payroll Run", {
 	onload(frm) {
 		if (frm.is_new() && !frm.doc.from_date) {

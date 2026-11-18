@@ -228,8 +228,8 @@ You don't have access to items.	ليست لديك صلاحية الاطلاع ع
 same email	نفس البريد الإلكتروني
 same phone	نفس رقم الهاتف
 {0} records	{0} سجل
-# Employee Affairs (raqim_sales/raqeem_hr) 2026-11-12
-Employee Affairs	شؤون الموظفين
+# Human Resources (raqim_sales/raqeem_hr) 2026-11-12
+Human Resources	الموارد البشرية
 Raqeem Leave Request	طلب إجازة
 Raqeem Leave Allocation	تخصيص الإجازات
 Raqeem Leave Type	نوع الإجازة
@@ -310,7 +310,7 @@ not set	غير محدد
 {0} has {1} days of {2} left, but this request is for {3} days.	بقي لدى {0} {1} أيام من {2}، لكن هذا الطلب لمدة {3} أيام.
 {0} leave days	{0} أيام إجازة
 {0} longer than {1} days needs a supporting document (for example a medical certificate).	{0} التي تزيد على {1} أيام تحتاج إلى مستند مؤيِّد (مثل شهادة طبية).
-# Employee Affairs payroll (raqim_sales/raqeem_hr/payroll.py) 2026-11-13
+# Human Resources payroll (raqim_sales/raqeem_hr/payroll.py) 2026-11-13
 30 Days	30 يومًا
 30 Days: a month is always 30 days when pay is reduced for unpaid leave or a partial month.	30 يومًا: يُعدّ الشهر دائمًا 30 يومًا عند خصم الإجازة غير المدفوعة أو الشهر الجزئي.
 Account / IBAN	الحساب / IBAN
@@ -742,7 +742,7 @@ Job openings with the status Open show here.	تظهر هنا الوظائف ال
 New Job Opening	وظيفة شاغرة جديدة
 No open positions	لا توجد وظائف شاغرة
 Oldest	الأقدم
-Only HR can see the open positions	الوظائف الشاغرة متاحة لشؤون الموظفين فقط
+Only HR can see the open positions	الوظائف الشاغرة متاحة للموارد البشرية فقط
 Open the applicants	فتح المتقدمين
 Open the applicants at this stage	فتح المتقدمين في هذه المرحلة
 Open the longest	الأطول شغورًا
@@ -831,7 +831,7 @@ HRMS migration — saved	نقل بيانات HRMS — تم الحفظ
 Only a System Manager can run the HRMS migration	نقل بيانات HRMS متاح لمدير النظام فقط
 cancelled applications are not copied	الطلبات الملغاة لا تُنقل
 cancelled in HRMS	ملغى في HRMS
-compensatory leave is earned through Compensatory Requests in Employee Affairs; enter the open balance there	الإجازة التعويضية تُكتسب عبر طلبات التعويض في شؤون الموظفين؛ أدخل الرصيد المتبقي هناك
+compensatory leave is earned through Compensatory Requests in Human Resources; enter the open balance there	الإجازة التعويضية تُكتسب عبر طلبات التعويض في الموارد البشرية؛ أدخل الرصيد المتبقي هناك
 copied before	نُقل سابقًا
 employer contribution: our payroll calculates it	حصة صاحب العمل: يحسبها نظام الرواتب لدينا
 gross {0}	الإجمالي {0}

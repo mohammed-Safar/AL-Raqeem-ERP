@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): an interview round. Interviewers get the document shared with them
+# RAQEEM HR (Human Resources): an interview round. Interviewers get the document shared with them
 # (they may write their feedback) and a notification; scheduling moves an early-stage applicant to
 # the Interview stage.
 import frappe

@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): an employee's expense claim. Approval: raqeem_hr/approval.py;
+# RAQEEM HR (Human Resources): an employee's expense claim. Approval: raqeem_hr/approval.py;
 # accounting and payment: raqeem_hr/expenses.py.
 import frappe
 from frappe import _

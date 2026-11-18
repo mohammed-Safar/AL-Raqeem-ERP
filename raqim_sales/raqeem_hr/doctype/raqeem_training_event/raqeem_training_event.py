@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): a training session (raqeem_hr/training.py).
+# RAQEEM HR (Human Resources): a training session (raqeem_hr/training.py).
 import frappe
 from frappe import _
 from frappe.model.document import Document

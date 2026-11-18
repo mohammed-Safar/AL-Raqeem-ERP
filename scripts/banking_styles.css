@@ -1,0 +1,81 @@
+/* ==========================================================================
+   RAQEEM — ERPNext Banking (/banking) rules
+   (appended to raqeem_banking.css by gen_crm_css.py, after the shared tokens)
+
+   Banking is a React + Tailwind 4 app on the Espresso design tokens
+   (--surface-*, --ink-*, --outline-*, built from a --gray-* ramp). Here the ramp
+   becomes the desk's warm light / carbon dark palette and the neutral tokens point
+   at the RAQEEM tokens, so the screen follows the desk's light/dark mode and accent
+   colour (html.dark / html[data-theme] / html[data-accent] are set by the head
+   script in web_inject.py). Scope: html.rq-banking only.
+   ========================================================================== */
+
+/* ---- grey ramp (anything not mapped below still lands on desk colours) ---- */
+html.rq-banking {
+  --gray-50:#faf8f5; --gray-100:#f4f1ec; --gray-200:#ebe6df; --gray-250:#ddd6cd; --gray-300:#ddd6cd;
+  --gray-400:#c2b9ae; --gray-450:#aaa29a; --gray-500:#8c847c; --gray-600:#736b64; --gray-700:#57504a;
+  --gray-800:#3a3530; --gray-900:#27231f; --gray-950:#16120f; --white:#fffdfa;
+  color-scheme: light;
+}
+html.rq-banking.dark {
+  --gray-50:#e8eaed; --gray-100:#d9dce1; --gray-200:#b4bac4; --gray-250:#9aa1ac; --gray-300:#8a919c;
+  --gray-400:#5b6370; --gray-450:#4b5563; --gray-500:#343a46; --gray-600:#2c3240; --gray-700:#232833;
+  --gray-800:#1b1f27; --gray-900:#15181e; --gray-950:#0e1014; --white:#0e1014;
+  color-scheme: dark;
+}
+
+/* ---- neutral tokens = RAQEEM tokens (both modes: --rq-* already switch with data-theme) ---- */
+html.rq-banking, html.rq-banking.dark {
+  --surface-white: var(--rq-surface-1);
+  --surface-cards: var(--rq-surface-1);
+  --surface-modal: var(--rq-surface-1);
+  --surface-menu-bar: var(--rq-sidebar-bg);
+  --surface-gray-1: var(--rq-surface-2);
+  --surface-gray-2: var(--rq-surface-3);
+  --surface-gray-3: var(--rq-surface-4);
+  --surface-gray-4: var(--rq-surface-5);
+  --surface-selected: var(--rq-accent-soft);
+  --ink-gray-8: var(--rq-strong);
+  --ink-gray-7: var(--rq-text);
+  --ink-gray-6: var(--rq-text-2);
+  --ink-gray-5: var(--rq-text-3);
+  --ink-gray-4: var(--rq-dim);
+  --ink-gray-3: var(--rq-placeholder);
+  --outline-gray-1: var(--rq-line);
+  --outline-gray-2: var(--rq-line-strong);
+  --outline-gray-3: var(--rq-line-hover);
+  --outline-gray-4: var(--rq-control-border);
+  --outline-gray-modals: var(--rq-line-strong);
+  --font-sans: var(--rq-font);
+  --font-numeric: var(--rq-font);
+}
+
+/* ---- page, fonts, Arabic ---- */
+html.rq-banking body { background-color: var(--rq-bg) !important; color: var(--rq-text); }
+html.rq-banking body, html.rq-banking button, html.rq-banking input,
+html.rq-banking textarea, html.rq-banking select { font-family: var(--rq-font) !important; }
+html.rq-banking h1, html.rq-banking h2, html.rq-banking h3 { font-family: var(--rq-font-head) !important; }
+html.rq-banking[lang^="ar"] *, html.rq-banking[dir="rtl"] * { letter-spacing: 0 !important; }
+html.rq-banking ::selection { background: rgba(var(--rq-a-rgb), .25); }
+/* inside the desk frame the desk already draws the page edge */
+html.rq-banking.rq-in-desk body { background-color: transparent !important; }
+
+/* ---- primary ("solid") buttons, checkboxes, switches take the RAQEEM accent ---- */
+html.rq-banking .bg-surface-gray-7 { background-color: var(--rq-a-500) !important; color: var(--rq-a-ink) !important; }
+html.rq-banking .bg-surface-gray-7 svg { color: currentColor !important; }
+html.rq-banking .hover\:bg-surface-gray-6:hover { background-color: var(--rq-a-600) !important; }
+html.rq-banking .active\:bg-surface-gray-5:active { background-color: var(--rq-a-700) !important; }
+html.rq-banking [data-state="checked"].data-\[state\=checked\]\:bg-ink-gray-8 {
+  background-color: var(--rq-a-500) !important; border-color: var(--rq-a-500) !important; color: var(--rq-a-ink) !important;
+}
+html.rq-banking button[role="switch"][data-state="checked"] { background-color: var(--rq-a-500) !important; }
+html.rq-banking a.text-ink-blue-link, html.rq-banking .prose a { color: var(--rq-accent-2) !important; }
+
+/* ---- cards, popovers, dialogs: desk radius + shadow ---- */
+html.rq-banking [role="dialog"], html.rq-banking [role="menu"], html.rq-banking [role="listbox"],
+html.rq-banking [data-slot="popover-content"] {
+  border-color: var(--rq-line-strong) !important;
+  box-shadow: var(--rq-shadow-pop) !important;
+}
+html.rq-banking input:focus-visible, html.rq-banking textarea:focus-visible,
+html.rq-banking button:focus-visible { box-shadow: 0 0 0 2px var(--rq-accent-ring) !important; }

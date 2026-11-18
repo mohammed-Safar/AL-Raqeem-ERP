@@ -1,7 +1,7 @@
-"""RAQEEM HR (Employee Affairs) — training programs and sessions (no HRMS).
+"""RAQEEM HR (Human Resources) — training programs and sessions (no HRMS).
   Raqeem Training Program   a course: type, provider, hours, cost per person
   Raqeem Training Event     a session with participants; each participant: attendance, result, score,
-                            certificate, and their own rating / feedback (give_feedback, from My Affairs)
+                            certificate, and their own rating / feedback (give_feedback API)
 Participants are notified when added; totals (invited, attended, cost, average rating) are kept."""
 
 import frappe

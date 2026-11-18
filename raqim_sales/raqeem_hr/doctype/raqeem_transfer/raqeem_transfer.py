@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): a transfer — new department / branch / manager from a date. Submitted
+# RAQEEM HR (Human Resources): a transfer — new department / branch / manager from a date. Submitted
 # by an HR Manager; applied to the Employee when its date comes. Rules: raqeem_hr/lifecycle.py.
 import frappe
 from frappe import _

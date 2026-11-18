@@ -1,4 +1,4 @@
-"""RAQEEM HR (Employee Affairs) — employee loans repaid in (long) monthly instalments, Raqeem Employee Loan.
+"""RAQEEM HR (Human Resources) — employee loans repaid in (long) monthly instalments, Raqeem Employee Loan.
 No interest (an employer's loan to staff); every limit is in Raqeem Payroll Settings.
 
   request   the employee (or HR) enters amount, number of instalments or the monthly instalment, and

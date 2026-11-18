@@ -1,4 +1,4 @@
-"""RAQEEM HR (Employee Affairs) — end-of-service gratuity (مكافأة نهاية الخدمة) and the final settlement,
+"""RAQEEM HR (Human Resources) — end-of-service gratuity (مكافأة نهاية الخدمة) and the final settlement,
 Raqeem Gratuity. Every rule is in Raqeem Lifecycle Settings (none is hard-coded here; the starter
 rules are only an example until "Rules Checked by Our Accountant" is ticked):
 

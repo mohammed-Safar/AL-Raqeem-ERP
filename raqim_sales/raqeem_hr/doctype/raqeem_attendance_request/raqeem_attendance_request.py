@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): an employee asks HR to count days as present (forgot to punch,
+# RAQEEM HR (Human Resources): an employee asks HR to count days as present (forgot to punch,
 # worked outside the office, device problem). Approval: raqeem_hr/approval.py. When approved, each
 # working day of the request becomes a Present attendance (source Request) — an automatic record of
 # that day (e.g. Absent, or a missing fingerprint) is replaced; one typed by HR is left alone.

@@ -4,7 +4,7 @@ exec(open(__import__('os').path.expanduser('~/')+'bench2/apps/raqim_sales/script
 import traceback
 frappe.db.commit = lambda *a, **k: None
 frappe.msgprint = lambda m=None, *a, **k: (_ for _ in ()).throw(frappe.ValidationError(m)) if k.get('raise_exception') else None
-from raqim_sales.raqeem_hr import payroll as P, additions as A, self_service as SS, permissions as PM
+from raqim_sales.raqeem_hr import payroll as P, additions as A, permissions as PM
 from raqim_sales.raqeem_hr.approval import decide
 res = []
 def ok(l, c, extra=""):
@@ -113,12 +113,11 @@ try:
         try:
             frappe.get_doc(dict(doctype="Raqeem Salary Addition", employee=e, payroll_date="2026-12-01", reason="x", **kw)).insert(); ok(label, False)
         except frappe.ValidationError: ok(label, True)
-    # ---- approver from Payroll Settings, permissions, My Affairs inbox
+    # ---- approver from Payroll Settings, permissions
     ps = frappe.get_single("Raqeem Payroll Settings"); ps.addition_approver = u_appr; ps.save(); frappe.clear_document_cache("Raqeem Payroll Settings")
     x = frappe.get_doc(dict(doctype="Raqeem Salary Addition", employee=e2, component="Bonus", amount=50, payroll_date="2026-12-01", reason="team")).insert()
     ok("approver taken from Payroll Settings and shared", x.approver == u_appr and frappe.db.exists("DocShare", {"share_name": x.name, "user": u_appr}))
     frappe.set_user(u_appr)
-    ok("approver sees it in My Affairs approvals", any(r["name"] == x.name for r in SS.pending_approvals(u_appr)))
     decide("Raqeem Salary Addition", x.name, "Approved")
     frappe.set_user(u_emp)
     mine = frappe.get_list("Raqeem Salary Addition", pluck="name")

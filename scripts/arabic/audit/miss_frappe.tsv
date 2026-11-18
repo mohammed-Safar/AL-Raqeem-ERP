@@ -1,0 +1,21 @@
+"Applying\\u2026"		s/frappe/frappe/public/dist/js/print_format_builder.bundle.3MICFJWH.js
+"Card title\\u2026"		apps/frappe/frappe/public/dist/js/kanban.bundle.F5I3TV6R.js
+"Discarding\\u2026"		s/frappe/frappe/public/dist/js/print_format_builder.bundle.3MICFJWH.js
+"For comparison, use >5, <10 or =324.\\nFor ranges, use 5:10 (for values between 5 & 10)."		apps/frappe/frappe/public/js/frappe/views/reports/report_view.js
+"Generating preview\\u2026"		s/frappe/frappe/public/dist/js/print_format_builder.bundle.3MICFJWH.js
+"Loading groups\\u2026"		apps/frappe/frappe/public/dist/js/kanban.bundle.F5I3TV6R.js
+"Move to\\u2026"		apps/frappe/frappe/public/dist/js/data_import_tools.bundle.YQGR4STA.js
+"No barcode value \\u2014 set one in the panel"		s/frappe/frappe/public/dist/js/print_format_builder.bundle.3MICFJWH.js
+"No image \\u2014 set one in the panel"		s/frappe/frappe/public/dist/js/print_format_builder.bundle.3MICFJWH.js
+"Restoring\\u2026"		s/frappe/frappe/public/dist/js/print_format_builder.bundle.3MICFJWH.js
+"Saving\\u2026"		s/frappe/frappe/public/dist/js/print_format_builder.bundle.3MICFJWH.js
+"Select table\\u2026"		s/frappe/frappe/public/dist/js/print_format_builder.bundle.3MICFJWH.js
+"Set {0}\\u2026"		apps/frappe/frappe/public/dist/js/kanban.bundle.F5I3TV6R.js
+"Switching you to the new navigation\\u2026"		apps/frappe/frappe/public/dist/js/desk.bundle.VRCIUGXV.js
+"Updated To A New Version \\u{1F389}"		apps/frappe/frappe/public/dist/js/desk.bundle.VRCIUGXV.js
+"Working draft \\xB7 not applied yet"		s/frappe/frappe/public/dist/js/print_format_builder.bundle.3MICFJWH.js
+"\\u2190 Back to upload files"		apps/frappe/frappe/public/dist/js/file_uploader.bundle.342RVI4W.js
+"{0} ${a}"		apps/frappe/frappe/public/dist/js/desk.bundle.VRCIUGXV.js
+"{0} ${d?\"\":a}"		apps/frappe/frappe/public/dist/js/desk.bundle.VRCIUGXV.js
+"{0} is empty \\u2014 click to add"		s/frappe/frappe/public/dist/js/print_format_builder.bundle.3MICFJWH.js
+"{0} of {1} done \\xB7 {2} skipped"		apps/frappe/frappe/public/dist/js/desk.bundle.VRCIUGXV.js

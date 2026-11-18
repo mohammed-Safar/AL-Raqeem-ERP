@@ -1,4 +1,4 @@
-"""Copy HRMS leave + salary data into Employee Affairs (raqim_sales/raqeem_hr/hrms_migration.py).
+"""Copy HRMS leave + salary data into Human Resources (raqim_sales/raqeem_hr/hrms_migration.py).
 
 From apps/raqim_sales/scripts/tests (works from the Claude Code snap too):
     ./fr.sh ../migrate_hrms.py                   # DRY RUN: prints what it would do, saves nothing

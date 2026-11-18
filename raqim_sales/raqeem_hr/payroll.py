@@ -1,4 +1,4 @@
-"""RAQEEM HR (Employee Affairs) — payroll on ERPNext alone (no Frappe HR app).
+"""RAQEEM HR (Human Resources) — payroll on ERPNext alone (no Frappe HR app).
 
 Monthly flow:
   Raqeem Employee Salary (per employee, valid from a date): earnings + fixed deductions.

@@ -5,7 +5,7 @@ import traceback
 frappe.db.commit = lambda *a, **k: None
 frappe.msgprint = lambda m=None, *a, **k: (_ for _ in ()).throw(frappe.ValidationError(m)) if k.get('raise_exception') else None
 from frappe.utils import add_days, getdate, nowdate
-from raqim_sales.raqeem_hr import lifecycle as LC, payroll as P, self_service as SS, attendance as AT
+from raqim_sales.raqeem_hr import lifecycle as LC, payroll as P, attendance as AT
 from raqim_sales.raqeem_hr.approval import decide
 res = []
 def ok(l, c, extra=""):
@@ -118,7 +118,6 @@ try:
         reason="Moving to another city")).insert()
     ok("resignation: last day = notice + 30 days, approver = manager", str(ex.last_working_day) == "2026-12-10" and ex.approver == u_mgr
         and ex.notice_short_days == 0, (ex.last_working_day, ex.approver))
-    ok("listed in My Affairs requests", any(r["name"] == ex.name for r in SS.get_my_affairs()["requests"]))
     frappe.set_user(u_mgr)
     decide("Raqeem Employee Exit", ex.name, "Approved")
     frappe.set_user("Administrator"); ex.reload()

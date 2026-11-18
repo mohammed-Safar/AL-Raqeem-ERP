@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): a candidate for a job opening and their stage (raqeem_hr/recruitment.py).
+# RAQEEM HR (Human Resources): a candidate for a job opening and their stage (raqeem_hr/recruitment.py).
 import frappe
 from frappe import _
 from frappe.model.document import Document

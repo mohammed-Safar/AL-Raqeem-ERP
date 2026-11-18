@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): end-of-service gratuity + final settlement. HR calculates, the
+# RAQEEM HR (Human Resources): end-of-service gratuity + final settlement. HR calculates, the
 # accountant confirms (submit -> Journal Entry), then "Pay". Rules: raqeem_hr/gratuity.py.
 import frappe
 from frappe import _

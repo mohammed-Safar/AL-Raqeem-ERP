@@ -1,4 +1,4 @@
-"""RAQEEM HR (Employee Affairs) — one approval flow for every employee request
+"""RAQEEM HR (Human Resources) — one approval flow for every employee request
 (attendance request, expense claim, salary advance ...), the same as the leave request's:
 
   the employee (or HR) saves the request -> status Open, shared with the approver (the employee's

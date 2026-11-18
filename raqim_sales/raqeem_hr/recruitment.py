@@ -1,4 +1,4 @@
-"""RAQEEM HR (Employee Affairs) — recruitment, on ERPNext alone (no HRMS).
+"""RAQEEM HR (Human Resources) — recruitment, on ERPNext alone (no HRMS).
 
   Raqeem Job Opening    a position to fill (positions, department, salary range, status)
   Raqeem Job Applicant  a candidate and their stage: New -> Screening -> Interview -> Offer -> Hired

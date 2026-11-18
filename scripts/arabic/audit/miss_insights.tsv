@@ -1,0 +1,297 @@
+"1:N"		DocType: Insights Table Link
+"A SQL column expression cannot read another table"		sights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py
+"A SQL column expression must be a single expression"		sights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py
+"A SQL column needs both a name and an expression"		sights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py
+"A SQL column needs the data source its expression is written for"		sights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py
+"A dashboard name must be a non-empty string"		apps/insights/insights/api/v2_migration.py
+"A migration of this dashboard is already running"		apps/insights/insights/api/v2_migration.py
+"A prebuilt {0} dashboard is available in Insights"		apps/insights/insights/public/js/insights_nudge.bundle.js
+"API Configuration"		DocType: Insights Data Source v3
+"API Key / Bearer Token"		DocType: Insights Data Source v3
+"API Password"		DocType: Insights Data Source v3
+"API Username"		DocType: Insights Data Source v3
+"Action if table exists"		DocType: Insights Table Import
+"Aggregation"		DocType: Insights Query Column
+"Aggregation Condition"		DocType: Insights Query Column
+"Alert sent"		ps/insights/insights/insights/doctype/insights_alert/insights_alert.js
+"Allow Data Download"		DocType: Insights Settings
+"Allow Subquery"		DocType: Insights Settings
+"Allow Table Import"		DocType: Insights Data Source
+"Allowed Origins"		DocType: Insights Settings
+"Already migrated into workbook {0}"		apps/insights/insights/api/v2_migration.py
+"An email alert needs at least one recipient"		ps/insights/insights/insights/doctype/insights_alert/insights_alert.py
+"Append"		DocType: Insights Table Import
+"Append Only"		DocType: Insights Table v3
+"Apply User Permissions"		DocType: Insights Settings
+"Authentication Type"		DocType: Insights Data Source v3
+"Auto Execute Query"		DocType: Insights Settings
+"Automatically arrange cards vertically to fill empty spaces"		DocType: Insights Dashboard v3
+"Badge"		apps/insights/insights/public/frontend/assets/Trend-fdfa320f.js
+"Basic Authentication"		DocType: Insights Data Source v3
+"Before Import Script"		DocType: Insights Table v3
+"BigQuery"		DocType: Insights Data Source v3
+"BigQuery Configuration"		DocType: Insights Data Source v3
+"BigQuery Dataset ID"		DocType: Insights Data Source v3
+"BigQuery Project ID"		DocType: Insights Data Source v3
+"BigQuery Service Account Key (JSON)"		DocType: Insights Data Source v3
+"Both tables must have at least one common column to perform union"		sights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py
+"Bulk Enqueue"		nsights/doctype/insights_table_import_job/insights_table_import_job.js
+"Bulk Enqueue Import Job"		nsights/doctype/insights_table_import_job/insights_table_import_job.js
+"Bulk Enqueue Progress"		nsights/doctype/insights_table_import_job/insights_table_import_job.js
+"CA Certificate"		DocType: Insights Data Source v3
+"Cache Query Results For (Minutes)"		DocType: Insights Settings
+"Cannot Perform Union"		sights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py
+"Cannot share with {0} - they are not an Insights user"		apps/insights/insights/api/workbooks.py
+"Cardinality"		DocType: Insights Table Link
+"Catalog estimate, written by the daily telemetry scan"		DocType: Insights Table v3
+"Choose how incremental sync writes rows: <b>Append Only</b> adds new rows, while <b>Update or Insert</b> updates matching keys and inserts new rows."		DocType: Insights Table v3
+"Circular query reference detected in {0}"		ights/insights/insights/doctype/insights_workbook/insights_workbook.py
+"Circular query reference detected while building \"{0}\""		sights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py
+"Clear Warehouse Data"		ights/insights/insights/doctype/insights_table_v3/insights_table_v3.js
+"ClickHouse"		DocType: Insights Data Source v3
+"Comma seperated URLs to whitelist for embedding charts & dashboards"		DocType: Insights Settings
+"Connection String"		DocType: Insights Data Source
+"Cron expression to schedule the script. Note: The scheduler checks for jobs every hour."		DocType: Insights Table Import Job
+"CumulativeSum"		DocType: Insights Query Transform
+"Cursor Column"		DocType: Insights Table v3
+"Custom Condition"		DocType: Insights Alert
+"Custom Headers"		DocType: Insights Data Source v3
+"Custom headers for API requests. Sent with every request, so a key belongs here rather than in the URL."		DocType: Insights Data Source v3
+"Dashboard {0} not found"		apps/insights/insights/api/v2_migration.py
+"Data Backup"		DocType: Insights Workbook
+"Data Query"		DocType: Insights Chart v3
+"Data Store"		DocType: Insights Query Execution Log
+"Database Name"		DocType: Insights Data Source
+"Database Type"		DocType: Insights Data Source
+"Decimal"		DocType: Insights Table Column
+"Dialog"		s/insights/insights/public/frontend/assets/DataSourceTable-16b55458.js
+"Disable User Lookup"		DocType: Insights Settings
+"Dropdown"		apps/insights/insights/public/frontend/assets/NotebookPage-635ecd47.js
+"DuckDB"		DocType: Insights Data Source v3
+"Duration (Seconds)"		DocType: Insights Table Import Log
+"Enable Data Store"		DocType: Insights Settings
+"Enable Permissions"		DocType: Insights Settings
+"Enable Stored Procedure Execution"		DocType: Insights Data Source v3
+"Encrypt Connection (SSL)"		DocType: Insights Data Source v3
+"Encrypts the connection. Add a CA certificate below to also verify the server."		DocType: Insights Data Source v3
+"Enqueue"		nsights/doctype/insights_table_import_job/insights_table_import_job.js
+"Estimated On"		DocType: Insights Table v3
+"Estimated Row Count"		DocType: Insights Table v3
+"Execution Count"		ights/insights/insights/doctype/insights_table_v3/insights_table_v3.js
+"Execution Failed"		DocType: Insights Query
+"Execution Successful"		DocType: Insights Query
+"Execution Time (seconds)"		DocType: Insights Query
+"Failed Syncs"		ights/insights/insights/doctype/insights_table_v3/insights_table_v3.js
+"Failed to build query"		ights/insights/insights/doctype/insights_query_v3/insights_query_v3.py
+"Failed to parse the SQL column expression: {0}"		sights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py
+"Failed to translate SQL query for Data Store execution"		sights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py
+"Failed to translate SQL query for Data Store execution: {0}"		sights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py
+"FeatherIcon"		s/insights/insights/public/frontend/assets/DataSourceTable-16b55458.js
+"Fiscal Year Start"		DocType: Insights Settings
+"Foreign Key"		DocType: Insights Table Link
+"Foreign Table"		DocType: Insights Table Link
+"Foreign Table Label"		DocType: Insights Table Link
+"Format Option"		DocType: Insights Query Column
+"Frappe Insights"		apps/insights/insights/config/desktop.py
+"Granularity {0} is not supported for Time columns. Supported granularities: {1}"		sights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py
+"Granularity {0} is not supported for {1} columns. Supported granularities: {2}"		sights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py
+"HTTP Headers"		DocType: Insights Data Source v3
+"Host"		DocType: Insights Data Source
+"Import Job"		DocType: Insights Table Import Log
+"Import Query"		DocType: Insights Table Import Log
+"Import job has been queued"		ights/insights/insights/doctype/insights_table_v3/insights_table_v3.js
+"Import to Warehouse"		ights/insights/insights/doctype/insights_table_v3/insights_table_v3.js
+"Imported Checksum"		DocType: Insights Workbook
+"Imported Version"		DocType: Insights Workbook
+"Incremental"		DocType: Insights Table v3
+"Input"		s/insights/insights/public/frontend/assets/DataSourceTable-16b55458.js
+"Insights"		DocType: Insights Alert
+"Insights Admin"		DocType: Insights Alert
+"Insights Alert"		DocType: Insights Alert
+"Insights Chart"		DocType: Insights Chart
+"Insights Chart v3"		DocType: Insights Chart v3
+"Insights Dashboard"		DocType: Insights Dashboard
+"Insights Dashboard Chart v3"		DocType: Insights Dashboard Chart v3
+"Insights Dashboard Item"		DocType: Insights Dashboard Item
+"Insights Dashboard v3"		DocType: Insights Dashboard v3
+"Insights Data Source"		DocType: Insights Data Source
+"Insights Data Source v3"		DocType: Insights Data Source v3
+"Insights Folder"		DocType: Insights Folder
+"Insights Folder {0} not found"		apps/insights/insights/api/workbooks.py
+"Insights Notebook"		DocType: Insights Notebook
+"Insights Notebook Page"		DocType: Insights Notebook Page
+"Insights Query"		DocType: Insights Query
+"Insights Query Chart"		DocType: Insights Query Chart
+"Insights Query Column"		DocType: Insights Query Column
+"Insights Query Execution Log"		DocType: Insights Query Execution Log
+"Insights Query Reference"		DocType: Insights Query Reference
+"Insights Query Result"		DocType: Insights Query Result
+"Insights Query Table"		DocType: Insights Query Table
+"Insights Query Transform"		DocType: Insights Query Transform
+"Insights Query Variable"		DocType: Insights Query Variable
+"Insights Query v3"		DocType: Insights Query v3
+"Insights Resource Permission"		DocType: Insights Resource Permission
+"Insights Secret Key"		DocType: Insights Secret Key
+"Insights Settings"		DocType: Insights Settings
+"Insights Table"		DocType: Insights Table
+"Insights Table Column"		DocType: Insights Table Column
+"Insights Table Import"		DocType: Insights Table Import
+"Insights Table Import Job"		DocType: Insights Table Import Job
+"Insights Table Import Log"		DocType: Insights Table Import Log
+"Insights Table Link"		DocType: Insights Table Link
+"Insights Table Link v3"		DocType: Insights Table Link v3
+"Insights Table v3"		DocType: Insights Table v3
+"Insights Team"		DocType: Insights Team
+"Insights Team Member"		DocType: Insights Team Member
+"Insights User"		DocType: Insights Alert
+"Insights User Invitation"		DocType: Insights User Invitation
+"Insights Workbook"		DocType: Insights Workbook
+"Integer"		DocType: Insights Table Column
+"Interactive queries are cancelled after this many seconds. Applies to new connections and to live (non-data-store) queries; background imports are exempt."		DocType: Insights Settings
+"Invalid SQL Query"		sights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py
+"Is Assisted Query"		DocType: Insights Query
+"Is Builder Query"		DocType: Insights Query v3
+"Is DuckLake"		DocType: Insights Data Source v3
+"Is Expanded"		DocType: Insights Folder
+"Is Expression"		DocType: Insights Query Column
+"Is Frappe Database"		DocType: Insights Data Source v3
+"Is Native Query"		DocType: Insights Query
+"Is Query Based"		DocType: Insights Table
+"Is Saved as Table"		DocType: Insights Query
+"Is Script Query"		DocType: Insights Query
+"Is Site Database"		DocType: Insights Data Source v3
+"Join condition is not valid"		sights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py
+"Join type {0} is not supported"		sights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py
+"Key Hash"		DocType: Insights User Invitation
+"Last Executed On"		DocType: Insights Query
+"Last Import Duration"		ights/insights/insights/doctype/insights_table_v3/insights_table_v3.js
+"Last Import Rows"		ights/insights/insights/doctype/insights_table_v3/insights_table_v3.js
+"Last Log"		DocType: Insights Table Import Job
+"Last Status"		DocType: Insights Table Import Job
+"Last Sync Bookmark"		DocType: Insights Table v3
+"Last synced cursor value (set automatically)"		DocType: Insights Table v3
+"Left Column"		DocType: Insights Table Link v3
+"Left Table"		DocType: Insights Table Link v3
+"Legacy"		DocType: Insights Settings
+"Linked Charts"		DocType: Insights Dashboard v3
+"LoadingIndicator"		apps/insights/insights/public/frontend/assets/NotebookPage-635ecd47.js
+"Long Int"		DocType: Insights Table Column
+"MariaDB"		DocType: Insights Data Source
+"Mark as Failed"		nsights/doctype/insights_table_import_log/insights_table_import_log.js
+"Max Execution Time (Seconds)"		DocType: Insights Settings
+"Max Memory Usage"		DocType: Insights Settings
+"Max Records To Sync"		DocType: Insights Settings
+"Memory Limit (MB)"		DocType: Insights Table Import Log
+"Migrate at most {0} dashboards at a time, not {1}"		apps/insights/insights/api/v2_migration.py
+"Multiple SQL statements are not supported for native queries"		sights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py
+"N:1"		DocType: Insights Table Link
+"N:N"		DocType: Insights Table Link
+"Name at least one dashboard"		apps/insights/insights/api/v2_migration.py
+"No v2 dashboard answers to this name"		apps/insights/insights/api/v2_migration.py
+"Not an Insights user"		apps/insights/insights/api/workbooks.py
+"Notebook"		DocType: Insights Notebook Page
+"Old Name"		DocType: Insights Chart v3
+"Onboarding Complete"		DocType: Insights Settings
+"Optional. PEM certificate of the authority that signed the database server's certificate. With one, Insights checks that the server is who it says it is. Without one, the connection is encrypted but the server is not checked."		DocType: Insights Data Source v3
+"Overwrite"		DocType: Insights Table Import
+"Parquet File"		DocType: Insights Table Import Log
+"Pending Execution"		DocType: Insights Query
+"Persistent state storage for the script"		DocType: Insights Table Import Job
+"Popover"		s/insights/insights/public/frontend/assets/DataSourceTable-16b55458.js
+"Position & Size"		DocType: Insights Dashboard Item
+"PostgreSQL"		DocType: Insights Data Source
+"Primary Key"		DocType: Insights Table Link
+"Primary Key Column"		DocType: Insights Table v3
+"Public Key"		DocType: Insights Chart
+"Query Result Limit"		DocType: Insights Settings
+"REST API"		DocType: Insights Data Source v3
+"Referenced Query"		DocType: Insights Query Reference
+"Referencing Queries"		ights/insights/insights/doctype/insights_table_v3/insights_table_v3.js
+"Rename the alias {0}: it is the full name of a table the query reads"		apps/insights/insights/insights/query_utils.py
+"Resource Type"		DocType: Insights Resource Permission
+"Result Row Count"		DocType: Insights Query
+"Results"		DocType: Insights Query Result
+"Results Row Count"		DocType: Insights Query Result
+"Right Column"		DocType: Insights Table Link v3
+"Right Table"		DocType: Insights Table Link v3
+"Row Limit"		DocType: Insights Table Import Log
+"Row Size (KB)"		DocType: Insights Table Import Log
+"Rows Imported"		DocType: Insights Table Import Log
+"Run {0} of {1}"		nsights/doctype/insights_table_import_job/insights_table_import_job.js
+"SHA-256 of the key mailed to the invitee. The key itself is not stored."		DocType: Insights User Invitation
+"SQL query must start with a SELECT or WITH statement"		sights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py
+"SQLite"		DocType: Insights Data Source
+"Schedule (Cron)"		DocType: Insights Table Import Job
+"Schema"		DocType: Insights Data Source v3
+"Script Log"		DocType: Insights Query
+"Secrets"		DocType: Insights Table Import Job
+"Send Alert"		ps/insights/insights/insights/doctype/insights_alert/insights_alert.js
+"Sending Alert..."		ps/insights/insights/insights/doctype/insights_alert/insights_alert.js
+"Share Link"		DocType: Insights Dashboard v3
+"Site Database"		DocType: Insights Data Source
+"Stable key used to identify the latest version of each logical row during incremental upserts."		DocType: Insights Table v3
+"Start importing rows from this datetime onward (used on first sync only)"		DocType: Insights Table v3
+"Starting..."		nsights/doctype/insights_table_import_job/insights_table_import_job.js
+"State (JSON)"		DocType: Insights Table Import Job
+"Statistics — {0}"		ights/insights/insights/doctype/insights_table_v3/insights_table_v3.js
+"Stops members from finding each other by name or email when sharing. Turn this on for a site where anyone can sign up."		DocType: Insights Settings
+"Stored"		DocType: Insights Query
+"Stored procedures are not supported with Data Store for native queries"		sights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py
+"String"		DocType: Insights Table Column
+"Sync From"		DocType: Insights Table v3
+"Sync Mode"		DocType: Insights Table v3
+"Sync Strategy"		DocType: Insights Table v3
+"Table Label"		DocType: Insights Query Column
+"Table Name"		DocType: Insights Query Reference
+"Table Restrictions"		DocType: Insights Resource Permission
+"Table names with a dot are not supported for native queries: {0}"		sights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py
+"Table or Query not found"		sights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py
+"Table {0} is not {1}.{2}"		ights/insights/insights/doctype/insights_table_v3/insights_table_v3.py
+"Tables"		DocType: Insights Query
+"Team Name"		DocType: Insights Team
+"Team Permissions"		DocType: Insights Team
+"Telegram"		DocType: Insights Alert
+"Telegram API Token"		DocType: Insights Settings
+"Telegram Chat ID"		DocType: Insights Alert
+"Temporal column used to detect rows that changed since the last sync. Use <b>modified</b> for mutable tables and <b>creation</b> for append-only tables."		DocType: Insights Table v3
+"The migration finished without creating a dashboard"		apps/insights/insights/api/v2_migration.py
+"The scan could not be built. Check the error log."		apps/insights/insights/api/v2_migration.py
+"This column is not available as a filter on this dashboard"		sights/insights/doctype/insights_dashboard_v3/insights_dashboard_v3.py
+"This content does not name a user to run as."		apps/insights/insights/permission_user.py
+"This will delete all warehouse data for <b>{0}</b> and reset the sync bookmark. Are you sure?"		ights/insights/insights/doctype/insights_table_v3/insights_table_v3.js
+"Time Taken (Seconds)"		DocType: Insights Query Execution Log
+"Too many duplicate columns"		sights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py
+"Total Sync Time"		ights/insights/insights/doctype/insights_table_v3/insights_table_v3.js
+"Total Syncs"		ights/insights/insights/doctype/insights_table_v3/insights_table_v3.js
+"Transform"		DocType: Insights Query
+"Transforms"		DocType: Insights Query
+"Transpose"		DocType: Insights Query Transform
+"Unpivot"		DocType: Insights Query Transform
+"Unsupported Granularity"		sights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py
+"Unsupported SQL Query"		apps/insights/insights/insights/query_utils.py
+"Update or Insert"		DocType: Insights Table v3
+"Usage"		ights/insights/insights/doctype/insights_table_v3/insights_table_v3.js
+"Use Live Connection"		DocType: Insights Query v3
+"Variable Value"		DocType: Insights Query Variable
+"Vertical Compact Layout"		DocType: Insights Dashboard v3
+"Warehouse data cleared"		ights/insights/insights/doctype/insights_table_v3/insights_table_v3.js
+"Week Starts On"		DocType: Insights Settings
+"Workbook"		DocType: Insights Chart v3
+"Workbook template {0} does not exist"		apps/insights/insights/api/templates.py
+"Workbook template {0} requires apps that are not installed: {1}"		apps/insights/insights/api/templates.py
+"You do not have access to a query this one references"		apps/insights/insights/permissions.py
+"You do not have access to one of the charts on this dashboard"		apps/insights/insights/permissions.py
+"You do not have access to the query this chart is built on"		apps/insights/insights/permissions.py
+"You do not have permission to access this resource"		apps/insights/insights/decorators.py
+"You do not have permission to modify this workbook"		apps/insights/insights/api/workbooks.py
+"You do not have permission to share this chart"		ights/insights/insights/doctype/insights_chart_v3/insights_chart_v3.py
+"You do not have permission to share this workbook"		apps/insights/insights/api/workbooks.py
+"Your role does not have the export permission for queries. Contact your administrator."		ights/insights/insights/doctype/insights_query_v3/insights_query_v3.py
+"update:modelValue"		end/assets/ColorPicker.vue_vue_type_script_setup_true_lang-1baee3ef.js
+"{0} could name more than one table"		apps/insights/insights/insights/query_utils.py
+"{0} is not a movable item type"		apps/insights/insights/api/workbooks.py
+"{0} is not a sort order"		apps/insights/insights/api/workbooks.py
+"{0} is not a workbook item type"		apps/insights/insights/api/workbooks.py
+"{0} is not in a schema this data source reads"		sights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py
+"{0} is not the name of a {1}"		apps/insights/insights/api/workbooks.py
+"{0} {1} does not belong to this workbook"		apps/insights/insights/api/workbooks.py

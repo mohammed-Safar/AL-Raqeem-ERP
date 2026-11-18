@@ -95,8 +95,8 @@ try:
     allowed_emp = "open-positions" in DeskViews.get_allowed_pages(user=emp)
     allowed_hr = "open-positions" in DeskViews.get_allowed_pages(user=hr)
     ok("page allowed for HR, not for Employee (sidebar hides the link)", allowed_hr and not allowed_emp, (allowed_hr, allowed_emp))
-    # sidebar link in Employee Affairs > Recruitment
-    items = frappe.get_all("Sidebar Item", filters={"parent": "Employee Affairs", "parenttype": "Sidebar"},
+    # sidebar link in Human Resources > Recruitment
+    items = frappe.get_all("Sidebar Item", filters={"parent": "Human Resources", "parenttype": "Sidebar"},
         fields=["label", "link_type", "link_to", "type", "idx", "child"], order_by="idx asc")
     sec = next((i for i in items if i.type == "Section Break" and i.label == "Recruitment"), None)
     link = next((i for i in items if i.link_to == "open-positions"), None)

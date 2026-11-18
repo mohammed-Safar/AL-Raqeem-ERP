@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): an employee's monthly salary, valid from a date (a raise = a new record
+# RAQEEM HR (Human Resources): an employee's monthly salary, valid from a date (a raise = a new record
 # with a later date). Used by every salary slip from that date on (raqeem_hr/payroll.py).
 import frappe
 from frappe import _

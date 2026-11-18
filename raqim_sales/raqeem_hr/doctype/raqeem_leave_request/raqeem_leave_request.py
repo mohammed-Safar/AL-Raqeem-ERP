@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): an employee's leave request and its approval.
+# RAQEEM HR (Human Resources): an employee's leave request and its approval.
 #
 # Flow: the employee (or HR) saves the request -> status Open, shared with the approver, who gets a
 # notification -> the approver (or an HR Manager) presses Approve or Reject (decide() below), which

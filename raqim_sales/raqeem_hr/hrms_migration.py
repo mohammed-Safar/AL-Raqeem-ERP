@@ -1,6 +1,6 @@
-"""Copy the HRMS app's leave and salary data into Employee Affairs (our own HR DocTypes).
+"""Copy the HRMS app's leave and salary data into Human Resources (our own HR DocTypes).
 
-    HRMS                          ->  Employee Affairs
+    HRMS                          ->  Human Resources
     Leave Type                    ->  Raqeem Leave Type        (matched by name / alias, else created)
     Leave Allocation (submitted)  ->  Raqeem Leave Allocation  (submitted; HRMS's carried-forward days kept)
     Leave Application             ->  Raqeem Leave Request     (Approved / Rejected = submitted, Open = draft;
@@ -246,7 +246,7 @@ class Migration:
 				self.add("Leave Allocation", a.name, "error", note=_("leave type {0} was not copied").format(a.leave_type))
 				continue
 			if cint(frappe.db.get_value("Raqeem Leave Type", lt, "is_compensatory")):
-				self.add("Leave Allocation", a.name, "skip", note=_("compensatory leave is earned through Compensatory Requests in Employee Affairs; enter the open balance there"))
+				self.add("Leave Allocation", a.name, "skip", note=_("compensatory leave is earned through Compensatory Requests in Human Resources; enter the open balance there"))
 				continue
 			other = frappe.db.get_value("Raqeem Leave Allocation", {"employee": a.employee, "leave_type": lt, "docstatus": ["<", 2],
 				"from_date": ["<=", a.to_date], "to_date": [">=", a.from_date]}, "name")
@@ -420,7 +420,7 @@ class Migration:
 
 
 def run(dry_run=1, company=None, leave_type_map=None, component_map=None, quiet=0):
-	"""Copy HRMS leave + salary data into Employee Affairs. dry_run=1 (default): report only."""
+	"""Copy HRMS leave + salary data into Human Resources. dry_run=1 (default): report only."""
 	if frappe.session.user != "Administrator" and "System Manager" not in frappe.get_roles():
 		frappe.throw(_("Only a System Manager can run the HRMS migration"), frappe.PermissionError)
 	dry_run = bool(cint(dry_run))

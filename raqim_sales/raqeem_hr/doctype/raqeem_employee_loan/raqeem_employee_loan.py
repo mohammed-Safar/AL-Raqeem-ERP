@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): an employee loan (قرض) repaid in monthly instalments from the salary.
+# RAQEEM HR (Human Resources): an employee loan (قرض) repaid in monthly instalments from the salary.
 # Schedule, payout, settlement and balance: raqeem_hr/loans.py; approval: raqeem_hr/approval.py.
 import frappe
 from frappe import _

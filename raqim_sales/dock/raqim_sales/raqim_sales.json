@@ -9,25 +9,17 @@
    "added": 0,
    "hidden": 0,
    "icon": "analytics-soft",
+   "link_to": "Analytics",
    "link_type": "Sidebar",
-   "title": "Analytics",
-   "link_to": "Analytics"
-  },
-  {
-   "added": 0,
-   "hidden": 0,
-   "icon": "portal-user-soft",
-   "link_type": "URL",
-   "title": "My Affairs",
-   "url": "/desk/my-affairs"
+   "title": "Analytics"
   },
   {
    "added": 0,
    "hidden": 0,
    "icon": "users-soft",
-   "link_to": "Employee Affairs",
+   "link_to": "Human Resources",
    "link_type": "Sidebar",
-   "title": "Employee Affairs"
+   "title": "Human Resources"
   },
   {
    "added": 0,
@@ -38,7 +30,7 @@
    "url": "/desk/print-designer"
   }
  ],
- "modified": "2026-11-15 12:00:00.000000",
+ "modified": "2026-11-17 21:07:07.740915",
  "modified_by": "Administrator",
  "mount_on": "erpnext",
  "name": "raqim_sales",

@@ -1,4 +1,4 @@
-// RAQEEM HR (Employee Affairs): leave allocation form
+// RAQEEM HR (Human Resources): leave allocation form
 frappe.ui.form.on("Raqeem Leave Allocation", {
 	setup(frm) {
 		frm.set_query("leave_type", () => ({ filters: { disabled: 0 } }));

@@ -5,7 +5,7 @@
                    (New / Screening / Interview / Offer / Hired — each opens that list), days open,
                    the oldest opening flagged, "open too long" and "past closing date" warnings
    Data: raqim_sales.raqeem_hr.recruitment.get_open_positions.
-   ROLLBACK: delete this page folder and its sidebar link (Employee Affairs › Recruitment). */
+   ROLLBACK: delete this page folder and its sidebar link (Human Resources › Recruitment). */
 
 frappe.pages["open-positions"].on_page_load = function (wrapper) {
 	const page = frappe.ui.make_app_page({ parent: wrapper, title: __("Open Positions"), single_column: true });

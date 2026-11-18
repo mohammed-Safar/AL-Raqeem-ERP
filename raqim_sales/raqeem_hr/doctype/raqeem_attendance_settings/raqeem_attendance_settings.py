@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): all attendance rules of the company (see raqeem_hr/attendance.py).
+# RAQEEM HR (Human Resources): all attendance rules of the company (see raqeem_hr/attendance.py).
 import frappe
 from frappe import _
 from frappe.model.document import Document

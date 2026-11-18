@@ -1,4 +1,4 @@
-/* RAQEEM HR (Employee Affairs) on the ERPNext Employee form: "Leave" buttons —
+/* RAQEEM HR (Human Resources) on the ERPNext Employee form: "Leave" buttons —
    the employee's leave balance per type, and a new leave request for them; "Salary" (salary, slips,
    bonus / penalty, loans) and "Lifecycle" (checklists, promotion, transfer, exit, end-of-service estimate).
    Server side: raqim_sales/raqeem_hr/leave.py. ROLLBACK: remove "Employee" from doctype_js in hooks.py. */

@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): tasks for onboarding a new employee or for an exit (raqeem_hr/lifecycle.py).
+# RAQEEM HR (Human Resources): tasks for onboarding a new employee or for an exit (raqeem_hr/lifecycle.py).
 import frappe
 from frappe import _
 from frappe.model.document import Document

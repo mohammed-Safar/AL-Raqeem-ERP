@@ -14,12 +14,12 @@
 	function size() {
 		if (!st.frame || !st.frame.isConnected) return;
 		var top = st.frame.getBoundingClientRect().top;
-		st.frame.style.height = Math.max(320, window.innerHeight - Math.max(0, top)) + "px";
+		st.frame.style.height = Math.max(320, window.innerHeight - Math.max(0, top) - 8) + "px";
 	}
 	window.rqBanking = {
 		mount: function (page) {
 			var f = document.createElement("iframe");
-			f.className = "rq-banking-frame"; f.title = "Banking";
+			f.className = "rq-banking-frame"; f.title = __("Banking");
 			$(page.body || page.main || page.wrapper).empty().append(f);
 			st.frame = f; window.addEventListener("resize", size);
 		},
@@ -39,8 +39,8 @@
 	}, true);
 	var css = document.createElement("style");
 	css.textContent =
-		".rq-banking-page .page-head, .rq-banking-page .page-footer { display: none !important; }" +
-		".rq-banking-page .container, .rq-banking-page .page-body, .rq-banking-page .layout-main," +
+		".rq-banking-page .page-footer { display: none !important; }" +
+		".rq-banking-page .page-body, .rq-banking-page .layout-main," +
 		".rq-banking-page .layout-main-section-wrapper, .rq-banking-page .layout-main-section {" +
 		" max-width: none !important; width: 100% !important; margin: 0 !important; padding: 0 !important;" +
 		" border: 0 !important; box-shadow: none !important; background: none !important; }" +

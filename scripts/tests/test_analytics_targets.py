@@ -50,7 +50,7 @@ try:
         S.mark_money("o_stock_value", "stock_value")
         ok("a user's own choice (currency 0) is not overwritten", json.loads(frappe.db.get_value("Analytics Chart", name, "config"))["measures"][0]["currency"] == 0)
 
-    # ---------------------------------------------------------------- own sidebar (like Employee Affairs)
+    # ---------------------------------------------------------------- own sidebar (like Human Resources)
     sb = frappe.get_doc("Sidebar", "Analytics") if frappe.db.exists("Sidebar", "Analytics") else None
     ok("Analytics sidebar exists (module Analytics, from the app)", bool(sb) and sb.module == "Analytics" and sb.app == "raqim_sales")
     if sb:

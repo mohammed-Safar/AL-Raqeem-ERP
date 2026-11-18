@@ -806,6 +806,36 @@ header.navbar, .navbar {
    top:0 behind it (it was fully hidden whenever you scrolled up). */
 .frappe-list .list-row-container:first-child {
     top: calc(var(--page-head-height, 48px) + 1px) !important;
+    /* must stay sticky: the "position: relative" on every row below would otherwise win, and
+       then this top offset pushed the header down over the first row (2026-11-17 fix) */
+    position: sticky !important;
+    z-index: 3 !important;
+}
+/* Frappe 16: the rows scroll inside .result-container, which already starts below the page
+   head, so the header sticks at its top. (top: 49px there pushed it down over the first row.) */
+.frappe-list .result-container .list-row-container:first-child {
+    top: 0 !important;
+    overflow: visible !important;   /* lets the cover below reach past its edge */
+}
+/* the label bar's parts were taller (40px) than the bar (30px) and spilled out below it */
+.frappe-list .list-row-head { overflow: hidden !important; }
+.frappe-list .list-row-head > .level-left,
+.frappe-list .list-row-head > .level-right { height: auto !important; min-height: 0 !important; align-self: stretch; }
+/* cover the gap around the stuck label bar (page colour) so scrolled rows don't show between
+   it and the next row; the bar is above the rows, so its own shadow does the covering */
+.frappe-list .result-container .list-row-container:first-child > .list-row-head {
+    position: relative;
+    z-index: 4;
+    box-shadow: 0 0 0 6px var(--rq-bg), 0 12px 0 6px var(--rq-bg) !important;
+}
+/* the column-label row is not a record: no card box of its own (the label bar inside is the
+   box), no hover lift / glow */
+.frappe-list .list-row-container:first-child,
+.frappe-list .list-row-container:first-child:hover {
+    transform: none !important;
+    background: transparent !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
 }
 .frappe-list .list-row-head .list-row-col,
 .frappe-list .list-row-head .list-subject {
@@ -855,10 +885,11 @@ header.navbar, .navbar {
     border: 1px solid var(--rq-line) !important;
     border-radius: var(--rq-r-lg) !important;
     box-shadow: var(--rq-shadow) !important;
-    /* clip (not hidden): overflow:hidden turns .form-page into a scroll container, so the
-       sticky .form-tabs-list measured its top:48px inside the card instead of the scrolling
-       .main-section - it was pushed ~48px down and covered the first field labels and never stuck */
-    overflow: clip;
+    /* NOT clipped (2026-11-17): overflow:clip cut off every dropdown that opens below the card
+       (link suggestions in the last table: Item Code, Warehouse, UOM ...). Never overflow:hidden
+       either - that made the card a scroll container and broke the sticky tabs. The rounded top
+       corners now come from the sheet header itself (raqeem_form.css). */
+    overflow: visible;
 }
 .form-section.card-section, .form-dashboard-section {
     border-bottom: 1px solid var(--rq-line) !important;
@@ -888,6 +919,12 @@ header.navbar, .navbar {
 .form-dashboard-section .section-head { font-size: .95rem !important; }
 /* the read-only value of a field */
 .control-value, .like-disabled-input, .static-area { color: var(--rq-text) !important; }
+/* links inside form tables (Item, Warehouse, UOM ... values) look like every other cell, not in
+   the theme colour; they only show an underline on hover (2026-11-17, user's choice) */
+.form-grid .grid-row a, .form-grid .grid-row .static-area a, .form-grid .grid-row .control-value a {
+    color: inherit !important;
+}
+.form-grid .grid-row a:hover { color: inherit !important; text-decoration: underline; text-underline-offset: 3px; }
 .frappe-control[data-fieldtype="Currency"] .control-value,
 .frappe-control[data-fieldtype="Float"] .control-value { font-variant-numeric: tabular-nums; }
 .form-tabs-list {

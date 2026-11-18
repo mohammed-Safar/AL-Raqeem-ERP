@@ -1,4 +1,4 @@
-"""RAQEEM HR (Employee Affairs) — expense claims and salary advances, on ERPNext alone (no HRMS).
+"""RAQEEM HR (Human Resources) — expense claims and salary advances, on ERPNext alone (no HRMS).
 
 Accounts (Raqeem Payroll Settings, filled by setup.setup_expense_accounts):
   Employee Advances      (asset)     advances paid and not yet repaid

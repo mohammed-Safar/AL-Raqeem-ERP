@@ -1,4 +1,4 @@
-// RAQEEM HR (Employee Affairs): employee salary form — earnings and fixed deductions only
+// RAQEEM HR (Human Resources): employee salary form — earnings and fixed deductions only
 frappe.ui.form.on("Raqeem Employee Salary", {
 	setup(frm) {
 		frm.set_query("component", "earnings", () => ({ filters: { component_type: "Earning", disabled: 0 } }));

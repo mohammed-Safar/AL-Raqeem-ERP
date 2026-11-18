@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): unused leave days paid out with a salary. The days leave the balance
+# RAQEEM HR (Human Resources): unused leave days paid out with a salary. The days leave the balance
 # (leave.used_days counts approved encashments); the salary slip of the month of encashment_date adds
 # the amount as an earning (payroll.py). One day's pay = basic (or gross) monthly salary / 30.
 import frappe

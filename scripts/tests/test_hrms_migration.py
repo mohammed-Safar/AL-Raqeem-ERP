@@ -1,4 +1,4 @@
-"""HRMS -> Employee Affairs data migration (rolled back). ./fr.sh test_hrms_migration.py
+"""HRMS -> Human Resources data migration (rolled back). ./fr.sh test_hrms_migration.py
 HRMS records are made here with raw inserts (no HRMS validation), the migration runs dry and for real,
 and every HRMS table is compared byte for byte before / after: HRMS must never change."""
 exec(open(__import__('os').path.expanduser('~/')+'bench2/apps/raqim_sales/scripts/tests/boot.py').read())

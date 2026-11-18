@@ -1,4 +1,4 @@
-"""RAQEEM HR (Employee Affairs) — attendance from a fingerprint device, on ERPNext alone (no HRMS).
+"""RAQEEM HR (Human Resources) — attendance from a fingerprint device, on ERPNext alone (no HRMS).
 
 Flow:
   fingerprints  -> Raqeem Checkin (from the device sync, an imported file, or typed by HR)

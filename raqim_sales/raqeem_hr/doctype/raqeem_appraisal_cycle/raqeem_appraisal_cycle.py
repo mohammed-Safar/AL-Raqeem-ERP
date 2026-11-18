@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): an appraisal round (raqeem_hr/performance.py: create_appraisals).
+# RAQEEM HR (Human Resources): an appraisal round (raqeem_hr/performance.py: create_appraisals).
 import frappe
 from frappe import _
 from frappe.model.document import Document

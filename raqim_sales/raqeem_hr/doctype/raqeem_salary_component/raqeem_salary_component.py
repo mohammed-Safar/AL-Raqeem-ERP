@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): one line of a salary (basic, housing, advance repayment ...).
+# RAQEEM HR (Human Resources): one line of a salary (basic, housing, advance repayment ...).
 # Statutory ones (social security, income tax, solidarity ...) are made by raqeem_hr/setup.py and
 # calculated in every slip (raqeem_hr/payroll.py).
 import frappe

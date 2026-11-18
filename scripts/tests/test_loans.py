@@ -4,7 +4,7 @@ exec(open(__import__('os').path.expanduser('~/')+'bench2/apps/raqim_sales/script
 import traceback
 frappe.db.commit = lambda *a, **k: None
 frappe.msgprint = lambda m=None, *a, **k: (_ for _ in ()).throw(frappe.ValidationError(m)) if k.get('raise_exception') else None
-from raqim_sales.raqeem_hr import payroll as P, loans as L, self_service as SS
+from raqim_sales.raqeem_hr import payroll as P, loans as L
 from raqim_sales.raqeem_hr.approval import decide
 res = []
 def ok(l, c, extra=""):
@@ -69,7 +69,6 @@ try:
         ok("employee cannot ask for a colleague", False)
     except frappe.PermissionError: ok("employee cannot ask for a colleague", True)
     frappe.set_user(u_mgr)
-    ok("manager sees it in My Affairs approvals", any(r["name"] == loan.name for r in SS.pending_approvals(u_mgr)))
     decide("Raqeem Employee Loan", loan.name, "Approved")
     frappe.set_user("Administrator"); loan.reload()
     ok("approved: Not Paid Out, balance 0", loan.loan_status == "Not Paid Out" and loan.balance == 0, (loan.loan_status, loan.balance))
@@ -112,15 +111,12 @@ try:
     # ---- cancel the October payroll -> instalment 1 owed again
     run10.reload(); run10.cancel(); loan.reload()
     ok("payroll cancelled: balance 10000, instalment 1 Unpaid", loan.balance == 10000 and loan.schedule[0].status == "Unpaid", (loan.balance, loan.schedule[0].status))
-    # ---- permissions + My Affairs
+    # ---- permissions
     frappe.set_user(u_x)
     ok("a colleague cannot see the loan", loan.name not in frappe.get_list("Raqeem Employee Loan", pluck="name")
         and not frappe.has_permission("Raqeem Employee Loan", "read", doc=loan.name))
     frappe.set_user(u_emp)
     ok("the employee sees own loan", loan.name in frappe.get_list("Raqeem Employee Loan", pluck="name"))
-    mine = SS.get_my_affairs()
-    ok("My Affairs lists the loan with its balance", any(l.name == loan.name and l.balance == 10000 for l in mine.get("loans", [])))
-    ok("My Affairs requests include the loan", any(r["name"] == loan.name for r in mine["requests"]))
     frappe.set_user("Administrator")
     # ---- settle everything -> Repaid, no deduction any more
     L.settle_loan(loan.name, loan.balance, cash); loan.reload()

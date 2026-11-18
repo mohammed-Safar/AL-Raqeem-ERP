@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): one employee's pay for one month. Made and submitted by a
+# RAQEEM HR (Human Resources): one employee's pay for one month. Made and submitted by a
 # Raqeem Payroll Run, which also posts the accounting. Calculation: raqeem_hr/payroll.py.
 import frappe
 from frappe import _

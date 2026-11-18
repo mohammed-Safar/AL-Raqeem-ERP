@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): a one-off salary addition or deduction (bonus, penalty, one-month
+# RAQEEM HR (Human Resources): a one-off salary addition or deduction (bonus, penalty, one-month
 # allowance). Rules: raqeem_hr/additions.py; approval: raqeem_hr/approval.py; paid by raqeem_hr/payroll.py.
 import frappe
 from frappe import _

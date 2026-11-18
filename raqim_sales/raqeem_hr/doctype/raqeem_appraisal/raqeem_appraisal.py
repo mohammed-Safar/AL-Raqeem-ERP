@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): one employee's appraisal in a cycle. Steps, scores and who may change
+# RAQEEM HR (Human Resources): one employee's appraisal in a cycle. Steps, scores and who may change
 # what: raqeem_hr/performance.py. Submitting = the reviewer completes it.
 import frappe
 from frappe import _

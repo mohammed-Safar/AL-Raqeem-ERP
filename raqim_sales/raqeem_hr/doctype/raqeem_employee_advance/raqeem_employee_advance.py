@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): a salary advance (سلفة). Approval: raqeem_hr/approval.py;
+# RAQEEM HR (Human Resources): a salary advance (سلفة). Approval: raqeem_hr/approval.py;
 # payment, repayments and balance: raqeem_hr/expenses.py; salary deductions: raqeem_hr/payroll.py.
 import frappe
 from frappe import _

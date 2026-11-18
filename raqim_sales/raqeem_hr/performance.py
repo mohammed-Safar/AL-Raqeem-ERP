@@ -1,4 +1,4 @@
-"""RAQEEM HR (Employee Affairs) — appraisals (performance reviews), on ERPNext alone (no HRMS).
+"""RAQEEM HR (Human Resources) — appraisals (performance reviews), on ERPNext alone (no HRMS).
 
   Raqeem Appraisal Template  criteria with weights (total 100 %)
   Raqeem Appraisal Cycle     a period + template + scope; "Create Appraisals" makes one per active employee

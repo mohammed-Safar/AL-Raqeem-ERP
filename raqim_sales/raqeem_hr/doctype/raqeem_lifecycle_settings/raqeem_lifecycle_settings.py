@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): rules for onboarding, exits and the end-of-service gratuity
+# RAQEEM HR (Human Resources): rules for onboarding, exits and the end-of-service gratuity
 # (raqeem_hr/lifecycle.py, raqeem_hr/gratuity.py).
 import frappe
 from frappe import _

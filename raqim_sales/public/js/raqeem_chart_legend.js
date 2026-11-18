@@ -102,10 +102,40 @@
 		return true;
 	}
 
+	// Tooltip numbers: some charts (e.g. Stock Value by Item Group) have no fieldtype, so Frappe
+	// showed raw numbers like 2000000000. Any value that comes out as a bare number is shown with
+	// the site's number format (2,000,000,000 / 1,234.50). Already formatted text is kept.
+	const RAW_NUM = /^\s*-?\d+(\.\d+)?\s*$/;
+	function nice_number(value) {
+		const n = Number(value);
+		if (!isFinite(n)) return value;
+		const decimals = Number.isInteger(n) ? 0 : Math.min((String(value).split(".")[1] || "").length, 3);
+		try {
+			return window.format_number ? format_number(n, null, decimals) : n.toLocaleString(undefined, { maximumFractionDigits: decimals });
+		} catch (e) {
+			return value;
+		}
+	}
+	function with_nice_tooltips(options) {
+		const tip = Object.assign({}, options.tooltipOptions || {});
+		const own = tip.formatTooltipY;
+		tip.formatTooltipY = function (value) {
+			let out = value;
+			try {
+				out = own ? own.apply(this, arguments) : value;
+			} catch (e) {
+				out = value;
+			}
+			return out != null && RAW_NUM.test(String(out)) ? nice_number(out) : out;
+		};
+		options.tooltipOptions = tip;
+	}
+
 	const Original = frappe.Chart;
 	function RaqeemChart(parent, options) {
 		options = Object.assign({}, options || {});
 		options.truncateLegends = 0;
+		if (options.type !== "heatmap") with_nice_tooltips(options);
 		const chart = new Original(parent, options);
 		if (!patched) {
 			try {

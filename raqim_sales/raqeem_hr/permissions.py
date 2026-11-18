@@ -1,4 +1,4 @@
-"""RAQEEM HR (Employee Affairs) — who sees which employee's records.
+"""RAQEEM HR (Human Resources) — who sees which employee's records.
 
 The Employee role may read salary slips, attendance, requests ... but only its OWN. ERPNext's user
 permission on Employee (made when an employee is linked to a user with "Create User Permission")

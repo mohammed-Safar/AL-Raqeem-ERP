@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): one fingerprint (from the device, an imported file, or typed by HR).
+# RAQEEM HR (Human Resources): one fingerprint (from the device, an imported file, or typed by HR).
 # The hourly run turns fingerprints into Raqeem Attendance (raqeem_hr/attendance.py).
 import frappe
 from frappe import _

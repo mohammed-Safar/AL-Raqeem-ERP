@@ -1,4 +1,4 @@
-// RAQEEM HR (Employee Affairs): leave request form. Shows the days and the balance while filling in,
+// RAQEEM HR (Human Resources): leave request form. Shows the days and the balance while filling in,
 // and Approve / Reject buttons for the approver (raqeem_leave_request.py -> decide).
 frappe.ui.form.on("Raqeem Leave Request", {
 	setup(frm) {

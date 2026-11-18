@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): a day off earned by working a weekly day off or an official holiday.
+# RAQEEM HR (Human Resources): a day off earned by working a weekly day off or an official holiday.
 # Approved -> the days count in the compensatory leave type's balance (leave.compensatory_balance) for
 # the leave type's valid days, and the overtime of that day is rejected (the day is repaid once).
 import frappe

@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): dates when leave is not allowed (e.g. stock-taking, year end),
+# RAQEEM HR (Human Resources): dates when leave is not allowed (e.g. stock-taking, year end),
 # for every employee or one company / department / leave type. Checked by Raqeem Leave Request.
 import frappe
 from frappe import _

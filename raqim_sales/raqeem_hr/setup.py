@@ -1,4 +1,4 @@
-"""RAQEEM HR (Employee Affairs) setup, run after every migrate (idempotent):
+"""RAQEEM HR (Human Resources) setup, run after every migrate (idempotent):
 - Employee gets a "Leave Approver (RAQEEM)" field (who approves this person's leave; when empty, the
   user of the employee they report to);
 - starter leave types on a site that has none, matching the policy set up on 2026-11-12:

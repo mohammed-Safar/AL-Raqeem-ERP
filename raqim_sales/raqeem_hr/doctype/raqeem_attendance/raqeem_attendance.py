@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): one employee's attendance on one day.
+# RAQEEM HR (Human Resources): one employee's attendance on one day.
 # Made automatically from fingerprints (source Fingerprint), or by HR (Manual / Bulk / Request).
 # Rules: raqeem_hr/attendance.py. Absent days feed payroll as unpaid days.
 import frappe

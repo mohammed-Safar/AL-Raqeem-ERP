@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): a promotion — new designation (+ department) and optionally a new
+# RAQEEM HR (Human Resources): a promotion — new designation (+ department) and optionally a new
 # salary from a date. Submitted by an HR Manager; applied to the Employee when its date comes.
 # Rules: raqeem_hr/lifecycle.py.
 import frappe

@@ -1,4 +1,4 @@
-"""RAQEEM HR (Employee Affairs) — leave rules shared by the leave DocTypes, the report and the forms.
+"""RAQEEM HR (Human Resources) — leave rules shared by the leave DocTypes, the report and the forms.
 
 Built on ERPNext alone (Employee, Company, Holiday List). It does not use the Frappe HR app.
 

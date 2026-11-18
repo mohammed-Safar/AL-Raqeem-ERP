@@ -1,4 +1,4 @@
-"""RAQEEM HR (Employee Affairs) — the employee lifecycle on ERPNext's Employee (no HRMS):
+"""RAQEEM HR (Human Resources) — the employee lifecycle on ERPNext's Employee (no HRMS):
 
   onboarding   Raqeem Employee Checklist (kind Onboarding) from a Raqeem Checklist Template: tasks with a
                responsible user (or anyone with a role) and a due date counted from the joining date. Made

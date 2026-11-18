@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): the monthly payroll of a company.
+# RAQEEM HR (Human Resources): the monthly payroll of a company.
 #   Calculate     -> one draft salary slip per employee with a salary (raqeem_hr/payroll.py)
 #   Submit        -> submits the slips and posts one Journal Entry
 #   Pay Salaries  -> a Bank / Cash Journal Entry for the total net pay

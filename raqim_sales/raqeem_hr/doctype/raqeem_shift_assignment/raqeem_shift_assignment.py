@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): which shift an employee works from a date (to a date, or until changed).
+# RAQEEM HR (Human Resources): which shift an employee works from a date (to a date, or until changed).
 import frappe
 from frappe import _
 from frappe.model.document import Document

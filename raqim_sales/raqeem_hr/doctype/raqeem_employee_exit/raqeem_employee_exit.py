@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): an employee leaving — resignation (the employee may ask for it),
+# RAQEEM HR (Human Resources): an employee leaving — resignation (the employee may ask for it),
 # termination, end of contract, retirement, death (HR). Approved like every request; on approval the
 # Employee gets the relieving date (attendance and payroll stop after it) and Left after the last
 # working day. Rules: raqeem_hr/lifecycle.py; gratuity: raqeem_hr/gratuity.py.

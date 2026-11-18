@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): appraisal criteria and their weights (raqeem_hr/performance.py).
+# RAQEEM HR (Human Resources): appraisal criteria and their weights (raqeem_hr/performance.py).
 import frappe
 from frappe import _
 from frappe.model.document import Document

@@ -1,6 +1,6 @@
 """Analytics setup, run after every migrate (idempotent): an "Analytics" link (the /desk/analytics
 page) at the end of the main module sidebars, so it is one click away from Accounts, Selling ...
-The page's roles decide who sees the link. Employee Affairs (our own sidebar) has it in its JSON.
+The page's roles decide who sees the link. Human Resources (our own sidebar) has it in its JSON.
 Same approach as cheques_setup / erp_crm: an arrangement the site made itself is kept, the link
 is only appended to it.
 ROLLBACK: remove "raqim_sales.analytics.setup.after_migrate" from after_migrate in hooks.py, then

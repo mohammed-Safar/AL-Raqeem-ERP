@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): a position to fill. Applicant / hired counts: recruitment.update_opening.
+# RAQEEM HR (Human Resources): a position to fill. Applicant / hired counts: recruitment.update_opening.
 import frappe
 from frappe import _
 from frappe.model.document import Document

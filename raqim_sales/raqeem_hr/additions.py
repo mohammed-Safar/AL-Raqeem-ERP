@@ -1,4 +1,4 @@
-"""RAQEEM HR (Employee Affairs) — one-off salary additions and deductions (bonus, penalty, a one-month
+"""RAQEEM HR (Human Resources) — one-off salary additions and deductions (bonus, penalty, a one-month
 allowance ...), Raqeem Salary Addition.
 
 HR enters it (component, amount or days of pay, the month it is paid with, a reason) -> the approver

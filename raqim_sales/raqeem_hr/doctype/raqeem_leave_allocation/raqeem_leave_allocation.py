@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): the leave days an employee has for one leave type in one period.
+# RAQEEM HR (Human Resources): the leave days an employee has for one leave type in one period.
 # Carried-forward days: what was left of the previous period (approved requests only), up to the
 # leave type's maximum. Rules in raqeem_hr/leave.py.
 import frappe

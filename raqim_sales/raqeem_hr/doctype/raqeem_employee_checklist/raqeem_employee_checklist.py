@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): an employee's onboarding or exit checklist. Tasks come from a template;
+# RAQEEM HR (Human Resources): an employee's onboarding or exit checklist. Tasks come from a template;
 # responsible users get it shared and tick their tasks (lifecycle.mark_task). Rules: raqeem_hr/lifecycle.py.
 import frappe
 from frappe import _

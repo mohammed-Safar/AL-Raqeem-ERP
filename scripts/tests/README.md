@@ -13,7 +13,7 @@ and ROLL BACK everything (frappe.db.commit is replaced by a no-op), so no data i
     ./fr.sh test_gratuity.py           # end-of-service gratuity rules, final settlement, accountant confirmation, JE, pay, cancel
     ./fr.sh test_open_positions.py     # HR-only Open Positions: vacancies, filled/unfilled, applicants per stage, days open, oldest, roles
     ./fr.sh test_analytics_extras.py   # Analytics: pivot table, Excel export (chart + dashboard), alerts + scheduled emailed reports
-    ./fr.sh test_hrms_migration.py     # HRMS -> Employee Affairs copy: dry run, real run, run again, HRMS unchanged byte for byte
+    ./fr.sh test_hrms_migration.py     # HRMS -> Human Resources copy: dry run, real run, run again, HRMS unchanged byte for byte
 
 HRMS data migration (not a test; dry run by default, nothing saved):
     ./fr.sh ../migrate_hrms.py         # report only

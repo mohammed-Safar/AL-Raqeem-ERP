@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): the exit interview (why the employee leaves). Submit = completed.
+# RAQEEM HR (Human Resources): the exit interview (why the employee leaves). Submit = completed.
 import frappe
 from frappe import _
 from frappe.model.document import Document

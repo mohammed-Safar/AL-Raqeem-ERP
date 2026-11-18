@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): a kind of leave (annual, sick, unpaid ...). Rules in raqeem_hr/leave.py.
+# RAQEEM HR (Human Resources): a kind of leave (annual, sick, unpaid ...). Rules in raqeem_hr/leave.py.
 import frappe
 from frappe import _
 from frappe.model.document import Document

@@ -1,4 +1,4 @@
-# RAQEEM HR (Employee Affairs): a job offer. Submitted = sent to the applicant; then Accepted /
+# RAQEEM HR (Human Resources): a job offer. Submitted = sent to the applicant; then Accepted /
 # Declined (recruitment.set_offer_answer); "Create Employee" (recruitment.employee_defaults).
 import frappe
 from frappe import _
