@@ -2168,12 +2168,34 @@ body { background-size: 100% 100%, 100% 100% !important; }
 /* page title (Frappe 16: the last breadcrumb is the title) — gradient text */
 .page-head .es-breadcrumbs li:last-child .es-breadcrumbs__label,
 .page-head .page-title .title-text {
-    background: linear-gradient(90deg, var(--rq-strong) 0%, var(--rq-strong) 40%, var(--rq-a-300) 75%, var(--rq-a-500) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* solid colour (user disliked the white-to-gold gradient, 2026-11-18) */
+    background: none;
+    color: var(--rq-strong) !important;
+    -webkit-text-fill-color: var(--rq-strong);
     font-family: var(--rq-font-head) !important;
     font-weight: 800 !important;
+}
+/* title chip: tinted box + thin outline in the theme colour (user's pick "F", 2026-11-19) */
+html body .page-head .es-breadcrumbs li:last-child .es-breadcrumbs__label,
+html body .page-head .page-title .title-text {
+    background: rgba(var(--rq-a-rgb), .13) !important;
+    box-shadow: inset 0 0 0 1px rgba(var(--rq-a-rgb), .38);
+    border-radius: 12px;
+    padding: 0 14px 0 14px !important;
+    padding-inline-start: 24px !important;   /* room for the glowing bar ("C") */
+    color: var(--rq-accent) !important;       /* title text follows the theme colour too */
+    -webkit-text-fill-color: var(--rq-accent) !important;
+    line-height: 1.55 !important;
+    position: relative;
+    top: -4px;                                /* 4px higher, in line with the brand title */
+}
+/* + glowing bar in the theme colour at the start of the chip (user: "add C", 2026-11-19) */
+html body .page-head .es-breadcrumbs li:last-child .es-breadcrumbs__label::before,
+html body .page-head .page-title .title-text::before {
+    content: ""; position: absolute; inset-inline-start: 10px; top: 24%; bottom: 24%;
+    width: 4px; border-radius: 4px;
+    background: linear-gradient(180deg, var(--rq-a-300), var(--rq-a-600));
+    box-shadow: 0 0 10px rgba(var(--rq-a-rgb), .6);
 }
 .page-head .es-breadcrumbs li:last-child .es-breadcrumbs__item { font-size: 1.35rem !important; }
 .page-head .es-breadcrumbs__item { color: var(--rq-text-3) !important; border-radius: var(--rq-r-sm); }
@@ -2353,11 +2375,6 @@ html[dir="rtl"] .body-sidebar .section-break .sidebar-item-label { font-size: va
 html[dir="rtl"] .widget.links-widget-box .link-item { font-size: var(--text-base); }
 html[dir="rtl"] .widget.number-widget-box .widget-title { font-size: .9rem !important; }
 
-/* gradient titles: start white at the right, where Arabic text begins */
-html[dir="rtl"] .page-head .es-breadcrumbs li:last-child .es-breadcrumbs__label,
-html[dir="rtl"] .page-head .page-title .title-text {
-    background-image: linear-gradient(270deg, var(--rq-strong) 0%, var(--rq-strong) 40%, var(--rq-a-300) 75%, var(--rq-a-500) 100%);
-}
 
 /* button light-sweep runs right-to-left */
 html[dir="rtl"] .btn-primary::after,
