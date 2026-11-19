@@ -471,3 +471,12 @@ html[data-theme="dark"] .rq-tile-note.tone-warn { color: #fbbf24; }
     .rq-home-grid { gap: var(--rq-sp-3) var(--rq-sp-1); }
     .rq-tile-label { font-size: .85rem; }
 }
+
+/* ---- Home background texture: big hexagons (2.5x the page ones; was 5x), theme colour, 15% (2026-11-19)
+   isolation makes the z-index:-1 layer sit above .rq-home's own background but below the tiles.
+   Generator: ~/raqeem_shots/tex/homehex.py ---- */
+.rq-home{position:relative;isolation:isolate;}
+.rq-home::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+background:var(--rq-accent);-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2770.0%27%20height%3D%27120.0%27%20viewBox%3D%270%200%2070.0%20120.0%27%3E%3Cpath%20d%3D%27M35.0%200L70.0%2020.0V60.0L35.0%2080.0L0%2060.0V20.0ZM35.0%2080.0V120.0%27%20fill%3D%27none%27%20stroke%3D%27%23000%27%20stroke-width%3D%271%27/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2770.0%27%20height%3D%27120.0%27%20viewBox%3D%270%200%2070.0%20120.0%27%3E%3Cpath%20d%3D%27M35.0%200L70.0%2020.0V60.0L35.0%2080.0L0%2060.0V20.0ZM35.0%2080.0V120.0%27%20fill%3D%27none%27%20stroke%3D%27%23000%27%20stroke-width%3D%271%27/%3E%3C/svg%3E");opacity:0.15;}
+html[data-theme="dark"] .rq-home::before{opacity:0.15;}
+/* ---- end home texture ---- */

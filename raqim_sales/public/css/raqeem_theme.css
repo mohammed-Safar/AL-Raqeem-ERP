@@ -2555,3 +2555,15 @@ html[dir="rtl"] .widget.links-widget-box .link-item:hover { padding-inline-start
     background: rgba(var(--rq-a-rgb), .18) !important;
 }
 /* ---- end 11q ---- */
+
+
+/* --------------------------------------------------------------------------
+   11t. Background texture — hexagons / honeycomb (try, 2026-11-19; was topo waves)
+   SVG used as a MASK so the lines take the theme colour (--rq-accent).
+   Layer sits behind all content; body made transparent so html's --rq-bg shows under it.
+   -------------------------------------------------------------------------- */
+html body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+background:var(--rq-accent);-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2728%27%20height%3D%2748%27%20viewBox%3D%270%200%2028%2048%27%3E%3Cpath%20d%3D%27M14%200L28%208V24L14%2032L0%2024V8ZM14%2032V48%27%20fill%3D%27none%27%20stroke%3D%27%23000%27%20stroke-width%3D%27.6%27/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2728%27%20height%3D%2748%27%20viewBox%3D%270%200%2028%2048%27%3E%3Cpath%20d%3D%27M14%200L28%208V24L14%2032L0%2024V8ZM14%2032V48%27%20fill%3D%27none%27%20stroke%3D%27%23000%27%20stroke-width%3D%27.6%27/%3E%3C/svg%3E");opacity:0.15;}
+html[data-theme="dark"] body::before{opacity:0.15;}
+html body{background-color:transparent!important;}
+/* ---- end 11t ---- */

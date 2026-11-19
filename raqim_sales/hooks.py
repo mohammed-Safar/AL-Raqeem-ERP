@@ -40,10 +40,10 @@ app_include_css = [
     "/assets/raqim_sales/css/raqeem_fonts.css?v=33",
     "/assets/raqim_sales/css/raqeem_logo.css?v=39",
     "/assets/raqim_sales/css/raqeem_palette.css?v=33",
-    "/assets/raqim_sales/css/raqeem_theme.css?v=pt8-1119a",
+    "/assets/raqim_sales/css/raqeem_theme.css?v=tex6-1119d",
     # dock icons drawn in CSS (ROLLBACK: delete the next line)
     "/assets/raqim_sales/css/raqeem_icons.css?v=50",
-    "/assets/raqim_sales/css/raqeem_home.css?v=39",
+    "/assets/raqim_sales/css/raqeem_home.css?v=hhex-1119b",
     "/assets/raqim_sales/css/raqeem_form.css?v=40",
     "/assets/raqim_sales/css/raqeem_list.css?v=47",
     "/assets/raqim_sales/css/raqeem_mobile.css?v=4"
