@@ -1,0 +1,901 @@
+[
+[
+"Acme",
+[
+"public/js/raqeem_spa_keys.js"
+]
+],
+[
+"Amount in words",
+[
+"templates/print/raqeem_document.html"
+]
+],
+[
+"Analytics alert notification",
+[
+"analytics/alerts.py"
+]
+],
+[
+"Analytics alert {doc.name}",
+[
+"analytics/alerts.py"
+]
+],
+[
+"Analytics: Stock Value as money",
+[
+"analytics/standard.py"
+]
+],
+[
+"Analytics: old dashboard links",
+[
+"analytics/setup.py"
+]
+],
+[
+"Analytics: sidebar link in {sidebar}",
+[
+"analytics/setup.py"
+]
+],
+[
+"Attendance processing: {emp}",
+[
+"raqeem_hr/attendance.py"
+]
+],
+[
+"Balance Due",
+[
+"templates/print/raqeem_document.html"
+]
+],
+[
+"Basic Pay",
+[
+"raqeem_hr/hrms_migration.py"
+]
+],
+[
+"Below form",
+[
+"public/js/raqeem_form.js"
+]
+],
+[
+"Beside form",
+[
+"public/js/raqeem_form.js"
+]
+],
+[
+"Bill To",
+[
+"templates/print/raqeem_document.html"
+]
+],
+[
+"Billed this year",
+[
+"public/js/raqeem_form.js"
+]
+],
+[
+"Bought this year",
+[
+"crm_deal_tools.js"
+]
+],
+[
+"CRM Deal has the 'Customer in ERPNext' field",
+[
+"crm_check.py"
+]
+],
+[
+"CRM Form Script 'Create Quotation from CRM Deal' (CRM's own)",
+[
+"crm_check.py"
+]
+],
+[
+"CRM Form Script 'RAQEEM ERPNext Tools' installed and enabled",
+[
+"crm_check.py"
+]
+],
+[
+"Cairo",
+[
+"templates/includes/splash_screen.html",
+"templates/print/raqeem_document.html",
+"templates/print/raqeem_receipt.html"
+]
+],
+[
+"Cheques Payable",
+[
+"cheques_setup.py"
+]
+],
+[
+"Cheques Under Collection",
+[
+"cheques_setup.py"
+]
+],
+[
+"Clear reports that help you decide",
+[
+"public/js/raqeem_login.js"
+]
+],
+[
+"Compensatory Leave (RAQEEM)",
+[
+"raqeem_hr/setup.py"
+]
+],
+[
+"Continue where you left off",
+[
+"raqim_sales/page/raqeem_home/raqeem_home.js"
+]
+],
+[
+"Conveyance Allowance",
+[
+"raqeem_hr/hrms_migration.py"
+]
+],
+[
+"Create Quotation from CRM Deal",
+[
+"crm_check.py"
+]
+],
+[
+"Ctrl",
+[
+"public/js/raqeem_spa_keys.js"
+]
+],
+[
+"Customer & payments",
+[
+"crm_deal_tools.js"
+]
+],
+[
+"Customer has the 'CRM Deal' field",
+[
+"crm_check.py"
+]
+],
+[
+"Customer linked",
+[
+"crm_deal_tools.js"
+]
+],
+[
+"Cyber Purple",
+[
+"public/js/raqeem_crm_tools.js",
+"public/js/raqeem_login.js",
+"public/js/raqeem_quick_settings.js"
+]
+],
+[
+"Deal analysis",
+[
+"crm_deal_tools.js"
+]
+],
+[
+"Deliver by",
+[
+"public/js/raqeem_form.js"
+]
+],
+[
+"Display settings",
+[
+"public/js/raqeem_crm_tools.js",
+"public/js/raqeem_login.js",
+"public/js/raqeem_quick_settings.js"
+]
+],
+[
+"Documents you opened recently on this device",
+[
+"raqim_sales/page/raqeem_home/raqeem_home.js"
+]
+],
+[
+"Due date",
+[
+"public/js/raqeem_form.js"
+]
+],
+[
+"ERPNext CRM Settings (ERPNext side): Frappe CRM data synchronization",
+[
+"crm_check.py"
+]
+],
+[
+"ERPNext CRM Settings: enabled",
+[
+"crm_check.py"
+]
+],
+[
+"ERPNext CRM Settings: same site",
+[
+"crm_check.py"
+]
+],
+[
+"Employee Claims Payable",
+[
+"raqeem_hr/setup.py"
+]
+],
+[
+"Employee Loans",
+[
+"raqeem_hr/setup.py"
+]
+],
+[
+"End of Service Benefits",
+[
+"raqeem_hr/setup.py"
+]
+],
+[
+"End of Service Payable",
+[
+"raqeem_hr/setup.py"
+]
+],
+[
+"English",
+[
+"public/js/raqeem_login.js"
+]
+],
+[
+"Enough",
+[
+"crm_deal_tools.js"
+]
+],
+[
+"Enter",
+[
+"analytics/page/analytics/analytics.js",
+"public/js/raqeem_sidebar.js",
+"raqeem_hr/page/my_affairs/my_affairs.js",
+"raqim_sales/page/raqeem_home/raqeem_home.js"
+]
+],
+[
+"Escape",
+[
+"public/js/raqeem_crm_tools.js",
+"public/js/raqeem_login.js",
+"public/js/raqeem_quick_settings.js",
+"public/js/raqeem_sidebar.js",
+"raqim_sales/page/raqeem_home/raqeem_home.js"
+]
+],
+[
+"Exchangerate API",
+[
+"public/js/raqeem_spa_keys.js"
+]
+],
+[
+"Exchangerate Host",
+[
+"public/js/raqeem_spa_keys.js"
+]
+],
+[
+"Existing customers that look the same — link one to avoid a duplicate:",
+[
+"crm_deal_tools.js"
+]
+],
+[
+"Fawaz Ahmed Exchange API",
+[
+"public/js/raqeem_spa_keys.js"
+]
+],
+[
+"Frankfurter",
+[
+"public/js/raqeem_spa_keys.js"
+]
+],
+[
+"Frappe, Neelkanth Business Park",
+[
+"public/js/raqeem_spa_keys.js"
+]
+],
+[
+"From account",
+[
+"templates/print/raqeem_receipt.html"
+]
+],
+[
+"Fully paid",
+[
+"public/js/raqeem_form.js"
+]
+],
+[
+"Gmail",
+[
+"public/js/raqeem_spa_keys.js"
+]
+],
+[
+"Gold",
+[
+"public/js/raqeem_crm_tools.js",
+"public/js/raqeem_login.js",
+"public/js/raqeem_quick_settings.js"
+]
+],
+[
+"House Rent Allowance",
+[
+"raqeem_hr/hrms_migration.py"
+]
+],
+[
+"Housing",
+[
+"raqeem_hr/hrms_migration.py"
+]
+],
+[
+"IBM Plex Sans Arabic",
+[
+"templates/print/raqeem_document.html",
+"templates/print/raqeem_receipt.html"
+]
+],
+[
+"Install RAQEEM HR",
+[
+"public/js/raqeem_spa_i18n.js"
+]
+],
+[
+"Invoices and quotations in a click",
+[
+"public/js/raqeem_login.js"
+]
+],
+[
+"Live stock tracking",
+[
+"public/js/raqeem_login.js"
+]
+],
+[
+"Login to RAQEEM HR",
+[
+"public/js/raqeem_spa_i18n.js"
+]
+],
+[
+"Loyalty points",
+[
+"public/js/raqeem_form.js"
+]
+],
+[
+"M99.46,99.5Q98.67,95.89 97.26,92.39Q95.85,88.9 94.34,86.27Q92.83,83.63 89.94,80.17Q87.06,76.71 84.32,74.73Q81.58,72.75 78.51,71.52Q75.45,70.3 73.18,70.01Q70.91,69.72 56.06,69.68L41.2,69.65L41.13,99.71Q98.59,100.0 99.03,99.75L99.46,99.5Z M30.46,99.28Q30.1,70.01 29.27,69.32Q28.44,68.64 22.82,66.26Q17.2,63.88 14.24,62.08Q11.28,60.27 8.87,58.29Q6.45,56.31 3.6,52.96L0.76,49.6L0.61,99.42Q29.38,99.86 29.92,99.57L30.46,99.28Z M98.59,57.46Q99.1,56.31 99.03,51.73Q98.95,47.15 98.63,40.37Q98.31,33.6 97.37,28.91Q96.43,24.22 95.21,21.27Q93.98,18.31 92.11,15.54Q90.23,12.76 88.68,11.18Q87.13,9.59 83.99,7.39Q80.86,5.19 77.04,3.57Q73.22,1.95 68.64,1.12Q64.06,0.29 32.98,0.14Q1.91,0.0 1.44,0.29L0.97,0.58Q1.41,21.63 3.03,28.59Q4.65,35.54 6.49,39.44Q8.33,43.33 9.66,45.28Q10.99,47.22 13.3,49.53Q15.61,51.84 17.23,52.92Q18.85,54.0 21.67,55.19Q24.48,56.38 27.47,56.89Q30.46,57.39 63.95,57.53Q97.44,57.68 98.02,57.57L98.59,57.46Z",
+[
+"public/js/raqeem_logo.js",
+"templates/includes/splash_screen.html"
+]
+],
+[
+"MMM yyyy",
+[
+"raqim_sales/report/raqeem_deal_analysis/raqeem_deal_analysis.py"
+]
+],
+[
+"Manufactured",
+[
+"public/js/raqeem_form.js"
+]
+],
+[
+"Marcus Lee",
+[
+"public/js/raqeem_spa_keys.js"
+]
+],
+[
+"Meet with John Doe",
+[
+"public/js/raqeem_spa_keys.js"
+]
+],
+[
+"Mode",
+[
+"crm_deal_tools.js"
+]
+],
+[
+"Most bought",
+[
+"crm_deal_tools.js"
+]
+],
+[
+"My documents",
+[
+"public/js/raqeem_list.js"
+]
+],
+[
+"Needed",
+[
+"crm_deal_tools.js"
+]
+],
+[
+"No app matches that name",
+[
+"raqim_sales/page/raqeem_home/raqeem_home.js"
+]
+],
+[
+"No matching customer in ERPNext.",
+[
+"crm_deal_tools.js"
+]
+],
+[
+"Not linked to an ERPNext item",
+[
+"crm_deal_tools.js"
+]
+],
+[
+"Nothing in this menu matches",
+[
+"public/js/raqeem_sidebar.js"
+]
+],
+[
+"Open customer",
+[
+"crm_deal_tools.js"
+]
+],
+[
+"Orbitron",
+[
+"templates/includes/splash_screen.html"
+]
+],
+[
+"Payment Voucher",
+[
+"templates/print/raqeem_receipt.html"
+]
+],
+[
+"Payment method",
+[
+"templates/print/raqeem_receipt.html"
+]
+],
+[
+"Prepared by",
+[
+"templates/print/raqeem_document.html"
+]
+],
+[
+"Purchased this year",
+[
+"public/js/raqeem_form.js"
+]
+],
+[
+"Quick create",
+[
+"public/js/raqeem_tabbar.js",
+"raqim_sales/page/raqeem_home/raqeem_home.js"
+]
+],
+[
+"Quick filters",
+[
+"public/js/raqeem_list.js"
+]
+],
+[
+"RAQEEM Delivery Note",
+[
+"setup.py"
+]
+],
+[
+"RAQEEM ERPNext Tools",
+[
+"crm_integration.py"
+]
+],
+[
+"RAQEEM HR setup",
+[
+"raqeem_hr/setup.py"
+]
+],
+[
+"RAQEEM HR: apply {dt} {name}",
+[
+"raqeem_hr/lifecycle.py"
+]
+],
+[
+"RAQEEM HR: appraisal notification",
+[
+"raqeem_hr/performance.py"
+]
+],
+[
+"RAQEEM HR: leave notification",
+[
+"raqeem_hr/doctype/raqeem_leave_request/raqeem_leave_request.py"
+]
+],
+[
+"RAQEEM HR: notification",
+[
+"raqeem_hr/approval.py"
+]
+],
+[
+"RAQEEM HR: onboarding checklist",
+[
+"raqeem_hr/lifecycle.py"
+]
+],
+[
+"RAQEEM HR: recruitment notification",
+[
+"raqeem_hr/recruitment.py"
+]
+],
+[
+"RAQEEM HR: salary from job offer {o.name}",
+[
+"raqeem_hr/recruitment.py"
+]
+],
+[
+"RAQEEM HR: {employee} could not be set to Left",
+[
+"raqeem_hr/lifecycle.py"
+]
+],
+[
+"RAQEEM Payment Receipt",
+[
+"setup.py",
+"templates/print/raqeem_receipt.html"
+]
+],
+[
+"RAQEEM Quotation",
+[
+"setup.py"
+]
+],
+[
+"RAQEEM Sales Invoice",
+[
+"setup.py"
+]
+],
+[
+"RAQEEM Sales Order",
+[
+"setup.py"
+]
+],
+[
+"RAQEEM Selftest",
+[
+"crm_check.py"
+]
+],
+[
+"RAQEEM Selftest Existing",
+[
+"crm_check.py"
+]
+],
+[
+"RAQEEM Selftest New",
+[
+"crm_check.py"
+]
+],
+[
+"RAQEEM Selftest New Org",
+[
+"crm_check.py"
+]
+],
+[
+"RAQEEM Selftest Org",
+[
+"crm_check.py"
+]
+],
+[
+"RAQEEM cheques: company accounts",
+[
+"cheques_setup.py"
+]
+],
+[
+"RAQEEM: CRM deal tools script",
+[
+"crm_integration.py"
+]
+],
+[
+"RAQEEM: Pipeline sidebar link",
+[
+"erp_crm.py"
+]
+],
+[
+"RAQEEM: find existing customer for deal",
+[
+"crm_integration.py"
+]
+],
+[
+"RQ Latin",
+[
+"templates/print/raqeem_document.html",
+"templates/print/raqeem_receipt.html"
+]
+],
+[
+"Re: Pricing for 40 seats",
+[
+"public/js/raqeem_spa_keys.js"
+]
+],
+[
+"Receipt Voucher",
+[
+"templates/print/raqeem_receipt.html"
+]
+],
+[
+"Received by",
+[
+"templates/print/raqeem_document.html"
+]
+],
+[
+"Receiver",
+[
+"templates/print/raqeem_receipt.html"
+]
+],
+[
+"Reference / Cheque No.",
+[
+"templates/print/raqeem_receipt.html"
+]
+],
+[
+"Salary Income Tax Payable",
+[
+"raqeem_hr/setup.py"
+]
+],
+[
+"Sales orders",
+[
+"crm_deal_tools.js"
+]
+],
+[
+"Search everything",
+[
+"public/js/raqeem_sidebar.js"
+]
+],
+[
+"Service (no stock)",
+[
+"crm_deal_tools.js"
+]
+],
+[
+"Sheet",
+[
+"analytics/export.py"
+]
+],
+[
+"Show popup",
+[
+"public/js/raqeem_spa_keys.js"
+]
+],
+[
+"Subtotal",
+[
+"templates/print/raqeem_document.html"
+]
+],
+[
+"System & Settings",
+[
+"raqim_sales/page/raqeem_home/raqeem_home.js"
+]
+],
+[
+"System User",
+[
+"analytics/alerts.py"
+]
+],
+[
+"Tax Invoice",
+[
+"templates/print/raqeem_document.html"
+]
+],
+[
+"Theme colour",
+[
+"public/js/raqeem_crm_tools.js",
+"public/js/raqeem_login.js",
+"public/js/raqeem_quick_settings.js"
+]
+],
+[
+"This deal has no ERPNext customer yet. One is created automatically when the deal is won.",
+[
+"crm_deal_tools.js"
+]
+],
+[
+"This deal has no products.",
+[
+"crm_deal_tools.js"
+]
+],
+[
+"This week",
+[
+"public/js/raqeem_list.js"
+]
+],
+[
+"To account",
+[
+"templates/print/raqeem_receipt.html"
+]
+],
+[
+"To bill",
+[
+"public/js/raqeem_list.js"
+]
+],
+[
+"To deliver",
+[
+"public/js/raqeem_list.js"
+]
+],
+[
+"To receive",
+[
+"public/js/raqeem_list.js"
+]
+],
+[
+"Total bought",
+[
+"crm_deal_tools.js"
+]
+],
+[
+"Total unpaid",
+[
+"public/js/raqeem_form.js"
+]
+],
+[
+"Totals for all matching records",
+[
+"public/js/raqeem_list.js"
+]
+],
+[
+"Totals for the records shown",
+[
+"public/js/raqeem_list.js"
+]
+],
+[
+"Transport",
+[
+"raqeem_hr/hrms_migration.py"
+]
+],
+[
+"Transportation Allowance",
+[
+"raqeem_hr/hrms_migration.py"
+]
+],
+[
+"Try another word, or press Esc to show everything",
+[
+"raqim_sales/page/raqeem_home/raqeem_home.js"
+]
+],
+[
+"VAT No.",
+[
+"templates/print/raqeem_document.html",
+"templates/print/raqeem_receipt.html"
+]
+],
+[
+"Valid till",
+[
+"public/js/raqeem_form.js"
+]
+],
+[
+"You are not allowed to see items.",
+[
+"crm_deal_tools.js"
+]
+],
+[
+"You can't create any of these documents",
+[
+"public/js/raqeem_tabbar.js"
+]
+],
+[
+"Your sales, stock and accounts in one place",
+[
+"public/js/raqeem_login.js"
+]
+]
+]

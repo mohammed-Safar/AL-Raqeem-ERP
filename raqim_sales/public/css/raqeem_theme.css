@@ -1807,16 +1807,18 @@ html[data-theme="dark"] {
 }
 .dock {
     background: radial-gradient(120% 80px at 50% 0%, rgba(var(--rq-a-rgb), .10), transparent 70%), var(--rq-dock-bg) !important;
-    border: 1px solid var(--rq-dock-edge) !important;
-    border-radius: 999px !important;
+    border: 0 !important;
+    border-inline-end: 1px solid var(--rq-dock-edge) !important;
+    border-radius: 0 !important;   /* square bar flush to the right edge (2026-11-19, was 999px capsule) */
     padding: 16px 9px 18px !important;
     box-shadow: inset 0 1px 0 var(--rq-dock-shine), 0 18px 40px rgba(0, 0, 0, .35) !important;
 }
 body.dock-pinned .dock {
-    margin-block: 8px; margin-inline: 8px 0;
-    height: calc(100vh - 16px) !important;
-    height: calc(100dvh - 16px) !important;
-    border: 1px solid var(--rq-dock-edge) !important;
+    margin: 0 !important;
+    height: 100vh !important;
+    height: 100dvh !important;
+    border: 0 !important;
+    border-inline-end: 1px solid var(--rq-dock-edge) !important;
     box-shadow: inset 0 1px 0 var(--rq-dock-shine), 0 10px 28px rgba(0, 0, 0, .28) !important;
 }
 .dock .dock-logo:not(:empty) { border-bottom-color: var(--rq-dock-sep) !important; }
@@ -2175,27 +2177,27 @@ body { background-size: 100% 100%, 100% 100% !important; }
     font-family: var(--rq-font-head) !important;
     font-weight: 800 !important;
 }
-/* title chip: tinted box + thin outline in the theme colour (user's pick "F", 2026-11-19) */
+/* title: no box — filled letters with an outline in the theme colour (user, 2026-11-19;
+   replaces the chip "F"+"C"). ROLLBACK: git show 0006779 for the chip version */
 html body .page-head .es-breadcrumbs li:last-child .es-breadcrumbs__label,
 html body .page-head .page-title .title-text {
-    background: rgba(var(--rq-a-rgb), .13) !important;
-    box-shadow: inset 0 0 0 1px rgba(var(--rq-a-rgb), .38);
-    border-radius: 12px;
-    padding: 0 14px 0 14px !important;
-    padding-inline-start: 24px !important;   /* room for the glowing bar ("C") */
-    color: var(--rq-accent) !important;       /* title text follows the theme colour too */
-    -webkit-text-fill-color: var(--rq-accent) !important;
+    background: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    /* filled letters + outline drawn BEHIND the fill (paint-order), so the seams where
+       joined Arabic letters overlap don't show as broken lines inside the word (2026-11-19) */
+    color: var(--rq-strong) !important;
+    -webkit-text-fill-color: var(--rq-strong) !important;
+    -webkit-text-stroke: 0;                   /* outline removed (user disliked it, 2026-11-19) */
     line-height: 1.55 !important;
     position: relative;
-    top: -4px;                                /* 4px higher, in line with the brand title */
+    top: -4px;                                /* in line with the brand title */
 }
-/* + glowing bar in the theme colour at the start of the chip (user: "add C", 2026-11-19) */
-html body .page-head .es-breadcrumbs li:last-child .es-breadcrumbs__label::before,
-html body .page-head .page-title .title-text::before {
-    content: ""; position: absolute; inset-inline-start: 10px; top: 24%; bottom: 24%;
-    width: 4px; border-radius: 4px;
-    background: linear-gradient(180deg, var(--rq-a-300), var(--rq-a-600));
-    box-shadow: 0 0 10px rgba(var(--rq-a-rgb), .6);
+/* dark theme: white inside (user, 2026-11-19) */
+html[data-theme="dark"] body .page-head .es-breadcrumbs li:last-child .es-breadcrumbs__label,
+html[data-theme="dark"] body .page-head .page-title .title-text {
+    color: #fff !important;
+    -webkit-text-fill-color: #fff !important;
 }
 .page-head .es-breadcrumbs li:last-child .es-breadcrumbs__item { font-size: 1.35rem !important; }
 .page-head .es-breadcrumbs__item { color: var(--rq-text-3) !important; border-radius: var(--rq-r-sm); }

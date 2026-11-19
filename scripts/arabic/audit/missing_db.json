@@ -1,0 +1,1221 @@
+{
+"raqeem": [
+"DocType",
+"TD:DocType"
+],
+"Insights Query Reference": [
+"DocType",
+"TD:DocType"
+],
+"Insights Secret Key": [
+"DocType",
+"TD:DocType"
+],
+"Insights Table Import Job": [
+"DocType",
+"TD:DocType"
+],
+"Insights Folder": [
+"DocType",
+"TD:DocType"
+],
+"Insights Dashboard Chart v3": [
+"DocType",
+"TD:DocType"
+],
+"Insights Dashboard v3": [
+"DocType",
+"TD:DocType"
+],
+"Insights Chart v3": [
+"DocType",
+"TD:DocType"
+],
+"Insights Query v3": [
+"DocType",
+"TD:DocType"
+],
+"Insights Table Import Log": [
+"DocType",
+"TD:DocType"
+],
+"Insights User Invitation": [
+"DocType",
+"TD:DocType"
+],
+"Insights Table Link v3": [
+"DocType",
+"TD:DocType"
+],
+"Insights Table v3": [
+"DocType",
+"TD:DocType"
+],
+"Insights Data Source v3": [
+"DocType",
+"TD:DocType"
+],
+"Insights Workbook": [
+"DocType",
+"TD:DocType"
+],
+"Insights Query Result": [
+"DocType",
+"TD:DocType"
+],
+"Insights Query Variable": [
+"DocType",
+"TD:DocType"
+],
+"Insights Notebook Page": [
+"DocType",
+"TD:DocType"
+],
+"Insights Notebook": [
+"DocType",
+"TD:DocType"
+],
+"Insights Chart": [
+"DocType",
+"TD:DocType"
+],
+"Insights Alert": [
+"DocType",
+"TD:DocType"
+],
+"Insights Query Execution Log": [
+"DocType",
+"TD:DocType"
+],
+"Insights Team": [
+"DocType",
+"TD:DocType"
+],
+"Insights Team Member": [
+"DocType",
+"TD:DocType"
+],
+"Insights Resource Permission": [
+"DocType",
+"TD:DocType"
+],
+"Insights Query Transform": [
+"DocType",
+"TD:DocType"
+],
+"Insights Table Import": [
+"DocType",
+"TD:DocType"
+],
+"Insights Table Column": [
+"DocType",
+"TD:DocType"
+],
+"Insights Dashboard": [
+"DocType",
+"TD:DocType"
+],
+"Insights Dashboard Item": [
+"DocType",
+"TD:DocType"
+],
+"Insights Query Chart": [
+"DocType",
+"TD:DocType"
+],
+"Insights Settings": [
+"DocType",
+"TD:DocType"
+],
+"Insights Table": [
+"DocType",
+"TD:DocType"
+],
+"Insights Table Link": [
+"DocType",
+"TD:DocType"
+],
+"Insights Query Table": [
+"DocType",
+"TD:DocType"
+],
+"Insights Data Source": [
+"DocType",
+"TD:DocType"
+],
+"Insights Query Column": [
+"DocType",
+"TD:DocType"
+],
+"Insights Query": [
+"DocType",
+"TD:DocType"
+],
+"Action if table exists": [
+"DocField.label"
+],
+"Aggregation": [
+"DocField.label"
+],
+"Aggregation Condition": [
+"DocField.label"
+],
+"Allow Data Download": [
+"DocField.label"
+],
+"Allow Subquery": [
+"DocField.label"
+],
+"Allow Table Import": [
+"DocField.label"
+],
+"Allowed Origins": [
+"DocField.label"
+],
+"API Configuration": [
+"DocField.label"
+],
+"API Password": [
+"DocField.label"
+],
+"API Username": [
+"DocField.label"
+],
+"Apply User Permissions": [
+"DocField.label"
+],
+"Authentication Type": [
+"DocField.label"
+],
+"Auto Execute Query": [
+"DocField.label"
+],
+"Before Import Script": [
+"DocField.label"
+],
+"BigQuery Configuration": [
+"DocField.label"
+],
+"BigQuery Dataset ID": [
+"DocField.label"
+],
+"BigQuery Project ID": [
+"DocField.label"
+],
+"BigQuery Service Account Key (JSON)": [
+"DocField.label"
+],
+"CA Certificate": [
+"DocField.label"
+],
+"Cache Query Results For (Minutes)": [
+"DocField.label"
+],
+"Cardinality": [
+"DocField.label"
+],
+"Connection String": [
+"DocField.label"
+],
+"Cursor Column": [
+"DocField.label"
+],
+"Custom Condition": [
+"DocField.label"
+],
+"Custom Headers": [
+"DocField.label"
+],
+"Data Backup": [
+"DocField.label"
+],
+"Data Query": [
+"DocField.label"
+],
+"Data Store": [
+"DocField.label"
+],
+"Database Name": [
+"DocField.label"
+],
+"Database Type": [
+"DocField.label"
+],
+"Disable User Lookup": [
+"DocField.label"
+],
+"Duration (Seconds)": [
+"DocField.label"
+],
+"Enable Data Store": [
+"DocField.label"
+],
+"Enable Permissions": [
+"DocField.label"
+],
+"Enable Stored Procedure Execution": [
+"DocField.label"
+],
+"Encrypt Connection (SSL)": [
+"DocField.label"
+],
+"Estimated On": [
+"DocField.label"
+],
+"Estimated Row Count": [
+"DocField.label"
+],
+"Execution Time (seconds)": [
+"DocField.label"
+],
+"Fiscal Year Start": [
+"DocField.label"
+],
+"Foreign Key": [
+"DocField.label"
+],
+"Foreign Table": [
+"DocField.label"
+],
+"Foreign Table Label": [
+"DocField.label"
+],
+"Format Option": [
+"DocField.label"
+],
+"Host": [
+"DocField.label"
+],
+"HTTP Headers": [
+"DocField.label"
+],
+"Import Job": [
+"DocField.label"
+],
+"Import Query": [
+"DocField.label"
+],
+"Imported Checksum": [
+"DocField.label"
+],
+"Imported Version": [
+"DocField.label"
+],
+"Is Assisted Query": [
+"DocField.label"
+],
+"Is Builder Query": [
+"DocField.label"
+],
+"Is DuckLake": [
+"DocField.label"
+],
+"Is Expanded": [
+"DocField.label"
+],
+"Is Expression": [
+"DocField.label"
+],
+"Is Frappe Database": [
+"DocField.label"
+],
+"Is Native Query": [
+"DocField.label"
+],
+"Is Query Based": [
+"DocField.label"
+],
+"Is Saved as Table": [
+"DocField.label"
+],
+"Is Script Query": [
+"DocField.label"
+],
+"Is Site Database": [
+"DocField.label"
+],
+"Key Hash": [
+"DocField.label"
+],
+"Last Executed On": [
+"DocField.label"
+],
+"Last Log": [
+"DocField.label"
+],
+"Last Status": [
+"DocField.label"
+],
+"Last Sync Bookmark": [
+"DocField.label"
+],
+"Left Column": [
+"DocField.label"
+],
+"Left Table": [
+"DocField.label"
+],
+"Legacy": [
+"DocField.label"
+],
+"Linked Charts": [
+"DocField.label"
+],
+"Max Execution Time (Seconds)": [
+"DocField.label"
+],
+"Max Memory Usage": [
+"DocField.label"
+],
+"Max Records To Sync": [
+"DocField.label"
+],
+"Memory Limit (MB)": [
+"DocField.label"
+],
+"Notebook": [
+"DocField.label"
+],
+"Old Name": [
+"DocField.label"
+],
+"Onboarding Complete": [
+"DocField.label"
+],
+"Parquet File": [
+"DocField.label"
+],
+"Position & Size": [
+"DocField.label"
+],
+"Primary Key": [
+"DocField.label"
+],
+"Primary Key Column": [
+"DocField.label"
+],
+"Public Key": [
+"DocField.label"
+],
+"Query Result Limit": [
+"DocField.label"
+],
+"Referenced Query": [
+"DocField.label"
+],
+"Resource Type": [
+"DocField.label"
+],
+"Result Row Count": [
+"DocField.label"
+],
+"Results": [
+"DocField.label"
+],
+"Results Row Count": [
+"DocField.label"
+],
+"Right Column": [
+"DocField.label"
+],
+"Right Table": [
+"DocField.label"
+],
+"Row Limit": [
+"DocField.label"
+],
+"Row Size (KB)": [
+"DocField.label"
+],
+"Rows Imported": [
+"DocField.label"
+],
+"Schedule (Cron)": [
+"DocField.label"
+],
+"Schema": [
+"DocField.label"
+],
+"Script Log": [
+"DocField.label"
+],
+"Secrets": [
+"DocField.label"
+],
+"Share Link": [
+"DocField.label"
+],
+"Site Database": [
+"DocField.label"
+],
+"sort_order": [
+"DocField.label"
+],
+"State (JSON)": [
+"DocField.label"
+],
+"Stored": [
+"DocField.label"
+],
+"Sync From": [
+"DocField.label"
+],
+"Sync Mode": [
+"DocField.label"
+],
+"Sync Strategy": [
+"DocField.label"
+],
+"Table Label": [
+"DocField.label"
+],
+"Table Name": [
+"DocField.label"
+],
+"Table Restrictions": [
+"DocField.label"
+],
+"Tables": [
+"DocField.label"
+],
+"Team Name": [
+"DocField.label"
+],
+"Team Permissions": [
+"DocField.label"
+],
+"Telegram API Token": [
+"DocField.label"
+],
+"Telegram Chat ID": [
+"DocField.label"
+],
+"Time Taken (Seconds)": [
+"DocField.label"
+],
+"Transform": [
+"DocField.label"
+],
+"Transforms": [
+"DocField.label"
+],
+"Use Live Connection": [
+"DocField.label"
+],
+"Variable Value": [
+"DocField.label"
+],
+"Vertical Compact Layout": [
+"DocField.label"
+],
+"Week Starts On": [
+"DocField.label"
+],
+"Workbook": [
+"DocField.label"
+],
+"SHA-256 of the key mailed to the invitee. The key itself is not stored.": [
+"DocField.description"
+],
+"Write Python code to fetch and transform data. Available globals:<br>• client: API client for the selected data source<br>• table: Write data to warehouse. Methods: insert(data, overwrite=False)<br>• state: Persist data between runs. Methods: get(key, default=None), set(key, value), delete(key), clear()<br>• secrets: Access secret keys. Methods: get(key)<br>• log(message): Log execution messages": [
+"DocField.description"
+],
+"Cron expression to schedule the script. Note: The scheduler checks for jobs every hour.": [
+"DocField.description"
+],
+"Persistent state storage for the script": [
+"DocField.description"
+],
+"Last synced cursor value (set automatically)": [
+"DocField.description"
+],
+"Choose how incremental sync writes rows: <b>Append Only</b> adds new rows, while <b>Update or Insert</b> updates matching keys and inserts new rows.": [
+"DocField.description"
+],
+"Catalog estimate, written by the daily telemetry scan": [
+"DocField.description"
+],
+"Start importing rows from this datetime onward (used on first sync only)": [
+"DocField.description"
+],
+"Temporal column used to detect rows that changed since the last sync. Use <b>modified</b> for mutable tables and <b>creation</b> for append-only tables.": [
+"DocField.description"
+],
+"Stable key used to identify the latest version of each logical row during incremental upserts.": [
+"DocField.description"
+],
+"Interactive queries are cancelled after this many seconds. Applies to new connections and to live (non-data-store) queries; background imports are exempt.": [
+"DocField.description"
+],
+"Comma seperated URLs to whitelist for embedding charts & dashboards": [
+"DocField.description"
+],
+"Stops members from finding each other by name or email when sharing. Turn this on for a site where anyone can sign up.": [
+"DocField.description"
+],
+"Encrypts the connection. Add a CA certificate below to also verify the server.": [
+"DocField.description"
+],
+"Custom headers for API requests. Sent with every request, so a key belongs here rather than in the URL.": [
+"DocField.description"
+],
+"Optional. PEM certificate of the authority that signed the database server's certificate. With one, Insights checks that the server is who it says it is. Without one, the connection is encrypted but the server is not checked.": [
+"DocField.description"
+],
+"Automatically arrange cards vertically to fill empty spaces": [
+"DocField.description"
+],
+"ACC-PRQ-.YYYY.-": [
+"tabDocField.options"
+],
+"ACC-SINV-.YYYY.-": [
+"tabDocField.options"
+],
+"ACC-SINV-RET-.YYYY.-": [
+"tabDocField.options"
+],
+"PRLE-.####": [
+"tabDocField.options"
+],
+"ACC-BTN-.YYYY.-": [
+"tabDocField.options"
+],
+"ACC-PINV-RET-.YYYY.-": [
+"tabDocField.options"
+],
+"DUNN-.MM.-.YY.-": [
+"tabDocField.options"
+],
+"ACC-JV-.YYYY.-": [
+"tabDocField.options"
+],
+"ACC-SH-.YYYY.-": [
+"tabDocField.options"
+],
+"ACC-PSINV-.YYYY.-": [
+"tabDocField.options"
+],
+"POS-CLO-": [
+"tabDocField.options"
+],
+"PMO-": [
+"tabDocField.options"
+],
+"BUDGET-.########": [
+"tabDocField.options"
+],
+"ACC-PAY-.YYYY.-": [
+"tabDocField.options"
+],
+"SAL-CAM-.YYYY.-": [
+"tabDocField.options"
+],
+"CRM-OPP-.YYYY.-": [
+"tabDocField.options"
+],
+"PUR-RFQ-.YYYY.-": [
+"tabDocField.options"
+],
+"SUP-.YYYY.-": [
+"tabDocField.options"
+],
+"PUR-ORD-.YYYY.-": [
+"tabDocField.options"
+],
+"PUR-SQTN-.YYYY.-": [
+"tabDocField.options"
+],
+"PU-SSP-.YYYY.-": [
+"tabDocField.options"
+],
+"PROJ-.####": [
+"tabDocField.options"
+],
+"TS-.YYYY.-": [
+"tabDocField.options"
+],
+"CUST-.YYYY.-": [
+"tabDocField.options"
+],
+"MAT-INS-.YYYY.-": [
+"tabDocField.options"
+],
+"SAL-ORD-.YYYY.-": [
+"tabDocField.options"
+],
+"SAL-QTN-.YYYY.-": [
+"tabDocField.options"
+],
+"HR-DRI-.YYYY.-": [
+"tabDocField.options"
+],
+"HR-EMP-": [
+"tabDocField.options"
+],
+"MPS.YY.-.######": [
+"tabDocField.options"
+],
+"DT-": [
+"tabDocField.options"
+],
+"MFG-BLR-.YYYY.-": [
+"tabDocField.options"
+],
+"MFG-WO-.YYYY.-": [
+"tabDocField.options"
+],
+"SF.YY.-.######": [
+"tabDocField.options"
+],
+"MFG-PP-.YYYY.-": [
+"tabDocField.options"
+],
+"BOM-CRE-.YYYY.-": [
+"tabDocField.options"
+],
+"PO-JOB.#####": [
+"tabDocField.options"
+],
+"CBAL-.#####": [
+"tabDocField.options"
+],
+"MAT-PRE-.YYYY.-": [
+"tabDocField.options"
+],
+"MAT-PR-RET-.YYYY.-": [
+"tabDocField.options"
+],
+"MAT-STE-.YYYY.-": [
+"tabDocField.options"
+],
+"MAT-LCV-.YYYY.-": [
+"tabDocField.options"
+],
+"MAT-DT-.YYYY.-": [
+"tabDocField.options"
+],
+"MAT-QA-.YYYY.-": [
+"tabDocField.options"
+],
+"STO-PICK-.YYYY.-": [
+"tabDocField.options"
+],
+"MAT-PAC-.YYYY.-": [
+"tabDocField.options"
+],
+"SABB-.########": [
+"tabDocField.options"
+],
+"MAT-DN-.YYYY.-": [
+"tabDocField.options"
+],
+"MAT-DN-RET-.YYYY.-": [
+"tabDocField.options"
+],
+"MAT-RECO-.YYYY.-": [
+"tabDocField.options"
+],
+"STO-ITEM-.YYYY.-": [
+"tabDocField.options"
+],
+"MAT-MR-.YYYY.-": [
+"tabDocField.options"
+],
+"SER-WRN-.YYYY.-": [
+"tabDocField.options"
+],
+"ISS-.YYYY.-": [
+"tabDocField.options"
+],
+"ACC-AML-.YYYY.-": [
+"tabDocField.options"
+],
+"ACC-ASA-.YYYY.-": [
+"tabDocField.options"
+],
+"ACC-ASC-.YYYY.-": [
+"tabDocField.options"
+],
+"ACC-ASS-.YYYY.-": [
+"tabDocField.options"
+],
+"ACC-ADS-.YYYY.-": [
+"tabDocField.options"
+],
+"ACC-ASR-.YYYY.-": [
+"tabDocField.options"
+],
+"MAT-MSH-.YYYY.-": [
+"tabDocField.options"
+],
+"MAT-MVS-.YYYY.-": [
+"tabDocField.options"
+],
+"SCI-ORD-.YYYY.-": [
+"tabDocField.options"
+],
+"SC-ORD-.YYYY.-": [
+"tabDocField.options"
+],
+"MAT-SCR-.YYYY.-": [
+"tabDocField.options"
+],
+"MAT-SCR-RET-.YYYY.-": [
+"tabDocField.options"
+],
+"company_name": [
+"tabDocField.options"
+],
+"logo": [
+"tabDocField.options"
+],
+"industry": [
+"tabDocField.options"
+],
+"primary_email": [
+"tabDocField.options"
+],
+"primary_phone": [
+"tabDocField.options"
+],
+"secondary_phone": [
+"tabDocField.options"
+],
+"github": [
+"tabDocField.options"
+],
+"instagram": [
+"tabDocField.options"
+],
+"youtube": [
+"tabDocField.options"
+],
+"MariaDB": [
+"tabDocField.options"
+],
+"PostgreSQL": [
+"tabDocField.options"
+],
+"SQLite": [
+"tabDocField.options"
+],
+"Append": [
+"tabDocField.options"
+],
+"Overwrite": [
+"tabDocField.options"
+],
+"asc": [
+"tabDocField.options"
+],
+"desc": [
+"tabDocField.options"
+],
+"Pending Execution": [
+"tabDocField.options"
+],
+"Execution Successful": [
+"tabDocField.options"
+],
+"Execution Failed": [
+"tabDocField.options"
+],
+"1:N": [
+"tabDocField.options"
+],
+"N:1": [
+"tabDocField.options"
+],
+"N:N": [
+"tabDocField.options"
+],
+"Unpivot": [
+"tabDocField.options"
+],
+"Transpose": [
+"tabDocField.options"
+],
+"CumulativeSum": [
+"tabDocField.options"
+],
+"Incremental": [
+"tabDocField.options"
+],
+"Append Only": [
+"tabDocField.options"
+],
+"Update or Insert": [
+"tabDocField.options"
+],
+"API Key / Bearer Token": [
+"tabDocField.options"
+],
+"Basic Authentication": [
+"tabDocField.options"
+],
+"REST API": [
+"tabDocField.options"
+],
+"DuckDB": [
+"tabDocField.options"
+],
+"BigQuery": [
+"tabDocField.options"
+],
+"ClickHouse": [
+"tabDocField.options"
+],
+"Telegram": [
+"tabDocField.options"
+],
+"Integer": [
+"tabDocField.options"
+],
+"Long Int": [
+"tabDocField.options"
+],
+"Decimal": [
+"tabDocField.options"
+],
+"String": [
+"tabDocField.options"
+],
+"rmc": [
+"Module Def.name",
+"Workspace.label",
+"Workspace.title"
+],
+"Insights": [
+"Module Def.name",
+"Page.title"
+],
+"raqeem-banking": [
+"Page.name"
+],
+"my-affairs": [
+"Page.name"
+],
+"open-positions": [
+"Page.name"
+],
+"analytics": [
+"Page.name"
+],
+"raqeem-pipeline": [
+"Page.name"
+],
+"raqeem-crm": [
+"Page.name"
+],
+"raqeem-home": [
+"Page.name"
+],
+"workspace-restore": [
+"Page.name"
+],
+"component-explorer": [
+"Page.name"
+],
+"desktop": [
+"Page.name"
+],
+"visual-plant-floor": [
+"Page.name"
+],
+"workflow-builder": [
+"Page.name"
+],
+"print-designer": [
+"Page.name"
+],
+"insights": [
+"Page.name"
+],
+"print-format-builder-beta": [
+"Page.name"
+],
+"organizational-chart": [
+"Page.name"
+],
+"warehouse-capacity-summary": [
+"Page.name"
+],
+"point-of-sale": [
+"Page.name"
+],
+"bom-comparison-tool": [
+"Page.name"
+],
+"dashboard-view": [
+"Page.name"
+],
+"team-updates": [
+"Page.name"
+],
+"stock-balance": [
+"Page.name"
+],
+"backups": [
+"Page.name"
+],
+"print-format-builder": [
+"Page.name"
+],
+"setup-wizard": [
+"Page.name"
+],
+"sales-funnel": [
+"Page.name"
+],
+"permission-manager": [
+"Page.name"
+],
+"Insights User": [
+"Role.name",
+"TD:Role"
+],
+"Insights Admin": [
+"Role.name",
+"TD:Role"
+],
+"ppp1": [
+"Print Format.name"
+],
+"h": [
+"Print Format.name"
+],
+"p1": [
+"Print Format.name"
+],
+"Raqeem Payslip": [
+"Print Format.name"
+],
+"RAQEEM Sales Order": [
+"Print Format.name"
+],
+"RAQEEM Sales Invoice": [
+"Print Format.name"
+],
+"RAQEEM Quotation": [
+"Print Format.name"
+],
+"RAQEEM Payment Receipt": [
+"Print Format.name"
+],
+"RAQEEM Delivery Note": [
+"Print Format.name"
+],
+"Salary Slip Detailed": [
+"Print Format.name"
+],
+"Salary Slip Compact": [
+"Print Format.name"
+],
+"Salary Slip Classic": [
+"Print Format.name"
+],
+"Request for Quotation Bordered": [
+"Print Format.name"
+],
+"Request for Quotation Modern": [
+"Print Format.name"
+],
+"Request for Quotation Modern with Images": [
+"Print Format.name"
+],
+"Request for Quotation Classic": [
+"Print Format.name"
+],
+"Quotation Classic": [
+"Print Format.name"
+],
+"Quotation Bordered": [
+"Print Format.name"
+],
+"Quotation Modern": [
+"Print Format.name"
+],
+"Quotation Modern with Images": [
+"Print Format.name"
+],
+"POS Invoice Modern": [
+"Print Format.name"
+],
+"POS Invoice Bordered": [
+"Print Format.name"
+],
+"POS Invoice Classic": [
+"Print Format.name"
+],
+"POS Invoice Modern with Images": [
+"Print Format.name"
+],
+"Purchase Invoice Modern": [
+"Print Format.name"
+],
+"Purchase Invoice Classic": [
+"Print Format.name"
+],
+"Purchase Invoice Modern with Images": [
+"Print Format.name"
+],
+"Purchase Invoice Bordered": [
+"Print Format.name"
+],
+"Purchase Order Modern": [
+"Print Format.name"
+],
+"Purchase Order Bordered": [
+"Print Format.name"
+],
+"Purchase Order Classic": [
+"Print Format.name"
+],
+"Purchase Order Modern with Images": [
+"Print Format.name"
+],
+"Delivery Note Classic": [
+"Print Format.name"
+],
+"Delivery Note Bordered": [
+"Print Format.name"
+],
+"Delivery Note Modern": [
+"Print Format.name"
+],
+"Delivery Note Modern with Images": [
+"Print Format.name"
+],
+"Sales Order Modern with Images": [
+"Print Format.name"
+],
+"Sales Order Modern": [
+"Print Format.name"
+],
+"Sales Order Classic": [
+"Print Format.name"
+],
+"Sales Order Bordered": [
+"Print Format.name"
+],
+"Sales Invoice Classic": [
+"Print Format.name"
+],
+"Sales Invoice Modern": [
+"Print Format.name"
+],
+"Sales Invoice Bordered": [
+"Print Format.name"
+],
+"Sales Invoice Modern with Images": [
+"Print Format.name"
+],
+"Trial Balance Standard": [
+"Print Format.name"
+],
+"Cash Flow Statement Standard": [
+"Print Format.name"
+],
+"P&L Statement Standard": [
+"Print Format.name"
+],
+"Balance Sheet Standard": [
+"Print Format.name"
+],
+"Accounts Payable Summary Standard": [
+"Print Format.name"
+],
+"Accounts Receivable Summary Standard": [
+"Print Format.name"
+],
+"Accounts Payable Standard": [
+"Print Format.name"
+],
+"Accounts Receivable Standard": [
+"Print Format.name"
+],
+"General Ledger Standard": [
+"Print Format.name"
+],
+"Sales Invoice PD Format v2": [
+"Print Format.name"
+],
+"Sales Order PD v2": [
+"Print Format.name"
+],
+"Purchase Receipt Serial and Batch Bundle Print": [
+"Print Format.name"
+],
+"IRS 1099 Form": [
+"Print Format.name"
+],
+"Return POS Invoice": [
+"Print Format.name"
+],
+"Standard Appointment Letter": [
+"Print Format.name"
+],
+"Purchase eInvoice": [
+"Print Format.name"
+],
+"Sales Invoice Return": [
+"Print Format.name"
+],
+"Sales Auditing Voucher": [
+"Print Format.name"
+],
+"Journal Auditing Voucher": [
+"Print Format.name"
+],
+"Bank and Cash Payment Voucher": [
+"Print Format.name"
+],
+"Purchase Auditing Voucher": [
+"Print Format.name"
+],
+"Tax Invoice": [
+"Print Format.name"
+],
+"Detailed Tax Invoice": [
+"Print Format.name"
+],
+"Simplified Tax Invoice": [
+"Print Format.name"
+],
+"Drop Shipping Format": [
+"Print Format.name"
+],
+"Payment Receipt Voucher": [
+"Print Format.name"
+],
+"Cheque Printing Format": [
+"Print Format.name"
+],
+"[Error] {{ doc.method }}": [
+"Notification.subject"
+],
+"[Error] {{ doc.integration_request_service }}": [
+"Notification.subject"
+],
+"Exit Interview Scheduled: {{ doc.name }}": [
+"Notification.subject"
+],
+"{{ doc.name }} has been received": [
+"Notification.subject"
+],
+"Retention Bonus alert for {{ doc.employee }}": [
+"Notification.subject"
+],
+"New Fiscal Year {{ doc.name }} - Review Required": [
+"Notification.subject"
+],
+"Please Share your Feedback For {{ doc.training_event }}": [
+"Notification.subject"
+],
+"Training Scheduled: {{ doc.name }}": [
+"Notification.subject"
+],
+"الاستقبال - RM.co": [
+"TD:Department"
+]
+}

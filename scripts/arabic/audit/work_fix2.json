@@ -1,0 +1,3243 @@
+[
+{
+"en": "% of materials delivered against this Pick List",
+"old": "% من المواد المسلّمة مقابل قائمة الانتقاء هذه",
+"cand": "% من المواد المسلّمة مقابل قائمة الالتقاط هذه",
+"flags": [
+"Pick List"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "(Hour Rate / 60) * Actual Operation Time",
+"old": "(سعر الساعة / 60) * وقت العمل الفعلي",
+"cand": "(سعر الساعة / 60) * وقت العمل الفعلي",
+"flags": [
+"Operation"
+],
+"still": [
+"Operation"
+],
+"ours": false
+},
+{
+"en": "Accounting Entry for Landed Cost Voucher for SCR {0}",
+"old": "قيد محاسبي لقسيمة التكلفة الواصلة للـ SCR {0}",
+"cand": "قيد محاسبي لسند التكلفة الواصلة للـ SCR {0}",
+"flags": [
+"Voucher"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Actual Operation Time",
+"old": "وقت التشغيل الفعلي",
+"cand": "وقت التشغيل الفعلي",
+"flags": [
+"Operation"
+],
+"still": [
+"Operation"
+],
+"ours": true
+},
+{
+"en": "Add Corrective Operation Cost in Finished Good Valuation",
+"old": "إضافة تكلفة العملية التصحيحية في تقييم المنتج التام",
+"cand": "إضافة تكلفة العملية التصحيحية في تقييم المنتج النهائي",
+"flags": [
+"Finished Good"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Adjustment based on Purchase Invoice rate",
+"old": "تسوية بناءً على سعر فاتورة الشراء",
+"cand": "تسوية بناءً على سعر فاتورة المشتريات",
+"flags": [
+"Purchase Invoice"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Advance Booking Days is mandatory for Appointment Scheduling.",
+"old": "أيام الحجز المسبق إلزامية لجدولة المواعيد.",
+"cand": "أيام الحجز المسبق إلزامية لجدولة المواعيد.",
+"flags": [
+"Advance"
+],
+"still": [
+"Advance"
+],
+"ours": false
+},
+{
+"en": "All linked Sales Orders must be subcontracted.",
+"old": "يجب أن تكون جميع أوامر البيع المرتبطة متعاقدًا عليها من الباطن.",
+"cand": "يجب أن تكون جميع أوامر البيع المرتبطة مصنَّع خارجياً.",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "All picked items have already been transferred against this Pick List",
+"old": "تم بالفعل نقل جميع الأصناف المنتقاة مقابل قائمة الانتقاء هذه",
+"cand": "تم بالفعل نقل جميع الأصناف المنتقاة مقابل قائمة الالتقاط هذه",
+"flags": [
+"Pick List"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Allow Request for Quotation with Zero Quantity",
+"old": "السماح بطلب عرض أسعار بكمية صفرية",
+"cand": "السماح بطلب عرض أسعار بكمية صفرية",
+"flags": [
+"Request for Quotation"
+],
+"still": [
+"Request for Quotation"
+],
+"ours": false
+},
+{
+"en": "Amount Difference with Purchase Invoice",
+"old": "فرق المبلغ مع فاتورة الشراء",
+"cand": "فرق المبلغ مع فاتورة المشتريات",
+"flags": [
+"Purchase Invoice"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Appointment Duration (In Minutes)",
+"old": "مدة التعيين (بالدقائق)",
+"cand": "مدة التعيين (بالدقائق)",
+"flags": [
+"Appointment"
+],
+"still": [
+"Appointment"
+],
+"ours": false
+},
+{
+"en": "Appointment Letter",
+"old": "رسالة التعيين",
+"cand": "رسالة التعيين",
+"flags": [
+"Appointment"
+],
+"still": [
+"Appointment"
+],
+"ours": true
+},
+{
+"en": "Appointment Letter Template",
+"old": "قالب رسالة التعيين",
+"cand": "قالب رسالة التعيين",
+"flags": [
+"Appointment"
+],
+"still": [
+"Appointment"
+],
+"ours": true
+},
+{
+"en": "Appointment Letter content",
+"old": "محتوى رسالة التعيين",
+"cand": "محتوى رسالة التعيين",
+"flags": [
+"Appointment"
+],
+"still": [
+"Appointment"
+],
+"ours": true
+},
+{
+"en": "Asset Repair Purchase Invoice",
+"old": "فاتورة شراء إصلاح الأصول",
+"cand": "فاتورة مشتريات إصلاح الأصول",
+"flags": [
+"Purchase Invoice"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Auto Map Raw Materials to Finished Goods",
+"old": "ربط المواد الخام بالمنتجات التامة تلقائياً",
+"cand": "ربط المواد الخام بالمنتجات النهائية تلقائياً",
+"flags": [
+"Finished Good"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Auto create Subcontracting Order",
+"old": "إنشاء أمر التعاقد من الباطن تلقائيًا",
+"cand": "إنشاء أمر التصنيع الخارجي تلقائيًا",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Auto match and set the Party in Bank Transactions",
+"old": "المطابقة التلقائية وتعيين الطرف في المعاملات المصرفية",
+"cand": "المطابقة التلقائية وتعيين الطرف في المعاملات البنكية",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Backflush raw materials of subcontract based on",
+"old": "السحب التلقائي للمواد الخام للتعاقد من الباطن بناءً على",
+"cand": "السحب التلقائي للمواد الخام للتصنيع خارجي بناءً على",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Bank Account {} in Bank Transaction {} is not matching with Bank Account {}",
+"old": "الحساب المصرفي {} في المعاملة المصرفية {} لا يتطابق مع الحساب المصرفي {}",
+"cand": "الحساب البنكي {} في المعاملة البنكية {} لا يتطابق مع الحساب البنكي {}",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Bank Charges",
+"old": "الرسوم المصرفية",
+"cand": "الرسوم البنكية",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Bank Draft",
+"old": "شيك مصرفي",
+"cand": "شيك بنكي",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": true
+},
+{
+"en": "Bank Guarantee Type",
+"old": "نوع الضمان المصرفي",
+"cand": "نوع الضمان البنكي",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Bank Overdraft Account",
+"old": "حساب السحب على المكشوف",
+"cand": "حساب السحب على المكشوف",
+"flags": [
+"Bank"
+],
+"still": [
+"Bank"
+],
+"ours": true
+},
+{
+"en": "Bank Remittance",
+"old": "حوالات مصرفية",
+"cand": "حوالات بنكية",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": true
+},
+{
+"en": "Bank Statement balance as per General Ledger",
+"old": "كشف رصيد الحساب المصرفي وفقا لدفتر الأستاذ العام",
+"cand": "كشف رصيد الحساب البنكي وفقا لدفتر الأستاذ العام",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Bank Transaction Payments",
+"old": "مدفوعات المعاملات المصرفية",
+"cand": "مدفوعات المعاملات البنكية",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Bank Transaction {0} Matched",
+"old": "تمت مطابقة المعاملة المصرفية {0}",
+"cand": "تمت مطابقة المعاملة البنكية {0}",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Bank Transaction {0} is already fully reconciled",
+"old": "تمت مطابقة المعاملة المصرفية {0} بالكامل.",
+"cand": "تمت مطابقة المعاملة البنكية {0} بالكامل.",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Bank Transaction {0} updated",
+"old": "تم تحديث المعاملة المصرفية {0}",
+"cand": "تم تحديث المعاملة البنكية {0}",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Bank account cannot be named as {0}",
+"old": "لا يمكن تسمية الحساب المصرفي باسم {0}",
+"cand": "لا يمكن تسمية الحساب البنكي باسم {0}",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Bank account {0} already exists and could not be created again",
+"old": "الحساب المصرفي {0} موجود بالفعل ولا يمكن إنشاؤه مرة أخرى",
+"cand": "الحساب البنكي {0} موجود بالفعل ولا يمكن إنشاؤه مرة أخرى",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Bank/Cash Account {0} doesn't belong to company {1}",
+"old": "الحساب المصرفي/النقدي {0} لا ينتمي إلى الشركة {1}",
+"cand": "الحساب البنكي/النقدي {0} لا ينتمي إلى الشركة {1}",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Banking",
+"old": "الخدمات المصرفية",
+"cand": "الخدمات البنكية",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Bill for rejected quantity in Purchase Invoice",
+"old": "فوترة الكمية المرفوضة في فاتورة الشراء",
+"cand": "فوترة الكمية المرفوضة في فاتورة المشتريات",
+"flags": [
+"Purchase Invoice"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Blanket Order Allowance (%)",
+"old": "بدل الطلب الشامل (%)",
+"cand": "بدل الطلب الشامل (%)",
+"flags": [
+"Blanket Order"
+],
+"still": [
+"Blanket Order"
+],
+"ours": false
+},
+{
+"en": "Blanket Order Item",
+"old": "صنف الأمر الإطاري",
+"cand": "صنف الأمر الإطاري",
+"flags": [
+"Blanket Order"
+],
+"still": [
+"Blanket Order"
+],
+"ours": true
+},
+{
+"en": "Books are closed till {0} by Period Closing Voucher, remove these rows: {1}",
+"old": "الدفاتر مغلقة حتى {0} بواسطة قيد إغلاق الفترة، قم بإزالة هذه الصفوف: {1}",
+"cand": "الدفاتر مغلقة حتى {0} بواسطة قيد إقفال الفترة، قم بإزالة هذه الصفوف: {1}",
+"flags": [
+"Closing",
+"Voucher"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Both Receivable Account: {0} and Advance Account: {1} must be of same currency for company: {2}",
+"old": "يجب أن يكون كل من حساب المستحقات: {0} وحساب السلفة: {1} من نفس العملة للشركة: {2}",
+"cand": "يجب أن يكون كل من حساب المستحقات: {0} وحساب السلفة: {1} من نفس العملة للشركة: {2}",
+"flags": [
+"Receivable"
+],
+"still": [
+"Receivable"
+],
+"ours": false
+},
+{
+"en": "CRM Holiday List",
+"old": "قائمة عطلات (CRM)",
+"cand": "قائمة عطلات (CRM)",
+"flags": [
+"Holiday List"
+],
+"still": [
+"Holiday List"
+],
+"ours": true
+},
+{
+"en": "Calculated Bank Statement balance",
+"old": "حساب رصيد الحساب المصرفي",
+"cand": "حساب رصيد الحساب البنكي",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Can not filter based on Voucher No, if grouped by Voucher",
+"old": "لا يمكن الفلتره علي اساس (رقم الأيصال)، إذا تم وضعه في مجموعة على اساس (ايصال)",
+"cand": "لا يمكن الفلتره علي اساس (رقم الأيصال)، إذا تم وضعه في مجموعة على اساس (ايصال)",
+"flags": [
+"Voucher"
+],
+"still": [
+"Voucher"
+],
+"ours": false
+},
+{
+"en": "Cannot cancel Stock Closing Entry {0} because the later Stock Closing Entry {1} is built on it. Cancel {1} first.",
+"old": "لا يمكن إلغاء قيد إغلاق المخزون {0} لأن قيد إغلاق المخزون اللاحق {1} مبني عليه. قم بإلغاء {1} أولاً.",
+"cand": "لا يمكن إلغاء قيد إقفال المخزون {0} لأن قيد إقفال المخزون اللاحق {1} مبني عليه. قم بإلغاء {1} أولاً.",
+"flags": [
+"Closing"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Cannot cancel the transaction. Reposting of item valuation on submission is not completed yet.",
+"old": "لا يمكن إلغاء العملية. لم تكتمل إعادة تقييم السلعة عند الإرسال بعد.",
+"cand": "لا يمكن إلغاء العملية. لم تكتمل إعادة تقييم السلعة عند الإرسال بعد.",
+"flags": [
+"Repost"
+],
+"still": [
+"Repost"
+],
+"ours": false
+},
+{
+"en": "Cash / Bank",
+"old": "نقداً / مصرف",
+"cand": "نقداً / بنك",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": true
+},
+{
+"en": "Cash and Bank",
+"old": "النقدية والمصارف",
+"cand": "النقدية والبنوك",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": true
+},
+{
+"en": "Chart Of Accounts Template",
+"old": "نمودج  دليل الحسابات",
+"cand": "قالب  دليل الحسابات",
+"flags": [
+"Template"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Checklist Template",
+"old": "نموذج قائمة المهام",
+"cand": "قالب قائمة المهام",
+"flags": [
+"Template"
+],
+"still": [],
+"ours": true
+},
+{
+"en": "Claimed Landed Cost Amount (Company Currency)",
+"old": "مبلغ التكلفة النهائية المطالب بها (عملة الشركة)",
+"cand": "مبلغ التكلفة النهائية المطالب بها (عملة الشركة)",
+"flags": [
+"Landed Cost"
+],
+"still": [
+"Landed Cost"
+],
+"ours": false
+},
+{
+"en": "Clearance date changed from {0} to {1} via Bank Clearance Tool",
+"old": "تم تغيير تاريخ التخليص من {0} إلى {1} عبر أداة التخليص المصرفي",
+"cand": "تم تغيير تاريخ التخليص من {0} إلى {1} عبر أداة التخليص البنكي",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Company Bank Account",
+"old": "حساب مصرف الشركة",
+"cand": "حساب بنك الشركة",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": true
+},
+{
+"en": "Company Bank Account must be an account of type Bank.",
+"old": "يجب أن يكون حساب مصرف الشركة من نوع «مصرف».",
+"cand": "يجب أن يكون حساب بنك الشركة من نوع «بنك».",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": true
+},
+{
+"en": "Company and Posting Date is mandatory",
+"old": "اسم الشركة وتاريخ النشر إلزامي",
+"cand": "اسم الشركة وتاريخ الترحيل إلزامي",
+"flags": [
+"Posting Date"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Consider for Tax Withholding",
+"old": "ضع في اعتبارك اقتطاع الضرائب",
+"cand": "ضع في اعتبارك اقتطاع الضرائب",
+"flags": [
+"Tax Withholding"
+],
+"still": [
+"Tax Withholding"
+],
+"ours": false
+},
+{
+"en": "Consider for Tax Withholding ",
+"old": "ضع في اعتبارك اقتطاع الضرائب ",
+"cand": "ضع في اعتبارك اقتطاع الضرائب ",
+"flags": [
+"Tax Withholding"
+],
+"still": [
+"Tax Withholding"
+],
+"ours": false
+},
+{
+"en": "Could not detect the Company for updating Bank Accounts",
+"old": "تعذر العثور على الشركة المسؤولة عن تحديث الحسابات المصرفية",
+"cand": "تعذر العثور على الشركة المسؤولة عن تحديث الحسابات البنكية",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Create Pick List",
+"old": "إنشاء قائمة انتقاء",
+"cand": "إنشاء قائمة انتقاء",
+"flags": [
+"Pick List"
+],
+"still": [
+"Pick List"
+],
+"ours": false
+},
+{
+"en": "Creating Packing Slip ...",
+"old": "إنشاء إيصال التعبئة ...",
+"cand": "إنشاء إيصال التعبئة ...",
+"flags": [
+"Packing Slip"
+],
+"still": [
+"Packing Slip"
+],
+"ours": false
+},
+{
+"en": "Creating Purchase Invoices ...",
+"old": "جارٍ إنشاء فواتير الشراء ...",
+"cand": "جارٍ إنشاء فواتير المشتريات ...",
+"flags": [
+"Purchase Invoice"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Creating Subcontracting Inward Order ...",
+"old": "إنشاء طلبات داخلية للتعاقد من الباطن ...",
+"cand": "إنشاء طلبات داخلية للتصنيع خارجي ...",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Creating Subcontracting Order ...",
+"old": "إنشاء أمر التعاقد من الباطن ...",
+"cand": "إنشاء أمر التصنيع الخارجي ...",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Creating Subcontracting Receipt ...",
+"old": "إنشاء إيصال التعاقد من الباطن ...",
+"cand": "إنشاء إيصال التصنيع الخارجي ...",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Default Holiday List",
+"old": "قائمة العطل الافتراضية",
+"cand": "قائمة العطل الافتراضية",
+"flags": [
+"Holiday List"
+],
+"still": [
+"Holiday List"
+],
+"ours": false
+},
+{
+"en": "Default Payment Terms Template",
+"old": "نموذج شروط الدفع الافتراضية",
+"cand": "قالب شروط الدفع الافتراضية",
+"flags": [
+"Template"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Default Unit of Measure for Variant '{0}' must be same as in Template '{1}'",
+"old": "وحدة القياس الافتراضية للمتغير '{0}' يجب أن تكون كما في النمودج '{1}'",
+"cand": "وحدة القياس الافتراضية للمتغير '{0}' يجب أن تكون كما في القالب '{1}'",
+"flags": [
+"Template"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Dependant SLE Voucher Detail No",
+"old": "رقم قسيمة SLE التابعة",
+"cand": "رقم سند SLE التابعة",
+"flags": [
+"Voucher"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Dependent Task {0} is not a Template Task",
+"old": "المهمة التابعة {0} ليست مهمة نموذجية",
+"cand": "المهمة التابعة {0} ليست مهمة نموذجية",
+"flags": [
+"Template"
+],
+"still": [
+"Template"
+],
+"ours": false
+},
+{
+"en": "Deposit in Bank",
+"old": "إيداع في المصرف",
+"cand": "إيداع في البنك",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": true
+},
+{
+"en": "Difference Account must be a Asset/Liability type account, since this Stock Reconciliation is an Opening Entry",
+"old": "يجب أن يكون حساب الفرق من نوع حساب أصول/خصوم، نظرًا لأن جرد المخزون هذا هو قيد افتتاحي",
+"cand": "يجب أن يكون حساب الفرق من نوع حساب أصول/خصوم، نظرًا لأن تسوية المخزون هذا هو قيد افتتاحي",
+"flags": [
+"Stock Reconciliation"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Drawn On (Bank)",
+"old": "المصرف المسحوب عليه",
+"cand": "البنك المسحوب عليه",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": true
+},
+{
+"en": "Dunning Letter for Dunning Type {0} in language '{1}' not found.",
+"old": "لم يتم العثور على خطاب إنذار بالدفع لنوع الطلب {0} باللغة '{1}'.",
+"cand": "لم يتم العثور على خطاب إنذار بالدفع لنوع الطلب {0} باللغة '{1}'.",
+"flags": [
+"Dunning"
+],
+"still": [
+"Dunning"
+],
+"ours": false
+},
+{
+"en": "Dunning Letter for Dunning Type {0} not found.",
+"old": "لم يتم العثور على خطاب إنذار بالدفع لنوع الطلب {0}.",
+"cand": "لم يتم العثور على خطاب إنذار بالدفع لنوع الطلب {0}.",
+"flags": [
+"Dunning"
+],
+"still": [
+"Dunning"
+],
+"ours": false
+},
+{
+"en": "Duplicate Salary Withholding",
+"old": "حجز راتب مكرر",
+"cand": "حجز راتب مكرر",
+"flags": [
+"Tax Withholding"
+],
+"still": [
+"Tax Withholding"
+],
+"ours": true
+},
+{
+"en": "Duplicate languages found on Dunning Letter Text. Keep only one of them.",
+"old": "تم العثور على لغات مكررة في نص خطاب إنذار الدفع. أبقِ لغة واحدة فقط منها.",
+"cand": "تم العثور على لغات مكررة في نص خطاب إنذار الدفع. أبقِ لغة واحدة فقط منها.",
+"flags": [
+"Dunning"
+],
+"still": [
+"Dunning"
+],
+"ours": false
+},
+{
+"en": "Early Settlement (Cash / Bank)",
+"old": "سداد مبكر (نقداً / مصرف)",
+"cand": "سداد مبكر (نقداً / بنك)",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": true
+},
+{
+"en": "Edit Posting Date and Time",
+"old": "تحرير تاريخ النشر والوقت",
+"cand": "تحرير تاريخ الترحيل والوقت",
+"flags": [
+"Posting Date"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Edit Tax Withholding Entries",
+"old": "تعديل إدخالات اقتطاع الضرائب",
+"cand": "تعديل إدخالات اقتطاع الضرائب",
+"flags": [
+"Tax Withholding"
+],
+"still": [
+"Tax Withholding"
+],
+"ours": false
+},
+{
+"en": "Enabling this ensures each Purchase Invoice has a unique value in Supplier Invoice No. field within a particular fiscal year",
+"old": "يضمن تفعيل هذا الخيار أن يكون لكل فاتورة شراء قيمة فريدة في حقل \"رقم فاتورة المورد\" ضمن سنة مالية محددة.",
+"cand": "يضمن تفعيل هذا الخيار أن يكون لكل فاتورة مشتريات قيمة فريدة في حقل \"رقم فاتورة المورد\" ضمن سنة مالية محددة.",
+"flags": [
+"Purchase Invoice"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Error in party matching for Bank Transaction {0}",
+"old": "خطأ في مطابقة الأطراف للمعاملة المصرفية {0}",
+"cand": "خطأ في مطابقة الأطراف للمعاملة البنكية {0}",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Every movement of every item, in and out, with the balance after each. See [Stock Ledger](https://docs.frappe.io/erpnext/user/manual/en/stock-ledger).",
+"old": "كل حركة لكل صنف، داخلة وخارجة، مع الرصيد بعد كل حركة. انظر [سجل المخزن](https://docs.frappe.io/erpnext/user/manual/en/stock-ledger).",
+"cand": "كل حركة لكل صنف، داخلة وخارجة، مع الرصيد بعد كل حركة. انظر [سجل المخزن](https://docs.frappe.io/erpnext/user/manual/en/stock-ledger).",
+"flags": [
+"Ledger"
+],
+"still": [
+"Ledger"
+],
+"ours": false
+},
+{
+"en": "Exception Budget Approver Role",
+"old": "دور الموافقة على الموازنة الاستثنائية",
+"cand": "دور الموافقة على الموازنة الاستثنائية",
+"flags": [
+"Budget"
+],
+"still": [
+"Budget"
+],
+"ours": false
+},
+{
+"en": "Exclude Zero Balance Parties",
+"old": "استبعاد الحفلات ذات الرصيد الصفري",
+"cand": "استبعاد الحفلات ذات الرصيد الصفري",
+"flags": [
+"Party"
+],
+"still": [
+"Party"
+],
+"ours": false
+},
+{
+"en": "Field in Bank Transaction",
+"old": "الحقل في المعاملات المصرفية",
+"cand": "الحقل في المعاملات البنكية",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Financial Report Template {0} is disabled",
+"old": "نموذج التقرير المالي {0} معطل",
+"cand": "قالب التقرير المالي {0} معطل",
+"flags": [
+"Template"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Financial Report Template {0} not found",
+"old": "لم يتم العثور على نموذج التقرير المالي {0}",
+"cand": "لم يتم العثور على قالب التقرير المالي {0}",
+"flags": [
+"Template"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Financial reports will be generated using GL Entry doctypes (should be enabled if Period Closing Voucher is not posted for all years sequentially or missing) ",
+"old": "سيتم إنشاء التقارير المالية باستخدام أنواع مستندات إدخال دفتر الأستاذ العام (يجب تمكينها إذا لم يتم ترحيل قسيمة إغلاق الفترة لجميع السنوات بالتسلسل أو إذا كانت مفقودة). ",
+"cand": "سيتم إنشاء التقارير المالية باستخدام أنواع مستندات إدخال دفتر الأستاذ العام (يجب تمكينها إذا لم يتم ترحيل سند إقفال الفترة لجميع السنوات بالتسلسل أو إذا كانت مفقودة). ",
+"flags": [
+"Closing",
+"Voucher"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Finished Good Batch No",
+"old": "رقم دفعة المنتج التام",
+"cand": "رقم دفعة المنتج النهائي",
+"flags": [
+"Finished Good"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Finished Good Serial / Batch No",
+"old": "الرقم التسلسلي / رقم الدفعة للمنتج التام",
+"cand": "الرقم التسلسلي / رقم الدفعة للمنتج التام",
+"flags": [
+"Finished Good"
+],
+"still": [
+"Finished Good"
+],
+"ours": false
+},
+{
+"en": "Finished Good Serial No",
+"old": "الرقم التسلسلي للمنتج التام",
+"cand": "الرقم التسلسلي للمنتج التام",
+"flags": [
+"Finished Good"
+],
+"still": [
+"Finished Good"
+],
+"ours": false
+},
+{
+"en": "From Voucher Detail No",
+"old": "من تفاصيل القسيمة رقم",
+"cand": "من تفاصيل السند رقم",
+"flags": [
+"Voucher"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Generate Stock Closing Entry",
+"old": "إنشاء قيد إغلاق المخزون",
+"cand": "إنشاء قيد إقفال المخزون",
+"flags": [
+"Closing"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Get Finished Goods for Manufacture",
+"old": "الحصول على منتجات تامة الصنع للتصنيع",
+"cand": "الحصول على منتجات نهائية للتصنيع",
+"flags": [
+"Finished Good"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Go to the <a href='/banking' target='_blank' style='text-decoration: underline;'>Banking module</a> to setup this rule.",
+"old": "انتقل إلى <a href='/banking' target='_blank' style='text-decoration: underline;'>وحدة الخدمات المصرفية</a> لإعداد هذه القاعدة.",
+"cand": "انتقل إلى <a href='/banking' target='_blank' style='text-decoration: underline;'>وحدة الخدمات البنكية</a> لإعداد هذه القاعدة.",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "How much of each item is on your shelves, and what it is worth. From here, every receipt and delivery keeps it up to date. See [Stock Reconciliation](https://docs.frappe.io/erpnext/user/manual/en/stock-reconciliation).",
+"old": "كمية كل صنف الموجودة على رفوفكم وقيمتها. ومن هنا، يتم تحديثها مع كل استلام وتسليم. راجع [جرد المخزون](https://docs.frappe.io/erpnext/user/manual/en/stock-reconciliation).",
+"cand": "كمية كل صنف الموجودة على رفوفكم وقيمتها. ومن هنا، يتم تحديثها مع كل استلام وتسليم. راجع [تسوية المخزون](https://docs.frappe.io/erpnext/user/manual/en/stock-reconciliation).",
+"flags": [
+"Stock Reconciliation"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "If enabled, a weekly scheduler scans the Stock Ledger Variance for item-warehouses with incorrect valuation in the current financial year and auto-creates Item & Warehouse based reposts to fix them.",
+"old": "عند التفعيل، يقوم المجدول الأسبوعي بفحص انحراف سجل المخزن للأصناف والمستودعات ذات التقييم غير الصحيح في السنة المالية الحالية، وينشئ تلقائيًا عمليات إعادة ترحيل قائمة على الصنف والمستودع لتصحيحها.",
+"cand": "عند التفعيل، يقوم المجدول الأسبوعي بفحص انحراف سجل المخزن للأصناف والمستودعات ذات التقييم غير الصحيح في السنة المالية الحالية، وينشئ تلقائيًا عمليات إعادة ترحيل قائمة على الصنف والمستودع لتصحيحها.",
+"flags": [
+"Ledger"
+],
+"still": [
+"Ledger"
+],
+"ours": false
+},
+{
+"en": "If enabled, system will allow user to deliver the entire quantity of the finished goods produced against the Subcontracting Inward Order. If disabled, system will allow delivery of only the ordered quantity.",
+"old": "في حال تفعيل هذه الخاصية، سيسمح النظام للمستخدم بتسليم كامل كمية المنتجات النهائية المنتجة بموجب أمر الشراء الداخلي للمقاول من الباطن. أما في حال تعطيلها، فسيسمح النظام بتسليم الكمية المطلوبة فقط.",
+"cand": "في حال تفعيل هذه الخاصية، سيسمح النظام للمستخدم بتسليم كامل كمية المنتجات النهائية المنتجة بموجب أمر الشراء الداخلي للمصنِّع خارجي. أما في حال تعطيلها، فسيسمح النظام بتسليم الكمية المطلوبة فقط.",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "If no taxes are set, and Taxes and Charges Template is selected, the system will automatically apply the taxes from the chosen template.",
+"old": "إذا لم يتم تحديد أي ضرائب، وتم اختيار نموذج الضرائب والرسوم، فسيقوم النظام تلقائيًا بتطبيق الضرائب من النموذج المختار.",
+"cand": "إذا لم يتم تحديد أي ضرائب، وتم اختيار قالب الضرائب والرسوم، فسيقوم النظام تلقائيًا بتطبيق الضرائب من القالب المختار.",
+"flags": [
+"Template"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "If this option is configured 'Yes', ERPNext will prevent you from creating a Purchase Invoice or Receipt without creating a Purchase Order first. This configuration can be overridden for a particular supplier by enabling the 'Allow Purchase Invoice Creation Without Purchase Order' checkbox in the Supplier master.",
+"old": "إذا تم تكوين هذا الخيار &quot;نعم&quot; ، سيمنعك ERPNext من إنشاء فاتورة شراء أو إيصال دون إنشاء أمر شراء أولاً. يمكن تجاوز هذا التكوين لمورد معين عن طريق تمكين مربع الاختيار &quot;السماح بإنشاء فاتورة الشراء بدون أمر شراء&quot; في مدير المورد.",
+"cand": "إذا تم تكوين هذا الخيار &quot;نعم&quot; ، سيمنعك ERPNext من إنشاء فاتورة مشتريات أو إيصال دون إنشاء أمر شراء أولاً. يمكن تجاوز هذا التكوين لمورد معين عن طريق تمكين مربع الاختيار &quot;السماح بإنشاء فاتورة المشتريات بدون أمر شراء&quot; في مدير المورد.",
+"flags": [
+"Purchase Invoice"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Ignore Default Payment Terms Template",
+"old": "تجاهل نموذج شروط الدفع الافتراضية",
+"cand": "تجاهل قالب شروط الدفع الافتراضية",
+"flags": [
+"Template"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Ignore Tax Withholding Threshold",
+"old": "تجاهل الحد الأدنى لحجز الضريبة",
+"cand": "تجاهل الحد الأدنى لحجز الضريبة",
+"flags": [
+"Tax Withholding"
+],
+"still": [
+"Tax Withholding"
+],
+"ours": false
+},
+{
+"en": "Ignore Voucher Type filter and Select Vouchers Manually",
+"old": "تجاهل فلتر نوع القسيمة وحدد القسائم يدويًا",
+"cand": "تجاهل فلتر نوع السند وحدد السندات يدويًا",
+"flags": [
+"Voucher"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Include Subcontracted Items",
+"old": "تضمين أصناف التعاقد من الباطن",
+"cand": "تضمين أصناف التصنيع الخارجي",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": true
+},
+{
+"en": "Invalid Accounting Dimension",
+"old": "بُعد محاسبي غير صالح",
+"cand": "بُعد محاسبي غير صالح",
+"flags": [
+"Accounting Dimension"
+],
+"still": [
+"Accounting Dimension"
+],
+"ours": false
+},
+{
+"en": "Invalid Opening Entry",
+"old": "قيد فتح غير صالح",
+"cand": "قيد افتتاحي غير صالح",
+"flags": [
+"Opening Stock"
+],
+"still": [],
+"ours": true
+},
+{
+"en": "Invalid Purchase Invoice",
+"old": "فاتورة شراء غير صالحة",
+"cand": "فاتورة مشتريات غير صالحة",
+"flags": [
+"Purchase Invoice"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Investment Banking",
+"old": "الخدمات المصرفية الاستثمارية",
+"cand": "الخدمات البنكية الاستثمارية",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Is Old Subcontracting Flow",
+"old": "هل تدفق التعاقد من الباطن القديم",
+"cand": "هل تدفق التصنيع الخارجي القديم",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Is Period Closing Voucher Entry",
+"old": "هل هو إدخال قسيمة إغلاق الفترة",
+"cand": "هل هو إدخال سند إقفال الفترة",
+"flags": [
+"Closing",
+"Voucher"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Is Purchase Order required for Purchase Invoice & Receipt creation?",
+"old": "هل أمر الشراء مطلوب لإنشاء فاتورة الشراء والاستلام؟",
+"cand": "هل أمر الشراء مطلوب لإنشاء فاتورة المشتريات والاستلام؟",
+"flags": [
+"Purchase Invoice"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Is Tax Withholding Account",
+"old": "هل حساب اقتطاع الضرائب",
+"cand": "هل حساب اقتطاع الضرائب",
+"flags": [
+"Tax Withholding"
+],
+"still": [
+"Tax Withholding"
+],
+"ours": false
+},
+{
+"en": "It posts the expense, and what you owe the supplier, to your ledger. See [Purchase Invoice](https://docs.frappe.io/erpnext/user/manual/en/purchase-invoice).",
+"old": "يقوم بترحيل المصروف، وما تدين به للمورّد، إلى دفتر الأستاذ لديك. راجع [فاتورة شراء](https://docs.frappe.io/erpnext/user/manual/en/purchase-invoice).",
+"cand": "يقوم بترحيل المصروف، وما تدين به للمورّد، إلى دفتر الأستاذ لديك. راجع [فاتورة مشتريات](https://docs.frappe.io/erpnext/user/manual/en/purchase-invoice).",
+"flags": [
+"Purchase Invoice"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Item Quality Inspection Parameter",
+"old": "معلمة تفتيش جودة الصنف",
+"cand": "معلمة تفتيش جودة الصنف",
+"flags": [
+"Quality Inspection"
+],
+"still": [
+"Quality Inspection"
+],
+"ours": false
+},
+{
+"en": "Item/Item Code required to get Item Tax Template.",
+"old": "يلزم وجود رمز الصنف/الصنف للحصول على نموذج ضريبة الصنف.",
+"cand": "يلزم وجود رمز الصنف/الصنف للحصول على قالب ضريبة الصنف.",
+"flags": [
+"Template"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Landed Cost Taxes and Charges",
+"old": "الضرائب التكلفة هبطت والرسوم",
+"cand": "الضرائب التكلفة هبطت والرسوم",
+"flags": [
+"Landed Cost"
+],
+"still": [
+"Landed Cost"
+],
+"ours": false
+},
+{
+"en": "Landed Cost Vendor Invoice",
+"old": "فاتورة المورد بتكلفة الشحن",
+"cand": "فاتورة المورد بتكلفة الشحن",
+"flags": [
+"Landed Cost"
+],
+"still": [
+"Landed Cost"
+],
+"ours": false
+},
+{
+"en": "Landed Cost Voucher Amount",
+"old": "التكلفة هبطت قيمة قسيمة",
+"cand": "التكلفة هبطت قيمة سند",
+"flags": [
+"Landed Cost",
+"Voucher"
+],
+"still": [
+"Landed Cost"
+],
+"ours": false
+},
+{
+"en": "Later Stock Closing Entry Exists",
+"old": "يوجد قيد إغلاق مخزون لاحق",
+"cand": "يوجد قيد إقفال مخزون لاحق",
+"flags": [
+"Closing"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Ledger Health Monitor Company",
+"old": "شركة ليدجر لمراقبة الصحة",
+"cand": "شركة ليدجر لمراقبة الصحة",
+"flags": [
+"Ledger"
+],
+"still": [
+"Ledger"
+],
+"ours": false
+},
+{
+"en": "Limit timeslot for Stock Reposting",
+"old": "فترة زمنية محددة لإعادة نشر المخزون",
+"cand": "فترة زمنية محددة لإعادة ترحيل المخزون",
+"flags": [
+"Repost"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Make Purchase Invoice",
+"old": "إنشاء فاتورة شراء",
+"cand": "إنشاء فاتورة مشتريات",
+"flags": [
+"Purchase Invoice"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Make Subcontracting PO",
+"old": "إنشاء أمر شراء للتعاقد من الباطن",
+"cand": "إنشاء أمر شراء للتصنيع خارجي",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Map Raw Materials to Finished Goods",
+"old": "تعيين المواد الخام إلى المنتجات التامة",
+"cand": "تعيين المواد الخام إلى المنتجات النهائية",
+"flags": [
+"Finished Good"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Mapping Subcontracting Inward Order ...",
+"old": "رسم خرائط طلبات الشراء الداخلية للتعاقد من الباطن ...",
+"cand": "رسم خرائط طلبات الشراء الداخلية للتصنيع خارجي ...",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Mapping Subcontracting Order ...",
+"old": "تحديد ترتيب التعاقد من الباطن ...",
+"cand": "تحديد ترتيب التصنيع الخارجي ...",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Material Requests for which Supplier Quotations are not created",
+"old": "طلبات المواد التي لم ينشأ لها عروض أسعار من الموردين",
+"cand": "طلبات المواد التي لم ينشأ لها عروض أسعار من الموردين",
+"flags": [
+"Supplier Quotation"
+],
+"still": [
+"Supplier Quotation"
+],
+"ours": false
+},
+{
+"en": "Material Transferred for Subcontract",
+"old": "المواد المنقولة للعقود من الباطن",
+"cand": "المواد المنقولة للعقود من الباطن",
+"flags": [
+"Subcontract"
+],
+"still": [
+"Subcontract"
+],
+"ours": false
+},
+{
+"en": "Multiple POS Opening Entry",
+"old": "إدخال بيانات فتح نقاط البيع المتعددة",
+"cand": "إدخال بيانات فتح نقاط البيع المتعددة",
+"flags": [
+"Opening Stock"
+],
+"still": [
+"Opening Stock"
+],
+"ours": false
+},
+{
+"en": "New Journal Entry will be posted for the difference amount. The Posting Date can be modified.",
+"old": "سيتم تسجيل قيد يومية جديد بقيمة الفرق. ويمكن تعديل تاريخ التسجيل.",
+"cand": "سيتم تسجيل قيد يومية جديد بقيمة الفرق. ويمكن تعديل تاريخ الترحيل.",
+"flags": [
+"Posting Date"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "New Purchase Invoice",
+"old": "فاتورة شراء جديدة",
+"cand": "فاتورة مشتريات جديدة",
+"flags": [
+"Purchase Invoice"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "No Holiday List was found for Employee {0} or their company {1} for date {2}. Please assign through {3}",
+"old": "لم يتم العثور على قائمة عطلات للموظف {0} أو لشركته {1} بتاريخ {2}. يرجى تعيينها من خلال {3}",
+"cand": "لم يتم العثور على قائمة عطلات للموظف {0} أو لشركته {1} بتاريخ {2}. يرجى تعيينها من خلال {3}",
+"flags": [
+"Holiday List"
+],
+"still": [
+"Holiday List"
+],
+"ours": true
+},
+{
+"en": "No Tax Withholding data found for the current posting date.",
+"old": "لم يتم العثور على بيانات اقتطاع الضرائب لتاريخ النشر الحالي.",
+"cand": "لم يتم العثور على بيانات اقتطاع الضرائب لتاريخ النشر الحالي.",
+"flags": [
+"Tax Withholding"
+],
+"still": [
+"Tax Withholding"
+],
+"ours": false
+},
+{
+"en": "No Tax withholding account set for Company {0} in Tax Withholding Category {1}.",
+"old": "لم يتم تعيين حساب اقتطاع ضريبي للشركة {0} في فئة اقتطاع الضرائب {1}.",
+"cand": "لم يتم تعيين حساب اقتطاع ضريبي للشركة {0} في فئة اقتطاع الضرائب {1}.",
+"flags": [
+"Tax Withholding"
+],
+"still": [
+"Tax Withholding"
+],
+"ours": false
+},
+{
+"en": "No open POS Opening Entry found for POS Profile {0}.",
+"old": "لم يتم العثور على إدخال فتح نقطة بيع مفتوح لملف تعريف نقطة البيع {0}.",
+"cand": "لم يتم العثور على إدخال فتح نقطة بيع مفتوح لملف تعريف نقطة البيع {0}.",
+"flags": [
+"Opening Stock"
+],
+"still": [
+"Opening Stock"
+],
+"ours": false
+},
+{
+"en": "Note: To merge the items, create a separate Stock Reconciliation for the old item {0}",
+"old": "ملاحظة: لدمج الأصناف، أنشئ مطابقة مخزون منفصلة للصنف القديم {0}",
+"cand": "ملاحظة: لدمج الأصناف، أنشئ تسوية مخزون منفصلة للصنف القديم {0}",
+"flags": [
+"Stock Reconciliation"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Notify Reposting Error to Role",
+"old": "إشعار بخطأ إعادة النشر إلى الدور",
+"cand": "إشعار بخطأ إعادة الترحيل إلى الدور",
+"flags": [
+"Repost"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "OTP SMS Template must contain <code>{0}</code> placeholder to insert the OTP.",
+"old": "يجب أن يحتوي نموذج رسالة OTP النصية على العنصر النائب <code>{0}</code> لإدراج رمز OTP.",
+"cand": "يجب أن يحتوي قالب رسالة OTP النصية على العنصر النائب <code>{0}</code> لإدراج رمز OTP.",
+"flags": [
+"Template"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Offsetting for Accounting Dimension",
+"old": "التعويض عن بُعد المحاسبة",
+"cand": "التعويض عن بُعد المحاسبة",
+"flags": [
+"Accounting Dimension"
+],
+"still": [
+"Accounting Dimension"
+],
+"ours": false
+},
+{
+"en": "Only to be used for Subcontracting Inward.",
+"old": "مخصص للاستخدام في التعاقد من الباطن فقط.",
+"cand": "مخصص للاستخدام في التصنيع الخارجي فقط.",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Opening Purchase Invoice(s) have been created.",
+"old": "تم إنشاء فاتورة/فواتير الشراء الافتتاحية.",
+"cand": "تم إنشاء فاتورة/فواتير المشتريات الافتتاحية.",
+"flags": [
+"Purchase Invoice"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Opening Sales Invoice(s) have been created.",
+"old": "تم إنشاء فاتورة (فواتير) مبيعات افتتاحية.",
+"cand": "تم إنشاء فاتورة (فواتير) مبيعات افتتاحية.",
+"flags": [
+"Sales Invoice"
+],
+"still": [
+"Sales Invoice"
+],
+"ours": false
+},
+{
+"en": "Opening Stock can only be set for stock items.",
+"old": "لا يمكن تعيين مخزون أول المدة إلا للأصناف المخزنية.",
+"cand": "لا يمكن تعيين المخزون الافتتاحي إلا للأصناف المخزنية.",
+"flags": [
+"Opening Stock"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Opening Stock cannot be created as stock transactions already exist for item {0}.",
+"old": "لا يمكن إنشاء مخزون أول المدة لأن حركات المخزون موجودة بالفعل للصنف {0}.",
+"cand": "لا يمكن إنشاء المخزون الافتتاحي لأن حركات المخزون موجودة بالفعل للصنف {0}.",
+"flags": [
+"Opening Stock"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Opening Stock for serialised or batch items must be set via the Stock Reconciliation form.",
+"old": "يجب تعيين مخزون أول المدة للأصناف ذات الأرقام التسلسلية أو الدفعات عبر نموذج جرد المخزون.",
+"cand": "يجب تعيين المخزون الافتتاحي للأصناف ذات الأرقام التسلسلية أو الدفعات عبر نموذج تسوية المخزون.",
+"flags": [
+"Opening Stock",
+"Stock Reconciliation"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Opening Stock reconciliation created with zero valuation rate: {0}",
+"old": "تم إنشاء تسوية مخزون أول المدة بمعدل تقييم صفري: {0}",
+"cand": "تم إنشاء تسوية المخزون الافتتاحي بمعدل تقييم صفري: {0}",
+"flags": [
+"Opening Stock"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Opening Stock reconciliation created: {0}",
+"old": "تم إنشاء تسوية مخزون أول المدة: {0}",
+"cand": "تم إنشاء تسوية المخزون الافتتاحي: {0}",
+"flags": [
+"Opening Stock"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Opening stock creation has been queued and will be created in the background. Please check the Stock Reconciliation after some time.",
+"old": "تمت إضافة إنشاء مخزون أول المدة إلى قائمة الانتظار وسيتم إنشاؤه في الخلفية. يُرجى التحقق من جرد المخزون بعد قليل.",
+"cand": "تمت إضافة إنشاء مخزون أول المدة إلى قائمة الانتظار وسيتم إنشاؤه في الخلفية. يُرجى التحقق من تسوية المخزون بعد قليل.",
+"flags": [
+"Stock Reconciliation"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Operation time does not depend on quantity to produce",
+"old": "لا يعتمد وقت التشغيل على كمية الإنتاج",
+"cand": "لا يعتمد وقت التشغيل على كمية الإنتاج",
+"flags": [
+"Operation"
+],
+"still": [
+"Operation"
+],
+"ours": false
+},
+{
+"en": "Optional. Used with Financial Report Template",
+"old": "اختياري. يُستخدم مع نموذج التقرير المالي",
+"cand": "اختياري. يُستخدم مع قالب التقرير المالي",
+"flags": [
+"Template"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Outdated POS Opening Entry",
+"old": "إدخال بيانات فتح نقاط البيع القديمة",
+"cand": "إدخال بيانات فتح نقاط البيع القديمة",
+"flags": [
+"Opening Stock"
+],
+"still": [
+"Opening Stock"
+],
+"ours": false
+},
+{
+"en": "POS Opening Entry Detail",
+"old": "تفاصيل دخول فتح نقاط البيع",
+"cand": "تفاصيل دخول فتح نقاط البيع",
+"flags": [
+"Opening Stock"
+],
+"still": [
+"Opening Stock"
+],
+"ours": false
+},
+{
+"en": "Paid From (Bank / Cash)",
+"old": "الدفع من (مصرف / خزينة)",
+"cand": "الدفع من (بنك / خزينة)",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": true
+},
+{
+"en": "Paid From (Bank or Cash)",
+"old": "الدفع من (مصرف أو خزينة)",
+"cand": "الدفع من (بنك أو خزينة)",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": true
+},
+{
+"en": "Parent Task {0} is not a Template Task",
+"old": "المهمة الأصلية {0} ليست مهمة نموذجية",
+"cand": "المهمة الأصلية {0} ليست مهمة نموذجية",
+"flags": [
+"Template"
+],
+"still": [
+"Template"
+],
+"ours": false
+},
+{
+"en": "Party IBAN (Bank Statement)",
+"old": "رقم الحساب المصرفي الدولي (IBAN) الخاص بالطرف (كشف الحساب المصرفي)",
+"cand": "رقم الحساب البنكي الدولي (IBAN) الخاص بالطرف (كشف الحساب البنكي)",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Party can only be one of {0}",
+"old": "لا يمكن أن يكون الحزب إلا واحدًا من {0}",
+"cand": "لا يمكن أن يكون الطرف إلا واحدًا من {0}",
+"flags": [
+"Party"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Percentage you are allowed to order beyond the Blanket Order quantity.",
+"old": "النسبة المئوية المسموح لك بطلبها بما يتجاوز كمية الطلب الشامل.",
+"cand": "النسبة المئوية المسموح لك بطلبها بما يتجاوز كمية الطلب الشامل.",
+"flags": [
+"Blanket Order"
+],
+"still": [
+"Blanket Order"
+],
+"ours": false
+},
+{
+"en": "Percentage you are allowed to sell beyond the Blanket Order quantity.",
+"old": "النسبة المئوية المسموح لك ببيعها بما يتجاوز كمية الطلب الإطاري.",
+"cand": "النسبة المئوية المسموح لك ببيعها بما يتجاوز كمية الطلب الإطاري.",
+"flags": [
+"Blanket Order"
+],
+"still": [
+"Blanket Order"
+],
+"ours": false
+},
+{
+"en": "Period Closing Voucher {0} GL Entry Cancellation Failed",
+"old": "قسيمة إغلاق الفترة {0} فشل إلغاء قيد دفتر الأستاذ العام",
+"cand": "سند إقفال الفترة {0} فشل إلغاء قيد دفتر الأستاذ العام",
+"flags": [
+"Closing",
+"Voucher"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Period Closing Voucher {0} GL Entry Processing Failed",
+"old": "فشل معالجة قيد دفتر الأستاذ العام {0} قسيمة إغلاق الفترة",
+"cand": "فشل معالجة قيد دفتر الأستاذ العام {0} سند إقفال الفترة",
+"flags": [
+"Closing",
+"Voucher"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Please add Request for Quotation to the sidebar in Portal Settings.",
+"old": "يرجى إضافة \"طلب عرض أسعار\" إلى الشريط الجانبي في إعدادات البوابة.",
+"cand": "يرجى إضافة \"طلب عرض أسعار\" إلى الشريط الجانبي في إعدادات البوابة.",
+"flags": [
+"Request for Quotation"
+],
+"still": [
+"Request for Quotation"
+],
+"ours": false
+},
+{
+"en": "Please add a valid Holiday List on Appointment Booking Settings.",
+"old": "يرجى إضافة قائمة عطلات صالحة في إعدادات حجز المواعيد.",
+"cand": "يرجى إضافة قائمة عطلات صالحة في إعدادات حجز المواعيد.",
+"flags": [
+"Holiday List"
+],
+"still": [
+"Holiday List"
+],
+"ours": false
+},
+{
+"en": "Please add the Bank Account column",
+"old": "يرجى إضافة عمود الحساب المصرفي",
+"cand": "يرجى إضافة عمود الحساب البنكي",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Please create Landed Cost Vouchers against Invoices that have 'Update Stock' enabled.",
+"old": "يرجى إنشاء قسائم تكلفة الشحن مقابل الفواتير التي تم تمكين خيار \"تحديث المخزون\" فيها.",
+"cand": "يرجى إنشاء سندات تكلفة الشحن مقابل الفواتير التي تم تمكين خيار \"تحديث المخزون\" فيها.",
+"flags": [
+"Landed Cost",
+"Voucher"
+],
+"still": [
+"Landed Cost"
+],
+"ours": false
+},
+{
+"en": "Please create a new Accounting Dimension if required.",
+"old": "يرجى إنشاء بُعد محاسبي جديد إذا لزم الأمر.",
+"cand": "يرجى إنشاء بُعد محاسبي جديد إذا لزم الأمر.",
+"flags": [
+"Accounting Dimension"
+],
+"still": [
+"Accounting Dimension"
+],
+"ours": false
+},
+{
+"en": "Please ensure that the {0} account {1} is a Payable account. You can change the account type to Payable or select a different account.",
+"old": "يرجى التأكد من أن الحساب {0} {1} هو حساب قابل للدفع. يمكنك تغيير نوع الحساب إلى قابل للدفع أو اختيار حساب آخر.",
+"cand": "يرجى التأكد من أن الحساب {0} {1} هو حساب قابل للدفع. يمكنك تغيير نوع الحساب إلى قابل للدفع أو اختيار حساب آخر.",
+"flags": [
+"Payable"
+],
+"still": [
+"Payable"
+],
+"ours": false
+},
+{
+"en": "Please select Bank Account",
+"old": "يرجى اختيار الحساب المصرفي",
+"cand": "يرجى اختيار الحساب البنكي",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Please select Subcontracting Order instead of Purchase Order {0}",
+"old": "يرجى اختيار أمر التعاقد من الباطن بدلاً من أمر الشراء {0}",
+"cand": "يرجى اختيار أمر التصنيع الخارجي بدلاً من أمر الشراء {0}",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Please select a Holiday List to enable Appointment Scheduling.",
+"old": "يرجى اختيار قائمة عطلات لتمكين جدولة المواعيد.",
+"cand": "يرجى اختيار قائمة عطلات لتمكين جدولة المواعيد.",
+"flags": [
+"Holiday List"
+],
+"still": [
+"Holiday List"
+],
+"ours": false
+},
+{
+"en": "Please select a Subcontracting Purchase Order.",
+"old": "يرجى اختيار أمر شراء خاص بالتعاقد من الباطن.",
+"cand": "يرجى اختيار أمر شراء خاص بالتصنيع الخارجي.",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Please select a row to create a Reposting Entry",
+"old": "الرجاء تحديد صف لإنشاء إدخال إعادة نشر",
+"cand": "الرجاء تحديد صف لإنشاء إدخال إعادة ترحيل",
+"flags": [
+"Repost"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Please select a valid Purchase Order that is configured for Subcontracting.",
+"old": "يرجى اختيار أمر شراء صالح تم إعداده للتعاقد من الباطن.",
+"cand": "يرجى اختيار أمر شراء صالح تم إعداده للتصنيع خارجي.",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Please select only one row to create a Reposting Entry",
+"old": "يرجى تحديد صف واحد فقط لإنشاء إدخال إعادة نشر",
+"cand": "يرجى تحديد صف واحد فقط لإنشاء إدخال إعادة ترحيل",
+"flags": [
+"Repost"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Please select rows to create Reposting Entries",
+"old": "يرجى تحديد الصفوف لإنشاء إدخالات إعادة النشر",
+"cand": "يرجى تحديد الصفوف لإنشاء إدخالات إعادة الترحيل",
+"flags": [
+"Repost"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Please set default Cash or Bank account in Mode of Payment {}",
+"old": "الرجاء تعيين حساب نقدي أو مصرفي افتراضي في طريقة الدفع {}",
+"cand": "الرجاء تعيين حساب نقدي أو بنكي افتراضي في طريقة الدفع {}",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Please set default Cash or Bank account in Mode of Payments {}",
+"old": "الرجاء تعيين حساب نقدي أو مصرفي افتراضي في طريقة الدفع {}",
+"cand": "الرجاء تعيين حساب نقدي أو بنكي افتراضي في طريقة الدفع {}",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Please set the Target Warehouse in the Job Card",
+"old": "يرجى تحديد المستودع المستهدف في بطاقة الوظيفة",
+"cand": "يرجى تحديد المستودع المستهدف في بطاقة الوظيفة",
+"flags": [
+"Job Card"
+],
+"still": [
+"Job Card"
+],
+"ours": false
+},
+{
+"en": "Posting Date will change to today's date as Edit Posting Date and Time is unchecked. Are you sure want to proceed?",
+"old": "سيتم تغيير تاريخ النشر إلى تاريخ اليوم لأن خيار \"تعديل تاريخ ووقت النشر\" غير مُفعّل. هل أنت متأكد من رغبتك في المتابعة؟",
+"cand": "سيتم تغيير تاريخ الترحيل إلى تاريخ اليوم لأن خيار \"تعديل تاريخ ووقت النشر\" غير مُفعّل. هل أنت متأكد من رغبتك في المتابعة؟",
+"flags": [
+"Posting Date"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Process Period Closing Voucher Detail",
+"old": "تفاصيل قسيمة إغلاق فترة المعالجة",
+"cand": "تفاصيل سند إغلاق فترة المعالجة",
+"flags": [
+"Closing",
+"Voucher"
+],
+"still": [
+"Closing"
+],
+"ours": false
+},
+{
+"en": "Purchase Invoice cannot be made against an existing asset {0}",
+"old": "لا يمكن إجراء فاتورة الشراء مقابل أصل موجود {0}",
+"cand": "لا يمكن إجراء فاتورة المشتريات مقابل أصل موجود {0}",
+"flags": [
+"Purchase Invoice"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Purchase Invoice without any outstanding amount cannot be held.",
+"old": "لا يمكن تعليق فاتورة شراء لا يوجد بها مبلغ مستحق.",
+"cand": "لا يمكن تعليق فاتورة مشتريات لا يوجد بها مبلغ مستحق.",
+"flags": [
+"Purchase Invoice"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Purchase Tax Withholding Category",
+"old": "فئة اقتطاع ضريبة الشراء",
+"cand": "فئة اقتطاع ضريبة الشراء",
+"flags": [
+"Tax Withholding"
+],
+"still": [
+"Tax Withholding"
+],
+"ours": false
+},
+{
+"en": "Raqeem Appraisal Template",
+"old": "نموذج التقييم",
+"cand": "قالب التقييم",
+"flags": [
+"Template"
+],
+"still": [],
+"ours": true
+},
+{
+"en": "Raqeem Checklist Template",
+"old": "نموذج قائمة المهام",
+"cand": "قالب قائمة المهام",
+"flags": [
+"Template"
+],
+"still": [],
+"ours": true
+},
+{
+"en": "Raqeem Checklist Template Task",
+"old": "مهمة نموذج قائمة",
+"cand": "مهمة قالب قائمة",
+"flags": [
+"Template"
+],
+"still": [],
+"ours": true
+},
+{
+"en": "Raw Material Voucher No",
+"old": "رقم قسيمة المواد الخام",
+"cand": "رقم سند المواد الخام",
+"flags": [
+"Voucher"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Raw Material Voucher Type",
+"old": "نوع قسيمة المواد الخام",
+"cand": "نوع سند المواد الخام",
+"flags": [
+"Voucher"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Reason for Withholding Salary",
+"old": "سبب حجب الراتب",
+"cand": "سبب حجب الراتب",
+"flags": [
+"Tax Withholding"
+],
+"still": [
+"Tax Withholding"
+],
+"ours": true
+},
+{
+"en": "Receivable/Payable Account: {0} doesn't belong to company {1}",
+"old": "الحساب المستحق/المدفوع: {0} لا ينتمي إلى الشركة {1}",
+"cand": "الحساب المستحق/المدفوع: {0} لا ينتمي إلى الشركة {1}",
+"flags": [
+"Receivable"
+],
+"still": [
+"Receivable"
+],
+"ours": false
+},
+{
+"en": "Reconcile the Bank Transaction",
+"old": "مطابقة المعاملة المصرفية",
+"cand": "مطابقة المعاملة البنكية",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Reference No and Reference Date is mandatory for Bank transaction",
+"old": "رقم المرجع و تاريخ المرجع إلزامي للمعاملة المصرفية",
+"cand": "رقم المرجع و تاريخ المرجع إلزامي للمعاملة البنكية",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Regenerate Stock Closing Entry",
+"old": "إعادة إنشاء قيد إغلاق المخزون",
+"cand": "إعادة إنشاء قيد إقفال المخزون",
+"flags": [
+"Closing"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Repayment in Cash / Bank",
+"old": "سداد نقدي / مصرفي",
+"cand": "سداد نقدي / بنكي",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": true
+},
+{
+"en": "Repost Only Accounting Ledgers",
+"old": "لإعادة النشر فقط، دفاتر المحاسبة",
+"cand": "لإعادة الترحيل فقط، دفاتر المحاسبة",
+"flags": [
+"Repost"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Repost has started in the background",
+"old": "بدأت عملية إعادة النشر في الخلفية",
+"cand": "بدأت عملية إعادة الترحيل في الخلفية",
+"flags": [
+"Repost"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Repost started in the background",
+"old": "بدأت عملية إعادة النشر في الخلفية",
+"cand": "بدأت عملية إعادة الترحيل في الخلفية",
+"flags": [
+"Repost"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Reposting entries created: {0}",
+"old": "إعادة نشر المشاركات التي تم إنشاؤها: {0}",
+"cand": "إعادة ترحيل المشاركات التي تم إنشاؤها: {0}",
+"flags": [
+"Repost"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Reposting has been started in the background.",
+"old": "بدأت عملية إعادة النشر في الخلفية.",
+"cand": "بدأت عملية إعادة الترحيل في الخلفية.",
+"flags": [
+"Repost"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Reposting in the background.",
+"old": "إعادة النشر تجري في الخلفية.",
+"cand": "إعادة الترحيل تجري في الخلفية.",
+"flags": [
+"Repost"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Reserved Qty for Subcontract",
+"old": "الكمية المحجوزة للتعاقد من الباطن",
+"cand": "الكمية المحجوزة للتصنيع خارجي",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Reserved Qty for Subcontract: Raw materials quantity to make subcontracted items.",
+"old": "الكمية المحجوزة للتعاقد من الباطن: كمية المواد الخام اللازمة لصنع العناصر المتعاقد عليها من الباطن.",
+"cand": "الكمية المحجوزة للتصنيع خارجي: كمية المواد الخام اللازمة لصنع العناصر مصنَّع خارجياً.",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Reserved Quantity for Subcontracting",
+"old": "الكمية المحجوزة للتصنيع الخارجي",
+"cand": "الكمية المحجوزة للتصنيع الخارجي",
+"flags": [
+"Subcontract"
+],
+"still": [
+"Subcontract"
+],
+"ours": true
+},
+{
+"en": "Return Against Purchase Invoice",
+"old": "العودة ضد شراء فاتورة",
+"cand": "العودة ضد شراء فاتورة",
+"flags": [
+"Purchase Invoice"
+],
+"still": [
+"Purchase Invoice"
+],
+"ours": false
+},
+{
+"en": "Return Against Subcontracting Receipt",
+"old": "رد المبلغ المدفوع مقابل إيصال التعاقد من الباطن",
+"cand": "رد المبلغ المدفوع مقابل إيصال التصنيع الخارجي",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Return Purchase Invoice cannot be held.",
+"old": "لا يمكن تعليق فاتورة شراء مرتجع.",
+"cand": "لا يمكن تعليق فاتورة مشتريات مرتجع.",
+"flags": [
+"Purchase Invoice"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Routing Required",
+"old": "مسار التصنيع مطلوب",
+"cand": "مسار التصنيع مطلوب",
+"flags": [
+"Routing"
+],
+"still": [
+"Routing"
+],
+"ours": true
+},
+{
+"en": "Routing {0} is disabled",
+"old": "مسار التصنيع {0} معطّل",
+"cand": "مسار التصنيع {0} معطّل",
+"flags": [
+"Routing"
+],
+"still": [
+"Routing"
+],
+"ours": true
+},
+{
+"en": "Row #{0}: BOM is not specified for subcontracting item {0}",
+"old": "الصف #{0}: لم يتم تحديد قائمة المواد لعنصر التعاقد من الباطن {0}",
+"cand": "الصف #{0}: لم يتم تحديد قائمة المواد لعنصر التصنيع الخارجي {0}",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Row #{0}: Batch No(s) {1} is not a part of the linked Subcontracting Inward Order. Please select valid Batch No(s).",
+"old": "الصف #{0}: أرقام الدفعات {1} ليست جزءًا من أمر التعاقد من الباطن الوارد المرتبط. يرجى اختيار أرقام دفعات صالحة.",
+"cand": "الصف #{0}: أرقام الدفعات {1} ليست جزءًا من أمر التصنيع الخارجي الوارد المرتبط. يرجى اختيار أرقام دفعات صالحة.",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Row #{0}: Customer Provided Item {1} has insufficient quantity in the Subcontracting Inward Order. Available quantity is {2}.",
+"old": "الصف #{0}: الكمية المتوفرة من الصنف المقدم من العميل {1} غير كافية في طلب الشراء الداخلي للمقاول من الباطن. الكمية المتاحة هي {2}.",
+"cand": "الصف #{0}: الكمية المتوفرة من الصنف المقدم من العميل {1} غير كافية في طلب الشراء الداخلي للمصنِّع خارجي. الكمية المتاحة هي {2}.",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Row #{0}: Expense account {1} is not valid for Purchase Invoice {2}. Only expense accounts from non-stock items are allowed.",
+"old": "الصف #{0}: حساب المصروفات {1} غير صالح لفاتورة الشراء {2}. يُسمح فقط بحسابات المصروفات الخاصة بالعناصر غير المخزنة.",
+"cand": "الصف #{0}: حساب المصروفات {1} غير صالح لفاتورة المشتريات {2}. يُسمح فقط بحسابات المصروفات الخاصة بالعناصر غير المخزنة.",
+"flags": [
+"Purchase Invoice"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Row #{0}: Finished Good Item {1} cannot be added in the Secondary Items table.",
+"old": "الصف #{0}: لا يمكن إضافة صنف المنتج التام {1} في جدول الأصناف الثانوية.",
+"cand": "الصف #{0}: لا يمكن إضافة صنف المنتج النهائي {1} في جدول الأصناف الثانوية.",
+"flags": [
+"Finished Good"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Row #{0}: Finished Good reference is mandatory for Secondary Item {1}.",
+"old": "الصف #{0}: مرجع المنتج التام إلزامي للصنف الثانوي {1}.",
+"cand": "الصف #{0}: مرجع المنتج النهائي إلزامي للصنف الثانوي {1}.",
+"flags": [
+"Finished Good"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Row #{0}: Quantity of Item {1} cannot be more than {2} {3} against Subcontracting Inward Order {4}",
+"old": "الصف #{0}: لا يمكن أن تتجاوز كمية الصنف {1} الكمية {2} {3} في طلب الشراء الداخلي للتعاقد من الباطن {4}",
+"cand": "الصف #{0}: لا يمكن أن تتجاوز كمية الصنف {1} الكمية {2} {3} في طلب الشراء الداخلي للتصنيع خارجي {4}",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Row #{0}: Repair cost {1} exceeds available amount {2} for Purchase Invoice {3} and Account {4}",
+"old": "الصف #{0}: تكلفة الإصلاح {1} تتجاوز المبلغ المتاح {2} لفاتورة الشراء {3} والحساب {4}",
+"cand": "الصف #{0}: تكلفة الإصلاح {1} تتجاوز المبلغ المتاح {2} لفاتورة المشتريات {3} والحساب {4}",
+"flags": [
+"Purchase Invoice"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Row #{0}: Serial No(s) {1} are not a part of the linked Subcontracting Inward Order. Please select valid Serial No(s).",
+"old": "الصف #{0}: الأرقام التسلسلية {1} ليست جزءًا من أمر التوريد الداخلي المرتبط بالتعاقد من الباطن. يرجى تحديد رقم تسلسلي صحيح.",
+"cand": "الصف #{0}: الأرقام التسلسلية {1} ليست جزءًا من أمر التوريد الداخلي المرتبط بالتصنيع الخارجي. يرجى تحديد رقم تسلسلي صحيح.",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Row #{0}: Source Warehouse must be same as Customer Warehouse {1} from the linked Subcontracting Inward Order",
+"old": "الصف #{0}: يجب أن يكون مستودع المصدر هو نفسه مستودع العميل {1} من أمر التوريد الداخلي المرتبط بالتعاقد من الباطن",
+"cand": "الصف #{0}: يجب أن يكون مستودع المصدر هو نفسه مستودع العميل {1} من أمر التوريد الداخلي المرتبط بالتصنيع الخارجي",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Row #{0}: Target Warehouse must be same as Customer Warehouse {1} from the linked Subcontracting Inward Order",
+"old": "الصف #{0}: يجب أن يكون المستودع المستهدف هو نفسه مستودع العميل {1} من أمر الشراء الداخلي المرتبط بالتعاقد من الباطن",
+"cand": "الصف #{0}: يجب أن يكون المستودع المستهدف هو نفسه مستودع العميل {1} من أمر الشراء الداخلي المرتبط بالتصنيع الخارجي",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Row #{0}: You cannot use the inventory dimension '{1}' in Stock Reconciliation to modify the quantity or valuation rate. Stock reconciliation with inventory dimensions is intended solely for performing opening entries.",
+"old": "الصف #{0}: لا يمكنك استخدام بُعد المخزون '{1}' في مطابقة المخزون لتعديل الكمية أو معدل التقييم. تُستخدم مطابقة المخزون باستخدام أبعاد المخزون فقط لإجراء قيود افتتاحية.",
+"cand": "الصف #{0}: لا يمكنك استخدام بُعد المخزون '{1}' في تسوية المخزون لتعديل الكمية أو معدل التقييم. تُستخدم تسوية المخزون باستخدام أبعاد المخزون فقط لإجراء قيود افتتاحية.",
+"flags": [
+"Stock Reconciliation"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Row #{idx}: Cannot select Supplier Warehouse while suppling raw materials to subcontractor.",
+"old": "الصف #{idx}: لا يمكن تحديد مستودع المورد أثناء توريد المواد الخام إلى المقاول من الباطن.",
+"cand": "الصف #{idx}: لا يمكن تحديد مستودع المورد أثناء توريد المواد الخام إلى المصنِّع الخارجي.",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Row {0}: Party / Account does not match with {1} / {2} in {3} {4}",
+"old": "الصف {0}: حزب / حساب لا يتطابق مع {1} / {2} في {3} {4}",
+"cand": "الصف {0}: طرف / حساب لا يتطابق مع {1} / {2} في {3} {4}",
+"flags": [
+"Party"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Row {0}: Purchase Invoice {1} has no stock impact.",
+"old": "الصف {0}: فاتورة الشراء {1} ليس لها أي تأثير على المخزون.",
+"cand": "الصف {0}: فاتورة المشتريات {1} ليس لها أي تأثير على المخزون.",
+"flags": [
+"Purchase Invoice"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Row {0}: Update Stock must be checked for item {1} because it is against Pick List {2}.",
+"old": "الصف {0}: يجب تحديد «تحديث المخزون» للصنف {1} لأنه مقابل قائمة الانتقاء {2}.",
+"cand": "الصف {0}: يجب تحديد «تحديث المخزون» للصنف {1} لأنه مقابل قائمة الالتقاط {2}.",
+"flags": [
+"Pick List"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Row {0}: {1} account already applied for Accounting Dimension {2}",
+"old": "الصف {0}: {1} تم تقديم طلب بالفعل للحساب في بُعد المحاسبة {2}",
+"cand": "الصف {0}: {1} تم تقديم طلب بالفعل للحساب في بُعد المحاسبة {2}",
+"flags": [
+"Accounting Dimension"
+],
+"still": [
+"Accounting Dimension"
+],
+"ours": false
+},
+{
+"en": "Salary Withholding",
+"old": "حجب الراتب",
+"cand": "حجب الراتب",
+"flags": [
+"Tax Withholding"
+],
+"still": [
+"Tax Withholding"
+],
+"ours": true
+},
+{
+"en": "Salary Withholding Cycle",
+"old": "دورة حجب الراتب",
+"cand": "دورة حجب الراتب",
+"flags": [
+"Tax Withholding"
+],
+"still": [
+"Tax Withholding"
+],
+"ours": true
+},
+{
+"en": "Salary Withholding {0} already exists for employee {1} for the selected period",
+"old": "يوجد حجب للراتب {0} بالفعل للموظف {1} للفترة المحددة",
+"cand": "يوجد حجب للراتب {0} بالفعل للموظف {1} للفترة المحددة",
+"flags": [
+"Tax Withholding"
+],
+"still": [
+"Tax Withholding"
+],
+"ours": true
+},
+{
+"en": "Sales Tax Withholding Category",
+"old": "فئة اقتطاع ضريبة المبيعات",
+"cand": "فئة اقتطاع ضريبة المبيعات",
+"flags": [
+"Tax Withholding"
+],
+"still": [
+"Tax Withholding"
+],
+"ours": false
+},
+{
+"en": "Scrap date cannot be before purchase date",
+"old": "لا يمكن أن يكون تاريخ التلف قبل تاريخ الشراء",
+"cand": "لا يمكن أن يكون تاريخ التلف قبل تاريخ الشراء",
+"flags": [
+"Scrap"
+],
+"still": [
+"Scrap"
+],
+"ours": false
+},
+{
+"en": "Scrapped",
+"old": "مُخرَّد",
+"cand": "مُخرَّد",
+"flags": [
+"Scrap"
+],
+"still": [
+"Scrap"
+],
+"ours": true
+},
+{
+"en": "Select Vouchers to Match",
+"old": "اختر القسائم المناسبة",
+"cand": "اختر السندات المناسبة",
+"flags": [
+"Voucher"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Select the Company Bank Account this cheque is drawn on.",
+"old": "اختر حساب مصرف الشركة المسحوب عليه هذا الشيك.",
+"cand": "اختر حساب بنك الشركة المسحوب عليه هذا الشيك.",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": true
+},
+{
+"en": "Select the Company Bank Account.",
+"old": "اختر حساب مصرف الشركة.",
+"cand": "اختر حساب بنك الشركة.",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": true
+},
+{
+"en": "Semi Finished Good / Finished Good",
+"old": "منتج نصف مصنّع / منتج مصنّع",
+"cand": "منتج نصف مصنّع / منتج مصنّع",
+"flags": [
+"Finished Good"
+],
+"still": [
+"Finished Good"
+],
+"ours": false
+},
+{
+"en": "Send to Subcontractor",
+"old": "إرسال إلى المقاول من الباطن",
+"cand": "إرسال إلى المصنِّع الخارجي",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Set Landed Cost Based on Purchase Invoice Rate",
+"old": "تحديد تكلفة الشحن بناءً على سعر فاتورة الشراء",
+"cand": "تحديد تكلفة الشحن بناءً على سعر فاتورة المشتريات",
+"flags": [
+"Landed Cost",
+"Purchase Invoice"
+],
+"still": [
+"Landed Cost"
+],
+"ours": false
+},
+{
+"en": "Set automatically to the day after the previous Stock Closing Entry, or to the first stock transaction's date",
+"old": "يتم تعيينه تلقائياً إلى اليوم التالي لآخر قيد إغلاق مخزون سابق، أو إلى تاريخ أول حركة مخزون",
+"cand": "يتم تعيينه تلقائياً إلى اليوم التالي لآخر قيد إقفال مخزون سابق، أو إلى تاريخ أول حركة مخزون",
+"flags": [
+"Closing"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Setting the account as a Company Account is necessary for Bank Reconciliation",
+"old": "يُعدّ تحديد الحساب كحساب شركة أمراً ضرورياً لإجراء مطابقة الحسابات المصرفية.",
+"cand": "يُعدّ تحديد الحساب كحساب شركة أمراً ضرورياً لإجراء مطابقة الحسابات البنكية.",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Source Warehouse {0} must be same as Customer Warehouse {1} in the Subcontracting Inward Order.",
+"old": "يجب أن يكون مستودع المصدر {0} هو نفسه مستودع العميل {1} في أمر التوريد الداخلي للتعاقد من الباطن.",
+"cand": "يجب أن يكون مستودع المصدر {0} هو نفسه مستودع العميل {1} في أمر التوريد الداخلي للتصنيع خارجي.",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Stock Closing Entry In Progress",
+"old": "قيد إغلاق المخزون قيد التنفيذ",
+"cand": "قيد إقفال المخزون قيد التنفيذ",
+"flags": [
+"Closing"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Stock Closing Entry Outdated",
+"old": "قيد إغلاق المخزون قديم",
+"cand": "قيد إقفال المخزون قديم",
+"flags": [
+"Closing"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Stock Closing Entry Required",
+"old": "قيد إغلاق المخزون مطلوب",
+"cand": "قيد إقفال المخزون مطلوب",
+"flags": [
+"Closing"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Stock Closing Entry {0} already exists for the selected date range",
+"old": "تم بالفعل إدخال إغلاق المخزون {0} لنطاق التاريخ المحدد",
+"cand": "تم بالفعل إدخال إقفال المخزون {0} لنطاق التاريخ المحدد",
+"flags": [
+"Closing"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Stock Closing Entry {0} belongs to a closed accounting period. Cancel the Period Closing Voucher {1} first.",
+"old": "ينتمي قيد إغلاق المخزون {0} إلى فترة محاسبية مغلقة. ألغِ قيد إغلاق الفترة {1} أولاً.",
+"cand": "ينتمي قيد إقفال المخزون {0} إلى فترة محاسبية مغلقة. ألغِ قيد إقفال الفترة {1} أولاً.",
+"flags": [
+"Closing",
+"Voucher"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Stock Closing Entry {0} has been queued for processing, system will take sometime to complete it.",
+"old": "تمت إضافة قيد إغلاق المخزون {0} إلى قائمة الانتظار للمعالجة، وسيستغرق النظام بعض الوقت لإكماله.",
+"cand": "تمت إضافة قيد إقفال المخزون {0} إلى قائمة الانتظار للمعالجة، وسيستغرق النظام بعض الوقت لإكماله.",
+"flags": [
+"Closing"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Stock Ledgers won’t be reposted.",
+"old": "لن يتم إعادة نشر سجلات المخزون.",
+"cand": "لن يتم إعادة نشر سجلات المخزون.",
+"flags": [
+"Ledger"
+],
+"still": [
+"Ledger"
+],
+"ours": false
+},
+{
+"en": "Stock Reconciliations",
+"old": "تسويات المخزون",
+"cand": "تسويات المخزون",
+"flags": [
+"Stock Reconciliation"
+],
+"still": [
+"Stock Reconciliation"
+],
+"ours": false
+},
+{
+"en": "Stock Reservation Entry created against a Pick List cannot be updated. If you need to make changes, we recommend canceling the existing entry and creating a new one.",
+"old": "لا يمكن تعديل إدخال حجز المخزون المُنشأ مقابل قائمة الاختيار. إذا كنت ترغب في إجراء تغييرات، فننصحك بإلغاء الإدخال الحالي وإنشاء إدخال جديد.",
+"cand": "لا يمكن تعديل إدخال حجز المخزون المُنشأ مقابل قائمة الالتقاط. إذا كنت ترغب في إجراء تغييرات، فننصحك بإلغاء الإدخال الحالي وإنشاء إدخال جديد.",
+"flags": [
+"Pick List"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Stock transactions dated on or before {0} are frozen because the period is closed and the Stock Closing Entry {1} has been generated. To make changes, cancel the Period Closing Voucher first.",
+"old": "معاملات المخزون المؤرخة في {0} أو قبله مجمّدة لأن الفترة مغلقة وقد تم إنشاء قيد إغلاق المخزون {1}. لإجراء تغييرات، قم أولاً بإلغاء قيد إغلاق الفترة.",
+"cand": "معاملات المخزون المؤرخة في {0} أو قبله مجمّدة لأن الفترة مغلقة وقد تم إنشاء قيد إقفال المخزون {1}. لإجراء تغييرات، قم أولاً بإلغاء قيد إقفال الفترة.",
+"flags": [
+"Closing",
+"Voucher"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Stock transactions were created or modified after the Stock Closing Entry {0} was generated. Regenerate it before submitting the Period Closing Voucher.",
+"old": "تم إنشاء حركات مخزون أو تعديلها بعد إنشاء قيد إغلاق المخزون {0}. أعد إنشاءه قبل اعتماد سند إغلاق الفترة.",
+"cand": "تم إنشاء حركات مخزون أو تعديلها بعد إنشاء قيد إقفال المخزون {0}. أعد إنشاءه قبل اعتماد سند إقفال الفترة.",
+"flags": [
+"Closing"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Subcontract",
+"old": "تعاقد من الباطن",
+"cand": "تصنيع خارجي",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": true
+},
+{
+"en": "Subcontract Return",
+"old": "مرتجع التعاقد من الباطن",
+"cand": "مرتجع التصنيع الخارجي",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": true
+},
+{
+"en": "Subcontracted Raw Materials To Be Transferred",
+"old": "المواد الخام المتعاقد عليها من الباطن",
+"cand": "المواد الخام مصنَّع خارجياً",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Subcontracting BOM",
+"old": "قائمة مواد التعاقد من الباطن",
+"cand": "قائمة مواد التصنيع الخارجي",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Subcontracting Conversion Factor",
+"old": "معامل تحويل التعاقد من الباطن",
+"cand": "معامل تحويل التصنيع الخارجي",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Subcontracting Delivery",
+"old": "تسليم التعاقد من الباطن",
+"cand": "تسليم التصنيع الخارجي",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": true
+},
+{
+"en": "Subcontracting Finished Good",
+"old": "منتج تام للتعاقد من الباطن",
+"cand": "منتج نهائي للتصنيع خارجي",
+"flags": [
+"Finished Good",
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Subcontracting Inward Order Secondary Item",
+"old": "صنف ثانوي لأمر تعاقد من الباطن وارد",
+"cand": "صنف ثانوي لأمر تصنيع خارجي وارد",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Subcontracting Order (Draft) will be auto-created on submission of Purchase Order.",
+"old": "سيتم إنشاء أمر التعاقد من الباطن (مسودة) تلقائيًا عند تقديم أمر الشراء.",
+"cand": "سيتم إنشاء أمر التصنيع الخارجي (مسودة) تلقائيًا عند تقديم أمر الشراء.",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Subcontracting Order Item",
+"old": "صنف أمر التعاقد من الباطن",
+"cand": "صنف أمر التصنيع الخارجي",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": true
+},
+{
+"en": "Subcontracting Order {0} created.",
+"old": "تم إنشاء أمر التعاقد من الباطن {0} .",
+"cand": "تم إنشاء أمر التصنيع الخارجي {0} .",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Subcontracting Purchase Order",
+"old": "أمر شراء تعاقد من الباطن",
+"cand": "أمر شراء تصنيع خارجي",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Subcontracting Return",
+"old": "مرتجع التعاقد من الباطن",
+"cand": "مرتجع التصنيع الخارجي",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": true
+},
+{
+"en": "Subcontracting Sales Order",
+"old": "أمر بيع تعاقد من الباطن",
+"cand": "أمر بيع تصنيع خارجي",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Supplier Invoice No exists in Purchase Invoice {0}",
+"old": "المورد فاتورة لا يوجد في شراء الفاتورة {0}",
+"cand": "المورد فاتورة لا يوجد في شراء الفاتورة {0}",
+"flags": [
+"Purchase Invoice"
+],
+"still": [
+"Purchase Invoice"
+],
+"ours": false
+},
+{
+"en": "Supplier Quotation {0} already exists against Request for Quotation {1}",
+"old": "عرض سعر المورد {0} موجود بالفعل مقابل طلب عرض أسعار {1}",
+"cand": "عرض سعر المورد {0} موجود بالفعل مقابل طلب عرض أسعار {1}",
+"flags": [
+"Request for Quotation"
+],
+"still": [
+"Request for Quotation"
+],
+"ours": false
+},
+{
+"en": "Target Warehouse for Finished Good must be same as Finished Good Warehouse {1} in Work Order {2} linked to the Subcontracting Inward Order.",
+"old": "يجب أن يكون المستودع المستهدف للمنتج التام مطابقًا لمستودع المنتج التام {1} في أمر العمل {2} المرتبط بأمر التعاقد من الباطن الوارد.",
+"cand": "يجب أن يكون المستودع المستهدف للمنتج التام مطابقًا لمستودع المنتج النهائي {1} في أمر العمل {2} المرتبط بأمر التصنيع الخارجي الوارد.",
+"flags": [
+"Finished Good",
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Template",
+"old": "النموذج",
+"cand": "القالب",
+"flags": [
+"Template"
+],
+"still": [],
+"ours": true
+},
+{
+"en": "Template {0} is disabled",
+"old": "النموذج {0} معطل",
+"cand": "القالب {0} معطل",
+"flags": [
+"Template"
+],
+"still": [],
+"ours": true
+},
+{
+"en": "Template {0} is for {1}",
+"old": "النموذج {0} مخصص لـ{1}",
+"cand": "القالب {0} مخصص لـ{1}",
+"flags": [
+"Template"
+],
+"still": [],
+"ours": true
+},
+{
+"en": "The Pick List having Stock Reservation Entries cannot be updated. If you need to make changes, we recommend canceling the existing Stock Reservation Entries before updating the Pick List.",
+"old": "لا يمكن تحديث قائمة الاختيار التي تحتوي على إدخالات حجز المخزون. إذا كنت ترغب في إجراء تغييرات، فننصحك بإلغاء إدخالات حجز المخزون الحالية قبل تحديث قائمة الاختيار.",
+"cand": "لا يمكن تحديث قائمة الالتقاط التي تحتوي على إدخالات حجز المخزون. إذا كنت ترغب في إجراء تغييرات، فننصحك بإلغاء إدخالات حجز المخزون الحالية قبل تحديث قائمة الالتقاط.",
+"flags": [
+"Pick List"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "The bill your supplier sent, so you know what you owe and when it is due. See [Purchase Invoice](https://docs.frappe.io/erpnext/user/manual/en/purchase-invoice).",
+"old": "الفاتورة التي أرسلها مورّدك، لتعرف ما عليك دفعه وموعد استحقاقه. راجع [فاتورة شراء](https://docs.frappe.io/erpnext/user/manual/en/purchase-invoice).",
+"cand": "الفاتورة التي أرسلها مورّدك، لتعرف ما عليك دفعه وموعد استحقاقه. راجع [فاتورة مشتريات](https://docs.frappe.io/erpnext/user/manual/en/purchase-invoice).",
+"flags": [
+"Purchase Invoice"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "The closing balance {0} of the Stock Asset accounts does not match the closing value {1} of the Stock Balance report as on {2}. Resolve the difference using the Stock Ledger Variance report before closing the period.",
+"old": "رصيد الإغلاق {0} لحسابات أصول المخزون لا يتطابق مع قيمة الإغلاق {1} في تقرير رصيد المخزون بتاريخ {2}. قم بحل الفرق باستخدام تقرير انحراف سجل المخزن قبل إغلاق الفترة.",
+"cand": "رصيد الإغلاق {0} لحسابات أصول المخزون لا يتطابق مع قيمة الإغلاق {1} في تقرير رصيد المخزون بتاريخ {2}. قم بحل الفرق باستخدام تقرير انحراف سجل المخزن قبل إغلاق الفترة.",
+"flags": [
+"Ledger"
+],
+"still": [
+"Ledger"
+],
+"ours": false
+},
+{
+"en": "The formal letter that confirms the role and its terms. See [Appointment Letter](https://docs.frappe.io/hr/appointment-letter).",
+"old": "الخطاب الرسمي الذي يؤكد الوظيفة وشروطها. راجع [خطاب التعيين](https://docs.frappe.io/hr/appointment-letter).",
+"cand": "الخطاب الرسمي الذي يؤكد الوظيفة وشروطها. راجع [خطاب التعيين](https://docs.frappe.io/hr/appointment-letter).",
+"flags": [
+"Appointment"
+],
+"still": [
+"Appointment"
+],
+"ours": true
+},
+{
+"en": "The rate at which this item was last purchased via a Purchase Invoice. Auto-updated by the system.",
+"old": "السعر الذي تم بموجبه شراء هذا الصنف آخر مرة عبر فاتورة شراء. يتم تحديثه تلقائياً من قِبل النظام.",
+"cand": "السعر الذي تم بموجبه شراء هذا الصنف آخر مرة عبر فاتورة مشتريات. يتم تحديثه تلقائياً من قِبل النظام.",
+"flags": [
+"Purchase Invoice"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "There is already an active Subcontracting BOM {0} for the Finished Good {1}.",
+"old": "يوجد بالفعل قائمة مواد تعاقد فرعي نشطة {0} للمنتج النهائي {1}.",
+"cand": "يوجد بالفعل قائمة مواد تعاقد فرعي نشطة {0} للمنتج النهائي {1}.",
+"flags": [
+"Subcontract"
+],
+"still": [
+"Subcontract"
+],
+"ours": false
+},
+{
+"en": "There was an error creating Bank Account while linking with Plaid.",
+"old": "حدث خطأ أثناء إنشاء حساب مصرفي أثناء الربط مع Plaid.",
+"cand": "حدث خطأ أثناء إنشاء حساب بنكي أثناء الربط مع Plaid.",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "This Purchase Order has been fully subcontracted.",
+"old": "تم التعاقد من الباطن بالكامل على أمر الشراء هذا.",
+"cand": "تم التصنيع الخارجي بالكامل على أمر الشراء هذا.",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "This Sales Order has been fully subcontracted.",
+"old": "تم التعاقد من الباطن بالكامل على أمر البيع هذا.",
+"cand": "تم التصنيع الخارجي بالكامل على أمر البيع هذا.",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "This is a Template BOM and will be used to make the work order for {0} of the item {1}",
+"old": "هذا نموذج قائمة المواد وسيتم استخدامه لإنشاء أمر العمل لـ {0} للعنصر {1}",
+"cand": "هذا قالب قائمة المواد وسيتم استخدامه لإنشاء أمر العمل لـ {0} للعنصر {1}",
+"flags": [
+"Template"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "This option can be checked to edit the 'Posting Date' and 'Posting Time' fields.",
+"old": "يمكن تحديد هذا الخيار لتعديل حقلي \"تاريخ النشر\" و\"وقت النشر\".",
+"cand": "يمكن تحديد هذا الخيار لتعديل حقلي \"تاريخ الترحيل\" و\"وقت النشر\".",
+"flags": [
+"Posting Date"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Timeout (in seconds) for each background job enqueued by Process Period Closing Voucher",
+"old": "المهلة (بالثواني) لكل مهمة خلفية تُضاف إلى الطابور بواسطة قيد إغلاق الفترة",
+"cand": "المهلة (بالثواني) لكل مهمة خلفية تُضاف إلى الطابور بواسطة قيد إقفال الفترة",
+"flags": [
+"Closing",
+"Voucher"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "To Date must be after {0}, the To Date of the last Stock Closing Entry {1}",
+"old": "يجب أن يكون تاريخ \"إلى\" بعد {0}، وهو تاريخ \"إلى\" لآخر قيد إغلاق المخزون {1}",
+"cand": "يجب أن يكون تاريخ \"إلى\" بعد {0}، وهو تاريخ \"إلى\" لآخر قيد إقفال المخزون {1}",
+"flags": [
+"Closing"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Total Landed Cost (Company Currency)",
+"old": "إجمالي تكلفة الشحن (بعملة الشركة)",
+"cand": "إجمالي تكلفة الشحن (بعملة الشركة)",
+"flags": [
+"Landed Cost"
+],
+"still": [
+"Landed Cost"
+],
+"ours": false
+},
+{
+"en": "Total Operation Time",
+"old": "إجمالي وقت التشغيل",
+"cand": "إجمالي وقت التشغيل",
+"flags": [
+"Operation"
+],
+"still": [
+"Operation"
+],
+"ours": false
+},
+{
+"en": "Total Purchase Cost (via Purchase Invoice)",
+"old": "مجموع تكلفة الشراء (عن طريق شراء الفاتورة)",
+"cand": "مجموع تكلفة الشراء (عن طريق شراء الفاتورة)",
+"flags": [
+"Purchase Invoice"
+],
+"still": [
+"Purchase Invoice"
+],
+"ours": false
+},
+{
+"en": "Transaction currency: {0} cannot be different from Bank Account({1}) currency: {2}",
+"old": "عملة المعاملة: {0} لا يمكن أن تختلف عن عملة الحساب المصرفي ({1}): {2}",
+"cand": "عملة المعاملة: {0} لا يمكن أن تختلف عن عملة الحساب البنكي ({1}): {2}",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Unable to Repost Accounting Ledger",
+"old": "تعذّر إعادة نشر دفتر الحسابات",
+"cand": "تعذّر إعادة ترحيل دفتر الحسابات",
+"flags": [
+"Repost"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Use 'Repost in background' button to trigger background job. Job can only be triggered when document is in Queued or Failed status.",
+"old": "استخدم زر \"إعادة النشر في الخلفية\" لتشغيل مهمة في الخلفية. لا يمكن تشغيل المهمة إلا عندما يكون المستند في حالة \"قيد الانتظار\" أو \"فشل\".",
+"cand": "استخدم زر \"إعادة الترحيل في الخلفية\" لتشغيل مهمة في الخلفية. لا يمكن تشغيل المهمة إلا عندما يكون المستند في حالة \"قيد الانتظار\" أو \"فشل\".",
+"flags": [
+"Repost"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Use legacy controller for Period Closing Voucher",
+"old": "استخدام وحدة التحكم القديمة لقيد إغلاق الفترة",
+"cand": "استخدام وحدة التحكم القديمة لقيد إقفال الفترة",
+"flags": [
+"Closing",
+"Voucher"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Used with Financial Report Template",
+"old": "يُستخدم مع نموذج التقرير المالي",
+"cand": "يُستخدم مع قالب التقرير المالي",
+"flags": [
+"Template"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Value of Scrapped Asset",
+"old": "قيمة الأصول الملغاة",
+"cand": "قيمة الأصول الملغاة",
+"flags": [
+"Scrap"
+],
+"still": [
+"Scrap"
+],
+"ours": false
+},
+{
+"en": "Variant creation has been queued.",
+"old": "وقد وضعت قائمة الانتظار في قائمة الانتظار.",
+"cand": "وقد وضعت قائمة الانتظار في قائمة الانتظار.",
+"flags": [
+"Variant"
+],
+"still": [
+"Variant"
+],
+"ours": false
+},
+{
+"en": "Via Landed Cost Voucher",
+"old": "عن طريق قسيمة تكلفة الهبوط",
+"cand": "عن طريق سند تكلفة الهبوط",
+"flags": [
+"Landed Cost",
+"Voucher"
+],
+"still": [
+"Landed Cost"
+],
+"ours": false
+},
+{
+"en": "Voucher No is mandatory",
+"old": "رقم القسيمة إلزامي",
+"cand": "رقم السند إلزامي",
+"flags": [
+"Voucher"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Voucher {0} is over-allocated by {1}",
+"old": "تم تخصيص قسيمة {0} بشكل زائد بواسطة {1}",
+"cand": "تم تخصيص سند {0} بشكل زائد بواسطة {1}",
+"flags": [
+"Voucher"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Warning: Quantity exceeds maximum producible quantity based on quantity of raw materials received through the Subcontracting Inward Order {0}.",
+"old": "تحذير: الكمية تتجاوز الحد الأقصى للكمية القابلة للإنتاج بناءً على كمية المواد الخام المستلمة من خلال أمر التوريد الداخلي للتعاقد من الباطن {0}.",
+"cand": "تحذير: الكمية تتجاوز الحد الأقصى للكمية القابلة للإنتاج بناءً على كمية المواد الخام المستلمة من خلال أمر التوريد الداخلي للتصنيع خارجي {0}.",
+"flags": [
+"Subcontract"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "Work Order / Subcontract PO",
+"old": "أمر عمل / أمر شراء عقد فرعي",
+"cand": "أمر عمل / أمر شراء عقد فرعي",
+"flags": [
+"Subcontract"
+],
+"still": [
+"Subcontract"
+],
+"ours": false
+},
+{
+"en": "[Important] [ERPNext] Auto Reorder Errors",
+"old": "[هام] [ERPNext] إعادة ترتيب الأخطاء تلقائيًا",
+"cand": "[هام] [ERPNext] إعادة ترتيب الأخطاء تلقائيًا",
+"flags": [
+"Reorder"
+],
+"still": [
+"Reorder"
+],
+"ours": false
+},
+{
+"en": "{0} is not a valid Accounting Dimension.",
+"old": "{0} ليس بعدًا محاسبيًا صالحًا.",
+"cand": "{0} ليس بعدًا محاسبيًا صالحًا.",
+"flags": [
+"Accounting Dimension"
+],
+"still": [
+"Accounting Dimension"
+],
+"ours": false
+},
+{
+"en": "{0} units are reserved for Item {1} in Warehouse {2}, please un-reserve the same to {3} the Stock Reconciliation.",
+"old": "تم حجز الوحدات {0} للصنف {1} في المستودع {2}، يرجى إلغاء حجزها لـ {3} في عملية مطابقة المخزون.",
+"cand": "تم حجز الوحدات {0} للصنف {1} في المستودع {2}، يرجى إلغاء حجزها لـ {3} في عملية تسوية المخزون.",
+"flags": [
+"Stock Reconciliation"
+],
+"still": [],
+"ours": false
+},
+{
+"en": "{0} units of Item {1} is not available in any of the warehouses. Other Pick Lists exist for this item.",
+"old": "{0} وحدة من الصنف {1} غير متوفرة في أي من المستودعات. توجد قوائم انتقاء أخرى لهذا الصنف.",
+"cand": "{0} وحدة من الصنف {1} غير متوفرة في أي من المستودعات. توجد قوائم انتقاء أخرى لهذا الصنف.",
+"flags": [
+"Pick List"
+],
+"still": [
+"Pick List"
+],
+"ours": false
+},
+{
+"en": "{0} {1} is allocated twice in this Bank Transaction",
+"old": "يتم تخصيص {0} {1} مرتين في هذه المعاملة المصرفية",
+"cand": "يتم تخصيص {0} {1} مرتين في هذه المعاملة البنكية",
+"flags": [
+"Bank"
+],
+"still": [],
+"ours": false
+}
+]

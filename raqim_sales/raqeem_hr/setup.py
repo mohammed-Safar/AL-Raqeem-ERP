@@ -44,6 +44,35 @@ def after_migrate():
 		setup_lifecycle()
 	except Exception:
 		frappe.log_error(title="RAQEEM HR setup")
+	try:
+		keep_two_genders()
+	except Exception:
+		frappe.log_error(title="RAQEEM HR genders")
+
+
+def keep_two_genders():
+	"""Only Male and Female (user, 2026-11-19). Frappe/ERPNext ship five more; delete any not in use."""
+	for g in frappe.get_all("Gender", pluck="name"):
+		if g in ("Male", "Female"):
+			continue
+		try:
+			frappe.delete_doc("Gender", g, ignore_permissions=True)
+		except frappe.LinkExistsError:
+			pass  # still used by a record: leave it
+	# no "+ Create a new Gender" in any gender dropdown (only_select on every Link-to-Gender field)
+	from frappe.custom.doctype.property_setter.property_setter import make_property_setter
+	fields = frappe.get_all("DocField", filters={"fieldtype": "Link", "options": "Gender", "parenttype": "DocType"},
+		fields=["parent", "fieldname"])
+	fields += frappe.get_all("Custom Field", filters={"fieldtype": "Link", "options": "Gender"}, fields=["dt as parent", "fieldname"])
+	for f in fields:
+		if frappe.db.get_value("DocType", f.parent, "istable") is None:
+			continue
+		make_property_setter(f.parent, f.fieldname, "only_select", "1", "Check", validate_fields_for_doctype=False)
+	# Employee form: Male listed first (user, 2026-11-19). A Gender link is always sorted by its
+	# translated name (Female first), so the field becomes a fixed list; stored values stay "Male"/"Female".
+	# ROLLBACK: delete the two Property Setters "Employee-gender-fieldtype" and "Employee-gender-options".
+	make_property_setter("Employee", "gender", "fieldtype", "Select", "Data", validate_fields_for_doctype=False)
+	make_property_setter("Employee", "gender", "options", "\nMale\nFemale", "Text", validate_fields_for_doctype=False)
 
 
 def make_custom_fields():

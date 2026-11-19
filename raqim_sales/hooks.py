@@ -40,7 +40,7 @@ app_include_css = [
     "/assets/raqim_sales/css/raqeem_fonts.css?v=33",
     "/assets/raqim_sales/css/raqeem_logo.css?v=39",
     "/assets/raqim_sales/css/raqeem_palette.css?v=33",
-    "/assets/raqim_sales/css/raqeem_theme.css?v=glass-1119c",
+    "/assets/raqim_sales/css/raqeem_theme.css?v=nostroke-1119b",
     # dock icons drawn in CSS (ROLLBACK: delete the next line)
     "/assets/raqim_sales/css/raqeem_icons.css?v=50",
     "/assets/raqim_sales/css/raqeem_home.css?v=hwave-1119a",
@@ -76,6 +76,10 @@ app_include_js = [
     "/assets/raqim_sales/js/raqeem_chart_legend.js?v=2",
     # report tables: sideways scroll bar under the totals row (ROLLBACK: remove this line)
     "/assets/raqim_sales/js/raqeem_dt_scroll.js?v=1",
+    # report filters in Arabic: show the whole first row, not only "Company" (ROLLBACK: delete the next line)
+    "/assets/raqim_sales/js/raqeem_report_filters_rtl.js?v=1",
+    # report tables: amount columns widen so big numbers are not cut (ROLLBACK: delete the next line)
+    "/assets/raqim_sales/js/raqeem_dt_autofit.js?v=1",
     # open the desk section the CRM dock asked for (?rq_module=...) (ROLLBACK: delete the next line)
     "/assets/raqim_sales/js/raqeem_open_module.js?v=1",
     "/assets/raqim_sales/js/raqeem_crm_desk.js?v=3",
