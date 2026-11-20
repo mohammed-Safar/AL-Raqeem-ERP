@@ -2604,3 +2604,50 @@ html body .dock::after{content:"";position:absolute;inset:0;z-index:-1;pointer-e
 background:var(--rq-accent);-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2728%27%20height%3D%2748%27%20viewBox%3D%270%200%2028%2048%27%3E%3Cpath%20d%3D%27M14%200L28%208V24L14%2032L0%2024V8ZM14%2032V48%27%20fill%3D%27none%27%20stroke%3D%27%23000%27%20stroke-width%3D%27.6%27/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2728%27%20height%3D%2748%27%20viewBox%3D%270%200%2028%2048%27%3E%3Cpath%20d%3D%27M14%200L28%208V24L14%2032L0%2024V8ZM14%2032V48%27%20fill%3D%27none%27%20stroke%3D%27%23000%27%20stroke-width%3D%27.6%27/%3E%3C/svg%3E");opacity:.12;}
 html[data-theme="dark"] body .dock::after{opacity:.13;}
 /* ---- end 11w ---- */
+
+/* --------------------------------------------------------------------------
+   11x. List pages tidy (2026-11-20) — قوائم مرتبة
+   a) Rows always fit the page: Frappe 16 gives columns a fixed width (saved or from
+      the field) and lets the table grow wider than the page (sideways scrollbar, last
+      column cut, e.g. Item list). Columns may now shrink; a dragged width is still the
+      preferred size.
+   b) Document numbers (ACC-SINV-2026-00002) read left-to-right, so a long number is
+      cut at its end, not its start, and the number column gets a bit more room.
+   c) Filter bar: fields share one row (were 4 + 1 lonely field below), and a Check
+      filter (e.g. "has variants") looks like the other fields instead of a thin bar.
+   ROLLBACK: delete this section.
+   -------------------------------------------------------------------------- */
+.layout-main-section-wrapper .frappe-list .result-container > .result { display: block !important; width: 100% !important; }
+.layout-main-section-wrapper .frappe-list .result > .list-row-container,
+.layout-main-section-wrapper .frappe-list .result > .list-row-container > .list-row { width: 100% !important; min-width: 0 !important; }
+.frappe-list .list-row .level-left { min-width: 0 !important; }
+.frappe-list .list-row .level-left > .list-row-col,
+.frappe-list .list-row-head .level-left > .list-row-col { flex-shrink: 1 !important; min-width: 56px !important; }
+.frappe-list .list-row .level-left > .list-row-col.list-subject,
+.frappe-list .list-row-head .level-left > .list-row-col.list-subject { min-width: 120px !important; }
+.frappe-list .level-left > .list-row-col[data-fieldname="name"] { flex-grow: 1.8 !important; }
+html[dir="rtl"] .frappe-list .list-row-col:has(a[data-filter^="name,"]),
+html[dir="rtl"] .frappe-list .list-row-col:has(a[data-filter^="name,"]) > .ellipsis { direction: ltr; text-align: right; }
+
+@media (min-width: 992px) {
+    .page-form.list-page-form { flex-wrap: nowrap !important; align-items: flex-start; }
+    .page-form.list-page-form .filter-section { flex: 0 0 auto !important; }
+}
+.page-form.list-page-form .standard-filter-section { flex: 1 1 0; min-width: 0; }
+.page-form.list-page-form .standard-filter-section > .form-group {
+    flex: 1 1 120px !important; width: auto !important; max-width: 210px !important; min-width: 0;
+}
+.page-form.list-page-form .standard-filter-section > .form-group[data-fieldtype="Check"] { flex: 0 0 auto !important; max-width: none !important; }
+.page-form .standard-filter-section [data-fieldtype="Check"] .checkbox { margin: 0 !important; }
+.page-form .standard-filter-section [data-fieldtype="Check"] .checkbox label {
+    display: flex !important; align-items: center; gap: 8px; height: 38px; margin: 0;
+    padding: 0 12px; border: 1px solid var(--rq-line); border-radius: var(--rq-r-sm);
+    background: var(--rq-surface-2); color: var(--rq-text-2); white-space: nowrap; overflow: hidden; cursor: pointer;
+}
+.page-form .standard-filter-section [data-fieldtype="Check"] .checkbox .input-area { display: inline-flex; }
+.page-form .standard-filter-section [data-fieldtype="Check"] .checkbox input[type="checkbox"] {
+    width: 16px !important; height: 16px !important; margin: 0 !important; flex: none;
+}
+.page-form .standard-filter-section [data-fieldtype="Check"] .checkbox .label-area { overflow: hidden; text-overflow: ellipsis; }
+.page-form .standard-filter-section [data-fieldtype="Check"] .help-box { display: none; }
+/* ---- end 11x ---- */
