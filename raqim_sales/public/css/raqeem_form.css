@@ -387,7 +387,7 @@ html[dir="rtl"] .rq-step:only-child { clip-path: none; }
 .rq-chatter-toggle:hover { color: var(--rq-accent) !important; background: var(--rq-hover) !important; }
 .rq-chatter-toggle svg { width: 16px; height: 16px; }
 
-@container rq-main (min-width: 1080px) {
+@container rq-main (min-width: 1380px) { /* was 1080: measured on the whole row incl. the form sidebar, so at 1440px the form got only ~480px (2026-11-20) */
     .rq-chatter-toggle { display: inline-flex; }
     html:not(.rq-chatter-bottom) .layout-main-section-wrapper:has(> div:not(.hide) > .form-footer) {
         display: grid;

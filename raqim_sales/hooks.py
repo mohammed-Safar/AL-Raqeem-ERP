@@ -44,7 +44,7 @@ app_include_css = [
     # dock icons drawn in CSS (ROLLBACK: delete the next line)
     "/assets/raqim_sales/css/raqeem_icons.css?v=50",
     "/assets/raqim_sales/css/raqeem_home.css?v=hwave-1119a",
-    "/assets/raqim_sales/css/raqeem_form.css?v=40",
+    "/assets/raqim_sales/css/raqeem_form.css?v=chat-1120a",
     "/assets/raqim_sales/css/raqeem_list.css?v=47",
     "/assets/raqim_sales/css/raqeem_mobile.css?v=4"
 ]
@@ -61,8 +61,8 @@ app_include_js = [
     "/assets/raqim_sales/js/raqeem_sidebar_rail.js?v=33",
     # one header button -> panel with light/dark, theme colour and language
     # (replaces raqeem_theme_toggle.js, raqeem_accent.js, raqeem_lang_switch.js)
-    "/assets/raqim_sales/js/raqeem_quick_settings.js?v=36",
-    "/assets/raqim_sales/js/raqeem_sidebar.js?v=36",
+    "/assets/raqim_sales/js/raqeem_quick_settings.js?v=skin-1120a",
+    "/assets/raqim_sales/js/raqeem_sidebar.js?v=ph-1120a",
     # phone-only bottom bar (ROLLBACK: delete the next line)
     "/assets/raqim_sales/js/raqeem_tabbar.js?v=3",
     "/assets/raqim_sales/js/raqeem_form.js?v=40",

@@ -14,8 +14,8 @@
 (function () {
 	const lang = () => ((window.frappe && frappe.boot && frappe.boot.lang) || document.documentElement.lang || "en").split("-")[0];
 	const STR = {
-		ar: { home: "الرئيسية", filter: "ابحث في القائمة…", global: "بحث في النظام كله", none: "لا توجد نتائج في هذه القائمة" },
-		en: { home: "Home", filter: "Filter this menu…", global: "Search everything", none: "Nothing in this menu matches" },
+		ar: { home: "الرئيسية", filter: "ابحث هنا…", global: "بحث في النظام كله", none: "لا توجد نتائج في هذه القائمة" },
+		en: { home: "Home", filter: "Filter…", global: "Search everything", none: "Nothing in this menu matches" },
 	};
 	const s = (k) => (STR[lang()] || STR.en)[k];
 	const esc = (v) => (frappe.utils && frappe.utils.escape_html ? frappe.utils.escape_html(v) : String(v));
