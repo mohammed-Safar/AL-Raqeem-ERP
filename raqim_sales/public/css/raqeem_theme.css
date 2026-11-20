@@ -2590,3 +2590,17 @@ html:not([data-theme="dark"]) body .page-head, html:not([data-theme="dark"]) bod
     box-shadow: inset 0 -1px 0 rgba(0,0,0,.06), 0 8px 24px -14px rgba(60,40,10,.25) !important;
 }
 /* ---- end 11v ---- */
+
+/* --------------------------------------------------------------------------
+   11w. Dock (icon rail) texture — hexagons, same as the pages (2026-11-19; first tried "F" diagonal lines).
+   The section sidebar stays plain (user tried it there, preferred it on the dock).
+   Same mask method as 11t: lines painted in the theme colour; isolation keeps the layer
+   above the dock's own background but below its icons. Options sheet + generator:
+   ~/raqeem_shots/tex/dockmore.py. Lighter: 12% light / 13% dark (was 20/22, user 2026-11-19).
+   ROLLBACK: delete this section.
+   -------------------------------------------------------------------------- */
+html body .dock{isolation:isolate;}
+html body .dock::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;border-radius:inherit;
+background:var(--rq-accent);-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2728%27%20height%3D%2748%27%20viewBox%3D%270%200%2028%2048%27%3E%3Cpath%20d%3D%27M14%200L28%208V24L14%2032L0%2024V8ZM14%2032V48%27%20fill%3D%27none%27%20stroke%3D%27%23000%27%20stroke-width%3D%27.6%27/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2728%27%20height%3D%2748%27%20viewBox%3D%270%200%2028%2048%27%3E%3Cpath%20d%3D%27M14%200L28%208V24L14%2032L0%2024V8ZM14%2032V48%27%20fill%3D%27none%27%20stroke%3D%27%23000%27%20stroke-width%3D%27.6%27/%3E%3C/svg%3E");opacity:.12;}
+html[data-theme="dark"] body .dock::after{opacity:.13;}
+/* ---- end 11w ---- */
