@@ -40,7 +40,7 @@ app_include_css = [
     "/assets/raqim_sales/css/raqeem_fonts.css?v=33",
     "/assets/raqim_sales/css/raqeem_logo.css?v=39",
     "/assets/raqim_sales/css/raqeem_palette.css?v=33",
-    "/assets/raqim_sales/css/raqeem_theme.css?v=zoom3-1121a",
+    "/assets/raqim_sales/css/raqeem_theme.css?v=dockbrand-1121a",
     # dock icons drawn in CSS (ROLLBACK: delete the next line)
     "/assets/raqim_sales/css/raqeem_icons.css?v=50",
     "/assets/raqim_sales/css/raqeem_home.css?v=zoom2-1121a",
@@ -48,7 +48,7 @@ app_include_css = [
     "/assets/raqim_sales/css/raqeem_list.css?v=47",
     "/assets/raqim_sales/css/raqeem_mobile.css?v=4",
     # skin «الأفق»: only applies with html[data-skin="ufuq"] (display settings → Style). ROLLBACK: delete the next line
-    "/assets/raqim_sales/css/raqeem_skin_ufuq.css?v=zoom2-1121a"
+    "/assets/raqim_sales/css/raqeem_skin_ufuq.css?v=dockbrand-1121c"
 ]
 # raqeem_icons.js -> swaps stock sidebar icons for the Raqeem duotone set
 #   (ROLLBACK: delete the two raqeem_icon* lines below and the app_include_icons line)
@@ -69,7 +69,7 @@ app_include_js = [
     "/assets/raqim_sales/js/raqeem_tabbar.js?v=3",
     "/assets/raqim_sales/js/raqeem_form.js?v=40",
     "/assets/raqim_sales/js/raqeem_list.js?v=cur-1121a",
-    "/assets/raqim_sales/js/raqeem_brand_title.js?v=hb2-1118b",
+    "/assets/raqim_sales/js/raqeem_brand_title.js?v=dockbrand-1121a",
     "/assets/raqim_sales/js/raqeem_icon_names.js?v=51",
     "/assets/raqim_sales/js/raqeem_icons.js?v=51",
     # dialog titles through __() (ROLLBACK: delete the next line)

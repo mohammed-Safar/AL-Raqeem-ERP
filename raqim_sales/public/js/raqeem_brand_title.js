@@ -91,7 +91,22 @@
 			});
 	}
 
+	// skin «الأفق»: the same wordmark replaces the R logo + «الرقيم» in the top bar corner
+	// (shown only under html[data-skin="ufuq"], see raqeem_skin_ufuq.src.css)
+	function inject_dock() {
+		document.querySelectorAll(".dock .dock-logo .shell-header:not(.rq-has-dock-brand)").forEach((h) => {
+			h.classList.add("rq-has-dock-brand");
+			const b = make();
+			const s = document.createElement("span"); // inside the dock's own <a>: no nested link
+			s.className = "rq-head-brand rq-dock-brand";
+			s.setAttribute("aria-hidden", "true");
+			s.innerHTML = b.innerHTML;
+			h.appendChild(s);
+		});
+	}
+
 	function inject() {
+		inject_dock();
 		document.querySelectorAll(".page-head .page-head-content:not(.rq-has-brand)").forEach((row) => {
 			row.classList.add("rq-has-brand");
 			row.appendChild(make());

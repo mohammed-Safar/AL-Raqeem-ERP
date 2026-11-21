@@ -105,6 +105,19 @@ html[data-skin="ufuq"] h1, html[data-skin="ufuq"] h2, html[data-skin="ufuq"] h3,
         color: var(--rq-strong);
     }
     html[data-skin="ufuq"]:not([lang="ar"]) body .dock .dock-logo .header-title::after { content: "Raqeem"; }
+    /* the classic header wordmark «AL-[R]AQEEM — ERP —» replaces the R logo + name (raqeem_brand_title.js) */
+    html[data-skin="ufuq"] body .dock .dock-logo .shell-header.rq-has-dock-brand .header-logo,
+    html[data-skin="ufuq"] body .dock .dock-logo .shell-header.rq-has-dock-brand .title-container { display: none !important; }
+    html[data-skin="ufuq"] body .dock .dock-logo .shell-header.rq-has-dock-brand { height: 48px !important; padding: 0 10px !important; }
+    html[data-skin="ufuq"] body .dock .dock-logo .rq-dock-brand {
+        display: inline-flex !important;
+        position: static; top: auto;
+        grid-column: auto; grid-row: auto;
+        padding: 0;
+    }
+    html[data-skin="ufuq"] body .dock .dock-logo .rq-dock-brand .rq-hb-word { font-size: 1.3rem; }   /* same size as the classic header */
+    html[data-skin="ufuq"] body .dock .dock-logo .rq-dock-brand .rq-hb-logo { width: .72em !important; height: .72em !important; }
+    html[data-skin="ufuq"] body .dock .dock-logo .rq-dock-brand .rq-hb-logo svg { width: 100% !important; height: 100% !important; display: block; }
 
     /* modules: a row of labelled tabs */
     html[data-skin="ufuq"] body .dock .dock-items {

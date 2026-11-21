@@ -1928,6 +1928,8 @@ html:not([data-theme="dark"]) .rq-head-brand { --rq-hb-al: #8a909c; --rq-hb-rule
 html body .rq-head-brand .rq-hb-text { letter-spacing: .2em !important; }
 html body .rq-head-brand .rq-hb-erp { letter-spacing: .9em !important; }
 @media print { .rq-head-brand { display: none; } }
+/* top-bar copy of the wordmark: only the «الأفق» skin shows it (raqeem_skin_ufuq.src.css) */
+.rq-dock-brand { display: none !important; }
 
 /* --------------------------------------------------------------------------
    11n. Empty states — «لا توجد سجلات بعد» as a calm, branded card
