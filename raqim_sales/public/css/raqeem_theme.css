@@ -2609,13 +2609,7 @@ html body .page-head, html body .rq-home-bar { -webkit-backdrop-filter: blur(1.6
    what is inside the page; the hexagons (body::before, outside it) show through sharp.
    .9999 is invisible, and unlike filter/will-change it does not trap position:fixed children. */
 html body .page-container { opacity: .9999; }
-/* 2026-11-21: hexagon texture on the header (same mask as dock 11w), under the content. ROLLBACK: delete this block. */
-html body .page-head, html body .rq-home-bar { isolation: isolate; }
-html body .page-head::after, html body .rq-home-bar::after {
-    content:""; position:absolute; inset:0; z-index:-1; pointer-events:none; border-radius:inherit;
-    background:var(--rq-accent); -webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2728%27%20height%3D%2748%27%20viewBox%3D%270%200%2028%2048%27%3E%3Cpath%20d%3D%27M14%200L28%208V24L14%2032L0%2024V8ZM14%2032V48%27%20fill%3D%27none%27%20stroke%3D%27%23000%27%20stroke-width%3D%27.6%27/%3E%3C/svg%3E"); mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2728%27%20height%3D%2748%27%20viewBox%3D%270%200%2028%2048%27%3E%3Cpath%20d%3D%27M14%200L28%208V24L14%2032L0%2024V8ZM14%2032V48%27%20fill%3D%27none%27%20stroke%3D%27%23000%27%20stroke-width%3D%27.6%27/%3E%3C/svg%3E"); -webkit-mask-position: var(--rq-tex-pos, 0 0); mask-position: var(--rq-tex-pos, 0 0); opacity:.12;
-}
-html[data-theme="dark"] body .page-head::after, html[data-theme="dark"] body .rq-home-bar::after { opacity:.13; }
+/* header hexagon texture removed 2026-11-21 (user) */
 /* 2026-11-21: header bottom edge in the theme accent (was a plain white/brown line) so it blends with the dock and texture:
    thin accent line + faint accent glow under it, no white inner line. ROLLBACK: delete this block. */
 html body .page-head, html body .rq-home-bar {
@@ -2632,11 +2626,20 @@ html body .page-head, html body .rq-home-bar {
    ~/raqeem_shots/tex/dockmore.py. Lighter: 12% light / 13% dark (was 20/22, user 2026-11-19).
    ROLLBACK: delete this section.
    -------------------------------------------------------------------------- */
-html body .dock{isolation:isolate;}
-html body .dock::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;border-radius:inherit;
-background:var(--rq-accent);-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2728%27%20height%3D%2748%27%20viewBox%3D%270%200%2028%2048%27%3E%3Cpath%20d%3D%27M14%200L28%208V24L14%2032L0%2024V8ZM14%2032V48%27%20fill%3D%27none%27%20stroke%3D%27%23000%27%20stroke-width%3D%27.6%27/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2728%27%20height%3D%2748%27%20viewBox%3D%270%200%2028%2048%27%3E%3Cpath%20d%3D%27M14%200L28%208V24L14%2032L0%2024V8ZM14%2032V48%27%20fill%3D%27none%27%20stroke%3D%27%23000%27%20stroke-width%3D%27.6%27/%3E%3C/svg%3E");-webkit-mask-position:var(--rq-tex-pos,0 0);mask-position:var(--rq-tex-pos,0 0);opacity:.12;}
-html[data-theme="dark"] body .dock::after{opacity:.13;}
+/* dock hexagon texture removed 2026-11-21 (user) */
 /* ---- end 11w ---- */
+/* 2026-11-21: soft theme light on the dock (user: "a little theme light on the dock"). Glow rises from
+   the bottom + faint wash along the dock, accent edge toward the page. No top glow, so the corner band
+   above stays seamless. Tune --rq-dock-glow. ROLLBACK: delete this block. */
+:root, html[data-theme="light"] { --rq-dock-glow: .14; }
+html[data-theme="dark"] { --rq-dock-glow: .18; }
+html body .dock, html body.rq-corner-on.rq-corner-dock .dock {
+    background:
+        radial-gradient(140% 38% at 50% 100%, rgba(var(--rq-a-rgb), var(--rq-dock-glow)), transparent 72%),
+        linear-gradient(180deg, rgba(var(--rq-a-rgb), calc(var(--rq-dock-glow) * .25)) 0%, rgba(var(--rq-a-rgb), calc(var(--rq-dock-glow) * .45)) 100%),
+        var(--rq-dock-bg) !important;
+    border-inline-end: 1px solid color-mix(in srgb, var(--rq-accent) 30%, transparent) !important;
+}
 
 /* --------------------------------------------------------------------------
    11x. List pages tidy (2026-11-20) — قوائم مرتبة
@@ -2818,18 +2821,33 @@ body.rq-corner-on .rq-corner-brand .rq-hb-word { font-size: 1.3rem; }
 body.rq-corner-on .rq-corner-brand .rq-corner-in { display: inline-flex; flex-direction: column; align-items: stretch; gap: 3px; }
 body.rq-corner-on .rq-corner-brand .rq-hb-logo svg { width: 100% !important; height: 100% !important; display: block; }
 body.rq-corner-on .rq-corner-brand.rq-hb-mini .rq-hb-logo { width: 26px; height: 26px; }
-/* the band wears the dock's hexagon texture (11w); --rq-corner-tex-x (JS) shifts the tiles so
-   they line up with the dock's own pattern where the band sits on top of the dock */
-body.rq-corner-on .rq-corner-brand { isolation: isolate; }
-body.rq-corner-on .rq-corner-brand::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
-background: var(--rq-accent); -webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2728%27%20height%3D%2748%27%20viewBox%3D%270%200%2028%2048%27%3E%3Cpath%20d%3D%27M14%200L28%208V24L14%2032L0%2024V8ZM14%2032V48%27%20fill%3D%27none%27%20stroke%3D%27%23000%27%20stroke-width%3D%27.6%27/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2728%27%20height%3D%2748%27%20viewBox%3D%270%200%2028%2048%27%3E%3Cpath%20d%3D%27M14%200L28%208V24L14%2032L0%2024V8ZM14%2032V48%27%20fill%3D%27none%27%20stroke%3D%27%23000%27%20stroke-width%3D%27.6%27/%3E%3C/svg%3E");-webkit-mask-position: var(--rq-tex-pos, 0 0); mask-position: var(--rq-tex-pos, 0 0); opacity: .12; }
-html[data-theme="dark"] body.rq-corner-on .rq-corner-brand::after { opacity: .13; }
+/* corner band texture removed with the dock texture 2026-11-21 */
 /* make room under the band */
 body.rq-corner-on.rq-corner-dock .dock .dock-logo { display: none !important; }
 /* bottom line over the sidebar part only (RTL: sidebar = left part of the band; LTR: right part) */
 body.rq-corner-on .rq-corner-brand::before { content: ""; position: absolute; bottom: 0; right: 0; height: 2px;
     width: var(--rq-corner-side-w, 0px); pointer-events: none;
     border-top: 1px solid var(--rq-dock-shine); border-bottom: 1px solid var(--rq-dock-edge); box-sizing: border-box; }
+/* 2026-11-21: same accent line as the dock's page edge (docklight block), sidebar part only, classic skin
+   (the band is hidden in ufuq). ROLLBACK: delete this rule. */
+html:not([data-skin="ufuq"]) body.rq-corner-on .rq-corner-brand::before {
+    height: 1px; border: 0; background: color-mix(in srgb, var(--rq-accent) 30%, transparent); }
+/* 2026-11-21: both accent lines throw a soft light toward the sidebar (user): the dock edge sideways
+   (RTL: to the left, LTR: to the right), the band line downward. Outer shadows only, so the dock's
+   own inset shine stays. ROLLBACK: delete this rule set. */
+html:not([data-skin="ufuq"]) body .dock, html:not([data-skin="ufuq"]) body.dock-pinned .dock {
+    box-shadow: 8px 0 18px -10px color-mix(in srgb, var(--rq-accent) 55%, transparent),
+                inset 0 1px 0 var(--rq-dock-shine), 0 10px 28px rgba(0, 0, 0, .28) !important; }
+html[dir="rtl"]:not([data-skin="ufuq"]) body .dock, html[dir="rtl"]:not([data-skin="ufuq"]) body.dock-pinned .dock {
+    box-shadow: -8px 0 18px -10px color-mix(in srgb, var(--rq-accent) 55%, transparent),
+                inset 0 1px 0 var(--rq-dock-shine), 0 10px 28px rgba(0, 0, 0, .28) !important; }
+/* band glow: a box-shadow can't work on the 1px line (negative spread erases it), so a fading strip
+   hangs just under the band, sidebar part only, same width/side as the line (::before). */
+html:not([data-skin="ufuq"]) body.rq-corner-on .rq-corner-brand::after {
+    content: ""; position: absolute; top: 100%; right: 0; height: 12px; width: var(--rq-corner-side-w, 0px);
+    pointer-events: none;
+    background: linear-gradient(180deg, color-mix(in srgb, var(--rq-accent) 28%, transparent), transparent); }
+html:not([data-skin="ufuq"]) body.rq-corner-on .rq-corner-brand.rq-corner-rtl::after { right: auto; left: 0; }
 body.rq-corner-on .rq-corner-brand.rq-corner-rtl::before { right: auto; left: 0; }
 /* the dock's top glow would peek out just under the band as a seam: plain dock colour when covered */
 html body.rq-corner-on.rq-corner-dock .dock { background: var(--rq-dock-bg) !important; }
