@@ -2599,7 +2599,7 @@ html[data-theme="dark"] body .page-head, html[data-theme="dark"] body .rq-home-b
     border-bottom-color: rgba(255,255,255,.10) !important;
 }
 html:not([data-theme="dark"]) body .page-head, html:not([data-theme="dark"]) body .rq-home-bar {
-    background-color: rgba(221, 214, 205, .88) !important;
+    background-color: rgba(240, 235, 228, .90) !important;
     background-image: linear-gradient(180deg, rgba(255,255,255,.18) 0%, rgba(255,255,255,0) 100%) !important;
     border-bottom-color: rgba(68, 51, 34, .14) !important;
 }
