@@ -156,6 +156,20 @@
 		corner.classList.toggle("rq-hb-mini", w < 210);
 		corner.classList.toggle("rq-corner-rtl", rtl);
 		corner.style.setProperty("--rq-corner-side-w", side + "px");
+		sync_tex();
+	}
+
+	// Hexagon textures (page background, dock, corner band, page header) are all painted as tiled masks.
+	// Each layer tiles from its own corner, so shift every one to start at the SCREEN's top-left corner:
+	// then the hexagons of all four layers form one continuous pattern (CSS var --rq-tex-pos, theme 11v/11w).
+	function sync_tex() {
+		const z = parseFloat(document.documentElement.style.zoom) || 1;
+		const els = document.querySelectorAll(".dock, .rq-corner-brand, .page-head, .rq-home-bar");
+		els.forEach((el) => {
+			if (!el.offsetParent && getComputedStyle(el).position !== "fixed") return;
+			const r = el.getBoundingClientRect();
+			el.style.setProperty("--rq-tex-pos", `${(-r.left / z).toFixed(2)}px ${(-r.top / z).toFixed(2)}px`);
+		});
 	}
 
 	function inject() {

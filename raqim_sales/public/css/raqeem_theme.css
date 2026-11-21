@@ -2591,6 +2591,37 @@ html:not([data-theme="dark"]) body .page-head, html:not([data-theme="dark"]) bod
     border-bottom: 1px solid rgba(255,255,255,.75) !important;
     box-shadow: inset 0 -1px 0 rgba(0,0,0,.06), 0 8px 24px -14px rgba(60,40,10,.25) !important;
 }
+/* 2026-11-21: header in the dock's own colour, in harmony with the wordmark band. 80% was
+   "too matte" -> 55% -> 30% -> 5% -> 0%; the blur WAS the matte look (user 2026-11-21): colour 80% -> 25% -> 40%, blur 6px -> 1.2px -> 1.6px (user). Dock top colours: dark #0d0f13, light #ebe6df. */
+html[data-theme="dark"] body .page-head, html[data-theme="dark"] body .rq-home-bar {
+    background-color: rgba(7, 9, 12, .88) !important;
+    background-image: linear-gradient(180deg, rgba(255,255,255,.035) 0%, rgba(255,255,255,0) 100%) !important;
+    border-bottom-color: rgba(255,255,255,.10) !important;
+}
+html:not([data-theme="dark"]) body .page-head, html:not([data-theme="dark"]) body .rq-home-bar {
+    background-color: rgba(221, 214, 205, .88) !important;
+    background-image: linear-gradient(180deg, rgba(255,255,255,.18) 0%, rgba(255,255,255,0) 100%) !important;
+    border-bottom-color: rgba(68, 51, 34, .14) !important;
+}
+html body .page-head, html body .rq-home-bar { -webkit-backdrop-filter: blur(1.6px) saturate(170%) !important; backdrop-filter: blur(1.6px) saturate(170%) !important; }
+/* Blur only the page CONTENT under the header, never the hexagon background (user 2026-11-21).
+   opacity < 1 makes .page-container a "backdrop root": the header's backdrop-filter then sees only
+   what is inside the page; the hexagons (body::before, outside it) show through sharp.
+   .9999 is invisible, and unlike filter/will-change it does not trap position:fixed children. */
+html body .page-container { opacity: .9999; }
+/* 2026-11-21: hexagon texture on the header (same mask as dock 11w), under the content. ROLLBACK: delete this block. */
+html body .page-head, html body .rq-home-bar { isolation: isolate; }
+html body .page-head::after, html body .rq-home-bar::after {
+    content:""; position:absolute; inset:0; z-index:-1; pointer-events:none; border-radius:inherit;
+    background:var(--rq-accent); -webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2728%27%20height%3D%2748%27%20viewBox%3D%270%200%2028%2048%27%3E%3Cpath%20d%3D%27M14%200L28%208V24L14%2032L0%2024V8ZM14%2032V48%27%20fill%3D%27none%27%20stroke%3D%27%23000%27%20stroke-width%3D%27.6%27/%3E%3C/svg%3E"); mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2728%27%20height%3D%2748%27%20viewBox%3D%270%200%2028%2048%27%3E%3Cpath%20d%3D%27M14%200L28%208V24L14%2032L0%2024V8ZM14%2032V48%27%20fill%3D%27none%27%20stroke%3D%27%23000%27%20stroke-width%3D%27.6%27/%3E%3C/svg%3E"); -webkit-mask-position: var(--rq-tex-pos, 0 0); mask-position: var(--rq-tex-pos, 0 0); opacity:.12;
+}
+html[data-theme="dark"] body .page-head::after, html[data-theme="dark"] body .rq-home-bar::after { opacity:.13; }
+/* 2026-11-21: header bottom edge in the theme accent (was a plain white/brown line) so it blends with the dock and texture:
+   thin accent line + faint accent glow under it, no white inner line. ROLLBACK: delete this block. */
+html body .page-head, html body .rq-home-bar {
+    border-bottom: 1px solid color-mix(in srgb, var(--rq-accent) 32%, transparent) !important;
+    box-shadow: 0 1px 16px -6px color-mix(in srgb, var(--rq-accent) 40%, transparent), 0 10px 22px -16px rgba(0,0,0,.5) !important;
+}
 /* ---- end 11v ---- */
 
 /* --------------------------------------------------------------------------
@@ -2603,7 +2634,7 @@ html:not([data-theme="dark"]) body .page-head, html:not([data-theme="dark"]) bod
    -------------------------------------------------------------------------- */
 html body .dock{isolation:isolate;}
 html body .dock::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;border-radius:inherit;
-background:var(--rq-accent);-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2728%27%20height%3D%2748%27%20viewBox%3D%270%200%2028%2048%27%3E%3Cpath%20d%3D%27M14%200L28%208V24L14%2032L0%2024V8ZM14%2032V48%27%20fill%3D%27none%27%20stroke%3D%27%23000%27%20stroke-width%3D%27.6%27/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2728%27%20height%3D%2748%27%20viewBox%3D%270%200%2028%2048%27%3E%3Cpath%20d%3D%27M14%200L28%208V24L14%2032L0%2024V8ZM14%2032V48%27%20fill%3D%27none%27%20stroke%3D%27%23000%27%20stroke-width%3D%27.6%27/%3E%3C/svg%3E");opacity:.12;}
+background:var(--rq-accent);-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2728%27%20height%3D%2748%27%20viewBox%3D%270%200%2028%2048%27%3E%3Cpath%20d%3D%27M14%200L28%208V24L14%2032L0%2024V8ZM14%2032V48%27%20fill%3D%27none%27%20stroke%3D%27%23000%27%20stroke-width%3D%27.6%27/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2728%27%20height%3D%2748%27%20viewBox%3D%270%200%2028%2048%27%3E%3Cpath%20d%3D%27M14%200L28%208V24L14%2032L0%2024V8ZM14%2032V48%27%20fill%3D%27none%27%20stroke%3D%27%23000%27%20stroke-width%3D%27.6%27/%3E%3C/svg%3E");-webkit-mask-position:var(--rq-tex-pos,0 0);mask-position:var(--rq-tex-pos,0 0);opacity:.12;}
 html[data-theme="dark"] body .dock::after{opacity:.13;}
 /* ---- end 11w ---- */
 
@@ -2778,15 +2809,10 @@ body.rq-corner-on .rq-corner-brand {
     background-size: 100% var(--rq-vh, 100vh) !important;
     background-repeat: no-repeat !important;
     /* no line under the band where it meets the dock (user 2026-11-21); the sidebar part keeps
-       its bottom line (::before, sized by JS --rq-corner-side-w);
-       one line on the side facing the page header instead (inline-end = page side in RTL and LTR) */
-    border: 0 !important;
-    border-right: 1px solid rgba(68, 51, 34, .16) !important;
+       its bottom line (::before, sized by JS --rq-corner-side-w) */
+    border: 0 !important;   /* side line toward the page header removed too (user 2026-11-21) */
     box-shadow: none !important;
 }
-/* the band itself is LTR (Latin wordmark), so JS adds .rq-corner-rtl when the page is RTL */
-body.rq-corner-on .rq-corner-brand.rq-corner-rtl { border-right: 0 !important; border-left: 1px solid rgba(68, 51, 34, .16) !important; }
-html[data-theme="dark"] body.rq-corner-on .rq-corner-brand { border-left-color: rgba(255, 255, 255, .16) !important; border-right-color: rgba(255, 255, 255, .16) !important; }
 body.rq-corner-on .rq-corner-brand .rq-corner-in { transform: scale(var(--rq-corner-fit, 1)); }
 body.rq-corner-on .rq-corner-brand .rq-hb-word { font-size: 1.3rem; }
 body.rq-corner-on .rq-corner-brand .rq-corner-in { display: inline-flex; flex-direction: column; align-items: stretch; gap: 3px; }
@@ -2796,7 +2822,7 @@ body.rq-corner-on .rq-corner-brand.rq-hb-mini .rq-hb-logo { width: 26px; height:
    they line up with the dock's own pattern where the band sits on top of the dock */
 body.rq-corner-on .rq-corner-brand { isolation: isolate; }
 body.rq-corner-on .rq-corner-brand::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
-background: var(--rq-accent); -webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2728%27%20height%3D%2748%27%20viewBox%3D%270%200%2028%2048%27%3E%3Cpath%20d%3D%27M14%200L28%208V24L14%2032L0%2024V8ZM14%2032V48%27%20fill%3D%27none%27%20stroke%3D%27%23000%27%20stroke-width%3D%27.6%27/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2728%27%20height%3D%2748%27%20viewBox%3D%270%200%2028%2048%27%3E%3Cpath%20d%3D%27M14%200L28%208V24L14%2032L0%2024V8ZM14%2032V48%27%20fill%3D%27none%27%20stroke%3D%27%23000%27%20stroke-width%3D%27.6%27/%3E%3C/svg%3E");-webkit-mask-position: var(--rq-corner-tex-x, 0px) 0; mask-position: var(--rq-corner-tex-x, 0px) 0; opacity: .12; }
+background: var(--rq-accent); -webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2728%27%20height%3D%2748%27%20viewBox%3D%270%200%2028%2048%27%3E%3Cpath%20d%3D%27M14%200L28%208V24L14%2032L0%2024V8ZM14%2032V48%27%20fill%3D%27none%27%20stroke%3D%27%23000%27%20stroke-width%3D%27.6%27/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2728%27%20height%3D%2748%27%20viewBox%3D%270%200%2028%2048%27%3E%3Cpath%20d%3D%27M14%200L28%208V24L14%2032L0%2024V8ZM14%2032V48%27%20fill%3D%27none%27%20stroke%3D%27%23000%27%20stroke-width%3D%27.6%27/%3E%3C/svg%3E");-webkit-mask-position: var(--rq-tex-pos, 0 0); mask-position: var(--rq-tex-pos, 0 0); opacity: .12; }
 html[data-theme="dark"] body.rq-corner-on .rq-corner-brand::after { opacity: .13; }
 /* make room under the band */
 body.rq-corner-on.rq-corner-dock .dock .dock-logo { display: none !important; }
