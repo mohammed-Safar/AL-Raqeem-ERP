@@ -2758,3 +2758,41 @@ html.rq-zoomed .es-popover.notifications-popover .notifications-list { height: m
 html.rq-zoomed .layout-side-section.print-preview-sidebar { height: calc(var(--rq-vh) - var(--page-head-height)); }
 html.rq-zoomed .gantt-modern { height: calc(var(--rq-vh) - 240px); }
 /* ---- end 11y ---- */
+
+
+/* ========== 11y. Classic skin: AL-RAQEEM ERP wordmark in the corner (2026-11-21) ==========
+   A band across the top of the dock + sidebar, where the dock's R logo was; placed by
+   raqeem_brand_title.js (place_corner). Horizon («الأفق») has its own top bar and never shows it.
+   ROLLBACK: delete this section and place_corner() in raqeem_brand_title.js. */
+.rq-corner-brand { display: none; }
+body.rq-corner-on .rq-corner-brand {
+    display: flex !important;
+    position: fixed !important;
+    top: 0 !important;
+    z-index: 1031;
+    flex-direction: column; align-items: center; justify-content: center;
+    padding: 0 14px;
+    background: radial-gradient(70% 90px at 50% 0%, rgba(var(--rq-a-rgb), .12), transparent 75%), var(--rq-dock-bg);
+    border-bottom: 1px solid var(--rq-dock-edge);
+    box-shadow: inset 0 -1px 0 var(--rq-dock-shine), 0 10px 24px -18px rgba(0, 0, 0, .6);
+}
+body.rq-corner-on .rq-corner-brand .rq-hb-word { font-size: 1.3rem; }
+body.rq-corner-on .rq-corner-brand .rq-corner-in { display: inline-flex; flex-direction: column; align-items: stretch; gap: 3px; }
+body.rq-corner-on .rq-corner-brand .rq-hb-logo svg { width: 100% !important; height: 100% !important; display: block; }
+body.rq-corner-on .rq-corner-brand.rq-hb-mini .rq-hb-logo { width: 26px; height: 26px; }
+/* the band wears the dock's hexagon texture (11w); --rq-corner-tex-x (JS) shifts the tiles so
+   they line up with the dock's own pattern where the band sits on top of the dock */
+body.rq-corner-on .rq-corner-brand { isolation: isolate; }
+body.rq-corner-on .rq-corner-brand::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+background: var(--rq-accent); -webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2728%27%20height%3D%2748%27%20viewBox%3D%270%200%2028%2048%27%3E%3Cpath%20d%3D%27M14%200L28%208V24L14%2032L0%2024V8ZM14%2032V48%27%20fill%3D%27none%27%20stroke%3D%27%23000%27%20stroke-width%3D%27.6%27/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2728%27%20height%3D%2748%27%20viewBox%3D%270%200%2028%2048%27%3E%3Cpath%20d%3D%27M14%200L28%208V24L14%2032L0%2024V8ZM14%2032V48%27%20fill%3D%27none%27%20stroke%3D%27%23000%27%20stroke-width%3D%27.6%27/%3E%3C/svg%3E");-webkit-mask-position: var(--rq-corner-tex-x, 0px) 0; mask-position: var(--rq-corner-tex-x, 0px) 0; opacity: .12; }
+html[data-theme="dark"] body.rq-corner-on .rq-corner-brand::after { opacity: .13; }
+/* make room under the band */
+body.rq-corner-on.rq-corner-dock .dock .dock-logo { display: none !important; }
+html body.rq-corner-on.rq-corner-dock.dock-pinned .dock { padding-top: 66px !important; }
+html body.rq-corner-on.rq-corner-side .body-sidebar { padding-top: 64px !important; }
+html[data-skin="ufuq"] .rq-corner-brand { display: none !important; }
+/* one wordmark only: the corner one replaces the copy centred in the page header (user 2026-11-21) */
+.page-head .rq-head-brand { display: none !important; }
+@media (max-width: 767px) { .rq-corner-brand { display: none !important; } }
+@media print { .rq-corner-brand { display: none !important; } }
+

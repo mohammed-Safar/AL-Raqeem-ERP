@@ -105,8 +105,54 @@
 		});
 	}
 
+	// classic skin: the wordmark sits in a band across the top of the dock + sidebar,
+	// where the dock's R logo was (theme.css 11y). The band is pinned to the screen edge the
+	// dock is on and only its WIDTH is set (in CSS px, never screen px), so the page zoom
+	// (html zoom, raqeem_quick_settings.js) scales it with everything else and it never drifts.
+	// The sidebar can be expanded, a rail, or missing; the dock is hidden on RAQEEM Home.
+	const CORNER_H = 64;
+	let corner;
+	const width_of = (el) =>
+		el && !el.classList.contains("hidden") && el.offsetParent && el.offsetHeight ? el.offsetWidth : 0;
+
+	function place_corner() {
+		const body = document.body;
+		const off = () => {
+			body.classList.remove("rq-corner-on", "rq-corner-dock", "rq-corner-side");
+			if (corner) corner.style.display = "none";
+		};
+		if (document.documentElement.dataset.skin === "ufuq" || window.innerWidth < 768) return off();
+		const dock = body.classList.contains("dock-pinned") ? width_of(document.querySelector(".dock")) : 0;
+		const side = width_of(document.querySelector(".body-sidebar-container .body-sidebar"));
+		if (!dock && !side) return off();
+		if (!corner) {
+			corner = document.createElement("a");
+			corner.className = "rq-head-brand rq-corner-brand";
+			corner.href = "/desk";
+			corner.setAttribute("aria-label", BRAND);
+			corner.innerHTML = `<span class="rq-corner-in">${make().innerHTML}</span>`;
+			body.appendChild(corner);
+		}
+		const rtl = getComputedStyle(body).direction === "rtl"; // dock + sidebar sit on the start edge
+		const w = dock + side;
+		body.classList.add("rq-corner-on");
+		body.classList.toggle("rq-corner-dock", !!dock);
+		body.classList.toggle("rq-corner-side", !!side);
+		Object.assign(corner.style, {
+			display: "",
+			left: rtl ? "auto" : "0",
+			right: rtl ? "0" : "auto",
+			width: w + "px",
+			height: CORNER_H + "px",
+		});
+		// hexagon tiles start where the dock starts (RTL: after the sidebar; LTR: at 0)
+		corner.style.setProperty("--rq-corner-tex-x", (rtl && dock ? side : 0) + "px");
+		corner.classList.toggle("rq-hb-mini", w < 210);
+	}
+
 	function inject() {
 		inject_dock();
+		place_corner();
 		document.querySelectorAll(".page-head .page-head-content:not(.rq-has-brand)").forEach((row) => {
 			row.classList.add("rq-has-brand");
 			row.appendChild(make());
@@ -130,8 +176,27 @@
 		new MutationObserver(schedule).observe(document.body, { childList: true, subtree: true });
 		window.addEventListener("resize", () => {
 			clearTimeout(resize_timer);
-			resize_timer = setTimeout(check, 150);
+			resize_timer = setTimeout(() => {
+				check();
+				place_corner();
+			}, 150);
 		});
+		// skin switch, dock pin/hide, sidebar collapse are class changes, not new nodes
+		const watch_attrs = new MutationObserver(schedule);
+		watch_attrs.observe(document.documentElement, { attributes: true, attributeFilter: ["data-skin", "dir", "lang"] });
+		watch_attrs.observe(document.body, { attributes: true, attributeFilter: ["class"] });
+		if (window.ResizeObserver) {
+			const ro = new ResizeObserver(schedule);
+			const hook = () =>
+				document.querySelectorAll(".dock, .body-sidebar-container").forEach((el) => {
+					if (!el.rqCornerWatched) {
+						el.rqCornerWatched = true;
+						ro.observe(el);
+					}
+				});
+			hook();
+			new MutationObserver(hook).observe(document.body, { childList: true });
+		}
 	}
 	if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start);
 	else start();
