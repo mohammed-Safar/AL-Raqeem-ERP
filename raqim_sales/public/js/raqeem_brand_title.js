@@ -138,16 +138,24 @@
 		body.classList.add("rq-corner-on");
 		body.classList.toggle("rq-corner-dock", !!dock);
 		body.classList.toggle("rq-corner-side", !!side);
+		// same height as the visible page header (CSS px, so zoom-safe); 64 when there is none
+		const head = [...document.querySelectorAll(".page-head")].find((el) => el.offsetParent && el.offsetHeight);
+		const h = head ? head.offsetHeight : CORNER_H;
 		Object.assign(corner.style, {
 			display: "",
 			left: rtl ? "auto" : "0",
 			right: rtl ? "0" : "auto",
 			width: w + "px",
-			height: CORNER_H + "px",
+			height: h + "px",
 		});
+		body.style.setProperty("--rq-corner-h", h + "px");
+		// shrink the wordmark only if the header is shorter than it (wordmark ~44px tall)
+		corner.style.setProperty("--rq-corner-fit", Math.min(1, (h - 6) / 44).toFixed(3));
 		// hexagon tiles start where the dock starts (RTL: after the sidebar; LTR: at 0)
 		corner.style.setProperty("--rq-corner-tex-x", (rtl && dock ? side : 0) + "px");
 		corner.classList.toggle("rq-hb-mini", w < 210);
+		corner.classList.toggle("rq-corner-rtl", rtl);
+		corner.style.setProperty("--rq-corner-side-w", side + "px");
 	}
 
 	function inject() {

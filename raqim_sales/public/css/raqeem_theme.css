@@ -2772,10 +2772,22 @@ body.rq-corner-on .rq-corner-brand {
     z-index: 1031;
     flex-direction: column; align-items: center; justify-content: center;
     padding: 0 14px;
-    background: radial-gradient(70% 90px at 50% 0%, rgba(var(--rq-a-rgb), .12), transparent 75%), var(--rq-dock-bg);
-    border-bottom: 1px solid var(--rq-dock-edge);
-    box-shadow: inset 0 -1px 0 var(--rq-dock-shine), 0 10px 24px -18px rgba(0, 0, 0, .6);
+    /* exactly the dock's colour: the dock's own gradient, stretched over the dock's height so the
+       band's rows match the dock rows under it (user 2026-11-21) */
+    background: var(--rq-dock-bg) !important;
+    background-size: 100% var(--rq-vh, 100vh) !important;
+    background-repeat: no-repeat !important;
+    /* no line under the band where it meets the dock (user 2026-11-21); the sidebar part keeps
+       its bottom line (::before, sized by JS --rq-corner-side-w);
+       one line on the side facing the page header instead (inline-end = page side in RTL and LTR) */
+    border: 0 !important;
+    border-right: 1px solid rgba(68, 51, 34, .16) !important;
+    box-shadow: none !important;
 }
+/* the band itself is LTR (Latin wordmark), so JS adds .rq-corner-rtl when the page is RTL */
+body.rq-corner-on .rq-corner-brand.rq-corner-rtl { border-right: 0 !important; border-left: 1px solid rgba(68, 51, 34, .16) !important; }
+html[data-theme="dark"] body.rq-corner-on .rq-corner-brand { border-left-color: rgba(255, 255, 255, .16) !important; border-right-color: rgba(255, 255, 255, .16) !important; }
+body.rq-corner-on .rq-corner-brand .rq-corner-in { transform: scale(var(--rq-corner-fit, 1)); }
 body.rq-corner-on .rq-corner-brand .rq-hb-word { font-size: 1.3rem; }
 body.rq-corner-on .rq-corner-brand .rq-corner-in { display: inline-flex; flex-direction: column; align-items: stretch; gap: 3px; }
 body.rq-corner-on .rq-corner-brand .rq-hb-logo svg { width: 100% !important; height: 100% !important; display: block; }
@@ -2788,8 +2800,16 @@ background: var(--rq-accent); -webkit-mask-image:url("data:image/svg+xml,%3Csvg%
 html[data-theme="dark"] body.rq-corner-on .rq-corner-brand::after { opacity: .13; }
 /* make room under the band */
 body.rq-corner-on.rq-corner-dock .dock .dock-logo { display: none !important; }
-html body.rq-corner-on.rq-corner-dock.dock-pinned .dock { padding-top: 66px !important; }
-html body.rq-corner-on.rq-corner-side .body-sidebar { padding-top: 64px !important; }
+/* bottom line over the sidebar part only (RTL: sidebar = left part of the band; LTR: right part) */
+body.rq-corner-on .rq-corner-brand::before { content: ""; position: absolute; bottom: 0; right: 0; height: 2px;
+    width: var(--rq-corner-side-w, 0px); pointer-events: none;
+    border-top: 1px solid var(--rq-dock-shine); border-bottom: 1px solid var(--rq-dock-edge); box-sizing: border-box; }
+body.rq-corner-on .rq-corner-brand.rq-corner-rtl::before { right: auto; left: 0; }
+/* the dock's top glow would peek out just under the band as a seam: plain dock colour when covered */
+html body.rq-corner-on.rq-corner-dock .dock { background: var(--rq-dock-bg) !important; }
+/* --rq-corner-h = the page header's height (JS), so band and header line up */
+html body.rq-corner-on.rq-corner-dock.dock-pinned .dock { padding-top: calc(var(--rq-corner-h, 64px) + 2px) !important; }
+html body.rq-corner-on.rq-corner-side .body-sidebar { padding-top: var(--rq-corner-h, 64px) !important; }
 html[data-skin="ufuq"] .rq-corner-brand { display: none !important; }
 /* one wordmark only: the corner one replaces the copy centred in the page header (user 2026-11-21) */
 .page-head .rq-head-brand { display: none !important; }
