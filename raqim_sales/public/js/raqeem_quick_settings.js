@@ -1,4 +1,4 @@
-/* RAQEEM — one "display settings" button in every page header.
+/* RAQEEM — display settings + page zoom, in one floating group at the bottom corner (was: a button in every page header).
    Clicking it opens a small panel with three groups:
      • Appearance: light / dark   (saved on the user, like Frappe's Toggle Theme)
      • Colour:     black & white (default), orange, gold, yellow, red, purple,
@@ -34,6 +34,107 @@
 		else root.setAttribute("data-accent", a);
 	}
 	apply_accent(stored_accent());
+
+	/* ---------- page size (zoom) — this browser only (localStorage raqeem_zoom) ---------- */
+	// the same steps as the browser's own zoom (Chrome / Edge)
+	const ZOOMS = [50, 67, 75, 80, 90, 100, 110, 125, 150, 175, 200];
+	const ZOOM_KEY = "raqeem_zoom";
+	function stored_zoom() {
+		let z = 100;
+		try {
+			z = parseInt(localStorage.getItem(ZOOM_KEY), 10) || 100;
+		} catch (e) {}
+		return ZOOMS.includes(z) ? z : 100;
+	}
+	let zoom = stored_zoom();
+	function apply_zoom() {
+		root.style.zoom = zoom === 100 ? "" : String(zoom / 100);
+		// CSS zoom leaves 100vh as it is: give the CSS the screen height at this zoom (theme 11y)
+		root.classList.toggle("rq-zoomed", zoom !== 100);
+		if (zoom === 100) {
+			root.style.removeProperty("--rq-vh");
+			root.style.removeProperty("--rq-zinv");
+		} else {
+			root.style.setProperty("--rq-vh", `${(10000 / zoom).toFixed(3)}dvh`);
+			root.style.setProperty("--rq-zinv", (100 / zoom).toFixed(4));
+		}
+		document.querySelectorAll(".rq-fab-zoom-val").forEach((el) => (el.textContent = `${zoom}%`));
+		document.querySelectorAll(".rq-fab-zoom-out").forEach((b) => (b.disabled = zoom === ZOOMS[0]));
+		document.querySelectorAll(".rq-fab-zoom-in").forEach((b) => (b.disabled = zoom === ZOOMS[ZOOMS.length - 1]));
+		// the floating group and its panel keep the same size at every zoom
+		const counter = zoom === 100 ? "" : String(100 / zoom);
+		document.querySelectorAll(".rq-fab, .rq-qs-pop").forEach((el) => (el.style.zoom = counter));
+	}
+	function set_zoom(z) {
+		zoom = ZOOMS.includes(z) ? z : 100;
+		try {
+			localStorage.setItem(ZOOM_KEY, String(zoom));
+		} catch (e) {}
+		apply_zoom();
+		window.dispatchEvent(new Event("resize")); // charts / tables re-measure
+	}
+	const step_zoom = (d) => set_zoom(ZOOMS[Math.min(ZOOMS.length - 1, Math.max(0, ZOOMS.indexOf(zoom) + d))]);
+	apply_zoom();
+
+	/* The browser's zoom keys drive the same zoom, so keyboard, mouse wheel and the
+	   − / + buttons are one control: Ctrl/Cmd + = / − / 0 and Ctrl + wheel.
+	   (A web page cannot read or set the browser's own zoom; this replaces it inside the desk.) */
+	document.addEventListener(
+		"keydown",
+		(e) => {
+			if (!(e.ctrlKey || e.metaKey) || e.altKey) return;
+			const c = e.code, k = e.key;
+			let d = null;
+			if (k === "+" || k === "=" || c === "Equal" || c === "NumpadAdd") d = 1;
+			else if (k === "-" || k === "_" || c === "Minus" || c === "NumpadSubtract") d = -1;
+			else if (k === "0" || c === "Digit0" || c === "Numpad0") d = 0;
+			if (d === null) return;
+			e.preventDefault();
+			d === 0 ? set_zoom(100) : step_zoom(d);
+		},
+		true
+	);
+	let wheel_at = 0;
+	window.addEventListener(
+		"wheel",
+		(e) => {
+			if (!e.ctrlKey || e.deltaY === 0) return;
+			e.preventDefault();
+			const now = Date.now();
+			if (now - wheel_at < 180) return; // one step per wheel notch / pinch burst
+			wheel_at = now;
+			step_zoom(e.deltaY < 0 ? 1 : -1);
+		},
+		{ passive: false }
+	);
+
+	/* ---------- style (skin): classic (default) or «الأفق» — raqeem_skin_ufuq.css ----------
+	   html[data-skin="ufuq"]; this browser only (localStorage raqeem_skin).
+	   ROLLBACK: delete this block, the "style" group in build_panel and the skin lines in sync/click. */
+	const SKINS = ["classic", "ufuq"];
+	const SKIN_KEY = "raqeem_skin";
+	const current_skin = () => (SKINS.includes(root.dataset.skin) ? root.dataset.skin : "classic");
+	function apply_skin(k) {
+		if (k && k !== "classic") root.setAttribute("data-skin", k);
+		else root.removeAttribute("data-skin");
+	}
+	try {
+		const k = localStorage.getItem(SKIN_KEY);
+		apply_skin(SKINS.includes(k) ? k : "classic");
+	} catch (e) {}
+	function set_skin(k) {
+		if (!SKINS.includes(k) || k === current_skin()) return;
+		root.classList.add("rq-theme-fading");
+		// Horizon turns the entrance animations off; switching back to classic would
+		// otherwise replay them on everything already on screen (the page fades in again).
+		// Hold them off until the next page is opened (CSS: theme section 11y).
+		root.classList.add("rq-skin-swapped");
+		apply_skin(k);
+		setTimeout(() => root.classList.remove("rq-theme-fading"), 450);
+		try {
+			localStorage.setItem(SKIN_KEY, k);
+		} catch (e) {}
+	}
 
 	/* ---------- ONE memory for login page + desk ----------
 	   This browser's localStorage (raqeem_theme = light/dark/auto, raqeem_accent) is the
@@ -110,13 +211,13 @@
 	const lang = () => ((window.frappe && frappe.boot && frappe.boot.lang) || root.lang || "en").split("-")[0];
 	const STR = {
 		ar: {
-			title: "إعدادات العرض", appearance: "المظهر", light: "فاتح", dark: "داكن", auto: "تلقائي",
-			colour: "لون الواجهة", language: "اللغة",
+			title: "إعدادات العرض", zoom_in: "تكبير (Ctrl +)", zoom_out: "تصغير (Ctrl −)", zoom_reset: "الحجم الطبيعي (Ctrl 0)", appearance: "المظهر", light: "فاتح", dark: "داكن", auto: "تلقائي",
+			colour: "لون الواجهة", language: "اللغة", style: "الطراز", classic: "الكلاسيكي", ufuq: "الأفق",
 			orange: "برتقالي", gold: "ذهبي", yellow: "أصفر", red: "أحمر", blue: "أزرق", green: "أخضر", purple: "بنفسجي سايبر", mono: "أبيض وأسود",
 		},
 		en: {
-			title: "Display settings", appearance: "Appearance", light: "Light", dark: "Dark", auto: "Auto",
-			colour: "Theme colour", language: "Language",
+			title: "Display settings", zoom_in: "Zoom in (Ctrl +)", zoom_out: "Zoom out (Ctrl −)", zoom_reset: "Actual size (Ctrl 0)", appearance: "Appearance", light: "Light", dark: "Dark", auto: "Auto",
+			colour: "Theme colour", language: "Language", style: "Style", classic: "Classic", ufuq: "Horizon",
 			orange: "Orange", gold: "Gold", yellow: "Yellow", red: "Red", blue: "Blue", green: "Green", purple: "Cyber Purple", mono: "Black & White",
 		},
 	};
@@ -207,6 +308,13 @@
 				</div>
 			</div>
 			<div class="rq-qs-group">
+				<div class="rq-qs-label">${s("style")}</div>
+				<div class="rq-qs-seg" role="radiogroup" aria-label="${s("style")}">
+					<button type="button" class="rq-qs-opt" data-skin-opt="classic" role="radio"><span>${s("classic")}</span></button>
+					<button type="button" class="rq-qs-opt" data-skin-opt="ufuq" role="radio"><span>${s("ufuq")}</span></button>
+				</div>
+			</div>
+			<div class="rq-qs-group">
 				<div class="rq-qs-label">${s("colour")}</div>
 				<div class="rq-qs-swatches" role="radiogroup" aria-label="${s("colour")}">
 					${ACCENTS.map(
@@ -227,6 +335,7 @@
 			if (!t) return;
 			if (t.dataset.themeOpt) set_theme(t.dataset.themeOpt);
 			else if (t.dataset.accentOpt) set_accent(t.dataset.accentOpt);
+			else if (t.dataset.skinOpt) set_skin(t.dataset.skinOpt);
 			else if (t.dataset.langOpt) set_language(t.dataset.langOpt);
 			sync();
 		});
@@ -251,11 +360,18 @@
 		};
 		mark("[data-theme-opt]", (b) => b.dataset.themeOpt === current_theme());
 		mark("[data-accent-opt]", (b) => b.dataset.accentOpt === current_accent());
+		mark("[data-skin-opt]", (b) => b.dataset.skinOpt === current_skin());
 		mark("[data-lang-opt]", (b) => b.dataset.langOpt === lang());
 	}
 
 	function place() {
 		if (!pop || !owner) return;
+		const in_fab = !!owner.closest(".rq-fab");
+		pop.classList.toggle("rq-qs-pop--fab", in_fab);
+		if (in_fab) {
+			pop.style.top = pop.style.left = pop.style.right = "";
+			return;
+		}
 		const r = owner.getBoundingClientRect();
 		const rtl = getComputedStyle(owner).direction === "rtl";
 		pop.style.top = `${Math.round(r.bottom + 8)}px`;
@@ -270,7 +386,10 @@
 	}
 
 	function open(btn) {
-		if (!pop) pop = build_panel();
+		if (!pop) {
+			pop = build_panel();
+			apply_zoom();
+		}
 		owner = btn;
 		sync();
 		place();
@@ -300,7 +419,7 @@
 	window.addEventListener("hashchange", close);
 	window.addEventListener("popstate", close);
 
-	/* ---------- the header button ---------- */
+	/* ---------- the ◐ button ---------- */
 	function make_button() {
 		const btn = document.createElement("button");
 		btn.type = "button";
@@ -314,14 +433,33 @@
 		return btn;
 	}
 
+	/* ---------- the floating group (bottom corner): ◐ | − 100% + ----------
+	   2026-11-21: replaces the button that was added to every page header. */
+	function make_fab() {
+		const fab = document.createElement("div");
+		fab.className = "rq-fab";
+		fab.setAttribute("role", "toolbar");
+		fab.setAttribute("aria-label", s("title"));
+		fab.appendChild(make_button());
+		const zoom_box = document.createElement("div");
+		zoom_box.className = "rq-fab-zoom";
+		zoom_box.innerHTML = `
+			<button type="button" class="btn-reset rq-fab-zoom-out" title="${s("zoom_out")}" aria-label="${s("zoom_out")}">${svg('<path d="M5 12h14"/>', 16)}</button>
+			<button type="button" class="btn-reset rq-fab-zoom-val" title="${s("zoom_reset")}" aria-label="${s("zoom_reset")}">${zoom}%</button>
+			<button type="button" class="btn-reset rq-fab-zoom-in" title="${s("zoom_in")}" aria-label="${s("zoom_in")}">${svg('<path d="M12 5v14M5 12h14"/>', 16)}</button>`;
+		zoom_box.addEventListener("click", (e) => {
+			const b = e.target.closest("button");
+			if (!b) return;
+			if (b.classList.contains("rq-fab-zoom-in")) step_zoom(1);
+			else if (b.classList.contains("rq-fab-zoom-out")) step_zoom(-1);
+			else set_zoom(100);
+		});
+		fab.appendChild(zoom_box);
+		document.body.appendChild(fab);
+		apply_zoom();
+	}
 	function inject() {
-		document
-			// every page header, plus the top bar of RAQEEM Home (page/raqeem_home)
-			.querySelectorAll(".page-head .standard-items-section:not(.rq-has-qs), .rq-home-actions:not(.rq-has-qs)")
-			.forEach((section) => {
-				section.classList.add("rq-has-qs");
-				section.insertBefore(make_button(), section.firstChild);
-			});
+		if (!document.querySelector("body > .rq-fab")) make_fab();
 	}
 	let queued = false;
 	function schedule() {
@@ -336,6 +474,9 @@
 
 	function start() {
 		apply_accent(stored_accent()); // boot is ready now
+		try {
+			frappe.router.on("change", () => root.classList.remove("rq-skin-swapped"));
+		} catch (e) {}
 		inject();
 		new MutationObserver(schedule).observe(document.body, { childList: true, subtree: true });
 		// theme changed elsewhere (Frappe's own dialog, OS setting in Automatic mode)

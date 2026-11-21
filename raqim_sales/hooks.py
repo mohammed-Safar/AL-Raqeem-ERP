@@ -40,13 +40,15 @@ app_include_css = [
     "/assets/raqim_sales/css/raqeem_fonts.css?v=33",
     "/assets/raqim_sales/css/raqeem_logo.css?v=39",
     "/assets/raqim_sales/css/raqeem_palette.css?v=33",
-    "/assets/raqim_sales/css/raqeem_theme.css?v=lists-1120a",
+    "/assets/raqim_sales/css/raqeem_theme.css?v=zoom3-1121a",
     # dock icons drawn in CSS (ROLLBACK: delete the next line)
     "/assets/raqim_sales/css/raqeem_icons.css?v=50",
-    "/assets/raqim_sales/css/raqeem_home.css?v=hwave-1119a",
-    "/assets/raqim_sales/css/raqeem_form.css?v=chat-1120a",
+    "/assets/raqim_sales/css/raqeem_home.css?v=zoom2-1121a",
+    "/assets/raqim_sales/css/raqeem_form.css?v=zoom2-1121a",
     "/assets/raqim_sales/css/raqeem_list.css?v=47",
-    "/assets/raqim_sales/css/raqeem_mobile.css?v=4"
+    "/assets/raqim_sales/css/raqeem_mobile.css?v=4",
+    # skin «الأفق»: only applies with html[data-skin="ufuq"] (display settings → Style). ROLLBACK: delete the next line
+    "/assets/raqim_sales/css/raqeem_skin_ufuq.css?v=zoom2-1121a"
 ]
 # raqeem_icons.js -> swaps stock sidebar icons for the Raqeem duotone set
 #   (ROLLBACK: delete the two raqeem_icon* lines below and the app_include_icons line)
@@ -61,12 +63,12 @@ app_include_js = [
     "/assets/raqim_sales/js/raqeem_sidebar_rail.js?v=33",
     # one header button -> panel with light/dark, theme colour and language
     # (replaces raqeem_theme_toggle.js, raqeem_accent.js, raqeem_lang_switch.js)
-    "/assets/raqim_sales/js/raqeem_quick_settings.js?v=skin-1120a",
+    "/assets/raqim_sales/js/raqeem_quick_settings.js?v=zoom3-1121a",
     "/assets/raqim_sales/js/raqeem_sidebar.js?v=ph-1120a",
     # phone-only bottom bar (ROLLBACK: delete the next line)
     "/assets/raqim_sales/js/raqeem_tabbar.js?v=3",
     "/assets/raqim_sales/js/raqeem_form.js?v=40",
-    "/assets/raqim_sales/js/raqeem_list.js?v=38",
+    "/assets/raqim_sales/js/raqeem_list.js?v=cur-1121a",
     "/assets/raqim_sales/js/raqeem_brand_title.js?v=hb2-1118b",
     "/assets/raqim_sales/js/raqeem_icon_names.js?v=51",
     "/assets/raqim_sales/js/raqeem_icons.js?v=51",
@@ -101,14 +103,14 @@ web_include_css = [
     "/assets/raqim_sales/css/raqeem_fonts.css?v=33",
     "/assets/raqim_sales/css/raqeem_logo.css?v=39",
     # theme colour sets (orange/blue/green/mono) used by login + portal
-    "/assets/raqim_sales/css/raqeem_accent_web.css?v=41",
+    "/assets/raqim_sales/css/raqeem_accent_web.css?v=42",
     "/assets/raqim_sales/css/raqeem_login.css?v=42",
     "/assets/raqim_sales/css/raqeem_portal.css?v=33"
 ]
 # raqeem_login.js -> brand panel + language switch on the login page only
 web_include_js = [
     "/assets/raqim_sales/js/raqeem_logo.js?v=40",
-    "/assets/raqim_sales/js/raqeem_login.js?v=43"
+    "/assets/raqim_sales/js/raqeem_login.js?v=teal-1120a"
 ]
 
 # RAQEEM «R» as the browser-tab icon (overrides ERPNext's);

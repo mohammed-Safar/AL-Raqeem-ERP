@@ -406,7 +406,7 @@ html[dir="rtl"] .rq-step:only-child { clip-path: none; }
         grid-row: 1;
         position: sticky;
         top: 84px;
-        max-height: calc(100vh - 100px);
+        max-height: calc(var(--rq-vh, 100vh) - 100px);
         overflow-y: auto;
         overscroll-behavior: contain;
         scrollbar-width: thin;

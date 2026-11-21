@@ -96,7 +96,7 @@
 			names: { mono: "أبيض وأسود", orange: "برتقالي", gold: "ذهبي", yellow: "أصفر", red: "أحمر", purple: "بنفسجي سايبر", blue: "أزرق", green: "أخضر" } }
 		: { title: "Display settings", appearance: "Appearance", light: "Light", dark: "Dark", auto: "Auto", colour: "Theme colour", language: "Language",
 			names: { mono: "Black & White", orange: "Orange", gold: "Gold", yellow: "Yellow", red: "Red", purple: "Cyber Purple", blue: "Blue", green: "Green" } };
-	const SWATCH = { mono: "", orange: "#f97316", gold: "#d4a72c", yellow: "#facc15", red: "#ef4444", purple: "#a855f7", blue: "#2563eb", green: "#76b900" };
+	const SWATCH = { mono: "", orange: "#f97316", gold: "#d4a72c", yellow: "#facc15", red: "#ef4444", purple: "#a855f7", blue: "#2563eb", green: "#14b8a6" };
 	const root = document.documentElement;
 	const store = (k, v) => {
 		try {

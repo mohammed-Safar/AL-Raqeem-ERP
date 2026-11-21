@@ -160,14 +160,20 @@
 		return (list.columns || [])
 			.filter((c) => c.type === "Field" && c.df && c.df.fieldtype === "Currency" && !seen.has(c.df.fieldname) && seen.add(c.df.fieldname))
 			.map((c) => {
-				// currency of the column: a fixed one, or the doc's currency field
+				// currency of the column: a fixed one, the doc's currency field, or looked up
+				// through a link ("Company:company:default_currency" = the company's currency)
 				let fixed = null;
 				let field = null;
+				let link = null;
 				const opt = c.df.options || "";
-				if (opt.startsWith(":")) fixed = null;
-				else if (opt && (meta.fields || []).some((f) => f.fieldname === opt)) field = opt;
-				else if (opt) fixed = opt;
-				return { df: c.df, field, fixed };
+				const has = (fn) => (meta.fields || []).some((f) => f.fieldname === fn);
+				const parts = opt.split(":");
+				if (parts.length === 3 && parts.every(Boolean) && has(parts[1]))
+					link = { doctype: parts[0], field: parts[1], currency_field: parts[2] };
+				else if (opt.includes(":")) fixed = null;
+				else if (opt && has(opt)) field = opt;
+				else if (/^[A-Z]{3}$/.test(opt)) fixed = opt;
+				return { df: c.df, field, fixed, link };
 			});
 	}
 
@@ -189,8 +195,9 @@
 		if ($bar.data("key") === key) return;
 		$bar.data("key", key);
 
-		// group by currency when the column's currency comes from a field
-		const cur_field = cols.find((c) => c.field) && cols.find((c) => c.field).field;
+		// group by currency when the column's currency comes from a field (or a link to one)
+		const by = cols.find((c) => c.field || c.link);
+		const cur_field = by ? by.field || by.link.field : null;
 		const fields = cols.map((c) => ({ SUM: c.df.fieldname, as: c.df.fieldname }));
 		fields.push({ COUNT: "name", as: "rq_count" });
 		if (cur_field) fields.push(cur_field);
@@ -207,6 +214,27 @@
 			rows = null;
 		}
 		if ($bar.data("key") !== key) return; // filters changed meanwhile
+		// linked currencies: one lookup per company (or other linked record)
+		const linked = {};
+		for (const c of cols.filter((c) => c.link)) {
+			for (const r of rows || []) {
+				const v = r[c.link.field];
+				const k = `${c.link.doctype}|${v}|${c.link.currency_field}`;
+				if (!v || k in linked) continue;
+				try {
+					const res = await frappe.db.get_value(c.link.doctype, v, c.link.currency_field);
+					linked[k] = res && res.message && res.message[c.link.currency_field];
+				} catch (e) {
+					linked[k] = null;
+				}
+			}
+		}
+		if ($bar.data("key") !== key) return;
+		const cur_of = (c, r) =>
+			c.fixed ||
+			(c.field && r[c.field]) ||
+			(c.link && linked[`${c.link.doctype}|${r[c.link.field]}|${c.link.currency_field}`]) ||
+			frappe.defaults.get_default("currency");
 
 		let total_count = 0;
 		let html_rows;
@@ -217,7 +245,7 @@
 				.map((r) =>
 					cols
 						.map((c) => {
-							const cur = c.fixed || (c.field ? r[c.field] : null) || frappe.defaults.get_default("currency");
+							const cur = cur_of(c, r);
 							return `<div class="rq-total"><span class="rq-total-label">${esc(__(c.df.label))}</span><span class="rq-total-value" dir="ltr">${format_currency(flt(r[c.df.fieldname]), cur)}</span></div>`;
 						})
 						.join("")

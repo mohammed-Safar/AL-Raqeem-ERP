@@ -131,15 +131,15 @@ html[data-accent="blue"] {
     --rq-a-400-rgb: 59, 130, 246;
     --rq-a-ink: #ffffff;
 }
-html[data-accent="green"] {   /* NVIDIA green #76b900 */
-    --rq-a-300: #b4e05a;
-    --rq-a-400: #8ccf1a;
-    --rq-a-500: #76b900;
-    --rq-a-600: #5e9400;
-    --rq-a-700: #4a7500;
-    --rq-a-rgb: 118, 185, 0;
-    --rq-a-400-rgb: 140, 207, 26;
-    --rq-a-ink: #0b1400;
+html[data-accent="green"] {   /* Horizon teal-green (2026-11-20; was NVIDIA lime #76b900) */
+    --rq-a-300: #5eead4;
+    --rq-a-400: #2dd4bf;
+    --rq-a-500: #14b8a6;
+    --rq-a-600: #0d9488;
+    --rq-a-700: #0f766e;
+    --rq-a-rgb: 20, 184, 166;
+    --rq-a-400-rgb: 45, 212, 191;
+    --rq-a-ink: #04201d;
 }
 html[data-accent="purple"] {   /* cyber purple */
     --rq-a-300: #d8b4fe;
@@ -215,8 +215,8 @@ html[data-accent="red"][data-theme="dark"] { --rq-accent: #f87171; --rq-accent-2
 /* readable text-accent per mode (links, active labels) */
 html[data-accent="blue"]:not([data-theme="dark"])  { --rq-accent: #1d4ed8; --rq-accent-2: #1e40af; --rq-accent-deep: #1e40af; }
 html[data-accent="blue"][data-theme="dark"]        { --rq-accent: #3b82f6; --rq-accent-2: #60a5fa; --rq-accent-deep: #2563eb; }
-html[data-accent="green"]:not([data-theme="dark"]) { --rq-accent: #4a7500; --rq-accent-2: #3d6000; --rq-accent-deep: #3d6000; }
-html[data-accent="green"][data-theme="dark"]       { --rq-accent: #76b900; --rq-accent-2: #8ccf1a; --rq-accent-deep: #5e9400; }
+html[data-accent="green"]:not([data-theme="dark"]) { --rq-accent: #0d9488; --rq-accent-2: #0f766e; --rq-accent-deep: #115e59; }
+html[data-accent="green"][data-theme="dark"]       { --rq-accent: #2dd4bf; --rq-accent-2: #5eead4; --rq-accent-deep: #14b8a6; }
 html[data-accent="purple"]:not([data-theme="dark"]) { --rq-accent: #7e22ce; --rq-accent-2: #6b21a8; --rq-accent-deep: #6b21a8; }
 html[data-accent="purple"][data-theme="dark"]       { --rq-accent: #c084fc; --rq-accent-2: #d8b4fe; --rq-accent-deep: #a855f7; }
 :is(html:not([data-accent]), html[data-accent="mono"]):not([data-theme="dark"])  { --rq-accent: #18181b; --rq-accent-2: #000000; --rq-accent-deep: #000000; }
@@ -1707,7 +1707,7 @@ html:not([data-theme="dark"]) .body-sidebar, html:not([data-theme="dark"]) .desk
 }
 .rq-qs-sw[data-accent-opt="orange"] .rq-qs-sw-dot { background: #f97316; }
 .rq-qs-sw[data-accent-opt="blue"]   .rq-qs-sw-dot { background: #2563eb; }
-.rq-qs-sw[data-accent-opt="green"]  .rq-qs-sw-dot { background: #76b900; }
+.rq-qs-sw[data-accent-opt="green"]  .rq-qs-sw-dot { background: #14b8a6; }
 .rq-qs-sw[data-accent-opt="gold"]   .rq-qs-sw-dot { background: linear-gradient(135deg, #f3d98b 0%, #d4a72c 50%, #946c12 100%); }
 .rq-qs-sw[data-accent-opt="yellow"] .rq-qs-sw-dot { background: #facc15; }
 .rq-qs-sw[data-accent-opt="red"]    .rq-qs-sw-dot { background: #ef4444; }
@@ -1718,7 +1718,7 @@ html:not([data-theme="dark"]) .body-sidebar, html:not([data-theme="dark"]) .desk
 .rq-qs-sw:hover { box-shadow: inset 0 0 0 1px var(--rq-line-hover); }
 .rq-qs-sw.is-active { box-shadow: inset 0 0 0 2px var(--rq-accent); }
 .rq-qs-sw.is-active .rq-qs-sw-dot { color: #fff; }
-.rq-qs-sw.is-active[data-accent-opt="green"] .rq-qs-sw-dot { color: #0b1400; }
+.rq-qs-sw.is-active[data-accent-opt="green"] .rq-qs-sw-dot { color: #04201d; }
 .rq-qs-sw.is-active[data-accent-opt="mono"] .rq-qs-sw-dot { color: var(--rq-a-ink); background: var(--rq-a-500); }
 @media (prefers-reduced-motion: reduce) {
     .rq-qs-pop, .rq-qs-pop.is-open { transition: none; transform: none; }
@@ -1816,7 +1816,7 @@ html[data-theme="dark"] {
 body.dock-pinned .dock {
     margin: 0 !important;
     height: 100vh !important;
-    height: 100dvh !important;
+    height: var(--rq-vh, 100dvh) !important;   /* --rq-vh: page zoom (11y) */
     border: 0 !important;
     border-inline-end: 1px solid var(--rq-dock-edge) !important;
     box-shadow: inset 0 1px 0 var(--rq-dock-shine), 0 10px 28px rgba(0, 0, 0, .28) !important;
@@ -2651,3 +2651,108 @@ html[dir="rtl"] .frappe-list .list-row-col:has(a[data-filter^="name,"]) > .ellip
 .page-form .standard-filter-section [data-fieldtype="Check"] .checkbox .label-area { overflow: hidden; text-overflow: ellipsis; }
 .page-form .standard-filter-section [data-fieldtype="Check"] .help-box { display: none; }
 /* ---- end 11x ---- */
+
+/* --------------------------------------------------------------------------
+   11y. Floating display group (2026-11-21) — ◐ | − 100% +  at the bottom corner
+   (raqeem_quick_settings.js make_fab). Replaces the ◐ button in every page header.
+   Bottom-left in Arabic (inline-end), bottom-right in English. Panel opens upwards.
+   ROLLBACK: delete this section and restore inject() from git.
+   -------------------------------------------------------------------------- */
+.rq-fab {
+    position: fixed;
+    z-index: 1040;                       /* above the page, below panels (1060) and modals */
+    bottom: 18px;
+    inset-inline-end: 18px;
+    display: flex; align-items: center; gap: 4px;
+    padding: 4px;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--rq-surface-1) 78%, transparent);
+    -webkit-backdrop-filter: blur(14px) saturate(160%);
+    backdrop-filter: blur(14px) saturate(160%);
+    box-shadow: inset 0 0 0 1px var(--rq-line-strong), 0 10px 30px -10px var(--rq-shadow-pop);
+    font-family: var(--rq-font);
+    opacity: .9;
+    transition: opacity .2s var(--rq-ease), box-shadow .2s var(--rq-ease);
+}
+.rq-fab:hover, .rq-fab:focus-within { opacity: 1; box-shadow: inset 0 0 0 1px var(--rq-hover-line), 0 12px 32px -10px var(--rq-shadow-pop); }
+html body .rq-fab .rq-qs-btn {
+    flex: 0 0 34px; width: 34px; height: 34px; margin: 0;
+    border-radius: 50% !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+html body .rq-fab .rq-qs-btn:hover, html body .rq-fab .rq-qs-btn[aria-expanded="true"] { background: var(--rq-hover) !important; }
+.rq-fab .rq-qs-dot { box-shadow: 0 0 0 2px var(--rq-surface-1); }
+.rq-fab-zoom {
+    display: flex; align-items: center; gap: 2px;
+    padding-inline-start: 6px;
+    border-inline-start: 1px solid var(--rq-line-strong);
+    direction: ltr;                       /* − 100% + reads the same in both languages */
+}
+.rq-fab-zoom button {
+    height: 30px; min-width: 30px;
+    display: inline-grid; place-items: center;
+    border-radius: 999px;
+    color: var(--rq-text-2);
+    cursor: pointer;
+    transition: background .15s var(--rq-ease), color .15s var(--rq-ease);
+}
+.rq-fab-zoom button:hover:not(:disabled) { background: var(--rq-hover); color: var(--rq-accent); }
+.rq-fab-zoom button:disabled { opacity: .35; cursor: default; }
+.rq-fab-zoom button:focus-visible { outline: 2px solid var(--rq-accent-2); outline-offset: 1px; }
+.rq-fab-zoom .rq-fab-zoom-val {
+    min-width: 50px; padding: 0 4px;
+    font-size: 12.5px; font-weight: 600; font-variant-numeric: tabular-nums;
+    color: var(--rq-text);
+}
+/* the panel opens above the group */
+.rq-qs-pop.rq-qs-pop--fab {
+    top: auto !important;
+    bottom: 70px;
+    inset-inline-end: 18px;
+    inset-inline-start: auto;
+    transform: translateY(4px);
+}
+.rq-qs-pop.rq-qs-pop--fab.is-open { transform: none; }
+/* room at the end of every page so the last row / totals can scroll clear of the group */
+html body .page-container .page-body { padding-bottom: 64px; }
+@media print { .rq-fab { display: none !important; } }
+@media (max-width: 640px) {
+    .rq-fab { bottom: calc(var(--rq-tabbar-total, 0px) + 10px); inset-inline-end: 10px; }
+    .rq-fab-zoom { display: none; }        /* phones pinch-zoom */
+    .rq-qs-pop.rq-qs-pop--fab { bottom: calc(var(--rq-tabbar-total, 0px) + 62px); inset-inline-end: 8px; }
+}
+/* just after a skin switch: don't replay entrance animations on what is already shown
+   (html.rq-skin-swapped is removed by raqeem_quick_settings.js on the next route change) */
+html.rq-skin-swapped .page-container,
+html.rq-skin-swapped .editor-js-container .ce-block,
+html.rq-skin-swapped .frappe-list .list-row-container,
+html.rq-skin-swapped .rq-tile, html.rq-skin-swapped .rq-recent, html.rq-skin-swapped .rq-tile-badge,
+html.rq-skin-swapped .rq-totals, html.rq-skin-swapped .rq-kpi, html.rq-skin-swapped .rq-kpi-bar i,
+html.rq-skin-swapped .rq-smart-btn,
+html.rq-skin-swapped .layout-main-section-wrapper > div:has(> .form-footer) { animation: none !important; }
+
+/* Page zoom vs "full screen height": CSS zoom does not shrink/grow 100vh, so at 75% the
+   dock and menus stopped short and at 150% they ran past the screen. raqeem_quick_settings.js
+   sets --rq-vh (= the screen height at the current zoom) and html.rq-zoomed; Frappe's
+   full-height rules are re-stated with it here (ours use var(--rq-vh, 100vh) directly). */
+html.rq-zoomed .main-section,
+html.rq-zoomed .body-sidebar,
+html.rq-zoomed .sidebar-panel,
+html.rq-zoomed body.dock-pinned .dock { height: var(--rq-vh); }
+html.rq-zoomed .dock { max-height: calc(var(--rq-vh) - 32px); }
+html.rq-zoomed body[data-route^="Form"] .layout-side-section { height: calc(var(--rq-vh) - var(--page-head-height)); }
+html.rq-zoomed .report-view .layout-main-section { height: calc(var(--rq-vh) - var(--page-head-height)); }
+html.rq-zoomed .datatable .dt-scrollable { height: calc(var(--rq-vh) - 240px); }
+html.rq-zoomed [data-page-route="Workspaces"] .layout-main { height: calc(var(--rq-vh) - var(--navbar-height) - var(--page-head-height) - 5px); }
+html.rq-zoomed .codex-editor { min-height: calc(var(--rq-vh) - 165px); }
+html.rq-zoomed .kanban .kanban-column { max-height: calc(var(--rq-vh) - var(--navbar-height) - var(--page-head-height) - var(--margin-sm) * 2); }
+html.rq-zoomed .kanban .kanban-cards { max-height: calc(var(--rq-vh) - 250px); }
+/* Kanban v2 measures window.innerHeight in JS (kanban_page.js sync_board_height): real screen
+   pixels, so scale its number back by 1/zoom (--rq-zinv) */
+html.rq-zoomed .kanban-v2-container { height: calc(var(--kanban-v2-height, calc(100vh - var(--page-head-height) - var(--margin-md))) * var(--rq-zinv, 1)); }
+html.rq-zoomed .dashboard-page .dashboard-view { min-height: calc(var(--rq-vh) - 284px); }
+html.rq-zoomed .es-popover.notifications-popover .notifications-list { height: min(500px, calc(var(--rq-vh) - var(--navbar-height) - 32px)); }
+html.rq-zoomed .layout-side-section.print-preview-sidebar { height: calc(var(--rq-vh) - var(--page-head-height)); }
+html.rq-zoomed .gantt-modern { height: calc(var(--rq-vh) - 240px); }
+/* ---- end 11y ---- */

@@ -125,15 +125,15 @@ html[data-accent="blue"] {
     --rq-a-400-rgb: 59, 130, 246;
     --rq-a-ink: #ffffff;
 }
-html[data-accent="green"] {   /* NVIDIA green #76b900 */
-    --rq-a-300: #b4e05a;
-    --rq-a-400: #8ccf1a;
-    --rq-a-500: #76b900;
-    --rq-a-600: #5e9400;
-    --rq-a-700: #4a7500;
-    --rq-a-rgb: 118, 185, 0;
-    --rq-a-400-rgb: 140, 207, 26;
-    --rq-a-ink: #0b1400;
+html[data-accent="green"] {   /* Horizon teal-green (2026-11-20; was NVIDIA lime #76b900) */
+    --rq-a-300: #5eead4;
+    --rq-a-400: #2dd4bf;
+    --rq-a-500: #14b8a6;
+    --rq-a-600: #0d9488;
+    --rq-a-700: #0f766e;
+    --rq-a-rgb: 20, 184, 166;
+    --rq-a-400-rgb: 45, 212, 191;
+    --rq-a-ink: #04201d;
 }
 html[data-accent="purple"] {   /* cyber purple */
     --rq-a-300: #d8b4fe;
@@ -209,8 +209,8 @@ html[data-accent="red"][data-theme="dark"] { --rq-accent: #f87171; --rq-accent-2
 /* readable text-accent per mode (links, active labels) */
 html[data-accent="blue"]:not([data-theme="dark"])  { --rq-accent: #1d4ed8; --rq-accent-2: #1e40af; --rq-accent-deep: #1e40af; }
 html[data-accent="blue"][data-theme="dark"]        { --rq-accent: #3b82f6; --rq-accent-2: #60a5fa; --rq-accent-deep: #2563eb; }
-html[data-accent="green"]:not([data-theme="dark"]) { --rq-accent: #4a7500; --rq-accent-2: #3d6000; --rq-accent-deep: #3d6000; }
-html[data-accent="green"][data-theme="dark"]       { --rq-accent: #76b900; --rq-accent-2: #8ccf1a; --rq-accent-deep: #5e9400; }
+html[data-accent="green"]:not([data-theme="dark"]) { --rq-accent: #0d9488; --rq-accent-2: #0f766e; --rq-accent-deep: #115e59; }
+html[data-accent="green"][data-theme="dark"]       { --rq-accent: #2dd4bf; --rq-accent-2: #5eead4; --rq-accent-deep: #14b8a6; }
 html[data-accent="purple"]:not([data-theme="dark"]) { --rq-accent: #7e22ce; --rq-accent-2: #6b21a8; --rq-accent-deep: #6b21a8; }
 html[data-accent="purple"][data-theme="dark"]       { --rq-accent: #c084fc; --rq-accent-2: #d8b4fe; --rq-accent-deep: #a855f7; }
 :is(html:not([data-accent]), html[data-accent="mono"]):not([data-theme="dark"])  { --rq-accent: #18181b; --rq-accent-2: #000000; --rq-accent-deep: #000000; }
