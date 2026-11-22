@@ -2850,10 +2850,6 @@ html:not([data-skin="ufuq"]) body.rq-corner-on .rq-corner-brand::after {
 html:not([data-skin="ufuq"]) body.rq-corner-on .rq-corner-brand.rq-corner-rtl::after { right: auto; left: 0; }
 /* 2026-11-21: Horizon top-bar light (ufuq src line 79, user chose "1"): accent spot from the TOP CENTRE
    on the classic header, wordmark band and dock. Classic only. ROLLBACK: delete this rule set. */
-html:not([data-skin="ufuq"])[data-theme="dark"] body .page-head, html:not([data-skin="ufuq"])[data-theme="dark"] body .rq-home-bar {
-    background-image: radial-gradient(60% 120px at 50% 0%, rgba(var(--rq-a-rgb), .12), transparent 70%), linear-gradient(180deg, rgba(255,255,255,.035) 0%, rgba(255,255,255,0) 100%) !important; }
-html:not([data-skin="ufuq"]):not([data-theme="dark"]) body .page-head, html:not([data-skin="ufuq"]):not([data-theme="dark"]) body .rq-home-bar {
-    background-image: radial-gradient(60% 120px at 50% 0%, rgba(var(--rq-a-rgb), .12), transparent 70%), linear-gradient(180deg, rgba(255,255,255,.18) 0%, rgba(255,255,255,0) 100%) !important; }
 html:not([data-skin="ufuq"]) body.rq-corner-on .rq-corner-brand {
     background: radial-gradient(60% 120px at 50% 0%, rgba(var(--rq-a-rgb), .12), transparent 70%), var(--rq-dock-bg) !important;
     background-size: 100% 100%, 100% var(--rq-vh, 100vh) !important; background-repeat: no-repeat !important; }
@@ -2873,43 +2869,6 @@ html[data-skin="ufuq"] .rq-corner-brand { display: none !important; }
 @media (max-width: 767px) { .rq-corner-brand { display: none !important; } }
 @media print { .rq-corner-brand { display: none !important; } }
 
-/* 11z. Classic header = Horizon top bar (2026-11-22, user: "make the header on the classic exactly like the one on horizon").
-   Same recipe as raqeem_skin_ufuq.src.css section 3 (.dock top bar): dock colour + accent spot from the top centre,
-   1px dock-edge line with an inner shine, soft drop shadow, no glass/blur, 64px tall. The wordmark corner gets the same
-   paint so header + corner read as one bar, like Horizon. Classic only. ROLLBACK: delete this section. */
-html:not(#x):not([data-skin="ufuq"]) body .page-head, html:not(#x):not([data-skin="ufuq"]) body .rq-home-bar {
-    background: radial-gradient(60% 120px at 50% 0%, rgba(var(--rq-a-rgb), .12), transparent 70%), var(--rq-dock-bg) !important;
-    -webkit-backdrop-filter: none !important; backdrop-filter: none !important;
-    border: 0 !important; border-bottom: 1px solid var(--rq-dock-edge) !important;
-    box-shadow: inset 0 -1px 0 var(--rq-dock-shine), 0 10px 28px -16px rgba(0, 0, 0, .5) !important;
-}
-html:not(#x):not([data-skin="ufuq"]) body .page-head .page-head-content { min-height: 64px !important; height: 64px !important; }
-html:not(#x):not([data-skin="ufuq"]) body.rq-corner-on .rq-corner-brand {
-    background: radial-gradient(60% 120px at 50% 0%, rgba(var(--rq-a-rgb), .12), transparent 70%), var(--rq-dock-bg) !important;
-    background-size: 100% 100%, 100% 100% !important; background-repeat: no-repeat !important;
-    border-bottom: 1px solid var(--rq-dock-edge) !important;
-    box-shadow: inset 0 -1px 0 var(--rq-dock-shine), 0 10px 28px -16px rgba(0, 0, 0, .5) !important;
-}
-html:not(#x):not([data-skin="ufuq"]) body.rq-corner-on .rq-corner-brand::before,
-html:not(#x):not([data-skin="ufuq"]) body.rq-corner-on .rq-corner-brand::after { display: none !important; }
-/* 11z-b (2026-11-22, user "both"): Horizon's bottom edge + buttons.
-   Bottom: a gap under the header (Horizon --uf-gap 14px) so the edge line and soft shadow show on the page.
-   Buttons: Horizon top-bar buttons — plain ones = 12px rounded, surface-2 + 1px line (search/bell style),
-   main action = accent pill with a soft accent shadow (Horizon's active tab). */
-@media (min-width: 992px) { html:not(#x):not([data-skin="ufuq"]) body .page-container > .container.page-body, html:not(#x):not([data-skin="ufuq"]) body .page-container > .page-body { margin-top: 14px !important; } }
-html:not(#x):not([data-skin="ufuq"]) body .page-head .btn:not(.btn-primary):not(.btn-link), html:not(#x):not([data-skin="ufuq"]) body .page-head .es-button:not([data-variant="solid"]) {
-    height: 38px !important; min-height: 38px !important; min-width: 38px !important; padding-inline: 12px !important;
-    border-radius: 12px !important; border: 0 !important;
-    background: var(--rq-surface-2) !important; box-shadow: inset 0 0 0 1px var(--rq-line) !important;
-    color: var(--rq-text-2) !important; }
-html:not(#x):not([data-skin="ufuq"]) body .page-head .btn:not(.btn-primary):not(.btn-link):hover, html:not(#x):not([data-skin="ufuq"]) body .page-head .es-button:not([data-variant="solid"]):hover { background: var(--rq-hover) !important; color: var(--rq-strong) !important; }
-html:not(#x):not([data-skin="ufuq"]) body .page-head .btn-primary, html:not(#x):not([data-skin="ufuq"]) body .page-head .primary-action, html:not(#x):not([data-skin="ufuq"]) body .page-head .es-button[data-variant="solid"] {
-    height: 38px !important; min-height: 38px !important; padding: 0 16px !important;
-    border-radius: 999px !important; border: 0 !important;
-    background: var(--rq-accent) !important; color: var(--rq-a-ink) !important;
-    box-shadow: 0 6px 16px -8px rgba(var(--rq-a-rgb), .9) !important;
-    }
-html:not(#x):not([data-skin="ufuq"]) body .page-head .btn.icon-btn, html:not(#x):not([data-skin="ufuq"]) body .page-head .es-button.icon-btn { width: 38px !important; padding: 0 !important; justify-content: center; }
 /* 11z-c (2026-11-22, user: "apply horizon buttons to everything in classic"): every button gets the
    header's Horizon style, sizes untouched. Plain = 12px radius (8px when small), surface-2 + 1px line;
    main (btn-primary / solid es-button) = accent pill + soft accent shadow, no gradient, no shine.
@@ -2968,4 +2927,27 @@ html:not(#x):not([data-skin="ufuq"]) body .rq-quick-plus { background: var(--rq-
 html:not(#x):not([data-skin="ufuq"]) body .rq-recent { border-radius: 18px !important; }
 html:not(#x):not([data-skin="ufuq"]) body .rq-recent:hover { transform: translateY(-2px) !important; }
 html:not(#x):not([data-skin="ufuq"]) body .body-sidebar-container.expanded .body-sidebar .standard-sidebar-item.active-sidebar { box-shadow: none !important; background: transparent !important; }
+/* 11z-e (2026-11-22, user: "make the header the same as Horizon, not the dock" -> Horizon's TITLE row).
+   The classic page header now uses the same glass background as Horizon's title row (11v, no extra light),
+   plus Horizon §5: 68px row, Alexandria bold title (1.7rem; breadcrumb page name 1.45rem), and Horizon's
+   own header buttons (10px corners, normal size; main button keeps the gradient + shine). The rest of the
+   site keeps the 11z-c buttons. ROLLBACK: delete this block (backup before_horizon_title_row_2026-11-22). */
+html:not(#x):not([data-skin="ufuq"]) body .page-head .page-head-content { min-height: 68px; }
+html:not(#x):not([data-skin="ufuq"]) body .page-head .es-breadcrumbs li:last-child .es-breadcrumbs__label,
+html:not(#x):not([data-skin="ufuq"]) body .page-head .page-title .title-text {
+    font-family: 'Alexandria', 'IBM Plex Sans Arabic', 'Cairo', sans-serif !important; font-weight: 700 !important;
+    color: var(--rq-strong) !important; -webkit-text-fill-color: var(--rq-strong) !important; top: 0 !important; }
+html:not(#x):not([data-skin="ufuq"]) body .page-head .page-title .title-text { font-size: 1.7rem !important; }
+html:not(#x):not([data-skin="ufuq"]) body .page-head .es-breadcrumbs li:last-child .es-breadcrumbs__item { font-size: 1.45rem !important; }
+html:not(#x):not([data-skin="ufuq"]) body .page-head .es-breadcrumbs__item { color: var(--rq-text-3) !important; }
+html:not(#x):not([data-skin="ufuq"]) body .page-head .btn { border-radius: 10px !important; box-shadow: none !important; font-weight: 500 !important; }
+html:not(#x):not([data-skin="ufuq"]) body .page-head .btn:is(.btn-default,.btn-secondary), html:not(#x):not([data-skin="ufuq"]) body .page-head .btn:is(.btn-default,.btn-secondary):is(.btn-xs,.btn-sm) { border-radius: 10px !important; box-shadow: none !important; background: var(--rq-surface-1) !important; border: 1px solid var(--rq-line-strong) !important; color: var(--rq-text) !important; }
+html:not(#x):not([data-skin="ufuq"]) body .page-head .btn:is(.btn-default,.btn-secondary):hover { background: var(--rq-hover) !important; }
+html:not(#x):not([data-skin="ufuq"]) body .page-head .es-button:not([data-variant="solid"]):not([data-variant="ghost"]) { border-radius: 10px !important; background: var(--rq-surface-2) !important; box-shadow: none !important; color: var(--rq-text) !important; }
+html:not(#x):not([data-skin="ufuq"]) body .page-head .es-button:not([data-variant="solid"]):not([data-variant="ghost"]):hover { background: var(--rq-surface-3) !important; }
+html:not(#x):not([data-skin="ufuq"]) body .page-head .es-button[data-variant="solid"]:not([data-theme="red"]) { border-radius: 10px !important;
+    background: var(--rq-a-500) !important; background-image: linear-gradient(135deg, var(--rq-a-400) 0%, var(--rq-a-500) 45%, var(--rq-a-600) 100%) !important;
+    box-shadow: 0 4px 14px rgba(var(--rq-a-rgb),.30), inset 0 1px 0 rgba(255,255,255,.25) !important; filter: none; }
+html:not(#x):not([data-skin="ufuq"]) body .page-head .es-button[data-variant="solid"]:not([data-theme="red"])::after { display: block !important; }
+html:not(#x):not([data-skin="ufuq"]) body .page-head .btn-primary { border-radius: 10px !important; background: var(--rq-accent) !important; background-image: none !important; border: 0 !important; color: var(--rq-a-ink) !important; font-weight: 600 !important; box-shadow: 0 6px 16px -8px rgba(var(--rq-a-rgb), .8) !important; }
 /* ---- end 11z ---- */
