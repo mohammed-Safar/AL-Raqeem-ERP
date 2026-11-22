@@ -2910,4 +2910,62 @@ html:not(#x):not([data-skin="ufuq"]) body .page-head .btn-primary, html:not(#x):
     box-shadow: 0 6px 16px -8px rgba(var(--rq-a-rgb), .9) !important;
     }
 html:not(#x):not([data-skin="ufuq"]) body .page-head .btn.icon-btn, html:not(#x):not([data-skin="ufuq"]) body .page-head .es-button.icon-btn { width: 38px !important; padding: 0 !important; justify-content: center; }
+/* 11z-c (2026-11-22, user: "apply horizon buttons to everything in classic"): every button gets the
+   header's Horizon style, sizes untouched. Plain = 12px radius (8px when small), surface-2 + 1px line;
+   main (btn-primary / solid es-button) = accent pill + soft accent shadow, no gradient, no shine.
+   Red (danger) solid buttons keep red. Ghost/link buttons stay flat. ROLLBACK: delete this block. */
+html:not(#x):not([data-skin="ufuq"]) body .btn:is(.btn-default,.btn-secondary):not(.btn-link), html:not(#x):not([data-skin="ufuq"]) body .es-button:not([data-variant="solid"]):not([data-variant="ghost"]) {
+    border: 0 !important; border-radius: 12px !important;
+    background: var(--rq-surface-2) !important; background-image: none !important;
+    box-shadow: inset 0 0 0 1px var(--rq-line) !important; color: var(--rq-text-2) !important; }
+html:not(#x):not([data-skin="ufuq"]) body .btn:is(.btn-default,.btn-secondary):is(.btn-xs,.btn-sm), html:not(#x):not([data-skin="ufuq"]) body .es-button:not([data-variant="solid"]):not([data-variant="ghost"])[data-size="sm"] { border-radius: 8px !important; }
+:is(html:not(#x):not([data-skin="ufuq"]) body .btn:is(.btn-default,.btn-secondary):not(.btn-link), html:not(#x):not([data-skin="ufuq"]) body .es-button:not([data-variant="solid"]):not([data-variant="ghost"])):hover { background: var(--rq-hover) !important; color: var(--rq-strong) !important; }
+html:not(#x):not([data-skin="ufuq"]) body .btn-primary, html:not(#x):not([data-skin="ufuq"]) body .es-button[data-variant="solid"] {
+    border: 0 !important; border-radius: 999px !important;
+    background: var(--rq-accent) !important; background-image: none !important; color: var(--rq-a-ink) !important;
+    box-shadow: 0 6px 16px -8px rgba(var(--rq-a-rgb), .9) !important; }
+html:not(#x):not([data-skin="ufuq"]) body .es-button[data-variant="solid"][data-theme="red"], html:not(#x):not([data-skin="ufuq"]) body .btn-primary.btn-danger { background: #dc2626 !important; color: #fff !important; box-shadow: 0 6px 16px -8px rgba(220, 38, 38, .9) !important; }
+:is(html:not(#x):not([data-skin="ufuq"]) body .btn-primary, html:not(#x):not([data-skin="ufuq"]) body .es-button[data-variant="solid"]):hover { filter: brightness(1.06); }
+:is(html:not(#x):not([data-skin="ufuq"]) body .btn-primary, html:not(#x):not([data-skin="ufuq"]) body .es-button[data-variant="solid"])::after { display: none !important; }
+/* 11z-d (2026-11-22, user: "even the dock, main menu, sidebar buttons"): Horizon's button style on
+   the dock, the module sidebar and the RAQEEM Home launcher (copied from raqeem_skin_ufuq.src.css §3, §4, §10).
+   ROLLBACK: delete this block (backup ~/raqeem_backups/before_dock_sidebar_home_buttons_2026-11-22.tar.gz). */
+/* dock: modules plain until hover; open module = accent with accent shadow; search/bell = outlined boxes */
+html:not(#x):not([data-skin="ufuq"]) body .dock .dock-items .dock-item { border-radius: 12px !important; background: transparent !important; background-image: none !important; box-shadow: none !important; color: var(--rq-text-2) !important; }
+html:not(#x):not([data-skin="ufuq"]) body .dock .dock-items .dock-item:hover { background: var(--rq-hover) !important; color: var(--rq-strong) !important; }
+html:not(#x):not([data-skin="ufuq"]) body .dock .dock-items .dock-item .dock-item-icon.rq-icon { --rq-icon-fill: var(--rq-accent); --rq-icon-fill-opacity: .18; }
+html:not(#x):not([data-skin="ufuq"]) body .dock .dock-items .dock-item.active { background: var(--rq-accent) !important; color: var(--rq-a-ink) !important; box-shadow: 0 6px 16px -8px rgba(var(--rq-a-rgb), .9) !important; }
+html:not(#x):not([data-skin="ufuq"]) body .dock .dock-items .dock-item.active .dock-item-icon.rq-icon { --rq-icon-fill: currentColor; --rq-icon-fill-opacity: .25; }
+html:not(#x):not([data-skin="ufuq"]) body .dock .dock-items .dock-item.active::before, html:not(#x):not([data-skin="ufuq"]) body .dock .dock-items .dock-item.active::after { display: none !important; }
+html:not(#x):not([data-skin="ufuq"]) body .dock .dock-utilities .dock-item { width: 40px !important; height: 40px !important; border-radius: 12px !important;
+    background: var(--rq-surface-2) !important; box-shadow: inset 0 0 0 1px var(--rq-line) !important; color: var(--rq-text-2) !important; }
+html:not(#x):not([data-skin="ufuq"]) body .dock .dock-utilities .dock-item:hover { background: var(--rq-hover) !important; color: var(--rq-strong) !important; }
+html:not(#x):not([data-skin="ufuq"]) body .dock .dock-utilities svg { width: 19px !important; height: 19px !important; }
+/* module sidebar: 38px rows, 10px corners, hover tint, open page = soft accent, no side bar/glow */
+html:not(#x):not([data-skin="ufuq"]) body .body-sidebar-container.expanded .body-sidebar .sidebar-items .standard-sidebar-item .item-anchor { height: 38px !important; border-radius: 10px !important; padding-inline: 12px 10px !important; border: 0 !important; box-shadow: none !important; }
+html:not(#x):not([data-skin="ufuq"]) body .body-sidebar-container.expanded .body-sidebar .sidebar-items .standard-sidebar-item:not(.active-sidebar):hover .item-anchor { background: var(--rq-hover) !important; }
+html:not(#x):not([data-skin="ufuq"]) body .body-sidebar-container.expanded .body-sidebar .sidebar-items .standard-sidebar-item.active-sidebar .item-anchor { background: var(--rq-accent-soft) !important; background-image: none !important; box-shadow: none !important; border: 0 !important; }
+html:not(#x):not([data-skin="ufuq"]) body .body-sidebar-container.expanded .body-sidebar .sidebar-items .standard-sidebar-item.active-sidebar .sidebar-item-label,
+html:not(#x):not([data-skin="ufuq"]) body .body-sidebar-container.expanded .body-sidebar .sidebar-items .standard-sidebar-item.active-sidebar .sidebar-item-icon { color: var(--rq-accent-2) !important; font-weight: 600 !important; }
+html[data-theme="dark"]:not(#x):not([data-skin="ufuq"]) body .body-sidebar-container.expanded .body-sidebar .sidebar-items .standard-sidebar-item.active-sidebar .sidebar-item-label,
+html[data-theme="dark"]:not(#x):not([data-skin="ufuq"]) body .body-sidebar-container.expanded .body-sidebar .sidebar-items .standard-sidebar-item.active-sidebar .sidebar-item-icon { color: var(--rq-accent) !important; }
+html:not(#x):not([data-skin="ufuq"]) body .body-sidebar-container.expanded .body-sidebar .standard-sidebar-item.active-sidebar .item-anchor::before { display: none !important; }
+html:not(#x):not([data-skin="ufuq"]) body .body-sidebar-container.expanded .body-sidebar .section-item > .nested-container .standard-sidebar-item.active-sidebar .item-anchor::before { display: block !important; background: var(--rq-accent) !important; box-shadow: none !important; }
+html:not(#x):not([data-skin="ufuq"]) body .rq-sb-filter { background: var(--rq-surface-2) !important; box-shadow: inset 0 0 0 1px var(--rq-line) !important; border-radius: 10px !important; border: 0 !important; }
+/* RAQEEM Home (main menu): app tiles = outlined rounded squares, accent on hover; pill search; accent quick "+" */
+html:not(#x):not([data-skin="ufuq"]) body .rq-tile-icon { background: var(--rq-surface-1) !important; background-image: none !important;
+    box-shadow: var(--rq-shadow), inset 0 0 0 1px var(--rq-line) !important; border-radius: 22px !important;
+    color: var(--rq-accent) !important; --rq-icon-fill: var(--rq-accent); --rq-icon-fill-opacity: .16; }
+html:not(#x):not([data-skin="ufuq"]) body .rq-tile-icon::before, html:not(#x):not([data-skin="ufuq"]) body .rq-tile-icon::after { display: none !important; }
+html:not(#x):not([data-skin="ufuq"]) body .rq-tile:hover .rq-tile-icon, html:not(#x):not([data-skin="ufuq"]) body .rq-tile:focus-visible .rq-tile-icon { transform: translateY(-2px) !important;
+    background: var(--rq-accent) !important; color: var(--rq-a-ink) !important; --rq-icon-fill: var(--rq-a-ink);
+    box-shadow: 0 12px 26px -12px rgba(var(--rq-a-rgb), .9) !important; }
+html:not(#x):not([data-skin="ufuq"]) body .rq-home-search { background: var(--rq-surface-1) !important; border: 0 !important; border-radius: 999px !important;
+    box-shadow: var(--rq-shadow), inset 0 0 0 1px var(--rq-line-strong) !important; }
+html:not(#x):not([data-skin="ufuq"]) body .rq-home-search:focus-within { box-shadow: 0 0 0 4px var(--rq-accent-ring), inset 0 0 0 1px var(--rq-accent) !important; }
+html:not(#x):not([data-skin="ufuq"]) body .rq-quick, html:not(#x):not([data-skin="ufuq"]) body .rq-recent { background: var(--rq-surface-1) !important; box-shadow: var(--rq-shadow), inset 0 0 0 1px var(--rq-line) !important; }
+html:not(#x):not([data-skin="ufuq"]) body .rq-quick-plus { background: var(--rq-accent) !important; color: var(--rq-a-ink) !important; box-shadow: none !important; }
+html:not(#x):not([data-skin="ufuq"]) body .rq-recent { border-radius: 18px !important; }
+html:not(#x):not([data-skin="ufuq"]) body .rq-recent:hover { transform: translateY(-2px) !important; }
+html:not(#x):not([data-skin="ufuq"]) body .body-sidebar-container.expanded .body-sidebar .standard-sidebar-item.active-sidebar { box-shadow: none !important; background: transparent !important; }
 /* ---- end 11z ---- */
