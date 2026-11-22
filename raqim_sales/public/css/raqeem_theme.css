@@ -2974,9 +2974,10 @@ html[dir="rtl"]:not(#x):not([data-skin="ufuq"]) body .dock, html[dir="rtl"]:not(
 .dock .rq-dock-arrow[hidden] { display: none !important; }
 .dock .rq-dock-arrow {
     flex: none; display: inline-grid; place-items: center; padding: 0; margin: 0;
-    border: 0; cursor: pointer; color: var(--rq-text-2); background: transparent;
+    border: 0; cursor: pointer; color: var(--rq-accent); background: transparent;
     transition: background .15s var(--rq-ease), color .15s var(--rq-ease), opacity .15s; }
-.dock .rq-dock-arrow:hover { background: var(--rq-hover); color: var(--rq-strong); }
+/* 2026-11-22 (user): arrows follow the theme colour in both skins */
+.dock .rq-dock-arrow:hover { background: var(--rq-accent-soft); color: var(--rq-accent); }
 .dock .rq-dock-arrow svg { transition: transform .15s var(--rq-ease); }
 .dock .rq-dock-arrow-left svg { transform: rotate(180deg); }
 .dock .rq-dock-arrow-up svg { transform: rotate(-90deg); }
@@ -2984,11 +2985,10 @@ html[dir="rtl"]:not(#x):not([data-skin="ufuq"]) body .dock, html[dir="rtl"]:not(
 .dock .rq-dock-arrow.is-end { opacity: .28; pointer-events: none; }
 /* classic: a slim full-width strip above / below the module icons */
 html:not([data-skin="ufuq"]) .dock .rq-dock-arrow { width: 44px; height: 24px; margin: 2px auto; border-radius: 8px; align-self: center; }
-/* Horizon: round outlined buttons like the search/bell ones, at both ends of the tabs */
-html[data-skin="ufuq"]:not(#x) body .dock .rq-dock-arrow {
-    width: 30px; height: 30px; border-radius: 10px; align-self: center;
-    background: var(--rq-surface-2); box-shadow: inset 0 0 0 1px var(--rq-line); }
-html[data-skin="ufuq"]:not(#x) body .dock .rq-dock-arrow:hover { background: var(--rq-hover); }
+/* Horizon: same plain arrows as classic (user 2026-11-22: no outlined box), turned sideways: a slim
+   strip at each end of the tabs */
+html[data-skin="ufuq"]:not(#x) body .dock .rq-dock-arrow { width: 24px; height: 40px; border-radius: 8px; align-self: center; background: transparent; box-shadow: none; }
+html[data-skin="ufuq"]:not(#x) body .dock .rq-dock-arrow:hover { background: var(--rq-accent-soft); }
 @media (min-width: 992px) {
     html[data-skin="ufuq"]:not(#x) body .dock .dock-logo { order: 0 !important; }
     html[data-skin="ufuq"]:not(#x) body .dock .dock-items { order: 2 !important; }
@@ -3000,4 +3000,10 @@ html[data-skin="ufuq"]:not(#x) body .dock .rq-dock-arrow:hover { background: var
     html[data-skin="ufuq"]:not([dir="rtl"]):not(#x) body .dock .rq-dock-arrow-left { order: 1; }
     html[data-skin="ufuq"]:not([dir="rtl"]):not(#x) body .dock .rq-dock-arrow-right { order: 3; }
 }
+/* 11z-h (2026-11-22, user: "pin the wordmark in the sidebar so it gets the same effect when I over-scroll, same position").
+   On over-scroll the browser bounces the whole page (sidebar, dock, page) but never position:fixed elements, so the
+   wordmark band stayed frozen and looked detached. It is now placed on the page (absolute to <body>, which fills the
+   screen and never scrolls itself), at exactly the same spot, so it bounces with the sidebar and dock.
+   ROLLBACK: delete this rule (backup before_wordmark_bounce_2026-11-22). */
+html:not(#x):not([data-skin="ufuq"]) body.rq-corner-on .rq-corner-brand { position: absolute !important; top: 0 !important; }
 /* ---- end 11z ---- */
