@@ -40,7 +40,7 @@ app_include_css = [
     "/assets/raqim_sales/css/raqeem_fonts.css?v=33",
     "/assets/raqim_sales/css/raqeem_logo.css?v=39",
     "/assets/raqim_sales/css/raqeem_palette.css?v=33",
-    "/assets/raqim_sales/css/raqeem_theme.css?v=titlerow-1122b",
+    "/assets/raqim_sales/css/raqeem_theme.css?v=arrows-1122a",
     # dock icons drawn in CSS (ROLLBACK: delete the next line)
     "/assets/raqim_sales/css/raqeem_icons.css?v=50",
     "/assets/raqim_sales/css/raqeem_home.css?v=zoom2-1121a",
@@ -70,6 +70,8 @@ app_include_js = [
     "/assets/raqim_sales/js/raqeem_form.js?v=40",
     "/assets/raqim_sales/js/raqeem_list.js?v=cur-1121a",
     "/assets/raqim_sales/js/raqeem_brand_title.js?v=headlight90-1121a",
+    # dock scroll arrows: ▲▼ classic, ◀▶ Horizon (ROLLBACK: delete the next line)
+    "/assets/raqim_sales/js/raqeem_dock_arrows.js?v=1",
     "/assets/raqim_sales/js/raqeem_icon_names.js?v=51",
     "/assets/raqim_sales/js/raqeem_icons.js?v=51",
     # dialog titles through __() (ROLLBACK: delete the next line)

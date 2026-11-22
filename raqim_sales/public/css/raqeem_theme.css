@@ -2950,4 +2950,54 @@ html:not(#x):not([data-skin="ufuq"]) body .page-head .es-button[data-variant="so
     box-shadow: 0 4px 14px rgba(var(--rq-a-rgb),.30), inset 0 1px 0 rgba(255,255,255,.25) !important; filter: none; }
 html:not(#x):not([data-skin="ufuq"]) body .page-head .es-button[data-variant="solid"]:not([data-theme="red"])::after { display: block !important; }
 html:not(#x):not([data-skin="ufuq"]) body .page-head .btn-primary { border-radius: 10px !important; background: var(--rq-accent) !important; background-image: none !important; border: 0 !important; color: var(--rq-a-ink) !important; font-weight: 600 !important; box-shadow: 0 6px 16px -8px rgba(var(--rq-a-rgb), .8) !important; }
+/* 11z-f (2026-11-22, user: "the light under the header is perfect, use the same light line under the
+   wordmark and on the dock"). Same recipe as the header (11v): a 1px line (dark rgba(255,255,255,.10),
+   light rgba(68,51,34,.14)) + a soft accent glow 0 1px 16px -6px accent 40%.
+   Wordmark band: line = ::before (sidebar part, as before); glow = ::after, a 40px box ending at the band's
+   bottom that carries the header's box-shadow, clipped so only the glow BELOW the line shows (a 1px
+   element can't carry a negative-spread shadow). Dock: the edge toward the page gets the same line +
+   the glow turned sideways. ROLLBACK: delete this block (backup before_band_dock_light_2026-11-22). */
+html:not(#x):not([data-skin="ufuq"]) { --rq-hl-line: rgba(68, 51, 34, .14); --rq-hl-glow: color-mix(in srgb, var(--rq-accent) 40%, transparent); }
+html[data-theme="dark"]:not(#x):not([data-skin="ufuq"]) { --rq-hl-line: rgba(255, 255, 255, .10); }
+html:not(#x):not([data-skin="ufuq"]) body.rq-corner-on .rq-corner-brand::before { display: block !important; height: 1px !important; border: 0 !important; background: var(--rq-hl-line) !important; }
+html:not(#x):not([data-skin="ufuq"]) body.rq-corner-on .rq-corner-brand::after { display: block !important; content: ""; top: auto !important; bottom: 0 !important; height: 40px !important;
+    background: none !important; box-shadow: 0 1px 16px -6px var(--rq-hl-glow) !important;
+    clip-path: inset(40px -80px -80px -80px); pointer-events: none; }
+html:not(#x):not([data-skin="ufuq"]) body .dock, html:not(#x):not([data-skin="ufuq"]) body.dock-pinned .dock, html:not(#x):not([data-skin="ufuq"]) body.rq-corner-on.rq-corner-dock .dock {
+    border-inline-end: 1px solid var(--rq-hl-line) !important;
+    box-shadow: 1px 0 16px -6px var(--rq-hl-glow), inset 0 1px 0 var(--rq-dock-shine), 0 10px 28px rgba(0, 0, 0, .28) !important; }
+html[dir="rtl"]:not(#x):not([data-skin="ufuq"]) body .dock, html[dir="rtl"]:not(#x):not([data-skin="ufuq"]) body.dock-pinned .dock, html[dir="rtl"]:not(#x):not([data-skin="ufuq"]) body.rq-corner-on.rq-corner-dock .dock {
+    box-shadow: -1px 0 16px -6px var(--rq-hl-glow), inset 0 1px 0 var(--rq-dock-shine), 0 10px 28px rgba(0, 0, 0, .28) !important; }
+/* 11z-g (2026-11-22, user): dock scroll arrows (raqeem_dock_arrows.js). Shown only when modules are hidden;
+   dimmed at their end. Classic = ▲▼ above/below the modules; Horizon = ◀▶ at both ends of the tabs.
+   ROLLBACK: delete this block + the js line in hooks.py. */
+.dock .rq-dock-arrow[hidden] { display: none !important; }
+.dock .rq-dock-arrow {
+    flex: none; display: inline-grid; place-items: center; padding: 0; margin: 0;
+    border: 0; cursor: pointer; color: var(--rq-text-2); background: transparent;
+    transition: background .15s var(--rq-ease), color .15s var(--rq-ease), opacity .15s; }
+.dock .rq-dock-arrow:hover { background: var(--rq-hover); color: var(--rq-strong); }
+.dock .rq-dock-arrow svg { transition: transform .15s var(--rq-ease); }
+.dock .rq-dock-arrow-left svg { transform: rotate(180deg); }
+.dock .rq-dock-arrow-up svg { transform: rotate(-90deg); }
+.dock .rq-dock-arrow-down svg { transform: rotate(90deg); }
+.dock .rq-dock-arrow.is-end { opacity: .28; pointer-events: none; }
+/* classic: a slim full-width strip above / below the module icons */
+html:not([data-skin="ufuq"]) .dock .rq-dock-arrow { width: 44px; height: 24px; margin: 2px auto; border-radius: 8px; align-self: center; }
+/* Horizon: round outlined buttons like the search/bell ones, at both ends of the tabs */
+html[data-skin="ufuq"]:not(#x) body .dock .rq-dock-arrow {
+    width: 30px; height: 30px; border-radius: 10px; align-self: center;
+    background: var(--rq-surface-2); box-shadow: inset 0 0 0 1px var(--rq-line); }
+html[data-skin="ufuq"]:not(#x) body .dock .rq-dock-arrow:hover { background: var(--rq-hover); }
+@media (min-width: 992px) {
+    html[data-skin="ufuq"]:not(#x) body .dock .dock-logo { order: 0 !important; }
+    html[data-skin="ufuq"]:not(#x) body .dock .dock-items { order: 2 !important; }
+    html[data-skin="ufuq"]:not(#x) body .dock .dock-utilities { order: 4 !important; }
+    html[data-skin="ufuq"]:not(#x) body .dock .dock-user { order: 5 !important; }
+    /* RTL: the tabs run right -> left, so ▶ sits next to the logo (right) and ◀ next to the search (left) */
+    html[data-skin="ufuq"][dir="rtl"]:not(#x) body .dock .rq-dock-arrow-right { order: 1; }
+    html[data-skin="ufuq"][dir="rtl"]:not(#x) body .dock .rq-dock-arrow-left { order: 3; }
+    html[data-skin="ufuq"]:not([dir="rtl"]):not(#x) body .dock .rq-dock-arrow-left { order: 1; }
+    html[data-skin="ufuq"]:not([dir="rtl"]):not(#x) body .dock .rq-dock-arrow-right { order: 3; }
+}
 /* ---- end 11z ---- */
