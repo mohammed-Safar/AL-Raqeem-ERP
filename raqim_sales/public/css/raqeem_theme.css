@@ -3107,3 +3107,97 @@ html[data-skin="ufuq"]:not(#x) body .body-sidebar-container .body-sidebar { over
    (gap 2px -> 10px; still 19px below the account divider). ROLLBACK: delete this block. */
 html:not([data-skin="ufuq"]) body .dock .dock-utilities .navbar-modal-search-mobile { margin-top: -8px !important; margin-bottom: 8px !important; }
 /* ---- end 11z-m ---- */
+
+/* 11z-n (2026-11-23, user: "some buttons still use the old style on both skins, all buttons should use the
+   new style"). The new style = the page-header buttons (11z-e/11z-k, identical to Horizon's), now everywhere:
+   - main buttons (.btn-primary, solid es-button, dialog OK/Save, .primary-action): flat theme colour, 10px,
+     weight 600, soft theme shadow (was: pill in classic dialogs / gradient + shine line in Horizon dialogs);
+   - grey .btn-default/.btn-secondary: card colour + 1px line, 10px, full-colour text, weight 500 (was 12/8px,
+     dim text, inner ring in classic: filter bar, Add row/Upload, scroll-to-top, New Email…);
+   - grey es-buttons (dialog Cancel, Edit Full Form, empty-list Create/Import, grid buttons): raised surface,
+     invisible 1px border, 10px, full-colour text, weight 600;
+   - list page-size buttons (20/100/500/2500, es-pill): grey button; the chosen one = main-button colour.
+   Ghost es-buttons (form side panel Assign/Share…), tabs, chips and Horizon's pill list filters keep their look.
+   Found by ~/raqeem_shots/btnaudit (computed styles of every visible button). ROLLBACK: delete this block
+   (backup raqeem_theme_before_all_buttons_new_2026-11-23.css). */
+html:not(#x):not(#y):not(#z) body :is(.btn-primary, .primary-action, .btn-modal-primary, .es-button[data-variant="solid"]):not([data-theme="red"]):not(.btn-danger) {
+    border-radius: 10px !important; background: var(--rq-accent) !important; background-image: none !important;
+    border: 0 !important; color: var(--rq-a-ink) !important; font-weight: 600 !important;
+    box-shadow: 0 6px 16px -8px rgba(var(--rq-a-rgb), .8) !important; filter: none; }
+html:not(#x):not(#y):not(#z) body :is(.btn-primary, .primary-action, .btn-modal-primary, .es-button[data-variant="solid"]):not([data-theme="red"]):not(.btn-danger):hover { filter: brightness(1.05); }
+html:not(#x):not(#y):not(#z) body :is(.btn-default, .btn-secondary):not(.btn-primary-light) {
+    border-radius: 10px !important; background: var(--rq-surface-1) !important; background-image: none !important;
+    border: 1px solid var(--rq-line-strong) !important; box-shadow: none !important;
+    color: var(--rq-text) !important; font-weight: 500 !important; }
+html:not(#x):not(#y):not(#z) body :is(.btn-default, .btn-secondary):not(.btn-primary-light):hover { background: var(--rq-hover) !important; }
+html:not(#x):not(#y):not(#z) body .es-button:not([data-variant="solid"]):not([data-variant="ghost"]):not(.btn-modal-primary):not(.primary-action) {
+    border-radius: 10px !important; background: var(--rq-surface-2) !important; background-image: none !important;
+    border: 1px solid transparent !important; box-shadow: none !important; color: var(--rq-text) !important; font-weight: 600 !important; }
+html:not(#x):not(#y):not(#z) body .es-button:not([data-variant="solid"]):not([data-variant="ghost"]):not(.btn-modal-primary):not(.primary-action):hover { background: var(--rq-surface-3) !important; }
+html:not(#x):not(#y):not(#z) body :is(.btn, .es-button, .es-pill) { font-family: 'IBM Plex Sans Arabic', 'Alexandria', 'Cairo', system-ui, sans-serif !important; }
+/* list page size */
+html:not(#x):not(#y):not(#z) body .es-pill { border-radius: 10px !important; background: var(--rq-surface-1) !important; border: 1px solid var(--rq-line-strong) !important;
+    box-shadow: none !important; color: var(--rq-text) !important; font-weight: 500 !important; }
+html:not(#x):not(#y):not(#z) body .es-pill:hover { background: var(--rq-hover) !important; }
+html:not(#x):not(#y):not(#z) body .es-pill[data-state="active"] { background: var(--rq-accent) !important; border-color: var(--rq-accent) !important; color: var(--rq-a-ink) !important; font-weight: 600 !important; }
+/* Horizon keeps its pill-shaped list filter buttons */
+html[data-skin="ufuq"]:not(#x):not(#y):not(#z) body .page-container:has(.frappe-list) .page-form.list-page-form .filter-section .btn { border-radius: 999px !important; }
+/* ---- end 11z-n ---- */
+
+/* 11z-o (2026-11-23, user: "I didn't mean make the buttons darker in light mode, I meant make them 2D not 3D").
+   FLAT buttons, both skins, dark + light:
+   - no shadow under any button (main gold/teal buttons, dock/top-bar active item, Home tiles), no shine sweep
+     on hover (::after), no gradient, no brightness filter -> hover = slightly deeper flat colour;
+   - light mode: main buttons back to the bright theme colour (--rq-a-500, as before 11z-n) instead of
+     --rq-accent, which in light mode is the dark TEXT shade (gold #8a6510).
+   ROLLBACK: delete this block (backup raqeem_theme_before_flat_buttons_2026-11-23.css). */
+html:not(#w):not(#x):not(#y):not(#z) body :is(.btn, .es-button, .es-pill, .btn-primary, .primary-action, .btn-modal-primary, button) {
+    box-shadow: none !important; text-shadow: none !important; filter: none !important; }
+html:not(#w):not(#x):not(#y):not(#z) body :is(.btn, .es-button, .btn-primary, .primary-action, .btn-modal-primary)::after { display: none !important; }
+html:not(#w):not(#x):not(#y):not(#z) body :is(.btn-primary, .primary-action, .btn-modal-primary, .es-button[data-variant="solid"]):not([data-theme="red"]):not(.btn-danger) { background-image: none !important; }
+html:not(#w):not(#x):not(#y):not(#z) body :is(.btn-primary, .primary-action, .btn-modal-primary, .es-button[data-variant="solid"]):not([data-theme="red"]):not(.btn-danger):hover {
+    background: color-mix(in srgb, var(--rq-accent) 90%, #fff) !important; }
+/* dock / Horizon top-bar active item, Home tiles, quick + : flat */
+html:not(#w):not(#x):not(#y):not(#z) body :is(.dock .dock-item, .dock .dock-item.active, .rq-tile, .rq-tile:hover, .rq-tile-icon, .rq-quick-plus, .rq-fab button) { box-shadow: none !important; filter: none !important; }
+/* Home (main menu) launcher, 2026-11-23 user: "main menu buttons still dark": quick-create + circles and app
+   icons used the dark text gold in light mode; tiles also lifted with shadow + gradient (3D) -> flat. */
+html:not(#w):not(#x):not(#y):not(#z) body .rq-tile-icon { background: var(--rq-surface-1) !important; background-image: none !important;
+    box-shadow: inset 0 0 0 1px var(--rq-line-strong) !important; transform: none !important; }
+html:not(#w):not(#x):not(#y):not(#z) body .rq-tile-icon::before { display: none !important; }
+html:not(#w):not(#x):not(#y):not(#z) body :is(.rq-tile:hover, .rq-tile:focus-visible) .rq-tile-icon { background: var(--rq-hover) !important; box-shadow: inset 0 0 0 1px var(--rq-accent) !important; transform: none !important; }
+html:not(#w):not(#x):not(#y):not(#z) body .rq-quick, html:not(#w):not(#x):not(#y):not(#z) body .rq-quick:hover { box-shadow: inset 0 0 0 1px var(--rq-line) !important; transform: none !important; }
+html:not(#w):not(#x):not(#y):not(#z) body .rq-quick-plus { background: var(--rq-accent) !important; background-image: none !important; color: var(--rq-a-ink) !important; box-shadow: none !important; }
+html:not(#w):not(#x):not(#y):not(#z):not([data-theme="dark"]) body .rq-home-group:not(.rq-home-group--system) .rq-tile-icon,
+html:not(#w):not(#x):not(#y):not(#z):not([data-theme="dark"]) body .rq-home-group:not(.rq-home-group--system) .rq-tile-letter { --rq-icon-fill: var(--rq-accent); color: var(--rq-accent) !important; }
+/* ---- end 11z-o ---- */
+
+/* 11z-p (2026-11-23, user: "all buttons should have the flat 2D style; fix the dark colours in light mode; the
+   theme colour should be exactly the same in dark and light mode").
+   - Light mode now uses the SAME theme colour as dark mode (was a darker shade for contrast, e.g. gold #8a6510
+     vs #e6c15a). Black/white (mono) keeps black-in-light / white-in-dark: a white button on a white page vanishes.
+   - Last 3D leftovers made flat: sidebar module icon + Home logo square (gradient + shadow), Home "recent"
+     cards (drop shadow), date picker selected day (shadow), sidebar header glow (radial gradient).
+   ROLLBACK: delete this block (backup ~/raqeem_backups/raqeem_theme_before_same_accent_2026-11-23.css). */
+html[data-accent="gold"]:not([data-theme="dark"]):not(#x)   { --rq-accent: #e6c15a; --rq-accent-2: #f3d98b; --rq-accent-deep: #d4a72c; }
+html[data-accent="yellow"]:not([data-theme="dark"]):not(#x) { --rq-accent: #fcd34d; --rq-accent-2: #fde68a; --rq-accent-deep: #facc15; }
+html[data-accent="red"]:not([data-theme="dark"]):not(#x)    { --rq-accent: #f87171; --rq-accent-2: #fca5a5; --rq-accent-deep: #ef4444; }
+html[data-accent="blue"]:not([data-theme="dark"]):not(#x)   { --rq-accent: #3b82f6; --rq-accent-2: #60a5fa; --rq-accent-deep: #2563eb; }
+html[data-accent="green"]:not([data-theme="dark"]):not(#x)  { --rq-accent: #2dd4bf; --rq-accent-2: #5eead4; --rq-accent-deep: #14b8a6; }
+html[data-accent="purple"]:not([data-theme="dark"]):not(#x) { --rq-accent: #c084fc; --rq-accent-2: #d8b4fe; --rq-accent-deep: #a855f7; }
+html[data-accent="orange"]:not([data-theme="dark"]):not(#x) { --rq-accent: var(--rq-a-500); --rq-accent-2: var(--rq-a-400); --rq-accent-deep: var(--rq-a-600); }
+html:not(#w):not(#x):not(#y):not(#z) body :is(.body-sidebar .header-logo, .rq-home-mono) {
+    background: var(--rq-accent) !important; background-image: none !important; box-shadow: none !important; }
+html:not(#w):not(#x):not(#y):not(#z) body .body-sidebar .sidebar-header.shell-header { background-image: none !important; }
+html:not(#w):not(#x):not(#y):not(#z) body .rq-recent, html:not(#w):not(#x):not(#y):not(#z) body .rq-recent:hover {
+    box-shadow: inset 0 0 0 1px var(--rq-line) !important; transform: none !important; }
+html:not(#w):not(#x):not(#y):not(#z) body .datepicker--cell { box-shadow: none !important; }
+/* light mode readability with the bright theme colour: same gold, but used as a FILL with dark text where it
+   used to be pale text on a pale background (selected sidebar item, page-type chip, Home recent labels). */
+html:not(#w):not(#x):not(#y):not(#z):not([data-theme="dark"]) body .body-sidebar .standard-sidebar-item.active-sidebar {
+    background: var(--rq-accent) !important; border-radius: 10px; }
+html:not(#w):not(#x):not(#y):not(#z):not([data-theme="dark"]) body .body-sidebar .standard-sidebar-item.active-sidebar :is(.sidebar-item-label, .sidebar-item-icon, a, svg) {
+    color: var(--rq-a-ink) !important; --rq-icon-fill: var(--rq-a-ink); }
+html:not(#w):not(#x):not(#y):not(#z):not([data-theme="dark"]) body :is(.rq-sheet-type, .rq-recent-type) {
+    background: var(--rq-accent) !important; color: var(--rq-a-ink) !important; border-color: var(--rq-accent) !important; }
+html:not(#w):not(#x):not(#y):not(#z):not([data-theme="dark"]) body .rq-recent-type { padding: 1px 8px; border-radius: 6px; display: inline-block; width: fit-content; }
+/* ---- end 11z-p ---- */
