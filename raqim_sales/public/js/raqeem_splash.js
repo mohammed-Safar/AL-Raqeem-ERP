@@ -34,6 +34,13 @@
 	const observer = new MutationObserver(() => {
 		if (!stand_in.isConnected) fade_out();
 	});
+	// preview: open /desk?rq_splash=hold to keep the loading screen up until you click it
+	if (/[?&]rq_splash=hold\b/.test(location.search)) {
+		splash.style.cursor = "pointer";
+		splash.addEventListener("click", () => { done = false; fade_out(); });
+		done = true; // ignore the desk's "ready" signal
+		return;
+	}
 	observer.observe(document.body, { childList: true });
 	// never leave it stuck if the desk fails to start
 	setTimeout(fade_out, 20000);

@@ -54,7 +54,7 @@ app_include_css = [
 #   (ROLLBACK: delete the two raqeem_icon* lines below and the app_include_icons line)
 app_include_js = [
     # must stay first: fades the loading screen out once the desk is ready
-    "/assets/raqim_sales/js/raqeem_splash.js?v=35",
+    "/assets/raqim_sales/js/raqeem_splash.js?v=skel-1123a",
     # RAQEEM HR / RAQEEM CRM names + logo for the companion apps (ROLLBACK: delete the next line)
     "/assets/raqim_sales/js/raqeem_apps_brand.js?v=1",
     # RAQEEM «R» logo in the theme colour + coloured browser-tab icon

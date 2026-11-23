@@ -13,77 +13,177 @@
     dollar-brace: closing the script early breaks the whole login page.
     ROLLBACK: delete this file. -#}
 <style>
-	/* the element also has Frappe's .centered (absolute, top/left 50%,
-	   translate -50%): undo all of it so the screen covers the whole window */
+	/* 2026-11-23 «The desk builds itself» (user picked concept 1): the loading screen is a ghost of the
+	   desk itself (dock, wordmark band, sidebar, page header, filter bar, list rows) with a soft shimmer;
+	   when the desk is ready it fades away and the real page is underneath in the same places.
+	   Classic layout by default; Horizon (html[data-skin=ufuq], set by raqeem_quick_settings.js while this
+	   is on screen) gets its top bar; phones get header + rows only. Follows dir (RTL/LTR) via flexbox.
+	   Previous versions: ~/raqeem_backups/splash_screen_before_desert_2026-11-23.html (wordmark + bar),
+	   splash_screen_desert_2026-11-23.html (desert night).
+	   The element also has Frappe's .centered (absolute, top/left 50%, translate -50%): undo all of it. */
 	.rq-splash, .centered.rq-splash {
 		position: fixed; inset: 0; top: 0; left: 0; right: 0; bottom: 0; z-index: 2000;
-		transform: none; -webkit-transform: none;
-		display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 22px;
-		background: var(--rq-bg, #f7f5f2);
-		color: var(--rq-strong, #16120f);
+		transform: none; -webkit-transform: none; overflow: hidden;
+		display: flex; flex-direction: column;
+		--gold: var(--rq-a-500, #d4a72c);
+		--bg: #f7f5f2; --card: #fffdfa; --dock: #e6e0d7; --head: #f0ebe4; --bone: rgba(68,51,34,.08); --line: rgba(68,51,34,.12);
+		--ink: #16120f; --al: #8a909c; --shine: rgba(255,255,255,.65);
+		background: var(--bg); color: var(--ink);
 		transition: opacity .45s cubic-bezier(.4, 0, .2, 1), visibility 0s linear .45s;
+	}
+	html[data-theme="dark"] .rq-splash,
+	html:not([data-theme])[data-rq-theme="dark"] .rq-splash {
+		--bg: #0e1014; --card: #15181e; --dock: #0b0d10; --head: #080a0d; --bone: rgba(255,255,255,.06); --line: rgba(255,255,255,.09);
+		--ink: #fff; --al: #7f8797; --shine: rgba(255,255,255,.07);
 	}
 	@media (prefers-color-scheme: dark) {
 		html[data-theme="automatic"] .rq-splash,
-		html:not([data-theme]):not([data-rq-theme="light"]) .rq-splash { background: #0e1014; color: #fff; }
+		html:not([data-theme]):not([data-rq-theme="light"]) .rq-splash {
+			--bg: #0e1014; --card: #15181e; --dock: #0b0d10; --head: #080a0d; --bone: rgba(255,255,255,.06); --line: rgba(255,255,255,.09);
+			--ink: #fff; --al: #7f8797; --shine: rgba(255,255,255,.07);
+		}
 	}
-	html:not([data-theme])[data-rq-theme="dark"] .rq-splash { background: #0e1014; color: #fff; }
-	html:not([data-theme])[data-rq-theme="light"] .rq-splash { background: #f7f5f2; color: #16120f; }
-
-	/* after sign-in: fade in over the login page instead of a hard cut */
 	body[data-path="login"] .rq-splash { animation: rq-splash-in .35s cubic-bezier(.4, 0, .2, 1) both; }
 	@keyframes rq-splash-in { from { opacity: 0; } to { opacity: 1; } }
-
-	/* desk ready: fade out (raqeem_splash.js adds .rq-splash-out) */
 	.rq-splash.rq-splash-out { opacity: 0; visibility: hidden; pointer-events: none; }
-	.rq-splash.rq-splash-out .rq-splash-inner { transform: scale(.97); }
 
-	.rq-splash-inner {
-		display: flex; flex-direction: column; align-items: center; gap: 22px;
-		transition: transform .45s cubic-bezier(.4, 0, .2, 1);
+	/* bones + shimmer: one light band sweeps across the whole screen */
+	.rq-splash b, .rq-splash i { display: block; background: var(--bone); border-radius: 8px; }
+	.rq-splash::after { content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 5;
+		background: linear-gradient(100deg, transparent 35%, var(--shine) 50%, transparent 65%);
+		background-size: 250% 100%; animation: rq-sk-shim 1.5s linear infinite; mix-blend-mode: normal; }
+	@keyframes rq-sk-shim { from { background-position: 125% 0; } to { background-position: -125% 0; } }
+	.rq-splash .sk-gold { background: color-mix(in srgb, var(--gold) 55%, transparent); }
+
+	.sk-top { display: none; }
+	.sk-body { flex: 1; display: flex; min-height: 0; }
+	.sk-dock { width: 69px; flex: none; background: var(--dock); border-inline-end: 1px solid var(--line);
+		display: flex; flex-direction: column; align-items: center; gap: 10px; padding-top: 10px; }
+	.sk-dock .sk-av { width: 46px; height: 46px; border-radius: 50%; margin-bottom: 8px; }
+	.sk-dock .sk-sep { width: 50px; height: 1px; background: var(--line); border-radius: 0; margin-bottom: 4px; }
+	.sk-dock .sk-u { width: 40px; height: 40px; border-radius: 12px; }
+	.sk-dock .sk-tiles { display: flex; flex-direction: column; gap: 10px; margin-top: 18px; }
+	.sk-dock .sk-tiles b { width: 50px; height: 50px; border-radius: 14px; }
+	.sk-dock .sk-tiles b:nth-child(3) { background: color-mix(in srgb, var(--gold) 55%, transparent); }
+	.sk-side { width: 260px; flex: none; background: var(--card); border-inline-end: 1px solid var(--line); display: flex; flex-direction: column; }
+	.sk-band { height: 69px; flex: none; background: var(--head); border-bottom: 1px solid var(--line); display: flex; align-items: center; justify-content: center; }
+	.sk-sidein { padding: 14px; display: flex; flex-direction: column; gap: 14px; }
+	.sk-mod { height: 56px; border-radius: 14px !important; }
+	.sk-srch { height: 40px; }
+	.sk-items { display: flex; flex-direction: column; gap: 16px; padding: 10px 6px; align-items: flex-end; }
+	[dir="ltr"] .sk-items { align-items: flex-start; }
+	.sk-items b { height: 14px; }
+	.sk-main { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+	.sk-head { height: 69px; flex: none; background: var(--head); border-bottom: 1px solid var(--line);
+		display: flex; align-items: center; justify-content: space-between; padding: 0 24px; }
+	.sk-title { width: 170px; height: 26px; }
+	.sk-btns { display: flex; gap: 8px; align-items: center; }
+	.sk-btns b { width: 28px; height: 28px; border-radius: 10px; }
+	.sk-btns .sk-gold { width: 110px; }
+	.sk-page { padding: 14px 24px; display: flex; flex-direction: column; gap: 12px; }
+	.sk-filters { height: 60px; border-radius: 16px; background: var(--card); box-shadow: inset 0 0 0 1px var(--line); display: flex; gap: 12px; align-items: center; padding: 0 12px; }
+	.sk-filters b { height: 36px; flex: 1; }
+	.sk-filters b:last-child { flex: none; width: 90px; }
+	.sk-row { height: 50px; border-radius: 12px; background: var(--card); box-shadow: inset 0 0 0 1px var(--line);
+		display: flex; align-items: center; gap: 28px; padding: 0 18px; }
+	.sk-row b { height: 12px; }
+	.sk-row b:nth-child(1) { width: 20%; } .sk-row b:nth-child(2) { width: 8%; } .sk-row b:nth-child(3) { width: 12%; }
+	.sk-row b:nth-child(4) { width: 10%; } .sk-row b:nth-child(5) { width: 16%; margin-inline-start: auto; }
+	.sk-row:nth-child(even) b:nth-child(1) { width: 26%; }
+
+	/* the real wordmark stays sharp in the band (no bone) */
+	.rq-splash .sk-wm, .rq-splash .sk-wm * { background: none; border-radius: 0; }
+	.sk-wm { direction: ltr; display: inline-flex; flex-direction: column; gap: 4px; }
+	.sk-wm .w { display: flex; align-items: baseline; font: 800 21px/1.05 'Orbitron', 'Cairo', sans-serif; margin-right: -.2em; color: var(--ink); }
+	.sk-wm .al { color: var(--al); }
+	.sk-wm svg { width: .72em; height: .72em; margin: 0 .2em 0 .06em; fill: var(--ink); }
+	.sk-wm .s { display: flex; align-items: center; gap: 10px; }
+	.rq-splash .sk-wm .s i { flex: 1; height: 2px; background: var(--line); }
+	.sk-wm .s span { font: 800 8px/1 'Orbitron', sans-serif; margin-right: -.9em; color: var(--gold); }
+	html body .rq-splash .sk-wm .w, html body .rq-splash .sk-wm .w * { letter-spacing: .2em !important; }
+	html body .rq-splash .sk-wm .s span { letter-spacing: .9em !important; }
+
+	/* Horizon: top bar instead of the side dock; sidebar starts under it */
+	html[data-skin="ufuq"] .sk-top { display: flex; height: 64px; flex: none; background: var(--dock); border-bottom: 1px solid var(--line);
+		align-items: center; gap: 10px; padding: 0 18px; }
+	html[data-skin="ufuq"] .sk-top .sk-tabs { display: flex; gap: 8px; flex: 1; }
+	html[data-skin="ufuq"] .sk-top .sk-tabs b { width: 96px; height: 34px; border-radius: 999px; }
+	html[data-skin="ufuq"] .sk-top .sk-tabs b:first-child { background: color-mix(in srgb, var(--gold) 55%, transparent); }
+	html[data-skin="ufuq"] .sk-top .sk-av { width: 36px; height: 36px; border-radius: 50%; }
+	html[data-skin="ufuq"] .sk-dock, html[data-skin="ufuq"] .sk-band { display: none; }
+	html[data-skin="ufuq"] .sk-top .sk-wm { margin-inline-end: 18px; }
+
+	/* phones: header + rows only */
+	@media (max-width: 767px) {
+		.sk-dock, .sk-side, .sk-top { display: none !important; }
+		.sk-btns b:not(.sk-gold) { display: none; }
+		.sk-row b:nth-child(n+3) { display: none; }
+		.sk-head, .sk-page { padding-inline: 14px; }
 	}
-	.rq-splash-word {
-		font-family: 'Orbitron', 'Cairo', sans-serif;
-		font-weight: 800;
-		font-size: 30px;
-		letter-spacing: .22em;
-		margin-inline-start: .22em;     /* balance the trailing letter-spacing */
-		direction: ltr;
-		background: linear-gradient(90deg, currentColor 0%, currentColor 50%, var(--rq-a-500, #f97316) 100%);
-		-webkit-background-clip: text; background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
-	.rq-splash img { width: auto; max-width: 200px; max-height: 72px; }
-	.rq-splash-logo {
-		width: 64px; height: 64px;
-		color: var(--rq-a-500, #2d4583);
-		animation: rq-splash-logo 1.6s cubic-bezier(.4, 0, .2, 1) infinite alternate;
-	}
-	@keyframes rq-splash-logo { from { opacity: .75; transform: scale(.96); } to { opacity: 1; transform: scale(1); } }
-	.rq-splash-track {
-		width: 140px; height: 3px; border-radius: 3px; overflow: hidden;
-		background: rgba(128, 128, 128, .18);
-	}
-	.rq-splash-track span {
-		display: block; width: 40%; height: 100%; border-radius: inherit;
-		background: var(--rq-a-500, #f97316);
-		animation: rq-splash-run 1.4s cubic-bezier(.65, 0, .35, 1) infinite;
-	}
-	@keyframes rq-splash-run { from { transform: translateX(-100%); } to { transform: translateX(250%); } }
-	@media (prefers-reduced-motion: reduce) {
-		.rq-splash, .rq-splash-inner, .rq-splash-logo { transition: none; animation: none; }
-		.rq-splash-track span { animation: none; width: 100%; opacity: .5; }
+	@media (prefers-reduced-motion: reduce) { .rq-splash::after { animation: none; opacity: 0; } }
+	.rq-splash img { max-height: 40px; max-width: 200px; }
+	/* Home launcher («main menu») outline: html.rq-load-home (set by the script below for /desk, /app
+	   and …/raqeem-home). Bar with brand / search / bell+avatar, greeting, quick-create chips,
+	   "continue" cards, app tile grid — same places as raqeem_home. */
+	.sk-home { display: none; }
+	html.rq-load-home .rq-splash .sk-top, html.rq-load-home .rq-splash .sk-body { display: none !important; }
+	html.rq-load-home .rq-splash .sk-home { display: flex; flex-direction: column; flex: 1; }
+	.sk-hbar { height: 69px; flex: none; background: var(--head); border-bottom: 1px solid var(--line);
+		display: flex; align-items: center; justify-content: space-between; padding: 0 32px; }
+	.sk-hbrand { display: flex; align-items: center; gap: 8px; }
+	.rq-splash .sk-hbrand .sk-rt { width: 36px; height: 36px; border-radius: 10px; background: var(--gold); display: grid; place-items: center; }
+	.sk-hbrand svg { width: 20px; height: 20px; fill: #1a1303; }
+	.sk-hbrand span { font: 800 19px/1 'Orbitron', sans-serif; color: var(--ink); direction: ltr; }
+	.sk-hsearch { width: 560px; height: 44px; border-radius: 999px !important; box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--gold) 45%, transparent); }
+	.sk-hend { display: flex; gap: 12px; align-items: center; }
+	.sk-hend b { width: 36px; height: 36px; border-radius: 10px; } .sk-hend b:last-child { width: 40px; height: 40px; border-radius: 50%; }
+	.sk-hmain { width: 1016px; max-width: calc(100% - 48px); margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
+	.sk-hi { width: 400px; height: 40px; margin-top: 58px; border-radius: 12px !important; }
+	.sk-hsub { width: 290px; height: 14px; margin-top: 20px; }
+	.sk-chips { display: flex; gap: 10px; margin-top: 28px; flex-wrap: wrap; justify-content: center; }
+	.sk-chips b { width: 116px; height: 38px; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--line); }
+	.sk-sec { align-self: stretch; display: flex; align-items: center; gap: 12px; margin-top: 40px; }
+	.sk-sec b { width: 110px; height: 14px; } .sk-sec i { flex: 1; height: 1px; border-radius: 0; background: var(--line); }
+	.sk-cont { align-self: stretch; display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 16px; }
+	.sk-cont div { height: 106px; border-radius: 14px; background: var(--card); box-shadow: inset 0 0 0 1px var(--line); padding: 18px; display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
+	[dir="rtl"] .sk-cont div { align-items: flex-end; }
+	.sk-cont div b:nth-child(1) { width: 40%; height: 10px; background: color-mix(in srgb, var(--gold) 45%, transparent); }
+	.sk-cont div b:nth-child(2) { width: 75%; height: 14px; } .sk-cont div b:nth-child(3) { width: 30%; height: 10px; }
+	.sk-apps { align-self: stretch; display: grid; grid-template-columns: repeat(7, 1fr); gap: 34px 0; margin-top: 30px; }
+	.sk-apps div { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+	.sk-apps div b:first-child { width: 76px; height: 76px; border-radius: 20px; } .sk-apps div b:last-child { width: 58px; height: 12px; }
+	@media (max-width: 767px) {
+		.sk-hsearch, .sk-cont div:nth-child(n+3) { display: none; }
+		.sk-cont { grid-template-columns: repeat(2, 1fr); } .sk-apps { grid-template-columns: repeat(4, 1fr); }
+		.sk-apps div:nth-child(n+9) { display: none; } .sk-hi { width: 260px; }
 	}
 </style>
+{#- Desk only (login.js pastes this file into a JS string, where a script tag would break the page):
+    apply the saved theme colour, light/dark and skin BEFORE the first paint, so the loading screen
+    never flashes black & white / classic first (raqeem_quick_settings.js does the same later). -#}
+{%- if desk_theme is defined %}
+<script>(function(){try{var r=document.documentElement,L=window.localStorage,A=["mono", "orange", "gold", "yellow", "red", "purple", "blue", "green"];
+var a=L.getItem("raqeem_accent");if(a&&a!=="mono"&&A.indexOf(a)>-1)r.setAttribute("data-accent",a);
+if(L.getItem("raqeem_skin")==="ufuq")r.setAttribute("data-skin","ufuq");
+if(/^\/(desk|app)\/?$/.test(location.pathname)||/raqeem-home\/?$/.test(location.pathname))r.classList.add("rq-load-home");
+var t=L.getItem("raqeem_theme");if(t==="light"||t==="dark"){r.setAttribute("data-theme-mode",t);r.setAttribute("data-theme",t);}
+else if(t==="auto"){var d=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;r.setAttribute("data-theme-mode","automatic");r.setAttribute("data-theme",d?"dark":"light");}
+}catch(e){}})();</script>
+{%- endif %}
 <div class="centered splash rq-splash" role="status" aria-label="Loading">
-	<div class="rq-splash-inner">
-		{#- ERPNext's hooks set its own logo here; only a logo uploaded in Website Settings counts -#}
-		{%- if splash_image and "/assets/erpnext/" not in splash_image and "/assets/frappe/" not in splash_image and "/assets/raqim_sales/" not in splash_image %}
-		<img src="{{ splash_image }}" alt="">
-		{%- else %}
-		<svg class="rq-splash-logo" viewBox="0 0 100 100" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M99.46,99.5Q98.67,95.89 97.26,92.39Q95.85,88.9 94.34,86.27Q92.83,83.63 89.94,80.17Q87.06,76.71 84.32,74.73Q81.58,72.75 78.51,71.52Q75.45,70.3 73.18,70.01Q70.91,69.72 56.06,69.68L41.2,69.65L41.13,99.71Q98.59,100.0 99.03,99.75L99.46,99.5Z M30.46,99.28Q30.1,70.01 29.27,69.32Q28.44,68.64 22.82,66.26Q17.2,63.88 14.24,62.08Q11.28,60.27 8.87,58.29Q6.45,56.31 3.6,52.96L0.76,49.6L0.61,99.42Q29.38,99.86 29.92,99.57L30.46,99.28Z M98.59,57.46Q99.1,56.31 99.03,51.73Q98.95,47.15 98.63,40.37Q98.31,33.6 97.37,28.91Q96.43,24.22 95.21,21.27Q93.98,18.31 92.11,15.54Q90.23,12.76 88.68,11.18Q87.13,9.59 83.99,7.39Q80.86,5.19 77.04,3.57Q73.22,1.95 68.64,1.12Q64.06,0.29 32.98,0.14Q1.91,0.0 1.44,0.29L0.97,0.58Q1.41,21.63 3.03,28.59Q4.65,35.54 6.49,39.44Q8.33,43.33 9.66,45.28Q10.99,47.22 13.3,49.53Q15.61,51.84 17.23,52.92Q18.85,54.0 21.67,55.19Q24.48,56.38 27.47,56.89Q30.46,57.39 63.95,57.53Q97.44,57.68 98.02,57.57L98.59,57.46Z"/></svg>
-		<div class="rq-splash-word">AL-RAQEEM</div>
-		{%- endif %}
-		<div class="rq-splash-track"><span></span></div>
+	<div class="sk-home">
+		<div class="sk-hbar"><div class="sk-hbrand"><i class="sk-rt"><svg viewBox="0 0 100 100" aria-hidden="true"><path fill-rule="evenodd" d="M99.46,99.5Q98.67,95.89 97.26,92.39Q95.85,88.9 94.34,86.27Q92.83,83.63 89.94,80.17Q87.06,76.71 84.32,74.73Q81.58,72.75 78.51,71.52Q75.45,70.3 73.18,70.01Q70.91,69.72 56.06,69.68L41.2,69.65L41.13,99.71Q98.59,100.0 99.03,99.75L99.46,99.5Z M30.46,99.28Q30.1,70.01 29.27,69.32Q28.44,68.64 22.82,66.26Q17.2,63.88 14.24,62.08Q11.28,60.27 8.87,58.29Q6.45,56.31 3.6,52.96L0.76,49.6L0.61,99.42Q29.38,99.86 29.92,99.57L30.46,99.28Z M98.59,57.46Q99.1,56.31 99.03,51.73Q98.95,47.15 98.63,40.37Q98.31,33.6 97.37,28.91Q96.43,24.22 95.21,21.27Q93.98,18.31 92.11,15.54Q90.23,12.76 88.68,11.18Q87.13,9.59 83.99,7.39Q80.86,5.19 77.04,3.57Q73.22,1.95 68.64,1.12Q64.06,0.29 32.98,0.14Q1.91,0.0 1.44,0.29L0.97,0.58Q1.41,21.63 3.03,28.59Q4.65,35.54 6.49,39.44Q8.33,43.33 9.66,45.28Q10.99,47.22 13.3,49.53Q15.61,51.84 17.23,52.92Q18.85,54.0 21.67,55.19Q24.48,56.38 27.47,56.89Q30.46,57.39 63.95,57.53Q97.44,57.68 98.02,57.57L98.59,57.46Z"/></svg></i><span>RAQEEM</span></div><b class="sk-hsearch"></b><div class="sk-hend"><b></b><b></b></div></div>
+		<div class="sk-hmain"><b class="sk-hi"></b><b class="sk-hsub"></b><div class="sk-chips"><b></b><b></b><b></b><b></b><b></b><b></b></div>
+			<div class="sk-sec"><b></b><i></i></div><div class="sk-cont"><div><b></b><b></b><b></b></div><div><b></b><b></b><b></b></div><div><b></b><b></b><b></b></div><div><b></b><b></b><b></b></div></div>
+			<div class="sk-sec"><b></b><i></i></div><div class="sk-apps"><div><b></b><b></b></div><div><b></b><b></b></div><div><b></b><b></b></div><div><b></b><b></b></div><div><b></b><b></b></div><div><b></b><b></b></div><div><b></b><b></b></div><div><b></b><b></b></div><div><b></b><b></b></div><div><b></b><b></b></div><div><b></b><b></b></div><div><b></b><b></b></div><div><b></b><b></b></div><div><b></b><b></b></div></div></div>
+	</div>
+	<div class="sk-top">{%- if splash_image and "/assets/erpnext/" not in splash_image and "/assets/frappe/" not in splash_image and "/assets/raqim_sales/" not in splash_image %}<img src="{{ splash_image }}" alt="">{%- else %}<div class="sk-wm"><div class="w"><span class="al">AL-</span><svg viewBox="0 0 100 100" aria-hidden="true"><path fill-rule="evenodd" d="M99.46,99.5Q98.67,95.89 97.26,92.39Q95.85,88.9 94.34,86.27Q92.83,83.63 89.94,80.17Q87.06,76.71 84.32,74.73Q81.58,72.75 78.51,71.52Q75.45,70.3 73.18,70.01Q70.91,69.72 56.06,69.68L41.2,69.65L41.13,99.71Q98.59,100.0 99.03,99.75L99.46,99.5Z M30.46,99.28Q30.1,70.01 29.27,69.32Q28.44,68.64 22.82,66.26Q17.2,63.88 14.24,62.08Q11.28,60.27 8.87,58.29Q6.45,56.31 3.6,52.96L0.76,49.6L0.61,99.42Q29.38,99.86 29.92,99.57L30.46,99.28Z M98.59,57.46Q99.1,56.31 99.03,51.73Q98.95,47.15 98.63,40.37Q98.31,33.6 97.37,28.91Q96.43,24.22 95.21,21.27Q93.98,18.31 92.11,15.54Q90.23,12.76 88.68,11.18Q87.13,9.59 83.99,7.39Q80.86,5.19 77.04,3.57Q73.22,1.95 68.64,1.12Q64.06,0.29 32.98,0.14Q1.91,0.0 1.44,0.29L0.97,0.58Q1.41,21.63 3.03,28.59Q4.65,35.54 6.49,39.44Q8.33,43.33 9.66,45.28Q10.99,47.22 13.3,49.53Q15.61,51.84 17.23,52.92Q18.85,54.0 21.67,55.19Q24.48,56.38 27.47,56.89Q30.46,57.39 63.95,57.53Q97.44,57.68 98.02,57.57L98.59,57.46Z"/></svg><span>AQEEM</span></div><div class="s"><i></i><span>ERP</span><i></i></div></div>{%- endif %}<div class="sk-tabs"><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div><b class="sk-av"></b></div>
+	<div class="sk-body">
+		<div class="sk-dock"><b class="sk-av"></b><i class="sk-sep"></i><b class="sk-u"></b><b class="sk-u"></b><div class="sk-tiles"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div></div>
+		<div class="sk-side"><div class="sk-band">{%- if splash_image and "/assets/erpnext/" not in splash_image and "/assets/frappe/" not in splash_image and "/assets/raqim_sales/" not in splash_image %}<img src="{{ splash_image }}" alt="">{%- else %}<div class="sk-wm"><div class="w"><span class="al">AL-</span><svg viewBox="0 0 100 100" aria-hidden="true"><path fill-rule="evenodd" d="M99.46,99.5Q98.67,95.89 97.26,92.39Q95.85,88.9 94.34,86.27Q92.83,83.63 89.94,80.17Q87.06,76.71 84.32,74.73Q81.58,72.75 78.51,71.52Q75.45,70.3 73.18,70.01Q70.91,69.72 56.06,69.68L41.2,69.65L41.13,99.71Q98.59,100.0 99.03,99.75L99.46,99.5Z M30.46,99.28Q30.1,70.01 29.27,69.32Q28.44,68.64 22.82,66.26Q17.2,63.88 14.24,62.08Q11.28,60.27 8.87,58.29Q6.45,56.31 3.6,52.96L0.76,49.6L0.61,99.42Q29.38,99.86 29.92,99.57L30.46,99.28Z M98.59,57.46Q99.1,56.31 99.03,51.73Q98.95,47.15 98.63,40.37Q98.31,33.6 97.37,28.91Q96.43,24.22 95.21,21.27Q93.98,18.31 92.11,15.54Q90.23,12.76 88.68,11.18Q87.13,9.59 83.99,7.39Q80.86,5.19 77.04,3.57Q73.22,1.95 68.64,1.12Q64.06,0.29 32.98,0.14Q1.91,0.0 1.44,0.29L0.97,0.58Q1.41,21.63 3.03,28.59Q4.65,35.54 6.49,39.44Q8.33,43.33 9.66,45.28Q10.99,47.22 13.3,49.53Q15.61,51.84 17.23,52.92Q18.85,54.0 21.67,55.19Q24.48,56.38 27.47,56.89Q30.46,57.39 63.95,57.53Q97.44,57.68 98.02,57.57L98.59,57.46Z"/></svg><span>AQEEM</span></div><div class="s"><i></i><span>ERP</span><i></i></div></div>{%- endif %}</div><div class="sk-sidein"><b class="sk-mod"></b><b class="sk-srch"></b><div class="sk-items"><b style="width:62%"></b><b style="width:48%"></b><b style="width:70%"></b><b style="width:55%"></b><b style="width:66%"></b><b style="width:44%"></b><b style="width:58%"></b><b style="width:50%"></b></div></div></div>
+		<div class="sk-main">
+			<div class="sk-head"><b class="sk-title"></b><div class="sk-btns"><b></b><b></b><b></b><b class="sk-gold"></b></div></div>
+			<div class="sk-page"><div class="sk-filters"><b></b><b></b><b></b><b></b></div><div class="sk-row"><b></b><b></b><b></b><b></b><b></b></div><div class="sk-row"><b></b><b></b><b></b><b></b><b></b></div><div class="sk-row"><b></b><b></b><b></b><b></b><b></b></div><div class="sk-row"><b></b><b></b><b></b><b></b><b></b></div><div class="sk-row"><b></b><b></b><b></b><b></b><b></b></div><div class="sk-row"><b></b><b></b><b></b><b></b><b></b></div><div class="sk-row"><b></b><b></b><b></b><b></b><b></b></div><div class="sk-row"><b></b><b></b><b></b><b></b><b></b></div><div class="sk-row"><b></b><b></b><b></b><b></b><b></b></div><div class="sk-row"><b></b><b></b><b></b><b></b><b></b></div></div>
+		</div>
 	</div>
 </div>
