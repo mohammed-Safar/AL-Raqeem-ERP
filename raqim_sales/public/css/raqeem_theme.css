@@ -2728,8 +2728,7 @@ html body .rq-fab .rq-qs-btn:hover, html body .rq-fab .rq-qs-btn[aria-expanded="
 .rq-fab .rq-qs-dot { box-shadow: 0 0 0 2px var(--rq-surface-1); }
 .rq-fab-zoom {
     display: flex; align-items: center; gap: 2px;
-    padding-inline-start: 6px;
-    border-inline-start: 1px solid var(--rq-line-strong);
+    padding-inline-start: 2px;          /* divider line removed 2026-11-23 (user): with direction:ltr it sat on the outer edge in Arabic */
     direction: ltr;                       /* − 100% + reads the same in both languages */
 }
 .rq-fab-zoom button {
@@ -3148,7 +3147,6 @@ html:not(#x):not(#y):not(#z) body .es-pill { border-radius: 10px !important; bac
 html:not(#x):not(#y):not(#z) body .es-pill:hover { background: var(--rq-hover) !important; }
 html:not(#x):not(#y):not(#z) body .es-pill[data-state="active"] { background: var(--rq-accent) !important; border-color: var(--rq-accent) !important; color: var(--rq-a-ink) !important; font-weight: 600 !important; }
 /* Horizon keeps its pill-shaped list filter buttons */
-html[data-skin="ufuq"]:not(#x):not(#y):not(#z) body .page-container:has(.frappe-list) .page-form.list-page-form .filter-section .btn { border-radius: 999px !important; }
 /* ---- end 11z-n ---- */
 
 /* 11z-o (2026-11-23, user: "I didn't mean make the buttons darker in light mode, I meant make them 2D not 3D").

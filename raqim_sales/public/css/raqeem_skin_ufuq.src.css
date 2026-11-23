@@ -338,96 +338,10 @@
 @S body .btn-primary:hover { filter: brightness(1.05); }
 
 /* --------------------------------------------------------------------------
-   6. Lists: one white canvas, clean table rows
+   6. Lists, filters, status pills, totals: REMOVED 2026-11-23 (user) — Horizon
+   now uses the Classic look for everything inside the page (lists, reports,
+   calendars, workspaces). Old rules: ~/raqeem_backups/before_horizon_classic_content_2026-11-23.tar.gz
    -------------------------------------------------------------------------- */
-@S body .frappe-list .result {
-    padding: 6px !important;
-    background: var(--rq-surface-1) !important;
-    border-radius: var(--rq-r-xl) !important;
-    box-shadow: var(--uf-panel-shadow), inset 0 0 0 1px var(--rq-line) !important;
-}
-@S body .frappe-list .list-row-container {
-    background: transparent !important;
-    border: 0 !important;
-    border-radius: 12px !important;
-    margin: 0 0 2px !important;
-    box-shadow: none !important;
-    transform: none !important;
-}
-@S body .frappe-list .list-row-container:hover {
-    background: var(--rq-hover) !important;
-    box-shadow: none !important;
-    transform: none !important;
-}
-@S body .frappe-list .list-row-container::before { display: none !important; }
-@S body .frappe-list .list-row-container:has(.es-badge[data-theme="red"]) { background: transparent !important; }
-@S body .frappe-list .list-row-container:has(.es-badge[data-theme="red"]):hover { background: var(--rq-hover) !important; }
-@S body .frappe-list .result-container .list-row-container:first-child,
-@S body .frappe-list .list-row-container:first-child { background: transparent !important; }
-@S body .frappe-list .list-row-head {
-    background: var(--rq-surface-2) !important;
-    border: 0 !important;
-    border-radius: 12px !important;
-    margin-bottom: 4px !important;
-}
-@S body .frappe-list .result-container .list-row-container:first-child > .list-row-head { box-shadow: 0 0 0 6px var(--rq-surface-1) !important; }
-@S body .frappe-list .list-row-head .list-row-col,
-@S body .frappe-list .list-row-head .list-subject { font-size: .78rem !important; font-weight: 600 !important; color: var(--rq-text-3) !important; letter-spacing: 0 !important; }
-@S body .frappe-list .list-row { min-height: 52px; }
-@S body .frappe-list .list-subject a, @S body .frappe-list .list-subject .bold { font-weight: 600 !important; color: var(--rq-strong) !important; }
-@S body .frappe-list .list-row-col.text-right { font-family: var(--uf-head); font-weight: 500; color: var(--rq-strong) !important; }
-@S body .frappe-list .level-right { background: transparent !important; border: 0 !important; }
-@S body .frappe-list .list-row-activity { color: var(--rq-dim) !important; }
-
-/* status pills: soft tint + dot */
-@S body .es-badge {
-    border-radius: 999px !important;
-    box-shadow: none !important;
-    font-weight: 600 !important;
-    padding-inline: 10px !important;
-    gap: 6px;
-}
-@S body .frappe-list .es-badge .es-badge__label::before {
-    content: ""; display: inline-block; width: 6px; height: 6px; border-radius: 50%;
-    background: currentColor; margin-inline-end: 6px; vertical-align: middle;
-}
-
-/* filter bar: a slim toolbar, fields as soft pills */
-@S body .page-form,
-@S body .page-container:has(.frappe-list) .page-form.list-page-form {
-    background: transparent !important;
-    border: 0 !important;
-    box-shadow: none !important;
-    padding: 4px 0 10px !important;
-    margin-bottom: 4px !important;
-}
-@S body .page-container:has(.frappe-list) .page-form.list-page-form .form-control,
-@S body .page-container:has(.frappe-list) .page-form.list-page-form input,
-@S body .page-form .standard-filter-section .form-control,
-@S body .page-form .standard-filter-section [data-fieldtype="Check"] .checkbox label {
-    background: var(--rq-surface-1) !important;
-    border: 1px solid var(--rq-line-strong) !important;
-    border-radius: 999px !important;
-    box-shadow: none !important;
-    padding-inline: 16px !important;
-}
-@S body .page-container:has(.frappe-list) .page-form.list-page-form .filter-section .btn { border-radius: 999px !important; }
-@S body .rq-chip {
-    border-radius: 999px !important;
-    background: var(--rq-surface-1) !important;
-    border: 1px solid var(--rq-line-strong) !important;
-    box-shadow: none !important;
-    font-weight: 500 !important;
-}
-@S body .rq-chip.is-active, @S body .rq-chip[aria-pressed="true"] {
-    background: var(--rq-strong) !important; color: var(--rq-bg) !important; border-color: var(--rq-strong) !important;
-}
-@S body .rq-totals {
-    background: var(--rq-surface-1) !important;
-    border: 0 !important;
-    border-radius: var(--rq-r-xl) !important;
-    box-shadow: var(--uf-panel-shadow), inset 0 0 0 1px var(--rq-line) !important;
-}
 
 /* --------------------------------------------------------------------------
    7. Forms
@@ -460,19 +374,20 @@
 @S body .form-section .section-head::after { background: none !important; box-shadow: none !important; width: 0 !important; border: 0 !important; }
 @S body .form-layout .control-label,
 @S body .form-layout label { font-weight: 500 !important; font-size: .82rem !important; color: var(--rq-text-3) !important; }
-@S body .form-control,
-@S body .frappe-control input.form-control,
-@S body .frappe-control select.form-control,
-@S body .frappe-control textarea.form-control {
+/* :not(.page-form *) = list/report filter fields keep the Classic look (2026-11-23) */
+@S body .form-control:not(.page-form *),
+@S body .frappe-control input.form-control:not(.page-form *),
+@S body .frappe-control select.form-control:not(.page-form *),
+@S body .frappe-control textarea.form-control:not(.page-form *) {
     background: var(--rq-surface-2) !important;
     border: 1px solid transparent !important;
     border-radius: 10px !important;
     box-shadow: none !important;
     min-height: 40px;
 }
-@S body .form-control:hover { border-color: var(--rq-line-strong) !important; }
-@S body .form-control:focus,
-@S body .frappe-control input.form-control:focus {
+@S body .form-control:not(.page-form *):hover { border-color: var(--rq-line-strong) !important; }
+@S body .form-control:not(.page-form *):focus,
+@S body .frappe-control input.form-control:not(.page-form *):focus {
     background: var(--rq-surface-1) !important;
     border-color: var(--rq-accent) !important;
     box-shadow: 0 0 0 4px var(--rq-accent-ring) !important;
@@ -569,37 +484,21 @@
 @S body .rq-step.is-current[data-color="green"] { background: #16a34a !important; color: #fff !important; }
 @S body .layout-main-section-wrapper > div:has(> .form-footer) { box-shadow: var(--uf-panel-shadow), inset 0 0 0 1px var(--rq-line) !important; }
 
-/* --------------------------------------------------------------------------
-   8. Workspaces
-   -------------------------------------------------------------------------- */
-@S body .widget,
-@S body .ce-block .widget {
-    background: var(--rq-surface-1) !important;
-    background-image: none !important;
-    border: 0 !important;
-    border-radius: var(--rq-r-xl) !important;
-    box-shadow: var(--uf-panel-shadow), inset 0 0 0 1px var(--rq-line) !important;
+/* Classic font inside the page body (lists, reports, calendars, workspaces) — not on forms (2026-11-23) */
+@S body .page-container .page-body:not(:has(.form-layout)) {
+    --rq-font: 'RQ Latin', 'IBM Plex Sans Arabic', 'Cairo', system-ui, sans-serif;
+    --rq-font-head: 'RQ Latin', 'Cairo', 'IBM Plex Sans Arabic', system-ui, sans-serif;
+    --font-stack: 'RQ Latin', 'IBM Plex Sans Arabic', 'Cairo', 'InterVariable', 'Inter', system-ui, sans-serif;
+    font-family: var(--rq-font) !important;
 }
-@S body .widget::before, @S body .widget::after { display: none !important; }
-@S body .widget:hover { transform: none !important; box-shadow: var(--rq-shadow-hover), inset 0 0 0 1px var(--rq-line-strong) !important; }
-@S body .widget .widget-title { font-family: var(--uf-head) !important; font-weight: 600 !important; color: var(--rq-strong) !important; }
-@S body .widget.number-widget-box .widget-title { font-family: var(--rq-font) !important; font-weight: 500 !important; color: var(--rq-text-3) !important; font-size: .88rem !important; }
-@S body .widget.number-widget-box .number { font-family: var(--uf-head) !important; font-weight: 600 !important; color: var(--rq-strong) !important; }
-@S body .widget.links-widget-box .widget-head { border-bottom: 1px solid var(--rq-line) !important; }
-@S body .widget.links-widget-box .link-item { border-radius: 10px !important; font-weight: 400 !important; }
-@S body .widget.links-widget-box .link-item::before { background: var(--rq-line-hover) !important; box-shadow: none !important; }
-@S body .widget.links-widget-box .link-item:hover::before { background: var(--rq-accent) !important; box-shadow: none !important; }
-@S body .widget.shortcut-widget-box { min-height: 64px; }
-@S body .widget.shortcut-widget-box .widget-title { font-family: var(--rq-font) !important; font-weight: 600 !important; }
-@S body .ce-header, @S body .editor-js-container .ce-header { font-family: var(--uf-head) !important; font-weight: 700 !important; }
+@S body .page-container .page-body:not(:has(.form-layout)) :is(h1,h2,h3,h4,h5,h6) { font-family: var(--rq-font-head) !important; }
+
+/* 8. Workspaces: REMOVED 2026-11-23 — Classic widget cards (see section 6 note) */
 
 /* --------------------------------------------------------------------------
-   9. Reports, dialogs, menus
+   9. Dialogs, menus
    -------------------------------------------------------------------------- */
-@S body .datatable .dt-header,
-@S body .datatable .dt-row-header .dt-cell { background: var(--rq-surface-2) !important; font-weight: 600 !important; color: var(--rq-text-3) !important; }
-@S body .datatable .dt-cell { border-color: var(--rq-line) !important; }
-@S body .datatable .dt-row:hover .dt-cell { background: var(--rq-hover) !important; }
+/* report tables (datatable): Classic look since 2026-11-23 */
 @S body .modal-content {
     background: var(--rq-surface-1) !important;
     border: 0 !important;
