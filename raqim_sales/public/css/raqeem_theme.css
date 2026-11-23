@@ -3024,3 +3024,15 @@ html:not(#x):not(#y):not([data-skin="ufuq"]) body.rq-corner-on .rq-corner-brand:
 html:not(#x):not(#y):not([data-skin="ufuq"])[data-theme="dark"] body.rq-corner-on .rq-corner-brand::after { box-shadow: 0 1px 16px -6px var(--rq-hl-glow), 0 10px 22px -16px rgba(0,0,0,.5) !important; }
 html:not(#x):not(#y):not([data-skin="ufuq"]):not([data-theme="dark"]) body.rq-corner-on .rq-corner-brand::after { box-shadow: 0 8px 24px -14px rgba(60,40,10,.25) !important; }
 /* ---- end 11z-i ---- */
+
+/* 11z-j (2026-11-23, user: "move the account button next to the logo, at the top of the dock").
+   raqeem_brand_title.js (body.rq-corner-userup): the wordmark band covers only the sidebar, the dock runs
+   the full height and the account button is the first thing in it, centred on the header row, then a thin
+   divider, then search / notifications / modules. Without a sidebar the old layout stays (button at bottom).
+   ROLLBACK: delete this block + the user_up lines in place_corner (backups *_before_user_top_2026-11-23). */
+html:not(#x):not(#y):not([data-skin="ufuq"]) body.rq-corner-on.rq-corner-userup .dock .dock-logo { display: none !important; }
+html:not(#x):not(#y):not([data-skin="ufuq"]) body.rq-corner-on.rq-corner-userup .dock, html:not(#x):not(#y):not([data-skin="ufuq"]) body.rq-corner-on.rq-corner-userup.dock-pinned .dock { padding-top: calc((var(--rq-corner-h, 64px) - 50px) / 2) !important; background: var(--rq-dock-bg) !important; }
+html:not(#x):not(#y):not([data-skin="ufuq"]) body.rq-corner-on.rq-corner-userup .dock > .dock-user { order: -1; margin: 0 0 calc((var(--rq-corner-h, 64px) - 50px) / 2) !important; padding: 0 0 10px !important;
+    border: 0 !important; position: relative; flex: none; }
+html:not(#x):not(#y):not([data-skin="ufuq"]) body.rq-corner-on.rq-corner-userup .dock > .dock-user::after { content: ""; position: absolute; left: 4px; right: 4px; bottom: 0; height: 1px; background: var(--rq-hl-line, rgba(255,255,255,.10)); }
+/* ---- end 11z-j ---- */

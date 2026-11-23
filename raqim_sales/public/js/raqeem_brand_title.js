@@ -118,7 +118,7 @@
 	function place_corner() {
 		const body = document.body;
 		const off = () => {
-			body.classList.remove("rq-corner-on", "rq-corner-dock", "rq-corner-side");
+			body.classList.remove("rq-corner-on", "rq-corner-dock", "rq-corner-side", "rq-corner-userup");
 			if (corner) corner.style.display = "none";
 		};
 		if (document.documentElement.dataset.skin === "ufuq" || window.innerWidth < 768) return off();
@@ -134,17 +134,23 @@
 			body.appendChild(corner);
 		}
 		const rtl = getComputedStyle(body).direction === "rtl"; // dock + sidebar sit on the start edge
-		const w = dock + side;
+		// 2026-11-23 (user): the account button sits at the TOP of the dock, next to the wordmark. So when a
+		// sidebar is shown the band covers only the sidebar and the dock runs up to the top of the screen.
+		// With no sidebar the band still covers the dock (the button then stays at the bottom).
+		const user_up = !!(dock && side);
+		const w = user_up ? side : dock + side;
+		const shift = user_up ? dock : 0;
 		body.classList.add("rq-corner-on");
-		body.classList.toggle("rq-corner-dock", !!dock);
+		body.classList.toggle("rq-corner-userup", user_up);
+		body.classList.toggle("rq-corner-dock", !!dock && !user_up);
 		body.classList.toggle("rq-corner-side", !!side);
 		// same height as the visible page header (CSS px, so zoom-safe); 64 when there is none
 		const head = [...document.querySelectorAll(".page-head")].find((el) => el.offsetParent && el.offsetHeight);
 		const h = head ? head.offsetHeight : CORNER_H;
 		Object.assign(corner.style, {
 			display: "",
-			left: rtl ? "auto" : "0",
-			right: rtl ? "0" : "auto",
+			left: rtl ? "auto" : shift + "px",
+			right: rtl ? shift + "px" : "auto",
 			width: w + "px",
 			height: h + "px",
 		});
@@ -152,7 +158,7 @@
 		// shrink the wordmark only if the header is shorter than it (wordmark ~44px tall)
 		corner.style.setProperty("--rq-corner-fit", Math.min(1, (h - 6) / 44).toFixed(3));
 		// hexagon tiles start where the dock starts (RTL: after the sidebar; LTR: at 0)
-		corner.style.setProperty("--rq-corner-tex-x", (rtl && dock ? side : 0) + "px");
+		corner.style.setProperty("--rq-corner-tex-x", (rtl && dock && !user_up ? side : 0) + "px");
 		corner.classList.toggle("rq-hb-mini", w < 210);
 		corner.classList.toggle("rq-corner-rtl", rtl);
 		corner.style.setProperty("--rq-corner-side-w", side + "px");
