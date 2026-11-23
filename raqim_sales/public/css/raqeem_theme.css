@@ -3007,3 +3007,20 @@ html[data-skin="ufuq"]:not(#x) body .dock .rq-dock-arrow:hover { background: var
    ROLLBACK: delete this rule (backup before_wordmark_bounce_2026-11-22). */
 html:not(#x):not([data-skin="ufuq"]) body.rq-corner-on .rq-corner-brand { position: absolute !important; top: 0 !important; }
 /* ---- end 11z ---- */
+
+/* 11z-i (2026-11-23, user: "make the wordmark background exactly the same as the header").
+   The band copies the page header (11v): same colour + sheen, laid over the page colour so it is solid like
+   the header looks; the header's bottom line and shadow now run across the FULL band (sidebar + dock part,
+   before: sidebar part only), dark = line + theme glow + dark shadow, light = line + soft brown shadow (no glow),
+   exactly like the header. Gold top spot removed. ROLLBACK: delete this block
+   (backup ~/raqeem_backups/raqeem_theme_before_band_like_header_2026-11-23.css). */
+html:not(#x):not(#y):not([data-skin="ufuq"])[data-theme="dark"] body.rq-corner-on .rq-corner-brand {
+    background: linear-gradient(180deg, rgba(255,255,255,.035) 0%, rgba(255,255,255,0) 100%), linear-gradient(rgba(7,9,12,.88), rgba(7,9,12,.88)), var(--rq-bg) !important;
+    background-size: auto !important; }
+html:not(#x):not(#y):not([data-skin="ufuq"]):not([data-theme="dark"]) body.rq-corner-on .rq-corner-brand {
+    background: linear-gradient(180deg, rgba(255,255,255,.18) 0%, rgba(255,255,255,0) 100%), linear-gradient(rgba(240,235,228,.90), rgba(240,235,228,.90)), var(--rq-bg) !important;
+    background-size: auto !important; }
+html:not(#x):not(#y):not([data-skin="ufuq"]) body.rq-corner-on .rq-corner-brand::before, html:not(#x):not(#y):not([data-skin="ufuq"]) body.rq-corner-on .rq-corner-brand::after { left: 0 !important; right: 0 !important; width: auto !important; }
+html:not(#x):not(#y):not([data-skin="ufuq"])[data-theme="dark"] body.rq-corner-on .rq-corner-brand::after { box-shadow: 0 1px 16px -6px var(--rq-hl-glow), 0 10px 22px -16px rgba(0,0,0,.5) !important; }
+html:not(#x):not(#y):not([data-skin="ufuq"]):not([data-theme="dark"]) body.rq-corner-on .rq-corner-brand::after { box-shadow: 0 8px 24px -14px rgba(60,40,10,.25) !important; }
+/* ---- end 11z-i ---- */
