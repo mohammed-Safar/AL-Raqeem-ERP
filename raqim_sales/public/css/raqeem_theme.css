@@ -2777,6 +2777,9 @@ html.rq-zoomed .body-sidebar,
 html.rq-zoomed .sidebar-panel,
 html.rq-zoomed body.dock-pinned .dock { height: var(--rq-vh); }
 html.rq-zoomed .dock { max-height: calc(var(--rq-vh) - 32px); }
+/* 2026-11-23 (user): the cap above is for the old FLOATING dock; a pinned dock runs the full height like the
+   sidebar, or zoom != 100% left an empty strip under it. */
+html.rq-zoomed body.dock-pinned .dock { max-height: none !important; height: var(--rq-vh) !important; }
 html.rq-zoomed body[data-route^="Form"] .layout-side-section { height: calc(var(--rq-vh) - var(--page-head-height)); }
 html.rq-zoomed .report-view .layout-main-section { height: calc(var(--rq-vh) - var(--page-head-height)); }
 html.rq-zoomed .datatable .dt-scrollable { height: calc(var(--rq-vh) - 240px); }
