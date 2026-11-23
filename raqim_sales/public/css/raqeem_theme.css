@@ -3050,3 +3050,47 @@ html:not(#x):not(#y):not([data-skin="ufuq"]) body .page-head .es-button[data-var
     box-shadow: 0 6px 16px -8px rgba(var(--rq-a-rgb), .8) !important; }
 html:not(#x):not(#y):not([data-skin="ufuq"]) body .page-head .es-button[data-variant="solid"]:not([data-theme="red"]):hover, html:not(#x):not(#y):not([data-skin="ufuq"]) body .page-head .primary-action:hover, html:not(#x):not(#y):not([data-skin="ufuq"]) body .page-head .btn-primary:hover { filter: brightness(1.05); }
 /* ---- end 11z-k ---- */
+
+/* 11z-l (2026-11-23, user: "a little circle on the sidebar border with a tiny double arrow pointing in or
+   out, to shrink or extend it"). Frappe 16's own .sidebar-collapse-arrow (sidebar.html; click =
+   toggle_width) only showed while hovering the edge, at the bottom. Now: always visible, 28px circle in the
+   middle of the border, card colour + line, double chevron (mask) pointing toward the dock = fold the
+   sidebar away, flipped when folded = open it. Beside a pinned dock a folded sidebar is hidden, so the
+   circle then sits on the dock's edge (Frappe dock.scss moves it). Both skins. Phones: Frappe hides it.
+   ROLLBACK: delete this block (backup raqeem_theme_before_sidebar_toggle_2026-11-23.css). */
+html body .body-sidebar-container .sidebar-collapse-arrow {
+    opacity: 1 !important; pointer-events: auto !important;
+    /* 2026-11-23 v2 (user): anchored to the sidebar's own border edge (inline-end of the container), so it
+       sits exactly on the border open or folded and rides along with the sidebar's width animation instead
+       of running its own timer (was left/right .3s vs the sidebar's .5s). 22px circle, arrow stays 14px. */
+    inset-inline-start: auto !important; inset-inline-end: -11px !important;
+    top: calc(50% - 11px) !important; bottom: auto !important;
+    width: 22px !important; height: 22px !important; margin: 0 !important;
+    background: var(--rq-surface-1) !important; border: 1px solid var(--rq-line-strong) !important;
+    box-shadow: 0 3px 10px -4px rgba(0, 0, 0, .35) !important; color: var(--rq-text-2) !important;
+    z-index: 1030 !important;
+    transition: background-color .15s, color .15s, border-color .15s, transform .15s !important;
+}
+/* the slim folded column showed a grey scrollbar right beside the border, which read as the border */
+html body .body-sidebar-container:not(.expanded) .body-sidebar,
+html body .body-sidebar-container:not(.expanded) .body-sidebar * { scrollbar-width: none !important; }
+html body .body-sidebar-container:not(.expanded) .body-sidebar ::-webkit-scrollbar,
+html body .body-sidebar-container:not(.expanded) .body-sidebar::-webkit-scrollbar { width: 0 !important; height: 0 !important; }
+html body .body-sidebar-container .sidebar-collapse-arrow:hover {
+    background: var(--rq-accent) !important; border-color: var(--rq-accent) !important; color: var(--rq-a-ink) !important; transform: scale(1.08);
+}
+html body .body-sidebar-container .sidebar-collapse-arrow svg { display: none !important; }
+html body .body-sidebar-container .sidebar-collapse-arrow::before {
+    content: ""; width: 14px; height: 14px; background: currentColor;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M11 17l-5-5 5-5'/%3E%3Cpath d='M18 17l-5-5 5-5'/%3E%3C/svg%3E") center/contain no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M11 17l-5-5 5-5'/%3E%3Cpath d='M18 17l-5-5 5-5'/%3E%3C/svg%3E") center/contain no-repeat;
+    transition: transform .3s ease-in-out;
+}
+/* «‹‹» points toward the start edge (the dock): fold. RTL mirrors it; folded = points out (open). */
+html[dir="rtl"] body .body-sidebar-container .sidebar-collapse-arrow::before { transform: scaleX(-1); }
+html body .body-sidebar-container:is(:not(.expanded), .sidebar-hidden) .sidebar-collapse-arrow::before { transform: scaleX(-1); }
+html[dir="rtl"] body .body-sidebar-container:is(:not(.expanded), .sidebar-hidden) .sidebar-collapse-arrow::before { transform: none; }
+/* Horizon's pinned sidebar clips what overhangs it: let the circle show half over the page */
+html[data-skin="ufuq"]:not(#x) body .body-sidebar-container { overflow: visible !important; z-index: 20; }
+html[data-skin="ufuq"]:not(#x) body .body-sidebar-container .body-sidebar { overflow: hidden; }
+/* ---- end 11z-l ---- */
