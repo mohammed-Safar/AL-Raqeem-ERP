@@ -3063,11 +3063,15 @@ html body .body-sidebar-container .sidebar-collapse-arrow {
     /* 2026-11-23 v2 (user): anchored to the sidebar's own border edge (inline-end of the container), so it
        sits exactly on the border open or folded and rides along with the sidebar's width animation instead
        of running its own timer (was left/right .3s vs the sidebar's .5s). 22px circle, arrow stays 14px. */
-    inset-inline-start: auto !important; inset-inline-end: -11px !important;
-    top: calc(50% - 11px) !important; bottom: auto !important;
-    width: 22px !important; height: 22px !important; margin: 0 !important;
-    background: var(--rq-surface-1) !important; border: 1px solid var(--rq-line-strong) !important;
+    /* v4 (user): smaller (28px circle -> 14x28 tab) and ONE arrow. v3: a bigger circle (34px) cut in half, only the half OUTSIDE the sidebar is kept: a 17x34 tab
+       whose flat side lies on the border and whose round side bulges into the page. */
+    inset-inline-start: auto !important; inset-inline-end: -14px !important;
+    top: calc(50% - 14px) !important; bottom: auto !important;
+    width: 14px !important; height: 28px !important; margin: 0 !important; padding: 0 !important;
+    border-radius: 0 !important; border-start-end-radius: 14px !important; border-end-end-radius: 14px !important;
+    background: var(--rq-surface-1) !important; border: 1px solid var(--rq-line-strong) !important; border-inline-start: 0 !important;
     box-shadow: 0 3px 10px -4px rgba(0, 0, 0, .35) !important; color: var(--rq-text-2) !important;
+    justify-content: center !important;
     z-index: 1030 !important;
     transition: background-color .15s, color .15s, border-color .15s, transform .15s !important;
 }
@@ -3077,13 +3081,13 @@ html body .body-sidebar-container:not(.expanded) .body-sidebar * { scrollbar-wid
 html body .body-sidebar-container:not(.expanded) .body-sidebar ::-webkit-scrollbar,
 html body .body-sidebar-container:not(.expanded) .body-sidebar::-webkit-scrollbar { width: 0 !important; height: 0 !important; }
 html body .body-sidebar-container .sidebar-collapse-arrow:hover {
-    background: var(--rq-accent) !important; border-color: var(--rq-accent) !important; color: var(--rq-a-ink) !important; transform: scale(1.08);
+    background: var(--rq-accent) !important; border-color: var(--rq-accent) !important; color: var(--rq-a-ink) !important;
 }
 html body .body-sidebar-container .sidebar-collapse-arrow svg { display: none !important; }
 html body .body-sidebar-container .sidebar-collapse-arrow::before {
-    content: ""; width: 14px; height: 14px; background: currentColor;
-    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M11 17l-5-5 5-5'/%3E%3Cpath d='M18 17l-5-5 5-5'/%3E%3C/svg%3E") center/contain no-repeat;
-    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M11 17l-5-5 5-5'/%3E%3Cpath d='M18 17l-5-5 5-5'/%3E%3C/svg%3E") center/contain no-repeat;
+    content: ""; width: 13px; height: 13px; flex: none; background: currentColor;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.5 17l-5-5 5-5'/%3E%3C/svg%3E") center/contain no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.5 17l-5-5 5-5'/%3E%3C/svg%3E") center/contain no-repeat;
     transition: transform .3s ease-in-out;
 }
 /* «‹‹» points toward the start edge (the dock): fold. RTL mirrors it; folded = points out (open). */
