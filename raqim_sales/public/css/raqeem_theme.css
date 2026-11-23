@@ -3101,3 +3101,9 @@ html[dir="rtl"] body .body-sidebar-container:is(:not(.expanded), .sidebar-hidden
 html[data-skin="ufuq"]:not(#x) body .body-sidebar-container { overflow: visible !important; z-index: 20; }
 html[data-skin="ufuq"]:not(#x) body .body-sidebar-container .body-sidebar { overflow: hidden; }
 /* ---- end 11z-l ---- */
+
+/* 11z-m (2026-11-23, user: "the search button on the dock should move upward a little so it doesn't stick
+   to the notification button"). Classic dock only: search moves up 8px, the bell stays where it is
+   (gap 2px -> 10px; still 19px below the account divider). ROLLBACK: delete this block. */
+html:not([data-skin="ufuq"]) body .dock .dock-utilities .navbar-modal-search-mobile { margin-top: -8px !important; margin-bottom: 8px !important; }
+/* ---- end 11z-m ---- */
