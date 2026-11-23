@@ -2609,6 +2609,13 @@ html body .page-head, html body .rq-home-bar { -webkit-backdrop-filter: blur(1.6
    what is inside the page; the hexagons (body::before, outside it) show through sharp.
    .9999 is invisible, and unlike filter/will-change it does not trap position:fixed children. */
 html body .page-container { opacity: .9999; }
+/* 2026-11-23 fix: that opacity made a stacking context, trapping the child-table row editor (.form-in-grid,
+   position:fixed z 1039) under Frappe's body-level .modal-backdrop (z 1038) -> editor washed grey, any click closed it.
+   While a row editor is open, drop the opacity so the editor sits above the backdrop again. */
+html body .page-container:has(.grid-row-open) { opacity: 1; }
+/* row-editor backdrop: Frappe paints it light grey (#e8eaed) even in dark mode -> dark dim in dark mode, softer in light. */
+html[data-theme="dark"] body .modal-backdrop.grid-form { background-color: #07080a !important; opacity: .72 !important; }
+html:not([data-theme="dark"]) body .modal-backdrop.grid-form { background-color: #2a241c !important; opacity: .35 !important; }
 /* header hexagon texture removed 2026-11-21 (user) */
 /* 2026-11-21: header bottom edge in the theme accent (was a plain white/brown line) so it blends with the dock and texture:
    thin accent line + faint accent glow under it, no white inner line. ROLLBACK: delete this block. */
