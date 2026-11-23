@@ -48,7 +48,7 @@ app_include_css = [
     "/assets/raqim_sales/css/raqeem_list.css?v=47",
     "/assets/raqim_sales/css/raqeem_mobile.css?v=4",
     # skin «الأفق»: only applies with html[data-skin="ufuq"] (display settings → Style). ROLLBACK: delete the next line
-    "/assets/raqim_sales/css/raqeem_skin_ufuq.css?v=dockbrand-1121c"
+    "/assets/raqim_sales/css/raqeem_skin_ufuq.css?v=sbpin-1123a"
 ]
 # raqeem_icons.js -> swaps stock sidebar icons for the Raqeem duotone set
 #   (ROLLBACK: delete the two raqeem_icon* lines below and the app_include_icons line)

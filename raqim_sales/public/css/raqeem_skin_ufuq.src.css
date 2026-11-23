@@ -214,18 +214,19 @@
     @S body .dock .dock-user .avatar,
     @S body .dock .dock-user img { width: 34px !important; height: 34px !important; }
 
-    /* the module menu: a floating panel */
+    /* the module menu: pinned to the side edge, full height under the top bar (2026-11-23, user:
+       "pinned in the side, not floating"; was a floating rounded panel with a gap all round) */
     @S body .body-sidebar-container {
         position: sticky !important;
-        top: calc(var(--uf-top) + var(--uf-gap)) !important;
+        top: var(--uf-top) !important;
         align-self: flex-start;
-        height: calc(var(--rq-vh, 100vh) - var(--uf-top) - var(--uf-gap) * 2) !important;
-        margin: var(--uf-gap) !important;
-        margin-inline-end: 0 !important;
+        height: calc(var(--rq-vh, 100vh) - var(--uf-top)) !important;
+        margin: 0 !important;
         border: 0 !important;
-        border-radius: var(--rq-r-xl) !important;
+        border-inline-end: 1px solid var(--rq-line) !important;
+        border-radius: 0 !important;
         background: var(--rq-sidebar-bg) !important;
-        box-shadow: var(--uf-panel-shadow), inset 0 0 0 1px var(--rq-line) !important;
+        box-shadow: none !important;
         overflow: hidden !important;
     }
     @S body .body-sidebar-container.expanded { flex: 0 0 262px !important; width: 262px !important; min-width: 262px !important; }
