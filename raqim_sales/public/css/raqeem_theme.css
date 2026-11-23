@@ -3036,3 +3036,17 @@ html:not(#x):not(#y):not([data-skin="ufuq"]) body.rq-corner-on.rq-corner-userup 
     border: 0 !important; position: relative; flex: none; }
 html:not(#x):not(#y):not([data-skin="ufuq"]) body.rq-corner-on.rq-corner-userup .dock > .dock-user::after { content: ""; position: absolute; left: 4px; right: 4px; bottom: 0; height: 1px; background: var(--rq-hl-line, rgba(255,255,255,.10)); }
 /* ---- end 11z-j ---- */
+
+/* 11z-k (2026-11-23, user: "header buttons on classic = same design as Horizon's header buttons").
+   Computed styles compared in both skins; what still differed: the main button (classic had a gradient,
+   inner shine line, weight 700) -> Horizon's flat theme colour, weight 600, soft theme shadow underneath;
+   the grey es-buttons get Horizon's invisible 1px border (same size); Horizon's button font.
+   ROLLBACK: delete this block (backup raqeem_theme_before_header_buttons_2026-11-23.css). */
+html:not(#x):not(#y):not([data-skin="ufuq"]) body .page-head .es-button, html:not(#x):not(#y):not([data-skin="ufuq"]) body .page-head .btn { font-family: 'IBM Plex Sans Arabic', 'Alexandria', 'Cairo', system-ui, sans-serif !important; }
+html:not(#x):not(#y):not([data-skin="ufuq"]) body .page-head .es-button:not([data-variant="solid"]):not([data-variant="ghost"]) { border: 1px solid transparent !important; }
+html:not(#x):not(#y):not([data-skin="ufuq"]) body .page-head .es-button[data-variant="solid"]:not([data-theme="red"]), html:not(#x):not(#y):not([data-skin="ufuq"]) body .page-head .primary-action, html:not(#x):not(#y):not([data-skin="ufuq"]) body .page-head .btn-primary {
+    background: var(--rq-accent) !important; background-image: none !important; border: 0 !important;
+    color: var(--rq-a-ink) !important; font-weight: 600 !important;
+    box-shadow: 0 6px 16px -8px rgba(var(--rq-a-rgb), .8) !important; }
+html:not(#x):not(#y):not([data-skin="ufuq"]) body .page-head .es-button[data-variant="solid"]:not([data-theme="red"]):hover, html:not(#x):not(#y):not([data-skin="ufuq"]) body .page-head .primary-action:hover, html:not(#x):not(#y):not([data-skin="ufuq"]) body .page-head .btn-primary:hover { filter: brightness(1.05); }
+/* ---- end 11z-k ---- */
