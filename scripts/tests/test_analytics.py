@@ -78,7 +78,7 @@ try:
     ok("save_chart updates", d.title == "Test chart 2" and d.chart_type == "Pie")
     try: E.save_chart("Bad", "Bar", json.dumps({"doctype": "DocType", "measures": [{"agg": "sum", "field": "module"}]})); ok("save_chart validates", False)
     except frappe.ValidationError: ok("save_chart validates", True)
-    for ex_dt, ex_fields in [("Sales Invoice", ["posting_date", "base_grand_total", "customer", "outstanding_amount"]), ("Raqeem Cheque", ["status", "amount", "cheque_date", "cheque_type"]),
+    for ex_dt, ex_fields in [("Sales Invoice", ["posting_date", "base_grand_total", "customer", "outstanding_amount"]),
                              ("Raqeem Salary Slip", ["to_date", "gross", "net_pay"]), ("Raqeem Leave Request", ["leave_type", "total_days", "from_date", "status"]),
                              ("Opportunity", ["sales_stage", "opportunity_amount", "status"]), ("Lead", ["utm_source"]), ("Employee", ["department", "status"]), ("Purchase Invoice", ["supplier", "base_grand_total"])]:
         m = frappe.get_meta(ex_dt); ok("example fields exist in %s" % ex_dt, all(m.has_field(f) for f in ex_fields))

@@ -13176,9 +13176,9 @@ Who Can See It,من يمكنه رؤيتها
 Owner Dashboard,لوحة المالك
 Sales Dashboard,لوحة المبيعات
 Accounts Dashboard,لوحة الحسابات
-"Sales, profit, cash, debts, cheques, stock, payroll and deals at a glance.",المبيعات والأرباح والنقدية والديون والشيكات والمخزون والرواتب والصفقات في نظرة واحدة.
+"Sales, profit, cash, debts, payments, stock, payroll and deals at a glance.",المبيعات والأرباح والنقدية والديون والمدفوعات والمخزون والرواتب والصفقات في نظرة واحدة.
 "Invoices, orders, quotations, customers and items.",الفواتير والطلبات وعروض الأسعار والعملاء والأصناف.
-"Cash, receivables, payables, payments, expenses and cheques.",النقدية والذمم المدينة والدائنة والمدفوعات والمصروفات والشيكات.
+"Cash, receivables, payables, payments and expenses.",النقدية والذمم المدينة والدائنة والمدفوعات والمصروفات.
 "Leads, opportunities, pipeline and quotations.",العملاء المحتملون والفرص ومسار المبيعات وعروض الأسعار.
 Profit This Month,أرباح هذا الشهر
 Cash and Bank,النقدية والبنوك
@@ -18337,3 +18337,5 @@ Drag to reorder,اسحب لإعادة الترتيب
 Enter the closing balance you see in your bank statement for {0} as of the {1},أدخل الرصيد الختامي الظاهر في كشف الحساب البنكي لـ {0} بتاريخ {1}
 Closing (statement),الختامي (حسب الكشف)
 Closing (system),الختامي (حسب النظام)
+Sales Commission,عمولة المبيعات
+"Commission on {0} invoices",عمولة على {0} فاتورة

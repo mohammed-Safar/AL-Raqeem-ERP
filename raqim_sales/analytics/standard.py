@@ -95,14 +95,6 @@ C = {
 		"filters": [[SI, "outstanding_amount", ">", 0]]}),
 	"o_payable": ("We Owe Suppliers", "Number", {"doctype": PI, "measures": [{"agg": "sum", "field": "outstanding_amount"}, {"agg": "count"}],
 		"filters": [[PI, "outstanding_amount", ">", 0]]}),
-	"o_cheques_due": ("Cheques to Collect (Next 30 Days)", "Number", {"doctype": "Raqeem Cheque",
-		"measures": [{"agg": "sum", "field": "amount"}, {"agg": "count"}],
-		"filters": [["Raqeem Cheque", "cheque_type", "=", "Received"], ["Raqeem Cheque", "status", "in", ["In Hand", "Deposited"]]],
-		"date_range": {"field": "cheque_date", "range": "next_30_days"}}),
-	"o_cheques_issued": ("Cheques We Pay (Next 30 Days)", "Number", {"doctype": "Raqeem Cheque",
-		"measures": [{"agg": "sum", "field": "amount"}, {"agg": "count"}],
-		"filters": [["Raqeem Cheque", "cheque_type", "=", "Issued"], ["Raqeem Cheque", "status", "=", "Issued"]],
-		"date_range": {"field": "cheque_date", "range": "next_30_days"}}),
 	"o_sales_12m": ("Sales by Month", "Bar", {"doctype": SI, "dims": [{"field": "posting_date", "part": "month"}],
 		"measures": [{"agg": "sum", "field": "base_grand_total"}], "date_range": {"field": "posting_date", "range": "last_12_months"}}),
 	"o_profit_12m": ("Profit by Month", "Line", {"doctype": GL, "dims": [{"field": "posting_date", "part": "month"}],
@@ -151,8 +143,6 @@ C = {
 		"measures": [{"agg": "sum", "field": "debit", "minus": "credit"}],
 		"filters": [["GL Entry", "account.root_type", "=", "Expense"], ["GL Entry", "is_cancelled", "=", 0]],
 		"date_range": {"field": "posting_date", "range": "last_12_months"}}),
-	"a_cheques_status": ("Cheques by Status", "Donut", {"doctype": "Raqeem Cheque", "dims": [{"field": "status"}],
-		"measures": [{"agg": "sum", "field": "amount"}]}),
 	# crm
 	"c_new_leads": ("New Leads This Month", "Number", {"doctype": "Lead", "measures": [{"agg": "count"}],
 		"date_range": {"field": "creation", "range": "this_month"}, "compare": 1}),
@@ -172,11 +162,11 @@ def _charts(*pairs):
 	return [(key, C[key][0], C[key][1], width, C[key][2]) for key, width in pairs]
 
 
-OWNER = {"key": "owner", "title": "Owner Dashboard", "description": "Sales, profit, cash, debts, cheques, stock, payroll and deals at a glance.",
+OWNER = {"key": "owner", "title": "Owner Dashboard", "description": "Sales, profit, cash, debts, payments, stock, payroll and deals at a glance.",
 	"roles": ["Accounts Manager"], "show_company_filter": 1, "charts": _charts(
 		("o_sales_month", "third"), ("o_profit_month", "third"), ("o_cash", "third"),
 		("o_receivable", "third"), ("o_payable", "third"), ("o_stock_value", "third"),
-		("o_cheques_due", "third"), ("o_cheques_issued", "third"), ("o_payroll_month", "third"),
+		("a_received_month", "third"), ("a_paid_month", "third"), ("o_payroll_month", "third"),
 		("o_sales_12m", "two_thirds"), ("o_profit_12m", "third"),
 		("o_top_customers", "half"), ("o_top_items", "half"),
 		("o_expenses_month", "half"), ("o_pipeline", "half"))}
@@ -187,13 +177,12 @@ SALES = {"key": "sales", "title": "Sales Dashboard", "description": "Invoices, o
 		("o_sales_12m", "full"),
 		("o_top_customers", "half"), ("o_top_items", "half"),
 		("s_by_territory", "half"), ("s_by_group", "half"))}
-ACCOUNTS = {"key": "accounts", "title": "Accounts Dashboard", "description": "Cash, receivables, payables, payments, expenses and cheques.",
+ACCOUNTS = {"key": "accounts", "title": "Accounts Dashboard", "description": "Cash, receivables, payables, payments and expenses.",
 	"roles": ["Accounts Manager", "Accounts User"], "show_company_filter": 1, "charts": _charts(
 		("o_cash", "third"), ("o_receivable", "third"), ("o_payable", "third"),
 		("a_received_month", "third"), ("a_paid_month", "third"), ("a_overdue_sales", "third"),
 		("o_profit_12m", "half"), ("a_expenses_12m", "half"),
-		("a_top_debtors", "half"), ("o_expenses_month", "half"),
-		("o_cheques_due", "third"), ("o_cheques_issued", "third"), ("a_cheques_status", "third"))}
+		("a_top_debtors", "half"), ("o_expenses_month", "half"))}
 CRM = {"key": "crm", "title": "CRM Dashboard", "description": "Leads, opportunities, pipeline and quotations.",
 	"roles": ["Sales Manager", "Sales User"], "charts": _charts(
 		("c_new_leads", "third"), ("s_quotes_open", "third"), ("c_won_lost", "third"),

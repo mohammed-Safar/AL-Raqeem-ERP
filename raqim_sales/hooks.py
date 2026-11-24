@@ -371,7 +371,6 @@ email_css = ["/assets/raqim_sales/css/raqeem_email.css"]
 # RAQEEM: app name + default print formats, see setup.py
 after_migrate = [
 	"raqim_sales.setup.after_migrate",
-	"raqim_sales.cheques_setup.after_migrate",
 	"raqim_sales.crm_integration.after_migrate",
 	# "Pipeline" link in ERPNext's CRM sidebar (ROLLBACK: delete the next line)
 	"raqim_sales.erp_crm.after_migrate",
@@ -391,10 +390,9 @@ doctype_js = {
 	"Employee": "public/js/raqeem_hr_employee.js",
 }
 
-# ---- raqeem cheques (ROLLBACK: delete this block and the cheques_setup entry above) ----
-_CHEQUE = "raqim_sales.raqim_sales.doctype.raqeem_cheque.raqeem_cheque"
+# RAQEEM cheques were removed on 2026-11-24 (user): cheques are recorded as ERPNext Payment Entries
+# (mode of payment "Cheque"). The old code is in ~/raqeem_backups/code_before_cheque_removal_2026-11-24.tar.gz
 doc_events = {
-	"Journal Entry": {"before_cancel": f"{_CHEQUE}.guard_journal_entry_cancel"},
 	# warn when a Lead's phone / email already exists (raqim_sales/erp_crm.py)
 	"Lead": {"validate": "raqim_sales.erp_crm.lead_validate"},
 	# Human Resources: an employee made from an accepted job offer -> applicant Hired + salary (ROLLBACK: delete the next line)
@@ -403,26 +401,20 @@ doc_events = {
 		"raqim_sales.raqeem_hr.lifecycle.employee_after_insert"]},
 	"Company": {
 		"on_update": [
-			"raqim_sales.cheques_setup.on_company_update",
 			"raqim_sales.crm_integration.on_company_update",
+			# Human Resources: a new company gets its payroll / advance / loan / gratuity accounts (ROLLBACK: delete the next line)
+			"raqim_sales.raqeem_hr.company_accounts.on_company_update",
 		]
 	},
 }
 scheduler_events = {
 	# Human Resources: promotions / transfers on their date, "Left" after the last working day (ROLLBACK: delete the second entry)
-	"daily": [f"{_CHEQUE}.send_due_reminders", "raqim_sales.raqeem_hr.lifecycle.daily"],
+	"daily": ["raqim_sales.raqeem_hr.lifecycle.daily"],
 	# Human Resources: fingerprints -> attendance (ROLLBACK: delete the next line)
 	"hourly": ["raqim_sales.raqeem_hr.attendance.process_recent",
 		# Analytics: alerts + scheduled emailed reports that are due (ROLLBACK: delete the next line)
 		"raqim_sales.analytics.alerts.run_due"],
 }
-override_doctype_dashboards = {
-	"Customer": "raqim_sales.cheques_setup.dashboard_party",
-	"Supplier": "raqim_sales.cheques_setup.dashboard_party",
-	"Sales Invoice": "raqim_sales.cheques_setup.dashboard_invoice",
-	"Purchase Invoice": "raqim_sales.cheques_setup.dashboard_invoice",
-}
-# ---- end raqeem cheques ----
 
 # Human Resources: an employee sees only their own HR records (+ requests they approve), even
 # without ERPNext's user permission on Employee (raqim_sales/raqeem_hr/permissions.py).

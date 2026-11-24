@@ -40,10 +40,19 @@ def _row(account, debit=0.0, credit=0.0, employee=None, cost_center=None):
 	# receivable / payable accounts need a party: the employee
 	if employee and frappe.get_cached_value("Account", account, "account_type") in ("Receivable", "Payable"):
 		row.update({"party_type": "Employee", "party": employee})
+	row["_employee"] = employee  # make_je: the party again if the company's account needs one
 	return row
 
 
 def make_je(company, rows, remark, voucher_type="Journal Entry", posting_date=None, reference_no=None):
+	# settings hold one company's accounts: use the same accounts of THIS company (raqeem_hr/company_accounts.py)
+	from raqim_sales.raqeem_hr.company_accounts import for_company
+
+	for r in rows:
+		employee = r.pop("_employee", None)
+		r["account"] = for_company(r["account"], company)
+		if employee and not r.get("party") and frappe.get_cached_value("Account", r["account"], "account_type") in ("Receivable", "Payable"):
+			r.update({"party_type": "Employee", "party": employee})
 	je = frappe.get_doc({"doctype": "Journal Entry", "voucher_type": voucher_type, "company": company,
 		"posting_date": posting_date or nowdate(), "accounts": [r for r in rows if r["debit_in_account_currency"] or r["credit_in_account_currency"]],
 		"user_remark": remark})
@@ -78,6 +87,10 @@ def _check_pay_permission(doc):
 
 def expense_account(expense_type, company):
 	acc = frappe.get_cached_value("Raqeem Expense Type", expense_type, "account")
+	if acc:
+		from raqim_sales.raqeem_hr.company_accounts import for_company
+
+		acc = for_company(acc, company)
 	acc = acc or frappe.get_cached_value("Company", company, "default_expense_account")
 	if not acc:
 		frappe.throw(_("Set the expense account of {0}").format(_(expense_type)))

@@ -32,6 +32,12 @@ LEAVE_TYPES = [
 
 def after_migrate():
 	try:
+		from raqim_sales.raqeem_hr.company_accounts import repair_settings
+
+		repair_settings()  # settings left pointing at a deleted company's accounts
+	except Exception:
+		frappe.log_error(title="RAQEEM HR: repair settings accounts")
+	try:
 		make_custom_fields()
 		make_leave_types()
 		make_salary_components()
@@ -116,26 +122,16 @@ def make_salary_components():
 
 
 def _account(company, name, parent_names, root_type, account_type=None):
-	"""An existing leaf account named `name` in the company, or a new one under the first parent found."""
+	"""An HR account of the company (2026-11-23: in the chart's language, under the right parent; see company_accounts)."""
+	from raqim_sales.raqeem_hr import company_accounts as ca
+
+	key = ca._key_of(name)
+	if key:
+		return ca.account(company, key)
 	existing = frappe.db.get_value("Account", {"company": company, "account_name": name, "is_group": 0}, "name")
 	if existing:
 		return existing
-	parent = None
-	for p in parent_names:
-		parent = frappe.db.get_value("Account", {"company": company, "account_name": p, "is_group": 1}, "name")
-		if parent:
-			break
-	if not parent:
-		parent = frappe.db.get_value("Account", {"company": company, "root_type": root_type, "is_group": 1},
-			"name", order_by="lft desc")
-	if not parent:
-		return None
-	acc = frappe.get_doc({"doctype": "Account", "account_name": name, "parent_account": parent, "company": company,
-		"is_group": 0, "root_type": root_type, "account_type": account_type or "",
-		"account_currency": frappe.get_cached_value("Company", company, "default_currency")})
-	acc.flags.ignore_permissions = True
-	acc.insert()
-	return acc.name
+	frappe.throw(f"RAQEEM HR setup: unknown account {name}")
 
 
 def setup_payroll_accounts():
@@ -266,6 +262,7 @@ ONE_OFF = [  # (name, type, abbr, taxable, social security)
 	("Bonus", "Earning", "BON", 1, 0),
 	("One-off Allowance", "Earning", "OA", 1, 0),
 	("Penalty", "Deduction", "PEN", 0, 0),
+	("Sales Commission", "Earning", "COM", 1, 0),  # 2026-11-23: salespeople's commission from invoices (payroll.py)
 ]
 
 
@@ -281,7 +278,8 @@ def setup_additions_and_loans():
 			frappe.get_doc({"doctype": "Raqeem Salary Component", "component_name": name, "component_type": ctype, "abbr": abbr,
 				"taxable": taxable, "social_security": ss,
 				# a penalty lowers the salary cost
-				"account": s.salary_expense_account if ctype == "Deduction" else None}).insert(ignore_permissions=True)
+				"account": s.salary_expense_account if ctype == "Deduction" else (_account(company, "Commission on Sales", [], "Expense")
+					if name == "Sales Commission" else None)}).insert(ignore_permissions=True)
 	changed = False
 	if not s.get("loan_account"):
 		s.loan_account = _account(company, "Employee Loans", ["Loans and Advances (Assets)", "Current Assets"], "Asset", "Receivable")

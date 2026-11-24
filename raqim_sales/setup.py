@@ -35,6 +35,20 @@ def after_migrate():
 	set_home_page()
 	set_dinar_format()
 	set_erpnext_dock()
+	allocate_advances_by_default()
+
+
+def allocate_advances_by_default():
+	"""2026-11-23: a sales / purchase invoice deducts the customer's (supplier's) down payments by itself.
+	ERPNext leaves "Allocate Advances Automatically" off, so an invoice made from a delivery note showed the
+	full amount as owed after a 50% down payment on the order, and the customer could be asked to pay twice.
+	ROLLBACK: delete the two Property Setters "<doctype>-allocate_advances_automatically-default"."""
+	from frappe.custom.doctype.property_setter.property_setter import make_property_setter
+
+	for dt in ("Sales Invoice", "Purchase Invoice"):
+		if frappe.db.get_value("Property Setter", {"doc_type": dt, "field_name": "allocate_advances_automatically",
+				"property": "default"}, "value") != "1":
+			make_property_setter(dt, "allocate_advances_automatically", "default", "1", "Text", validate_fields_for_doctype=False)
 
 
 def set_erpnext_dock():

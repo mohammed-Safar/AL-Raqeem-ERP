@@ -446,7 +446,7 @@ def after_migrate():
 
 def add_sidebar_link():
 	"""Put "Pipeline" right after Opportunity in the CRM sidebar, for everyone (idempotent).
-	Same approach as cheques_setup.add_sidebar_link: a site arrangement made by someone else is kept,
+	Same approach as the analytics sidebar links: a site arrangement made by someone else is kept,
 	the link is only appended to it."""
 	if not frappe.db.exists("Sidebar", SIDEBAR):
 		return

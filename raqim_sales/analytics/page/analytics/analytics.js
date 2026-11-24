@@ -73,11 +73,6 @@ frappe.provide("rq_analytics");
 		{ key: "purchases_supplier", title: "Purchases by Supplier", chart_type: "Bar", icon: "truck",
 			cfg: { doctype: "Purchase Invoice", dims: [{ field: "supplier" }], measures: [{ agg: "sum", field: "base_grand_total" }],
 				date_range: { field: "posting_date", range: "this_year" }, sort: "value_desc", limit: 10 } },
-		{ key: "cheques_status", title: "Cheques by Status", chart_type: "Donut", icon: "banknote",
-			cfg: { doctype: "Raqeem Cheque", dims: [{ field: "status" }], measures: [{ agg: "sum", field: "amount" }] } },
-		{ key: "cheques_due", title: "Cheques Due by Month", chart_type: "Bar", icon: "calendar",
-			cfg: { doctype: "Raqeem Cheque", dims: [{ field: "cheque_date", part: "month" }, { field: "cheque_type" }],
-				measures: [{ agg: "sum", field: "amount" }], date_range: { field: "cheque_date", range: "this_year" } } },
 		{ key: "leads_source", title: "Leads by Source", chart_type: "Pie", icon: "megaphone",
 			cfg: { doctype: "Lead", dims: [{ field: "utm_source" }], measures: [{ agg: "count" }] } },
 		{ key: "opps_stage", title: "Opportunities by Stage", chart_type: "Bar", icon: "handshake",
@@ -1388,7 +1383,7 @@ frappe.provide("rq_analytics");
 		}
 
 		render_source($b) {
-			const popular = ["Sales Invoice", "Purchase Invoice", "Payment Entry", "Customer", "Item", "Raqeem Cheque", "Lead", "Opportunity", "Employee"]
+			const popular = ["Sales Invoice", "Purchase Invoice", "Payment Entry", "Customer", "Item", "Lead", "Opportunity", "Employee"]
 				.filter(can_read);
 			$b.html(`<div class="rqa-source-control"></div>
 				<div class="rqa-chips">${popular.map((dt) => `<button class="rqa-chip ${dt === this.cfg.doctype ? "is-active" : ""}" data-dt="${esc(dt)}">${esc(__(dt))}</button>`).join("")}</div>`);

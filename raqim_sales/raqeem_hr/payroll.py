@@ -111,6 +111,22 @@ def build_slip(employee: str, from_date, to_date, posting_date=None, payroll_run
 	return slip
 
 
+COMMISSION = "Sales Commission"
+
+
+def sales_commission(employee, company, from_date, to_date) -> tuple[float, int]:
+	"""Commission earned by the employee's Sales Person on submitted sales invoices of the period
+	(ERPNext's Sales Team "incentives" = allocated amount x commission rate; returns reduce it)."""
+	persons = frappe.get_all("Sales Person", filters={"employee": employee, "enabled": 1}, pluck="name")
+	if not persons:
+		return 0.0, 0
+	r = frappe.db.sql("""select coalesce(sum(st.incentives), 0), count(distinct si.name) from `tabSales Team` st
+		join `tabSales Invoice` si on si.name = st.parent and st.parenttype = 'Sales Invoice'
+		where si.docstatus = 1 and si.company = %s and st.sales_person in %s and si.posting_date between %s and %s""",
+		(company, tuple(persons), from_date, to_date))[0]
+	return money(max(0.0, flt(r[0]))), int(r[1] or 0)
+
+
 def calculate(slip, sal=None):
 	s = settings()
 	sal = sal or frappe.get_doc("Raqeem Employee Salary", slip.employee_salary)
@@ -195,6 +211,18 @@ def calculate(slip, sal=None):
 		if c.get("social_security"):
 			ss_base += money(a.amount)
 
+	# sales commission: the employee's share (Sales Person > Commission Rate) of the invoices of this period
+	com, n_inv = sales_commission(slip.employee, slip.company, from_date, to_date)
+	if com > 0 and frappe.db.exists("Raqeem Salary Component", {"name": COMMISSION, "disabled": 0}):
+		slip.append("earnings", {"component": COMMISSION, "component_type": "Earning", "full_amount": com, "amount": com,
+			"note": _("Commission on {0} invoices").format(n_inv)})
+		gross += com
+		c = comp.get(COMMISSION) or {}
+		if c.get("taxable"):
+			taxable += com
+		if c.get("social_security"):
+			ss_base += com
+
 	def deduct(component, amount, full=None, statutory=None):
 		amount = money(amount)
 		if amount > 0:
@@ -252,7 +280,10 @@ def calculate(slip, sal=None):
 
 
 # ------------------------------------------------------------------------------------- journal entries
-def account_for(component: str, s=None) -> str:
+def account_for(component: str, s=None, company: str | None = None) -> str:
+	"""The component's account; with `company`, that company's same account (raqeem_hr/company_accounts.py)."""
+	from raqim_sales.raqeem_hr.company_accounts import for_company
+
 	s = s or settings()
 	c = frappe.get_cached_value("Raqeem Salary Component", component, ["component_type", "statutory", "account"], as_dict=True)
 	if c.statutory:
@@ -267,7 +298,7 @@ def account_for(component: str, s=None) -> str:
 		acc = None
 	if not acc:
 		frappe.throw(_("Set the account for salary component {0} (in the component, or in Payroll Settings)").format(_(component)))
-	return acc
+	return for_company(acc, company) if company else acc
 
 
 def payroll_journal_entry(run, slips) -> str:
@@ -278,26 +309,29 @@ def payroll_journal_entry(run, slips) -> str:
 	debit, credit = {}, {}
 	employer_ss = net = 0.0
 
+	from raqim_sales.raqeem_hr.company_accounts import for_company
+
 	def key(acc, employee):
+		acc = for_company(acc, run.company)
 		# receivable / payable accounts (e.g. Employee Advances) need the employee as party: one line each
 		party = employee if frappe.get_cached_value("Account", acc, "account_type") in ("Receivable", "Payable") else None
 		return (acc, party)
 
 	for slip in slips:
 		for e in slip.earnings:
-			k = key(account_for(e.component, s), slip.employee)
+			k = key(account_for(e.component, s, run.company), slip.employee)
 			debit[k] = debit.get(k, 0) + flt(e.amount)
 		for d in slip.deductions:
-			k = key(account_for(d.component, s), slip.employee)
+			k = key(account_for(d.component, s, run.company), slip.employee)
 			credit[k] = credit.get(k, 0) + flt(d.amount)
 		employer_ss += flt(slip.employer_social_security)
 		net += flt(slip.net_pay)
 	if employer_ss:
-		k = (s.employer_ss_expense_account, None)
+		k = (for_company(s.employer_ss_expense_account, run.company), None)
 		debit[k] = debit.get(k, 0) + employer_ss
-		k = (s.social_security_account, None)
+		k = (for_company(s.social_security_account, run.company), None)
 		credit[k] = credit.get(k, 0) + employer_ss
-	k = (s.payroll_payable_account, None)
+	k = (for_company(s.payroll_payable_account, run.company), None)
 	credit[k] = credit.get(k, 0) + net
 
 	cost_center = frappe.get_cached_value("Company", run.company, "cost_center")
@@ -320,13 +354,15 @@ def payroll_journal_entry(run, slips) -> str:
 
 
 def payment_journal_entry(run, account: str, posting_date=None, reference_no: str | None = None) -> str:
+	from raqim_sales.raqeem_hr.company_accounts import for_company
+
 	s = settings()
 	acc_type = frappe.get_cached_value("Account", account, "account_type")
 	je = frappe.get_doc({"doctype": "Journal Entry",
 		"voucher_type": "Bank Entry" if acc_type == "Bank" else "Cash Entry",
 		"company": run.company, "posting_date": posting_date or nowdate(),
 		"cheque_no": reference_no or run.name, "cheque_date": posting_date or nowdate(),
-		"accounts": [_je_row(s.payroll_payable_account, debit=money(run.total_net)),
+		"accounts": [_je_row(for_company(s.payroll_payable_account, run.company), debit=money(run.total_net)),
 			_je_row(account, credit=money(run.total_net))],
 		"user_remark": _("Salaries paid for {0}").format(run.name)})
 	je.flags.ignore_permissions = True

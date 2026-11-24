@@ -28,7 +28,6 @@
 		"sales-invoice": "invoice-sales",
 		"purchase-invoice": "invoice-purchase",
 		"payment-entry": "payment-entry",
-		"raqeem-cheque": "cheque",
 	};
 	function route_icon(el) {
 		const a = el.closest("a[href]");

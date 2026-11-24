@@ -314,7 +314,6 @@ class RaqeemHome {
 			["Quotation", "scroll-text", "عرض سعر"],
 			["Sales Order", "notepad-text", "أمر بيع"],
 			["Payment Entry", "payment-entry", "قيد دفع"],
-			["Raqeem Cheque", "cheque", "شيك"],
 			["Customer", "users", "عميل"],
 			["Item", "package", "صنف"],
 			["Purchase Invoice", "invoice-purchase", "فاتورة مشتريات"],

@@ -1,7 +1,7 @@
 """Analytics setup, run after every migrate (idempotent): an "Analytics" link (the /desk/analytics
 page) at the end of the main module sidebars, so it is one click away from Accounts, Selling ...
 The page's roles decide who sees the link. Human Resources (our own sidebar) has it in its JSON.
-Same approach as cheques_setup / erp_crm: an arrangement the site made itself is kept, the link
+Same approach as erp_crm: an arrangement the site made itself is kept, the link
 is only appended to it.
 ROLLBACK: remove "raqim_sales.analytics.setup.after_migrate" from after_migrate in hooks.py, then
 remove the link in each sidebar's customisation (Sidebar -> Customise)."""
@@ -12,7 +12,7 @@ SIDEBARS = ["Accounts", "Selling", "Buying", "Stock", "CRM"]
 ITEM = {"type": "Link", "label": "Analytics", "link_type": "Page", "link_to": "analytics",
 	"icon": "chart-column", "child": 0, "open_in_new_tab": 0}
 # links our app put into ERPNext sidebars: a site layer holding only these is still "ours"
-OUR_LINKS = {"analytics", "raqeem-pipeline", "Raqeem Cheque", None, ""}  # None / "": our URL links (dashboards)
+OUR_LINKS = {"analytics", "raqeem-pipeline", None, ""}  # None / "": our URL links (dashboards)
 
 
 # ready-made dashboards linked from their module's sidebar (key -> /desk/analytics/board/<key>;

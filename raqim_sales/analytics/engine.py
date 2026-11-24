@@ -44,7 +44,7 @@ STANDARD = [
 POPULAR = [
 	"Sales Invoice", "Sales Order", "Quotation", "Delivery Note", "Payment Entry", "Purchase Invoice",
 	"Purchase Order", "Purchase Receipt", "Journal Entry", "GL Entry", "Stock Ledger Entry", "Customer",
-	"Supplier", "Item", "Lead", "Opportunity", "Employee", "Raqeem Cheque", "Raqeem Salary Slip",
+	"Supplier", "Item", "Lead", "Opportunity", "Employee", "Raqeem Salary Slip",
 	"Raqeem Leave Request", "Expense Claim", "Task", "Project", "Issue",
 ]
 
