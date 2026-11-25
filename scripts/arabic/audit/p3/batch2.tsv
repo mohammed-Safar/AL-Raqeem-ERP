@@ -1,0 +1,804 @@
+2-0	Purchase Receipt.lr_no	Vehicle Number	رقم المركبة
+2-1	Purchase Receipt.lr_date	Vehicle Date	تاريخ المركبة
+2-2	doctype	Purchase Receipt Item	صنف إيصال الاستلام
+2-3	Purchase Receipt Item.received_and_accepted	Received and Accepted	المستلم والمقبول
+2-4	Purchase Receipt Item.received_qty	Received Quantity	الكمية المستلمة
+2-5	Purchase Receipt Item.qty	Accepted Quantity	الكمية المقبولة
+2-6	Purchase Receipt Item.rejected_qty	Rejected Quantity	الكمية المرفوضة
+2-7	Purchase Receipt Item.conversion_factor	Conversion Factor	معامل التحويل
+2-8	Purchase Receipt Item.sample_quantity	Sample Quantity	كمية العينة
+2-9	Purchase Receipt Item.tracking_section	Qty as Per Stock UOM	الكمية حسب وحدة قياس المخزون
+2-10	Purchase Receipt Item.received_stock_qty	Received Qty in Stock UOM	الكمية المستلمة بوحدة قياس المخزون
+2-11	Purchase Receipt Item.stock_qty	Accepted Qty in Stock UOM	الكمية المقبولة بوحدة قياس المخزون
+2-12	Purchase Receipt Item.rate_and_amount	Rate and Amount	السعر والمبلغ
+2-13	Purchase Receipt Item.landed_cost_voucher_amount	Landed Cost Voucher Amount	مبلغ سند التكلفة الواصلة
+2-14	Purchase Receipt Item.amount_difference_with_purchase_invoice	Amount Difference with Purchase Invoice	فرق المبلغ مع فاتورة المشتريات
+2-15	Purchase Receipt Item.purchase_invoice	Purchase Invoice	فاتورة مشتريات
+2-16	Purchase Receipt Item.return_qty_from_rejected_warehouse	Return Qty from Rejected Warehouse	كمية المرتجع من مستودع المرفوضات
+2-17	Purchase Receipt Item.asset_location	Asset Location	موقع الأصل
+2-18	Purchase Receipt Item.delivery_note_packed_item	Delivery Note Packed Item	صنف معبأ في إذن التسليم
+2-19	Purchase Receipt Item.putaway_rule	Putaway Rule	قاعدة التخزين
+2-20	Purchase Receipt Item.add_serial_batch_bundle	Add Serial / Batch No	إضافة الرقم التسلسلي / رقم الدفعة
+2-21	Purchase Receipt Item.add_serial_batch_for_rejected_qty	Add Serial / Batch No (Rejected Qty)	إضافة الرقم التسلسلي / رقم الدفعة (الكمية المرفوضة)
+2-22	Purchase Receipt Item.rejected_serial_and_batch_bundle	Rejected Serial and Batch Bundle	حزمة التسلسل والدفعة المرفوضة
+2-23	Purchase Receipt Item.rejected_serial_no	Rejected Serial No	الرقم التسلسلي المرفوض
+2-24	Purchase Receipt Item.subcontract_bom_section	Subcontract BOM	قائمة مواد التصنيع الخارجي
+2-25	Purchase Receipt Item.provisional_expense_account	Provisional Expense Account	حساب المصروفات المؤقتة
+2-26	Purchase Invoice.is_paid	Is Paid	مدفوعة
+2-27	Purchase Invoice.is_return	Is Return (Debit Note)	مرتجع (إشعار مدين)
+2-28	Purchase Invoice.return_against	Return Against Purchase Invoice	مرتجع مقابل فاتورة مشتريات
+2-29	Purchase Invoice.update_outstanding_for_self:desc	Debit Note will update it's own outstanding amount, even if 'Return Against' is specified.	يحدّث الإشعار المدين مبلغه المستحق الخاص به، حتى عند تحديد «مرتجع مقابل».
+2-30	Purchase Invoice.update_billed_amount_in_purchase_order	Update Billed Amount in Purchase Order	تحديث المبلغ المُفوتر في أمر الشراء
+2-31	Purchase Invoice.update_billed_amount_in_purchase_receipt	Update Billed Amount in Purchase Receipt	تحديث المبلغ المُفوتر في إيصال الاستلام
+2-32	Purchase Invoice.supplier_invoice_details	Supplier Invoice	فاتورة المورد
+2-33	Purchase Invoice.bill_no	Supplier Invoice No	رقم فاتورة المورد
+2-34	Purchase Invoice.bill_date	Supplier Invoice Date	تاريخ فاتورة المورد
+2-35	Purchase Invoice.update_stock:desc	If checked, updates inventory; stock and accounting entries are created together. Leave unchecked if a Purchase Receipt is created separately.	عند تحديده يُحدَّث المخزون، وتُنشأ قيود المخزون والقيود المحاسبية معاً. اتركه بلا تحديد إذا كان إيصال الاستلام يُنشأ منفصلاً.
+2-36	Purchase Invoice.set_warehouse	Set Accepted Warehouse	تعيين مستودع المقبول
+2-37	Purchase Invoice.claimed_landed_cost_amount	Claimed Landed Cost Amount (Company Currency)	مبلغ التكلفة الواصلة المطالَب به (عملة الشركة)
+2-38	Purchase Invoice.use_company_roundoff_cost_center	Use Company Default Round Off Cost Center	استخدم مركز تكلفة التقريب الافتراضي للشركة
+2-39	Purchase Invoice.clearance_date	Clearance Date	تاريخ التسوية
+2-40	Purchase Invoice.cash_bank_account	Cash/Bank Account	حساب النقدية / البنك
+2-41	Purchase Invoice.allocate_advances_automatically	Set Advances and Allocate (FIFO)	تعيين الدفعات المقدمة وتخصيصها (FIFO)
+2-42	Purchase Invoice.get_advances	Get Advances Paid	جلب الدفعات المقدمة المدفوعة
+2-43	Purchase Invoice.supplier_address	Select Supplier Address	اختر عنوان المورد
+2-44	Purchase Invoice.dispatch_address	Select Dispatch Address 	حدد عنوان الإرسال 
+2-45	Purchase Invoice.shipping_address	Select Shipping Address	اختر عنوان الشحن
+2-46	Purchase Invoice.billing_address	Select Billing Address	اختر عنوان الفوترة
+2-47	Purchase Invoice.status:opt	Debit Note Issued	صدر إشعار مدين
+2-48	Purchase Invoice.credit_to	Credit To	دائن إلى
+2-49	Purchase Invoice.is_opening	Is Opening Entry	قيد افتتاحي
+2-50	Purchase Invoice.is_opening:opt	No	لا
+2-51	Purchase Invoice.is_opening:opt	Yes	نعم
+2-52	Purchase Invoice.unrealized_profit_loss_account:desc	Unrealized Profit/Loss account for intra-company transfers	حساب الأرباح/الخسائر غير المحققة للتحويلات داخل الشركة
+2-53	Purchase Invoice.from_date:desc	Start date of current invoice's period	تاريخ بدء فترة الفاتورة الحالية
+2-54	Purchase Invoice.to_date:desc	End date of current invoice's period	تاريخ نهاية فترة الفاتورة الحالية
+2-55	Purchase Invoice.sb_14	Hold Invoice	تعليق الفاتورة
+2-56	Purchase Invoice.release_date:desc	Once set, this invoice will be on hold till the set date	بعد تحديده، تبقى هذه الفاتورة معلَّقة حتى التاريخ المحدد
+2-57	Purchase Invoice.hold_comment	Reason For Putting On Hold	سبب التعليق
+2-58	Purchase Invoice.represents_company:desc	Company which internal supplier represents	الشركة التي يمثلها المورد الداخلي
+2-59	Purchase Invoice.sender	Sender	المرسل
+2-60	doctype	Purchase Invoice Item	صنف فاتورة المشتريات
+2-61	Purchase Invoice Item.qty	Accepted Qty	الكمية المقبولة
+2-62	Purchase Invoice Item.rejected_qty	Rejected Qty	الكمية المرفوضة
+2-63	Purchase Invoice Item.expense_account	Expense Head	رأس المصروفات
+2-64	Purchase Invoice Item.deferred_expense_section	Deferred Expense	المصروفات المؤجلة
+2-65	Purchase Invoice Item.deferred_expense_account	Deferred Expense Account	حساب المصروفات المؤجلة
+2-66	doctype	Payment Entry	سند دفع
+2-67	Payment Entry.type_of_payment	Type of Payment	نوع الدفع
+2-68	Payment Entry.payment_type	Payment Type	نوع الدفع
+2-69	Payment Entry.payment_type:opt	Receive	قبض
+2-70	Payment Entry.payment_type:opt	Pay	دفع
+2-71	Payment Entry.party_section	Payment From / To	الدفع من / إلى
+2-72	Payment Entry.party_type	Party Type	نوع الطرف
+2-73	Payment Entry.party_name	Party Name	اسم الطرف
+2-74	Payment Entry.book_advance_payments_in_separate_party_account	Book Advance Payments in Separate Party Account	ترحيل الدفعات المقدمة في حساب طرف منفصل
+2-75	Payment Entry.party_bank_account	Party Bank Account	الحساب البنكي للطرف
+2-76	Payment Entry.contact_email	Email	البريد الإلكتروني
+2-77	Payment Entry.payment_accounts_section	Accounts	الحسابات
+2-78	Payment Entry.paid_from	Account Paid From	الحساب المدفوع منه
+2-79	Payment Entry.paid_from_account_currency	Account Currency (From)	عملة الحساب (من)
+2-80	Payment Entry.paid_to	Account Paid To	الحساب المدفوع إليه
+2-81	Payment Entry.paid_to_account_currency	Account Currency (To)	عملة الحساب (إلى)
+2-82	Payment Entry.source_exchange_rate	Source Exchange Rate	سعر صرف المصدر
+2-83	Payment Entry.received_amount	Received Amount	المبلغ المستلم
+2-84	Payment Entry.target_exchange_rate	Target Exchange Rate	سعر الصرف المستهدف
+2-85	Payment Entry.base_received_amount	Received Amount (Company Currency)	المبلغ المستلم (عملة الشركة)
+2-86	Payment Entry.get_outstanding_invoices	Get Outstanding Invoices	جلب الفواتير المستحقة
+2-87	Payment Entry.get_outstanding_orders	Get Outstanding Orders	جلب الأوامر المستحقة
+2-88	Payment Entry.references	Payment References	مراجع الدفع
+2-89	Payment Entry.section_break_34	Writeoff	شطب
+2-90	Payment Entry.total_allocated_amount	Total Allocated Amount	إجمالي المبلغ المخصص
+2-91	Payment Entry.base_total_allocated_amount	Total Allocated Amount (Company Currency)	إجمالي المبلغ المخصص (عملة الشركة)
+2-92	Payment Entry.unallocated_amount	Unallocated Amount	المبلغ غير المخصص
+2-93	Payment Entry.difference_amount	Difference Amount (Company Currency)	مبلغ الفرق (عملة الشركة)
+2-94	Payment Entry.write_off_difference_amount	Write Off Difference Amount	شطب مبلغ الفرق
+2-95	Payment Entry.taxes	Advance Taxes and Charges	الضرائب والرسوم للدفعة المقدمة
+2-96	Payment Entry.deductions_or_loss_section	Deductions or Loss	الاستقطاعات أو الخسارة
+2-97	Payment Entry.deductions	Payment Deductions or Loss	استقطاعات الدفع أو الخسارة
+2-98	Payment Entry.transaction_references	Transaction ID	معرّف المعاملة
+2-99	Payment Entry.reference_no	Cheque/Reference No	رقم الشيك / المرجع
+2-100	Payment Entry.reference_date	Cheque/Reference Date	تاريخ الشيك / المرجع
+2-101	Payment Entry.custom_remarks	Custom Remarks	ملاحظات مخصصة
+2-102	Payment Entry.is_opening	Is Opening	قيد افتتاحي
+2-103	Payment Entry.bank	Bank	البنك
+2-104	Payment Entry.bank_account_no	Bank Account No	رقم الحساب البنكي
+2-105	Payment Entry.payment_order	Payment Order	أمر دفع
+2-106	doctype	Payment Entry Reference	مرجع سند الدفع
+2-107	Payment Entry Reference.reference_name	Name	الاسم
+2-108	Payment Entry Reference.payment_term_outstanding	Payment Term Outstanding	المستحق حسب شروط الدفع
+2-109	Payment Entry Reference.account_type	Account Type	نوع الحساب
+2-110	Payment Entry Reference.reconcile_effect_on	Reconcile Effect On	أثر المطابقة على
+2-111	Payment Entry Reference.allocated_amount	Allocated	مخصص
+2-112	Payment Entry Reference.exchange_gain_loss	Exchange Gain/Loss	أرباح/خسائر فروق العملة
+2-113	Payment Entry Reference.account	Account	الحساب
+2-114	Payment Entry Reference.payment_request	Payment Request	طلب دفع
+2-115	Payment Entry Reference.payment_request_outstanding	Payment Request Outstanding	المستحق من طلب الدفع
+2-116	Payment Entry Reference.advance_voucher_type	Advance Voucher Type	نوع سند الدفعة المقدمة
+2-117	Payment Entry Reference.advance_voucher_no	Advance Voucher No	رقم سند الدفعة المقدمة
+2-118	doctype	Journal Entry	قيد يومية
+2-119	Journal Entry.voucher_type	Entry Type	نوع القيد
+2-120	Journal Entry.voucher_type:opt	Inter Company Journal Entry	قيد يومية بين الشركات
+2-121	Journal Entry.voucher_type:opt	Bank Entry	قيد بنكي
+2-122	Journal Entry.voucher_type:opt	Cash Entry	قيد نقدي
+2-123	Journal Entry.voucher_type:opt	Credit Card Entry	قيد بطاقة ائتمان
+2-124	Journal Entry.voucher_type:opt	Debit Note	إشعار مدين
+2-125	Journal Entry.voucher_type:opt	Credit Note	إشعار دائن
+2-126	Journal Entry.voucher_type:opt	Contra Entry	قيد عكسي
+2-127	Journal Entry.voucher_type:opt	Excise Entry	قيد ضريبة إنتاج
+2-128	Journal Entry.voucher_type:opt	Write Off Entry	قيد شطب
+2-129	Journal Entry.voucher_type:opt	Opening Entry	قيد افتتاحي
+2-130	Journal Entry.voucher_type:opt	Depreciation Entry	قيد إهلاك
+2-131	Journal Entry.voucher_type:opt	Asset Disposal	التخلص من الأصول
+2-132	Journal Entry.voucher_type:opt	Periodic Accounting Entry	قيد محاسبي دوري
+2-133	Journal Entry.voucher_type:opt	Exchange Rate Revaluation	إعادة تقييم سعر الصرف
+2-134	Journal Entry.voucher_type:opt	Exchange Gain Or Loss	أرباح أو خسائر فروق العملة
+2-135	Journal Entry.multi_currency	Multi Currency	متعدد العملات
+2-136	Journal Entry.apply_tds	Consider for Tax Withholding 	مراعاته في الاستقطاع الضريبي
+2-137	Journal Entry.is_system_generated	Is System Generated	مُنشأ من النظام
+2-138	Journal Entry.section_break_tcvw	Periodic Accounting	المحاسبة الدورية
+2-139	Journal Entry.for_all_stock_asset_accounts	For All Stock Asset Accounts	لجميع حسابات أصول المخزون
+2-140	Journal Entry.stock_asset_account	Stock Asset Account	حساب أصول المخزون
+2-141	Journal Entry.periodic_entry_difference_account	Periodic Entry Difference Account	حساب الفروقات في القيد الدوري
+2-142	Journal Entry.get_balance_for_periodic_accounting	Get Balance	جلب الرصيد
+2-143	Journal Entry.accounts	Accounting Entries	القيود المحاسبية
+2-144	Journal Entry.total_debit	Total Debit	إجمالي المدين
+2-145	Journal Entry.total_credit	Total Credit	إجمالي الدائن
+2-146	Journal Entry.difference	Difference (Dr - Cr)	الفرق (مدين - دائن)
+2-147	Journal Entry.get_balance	Make Difference Entry	إنشاء قيد الفرق
+2-148	Journal Entry.cheque_no	Reference Number	الرقم المرجعي
+2-149	Journal Entry.cheque_date	Reference Date	التاريخ المرجعي
+2-150	Journal Entry.tax_withholding_tab	Tax Withholding	الاستقطاع الضريبي
+2-151	Journal Entry.bill_no	Bill No	رقم الفاتورة
+2-152	Journal Entry.bill_date	Bill Date	تاريخ الفاتورة
+2-153	Journal Entry.inter_company_journal_entry_reference	Inter Company Journal Entry Reference	مرجع قيد اليومية بين الشركات
+2-154	Journal Entry.process_deferred_accounting	Process Deferred Accounting	معالجة المحاسبة المؤجلة
+2-155	Journal Entry.reversal_of	Reversal Of	عكس لـ
+2-156	Journal Entry.stock_entry	Stock Entry	حركة مخزون
+2-157	Journal Entry.pay_to_recd_from	Pay To / Recd From	الدفع إلى / الاستلام من
+2-158	Journal Entry.write_off_based_on	Write Off Based On	الشطب بناءً على
+2-159	Journal Entry.write_off_based_on:opt	Accounts Receivable	الذمم المدينة
+2-160	Journal Entry.write_off_based_on:opt	Accounts Payable	الذمم الدائنة
+2-161	Journal Entry.from_template	From Template	من القالب
+2-162	Journal Entry.custom_remark	Custom Remark	ملاحظة مخصصة
+2-163	Journal Entry.remark	Remark	ملاحظة
+2-164	doctype	Journal Entry Account	حساب قيد اليومية
+2-165	Journal Entry Account.bank_account	Bank Account	الحساب البنكي
+2-166	Journal Entry Account.cost_center:desc	If Income or Expense	إيراد أم مصروف
+2-167	Journal Entry Account.debit_in_account_currency	Debit	مدين
+2-168	Journal Entry Account.debit	Debit in Company Currency	المدين بعملة الشركة
+2-169	Journal Entry Account.credit_in_account_currency	Credit	دائن
+2-170	Journal Entry Account.credit	Credit in Company Currency	الدائن بعملة الشركة
+2-171	Journal Entry Account.reference_type	Reference Type	نوع المرجع
+2-172	Journal Entry Account.reference_type:opt	Expense Claim	مطالبة مصروفات
+2-173	Journal Entry Account.reference_type:opt	Loan	قرض
+2-174	Journal Entry Account.reference_type:opt	Payroll Entry	مسير الرواتب
+2-175	Journal Entry Account.reference_type:opt	Employee Advance	سلفة الموظف
+2-176	Journal Entry Account.reference_type:opt	Invoice Discounting	خصم الفواتير
+2-177	Journal Entry Account.reference_type:opt	Fees	رسوم
+2-178	Journal Entry Account.reference_type:opt	Full and Final Statement	التسوية النهائية
+2-179	Journal Entry Account.reference_type:opt	Bank Transaction	معاملة بنكية
+2-180	Journal Entry Account.reference_name	Reference Name	الاسم المرجعي
+2-181	Journal Entry Account.reference_due_date	Reference Due Date	تاريخ الاستحقاق المرجعي
+2-182	Journal Entry Account.is_advance	Is Advance	دفعة مقدمة
+2-183	Journal Entry Account.user_remark	User Remark	ملاحظة المستخدم
+2-184	Stock Entry.stock_entry_type	Stock Entry Type	نوع حركة المخزون
+2-185	Stock Entry.add_to_transit	Add to Transit	إضافة إلى العبور
+2-186	Stock Entry.inspection_required	Inspection Required	الفحص مطلوب
+2-187	Stock Entry.work_order	Work Order	أمر عمل
+2-188	Stock Entry.subcontracting_order	Subcontracting Order	أمر تصنيع خارجي
+2-189	Stock Entry.outgoing_stock_entry	Stock Entry (Outward GIT)	حركة مخزون (بضاعة بالطريق - صادر)
+2-190	Stock Entry.source_stock_entry	Source Stock Entry (Manufacture)	حركة المخزون المصدر (التصنيع)
+2-191	Stock Entry.bom_info_section	BOM Info	معلومات قائمة المواد
+2-192	Stock Entry.from_bom	From BOM	من قائمة المواد
+2-193	Stock Entry.use_multi_level_bom	Use Multi-Level BOM	استخدام قائمة مواد متعددة المستويات
+2-194	Stock Entry.use_multi_level_bom:desc	Including items for sub assemblies	شاملاً أصناف التجميعات الفرعية
+2-195	Stock Entry.fg_completed_qty	Finished Good Quantity 	كمية المنتج النهائي
+2-196	Stock Entry.fg_completed_qty:desc	As per Stock UOM	حسب وحدة قياس المخزون
+2-197	Stock Entry.get_items	Get Items	جلب الأصناف
+2-198	Stock Entry.section_break_7qsm	Process Loss	فاقد العملية
+2-199	Stock Entry.process_loss_percentage	% Process Loss	% فاقد العملية
+2-200	Stock Entry.process_loss_qty	Process Loss Qty	كمية فاقد العملية
+2-201	Stock Entry.section_break_jwgn	Default Warehouse	المستودع الافتراضي
+2-202	Stock Entry.from_warehouse	Default Source Warehouse	المستودع المصدر الافتراضي
+2-203	Stock Entry.from_warehouse:desc	Sets 'Source Warehouse' in each row of the items table.	يعيّن «المستودع المصدر» في كل صف من جدول الأصناف.
+2-204	Stock Entry.source_warehouse_address	Source Warehouse Address Link	رابط عنوان المستودع المصدر
+2-205	Stock Entry.source_address_display	Source Warehouse Address	عنوان المستودع المصدر
+2-206	Stock Entry.to_warehouse	Default Target Warehouse	المستودع الهدف الافتراضي
+2-207	Stock Entry.to_warehouse:desc	Sets 'Target Warehouse' in each row of the items table.	يعيّن «المستودع الهدف» في كل صف من جدول الأصناف.
+2-208	Stock Entry.target_warehouse_address	Target Warehouse Address Link	رابط عنوان المستودع الهدف
+2-209	Stock Entry.target_address_display	Target Warehouse Address	عنوان المستودع الهدف
+2-210	Stock Entry.get_stock_and_rate	Update Rate and Availability	تحديث السعر والتوفر
+2-211	Stock Entry.total_outgoing_value	Total Outgoing Value (Consumption)	إجمالي القيمة الصادرة (الاستهلاك)
+2-212	Stock Entry.total_incoming_value	Total Incoming Value (Receipt)	إجمالي القيمة الواردة (الإيصال)
+2-213	Stock Entry.value_difference	Total Value Difference (Incoming - Outgoing)	فرق القيمة الإجمالية (الوارد - الصادر)
+2-214	Stock Entry.additional_costs_section	Additional Costs	تكاليف إضافية
+2-215	Stock Entry.total_additional_costs	Total Additional Costs	إجمالي التكاليف الإضافية
+2-216	Stock Entry.supplier_info_tab	Supplier Info	معلومات المورد
+2-217	Stock Entry.other_info_tab	Other Info	معلومات أخرى
+2-218	Stock Entry.delivery_note_no	Delivery Note No	رقم إذن التسليم
+2-219	Stock Entry.sales_invoice_no	Sales Invoice No	رقم فاتورة المبيعات
+2-220	Stock Entry.pick_list	Pick List	قائمة الالتقاط
+2-221	Stock Entry.asset_repair	Asset Repair	إصلاح الأصل
+2-222	Stock Entry.purchase_receipt_no	Purchase Receipt No	رقم إيصال الاستلام
+2-223	Stock Entry.subcontracting_inward_order	Subcontracting Inward Order	أمر تصنيع وارد
+2-224	Stock Entry.per_transferred	Per Transferred	نسبة المنقول
+2-225	Stock Entry.total_amount	Total Amount	المبلغ الإجمالي
+2-226	doctype	Stock Entry Detail	تفاصيل حركة المخزون
+2-227	Stock Entry Detail.is_finished_item	Is Finished Item	صنف نهائي
+2-228	Stock Entry Detail.valuation_type	Valuation Type	نوع التقييم
+2-229	Stock Entry Detail.valuation_type:opt	% of Component Cost	% من تكلفة المكون
+2-230	Stock Entry Detail.valuation_type:opt	Manual	يدوي
+2-231	Stock Entry Detail.secondary_item_type:opt	Co-Product	منتج مشترك
+2-232	Stock Entry Detail.secondary_item_type:opt	By-Product	منتج ثانوي
+2-233	Stock Entry Detail.secondary_item_type:opt	Scrap	خردة
+2-234	Stock Entry Detail.secondary_item_type:opt	Additional Finished Good	منتج نهائي إضافي
+2-235	Stock Entry Detail.subcontracted_item	Subcontracted Item	الصنف المصنّع خارجياً
+2-236	Stock Entry Detail.against_fg	Against Finished Good	مقابل المنتج النهائي
+2-237	Stock Entry Detail.rates_section	Rates	النسب
+2-238	Stock Entry Detail.basic_rate	Basic Rate (as per Stock UOM)	السعر الأساسي (حسب وحدة قياس المخزون)
+2-239	Stock Entry Detail.customer_provided_item_cost	Customer Provided Item Cost	تكلفة الصنف المقدَّم من العميل
+2-240	Stock Entry Detail.additional_cost	Additional Cost	تكلفة إضافية
+2-241	Stock Entry Detail.set_basic_rate_manually	Set Basic Rate Manually	تعيين السعر الأساسي يدوياً
+2-242	Stock Entry Detail.basic_amount	Basic Amount	المبلغ الأساسي
+2-243	Stock Entry Detail.serial_no_batch	Serial No / Batch	الرقم التسلسلي / الدفعة
+2-244	Stock Entry Detail.expense_account	Difference Account	حساب الفرق
+2-245	Stock Entry Detail.actual_qty	Actual Qty (at source/target)	الكمية الفعلية (في المصدر / الهدف)
+2-246	Stock Entry Detail.transferred_qty	Transferred Qty	الكمية المنقولة
+2-247	Stock Entry Detail.against_stock_entry	Against Stock Entry	مقابل حركة المخزون
+2-248	Stock Entry Detail.ste_detail	Stock Entry Child	فرع حركة المخزون
+2-249	Stock Entry Detail.reference_purchase_receipt	Reference Purchase Receipt	إيصال الاستلام المرجعي
+2-250	Material Request.material_request_type	Purpose	الغرض
+2-251	Material Request.material_request_type:opt	Subcontracting	التصنيع الخارجي
+2-252	Material Request.auto_created_via_reorder	Auto Created (Reorder)	أُنشئ تلقائياً (إعادة طلب)
+2-253	Material Request.transaction_date	Transaction Date	تاريخ المعاملة
+2-254	Material Request.terms	Terms and Conditions Content	محتويات الشروط والأحكام
+2-255	Material Request.status:opt	Stopped	متوقف
+2-256	Material Request.status:opt	Pending	معلق
+2-257	Material Request.status:opt	Partially Received	مستلم جزئياً
+2-258	Material Request.status:opt	Issued	مُصدَر
+2-259	Material Request.status:opt	Transferred	منقول
+2-260	Material Request.status:opt	Received	مُستلَم
+2-261	Material Request.per_ordered	% Ordered	% المطلوب
+2-262	Material Request.transfer_status	Transfer Status	حالة النقل
+2-263	Material Request.transfer_status:opt	Not Started	لم يبدأ
+2-264	Material Request.transfer_status:opt	In Transit	في الطريق
+2-265	Material Request.printing_details	Printing Details	تفاصيل الطباعة
+2-266	Material Request Item.quantity_and_warehouse	Quantity and Warehouse	الكمية والمستودع
+2-267	Material Request Item.stock_qty	Stock Qty	كمية المخزون
+2-268	Material Request Item.min_order_qty	Min Order Qty	أقل كمية للطلب
+2-269	Material Request Item.actual_qty	Actual Qty	الكمية الفعلية
+2-270	Material Request Item.ordered_qty	Completed Qty	الكمية المكتملة
+2-271	Material Request Item.lead_time_date	Lead Time Date	تاريخ مدة التوريد
+2-272	Material Request Item.material_request_plan_item	Material Request Plan Item	صنف في خطة طلب المواد
+2-273	Material Request Item.item_reorder_section	Item Reorder	إعادة طلب الصنف
+2-274	Material Request Item.projected_on_hand	Projected On Hand	المتوقع في المخزون
+2-275	Material Request Item.projected_on_hand:desc	If the reorder check is set at the Group warehouse level, the available quantity becomes the sum of the projected quantities of all its child warehouses.	إذا تم تعيين فحص إعادة الطلب على مستوى مستودع المجموعة، فإن الكمية المتاحة تصبح مجموع الكميات المتوقعة لجميع المستودعات الفرعية التابعة لها.
+2-276	Material Request Item.reorder_level	Reorder Level	حد إعادة الطلب
+2-277	Material Request Item.reorder_qty	Reorder Qty	كمية إعادة الطلب
+2-278	Warehouse.warehouse_detail	Warehouse Detail	تفاصيل المستودع
+2-279	Warehouse.warehouse_name	Warehouse Name	اسم المستودع
+2-280	Warehouse.is_rejected_warehouse	Is Rejected Warehouse	مستودع مرفوضات
+2-281	Warehouse.is_rejected_warehouse:desc	If yes, then this warehouse will be used to store rejected materials	إذا كانت الإجابة بنعم، فسيتم استخدام هذا المستودع لتخزين المواد المرفوضة
+2-282	Warehouse.account:desc	If blank, parent Warehouse Account or company default will be considered in transactions	إذا كان فارغًا، فسيتم اعتبار حساب المستودع الأصلي أو حساب الشركة الافتراضي في المعاملات
+2-283	Warehouse.parent_warehouse	Parent Warehouse	المستودع الأصل
+2-284	Warehouse.is_group	Is Group Warehouse	مستودع تجميعي
+2-285	Warehouse.customer:desc	Only to be used for Subcontracting Inward.	يُستخدم للتصنيع الوارد فقط.
+2-286	Warehouse.address_and_contact	Address and Contact	العنوان وجهة الاتصال
+2-287	Warehouse.warehouse_contact_info	Warehouse Contact Info	معلومات الاتصال بالمستودع
+2-288	Warehouse.phone_no	Phone No	رقم الهاتف
+2-289	Warehouse.address_line_1	Address Line 1	سطر العنوان 1
+2-290	Warehouse.address_line_2	Address Line 2	سطر العنوان 2
+2-291	Warehouse.city	City	المدينة
+2-292	Warehouse.state	State/Province	الولاية / المقاطعة
+2-293	Warehouse.transit_section	Transit	بالطريق
+2-294	Warehouse.warehouse_type	Warehouse Type	نوع المستودع
+2-295	Warehouse.default_in_transit_warehouse	Default In-Transit Warehouse	مستودع العبور الافتراضي
+2-296	Warehouse.tree_details	Tree Details	تفاصيل الشجرة
+2-297	Account.account_name	Account Name	اسم الحساب
+2-298	Account.account_number	Account Number	رقم الحساب
+2-299	Account.is_group	Is Group	مجموعة
+2-300	Account.root_type	Root Type	الالنوع الجذريي
+2-301	Account.root_type:opt	Liability	الخصوم
+2-302	Account.root_type:opt	Income	الإيرادات
+2-303	Account.root_type:opt	Expense	المصروفات
+2-304	Account.root_type:opt	Equity	حقوق الملكية
+2-305	Account.report_type	Report Type	نوع التقرير
+2-306	Account.report_type:opt	Balance Sheet	الميزانية العمومية
+2-307	Account.report_type:opt	Profit and Loss	الربح والخسارة
+2-308	Account.parent_account	Parent Account	الحساب الأصل
+2-309	Account.account_category	Account Category	تصنيف الحساب
+2-310	Account.account_category:desc	Used with Financial Report Template	يُستخدم مع قالب التقرير المالي
+2-311	Account.account_type:opt	Accumulated Depreciation	مجمع الإهلاك
+2-312	Account.account_type:opt	Asset Received But Not Billed	أصل مستلم غير مفوتر
+2-313	Account.account_type:opt	Cash	النقدية
+2-314	Account.account_type:opt	Chargeable	خاضع للرسوم
+2-315	Account.account_type:opt	Capital Work in Progress	أعمال رأسمالية قيد التنفيذ
+2-316	Account.account_type:opt	Cost of Goods Sold	تكلفة البضاعة المباعة
+2-317	Account.account_type:opt	Current Asset	الأصول المتداولة
+2-318	Account.account_type:opt	Current Liability	الخصوم المتداولة
+2-319	Account.account_type:opt	Depreciation	الإهلاك
+2-320	Account.account_type:opt	Direct Expense	مصروف مباشر
+2-321	Account.account_type:opt	Direct Income	إيراد مباشر
+2-322	Account.account_type:opt	Expenses Included In Asset Valuation	المصروفات المشمولة في تقييم الأصل
+2-323	Account.account_type:opt	Expenses Included In Valuation	مصروفات مدرجة في التقييم
+2-324	Account.account_type:opt	Fixed Asset	أصل ثابت
+2-325	Account.account_type:opt	Indirect Expense	مصروف غير مباشر
+2-326	Account.account_type:opt	Indirect Income	إيراد غير مباشر
+2-327	Account.account_type:opt	Payable	ذمم دائنة
+2-328	Account.account_type:opt	Receivable	ذمم مدينة
+2-329	Account.account_type:opt	Round Off	تقريب
+2-330	Account.account_type:opt	Round Off for Opening	تقريب الأرصدة الافتتاحية
+2-331	Account.account_type:opt	Stock	المخزون
+2-332	Account.account_type:opt	Stock Adjustment	تعديل المخزون
+2-333	Account.account_type:opt	Stock Received But Not Billed	مخزون مستلم غير مفوتر
+2-334	Account.account_type:opt	Service Received But Not Billed	خدمة مستلمة غير مفوترة
+2-335	Account.account_type:opt	Temporary	مؤقت
+2-336	Account.account_type:desc	Setting Account Type helps in selecting this Account in transactions.	تحديد نوع الحساب يساعد في اختيار هذا الحساب في المعاملات.
+2-337	Account.tax_rate:desc	Rate at which this tax is applied	النسبة التي تُطبَّق بها هذه الضريبة
+2-338	Account.freeze_account	Frozen	مجمّد
+2-339	Account.freeze_account:desc	If the account is frozen, entries are allowed to restricted users.	إذا كان الحساب مجمّداً، يُسمح بالقيود للمستخدمين المخوَّلين فقط.
+2-340	Account.balance_must_be	Balance must be	يجب أن يكون الرصيد
+2-341	Account.include_in_gross	Include in gross	تضمين في الإجمالي
+2-342	Cost Center.cost_center_name	Cost Center Name	اسم مركز التكلفة
+2-343	Cost Center.cost_center_number	Cost Center Number	رقم مركز التكلفة
+2-344	Cost Center.parent_cost_center	Parent Cost Center	مركز التكلفة الأصل
+2-345	Company.abbr	Abbr	الاختصار
+2-346	Company.default_currency	Default Currency	العملة الافتراضية
+2-347	Company.default_holiday_list	Default Holiday List	قائمة العطلات الافتراضية
+2-348	Company.default_letter_head	Default Letter Head	ترويسة الخطاب الافتراضية
+2-349	Company.domain	Domain	النطاق
+2-350	Company.date_of_establishment	Date of Establishment	تاريخ التأسيس
+2-351	Company.parent_company	Parent Company	الشركة الأم
+2-352	Company.reporting_currency	Reporting Currency	عملة التقارير
+2-353	Company.date_of_incorporation	Date of Incorporation	تاريخ التأسيس
+2-354	Company.company_description	Company Description	وصف الشركة
+2-355	Company.date_of_commencement	Date of Commencement	تاريخ البدء
+2-356	Company.fax	Fax	فاكس
+2-357	Company.registration_details	Registration Details	تفاصيل التسجيل
+2-358	Company.registration_details:desc	Company registration numbers for your reference. Tax numbers etc.	أرقام تسجيل الشركة للرجوع إليها، مثل الأرقام الضريبية وغيرها.
+2-359	Company.section_break_28	Chart of Accounts	دليل الحسابات
+2-360	Company.create_chart_of_accounts_based_on	Create Chart Of Accounts Based On	إنشاء دليل الحسابات بناءً على
+2-361	Company.create_chart_of_accounts_based_on:opt	Standard Template	قالب قياسي
+2-362	Company.create_chart_of_accounts_based_on:opt	Existing Company	شركة قائمة
+2-363	Company.existing_company	Existing Company 	الشركة الحالية
+2-364	Company.chart_of_accounts	Chart Of Accounts Template	قالب دليل الحسابات
+2-365	Company.default_bank_account	Default Bank Account	الحساب البنكي الافتراضي
+2-366	Company.default_cash_account	Default Cash Account	حساب النقدية الافتراضي
+2-367	Company.default_receivable_account	Default Receivable Account	حساب الذمم المدينة الافتراضي
+2-368	Company.default_payable_account	Default Payable Account	حساب الذمم الدائنة الافتراضي
+2-369	Company.allow_account_creation_against_child_company	Allow Account Creation Against Child Company	السماح بإنشاء حساب في شركة تابعة
+2-370	Company.default_expense_account	Default Cost of Goods Sold Account	الحساب الافتراضي لتكلفة البضائع المباعة
+2-371	Company.default_income_account	Default Income Account	حساب الإيرادات الافتراضي
+2-372	Company.default_discount_account	Default Payment Discount Account	حساب خصم الدفع الافتراضي
+2-373	Company.payment_terms	Default Payment Terms Template	قالب شروط الدفع الافتراضي
+2-374	Company.cost_center	Default Cost Center	مركز التكلفة الافتراضي
+2-375	Company.default_finance_book	Default Finance Book	الدفتر المالي الافتراضي
+2-376	Company.exchange_gain__loss_section	Exchange Gain / Loss	أرباح / خسائر فروق العملة
+2-377	Company.exchange_gain_loss_account	Exchange Gain / Loss Account	حساب أرباح / خسائر فروق العملة
+2-378	Company.unrealized_exchange_gain_loss_account	Unrealized Exchange Gain/Loss Account	حساب أرباح / خسائر فروق العملة غير المحققة
+2-379	Company.round_off_account	Round Off Account	حساب التقريب
+2-380	Company.round_off_cost_center	Round Off Cost Center	مركز تكلفة التقريب
+2-381	Company.default_deferred_revenue_account	Default Deferred Revenue Account	حساب الإيرادات المؤجلة الافتراضي
+2-382	Company.default_deferred_expense_account	Default Deferred Expense Account	حساب المصروفات المؤجلة الافتراضي
+2-383	Company.reconciliation_takes_effect_on	Reconciliation Takes Effect On	تسري المطابقة في
+2-384	Company.reconciliation_takes_effect_on:opt	Advance Payment Date	تاريخ الدفعة المقدمة
+2-385	Company.reconciliation_takes_effect_on:opt	Oldest Of Invoice Or Advance	أقدم فاتورة أو دفعة مقدمة
+2-386	Company.reconciliation_takes_effect_on:opt	Reconciliation Date	تاريخ المطابقة
+2-387	Company.default_advance_received_account	Default Advance Received Account	حساب الدفعات المقدمة المستلمة الافتراضي
+2-388	Company.default_advance_received_account:desc	Only 'Payment Entries' made against this advance account are supported.	المدعوم فقط «سندات الدفع» المنشأة مقابل حساب الدفعات المقدمة هذا.
+2-389	Company.default_advance_paid_account	Default Advance Paid Account	حساب الدفعات المقدمة المدفوعة الافتراضي
+2-390	Company.exchange_rate_revaluation_settings_section	Exchange Rate Revaluation Settings	إعدادات إعادة تقييم سعر الصرف
+2-391	Company.auto_exchange_rate_revaluation	Auto Create Exchange Rate Revaluation	إنشاء إعادة تقييم سعر الصرف تلقائياً
+2-392	Company.auto_err_frequency	Frequency	التكرار
+2-393	Company.auto_err_frequency:opt	Daily	يومي
+2-394	Company.auto_err_frequency:opt	Weekly	أسبوعي
+2-395	Company.auto_err_frequency:opt	Monthly	شهري
+2-396	Company.submit_err_jv	Submit ERR Journals?	اعتماد قيود إعادة تقييم العملات؟
+2-397	Company.submit_err_jv:desc	Upon enabling this, the JV will be submitted for a different exchange rate.	عند التفعيل، يُعتمد قيد اليومية بسعر صرف مختلف.
+2-398	Company.budget_detail	Budget Detail	تفاصيل الميزانية
+2-399	Company.exception_budget_approver_role	Exception Budget Approver Role	دور الموافقة على الميزانية الاستثنائية
+2-400	Company.fixed_asset_defaults	Fixed Asset Defaults	القيم الافتراضية للأصول الثابتة
+2-401	Company.accumulated_depreciation_account	Accumulated Depreciation Account	حساب مجمع الإهلاك
+2-402	Company.depreciation_expense_account	Depreciation Expense Account	حساب مصروف الإهلاك
+2-403	Company.series_for_depreciation_entry	Series for Asset Depreciation Entry (Journal Entry)	سلسلة قيد إهلاك الأصول (قيد يومية)
+2-404	Company.disposal_account	Gain/Loss Account on Asset Disposal	حساب أرباح / خسائر استبعاد الأصول
+2-405	Company.depreciation_cost_center	Asset Depreciation Cost Center	مركز تكلفة إهلاك الأصول
+2-406	Company.capital_work_in_progress_account	Capital Work In Progress Account	حساب الأعمال الرأسمالية تحت التنفيذ
+2-407	Company.accounts_closing_tab	Accounts Closing	إقفال الحسابات
+2-408	Company.accounts_frozen_till_date	Accounts Frozen Till Date	الحسابات مجمّدة حتى تاريخ
+2-409	Company.accounts_frozen_till_date:desc	Accounting entries are frozen up to this date. Only users with the specified role can create or modify entries before this date.	تم تجميد القيود المحاسبية حتى هذا التاريخ. ولا يمكن إنشاء أو تعديل القيود قبل هذا التاريخ إلا للمستخدمين الذين لديهم الدور المحدد.
+2-410	Company.role_allowed_for_frozen_entries	Roles Allowed to Set and Edit Frozen Account Entries	الأدوار المسموح لها بإنشاء وتعديل القيود على الحسابات المجمّدة
+2-411	Company.buying_and_selling_tab	Buying and Selling	الشراء والبيع
+2-412	Company.sales_settings	Buying & Selling Settings	إعدادات الشراء والبيع
+2-413	Company.default_buying_terms	Default Buying Terms	شروط الشراء الافتراضية
+2-414	Company.monthly_sales_target	Monthly Sales Target	هدف المبيعات الشهرية
+2-415	Company.total_monthly_sales	Total Monthly Sales	إجمالي المبيعات الشهرية
+2-416	Company.default_selling_terms	Default Selling Terms	شروط البيع الافتراضية
+2-417	Company.default_sales_contact	Default Sales Contact	جهة اتصال المبيعات الافتراضية
+2-418	Company.credit_limit	Credit Limit	الحد الائتماني
+2-419	Company.purchase_expense_section	Purchase Expense	مصروفات الشراء
+2-420	Company.purchase_expense_account	Purchase Expense Account	حساب مصروفات الشراء
+2-421	Company.service_expense_account	Service Expense Account	حساب مصروفات الخدمة
+2-422	Company.service_expense_account:desc	For service item	لصنف الخدمة
+2-423	Company.purchase_expense_contra_account	Purchase Expense Contra Account	حساب مقابل لمصروفات الشراء
+2-424	Company.stock_expense_section	Stock Expense	مصروف المخزون
+2-425	Company.expenses_added_to_stock_account	Expenses Added To Stock Account	حساب المصروفات المضافة إلى المخزون
+2-426	Company.expenses_added_to_stock_contra_account	Expenses Added To Stock Contra Account	حساب مقابل المصروفات المضافة إلى المخزون
+2-427	Company.hr_and_payroll_tab	HR & Payroll	الموارد البشرية والرواتب
+2-428	Company.hr_settings_section	HR & Payroll Settings	إعدادات الموارد البشرية والرواتب
+2-429	Company.default_expense_claim_payable_account	Default Expense Claim Payable Account	حساب مطالبات المصروفات المستحقة الافتراضي
+2-430	Company.default_employee_advance_account	Default Employee Advance Account	حساب سلفة الموظف الافتراضي
+2-431	Company.default_payroll_payable_account	Default Payroll Payable Account	حساب الرواتب المستحقة الافتراضي
+2-432	Company.stock_tab	Stock and Manufacturing	المخزون والتصنيع
+2-433	Company.auto_accounting_for_stock_settings	Stock Settings	إعدادات المخزون
+2-434	Company.enable_perpetual_inventory	Enable Perpetual Inventory	تفعيل الجرد المستمر
+2-435	Company.enable_item_wise_inventory_account	Enable Item-wise Inventory Account	تفعيل حساب المخزون حسب الصنف
+2-436	Company.enable_item_wise_inventory_account:desc	If enabled, the system will use the inventory account set in the Item Master or Item Group or Brand. Otherwise, it will use the inventory account set in the Warehouse.	في حال تفعيل هذا الخيار، سيستخدم النظام حساب المخزون المُحدد في بيانات الصنف الرئيسية أو مجموعة الأصناف أو العلامة التجارية. وإلا، فسيستخدم حساب المخزون المُحدد في المستودع.
+2-437	Company.enable_provisional_accounting_for_non_stock_items	Enable Provisional Accounting For Non Stock Items	تفعيل المحاسبة المؤقتة للأصناف غير المخزنية
+2-438	Company.default_inventory_account	Default Inventory Account	حساب المخزون الافتراضي
+2-439	Company.valuation_method	Default Stock Valuation Method	طريقة التقييم الافتراضية للمخزون
+2-440	Company.stock_adjustment_account	Stock Adjustment Account	حساب تسوية المخزون
+2-441	Company.default_provisional_account	Default Provisional Account	الحساب المؤقت الافتراضي
+2-442	Company.default_operating_cost_account	Default Operating Cost Account	حساب تكلفة التشغيل الافتراضي
+2-443	Company.warehouse_defaults_section	Warehouse Defaults	القيم الافتراضية للمستودعات
+2-444	Company.sample_retention_warehouse	Sample Retention Warehouse	مستودع حفظ العينات
+2-445	Company.default_warehouse_for_sales_return	Default Warehouse for Sales Return	المستودع الافتراضي لمرتجع المبيعات
+2-446	Company.default_wip_warehouse	 Default Work In Progress Warehouse 	مستودع الإنتاج تحت التشغيل الافتراضي
+2-447	Company.default_fg_warehouse	Default Finished Goods Warehouse	مستودع المنتجات النهائية الافتراضي
+2-448	Company.default_scrap_warehouse	Default Scrap Warehouse	مستودع الخردة الافتراضي
+2-449	Company.dashboard_tab	Dashboard	لوحة المعلومات
+2-450	Lead.salutation	Salutation	اللقب
+2-451	Lead.first_name	First Name	الاسم الأول
+2-452	Lead.middle_name	Middle Name	الاسم الأوسط
+2-453	Lead.last_name	Last Name	اسم العائلة
+2-454	Lead.lead_name	Full Name	الاسم الكامل
+2-455	Lead.job_title	Job Title	المسمى الوظيفي
+2-456	Lead.lead_owner	Lead Owner	مالك العميل المحتمل
+2-457	Lead.status:opt	Lost Quotation	عرض سعر خاسر
+2-458	Lead.status:opt	Interested	مهتم
+2-459	Lead.status:opt	Converted	محوَّل
+2-460	Lead.status:opt	Do Not Contact	عدم الاتصال
+2-461	Lead.customer	From Customer	من عميل
+2-462	Lead.type	Lead Type	نوع العميل المحتمل
+2-463	Lead.type:opt	Client	العميل
+2-464	Lead.type:opt	Channel Partner	شريك القناة
+2-465	Lead.type:opt	Consultant	مستشار
+2-466	Lead.request_type	Request Type	نوع الطلب
+2-467	Lead.request_type:opt	Product Enquiry	استفسار عن منتج
+2-468	Lead.request_type:opt	Request for Information	طلب معلومات
+2-469	Lead.request_type:opt	Suggestions	الاقتراحات
+2-470	Lead.request_type:opt	Other	أخرى
+2-471	Lead.contact_info_tab	Contact Info	معلومات الاتصال
+2-472	Lead.whatsapp_no	WhatsApp	WhatsApp
+2-473	Lead.phone_ext	Phone Ext.	رقم الهاتف الداخلي
+2-474	Lead.organization_section	Organization	المؤسسة
+2-475	Lead.company_name	Organization Name	اسم المؤسسة
+2-476	Lead.no_of_employees	No of Employees	عدد الموظفين
+2-477	Lead.annual_revenue	Annual Revenue	الإيرادات السنوية
+2-478	Lead.address_section	Address & Contacts	العنوان وجهات الاتصال
+2-479	Lead.utm_analytics_section	Analytics	التحليلات
+2-480	Lead.qualification_tab	Qualification	التأهيل
+2-481	Lead.qualification_status	Qualification Status	حالة التأهيل
+2-482	Lead.qualification_status:opt	Unqualified	غير مؤهل
+2-483	Lead.qualification_status:opt	In Process	قيد التنفيذ
+2-484	Lead.qualification_status:opt	Qualified	مؤهَّل
+2-485	Lead.qualified_by	Qualified By	أهّله
+2-486	Lead.qualified_on	Qualified on	تاريخ التأهيل
+2-487	Lead.other_info_tab	Additional Information	معلومات إضافية
+2-488	Lead.unsubscribed	Unsubscribed	ألغى الاشتراك
+2-489	Lead.blog_subscriber	Blog Subscriber	مشترك المدونة
+2-490	Lead.activities_tab	Activities	الأنشطة
+2-491	Lead.open_activities_html	Open Activities HTML	HTML الأنشطة المفتوحة
+2-492	Lead.all_activities_section	All Activities	جميع الأنشطة
+2-493	Lead.all_activities_html	All Activities HTML	HTML جميع الأنشطة
+2-494	Lead.notes_tab	Notes	ملاحظات
+2-495	Lead.notes_html	Notes HTML	HTML الملاحظات
+2-496	Opportunity.opportunity_from	Opportunity From	فرصة من
+2-497	Opportunity.opportunity_type	Opportunity Type	نوع الفرصة
+2-498	Opportunity.opportunity_owner	Opportunity Owner	مالك الفرصة
+2-499	Opportunity.sales_stage	Sales Stage	مرحلة البيع
+2-500	Opportunity.expected_closing	Expected Closing Date	تاريخ الإغلاق المتوقع
+2-501	Opportunity.probability	Probability (%)	الاحتمالية (%)
+2-502	Opportunity.section_break_14	Opportunity Value	قيمة الفرصة
+2-503	Opportunity.opportunity_amount	Opportunity Amount	مبلغ الفرصة
+2-504	Opportunity.base_opportunity_amount	Opportunity Amount (Company Currency)	مبلغ الفرصة (عملة الشركة)
+2-505	Opportunity.transaction_date	Opportunity Date	تاريخ الفرصة
+2-506	Opportunity.first_response_time	First Response Time	وقت الاستجابة الأول
+2-507	Opportunity.contact_info	Contacts	جهات الاتصال
+2-508	Opportunity.contact_mobile	Contact Mobile	جوال جهة الاتصال
+2-509	Opportunity.notes_tab	Comments	التعليقات
+2-510	Contact.email_id	Email Address	البريد الإلكتروني
+2-511	Contact.user	User Id	معرّف المستخدم
+2-512	Contact.sync_with_google_contacts	Sync with Google Contacts	مزامنة مع جهات اتصال Google
+2-513	Contact.status:opt	Passive	غير فعال
+2-514	Contact.designation	Designation	المسمى الوظيفي
+2-515	Contact.company_name	Company Name	اسم الشركة
+2-516	Contact.sb_00	Google Contacts	جهات اتصال Google
+2-517	Contact.google_contacts_id	Google Contacts Id	معرف جهات اتصال Google
+2-518	Contact.pulled_from_google_contacts	Pulled from Google Contacts	تم سحبها من جهات اتصال Google
+2-519	Contact.sb_01	Contact Details	تفاصيل الاتصال
+2-520	Contact.email_ids	Email IDs	عناوين البريد الإلكتروني
+2-521	Contact.phone_nos	Contact Numbers	أرقام الاتصال
+2-522	Contact.links	Links	الروابط
+2-523	Contact.is_primary_contact	Is Primary Contact	جهة الاتصال الرئيسية
+2-524	Contact.is_billing_contact	Is Billing Contact	جهة اتصال الفوترة
+2-525	Contact.department	Department	القسم
+2-526	Address.address_title	Address Title	اسم العنوان
+2-527	Address.address_type	Address Type	نوع العنوان
+2-528	Address.address_type:opt	Billing	الفواتير
+2-529	Address.address_type:opt	Shipping	الشحن
+2-530	Address.address_type:opt	Office	مكتب
+2-531	Address.address_type:opt	Personal	شخصي
+2-532	Address.address_type:opt	Plant	مصنع
+2-533	Address.address_type:opt	Postal	بريدي
+2-534	Address.address_type:opt	Shop	متجر
+2-535	Address.address_type:opt	Subsidiary	شركة فرعية
+2-536	Address.address_type:opt	Current	الحالي
+2-537	Address.address_type:opt	Permanent	دائم
+2-538	Address.city	City/Town	المدينة / البلدة
+2-539	Address.county	County	المحافظة
+2-540	Address.pincode	Postal Code	الرمز البريدي
+2-541	Address.is_primary_address	Preferred Billing Address	عنوان الفوترة المفضل
+2-542	Address.is_shipping_address	Preferred Shipping Address	عنوان الشحن المفضل
+2-543	Address.is_your_company_address	Is Your Company Address	عنوان شركتك
+2-544	doctype	Employee	الموظف
+2-545	Employee.basic_details_tab	Overview	نظرة عامة
+2-546	Employee.gender:opt	Male	ذكر
+2-547	Employee.gender:opt	Female	أنثى
+2-548	Employee.date_of_birth	Date of Birth	تاريخ الميلاد
+2-549	Employee.date_of_joining	Date of Joining	تاريخ الالتحاق بالعمل
+2-550	Employee.raqeem_job_offer	Hired From Job Offer	مُعيَّن من عرض العمل
+2-551	Employee.status:opt	Active	نشط
+2-552	Employee.status:opt	Inactive	غير نشط
+2-553	Employee.status:opt	Suspended	موقوف
+2-554	Employee.status:opt	Left	يسار
+2-555	Employee.erpnext_user	User Details	تفاصيل المستخدم
+2-556	Employee.user_id	User ID	معرّف المستخدم
+2-557	Employee.user_id:desc	System User (login) ID. If set, it will become default for all HR forms.	معرّف مستخدم النظام (تسجيل الدخول). إذا حُدد، يصبح الافتراضي لجميع نماذج الموارد البشرية.
+2-558	Employee.create_user_permission	Create User Permission	إنشاء صلاحية مستخدم
+2-559	Employee.create_user_permission:desc	This will restrict user access to other employee records	سيؤدي هذا إلى تقييد وصول المستخدم لسجلات الموظفين الأخرى
+2-560	Employee.create_user_automatically	Create User Automatically	إنشاء المستخدم تلقائيًا
+2-561	Employee.create_user_automatically:desc	Creates a User account for this employee using the Preferred, Company, or Personal email.	ينشئ حساب مستخدم لهذا الموظف باستخدام البريد الإلكتروني المفضل أو البريد الإلكتروني الخاص بالشركة أو البريد الإلكتروني الشخصي.
+2-562	Employee.company_details_section	Company Details	تفاصيل الشركة
+2-563	Employee.employment_type	Employment Type	نوع التوظيف
+2-564	Employee.reports_to	Reports to	المدير المباشر
+2-565	Employee.raqeem_leave_approver	Leave Approver (RAQEEM)	مسؤول الموافقة على الإجازات (رقيم)
+2-566	Employee.raqeem_leave_approver:desc	Approves this employee's leave requests. Empty: the user of the employee they report to.	يوافق على طلبات إجازة هذا الموظف. إذا تُرك فارغاً: مستخدم الموظف الذي يتبع له.
+2-567	Employee.branch	Branch	الفرع
+2-568	Employee.grade	Grade	الدرجة الوظيفية
+2-569	Employee.cell_number	Mobile	الجوال
+2-570	Employee.company_email	Company Email	البريد الإلكتروني الخاص بالشركة
+2-571	Employee.company_email:desc	Provide Email Address registered in company	أدخل عنوان البريد الإلكتروني المسجَّل في الشركة
+2-572	Employee.personal_email	Personal Email	البريد الإلكتروني الشخصي
+2-573	Employee.prefered_contact_email	Preferred Contact Email	البريد الإلكتروني المفضل للتواصل
+2-574	Employee.prefered_email	Preferred Email	البريد الإلكتروني المفضل
+2-575	Employee.current_address	Current Address	العنوان الحالي
+2-576	Employee.current_accommodation_type	Current Address Is	العنوان الحالي هو
+2-577	Employee.current_accommodation_type:opt	Rented	مؤجر
+2-578	Employee.current_accommodation_type:opt	Owned	مملوك
+2-579	Employee.permanent_address	Permanent Address	العنوان الدائم
+2-580	Employee.permanent_accommodation_type	Permanent Address Is	العنوان الدائم هو
+2-581	Employee.emergency_contact_details	Emergency Contact	جهة الاتصال في حالات الطوارئ
+2-582	Employee.person_to_be_contacted	Emergency Contact Name	اسم جهة الاتصال في الطوارئ
+2-583	Employee.emergency_phone_number	Emergency Phone	هاتف حالات الطوارئ
+2-584	Employee.relation	Relation	صلة القرابة
+2-585	Employee.attendance_and_leave_details	Attendance & Leaves	الحضور والإجازات
+2-586	Employee.attendance_device_id	Attendance Device ID (Biometric/RF tag ID)	رقم الموظف في جهاز الحضور (بصمة / بطاقة RF)
+2-587	Employee.holiday_list	Holiday List	قائمة العطلات
+2-588	Employee.holiday_list:desc	Applicable Holiday List	قائمة العطلات المنطبقة
+2-589	Employee.default_shift	Default Shift	الوردية الافتراضية
+2-590	Employee.approvers_section	Approvers	مسؤولو الموافقة
+2-591	Employee.expense_approver	Expense Approver	مسؤول الموافقة على المصروفات
+2-592	Employee.leave_approver	Leave Approver	مسؤول الموافقة على الإجازات
+2-593	Employee.shift_request_approver	Shift Request Approver	مسؤول الموافقة على طلب الوردية
+2-594	Employee.salary_information	Salary	الراتب
+2-595	Employee.ctc	Cost to Company (CTC)	التكلفة على الشركة (CTC)
+2-596	Employee.salary_currency	Salary Currency	عملة الراتب
+2-597	Employee.salary_mode	Salary Mode	طريقة صرف الراتب
+2-598	Employee.salary_mode:opt	Cheque	شيك
+2-599	Employee.employee_advance_account	Employee Advance Account	حساب سلفة الموظف
+2-600	Employee.payroll_cost_center	Payroll Cost Center	مركز تكلفة الرواتب
+2-601	Employee.bank_details_section	Bank Details	تفاصيل البنك
+2-602	Employee.bank_name	Bank Name	اسم البنك
+2-603	Employee.bank_ac_no	Bank A/C No.	رقم الحساب البنكي
+2-604	Employee.personal_details	Personal Details	البيانات الشخصية
+2-605	Employee.marital_status	Marital Status	الحالة الاجتماعية
+2-606	Employee.marital_status:opt	Single	أعزب
+2-607	Employee.marital_status:opt	Married	متزوج
+2-608	Employee.marital_status:opt	Divorced	مطلق
+2-609	Employee.marital_status:opt	Widowed	أرمل
+2-610	Employee.family_background	Family Background	الخلفية العائلية
+2-611	Employee.family_background:desc	Here you can maintain family details like name and occupation of parent, spouse and children	هنا يمكنك حفظ بيانات العائلة مثل اسم ومهنة الوالدين والزوج/الزوجة والأبناء
+2-612	Employee.blood_group	Blood Group	فصيلة الدم
+2-613	Employee.blood_group:opt	A+	+A
+2-614	Employee.blood_group:opt	B+	+B
+2-615	Employee.blood_group:opt	AB+	+AB
+2-616	Employee.blood_group:opt	O+	+O
+2-617	Employee.health_details	Health Details	تفاصيل الحالة الصحية
+2-618	Employee.health_details:desc	Here you can maintain height, weight, allergies, medical concerns etc	هنا يمكنك حفظ الطول والوزن والحساسية والملاحظات الطبية وغيرها
+2-619	Employee.health_insurance_section	Health Insurance	التأمين الصحي
+2-620	Employee.health_insurance_provider	Health Insurance Provider	مزوّد التأمين الصحي
+2-621	Employee.health_insurance_no	Health Insurance No	رقم التأمين الصحي
+2-622	Employee.passport_details_section	Passport Details	تفاصيل جواز السفر
+2-623	Employee.passport_number	Passport Number	رقم جواز السفر
+2-624	Employee.date_of_issue	Date of Issue	تاريخ الإصدار
+2-625	Employee.place_of_issue	Place of Issue	مكان الإصدار
+2-626	Employee.profile_tab	Profile	الملف الشخصي
+2-627	Employee.bio	Bio / Cover Letter	نبذة / خطاب تقديم
+2-628	Employee.bio:desc	Short biography for website and other publications.	نبذة قصيرة للموقع الإلكتروني والمنشورات الأخرى.
+2-629	Employee.educational_qualification	Educational Qualification	المؤهلات العلمية
+2-630	Employee.education	Education	التعليم
+2-631	Employee.previous_work_experience	Previous Work Experience	الخبرات السابقة
+2-632	Employee.external_work_history	External Work History	سجل العمل الخارجي
+2-633	Employee.history_in_company	History In Company	السجل داخل الشركة
+2-634	Employee.internal_work_history	Internal Work History	سجل العمل الداخلي
+2-635	Employee.employment_details	Joining	الالتحاق
+2-636	Employee.job_applicant	Job Applicant	متقدم للوظيفة
+2-637	Employee.job_offer	Job Offer	عرض عمل
+2-638	Employee.scheduled_confirmation_date	Offer Date	تاريخ العرض
+2-639	Employee.final_confirmation_date	Confirmation Date	تاريخ التأكيد
+2-640	Employee.contract_end_date	Contract End Date	تاريخ نهاية العقد
+2-641	Employee.notice_number_of_days	Notice (days)	فترة الإشعار (أيام)
+2-642	Employee.date_of_retirement	Date Of Retirement	تاريخ التقاعد
+2-643	Employee.exit	Exit	إنهاء الخدمة
+2-644	Employee.resignation_letter_date	Resignation Letter Date	تاريخ خطاب الاستقالة
+2-645	Employee.relieving_date	Relieving Date	تاريخ إخلاء الطرف
+2-646	Employee.held_on	Exit Interview Held On	تاريخ إجراء مقابلة نهاية الخدمة
+2-647	Employee.new_workplace	New Workplace	جهة العمل الجديدة
+2-648	Employee.leave_encashed	Leave Encashed?	هل صُرفت الإجازات نقداً؟
+2-649	Employee.encashment_date	Encashment Date	تاريخ الصرف النقدي
+2-650	Employee.feedback_section	Feedback	التقييمات
+2-651	Employee.reason_for_leaving	Reason for Leaving	سبب ترك العمل
+2-652	Department.parent_department	Parent Department	القسم الأصل
+2-653	Department.leave_block_list	Leave Block List	قائمة حظر الإجازات
+2-654	Department.leave_block_list:desc	Days for which Holidays are blocked for this department.	الأيام التي تكون فيها العطلات محظورة لهذا القسم.
+2-655	Department.approvers:desc	The first Approver in the list will be set as the default Approver.	سيتم تعيين أول مسؤول موافقة في القائمة كمسؤول الموافقة الافتراضي.
+2-656	Designation.appraisal_template	Appraisal Template	قالب التقييم
+2-657	Designation.required_skills_section	Required Skills	المهارات المطلوبة
+2-658	Designation.skills	Skills	المهارات
+2-659	Mode of Payment.type:opt	General	عام
+2-660	Bank Account.account	Company Account	حساب الشركة
+2-661	Bank Account.account_subtype	Account Subtype	نوع الحساب الفرعي
+2-662	Bank Account.is_default	Is Default Account	الحساب الافتراضي
+2-663	Bank Account.is_company_account	Is Company Account	حساب شركة
+2-664	Bank Account.is_company_account:desc	Setting the account as a Company Account is necessary for Bank Reconciliation	تعيين الحساب كحساب شركة ضروري للتسوية البنكية
+2-665	Bank Account.is_credit_card	Is Credit Card	بطاقة ائتمان
+2-666	Bank Account.is_credit_card:desc	If checked, journal entries made using bank reconciliation will be of type "Credit Card Entry"	إذا تم تحديده، فستكون قيود اليومية المنشأة باستخدام التسوية البنكية من نوع "قيد بطاقة ائتمان".
+2-667	Bank Account.section_break_11	Party Details	تفاصيل الطرف
+2-668	Bank Account.account_details_section	Account Details	تفاصيل الحساب
+2-669	Bank Account.branch_code	Branch Code	رمز الفرع
+2-670	Bank Account.statement_password	Statement PDF Password	كلمة مرور PDF لكشف الحساب
+2-671	Bank Account.statement_password:desc	Password used to open password-protected PDF statements for this account. Stored encrypted.	كلمة المرور المستخدمة لفتح كشوف PDF المحمية بكلمة مرور لهذا الحساب. تُخزَّن مشفّرة.
+2-672	Bank Account.integration_details_section	Integration Details	تفاصيل التكامل
+2-673	Bank Account.last_integration_date	Last Integration Date	تاريخ التكامل الأخير
+2-674	Bank Account.last_integration_date:desc	Change this date manually to setup the next synchronization start date	قم بتغيير هذا التاريخ يدويًا لإعداد تاريخ بدء المزامنة التالي
+2-675	Bank Account.mask	Mask	إخفاء
+2-676	Asset.asset_name	Asset Name	اسم الأصل
+2-677	Asset.location	Location	الموقع
+2-678	Asset.asset_type	Asset Type	نوع الأصل
+2-679	Asset.asset_type:opt	Existing Asset	أصل موجود
+2-680	Asset.asset_type:opt	Composite Asset	أصل مركب
+2-681	Asset.asset_type:opt	Composite Component	مكوّن مركّب
+2-682	Asset.maintenance_required	Maintenance Required	صيانة مطلوبة
+2-683	Asset.calculate_depreciation	Calculate Depreciation	حساب الإهلاك
+2-684	Asset.purchase_details_section	Purchase Details	تفاصيل الشراء
+2-685	Asset.purchase_date	Purchase Date	تاريخ الشراء
+2-686	Asset.available_for_use_date	Available for Use Date	تاريخ الإتاحة للاستخدام
+2-687	Asset.disposal_date	Disposal Date	تاريخ الاستبعاد
+2-688	Asset.net_purchase_amount	Net Purchase Amount	صافي مبلغ الشراء
+2-689	Asset.asset_quantity	Asset Quantity	كمية الأصل
+2-690	Asset.additional_asset_cost	Additional Asset Cost	تكلفة إضافية للأصل
+2-691	Asset.total_asset_cost	Total Asset Cost	إجمالي تكلفة الأصل
+2-692	Asset.opening_accumulated_depreciation	Opening Accumulated Depreciation	مجمع الإهلاك الافتتاحي
+2-693	Asset.is_fully_depreciated	Is Fully Depreciated	مُهلَك بالكامل
+2-694	Asset.opening_number_of_booked_depreciations	Opening Number of Booked Depreciations	عدد الإهلاكات المسجلة في بداية الفترة
+2-695	Asset.finance_books	Finance Books	دفاتر التمويل
+2-696	Asset.depreciation_method	Depreciation Method	طريقة الإهلاك
+2-697	Asset.depreciation_method:opt	Straight Line	القسط الثابت
+2-698	Asset.depreciation_method:opt	Double Declining Balance	الرصيد المتناقص المضاعف
+2-699	Asset.depreciation_method:opt	Written Down Value	القيمة الدفترية المتناقصة
+2-700	Asset.frequency_of_depreciation	Frequency of Depreciation (Months)	تكرار الإهلاك (بالأشهر)
+2-701	Asset.total_number_of_depreciations	Total Number of Depreciations	إجمالي عدد الإهلاكات
+2-702	Asset.depreciation_schedule_sb	Depreciation Schedule	جدول الإهلاك
+2-703	Asset.asset_owner_section	Ownership	الملكية
+2-704	Asset.asset_owner	Asset Owner	مالك الأصل
+2-705	Asset.asset_owner_company	Asset Owner Company	الشركة المالكة للأصل
+2-706	Asset.insurance_section	Insurance	التأمين
+2-707	Asset.policy_number	Policy number	رقم الوثيقة
+2-708	Asset.insurer	Insurer	شركة التأمين
+2-709	Asset.insured_value	Insured value	القيمة المؤمَّن عليها
+2-710	Asset.insurance_start_date	Insurance Start Date	تاريخ بداية التأمين
+2-711	Asset.insurance_end_date	Insurance End Date	تاريخ انتهاء التأمين
+2-712	Asset.comprehensive_insurance	Comprehensive Insurance	تأمين شامل
+2-713	Asset.status:opt	Partially Depreciated	مُهلَك جزئيًا
+2-714	Asset.status:opt	Fully Depreciated	مُهلَك بالكامل
+2-715	Asset.status:opt	Sold	تم البيع
+2-716	Asset.status:opt	Scrapped	مُخرَّد
+2-717	Asset.status:opt	In Maintenance	في الصيانة
+2-718	Asset.status:opt	Out of Order	معطّل
+2-719	Asset.status:opt	Issue	مشكلة
+2-720	Asset.status:opt	Receipt	الإيصال
+2-721	Asset.status:opt	Capitalized	مُرسمَل
+2-722	Asset.status:opt	Work In Progress	قيد التنفيذ
+2-723	Asset.custodian	Custodian	أمين العهدة
+2-724	Asset.journal_entry_for_scrap	Journal Entry for Scrap	قيد يومية للتخريد
+2-725	Asset.split_from	Split From	مقسوم من
+2-726	POS Profile.section_break_11	Payment Methods	طرق الدفع
+2-727	POS Profile.set_grand_total_to_default_mop	Set Grand Total to Default Payment Method	تعيين الإجمالي الكلي على طريقة الدفع الافتراضية
+2-728	POS Profile.price_list_and_currency_section	Price List & Currency	قائمة الأسعار والعملة
+2-729	POS Profile.write_off_limit	Write Off Limit	حد الشطب
+2-730	POS Profile.write_off_limit:desc	Auto write off precision loss while consolidation	شطب تلقائي لفقدان الدقة أثناء عملية التوحيد
+2-731	POS Profile.income_and_expense_account	Income and Expense	الإيرادات والمصروفات
+2-732	POS Profile.section_break_19	Miscellaneous	متنوع
+2-733	POS Profile.disable_rounded_total:desc	If enabled, the consolidated invoices will have rounded total disabled	في حال التفعيل، سيتم تعطيل تقريب إجمالي الفواتير المجمعة
+2-734	POS Profile.allow_partial_payment	Allow Partial Payment	السماح بالدفع الجزئي
+2-735	POS Profile.allow_partial_payment:desc	Applicable on POS Invoice	قابل للتطبيق على فاتورة نقطة البيع
+2-736	POS Profile.pos_configurations_tab	POS Configurations	إعدادات نقطة البيع
+2-737	POS Profile.action_on_new_invoice	Action on New Invoice	الإجراء على الفاتورة الجديدة
+2-738	POS Profile.action_on_new_invoice:opt	Always Ask	اسأل دائمًا
+2-739	POS Profile.action_on_new_invoice:opt	Save Changes and Load New Invoice	حفظ التغييرات وتحميل فاتورة جديدة
+2-740	POS Profile.action_on_new_invoice:opt	Discard Changes and Load New Invoice	تجاهل التغييرات وقم بتحميل فاتورة جديدة
+2-741	POS Profile.validate_stock_on_save	Validate Stock on Save	تحقق من صحة المخزون عند الحفظ
+2-742	POS Profile.print_receipt_on_order_complete	Print Receipt on Order Complete	اطبع الإيصال عند إتمام الطلب
+2-743	POS Profile.pos_item_selector_section	POS Item Selector	محدد أصناف نقطة البيع
+2-744	POS Profile.hide_images	Hide Images	إخفاء الصور
+2-745	POS Profile.hide_unavailable_items	Hide Unavailable Items	إخفاء الأصناف غير المتوفرة
+2-746	POS Profile.auto_add_item_to_cart	Automatically Add Filtered Item To Cart	إضافة الصنف المُصفّى إلى السلة تلقائياً
+2-747	POS Profile.pos_item_details_section	POS Item Details	تفاصيل صنف نقطة البيع
+2-748	POS Profile.allow_rate_change	Allow User to Edit Rate	السماح للمستخدم بتعديل السعر
+2-749	POS Profile.allow_discount_change	Allow User to Edit Discount	السماح للمستخدم بتعديل الخصم
+2-750	POS Profile.section_break_15	Applicable for Users	ينطبق على المستخدمين
+2-751	POS Profile.section_break_23	Filters	عوامل التصفية
+2-752	POS Profile.item_groups	Item Groups	مجموعات الأصناف
+2-753	POS Profile.item_groups:desc	Only show Items from these Item Groups	عرض الأصناف من مجموعات الأصناف هذه فقط
+2-754	POS Profile.customer_groups	Customer Groups	مجموعات العملاء
+2-755	POS Profile.customer_groups:desc	Only show Customer of these Customer Groups	عرض العملاء من مجموعات العملاء هذه فقط
+2-756	POS Profile.print_format	Print Format	تنسيق الطباعة
+2-757	POS Invoice.consolidated_invoice	Consolidated Sales Invoice	فاتورة المبيعات الموحدة
+2-758	POS Invoice.status:opt	Consolidated	موحّد
+2-759	doctype	Stock Reconciliation	تسوية المخزون
+2-760	Stock Reconciliation.purpose:opt	Opening Stock	المخزون الافتتاحي
+2-761	Stock Reconciliation.purpose:opt	Adjustment Entry	قيد تسوية
+2-762	Stock Reconciliation.scan_mode	Scan Mode	وضع المسح
+2-763	Stock Reconciliation.scan_mode:desc	Disables auto-fetching of existing quantity	يعطل الجلب التلقائي للكمية الموجودة
+2-764	Stock Reconciliation.difference_amount	Difference Amount	مبلغ الفرق
+2-765	Serial No.status:opt	Consumed	مستهلك
+2-766	Serial No.asset_details	Asset Details	تفاصيل الأصل
+2-767	Serial No.asset_status	Asset Status	حالة الأصل
+2-768	Serial No.asset_status:opt	Transfer	نقل
+2-769	Serial No.warranty_amc_details	Warranty / AMC Details	تفاصيل الضمان / عقد الصيانة السنوي
+2-770	Serial No.warranty_expiry_date	Warranty Expiry Date	تاريخ انتهاء الضمان
+2-771	Serial No.amc_expiry_date	AMC Expiry Date	تاريخ انتهاء عقد الصيانة السنوي
+2-772	Serial No.maintenance_status	Maintenance Status	حالة الصيانة
+2-773	Serial No.maintenance_status:opt	Under Warranty	ضمن الضمان
+2-774	Serial No.maintenance_status:opt	Out of Warranty	خارج الضمان
+2-775	Serial No.maintenance_status:opt	Under AMC	ضمن عقد الصيانة السنوي
+2-776	Serial No.maintenance_status:opt	Out of AMC	خارج عقد الصيانة السنوي
+2-777	Serial No.warranty_period	Warranty Period (Days)	فترة الضمان (أيام)
+2-778	Serial No.source_document_section	Source Document	المستند المصدر
+2-779	Serial No.reference_doctype	Source Document Type	نوع المستند المصدر
+2-780	Serial No.reference_name	Source Document Name	اسم المستند المصدر
+2-781	doctype	Batch	الدفعة
+2-782	Batch.sb_batch	Batch Details	تفاصيل الدفعة
+2-783	Batch.batch_id	Batch ID	معرّف الدفعة
+2-784	Batch.parent_batch	Parent Batch	الدفعة الأصل
+2-785	Batch.manufacturing_date	Manufacturing Date	تاريخ التصنيع
+2-786	Batch.batch_qty	Batch Quantity	كمية الدفعة
+2-787	Batch.stock_uom	Batch UOM	وحدة قياس الدفعة
+2-788	Batch.expiry_date	Expiry Date	تاريخ انتهاء الصلاحية
+2-789	Batch.use_batchwise_valuation	Use Batch-wise Valuation	استخدم التقييم على أساس الدفعات
+2-790	Batch.allow_negative_stock_for_batch	Allow Negative Stock for Batch	السماح بالمخزون السالب للدفعة
+2-791	Batch.description	Batch Description	وصف الدفعة
+2-792	Batch.qty_to_produce	Qty To Produce	الكمية المطلوب إنتاجها
+2-793	Batch.produced_qty	Produced Qty	الكمية المنتجة
+2-794	UOM.uom_name	UOM Name	اسم وحدة القياس
+2-795	UOM.symbol	Symbol	الرمز
+2-796	UOM.common_code	Common Code	الرمز المشترك
+2-797	UOM.common_code:desc	According to CEFACT/ICG/2010/IC013 or CEFACT/ICG/2010/IC010	وفقًا لـ CEFACT/ICG/2010/IC013 أو CEFACT/ICG/2010/IC010
+2-798	UOM.category	Category	الفئة
+2-799	UOM.must_be_whole_number	Must be Whole Number	يجب أن يكون عدد صحيح
+2-800	UOM.must_be_whole_number:desc	Check this to disallow fractions. (for Nos)	حدّد هذا الخيار لمنع الكسور. (للأعداد)
+2-801	Item Group.gs	General Settings	الإعدادات العامة
+2-802	Item Group.item_group_name	Item Group Name	اسم مجموعة الأصناف
+2-803	Item Group.parent_item_group	Parent Item Group	مجموعة الأصناف الأصل

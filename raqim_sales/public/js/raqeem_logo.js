@@ -45,13 +45,19 @@
 		const v = (cs.getPropertyValue("--rq-a-500") || "").trim();
 		return v || "#2d4583";
 	}
+	let last_href = null;
 	function set_favicon() {
 		const fill = accent();
-		if (fill === last_fill) return;
-		last_fill = fill;
-		const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="-6 -6 112 112"><path fill="${fill}" fill-rule="evenodd" d="${D}"/></svg>`;
-		const href = "data:image/svg+xml," + encodeURIComponent(svg);
+		if (fill !== last_fill) {
+			last_fill = fill;
+			const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="-6 -6 112 112"><path fill="${fill}" fill-rule="evenodd" d="${D}"/></svg>`;
+			last_href = "data:image/svg+xml," + encodeURIComponent(svg);
+		}
+		const href = last_href;
 		let links = document.querySelectorAll('link[rel~="icon"]');
+		// 2026-11-24: Frappe resets the tab icon on some pages (RAQEEM Home -> href="undefined"): redraw whenever
+		// the icon in the tab is not ours, not only when the colour changes
+		if (links.length && [...links].every((l) => l.getAttribute("href") === href)) return;
 		if (!links.length) {
 			const l = document.createElement("link");
 			l.rel = "icon";
@@ -89,6 +95,10 @@
 			const mq = window.matchMedia("(prefers-color-scheme: dark)");
 			mq.addEventListener && mq.addEventListener("change", () => setTimeout(set_favicon, 60));
 		}
+		// the tab icon replaced by Frappe (new <link> or a changed href) -> ours again
+		new MutationObserver(() => setTimeout(set_favicon, 30)).observe(document.head, {
+			childList: true, subtree: true, attributes: true, attributeFilter: ["href"],
+		});
 	}
 	if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start);
 	else start();

@@ -1,0 +1,804 @@
+4-0	Raqeem Leave Request.posting_date	Request Date	تاريخ الطلب
+4-1	Raqeem Leave Request.section_dates	Dates	التواريخ
+4-2	Raqeem Leave Request.half_day_date	Half Day Date	تاريخ نصف اليوم
+4-3	Raqeem Leave Request.total_days	Leave Days	أيام الإجازة
+4-4	Raqeem Leave Request.total_days:desc	Working days only, unless the leave type counts weekends and holidays.	أيام العمل فقط، إلا إذا كان نوع الإجازة يحتسب العطل.
+4-5	Raqeem Leave Request.balance	Balance Before This Request	الرصيد قبل هذا الطلب
+4-6	Raqeem Leave Request.attachment	Supporting Document	المستند المؤيِّد
+4-7	Raqeem Leave Request.decision_note	Approver's Note	ملاحظة مسؤول الموافقة
+4-8	doctype	Raqeem Leave Allocation	تخصيص الإجازات
+4-9	Raqeem Leave Allocation.new_days	New Days	الأيام الجديدة
+4-10	Raqeem Leave Allocation.carried_forward	Carried Forward	المرحَّل
+4-11	Raqeem Leave Allocation.carried_forward:desc	Unused days from the previous period, when the leave type carries them forward.	الأيام غير المستخدمة من الفترة السابقة، إذا كان نوع الإجازة يرحِّلها.
+4-12	Raqeem Leave Allocation.total_days	Total Days	إجمالي الأيام
+4-13	Sidebar Item	Dashboard Settings	إعدادات لوحة المعلومات
+4-14	Sidebar Item	Setup	الإعداد
+4-15	Sidebar Item	CRM Dashboard	لوحة معلومات (CRM)
+4-16	Sidebar Item	Saved Charts	المخططات المحفوظة
+4-17	Sidebar Item	Alerts and Scheduled Reports	التنبيهات والتقارير المجدولة
+4-18	Sidebar Item	Sales Dashboard	لوحة المبيعات
+4-19	Sidebar Item	Accounts Dashboard	لوحة الحسابات
+4-20	Sidebar Item	HR Dashboard	لوحة معلومات الموارد البشرية
+4-21	Sidebar Item	Owner Dashboard	لوحة المالك
+4-22	Sidebar Item	Ready Dashboards	اللوحات الجاهزة
+4-23	Sidebar Item	Dashboards	لوحات المعلومات
+4-24	Sidebar Item	Training	التدريب
+4-25	Sidebar Item	Training Program	برنامج تدريبي
+4-26	Sidebar Item	Salary Register	سجل الرواتب
+4-27	Sidebar Item	Leave Encashment	صرف بدل الإجازة
+4-28	Sidebar Item	Shift Type	نوع الوردية
+4-29	Sidebar Item	Training Session	دورة تدريبية
+4-30	Sidebar Item	Promotion	ترقية
+4-31	Sidebar Item	Resignation / Exit	الاستقالة / إنهاء الخدمة
+4-32	Sidebar Item	Salary Advance	السلف
+4-33	Sidebar Item	Fingerprint Log	سجل البصمات
+4-34	Sidebar Item	Recruitment	التوظيف
+4-35	Sidebar Item	Checklist Template	قالب قائمة المهام
+4-36	Sidebar Item	Employee Lifecycle	دورة حياة الموظف
+4-37	Sidebar Item	Employee Loan	قرض الموظف
+4-38	Sidebar Item	Performance	الأداء
+4-39	Sidebar Item	Attendance Settings	إعدادات الحضور
+4-40	Sidebar Item	Applicants Board	لوحة المتقدمين
+4-41	Sidebar Item	Open Positions	الوظائف الشاغرة
+4-42	Sidebar Item	Lifecycle Settings	إعدادات دورة حياة الموظف
+4-43	Sidebar Item	Payroll Settings	إعدادات الرواتب
+4-44	Sidebar Item	Monthly Attendance	الحضور الشهري
+4-45	Sidebar Item	Shift Assignment	تعيين الوردية
+4-46	Sidebar Item	Expenses and Advances	المصروفات والسلف
+4-47	Sidebar Item	Leave Balance	رصيد الإجازات
+4-48	Sidebar Item	Leave Blocked Dates	تواريخ منع الإجازات
+4-49	Sidebar Item	Leave Allocation	تخصيص الإجازات
+4-50	Sidebar Item	Appraisal	تقييم الأداء
+4-51	Sidebar Item	Salary Additions / Deductions	الإضافات والخصومات على الراتب
+4-52	Sidebar Item	Leave Calendar	تقويم الإجازات
+4-53	Sidebar Item	Pipeline	مسار المبيعات
+4-54	Sidebar Item	Translation	الترجمة
+4-55	Sidebar Item	Accounting Dimension	البعد المحاسبي
+4-56	Sidebar Item	Budget Variance	انحراف الميزانية
+4-57	Sidebar Item	Bank Clearance	التسوية البنكية
+4-58	Sidebar Item	Financial Report Template	قالب تقرير مالي
+4-59	Sidebar Item	Currency Exchange	صرف العملات
+4-60	Sidebar Item	Home	الصفحة الرئيسية
+4-61	Sidebar Item	Trial Balance	ميزان المراجعة
+4-62	Sidebar Item	Tax Rule	القاعدة الضريبية
+4-63	Sidebar Item	Budgeting	إعداد الميزانيات
+4-64	Sidebar Item	Consolidated Report	تقرير موحّد
+4-65	Sidebar Item	Sales Tax Template	قالب ضريبة المبيعات
+4-66	Sidebar Item	Monthly Distribution	التوزيع الشهري
+4-67	Sidebar Item	Cash Flow	التدفق النقدي
+4-68	Sidebar Item	Chart of Cost Centers	دليل مراكز التكلفة
+4-69	Sidebar Item	Cost Center Allocation	توزيع مركز التكلفة
+4-70	Sidebar Item	Reports	التقارير
+4-71	Sidebar Item	Budget	الميزانية
+4-72	Sidebar Item	Banking	الخدمات البنكية
+4-73	Sidebar Item	General Ledger	دفتر الأستاذ العام
+4-74	Sidebar Item	Purchase Tax Template	قالب ضريبة المشتريات
+4-75	Sidebar Item	Trial Balance for Party	ميزان المراجعة حسب الطرف
+4-76	Sidebar Item	Profitability Analysis	تحليل الربحية
+4-77	Sidebar Item	SMS Center	مركز الرسائل النصية
+4-78	Sidebar Item	Sales Pipeline Analytics	تحليلات مسار المبيعات
+4-79	Sidebar Item	Maintenance Visit	زيارة صيانة
+4-80	Sidebar Item	Opportunity Summary by Sales Stage	ملخص الفرص حسب مرحلة المبيعات
+4-81	Sidebar Item	CRM Settings	إعدادات إدارة العملاء
+4-82	Sidebar Item	Prospects Engaged But Not Converted	العملاء المحتملون المتفاعلون غير المحوَّلين
+4-83	Sidebar Item	Maintenance Schedule	جدول الصيانة
+4-84	Sidebar Item	Sales Pipeline	مسار المبيعات
+4-85	Sidebar Item	First Response Time for Opportunity	وقت الاستجابة الأول للفرصة
+4-86	Sidebar Item	Lead Source	مصدر العميل المحتمل
+4-87	Sidebar Item	Campaign Efficiency	كفاءة الحملة
+4-88	Sidebar Item	SMS Settings	إعدادات الرسائل النصية
+4-89	Sidebar Item	SMS Log	سجل الرسائل النصية
+4-90	Sidebar Item	Lead Owner Efficiency	كفاءة مالك العميل المحتمل
+4-91	Sidebar Item	Sales Analytics	تحليلات المبيعات
+4-92	Sidebar Item	Appointment	موعد
+4-93	Sidebar Item	Lead Details	تفاصيل العميل المحتمل
+4-94	Sidebar Item	Warranty Claim	مطالبة بالضمان
+4-95	Sidebar Item	Communication	المراسلات
+4-96	Sidebar Item	Email Group	مجموعة البريد الإلكتروني
+4-97	Sidebar Item	Sales Funnel	قمع المبيعات
+4-98	Sidebar Item	Email Campaign	حملة البريد الإلكتروني
+4-99	Sidebar Item	Request for Quotation	طلب عرض سعر
+4-100	Sidebar Item	Purchase Analytics	تحليلات المشتريات
+4-101	Sidebar Item	Accounts Payable Summary	ملخص الذمم الدائنة
+4-102	Sidebar Item	Supplier Scorecard	بطاقة تقييم المورد
+4-103	Sidebar Item	Supplier Quotation Comparison	مقارنة عروض أسعار الموردين
+4-104	Sidebar Item	Purchase Order Analysis	تحليل أوامر الشراء
+4-105	Sidebar Item	Purchase Register	سجل المشتريات
+4-106	Sidebar Item	Project Summary	ملخص المشروع
+4-107	Sidebar Item	Daily Timesheet Summary	ملخص سجل الوقت اليومي
+4-108	Sidebar Item	Task Type	نوع المهمة
+4-109	Sidebar Item	Timesheet Billing Summary	ملخص فوترة سجلات الوقت
+4-110	Sidebar Item	Activity Cost	تكلفة النشاط
+4-111	Sidebar Item	Timesheet	سجل الوقت
+4-112	Sidebar Item	Project Template	قالب المشروع
+4-113	Sidebar Item	Delayed Tasks Summary	ملخص المهام المتأخرة
+4-114	Sidebar Item	Project wise Stock Tracking	تتبع المخزون حسب المشروع
+4-115	Sidebar Item	Project Update	تحديث المشروع
+4-116	Sidebar Item	Activity Type	نوع النشاط
+4-117	Sidebar Item	Accounts Receivable Summary	ملخص الذمم المدينة
+4-118	Sidebar Item	Sales Register	سجل المبيعات
+4-119	Sidebar Item	Role	الدور
+4-120	Sidebar Item	Role Permissions	صلاحيات الأدوار
+4-121	Sidebar Item	Access	الوصول
+4-122	Sidebar Item	Transaction Deletion Record	سجل حذف المعاملات
+4-123	Sidebar Item	Data	البيانات
+4-124	Sidebar Item	Code List	قائمة الرموز
+4-125	Sidebar Item	System	النظام
+4-126	Sidebar Item	Authorization Rule	قاعدة التفويض
+4-127	Sidebar Item	Bulk Transaction Log	سجل المعاملات الجماعية
+4-128	Sidebar Item	Email Digest	ملخص البريد الدوري
+4-129	Sidebar Item	User Permissions	صلاحيات المستخدم
+4-130	Sidebar Item	Communication Medium	وسيلة الاتصال
+4-131	Sidebar Item	Rename Tool	أداة إعادة التسمية
+4-132	Sidebar Item	Delivery	التسليم
+4-133	Sidebar Item	Data Import	استيراد البيانات
+4-134	Sidebar Item	Item Variant	متغير الصنف
+4-135	Sidebar Item	Voice Call Settings	إعدادات المكالمات الصوتية
+4-136	Sidebar Item	Projects	المشاريع
+4-137	Sidebar Item	Integrations	التكاملات
+4-138	Sidebar Item	Call Log	سجل المكالمات
+4-139	Sidebar Item	Global Defaults	الإعدادات الافتراضية العامة
+4-140	Sidebar Item	Telephony Call Type	نوع المكالمة الهاتفية
+4-141	Sidebar Item	Support	الدعم
+4-142	Sidebar Item	Printing	الطباعة
+4-143	Sidebar Item	Email Template	قالب البريد الإلكتروني
+4-144	Sidebar Item	Stock Reposting	إعادة ترحيل المخزون
+4-145	Sidebar Item	Appointment Booking	حجز المواعيد
+4-146	Sidebar Item	Email Account	حساب البريد الإلكتروني
+4-147	Sidebar Item	Incoming Call Settings	إعدادات المكالمات الواردة
+4-148	Sidebar Item	Routing	التوجيه
+4-149	Sidebar Item	Production Analytics	تحليلات الإنتاج
+4-150	Sidebar Item	BOM Comparison Tool	أداة مقارنة قوائم المواد
+4-151	Sidebar Item	Work Order Summary	ملخص أوامر التصنيع
+4-152	Sidebar Item	Subcontracting BOM	قائمة مواد التصنيع الخارجي
+4-153	Sidebar Item	Operation	العملية
+4-154	Sidebar Item	Job Card Summary	ملخص بطاقة العمل
+4-155	Sidebar Item	Tools	الأدوات
+4-156	Sidebar Item	Workstation	محطة العمل
+4-157	Sidebar Item	Production Planning Report	تقرير تخطيط الإنتاج
+4-158	Sidebar Item	BOM Update Tool	أداة تحديث قائمة المواد
+4-159	Sidebar Item	Downtime Entry	قيد وقت التوقف
+4-160	Sidebar Item	Plant Floor	أرضية المصنع
+4-161	Sidebar Item	Material Requirements Planning Report	تقرير تخطيط متطلبات المواد
+4-162	Sidebar Item	BOM Creator	منشئ قائمة المواد
+4-163	Sidebar Item	Stock Projected Qty	كمية المخزون المتوقعة
+4-164	Sidebar Item	Stock Ageing	تقادم المخزون
+4-165	Sidebar Item	Stock Analytics	تحليلات المخزون
+4-166	Sidebar Item	Landed Cost Voucher	سند التكلفة الواصلة
+4-167	Sidebar Item	Inventory Dimension	بعد المخزون
+4-168	Sidebar Item	Unit of Measure (UOM)	وحدة القياس
+4-169	Sidebar Item	Packing Slip	قائمة التعبئة
+4-170	Sidebar Item	Serial & Batch	الرقم التسلسلي والدفعة
+4-171	Sidebar Item	Stock Ledger	دفتر المخزون
+4-172	Sidebar Item	Issue Type	نوع البلاغ
+4-173	Sidebar Item	Service Level Agreement	اتفاقية مستوى الخدمة
+4-174	Sidebar Item	Issue Priority	أولوية البلاغ
+4-175	Sidebar Item	First Response Time for Issues	وقت الاستجابة الأول للمشكلات
+4-176	Sidebar Item	Asset Movement	حركة الأصل
+4-177	Sidebar Item	Asset Capitalization	رسملة الأصل
+4-178	Sidebar Item	Asset Depreciations and Balances	إهلاك الأصول والأرصدة
+4-179	Sidebar Item	Fixed Asset Register	سجل الأصول الثابتة
+4-180	Sidebar Item	Value Changes	تغييرات القيمة
+4-181	Sidebar Item	Asset Depreciation Ledger	دفتر إهلاك الأصول
+4-182	Sidebar Item	Asset Maintenance Team	فريق صيانة الأصل
+4-183	Sidebar Item	Asset Maintenance Log	سجل صيانة الأصل
+4-184	Sidebar Item	Asset Value Adjustment	تعديل قيمة الأصل
+4-185	Sidebar Item	Asset Activity	نشاط الأصل
+4-186	Sidebar Item	Asset Maintenance	صيانة الأصل
+4-187	Sidebar Item	Quality Inspection Summary	ملخص فحص الجودة
+4-188	Sidebar Item	Meetings & Feedback	الاجتماعات والملاحظات
+4-189	Sidebar Item	Maintenance Schedules	جداول الصيانة
+4-190	Sidebar Item	Quality Meeting	اجتماع الجودة
+4-191	Sidebar Item	Review	المراجعة
+4-192	Sidebar Item	Quality Procedure	إجراء الجودة
+4-193	Sidebar Item	Quality Goal	هدف الجودة
+4-194	Sidebar Item	Feedback Template	قالب الملاحظات
+4-195	Sidebar Item	Quality Review	مراجعة الجودة
+4-196	Sidebar Item	Quality Feedback	ملاحظات الجودة
+4-197	Sidebar Item	Non Conformance	عدم مطابقة
+4-198	Sidebar Item	Quality Action	إجراء الجودة
+4-199	Sidebar Item	View Log	عرض السجل
+4-200	Sidebar Item	RQ Worker	عامل RQ
+4-201	Sidebar Item	Version	الإصدار
+4-202	Sidebar Item	Access Log	سجل الوصول
+4-203	Sidebar Item	Prepared Report Analytics	تحليلات التقارير المُعدة
+4-204	Sidebar Item	Background Task	مهمة خلفية
+4-205	Sidebar Item	Scheduled Job Type	نوع المهمة المجدولة
+4-206	Sidebar Item	Logs	السجلات
+4-207	Sidebar Item	Scheduled Job Log	سجل المهام المجدولة
+4-208	Sidebar Item	Patch Log	سجل التصحيح
+4-209	Sidebar Item	API Request Log	سجل طلبات واجهة برمجة التطبيقات
+4-210	Sidebar Item	Database Storage Usage By Tables	استخدام مساحة تخزين قاعدة البيانات حسب الجداول
+4-211	Sidebar Item	Activity Log	سجل النشاط
+4-212	Sidebar Item	System Settings	إعدادات النظام
+4-213	Sidebar Item	System Health Report	تقرير صحة النظام
+4-214	Sidebar Item	Error Log	سجل الأخطاء
+4-215	Sidebar Item	RQ Job	مهمة RQ
+4-216	Sidebar Item	Jobs	المهام
+4-217	Sidebar Item	Role Permission for Page and Report	صلاحية الدور للصفحة والتقرير
+4-218	Sidebar Item	Permitted Documents For User	المستندات المسموح بها للمستخدم
+4-219	Sidebar Item	User Group	مجموعة المستخدمين
+4-220	Sidebar Item	User Permission	صلاحية المستخدم
+4-221	Sidebar Item	Role Permissions Manager	مدير صلاحيات الأدوار
+4-222	Sidebar Item	Permissions	الصلاحيات
+4-223	Sidebar Item	User Invitation	دعوة المستخدم
+4-224	Sidebar Item	Permission Inspector	مفتش الصلاحيات
+4-225	Sidebar Item	Document Share Report	تقرير مشاركة المستندات
+4-226	Sidebar Item	Profiles	الملفات الشخصية
+4-227	Sidebar Item	Role Profile	ملف الأدوار
+4-228	Sidebar Item	User Doctype Permissions	صلاحيات أنواع المستندات للمستخدم
+4-229	Sidebar Item	DuckDB Sync	مزامنة DuckDB
+4-230	Sidebar Item	File	ملف
+4-231	Sidebar Item	Data Import Log	سجل استيراد البيانات
+4-232	Sidebar Item	Document Naming Rule	قاعدة تسمية المستند
+4-233	Sidebar Item	Prepared Report	التقرير المُعدّ
+4-234	Sidebar Item	Data Export	تصدير البيانات
+4-235	Sidebar Item	Document Naming Settings	إعدادات تسمية المستندات
+4-236	Sidebar Item	Naming	التسمية
+4-237	Sidebar Item	Navbar Settings	إعدادات شريط التنقل
+4-238	Sidebar Item	Global Search Settings	إعدادات البحث الشامل
+4-239	Sidebar Item	Desktop Icon	أيقونة سطح المكتب
+4-240	Sidebar Item	Server Script	سكربت الخادم
+4-241	Sidebar Item	List Filter	تصفية القائمة
+4-242	Sidebar Item	Module Def	تعريف الوحدة
+4-243	Sidebar Item	Kanban Board	لوحة كانبان
+4-244	Sidebar Item	Dashboard Chart	رسم بياني للوحة المعلومات
+4-245	Sidebar Item	Client Script	سكربت العميل
+4-246	Sidebar Item	Package	الحزمة
+4-247	Sidebar Item	Views	طرق العرض
+4-248	Sidebar Item	Modules	الوحدات
+4-249	Sidebar Item	Tag	وسم
+4-250	Sidebar Item	Report	تقرير
+4-251	Sidebar Item	Custom Translation	ترجمة مخصصة
+4-252	Sidebar Item	Property Setter	مُعيِّن الخصائص
+4-253	Sidebar Item	Custom Field	حقل مخصص
+4-254	Sidebar Item	Packages	الحزم
+4-255	Sidebar Item	Scripting	البرمجة النصية
+4-256	Sidebar Item	Notification Settings	إعدادات الإشعارات
+4-257	Sidebar Item	DocType	نوع المستند
+4-258	Sidebar Item	Customize Form	تخصيص النموذج
+4-259	Sidebar Item	Customization	التخصيص
+4-260	Sidebar Item	ToDo	المهام
+4-261	Sidebar Item	Route History	سجل المسارات
+4-262	Sidebar Item	Package Import	استيراد الحزمة
+4-263	Sidebar Item	Desk	سطح المكتب
+4-264	Sidebar Item	Calendar View	عرض التقويم
+4-265	Sidebar Item	Event	حدث
+4-266	Sidebar Item	Audit System Hooks	خطافات تدقيق النظام
+4-267	Sidebar Item	Notification Log	سجل الإشعارات
+4-268	Sidebar Item	Dashboard Chart Source	مصدر رسم لوحة المعلومات
+4-269	Sidebar Item	DocType Layout	تخطيط نوع المستند
+4-270	Sidebar Item	Page	الصفحة
+4-271	Sidebar Item	Bulk Update	تحديث جماعي
+4-272	Sidebar Item	Module Onboarding	تهيئة الوحدة
+4-273	Sidebar Item	Organizational Chart	الهيكل التنظيمي
+4-274	Sidebar Item	Employee Group	مجموعة الموظفين
+4-275	Sidebar Item	Employee Grade	درجة الموظف
+4-276	Sidebar Item	Masters	البيانات الرئيسية
+4-277	Sidebar Item	Employee Birthday	أعياد ميلاد الموظفين
+4-278	Sidebar Item	Grievance	تظلم
+4-279	Sidebar Item	Employee Grievance	شكوى الموظف
+4-280	Sidebar Item	Employee Exits	حالات إنهاء خدمة الموظفين
+4-281	Sidebar Item	Employee Skill Map	خريطة مهارات الموظف
+4-282	Sidebar Item	Employee Onboarding Template	قالب تهيئة الموظف الجديد
+4-283	Sidebar Item	Training Event	فعالية تدريبية
+4-284	Sidebar Item	Training Result	نتيجة التدريب
+4-285	Sidebar Item	Employee Information	معلومات الموظف
+4-286	Sidebar Item	Employee Separation	إنهاء خدمة الموظف
+4-287	Sidebar Item	Templates	القوالب
+4-288	Sidebar Item	Employee Separation Template	قالب إنهاء الخدمة
+4-289	Sidebar Item	Employee Onboarding	تهيئة الموظف الجديد
+4-290	Sidebar Item	Training Feedback	تقييم التدريب
+4-291	Sidebar Item	Grievance Type	نوع التظلم
+4-292	Sidebar Item	Employee Analytics	تحليلات الموظف
+4-293	Sidebar Item	Job Requisition	طلب توظيف
+4-294	Sidebar Item	Recruitment Analytics	تحليلات التوظيف
+4-295	Sidebar Item	Employee Referral	إحالة موظف
+4-296	Sidebar Item	Appointment Letter Template	قالب رسالة التعيين
+4-297	Sidebar Item	Appointment Letter	رسالة التعيين
+4-298	Sidebar Item	Job Portal	بوابة الوظائف
+4-299	Sidebar Item	Job Offer Term Template	قالب شروط عرض العمل
+4-300	Sidebar Item	Job Opening Template	قالب الوظيفة الشاغرة
+4-301	Sidebar Item	Interview Type	نوع المقابلة
+4-302	Sidebar Item	Staffing Plan	خطة التوظيف
+4-303	Sidebar Item	Skill	مهارة
+4-304	Sidebar Item	Hiring Pipeline	مسار التوظيف
+4-305	Sidebar Item	Shift Setup	إعداد الورديات
+4-306	Sidebar Item	Employee Hours Utilization	استغلال ساعات الموظفين
+4-307	Sidebar Item	Monthly Attendance Sheet	كشف الحضور الشهري
+4-308	Sidebar Item	Shift Location	موقع الوردية
+4-309	Sidebar Item	Roster	جدول الورديات
+4-310	Sidebar Item	Shift Assignments	تعيينات الورديات
+4-311	Sidebar Item	Employee Checkin	سجل الحضور
+4-312	Sidebar Item	Project Profitability	ربحية المشروع
+4-313	Sidebar Item	Shift Assignment Tool	أداة تعيين الوردية
+4-314	Sidebar Item	Shift Schedule Assignment	تعيين جدول الورديات
+4-315	Sidebar Item	Shift Request	طلب وردية
+4-316	Sidebar Item	Shift Attendance	حضور الورديات
+4-317	Sidebar Item	Timesheets	سجلات الوقت
+4-318	Sidebar Item	Overtime Slip	قسيمة العمل الإضافي
+4-319	Sidebar Item	Shift Schedule	جدول الورديات
+4-320	Sidebar Item	Employee Attendance Tool	أداة حضور الموظفين
+4-321	Sidebar Item	Overtime Type	نوع العمل الإضافي
+4-322	Sidebar Item	Expenses & Advances	المصروفات والسلف
+4-323	Sidebar Item	Purpose of Travel	الغرض من السفر
+4-324	Sidebar Item	Leave Application	طلب إجازة
+4-325	Sidebar Item	Leave Control Panel	لوحة التحكم بالإجازات
+4-326	Sidebar Item	Leave Balance Summary	ملخص رصيد الإجازات
+4-327	Sidebar Item	Travel Request	طلب سفر
+4-328	Sidebar Item	Unpaid Expense Claim	مطالبة مصروفات غير مسددة
+4-329	Sidebar Item	Holiday List Assignment	تعيين قائمة العطلات
+4-330	Sidebar Item	Holidays	العطلات
+4-331	Sidebar Item	Vehicle Log	سجل المركبة
+4-332	Sidebar Item	Leave Allocations	تخصيصات الإجازات
+4-333	Sidebar Item	Vehicle	مركبة
+4-334	Sidebar Item	Vehicle Expenses	مصروفات المركبات
+4-335	Sidebar Item	Leave Period	فترة الإجازة
+4-336	Sidebar Item	Leave Policy Assignment	تعيين سياسة الإجازات
+4-337	Sidebar Item	Leave Setup	إعداد الإجازات
+4-338	Sidebar Item	Leave Policy	سياسة الإجازات
+4-339	Sidebar Item	Expense Claim Type	نوع المطالبة
+4-340	Sidebar Item	Employees Working on a Holiday	الموظفون العاملون في عطلة
+4-341	Sidebar Item	Travel	سفر
+4-342	Sidebar Item	Employee Promotion	ترقية الموظف
+4-343	Sidebar Item	Goal	الهدف
+4-344	Sidebar Item	Employee Feedback Criteria	معايير تقييم الموظف
+4-345	Sidebar Item	Appraisal Overview	نظرة عامة على التقييم
+4-346	Sidebar Item	Employee Performance Feedback	تقييم أداء الموظف
+4-347	Sidebar Item	Salary Withholding	حجب الراتب
+4-348	Sidebar Item	Employee CTC Break-up	تفصيل التكلفة الإجمالية للموظف على الشركة (CTC)
+4-349	Sidebar Item	Salary Structure	هيكل الراتب
+4-350	Sidebar Item	Additional Salary	راتب إضافي
+4-351	Sidebar Item	Salary Structure Assignment	تعيين هيكل الراتب
+4-352	Sidebar Item	Income Tax Computation	احتساب ضريبة الدخل
+4-353	Sidebar Item	Accrued Earnings Report	تقرير الاستحقاقات المتراكمة
+4-354	Sidebar Item	Tax & Exemption Setup	إعداد الضرائب والإعفاءات
+4-355	Sidebar Item	Flexible Benefits	المزايا المرنة
+4-356	Sidebar Item	Exemption Declaration	إقرار الإعفاء
+4-357	Sidebar Item	Benefit Claim	مطالبة المزايا
+4-358	Sidebar Item	Income Tax Deductions	استقطاعات ضريبة الدخل
+4-359	Sidebar Item	Gratuity Rule	قاعدة مكافأة نهاية الخدمة
+4-360	Sidebar Item	Benefit Application	طلب المزايا
+4-361	Sidebar Item	Exemption Submission Proof	مستندات إثبات الإعفاء
+4-362	Sidebar Item	Income Tax Slab	شريحة ضريبة الدخل
+4-363	Sidebar Item	Benefit Ledger	دفتر المزايا
+4-364	Sidebar Item	Exemption Category	فئة الإعفاء
+4-365	Sidebar Item	Workflow Action	إجراء سير العمل
+4-366	Sidebar Item	Workflow Builder	منشئ سير العمل
+4-367	Sidebar Item	Workflow State	حالة سير العمل
+4-368	Sidebar Item	Workflow	سير العمل
+4-369	Sidebar Item	Workflow Action Master	الإجراء الرئيسي لسير العمل
+4-370	Sidebar Item	Workflow Transition Tasks	مهام انتقال سير العمل
+4-371	Sidebar Item	Addresses And Contacts	العناوين وجهات الاتصال
+4-372	Sidebar Item	Address Template	قالب العنوان
+4-373	Sidebar Item	Website Script	سكربت الموقع
+4-374	Sidebar Item	Customize	تخصيص
+4-375	Sidebar Item	Web Form	نموذج ويب
+4-376	Sidebar Item	Website Theme	سمة الموقع
+4-377	Sidebar Item	Portal Settings	إعدادات البوابة
+4-378	Sidebar Item	Web Page	صفحة ويب
+4-379	Sidebar Item	Print Format Editor	محرر تنسيقات الطباعة
+4-380	Sidebar Item	LDAP Settings	إعدادات LDAP
+4-381	Sidebar Item	Webhook	ويب هوك
+4-382	Sidebar Item	Google	Google
+4-383	Sidebar Item	Push Notification	إشعار فوري
+4-384	Sidebar Item	Google Calendar	تقويم Google
+4-385	Sidebar Item	Social Login Key	مفتاح تسجيل الدخول الاجتماعي
+4-386	Sidebar Item	Authentication	المصادقة
+4-387	Sidebar Item	OAuth Provider	مزوّد OAuth
+4-388	Sidebar Item	OAuth Client	عميل OAuth
+4-389	Sidebar Item	Connected App	تطبيق متصل
+4-390	Sidebar Item	Google Settings	إعدادات Google
+4-391	Sidebar Item	Email Queue	قائمة انتظار البريد الإلكتروني
+4-392	Sidebar Item	Email Domain	نطاق البريد الإلكتروني
+4-393	Sidebar Item	Unhandled Email	بريد غير معالج
+4-394	Sidebar Item	Automation Trigger Queue	طابور مشغّلات الأتمتة
+4-395	Sidebar Item	Automation Flow	مسار الأتمتة
+4-396	Sidebar Item	Assignment Rule	قاعدة الإسناد
+4-397	Sidebar Item	Auto Email Report	تقرير البريد الإلكتروني التلقائي
+4-398	Sidebar Item	Milestone	المرحلة
+4-399	Sidebar Item	Reminder	تذكير
+4-400	Workspace	Financial Reports	التقارير المالية
+4-401	Workspace	Frappe CRM	إدارة العملاء
+4-402	Workspace	Tax & Benefits	الضرائب والمزايا
+4-403	Workspace	Leaves	الإجازات
+4-404	Workspace	Shift & Attendance	الدوام والحضور
+4-405	Workspace	Tenure	مدة الخدمة
+4-406	Workspace	ERPNext Settings	إعدادات ERPNext
+4-407	Workspace	Build	البناء
+4-408	Workspace	HR Setup	إعداد الموارد البشرية
+4-409	Workspace	Assets	الأصول
+4-410	Workspace	Invoicing	الفوترة
+4-411	Workspace Link	Journal Entry Template	قالب قيد اليومية
+4-412	Workspace Link	IRS 1099	IRS 1099
+4-413	Workspace Link	Customer Ledger Summary	ملخص دفتر أستاذ العملاء
+4-414	Workspace Link	Item-wise Purchase Register	سجل المشتريات حسب الصنف
+4-415	Workspace Link	Ledger Merge	دمج دفتر الأستاذ
+4-416	Workspace Link	Invoicing & Payments	الفوترة والمدفوعات
+4-417	Workspace Link	Share Balance	رصيد الأسهم
+4-418	Workspace Link	UAE VAT 201	ضريبة القيمة المضافة الإمارات 201
+4-419	Workspace Link	Deduction Certificate	شهادة الاستقطاع
+4-420	Workspace Link	South Africa VAT Settings	إعدادات ضريبة القيمة المضافة في جنوب أفريقيا
+4-421	Workspace Link	Supplier Ledger Summary	ملخص دفتر أستاذ الموردين
+4-422	Workspace Link	Shareholder	المساهم
+4-423	Workspace Link	Bank Reconciliation Statement	كشف التسوية البنكية
+4-424	Workspace Link	Bank Statement Import	استيراد كشف الحساب البنكي
+4-425	Workspace Link	Currency Exchange Settings	إعدادات صرف العملات
+4-426	Workspace Link	Share Transfer	نقل الأسهم
+4-427	Workspace Link	Unreconcile Payment	إلغاء مطابقة الدفعة
+4-428	Workspace Link	Customer Credit Balance	الرصيد الدائن للعميل
+4-429	Workspace Link	Process Payment Reconciliation	معالجة مطابقة المدفوعات
+4-430	Workspace Link	Cheque Print Template	قالب طباعة الشيك
+4-431	Workspace Link	FX Revaluation	إعادة تقييم العملات الأجنبية
+4-432	Workspace Link	Ledger Tools	أدوات دفتر الأستاذ
+4-433	Workspace Link	Gross and Net Profit Report	تقرير الربح الإجمالي والصافي
+4-434	Workspace Link	Receivables & Payables	الذمم المدينة والدائنة
+4-435	Workspace Link	Financial Statements	القوائم المالية
+4-436	Workspace Link	Share Management	إدارة الأسهم
+4-437	Workspace Link	Payment Reconciliation	مطابقة المدفوعات
+4-438	Workspace Link	Subscription Plan	خطة الاشتراك
+4-439	Workspace Link	Bank Clearance Summary	ملخص التسوية البنكية
+4-440	Workspace Link	Accounting Period	الفترة المحاسبية
+4-441	Workspace Link	Repost Accounting Ledger	إعادة ترحيل دفتر الأستاذ
+4-442	Workspace Link	Payment Period Based On Invoice Date	فترة الدفع بناءً على تاريخ الفاتورة
+4-443	Workspace Link	Reconciliation	المطابقة
+4-444	Workspace Link	Share Ledger	دفتر الأسهم
+4-445	Workspace Link	Opening Invoice Tool	أداة الفاتورة الافتتاحية
+4-446	Workspace Link	Electronic Invoice Register	سجل الفواتير الإلكترونية
+4-447	Workspace Link	Purchase Invoice Trends	اتجاهات فواتير المشتريات
+4-448	Workspace Link	VAT Audit Report	تقرير تدقيق ضريبة القيمة المضافة
+4-449	Workspace Link	Subscription Settings	إعدادات الاشتراك
+4-450	Workspace Link	Process Statement Of Accounts	معالجة كشف الحسابات
+4-451	Workspace Link	Item-wise Sales Register	سجل المبيعات حسب الصنف
+4-452	Workspace Link	Repost Payment Ledger	إعادة ترحيل دفتر المدفوعات
+4-453	Workspace Link	Plaid Settings	إعدادات Plaid
+4-454	Workspace Link	Deferred Revenue and Expense	الإيرادات والمصروفات المؤجلة
+4-455	Workspace Link	Consolidated Trial Balance	ميزان المراجعة الموحد
+4-456	Workspace Link	Financial Ratios	النسب المالية
+4-457	Workspace Link	Opening & Closing	الافتتاح والإقفال
+4-458	Workspace Link	Sales Invoice Trends	اتجاهات فواتير المبيعات
+4-459	Workspace Link	Bank Account Type	نوع الحساب البنكي
+4-460	Workspace Link	Bank Reconciliation (old)	تسوية بنكية (قديم)
+4-461	Workspace Link	Bank Account Subtype	النوع الفرعي للحساب البنكي
+4-462	Workspace Link	Registers & Profitability	السجلات والربحية
+4-463	Workspace Link	Bank Guarantee	ضمان بنكي
+4-464	Workspace Link	Ledger Health Monitor	مراقبة سلامة دفتر الأستاذ
+4-465	Workspace Link	Tax & Compliance	الضرائب والامتثال
+4-466	Workspace Link	Dunning	خطاب مطالبة
+4-467	Workspace Link	TDS Computation Summary	ملخص احتساب الضريبة المستقطعة
+4-468	Workspace Link	Tax Withholding Details	تفاصيل الاستقطاع الضريبي
+4-469	Workspace Link	Sales Payment Summary	ملخص مدفوعات المبيعات
+4-470	Workspace Link	Dunning Type	نوع خطاب المطالبة
+4-471	Workspace Link	Share Type	نوع السهم
+4-472	Workspace Link	Custom Financial Statement	قائمة مالية مخصصة
+4-473	Workspace Link	COA Importer	مستورد دليل الحسابات
+4-474	Workspace Link	Period Closing Voucher	قيد إقفال الفترة
+4-475	Workspace Link	Background Jobs	المهام الخلفية
+4-476	Workspace Link	Communication Logs	سجلات الاتصالات
+4-477	Workspace Link	System Logs	سجلات النظام
+4-478	Workspace Link	Error Logs	سجلات الأخطاء
+4-479	Workspace Link	Webhook Request Log	سجل طلبات ويب هوك
+4-480	Workspace Link	Scheduled Jobs Logs	سجلات المهام المجدولة
+4-481	Workspace Link	Master Production Schedule	جدول الإنتاج الرئيسي
+4-482	Workspace Link	Visual Plant Floor	أرضية المصنع المرئية
+4-483	Workspace Link	Forecasting	التنبؤ
+4-484	Workspace Link	BOM Reports	تقارير قائمة المواد
+4-485	Workspace Link	Completed Work Orders	أوامر التصنيع المكتملة
+4-486	Workspace Link	Issued Items Against Work Order	الأصناف المصروفة مقابل أمر العمل
+4-487	Workspace Link	BOM Operations Time	وقت عمليات قائمة المواد
+4-488	Workspace Link	Downtime Analysis	تحليل وقت التوقف
+4-489	Workspace Link	Production Plan Summary	ملخص خطة الإنتاج
+4-490	Workspace Link	Process Loss Report	تقرير فاقد العملية
+4-491	Workspace Link	BOM Explorer	مستكشف قائمة المواد
+4-492	Workspace Link	Open Work Orders	أوامر التصنيع المفتوحة
+4-493	Workspace Link	Sales Forecast	توقعات المبيعات
+4-494	Workspace Link	BOM Search	البحث في قوائم المواد
+4-495	Workspace Link	Work Orders in Progress	أوامر العمل قيد التنفيذ
+4-496	Workspace Link	Work Order Stock Report	تقرير مخزون أمر العمل
+4-497	Workspace Link	Planning Reports	تقارير التخطيط
+4-498	Workspace Link	Workstation Type	نوع محطة العمل
+4-499	Workspace Link	Production Reports	تقارير الإنتاج
+4-500	Workspace Link	Work Order Consumed Materials	المواد المستهلكة في أمر العمل
+4-501	Workspace Link	BOM Variance Report	تقرير فروقات قائمة المواد
+4-502	Workspace Link	Cost of Poor Quality Report	تقرير تكلفة الجودة الرديئة
+4-503	Workspace Link	BOM Stock Analysis	تحليل المخزون لقائمة المواد
+4-504	Workspace Link	Quality Inspection Parameter	معيار فحص الجودة
+4-505	Workspace Link	Quality Inspection Parameter Group	مجموعة معايير فحص الجودة
+4-506	Workspace Link	Quality Reports	تقارير الجودة
+4-507	Workspace Link	Project Reports	تقارير المشاريع
+4-508	Workspace Link	Asset Reports	تقارير الأصول
+4-509	Workspace Link	Asset Shift Allocation	توزيع ورديات الأصل
+4-510	Workspace Link	Asset Shift Factor	معامل وردية الأصل
+4-511	Workspace Link	Asset Maintenance Report	تقرير صيانة الأصول
+4-512	Workspace Link	Shipment	شحنة
+4-513	Workspace Link	Quick Stock Balance	رصيد المخزون السريع
+4-514	Workspace Link	Item Alternative	الصنف البديل
+4-515	Workspace Link	Stock Qty vs Serial No Count	كمية المخزون مقابل عدد الأرقام التسلسلية
+4-516	Workspace Link	Movement Reports	تقارير الحركة
+4-517	Workspace Link	Batch Item Expiry Status	حالة انتهاء صلاحية دفعات الصنف
+4-518	Workspace Link	Itemwise Recommended Reorder Level	مستوى إعادة الطلب الموصى به حسب الصنف
+4-519	Workspace Link	Stock Reservation Entry	قيد حجز المخزون
+4-520	Workspace Link	Incorrect Stock Value Report	تقرير قيمة المخزون غير الصحيحة
+4-521	Workspace Link	Serial & Batch Reports	تقارير الرقم التسلسلي والدفعة
+4-522	Workspace Link	Stock Ledger Invariant Check	فحص ثبات دفتر المخزون
+4-523	Workspace Link	Warehouse Wise Stock Balance	رصيد المخزون حسب المستودع
+4-524	Workspace Link	Delivery Settings	إعدادات التسليم
+4-525	Workspace Link	Delivery Note Trends	اتجاهات أذونات التسليم
+4-526	Workspace Link	Serial No and Batch Traceability	إمكانية تتبع الرقم التسلسلي والدفعة
+4-527	Workspace Link	Product Bundle Balance	رصيد حزمة المنتجات
+4-528	Workspace Link	Warehouse wise Item Balance Age and Value	رصيد الصنف وعمره وقيمته حسب المستودع
+4-529	Workspace Link	Reserved Stock	المخزون المحجوز
+4-530	Workspace Link	Item-wise Price List Rate	سعر قائمة الأسعار حسب الصنف
+4-531	Workspace Link	Repost Item Valuation	إعادة ترحيل تقييم الصنف
+4-532	Workspace Link	Delayed Order Report	تقرير الطلبات المتأخرة
+4-533	Workspace Link	Warehouse Capacity Summary	ملخص سعة المستودع
+4-534	Workspace Link	Stock Summary	ملخص المخزون
+4-535	Workspace Link	Stock Reports	تقارير المخزون
+4-536	Workspace Link	FIFO Queue vs Qty After Transaction Comparison	مقارنة بين قائمة الانتظار وفقًا لأسلوب FIFO والكمية بعد إتمام المعاملة
+4-537	Workspace Link	Incorrect Serial and Batch Bundle	حزمة رقم تسلسلي ودفعة غير صحيحة
+4-538	Workspace Link	Negative Batch Report	تقرير الدفعات السالبة
+4-539	Workspace Link	Serial No Status	حالة الرقم التسلسلي
+4-540	Workspace Link	Items To Be Requested	الأصناف المطلوب طلبها
+4-541	Workspace Link	Stock Qty vs Batch Qty	كمية المخزون مقابل كمية الدفعة
+4-542	Workspace Link	Available Batch Report	تقرير الدفعات المتاحة
+4-543	Workspace Link	Batch-Wise Balance History	سجل الأرصدة حسب الدفعة
+4-544	Workspace Link	Item Price Stock	مخزون أسعار الأصناف
+4-545	Workspace Link	Serial No Warranty Expiry	انتهاء الضمان حسب الرقم التسلسلي
+4-546	Workspace Link	Serial No Service Contract Expiry	انتهاء عقد الخدمة حسب الرقم التسلسلي
+4-547	Workspace Link	Item Prices	أسعار الصنف
+4-548	Workspace Link	Delayed Item Report	تقرير الأصناف المتأخرة
+4-549	Workspace Link	Stock Ledger Variance	فرق دفتر المخزون
+4-550	Workspace Link	Requested Items To Be Transferred	الأصناف المطلوبة بانتظار النقل
+4-551	Workspace Link	Incorrect Balance Qty After Transaction	كمية الرصيد غير صحيحة بعد العملية
+4-552	Workspace Link	Serial and Batch Summary	ملخص الأرقام التسلسلية والدفعات
+4-553	Workspace Link	Item Where Used	مكان استخدام الصنف
+4-554	Workspace Link	Audit Reports	تقارير التدقيق
+4-555	Workspace Link	UOM Category	تصنيف وحدة القياس
+4-556	Workspace Link	Incorrect Serial No Valuation	تقييم رقم تسلسلي غير صحيح
+4-557	Workspace Link	Purchase Receipt Trends	اتجاهات إيصالات الاستلام
+4-558	Workspace Link	Stock Reposting Settings	إعدادات إعادة ترحيل المخزون
+4-559	Workspace Link	Total Stock Summary	ملخص إجمالي المخزون
+4-560	Workspace Link	Item Shortage Report	تقرير نقص الأصناف
+4-561	Workspace Link	Shipment Parcel Template	قالب طرد الشحنة
+4-562	Workspace Link	Item Wise Consumption	الاستهلاك حسب الصنف
+4-563	Workspace Link	Landed Cost Report	تقرير التكلفة الواصلة
+4-564	Workspace Link	Item Reports	تقارير الأصناف
+4-565	Workspace Link	Available Serial No	الرقم التسلسلي المتاح
+4-566	Workspace Link	Stock and Account Value Comparison	مقارنة قيمة المخزون والحساب
+4-567	Workspace Link	Item Variant Details	تفاصيل متغيرات الصنف
+4-568	Workspace Link	Serial No Ledger	دفتر الأرقام التسلسلية
+4-569	Workspace Link	Stock Closing Entry	قيد إقفال المخزون
+4-570	Workspace Link	Item Variant Settings	إعدادات متغيرات الأصناف
+4-571	Workspace Link	COGS By Item Group	تكلفة البضائع المباعة حسب مجموعة الأصناف
+4-572	Workspace Link	Push Notifications	الإشعارات الفورية
+4-573	Workspace Link	OAuth Provider Settings	إعدادات مزوّد OAuth
+4-574	Workspace Link	Slack Webhook URL	رابط ويب هوك Slack
+4-575	Workspace Link	Google Services	خدمات Google
+4-576	Workspace Link	Push Notification Settings	إعدادات الإشعارات الفورية
+4-577	Workspace Link	Contact Us Settings	إعدادات صفحة اتصل بنا
+4-578	Workspace Link	About Us Settings	إعدادات صفحة من نحن
+4-579	Workspace Link	Website Settings	إعدادات الموقع
+4-580	Workspace Link	Help Category	فئة المساعدة
+4-581	Workspace Link	Tax Template	قالب الضريبة
+4-582	Workspace Link	Requested Items to Order and Receive	الأصناف المطلوبة للطلب والاستلام
+4-583	Workspace Link	Billed Items To Be Received	الأصناف المفوترة بانتظار الاستلام
+4-584	Workspace Link	Items To Be Received	الأصناف المراد استلامها
+4-585	Workspace Link	Subcontract Order Summary	ملخص أوامر التصنيع الخارجي
+4-586	Workspace Link	Received Items To Be Billed	الأصناف المستلمة بانتظار الفوترة
+4-587	Workspace Link	Supplier Scorecard Criteria	معايير بطاقة تقييم المورد
+4-588	Workspace Link	Item-wise Purchase History	سجل المشتريات حسب الصنف
+4-589	Workspace Link	Supplier Scorecard Standing	تصنيف بطاقة تقييم المورد
+4-590	Workspace Link	Procurement Tracker	متتبع المشتريات
+4-591	Workspace Link	Subcontracting Reports	تقارير التصنيع الخارجي
+4-592	Workspace Link	Supplier Scorecard Variable	متغير بطاقة تقييم المورد
+4-593	Workspace Link	Materials To Be Transferred	المواد التي سيتم نقلها
+4-594	Workspace Link	Purchase Reports	تقارير المشتريات
+4-595	Workspace Link	Supplier Reports	تقارير الموردين
+4-596	Workspace Link	Order Status Reports	تقارير حالة الطلب
+4-597	Workspace Link	Purchase Order Trends	اتجاهات أوامر الشراء
+4-598	Workspace Link	Terms Template	قالب الشروط
+4-599	Workspace Link	Supplier Addresses And Contacts	عناوين الموردين وجهات الاتصال
+4-600	Workspace Link	Sales Reports	تقارير المبيعات
+4-601	Workspace Link	Sales Person Commission Summary	ملخص عمولة مندوب المبيعات
+4-602	Workspace Link	Sales Partner Transaction Summary	ملخص معاملات شريك المبيعات
+4-603	Workspace Link	Point of Sale	نقطة البيع
+4-604	Workspace Link	Quotation Trends	اتجاهات عروض الأسعار
+4-605	Workspace Link	Sales Person Target Variance Based On Item Group	تباين أهداف مندوب المبيعات حسب مجموعة الأصناف
+4-606	Workspace Link	Sales Person-wise Transaction Summary	ملخص المعاملات حسب مندوب المبيعات
+4-607	Workspace Link	Lost Quotations	عروض الأسعار الخاسرة
+4-608	Workspace Link	Item-wise Sales History	سجل المبيعات حسب الصنف
+4-609	Workspace Link	Sales Team Reports	تقارير فريق المبيعات
+4-610	Workspace Link	Sales Partner Target Variance based on Item Group	تباين أهداف شريك المبيعات حسب مجموعة الأصناف
+4-611	Workspace Link	Customers Without Any Sales Transactions	عملاء بدون أي معاملات مبيعات
+4-612	Workspace Link	Customer-wise Item Price	سعر الصنف حسب العميل
+4-613	Workspace Link	Payment Terms Status for Sales Order	حالة شروط الدفع لأمر البيع
+4-614	Workspace Link	Sales Partners Commission	عمولة شركاء المبيعات
+4-615	Workspace Link	Inactive Customers	العملاء غير النشطين
+4-616	Workspace Link	Customer Acquisition and Loyalty	اكتساب العملاء والولاء
+4-617	Workspace Link	Customer Reports	تقارير العملاء
+4-618	Workspace Link	Territory-wise Sales	المبيعات حسب المنطقة
+4-619	Workspace Link	POS Opening Entry	قيد فتح نقطة البيع
+4-620	Workspace Link	Sales Order Analysis	تحليل أوامر البيع
+4-621	Workspace Link	Sales Partner Commission Summary	ملخص عمولة شريك المبيعات
+4-622	Workspace Link	Sales Order Trends	اتجاهات أوامر البيع
+4-623	Workspace Link	POS Closing Entry	قيد إقفال نقطة البيع
+4-624	Workspace Link	Territory Target Variance Based On Item Group	تباين أهداف المنطقة حسب مجموعة الأصناف
+4-625	Workspace Link	POS Settings	إعدادات نقطة البيع
+4-626	Workspace Shortcut	Deals	الصفقات
+4-627	Workspace Shortcut	Industries	القطاعات
+4-628	Workspace Shortcut	Lead Sources	مصادر العملاء المحتملين
+4-629	Workspace Shortcut	Territories	المناطق
+4-630	Workspace Shortcut	Leads	العملاء المحتملون
+4-631	Workspace Shortcut	Organizations	المؤسسات
+4-632	Workspace Shortcut	Lead Statuses	حالات العملاء المحتملين
+4-633	Workspace Shortcut	Communication Statuses	حالات التواصل
+4-634	Workspace Shortcut	Deal Statuses	حالات الصفقات
+4-635	Workspace Shortcut	CRM Portal Page	صفحة بوابة (CRM)
+4-636	Dock Item	Print Designer	مصمم الطباعة
+4-637	Dock Item	Human Resources	الموارد البشرية
+4-638	Dock Item	Geo	الموقع الجغرافي
+4-639	Number Card	Active Subcontracted Items	الأصناف النشطة المصنّعة خارجياً
+4-640	Number Card	Subcontracting Outward Order Count	عدد أوامر التصنيع الخارجي الصادرة
+4-641	Number Card	Subcontracting Inward Order Count	عدد أوامر التصنيع الخارجي الواردة
+4-642	Number Card	Open Quality Reviews	مراجعات الجودة المفتوحة
+4-643	Number Card	Open Non Conformances	حالات عدم المطابقة المفتوحة
+4-644	Number Card	Open Quality Actions	إجراءات الجودة المفتوحة
+4-645	Number Card	Total Assets	إجمالي الأصول
+4-646	Number Card	Asset Value	قيمة الأصل
+4-647	Number Card	New Assets (This Year)	الأصول الجديدة (هذا العام)
+4-648	Number Card	Open Issues	المشكلات المفتوحة
+4-649	Number Card	Resolved Issues	البلاغات المحلولة
+4-650	Number Card	Overdue Issues	البلاغات المتأخرة
+4-651	Number Card	Total Stock Value	إجمالي قيمة المخزون
+4-652	Number Card	Total Warehouses	إجمالي المستودعات
+4-653	Number Card	Total Active Items	إجمالي الأصناف النشطة
+4-654	Number Card	Monthly Total Work Orders	إجمالي أوامر العمل الشهرية
+4-655	Number Card	WIP Work Orders	أوامر التصنيع قيد التنفيذ
+4-656	Number Card	Manufactured Items Value	قيمة الأصناف المصنّعة
+4-657	Number Card	Ongoing Job Cards	بطاقات العمل الجارية
+4-658	Number Card	Monthly Completed Work Orders	أوامر العمل المكتملة شهريًا
+4-659	Number Card	Monthly Quality Inspections	فحوصات الجودة الشهرية
+4-660	Number Card	Average Sales Order Value	متوسط قيمة أمر البيع
+4-661	Number Card	Sales Orders to Bill	أوامر بيع بانتظار الفوترة
+4-662	Number Card	Total Sales Amount	إجمالي مبلغ المبيعات
+4-663	Number Card	Annual Sales	المبيعات السنوية
+4-664	Number Card	Sales Orders to Deliver	أوامر بيع بانتظار التسليم
+4-665	Number Card	Sales Orders Count	عدد أوامر البيع
+4-666	Number Card	Active Customers	العملاء النشطون
+4-667	Number Card	Timesheet Working Hours	ساعات العمل في سجل الوقت
+4-668	Number Card	Open Projects	المشاريع المفتوحة
+4-669	Number Card	Non Completed Tasks	المهام غير المكتملة
+4-670	Number Card	Annual Purchase	المشتريات السنوية
+4-671	Number Card	Average Order Values	متوسط قيم الطلبات
+4-672	Number Card	Active Suppliers	الموردون النشطون
+4-673	Number Card	Purchase Orders to Receive	أوامر شراء بانتظار الاستلام
+4-674	Number Card	Purchase Orders to Bill	أوامر شراء بانتظار الفوترة
+4-675	Number Card	Purchase Orders Count	عدد أوامر الشراء
+4-676	Number Card	Total Purchase Amount	إجمالي مبلغ الشراء
+4-677	Number Card	New Lead (Last 1 Month)	عميل محتمل جديد (آخر 1 شهر)
+4-678	Number Card	Won Opportunity (Last 1 Month)	فرصة مكسوبة (آخر شهر)
+4-679	Number Card	New Opportunity (Last 1 Month)	الفرص الجديدة (آخر شهر)
+4-680	Number Card	Open Opportunity	فرصة مفتوحة
+4-681	Number Card	Total Incoming Payment	إجمالي المدفوعات الواردة
+4-682	Number Card	Total Outgoing Payment	إجمالي المدفوعات الصادرة
+4-683	Number Card	Total Outgoing Bills	إجمالي الفواتير الصادرة
+4-684	Number Card	Total Incoming Bills	إجمالي الفواتير الواردة
+4-685	Number Card	Goals In Progress	الأهداف قيد التنفيذ
+4-686	Number Card	Appraisals (This Year)	تقييمات الأداء (هذه السنة)
+4-687	Number Card	Ongoing Appraisal Cycles	دورات التقييم الجارية
+4-688	Number Card	Benefit Claims (This Month)	مطالبات المزايا (هذا الشهر)
+4-689	Number Card	Tax Exemption Proofs (This Year)	إثباتات الإعفاء الضريبي (هذه السنة)
+4-690	Number Card	Failed Scheduled Jobs	المهام المجدولة الفاشلة
+4-691	Number Card	Holidays in this month	العطلات في هذا الشهر
+4-692	Number Card	Active RQ Worker	العمليات الخلفية النشطة
+4-693	Number Card	Scheduled Jobs	المهام المجدولة
+4-694	Number Card	Number of Employees on Leave (Today)	عدد الموظفين في إجازة (اليوم)
+4-695	Number Card	Number of Employees on Leave (This Month)	عدد الموظفين في إجازة (هذا الشهر)
+4-696	Number Card	Website Themes Available	سمات الموقع المتاحة
+4-697	Number Card	Published Web Forms	نماذج الويب المنشورة
+4-698	Number Card	Published Web Pages	صفحات الويب المنشورة
+4-699	Number Card	Failed Login Attempts	محاولات تسجيل دخول فاشلة
+4-700	Number Card	Total Website Users	إجمالي مستخدمي الموقع
+4-701	Number Card	Total System Users	إجمالي مستخدمي النظام
+4-702	Number Card	Employees Relieving (This Quarter)	الموظفون المغادرون (هذا الربع)
+4-703	Number Card	Employees Joining (This Quarter)	الموظفون المنضمون (هذا الربع)
+4-704	Number Card	Rejected Claims (This Month)	المطالبات المرفوضة (هذا الشهر)
+4-705	Number Card	Approved Claims (This Month)	المطالبات الموافق عليها (هذا الشهر)
+4-706	Number Card	Expense Claims (This Month)	مطالبات المصروفات (هذا الشهر)
+4-707	Number Card	Time to Fill	مدة شغل الوظيفة
+4-708	Number Card	Job Offer Acceptance Rate	معدل قبول عروض العمل
+4-709	Number Card	Applicant-to-Hire Percentage	نسبة المتقدمين إلى المعيَّنين
+4-710	Number Card	Early Exit (This Month)	الانصراف المبكر (هذا الشهر)
+4-711	Number Card	Late Entry (This Month)	الدخول المتأخر (هذا الشهر)
+4-712	Number Card	Total Absent (This Month)	إجمالي الغائبين (هذا الشهر)
+4-713	Number Card	Total Present (This Month)	إجمالي الحاضرين (هذا الشهر)
+4-714	Number Card	Trainings (This Month)	التدريبات (هذا الشهر)
+4-715	Number Card	Transfers (This Month)	عمليات النقل (هذا الشهر)
+4-716	Number Card	Promotions (This Month)	الترقيات (هذا الشهر)
+4-717	Number Card	Separations (This Month)	حالات إنهاء الخدمة (هذا الشهر)
+4-718	Number Card	Onboardings (This Month)	تهيئة الموظفين الجدد (هذا الشهر)
+4-719	Number Card	Job Offers (This Month)	عروض العمل (هذا الشهر)
+4-720	Number Card	Rejected Job Applicants	المتقدمون المرفوضون للوظائف
+4-721	Number Card	Accepted Job Applicants	المتقدمون المقبولون للوظائف
+4-722	Number Card	Job Openings	الوظائف الشاغرة
+4-723	Number Card	Total Salary Structure	إجمالي هيكل الراتب
+4-724	Number Card	Total Outgoing Salary(Last month)	إجمالي الرواتب الصادرة (الشهر الماضي)
+4-725	Number Card	Total Incentive Given(Last month)	إجمالي الحوافز الممنوحة (الشهر الماضي)
+4-726	Number Card	Total Declaration Submitted	إجمالي الإقرارات المقدمة
+4-727	Number Card	Total Applicants (This Month)	إجمالي المتقدمين (هذا الشهر)
+4-728	Number Card	Employee Exits (This Year)	خروج الموظفين (هذه السنة)
+4-729	Number Card	New Hires (This Year)	التعيينات الجديدة (هذه السنة)
+4-730	Number Card	Active Employees	الموظفون النشطون
+4-731	Dashboard Chart	Quality Inspections	فحوصات الجودة
+4-732	Dashboard Chart	Asset Value Analytics	تحليلات قيمة الأصول
+4-733	Dashboard Chart	Category-wise Asset Value	قيمة الأصول حسب الفئة
+4-734	Dashboard Chart	Location-wise Asset Value	قيمة الأصول حسب الموقع
+4-735	Dashboard Chart	Issues Opened	البلاغات المفتوحة
+4-736	Dashboard Chart	Warehouse wise Stock Value	قيمة المخزون حسب المستودع
+4-737	Dashboard Chart	Delivery Trends	اتجاهات التسليم
+4-738	Dashboard Chart	Item Shortage Summary	ملخص نقص الأصناف
+4-739	Dashboard Chart	Oldest Items	الأصناف الأقدم
+4-740	Dashboard Chart	Stock Value by Item Group	قيمة المخزون حسب مجموعة الأصناف
+4-741	Dashboard Chart	Pending Work Order	أمر تصنيع معلّق
+4-742	Dashboard Chart	Last Month Downtime Analysis	تحليل وقت التوقف في الشهر الماضي
+4-743	Dashboard Chart	Quality Inspection Analysis	تحليل فحص الجودة
+4-744	Dashboard Chart	Job Card Analysis	تحليل بطاقة العمل
+4-745	Dashboard Chart	Work Order Qty Analysis	تحليل كمية أمر العمل
+4-746	Dashboard Chart	Completed Operation	العملية المكتملة
+4-747	Dashboard Chart	Work Order Analysis	تحليل أوامر التصنيع
+4-748	Dashboard Chart	Produced Quantity	الكمية المنتجة
+4-749	Dashboard Chart	Top Customers	أكبر العملاء
+4-750	Dashboard Chart	Item-wise Annual Sales	المبيعات السنوية حسب الصنف
+4-751	Dashboard Chart	Completed Projects	المشاريع المكتملة
+4-752	Dashboard Chart	Material Request Analysis	تحليل طلبات المواد
+4-753	Dashboard Chart	Top Suppliers	أكبر الموردين
+4-754	Dashboard Chart	Incoming Leads	العملاء المحتملون الواردون
+4-755	Dashboard Chart	Territory Wise Opportunity Count	عدد الفرص حسب المنطقة
+4-756	Dashboard Chart	Opportunities via Campaigns	الفرص من الحملات
+4-757	Dashboard Chart	Opportunity Trends	اتجاهات الفرص
+4-758	Dashboard Chart	Won Opportunities	الفرص المكتسبة
+4-759	Dashboard Chart	Territory Wise Sales	المبيعات حسب المنطقة
+4-760	Dashboard Chart	Bank Balance	الرصيد البنكي
+4-761	Dashboard Chart	Accounts Receivable Ageing	أعمار الذمم المدينة
+4-762	Dashboard Chart	Incoming Bills (Purchase Invoice)	الفواتير الواردة (فاتورة مشتريات)
+4-763	Dashboard Chart	Outgoing Bills (Sales Invoice)	الفواتير الصادرة (فاتورة مبيعات)
+4-764	Dashboard Chart	Accounts Payable Ageing	أعمار الذمم الدائنة
+4-765	Dashboard Chart	Benefit Claims	مطالبات المزايا
+4-766	Dashboard Chart	Leave Applications by Type	طلبات الإجازة حسب النوع
+4-767	Dashboard Chart	Notifications By Type	الإشعارات حسب النوع
+4-768	Dashboard Chart	Background Job Activity	نشاط المهام الخلفية
+4-769	Dashboard Chart	Email Activity	نشاط البريد الإلكتروني
+4-770	Dashboard Chart	Webpage Views	مشاهدات صفحات الويب
+4-771	Dashboard Chart	Login	تسجيل الدخول
+4-772	Dashboard Chart	Login Activity	نشاط تسجيل الدخول
+4-773	Dashboard Chart	Timesheet Activity Breakup	توزيع أنشطة سجل الوقت
+4-774	Dashboard Chart	Claims by Type	المطالبات حسب النوع
+4-775	Dashboard Chart	Hiring vs Attrition Count	التعيينات مقابل الاستقالات
+4-776	Dashboard Chart	Employees by Age	الموظفون حسب العمر
+4-777	Dashboard Chart	Department wise Expense Claims	مطالبات المصروفات حسب القسم
+4-778	Dashboard Chart	Employee Advance Status	حالة سلف الموظفين
+4-779	Dashboard Chart	Employees by Type	الموظفون حسب النوع
+4-780	Dashboard Chart	Employees by Branch	الموظفون حسب الفرع
+4-781	Dashboard Chart	Employees by Grade	الموظفون حسب الدرجة الوظيفية
+4-782	Dashboard Chart	Job Applicants by Country	المتقدمون للوظائف حسب البلد
+4-783	Dashboard Chart	Shift Assignment Breakup	توزيع تعيينات الوردية
+4-784	Dashboard Chart	Department wise Timesheet Hours	ساعات سجل الوقت حسب القسم
+4-785	Dashboard Chart	Expense Claims	مطالبات المصروفات
+4-786	Dashboard Chart	Y-O-Y Promotions	الترقيات سنة مقابل سنة
+4-787	Dashboard Chart	Training Type	نوع التدريب
+4-788	Dashboard Chart	Y-O-Y Transfers	عمليات النقل سنة مقابل سنة
+4-789	Dashboard Chart	Interview Status	حالة المقابلة
+4-790	Dashboard Chart	Job Applicant Source	مصدر المتقدم للوظيفة
+4-791	Dashboard Chart	Job Application Frequency	معدل طلبات التوظيف
+4-792	Dashboard Chart	Job Offer Status	حالة عروض العمل
+4-793	Dashboard Chart	Job Applicant Pipeline	مسار المتقدمين للوظائف
+4-794	Dashboard Chart	Designation Wise Salary(Last Month)	الرواتب حسب المسمى الوظيفي (الشهر الماضي)
+4-795	Dashboard Chart	Department Wise Salary(Last Month)	الرواتب حسب القسم (الشهر الماضي)
+4-796	Dashboard Chart	Outgoing Salary	الراتب الصادر
+4-797	Dashboard Chart	Department Wise Openings	الوظائف الشاغرة حسب القسم
+4-798	Dashboard Chart	Designation Wise Openings	الوظائف الشاغرة حسب المسمى الوظيفي
+4-799	Dashboard Chart	Designation Wise Employee Count	عدد الموظفين حسب المسمى الوظيفي
+4-800	Dashboard Chart	Department Wise Employee Count	عدد الموظفين حسب القسم
+4-801	Dashboard Chart	Attendance Count	عدد أيام الحضور
+4-802	Dashboard Chart	Job Application Status	حالة طلبات التوظيف
+4-803	Dashboard Chart	Gender Diversity Ratio	نسبة التنوع بين الجنسين

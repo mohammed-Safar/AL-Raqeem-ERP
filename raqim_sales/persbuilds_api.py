@@ -2,6 +2,7 @@
 # Clients: register / log in, read live prices + stock, save builds, send a build as a draft Sales Order.
 # Admin (System Manager / Sales Manager): overview of web builds, orders, clients and stock.
 import json
+from contextlib import contextmanager
 
 import frappe
 from frappe import _
@@ -43,6 +44,23 @@ CATEGORY_LABEL = {
 
 
 # ---------------------------------------------------------------- helpers
+@contextmanager
+def as_admin():
+	"""Run ERPNext code as Administrator inside a website request WITHOUT touching the
+	client's login: frappe.set_user() also overwrites session.sid/session.data, which would
+	send the browser a broken sid cookie (client logged out) and drop its CSRF token."""
+	sess = frappe.local.session
+	saved = (sess.user, sess.sid, sess.data, frappe.local.form_dict)
+	frappe.set_user("Administrator")
+	try:
+		yield
+	finally:
+		sess.user, sess.sid, sess.data, frappe.local.form_dict = saved
+		frappe.local.cache = {}
+		frappe.local.role_permissions = {}
+		frappe.local.user_perms = None
+
+
 def _user():
 	return frappe.session.user
 
@@ -163,7 +181,27 @@ def _build_dict(b):
 		"order_status": frappe.db.get_value("Sales Order", b.sales_order, "status") if b.sales_order else None,
 		"customer": b.customer,
 		"created": str(b.creation)[:16],
+		"order_total": flt(frappe.db.get_value("Sales Order", b.sales_order, "grand_total")) if b.sales_order else None,
+		"payment": _last_payment(b.name),
 	}
+
+
+def _last_payment(build):
+	"""latest payment attempt of a build, the one that matters for the client"""
+	rows = frappe.get_all(
+		"PersBuilds Web Payment",
+		filters={"web_build": build},
+		fields=["name", "status", "method", "amount", "is_deposit", "demo", "transaction_id"],
+		order_by="creation desc",
+		limit=5,
+	)
+	if not rows:
+		return None
+	# a finished/pending one wins over a later failed retry
+	for r in rows:
+		if r.status in ("Paid", "Awaiting Check", "Pay On Delivery"):
+			return r
+	return rows[0]
 
 
 # ---------------------------------------------------------------- public
@@ -338,12 +376,8 @@ def send_order(name):
 		if not code:
 			row["item_name"] = p["name"][:140]
 		items.append(row)
-	client = _user()
-	frappe.set_user("Administrator")  # ERPNext item/price lookups inside SO.validate check permissions
-	try:
+	with as_admin():  # ERPNext item/price lookups inside SO.validate check permissions
 		so = _make_sales_order(doc, customer, delivery, items)
-	finally:
-		frappe.set_user(client)
 	doc.db_set({"sales_order": so.name, "sent_on": now_datetime(), "customer": customer})
 	return _build_dict(doc)
 

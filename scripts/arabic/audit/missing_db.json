@@ -1,8 +1,4 @@
 {
-"raqeem": [
-"DocType",
-"TD:DocType"
-],
 "Insights Query Reference": [
 "DocType",
 "TD:DocType"
@@ -889,16 +885,13 @@
 "Module Def.name",
 "Page.title"
 ],
+"analytics": [
+"Page.name"
+],
 "raqeem-banking": [
 "Page.name"
 ],
-"my-affairs": [
-"Page.name"
-],
 "open-positions": [
-"Page.name"
-],
-"analytics": [
 "Page.name"
 ],
 "raqeem-pipeline": [
@@ -1200,13 +1193,13 @@
 "Exit Interview Scheduled: {{ doc.name }}": [
 "Notification.subject"
 ],
-"{{ doc.name }} has been received": [
+"تم استلام {{ doc.name }}": [
 "Notification.subject"
 ],
 "Retention Bonus alert for {{ doc.employee }}": [
 "Notification.subject"
 ],
-"New Fiscal Year {{ doc.name }} - Review Required": [
+"سنة مالية جديدة {{ doc.name }} - يلزم مراجعتها": [
 "Notification.subject"
 ],
 "Please Share your Feedback For {{ doc.training_event }}": [
@@ -1215,7 +1208,604 @@
 "Training Scheduled: {{ doc.name }}": [
 "Notification.subject"
 ],
-"الاستقبال - RM.co": [
+"SRV-FREIGHT": [
+"TD:CRM Product"
+],
+"AST-SERVER": [
+"TD:CRM Product"
+],
+"AST-DISPLAY": [
+"TD:CRM Product"
+],
+"AST-STATION": [
+"TD:CRM Product"
+],
+"AST-VAN": [
+"TD:CRM Product"
+],
+"SRV-OS": [
+"TD:CRM Product"
+],
+"SRV-CLEAN": [
+"TD:CRM Product"
+],
+"PB-OFFICE": [
+"TD:CRM Product"
+],
+"PB-STUDIO": [
+"TD:CRM Product"
+],
+"PB-PRO": [
+"TD:CRM Product"
+],
+"PB-STARTER": [
+"TD:CRM Product"
+],
+"NET-CAT6-305": [
+"TD:CRM Product"
+],
+"NET-TPL-SG108": [
+"TD:CRM Product"
+],
+"NET-TPL-AX55": [
+"TD:CRM Product"
+],
+"ACC-RZR-KR": [
+"TD:CRM Product"
+],
+"ACC-RZR-BW": [
+"TD:CRM Product"
+],
+"ACC-LOG-MK270": [
+"TD:CRM Product"
+],
+"ACC-LOG-G502X": [
+"TD:CRM Product"
+],
+"LAP-DELL-5440": [
+"TD:CRM Product"
+],
+"LAP-ASUS-TUF": [
+"TD:CRM Product"
+],
+"LAP-LEN-IP5": [
+"TD:CRM Product"
+],
+"MON-DELL-27": [
+"TD:CRM Product"
+],
+"MON-MSI-24": [
+"TD:CRM Product"
+],
+"MON-ASUS-27Q": [
+"TD:CRM Product"
+],
+"COOL-DC-AK400": [
+"TD:CRM Product"
+],
+"COOL-NZXT-280": [
+"TD:CRM Product"
+],
+"COOL-NOC-D15": [
+"TD:CRM Product"
+],
+"CASE-DC-CH560": [
+"TD:CRM Product"
+],
+"CASE-NZXT-H5": [
+"TD:CRM Product"
+],
+"CASE-LL-O11": [
+"TD:CRM Product"
+],
+"PSU-COR-1000": [
+"TD:CRM Product"
+],
+"PSU-COR-850": [
+"TD:CRM Product"
+],
+"PSU-CM-750": [
+"TD:CRM Product"
+],
+"HDD-ST-4T": [
+"TD:CRM Product"
+],
+"SSD-SN770-1T": [
+"TD:CRM Product"
+],
+"SSD-990-2T": [
+"TD:CRM Product"
+],
+"SSD-990-1T": [
+"TD:CRM Product"
+],
+"RAM-16-D4": [
+"TD:CRM Product"
+],
+"RAM-64-D5": [
+"TD:CRM Product"
+],
+"RAM-32-D5": [
+"TD:CRM Product"
+],
+"GPU-7800XT": [
+"TD:CRM Product"
+],
+"GPU-4080S": [
+"TD:CRM Product"
+],
+"GPU-4070S": [
+"TD:CRM Product"
+],
+"GPU-4060": [
+"TD:CRM Product"
+],
+"MB-ASUS-Z790": [
+"TD:CRM Product"
+],
+"MB-ASR-B760M": [
+"TD:CRM Product"
+],
+"MB-GB-X670E": [
+"TD:CRM Product"
+],
+"MB-MSI-B650M": [
+"TD:CRM Product"
+],
+"MB-ASUS-B650": [
+"TD:CRM Product"
+],
+"CPU-I7-14700K": [
+"TD:CRM Product"
+],
+"CPU-I5-14400F": [
+"TD:CRM Product"
+],
+"CPU-R9-7950X": [
+"TD:CRM Product"
+],
+"CPU-R7-7800X3D": [
+"TD:CRM Product"
+],
+"CPU-R5-7600": [
+"TD:CRM Product"
+],
+"SRV-NET": [
+"TD:CRM Product"
+],
+"SRV-AMC": [
+"TD:CRM Product"
+],
+"SRV-REPAIR": [
+"TD:CRM Product"
+],
+"SRV-BUILD": [
+"TD:CRM Product"
+],
+"ACC-ASUS-KB": [
+"TD:CRM Product"
+],
+"ACC-LOG-G502": [
+"TD:CRM Product"
+],
+"LAP-MSI-GF63": [
+"TD:CRM Product"
+],
+"LAP-ASUS-VB15": [
+"TD:CRM Product"
+],
+"LAP-ASUS-F15": [
+"TD:CRM Product"
+],
+"MON-MSI-27": [
+"TD:CRM Product"
+],
+"MON-ASUS-24": [
+"TD:CRM Product"
+],
+"PSU-ASUS-850": [
+"TD:CRM Product"
+],
+"PSU-COR-750": [
+"TD:CRM Product"
+],
+"SSD-KIN-NV2": [
+"TD:CRM Product"
+],
+"SSD-WD-SN580": [
+"TD:CRM Product"
+],
+"SSD-SAM-990": [
+"TD:CRM Product"
+],
+"RAM-COR-16D4": [
+"TD:CRM Product"
+],
+"RAM-KF-32D5": [
+"TD:CRM Product"
+],
+"CPU-INT-14700K": [
+"TD:CRM Product"
+],
+"CPU-INT-14400F": [
+"TD:CRM Product"
+],
+"CPU-AMD-7800X3D": [
+"TD:CRM Product"
+],
+"CPU-AMD-7600": [
+"TD:CRM Product"
+],
+"GPU-ASR-7800XT": [
+"TD:CRM Product"
+],
+"GPU-GB-7600": [
+"TD:CRM Product"
+],
+"GPU-MSI-4060TI": [
+"TD:CRM Product"
+],
+"GPU-ASUS-4070S": [
+"TD:CRM Product"
+],
+"GPU-ASUS-4060": [
+"TD:CRM Product"
+],
+"MB-GB-B760M": [
+"TD:CRM Product"
+],
+"MB-MSI-B550": [
+"TD:CRM Product"
+],
+"MB-ASR-Z790": [
+"TD:CRM Product"
+],
+"MB-ASR-B650M": [
+"TD:CRM Product"
+],
+"MB-ASUS-B760M": [
+"TD:CRM Product"
+],
+"MB-ASUS-B650A": [
+"TD:CRM Product"
+],
+"سيارة توصيل Hyundai H100": [
+"TD:CRM Product"
+],
+"PersBuilds Office (i5 14400F)": [
+"TD:CRM Product"
+],
+"PersBuilds Creator Studio (R9 7950X / RTX 4080 SUPER)": [
+"TD:CRM Product"
+],
+"PersBuilds Pro Gamer (7800X3D / RTX 4070 SUPER)": [
+"TD:CRM Product"
+],
+"PersBuilds Starter (R5 7600 / RTX 4060)": [
+"TD:CRM Product"
+],
+"كابل شبكة CAT6 لفة 305 م": [
+"TD:CRM Product"
+],
+"TP-Link TL-SG108 8-Port Switch": [
+"TD:CRM Product"
+],
+"TP-Link Archer AX55 Wi-Fi 6 Router": [
+"TD:CRM Product"
+],
+"Razer Kraken V3 X Headset": [
+"TD:CRM Product"
+],
+"Razer BlackWidow V4 Keyboard": [
+"TD:CRM Product"
+],
+"Logitech MK270 Wireless Combo": [
+"TD:CRM Product"
+],
+"Logitech G502 X Gaming Mouse": [
+"TD:CRM Product"
+],
+"Dell Latitude 5440 i5 16GB 512GB": [
+"TD:CRM Product"
+],
+"ASUS TUF Gaming A15 RTX 4060": [
+"TD:CRM Product"
+],
+"Lenovo IdeaPad Slim 5 Ryzen 7 16GB 512GB": [
+"TD:CRM Product"
+],
+"Dell P2723D 27\" 2K Office": [
+"TD:CRM Product"
+],
+"MSI G2412F 24\" 180Hz": [
+"TD:CRM Product"
+],
+"ASUS TUF VG27AQ3A 27\" 2K 180Hz": [
+"TD:CRM Product"
+],
+"DeepCool AK400": [
+"TD:CRM Product"
+],
+"NZXT Kraken 280 AIO": [
+"TD:CRM Product"
+],
+"Noctua NH-D15 chromax.black": [
+"TD:CRM Product"
+],
+"DeepCool CH560 Digital": [
+"TD:CRM Product"
+],
+"NZXT H5 Flow": [
+"TD:CRM Product"
+],
+"Lian Li O11 Dynamic EVO": [
+"TD:CRM Product"
+],
+"Corsair RM1000x 1000W Gold": [
+"TD:CRM Product"
+],
+"Corsair RM850x 850W Gold": [
+"TD:CRM Product"
+],
+"Cooler Master MWE Gold 750 V2": [
+"TD:CRM Product"
+],
+"Seagate BarraCuda 4TB HDD": [
+"TD:CRM Product"
+],
+"WD Black SN770 1TB NVMe": [
+"TD:CRM Product"
+],
+"Samsung 990 PRO 2TB NVMe": [
+"TD:CRM Product"
+],
+"Samsung 990 PRO 1TB NVMe": [
+"TD:CRM Product"
+],
+"Corsair Vengeance LPX 16GB (2x8) DDR4 3200": [
+"TD:CRM Product"
+],
+"G.Skill Trident Z5 RGB 64GB (2x32) DDR5 6400": [
+"TD:CRM Product"
+],
+"Kingston FURY Beast 32GB (2x16) DDR5 6000": [
+"TD:CRM Product"
+],
+"ASRock Radeon RX 7800 XT Steel Legend 16GB": [
+"TD:CRM Product"
+],
+"Gigabyte GeForce RTX 4080 SUPER WINDFORCE 16GB": [
+"TD:CRM Product"
+],
+"MSI GeForce RTX 4070 SUPER VENTUS 2X 12GB": [
+"TD:CRM Product"
+],
+"ASUS Dual GeForce RTX 4060 OC 8GB": [
+"TD:CRM Product"
+],
+"ASUS ROG STRIX Z790-E GAMING WIFI II": [
+"TD:CRM Product"
+],
+"ASRock B760M Pro RS WiFi": [
+"TD:CRM Product"
+],
+"Gigabyte X670E AORUS MASTER": [
+"TD:CRM Product"
+],
+"MSI MAG B650M MORTAR WIFI": [
+"TD:CRM Product"
+],
+"ASUS TUF GAMING B650-PLUS WIFI": [
+"TD:CRM Product"
+],
+"Intel Core i7-14700K": [
+"TD:CRM Product"
+],
+"Intel Core i5-14400F": [
+"TD:CRM Product"
+],
+"AMD Ryzen 9 7950X": [
+"TD:CRM Product"
+],
+"AMD Ryzen 7 7800X3D": [
+"TD:CRM Product"
+],
+"AMD Ryzen 5 7600": [
+"TD:CRM Product"
+],
+"ASUS ROG Strix Scope II Keyboard": [
+"TD:CRM Product"
+],
+"Logitech G502 HERO Gaming Mouse": [
+"TD:CRM Product"
+],
+"MSI Thin GF63 i5 RTX 4050": [
+"TD:CRM Product"
+],
+"ASUS Vivobook 15 i5 16GB 512GB": [
+"TD:CRM Product"
+],
+"ASUS TUF Gaming F15 i7 RTX 4050": [
+"TD:CRM Product"
+],
+"MSI G27C4X 27\" Curved 250Hz": [
+"TD:CRM Product"
+],
+"ASUS TUF Gaming VG249Q1A 24\" 165Hz": [
+"TD:CRM Product"
+],
+"ASUS TUF Gaming 850W Gold": [
+"TD:CRM Product"
+],
+"Corsair RM750e 750W Gold": [
+"TD:CRM Product"
+],
+"Kingston NV2 500GB NVMe": [
+"TD:CRM Product"
+],
+"WD Blue SN580 1TB NVMe": [
+"TD:CRM Product"
+],
+"Corsair Vengeance LPX 16GB DDR4 3200": [
+"TD:CRM Product"
+],
+"Kingston FURY Beast 32GB DDR5 6000": [
+"TD:CRM Product"
+],
+"ASRock Radeon RX 7800 XT Challenger 16GB": [
+"TD:CRM Product"
+],
+"Gigabyte Radeon RX 7600 GAMING OC 8GB": [
+"TD:CRM Product"
+],
+"MSI GeForce RTX 4060 Ti VENTUS 2X 8GB": [
+"TD:CRM Product"
+],
+"ASUS TUF GeForce RTX 4070 SUPER 12GB": [
+"TD:CRM Product"
+],
+"ASUS Dual GeForce RTX 4060 8GB": [
+"TD:CRM Product"
+],
+"Gigabyte B760M AORUS ELITE": [
+"TD:CRM Product"
+],
+"MSI MAG B550 TOMAHAWK": [
+"TD:CRM Product"
+],
+"ASRock Z790 Steel Legend WiFi": [
+"TD:CRM Product"
+],
+"ASRock B650M Pro RS": [
+"TD:CRM Product"
+],
+"ASUS TUF GAMING B760M-PLUS WIFI": [
+"TD:CRM Product"
+],
+"ASUS ROG STRIX B650-A GAMING WIFI": [
+"TD:CRM Product"
+],
+"الحسابات - R.CO": [
 "TD:Department"
+],
+"التسويق - R.CO": [
+"TD:Department"
+],
+"المبيعات - R.CO": [
+"TD:Department"
+],
+"الشراء - R.CO": [
+"TD:Department"
+],
+"العمليات - R.CO": [
+"TD:Department"
+],
+"الإنتاج - R.CO": [
+"TD:Department"
+],
+"الشحن - R.CO": [
+"TD:Department"
+],
+"خدمة العملاء - R.CO": [
+"TD:Department"
+],
+"الموارد البشرية - R.CO": [
+"TD:Department"
+],
+"الإدارة - R.CO": [
+"TD:Department"
+],
+"إدارة الجودة - R.CO": [
+"TD:Department"
+],
+"البحث والتطوير - R.CO": [
+"TD:Department"
+],
+"قانوني - R.CO": [
+"TD:Department"
+],
+"الحسابات - SaTe.CO": [
+"TD:Department"
+],
+"التسويق - SaTe.CO": [
+"TD:Department"
+],
+"المبيعات - SaTe.CO": [
+"TD:Department"
+],
+"الشراء - SaTe.CO": [
+"TD:Department"
+],
+"العمليات - SaTe.CO": [
+"TD:Department"
+],
+"الإنتاج - SaTe.CO": [
+"TD:Department"
+],
+"الشحن - SaTe.CO": [
+"TD:Department"
+],
+"خدمة العملاء - SaTe.CO": [
+"TD:Department"
+],
+"الموارد البشرية - SaTe.CO": [
+"TD:Department"
+],
+"الإدارة - SaTe.CO": [
+"TD:Department"
+],
+"إدارة الجودة - SaTe.CO": [
+"TD:Department"
+],
+"البحث والتطوير - SaTe.CO": [
+"TD:Department"
+],
+"قانوني - SaTe.CO": [
+"TD:Department"
+],
+"الحسابات - PB": [
+"TD:Department"
+],
+"التسويق - PB": [
+"TD:Department"
+],
+"المبيعات - PB": [
+"TD:Department"
+],
+"الشراء - PB": [
+"TD:Department"
+],
+"العمليات - PB": [
+"TD:Department"
+],
+"الإنتاج - PB": [
+"TD:Department"
+],
+"الشحن - PB": [
+"TD:Department"
+],
+"خدمة العملاء - PB": [
+"TD:Department"
+],
+"الموارد البشرية - PB": [
+"TD:Department"
+],
+"الإدارة - PB": [
+"TD:Department"
+],
+"إدارة الجودة - PB": [
+"TD:Department"
+],
+"البحث والتطوير - PB": [
+"TD:Department"
+],
+"قانوني - PB": [
+"TD:Department"
+],
+"أجهزة PersBuilds المجمّعة": [
+"TD:Item Group"
+],
+"مقر PersBuilds - طرابلس": [
+"TD:Location"
 ]
 }

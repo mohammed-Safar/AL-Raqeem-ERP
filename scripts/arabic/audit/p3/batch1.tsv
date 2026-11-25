@@ -1,0 +1,804 @@
+1-0	doctype	Customer	العميل
+1-1	Customer.customer_name	Customer Name	اسم العميل
+1-2	Customer.customer_type	Customer Type	نوع العميل
+1-3	Customer.customer_type:opt	Company	الشركة
+1-4	Customer.customer_type:opt	Individual	فرد
+1-5	Customer.customer_type:opt	Partnership	شراكة
+1-6	Customer.alias	Alias	اسم مستعار
+1-7	Customer.gender	Gender	الجنس
+1-8	Customer.customer_group	Customer Group	مجموعة العملاء
+1-9	Customer.territory	Territory	المنطقة
+1-10	Customer.section_break_hwkr	Defaults	القيم الافتراضية
+1-11	Customer.default_currency	Billing Currency	عملة الفوترة
+1-12	Customer.default_currency:desc	All invoices and orders for this customer will be created in this currency.	سيتم إنشاء جميع الفواتير والطلبات لهذا العميل بهذه العملة.
+1-13	Customer.default_bank_account	Company Bank Account	الحساب البنكي للشركة
+1-14	Customer.default_bank_account:desc	Pre-filled on payment entries for this customer. Must be a company account.	يتم ملؤه تلقائيًا في سندات الدفع لهذا العميل. يجب أن يكون حسابًا للشركة.
+1-15	Customer.default_price_list	Price List	قائمة الأسعار
+1-16	Customer.default_price_list:desc	Fetched automatically on sales orders and invoices for this customer.	يتم جلبه تلقائياً في أوامر البيع والفواتير لهذا العميل.
+1-17	Customer.payment_terms	Payment Terms Template	قالب شروط الدفع
+1-18	Customer.payment_terms:desc	Defines when payment is due (e.g. Net 30, 50% advance). Applied automatically on invoices for this customer.	يحدد موعد استحقاق الدفع (مثل Net 30، أو دفعة مقدمة بنسبة 50%). يُطبَّق تلقائيًا على الفواتير الخاصة بهذا العميل.
+1-19	Customer.loyalty_points_tab	Loyalty Points	نقاط الولاء
+1-20	Customer.loyalty_program	Loyalty Program	برنامج الولاء
+1-21	Customer.loyalty_program:desc	Loyalty scheme this customer earns points under. Auto-assigned if a matching program exists.	برنامج الولاء الذي يكسب العميل نقاطه بموجبه. يُعيَّن تلقائيًا إذا كان هناك برنامج مطابق.
+1-22	Customer.loyalty_program_tier	Loyalty Program Tier	مستوى برنامج الولاء
+1-23	Customer.loyalty_program_tier:desc	Current tier based on accumulated points. Updated automatically on each invoice.	المستوى الحالي استناداً إلى النقاط المتراكمة. يتم تحديثه تلقائياً مع كل فاتورة.
+1-24	Customer.contact_and_address_tab	Address & Contact	العنوان وجهة الاتصال
+1-25	Customer.address_html	Address HTML	عنوان HTML
+1-26	Customer.contact_html	Contact HTML	جهة الاتصال HTML
+1-27	Customer.customer_primary_address	Customer Primary Address	عنوان العميل الرئيسي
+1-28	Customer.customer_primary_address:desc	Reselect, if the chosen address is edited after save	أعد التحديد إذا عُدّل العنوان المختار بعد الحفظ
+1-29	Customer.customer_primary_contact	Customer Primary Contact	جهة الاتصال الرئيسية للعميل
+1-30	Customer.customer_primary_contact:desc	Reselect, if the chosen contact is edited after save	أعد التحديد إذا عُدّلت جهة الاتصال المختارة بعد الحفظ
+1-31	Customer.accounting_tab	Accounting	المحاسبة
+1-32	Customer.accounts	Default Accounts	الحسابات الافتراضية
+1-33	Customer.accounts:desc	If set, accounting entries for this customer will post to these accounts instead of the company default.	إذا تم تعيينها، فستُرحَّل القيود المحاسبية لهذا العميل إلى هذه الحسابات بدلًا من الحساب الافتراضي للشركة.
+1-34	Customer.credit_limits	Credit & Overdue Limits	حدود الائتمان والمتأخرات
+1-35	Customer.internal_customer_section	Internal Customer Accounting	محاسبة العميل الداخلي
+1-36	Customer.is_internal_customer	Is Internal Customer	عميل داخلي
+1-37	Customer.is_internal_customer:desc	Mark if this customer represents an internal company. Enables inter-company transactions.	حدد هذا الخيار إذا كان هذا العميل يمثل شركة داخلية. يتيح إجراء معاملات بين الشركات.
+1-38	Customer.represents_company	Represents Company	يمثل الشركة
+1-39	Customer.companies	Allowed to transact with	مسموح بإجراء المعاملات مع
+1-40	Customer.tax_tab	Tax	ضريبة
+1-41	Customer.tax_id	Tax ID	الرقم الضريبي
+1-42	Customer.tax_category	Tax Category	الفئة الضريبية
+1-43	Customer.tax_category:desc	Controls which tax template is auto-applied when this customer is selected on a transaction.	يتحكم في قالب الضريبة الذي يُطبَّق تلقائيًا عند اختيار هذا العميل في معاملة.
+1-44	Customer.tax_withholding_group	Tax Withholding Group	مجموعة الاستقطاع الضريبي
+1-45	Customer.tax_withholding_group:desc	Select the group first to filter the applicable withholding categories below.	اختر المجموعة أولاً لتصفية فئات الاستقطاع المنطبقة أدناه.
+1-46	Customer.tax_withholding_category	Tax Withholding Category	فئة الاستقطاع الضريبي
+1-47	Customer.tax_withholding_category:desc	TDS/TCS is calculated at the rate defined here on every payment from this customer.	يتم احتساب TDS/TCS بالنسبة المحددة هنا على كل دفعة من هذا العميل.
+1-48	Customer.settings_tab	Settings	الإعدادات
+1-49	Customer.so_required	Allow sales invoice creation without sales order	السماح بإنشاء فاتورة مبيعات بدون أمر بيع
+1-50	Customer.dn_required	Allow sales invoice creation without delivery note	السماح بإنشاء فاتورة مبيعات بدون إذن تسليم
+1-51	Customer.disabled	Disabled	معطل
+1-52	Customer.disabled:desc	Blocks this customer from being used on any new transaction.	يمنع استخدام هذا العميل في أي معاملة جديدة.
+1-53	Customer.is_frozen	Is Frozen	مجمّد
+1-54	Customer.is_frozen:desc	Blocks new transactions and further accounting entries on this customer's account. Only users with the role set in Company's "Roles Allowed to Set and Edit Frozen Account Entries" can transact.	يمنع المعاملات الجديدة والقيود المحاسبية الإضافية على حساب هذا العميل. يمكن فقط للمستخدمين الذين لديهم الدور المحدد في "الأدوار المسموح لها بتعيين وتعديل قيود الحساب المجمدة" الخاص بالشركة إجراء المعاملات.
+1-55	Customer.sales_team_tab	Sales Team	فريق المبيعات
+1-56	Customer.account_manager	Account Manager	مدير الحساب
+1-57	Customer.sales_team:desc	Split commission credit across multiple sales persons.	قسّم رصيد العمولة على عدة مندوبي مبيعات.
+1-58	Customer.sales_team_section	Sales Partner	شريك المبيعات
+1-59	Customer.sales_team_section:desc	Commission paid to the Sales Partner on transactions with this customer.	العمولة المدفوعة لشريك المبيعات عن المعاملات مع هذا العميل.
+1-60	Customer.default_commission_rate	Commission Rate	نسبة العمولة
+1-61	Customer.portal_users_tab	Portal Users	مستخدمو البوابة
+1-62	Customer.portal_users_tab:desc	Users listed here can log into the customer portal to view their orders, invoices, and deliveries.	يمكن للمستخدمين المدرجين هنا تسجيل الدخول إلى بوابة العملاء لعرض طلباتهم وفواتيرهم وعمليات التسليم.
+1-63	Customer.portal_users	Customer Portal Users	مستخدمو بوابة العملاء
+1-64	Customer.more_info_tab	More Info	المزيد من المعلومات
+1-65	Customer.references_section	References	المراجع
+1-66	Customer.lead_name	Lead	عميل محتمل
+1-67	Customer.opportunity_name	Opportunity	فرصة
+1-68	Customer.prospect_name	Prospect	عميل مرتقب
+1-69	Customer.crm_deal	Frappe CRM Deal	صفقة Frappe CRM
+1-70	Customer.market_segment	Market Segment	شريحة السوق
+1-71	Customer.market_segment:desc	Classify the type of market this customer belongs to, used for sales analysis and targeting.	صنّف نوع السوق الذي ينتمي إليه هذا العميل، ويُستخدم لتحليل المبيعات والاستهداف.
+1-72	Customer.industry	Industry	القطاع
+1-73	Customer.website	Website	الموقع الإلكتروني
+1-74	Customer.language	Print Language	لغة الطباعة
+1-75	Customer.customer_pos_id	Customer POS ID	معرّف العميل في نقطة البيع
+1-76	Customer.customer_details	Customer Details	تفاصيل العميل
+1-77	Customer.customer_details:desc	Internal notes about this customer. Not visible on transactions or the portal.	ملاحظات داخلية حول هذا العميل. غير مرئية في المعاملات أو البوابة.
+1-78	Customer.supplier_numbers	Supplier Numbers	أرقام الموردين
+1-79	Customer.supplier_numbers:desc	Numbers this customer uses to identify your company in their own system.	الأرقام التي يستخدمها هذا العميل لتحديد شركتكم في نظامه الخاص.
+1-80	Customer.connections_tab	Connections	الارتباطات
+1-81	doctype	Supplier	المورد
+1-82	Supplier.supplier_name	Supplier Name	اسم المورد
+1-83	Supplier.supplier_type	Supplier Type	نوع المورد
+1-84	Supplier.supplier_group	Supplier Group	مجموعة الموردين
+1-85	Supplier.country	Country	الدولة
+1-86	Supplier.address_contacts	Address and Contacts	العناوين وجهات الاتصال
+1-87	Supplier.supplier_primary_address	Primary Address	العنوان الأساسي
+1-88	Supplier.supplier_primary_contact	Primary Contact	جهة الاتصال الرئيسية
+1-89	Supplier.accounts	Per-Company Accounts	الحسابات لكل شركة
+1-90	Supplier.accounts:desc	Override the default payable / advance accounts on a per-company basis. Leave blank to use each company's defaults from Company settings.	تجاوز الحسابات الافتراضية للدائنين / الدفعات المقدمة على أساس كل شركة. اتركه فارغًا لاستخدام الإعدادات الافتراضية لكل شركة من إعدادات الشركة.
+1-91	Supplier.internal_supplier_section	Internal Supplier Details	تفاصيل المورد الداخلي
+1-92	Supplier.is_internal_supplier	Is Internal Supplier	مورد داخلي
+1-93	Supplier.is_internal_supplier:desc	Used for inter-company transactions	يُستخدم للمعاملات بين الشركات
+1-94	Supplier.taxation_section	Tax Identification	التعريف الضريبي
+1-95	Supplier.tax_id:desc	Supplier's tax identification number (e.g. PAN, VAT, GST)	الرقم الضريبي للمورد (مثل PAN وVAT وGST)
+1-96	Supplier.tax_category:desc	Determines which tax rules apply to this supplier	يحدد القواعد الضريبية التي تنطبق على هذا المورد
+1-97	Supplier.tax_withholding_category:desc	TDS / withholding tax category applied when paying this supplier	فئة الاستقطاع الضريبي (TDS) المطبقة عند الدفع لهذا المورد
+1-98	Supplier.tax_withholding_group:desc	Used to pick the correct rate row inside the Tax Withholding Category for this supplier (e.g. Company vs Individual rates)	يُستخدم لاختيار صف النسبة الصحيح ضمن فئة الاستقطاع الضريبي لهذا المورد (مثلاً: نسب الشركات مقابل نسب الأفراد)
+1-99	Supplier.is_transporter	Is Transporter	ناقل
+1-100	Supplier.is_transporter:desc	Enable to make this supplier selectable as a transporter on Delivery Notes and Stock Entries	فعّله ليصبح هذا المورد قابلاً للاختيار كناقل في أذون التسليم وحركات المخزون
+1-101	Supplier.allow_purchase_invoice_creation_without_purchase_order	Allow purchase invoice creation without purchase order	السماح بإنشاء فاتورة مشتريات بدون أمر شراء
+1-102	Supplier.allow_purchase_invoice_creation_without_purchase_receipt	Allow purchase invoice creation without purchase receipt	السماح بإنشاء فاتورة مشتريات بدون إيصال استلام
+1-103	Supplier.disabled:desc	Disabled suppliers are hidden from selection in new transactions but remain in historical records	يتم إخفاء الموردين المعطلين من الاختيار في المعاملات الجديدة، ولكنهم يبقون في السجلات التاريخية
+1-104	Supplier.is_frozen:desc	Frozen suppliers block new transactions and ledger entries until unfrozen. Only users with the role set in Company's "Roles Allowed to Set and Edit Frozen Account Entries" can transact.	تُحظر المعاملات الجديدة وقيود دفتر الأستاذ على الموردين المجمّدين حتى يتم إلغاء تجميدهم. ولا يمكن للمستخدمين إجراء المعاملات إلا إذا كان لديهم الدور المحدد في “الأدوار المسموح لها بتعيين وتعديل قيود الحسابات المجمّدة” في إعدادات الشركة.
+1-105	Supplier.block_supplier_section	Block Supplier	حظر المورد
+1-106	Supplier.on_hold:desc	When enabled, transactions with this supplier will be blocked based on the Hold Type below	عند التفعيل، سيتم حظر المعاملات مع هذا المورد بناءً على نوع التعليق أدناه
+1-107	Supplier.hold_type	Hold Type	نوع التعليق
+1-108	Supplier.hold_type:opt	All	الكل
+1-109	Supplier.hold_type:opt	Invoices	الفواتير
+1-110	Supplier.hold_type:opt	Payments	المدفوعات
+1-111	Supplier.release_date	Release Date	تاريخ الإفراج
+1-112	Supplier.release_date:desc	Leave blank if the Supplier is blocked indefinitely	اتركه فارغًا إذا تم حظر المورد إلى أجل غير مسمى
+1-113	Supplier.portal_users	Supplier Portal Users	مستخدمو بوابة الموردين
+1-114	Supplier.column_break2	More Information	المزيد من المعلومات
+1-115	Supplier.supplier_details	Supplier Details	تفاصيل المورد
+1-116	Supplier.supplier_details:desc	General information about your Supplier	معلومات عامة عن موردك
+1-117	Supplier.customer_numbers	Customer Numbers	أرقام العملاء
+1-118	Supplier.customer_numbers:desc	Account / customer numbers assigned to your companies by this supplier (for reconciliation on their statements)	أرقام الحساب / العميل المخصصة لشركاتك من قبل هذا المورد (للتسوية على كشوف حساباتهم)
+1-119	doctype	Item	الصنف
+1-120	Item.details	Details	التفاصيل
+1-121	Item.item_code	Item Code	رمز الصنف
+1-122	Item.crm_product_code	CRM Product	منتج (CRM)
+1-123	Item.item_name	Item Name	اسم الصنف
+1-124	Item.item_group	Item Group	مجموعة الأصناف
+1-125	Item.stock_uom	Default Unit of Measure	وحدة القياس الافتراضية
+1-126	Item.disabled:desc	Disabled items cannot be selected in any transaction.	لا يمكن اختيار الأصناف المعطلة في أي معاملة.
+1-127	Item.is_stock_item	Maintain Stock	صنف مخزني
+1-128	Item.is_stock_item:desc	ERPNext will make a stock ledger entry for each transaction of this item. Keep unchecked for non-stock or service items.	سيقوم ERPNext بإنشاء قيد دفتر مخزون لكل معاملة لهذا الصنف. اتركه غير محدد للأصناف غير المخزنية أو الخدمية.
+1-129	Item.is_fixed_asset	Is Fixed Asset	أصل ثابت
+1-130	Item.is_fixed_asset:desc	Enable if this item is a company asset like machinery or furniture.	فعّل هذا الخيار إذا كان هذا الصنف أصلاً للشركة مثل الآلات أو الأثاث.
+1-131	Item.auto_create_assets	Auto create assets on purchase	إنشاء الأصول تلقائيًا عند الشراء
+1-132	Item.is_grouped_asset	Create Grouped Asset	إنشاء أصل مجمَّع
+1-133	Item.is_grouped_asset:desc	Creates a single grouped asset instead of individual assets when purchased in bulk.	ينشئ أصلًا مجمعًا واحدًا بدلًا من الأصول الفردية عند الشراء بالجملة.
+1-134	Item.asset_category	Asset Category	فئة الأصل
+1-135	Item.asset_naming_series	Asset Naming Series	سلسلة تسمية الأصول
+1-136	Item.section_break_zlmj	Item Attributes	خصائص الصنف
+1-137	Item.is_sales_item	Allow Sales	السماح بالمبيعات
+1-138	Item.is_sales_item:desc	Allow this item to be used in sales transactions.	السماح باستخدام هذا الصنف في معاملات البيع.
+1-139	Item.allow_alternative_item	Allow Alternative Item	السماح بصنف بديل
+1-140	Item.allow_alternative_item:desc	Allow substituting this item with an alternative from the Item Alternative list when stock is unavailable.	السماح باستبدال هذا الصنف ببديل من قائمة الصنف البديل عند عدم توفر المخزون.
+1-141	Item.has_variants	Has Variants	يحتوي على متغيرات
+1-142	Item.has_variants:desc	If this item has variants, then it cannot be selected in sales orders etc.	إذا كان لهذا الصنف متغيرات، فلا يمكن اختياره في أوامر البيع وغيرها
+1-143	Item.is_purchase_item	Allow Purchase	السماح بالشراء
+1-144	Item.is_purchase_item:desc	Allow this item to be used in purchase transactions.	السماح باستخدام هذا الصنف في معاملات الشراء.
+1-145	Item.is_customer_provided_item	Is Customer Provided Item	صنف مقدَّم من العميل
+1-146	Item.is_customer_provided_item:desc	Enable if this item is provided by a customer and received via Stock Entry.	فعّل هذا الخيار إذا كان الصنف مقدَّماً من العميل ويُستلم عبر حركة مخزون.
+1-147	Item.standard_rate	Standard Selling Rate	سعر البيع القياسي
+1-148	Item.standard_rate:desc	Creates an Item Price automatically when the item is saved	ينشئ سعر الصنف تلقائيًا عند حفظ الصنف
+1-149	Item.over_delivery_receipt_allowance	Over Delivery/Receipt Allowance (%)	سماحية التسليم/الاستلام الزائد (%)
+1-150	Item.over_delivery_receipt_allowance:desc	Percentage by which over-delivery or over-receipt is allowed against a Sales/Purchase Order for this item. If not set, value from Stock Settings will be used.	النسبة المئوية المسموح بها للتسليم الزائد أو الاستلام الزائد مقابل أمر البيع/أمر الشراء لهذا الصنف. إذا لم يتم التعيين، فسيتم استخدام القيمة من إعدادات المخزون.
+1-151	Item.over_billing_allowance	Over Billing Allowance (%)	سماحية الفوترة الزائدة (%)
+1-152	Item.over_billing_allowance:desc	Percentage by which over-billing is allowed against a Sales/Purchase Order for this item. If not set, value from Accounts Settings will be used.	النسبة المئوية التي يُسمح بها للفوترة الزائدة مقابل أمر البيع أو أمر الشراء لهذا الصنف. إذا كانت غير محددة، فسيتم استخدام القيمة من إعدادات الحسابات.
+1-153	Item.section_break_11	Description	الوصف
+1-154	Item.brand	Brand	العلامة التجارية
+1-155	Item.item_defaults	Item Defaults	القيم الافتراضية للصنف
+1-156	Item.deferred_accounting_section	Deferred Accounting	المحاسبة المؤجلة
+1-157	Item.enable_deferred_expense	Enable Deferred Expense	تفعيل المصروفات المؤجلة
+1-158	Item.enable_deferred_expense:desc	Expense for this item will be recognized over a period of months. Eg: prepaid insurance or annual software license	سيتم تسجيل مصروف هذا الصنف على مدى فترة من الأشهر. مثال: تأمين مدفوع مسبقاً أو ترخيص برنامج سنوي
+1-159	Item.no_of_months_exp	No of Months (Expense)	عدد الأشهر (المصروفات)
+1-160	Item.enable_deferred_revenue	Enable Deferred Revenue	تفعيل الإيرادات المؤجلة
+1-161	Item.enable_deferred_revenue:desc	Income from this item will be recognized over a period of months instead of all at once. Eg: annual subscription paid upfront.	سيتم الاعتراف بالإيرادات من هذا الصنف على مدى فترة من الأشهر بدلاً من الاعتراف بها دفعة واحدة. مثال: اشتراك سنوي مدفوع مقدماً.
+1-162	Item.no_of_months	No of Months (Revenue)	عدد الأشهر (الإيرادات)
+1-163	Item.taxes	Taxes	الضرائب
+1-164	Item.taxes:desc	Will also apply for variants	يُطبَّق أيضاً على المتغيرات
+1-165	Item.purchase_tax_withholding_category	Purchase Tax Withholding Category	فئة الاستقطاع الضريبي للمشتريات
+1-166	Item.sales_tax_withholding_category	Sales Tax Withholding Category	فئة الاستقطاع الضريبي للمبيعات
+1-167	Item.inventory_section	Inventory	المخزون
+1-168	Item.stock_levels_section	Stock Levels	مستويات المخزون
+1-169	Item.stock_levels_html	Stock Levels HTML	HTML مستويات المخزون
+1-170	Item.inventory_valuation_section	Inventory Valuation	تقييم المخزون
+1-171	Item.valuation_method	Valuation Method	طريقة التقييم
+1-172	Item.valuation_method:opt	Moving Average	المتوسط المتحرك
+1-173	Item.valuation_method:desc	Serialized items are valued at Moving Average once stock transactions exist and Serial No Wise Valuation is disabled.	تُقيَّم الأصناف المُسلسلة بالمتوسط المتحرك بمجرد وجود حركات مخزون وتعطيل التقييم حسب الرقم التسلسلي.
+1-174	Item.valuation_rate	Valuation Rate	سعر التقييم
+1-175	Item.inventory_settings_section	Inventory Settings	إعدادات المخزون
+1-176	Item.end_of_life	End of Life	نهاية العمر
+1-177	Item.end_of_life:desc	Defines the date after which the item can no longer be used in transactions or manufacturing	يحدد التاريخ الذي لا يمكن بعده استخدام الصنف في المعاملات أو التصنيع
+1-178	Item.default_material_request_type	Default Material Request Type	نوع طلب المواد الافتراضي
+1-179	Item.default_material_request_type:opt	Purchase	الشراء
+1-180	Item.default_material_request_type:opt	Material Transfer	نقل المواد
+1-181	Item.default_material_request_type:opt	Material Issue	صرف مواد
+1-182	Item.default_material_request_type:opt	Manufacture	تصنيع
+1-183	Item.default_material_request_type:opt	Customer Provided	مقدَّم من العميل
+1-184	Item.warranty_period	Warranty Period (in days)	فترة الضمان (بالأيام)
+1-185	Item.weight_per_unit	Weight Per Unit	الوزن لكل وحدة
+1-186	Item.weight_uom	Weight UOM	وحدة قياس الوزن
+1-187	Item.allow_negative_stock	Allow Negative Stock	السماح بالمخزون السالب
+1-188	Item.allow_negative_stock:desc	Allow stock to go below zero for this item, even if negative stock is disabled in Stock Settings.	السماح للمخزون بالانخفاض دون الصفر لهذا الصنف، حتى وإن كان المخزون السالب معطلاً في إعدادات المخزون.
+1-189	Item.sb_barcodes	Barcodes	الباركودات
+1-190	Item.reorder_section	Auto re-order	إعادة طلب تلقائية
+1-191	Item.reorder_levels	Reorder level based on Warehouse	حد إعادة الطلب حسب المستودع
+1-192	Item.reorder_levels:desc	Will also apply for variants unless overridden	يُطبَّق أيضاً على المتغيرات ما لم يُتجاوز
+1-193	Item.serial_nos_and_batches	Serial Nos / Batches	الأرقام التسلسلية / الدفعات
+1-194	Item.has_batch_no	Has Batch No	يحتوي على رقم دفعة
+1-195	Item.has_batch_no:desc	Track this item in batches. Cannot be changed after a stock transaction exists.	تتبع هذا الصنف في دفعات. لا يمكن تغييره بعد وجود حركة مخزون.
+1-196	Item.create_new_batch	Automatically Create New Batch	إنشاء دفعة جديدة تلقائيًا
+1-197	Item.create_new_batch:desc	Batch number will be auto-created in format AAAA.00001 if not specified in transactions. Leave blank to always enter batch numbers manually.	سيتم إنشاء رقم الدفعة تلقائيًا بالتنسيق AAAA.00001 إذا لم يتم تحديده في المعاملات. اترك الحقل فارغًا لإدخال أرقام الدفعات يدويًا دائمًا.
+1-198	Item.batch_number_series	Batch Number Series	سلسلة رقم الدفعة
+1-199	Item.has_expiry_date	Has Expiry Date	له تاريخ انتهاء صلاحية
+1-200	Item.has_expiry_date:desc	Batch number will be created based on expiry date. Expiry dates can be set in the Batch master.	سيتم إنشاء رقم الدفعة استنادًا إلى تاريخ انتهاء الصلاحية. يمكن تعيين تواريخ انتهاء الصلاحية في البيانات الرئيسية للدفعة.
+1-201	Item.shelf_life_in_days	Shelf Life In Days	مدة الصلاحية بالأيام
+1-202	Item.retain_sample	Retain Sample	الاحتفاظ بعينة
+1-203	Item.retain_sample:desc	Enable to reserve a small sample from each batch for any analysis arising ahead	قم بالتمكين لحجز عينة صغيرة من كل دفعة لأي تحليل قد ينشأ لاحقاً
+1-204	Item.sample_quantity	Max Sample Quantity	الحد الأقصى لكمية العينة
+1-205	Item.sample_quantity:desc	Maximum sample quantity that can be retained	الحد الأقصى لعدد العينات التي يمكن الاحتفاظ بها
+1-206	Item.has_serial_no	Has Serial No	يحتوي على رقم تسلسلي
+1-207	Item.has_serial_no:desc	Track each unit with a unique serial number for warranty and return tracking. Cannot be changed after a stock transaction exists.	تتبع كل وحدة برقم تسلسلي فريد لتتبع الضمان والمرتجعات. لا يمكن تغييره بعد وجود حركة مخزون.
+1-208	Item.serial_no_series	Serial Number Series	سلسلة الأرقام التسلسلية
+1-209	Item.use_serial_no_wise_valuation	Use Serial No Wise Valuation	استخدام التقييم حسب الرقم التسلسلي
+1-210	Item.variants_section	Variants	المتغيرات
+1-211	Item.variant_of	Variant Of	متغير من
+1-212	Item.variant_of:desc	If item is a variant of another item then description, image, pricing, taxes etc will be set from the template unless explicitly specified	إذا كان الصنف متغيراً من صنف آخر، يؤخذ الوصف والصورة والتسعير والضرائب وغيرها من القالب ما لم تُحدَّد صراحةً
+1-213	Item.variant_based_on	Variant Based On	المتغير بناءً على
+1-214	Item.variant_based_on:opt	Item Attribute	خاصية الصنف
+1-215	Item.variant_based_on:opt	Manufacturer	الشركة المصنِّعة
+1-216	Item.purchasing_tab	Purchasing	المشتريات
+1-217	Item.purchase_uom	Default Purchase Unit of Measure	وحدة قياس الشراء الافتراضية
+1-218	Item.min_order_qty	Minimum Order Qty	الحد الأدنى لكمية الطلب
+1-219	Item.min_order_qty:desc	Minimum quantity should be as per Stock UOM  	يجب أن تكون الكمية الدنيا وفقًا لوحدة قياس المخزون  
+1-220	Item.safety_stock	Safety Stock	مخزون الأمان
+1-221	Item.safety_stock:desc	Minimum stock level to maintain as a buffer. Used to calculate recommended reorder level: Reorder Level = Safety Stock + (Average Daily Consumption × Lead Time).	أدنى مستوى مخزون يُحتفظ به كاحتياطي. يُستخدم لحساب حد إعادة الطلب الموصى به: حد إعادة الطلب = مخزون الأمان + (متوسط الاستهلاك اليومي × مدة التوريد).
+1-222	Item.lead_time_days	Lead Time in days	مدة التوريد بالأيام
+1-223	Item.lead_time_days:desc	Average time taken by the supplier to deliver	متوسط الوقت المستغرق من قبل المورد للتسليم
+1-224	Item.last_purchase_rate	Last Purchase Rate	آخر سعر شراء
+1-225	Item.last_purchase_rate:desc	The rate at which this item was last purchased via a Purchase Invoice. Auto-updated by the system.	السعر الذي تم بموجبه شراء هذا الصنف آخر مرة عبر فاتورة مشتريات. يتم تحديثه تلقائياً من قِبل النظام.
+1-226	Item.delivered_by_supplier	Delivered by Supplier (Drop Ship)	يسلّمه المورد (شحن مباشر)
+1-227	Item.delivered_by_supplier:desc	Enable for drop shipping - supplier delivers directly to the customer without passing through your warehouse.	تمكين للشحن المباشر - يقوم المورد بالتسليم مباشرةً إلى العميل دون المرور عبر المستودع الخاص بك.
+1-228	Item.supplier_items	Item Supplier	مورد الصنف
+1-229	Item.foreign_trade_details	Foreign Trade Details	تفاصيل التجارة الخارجية
+1-230	Item.country_of_origin	Country of Origin	بلد المنشأ
+1-231	Item.customs_tariff_number	Customs Tariff Number	رقم التعريفة الجمركية
+1-232	Item.sales_details	Sales	المبيعات
+1-233	Item.sales_uom	Default Sales Unit of Measure	وحدة قياس المبيعات الافتراضية
+1-234	Item.grant_commission	Grant Commission	منح العمولة
+1-235	Item.grant_commission:desc	If enabled, sales from this item will be included in Sales Person and Sales Partner commission calculations	إذا تم التفعيل، فستُدرج مبيعات هذا الصنف في حسابات عمولة مندوب المبيعات وشريك المبيعات
+1-236	Item.max_discount	Max Discount (%)	أقصى خصم (%)
+1-237	Item.max_discount:desc	Maximum discount % allowed when selling this item. Eg: if set to 20%, a discount greater than 20% cannot be applied in sales transactions.	الحد الأقصى للخصم % المسموح به عند بيع هذا الصنف. مثال: إذا تم تعيينه على 20%، فلا يمكن تطبيق خصم أكبر من 20% في معاملات البيع.
+1-238	Item.customer_items	Customer Items	أصناف العميل
+1-239	Item.manufacturing	Manufacturing	التصنيع
+1-240	Item.include_item_in_manufacturing	Include Item In Manufacturing	تضمين الصنف في التصنيع
+1-241	Item.include_item_in_manufacturing:desc	Enable for raw material items used in BOM. Uncheck for additional services like 'washing' used in manufacturing.	فعّل هذا الخيار للأصناف الخام المستخدمة في قائمة المواد. ألغِ تحديده للخدمات الإضافية مثل 'الغسيل' المستخدمة في التصنيع.
+1-242	Item.is_sub_contracted_item	Is Subcontracted Item	صنف مصنّع خارجياً
+1-243	Item.is_sub_contracted_item:desc	Enable if a vendor manufactures this item for you. You can choose to provide them raw materials using the default BOM.	قم بالتمكين إذا كان المورد يصنّع هذا الصنف لصالحك. يمكنك اختيار تزويده بالمواد الخام باستخدام قائمة المواد الافتراضية.
+1-244	Item.default_bom	Default BOM	قائمة المواد الافتراضية
+1-245	Item.default_manufacturer_part_no	Default Manufacturer Part No	رقم الجزء الافتراضي للشركة المصنعة
+1-246	Item.default_item_manufacturer	Default Item Manufacturer	المصنّع الافتراضي للصنف
+1-247	Item.quality_tab	Quality	الجودة
+1-248	Item.inspection_required_before_purchase	Inspection Required before Purchase	الفحص مطلوب قبل الشراء
+1-249	Item.inspection_required_before_purchase:desc	A quality inspection must be completed before generating a Purchase Receipt for this item.	يجب إكمال فحص الجودة قبل إنشاء إيصال استلام لهذا الصنف.
+1-250	Item.inspection_required_before_delivery	Inspection Required before Delivery	الفحص مطلوب قبل التسليم
+1-251	Item.inspection_required_before_delivery:desc	A quality inspection must be completed before generating a Delivery Note for this item.	يجب إكمال فحص الجودة قبل إنشاء إذن التسليم لهذا الصنف.
+1-252	Item.quality_inspection_template	Quality Inspection Template	قالب فحص الجودة
+1-253	Item.pricing_tab	Pricing	التسعير
+1-254	Item.prices_html	Prices HTML	HTML الأسعار
+1-255	doctype	Item Price	سعر الصنف
+1-256	Item Price.packing_unit	Packing Unit	وحدة التعبئة
+1-257	Item Price.packing_unit:desc	Quantity  that must be bought or sold per UOM	الكمية التي يجب شراؤها أو بيعها لكل وحدة قياس
+1-258	Item Price.item_description	Item Description	وصف الصنف
+1-259	Item Price.batch_no	Batch No	رقم الدفعة
+1-260	Item Price.buying	Buying	المشتريات
+1-261	Item Price.selling	Selling	المبيعات
+1-262	Item Price.currency	Currency	العملة
+1-263	Item Price.price_list_rate	Rate	السعر
+1-264	Item Price.valid_from	Valid From	صالح من
+1-265	Item Price.valid_upto	Valid Up To	صالح حتى
+1-266	Item Price.note	Note	ملاحظة
+1-267	Item Price.reference	Reference	المرجع
+1-268	Price List.enabled	Enabled	مفعّل
+1-269	Price List.price_list_name	Price List Name	اسم قائمة الأسعار
+1-270	Price List.price_not_uom_dependent	Price Not UOM Dependent	السعر لا يعتمد على وحدة القياس
+1-271	Price List.countries	Applicable for Countries	ينطبق على الدول
+1-272	doctype	Pricing Rule	قاعدة التسعير
+1-273	Pricing Rule.naming_series	Naming Series	سلسلة التسمية
+1-274	Pricing Rule.title	Title	العنوان
+1-275	Pricing Rule.disable	Disable	تعطيل
+1-276	Pricing Rule.apply_on	Apply On	تطبيق على
+1-277	Pricing Rule.apply_on:opt	Transaction	المعاملة
+1-278	Pricing Rule.price_or_product_discount	Price or Product Discount	خصم سعر أو منتج
+1-279	Pricing Rule.price_or_product_discount:opt	Price	السعر
+1-280	Pricing Rule.price_or_product_discount:opt	Product	المنتج
+1-281	Pricing Rule.warehouse	Warehouse	المستودع
+1-282	Pricing Rule.items	Apply Rule On Item Code	تطبيق القاعدة على رمز الصنف
+1-283	Pricing Rule.item_groups	Apply Rule On Item Group	تطبيق القاعدة على مجموعة الأصناف
+1-284	Pricing Rule.brands	Apply Rule On Brand	تطبيق القاعدة على العلامة التجارية
+1-285	Pricing Rule.mixed_conditions	Mixed Conditions	شروط مختلطة
+1-286	Pricing Rule.mixed_conditions:desc	Conditions will be applied on all the selected items combined. 	ستُطبَّق الشروط على جميع الأصناف المحددة مجتمعة.
+1-287	Pricing Rule.is_cumulative	Is Cumulative	تراكمي
+1-288	Pricing Rule.coupon_code_based	Coupon Code Based	مبني على رمز القسيمة
+1-289	Pricing Rule.section_break_18	Discount on Other Item	خصم على صنف آخر
+1-290	Pricing Rule.apply_rule_on_other	Apply Rule On Other	تطبيق القاعدة على الآخر
+1-291	Pricing Rule.section_break_7	Party Information	معلومات الطرف
+1-292	Pricing Rule.applicable_for	Applicable For	ينطبق على
+1-293	Pricing Rule.applicable_for:opt	Campaign	حملة
+1-294	Pricing Rule.section_break_19	Quantity and Amount	الكمية والمبلغ
+1-295	Pricing Rule.min_qty	Min Qty (As Per Stock UOM)	الحد الأدنى للكمية (حسب وحدة قياس المخزون)
+1-296	Pricing Rule.max_qty	Max Qty (As Per Stock UOM)	الحد الأقصى للكمية (حسب وحدة قياس المخزون)
+1-297	Pricing Rule.min_amt	Min Amt	أدنى مبلغ
+1-298	Pricing Rule.max_amt	Max Amt	أقصى مبلغ
+1-299	Pricing Rule.product_discount_scheme_section	Product Discount Scheme	نظام خصم المنتج
+1-300	Pricing Rule.same_item	Same Item	الصنف نفسه
+1-301	Pricing Rule.free_item	Free Item	صنف مجاني
+1-302	Pricing Rule.free_qty	Qty	الكمية
+1-303	Pricing Rule.free_item_rate	Free Item Rate	سعر الصنف المجاني
+1-304	Pricing Rule.free_item_rate:desc	If rate is zero then item will be treated as "Free Item"	إذا كان السعر صفراً يُعامَل الصنف كـ«صنف مجاني»
+1-305	Pricing Rule.round_free_qty	Round Free Qty	تقريب الكمية المجانية
+1-306	Pricing Rule.dont_enforce_free_item_qty	Don't Enforce Free Item Qty	عدم فرض كمية الصنف المجاني
+1-307	Pricing Rule.is_recursive	Is Recursive	متكرر
+1-308	Pricing Rule.is_recursive:desc	Discounts to be applied in sequential ranges like buy 1 get 1, buy 2 get 2, buy 3 get 3 and so on	تُطبق الخصومات على دفعات متسلسلة مثل اشترِ قطعة واحصل على الثانية مجاناً، اشترِ قطعتين واحصل على الثانية مجاناً، اشترِ ثلاث قطع واحصل على الثالثة مجاناً، وهكذا.
+1-309	Pricing Rule.recurse_for	Recurse Every (As Per Transaction UOM)	كرر كل (حسب وحدة قياس المعاملة)
+1-310	Pricing Rule.recurse_for:desc	Give free item for every N quantity	امنح صنفًا مجانيًا لكل كمية N
+1-311	Pricing Rule.apply_recursion_over	Apply Recursion Over (As Per Transaction UOM)	تطبيق التكرار على (حسب وحدة قياس المعاملة)
+1-312	Pricing Rule.apply_recursion_over:desc	Qty for which recursion isn't applicable.	الكمية التي لا ينطبق عليها التكرار.
+1-313	Pricing Rule.section_break_23	Period Settings	إعدادات الفترة
+1-314	Pricing Rule.margin	Margin	هامش
+1-315	Pricing Rule.margin_type	Margin Type	نوع الهامش
+1-316	Pricing Rule.margin_type:opt	Percentage	نسب مئوية
+1-317	Pricing Rule.margin_type:opt	Amount	المبلغ
+1-318	Pricing Rule.margin_rate_or_amount	Margin Rate or Amount	نسبة الهامش أو المبلغ
+1-319	Pricing Rule.price_discount_scheme_section	Price Discount Scheme	مخطط خصم السعر
+1-320	Pricing Rule.rate_or_discount	Rate or Discount	السعر أو الخصم
+1-321	Pricing Rule.rate_or_discount:opt	Discount Percentage	نسبة الخصم
+1-322	Pricing Rule.rate_or_discount:opt	Discount Amount	مبلغ الخصم
+1-323	Pricing Rule.apply_discount_on	Apply Discount On	تطبيق الخصم على
+1-324	Pricing Rule.apply_discount_on:opt	Grand Total	الإجمالي الكلي
+1-325	Pricing Rule.apply_discount_on:opt	Net Total	صافي الإجمالي
+1-326	Pricing Rule.for_price_list	For Price List	لقائمة الأسعار
+1-327	Pricing Rule.dynamic_condition_tab	Dynamic Condition	شرط ديناميكي
+1-328	Pricing Rule.condition	Condition	الشرط
+1-329	Pricing Rule.condition:desc	Simple Python Expression, Example: territory != 'All Territories'	تعبير Python بسيط، مثال: territory != 'All Territories'
+1-330	Pricing Rule.section_break_13	Advanced Settings	إعدادات متقدمة
+1-331	Pricing Rule.apply_multiple_pricing_rules	Apply Multiple Pricing Rules	تطبيق عدة قواعد تسعير
+1-332	Pricing Rule.apply_discount_on_rate	Apply Discount on Discounted Rate	تطبيق الخصم على السعر المخفض
+1-333	Pricing Rule.threshold_percentage	Threshold for Suggestion (In Percentage)	عتبة الاقتراح (بالنسبة المئوية)
+1-334	Pricing Rule.threshold_percentage:desc	System will notify to increase or decrease quantity or amount 	ينبّه النظام لزيادة أو تقليل الكمية أو المبلغ
+1-335	Pricing Rule.validate_pricing_rule_section	Validate Pricing Rule	التحقق من صحة قاعدة التسعير
+1-336	Pricing Rule.validate_applied_rule	Validate Applied Rule	التحقق من صحة القاعدة المطبقة
+1-337	Pricing Rule.validate_applied_rule:desc	If enabled, then system will only validate the pricing rule and not apply automatically. User has to manually set the discount percentage / margin / free items to validate the pricing rule	في حال تفعيل هذه الخاصية، سيقوم النظام فقط بالتحقق من صحة قاعدة التسعير ولن يتم تطبيقها تلقائيًا. يجب على المستخدم تحديد نسبة الخصم/هامش الربح/المنتجات المجانية يدويًا للتحقق من صحة قاعدة التسعير.
+1-338	Pricing Rule.rule_description	Rule Description	وصف القاعدة
+1-339	Pricing Rule.priority_section	Priority	الأولوية
+1-340	Pricing Rule.has_priority	Has Priority	له الأولوية
+1-341	Pricing Rule.has_priority:desc	Enable this checkbox even if you want to set the zero priority	قم بتمكين خانة الاختيار هذه حتى إذا كنت ترغب في تعيين الأولوية إلى الصفر
+1-342	Pricing Rule.priority:desc	Higher the number, higher the priority	الرقم الأعلى له أولوية أكبر
+1-343	Pricing Rule.help_section	Help Article	مقالة مساعدة
+1-344	Pricing Rule.pricing_rule_help	Pricing Rule Help	مساعدة قاعدة التسعير
+1-345	Pricing Rule.promotional_scheme	Promotional Scheme	نظام ترويجي
+1-346	doctype	Quotation	عرض سعر
+1-347	Quotation.naming_series	Series	السلسلة
+1-348	Quotation.quotation_to	Quotation To	عرض السعر إلى
+1-349	Quotation.party_name	Party	الطرف
+1-350	Quotation.transaction_date	Date	التاريخ
+1-351	Quotation.valid_till	Valid Till	صالح حتى
+1-352	Quotation.order_type	Order Type	نوع الطلب
+1-353	Quotation.order_type:opt	Maintenance	الصيانة
+1-354	Quotation.order_type:opt	Shopping Cart	سلة التسوق
+1-355	Quotation.amended_from	Amended From	مُعدَّل من
+1-356	Quotation.currency_and_price_list	Currency and Price List	العملة وقائمة الأسعار
+1-357	Quotation.conversion_rate	Exchange Rate	سعر الصرف
+1-358	Quotation.conversion_rate:desc	Rate at which customer's currency is converted to company's base currency	سعر تحويل عملة العميل إلى العملة الأساسية للشركة
+1-359	Quotation.price_list_currency	Price List Currency	عملة قائمة الأسعار
+1-360	Quotation.plc_conversion_rate	Price List Exchange Rate	سعر صرف قائمة الأسعار
+1-361	Quotation.plc_conversion_rate:desc	Rate at which Price list currency is converted to company's base currency	سعر تحويل عملة قائمة الأسعار إلى العملة الأساسية للشركة
+1-362	Quotation.ignore_pricing_rule	Ignore Pricing Rule	تجاهل قاعدة التسعير
+1-363	Quotation.scan_barcode	Scan Barcode	مسح الباركود
+1-364	Quotation.last_scanned_warehouse	Last Scanned Warehouse	آخر مستودع ممسوح
+1-365	Quotation.items	Items	الأصناف
+1-366	Quotation.total_qty	Total Quantity	الكمية الإجمالية
+1-367	Quotation.total_net_weight	Total Net Weight	إجمالي الوزن الصافي
+1-368	Quotation.base_total	Total (Company Currency)	الإجمالي (بعملة الشركة)
+1-369	Quotation.base_net_total	Net Total (Company Currency)	صافي الإجمالي (عملة الشركة)
+1-370	Quotation.total	Total	الإجمالي
+1-371	Quotation.taxes_section	Taxes and Charges	الضرائب والرسوم
+1-372	Quotation.taxes_and_charges	Sales Taxes and Charges Template	قالب الضرائب والرسوم على المبيعات
+1-373	Quotation.shipping_rule	Shipping Rule	قاعدة الشحن
+1-374	Quotation.incoterm	Incoterm	شروط التسليم الدولية (Incoterm)
+1-375	Quotation.named_place	Named Place	المكان المسمى
+1-376	Quotation.taxes	Sales Taxes and Charges	ضرائب ورسوم المبيعات
+1-377	Quotation.base_total_taxes_and_charges	Total Taxes and Charges (Company Currency)	إجمالي الضرائب والرسوم (عملة الشركة)
+1-378	Quotation.total_taxes_and_charges	Total Taxes and Charges	إجمالي الضرائب والرسوم
+1-379	Quotation.totals	Totals	الإجماليات
+1-380	Quotation.base_grand_total	Grand Total (Company Currency)	الإجمالي الكلي (عملة الشركة)
+1-381	Quotation.base_rounding_adjustment	Rounding Adjustment (Company Currency)	تسوية التقريب (عملة الشركة)
+1-382	Quotation.base_rounded_total	Rounded Total (Company Currency)	الإجمالي المقرب (عملة الشركة)
+1-383	Quotation.base_in_words	In Words (Company Currency)	بالحروف (عملة الشركة)
+1-384	Quotation.rounding_adjustment	Rounding Adjustment	تسوية التقريب
+1-385	Quotation.rounded_total	Rounded Total	الإجمالي المقرّب
+1-386	Quotation.disable_rounded_total	Disable Rounded Total	تعطيل الإجمالي المقرب
+1-387	Quotation.in_words	In Words	بالحروف
+1-388	Quotation.section_break_44	Additional Discount	خصم إضافي
+1-389	Quotation.apply_discount_on	Apply Additional Discount On	تطبيق خصم إضافي على
+1-390	Quotation.base_discount_amount	Additional Discount Amount (Company Currency)	مبلغ الخصم الإضافي (عملة الشركة)
+1-391	Quotation.coupon_code	Coupon Code	رمز القسيمة
+1-392	Quotation.additional_discount_percentage	Additional Discount Percentage	نسبة الخصم الإضافي
+1-393	Quotation.discount_amount	Additional Discount Amount	مبلغ الخصم الإضافي
+1-394	Quotation.referral_sales_partner	Referral Sales Partner	شريك المبيعات المُحيل
+1-395	Quotation.sec_tax_breakup	Tax Breakup	تفصيل الضرائب
+1-396	Quotation.other_charges_calculation	Taxes and Charges Calculation	حساب الضرائب والرسوم
+1-397	Quotation.bundle_items_section	Bundle Items	أصناف الحزمة
+1-398	Quotation.pricing_rule_details	Pricing Rules	قواعد التسعير
+1-399	Quotation.pricing_rules	Pricing Rule Detail	تفاصيل قاعدة التسعير
+1-400	Quotation.billing_address_section	Billing Address	عنوان الفوترة
+1-401	Quotation.customer_address	Customer Address	عنوان العميل
+1-402	Quotation.address_display	Address	العنوان
+1-403	Quotation.contact_person	Contact Person	الشخص المسؤول
+1-404	Quotation.contact_display	Contact	جهة الاتصال
+1-405	Quotation.contact_mobile	Mobile No	رقم الجوال
+1-406	Quotation.shipping_address_section	Shipping Address	عنوان الشحن
+1-407	Quotation.company_address_section	Company Address	عنوان الشركة
+1-408	Quotation.company_address	Company Address Name	اسم عنوان الشركة
+1-409	Quotation.company_contact_person	Company Contact Person	الشخص المسؤول في الشركة
+1-410	Quotation.terms_tab	Terms	الشروط
+1-411	Quotation.payment_schedule_section	Payment Terms	شروط الدفع
+1-412	Quotation.payment_schedule	Payment Schedule	جدول الدفع
+1-413	Quotation.terms_section_break	Terms and Conditions	الشروط والأحكام
+1-414	Quotation.terms	Term Details	تفاصيل الشروط
+1-415	Quotation.auto_repeat_section	Auto Repeat	تكرار تلقائي
+1-416	Quotation.update_auto_repeat_reference	Update Auto Repeat Reference	تحديث مرجع التكرار التلقائي
+1-417	Quotation.print_settings	Print Settings	إعدادات الطباعة
+1-418	Quotation.letter_head	Letter Head	الترويسة
+1-419	Quotation.group_same_items	Group same items	تجميع الأصناف المتشابهة
+1-420	Quotation.select_print_heading	Print Heading	عنوان الطباعة
+1-421	Quotation.lost_reasons_section	Lost Reasons	أسباب الخسارة
+1-422	Quotation.competitors	Competitors	المنافسون
+1-423	Quotation.order_lost_reason	Detailed Reason	سبب مفصل
+1-424	Quotation.utm_analytics_section	UTM Analytics	تحليلات UTM
+1-425	Quotation.utm_source	Source	المصدر
+1-426	Quotation.utm_medium	Medium	متوسط
+1-427	Quotation.utm_content	Content	المحتوى
+1-428	Quotation.additional_info_section	Additional Info	معلومات إضافية
+1-429	Quotation.status	Status	الحالة
+1-430	Quotation.status:opt	Draft	مسودة
+1-431	Quotation.status:opt	Open	فتح
+1-432	Quotation.status:opt	Replied	تم الرد
+1-433	Quotation.status:opt	Partially Ordered	مطلوب جزئياً
+1-434	Quotation.status:opt	Ordered	تم الطلب
+1-435	Quotation.status:opt	Lost	خاسرة
+1-436	Quotation.status:opt	Cancelled	ملغى
+1-437	Quotation.status:opt	Expired	منتهي الصلاحية
+1-438	Quotation.supplier_quotation	Supplier Quotation	عرض سعر مورد
+1-439	doctype	Quotation Item	صنف عرض السعر
+1-440	Quotation Item.is_free_item	Is Free Item	صنف مجاني
+1-441	Quotation Item.is_alternative	Is Alternative	بديل
+1-442	Quotation Item.image_section	Image	الصورة
+1-443	Quotation Item.image_view	Image View	عرض الصورة
+1-444	Quotation Item.quantity_and_rate	Quantity and Rate	الكمية والسعر
+1-445	Quotation Item.qty	Quantity	الكمية
+1-446	Quotation Item.stock_uom	Stock UOM	وحدة قياس المخزون
+1-447	Quotation Item.conversion_factor	UOM Conversion Factor	عامل تحويل وحدة القياس
+1-448	Quotation Item.stock_qty	Qty as per Stock UOM	الكمية بوحدة قياس المخزون
+1-449	Quotation Item.available_quantity_section	Available Quantity	الكمية المتاحة
+1-450	Quotation Item.actual_qty	Qty (Warehouse)	الكمية (المستودع)
+1-451	Quotation Item.company_total_stock	Qty (Company)	الكمية (الشركة)
+1-452	Quotation Item.price_list_rate	Price List Rate	سعر قائمة الأسعار
+1-453	Quotation Item.base_price_list_rate	Price List Rate (Company Currency)	سعر قائمة الأسعار (عملة الشركة)
+1-454	Quotation Item.discount_and_margin	Discount and Margin	الخصم والهامش
+1-455	Quotation Item.rate_with_margin	Rate With Margin	السعر مع الهامش
+1-456	Quotation Item.discount_percentage	Discount (%) on Price List Rate with Margin	الخصم (%) على سعر قائمة الأسعار مع الهامش
+1-457	Quotation Item.distributed_discount_amount	Distributed Discount Amount	مبلغ الخصم الموزع
+1-458	Quotation Item.mapped_additional_discount_amount	Additional Discount per Stock Unit	الخصم الإضافي لكل وحدة مخزون
+1-459	Quotation Item.mapped_additional_discount_amount:desc	Tax-exclusive additional discount carried from a source document, per stock unit.	خصم إضافي غير شامل للضريبة منقول من مستند المصدر، لكل وحدة مخزون.
+1-460	Quotation Item.base_rate_with_margin	Rate With Margin (Company Currency)	السعر بالهامش (عملة الشركة)
+1-461	Quotation Item.net_rate	Net Rate	صافي السعر
+1-462	Quotation Item.net_amount	Net Amount	صافي المبلغ
+1-463	Quotation Item.item_tax_template	Item Tax Template	قالب ضريبة الصنف
+1-464	Quotation Item.base_rate	Rate (Company Currency)	السعر (بعملة الشركة)
+1-465	Quotation Item.base_net_rate	Net Rate (Company Currency)	صافي السعر (عملة الشركة)
+1-466	Quotation Item.base_amount	Amount (Company Currency)	المبلغ (عملة الشركة)
+1-467	Quotation Item.base_net_amount	Net Amount (Company Currency)	صافي المبلغ (عملة الشركة)
+1-468	Quotation Item.stock_uom_rate	Rate of Stock UOM	السعر بوحدة قياس المخزون
+1-469	Quotation Item.gross_profit	Gross Profit	الربح الإجمالي
+1-470	Quotation Item.item_weight_details	Item Weight Details	تفاصيل وزن الصنف
+1-471	Quotation Item.total_weight	Total Weight	مجموع الأوزان
+1-472	Quotation Item.reference	Warehouse and Reference	المستودع والمرجع
+1-473	Quotation Item.against_blanket_order	Against Blanket Order	مقابل الأمر الشامل
+1-474	Quotation Item.blanket_order	Blanket Order	أمر شامل
+1-475	Quotation Item.blanket_order_rate	Blanket Order Rate	سعر الأمر الشامل
+1-476	Quotation Item.prevdoc_docname	Against Docname	مقابل المستند
+1-477	Quotation Item.item_balance	Planning	التخطيط
+1-478	Quotation Item.projected_qty	Projected Qty	الكمية المتوقعة
+1-479	Quotation Item.stock_balance	Stock Balance	رصيد المخزون
+1-480	Quotation Item.additional_notes	Additional Notes	ملاحظات إضافية
+1-481	Quotation Item.page_break	Page Break	فاصل صفحة
+1-482	doctype	Sales Order	أمر بيع
+1-483	Sales Order.transaction_time	Time	الوقت
+1-484	Sales Order.delivery_date	Delivery Date	تاريخ التسليم
+1-485	Sales Order.tax_id	Tax Id	الرقم الضريبي
+1-486	Sales Order.skip_delivery_note	Skip Delivery Note	تخطي إذن التسليم
+1-487	Sales Order.is_subcontracted	Is Subcontracted	مصنّع خارجياً
+1-488	Sales Order.accounting_dimensions_section	Accounting Dimensions	الأبعاد المحاسبية
+1-489	Sales Order.cost_center	Cost Center	مركز التكلفة
+1-490	Sales Order.project	Project	مشروع
+1-491	Sales Order.set_warehouse	Set Source Warehouse	تعيين المستودع المصدر
+1-492	Sales Order.reserve_stock	Reserve Stock	حجز المخزون
+1-493	Sales Order.reserve_stock:desc	If checked, Stock will be reserved on <b>Submit</b>	عند تحديده، يُحجز المخزون عند <b>الاعتماد</b>
+1-494	Sales Order.base_totals_section	Totals (Company Currency)	الإجماليات (عملة الشركة)
+1-495	Sales Order.base_in_words:desc	In Words will be visible once you save the Sales Order.	«المبلغ بالحروف» يظهر بعد حفظ أمر البيع.
+1-496	Sales Order.advance_paid	Advance Paid	الدفعة المقدمة المدفوعة
+1-497	Sales Order.packing_list	Packing List	قائمة التعبئة
+1-498	Sales Order.packed_items	Packed Items	الأصناف المعبأة
+1-499	Sales Order.contact_phone	Phone	الهاتف
+1-500	Sales Order.shipping_address_name	Shipping Address Name	اسم عنوان الشحن
+1-501	Sales Order.dispatch_address_name	Dispatch Address Name	اسم عنوان الإرسال
+1-502	Sales Order.dispatch_address	Dispatch Address	عنوان الإرسال
+1-503	Sales Order.terms_section_break	Terms & Conditions	الشروط والأحكام
+1-504	Sales Order.terms	Terms and Conditions Details	تفاصيل الشروط والأحكام
+1-505	Sales Order.status:opt	On Hold	قيد الانتظار
+1-506	Sales Order.status:opt	To Pay	للدفع
+1-507	Sales Order.status:opt	To Deliver and Bill	للتسليم والفوترة
+1-508	Sales Order.status:opt	To Bill	للفوترة
+1-509	Sales Order.status:opt	To Deliver	للتسليم
+1-510	Sales Order.status:opt	Completed	مكتمل
+1-511	Sales Order.status:opt	Closed	مغلقة
+1-512	Sales Order.per_delivered	%  Delivered	% المسلّم
+1-513	Sales Order.per_delivered:desc	% of materials delivered against this Sales Order	% من المواد المسلّمة مقابل أمر البيع هذا
+1-514	Sales Order.per_billed	% Amount Billed	% المبلغ المفوتر
+1-515	Sales Order.per_billed:desc	% of materials billed against this Sales Order	% من المواد المفوترة مقابل أمر البيع هذا
+1-516	Sales Order.per_picked	% Picked	% الملتقط
+1-517	Sales Order.sales_team_section_break	Commission	بالعمولة
+1-518	Sales Order.amount_eligible_for_commission	Amount Eligible for Commission	المبلغ المؤهل للعمولة
+1-519	Sales Order.total_commission	Total Commission	إجمالي العمولة
+1-520	Sales Order.from_date	From Date	من تاريخ
+1-521	Sales Order.to_date	To Date	إلى تاريخ
+1-522	Sales Order.po_no	Customer's Purchase Order	أمر شراء العميل
+1-523	Sales Order.po_date	Customer's Purchase Order Date	تاريخ أمر شراء العميل
+1-524	Sales Order.inter_company_order_reference	Inter Company Order Reference	مرجع الأمر بين الشركات
+1-525	doctype	Sales Order Item	صنف أمر البيع
+1-526	Sales Order Item.fg_item	Finished Good	منتج نهائي
+1-527	Sales Order Item.fg_item_qty	Finished Good Qty	كمية المنتج النهائي
+1-528	Sales Order Item.ensure_delivery_based_on_produced_serial_no	Ensure Delivery Based on Produced Serial No	ضمان التسليم حسب الرقم التسلسلي المُنتَج
+1-529	Sales Order Item.subcontracted_qty	Subcontracted Quantity	الكمية المصنّعة خارجياً
+1-530	Sales Order Item.stock_reserved_qty	Stock Reserved Qty (in Stock UOM)	الكمية المحجوزة من المخزون (وحدة قياس المخزون)
+1-531	Sales Order Item.base_rate	Basic Rate (Company Currency)	السعر الأساسي (عملة الشركة)
+1-532	Sales Order Item.billed_amt	Billed Amt	المبلغ المفوتر
+1-533	Sales Order Item.drop_ship_section	Drop Ship	شحن مباشر
+1-534	Sales Order Item.delivered_by_supplier	Supplier delivers to Customer	المورد يسلم للعميل
+1-535	Sales Order Item.warehouse	Source Warehouse	المستودع المصدر
+1-536	Sales Order Item.sales_order_schedule_section	Sales Order Schedule	جدول أمر البيع
+1-537	Sales Order Item.add_schedule	Add Schedule	إضافة جدول
+1-538	Sales Order Item.manufacturing_section_section	Manufacturing Section	قسم التصنيع
+1-539	Sales Order Item.bom_no	BOM No	رقم قائمة المواد
+1-540	Sales Order Item.ordered_qty	Ordered Qty	الكمية المطلوبة
+1-541	Sales Order Item.production_plan_qty	Production Plan Qty	كمية خطة الإنتاج
+1-542	Sales Order Item.requested_qty	Requested Qty	الكمية المطلوبة
+1-543	Sales Order Item.work_order_qty	Work Order Qty	كمية أمر العمل
+1-544	Sales Order Item.delivered_qty	Delivered Qty	الكمية المسلّمة
+1-545	Sales Order Item.returned_qty	Returned Qty	الكمية المرتجعة
+1-546	Sales Order Item.picked_qty	Picked Qty (in Stock UOM)	الكمية الملتقطة (بوحدة قياس المخزون)
+1-547	Sales Order Item.inter_transfer_reference_section	Inter Transfer Reference	مرجع التحويل الداخلي
+1-548	Sales Order Item.material_request	Material Request	طلب مواد
+1-549	Sales Order Item.purchase_order	Purchase Order	أمر شراء
+1-550	Sales Order Item.material_request_item	Material Request Item	صنف طلب المواد
+1-551	Sales Order Item.purchase_order_item	Purchase Order Item	صنف أمر الشراء
+1-552	doctype	Delivery Note	إذن تسليم
+1-553	Delivery Note.posting_time	Posting Time	وقت الترحيل
+1-554	Delivery Note.set_posting_time	Edit Posting Date and Time	تعديل تاريخ ووقت الترحيل
+1-555	Delivery Note.is_return	Is Return	مرتجع
+1-556	Delivery Note.issue_credit_note	Issue Credit Note	إصدار إشعار دائن
+1-557	Delivery Note.return_against	Return Against Delivery Note	مرتجع مقابل إذن تسليم
+1-558	Delivery Note.set_target_warehouse	Set Target Warehouse	تعيين المستودع الهدف
+1-559	Delivery Note.items	Delivery Note Item	صنف إذن التسليم
+1-560	Delivery Note.in_words:desc	In Words (Export) will be visible once you save the Delivery Note.	«المبلغ بالحروف (تصدير)» يظهر بعد حفظ إذن التسليم.
+1-561	Delivery Note.base_in_words:desc	In Words will be visible once you save the Delivery Note.	«المبلغ بالحروف» يظهر بعد حفظ إذن التسليم.
+1-562	Delivery Note.product_bundle_help	Product Bundle Help	مساعدة حزمة المنتجات
+1-563	Delivery Note.customer_address	Billing Address Name	اسم عنوان الفوترة
+1-564	Delivery Note.status:opt	Partially Billed	مفوتر جزئياً
+1-565	Delivery Note.status:opt	Return	مرتجع
+1-566	Delivery Note.status:opt	Return Issued	صدر المرتجع
+1-567	Delivery Note.per_installed	% Installed	% المركّب
+1-568	Delivery Note.per_returned	% Returned	% المرتجع
+1-569	Delivery Note.transporter_info	Transporter Info	معلومات الناقل
+1-570	Delivery Note.transporter	Transporter	الناقل
+1-571	Delivery Note.lr_no	Transport Receipt No	رقم إيصال النقل
+1-572	Delivery Note.delivery_trip	Delivery Trip	رحلة التسليم
+1-573	Delivery Note.driver	Driver	السائق
+1-574	Delivery Note.transporter_name	Transporter Name	اسم الناقل
+1-575	Delivery Note.lr_date	Transport Receipt Date	تاريخ إيصال النقل
+1-576	Delivery Note.vehicle_no	Vehicle No	رقم المركبة
+1-577	Delivery Note.driver_name	Driver Name	اسم السائق
+1-578	Delivery Note.customer_po_details	Customer PO Details	تفاصيل أمر شراء العميل
+1-579	Delivery Note.po_no	Customer's Purchase Order No	رقم أمر شراء العميل
+1-580	Delivery Note.commission_rate	Commission Rate (%)	نسبة العمولة (%)
+1-581	Delivery Note.print_without_amount	Print Without Amount	طباعة بدون مبالغ
+1-582	Delivery Note.represents_company:desc	Company which internal customer represents.	الشركة التي يمثلها العميل الداخلي.
+1-583	Delivery Note.inter_company_reference	Inter Company Reference	مرجع بين الشركات
+1-584	Delivery Note.instructions	Instructions	التعليمات
+1-585	Delivery Note Item.barcode	Barcode	الباركود
+1-586	Delivery Note Item.has_item_scanned	Has Item Scanned	تم مسح الصنف
+1-587	Delivery Note Item.stock_qty	Qty in Stock UOM	الكمية بوحدة قياس المخزون
+1-588	Delivery Note Item.returned_qty	Returned Qty in Stock UOM	الكمية المرتجعة بوحدة قياس المخزون
+1-589	Delivery Note Item.incoming_rate	Incoming Rate	سعر الوارد
+1-590	Delivery Note Item.quality_inspection	Quality Inspection	فحص الجودة
+1-591	Delivery Note Item.allow_zero_valuation_rate	Allow Zero Valuation Rate	السماح بسعر تقييم صفري
+1-592	Delivery Note Item.against_sales_order	Against Sales Order	مقابل أمر البيع
+1-593	Delivery Note Item.against_sales_invoice	Against Sales Invoice	مقابل فاتورة المبيعات
+1-594	Delivery Note Item.against_pick_list	Against Pick List	مقابل قائمة الالتقاط
+1-595	Delivery Note Item.section_break_40	Serial and Batch No	الرقم التسلسلي ورقم الدفعة
+1-596	Delivery Note Item.pick_serial_and_batch	Pick Serial / Batch No	التقاط الرقم التسلسلي / رقم الدفعة
+1-597	Delivery Note Item.serial_and_batch_bundle	Serial and Batch Bundle	حزمة التسلسل والدفعة
+1-598	Delivery Note Item.use_serial_batch_fields	Use Serial No / Batch Fields	استخدم حقول الرقم التسلسلي / الدفعة
+1-599	Delivery Note Item.serial_no	Serial No	الرقم التسلسلي
+1-600	Delivery Note Item.available_qty_section	Available Qty	الكمية المتاحة
+1-601	Delivery Note Item.actual_batch_qty	Available Batch Qty at From Warehouse	كمية الدفعة المتاحة في المستودع المصدر
+1-602	Delivery Note Item.installed_qty	Installed Qty	الكمية المركّبة
+1-603	Delivery Note Item.packed_qty	Packed Qty	الكمية المعبأة
+1-604	Delivery Note Item.received_qty	Received Qty	الكمية المستلمة
+1-605	Delivery Note Item.accounting_details_section	Accounting Details	تفاصيل المحاسبة
+1-606	Delivery Note Item.expense_account	Expense Account	حساب المصروفات
+1-607	Delivery Note Item.internal_transfer_section	Internal Transfer	تحويل داخلي
+1-608	doctype	Sales Invoice	فاتورة مبيعات
+1-609	Sales Invoice.company_tax_id	Company Tax ID	رقم التعريف الضريبي للشركة
+1-610	Sales Invoice.posting_date	Posting Date	تاريخ الترحيل
+1-611	Sales Invoice.due_date	Payment Due Date	تاريخ استحقاق الدفع
+1-612	Sales Invoice.is_pos	Include Payment (POS)	تضمين الدفع (نقطة البيع)
+1-613	Sales Invoice.pos_profile	POS Profile	ملف نقطة البيع
+1-614	Sales Invoice.is_consolidated	Is Consolidated	موحّدة
+1-615	Sales Invoice.is_return	Is Return (Credit Note)	مرتجع (إشعار دائن)
+1-616	Sales Invoice.return_against	Return Against	مرتجع مقابل
+1-617	Sales Invoice.update_outstanding_for_self	Update Outstanding for Self	تحديث المبلغ المستحق للمستند نفسه
+1-618	Sales Invoice.update_outstanding_for_self:desc	Credit Note will update it's own outstanding amount, even if 'Return Against' is specified.	يحدّث الإشعار الدائن مبلغه المستحق الخاص به، حتى عند تحديد «مرتجع مقابل».
+1-619	Sales Invoice.update_billed_amount_in_sales_order	Update Billed Amount in Sales Order	تحديث المبلغ المفوتر في أمر البيع
+1-620	Sales Invoice.update_billed_amount_in_delivery_note	Update Billed Amount in Delivery Note	تحديث المبلغ المفوتر في إذن التسليم
+1-621	Sales Invoice.is_debit_note	Is Rate Adjustment Entry (Debit Note)	قيد تعديل سعر (إشعار مدين)
+1-622	Sales Invoice.is_debit_note:desc	Issue a debit note against an existing Sales Invoice to adjust the rate. The quantity will be retained from the original invoice.	أصدر إشعارًا مدينًا مقابل فاتورة مبيعات موجودة لتعديل السعر. ستبقى الكمية كما هي في الفاتورة الأصلية.
+1-623	Sales Invoice.apply_tds	Consider for Tax Withholding	مراعاته في الاستقطاع الضريبي
+1-624	Sales Invoice.conversion_rate:desc	Rate at which Customer Currency is converted to customer's base currency	سعر تحويل عملة العميل إلى العملة الأساسية للعميل
+1-625	Sales Invoice.plc_conversion_rate:desc	Rate at which Price list currency is converted to customer's base currency	سعر تحويل عملة قائمة الأسعار إلى العملة الأساسية للعميل
+1-626	Sales Invoice.update_stock	Update Stock	تحديث المخزون
+1-627	Sales Invoice.update_stock:desc	If checked, updates inventory; stock and accounting entries are created together. Leave unchecked if a Delivery Note is created separately.	عند تحديده يُحدَّث المخزون، وتُنشأ قيود المخزون والقيود المحاسبية معاً. اتركه بلا تحديد إذا كان إذن التسليم يُنشأ منفصلاً.
+1-628	Sales Invoice.use_company_roundoff_cost_center	Use Company default Cost Center for Round off	استخدم مركز التكلفة الافتراضي للشركة للتقريب
+1-629	Sales Invoice.base_in_words:desc	In Words will be visible once you save the Sales Invoice.	«المبلغ بالحروف» يظهر بعد حفظ فاتورة المبيعات.
+1-630	Sales Invoice.total_advance	Total Advance	إجمالي الدفعات المقدمة
+1-631	Sales Invoice.outstanding_amount	Outstanding Amount	المبلغ المستحق
+1-632	Sales Invoice.section_tax_withholding_entry	Tax Withholding Entry	قيد الاستقطاع الضريبي
+1-633	Sales Invoice.ignore_tax_withholding_threshold	Ignore Tax Withholding Threshold	تجاهل حد الاستقطاع الضريبي
+1-634	Sales Invoice.override_tax_withholding_entries	Edit Tax Withholding Entries	تعديل قيود الاستقطاع الضريبي
+1-635	Sales Invoice.tax_withholding_entries	Tax Withholding Entries	قيود الاستقطاع الضريبي
+1-636	Sales Invoice.is_cash_or_non_trade_discount	Is Cash or Non Trade Discount	خصم نقدي أو غير تجاري
+1-637	Sales Invoice.time_sheet_list	Time Sheet List	قائمة سجلات الوقت
+1-638	Sales Invoice.timesheets	Time Sheets	سجلات الوقت
+1-639	Sales Invoice.total_billing_hours	Total Billing Hours	إجمالي ساعات الفوترة
+1-640	Sales Invoice.total_billing_amount	Total Billing Amount	إجمالي مبلغ الفوترة
+1-641	Sales Invoice.payments	Sales Invoice Payment	دفع فاتورة المبيعات
+1-642	Sales Invoice.base_paid_amount	Paid Amount (Company Currency)	المبلغ المدفوع (عملة الشركة)
+1-643	Sales Invoice.paid_amount	Paid Amount	المبلغ المدفوع
+1-644	Sales Invoice.section_break_88	Changes	التغييرات
+1-645	Sales Invoice.base_change_amount	Base Change Amount (Company Currency)	مبلغ الباقي الأساسي (عملة الشركة)
+1-646	Sales Invoice.change_amount	Change Amount	مبلغ الباقي
+1-647	Sales Invoice.account_for_change_amount	Account for Change Amount	حساب مبلغ الباقي
+1-648	Sales Invoice.advances_section	Advance Payments	دفعات مقدمة
+1-649	Sales Invoice.allocate_advances_automatically	Allocate Advances Automatically (FIFO)	تخصيص الدفعات المقدمة تلقائياً (الوارد أولاً صادر أولاً)
+1-650	Sales Invoice.only_include_allocated_payments	Only Include Allocated Payments	تضمين المدفوعات المخصصة فقط
+1-651	Sales Invoice.only_include_allocated_payments:desc	Advance payments allocated against orders will only be fetched	سيتم جلب الدفعات المقدمة المخصصة للطلبات فقط
+1-652	Sales Invoice.get_advances	Get Advances Received	جلب الدفعات المقدمة المستلمة
+1-653	Sales Invoice.advances	Advances	الدفعات المقدمة
+1-654	Sales Invoice.write_off_section	Write Off	شطب
+1-655	Sales Invoice.write_off_amount	Write Off Amount	مبلغ الشطب
+1-656	Sales Invoice.base_write_off_amount	Write Off Amount (Company Currency)	مبلغ الشطب (عملة الشركة)
+1-657	Sales Invoice.write_off_outstanding_amount_automatically	Write Off Outstanding Amount	شطب المبلغ المستحق
+1-658	Sales Invoice.write_off_account	Write Off Account	حساب الشطب
+1-659	Sales Invoice.write_off_cost_center	Write Off Cost Center	مركز تكلفة الشطب
+1-660	Sales Invoice.loyalty_points_redemption	Loyalty Points Redemption	استبدال نقاط الولاء
+1-661	Sales Invoice.redeem_loyalty_points	Redeem Loyalty Points	استبدال نقاط الولاء
+1-662	Sales Invoice.loyalty_amount	Loyalty Amount	مبلغ الولاء
+1-663	Sales Invoice.dont_create_loyalty_points	Don't Create Loyalty Points	لا تقم بإنشاء نقاط ولاء
+1-664	Sales Invoice.loyalty_redemption_account	Redemption Account	حساب الاستبدال
+1-665	Sales Invoice.loyalty_redemption_cost_center	Redemption Cost Center	مركز تكلفة الاستبدال
+1-666	Sales Invoice.debit_to	Debit To	مدين إلى
+1-667	Sales Invoice.unrealized_profit_loss_account	Unrealized Profit / Loss Account	حساب الأرباح/الخسائر غير المحققة
+1-668	Sales Invoice.unrealized_profit_loss_account:desc	Unrealized Profit / Loss account for intra-company transfers	حساب الأرباح/الخسائر غير المحققة للتحويلات داخل الشركة
+1-669	Sales Invoice.sales_team	Sales Contributions and Incentives	مساهمات وحوافز المبيعات
+1-670	Sales Invoice.subscription_section	Subscription	اشتراك
+1-671	Sales Invoice.automation_section	Automation	الأتمتة
+1-672	Sales Invoice.status:opt	Credit Note Issued	صدر إشعار دائن
+1-673	Sales Invoice.status:opt	Submitted	معتمد
+1-674	Sales Invoice.status:opt	Paid	مدفوع
+1-675	Sales Invoice.status:opt	Partly Paid	مدفوعة جزئياً
+1-676	Sales Invoice.status:opt	Unpaid	غير المدفوع
+1-677	Sales Invoice.status:opt	Unpaid and Discounted	غير مدفوعة ومخصومة
+1-678	Sales Invoice.status:opt	Partly Paid and Discounted	مدفوع جزئياً ومخصوم
+1-679	Sales Invoice.status:opt	Overdue and Discounted	متأخرة ومخصومة
+1-680	Sales Invoice.status:opt	Overdue	متأخر
+1-681	Sales Invoice.remarks	Remarks	ملاحظات
+1-682	Sales Invoice.represents_company:desc	Company which internal customer represents	الشركة التي يمثلها العميل الداخلي
+1-683	Sales Invoice.inter_company_invoice_reference	Inter Company Invoice Reference	مرجع الفاتورة بين الشركات
+1-684	Sales Invoice.is_discounted	Is Discounted	مخصومة
+1-685	doctype	Sales Invoice Item	صنف فاتورة المبيعات
+1-686	Sales Invoice Item.delivered_by_supplier	Delivered By Supplier	يُسلَّم من المورد
+1-687	Sales Invoice Item.income_account	Income Account	حساب الإيرادات
+1-688	Sales Invoice Item.asset	Asset	الأصل
+1-689	Sales Invoice Item.finance_book	Finance Book	الدفتر المالي
+1-690	Sales Invoice Item.deferred_revenue	Deferred Revenue	الإيرادات المؤجلة
+1-691	Sales Invoice Item.deferred_revenue_account	Deferred Revenue Account	حساب الإيرادات المؤجلة
+1-692	Sales Invoice Item.service_stop_date	Service Stop Date	تاريخ توقف الخدمة
+1-693	Sales Invoice Item.service_start_date	Service Start Date	تاريخ بدء الخدمة
+1-694	Sales Invoice Item.service_end_date	Service End Date	تاريخ انتهاء الخدمة
+1-695	Sales Invoice Item.warehouse_and_reference	Stock Details	تفاصيل المخزون
+1-696	Sales Invoice Item.incoming_rate	Incoming Rate (Costing)	سعر الوارد (التكلفة)
+1-697	Sales Invoice Item.actual_batch_qty	Available Batch Qty at Warehouse	كمية الدفعة المتاحة في المستودع
+1-698	Sales Invoice Item.pos_invoice	POS Invoice	فاتورة نقطة البيع
+1-699	Sales Invoice Item.pos_invoice_item	POS Invoice Item	صنف فاتورة نقطة البيع
+1-700	Sales Taxes and Charges.charge_type	Type	النوع
+1-701	Sales Taxes and Charges.charge_type:opt	Actual	فعلي
+1-702	Sales Taxes and Charges.charge_type:opt	On Net Total	على صافي الإجمالي
+1-703	Sales Taxes and Charges.charge_type:opt	On Previous Row Amount	على مبلغ الصف السابق
+1-704	Sales Taxes and Charges.charge_type:opt	On Previous Row Total	على إجمالي الصف السابق
+1-705	Sales Taxes and Charges.charge_type:opt	On Item Quantity	على كمية الصنف
+1-706	Sales Taxes and Charges.row_id	Reference Row #	رقم الصف المرجعي
+1-707	Sales Taxes and Charges.account_head	Account Head	رأس الحساب
+1-708	Sales Taxes and Charges.included_in_print_rate	Is this Tax included in Basic Rate?	هل هذه الضريبة مشمولة في السعر الأساسي؟
+1-709	Sales Taxes and Charges.included_in_print_rate:desc	If checked, the tax amount will be considered as already included in the Print Rate / Print Amount	عند تحديده، يُعد مبلغ الضريبة مشمولاً في سعر الطباعة / مبلغ الطباعة
+1-710	Sales Taxes and Charges.included_in_paid_amount	Considered In Paid Amount	محتسب ضمن المبلغ المدفوع
+1-711	Sales Taxes and Charges.included_in_paid_amount:desc	If checked, the tax amount will be considered as already included in the Paid Amount in Payment Entry	عند تحديده، يُعد مبلغ الضريبة مشمولاً في المبلغ المدفوع في سند الدفع
+1-712	Sales Taxes and Charges.is_tax_withholding_account	Is Tax Withholding Account	حساب استقطاع ضريبي
+1-713	Sales Taxes and Charges.rate	Tax Rate	نسبة الضريبة
+1-714	Sales Taxes and Charges.account_currency	Account Currency	عملة الحساب
+1-715	Sales Taxes and Charges.tax_amount_after_discount_amount	Tax Amount After Discount Amount	مبلغ الضريبة بعد مبلغ الخصم
+1-716	Sales Taxes and Charges.base_tax_amount_after_discount_amount	Tax Amount After Discount Amount (Company Currency)	مبلغ الضريبة بعد مبلغ الخصم (عملة الشركة)
+1-717	Payment Schedule.payment_term	Payment Term	شرط الدفع
+1-718	Payment Schedule.due_date	Due Date	تاريخ الاستحقاق
+1-719	Payment Schedule.invoice_portion	Invoice Portion	جزء الفاتورة
+1-720	Payment Schedule.mode_of_payment	Mode of Payment	طريقة الدفع
+1-721	Payment Schedule.due_date_based_on	Due Date Based On	تاريخ الاستحقاق بناء على
+1-722	Payment Schedule.due_date_based_on:opt	Day(s) after invoice date	يوم (أيام) بعد تاريخ الفاتورة
+1-723	Payment Schedule.due_date_based_on:opt	Day(s) after the end of the invoice month	يوم (أيام) بعد نهاية شهر الفاتورة
+1-724	Payment Schedule.due_date_based_on:opt	Month(s) after the end of the invoice month	شهر (أشهر) بعد نهاية شهر الفاتورة
+1-725	Payment Schedule.credit_days	Credit Days	أيام الائتمان
+1-726	Payment Schedule.credit_months	Credit Months	أشهر الائتمان
+1-727	Payment Schedule.discount_date	Discount Date	تاريخ الخصم
+1-728	Payment Schedule.discount	Discount	خصم
+1-729	Payment Schedule.discount_type	Discount Type	نوع الخصم
+1-730	Payment Schedule.discount_validity_based_on	Discount Validity Based On	صلاحية الخصم تعتمد على
+1-731	Payment Schedule.discount_validity	Discount Validity	صلاحية الخصم
+1-732	Payment Schedule.payment_amount	Payment Amount	مبلغ الدفعة
+1-733	Payment Schedule.outstanding	Outstanding	المستحق
+1-734	Payment Schedule.discounted_amount	Discounted Amount	المبلغ المخصوم
+1-735	Payment Schedule.base_payment_amount	Payment Amount (Company Currency)	مبلغ الدفع (عملة الشركة)
+1-736	Payment Schedule.base_outstanding	Outstanding (Company Currency)	المستحق (بعملة الشركة)
+1-737	Purchase Order.order_confirmation_no	Order Confirmation No	رقم تأكيد الطلب
+1-738	Purchase Order.order_confirmation_date	Order Confirmation Date	تاريخ تأكيد الطلب
+1-739	Purchase Order.schedule_date	Required By	مطلوب بتاريخ
+1-740	Purchase Order.supplier_warehouse	Supplier Warehouse	مستودع المورد
+1-741	Purchase Order.accounting_dimensions_section	Accounting Dimensions 	الأبعاد المحاسبية
+1-742	Purchase Order.set_from_warehouse	Set From Warehouse	تعيين المستودع المصدر
+1-743	Purchase Order.pricing_rules	Purchase Order Pricing Rule	قاعدة تسعير أمر الشراء
+1-744	Purchase Order.set_reserve_warehouse	Set Reserve Warehouse	تعيين المستودع الاحتياطي
+1-745	Purchase Order.taxes_and_charges	Purchase Taxes and Charges Template	قالب الضرائب والرسوم على المشتريات
+1-746	Purchase Order.taxes	Purchase Taxes and Charges	ضرائب ورسوم المشتريات
+1-747	Purchase Order.base_taxes_and_charges_added	Taxes and Charges Added (Company Currency)	الضرائب والرسوم المضافة (عملة الشركة)
+1-748	Purchase Order.base_taxes_and_charges_deducted	Taxes and Charges Deducted (Company Currency)	الضرائب والرسوم المخصومة (عملة الشركة)
+1-749	Purchase Order.taxes_and_charges_added	Taxes and Charges Added	الضرائب والرسوم المضافة
+1-750	Purchase Order.taxes_and_charges_deducted	Taxes and Charges Deducted	الضرائب والرسوم المخصومة
+1-751	Purchase Order.advance_paid	Advance Paid (Company Currency)	الدفعة المقدمة المدفوعة (عملة الشركة)
+1-752	Purchase Order.section_addresses	Supplier Address	عنوان المورد
+1-753	Purchase Order.address_display	Supplier Address Details	تفاصيل عنوان المورد
+1-754	Purchase Order.contact_person	Supplier Contact	جهة اتصال المورد
+1-755	Purchase Order.contact_display	Contact Name	اسم جهة الاتصال
+1-756	Purchase Order.contact_mobile	Contact Mobile No	جوال جهة الاتصال
+1-757	Purchase Order.contact_email	Contact Email	البريد الإلكتروني لجهة الاتصال
+1-758	Purchase Order.dispatch_address_display	Dispatch Address Details	تفاصيل عنوان الإرسال
+1-759	Purchase Order.shipping_address_display	Shipping Address Details	تفاصيل عنوان الشحن
+1-760	Purchase Order.company_billing_address_section	Company Billing Address	عنوان فوترة الشركة
+1-761	Purchase Order.billing_address_display	Billing Address Details	تفاصيل عنوان الفوترة
+1-762	Purchase Order.customer_contact_person	Customer Contact	جهة اتصال العميل
+1-763	Purchase Order.tracking_section	Order Status	حالة الطلب
+1-764	Purchase Order.status:opt	To Receive and Bill	للاستلام والفوترة
+1-765	Purchase Order.status:opt	To Receive	للاستلام
+1-766	Purchase Order.status:opt	Delivered	تم التسليم
+1-767	Purchase Order.per_billed	% Billed	% تمت الفوترة
+1-768	Purchase Order.per_received	% Received	% تم استلامه
+1-769	Purchase Order.column_break5	Printing Settings	إعدادات الطباعة
+1-770	Purchase Order.raw_material_details	Raw Materials Supplied	المواد الخام الموردة
+1-771	Purchase Order.supplied_items	Supplied Items	الأصناف الموردة
+1-772	Purchase Order Item.product_bundle	Product Bundle	حزمة منتجات
+1-773	Purchase Order Item.expected_delivery_date	Expected Delivery Date	تاريخ التسليم المتوقع
+1-774	Purchase Order Item.discount_percentage	Discount on Price List Rate (%)	الخصم على سعر قائمة الأسعار (%)
+1-775	Purchase Order Item.warehouse_and_reference	Warehouse Settings	إعدادات المستودعات
+1-776	Purchase Order Item.from_warehouse	From Warehouse	من المستودع
+1-777	Purchase Order Item.warehouse	Target Warehouse	المستودع الهدف
+1-778	Purchase Order Item.actual_qty	Available Qty at Target Warehouse	الكمية المتاحة في المستودع الهدف
+1-779	Purchase Order Item.company_total_stock	Available Qty at Company	الكمية المتاحة لدى الشركة
+1-780	Purchase Order Item.sales_order_packed_item	Sales Order Packed Item	صنف معبأ في أمر البيع
+1-781	Purchase Order Item.delivered_by_supplier	To be Delivered to Customer	للتسليم إلى العميل
+1-782	Purchase Order Item.section_break_56	Billed, Received & Returned	مفوتر ومستلم ومرتجع
+1-783	Purchase Order Item.billed_amt	Billed Amount	المبلغ المفوتر
+1-784	Purchase Order Item.wip_composite_asset	WIP Composite Asset	أصل مركب تحت التنفيذ
+1-785	Purchase Order Item.manufacturer_part_no	Manufacturer Part Number	رقم القطعة لدى الشركة المصنِّعة
+1-786	Purchase Order Item.include_exploded_items	Include Exploded Items	تضمين الأصناف المفصّلة
+1-787	Purchase Order Item.production_plan	Production Plan	خطة الإنتاج
+1-788	Purchase Order Item.job_card	Job Card	بطاقة عمل
+1-789	doctype	Purchase Receipt	إيصال استلام
+1-790	Purchase Receipt.supplier_delivery_note	Supplier Delivery Note	إذن تسليم المورد
+1-791	Purchase Receipt.subcontracting_receipt	Subcontracting Receipt	إيصال تصنيع خارجي
+1-792	Purchase Receipt.apply_putaway_rule	Apply Putaway Rule	تطبيق قاعدة التخزين
+1-793	Purchase Receipt.return_against	Return Against Purchase Receipt	مرتجع مقابل إيصال استلام
+1-794	Purchase Receipt.conversion_rate:desc	Rate at which supplier's currency is converted to company's base currency	سعر تحويل عملة المورد إلى العملة الأساسية للشركة
+1-795	Purchase Receipt.use_transaction_date_exchange_rate	Use Transaction Date Exchange Rate	استخدم سعر صرف تاريخ المعاملة
+1-796	Purchase Receipt.set_warehouse	Accepted Warehouse	مستودع المقبول
+1-797	Purchase Receipt.rejected_warehouse	Rejected Warehouse	مستودع المرفوضات
+1-798	Purchase Receipt.raw_material_details	Raw Materials Consumed	المواد الخام المستهلكة
+1-799	Purchase Receipt.get_current_stock	Get Current Stock	جلب المخزون الحالي
+1-800	Purchase Receipt.supplied_items	Consumed Items	الأصناف المستهلكة
+1-801	Purchase Receipt.dispatch_address	Dispatch Address Template	قالب عنوان الإرسال
+1-802	Purchase Receipt.shipping_address	Shipping Address Template	قالب عنوان الشحن
+1-803	Purchase Receipt.status:opt	Partly Billed	مفوتر جزئياً

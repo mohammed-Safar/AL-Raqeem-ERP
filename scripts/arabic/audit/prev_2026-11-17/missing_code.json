@@ -1,0 +1,3637 @@
+{
+"frappe": {
+"miss": [
+[
+"apps/frappe/frappe/public/dist/js/print_format_builder.bundle.3MICFJWH.js",
+"),O=t.anchor=_(",
+null
+],
+[
+"apps/frappe/frappe/public/dist/js/print_format_builder.bundle.3MICFJWH.js",
+"+ {0} more rows in this document \\u2014 all print in the real output",
+null
+],
+[
+"DocType: Notification",
+"<p><strong>{{ __(\"Condition Examples\") }}:</strong></p>\n<pre><code class=\"language-python\">doc.status==\"Open\"<br>doc.due_date==nowdate()<br>doc.total &gt; 40000\n</code></pre>\n",
+null
+],
+[
+"DocType: Webhook",
+"<p><strong>{{ __(\"Condition Examples\") }}:</strong></p>\n<pre>doc.status==\"Open\"<br>doc.due_date==nowdate()<br>doc.total &gt; 40000\n</pre>",
+null
+],
+[
+"apps/frappe/frappe/public/dist/js/print_format_builder.bundle.3MICFJWH.js",
+"Applying\\u2026",
+null
+],
+[
+"apps/frappe/frappe/public/dist/js/kanban.bundle.F5I3TV6R.js",
+"Card title\\u2026",
+null
+],
+[
+"apps/frappe/frappe/public/dist/js/print_format_builder.bundle.3MICFJWH.js",
+"Delete the version {0}? This cannot be undone.",
+null
+],
+[
+"apps/frappe/frappe/public/dist/js/print_format_builder.bundle.3MICFJWH.js",
+"Discarding\\u2026",
+null
+],
+[
+"apps/frappe/frappe/public/dist/js/print_format_builder.bundle.3MICFJWH.js",
+"Field \\u201C{0}\\u201D no longer exists on {1}",
+null
+],
+[
+"apps/frappe/frappe/public/js/frappe/views/reports/report_view.js",
+"For comparison, use >5, <10 or =324.\\nFor ranges, use 5:10 (for values between 5 & 10).",
+null
+],
+[
+"apps/frappe/frappe/public/dist/js/print_format_builder.bundle.3MICFJWH.js",
+"Generating preview\\u2026",
+null
+],
+[
+"apps/frappe/frappe/public/dist/js/kanban.bundle.F5I3TV6R.js",
+"Loading groups\\u2026",
+null
+],
+[
+"apps/frappe/frappe/public/dist/js/data_import_tools.bundle.YQGR4STA.js",
+"Move to\\u2026",
+null
+],
+[
+"apps/frappe/frappe/public/dist/js/print_format_builder.bundle.3MICFJWH.js",
+"No barcode value \\u2014 set one in the panel",
+null
+],
+[
+"apps/frappe/frappe/public/dist/js/print_format_builder.bundle.3MICFJWH.js",
+"No image \\u2014 set one in the panel",
+null
+],
+[
+"apps/frappe/frappe/public/dist/js/print_format_builder.bundle.3MICFJWH.js",
+"Restoring\\u2026",
+null
+],
+[
+"apps/frappe/frappe/public/dist/js/print_format_builder.bundle.3MICFJWH.js",
+"Saving\\u2026",
+null
+],
+[
+"apps/frappe/frappe/public/dist/js/print_format_builder.bundle.3MICFJWH.js",
+"Select table\\u2026",
+null
+],
+[
+"apps/frappe/frappe/public/dist/js/kanban.bundle.F5I3TV6R.js",
+"Set {0}\\u2026",
+null
+],
+[
+"apps/frappe/frappe/public/dist/js/desk.bundle.VRCIUGXV.js",
+"Switching you to the new navigation\\u2026",
+null
+],
+[
+"apps/frappe/frappe/public/dist/js/desk.bundle.VRCIUGXV.js",
+"Updated To A New Version \\u{1F389}",
+null
+],
+[
+"apps/frappe/frappe/public/dist/js/print_format_builder.bundle.3MICFJWH.js",
+"Working draft \\xB7 not applied yet",
+null
+],
+[
+"apps/frappe/frappe/public/dist/js/print_format_builder.bundle.3MICFJWH.js",
+"You cannot read {0} documents, so there is nothing to preview",
+null
+],
+[
+"apps/frappe/frappe/public/dist/js/file_uploader.bundle.342RVI4W.js",
+"\\u2190 Back to upload files",
+null
+],
+[
+"apps/frappe/frappe/public/js/frappe/form/footer/version_timeline_content_builder.js",
+"added",
+null
+],
+[
+"apps/frappe/frappe/public/js/lib/fingerprintjs.js",
+"inverted",
+null
+],
+[
+"apps/frappe/frappe/public/js/frappe/form/footer/version_timeline_content_builder.js",
+"removed",
+null
+],
+[
+"apps/frappe/frappe/apps.py",
+"setup_wizard_text",
+null
+],
+[
+"apps/frappe/frappe/public/dist/js/desk.bundle.VRCIUGXV.js",
+"{0} ${a}",
+null
+],
+[
+"apps/frappe/frappe/public/dist/js/desk.bundle.VRCIUGXV.js",
+"{0} ${d?\"\":a}",
+null
+],
+[
+"apps/frappe/frappe/public/dist/js/print_format_builder.bundle.3MICFJWH.js",
+"{0} is empty \\u2014 click to add",
+null
+],
+[
+"apps/frappe/frappe/public/dist/js/desk.bundle.VRCIUGXV.js",
+"{0} of {1} done \\xB7 {2} skipped",
+null
+],
+[
+"apps/frappe/frappe/public/dist/js/desk.bundle.VRCIUGXV.js",
+"{0} workspace(s) name the module {1}, which doesn't exist on this site \\u2014 nothing can navigate to them. Give each one a module below.",
+null
+],
+[
+"apps/frappe/frappe/public/dist/js/desk.bundle.VRCIUGXV.js",
+"{0}: a grid of icons you can arrange, which is what you use today.",
+null
+],
+[
+"apps/frappe/frappe/public/dist/js/desk.bundle.VRCIUGXV.js",
+"{0}: your modules sit in a dock, and each one has its own sidebar.",
+null
+]
+],
+"same": [
+[
+"DocType: Website Settings",
+"&lt;head&gt; HTML",
+"&lt;head&gt; HTML"
+],
+[
+"apps/frappe/frappe/public/js/print_format_builder/components/PrintSettingsPanel.vue",
+".print-format p { margin: 0; }",
+".print-format p { margin: 0; }"
+],
+[
+"apps/frappe/frappe/core/page/component_explorer/component_explorer.js",
+"@jane",
+"@jane"
+],
+[
+"DocType: Print Settings",
+"A0",
+"A0"
+],
+[
+"DocType: Print Settings",
+"A1",
+"A1"
+],
+[
+"DocType: Print Settings",
+"A2",
+"A2"
+],
+[
+"DocType: Print Format",
+"A3",
+"A3"
+],
+[
+"DocType: Print Format",
+"A4",
+"A4"
+],
+[
+"DocType: Print Format",
+"A5",
+"A5"
+],
+[
+"DocType: Print Settings",
+"A6",
+"A6"
+],
+[
+"DocType: Print Settings",
+"A7",
+"A7"
+],
+[
+"DocType: Print Settings",
+"A8",
+"A8"
+],
+[
+"DocType: Print Settings",
+"A9",
+"A9"
+],
+[
+"DocType: Server Script",
+"API",
+"API"
+],
+[
+"DocType: LDAP Settings",
+"Active Directory",
+"Active Directory"
+],
+[
+"apps/frappe/frappe/public/js/frappe/utils/number_systems.js",
+"Ar",
+"Ar"
+],
+[
+"DocType: Print Settings",
+"Arial",
+"Arial"
+],
+[
+"DocType: Print Settings",
+"B0",
+"B0"
+],
+[
+"DocType: Print Settings",
+"B1",
+"B1"
+],
+[
+"DocType: Print Settings",
+"B10",
+"B10"
+],
+[
+"DocType: Print Settings",
+"B2",
+"B2"
+],
+[
+"DocType: Print Settings",
+"B3",
+"B3"
+],
+[
+"DocType: Print Settings",
+"B4",
+"B4"
+],
+[
+"DocType: Print Settings",
+"B5",
+"B5"
+],
+[
+"DocType: Print Settings",
+"B6",
+"B6"
+],
+[
+"DocType: Print Settings",
+"B7",
+"B7"
+],
+[
+"DocType: Print Settings",
+"B8",
+"B8"
+],
+[
+"DocType: Print Settings",
+"B9",
+"B9"
+],
+[
+"DocType: Print Settings",
+"C5E",
+"C5E"
+],
+[
+"DocType: Recorder",
+"CMD",
+"CMD"
+],
+[
+"DocType: Custom HTML Block",
+"CSS",
+"CSS"
+],
+[
+"DocType: Data Export",
+"CSV",
+"CSV"
+],
+[
+"apps/frappe/frappe/public/js/print_format_builder/components/PrintSettingsPanel.vue",
+"Chromium",
+"Chromium"
+],
+[
+"DocType: OAuth Client",
+"Client Secret Basic",
+"Client Secret Basic"
+],
+[
+"DocType: OAuth Client",
+"Client Secret Post",
+"Client Secret Post"
+],
+[
+"DocType: Print Settings",
+"Comm10E",
+"Comm10E"
+],
+[
+"apps/frappe/frappe/public/js/frappe/utils/number_systems.js",
+"Cr",
+"Cr"
+],
+[
+"DocType: Scheduled Job Type",
+"Cron",
+"Cron"
+],
+[
+"DocType: Recorder",
+"DELETE",
+"DELETE"
+],
+[
+"DocType: Print Settings",
+"DLE",
+"DLE"
+],
+[
+"DocType: DocField",
+"DocField",
+"DocField"
+],
+[
+"DocType: DocPerm",
+"DocPerm",
+"DocPerm"
+],
+[
+"DocType: DocShare",
+"DocShare",
+"DocShare"
+],
+[
+"apps/frappe/frappe/public/js/frappe/form/grid_row_form.js",
+"ESC",
+"Esc"
+],
+[
+"DocType: Data Export",
+"Excel",
+"Excel"
+],
+[
+"DocType: Social Login Key",
+"Facebook",
+"Facebook"
+],
+[
+"DocType: Social Login Key",
+"Frappe",
+"Frappe"
+],
+[
+"DocType: Email Account",
+"Frappe Mail",
+"Frappe Mail"
+],
+[
+"DocType: Recorder",
+"GET",
+"GET"
+],
+[
+"DocType: Email Account",
+"GMail",
+"Gmail"
+],
+[
+"DocType: Geolocation Settings",
+"Geoapify",
+"Geoapify"
+],
+[
+"DocType: Social Login Key",
+"GitHub",
+"GitHub"
+],
+[
+"DocType: Social Login Key",
+"Google",
+"Google"
+],
+[
+"apps/frappe/frappe/public/js/frappe/file_uploader/FileUploader.vue",
+"Google Drive",
+"Google Drive"
+],
+[
+"DocType: Recorder",
+"HEAD",
+"HEAD"
+],
+[
+"DocType: Geolocation Settings",
+"HERE",
+"HERE"
+],
+[
+"DocType: Language",
+"HH:mm",
+"HH:mm"
+],
+[
+"DocType: Language",
+"HH:mm:ss",
+"HH:mm:ss"
+],
+[
+"DocType: DocField",
+"HTML",
+"HTML"
+],
+[
+"DocType: Print Settings",
+"Helvetica",
+"Helvetica"
+],
+[
+"DocType: Print Settings",
+"Helvetica Neue",
+"Helvetica Neue"
+],
+[
+"apps/frappe/frappe/core/doctype/file/test_file.py",
+"Home/Test Folder 1",
+"Home/Test Folder 1"
+],
+[
+"apps/frappe/frappe/core/doctype/file/test_file.py",
+"Home/Test Folder 1/Test Folder 3",
+"Home/Test Folder 1/Test Folder 3"
+],
+[
+"apps/frappe/frappe/core/doctype/file/test_file.py",
+"Home/Test Folder 2",
+"Home/Test Folder 2"
+],
+[
+"DocType: Desktop Icon",
+"Idx",
+"Idx"
+],
+[
+"DocType: DocType",
+"InnoDB",
+"InnoDB"
+],
+[
+"DocType: Print Settings",
+"Inter",
+"Inter"
+],
+[
+"DocType: Print Format",
+"JS",
+"JS"
+],
+[
+"DocType: DocField",
+"JSON",
+"JSON"
+],
+[
+"DocType: Website Theme",
+"JavaScript",
+"JavaScript"
+],
+[
+"DocType: Report",
+"Javascript",
+"JavaScript"
+],
+[
+"DocType: Print Format",
+"Jinja",
+"Jinja"
+],
+[
+"DocType: Social Login Key",
+"Keycloak",
+"Keycloak"
+],
+[
+"DocType: Notification",
+"Markdown",
+"Markdown"
+],
+[
+"apps/frappe/frappe/desk/page/setup_wizard/install_fixtures.py",
+"Mx",
+"Mx"
+],
+[
+"DocType: DocType",
+"MyISAM",
+"MyISAM"
+],
+[
+"DocType: Geolocation Settings",
+"Nomatim",
+"Nominatim"
+],
+[
+"DocType: Email Account",
+"OAuth",
+"OAuth"
+],
+[
+"DocType: Recorder",
+"OPTIONS",
+"OPTIONS"
+],
+[
+"DocType: Social Login Key",
+"Office 365",
+"Office 365"
+],
+[
+"DocType: LDAP Settings",
+"OpenLDAP",
+"OpenLDAP"
+],
+[
+"DocType: Email Account",
+"Outlook.com",
+"Outlook.com"
+],
+[
+"DocType: Recorder",
+"PATCH",
+"PATCH"
+],
+[
+"DocType: RQ Worker",
+"PID",
+"PID"
+],
+[
+"DocType: Recorder",
+"POST",
+"POST"
+],
+[
+"DocType: Recorder",
+"PUT",
+"PUT"
+],
+[
+"DocType: System Console",
+"Python",
+"Python"
+],
+[
+"apps/frappe/frappe/email/doctype/email_account/email_account.py",
+"Re:",
+"Re:"
+],
+[
+"DocType: Website Settings",
+"Robots.txt",
+"Robots.txt"
+],
+[
+"DocType: System Console",
+"SQL",
+"SQL"
+],
+[
+"DocType: Social Login Key",
+"Salesforce",
+"Salesforce"
+],
+[
+"DocType: Security Settings",
+"Security.txt",
+"Security.txt"
+],
+[
+"DocType: Email Account",
+"Sendgrid",
+"SendGrid"
+],
+[
+"DocType: Contact Us Settings",
+"Skype",
+"Skype"
+],
+[
+"DocType: Notification",
+"Slack",
+"Slack"
+],
+[
+"DocType: Email Account",
+"SparkPost",
+"SparkPost"
+],
+[
+"DocType: LDAP Settings",
+"StartTLS",
+"StartTLS"
+],
+[
+"apps/frappe/frappe/public/js/frappe/utils/number_systems.js",
+"T",
+"T"
+],
+[
+"apps/frappe/frappe/core/doctype/translation/test_translation.py",
+"Test Spanish",
+"Test Spanish"
+],
+[
+"apps/frappe/frappe/core/doctype/file/test_file.py",
+"Test_Folder",
+"Test_Folder"
+],
+[
+"DocType: Print Format",
+"Typst",
+"Typst"
+],
+[
+"DocType: Email Account",
+"UIDNEXT",
+"UIDNEXT"
+],
+[
+"DocType: Email Account",
+"UIDVALIDITY",
+"UIDVALIDITY"
+],
+[
+"DocType: DocType",
+"UUID",
+"UUID"
+],
+[
+"DocType: Print Settings",
+"Verdana",
+"Verdana"
+],
+[
+"DocType: Print Format",
+"WeasyPrint",
+"WeasyPrint"
+],
+[
+"DocType: System Health Report",
+"Websocket",
+"Websocket"
+],
+[
+"DocType: Auto Email Report",
+"XLSX",
+"XLSX"
+],
+[
+"DocType: Email Account",
+"Yahoo Mail",
+"Yahoo Mail"
+],
+[
+"DocType: Email Account",
+"Yandex.Mail",
+"Yandex.Mail"
+],
+[
+"DocType: Webhook",
+"after_insert",
+"after_insert"
+],
+[
+"DocType: Print Format",
+"chrome",
+"Chrome"
+],
+[
+"DocType: Language",
+"dd-mm-yyyy",
+"dd-mm-yyyy"
+],
+[
+"DocType: Language",
+"dd.mm.yyyy",
+"dd.mm.yyyy"
+],
+[
+"DocType: Language",
+"dd/mm/yyyy",
+"dd/mm/yyyy"
+],
+[
+"DocType: User",
+"emacs",
+"emacs"
+],
+[
+"DocType: Social Link Settings",
+"facebook",
+"Facebook"
+],
+[
+"DocType: Social Login Key",
+"fairlogin",
+"fairlogin"
+],
+[
+"DocType: System Settings",
+"frappectl",
+"frappectl"
+],
+[
+"apps/frappe/frappe/templates/signup.html",
+"jane@example.com",
+"jane@example.com"
+],
+[
+"DocType: Social Link Settings",
+"linkedin",
+"LinkedIn"
+],
+[
+"DocType: Language",
+"mm-dd-yyyy",
+"mm-dd-yyyy"
+],
+[
+"DocType: Language",
+"mm/dd/yyyy",
+"mm/dd/yyyy"
+],
+[
+"DocType: OAuth Authorization Code",
+"nonce",
+"nonce"
+],
+[
+"DocType: File",
+"old_parent",
+"old_parent"
+],
+[
+"DocType: Webhook",
+"on_cancel",
+"on_cancel"
+],
+[
+"DocType: Webhook",
+"on_change",
+"on_change"
+],
+[
+"DocType: Webhook",
+"on_submit",
+"on_submit"
+],
+[
+"DocType: Webhook",
+"on_trash",
+"on_trash"
+],
+[
+"DocType: Webhook",
+"on_update",
+"on_update"
+],
+[
+"DocType: Webhook",
+"on_update_after_submit",
+"on_update_after_submit"
+],
+[
+"DocType: OAuth Authorization Code",
+"plain",
+"plain"
+],
+[
+"DocType: OAuth Authorization Code",
+"s256",
+"s256"
+],
+[
+"DocType: Social Link Settings",
+"twitter",
+"Twitter"
+],
+[
+"DocType: User",
+"vim",
+"vim"
+],
+[
+"DocType: User",
+"vscode",
+"vscode"
+],
+[
+"DocType: Print Format",
+"wkhtmltopdf",
+"wkhtmltopdf"
+],
+[
+"DocType: Webhook",
+"workflow_transition",
+"workflow_transition"
+],
+[
+"DocType: Language",
+"yyyy-mm-dd",
+"yyyy-mm-dd"
+],
+[
+"apps/frappe/frappe/public/js/frappe/ui/toolbar/search_utils.js",
+"{0} ${skip_list ? \"\" : type}",
+"{0} ${skip_list ? \"\" : type}"
+],
+[
+"apps/frappe/frappe/public/js/frappe/ui/toolbar/search_utils.js",
+"{0} ${type}",
+"{0} ${type}"
+]
+]
+},
+"erpnext": {
+"miss": [
+[
+"DocType: Asset Depreciation Schedule",
+"ACC-ADS-.YYYY.-",
+null
+],
+[
+"DocType: Asset Maintenance Log",
+"ACC-AML-.YYYY.-",
+null
+],
+[
+"DocType: Asset Shift Allocation",
+"ACC-ASA-.YYYY.-",
+null
+],
+[
+"DocType: Asset Capitalization",
+"ACC-ASC-.YYYY.-",
+null
+],
+[
+"DocType: Asset Repair",
+"ACC-ASR-.YYYY.-",
+null
+],
+[
+"DocType: Asset",
+"ACC-ASS-.YYYY.-",
+null
+],
+[
+"DocType: Bank Transaction",
+"ACC-BTN-.YYYY.-",
+null
+],
+[
+"DocType: Journal Entry",
+"ACC-JV-.YYYY.-",
+null
+],
+[
+"DocType: Payment Entry",
+"ACC-PAY-.YYYY.-",
+null
+],
+[
+"DocType: Purchase Invoice",
+"ACC-PINV-RET-.YYYY.-",
+null
+],
+[
+"DocType: Payment Request",
+"ACC-PRQ-.YYYY.-",
+null
+],
+[
+"DocType: POS Invoice",
+"ACC-PSINV-.YYYY.-",
+null
+],
+[
+"DocType: Shareholder",
+"ACC-SH-.YYYY.-",
+null
+],
+[
+"DocType: Sales Invoice",
+"ACC-SINV-.YYYY.-",
+null
+],
+[
+"DocType: Sales Invoice",
+"ACC-SINV-RET-.YYYY.-",
+null
+],
+[
+"apps/erpnext/erpnext/assets/doctype/asset/asset.py",
+"All quantities of Item {0} in {1} are already linked to Assets.",
+null
+],
+[
+"DocType: BOM Creator",
+"BOM-CRE-.YYYY.-",
+null
+],
+[
+"DocType: Budget",
+"BUDGET-.########",
+null
+],
+[
+"DocType: Stock Closing Entry",
+"CBAL-.#####",
+null
+],
+[
+"DocType: Opportunity",
+"CRM-OPP-.YYYY.-",
+null
+],
+[
+"DocType: Customer",
+"CUST-.YYYY.-",
+null
+],
+[
+"DocType: Downtime Entry",
+"DT-",
+null
+],
+[
+"DocType: Dunning",
+"DUNN-.MM.-.YY.-",
+null
+],
+[
+"apps/erpnext/erpnext/manufacturing/doctype/routing/routing.js",
+"Enter the Operation, the table will fetch the Operation details like Hourly Rate, Workstation automatically.\\n\\n After that, set the Operation Time in minutes and the table will calculate the Operation Costs based on the Hourly Rate and Operation Time.",
+null
+],
+[
+"DocType: Driver",
+"HR-DRI-.YYYY.-",
+null
+],
+[
+"DocType: Employee",
+"HR-EMP-",
+null
+],
+[
+"DocType: Issue",
+"ISS-.YYYY.-",
+null
+],
+[
+"DocType: Delivery Note",
+"MAT-DN-.YYYY.-",
+null
+],
+[
+"DocType: Delivery Note",
+"MAT-DN-RET-.YYYY.-",
+null
+],
+[
+"DocType: Delivery Trip",
+"MAT-DT-.YYYY.-",
+null
+],
+[
+"DocType: Installation Note",
+"MAT-INS-.YYYY.-",
+null
+],
+[
+"DocType: Landed Cost Voucher",
+"MAT-LCV-.YYYY.-",
+null
+],
+[
+"DocType: Material Request",
+"MAT-MR-.YYYY.-",
+null
+],
+[
+"DocType: Maintenance Schedule",
+"MAT-MSH-.YYYY.-",
+null
+],
+[
+"DocType: Maintenance Visit",
+"MAT-MVS-.YYYY.-",
+null
+],
+[
+"DocType: Packing Slip",
+"MAT-PAC-.YYYY.-",
+null
+],
+[
+"DocType: Purchase Receipt",
+"MAT-PR-RET-.YYYY.-",
+null
+],
+[
+"DocType: Purchase Receipt",
+"MAT-PRE-.YYYY.-",
+null
+],
+[
+"DocType: Quality Inspection",
+"MAT-QA-.YYYY.-",
+null
+],
+[
+"DocType: Stock Reconciliation",
+"MAT-RECO-.YYYY.-",
+null
+],
+[
+"DocType: Subcontracting Receipt",
+"MAT-SCR-.YYYY.-",
+null
+],
+[
+"DocType: Subcontracting Receipt",
+"MAT-SCR-RET-.YYYY.-",
+null
+],
+[
+"DocType: Stock Entry",
+"MAT-STE-.YYYY.-",
+null
+],
+[
+"DocType: Blanket Order",
+"MFG-BLR-.YYYY.-",
+null
+],
+[
+"DocType: Production Plan",
+"MFG-PP-.YYYY.-",
+null
+],
+[
+"DocType: Work Order",
+"MFG-WO-.YYYY.-",
+null
+],
+[
+"DocType: Master Production Schedule",
+"MPS.YY.-.######",
+null
+],
+[
+"DocType: Payment Order",
+"PMO-",
+null
+],
+[
+"DocType: Job Card",
+"PO-JOB.#####",
+null
+],
+[
+"DocType: Cashier Closing",
+"POS-CLO-",
+null
+],
+[
+"DocType: Pricing Rule",
+"PRLE-.####",
+null
+],
+[
+"DocType: Project",
+"PROJ-.####",
+null
+],
+[
+"DocType: Supplier Scorecard Period",
+"PU-SSP-.YYYY.-",
+null
+],
+[
+"DocType: Purchase Order",
+"PUR-ORD-.YYYY.-",
+null
+],
+[
+"DocType: Request for Quotation",
+"PUR-RFQ-.YYYY.-",
+null
+],
+[
+"DocType: Supplier Quotation",
+"PUR-SQTN-.YYYY.-",
+null
+],
+[
+"DocType: Serial and Batch Bundle",
+"SABB-.########",
+null
+],
+[
+"DocType: Campaign",
+"SAL-CAM-.YYYY.-",
+null
+],
+[
+"DocType: Sales Order",
+"SAL-ORD-.YYYY.-",
+null
+],
+[
+"DocType: Quotation",
+"SAL-QTN-.YYYY.-",
+null
+],
+[
+"DocType: Subcontracting Order",
+"SC-ORD-.YYYY.-",
+null
+],
+[
+"DocType: Subcontracting Inward Order",
+"SCI-ORD-.YYYY.-",
+null
+],
+[
+"DocType: Warranty Claim",
+"SER-WRN-.YYYY.-",
+null
+],
+[
+"DocType: Sales Forecast",
+"SF.YY.-.######",
+null
+],
+[
+"DocType: Item",
+"STO-ITEM-.YYYY.-",
+null
+],
+[
+"DocType: Pick List",
+"STO-PICK-.YYYY.-",
+null
+],
+[
+"DocType: Supplier",
+"SUP-.YYYY.-",
+null
+],
+[
+"apps/erpnext/erpnext/manufacturing/doctype/production_plan/production_plan.js",
+"Select whether to get items from a Sales Order or a Material Request. For now select <b>Sales Order</b>.\\n A Production Plan can also be created manually where you can select the Items to manufacture.",
+null
+],
+[
+"apps/erpnext/erpnext/assets/doctype/asset/asset.py",
+"Selected {0} does not contain the Item Code {1}",
+null
+],
+[
+"DocType: Timesheet",
+"TS-.YYYY.-",
+null
+],
+[
+"apps/erpnext/erpnext/accounts/doctype/chart_of_accounts_importer/chart_of_accounts_importer.py",
+"account_type",
+null
+],
+[
+"apps/erpnext/erpnext/public/js/bom_creator/operations_editor.js",
+"min",
+null
+],
+[
+"apps/erpnext/erpnext/public/js/bom_creator/operations_editor.js",
+"then",
+null
+]
+],
+"same": [
+[
+"apps/erpnext/erpnext/public/js/bank_reconciliation_tool/dialog_manager.js",
+"<div class=\"text-muted text-center\">{0}</div>",
+"<div class=\"text-muted text-center\">{0}</div>"
+],
+[
+"DocType: Item",
+"<div id=\"stock-levels-placeholder\"></div>",
+"<div id=\"stock-levels-placeholder\"></div>"
+],
+[
+"DocType: Item",
+"<div id=\\\"item-prices-container\\\"></div>",
+"<div id=\\\"item-prices-container\\\"></div>"
+],
+[
+"apps/erpnext/erpnext/accounts/doctype/process_statement_of_accounts/process_statement_of_accounts.py",
+"<li>{}</li>",
+"<li>{}</li>"
+],
+[
+"apps/erpnext/erpnext/stock/report/stock_ledger_invariant_check/stock_ledger_invariant_check.py",
+"A - B",
+"A - B"
+],
+[
+"apps/erpnext/erpnext/stock/report/fifo_queue_vs_qty_after_transaction_comparison/fifo_queue_vs_qty_after_transaction_comparison.py",
+"A - C",
+"A - C"
+],
+[
+"DocType: Employee",
+"A+",
+"+A"
+],
+[
+"DocType: Employee",
+"A-",
+"-A"
+],
+[
+"DocType: Cheque Print Template",
+"A4",
+"A4"
+],
+[
+"DocType: Employee",
+"AB+",
+"+AB"
+],
+[
+"DocType: Employee",
+"AB-",
+"-AB"
+],
+[
+"DocType: Purchase Invoice",
+"ACC-PINV-.YYYY.-",
+"ACC-PINV-.YYYY.-"
+],
+[
+"DocType: Support Search Source",
+"API",
+"API"
+],
+[
+"DocType: Employee",
+"B+",
+"+B"
+],
+[
+"DocType: Employee",
+"B-",
+"-B"
+],
+[
+"DocType: Bisect Accounting Statements",
+"BFS",
+"BFS"
+],
+[
+"apps/erpnext/erpnext/stock/report/stock_valuation_comparison/stock_valuation_comparison.py",
+"C - D",
+"C - D"
+],
+[
+"DocType: Item Barcode",
+"CODE-39",
+"CODE-39"
+],
+[
+"DocType: Lead",
+"CRM-LEAD-.YYYY.-",
+"CRM-LEAD-.YYYY.-"
+],
+[
+"apps/erpnext/erpnext/stock/report/fifo_queue_vs_qty_after_transaction_comparison/fifo_queue_vs_qty_after_transaction_comparison.py",
+"D - E",
+"D - E"
+],
+[
+"DocType: Bisect Accounting Statements",
+"DFS",
+"DFS"
+],
+[
+"DocType: Transaction Deletion Record Details",
+"DocField",
+"DocField"
+],
+[
+"apps/erpnext/erpnext/stock/report/stock_valuation_comparison/stock_valuation_comparison.py",
+"E - F",
+"E - F"
+],
+[
+"DocType: Item Barcode",
+"EAN",
+"EAN"
+],
+[
+"DocType: Item Barcode",
+"EAN-13",
+"EAN-13"
+],
+[
+"DocType: Item Barcode",
+"EAN-8",
+"EAN-8"
+],
+[
+"DocType: Company",
+"FIFO",
+"FIFO"
+],
+[
+"apps/erpnext/erpnext/stock/report/stock_ledger_invariant_check/stock_ledger_invariant_check.py",
+"G - D",
+"G - D"
+],
+[
+"apps/erpnext/erpnext/stock/report/stock_valuation_comparison/stock_valuation_comparison.py",
+"G - H",
+"G - H"
+],
+[
+"DocType: Item Barcode",
+"GS1",
+"GS1"
+],
+[
+"DocType: Item Barcode",
+"GTIN",
+"GTIN"
+],
+[
+"DocType: Item Barcode",
+"GTIN-14",
+"GTIN-14"
+],
+[
+"apps/erpnext/erpnext/stock/report/stock_ledger_invariant_check/stock_ledger_invariant_check.py",
+"H - F",
+"H - F"
+],
+[
+"apps/erpnext/erpnext/stock/report/stock_ledger_invariant_check/stock_ledger_invariant_check.py",
+"I - J",
+"I - J"
+],
+[
+"apps/erpnext/erpnext/stock/report/stock_ledger_invariant_check/stock_ledger_invariant_check.py",
+"I - K",
+"I - K"
+],
+[
+"DocType: Bank Account",
+"IBAN",
+"IBAN"
+],
+[
+"",
+"IRS 1099",
+"IRS 1099"
+],
+[
+"DocType: Item Barcode",
+"ISBN",
+"ISBN"
+],
+[
+"DocType: Item Barcode",
+"ISBN-10",
+"ISBN-10"
+],
+[
+"DocType: Item Barcode",
+"ISBN-13",
+"ISBN-13"
+],
+[
+"DocType: Item Barcode",
+"ISSN",
+"ISSN"
+],
+[
+"DocType: Item Barcode",
+"JAN",
+"JAN"
+],
+[
+"DocType: Company",
+"LIFO",
+"LIFO"
+],
+[
+"DocType: Employee",
+"O+",
+"+O"
+],
+[
+"DocType: Employee",
+"O-",
+"-O"
+],
+[
+"DocType: Item Barcode",
+"PZN",
+"PZN"
+],
+[
+"DocType: Support Search Source",
+"Search Term Param Name",
+"Search Param Name"
+],
+[
+"DocType: Transaction Deletion Record To Delete",
+"Transaction Deletion Record To Delete",
+"Transaction Deletion Record To Delete"
+],
+[
+"DocType: Item Barcode",
+"UPC",
+"UPC"
+],
+[
+"DocType: Item Barcode",
+"UPC-A",
+"UPC-A"
+],
+[
+"DocType: Video",
+"Vimeo",
+"Vimeo"
+],
+[
+"DocType: Lead",
+"WhatsApp",
+"WhatsApp"
+],
+[
+"DocType: Video",
+"YouTube",
+"YouTube"
+],
+[
+"DocType: Currency Exchange Settings",
+"exchangerate.host",
+"exchangerate.host"
+],
+[
+"DocType: Currency Exchange Settings",
+"frankfurter.dev",
+"frankfurter.dev"
+],
+[
+"DocType: Currency Exchange Settings",
+"frankfurter.dev - v2",
+"frankfurter.dev - v2"
+],
+[
+"DocType: Cost Center",
+"lft",
+"lft"
+],
+[
+"DocType: Production Plan Item",
+"material_request_item",
+"material_request_item"
+],
+[
+"DocType: Cost Center",
+"old_parent",
+"old_parent"
+],
+[
+"DocType: Cost Center",
+"rgt",
+"rgt"
+],
+[
+"apps/erpnext/erpnext/controllers/status_updater.py",
+"target_ref_field",
+"target_ref_field"
+]
+]
+},
+"crm": {
+"miss": [
+[
+"apps/crm/crm/public/frontend/assets/Deal-CgIBukPV.js",
+"DoesNotExistError",
+null
+],
+[
+"DocType: CRM Enrichment Field Mapping",
+"company_name",
+null
+],
+[
+"apps/crm/crm/fcrm/doctype/fcrm_note/fcrm_note.py",
+"deal",
+null
+],
+[
+"DocType: CRM Enrichment Field Mapping",
+"github",
+null
+],
+[
+"DocType: CRM Enrichment Field Mapping",
+"industry",
+null
+],
+[
+"DocType: CRM Enrichment Field Mapping",
+"instagram",
+null
+],
+[
+"apps/crm/crm/fcrm/doctype/fcrm_note/fcrm_note.py",
+"lead",
+null
+],
+[
+"DocType: CRM Enrichment Field Mapping",
+"logo",
+null
+],
+[
+"DocType: CRM Enrichment Field Mapping",
+"primary_email",
+null
+],
+[
+"DocType: CRM Enrichment Field Mapping",
+"primary_phone",
+null
+],
+[
+"DocType: CRM Enrichment Field Mapping",
+"secondary_phone",
+null
+],
+[
+"DocType: CRM Enrichment Field Mapping",
+"youtube",
+null
+]
+],
+"same": [
+[
+"apps/crm/crm/public/frontend/assets/ViewControls-Cr0GUgCP.js",
+"%John%",
+"%John%"
+],
+[
+"apps/crm/crm/public/frontend/assets/ViewControls-Cr0GUgCP.js",
+"01/01/2022 to 01/31/2022",
+"01/01/2022 to 01/31/2022"
+],
+[
+"apps/crm/crm/public/frontend/assets/GlobalModals-CVltW9AK.js",
+"01/04/2024 11:30 PM",
+"01/04/2024 11:30 PM"
+],
+[
+"DocType: CRM Exotel Settings",
+"Account SID",
+"Account SID"
+],
+[
+"DocType: CRM Deal",
+"CRM-DEAL-.YYYY.-",
+"CRM-DEAL-.YYYY.-"
+],
+[
+"DocType: CRM Lead",
+"CRM-LEAD-.YYYY.-",
+"CRM-LEAD-.YYYY.-"
+],
+[
+"DocType: CRM Product",
+"CRM-PROD-.YYYY.-",
+"CRM-PROD-.YYYY.-"
+],
+[
+"apps/crm/crm/public/frontend/assets/ViewControls-Cr0GUgCP.js",
+"CSV",
+"CSV"
+],
+[
+"apps/crm/crm/public/frontend/assets/ViewControls-Cr0GUgCP.js",
+"Excel",
+"Excel"
+],
+[
+"DocType: CRM Call Log",
+"Exotel",
+"Exotel"
+],
+[
+"DocType: CRM Availability Status",
+"FCRM",
+"FCRM"
+],
+[
+"DocType: CRM Deal",
+"Facebook",
+"Facebook"
+],
+[
+"apps/crm/crm/domain_enrichment/mapper.py",
+"GitHub",
+"GitHub"
+],
+[
+"DocType: CRM Enrichment Rule",
+"HTML",
+"HTML"
+],
+[
+"apps/crm/crm/domain_enrichment/mapper.py",
+"Instagram",
+"Instagram"
+],
+[
+"DocType: CRM Global Settings",
+"JSON",
+"JSON"
+],
+[
+"apps/crm/crm/public/frontend/assets/GlobalModals-CVltW9AK.js",
+"John Doe",
+"John Doe"
+],
+[
+"apps/crm/crm/public/frontend/assets/ViewControls-Cr0GUgCP.js",
+"John, Jane, Doe",
+"John, Jane, Doe"
+],
+[
+"DocType: CRM Deal",
+"LinkedIn",
+"LinkedIn"
+],
+[
+"DocType: CRM Deal",
+"SLA",
+"SLA"
+],
+[
+"DocType: CRM Twilio Settings",
+"TwiML SID",
+"TwiML SID"
+],
+[
+"DocType: CRM Call Log",
+"Twilio",
+"Twilio"
+],
+[
+"DocType: CRM Notification",
+"WhatsApp",
+"WhatsApp"
+],
+[
+"DocType: CRM Deal",
+"X (Twitter)",
+"X (Twitter)"
+],
+[
+"apps/crm/crm/domain_enrichment/mapper.py",
+"YouTube",
+"YouTube"
+],
+[
+"DocType: FCRM Settings",
+"exchangerate-api",
+"exchangerate-api"
+],
+[
+"DocType: FCRM Settings",
+"exchangerate.host",
+"exchangerate.host"
+],
+[
+"DocType: CRM Enrichment Field Mapping",
+"facebook",
+"Facebook"
+],
+[
+"DocType: FCRM Settings",
+"fawazahmed-exchange-api",
+"fawazahmed-exchange-api"
+],
+[
+"DocType: FCRM Settings",
+"frankfurter.app",
+"frankfurter.app"
+],
+[
+"DocType: CRM View Settings",
+"group_by",
+"group_by"
+],
+[
+"apps/crm/crm/public/frontend/assets/GlobalModals-CVltW9AK.js",
+"john@doe.com",
+"john@doe.com"
+],
+[
+"DocType: CRM Enrichment Field Mapping",
+"linkedin",
+"LinkedIn"
+],
+[
+"apps/crm/crm/api/activities.py",
+"old_value",
+"old_value"
+],
+[
+"DocType: CRM Enrichment Field Mapping",
+"twitter",
+"Twitter"
+],
+[
+"DocType: CRM Product Sync Issue",
+"unlinked_orphan",
+"unlinked_orphan"
+]
+]
+},
+"hrms": {
+"miss": [
+[
+"apps/hrms/hrms/public/frontend/assets/Holidays-DicOIgQk.js",
+"$dayjs",
+null
+],
+[
+"apps/hrms/hrms/public/frontend/assets/Holidays-DicOIgQk.js",
+"$employee",
+null
+],
+[
+"apps/hrms/hrms/public/frontend/assets/Holidays-DicOIgQk.js",
+"$translate",
+null
+],
+[
+"apps/hrms/hrms/public/frontend/assets/ShiftAssignmentItem-DQQglVTO.js",
+",!0),t.doc.end_date?(e(),c(\"span\",D,s(n.__(\"{0}d\",[t.doc.total_shift_days||a(k)(t.doc)])),1)):_(",
+null
+],
+[
+"apps/hrms/hrms/public/frontend/assets/LeaveBalance-0WMXtTGF.js",
+"EmptyState",
+null
+],
+[
+"apps/hrms/hrms/hr/doctype/attendance_request/attendance_request.py",
+"action",
+null
+],
+[
+"apps/hrms/hrms/hr/doctype/goal/goal_list.js",
+"goal",
+null
+],
+[
+"apps/hrms/hrms/hr/doctype/goal/goal_list.js",
+"goals",
+null
+],
+[
+"apps/hrms/hrms/hr/doctype/attendance_request/attendance_request.py",
+"reason",
+null
+],
+[
+"apps/hrms/hrms/public/frontend/assets/LeaveBalance-0WMXtTGF.js",
+"router-link",
+null
+]
+],
+"same": [
+[
+"DocType: Employee Attendance Tool",
+"<hr>",
+"<hr>"
+],
+[
+"apps/hrms/hrms/public/js/utils/index.js",
+"<table class='table table-bordered'><tr><th>{0}</th><th>{1}</th></tr>",
+"<table class='table table-bordered'><tr><th>{0}</th><th>{1}</th></tr>"
+],
+[
+"apps/hrms/hrms/public/frontend/assets/Dashboard-DqLTx2zw.js",
+"AttendanceRequestListView",
+"AttendanceRequestListView"
+],
+[
+"DocType: Salary Slip",
+"CTC",
+"CTC"
+],
+[
+"DocType: Additional Salary",
+"HR-ADS-.YY.-.MM.-",
+"HR-ADS-.YY.-.MM.-"
+],
+[
+"DocType: Appraisal",
+"HR-APR-.YYYY.-",
+"HR-APR-.YYYY.-"
+],
+[
+"DocType: Attendance",
+"HR-ATT-.YYYY.-",
+"HR-ATT-.YYYY.-"
+],
+[
+"DocType: Employee Advance",
+"HR-EAD-.YYYY.-",
+"HR-EAD-.YYYY.-"
+],
+[
+"DocType: Exit Interview",
+"HR-EXIT-INT-",
+"HR-EXIT-INT-"
+],
+[
+"DocType: Expense Claim",
+"HR-EXP-.YYYY.-",
+"HR-EXP-.YYYY.-"
+],
+[
+"DocType: Job Requisition",
+"HR-HIREQ-",
+"HR-HIREQ-"
+],
+[
+"DocType: Holiday List Assignment",
+"HR-HLA-.YYYY.-",
+"HR-HLA-.YYYY.-"
+],
+[
+"DocType: Leave Adjustment",
+"HR-LAD-.YYYY.-",
+"HR-LAD-.YYYY.-"
+],
+[
+"DocType: Leave Allocation",
+"HR-LAL-.YYYY.-",
+"HR-LAL-.YYYY.-"
+],
+[
+"DocType: Leave Application",
+"HR-LAP-.YYYY.-",
+"HR-LAP-.YYYY.-"
+],
+[
+"DocType: Vehicle Log",
+"HR-VLOG-.YYYY.-",
+"HR-VLOG-.YYYY.-"
+],
+[
+"apps/hrms/hrms/config/desktop.py",
+"HRMS",
+"HRMS"
+],
+[
+"apps/hrms/hrms/payroll/report/salary_payments_via_ecs/salary_payments_via_ecs.py",
+"IFSC",
+"IFSC"
+],
+[
+"DocType: Employee Checkin",
+"IN",
+"IN"
+],
+[
+"DocType: Appraisal KRA",
+"KRA",
+"KRA"
+],
+[
+"apps/hrms/hrms/payroll/report/salary_payments_via_ecs/salary_payments_via_ecs.py",
+"MICR",
+"MICR"
+],
+[
+"DocType: Attendance",
+"modify_half_day_status",
+"modify_half_day_status"
+]
+]
+},
+"print_designer": {
+"miss": [],
+"same": []
+},
+"insights": {
+"miss": [
+[
+"apps/insights/insights/public/frontend/assets/DashboardList-054ae67a.js",
+"),N=A();async function j(){const i=await s.create(n.value);o.value=!1,n.value=",
+null
+],
+[
+"apps/insights/insights/public/frontend/assets/V2MigrationSettings-b27c8e62.js",
+"),k=_(\"all\"),P=h(()=>[{label:t(\"All\"),value:\"all\"},...[\"ready\",\"review\",\"unreadable\",\"migrating\",\"failed\",\"migrated\"].map(s=>({label:x[s],value:s}))]),H=h(()=>{const s=L.value.toLowerCase().trim();return j.value.filter(a=>k.value!==\"all\"&&a.state!==k.value?!1:s?a.title.toLowerCase().includes(s):!0)}),r=h(()=>L.value.trim()?{title:t(\"No Matches\"),description:t(\"No dashboard matches your search.\")}:k.value!==\"all\"?{title:t(\"Nothing Here\"),description:t(\"No dashboard is {0}.\",x[k.value].toLowerCase())}:{title:t(\"No v2 Dashboards\"),description:t(\"This site has no Insights v2 dashboards to migrate.\")}),u=_(new Set),$=h(()=>({columns:[{label:t(\"Dashboard\"),key:\"title\",width:2},{label:t(\"Status\"),key:\"state\",getLabel:()=>",
+null
+],
+[
+"apps/insights/insights/public/frontend/assets/DashboardList-054ae67a.js",
+"),m=y(()=>s.value?h.dashboards.filter(f=>f.title.toLowerCase().includes(s.value.toLowerCase())):h.dashboards);return(f,c)=>{const o=u(\"Badge\"),g=u(\"Input\");return l(),d(\"div\",null,[e(\"div\",se,[e(\"div\",ae,v(t.title),1),r(o,{variant:\"outline\",label:String(t.dashboards.length),class:\"ml-2\"},null,8,[\"label\"]),t.enableSearch?(l(),d(\"div\",oe,[r(g,{ref:\"searchInput\",modelValue:s.value,\"onUpdate:modelValue\":c[0]||(c[0]=n=>s.value=n),iconLeft:\"search\",placeholder:\"Search...\"},null,8,[\"modelValue\"])])):k(",
+null
+],
+[
+"apps/insights/insights/public/frontend/assets/DashboardList-60f72b96.js",
+"),n=[{label:a(\"All\"),value:\"all\"},{label:a(\"Recents\"),value:\"recents\"},{label:a(\"Favorites\"),value:\"favorites\"},{label:a(\"Created\"),value:\"created\"},{label:a(\"Shared\"),value:\"shared\"}],r=J(\"insights:dashboard-filter\",\"all\"),m=_(P),C=F(()=>r.value!==\"recents\"&&t.dashboards.length>=m.value);async function w(){if(r.value===\"recents\"){t.fetchRecentDashboards(i.value);return}t.fetchDashboards({search_term:i.value,favorites:r.value===\"favorites\",scope:r.value===\"created\"?\"owned\":r.value===\"shared\"?\"shared\":void 0,limit:m.value})}function B(){m.value=P,w()}function M(){m.value+=P,w()}const N=F(()=>{switch(r.value){case\"favorites\":return{title:a(\"No Favorites\"),subtitle:a(\"Mark a dashboard as favorite to see it here.\")};case\"recents\":return{title:a(\"No Recents\"),subtitle:a(\"Dashboards you open will show up here.\")};case\"created\":return{title:a(\"Nothing here\"),subtitle:a(\"You haven't created any dashboards yet.\")};case\"shared\":return{title:a(\"Nothing here\"),subtitle:a(\"Dashboards shared with you will show up here.\")};default:return{title:a(\"Nothing here\"),subtitle:a(\"No dashboards to display.\")}}});S(()=>r.value,()=>{t.dashboards=[],B()},{immediate:!0}),S(i,B,{debounce:300});const U=h=>[{label:a(\"Open Workbook\"),icon:\"external-link\",onClick:()=>d.push(`/workbook/${h.workbook}`)},{label:a(\"Refresh Preview\"),icon:\"refresh-cw\",loading:t.updatingPreviewImage,onClick:()=>t.updatePreviewImage(h.name)}],O=h=>{const f=!h.is_favourite;h.is_favourite=f,t.toggleLike(h.name,f).then(()=>{r.value===\"favorites\"&&w()}).catch($=>{h.is_favourite=!f,T($,!1)})};return Q(()=>{document.title=\"Dashboards | Insights\"}),(h,f)=>{const $=b(\"FormControl\"),z=b(\"Button\");return u(),v(L,null,[o(\"header\",Ve,[l(s(W),{items:[{label:s(a)(\"Dashboards\"),route:\"/dashboards\"}]},null,8,[\"items\"])]),o(\"div\",Ae,[o(\"div\",Fe,[l($,{class:\"w-64\",placeholder:s(a)(\"Search by title\"),modelValue:i.value,\"onUpdate:modelValue\":f[0]||(f[0]=c=>i.value=c),debounce:300,autocomplete:\"off\"},{prefix:g(()=>[l(s(ie),{class:\"h-4 w-4 text-gray-500\"})]),_:1},8,[\"placeholder\",\"modelValue\"]),l(s(K),{buttons:n,modelValue:s(r),\"onUpdate:modelValue\":f[1]||(f[1]=c=>q(r)?r.value=c:null)},null,8,[\"modelValue\"])]),o(\"div\",Le,[s(t).dashboards.length?(u(),v(\"div\",Se,[(u(!0),v(L,null,X(s(t).dashboards,c=>(u(),ee($e,{key:c.name,dashboard:c,\"dropdown-options\":U(c),\"preview-loading\":s(t).updatingPreviewImage[c.name],onToggleFavorite:Y=>O(c),onUpdatePreview:Y=>s(t).updatePreviewImage(c.name)},null,8,[\"dashboard\",\"dropdown-options\",\"preview-loading\",\"onToggleFavorite\",\"onUpdatePreview\"]))),128))])):D(",
+null
+],
+[
+"apps/insights/insights/public/frontend/assets/Table-3b6de86a.js",
+",!0),l.value.length||(n=t.data)!=null&&n.length?(m(),d(C,{key:1,data:t.data,columns:v.value,showFooter:t.options.showTotal,showFilters:!!t.options.filtersEnabled},null,8,[\"data\",\"columns\",\"showFooter\",\"showFilters\"])):_(",
+null
+],
+[
+"apps/insights/insights/public/frontend/assets/AxisChartOptions-f4777656.js",
+",!0):(m(),p(\"div\",j,[s(c,{label:\"Axis Type\",type:\"select\",options:[{label:\"Line\",value:\"line\"},{label:\"Bar\",value:\"bar\"}],modelValue:a.value.type,\"onUpdate:modelValue\":i[0]||(i[0]=e=>a.value.type=e)},null,8,[\"modelValue\"])])),s(D,{label:\"Color\",modelValue:a.value.color,\"onUpdate:modelValue\":i[1]||(i[1]=e=>a.value.color=e),placement:\"right-start\"},null,8,[\"modelValue\"]),a.value.type==\"line\"?(m(),p(B,{key:1},[s(o,{modelValue:a.value.smoothLines,\"onUpdate:modelValue\":i[2]||(i[2]=e=>a.value.smoothLines=e),label:\"Enable Curved Lines\"},null,8,[\"modelValue\"]),s(o,{modelValue:a.value.showPoints,\"onUpdate:modelValue\":i[3]||(i[3]=e=>a.value.showPoints=e),label:\"Show Data Points\"},null,8,[\"modelValue\"]),s(o,{modelValue:a.value.showArea,\"onUpdate:modelValue\":i[4]||(i[4]=e=>a.value.showArea=e),label:\"Show Area\"},null,8,[\"modelValue\"])],64)):_(",
+null
+],
+[
+"DocType: Insights Table Link",
+"1:N",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py",
+"A SQL column expression cannot read another table",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py",
+"A SQL column expression must be a single expression",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py",
+"A SQL column needs both a name and an expression",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py",
+"A SQL column needs the data source its expression is written for",
+null
+],
+[
+"apps/insights/insights/api/v2_migration.py",
+"A dashboard name must be a non-empty string",
+null
+],
+[
+"apps/insights/insights/api/v2_migration.py",
+"A migration of this dashboard is already running",
+null
+],
+[
+"apps/insights/insights/public/js/insights_nudge.bundle.js",
+"A prebuilt {0} dashboard is available in Insights",
+null
+],
+[
+"DocType: Insights Data Source v3",
+"API Configuration",
+null
+],
+[
+"DocType: Insights Data Source v3",
+"API Key / Bearer Token",
+null
+],
+[
+"DocType: Insights Data Source v3",
+"API Password",
+null
+],
+[
+"DocType: Insights Data Source v3",
+"API Username",
+null
+],
+[
+"DocType: Insights Table Import",
+"Action if table exists",
+null
+],
+[
+"DocType: Insights Query Column",
+"Aggregation",
+null
+],
+[
+"DocType: Insights Query Column",
+"Aggregation Condition",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_alert/insights_alert.js",
+"Alert sent",
+null
+],
+[
+"DocType: Insights Settings",
+"Allow Data Download",
+null
+],
+[
+"DocType: Insights Settings",
+"Allow Subquery",
+null
+],
+[
+"DocType: Insights Data Source",
+"Allow Table Import",
+null
+],
+[
+"DocType: Insights Settings",
+"Allowed Origins",
+null
+],
+[
+"apps/insights/insights/api/v2_migration.py",
+"Already migrated into workbook {0}",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_alert/insights_alert.py",
+"An email alert needs at least one recipient",
+null
+],
+[
+"DocType: Insights Table Import",
+"Append",
+null
+],
+[
+"DocType: Insights Table v3",
+"Append Only",
+null
+],
+[
+"DocType: Insights Settings",
+"Apply User Permissions",
+null
+],
+[
+"DocType: Insights Data Source v3",
+"Authentication Type",
+null
+],
+[
+"DocType: Insights Settings",
+"Auto Execute Query",
+null
+],
+[
+"DocType: Insights Dashboard v3",
+"Automatically arrange cards vertically to fill empty spaces",
+null
+],
+[
+"apps/insights/insights/public/frontend/assets/Trend-fdfa320f.js",
+"Badge",
+null
+],
+[
+"DocType: Insights Data Source v3",
+"Basic Authentication",
+null
+],
+[
+"DocType: Insights Table v3",
+"Before Import Script",
+null
+],
+[
+"DocType: Insights Data Source v3",
+"BigQuery",
+null
+],
+[
+"DocType: Insights Data Source v3",
+"BigQuery Configuration",
+null
+],
+[
+"DocType: Insights Data Source v3",
+"BigQuery Dataset ID",
+null
+],
+[
+"DocType: Insights Data Source v3",
+"BigQuery Project ID",
+null
+],
+[
+"DocType: Insights Data Source v3",
+"BigQuery Service Account Key (JSON)",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py",
+"Both tables must have at least one common column to perform union",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_table_import_job/insights_table_import_job.js",
+"Bulk Enqueue",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_table_import_job/insights_table_import_job.js",
+"Bulk Enqueue Import Job",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_table_import_job/insights_table_import_job.js",
+"Bulk Enqueue Progress",
+null
+],
+[
+"DocType: Insights Data Source v3",
+"CA Certificate",
+null
+],
+[
+"DocType: Insights Settings",
+"Cache Query Results For (Minutes)",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py",
+"Cannot Perform Union",
+null
+],
+[
+"apps/insights/insights/api/workbooks.py",
+"Cannot share with {0} - they are not an Insights user",
+null
+],
+[
+"DocType: Insights Table Link",
+"Cardinality",
+null
+],
+[
+"DocType: Insights Table v3",
+"Catalog estimate, written by the daily telemetry scan",
+null
+],
+[
+"DocType: Insights Table v3",
+"Choose how incremental sync writes rows: <b>Append Only</b> adds new rows, while <b>Update or Insert</b> updates matching keys and inserts new rows.",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_workbook/insights_workbook.py",
+"Circular query reference detected in {0}",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py",
+"Circular query reference detected while building \"{0}\"",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_table_v3/insights_table_v3.js",
+"Clear Warehouse Data",
+null
+],
+[
+"DocType: Insights Data Source v3",
+"ClickHouse",
+null
+],
+[
+"DocType: Insights Settings",
+"Comma seperated URLs to whitelist for embedding charts & dashboards",
+null
+],
+[
+"DocType: Insights Data Source",
+"Connection String",
+null
+],
+[
+"DocType: Insights Table Import Job",
+"Cron expression to schedule the script. Note: The scheduler checks for jobs every hour.",
+null
+],
+[
+"DocType: Insights Query Transform",
+"CumulativeSum",
+null
+],
+[
+"DocType: Insights Table v3",
+"Cursor Column",
+null
+],
+[
+"DocType: Insights Alert",
+"Custom Condition",
+null
+],
+[
+"DocType: Insights Data Source v3",
+"Custom Headers",
+null
+],
+[
+"DocType: Insights Data Source v3",
+"Custom headers for API requests. Sent with every request, so a key belongs here rather than in the URL.",
+null
+],
+[
+"apps/insights/insights/api/v2_migration.py",
+"Dashboard {0} not found",
+null
+],
+[
+"DocType: Insights Workbook",
+"Data Backup",
+null
+],
+[
+"DocType: Insights Chart v3",
+"Data Query",
+null
+],
+[
+"DocType: Insights Query Execution Log",
+"Data Store",
+null
+],
+[
+"DocType: Insights Data Source",
+"Database Name",
+null
+],
+[
+"DocType: Insights Data Source",
+"Database Type",
+null
+],
+[
+"DocType: Insights Table Column",
+"Decimal",
+null
+],
+[
+"apps/insights/insights/public/frontend/assets/DataSourceTable-16b55458.js",
+"Dialog",
+null
+],
+[
+"DocType: Insights Settings",
+"Disable User Lookup",
+null
+],
+[
+"apps/insights/insights/public/frontend/assets/NotebookPage-635ecd47.js",
+"Dropdown",
+null
+],
+[
+"DocType: Insights Data Source v3",
+"DuckDB",
+null
+],
+[
+"DocType: Insights Table Import Log",
+"Duration (Seconds)",
+null
+],
+[
+"DocType: Insights Settings",
+"Enable Data Store",
+null
+],
+[
+"DocType: Insights Settings",
+"Enable Permissions",
+null
+],
+[
+"DocType: Insights Data Source v3",
+"Enable Stored Procedure Execution",
+null
+],
+[
+"DocType: Insights Data Source v3",
+"Encrypt Connection (SSL)",
+null
+],
+[
+"DocType: Insights Data Source v3",
+"Encrypts the connection. Add a CA certificate below to also verify the server.",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_table_import_job/insights_table_import_job.js",
+"Enqueue",
+null
+],
+[
+"DocType: Insights Table v3",
+"Estimated On",
+null
+],
+[
+"DocType: Insights Table v3",
+"Estimated Row Count",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_table_v3/insights_table_v3.js",
+"Execution Count",
+null
+],
+[
+"DocType: Insights Query",
+"Execution Failed",
+null
+],
+[
+"DocType: Insights Query",
+"Execution Successful",
+null
+],
+[
+"DocType: Insights Query",
+"Execution Time (seconds)",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_table_v3/insights_table_v3.js",
+"Failed Syncs",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_query_v3/insights_query_v3.py",
+"Failed to build query",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py",
+"Failed to parse the SQL column expression: {0}",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py",
+"Failed to translate SQL query for Data Store execution",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py",
+"Failed to translate SQL query for Data Store execution: {0}",
+null
+],
+[
+"apps/insights/insights/public/frontend/assets/DataSourceTable-16b55458.js",
+"FeatherIcon",
+null
+],
+[
+"DocType: Insights Settings",
+"Fiscal Year Start",
+null
+],
+[
+"DocType: Insights Table Link",
+"Foreign Key",
+null
+],
+[
+"DocType: Insights Table Link",
+"Foreign Table",
+null
+],
+[
+"DocType: Insights Table Link",
+"Foreign Table Label",
+null
+],
+[
+"DocType: Insights Query Column",
+"Format Option",
+null
+],
+[
+"apps/insights/insights/config/desktop.py",
+"Frappe Insights",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py",
+"Granularity {0} is not supported for Time columns. Supported granularities: {1}",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py",
+"Granularity {0} is not supported for {1} columns. Supported granularities: {2}",
+null
+],
+[
+"DocType: Insights Data Source v3",
+"HTTP Headers",
+null
+],
+[
+"DocType: Insights Data Source",
+"Host",
+null
+],
+[
+"DocType: Insights Table Import Log",
+"Import Job",
+null
+],
+[
+"DocType: Insights Table Import Log",
+"Import Query",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_table_v3/insights_table_v3.js",
+"Import job has been queued",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_table_v3/insights_table_v3.js",
+"Import to Warehouse",
+null
+],
+[
+"DocType: Insights Workbook",
+"Imported Checksum",
+null
+],
+[
+"DocType: Insights Workbook",
+"Imported Version",
+null
+],
+[
+"DocType: Insights Table v3",
+"Incremental",
+null
+],
+[
+"apps/insights/insights/public/frontend/assets/DataSourceTable-16b55458.js",
+"Input",
+null
+],
+[
+"DocType: Insights Alert",
+"Insights",
+null
+],
+[
+"DocType: Insights Alert",
+"Insights Admin",
+null
+],
+[
+"DocType: Insights Alert",
+"Insights Alert",
+null
+],
+[
+"DocType: Insights Chart",
+"Insights Chart",
+null
+],
+[
+"DocType: Insights Chart v3",
+"Insights Chart v3",
+null
+],
+[
+"DocType: Insights Dashboard",
+"Insights Dashboard",
+null
+],
+[
+"DocType: Insights Dashboard Chart v3",
+"Insights Dashboard Chart v3",
+null
+],
+[
+"DocType: Insights Dashboard Item",
+"Insights Dashboard Item",
+null
+],
+[
+"DocType: Insights Dashboard v3",
+"Insights Dashboard v3",
+null
+],
+[
+"DocType: Insights Data Source",
+"Insights Data Source",
+null
+],
+[
+"DocType: Insights Data Source v3",
+"Insights Data Source v3",
+null
+],
+[
+"DocType: Insights Folder",
+"Insights Folder",
+null
+],
+[
+"apps/insights/insights/api/workbooks.py",
+"Insights Folder {0} not found",
+null
+],
+[
+"DocType: Insights Notebook",
+"Insights Notebook",
+null
+],
+[
+"DocType: Insights Notebook Page",
+"Insights Notebook Page",
+null
+],
+[
+"DocType: Insights Query",
+"Insights Query",
+null
+],
+[
+"DocType: Insights Query Chart",
+"Insights Query Chart",
+null
+],
+[
+"DocType: Insights Query Column",
+"Insights Query Column",
+null
+],
+[
+"DocType: Insights Query Execution Log",
+"Insights Query Execution Log",
+null
+],
+[
+"DocType: Insights Query Reference",
+"Insights Query Reference",
+null
+],
+[
+"DocType: Insights Query Result",
+"Insights Query Result",
+null
+],
+[
+"DocType: Insights Query Table",
+"Insights Query Table",
+null
+],
+[
+"DocType: Insights Query Transform",
+"Insights Query Transform",
+null
+],
+[
+"DocType: Insights Query Variable",
+"Insights Query Variable",
+null
+],
+[
+"DocType: Insights Query v3",
+"Insights Query v3",
+null
+],
+[
+"DocType: Insights Resource Permission",
+"Insights Resource Permission",
+null
+],
+[
+"DocType: Insights Secret Key",
+"Insights Secret Key",
+null
+],
+[
+"DocType: Insights Settings",
+"Insights Settings",
+null
+],
+[
+"DocType: Insights Table",
+"Insights Table",
+null
+],
+[
+"DocType: Insights Table Column",
+"Insights Table Column",
+null
+],
+[
+"DocType: Insights Table Import",
+"Insights Table Import",
+null
+],
+[
+"DocType: Insights Table Import Job",
+"Insights Table Import Job",
+null
+],
+[
+"DocType: Insights Table Import Log",
+"Insights Table Import Log",
+null
+],
+[
+"DocType: Insights Table Link",
+"Insights Table Link",
+null
+],
+[
+"DocType: Insights Table Link v3",
+"Insights Table Link v3",
+null
+],
+[
+"DocType: Insights Table v3",
+"Insights Table v3",
+null
+],
+[
+"DocType: Insights Team",
+"Insights Team",
+null
+],
+[
+"DocType: Insights Team Member",
+"Insights Team Member",
+null
+],
+[
+"DocType: Insights Alert",
+"Insights User",
+null
+],
+[
+"DocType: Insights User Invitation",
+"Insights User Invitation",
+null
+],
+[
+"DocType: Insights Workbook",
+"Insights Workbook",
+null
+],
+[
+"DocType: Insights Table Column",
+"Integer",
+null
+],
+[
+"DocType: Insights Settings",
+"Interactive queries are cancelled after this many seconds. Applies to new connections and to live (non-data-store) queries; background imports are exempt.",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py",
+"Invalid SQL Query",
+null
+],
+[
+"DocType: Insights Query",
+"Is Assisted Query",
+null
+],
+[
+"DocType: Insights Query v3",
+"Is Builder Query",
+null
+],
+[
+"DocType: Insights Data Source v3",
+"Is DuckLake",
+null
+],
+[
+"DocType: Insights Folder",
+"Is Expanded",
+null
+],
+[
+"DocType: Insights Query Column",
+"Is Expression",
+null
+],
+[
+"DocType: Insights Data Source v3",
+"Is Frappe Database",
+null
+],
+[
+"DocType: Insights Query",
+"Is Native Query",
+null
+],
+[
+"DocType: Insights Table",
+"Is Query Based",
+null
+],
+[
+"DocType: Insights Query",
+"Is Saved as Table",
+null
+],
+[
+"DocType: Insights Query",
+"Is Script Query",
+null
+],
+[
+"DocType: Insights Data Source v3",
+"Is Site Database",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py",
+"Join condition is not valid",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py",
+"Join type {0} is not supported",
+null
+],
+[
+"DocType: Insights User Invitation",
+"Key Hash",
+null
+],
+[
+"DocType: Insights Query",
+"Last Executed On",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_table_v3/insights_table_v3.js",
+"Last Import Duration",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_table_v3/insights_table_v3.js",
+"Last Import Rows",
+null
+],
+[
+"DocType: Insights Table Import Job",
+"Last Log",
+null
+],
+[
+"DocType: Insights Table Import Job",
+"Last Status",
+null
+],
+[
+"DocType: Insights Table v3",
+"Last Sync Bookmark",
+null
+],
+[
+"DocType: Insights Table v3",
+"Last synced cursor value (set automatically)",
+null
+],
+[
+"DocType: Insights Table Link v3",
+"Left Column",
+null
+],
+[
+"DocType: Insights Table Link v3",
+"Left Table",
+null
+],
+[
+"DocType: Insights Settings",
+"Legacy",
+null
+],
+[
+"DocType: Insights Dashboard v3",
+"Linked Charts",
+null
+],
+[
+"apps/insights/insights/public/frontend/assets/NotebookPage-635ecd47.js",
+"LoadingIndicator",
+null
+],
+[
+"DocType: Insights Table Column",
+"Long Int",
+null
+],
+[
+"DocType: Insights Data Source",
+"MariaDB",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_table_import_log/insights_table_import_log.js",
+"Mark as Failed",
+null
+],
+[
+"DocType: Insights Settings",
+"Max Execution Time (Seconds)",
+null
+],
+[
+"DocType: Insights Settings",
+"Max Memory Usage",
+null
+],
+[
+"DocType: Insights Settings",
+"Max Records To Sync",
+null
+],
+[
+"DocType: Insights Table Import Log",
+"Memory Limit (MB)",
+null
+],
+[
+"apps/insights/insights/api/v2_migration.py",
+"Migrate at most {0} dashboards at a time, not {1}",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py",
+"Multiple SQL statements are not supported for native queries",
+null
+],
+[
+"DocType: Insights Table Link",
+"N:1",
+null
+],
+[
+"DocType: Insights Table Link",
+"N:N",
+null
+],
+[
+"apps/insights/insights/api/v2_migration.py",
+"Name at least one dashboard",
+null
+],
+[
+"apps/insights/insights/api/v2_migration.py",
+"No v2 dashboard answers to this name",
+null
+],
+[
+"apps/insights/insights/api/workbooks.py",
+"Not an Insights user",
+null
+],
+[
+"DocType: Insights Notebook Page",
+"Notebook",
+null
+],
+[
+"DocType: Insights Chart v3",
+"Old Name",
+null
+],
+[
+"DocType: Insights Settings",
+"Onboarding Complete",
+null
+],
+[
+"DocType: Insights Data Source v3",
+"Optional. PEM certificate of the authority that signed the database server's certificate. With one, Insights checks that the server is who it says it is. Without one, the connection is encrypted but the server is not checked.",
+null
+],
+[
+"DocType: Insights Table Import",
+"Overwrite",
+null
+],
+[
+"DocType: Insights Table Import Log",
+"Parquet File",
+null
+],
+[
+"DocType: Insights Query",
+"Pending Execution",
+null
+],
+[
+"DocType: Insights Table Import Job",
+"Persistent state storage for the script",
+null
+],
+[
+"apps/insights/insights/public/frontend/assets/DataSourceTable-16b55458.js",
+"Popover",
+null
+],
+[
+"DocType: Insights Dashboard Item",
+"Position & Size",
+null
+],
+[
+"DocType: Insights Data Source",
+"PostgreSQL",
+null
+],
+[
+"DocType: Insights Table Link",
+"Primary Key",
+null
+],
+[
+"DocType: Insights Table v3",
+"Primary Key Column",
+null
+],
+[
+"DocType: Insights Chart",
+"Public Key",
+null
+],
+[
+"DocType: Insights Settings",
+"Query Result Limit",
+null
+],
+[
+"DocType: Insights Data Source v3",
+"REST API",
+null
+],
+[
+"DocType: Insights Query Reference",
+"Referenced Query",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_table_v3/insights_table_v3.js",
+"Referencing Queries",
+null
+],
+[
+"apps/insights/insights/insights/query_utils.py",
+"Rename the alias {0}: it is the full name of a table the query reads",
+null
+],
+[
+"DocType: Insights Resource Permission",
+"Resource Type",
+null
+],
+[
+"DocType: Insights Query",
+"Result Row Count",
+null
+],
+[
+"DocType: Insights Query Result",
+"Results",
+null
+],
+[
+"DocType: Insights Query Result",
+"Results Row Count",
+null
+],
+[
+"DocType: Insights Table Link v3",
+"Right Column",
+null
+],
+[
+"DocType: Insights Table Link v3",
+"Right Table",
+null
+],
+[
+"DocType: Insights Table Import Log",
+"Row Limit",
+null
+],
+[
+"DocType: Insights Table Import Log",
+"Row Size (KB)",
+null
+],
+[
+"DocType: Insights Table Import Log",
+"Rows Imported",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_table_import_job/insights_table_import_job.js",
+"Run {0} of {1}",
+null
+],
+[
+"DocType: Insights User Invitation",
+"SHA-256 of the key mailed to the invitee. The key itself is not stored.",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py",
+"SQL query must start with a SELECT or WITH statement",
+null
+],
+[
+"DocType: Insights Data Source",
+"SQLite",
+null
+],
+[
+"DocType: Insights Table Import Job",
+"Schedule (Cron)",
+null
+],
+[
+"DocType: Insights Data Source v3",
+"Schema",
+null
+],
+[
+"DocType: Insights Query",
+"Script Log",
+null
+],
+[
+"DocType: Insights Table Import Job",
+"Secrets",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_alert/insights_alert.js",
+"Send Alert",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_alert/insights_alert.js",
+"Sending Alert...",
+null
+],
+[
+"DocType: Insights Dashboard v3",
+"Share Link",
+null
+],
+[
+"DocType: Insights Data Source",
+"Site Database",
+null
+],
+[
+"DocType: Insights Table v3",
+"Stable key used to identify the latest version of each logical row during incremental upserts.",
+null
+],
+[
+"DocType: Insights Table v3",
+"Start importing rows from this datetime onward (used on first sync only)",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_table_import_job/insights_table_import_job.js",
+"Starting...",
+null
+],
+[
+"DocType: Insights Table Import Job",
+"State (JSON)",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_table_v3/insights_table_v3.js",
+"Statistics — {0}",
+null
+],
+[
+"DocType: Insights Settings",
+"Stops members from finding each other by name or email when sharing. Turn this on for a site where anyone can sign up.",
+null
+],
+[
+"DocType: Insights Query",
+"Stored",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py",
+"Stored procedures are not supported with Data Store for native queries",
+null
+],
+[
+"DocType: Insights Table Column",
+"String",
+null
+],
+[
+"DocType: Insights Table v3",
+"Sync From",
+null
+],
+[
+"DocType: Insights Table v3",
+"Sync Mode",
+null
+],
+[
+"DocType: Insights Table v3",
+"Sync Strategy",
+null
+],
+[
+"DocType: Insights Query Column",
+"Table Label",
+null
+],
+[
+"DocType: Insights Query Reference",
+"Table Name",
+null
+],
+[
+"DocType: Insights Resource Permission",
+"Table Restrictions",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py",
+"Table names with a dot are not supported for native queries: {0}",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py",
+"Table or Query not found",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_table_v3/insights_table_v3.py",
+"Table {0} is not {1}.{2}",
+null
+],
+[
+"DocType: Insights Query",
+"Tables",
+null
+],
+[
+"DocType: Insights Team",
+"Team Name",
+null
+],
+[
+"DocType: Insights Team",
+"Team Permissions",
+null
+],
+[
+"DocType: Insights Alert",
+"Telegram",
+null
+],
+[
+"DocType: Insights Settings",
+"Telegram API Token",
+null
+],
+[
+"DocType: Insights Alert",
+"Telegram Chat ID",
+null
+],
+[
+"DocType: Insights Table v3",
+"Temporal column used to detect rows that changed since the last sync. Use <b>modified</b> for mutable tables and <b>creation</b> for append-only tables.",
+null
+],
+[
+"apps/insights/insights/api/v2_migration.py",
+"The migration finished without creating a dashboard",
+null
+],
+[
+"apps/insights/insights/api/v2_migration.py",
+"The scan could not be built. Check the error log.",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_dashboard_v3/insights_dashboard_v3.py",
+"This column is not available as a filter on this dashboard",
+null
+],
+[
+"apps/insights/insights/permission_user.py",
+"This content does not name a user to run as.",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_table_v3/insights_table_v3.js",
+"This will delete all warehouse data for <b>{0}</b> and reset the sync bookmark. Are you sure?",
+null
+],
+[
+"DocType: Insights Query Execution Log",
+"Time Taken (Seconds)",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py",
+"Too many duplicate columns",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_table_v3/insights_table_v3.js",
+"Total Sync Time",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_table_v3/insights_table_v3.js",
+"Total Syncs",
+null
+],
+[
+"DocType: Insights Query",
+"Transform",
+null
+],
+[
+"DocType: Insights Query",
+"Transforms",
+null
+],
+[
+"DocType: Insights Query Transform",
+"Transpose",
+null
+],
+[
+"DocType: Insights Query Transform",
+"Unpivot",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py",
+"Unsupported Granularity",
+null
+],
+[
+"apps/insights/insights/insights/query_utils.py",
+"Unsupported SQL Query",
+null
+],
+[
+"DocType: Insights Table v3",
+"Update or Insert",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_table_v3/insights_table_v3.js",
+"Usage",
+null
+],
+[
+"DocType: Insights Query v3",
+"Use Live Connection",
+null
+],
+[
+"DocType: Insights Query Variable",
+"Variable Value",
+null
+],
+[
+"DocType: Insights Dashboard v3",
+"Vertical Compact Layout",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_table_v3/insights_table_v3.js",
+"Warehouse data cleared",
+null
+],
+[
+"DocType: Insights Settings",
+"Week Starts On",
+null
+],
+[
+"DocType: Insights Chart v3",
+"Workbook",
+null
+],
+[
+"apps/insights/insights/api/templates.py",
+"Workbook template {0} does not exist",
+null
+],
+[
+"apps/insights/insights/api/templates.py",
+"Workbook template {0} requires apps that are not installed: {1}",
+null
+],
+[
+"DocType: Insights Table Import Job",
+"Write Python code to fetch and transform data. Available globals:<br>• client: API client for the selected data source<br>• table: Write data to warehouse. Methods: insert(data, overwrite=False)<br>• state: Persist data between runs. Methods: get(key, default=None), set(key, value), delete(key), clear()<br>• secrets: Access secret keys. Methods: get(key)<br>• log(message): Log execution messages",
+null
+],
+[
+"apps/insights/insights/permissions.py",
+"You do not have access to a query this one references",
+null
+],
+[
+"apps/insights/insights/permissions.py",
+"You do not have access to one of the charts on this dashboard",
+null
+],
+[
+"apps/insights/insights/permissions.py",
+"You do not have access to the query this chart is built on",
+null
+],
+[
+"apps/insights/insights/decorators.py",
+"You do not have permission to access this resource",
+null
+],
+[
+"apps/insights/insights/api/workbooks.py",
+"You do not have permission to modify this workbook",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_chart_v3/insights_chart_v3.py",
+"You do not have permission to share this chart",
+null
+],
+[
+"apps/insights/insights/api/workbooks.py",
+"You do not have permission to share this workbook",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_query_v3/insights_query_v3.py",
+"Your role does not have the export permission for queries. Contact your administrator.",
+null
+],
+[
+"DocType: Insights Query Column",
+"asc",
+null
+],
+[
+"apps/insights/insights/public/frontend/assets/frappe-ui-53506dfd.js",
+"center",
+null
+],
+[
+"DocType: Insights Query Column",
+"desc",
+null
+],
+[
+"apps/insights/insights/public/frontend/assets/QueryDataSourceSelector-6870e37b.js",
+"div",
+null
+],
+[
+"apps/insights/insights/public/frontend/assets/frappe-ui-53506dfd.js",
+"horiz",
+null
+],
+[
+"apps/insights/insights/public/frontend/assets/frappe-ui-53506dfd.js",
+"left",
+null
+],
+[
+"apps/insights/insights/public/frontend/assets/useTeams-7bd0403e.js",
+"li",
+null
+],
+[
+"apps/insights/insights/public/frontend/assets/useTeams-7bd0403e.js",
+"nav",
+null
+],
+[
+"apps/insights/insights/public/frontend/assets/QueryDataSourceSelector-6870e37b.js",
+"p",
+null
+],
+[
+"apps/insights/insights/public/frontend/assets/frappe-ui-53506dfd.js",
+"right",
+null
+],
+[
+"DocType: Insights Chart v3",
+"sort_order",
+null
+],
+[
+"apps/insights/insights/public/frontend/assets/QueryDataSourceSelector-6870e37b.js",
+"span",
+"Showing"
+],
+[
+"apps/insights/insights/public/frontend/assets/useTeams-7bd0403e.js",
+"svg",
+null
+],
+[
+"apps/insights/insights/public/frontend/assets/ColorPicker.vue_vue_type_script_setup_true_lang-1baee3ef.js",
+"update:modelValue",
+null
+],
+[
+"apps/insights/insights/public/frontend/assets/frappe-ui-53506dfd.js",
+"vert",
+null
+],
+[
+"apps/insights/insights/insights/query_utils.py",
+"{0} could name more than one table",
+null
+],
+[
+"apps/insights/insights/api/workbooks.py",
+"{0} is not a movable item type",
+null
+],
+[
+"apps/insights/insights/api/workbooks.py",
+"{0} is not a sort order",
+null
+],
+[
+"apps/insights/insights/api/workbooks.py",
+"{0} is not a workbook item type",
+null
+],
+[
+"apps/insights/insights/insights/doctype/insights_data_source_v3/ibis_utils.py",
+"{0} is not in a schema this data source reads",
+null
+],
+[
+"apps/insights/insights/api/workbooks.py",
+"{0} is not the name of a {1}",
+null
+],
+[
+"apps/insights/insights/api/workbooks.py",
+"{0} {1} does not belong to this workbook",
+null
+]
+],
+"same": [
+[
+"DocType: Insights Alert",
+"Cron",
+"Cron"
+],
+[
+"DocType: Insights Query",
+"JSON",
+"JSON"
+],
+[
+"DocType: Insights Query",
+"SQL",
+"SQL"
+]
+]
+},
+"raqim_sales": {
+"miss": [
+[
+"apps/raqim_sales/raqim_sales/raqeem_hr/hrms_migration.py",
+"compensatory leave is earned through Compensatory Requests in Employee Affairs; enter the open balance there",
+null
+],
+[
+"apps/raqim_sales/raqim_sales/erp_crm.py",
+"doctype",
+null
+],
+[
+"apps/raqim_sales/raqim_sales/raqeem_hr/calendar.py",
+"leave_type",
+null
+],
+[
+"apps/raqim_sales/raqim_sales/analytics/export.py",
+"link_label",
+null
+],
+[
+"DocType: raqeem",
+"raqeem",
+null
+]
+],
+"same": [
+[
+"DocType: Raqeem Checkin",
+"IN",
+"IN"
+],
+[
+"DocType: Raqeem Job Applicant",
+"LinkedIn",
+"LinkedIn"
+],
+[
+"apps/raqim_sales/raqim_sales/raqeem_hr/approval.py",
+"Your {0} was {1}",
+"{0}: {1}"
+]
+]
+}
+}

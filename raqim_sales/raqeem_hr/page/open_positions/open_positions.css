@@ -54,3 +54,9 @@
 	.rqop-table td.rqop-fill { flex-wrap: wrap; }
 	.rqop-table td.rqop-fill .rqop-bar { flex: 1 1 100%; order: 3; }
 }
+/* 2026-11-24: dark mode — the 700/800 shades were unreadable on the dark background (contrast 1.7-2.0) */
+html[data-theme="dark"] .rqop-warn { color: #fdba74; background: color-mix(in srgb, #f97316 16%, transparent); }
+html[data-theme="dark"] .rqop-flag.is-oldest { color: #fdba74; background: color-mix(in srgb, #f97316 22%, transparent); }
+html[data-theme="dark"] .rqop-flag.is-stale { color: #fde047; background: color-mix(in srgb, #eab308 20%, transparent); }
+html[data-theme="dark"] .rqop-flag.is-overdue { color: #fca5a5; background: color-mix(in srgb, #ef4444 20%, transparent); }
+html[data-theme="dark"] .rqop-days b.is-stale { color: #fdba74; }

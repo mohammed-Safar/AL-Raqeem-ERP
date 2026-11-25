@@ -209,7 +209,7 @@ class RaqeemHome {
 		};
 		const list = SCREENS[app.app_name];
 		if (!list) {
-			return [{ label: app.app_title || app.app_name, url: route, icon: "", rq_external: true, link_to: "" }];
+			return [{ label: __(app.app_title || app.app_name), url: route, icon: "", rq_external: true, link_to: "" }];
 		}
 		return list.map(([path, en, arabic, icon, module]) => ({
 			label: ar ? arabic : en,

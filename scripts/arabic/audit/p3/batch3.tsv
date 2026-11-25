@@ -1,0 +1,804 @@
+3-0	Item Group.is_group:desc	Only leaf nodes are allowed in transaction	يُسمح في المعاملات بالعناصر الطرفية فقط (غير المجموعات)
+3-1	Item Group.item_group_defaults	Item Group Defaults	القيم الافتراضية لمجموعة الأصناف
+3-2	Item Group.sec_break_taxes	Item Tax	ضريبة الصنف
+3-3	Customer Group.customer_group_name	Customer Group Name	اسم مجموعة العملاء
+3-4	Customer Group.parent_customer_group	Parent Customer Group	مجموعة العملاء الأصل
+3-5	Customer Group.default_price_list	Default Price List	قائمة الأسعار الافتراضية
+3-6	Customer Group.accounts:desc	Mention if non-standard receivable account applicable	اذكره إذا كان حساب ذمم مدينة غير القياسي منطبقاً
+3-7	Customer Group.credit_limit_section	Credit Limits	حدود الائتمان
+3-8	Territory.territory_name	Territory Name	اسم المنطقة
+3-9	Territory.parent_territory	Parent Territory	المنطقة الأصل
+3-10	Territory.territory_manager	Territory Manager	مدير المنطقة
+3-11	Territory.territory_manager:desc	For reference	للمرجع
+3-12	Territory.target_details_section_break	Territory Targets	مستهدفات المنطقة
+3-13	Territory.target_details_section_break:desc	Set Item Group-wise budgets on this Territory. You can also include seasonality by setting the Distribution.	حدّد ميزانيات حسب مجموعة الأصناف لهذه المنطقة. يمكنك أيضاً مراعاة الموسمية بتحديد التوزيع.
+3-14	Territory.targets	Targets	الأهداف
+3-15	doctype	Sales Person	مندوب المبيعات
+3-16	Sales Person.name_and_employee_id	Name and Employee ID	الاسم ورقم الموظف
+3-17	Sales Person.sales_person_name	Sales Person Name	اسم مندوب المبيعات
+3-18	Sales Person.parent_sales_person	Parent Sales Person	مندوب المبيعات الأصل
+3-19	Sales Person.parent_sales_person:desc	Select company name first.	حدّد اسم الشركة أولاً.
+3-20	Sales Person.target_details_section_break	Sales Person Targets	مستهدفات مندوب المبيعات
+3-21	Sales Person.target_details_section_break:desc	Set targets Item Group-wise for this Sales Person.	حدّد أهدافاً حسب مجموعة الأصناف لمندوب المبيعات هذا.
+3-22	doctype	Fiscal Year	السنة المالية
+3-23	Fiscal Year.year	Year Name	اسم السنة
+3-24	Fiscal Year.year:desc	For e.g. 2012, 2012-13	مثال: 2012، 2012-13
+3-25	Fiscal Year.is_short_year	Is Short/Long Year	سنة قصيرة/طويلة
+3-26	Fiscal Year.is_short_year:desc	More/Less than 12 months.	أكثر/أقل من 12 شهرًا.
+3-27	Fiscal Year.year_start_date	Year Start Date	تاريخ بداية السنة
+3-28	Fiscal Year.year_end_date	Year End Date	تاريخ نهاية السنة
+3-29	Fiscal Year.companies	Companies	الشركات
+3-30	doctype	User	المستخدم
+3-31	User.section_break_3	Basic Info	معلومات أساسية
+3-32	User.username	Username	اسم المستخدم
+3-33	User.language	Language	اللغة
+3-34	User.time_zone	Time Zone	المنطقة الزمنية
+3-35	User.send_welcome_email	Send Welcome Email	إرسال بريد الترحيب
+3-36	User.roles_permissions_tab	Roles & Permissions	الأدوار والصلاحيات
+3-37	User.sb1	Roles	الأدوار
+3-38	User.role_profiles	Role Profiles	ملفات الأدوار
+3-39	User.roles_html	Roles HTML	HTML الأدوار
+3-40	User.sb_allow_modules	Allow Modules	الوحدات المسموح بها
+3-41	User.module_profile	Module Profile	ملف تعريف الوحدة
+3-42	User.modules_html	Modules HTML	HTML الوحدات
+3-43	User.birth_date	Birth Date	تاريخ الميلاد
+3-44	User.interest	Interests	الاهتمامات
+3-45	User.bio	Bio	نبذة
+3-46	User.desk_settings_section	Desk Settings	إعدادات المكتب
+3-47	User.mute_sounds	Mute Sounds	كتم الأصوات
+3-48	User.desk_theme	Desk Theme	سمة المكتب
+3-49	User.desk_theme:opt	Light	فاتح
+3-50	User.desk_theme:opt	Dark	داكن
+3-51	User.desk_theme:opt	Automatic	تلقائي
+3-52	User.code_editor_type	Code Editor Type	نوع محرر الأكواد
+3-53	User.code_editor_type:opt	vscode	vscode
+3-54	User.code_editor_type:opt	vim	vim
+3-55	User.code_editor_type:opt	emacs	emacs
+3-56	User.banner_image	Banner Image	صورة الغلاف
+3-57	User.navigation_settings_section	Navigation Settings	إعدادات التنقل
+3-58	User.search_bar	Search Bar	شريط البحث
+3-59	User.notifications	Notifications	الإشعارات
+3-60	User.show_my_space	Show My Space	إظهار مساحتي
+3-61	User.show_my_space:desc	Add a link to your own private workspaces in the user menu.	أضف رابطاً إلى مساحات العمل الخاصة بك في قائمة المستخدم.
+3-62	User.dock_mode	Dock	شريط التطبيقات
+3-63	User.dock_mode:opt	Floating	عائم
+3-64	User.dock_mode:opt	Pinned	مثبّت
+3-65	User.dock_mode:desc	Pinned sits beside the sidebar. Floating slides in from the left edge.	المثبّت يبقى بجانب الشريط الجانبي. العائم ينزلق من حافة الشاشة.
+3-66	User.list_settings_section	List Settings	إعدادات القائمة
+3-67	User.list_sidebar	Sidebar	الشريط الجانبي
+3-68	User.bulk_actions	Bulk Actions	الإجراءات الجماعية
+3-69	User.view_switcher	View Switcher	مبدل العرض
+3-70	User.form_settings_section	Form Settings	إعدادات النموذج
+3-71	User.form_navigation_buttons	Show navigation buttons	عرض أزرار التنقل
+3-72	User.timeline	Timeline	الخط الزمني
+3-73	User.show_absolute_datetime_in_timeline	Show Absolute Datetime in Timeline	عرض التاريخ والوقت المطلقين في الخط الزمني
+3-74	User.report_settings_section	Report Settings	إعدادات التقارير
+3-75	User.report_split_view	Split view in reports	العرض المقسّم في التقارير
+3-76	User.report_split_view:desc	Open linked documents in a side panel instead of navigating away from the report.	فتح المستندات المرتبطة في لوحة جانبية بدلاً من مغادرة التقرير.
+3-77	User.document_follow_notifications_section	Document Follow	متابعة المستند
+3-78	User.document_follow_notify	Send Notifications For Documents Followed By Me	إرسال إشعارات للمستندات التي أتابعها
+3-79	User.document_follow_frequency:opt	Hourly	كل ساعة
+3-80	User.follow_created_documents	Auto follow documents that you create	متابعة المستندات التي تقوم بإنشائها تلقائيًا
+3-81	User.follow_commented_documents	Auto follow documents that you comment on	متابعة تلقائية للمستندات التي تعلق عليها
+3-82	User.follow_liked_documents	Auto follow documents that you Like	متابعة تلقائية للمستندات التي تعجبك
+3-83	User.follow_assigned_documents	Auto follow documents that are assigned to you	متابعة المستندات المسندة إليك تلقائياً
+3-84	User.follow_shared_documents	Auto follow documents that are shared with you	متابعة تلقائية للمستندات التي تمت مشاركتها معك
+3-85	User.email_signature	Email Signature	توقيع البريد الإلكتروني
+3-86	User.crm_availability	CRM Availability	حالة التوفر في CRM
+3-87	User.crm_availability_changed_on	CRM Availability Changed On	تاريخ تغيير حالة التوفر في CRM
+3-88	User.crm_availability_changed_by	CRM Availability Changed By	غيّر حالة التوفر في CRM
+3-89	User.thread_notify	Send Notifications For Email Threads	إرسال إشعارات لسلاسل البريد الإلكتروني
+3-90	User.send_me_a_copy	Send Me A Copy of Outgoing Emails	أرسل لي نسخة من رسائل البريد الإلكتروني الصادرة
+3-91	User.send_read_receipt	Send Read Receipt	إرسال إشعار القراءة
+3-92	User.allowed_in_mentions	Allowed In Mentions	مسموح في الإشارات
+3-93	User.user_emails	User Emails	بريد المستخدم
+3-94	User.workspace_section	Workspace	مساحة العمل
+3-95	User.default_workspace	Default Workspace	مساحة العمل الافتراضية
+3-96	User.default_workspace:desc	If left empty, the default workspace will be the last visited workspace	إذا تُركت فارغة، فستكون مساحة العمل الافتراضية هي مساحة العمل التي تمت زيارتها آخر مرة.
+3-97	User.app_section	App	التطبيق
+3-98	User.default_app	Default App	التطبيق الافتراضي
+3-99	User.default_app:desc	Redirect to the selected app after login	إعادة التوجيه إلى التطبيق المحدد بعد تسجيل الدخول
+3-100	User.sb3	Security Settings	إعدادات الأمان
+3-101	User.simultaneous_sessions	Simultaneous Sessions	جلسات متزامنة
+3-102	User.restrict_ip	Restrict IP	تقييد IP
+3-103	User.restrict_ip:desc	Restrict user from this IP address only. Multiple IP addresses can be added by separating with commas. Also accepts partial IP addresses like (111.111.111)	تقييد المستخدم بهذا العنوان IP فقط. يمكن إضافة عدة عناوين IP مفصولة بفواصل. تُقبل أيضاً عناوين IP الجزئية مثل (111.111.111)
+3-104	User.last_ip	Last IP	آخر IP
+3-105	User.login_after	Login After	تسجيل الدخول بعد
+3-106	User.login_after:desc	Allow user to login only after this hour (0-24)	السماح للمستخدم بتسجيل الدخول بعد هذه الساعة فقط (0-24)
+3-107	User.user_type	User Type	نوع المستخدم
+3-108	User.user_type:desc	If the user has any role checked, then the user becomes a "System User". "System User" has access to the desktop	إذا كان المستخدم لديه أي دور تم اختياره، فسيصبح المستخدم "مستخدم النظام". "مستخدم النظام" لديه حق الوصول إلى سطح المكتب
+3-109	User.last_active	Last Active	آخر نشاط
+3-110	User.login_before	Login Before	تسجيل الدخول قبل
+3-111	User.login_before:desc	Allow user to login only before this hour (0-24)	السماح للمستخدم بتسجيل الدخول قبل هذه الساعة فقط (0-24)
+3-112	User.bypass_restrict_ip_check_if_2fa_enabled	Bypass Restricted IP Address Check If Two Factor Auth Enabled	تجاوز فحص عنوان IP المقيّد إذا كانت المصادقة الثنائية مفعّلة
+3-113	User.bypass_restrict_ip_check_if_2fa_enabled:desc	If enabled,  user can login from any IP Address using Two Factor Auth, this can also be set for all users in System Settings	عند التفعيل، يمكن للمستخدم تسجيل الدخول من أي عنوان IP باستخدام المصادقة الثنائية، ويمكن ضبط ذلك لجميع المستخدمين من إعدادات النظام
+3-114	User.last_login	Last Login	آخر تسجيل دخول
+3-115	User.third_party_authentication	Third Party Authentication	مصادقة الطرف الثالث
+3-116	User.social_logins	Social Logins	تسجيل الدخول عبر المنصات الاجتماعية
+3-117	User.api_access	API Access	الوصول إلى API
+3-118	User.api_key	API Key	مفتاح API
+3-119	User.api_key:desc	API Key cannot be regenerated	لا يمكن إعادة إنشاء مفتاح API
+3-120	User.generate_keys	Generate Keys	توليد مفاتيح
+3-121	User.generate_keys:desc	<a href="https://docs.frappe.io/framework/user/en/api/rest#1-token-based-authentication" target="_blank">   Click here to learn about token-based authentication </a>	<a href="https://docs.frappe.io/framework/user/en/api/rest#1-token-based-authentication" target="_blank">   انقر هنا لمعرفة المزيد عن المصادقة القائمة على الرموز المميزة </a>
+3-122	User.api_secret	API Secret	سر API
+3-123	User.sessions_tab	Sessions	الجلسات
+3-124	User.active_sessions	Active Sessions	الجلسات النشطة
+3-125	Project.project_name	Project Name	اسم المشروع
+3-126	Project.status:opt	On hold	معلّق
+3-127	Project.project_type	Project Type	نوع المشروع
+3-128	Project.percent_complete_method	% Complete Method	طريقة حساب نسبة الإنجاز
+3-129	Project.percent_complete_method:opt	Task Completion	إنجاز المهمة
+3-130	Project.percent_complete_method:opt	Task Progress	تقدّم المهمة
+3-131	Project.percent_complete_method:opt	Task Weight	وزن المهمة
+3-132	Project.priority:opt	Low	منخفض
+3-133	Project.priority:opt	High	مرتفع
+3-134	Project.is_active	Is Active	نشط
+3-135	Project.percent_complete	% Completed	% مكتمل
+3-136	Project.expected_start_date	Expected Start Date	تاريخ البدء المتوقع
+3-137	Project.actual_start_date	Actual Start Date (via Timesheet)	تاريخ البدء الفعلي (عبر سجل الوقت)
+3-138	Project.actual_time	Actual Time in Hours (via Timesheet)	الوقت الفعلي بالساعات (عبر سجل الوقت)
+3-139	Project.expected_end_date	Expected End Date	تاريخ الانتهاء المتوقع
+3-140	Project.actual_end_date	Actual End Date (via Timesheet)	تاريخ الإنتهاء الفعلي (عبر سجل الوقت)
+3-141	Project.costing_tab	Costing	حساب التكاليف
+3-142	Project.project_details	Costing and Billing	التكلفة والفوترة
+3-143	Project.estimated_costing	Estimated Cost	التكلفة التقديرية
+3-144	Project.total_costing_amount	Total Costing Amount (via Timesheet)	إجمالي مبلغ التكلفة (عبر سجلات الوقت)
+3-145	Project.total_expense_claim	Total Expense Claim (via Expense Claims)	إجمالي مطالبات المصروفات (عبر مطالبات المصروفات)
+3-146	Project.total_purchase_cost	Total Purchase Cost (via Purchase Invoice)	إجمالي تكلفة الشراء (عبر فاتورة المشتريات)
+3-147	Project.total_sales_amount	Total Sales Amount (via Sales Order)	إجمالي مبلغ المبيعات (عبر أمر البيع)
+3-148	Project.total_billable_amount	Total Billable Amount (via Timesheet)	إجمالي المبلغ القابل للفوترة (عبر سجلات الوقت)
+3-149	Project.total_billed_amount	Total Billed Amount (via Sales Invoice)	إجمالي المبلغ المفوتر (عبر فواتير المبيعات)
+3-150	Project.total_consumed_material_cost	Total Consumed Material Cost	إجمالي تكلفة المواد المستهلكة
+3-151	Project.gross_margin	Gross Margin	هامش الربح الإجمالي
+3-152	Project.per_gross_margin	Gross Margin %	الهامش الإجمالي %
+3-153	Project.monitor_progress_tab	Progress	التقدم
+3-154	Project.collect_progress	Collect Progress	جمع التقدم
+3-155	Project.frequency	Frequency To Collect Progress	تكرار جمع بيانات التقدم
+3-156	Project.frequency:opt	Twice Daily	مرتين يوميًا
+3-157	Project.from_time	From Time	من وقت
+3-158	Project.to_time	To Time	إلى وقت
+3-159	Project.first_email	First Email	البريد الإلكتروني الأول
+3-160	Project.second_email	Second Email	البريد الإلكتروني الثاني
+3-161	Project.daily_time_to_send	Daily Time to send	وقت الإرسال اليومي
+3-162	Project.day_to_send	Day to Send	يوم الإرسال
+3-163	Project.day_to_send:opt	Monday	الاثنين
+3-164	Project.day_to_send:opt	Tuesday	الثلاثاء
+3-165	Project.day_to_send:opt	Wednesday	الأربعاء
+3-166	Project.day_to_send:opt	Thursday	الخميس
+3-167	Project.day_to_send:opt	Friday	الجمعة
+3-168	Project.day_to_send:opt	Saturday	السبت
+3-169	Project.day_to_send:opt	Sunday	الأحد
+3-170	Project.weekly_time_to_send	Weekly Time to send	وقت الإرسال الأسبوعي
+3-171	Project.subject	Subject	الموضوع
+3-172	Project.message	Message	رسالة
+3-173	Project.message:desc	Message will be sent to the users to get their status on the Project	سيتم إرسال رسالة إلى المستخدمين للحصول على حالتهم في المشروع
+3-174	Project.users_section	Users	المستخدمون
+3-175	Project.users:desc	Project will be accessible on the website to these users	سيكون المشروع متاحاً على الموقع الإلكتروني لهؤلاء المستخدمين
+3-176	doctype	Task	المهمة
+3-177	Task.color	Color	اللون
+3-178	Task.status:opt	Working	قيد العمل
+3-179	Task.status:opt	Pending Review	في انتظار المراجعة
+3-180	Task.status:opt	Template	القالب
+3-181	Task.priority:opt	Urgent	عاجل
+3-182	Task.task_weight	Weight	الوزن
+3-183	Task.parent_task	Parent Task	المهمة الأم
+3-184	Task.completed_by	Completed By	أنجزه
+3-185	Task.completed_on	Completed On	تاريخ الإتمام
+3-186	Task.is_template	Is Template	قالب
+3-187	Task.start	Begin On (Days)	البدء بعد (أيام)
+3-188	Task.duration	Duration (Days)	المدة (بالأيام)
+3-189	Task.expected_time	Expected Time (in hours)	الوقت المتوقع (بالساعات)
+3-190	Task.progress	% Progress	% التقدم
+3-191	Task.is_milestone	Is Milestone	مرحلة رئيسية
+3-192	Task.description	Task Description	وصف المهمة
+3-193	Task.dependencies_tab	Dependencies	التبعيات
+3-194	Task.depends_on	Dependent Tasks	المهام التابعة
+3-195	Task.total_expense_claim	Total Expense Claim (via Expense Claim)	إجمالي مطالبة المصروفات (عبر مطالبة مصروفات)
+3-196	Task.review_date	Review Date	تاريخ المراجعة
+3-197	Task.closing_date	Closing Date	تاريخ الإقفال
+3-198	doctype	Raqeem Job Applicant	متقدم لوظيفة
+3-199	Raqeem Job Applicant.job_opening	Job Opening	وظيفة شاغرة
+3-200	Raqeem Job Applicant.company:desc	Filled from the job opening.	تُعبّأ من الوظيفة الشاغرة.
+3-201	Raqeem Job Applicant.status	Stage	المرحلة
+3-202	Raqeem Job Applicant.status:opt	New	جديد
+3-203	Raqeem Job Applicant.status:opt	Screening	الفرز
+3-204	Raqeem Job Applicant.status:opt	Interview	مقابلة
+3-205	Raqeem Job Applicant.status:opt	Offer	عرض عمل
+3-206	Raqeem Job Applicant.status:opt	Hired	تم التوظيف
+3-207	Raqeem Job Applicant.status:opt	Rejected	مرفوض
+3-208	Raqeem Job Applicant.status:opt	Withdrawn	منسحب
+3-209	Raqeem Job Applicant.rating	Rating	التقييم
+3-210	Raqeem Job Applicant.source:opt	Referral	ترشيح
+3-211	Raqeem Job Applicant.source:opt	LinkedIn	LinkedIn
+3-212	Raqeem Job Applicant.source:opt	Walk-in	حضور شخصي
+3-213	Raqeem Job Applicant.source:opt	Agency	وكالة توظيف
+3-214	Raqeem Job Applicant.source:opt	Advertisement	إعلان
+3-215	Raqeem Job Applicant.referred_by	Referred By	رشّحه
+3-216	Raqeem Job Applicant.resume	CV / Resume	السيرة الذاتية
+3-217	Raqeem Job Applicant.section_result	Result	النتيجة
+3-218	Raqeem Job Applicant.rejection_reason	Reason (Rejected / Withdrawn)	السبب (مرفوض / منسحب)
+3-219	doctype	Raqeem HRMS Migration Log	سجل نقل بيانات HRMS
+3-220	Raqeem HRMS Migration Log.source_doctype	HRMS Document Type	نوع مستند HRMS
+3-221	Raqeem HRMS Migration Log.source_name	HRMS Document	مستند HRMS
+3-222	Raqeem HRMS Migration Log.target_doctype	Our Document Type	نوع مستندنا
+3-223	Raqeem HRMS Migration Log.target_name	Our Document	مستندنا
+3-224	Raqeem HRMS Migration Log.action	Action	الإجراء
+3-225	Raqeem HRMS Migration Log.action:opt	Created	أُنشئ
+3-226	Raqeem HRMS Migration Log.action:opt	Matched	مطابق
+3-227	Raqeem HRMS Migration Log.migrated_on	Migrated On	تاريخ النقل
+3-228	doctype	Analytics Alert	تنبيه تحليلات
+3-229	Analytics Alert.kind:opt	Scheduled Report	تقرير مجدول
+3-230	Analytics Alert.kind:opt	Alert	تنبيه
+3-231	Analytics Alert.kind:desc	Scheduled Report: email the numbers regularly. Alert: email only when a number crosses a limit.	التقرير المجدول: يرسل الأرقام بالبريد دوريًا. التنبيه: يرسل فقط عندما يتجاوز رقم حدًّا معينًا.
+3-232	Analytics Alert.chart	Chart	رسم بياني
+3-233	Analytics Alert.dashboard:desc	A scheduled report can send a whole dashboard instead of one chart.	يمكن للتقرير المجدول إرسال لوحة كاملة بدلًا من رسم واحد.
+3-234	Analytics Alert.date_range	Period	الفترة
+3-235	Analytics Alert.date_range:opt	all	الكل
+3-236	Analytics Alert.date_range:opt	today	اليوم
+3-237	Analytics Alert.date_range:opt	yesterday	أمس
+3-238	Analytics Alert.date_range:opt	this_week	هذا الأسبوع
+3-239	Analytics Alert.date_range:opt	last_week	الأسبوع الماضي
+3-240	Analytics Alert.date_range:opt	this_month	هذا الشهر
+3-241	Analytics Alert.date_range:opt	last_month	الشهر الماضي
+3-242	Analytics Alert.date_range:opt	this_quarter	هذا الربع
+3-243	Analytics Alert.date_range:opt	last_quarter	الربع الماضي
+3-244	Analytics Alert.date_range:opt	this_year	هذه السنة
+3-245	Analytics Alert.date_range:opt	last_year	السنة الماضية
+3-246	Analytics Alert.date_range:opt	last_7_days	آخر 7 أيام
+3-247	Analytics Alert.date_range:opt	last_30_days	آخر 30 يوماً
+3-248	Analytics Alert.date_range:opt	last_90_days	آخر 90 يوماً
+3-249	Analytics Alert.date_range:opt	last_12_months	آخر 12 شهراً
+3-250	Analytics Alert.date_range:desc	Empty: the chart's own period.	فارغ: فترة الرسم نفسه.
+3-251	Analytics Alert.section_when	When	متى
+3-252	Analytics Alert.send_hour	At Hour (0-23)	في الساعة (0-23)
+3-253	Analytics Alert.weekday	Day of the Week	يوم الأسبوع
+3-254	Analytics Alert.day_of_month	Day of the Month (1-28)	يوم الشهر (1-28)
+3-255	Analytics Alert.condition	When the Number Is	عندما يكون الرقم
+3-256	Analytics Alert.threshold	Limit	الحد
+3-257	Analytics Alert.notify_once	Only When It Starts	فقط عند بدء تحقق الشرط
+3-258	Analytics Alert.notify_once:desc	Send once when the condition becomes true, not again at every check until it is false again.	يُرسل مرة واحدة عندما يتحقق الشرط، ولا يتكرر عند كل فحص حتى يزول الشرط ثم يعود.
+3-259	Analytics Alert.section_recipients	Recipients	المستلمون
+3-260	Analytics Alert.recipients	Send To	إرسال إلى
+3-261	Analytics Alert.recipients:desc	One email address or user per line.	بريد إلكتروني أو مستخدم في كل سطر.
+3-262	Analytics Alert.message:desc	Optional text at the top of the email.	نص اختياري في أعلى الرسالة.
+3-263	Analytics Alert.attach_excel	Attach Excel File	إرفاق ملف Excel
+3-264	Analytics Alert.run_as	Numbers As Seen By	الأرقام كما يراها
+3-265	Analytics Alert.run_as:desc	The numbers are calculated with this user's permissions (the person who made it).	تُحسب الأرقام بصلاحيات هذا المستخدم (منشئ التنبيه).
+3-266	Analytics Alert.last_run	Last Checked	آخر فحص
+3-267	Analytics Alert.last_sent	Last Sent	آخر إرسال
+3-268	Analytics Alert.last_value	Last Value	آخر قيمة
+3-269	Analytics Alert.last_state	Condition Was True	كان الشرط متحققًا
+3-270	Analytics Alert.last_error	Last Error	آخر خطأ
+3-271	doctype	Raqeem Gratuity	مكافأة نهاية الخدمة
+3-272	Raqeem Gratuity.employee_name	Employee Name	اسم الموظف
+3-273	Raqeem Gratuity.exit_type	Exit Type	نوع إنهاء الخدمة
+3-274	Raqeem Gratuity.exit_type:opt	Resignation	استقالة
+3-275	Raqeem Gratuity.exit_type:opt	Termination	إنهاء الخدمة من جهة العمل
+3-276	Raqeem Gratuity.exit_type:opt	End of Contract	انتهاء العقد
+3-277	Raqeem Gratuity.exit_type:opt	Retirement	التقاعد
+3-278	Raqeem Gratuity.exit_type:opt	Death	الوفاة
+3-279	Raqeem Gratuity.status:opt	Confirmed	مؤكّد
+3-280	Raqeem Gratuity.section_service	Service	الخدمة
+3-281	Raqeem Gratuity.relieving_date	Last Working Day	آخر يوم عمل
+3-282	Raqeem Gratuity.service_days	Calendar Days of Service	أيام الخدمة التقويمية
+3-283	Raqeem Gratuity.unpaid_days	Unpaid Leave Days Left Out	أيام الإجازة غير المدفوعة المستبعدة
+3-284	Raqeem Gratuity.service_years	Years of Service Counted	سنوات الخدمة المحتسبة
+3-285	Raqeem Gratuity.section_pay	Pay Used	الأجر المعتمد
+3-286	Raqeem Gratuity.monthly_pay	Monthly Pay	الأجر الشهري
+3-287	Raqeem Gratuity.daily_pay	One Day's Pay	أجر اليوم
+3-288	Raqeem Gratuity.section_calc	Calculation	الاحتساب
+3-289	Raqeem Gratuity.gratuity_full	Gratuity Before the Exit-Type Share	المكافأة قبل نسبة نوع الإنهاء
+3-290	Raqeem Gratuity.factor_percent	Share Paid for This Exit Type	النسبة المصروفة لهذا النوع من الإنهاء
+3-291	Raqeem Gratuity.gratuity_amount	Gratuity	مكافأة نهاية الخدمة
+3-292	Raqeem Gratuity.rules_note	Rules Used	القواعد المطبّقة
+3-293	Raqeem Gratuity.section_final	Final Settlement	التسوية النهائية
+3-294	Raqeem Gratuity.pay_unused_leave	Pay Unused Leave	صرف بدل الإجازات غير المستخدمة
+3-295	Raqeem Gratuity.leave_days	Unused Leave Days	أيام الإجازة غير المستخدمة
+3-296	Raqeem Gratuity.leave_amount	Unused Leave Pay	بدل الإجازات غير المستخدمة
+3-297	Raqeem Gratuity.deduct_loans	Deduct Open Loans and Advances	خصم القروض والسلف القائمة
+3-298	Raqeem Gratuity.loan_deduction	Loans Deducted	القروض المخصومة
+3-299	Raqeem Gratuity.advance_deduction	Advances Deducted	السلف المخصومة
+3-300	Raqeem Gratuity.total_amount	Total Due	إجمالي المستحق
+3-301	Raqeem Gratuity.net_payable	Net Payable to the Employee	الصافي المستحق للموظف
+3-302	Raqeem Gratuity.confirmed_by	Confirmed By	أكّدها
+3-303	Raqeem Gratuity.payment_status	Payment Status	حالة الدفع
+3-304	doctype	Raqeem Transfer	نقل موظف
+3-305	Raqeem Transfer.transfer_date	Effective From	ساري من
+3-306	Raqeem Transfer.applied	Applied to the Employee	طُبّق على ملف الموظف
+3-307	Raqeem Transfer.section_from	From	من
+3-308	Raqeem Transfer.current_department	Current Department	القسم الحالي
+3-309	Raqeem Transfer.current_branch	Current Branch	الفرع الحالي
+3-310	Raqeem Transfer.current_reports_to	Current Manager	المدير الحالي
+3-311	Raqeem Transfer.new_department	New Department	قسم جديد
+3-312	Raqeem Transfer.new_branch	New Branch	الفرع الجديد
+3-313	Raqeem Transfer.new_reports_to	New Manager (Reports To)	المدير الجديد (يرفع تقاريره إلى)
+3-314	Raqeem Transfer.reason	Reason / Notes	السبب / ملاحظات
+3-315	doctype	Raqeem Promotion	ترقية
+3-316	Raqeem Promotion.section_job	Position	الموضع
+3-317	Raqeem Promotion.current_designation	Current Designation	المسمى الوظيفي الحالي
+3-318	Raqeem Promotion.new_designation	New Designation	المسمى الوظيفي الجديد
+3-319	Raqeem Promotion.new_department	New Department (Optional)	القسم الجديد (اختياري)
+3-320	Raqeem Promotion.change_salary	Change the Salary From the Same Date	تغيير الراتب من التاريخ نفسه
+3-321	Raqeem Promotion.current_salary	Current Salary	الراتب الحالي
+3-322	Raqeem Promotion.current_gross	Current Monthly Gross	إجمالي الراتب الشهري الحالي
+3-323	Raqeem Promotion.new_gross	New Monthly Gross	إجمالي الراتب الشهري الجديد
+3-324	Raqeem Promotion.increase_percent	Increase	زيادة
+3-325	Raqeem Promotion.new_salary	New Salary Record	سجل الراتب الجديد
+3-326	Raqeem Promotion.new_earnings	New Monthly Earnings	الاستحقاقات الشهرية الجديدة
+3-327	doctype	Raqeem Employee Exit	إنهاء خدمة موظف
+3-328	Raqeem Employee Exit.notice_date	Notice / Letter Date	تاريخ الإشعار / الخطاب
+3-329	Raqeem Employee Exit.last_working_day:desc	Empty: the notice date plus the notice period (Lifecycle Settings).	فارغ: تاريخ الإشعار مضافاً إليه مدة الإشعار (إعدادات دورة حياة الموظف).
+3-330	Raqeem Employee Exit.status:opt	Approved	موافق عليه
+3-331	Raqeem Employee Exit.section_reason	Reason	السبب
+3-332	Raqeem Employee Exit.notice_days	Notice Period (Days)	مدة الإشعار (أيام)
+3-333	Raqeem Employee Exit.notice_short_days	Notice Short By (Days)	نقص مدة الإشعار (أيام)
+3-334	Raqeem Employee Exit.section_after	After Approval	بعد الموافقة
+3-335	Raqeem Employee Exit.employee_updated	Employee Record Updated	حُدّث ملف الموظف
+3-336	Raqeem Employee Exit.checklist	Exit Checklist	قائمة مهام إنهاء الخدمة
+3-337	Raqeem Employee Exit.exit_interview	Exit Interview	مقابلة إنهاء الخدمة
+3-338	Raqeem Employee Exit.gratuity	End of Service Gratuity	مكافأة نهاية الخدمة
+3-339	Raqeem Employee Exit.section_approval	Approval	الموافقة
+3-340	Raqeem Employee Exit.approver	Approver	مسؤول الموافقة
+3-341	Raqeem Employee Exit.approver_name	Approver Name	اسم مسؤول الموافقة
+3-342	Raqeem Employee Exit.decided_on	Decided On	تاريخ القرار
+3-343	Raqeem Employee Exit.decision_note	Decision Note	ملاحظة القرار
+3-344	doctype	Raqeem Employee Loan	قرض موظف
+3-345	Raqeem Employee Loan.amount	Loan Amount	مبلغ القرض
+3-346	Raqeem Employee Loan.repayment_method	Repay By	السداد عن طريق
+3-347	Raqeem Employee Loan.repayment_method:opt	Number of Instalments	عدد الأقساط
+3-348	Raqeem Employee Loan.repayment_method:opt	Monthly Amount	المبلغ الشهري
+3-349	Raqeem Employee Loan.monthly_amount	Monthly Instalment	القسط الشهري
+3-350	Raqeem Employee Loan.repayment_start	First Instalment In	أول قسط في
+3-351	Raqeem Employee Loan.repayment_start:desc	The payroll month that includes this date takes the first instalment; one instalment each month after it.	يُخصم القسط الأول في شهر الرواتب الذي يقع فيه هذا التاريخ، ثم قسط كل شهر بعده.
+3-352	Raqeem Employee Loan.section_schedule	Repayment Schedule	جدول السداد
+3-353	Raqeem Employee Loan.section_balance	Balance	الرصيد
+3-354	Raqeem Employee Loan.loan_status	Loan Status	حالة القرض
+3-355	Raqeem Employee Loan.loan_status:opt	Not Paid Out	لم يُصرف
+3-356	Raqeem Employee Loan.loan_status:opt	Repaying	قيد السداد
+3-357	Raqeem Employee Loan.loan_status:opt	Repaid	مسددة
+3-358	Raqeem Employee Loan.disbursed_amount	Paid to the Employee	المدفوع للموظف
+3-359	Raqeem Employee Loan.next_due_date	Next Instalment	القسط التالي
+3-360	Raqeem Employee Loan.settlements	Early Settlements	السداد المبكر
+3-361	doctype	Raqeem Exit Interview	مقابلة إنهاء الخدمة
+3-362	Raqeem Exit Interview.interview_date	Interview Date	تاريخ المقابلة
+3-363	Raqeem Exit Interview.interviewer	Interviewer	المُقابِل
+3-364	Raqeem Exit Interview.status:opt	Scheduled	مجدول
+3-365	Raqeem Exit Interview.section_why	Why Is the Employee Leaving?	لماذا يغادر الموظف؟
+3-366	Raqeem Exit Interview.main_reason	Main Reason	السبب الرئيسي
+3-367	Raqeem Exit Interview.main_reason:opt	Better Offer	عرض أفضل
+3-368	Raqeem Exit Interview.main_reason:opt	Salary and Benefits	الراتب والمزايا
+3-369	Raqeem Exit Interview.main_reason:opt	Management	الإدارة
+3-370	Raqeem Exit Interview.main_reason:opt	Work Environment	بيئة العمل
+3-371	Raqeem Exit Interview.main_reason:opt	Career Growth	التطور الوظيفي
+3-372	Raqeem Exit Interview.main_reason:opt	Workload	ضغط العمل
+3-373	Raqeem Exit Interview.main_reason:opt	Personal or Family	أسباب شخصية أو عائلية
+3-374	Raqeem Exit Interview.main_reason:opt	Relocation	الانتقال إلى مدينة أخرى
+3-375	Raqeem Exit Interview.main_reason:opt	Studies	الدراسة
+3-376	Raqeem Exit Interview.would_recommend	Would Recommend Us as an Employer	ينصح بنا كجهة عمل
+3-377	Raqeem Exit Interview.would_return	Would Work Here Again	يعود للعمل لدينا
+3-378	Raqeem Exit Interview.rating_job	The Job Itself	طبيعة العمل
+3-379	Raqeem Exit Interview.rating_manager	Their Manager	مديره المباشر
+3-380	Raqeem Exit Interview.rating_pay	Pay and Benefits	الأجر والمزايا
+3-381	Raqeem Exit Interview.liked_most	What They Liked Most	أكثر ما أعجبه
+3-382	Raqeem Exit Interview.suggestions	What We Should Improve	ما يجب أن نحسّنه
+3-383	Raqeem Exit Interview.notes	Interviewer Notes	ملاحظات المُقابِل
+3-384	doctype	Raqeem Salary Addition	إضافة / خصم على الراتب
+3-385	Raqeem Salary Addition.payroll_date	Pay With the Salary Of	يُصرف مع راتب
+3-386	Raqeem Salary Addition.payroll_date:desc	The salary slip whose period includes this date adds or deducts the amount.	قسيمة الراتب التي تشمل فترتها هذا التاريخ تضيف المبلغ أو تخصمه.
+3-387	Raqeem Salary Addition.section_amount	Addition or Deduction	الإضافة أو الخصم
+3-388	Raqeem Salary Addition.component	Salary Component	مكوّن الراتب
+3-389	Raqeem Salary Addition.component:desc	For example Bonus, One-off Allowance or Penalty. Earnings add to the salary, deductions take from it.	مثلاً: مكافأة أو بدل لمرة واحدة أو جزاء. الاستحقاقات تُضاف إلى الراتب، والخصومات تُقتطع منه.
+3-390	Raqeem Salary Addition.calculation	Amount By	احتساب المبلغ حسب
+3-391	Raqeem Salary Addition.calculation:opt	Fixed Amount	مبلغ ثابت
+3-392	Raqeem Salary Addition.calculation:opt	Days of Basic Salary	أيام من الراتب الأساسي
+3-393	Raqeem Salary Addition.calculation:opt	Days of Gross Salary	أيام من إجمالي الراتب
+3-394	Raqeem Salary Addition.days	Days	الأيام
+3-395	Raqeem Salary Addition.days:desc	One day = the monthly salary / 30.	اليوم الواحد = الراتب الشهري ÷ 30.
+3-396	Raqeem Salary Addition.section_payroll	Payroll	الرواتب
+3-397	Raqeem Salary Addition.payroll_status	Payroll Status	حالة الرواتب
+3-398	Raqeem Salary Addition.payroll_status:opt	Waiting for Payroll	بانتظار مسير الرواتب
+3-399	Raqeem Salary Addition.payroll_status:opt	Included in Salary	أُدرج في الراتب
+3-400	Raqeem Salary Addition.salary_slip	Salary Slip	قسيمة الراتب
+3-401	doctype	Raqeem Checklist Template	قالب قائمة المهام
+3-402	Raqeem Checklist Template.template_name	Template Name	اسم القالب
+3-403	Raqeem Checklist Template.kind	For	لـ
+3-404	Raqeem Checklist Template.kind:opt	Onboarding	التهيئة
+3-405	Raqeem Checklist Template.department	Department (Optional)	القسم (اختياري)
+3-406	Raqeem Checklist Template.section_tasks	Tasks	المهام
+3-407	doctype	Raqeem Employee Checklist	قائمة مهام الموظف
+3-408	Raqeem Employee Checklist.start_date	Start Date	تاريخ البدء
+3-409	Raqeem Employee Checklist.start_date:desc	Joining date (onboarding) or last working day (exit).	تاريخ المباشرة (التهيئة) أو آخر يوم عمل (إنهاء الخدمة).
+3-410	doctype	Raqeem Lifecycle Settings	إعدادات دورة حياة الموظف
+3-411	Raqeem Lifecycle Settings.section_check	Accountant Check	مراجعة المحاسب
+3-412	Raqeem Lifecycle Settings.section_check:desc	Rules for onboarding, exits and the end-of-service gratuity. Every rule here is editable; ask your accountant or lawyer to check them for your country, then tick the box.	قواعد التهيئة وإنهاء الخدمة ومكافأة نهاية الخدمة. كل قاعدة هنا قابلة للتعديل؛ اطلب من محاسبك أو محاميك مراجعتها وفق قوانين بلدك ثم ضع علامة في المربع.
+3-413	Raqeem Lifecycle Settings.rules_confirmed	Rules Checked by Our Accountant	راجع محاسبنا القواعد
+3-414	Raqeem Lifecycle Settings.rules_confirmed:desc	Until this is ticked, every end-of-service calculation shows a warning.	إلى أن تُوضع العلامة هنا، يُظهر كل احتساب لنهاية الخدمة تنبيهاً.
+3-415	Raqeem Lifecycle Settings.section_exit	Exits	إنهاء الخدمة
+3-416	Raqeem Lifecycle Settings.make_exit_interview	Make an Exit Interview When an Exit Is Approved	إنشاء مقابلة إنهاء خدمة عند الموافقة على الإنهاء
+3-417	Raqeem Lifecycle Settings.exit_template:desc	Made for the employee when an exit is approved (e.g. hand back laptop, clear custody).	تُنشأ للموظف عند الموافقة على إنهاء خدمته (مثل تسليم الحاسوب وإخلاء العُهد).
+3-418	Raqeem Lifecycle Settings.onboarding_template	Onboarding Checklist	قائمة مهام التهيئة
+3-419	Raqeem Lifecycle Settings.onboarding_template:desc	Made for every new employee (e.g. contract, email account, social security registration).	تُنشأ لكل موظف جديد (مثل العقد، حساب البريد، التسجيل في الضمان الاجتماعي).
+3-420	Raqeem Lifecycle Settings.section_gr	End-of-Service Gratuity	مكافأة نهاية الخدمة
+3-421	Raqeem Lifecycle Settings.gratuity_basis:opt	Basic Salary	الراتب الأساسي
+3-422	Raqeem Lifecycle Settings.gratuity_basis:opt	Gross Salary	إجمالي الراتب
+3-423	Raqeem Lifecycle Settings.month_days	Days in a Month (One Day's Pay = Pay / This)	أيام الشهر (أجر اليوم = الأجر ÷ هذا العدد)
+3-424	Raqeem Lifecycle Settings.min_service_years	No Gratuity Below (Years of Service)	لا مكافأة لخدمة أقل من (سنوات)
+3-425	Raqeem Lifecycle Settings.part_years	Part Years	أجزاء السنة
+3-426	Raqeem Lifecycle Settings.part_years:opt	Pro Rata	بالتناسب
+3-427	Raqeem Lifecycle Settings.part_years:opt	Full Years Only	السنوات الكاملة فقط
+3-428	Raqeem Lifecycle Settings.slab_method	How the Slabs Apply	طريقة تطبيق الفئات
+3-429	Raqeem Lifecycle Settings.slab_method:opt	Each Part at Its Own Rate	كل جزء بمعدّل فئته
+3-430	Raqeem Lifecycle Settings.slab_method:opt	Whole Service at the Rate Reached	كامل الخدمة بمعدّل الفئة الأخيرة
+3-431	Raqeem Lifecycle Settings.exclude_unpaid_leave	Unpaid Leave Does Not Count as Service	الإجازة غير المدفوعة لا تُحتسب من الخدمة
+3-432	Raqeem Lifecycle Settings.section_slabs	Days of Pay per Year of Service	أيام الأجر عن كل سنة خدمة
+3-433	Raqeem Lifecycle Settings.slabs	Slabs	الفئات
+3-434	Raqeem Lifecycle Settings.section_factors	Share Paid by Exit Type	النسبة المصروفة حسب نوع الإنهاء
+3-435	Raqeem Lifecycle Settings.section_factors:desc	For an exit type with rows here, the row with the highest 'From Years' not above the service decides the share; no row for an exit type = 100%.	لكل نوع إنهاء له صفوف هنا، يحدّد النسبةَ الصفُّ ذو أعلى «من سنوات» لا يتجاوز مدة الخدمة؛ ونوع الإنهاء الذي لا صفوف له = 100%.
+3-436	Raqeem Lifecycle Settings.factors	Shares	النسب
+3-437	Raqeem Lifecycle Settings.pay_unused_leave	Pay Unused Leave Days With the Gratuity	صرف بدل أيام الإجازة غير المستخدمة مع المكافأة
+3-438	Raqeem Lifecycle Settings.leave_type	Leave Type Paid Out	نوع الإجازة المصروف بدلها
+3-439	Raqeem Lifecycle Settings.gratuity_expense_account	Gratuity Expense Account	حساب مصروف مكافأة نهاية الخدمة
+3-440	Raqeem Lifecycle Settings.leave_payout_account	Unused Leave Expense Account	حساب مصروف بدل الإجازات غير المستخدمة
+3-441	Raqeem Lifecycle Settings.gratuity_payable_account	End of Service Payable Account	حساب مستحقات نهاية الخدمة
+3-442	doctype	Raqeem Training Event	دورة تدريبية
+3-443	Raqeem Training Event.program	Program	البرنامج
+3-444	Raqeem Training Event.trainer	Trainer	المدرب
+3-445	Raqeem Training Event.location	Place or Meeting Link	المكان أو رابط الاجتماع
+3-446	Raqeem Training Event.from_datetime	Starts	يبدأ
+3-447	Raqeem Training Event.to_datetime	Ends	ينتهي
+3-448	Raqeem Training Event.section_people	Participants	المشاركون
+3-449	Raqeem Training Event.invited	Invited	مدعو
+3-450	Raqeem Training Event.attended	Attended	حضر
+3-451	Raqeem Training Event.total_cost	Total Cost	التكلفة الإجمالية
+3-452	Raqeem Training Event.average_rating	Employees' Average Rating	متوسط تقييم الموظفين
+3-453	doctype	Raqeem Training Program	برنامج تدريبي
+3-454	Raqeem Training Program.program_name	Program Name	اسم البرنامج
+3-455	Raqeem Training Program.training_type:opt	Internal	داخلي
+3-456	Raqeem Training Program.training_type:opt	External	خارجي
+3-457	Raqeem Training Program.training_type:opt	Online	عن بُعد
+3-458	Raqeem Training Program.provider	Provider / Trainer	الجهة / المدرب
+3-459	Raqeem Training Program.duration_hours	Duration (Hours)	المدة (ساعات)
+3-460	Raqeem Training Program.cost_per_person	Cost per Person	التكلفة للفرد
+3-461	Raqeem Training Program.description	What Is Taught	محتوى التدريب
+3-462	doctype	Raqeem Appraisal	تقييم أداء
+3-463	Raqeem Appraisal.cycle	Appraisal Cycle	دورة التقييم
+3-464	Raqeem Appraisal.from_date	Period From	الفترة من
+3-465	Raqeem Appraisal.to_date	Period To	الفترة إلى
+3-466	Raqeem Appraisal.status:opt	Self Review	التقييم الذاتي
+3-467	Raqeem Appraisal.status:opt	Manager Review	مراجعة المدير
+3-468	Raqeem Appraisal.section_scores	Criteria	المعايير
+3-469	Raqeem Appraisal.section_goals	Goals	الأهداف
+3-470	Raqeem Appraisal.self_comments	Employee's Comments	ملاحظات الموظف
+3-471	Raqeem Appraisal.manager_comments	Manager's Comments	ملاحظات المدير
+3-472	Raqeem Appraisal.self_score	Self Score (of 5)	الدرجة الذاتية (من 5)
+3-473	Raqeem Appraisal.criteria_score	Criteria Score (of 5)	درجة المعايير (من 5)
+3-474	Raqeem Appraisal.goals_score	Goals Score (of 5)	درجة الأهداف (من 5)
+3-475	Raqeem Appraisal.final_score	Final Score (of 5)	الدرجة النهائية (من 5)
+3-476	Raqeem Appraisal.section_approval	Reviewer	المراجع
+3-477	Raqeem Appraisal.approver_name	Reviewer Name	اسم المراجع
+3-478	Raqeem Appraisal.sent_on	Sent to Reviewer On	تاريخ الإرسال للمُقيِّم
+3-479	doctype	Raqeem Appraisal Cycle	دورة التقييم
+3-480	Raqeem Appraisal Cycle.department:desc	Empty: every department.	فارغ: كل الأقسام.
+3-481	Raqeem Appraisal Cycle.status:opt	In Progress	قيد التنفيذ
+3-482	Raqeem Appraisal Cycle.section_rules	Rules	القواعد
+3-483	Raqeem Appraisal Cycle.self_review	Employees Review Themselves First	الموظفون يقيّمون أنفسهم أولاً
+3-484	Raqeem Appraisal Cycle.goals_weight	Goals Count For (%)	وزن الأهداف (%)
+3-485	Raqeem Appraisal Cycle.goals_weight:desc	The final score = criteria × (100 − this) % + goals × this %. Without goals the criteria count fully.	الدرجة النهائية = المعايير × (100 − هذه) % + الأهداف × هذه %. بدون أهداف تُحتسب المعايير كاملة.
+3-486	Raqeem Appraisal Cycle.self_review_deadline	Self Reviews Due	موعد التقييمات الذاتية
+3-487	Raqeem Appraisal Cycle.review_deadline	Manager Reviews Due	موعد مراجعات المدير
+3-488	Raqeem Appraisal Cycle.total	Appraisals	التقييمات
+3-489	Raqeem Appraisal Cycle.average_score	Average Score (of 5)	متوسط الدرجة (من 5)
+3-490	doctype	Raqeem Appraisal Template	قالب التقييم
+3-491	doctype	Raqeem Job Offer	عرض عمل
+3-492	Raqeem Job Offer.applicant	Applicant	المتقدم
+3-493	Raqeem Job Offer.applicant_name	Applicant Name	اسم المتقدم
+3-494	Raqeem Job Offer.valid_till	Valid Until	صالح حتى
+3-495	Raqeem Job Offer.joining_date	Joining Date	تاريخ الالتحاق
+3-496	Raqeem Job Offer.status:opt	Sent	مُرسَل
+3-497	Raqeem Job Offer.status:opt	Accepted	مقبول
+3-498	Raqeem Job Offer.status:opt	Declined	مرفوض
+3-499	Raqeem Job Offer.basic_salary	Basic Salary (Monthly)	الراتب الأساسي (شهرياً)
+3-500	Raqeem Job Offer.housing_allowance	Housing Allowance (Monthly)	بدل السكن (شهرياً)
+3-501	Raqeem Job Offer.transport_allowance	Transport Allowance (Monthly)	بدل المواصلات (شهرياً)
+3-502	Raqeem Job Offer.total_monthly	Total Monthly	الإجمالي الشهري
+3-503	Raqeem Job Offer.probation_months	Probation (Months)	فترة التجربة (أشهر)
+3-504	Raqeem Job Offer.decision_date	Answer Received On	تاريخ استلام الرد
+3-505	doctype	Raqeem Interview	مقابلة
+3-506	Raqeem Interview.round	Round	الجولة
+3-507	Raqeem Interview.scheduled_on	Date and Time	التاريخ والوقت
+3-508	Raqeem Interview.duration_minutes	Duration (Minutes)	المدة (دقائق)
+3-509	Raqeem Interview.result:opt	Passed	ناجح
+3-510	Raqeem Interview.result:opt	Failed	فشل
+3-511	Raqeem Interview.section_people	Interviewers	المُقابِلون
+3-512	Raqeem Interview.average_rating	Average Rating	متوسط التقييم
+3-513	doctype	Raqeem Job Opening	وظيفة شاغرة
+3-514	Raqeem Job Opening.vacancies	Positions	عدد الوظائف
+3-515	Raqeem Job Opening.employment_type:opt	Full-time	دوام كامل
+3-516	Raqeem Job Opening.employment_type:opt	Part-time	دوام جزئي
+3-517	Raqeem Job Opening.employment_type:opt	Contract	عقد
+3-518	Raqeem Job Opening.employment_type:opt	Internship	تدريب
+3-519	Raqeem Job Opening.posting_date	Posted On	تاريخ الترحيل
+3-520	Raqeem Job Opening.closes_on	Closes On	يُغلق في
+3-521	Raqeem Job Opening.section_pay	Salary Range	نطاق الراتب
+3-522	Raqeem Job Opening.salary_to	To	إلى
+3-523	Raqeem Job Opening.description	Job Description	الوصف الوظيفي
+3-524	Raqeem Job Opening.requirements	Requirements	المتطلبات
+3-525	Raqeem Job Opening.applicants	Applicants	المتقدمون
+3-526	doctype	Analytics Dashboard	لوحة تحليلات
+3-527	Analytics Dashboard.default_range	Default Period	الفترة الافتراضية
+3-528	Analytics Dashboard.default_range:desc	Empty: each chart keeps its own period.	فارغ: كل مخطط يحتفظ بفترته.
+3-529	Analytics Dashboard.show_company_filter	Company Filter	تصفية حسب الشركة
+3-530	Analytics Dashboard.show_department_filter	Department Filter	تصفية حسب القسم
+3-531	Analytics Dashboard.auto_refresh_minutes	Refresh Every (Minutes)	التحديث كل (دقائق)
+3-532	Analytics Dashboard.auto_refresh_minutes:desc	0: only when opened or refreshed.	0: فقط عند الفتح أو التحديث.
+3-533	Analytics Dashboard.section_roles	Who Can See It	من يمكنه رؤيتها
+3-534	Analytics Dashboard.roles:desc	Empty: everyone who can open Analytics. The numbers always follow each viewer's own permissions.	فارغ: كل من يستطيع فتح التحليلات. الأرقام تتبع دائماً صلاحيات كل مستخدم.
+3-535	Analytics Dashboard.section_layout	Layout	التخطيط
+3-536	Analytics Dashboard.items	Charts	المخططات
+3-537	Analytics Dashboard.items:desc	Arranged on the Analytics screen.	يُرتَّب من شاشة التحليلات.
+3-538	doctype	Raqeem Leave Encashment	صرف رصيد الإجازات
+3-539	Raqeem Leave Encashment.section_days	Days Paid Out	الأيام المصروفة
+3-540	Raqeem Leave Encashment.leave_type	Leave Type	نوع الإجازة
+3-541	Raqeem Leave Encashment.encashment_date	Paid With the Salary Of	يُصرف مع راتب
+3-542	Raqeem Leave Encashment.encashment_date:desc	The salary slip of the month containing this date pays it.	يُصرف مع قسيمة راتب الشهر الذي يشمل هذا التاريخ.
+3-543	Raqeem Leave Encashment.balance	Balance Before	الرصيد قبل
+3-544	doctype	Raqeem Compensatory Request	طلب إجازة تعويضية
+3-545	Raqeem Compensatory Request.section_day	Day Worked	يوم العمل
+3-546	Raqeem Compensatory Request.work_date:desc	A weekly day off or an official holiday the employee worked.	يوم عطلة أسبوعية أو عطلة رسمية عمل فيه الموظف.
+3-547	Raqeem Compensatory Request.half_day	Half Day	نصف يوم
+3-548	Raqeem Compensatory Request.days	Days Earned	الأيام المكتسبة
+3-549	Raqeem Compensatory Request.reason	What Was Done	العمل المنجز
+3-550	doctype	Raqeem Leave Block Period	فترة منع الإجازات
+3-551	Raqeem Leave Block Period.company:desc	Empty: every company.	فارغ: كل الشركات.
+3-552	Raqeem Leave Block Period.leave_type:desc	Empty: every leave type.	فارغ: كل أنواع الإجازات.
+3-553	Raqeem Leave Block Period.hr_can_override	HR Manager Can Still Approve	يمكن لمدير الموارد البشرية الاعتماد رغم ذلك
+3-554	doctype	Raqeem Leave Type	نوع الإجازة
+3-555	Raqeem Leave Type.leave_type_name	Leave Type Name	اسم نوع الإجازة
+3-556	Raqeem Leave Type.days_per_year	Days per Year	الأيام في السنة
+3-557	Raqeem Leave Type.days_per_year:desc	Used when allocating leave for a year. 0 means no fixed balance (for example unpaid leave).	يُستخدم عند تخصيص إجازات السنة. 0 يعني بلا رصيد ثابت (مثل الإجازة بدون راتب).
+3-558	Raqeem Leave Type.allow_half_day	Allow Half Day	السماح بنصف يوم
+3-559	Raqeem Leave Type.count_holidays	Count Weekends and Holidays	احتساب العطل الأسبوعية والرسمية
+3-560	Raqeem Leave Type.count_holidays:desc	Tick for leave such as sick leave, where every calendar day counts.	فعِّله لإجازات مثل المرضية، حيث يُحتسب كل يوم تقويمي.
+3-561	Raqeem Leave Type.allow_negative	Allow More Than the Balance	السماح بتجاوز الرصيد
+3-562	Raqeem Leave Type.attachment_after_days	Require a Document After (Days)	طلب مستند بعد (أيام)
+3-563	Raqeem Leave Type.attachment_after_days:desc	For example a medical certificate for sick leave longer than 2 days. 0 means never.	مثل شهادة طبية للإجازة المرضية التي تزيد على يومين. 0 يعني عدم الطلب أبدًا.
+3-564	Raqeem Leave Type.section_carry	Carry Forward	ترحيل الرصيد
+3-565	Raqeem Leave Type.carry_forward	Carry Unused Days to the Next Period	ترحيل الأيام غير المستخدمة إلى الفترة التالية
+3-566	Raqeem Leave Type.max_carry_forward	Maximum Days Carried	الحد الأقصى للأيام المرحَّلة
+3-567	Raqeem Leave Type.max_carry_forward:desc	0 means no limit.	0 يعني بلا حد.
+3-568	Raqeem Leave Type.color	Calendar Colour	اللون في التقويم
+3-569	Raqeem Leave Type.section_comp	Compensatory Leave	إجازة تعويضية
+3-570	Raqeem Leave Type.is_compensatory	Earned by Working a Day Off	تُكتسب بالعمل في يوم عطلة
+3-571	Raqeem Leave Type.is_compensatory:desc	No yearly days: days are earned by approved compensatory requests (worked a weekly day off or holiday).	بدون رصيد سنوي: تُكتسب الأيام بطلبات التعويض المعتمدة (العمل في عطلة أسبوعية أو رسمية).
+3-572	Raqeem Leave Type.compensatory_valid_days	Earned Days Expire After (Days)	تنتهي صلاحية الأيام المكتسبة بعد (أيام)
+3-573	Raqeem Leave Type.section_encash	Encashment	صرف نقدي
+3-574	Raqeem Leave Type.allow_encashment	Unused Days Can Be Paid Out	يمكن صرف الأيام غير المستخدمة نقداً
+3-575	Raqeem Leave Type.max_encash_days	Most Days Paid Out per Year	أقصى أيام تُصرف في السنة
+3-576	Raqeem Leave Type.max_encash_days:desc	0: no limit.	0: بدون حد.
+3-577	Raqeem Leave Type.encashment_basis	Day's Pay Is Based On	أجر اليوم محسوب من
+3-578	Raqeem Leave Type.encashment_basis:desc	One day's pay = the monthly amount ÷ 30.	أجر اليوم = المبلغ الشهري ÷ 30.
+3-579	doctype	Raqeem Expense Claim	مطالبة مصروفات
+3-580	Raqeem Expense Claim.section_items	Expenses	المصروفات
+3-581	Raqeem Expense Claim.advance	Settle from Advance	التسوية من السلفة
+3-582	Raqeem Expense Claim.advance:desc	An unpaid balance of this employee's advance pays this claim first.	رصيد سلفة الموظف غير المسدد يغطي هذه المطالبة أولاً.
+3-583	Raqeem Expense Claim.advance_used	Paid from the Advance	المدفوع من السلفة
+3-584	Raqeem Expense Claim.payable_amount	To Pay the Employee	المستحق للموظف
+3-585	Raqeem Expense Claim.payment_status	Payment	الدفع
+3-586	doctype	Raqeem Employee Advance	سلفة موظف
+3-587	Raqeem Employee Advance.section_amount	Advance	دفعة مقدمة
+3-588	Raqeem Employee Advance.repayment_method	Repaid By	طريقة السداد
+3-589	Raqeem Employee Advance.repayment_method:opt	Deduct from Salary	الخصم من الراتب
+3-590	Raqeem Employee Advance.repayment_method:opt	Settle with Expense Claims	التسوية بمطالبات المصروفات
+3-591	Raqeem Employee Advance.repayment_method:opt	Repay in Cash	السداد نقداً
+3-592	Raqeem Employee Advance.monthly_deduction	Deduct Each Month	الخصم الشهري
+3-593	Raqeem Employee Advance.deduct_from	Start Deducting From	بدء الخصم من
+3-594	Raqeem Employee Advance.deduct_from:desc	The payroll month that includes this date is the first deduction.	شهر الرواتب الذي يشمل هذا التاريخ هو أول خصم.
+3-595	Raqeem Employee Advance.advance_status	Advance Status	حالة السلفة
+3-596	Raqeem Employee Advance.advance_status:opt	Partly Repaid	مسددة جزئياً
+3-597	Raqeem Employee Advance.repayments	Cash Repayments	السداد النقدي
+3-598	doctype	Raqeem Expense Type	نوع المصروف
+3-599	Raqeem Expense Type.expense_type	Expense Type	نوع المصروف
+3-600	Raqeem Expense Type.account:desc	Where this expense is booked. Empty: the company's default expense account.	الحساب الذي يُقيَّد عليه المصروف. فارغ: حساب المصروفات الافتراضي للشركة.
+3-601	doctype	Raqeem Attendance Request	طلب حضور
+3-602	Raqeem Attendance Request.reason:opt	Forgot to Punch	نسيان البصمة
+3-603	Raqeem Attendance Request.reason:opt	Work Outside the Office	عمل خارج المكتب
+3-604	Raqeem Attendance Request.reason:opt	Device Problem	عطل في الجهاز
+3-605	Raqeem Attendance Request.in_time	In	ضمن
+3-606	Raqeem Attendance Request.in_time:desc	Empty: the fingerprint of that day, or the shift start.	فارغ: بصمة ذلك اليوم، أو بداية الوردية.
+3-607	Raqeem Attendance Request.out_time	Out	خروج
+3-608	Raqeem Attendance Request.out_time:desc	Empty: the fingerprint of that day, or the shift end.	فارغ: بصمة ذلك اليوم، أو نهاية الوردية.
+3-609	Raqeem Attendance Request.explanation	Explanation	تفسير
+3-610	doctype	Raqeem Attendance	الحضور
+3-611	Raqeem Attendance.status:opt	Present	حاضر
+3-612	Raqeem Attendance.status:opt	Absent	غائب
+3-613	Raqeem Attendance.status:opt	On Leave	في إجازة
+3-614	Raqeem Attendance.day_type	Day	يوم
+3-615	Raqeem Attendance.day_type:opt	Working Day	يوم عمل
+3-616	Raqeem Attendance.day_type:opt	Weekly Off	العطلة الأسبوعية
+3-617	Raqeem Attendance.day_type:opt	Holiday	عطلة رسمية
+3-618	Raqeem Attendance.leave_request	Leave Request	طلب إجازة
+3-619	Raqeem Attendance.section_time	Times	الأوقات
+3-620	Raqeem Attendance.shift	Shift	الوردية
+3-621	Raqeem Attendance.missing_punch	Missing Fingerprint	بصمة ناقصة
+3-622	Raqeem Attendance.missing_punch:desc	Only one fingerprint that day: check with the employee.	بصمة واحدة فقط في ذلك اليوم: راجع الموظف.
+3-623	Raqeem Attendance.working_hours	Working Hours	ساعات العمل
+3-624	Raqeem Attendance.late_minutes	Late (Minutes)	التأخير (دقائق)
+3-625	Raqeem Attendance.early_exit_minutes	Left Early (Minutes)	خروج مبكر (دقائق)
+3-626	Raqeem Attendance.overtime_minutes	Overtime (Minutes)	الإضافي (دقائق)
+3-627	Raqeem Attendance.overtime_status	Overtime Approval	اعتماد العمل الإضافي
+3-628	Raqeem Attendance.overtime_approved_minutes	Approved Overtime (Minutes)	الإضافي المعتمد (دقائق)
+3-629	Raqeem Attendance.overtime_approved_minutes:desc	What payroll pays. Can be less than the overtime worked.	ما يُدفع في الرواتب. يمكن أن يكون أقل من الإضافي المنجز.
+3-630	Raqeem Attendance.overtime_decided_by	Overtime Decided By	اعتمد الإضافي
+3-631	Raqeem Attendance.section_more	More	المزيد
+3-632	Raqeem Attendance.source:opt	Fingerprint	البصمة
+3-633	Raqeem Attendance.source:opt	Bulk	جماعي
+3-634	Raqeem Attendance.source:opt	Request	طلب
+3-635	Raqeem Attendance.attendance_request	Attendance Request	طلب حضور
+3-636	doctype	Raqeem Salary Slip	قسيمة الراتب
+3-637	Raqeem Salary Slip.payroll_run	Payroll Run	مسير الرواتب
+3-638	Raqeem Salary Slip.employee_salary	Employee Salary	راتب الموظف
+3-639	Raqeem Salary Slip.total_days	Days in Month	أيام الشهر
+3-640	Raqeem Salary Slip.unpaid_days	Unpaid Days	الأيام غير المدفوعة
+3-641	Raqeem Salary Slip.unpaid_days:desc	Unpaid leave and days before joining or after leaving.	الإجازات غير المدفوعة والأيام قبل التعيين أو بعد ترك العمل.
+3-642	Raqeem Salary Slip.payment_days	Paid Days	الأيام المدفوعة
+3-643	Raqeem Salary Slip.overtime_hours	Overtime (Hours)	الإضافي (ساعات)
+3-644	Raqeem Salary Slip.earnings	Earnings	الاستحقاقات
+3-645	Raqeem Salary Slip.deductions	Deductions	استقطاعات
+3-646	Raqeem Salary Slip.gross	Gross Pay	إجمالي الراتب
+3-647	Raqeem Salary Slip.total_deductions	Total Deductions	إجمالي الاستقطاعات
+3-648	Raqeem Salary Slip.net_pay	Net Pay	صافي الراتب
+3-649	Raqeem Salary Slip.employer_social_security	Employer Social Security	حصة جهة العمل في الضمان الاجتماعي
+3-650	Raqeem Salary Slip.employer_social_security:desc	Paid by the company on top of the gross pay; not deducted from the employee.	تدفعها الشركة فوق إجمالي الراتب، ولا تُخصم من الموظف.
+3-651	Raqeem Salary Slip.taxable_amount	Taxable Amount	الوعاء الخاضع للضريبة
+3-652	doctype	Raqeem Attendance Settings	إعدادات الحضور
+3-653	Raqeem Attendance Settings.section_week	Weekly Days Off	أيام العطلة الأسبوعية
+3-654	Raqeem Attendance Settings.default_shift:desc	For employees without a shift assignment. Empty: those employees get no late / early / overtime calculation.	للموظفين بدون وردية محددة. فارغ: لا يُحسب لهم تأخير أو خروج مبكر أو إضافي.
+3-655	Raqeem Attendance Settings.auto_process	Create Attendance from Fingerprints Automatically	إنشاء الحضور من البصمات تلقائياً
+3-656	Raqeem Attendance Settings.auto_process:desc	Every hour, fingerprints are turned into attendance.	كل ساعة تتحول البصمات إلى حضور.
+3-657	Raqeem Attendance Settings.mark_absent	Mark Absent When There Is No Fingerprint	تسجيل غياب عند عدم وجود بصمة
+3-658	Raqeem Attendance Settings.mark_absent:desc	Only for employees who have an Attendance Device ID, on working days, when they are not on leave.	فقط للموظفين الذين لديهم رقم في جهاز البصمة، في أيام العمل، وليسوا في إجازة.
+3-659	Raqeem Attendance Settings.process_days_back	Re-check the Last (Days)	إعادة فحص آخر (أيام)
+3-660	Raqeem Attendance Settings.process_days_back:desc	Fingerprints that reach the system late (device synced later) still count for these days.	البصمات التي تصل متأخرة (مزامنة الجهاز لاحقاً) تُحتسب لهذه الأيام.
+3-661	Raqeem Attendance Settings.window_before_minutes	Count Fingerprints From (Minutes Before Shift Start)	احتساب البصمات من (دقائق قبل بداية الوردية)
+3-662	Raqeem Attendance Settings.window_after_minutes	Count Fingerprints Until (Minutes After Shift End)	احتساب البصمات حتى (دقائق بعد نهاية الوردية)
+3-663	Raqeem Attendance Settings.duplicate_minutes	Fingerprints Closer Than (Minutes) Are One	البصمات الأقرب من (دقائق) تُعد بصمة واحدة
+3-664	Raqeem Attendance Settings.section_abs	Absence and Lateness	الغياب والتأخير
+3-665	Raqeem Attendance Settings.absent_unpaid	Absent Days Are Unpaid in Payroll	أيام الغياب غير مدفوعة في الرواتب
+3-666	Raqeem Attendance Settings.half_day_unpaid	Half Days Count as Half an Unpaid Day	نصف اليوم يُحسب نصف يوم غير مدفوع
+3-667	Raqeem Attendance Settings.late_deduction	Deduct Late Minutes from Salary	خصم دقائق التأخير من الراتب
+3-668	Raqeem Attendance Settings.late_deduction:desc	Lateness is always recorded. Tick this to also deduct it in payroll.	التأخير يُسجَّل دائماً. فعّل هذا الخيار لخصمه أيضاً من الراتب.
+3-669	Raqeem Attendance Settings.free_late_minutes	Free Late Minutes per Month	دقائق تأخير مسموحة شهرياً
+3-670	Raqeem Attendance Settings.late_deduction_factor	Deduct (Hours of Pay per Late Hour)	الخصم (ساعات أجر عن كل ساعة تأخير)
+3-671	Raqeem Attendance Settings.section_ot	Overtime	العمل الإضافي
+3-672	Raqeem Attendance Settings.overtime_enabled	Calculate Overtime	حساب العمل الإضافي
+3-673	Raqeem Attendance Settings.overtime_after_minutes	Count Overtime After (Minutes Past Shift End)	احتساب الإضافي بعد (دقائق من نهاية الوردية)
+3-674	Raqeem Attendance Settings.overtime_round_minutes	Round Overtime Down To (Minutes)	تقريب الإضافي للأقل إلى (دقائق)
+3-675	Raqeem Attendance Settings.overtime_needs_approval	Overtime Needs Approval Before Payroll	العمل الإضافي يحتاج موافقة قبل الرواتب
+3-676	Raqeem Attendance Settings.overtime_pay_basis	Overtime Pay	أجر العمل الإضافي
+3-677	Raqeem Attendance Settings.overtime_pay_basis:opt	Multiplier of Hourly Pay	مضاعف أجر الساعة
+3-678	Raqeem Attendance Settings.overtime_pay_basis:opt	Fixed Amount per Hour	مبلغ ثابت لكل ساعة
+3-679	Raqeem Attendance Settings.rate_working_day	Rate on Working Days	المعدل في أيام العمل
+3-680	Raqeem Attendance Settings.rate_weekly_off	Rate on Weekly Days Off	المعدل في أيام العطلة الأسبوعية
+3-681	Raqeem Attendance Settings.rate_holiday	Rate on Official Holidays	المعدل في العطلات الرسمية
+3-682	Raqeem Attendance Settings.fixed_amount_per_hour	Amount per Overtime Hour	المبلغ لكل ساعة إضافية
+3-683	Raqeem Attendance Settings.hourly_pay_from	Hourly Pay Is Based On	أجر الساعة محسوب من
+3-684	Raqeem Attendance Settings.monthly_hours	Working Hours per Month	ساعات العمل في الشهر
+3-685	Raqeem Attendance Settings.monthly_hours:desc	Hourly pay = monthly salary ÷ these hours (and for late deductions).	أجر الساعة = الراتب الشهري ÷ هذه الساعات (ويُستخدم أيضاً لخصم التأخير).
+3-686	Raqeem Attendance Settings.section_pay	Salary Components	بنود الراتب
+3-687	Raqeem Attendance Settings.basic_component	Basic Salary Component	بند الراتب الأساسي
+3-688	Raqeem Attendance Settings.basic_component:desc	Used when hourly pay is based on the basic salary.	يُستخدم عندما يُحسب أجر الساعة من الراتب الأساسي.
+3-689	Raqeem Attendance Settings.overtime_component	Overtime Component	بند العمل الإضافي
+3-690	Raqeem Attendance Settings.late_component	Late Deduction Component	بند خصم التأخير
+3-691	doctype	Raqeem Checkin	بصمة
+3-692	Raqeem Checkin.log_type	In / Out	دخول / خروج
+3-693	Raqeem Checkin.log_type:desc	Empty: decided from the order of the fingerprints (first = in, last = out).	فارغ: يُحدَّد من ترتيب البصمات (الأولى = دخول، الأخيرة = خروج).
+3-694	Raqeem Checkin.source:opt	Device	الجهاز
+3-695	Raqeem Checkin.source:opt	Import	استيراد
+3-696	Raqeem Checkin.device_id	Device User ID	رقم الموظف في الجهاز
+3-697	Raqeem Checkin.device_id:desc	The employee's number on the fingerprint device.	رقم الموظف في جهاز البصمة.
+3-698	Raqeem Checkin.attendance	Attendance	الحضور
+3-699	doctype	Raqeem Shift Assignment	تعيين وردية
+3-700	Raqeem Shift Assignment.to_date:desc	Empty: until changed.	فارغ: حتى يتم التغيير.
+3-701	doctype	Raqeem Shift Type	الوردية
+3-702	Raqeem Shift Type.shift_name	Shift Name	اسم الوردية
+3-703	Raqeem Shift Type.start_time	Start Time	وقت البدء
+3-704	Raqeem Shift Type.end_time	End Time	وقت الانتهاء
+3-705	Raqeem Shift Type.end_time:desc	Earlier than the start time: the shift ends the next day (night shift).	إذا كانت قبل وقت البداية: تنتهي الوردية في اليوم التالي (وردية ليلية).
+3-706	Raqeem Shift Type.break_minutes	Break (Minutes, Not Counted as Work)	الاستراحة (دقائق، لا تُحسب عملاً)
+3-707	Raqeem Shift Type.late_grace_minutes	Late After (Minutes of Grace)	تأخير بعد (دقائق السماح)
+3-708	Raqeem Shift Type.early_grace_minutes	Early Leave Before (Minutes of Grace)	خروج مبكر قبل (دقائق السماح)
+3-709	Raqeem Shift Type.half_day_below_hours	Half Day When Worked Less Than (Hours)	نصف يوم إذا عمل أقل من (ساعات)
+3-710	Raqeem Shift Type.absent_below_hours	Absent When Worked Less Than (Hours)	غائب إذا عمل أقل من (ساعات)
+3-711	Raqeem Shift Type.absent_below_hours:desc	0: never absent when there is a fingerprint.	0: لا يُسجَّل غياب أبداً عند وجود بصمة.
+3-712	Raqeem Shift Type.shift_hours	Shift Hours	ساعات الوردية
+3-713	Raqeem Shift Type.use_default_weekly_off	Use the Weekly Days Off of Attendance Settings	استخدام أيام العطلة الأسبوعية من إعدادات الحضور
+3-714	doctype	Analytics Chart	مخطط تحليلي
+3-715	Analytics Chart.chart_type	Chart Type	نوع الرسم البياني
+3-716	Analytics Chart.chart_type:opt	Bar	أعمدة
+3-717	Analytics Chart.chart_type:opt	Line	خطي
+3-718	Analytics Chart.chart_type:opt	Area	المساحة
+3-719	Analytics Chart.chart_type:opt	Mixed	مختلط
+3-720	Analytics Chart.chart_type:opt	Pie	دائري
+3-721	Analytics Chart.chart_type:opt	Donut	حلقي
+3-722	Analytics Chart.chart_type:opt	Number	الرقم
+3-723	Analytics Chart.chart_type:opt	Table	جدول
+3-724	Analytics Chart.chart_type:opt	Pivot	جدول محوري
+3-725	Analytics Chart.document_type	Data From	مصدر البيانات
+3-726	Analytics Chart.section_config	Definition	التعريف
+3-727	Analytics Chart.config:desc	Built on the Analytics screen.	يُنشأ من شاشة التحليلات.
+3-728	doctype	Raqeem Payroll Settings	إعدادات الرواتب
+3-729	Raqeem Payroll Settings.rates_confirmed	Rates Checked by Our Accountant	راجع محاسبنا النِّسب
+3-730	Raqeem Payroll Settings.rates_confirmed:desc	The rates below come from published sources that do not all agree. Tick this once your accountant has confirmed them; until then every payroll run shows a warning.	النِّسب أدناه مأخوذة من مصادر منشورة لا تتفق جميعها. فعِّل هذا الخيار بعد أن يؤكدها محاسبك؛ وحتى ذلك الحين يظهر تنبيه في كل مسير رواتب.
+3-731	Raqeem Payroll Settings.days_basis	Day Basis	أساس احتساب الأيام
+3-732	Raqeem Payroll Settings.days_basis:opt	30 Days	30 يومًا
+3-733	Raqeem Payroll Settings.days_basis:opt	Calendar Days	أيام التقويم
+3-734	Raqeem Payroll Settings.days_basis:desc	30 Days: a month is always 30 days when pay is reduced for unpaid leave or a partial month.	30 يومًا: يُعدّ الشهر دائمًا 30 يومًا عند خصم الإجازة غير المدفوعة أو الشهر الجزئي.
+3-735	Raqeem Payroll Settings.section_tax	Income Tax (Law 7 of 2010)	ضريبة الدخل (القانون رقم 7 لسنة 2010)
+3-736	Raqeem Payroll Settings.tax_band_limit_annual	First Band up to (Yearly)	الشريحة الأولى حتى (سنويًا)
+3-737	Raqeem Payroll Settings.tax_rate_1	Rate in the First Band	نسبة الشريحة الأولى
+3-738	Raqeem Payroll Settings.tax_rate_2	Rate Above the First Band	النسبة فوق الشريحة الأولى
+3-739	Raqeem Payroll Settings.exemption_single_annual	Personal Exemption, Single (Yearly)	الإعفاء الشخصي، أعزب (سنويًا)
+3-740	Raqeem Payroll Settings.exemption_married_annual	Personal Exemption, Married (Yearly)	الإعفاء الشخصي، متزوج (سنويًا)
+3-741	Raqeem Payroll Settings.exemption_child_annual	Exemption per Child (Yearly)	الإعفاء عن كل ابن (سنويًا)
+3-742	Raqeem Payroll Settings.tax_after_social_security	Deduct Social Security Before Tax	خصم الضمان الاجتماعي قبل الضريبة
+3-743	Raqeem Payroll Settings.section_ss	Social Security and Other Deductions	الضمان الاجتماعي والاستقطاعات الأخرى
+3-744	Raqeem Payroll Settings.ss_employee_rate	Social Security, Employee Share	الضمان الاجتماعي، حصة الموظف
+3-745	Raqeem Payroll Settings.ss_employer_rate	Social Security, Employer Share	الضمان الاجتماعي، حصة جهة العمل
+3-746	Raqeem Payroll Settings.ss_employer_rate:desc	Paid by the company on top of the salary.	تدفعها الشركة فوق الراتب.
+3-747	Raqeem Payroll Settings.solidarity_rate	Solidarity Fund	صندوق التضامن
+3-748	Raqeem Payroll Settings.jihad_rate	Jihad Tax	ضريبة الجهاد
+3-749	Raqeem Payroll Settings.jihad_rate:desc	Reported as abolished; leave 0 unless your accountant says otherwise.	أُفيد بإلغائها؛ اتركها 0 ما لم يقرر محاسبك غير ذلك.
+3-750	Raqeem Payroll Settings.stamp_rate	Stamp Duty	ضريبة الدمغة
+3-751	Raqeem Payroll Settings.salary_expense_account	Salary Expense Account	حساب مصروف الرواتب
+3-752	Raqeem Payroll Settings.salary_expense_account:desc	Earnings without their own account are booked here.	تُقيَّد هنا الاستحقاقات التي ليس لها حساب خاص.
+3-753	Raqeem Payroll Settings.employer_ss_expense_account	Employer Social Security Expense	مصروف حصة جهة العمل في الضمان
+3-754	Raqeem Payroll Settings.payroll_payable_account	Payroll Payable (Net Pay)	رواتب مستحقة الدفع (صافي الرواتب)
+3-755	Raqeem Payroll Settings.income_tax_account	Income Tax Payable	ضريبة الدخل المستحقة
+3-756	Raqeem Payroll Settings.social_security_account	Social Security Payable	الضمان الاجتماعي المستحق
+3-757	Raqeem Payroll Settings.solidarity_account	Solidarity Fund Payable	صندوق التضامن المستحق
+3-758	Raqeem Payroll Settings.jihad_account	Jihad Tax Payable	ضريبة الجهاد المستحقة
+3-759	Raqeem Payroll Settings.stamp_account	Stamp Duty Payable	ضريبة الدمغة المستحقة
+3-760	Raqeem Payroll Settings.section_exp	Expense Claims and Advances	مطالبات المصروفات والسلف
+3-761	Raqeem Payroll Settings.employee_advance_account	Employee Advances Account	حساب سلف الموظفين
+3-762	Raqeem Payroll Settings.employee_advance_account:desc	Asset account holding the advances not yet repaid.	حساب أصول يحتفظ بالسلف غير المسددة.
+3-763	Raqeem Payroll Settings.expense_payable_account	Employee Claims Payable Account	حساب مطالبات الموظفين المستحقة
+3-764	Raqeem Payroll Settings.expense_payable_account:desc	Approved expense claims waiting to be paid to the employee.	مطالبات المصروفات المعتمدة التي لم تُدفع للموظف بعد.
+3-765	Raqeem Payroll Settings.advance_component	Advance Repayment Component	بند سداد السلفة
+3-766	Raqeem Payroll Settings.advance_component:desc	The salary deduction line for advance repayments.	بند الخصم من الراتب لسداد السلف.
+3-767	Raqeem Payroll Settings.encashment_component	Leave Encashment Component	بند صرف رصيد الإجازات
+3-768	Raqeem Payroll Settings.encashment_component:desc	The salary earning line for paid-out leave days.	بند الاستحقاق في الراتب لأيام الإجازة المصروفة.
+3-769	Raqeem Payroll Settings.section_loan	Loans and One-off Additions	القروض والإضافات لمرة واحدة
+3-770	Raqeem Payroll Settings.loan_account	Employee Loans Account	حساب قروض الموظفين
+3-771	Raqeem Payroll Settings.loan_component	Loan Repayment Component	مكوّن سداد القروض
+3-772	Raqeem Payroll Settings.max_loan_instalments	Most Instalments for a Loan	أقصى عدد أقساط للقرض
+3-773	Raqeem Payroll Settings.max_loan_instalments:desc	0 = no limit	0 = بلا حد
+3-774	Raqeem Payroll Settings.max_instalment_percent	Instalment at Most (% of Gross Salary)	أقصى قسط (% من إجمالي الراتب)
+3-775	Raqeem Payroll Settings.addition_approver	Approver of One-off Additions and Deductions	مسؤول الموافقة على الإضافات والخصومات لمرة واحدة
+3-776	Raqeem Payroll Settings.addition_approver:desc	Empty: an HR Manager approves them.	فارغ: يوافق عليها مدير الموارد البشرية.
+3-777	doctype	Raqeem Payroll Run	مسير الرواتب
+3-778	Raqeem Payroll Run.department:desc	Leave empty for everyone.	اتركه فارغًا للجميع.
+3-779	Raqeem Payroll Run.section_emp	Employees	الموظفون
+3-780	Raqeem Payroll Run.total_gross	Total Gross Pay	إجمالي الراتب الإجمالي
+3-781	Raqeem Payroll Run.total_net	Total Net Pay	إجمالي صافي الراتب
+3-782	Raqeem Payroll Run.journal_entry	Payroll Journal Entry	قيد الرواتب
+3-783	Raqeem Payroll Run.payment_journal_entry	Payment Journal Entry	قيد الصرف
+3-784	doctype	Raqeem Employee Salary	راتب الموظف
+3-785	Raqeem Employee Salary.marital_status:desc	For the income tax exemption.	لاحتساب الإعفاء من ضريبة الدخل.
+3-786	Raqeem Employee Salary.children	Children	الأبناء
+3-787	Raqeem Employee Salary.section_lines	Monthly Salary	الراتب الشهري
+3-788	Raqeem Employee Salary.deductions	Fixed Deductions	استقطاعات ثابتة
+3-789	Raqeem Employee Salary.deductions:desc	Fixed monthly deductions such as an advance repayment. Tax, social security and solidarity are calculated by the system.	استقطاعات شهرية ثابتة مثل سداد سلفة. يحتسب النظام الضريبة والضمان والتضامن تلقائيًا.
+3-790	Raqeem Employee Salary.gross	Monthly Gross	إجمالي الراتب الشهري
+3-791	doctype	Raqeem Salary Component	مكوّن الراتب
+3-792	Raqeem Salary Component.component_name	Component Name	اسم المكوّن
+3-793	Raqeem Salary Component.component_type:opt	Earning	استحقاق
+3-794	Raqeem Salary Component.component_type:opt	Deduction	استقطاع
+3-795	Raqeem Salary Component.abbr	Abbreviation	الاختصار
+3-796	Raqeem Salary Component.taxable	Subject to Income Tax	خاضع لضريبة الدخل
+3-797	Raqeem Salary Component.social_security	Subject to Social Security	خاضع للضمان الاجتماعي
+3-798	Raqeem Salary Component.statutory	Calculated by the System	يحتسبه النظام
+3-799	Raqeem Salary Component.statutory:opt	Social Security	الضمان الاجتماعي
+3-800	Raqeem Salary Component.statutory:opt	Income Tax	ضريبة الدخل
+3-801	Raqeem Salary Component.statutory:desc	Statutory deductions are calculated in every salary slip; their accounts are in Payroll Settings.	تُحتسب الاستقطاعات القانونية في كل قسيمة راتب، وحساباتها في إعدادات الرواتب.
+3-802	Raqeem Salary Component.account:desc	Earnings: an expense account (empty = the salary expense account in Payroll Settings). Deductions: the account the deducted money goes to, e.g. employee advances.	الاستحقاقات: حساب مصروف (فارغ = حساب مصروف الرواتب في إعدادات الرواتب). الاستقطاعات: الحساب الذي يذهب إليه المبلغ المخصوم، مثل سُلف الموظفين.
+3-803	doctype	Raqeem Leave Request	طلب إجازة

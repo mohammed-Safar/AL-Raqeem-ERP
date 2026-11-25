@@ -7,6 +7,7 @@
  "field_order": [
   "applicant_name",
   "job_opening",
+  "company",
   "status",
   "rating",
   "column_break_1",
@@ -37,6 +38,16 @@
    "options": "Raqeem Job Opening",
    "in_list_view": 1,
    "in_standard_filter": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "fetch_from": "job_opening.company",
+   "fetch_if_empty": 1,
+   "in_standard_filter": 1,
+   "description": "Filled from the job opening."
   },
   {
    "fieldname": "status",
@@ -119,7 +130,7 @@
  ],
  "index_web_pages_for_search": 0,
  "links": [],
- "modified": "2026-11-14 06:00:00.000000",
+ "modified": "2026-11-24 09:00:00.000000",
  "modified_by": "Administrator",
  "module": "Raqeem HR",
  "name": "Raqeem Job Applicant",

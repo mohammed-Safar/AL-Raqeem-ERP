@@ -308,7 +308,7 @@ Accepted Job Applicants,المتقدمون المقبولون للوظائف
 Accepted Qty,الكمية المقبولة
 Accepted Quantity,الكمية المقبولة
 Accepted Stock Value Difference,فرق قيمة المخزون المقبول
-Accepted Warehouse,مستودع المقبول
+Accepted Warehouse,مستودع الأصناف المقبولة
 Access,الوصول
 Access Control,التحكم في الوصول
 Access Denied,تم رفض الوصول
@@ -1250,7 +1250,7 @@ Automation Flow {0} was auto-disabled,تم تعطيل مسار الأتمتة {0
 Automation Run,تشغيل الأتمتة
 Automation Run Step,خطوة تشغيل الأتمتة
 Automation Settings,إعدادات الأتمتة
-Automation Trigger Queue,طابور مشغّلات الأتمتة
+Automation Trigger Queue,قائمة انتظار مشغّلات الأتمتة
 Automation User,مستخدم الأتمتة
 Automation User {0} is disabled or missing,مستخدم الأتمتة {0} معطّل أو غير موجود
 Automation deleted,تم حذف الأتمتة
@@ -1332,7 +1332,7 @@ BOM Search,البحث في قوائم المواد
 BOM Tree,شجرة قائمة المواد
 BOM Update Initiated,بدأ تحديث قائمة المواد
 BOM Update Tool,أداة تحديث قائمة المواد
-BOM Variance Report,تقرير فروقات قائمة المواد
+BOM Variance Report,تقرير انحرافات قائمة المواد
 BOM Website Item,صنف قائمة المواد على الموقع
 BOM Website Operation,عملية قائمة المواد على الموقع
 "BOM {0} is the BOM of an operation in {1}, which track semi-finished goods. Amend those BOMs to use the new BOM so their operation materials are fetched again.",قائمة المواد {0} هي قائمة مواد لعملية في {1}، التي تتتبّع المنتجات نصف المصنعة. عدّل تلك القوائم لتستخدم القائمة الجديدة حتى تُجلب مواد عملياتها مرة أخرى.
@@ -1381,11 +1381,11 @@ Bank Account {0} is missing or disabled,الحساب البنكي {0} غير م�
 Bank Account {0} must be a company account belonging to {1},يجب أن يكون الحساب البنكي {0} حساب شركة تابعاً لـ {1}
 Bank Accounts,الحسابات البنكية
 Bank Balance,الرصيد البنكي
-Bank Clearance,التسوية البنكية
+Bank Clearance,المقاصة البنكية
 Bank Clearance Detail,تفاصيل التسوية البنكية
 Bank Clearance Summary,ملخص التسوية البنكية
 Bank Credit Balance,الرصيد الدائن في البنك
-Bank Draft,شيك بنكي
+Bank Draft,شيك مصرفي
 Bank Entries,قيود البنك
 Bank Entries Created,تم إنشاء القيود البنكية
 Bank Entry,قيد بنكي
@@ -1887,7 +1887,7 @@ Chart Tree,شجرة الحسابات
 Chart Type,نوع الرسم البياني
 Chart of Accounts,دليل الحسابات
 Chart of Accounts Importer,مستورد دليل الحسابات
-Charts,المخططات
+Charts,الرسوم البيانية
 Charts Based On,الرسوم البيانية بناءً على
 Chat,محادثة
 Check,مربع اختيار
@@ -2017,7 +2017,7 @@ Clear grouping,مسح التجميع
 Clear selection,مسح التحديد
 Clear the filters to see all records.,امسح عوامل التصفية لرؤية جميع السجلات.
 Clear to pick a record instead,امسح لاختيار سجل بدلًا من ذلك
-Clearance Date,تاريخ التسوية
+Clearance Date,تاريخ المقاصة
 Clearance Date updated,تم تحديث تاريخ التسوية
 Cleared,تم صرفه
 Cleared On,تاريخ الصرف
@@ -2114,7 +2114,7 @@ Comment Email,بريد التعليق
 Comment Type,نوع التعليق
 Comment sent,تم إرسال التعليق
 Comments,التعليقات
-Commission,بالعمولة
+Commission,العمولة
 Commission Rate (%),نسبة العمولة (%)
 Commit,تثبيت (Commit)
 Commit Every,الحفظ كل
@@ -2177,7 +2177,7 @@ Completed By Role,أكمله الدور
 Completed By User,أكمله المستخدم
 Completed Projects,المشاريع المكتملة
 Completed Time,وقت الإنجاز
-Completed Work Orders,أوامر التصنيع المكتملة
+Completed Work Orders,أوامر العمل المكتملة
 Completing onboarding,جارٍ إكمال التهيئة
 Completion,الإنجاز
 Completion By,الإنجاز بواسطة
@@ -2320,7 +2320,7 @@ Context Script,سكربت السياق
 Continue,متابعة
 Continue,متابعة,Go to next slide
 Continue to Transfer,متابعة النقل
-Contra Entry,قيد عكسي
+Contra Entry,قيد تحويل
 Contract,عقد
 Contract Template Help,تعليمات قالب العقد
 Contributed,تمت المساهمة
@@ -2746,7 +2746,7 @@ Dashboard,لوحة المعلومات
 Dashboard Chart,رسم بياني للوحة المعلومات
 Dashboard Chart Field,حقل رسم لوحة المعلومات
 Dashboard Chart Link,رابط رسم لوحة المعلومات
-Dashboard Chart Source,مصدر رسم لوحة المعلومات
+Dashboard Chart Source,مصدر الرسم البياني للوحة المعلومات
 Dashboard Currency,عملة لوحة المعلومات
 Dashboard Manager,مدير لوحات المعلومات
 Dashboard Name,اسم لوحة المعلومات
@@ -2845,7 +2845,7 @@ Deduction Arrears,متأخرات الاستقطاعات
 Deduction Certificate,شهادة الاستقطاع
 Deduction Reports,تقارير الاستقطاعات
 Deduction from Salary,استقطاع من الراتب
-Deductions,استقطاعات
+Deductions,الاستقطاعات
 Deductions before tax calculation,الاستقطاعات قبل حساب الضريبة
 Default,الافتراضي
 Default Advance Account,حساب الدفعات المقدمة الافتراضي
@@ -3541,11 +3541,11 @@ Employee Emails,رسائل البريد الإلكتروني للموظفين
 Employee Exit,خروج الموظف
 Employee Exit Settings,إعدادات إنهاء خدمة الموظف
 Employee Exits,حالات إنهاء خدمة الموظفين
-Employee Exits (This Year),خروج الموظفين (هذه السنة)
+Employee Exits (This Year),إنهاء خدمة الموظفين (هذه السنة)
 Employee Feedback Criteria,معايير تقييم الموظف
 Employee Feedback Rating,درجة تقييم الموظف
 Employee Grade,درجة الموظف
-Employee Grievance,شكوى الموظف
+Employee Grievance,تظلم الموظف
 Employee Health Insurance,التأمين الصحي للموظف
 Employee Hours Utilization,استغلال ساعات الموظفين
 Employee Hours Utilization Based On Timesheet,استخدام ساعات الموظف بناءً على سجل الوقت
@@ -3952,7 +3952,7 @@ Expense Claim {0} already exists for the Vehicle Log,مطالبة المصروف
 Expense Claims,مطالبات المصروفات
 Expense Claims (This Month),مطالبات المصروفات (هذا الشهر)
 Expense Date,تاريخ المصروف
-Expense Head,رأس المصروفات
+Expense Head,حساب المصروفات
 Expense Head Changed,تم تغيير رأس المصروفات
 Expense Item,بند المصروف
 Expense Proof,إثبات المصروف
@@ -4196,7 +4196,7 @@ Finance,التمويل
 Finance Book,الدفتر المالي
 Finance Book Detail,تفاصيل دفتر التمويل
 Finance Book Id,معرّف دفتر التمويل
-Finance Books,دفاتر التمويل
+Finance Books,الدفاتر المالية
 Finance Manager,مدير مالي
 Financial Report Template,قالب تقرير مالي
 Financial Statements,القوائم المالية
@@ -5325,7 +5325,7 @@ Is Default,افتراضي
 Is Default Account,الحساب الافتراضي
 Is Default Language,اللغة الافتراضية
 Is Default Module,الوحدة الافتراضية
-Is Discounted,مخصومة
+Is Discounted,مخصوم
 Is Dynamic URL?,رابط ديناميكي؟
 Is ERPNext installed on a different site?,هل ERPNext مثبت على موقع آخر؟
 Is Earned Leave,إجازة مكتسبة
@@ -5468,7 +5468,7 @@ Item Variant Details,تفاصيل متغيرات الصنف
 Item Variant Settings,إعدادات متغيرات الأصناف
 Item Variants updated,تم تحديث متغيرات الصنف
 Item and Warehouse,الصنف والمستودع
-"Item definitions (shortcuts / charts / cards ...) backing blocks the site added, so they can be rendered. Managed by the workspace editor.",تعريفات العناصر (اختصارات / رسوم بيانية / بطاقات ...) التي تدعم الكتل التي أضافها الموقع، ليمكن عرضها. يُدار عبر محرر مساحة العمل.
+"Item definitions (shortcuts / charts / cards ...) backing blocks the site added, so they can be rendered. Managed by the workspace editor.",تعريفات العناصر (اختصارات / رسوم بيانية / بطاقات...) التي تدعم الكتل التي أضافها الموقع، ليمكن عرضها. يُدار عبر محرر مساحة العمل.
 Item has variants.,للصنف متغيرات.
 Item name,اسم الصنف
 Item to Manufacture,الصنف المراد تصنيعه
@@ -5690,7 +5690,7 @@ Last Received At,آخر استلام في
 Last Responded On,تاريخ آخر رد
 Last Response Time,وقت آخر استجابة
 Last Run,آخر تشغيل
-Last Scanned Warehouse,آخر مستودع ممسوح
+Last Scanned Warehouse,آخر مستودع تم مسحه ضوئيًا
 Last Seen,آخر ظهور
 Last Status Change Log,آخر سجل لتغيير الحالة
 Last Step,الخطوة الأخيرة
@@ -5737,8 +5737,8 @@ Lead Data,بيانات العميل المحتمل
 Lead Details,تفاصيل العميل المحتمل
 Lead Form,نموذج العميل المحتمل
 Lead Name,اسم العميل المحتمل
-Lead Owner,مالك العميل المحتمل
-Lead Owner Efficiency,كفاءة مالك العميل المحتمل
+Lead Owner,مسؤول العميل المحتمل
+Lead Owner Efficiency,كفاءة مسؤول العميل المحتمل
 Lead Owner cannot be same as the Lead Email Address,لا يمكن أن يكون مسؤول العميل المحتمل هو نفسه عنوان البريد الإلكتروني للعميل المحتمل
 Lead Score,نتيجة العميل المحتمل
 Lead Source,مصدر العميل المحتمل
@@ -5865,7 +5865,7 @@ Leaves to Adjust,الإجازات المراد تسويتها
 Leaves you can avail against a holiday you worked on. You can claim Compensatory Off Leave using Compensatory Leave Request. Click {0} to know more,إجازات يمكنك الاستفادة منها مقابل عطلة عملت خلالها. يمكنك المطالبة بإجازة تعويضية باستخدام طلب الإجازة التعويضية. انقر {0} لمعرفة المزيد
 Ledger Health,سلامة الدفتر
 Ledger Health Monitor,مراقبة سلامة دفتر الأستاذ
-Left,يسار
+Left,ترك العمل
 Left,يسار,alignment
 Left Child,الفرع الأيسر
 Left this conversation,غادر هذه المحادثة
@@ -6276,7 +6276,7 @@ Mid Center,المنتصف
 Middle Income,الدخل المتوسط
 Middle Name,الاسم الأوسط
 Mileage,المسافة المقطوعة
-Milestone,المرحلة
+Milestone,معلم رئيسي
 Milestone Tracker,متتبع المراحل
 Milligram/Litre,مليغرام/لتر
 Millilitre,مليلتر
@@ -7039,7 +7039,7 @@ Only users with the {0} role can create backdated leave applications,يمكن ف
 "Only works for Purchase Receipt, Purchase Invoice with Update Stock and Stock Entry with no row that has both a Source and Target Warehouse",يعمل فقط مع إيصال الاستلام، وفاتورة المشتريات مع تحديث المخزون، وحركة المخزون التي لا يحتوي أي صف فيها على مستودع مصدر وهدف معاً
 Only {0} Goals can be {1},يمكن {1} أهداف {0} فقط
 Opacity,الشفافية
-Open,فتح
+Open,مفتوح
 Open,مفتوح,Access
 Open & Approved,مفتوح وموافق عليه
 Open Accounts Payable,فتح الذمم الدائنة
@@ -7090,7 +7090,7 @@ Open To Do,المهام المفتوحة
 Open Unpaid Claims,فتح المطالبات غير المدفوعة
 Open Unpaid Expense Claim,فتح مطالبات المصروفات غير المدفوعة
 Open Website,فتح الموقع الإلكتروني
-Open Work Orders,أوامر التصنيع المفتوحة
+Open Work Orders,أوامر العمل المفتوحة
 Open a job,فتح وظيفة شاغرة
 "Open a job, add an applicant and make them an offer.",افتح وظيفة شاغرة، وأضف متقدمًا، وقدّم له عرض عمل.
 Open a linked document in a side panel instead of navigating away from the report. Not available on mobile.,فتح المستند المرتبط في لوحة جانبية بدلاً من مغادرة التقرير. غير متاح على الجوال.
@@ -7140,7 +7140,7 @@ Opportunities by Medium,الفرص حسب الوسيلة
 Opportunities via Campaigns,الفرص من الحملات
 Opportunity Item,صنف الفرصة
 Opportunity Lost Reason,سبب خسارة الفرصة
-Opportunity Owner,مالك الفرصة
+Opportunity Owner,مسؤول الفرصة
 Opportunity Trends,اتجاهات الفرص
 Optimize Route,تحسين المسار
 Optional,اختياري
@@ -7170,7 +7170,7 @@ Order Qty,كمية الأمر
 "Order of activities, emails, comments and calls in the timeline for all users",ترتيب الأنشطة والرسائل والتعليقات والمكالمات في الخط الزمني لجميع المستخدمين
 Ordered,تم الطلب
 Ordered List,قائمة مرقمة
-Ordered Qty,الكمية المطلوبة
+Ordered Qty,الكمية في أوامر الشراء
 Ordered Quantity,الكمية المطلوبة
 Orders,الأوامر
 Org History,تاريخ المؤسسة
@@ -7227,7 +7227,7 @@ Overdue,متأخر
 Overdue Days,أيام التأخير
 Overdue Issues,البلاغات المتأخرة
 Overdue Payment,دفعة متأخرة
-Overdue and Discounted,متأخرة ومخصومة
+Overdue and Discounted,متأخر ومخصوم
 Overlapping Attendance Request,طلب حضور متداخل
 Overlapping Shift Attendance,حضور وردية متداخل
 Overlapping Shift Requests,طلبات وردية متداخلة
@@ -7279,7 +7279,7 @@ PIN,الرمز البريدي
 PO Supplied Item,صنف مورد لأمر الشراء
 PORTAL,البوابة
 POS Additional Fields,حقول نقطة البيع الإضافية
-POS Closing Entry,قيد إقفال نقطة البيع
+POS Closing Entry,قيد إغلاق نقطة البيع
 POS Closing Failed,فشل إقفال نقطة البيع
 POS Field,حقل نقطة البيع
 POS Invoice,فاتورة نقطة البيع
@@ -7388,7 +7388,7 @@ Participants,المشاركون
 Partly Billed,مفوتر جزئياً
 Partly Claimed and Returned,مطالب به جزئيًا ومرتجع
 Partly Delivered,مسلّم جزئياً
-Partly Paid,مدفوعة جزئياً
+Partly Paid,مدفوع جزئياً
 Partly Paid and Discounted,مدفوع جزئياً ومخصوم
 Party,الطرف
 Party Account,حساب الطرف
@@ -7534,7 +7534,7 @@ Pending Quantity,الكمية المعلّقة
 Pending Questionnaires,الاستبيانات المعلقة
 Pending Repost,إعادة ترحيل معلّقة
 Pending SO Items For Purchase Request,أصناف أوامر البيع المعلقة لطلب الشراء
-Pending Work Order,أمر تصنيع معلّق
+Pending Work Order,أوامر العمل المعلّقة
 Per Day,يومياً
 Per Month,شهرياً
 Per Received,نسبة المستلم
@@ -7553,7 +7553,7 @@ Performance Management,إدارة الأداء
 Period,الفترة
 Period Based On,الفترة بناءً على
 Period Closed,الفترة مقفلة
-Period Closing Voucher,قيد إقفال الفترة
+Period Closing Voucher,سند إقفال الفترة
 Period Score,درجة الفترة
 Period To Date,الفترة حتى تاريخ
 Period based On,الفترة بناءً على
@@ -7807,7 +7807,7 @@ Popover Element,عنصر النافذة المنبثقة
 Portal Menu,قائمة البوابة
 Portal Menu Item,عنصر قائمة البوابة
 Portrait,عمودي
-Position,الموضع
+Position,المنصب
 Post,نشر
 Post Description Key,مفتاح وصف المنشور
 Post Graduate,دراسات عليا
@@ -7815,7 +7815,7 @@ Post Route Key,مفتاح مسار المنشور
 Post Route String,سلسلة مسار المنشور
 Post Title Key,مفتاح عنوان المنشور
 Postal Expenses,مصروفات بريدية
-Posted On,تاريخ الترحيل
+Posted On,تاريخ النشر
 Posting Datetime,تاريخ ووقت الترحيل
 Posting Time,وقت الترحيل
 Posting date,تاريخ الترحيل
@@ -7863,7 +7863,7 @@ Previous Submission,الإرسال السابق
 Previous Work Experience,الخبرات السابقة
 Previous page,الصفحة السابقة
 Previous step,الخطوة السابقة
-Price Discount Scheme,مخطط خصم السعر
+Price Discount Scheme,نظام خصم السعر
 Price Discount Slabs,شرائح خصم السعر
 Price List Country,دولة قائمة الأسعار
 Price List Currency,عملة قائمة الأسعار
@@ -7962,7 +7962,7 @@ Produced,مُنتَج
 Produced Quantity,الكمية المنتجة
 Product,المنتج
 Product Bundle,حزمة منتجات
-Product Bundle Balance,رصيد حزمة المنتجات
+Product Bundle Balance,رصيد حزمة الأصناف
 Product Bundle Help,مساعدة حزمة المنتجات
 Product Bundle Item,صنف حزمة المنتجات
 Product Code,رمز المنتج
@@ -8025,7 +8025,7 @@ Property Setter,مُعيِّن الخصائص
 Property Type,نوع الخاصية
 Property already added,الخاصية مضافة بالفعل
 Proposal Writing,كتابة العروض
-Proposal/Price Quote,عرض / عرض سعر
+Proposal/Price Quote,تقديم العرض / عرض السعر
 Proposal/Quotation,عرض سعر
 Prorate,احتساب نسبي
 Prospect,عميل مرتقب
@@ -8115,10 +8115,10 @@ Qty to Order,الكمية المراد طلبها
 Qty to Receive,الكمية المراد استلامها
 Qualification,التأهيل
 Qualified,مؤهَّل
-Qualified By,أهّله
+Qualified By,تم التأهيل بواسطة
 Qualified on,تاريخ التأهيل
 Quality,الجودة
-Quality Action,إجراء الجودة
+Quality Action,إجراء تصحيحي للجودة
 Quality Action Resolution,حل إجراء الجودة
 Quality Feedback,ملاحظات الجودة
 Quality Feedback Parameter,مُعامِل ملاحظات الجودة
@@ -8406,7 +8406,7 @@ Relationships must be a JSON list,يجب أن تكون العلاقات قائم
 Relative,نسبي
 Relay Settings,إعدادات الترحيل (Relay)
 Release,الإصدار
-Release Date,تاريخ الإفراج
+Release Date,تاريخ رفع الإيقاف
 Release Withheld Salaries,صرف الرواتب المحجوبة
 Released,تم الصرف
 Reliability,الموثوقية
@@ -8775,10 +8775,10 @@ Roles of user {0} are managed by a Role Profile. Update the Role Profile instead
 Rolling Response Due,موعد الاستجابة المتجدد
 Rolling Responses,الاستجابات المتجددة
 Root Company,الشركة الجذرية
-Root Type,الالنوع الجذريي
+Root Type,النوع الجذري
 Root records can't be deleted,لا يمكن حذف السجلات الجذرية
 Root records can't be renamed,لا يمكن إعادة تسمية السجلات الجذرية
-Roster,جدول الورديات
+Roster,جدول المناوبات
 Roster Color,لون الجدول
 Roster:,جدول الورديات:
 Round Free Qty,تقريب الكمية المجانية
@@ -9080,13 +9080,13 @@ Sales Partner Item,صنف شريك المبيعات
 Sales Partner Name,اسم شريك المبيعات
 Sales Partner Target,مستهدف شريك المبيعات
 Sales Partner Target Variance Based On Item Group,تباين أهداف شريك المبيعات حسب مجموعة الأصناف
-Sales Partner Target Variance based on Item Group,تباين أهداف شريك المبيعات حسب مجموعة الأصناف
+Sales Partner Target Variance based on Item Group,انحراف أهداف شريك المبيعات حسب مجموعة الأصناف
 Sales Partners Commission,عمولة شركاء المبيعات
 Sales Payment Summary,ملخص مدفوعات المبيعات
 Sales Person,مندوب المبيعات
 Sales Person Commission Summary,ملخص عمولة مندوب المبيعات
 Sales Person Name,اسم مندوب المبيعات
-Sales Person Target Variance Based On Item Group,تباين أهداف مندوب المبيعات حسب مجموعة الأصناف
+Sales Person Target Variance Based On Item Group,انحراف أهداف مندوب المبيعات حسب مجموعة الأصناف
 Sales Person Targets,مستهدفات مندوب المبيعات
 Sales Person-wise Transaction Summary,ملخص المعاملات حسب مندوب المبيعات
 Sales Pipeline,مسار المبيعات
@@ -9516,7 +9516,7 @@ Set,تعيين
 Set,معيّن,Field value is set
 "Set ""From(Year)"" and ""To(Year)"" to 0 for no upper and lower limit.",اضبط «من (السنة)» و«إلى (السنة)» على 0 لعدم وجود حد أعلى أو أدنى.
 Set <strong>{0}</strong> = <em>?</em> to auto complete,عيّن <strong>{0}</strong> = <em>?</em> للإكمال التلقائي
-Set Accepted Warehouse,تعيين مستودع المقبول
+Set Accepted Warehouse,تعيين مستودع الأصناف المقبولة
 Set As Default,تعيين كافتراضي
 Set As Primary,تعيين كأساسي
 Set Assignment Details,تحديد تفاصيل التعيين
@@ -10223,7 +10223,7 @@ Submit,اعتماد,Primary action of prompt dialog
 Submit,اعتماد,Submit password for Email Account
 Submit Action Failed,فشل إجراء الاعتماد
 Submit After Import,اعتماد بعد الاستيراد
-Submit ERR Journals?,اعتماد قيود إعادة تقييم العملات؟
+Submit ERR Journals?,اعتماد قيود إعادة تقييم سعر الصرف؟
 Submit Feedback,إرسال الملاحظات
 Submit Generated Invoices,اعتماد الفواتير المُنشأة
 Submit Job Card {0} before making its Manufacture entry,اعتمد بطاقة العمل {0} قبل إنشاء قيد التصنيع الخاص بها
@@ -10490,7 +10490,7 @@ Territory,المنطقة
 Territory Item,صنف المنطقة
 Territory Manager,مدير المنطقة
 Territory Name,اسم المنطقة
-Territory Target Variance Based On Item Group,تباين أهداف المنطقة حسب مجموعة الأصناف
+Territory Target Variance Based On Item Group,انحراف أهداف المنطقة حسب مجموعة الأصناف
 Territory Targets,مستهدفات المنطقة
 Territory Wise Opportunity Count,عدد الفرص حسب المنطقة
 Territory Wise Sales,المبيعات حسب المنطقة
@@ -10837,7 +10837,7 @@ To everyone,للجميع
 "To overwrite the salary component amount for a tax component, please enable {0}",لاستبدال مبلغ مكوّن الراتب لمكوّن ضريبة، يُرجى تفعيل {0}
 To(Year),إلى (السنة)
 To(Year) year can not be less than From(year),لا يمكن أن تكون «إلى (السنة)» أقل من «من (السنة)»
-ToDo,المهام
+ToDo,قائمة المهام
 Today,اليوم
 Today is {0}'s birthday 🎉,اليوم هو عيد ميلاد {0} 🎉
 Today {0} at our Company! 🎉,اليوم {0} في شركتنا! 🎉
@@ -10927,7 +10927,7 @@ Total Expense Claim (via Expense Claim),إجمالي مطالبة المصروف
 Total Expense Claim (via Expense Claims),إجمالي مطالبات المصروفات (عبر مطالبات المصروفات)
 Total Experience,إجمالي الخبرة
 Total Goal Score,إجمالي درجة الهدف
-Total Gross Pay,إجمالي الراتب الإجمالي
+Total Gross Pay,إجمالي الرواتب قبل الاستقطاع
 Total Holidays,إجمالي العطلات
 Total Hours (T),إجمالي الساعات (T)
 Total Incentive Given(Last month),إجمالي الحوافز الممنوحة (الشهر الماضي)
@@ -10950,7 +10950,7 @@ Total Loan Repayment,إجمالي سداد القرض
 Total Lost Quotations,إجمالي عروض الأسعار الخاسرة
 Total Lost Value,إجمالي القيمة الخاسرة
 Total Message(s),إجمالي الرسائل
-Total Net Pay,إجمالي صافي الراتب
+Total Net Pay,إجمالي صافي الرواتب
 Total Net Weight,إجمالي الوزن الصافي
 Total Non-Billed Hours,إجمالي الساعات غير المفوترة
 Total Outgoing,إجمالي الصادر
@@ -11516,7 +11516,7 @@ View Docs,عرض التوثيق
 View Doctype Permissions,عرض صلاحيات نوع المستند
 View Documentation,عرض الوثائق
 View Goals,عرض الأهداف
-View Job Offer,عرض عرض العمل
+View Job Offer,فتح عرض العمل
 View Leads,عرض العملاء المحتملين
 View Leave Balance,عرض رصيد الإجازات
 View Leave History,عرض سجل الإجازات
@@ -11555,7 +11555,7 @@ Vouchers,السندات
 WARNING: Loan Management module has been separated from ERPNext.,تحذير: تم فصل وحدة إدارة القروض عن ERPNext.
 WIP WH,مستودع WIP
 WIP Warehouse,مستودع الإنتاج تحت التشغيل
-WIP Work Orders,أوامر التصنيع قيد التنفيذ
+WIP Work Orders,أوامر العمل قيد التنفيذ
 WO,عطلة أسبوعية
 Wait,انتظار
 Wait Resume,استئناف الانتظار
@@ -11732,7 +11732,7 @@ Withholding Document Name,اسم مستند الاستقطاع
 Withholding Document Type,نوع مستند الاستقطاع
 Won,مكسوبة
 Won Deals,الصفقات المكسوبة
-Won Opportunities,الفرص المكتسبة
+Won Opportunities,الفرص المكسوبة
 Won deals,الصفقات المكسوبة
 Work Anniversaries,ذكرى الانضمام للعمل
 Work Anniversaries ,الذكرى السنوية للعمل 
@@ -11743,11 +11743,11 @@ Work From Date,العمل اعتبارًا من تاريخ
 Work From Home,العمل من المنزل
 Work In Progress,قيد التنفيذ
 Work Order,أمر عمل
-Work Order Analysis,تحليل أوامر التصنيع
+Work Order Analysis,تحليل أوامر العمل
 Work Order Item,صنف أمر التصنيع
 Work Order Operation,عملية أمر التصنيع
 Work Order Qty,كمية أمر العمل
-Work Order Summary,ملخص أوامر التصنيع
+Work Order Summary,ملخص أوامر العمل
 Work Order status cannot be set to {0},لا يمكن تعيين حالة أمر العمل إلى {0}
 Work Order {0} is already Closed,أمر العمل {0} مُقفل مسبقاً
 Work Orders,أوامر العمل
@@ -12476,7 +12476,7 @@ yesterday,أمس
 ⚠️ No data found for parent field: {0},⚠️ لم يتم العثور على بيانات للحقل الأب: {0}
 ⚠️ No row found for idx: {0} in parent field: {1},⚠️ لم يتم العثور على صف للفهرس: {0} في الحقل الأب: {1}
 Invoiced,المُفوتر
-Unpaid,غير المدفوع
+Unpaid,غير مدفوع
 Won value,قيمة الصفقات المكسوبة
 Win rate %,نسبة الفوز %
 RAQEEM Deal Analysis,تحليل الصفقات
@@ -12587,13 +12587,13 @@ The half day must be between From Date and To Date,يجب أن يقع نصف ا�
 There are no working days between these dates,لا توجد أيام عمل بين هذين التاريخين
 This leave type has no balance limit,هذا النوع من الإجازات بلا حد للرصيد
 This request has already been decided,تم البتّ في هذا الطلب مسبقًا
-"Tick for leave such as sick leave, where every calendar day counts.",فعِّله لإجازات مثل المرضية، حيث يُحتسب كل يوم تقويمي.
+"Tick for leave such as sick leave, where every calendar day counts.",فعِّل هذا الخيار للإجازات مثل الإجازة المرضية، حيث يُحتسب كل يوم تقويمي.
 To Date must be after From Date,يجب أن يكون «إلى تاريخ» بعد «من تاريخ»
 Unknown decision,قرار غير معروف
 "Unused days from the previous period, when the leave type carries them forward.",الأيام غير المستخدمة من الفترة السابقة، إذا كان نوع الإجازة يرحِّلها.
 Used when allocating leave for a year. 0 means no fixed balance (for example unpaid leave).,يُستخدم عند تخصيص إجازات السنة. 0 يعني بلا رصيد ثابت (مثل الإجازة بدون راتب).
 Waiting for Approval,بانتظار الموافقة
-"Working days only, unless the leave type counts weekends and holidays.",أيام العمل فقط، إلا إذا كان نوع الإجازة يحتسب العطل.
+"Working days only, unless the leave type counts weekends and holidays.",أيام العمل فقط، إلا إذا كان نوع الإجازة يحتسب عطلات نهاية الأسبوع والعطلات الرسمية.
 Your leave request ({0}) was {1},طلب إجازتك ({0}) {1}
 approved,تمت الموافقة عليه
 rejected,رُفض
@@ -12731,7 +12731,7 @@ Z → A / newest first,من ي إلى أ / الأحدث أولاً
 Add a value,إضافة قيمة
 All Time,كل الفترات
 Analytics,التحليلات
-Analytics Chart,مخطط تحليلي
+Analytics Chart,رسم بياني تحليلي
 Any date,أي تاريخ
 Area Chart,مساحي
 Best-Selling Items,الأصناف الأكثر مبيعاً
@@ -12774,7 +12774,7 @@ Only one table of the document can be used in a chart,يمكن استخدام ج
 Only submitted documents,المستندات المعتمدة فقط
 Opportunities by Stage,الفرص حسب المرحلة
 Payroll Cost by Month,تكلفة الرواتب حسب الشهر
-Percentage,نسب مئوية
+Percentage,نسبة مئوية
 Purchases by Supplier,المشتريات حسب المورد
 Quarter,ربع سنة
 Q{0} {1},الربع {0} {1}
@@ -12894,7 +12894,7 @@ Raqeem Attendance Settings,إعدادات الحضور
 Raqeem Checkin,بصمة
 Raqeem Monthly Attendance,الحضور الشهري
 Raqeem Shift Assignment,تعيين وردية
-Raqeem Shift Type,الوردية
+Raqeem Shift Type,نوع الوردية
 Rate on Official Holidays,المعدل في العطلات الرسمية
 Rate on Weekly Days Off,المعدل في أيام العطلة الأسبوعية
 Rate on Working Days,المعدل في أيام العمل
@@ -12931,7 +12931,7 @@ Working Hours per Month must be more than 0,ساعات العمل في الشه�
 "{0} rows read: {1} new fingerprints, {2} were already there.",تمت قراءة {0} صف: {1} بصمة جديدة، و{2} موجودة مسبقاً.
 {0} minutes of overtime are waiting for approval.,{0} دقيقة عمل إضافي بانتظار الموافقة.
 Approve Overtime,اعتماد الإضافي
-Approved Overtime (Minutes),الإضافي المعتمد (دقائق)
+Approved Overtime (Minutes),العمل الإضافي الموافق عليه (دقائق)
 Overtime worked: {0} minutes,الإضافي المنجز: {0} دقيقة
 Reject Overtime,رفض الإضافي
 Reject the overtime of this day?,رفض العمل الإضافي لهذا اليوم؟
@@ -12939,22 +12939,22 @@ Overtime approved ({0}),تم اعتماد الإضافي ({0})
 Overtime rejected ({0}),تم رفض الإضافي ({0})
 Tick the days first,حدد الأيام أولاً
 "{0} done, {1} had no overtime",تم {0}، و{1} بدون عمل إضافي
-Overtime Approval,اعتماد العمل الإضافي
+Overtime Approval,الموافقة على العمل الإضافي
 Only HR or the employee's approver can decide on overtime,فقط الموارد البشرية أو المسؤول المباشر للموظف يمكنه البت في العمل الإضافي
 Approved overtime must be between 0 and the overtime worked ({0} minutes),الإضافي المعتمد يجب أن يكون بين 0 والإضافي المنجز ({0} دقيقة)
 Set the Overtime Component in Raqeem Attendance Settings,حدد بند العمل الإضافي في إعدادات الحضور
 Set the Late Deduction Component in Raqeem Attendance Settings,حدد بند خصم التأخير في إعدادات الحضور
 What payroll pays. Can be less than the overtime worked.,ما يُدفع في الرواتب. يمكن أن يكون أقل من الإضافي المنجز.
-Overtime Decided By,اعتمد الإضافي
-Salary Components,بنود الراتب
-Basic Salary Component,بند الراتب الأساسي
+Overtime Decided By,صاحب قرار العمل الإضافي
+Salary Components,مكوّنات الراتب
+Basic Salary Component,مكوّن الراتب الأساسي
 Used when hourly pay is based on the basic salary.,يُستخدم عندما يُحسب أجر الساعة من الراتب الأساسي.
-Overtime Component,بند العمل الإضافي
-Late Deduction Component,بند خصم التأخير
+Overtime Component,مكوّن العمل الإضافي
+Late Deduction Component,مكوّن خصم التأخير
 Late Deduction,خصم التأخير
 Rejected,مرفوض
 Add at least one expense,أضف مصروفاً واحداً على الأقل
-Advance Repayment Component,بند سداد السلفة
+Advance Repayment Component,مكوّن سداد السلفة
 Advance Status,حالة السلفة
 Advance {0} has no balance for this employee,السلفة {0} ليس لها رصيد لهذا الموظف
 Amount Repaid,المبلغ المسدد
@@ -13017,7 +13017,7 @@ Repayment of salary advance {0} by {1},سداد السلفة {0} من {1}
 Row {0}: the amount must be more than 0,السطر {0}: المبلغ يجب أن يكون أكثر من 0
 Row {0}: the expense date cannot be in the future,السطر {0}: تاريخ المصروف لا يمكن أن يكون في المستقبل
 Row {0}: {1} is disabled,السطر {0}: {1} معطل
-Salary Advance,السلف
+Salary Advance,سلف الرواتب
 Salary advance request from {0}: {1},طلب سلفة من {0}: {1}
 Salary advance {0} to {1},السلفة {0} إلى {1}
 Set how much to deduct each month,حدد مبلغ الخصم الشهري
@@ -13062,9 +13062,9 @@ Earned by Working a Day Off,تُكتسب بالعمل في يوم عطلة
 Empty: every company.,فارغ: كل الشركات.
 Empty: every department.,فارغ: كل الأقسام.
 Empty: every leave type.,فارغ: كل أنواع الإجازات.
-HR Manager Can Still Approve,يمكن لمدير الموارد البشرية الاعتماد رغم ذلك
+HR Manager Can Still Approve,يمكن لمدير الموارد البشرية الموافقة رغم ذلك
 Leave Blocked Dates,تواريخ منع الإجازات
-Leave Encashment Component,بند صرف رصيد الإجازات
+Leave Encashment Component,مكوّن صرف بدل الإجازة
 Leave encashment request from {0}: {1} days of {2},طلب صرف رصيد إجازات من {0}: {1} يوم من {2}
 Leave is not allowed from {0} to {1}: {2},الإجازات غير مسموحة من {0} إلى {1}: {2}
 Most Days Paid Out per Year,أقصى أيام تُصرف في السنة
@@ -13074,7 +13074,7 @@ One day's pay = the monthly amount ÷ 30.,أجر اليوم = المبلغ ال�
 Paid With the Salary Of,يُصرف مع راتب
 Raqeem Compensatory Request,طلب إجازة تعويضية
 Raqeem Leave Block Period,فترة منع الإجازات
-Raqeem Leave Encashment,صرف رصيد الإجازات
+Raqeem Leave Encashment,صرف بدل الإجازات
 Set the Leave Encashment Component in Raqeem Payroll Settings,حدد بند صرف رصيد الإجازات في إعدادات الرواتب
 The day worked cannot be in the future,يوم العمل لا يمكن أن يكون في المستقبل
 The salary earning line for paid-out leave days.,بند الاستحقاق في الراتب لأيام الإجازة المصروفة.
@@ -13140,7 +13140,7 @@ All Dashboards,كل اللوحات
 All your charts are already on this dashboard. Create a new one.,كل مخططاتك موجودة في هذه اللوحة. أنشئ مخططاً جديداً.
 Analytics Dashboard,لوحة تحليلات
 Approved Overtime by Month (Minutes),العمل الإضافي المعتمد حسب الشهر (دقائق)
-Arranged on the Analytics screen.,يُرتَّب من شاشة التحليلات.
+Arranged on the Analytics screen.,تُرتَّب في شاشة التحليلات.
 Attendance This Month,الحضور هذا الشهر
 Choose at least one chart,اختر مخططاً واحداً على الأقل
 Company Filter,تصفية حسب الشركة
@@ -13151,7 +13151,7 @@ Department Filter,تصفية حسب القسم
 Drag the charts to change their order.,اسحب المخططات لتغيير ترتيبها.
 Each chart's own period,فترة كل مخطط
 "Employees, attendance, leave, overtime, payroll and advances.",الموظفون، الحضور، الإجازات، العمل الإضافي، الرواتب والسلف.
-Empty: each chart keeps its own period.,فارغ: كل مخطط يحتفظ بفترته.
+Empty: each chart keeps its own period.,فارغ: كل رسم بياني يحتفظ بفترته.
 Empty: everyone who can open Analytics. The numbers always follow each viewer's own permissions.,فارغ: كل من يستطيع فتح التحليلات. الأرقام تتبع دائماً صلاحيات كل مستخدم.
 Expense Claims by Type This Year,مطالبات المصروفات حسب النوع هذه السنة
 Full width,عرض كامل
@@ -13230,7 +13230,7 @@ Applicants Board,لوحة المتقدمين
 Basic Salary (Monthly),الراتب الأساسي (شهرياً)
 CV,السيرة الذاتية
 CV / Resume,السيرة الذاتية
-Closed,مغلقة
+Closed,مغلق
 Closes On must be after Posted On,تاريخ الإغلاق يجب أن يكون بعد تاريخ النشر
 Create Employee,إنشاء موظف
 Date and Time,التاريخ والوقت
@@ -13261,7 +13261,7 @@ Probation (Months),فترة التجربة (أشهر)
 Raqeem Interview,مقابلة
 Raqeem Interview Feedback,تقييم المقابلة
 Raqeem Interviewer,مُقابِل
-Raqeem Job Applicant,متقدم لوظيفة
+Raqeem Job Applicant,متقدم للوظيفة
 Raqeem Job Offer,عرض عمل
 Raqeem Job Opening,وظيفة شاغرة
 Reason (Rejected / Withdrawn),السبب (مرفوض / منسحب)
@@ -13373,7 +13373,7 @@ Self Reviews Due,موعد التقييمات الذاتية
 Self Score (of 5),الدرجة الذاتية (من 5)
 Self: Achieved (%),ذاتي: نسبة الإنجاز (%)
 Send to Reviewer,إرسال للمُقيِّم
-Sent to Reviewer On,تاريخ الإرسال للمُقيِّم
+Sent to Reviewer On,تاريخ الإرسال إلى المراجع
 Some participants are still marked Invited: mark them Attended or Absent.,بعض المتدربين ما زالوا «مدعوين»: حدد حضورهم أو غيابهم.
 Starts,يبدأ
 Target,المستهدف
@@ -13388,7 +13388,7 @@ The goals' weights must add up to 100%,مجموع أوزان الأهداف يج
 The weights must add up to 100% (now {0}%),مجموع الأوزان يجب أن يكون 100% (حالياً {0}%)
 This appraisal is not waiting for a self review,هذا التقييم لا ينتظر تقييماً ذاتياً
 This cycle is completed,هذه الدورة مكتملة
-Total Weight,مجموع الأوزان
+Total Weight,إجمالي الوزن
 Total weight: {0}%,مجموع الأوزان: {0}%
 Trainer,المدرب
 Training Session,دورة تدريبية
@@ -13495,7 +13495,7 @@ Full Years Only,السنوات الكاملة فقط
 Fully repaid.,سُدّد بالكامل.
 Gratuity Before the Exit-Type Share,المكافأة قبل نسبة نوع الإنهاء
 Gratuity Expense Account,حساب مصروف مكافأة نهاية الخدمة
-How the Slabs Apply,طريقة تطبيق الفئات
+How the Slabs Apply,طريقة تطبيق الشرائح
 Included in Salary,أُدرج في الراتب
 Included in salary slip {0}.,أُدرج في قسيمة الراتب {0}.
 Instalment,القسط
@@ -13625,7 +13625,7 @@ Share row {0}: the share must be between 0 and 100%,صف النسبة {0}: يج�
 Shares,النسب
 Slab row {0}: To Year must be above From Year (or 0 for no limit),صف الفئة {0}: يجب أن تكون «إلى سنة» أكبر من «من سنة» (أو 0 بلا حد)
 Slab row {0}: days cannot be negative,صف الفئة {0}: لا يمكن أن تكون الأيام سالبة
-Slabs,الفئات
+Slabs,الشرائح
 Studies,الدراسة
 Task not found,المهمة غير موجودة
 Template {0} is for {1},القالب {0} مخصص لـ{1}
@@ -13684,7 +13684,7 @@ with the salary of {0},مع راتب {0}
 {0} checklist of {1}: {2},قائمة {0} للموظف {1}: {2}
 {0} for {1}: {2},{0} للموظف {1}: {2}
 {0} instalments,{0} أقساط
-"{0} is filled in by the system (advances, loans, overtime ...); choose another component",{0} يملؤه النظام تلقائياً (السلف، القروض، العمل الإضافي ...)؛ اختر مكوّناً آخر
+"{0} is filled in by the system (advances, loans, overtime ...); choose another component",{0} يملؤه النظام تلقائياً (السلف، القروض، العمل الإضافي...)؛ اختر مكوّناً آخر
 {0} must be a template for {1},يجب أن يكون {0} نموذجاً لـ{1}
 {0} of {1} with your salary: {2},{0} بمبلغ {1} مع راتبك: {2}
 {0} of {1}: last working day {2},{0} للموظف {1}: آخر يوم عمل {2}
@@ -13841,7 +13841,7 @@ Show as,العرض كـ
 Bars,أعمدة
 Add a second value to draw it as a line over the bars.,أضف قيمة ثانية لرسمها خطاً فوق الأعمدة.
 Ready Dashboards,اللوحات الجاهزة
-Saved Charts,المخططات المحفوظة
+Saved Charts,الرسوم البيانية المحفوظة
 "0 means this row references a base item: non-empty fields override it, empty fields mean no opinion. 1 means a full item the layer added, rendered as it stands.",القيمة 0 تعني أن هذا الصف يشير إلى عنصر أساسي: الحقول غير الفارغة تتجاوز قيمه، والحقول الفارغة تعني عدم التغيير. القيمة 1 تعني عنصراً كاملاً أضافته هذه الطبقة ويُعرض كما هو.
 3D Model,نموذج ثلاثي الأبعاد
 <b>This Print Format was created from older version of Print Designer.</b>,<b>أُنشئ تنسيق الطباعة هذا بإصدار أقدم من مصمم الطباعة.</b>
@@ -13944,7 +13944,7 @@ Bulk Transaction,معاملات جماعية
 By,بواسطة
 CAD File,ملف CAD
 CRM Availability,حالة التوفر في CRM
-CRM Availability Changed By,غيّر حالة التوفر في CRM
+CRM Availability Changed By,تغيير حالة التوفر في CRM بواسطة
 CRM Availability Changed On,تاريخ تغيير حالة التوفر في CRM
 CRM Hidden Field Defaults,القيم الافتراضية للحقول المخفية في CRM
 CRM Published,منشور في CRM
@@ -14672,7 +14672,7 @@ Accounting Dimensions ,الأبعاد المحاسبية
 Accounting Entry for {0}: {1} can only be made in currency: {2},القيد المحاسبي لـ{0}: {1} لا يكون إلا بالعملة: {2}
 Accumulated Depreciation as on,الإهلاك المتراكم كما في
 Action if Quality Inspection is not submitted,الإجراء إذا لم يُعتمد فحص الجودة
-Actual End Date (via Timesheet),تاريخ الإنتهاء الفعلي (عبر سجل الوقت)
+Actual End Date (via Timesheet),تاريخ الانتهاء الفعلي (عبر سجل الوقت)
 Actual Start Date (via Timesheet),تاريخ البدء الفعلي (عبر سجل الوقت)
 Actual Time in Hours (via Timesheet),الوقت الفعلي بالساعات (عبر سجل الوقت)
 Add Card to Dashboard,أضف البطاقة إلى لوحة المعلومات
@@ -14817,9 +14817,9 @@ Create Inter Company Journal Entry,إنشاء قيد يومية بين الشر�
 Create Payment Entry for Consolidated POS Invoices.,إنشاء سند دفع لفواتير نقطة البيع المجمعة.
 Create Sales Orders to help you plan your work and deliver on-time,أنشئ أوامر بيع تساعدك في تخطيط عملك والتسليم في الموعد
 Create a Stock Closing Entry for the entire company with To Date as {0} before submitting the Period Closing Voucher.,أنشئ قيد إقفال المخزون للشركة كلها بتاريخ نهاية {0} قبل اعتماد قيد إقفال الفترة.
-Creating Delivery Note ...,جارٍ إنشاء إذن التسليم ...
+Creating Delivery Note ...,جارٍ إنشاء إذن التسليم...
 Creating Opening Stock Entry...,جارٍ إنشاء حركة المخزون الافتتاحي...
-Creating Purchase Receipt ...,جارٍ إنشاء إيصال الاستلام ...
+Creating Purchase Receipt ...,جارٍ إنشاء إيصال الاستلام...
 "Credit Note will update it's own outstanding amount, even if 'Return Against' is specified.",يحدّث الإشعار الدائن مبلغه المستحق الخاص به، حتى عند تحديد «مرتجع مقابل».
 Credit Note {0} has been created automatically,تم إنشاء الإشعار الدائن {0} تلقائياً
 Cross Listing of Item in multiple groups,إدراج الصنف في مجموعات متعددة
@@ -15100,7 +15100,7 @@ Note: Payment Entry will not be created since 'Cash or Bank Account' was not spe
 "On expanding a row in the Items to Manufacture table, you'll see an option to 'Include Exploded Items'. Ticking this includes raw materials of the sub-assembly items in the production process.",عند توسيع صف في جدول «الأصناف المراد تصنيعها» يظهر خيار «تضمين الأصناف المفصّلة». تحديده يضمّن المواد الخام لأصناف التجميع الفرعي في عملية الإنتاج.
 "On submit of a Manufacture / Repack entry, map the raw material serial / batch nos that were not mapped in draft to the finished goods, in order",عند اعتماد قيد تصنيع / إعادة تعبئة، تُربط بالترتيب الأرقام التسلسلية / أرقام الدفعات للمواد الخام التي لم تُربط في المسودة بالمنتجات النهائية
 "Once submitted, submittable documents cannot be changed. They can only be Cancelled and Amended.",بعد الاعتماد لا يمكن تغيير المستندات القابلة للاعتماد. يمكن فقط إلغاؤها وتعديلها.
-Only 'Payment Entries' made against this advance account are supported.,المدعوم فقط «سندات الدفع» المنشأة مقابل حساب الدفعات المقدمة هذا.
+Only 'Payment Entries' made against this advance account are supported.,يُدعم فقط «سندات الدفع» المنشأة مقابل حساب الدفعات المقدمة هذا.
 Only Value available for Payment Entry,القيمة الوحيدة المتاحة لسند الدفع
 Only show Items from these Item Groups,عرض الأصناف من مجموعات الأصناف هذه فقط
 Only standard DocTypes are allowed to be customized from Customize Form.,لا يُسمح بالتخصيص من «تخصيص النموذج» إلا لأنواع المستندات القياسية.
@@ -15670,11 +15670,11 @@ Consider for Tax Withholding,مراعاته في الاستقطاع الضريب
 Consider for Tax Withholding ,مراعاته في الاستقطاع الضريبي 
 Could not detect the Company for updating Bank Accounts,تعذّر تحديد الشركة لتحديث الحسابات البنكية
 Create Pick List,إنشاء قائمة التقاط
-Creating Packing Slip ...,جارٍ إنشاء قائمة التعبئة ...
-Creating Purchase Invoices ...,جارٍ إنشاء فواتير المشتريات ...
-Creating Subcontracting Inward Order ...,جارٍ إنشاء أمر التصنيع الوارد ...
-Creating Subcontracting Order ...,جارٍ إنشاء أمر التصنيع الخارجي ...
-Creating Subcontracting Receipt ...,جارٍ إنشاء إيصال التصنيع الخارجي ...
+Creating Packing Slip ...,جارٍ إنشاء قائمة التعبئة...
+Creating Purchase Invoices ...,جارٍ إنشاء فواتير المشتريات...
+Creating Subcontracting Inward Order ...,جارٍ إنشاء أمر التصنيع الوارد...
+Creating Subcontracting Order ...,جارٍ إنشاء أمر التصنيع الخارجي...
+Creating Subcontracting Receipt ...,جارٍ إنشاء إيصال التصنيع الخارجي...
 Default Holiday List,قائمة العطلات الافتراضية
 Default Payment Terms Template,قالب شروط الدفع الافتراضي
 Default Unit of Measure for Variant '{0}' must be same as in Template '{1}',يجب أن تكون وحدة القياس الافتراضية للمتغير '{0}' هي نفسها في القالب '{1}'
@@ -15728,8 +15728,8 @@ Limit timeslot for Stock Reposting,تحديد فترة زمنية لإعادة �
 Make Purchase Invoice,إنشاء فاتورة مشتريات
 Make Subcontracting PO,إنشاء أمر شراء للتصنيع الخارجي
 Map Raw Materials to Finished Goods,ربط المواد الخام بالمنتجات النهائية
-Mapping Subcontracting Inward Order ...,جارٍ ربط أمر التصنيع الوارد ...
-Mapping Subcontracting Order ...,جارٍ ربط أمر التصنيع الخارجي ...
+Mapping Subcontracting Inward Order ...,جارٍ ربط أمر التصنيع الوارد...
+Mapping Subcontracting Order ...,جارٍ ربط أمر التصنيع الخارجي...
 Material Requests for which Supplier Quotations are not created,طلبات مواد لم تُنشأ لها عروض أسعار موردين
 Material Transferred for Subcontract,المواد المنقولة للتصنيع الخارجي
 Multiple POS Opening Entry,أكثر من قيد فتح لنقطة البيع
@@ -16249,7 +16249,7 @@ Bypass Two Factor Auth for users who login from restricted IP Address,تجاوز
 Call To Action URL,رابط زر الدعوة لاتخاذ إجراء
 Cancel At End Of Period,الإلغاء في نهاية الفترة
 Capacity Planning For (Days),تخطيط الطاقة الإنتاجية لـ(أيام)
-Capital Work In Progress Account,حساب الأعمال الرأسمالية تحت التنفيذ
+Capital Work In Progress Account,حساب أعمال رأسمالية قيد التنفيذ
 Carry Forward Communication and Comments,نقل المراسلات والتعليقات
 Check if it is a hydroponic unit,حدّد إذا كانت وحدة زراعة مائية
 Check if material transfer entry is not required,حدّد إذا كان قيد نقل المواد غير مطلوب
@@ -16405,7 +16405,7 @@ If enabled then system won't apply the pricing rule on the delivery note which w
 "If enabled, the system will use the moving average valuation method to calculate the valuation rate for the batched items and will not consider the individual batch-wise incoming rate.",في حالة التمكين، سيستخدم النظام طريقة التقييم بالمتوسط المتحرك لحساب سعر التقييم للأصناف المجمعة ولن يأخذ في الاعتبار المعدل الوارد لكل دفعة على حدة.
 "If enabled, user will be alerted before resetting posting date to current date in relevant transactions",في حال تفعيل هذه الخاصية، سيتم تنبيه المستخدم قبل إعادة تعيين تاريخ الترحيل إلى التاريخ الحالي في المعاملات ذات الصلة.
 "If enabled, users who login from Restricted IP Address, won't be prompted for Two Factor Auth",عند التفعيل، لن تُطلب المصادقة الثنائية من المستخدمين الذين يسجلون الدخول من عنوان IP مقيّد
-If Income or Expense,إيراد أم مصروف
+If Income or Expense,إذا كان إيراداً أو مصروفاً
 "If item is a variant of another item then description, image, pricing, taxes etc will be set from the template unless explicitly specified",إذا كان الصنف متغيراً من صنف آخر، يؤخذ الوصف والصورة والتسعير والضرائب وغيرها من القالب ما لم تُحدَّد صراحةً
 If more than one package of the same type (for print),إذا وُجد أكثر من طرد من النوع نفسه (للطباعة)
 If non standard port (e.g. 587),إذا كان المنفذ غير قياسي (مثال: 587)
@@ -16480,7 +16480,7 @@ Manufacturer Part Number,رقم القطعة لدى الشركة المصنِّ�
 Map route parameters into form variables. Example <code>/project/&lt;name&gt;</code>,ربط معاملات المسار بمتغيرات النموذج. مثال <code>/project/&lt;name&gt;</code>
 Material Transferred for Manufacture,المواد المنقولة للتصنيع
 Max Zip Extract Size (MB),الحد الأقصى لحجم استخراج ZIP (ميغابايت)
-Mention if non-standard receivable account applicable,اذكره إذا كان حساب ذمم مدينة غير القياسي منطبقاً
+Mention if non-standard receivable account applicable,اذكر ذلك إذا كان ينطبق حساب ذمم مدينة غير قياسي
 Message to show,الرسالة المراد عرضها
 Messaging CRM Campaign,حملة رسائل CRM
 Module HTML,HTML الوحدة
@@ -16516,7 +16516,7 @@ On Previous Row Amount,على مبلغ الصف السابق
 "Once set, this invoice will be on hold till the set date",بعد تحديده، تبقى هذه الفاتورة معلَّقة حتى التاريخ المحدد
 Only Deduct Tax On Excess Amount ,استقطاع الضريبة على المبلغ الزائد فقط 
 Only Include Allocated Payments,تضمين المدفوعات المخصصة فقط
-Only leaf nodes are allowed in transaction,يُسمح في المعاملات بالعناصر الطرفية فقط (غير المجموعات)
+Only leaf nodes are allowed in transaction,يُسمح في المعاملات بالعقد الطرفية فقط (غير المجموعات)
 Only Send Records Updated in Last X Hours,إرسال السجلات المحدَّثة في آخر X ساعة فقط
 Only show Customer of these Customer Groups,عرض العملاء من مجموعات العملاء هذه فقط
 Opening & Closing,الافتتاح والإقفال
@@ -16706,7 +16706,7 @@ Smallest circulating fraction unit (coin). For e.g. 1 cent for USD and it should
 Smallest Currency Fraction Value,أصغر قيمة لكسر العملة
 Starting location from left edge,موضع البداية من الحافة اليسرى
 Starting position from top edge,موضع البداية من الحافة العلوية
-Stock Adjustment,تعديل المخزون
+Stock Adjustment,تسوية المخزون
 Stock Ledger Invariant Check,فحص ثبات دفتر المخزون
 Stock Qty vs Serial No Count,كمية المخزون مقابل عدد الأرقام التسلسلية
 "string value, i.e. group",قيمة نصية، مثل group
@@ -16760,7 +16760,7 @@ Total Taxes and Charges (Company Currency),إجمالي الضرائب والر�
 Transaction for which tax is withheld,المعاملة التي تُستقطع عنها الضريبة
 Transaction from which tax is withheld,المعاملة التي تُستقطع منها الضريبة
 Transfer Extra Raw Materials to WIP (%),نقل مواد خام إضافية إلى الإنتاج تحت التشغيل (%)
-Transit,بالطريق
+Transit,العبور
 Trial Period Start Date,تاريخ بدء الفترة التجريبية
 "Trigger on valid methods like ""before_insert"", ""after_update"", etc (will depend on the DocType selected)","التشغيل عند دوال صالحة مثل ""before_insert"" و""after_update"" إلخ (حسب نوع المستند المحدد)"
 Truncates 'Remarks' column to set character length,يقتطع عمود «الملاحظات» إلى طول الأحرف المحدد
@@ -17127,7 +17127,7 @@ Create a variant with the template image.,إنشاء متغير بصورة ال�
 Create POS Opening Entry,إنشاء قيد فتح نقطة البيع
 Created Custom Field {0} in {1},أُنشئ الحقل المخصص {0} في {1}
 Created {0} scorecards for {1} between:,أُنشئت {0} بطاقة أداء لـ{1} بين:
-Creating Purchase Order ...,جارٍ إنشاء أمر الشراء ...
+Creating Purchase Order ...,جارٍ إنشاء أمر الشراء...
 Creating {} out of {} {},جارٍ إنشاء {} من {} {}
 Credit limit has been crossed for customer {0} ({1}/{2}),تم تجاوز الحد الائتماني للعميل {0} ({1}/{2})
 Credit limit is already defined for the Company {0},الحد الائتماني محدد مسبقاً للشركة {0}
@@ -17211,7 +17211,7 @@ Failed to get method {0} with {1},فشل الحصول على الدالة {0} م
 Failed to post depreciation entries,فشل ترحيل قيود الإهلاك
 Failed to retrieve the list of IMAP folders from the server. Please ensure the mailbox is accessible and the account has permission to list folders.,فشل في استرداد قائمة مجلدات IMAP من الخادم. يرجى التأكد من أن صندوق البريد يمكن الوصول إليه وأن الحساب لديه صلاحية لعرض المجلدات.
 Fetching default Global Search documents.,جارٍ جلب مستندات البحث الشامل الافتراضية.
-Fetching exchange rates ...,جارٍ جلب أسعار الصرف ...
+Fetching exchange rates ...,جارٍ جلب أسعار الصرف...
 Fetching fields from {0}...,جارٍ جلب الحقول من {0}...
 FG Items to Make,أصناف نهائية للتصنيع
 "Field ""route"" is mandatory for Web Views","الحقل ""route"" إلزامي لعروض الويب"
@@ -17354,7 +17354,7 @@ Last Stock Transaction for item {0} under warehouse {1} was on {2}.,كانت آ�
 Lead {0} has been added to prospect {1}.,أُضيف العميل المحتمل {0} إلى العميل المرتقب {1}.
 Leave as 0 to allow zero valuation rate.,اتركه 0 للسماح بسعر تقييم صفري.
 Let's avoid repeated words and characters,لنتجنب الكلمات والأحرف المكررة
-"Level 0 is for document level permissions, higher levels for field level permissions.",المستوى 0 مخصص لصلاحيات مستوى المستند ، ومستويات أعلى للصلاحيات على مستوى الحقل.
+"Level 0 is for document level permissions, higher levels for field level permissions.",المستوى 0 مخصص لصلاحيات مستوى المستند، ومستويات أعلى للصلاحيات على مستوى الحقل.
 Liked by {0} people,أعجب {0} شخصاً
 Link a new bank account,ربط حساب بنكي جديد
 Linking to Customer Failed. Please try again.,فشل الربط بالعميل. يرجى المحاولة مرة أخرى.
@@ -18338,4 +18338,130 @@ Enter the closing balance you see in your bank statement for {0} as of the {1},�
 Closing (statement),الختامي (حسب الكشف)
 Closing (system),الختامي (حسب النظام)
 Sales Commission,عمولة المبيعات
-"Commission on {0} invoices",عمولة على {0} فاتورة
+Commission on {0} invoices,عمولة على {0} فاتورة
+The weekly days off here ({0}) differ from the holiday list {1} of {2} ({3}). Leave is counted with the holiday list; shifts on the default weekly off now also take the list's days off.,أيام العطلة الأسبوعية هنا ({0}) تختلف عن قائمة العطلات {1} للشركة {2} ({3}). تُحسب الإجازات حسب قائمة العطلات، والورديات التي تتبع العطلة الأسبوعية الافتراضية تأخذ الآن أيام عطلة القائمة أيضاً.
+These lines have a price of zero:,هذه البنود سعرها صفر:
+The invoice cannot be submitted like this: set the price, or a 100% discount to give the item free.,لا يمكن اعتماد الفاتورة هكذا: أدخل السعر، أو خصماً 100% إذا كان الصنف مجانياً.
+Set the price, or a 100% discount to give the item free.,أدخل السعر، أو خصماً 100% إذا كان الصنف مجانياً.
+Zero price,سعر صفر
+Filled from the job opening.,تُعبّأ من الوظيفة الشاغرة.
+These fields held another company's records and were emptied: {0},هذه الحقول كانت تحتوي على سجلات شركة أخرى وتم تفريغها: {0}
+Opportunities,الفرص
+Sales Stage,مرحلة البيع
+"Account {0} is set for company {1}. Company {2} has no account named ""{3}"": create it, or choose the account for this company.","الحساب {0} مُعيَّن للشركة {1}. لا يوجد لدى الشركة {2} حساب باسم ""{3}"": أنشئه، أو اختر الحساب الخاص بهذه الشركة."
+Company {0} has no chart of accounts yet,لا يوجد دليل حسابات للشركة {0} بعد
+"Set the price, or a 100% discount to give the item free.",حدّد السعر، أو خصمًا بنسبة 100% لإعطاء الصنف مجانًا.
+"The invoice cannot be submitted like this: set the price, or a 100% discount to give the item free.",لا يمكن اعتماد الفاتورة بهذا الشكل: حدّد السعر، أو خصمًا بنسبة 100% لإعطاء الصنف مجانًا.
+Are you sure you want to delete all {0} rows?,هل أنت متأكد من رغبتك في حذف جميع الصفوف {0}؟
+"As the field {0} is enabled, the field {1} is mandatory.",نظرًا لتمكين الحقل {0}، يكون الحقل {1} إلزاميًا.
+"As there are sufficient raw materials, Material Request is not required for Warehouse {0}.",نظرًا لوجود مواد خام كافية، فإن طلب المواد ليس مطلوبًا للمستودع {0}.
+"Available quantity is {0}, you need {1}",الكمية المتاحة هي {0}، تحتاج إلى {1}
+"Couldn't save, please check the data you have entered",تعذر الحفظ، يرجى التحقق من البيانات التي أدخلتها
+Creating Return of Components ...,جارٍ إنشاء مرتجع المكونات...
+Creating Sales Invoices ...,جارٍ إنشاء فواتير المبيعات...
+Export all {0} rows?,تصدير جميع الصفوف {0}؟
+"Failed to decode token, please provide a valid base64-encoded token.",فشل فك الرمز المميز، يرجى تقديم رمز مميز صالح بترميز base64.
+"For more information, {0}.",لمزيد من المعلومات، {0}.
+"Google Calendar - Could not create Calendar for {0}, error code {1}.",تقويم Google - تعذر إنشاء تقويم لـ {0}، رمز الخطأ {1}.
+"Google Calendar - Could not insert contact in Google Contacts {0}, error code {1}.",تقويم Google - تعذر إدراج جهة اتصال في جهات اتصال Google {0}، رمز الخطأ {1}.
+"Google Calendar - Could not insert event in Google Calendar {0}, error code {1}.",تقويم Google - تعذر إدراج حدث في تقويم Google {0}، رمز الخطأ {1}.
+"Google Contacts - Could not sync contacts from Google Contacts {0}, error code {1}.",جهات اتصال Google - تعذر مزامنة جهات الاتصال من جهات اتصال Google {0}، رمز الخطأ {1}.
+"Google Contacts - Could not update contact in Google Contacts {0}, error code {1}.",جهات اتصال Google - تعذر تحديث جهة الاتصال في جهات اتصال Google {0}، رمز الخطأ {1}.
+"If blank, parent Warehouse Account or company default will be considered in transactions",إذا كان فارغًا، فسيتم اعتبار حساب المستودع الأصلي أو حساب الشركة الافتراضي في المعاملات
+"Importing {0} of {1}, {2}",استيراد {0} من {1}، {2}
+Loading import file...,جارٍ تحميل ملف الاستيراد...
+Moving up in tree ...,الارتقاء في الشجرة...
+"Note: For best results,  images must be of the same size and width must be greater than height.",ملاحظة: للحصول على أفضل النتائج، يجب أن تكون الصور بنفس الحجم والعرض يجب أن يكون أكبر من الارتفاع.
+Rebuilding BTree for period ...,إعادة بناء شجرة B للفترة...
+"Renaming it is only allowed via parent company {0}, to avoid mismatch.",يُسمح بإعادة تسميته فقط عبر الشركة الأم {0}، لتجنب عدم التطابق.
+"Report has no numeric fields, please change the Report Name",لا يحتوي التقرير على حقول رقمية، يُرجى تغيير اسم التقرير
+"Search by customer name, phone, email.",البحث عن طريق اسم العميل، الهاتف، البريد الإلكتروني.
+"Sorry, this coupon code is no longer valid",عذرًا، رمز القسيمة هذا لم يعد صالحًا
+"Sorry, this coupon code's validity has expired",عذرًا، لقد انتهت صلاحية رمز القسيمة
+"Sorry, this coupon code's validity has not started",عذرًا، لم تبدأ صلاحية رمز القسيمة
+"Style represents the button color: Success - Green, Danger - Red, Inverse - Black, Primary - Dark Blue, Info - Light Blue, Warning - Orange",النمط يمثل لون الزر: النجاح-الأخضر، الخطر-الأحمر، معكوس-الأسود، أساسي-أزرق داكن، المعلومات-أزرق سماوي، تحذير-برتقالي
+"The meta description is an HTML attribute that provides a brief summary of a web page. Search engines such as Google often display the meta description in search results, which can influence click-through rates.",وصف التعريف هو سمة HTML توفر ملخصًا موجزًا لصفحة الويب. غالبًا ما تعرض محركات البحث مثل Google الوصف التعريفي في نتائج البحث، مما قد يؤثر على معدلات النقر.
+"The meta image is unique image representing the content of the page. Images for this Card should be at least 280px in width, and at least 150px in height.",الصورة الوصفية هي صورة فريدة تمثل محتوى الصفحة. يجب ألا يقل عرض صور هذه البطاقة عن 280 بكسل، وأن لا يقل ارتفاعها عن 150 بكسل.
+"This will be automatically generated when you publish the page, you can also enter a route yourself if you wish",سيتم إنشاء هذا تلقائيًا عند نشر الصفحة، ويمكنك أيضًا إدخال مسار بنفسك إذا كنت ترغب في ذلك
+To enable it follow the instructions in the following link: {0},لتمكينه، اتبع التعليمات في الرابط التالي: {0}
+Updating Variants...,جارٍ تحديث المتغيرات...
+"When enabled this will allow guests to upload files to your application, You can enable this if you wish to collect files from user without having them to log in, for example in job applications web form.",عند التمكين، سيتيح ذلك للضيوف تحميل الملفات إلى التطبيق الخاص بك، يمكنك تمكين هذا إذا كنت ترغب في جمع الملفات من المستخدم دون الحاجة إلى تسجيل الدخول، على سبيل المثال في نموذج ويب تطبيقات الوظائف.
+"{0}: Failed to attach new recurring document. To enable attaching document in the auto repeat notification email, enable {1} in Print Settings",{0}: فشل في إرفاق وثيقة متكررة جديدة. لتمكين إرفاق المستند في رسالة البريد الإلكتروني لإشعار التكرار التلقائي، قم بتمكين {1} في إعدادات الطباعة
+Annual Budget for Account {0} against {1} {2} is {3}. It will be collectively ({4}) exceeded by {5},الميزانية السنوية للحساب {0} مقابل {1} و{2} هي {3}. وسيتم تجاوزها مجتمعةً ({4}) بمقدار {5}.
+Research & Development,البحث والتطوير
+Row #{idx}: {from_warehouse_field} and {to_warehouse_field} cannot be same.,الصف #{idx}: {from_warehouse_field} و{to_warehouse_field} لا يمكن أن يكونا متطابقين.
+"Spending for Account {0} ({1}) between {2} and {3} has already exceeded the new allocated budget. Spent: {4}, Budget: {5}",تجاوز الإنفاق على الحساب {0} ({1}) بين {2} و{3} الميزانية المخصصة الجديدة. المبلغ المنفق: {4}، الميزانية: {5}
+You have enabled {0} and {1} in {2}. This can lead to prices from the default price list being inserted in the transaction price list.,لقد قمت بتفعيل {0} و{1} في {2}. قد يؤدي هذا إلى إدراج أسعار من قائمة الأسعار الافتراضية في قائمة أسعار المعاملة.
+You have enabled {0} and {1} in {2}. This can lead to prices from the default price list being inserted into the transaction price list.,لقد قمت بتفعيل {0} و{1} في {2}. قد يؤدي هذا إلى إدراج أسعار من قائمة الأسعار الافتراضية في قائمة أسعار المعاملة.
+{0} and {1} are mandatory,{0} و{1} إلزاميان
+Automatically Create New Batch,إنشاء دفعة جديدة تلقائيًا
+Older backups will be automatically deleted,سيتم حذف النسخ الاحتياطية القديمة تلقائيًا
+This email is autogenerated,تم إنشاء هذا البريد الإلكتروني تلقائيًا
+Unable to find exchange rate for {0} to {1} for key date {2}. Please create a Currency Exchange record manually,تعذر العثور على سعر الصرف من {0} إلى {1} لتاريخ المفتاح {2}. يرجى إنشاء سجل صرف العملات يدويًا
+Unable to find exchange rate for {0} to {1} for key date {2}. Please create a Currency Exchange record manually.,تعذر العثور على سعر الصرف من {0} إلى {1} لتاريخ المفتاح {2}. يرجى إنشاء سجل صرف العملات يدويًا.
+"Defines when payment is due (e.g. Net 30, 50% advance). Applied automatically on invoices for this customer.",يحدد موعد استحقاق الدفع (مثل الاستحقاق خلال 30 يومًا، أو دفعة مقدمة بنسبة 50%). يُطبَّق تلقائيًا على الفواتير الخاصة بهذا العميل.
+"Blocks new transactions and further accounting entries on this customer's account. Only users with the role set in Company's ""Roles Allowed to Set and Edit Frozen Account Entries"" can transact.",يمنع المعاملات الجديدة والقيود المحاسبية الإضافية على حساب هذا العميل. ولا يمكن إجراء المعاملات إلا للمستخدمين الذين لديهم الدور المحدد في «الأدوار المسموح لها بتعيين وتعديل قيود الحسابات المجمّدة» في إعدادات الشركة.
+Override the default payable / advance accounts on a per-company basis. Leave blank to use each company's defaults from Company settings.,تجاوز الحسابات الافتراضية للذمم الدائنة / الدفعات المقدمة لكل شركة على حدة. اتركه فارغًا لاستخدام الإعدادات الافتراضية لكل شركة من إعدادات الشركة.
+Enable to reserve a small sample from each batch for any analysis arising ahead,فعّل هذا الخيار لحجز عينة صغيرة من كل دفعة لأي تحليل قد يلزم لاحقاً
+Maximum sample quantity that can be retained,الحد الأقصى لكمية العينة التي يمكن الاحتفاظ بها
+Enable if a vendor manufactures this item for you. You can choose to provide them raw materials using the default BOM.,فعّل هذا الخيار إذا كان المورد يصنّع هذا الصنف لصالحك. يمكنك اختيار تزويده بالمواد الخام باستخدام قائمة المواد الافتراضية.
+Default Manufacturer Part No,رقم قطعة الشركة المصنعة الافتراضي
+"Discounts to be applied in sequential ranges like buy 1 get 1, buy 2 get 2, buy 3 get 3 and so on",تُطبَّق الخصومات على شرائح متسلسلة مثل: اشترِ 1 واحصل على 1، اشترِ 2 واحصل على 2، اشترِ 3 واحصل على 3، وهكذا.
+"If enabled, then system will only validate the pricing rule and not apply automatically. User has to manually set the discount percentage / margin / free items to validate the pricing rule",عند التفعيل، سيتحقق النظام من صحة قاعدة التسعير فقط ولن يطبّقها تلقائيًا. يجب على المستخدم تحديد نسبة الخصم/الهامش/الأصناف المجانية يدويًا للتحقق من صحة قاعدة التسعير.
+Enable this checkbox even if you want to set the zero priority,فعّل هذا الخيار حتى إذا أردت تعيين الأولوية إلى الصفر
+Serial and Batch Bundle,حزمة الأرقام التسلسلية والدفعات
+Sales Invoice Payment,مدفوعات فاتورة المبيعات
+Unpaid and Discounted,غير مدفوع ومخصوم
+% Billed,% المفوتر
+% Received,% المستلم
+Select Dispatch Address ,اختر عنوان الإرسال
+Asset Disposal,استبعاد الأصول
+Total Incoming Value (Receipt),إجمالي القيمة الواردة (الاستلام)
+Date of Incorporation,تاريخ التأسيس القانوني
+Billing,الفوترة
+Rented,مستأجر
+Confirmation Date,تاريخ التثبيت
+Discard Changes and Load New Invoice,تجاهل التغييرات وتحميل فاتورة جديدة
+Validate Stock on Save,التحقق من المخزون عند الحفظ
+Print Receipt on Order Complete,طباعة الإيصال عند إتمام الطلب
+Use Batch-wise Valuation,استخدام التقييم على أساس الدفعات
+Must be Whole Number,يجب أن يكون عدداً صحيحاً
+"If the user has any role checked, then the user becomes a ""System User"". ""System User"" has access to the desktop",إذا حُدد للمستخدم أي دور، يصبح «مستخدم نظام». ولمستخدم النظام حق الوصول إلى المكتب
+Gross Margin %,هامش الربح الإجمالي %
+Dependent Tasks,المهام المعتمد عليها
+Communication Logs,سجلات المراسلات
+FIFO Queue vs Qty After Transaction Comparison,مقارنة قائمة FIFO بالكمية بعد المعاملة
+Incorrect Balance Qty After Transaction,كمية الرصيد غير الصحيحة بعد المعاملة
+New Lead (Last 1 Month),عملاء محتملون جدد (آخر شهر)
+Make Merge Log,إنشاء سجل الدمج
+Monthly Total Work Order,إجمالي أوامر العمل الشهرية
+Ongoing Job Card,بطاقات العمل الجارية
+Monthly Quality Inspection,فحوصات الجودة الشهرية
+All Locations,جميع المواقع
+Data (MB),البيانات (ميغابايت)
+Index (MB),الفهرس (ميغابايت)
+Hook name,اسم الخطّاف
+Rest,الباقي
+Insights,إنسايتس
+PersBuilds Web Build,تجميعة من موقع PersBuilds
+Build Name,اسم التجميعة
+Website User,مستخدم الموقع
+Estimated Power (W),الاستهلاك التقديري (واط)
+Total (LYD),الإجمالي (د.ل)
+Total (USD),الإجمالي (دولار)
+Usage,الاستخدام
+PersBuilds Web Payment,دفعة من موقع PersBuilds
+Amount (LYD),المبلغ (د.ل)
+Deposit Only,عربون فقط
+Test Mode (no real money),وضع تجريبي (بلا أموال حقيقية)
+Web Build,تجميعة الموقع
+Gateway,بوابة الدفع
+Gateway Invoice No,رقم الفاتورة لدى البوابة
+Process ID,رقم العملية المؤقت
+Payer Mobile,هاتف الدافع
+Transfer Receipt,إيصال الحوالة
+Paid On,تاريخ الدفع
+Gateway Log,سجل بوابة الدفع
+Awaiting Receipt,بانتظار الإيصال
+Awaiting Check,بانتظار التحقق
+Pay On Delivery,الدفع عند الاستلام

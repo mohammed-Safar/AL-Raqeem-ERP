@@ -1,0 +1,31 @@
+2-36	Set Accepted Warehouse	تعيين مستودع المقبول	تعيين مستودع المقبولات	awkward phrasing; consistent with Rejected Warehouse term
+2-39	Clearance Date	تاريخ التسوية	تاريخ المقاصة	bank clearance, not reconciliation; avoids clash with Reconciliation=تسوية
+2-44	Select Dispatch Address 	حدد عنوان الإرسال 	اختر عنوان الإرسال	inconsistent verb with sibling address fields (اختر) and stray trailing space
+2-63	Expense Head	رأس المصروفات	حساب المصروفات	"رأس المصروفات" is a literal translation; the field is an expense account
+2-127	Contra Entry	قيد عكسي	قيد مقاصة	"عكسي" means reversal, which is a different entry type (Reversal Of)
+2-131	Asset Disposal	التخلص من الأصول	استبعاد الأصل	inconsistent with استبعاد used for Disposal elsewhere in batch
+2-166	If Income or Expense	إيراد أم مصروف	إذا كان إيراداً أو مصروفاً	help text must be a conditional phrase, current reads as a question
+2-212	Total Incoming Value (Receipt)	إجمالي القيمة الواردة (الإيصال)	إجمالي القيمة الواردة (الاستلام)	Receipt here is the act of receiving, not a document
+2-237	Rates	النسب	الأسعار	glossary Rate = السعر (not percentages)
+2-293	Transit	بالطريق	العبور	inconsistent with العبور used for In-Transit warehouse in the same doctype
+2-300	Root Type	الالنوع الجذريي	النوع الجذري	spelling error (doubled letters)
+2-332	Stock Adjustment	تعديل المخزون	تسوية المخزون	inconsistent with Stock Adjustment Account = تسوية المخزون (2-440)
+2-353	Date of Incorporation	تاريخ التأسيس	تاريخ التأسيس القانوني	identical to Date of Establishment (2-350); fields indistinguishable
+2-388	Only 'Payment Entries' made against this advance account are supported.	المدعوم فقط «سندات الدفع» المنشأة مقابل حساب الدفعات المقدمة هذا.	يُدعم فقط «سندات الدفع» المنشأة مقابل حساب الدفعات المقدمة هذا.	ungrammatical sentence structure
+2-396	Submit ERR Journals?	اعتماد قيود إعادة تقييم العملات؟	اعتماد قيود إعادة تقييم سعر الصرف؟	inconsistent with Exchange Rate Revaluation term
+2-406	Capital Work In Progress Account	حساب الأعمال الرأسمالية تحت التنفيذ	حساب أعمال رأسمالية قيد التنفيذ	inconsistent with account type option 2-315 (قيد التنفيذ)
+2-456	Lead Owner	مالك العميل المحتمل	مسؤول العميل المحتمل	glossary: Lead Owner = مسؤول العميل المحتمل
+2-498	Opportunity Owner	مالك الفرصة	مسؤول الفرصة	consistency with glossary Lead Owner/Deal Owner = مسؤول
+2-485	Qualified By	أهّله	تم التأهيل بواسطة	verb form is not a proper field label
+2-528	Billing	الفواتير	الفوترة	inconsistent with عنوان الفوترة used elsewhere (billing = الفوترة)
+2-554	Left	يسار	غادر	wrong meaning: employee status Left, not the direction left
+2-578	Rented	مؤجر	مستأجر	مؤجر = leased out; employee's accommodation is rented (مستأجر)
+2-639	Confirmation Date	تاريخ التأكيد	تاريخ التثبيت	HR meaning: confirmation of employee after probation
+2-695	Finance Books	دفاتر التمويل	الدفاتر المالية	inconsistent with Default Finance Book = الدفتر المالي (2-375)
+2-719	Issue	مشكلة	صرف	asset movement purpose, not a problem/issue
+2-720	Receipt	الإيصال	استلام	asset movement purpose; action, not document
+2-740	Discard Changes and Load New Invoice	تجاهل التغييرات وقم بتحميل فاتورة جديدة	تجاهل التغييرات وتحميل فاتورة جديدة	mixed imperative/noun form; inconsistent with sibling option
+2-741	Validate Stock on Save	تحقق من صحة المخزون عند الحفظ	التحقق من المخزون عند الحفظ	label should be noun form, not imperative
+2-742	Print Receipt on Order Complete	اطبع الإيصال عند إتمام الطلب	طباعة الإيصال عند إتمام الطلب	label should be noun form, not imperative
+2-789	Use Batch-wise Valuation	استخدم التقييم على أساس الدفعات	استخدام التقييم على أساس الدفعات	label should be noun form for consistency
+2-799	Must be Whole Number	يجب أن يكون عدد صحيح	يجب أن يكون عدداً صحيحاً	grammar: predicate of يكون must be accusative

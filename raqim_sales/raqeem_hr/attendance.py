@@ -90,12 +90,18 @@ def shift_hours(shift) -> float:
 
 
 def day_types(employee: str, company: str, from_date, to_date, shift_of) -> dict:
-	"""{date: "Working Day" | "Weekly Off" | "Holiday"} for a date range."""
+	"""{date: "Working Day" | "Weekly Off" | "Holiday"} for a date range.
+	2026-11-24: a shift on the default weekly off also takes the holiday list's weekly days off (the list is what
+	leave counting uses; before, a list with Friday + Saturday and settings with only Friday made every Saturday
+	an absence)."""
 	holidays, _uncovered = holidays_between(employee, company, from_date, to_date, official_only=True)
+	all_days, _u = holidays_between(employee, company, from_date, to_date)
+	list_weekly_off = all_days - holidays
 	out = {}
 	for i in range(date_diff(to_date, from_date) + 1):
 		d = add_days(getdate(from_date), i)
-		if d.weekday() in weekly_off(shift_of(d)):
+		shift = shift_of(d)
+		if d.weekday() in weekly_off(shift) or (d in list_weekly_off and (not shift or cint(shift.use_default_weekly_off))):
 			out[d] = "Weekly Off"
 		elif d in holidays:
 			out[d] = "Holiday"
@@ -216,6 +222,10 @@ def process_employee(employee: str, from_date, to_date, now=None) -> dict:
 	drafts = set(frappe.get_all("Raqeem Attendance", filters={
 			"employee": employee, "docstatus": 0, "attendance_date": ["between", [from_date, to_date]]},
 		pluck="attendance_date"))
+	# 2026-11-24: absences were only marked with an Attendance Device ID; an employee whose check-ins arrive
+	# without one (added by hand / imported) counts as a fingerprint user too
+	uses_fingerprint = bool(logs) or bool(frappe.db.exists("Raqeem Checkin", {"employee": employee,
+		"time": [">=", datetime.datetime.combine(add_days(from_date, -60), datetime.time())]}))
 	used = set()
 	counts = {"created": 0, "replaced": 0, "absent": 0}
 	for i in range(date_diff(to_date, from_date) + 1):
@@ -236,7 +246,7 @@ def process_employee(employee: str, from_date, to_date, now=None) -> dict:
 		if values.status is None:  # no fingerprint
 			if leave:
 				values.status = "Half Day" if leave[1] else "On Leave"
-			elif types[d] == "Working Day" and cint(s.mark_absent) and emp.attendance_device_id:
+			elif types[d] == "Working Day" and cint(s.mark_absent) and (emp.attendance_device_id or uses_fingerprint):
 				values.status = "Absent"
 			else:
 				if old:  # e.g. the fingerprints were deleted: the automatic record goes

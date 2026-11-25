@@ -485,3 +485,33 @@
 	if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start);
 	else start();
 })();
+
+/* RAQEEM 2026-11-25: floating boxes (dock/button tooltips, dropdown menus, popovers, hover cards) at
+ * page zoom ≠ 100%. Frappe's place() measures the trigger in SCREEN px and writes them as top/left,
+ * but the box sits inside the zoomed <html>, so the zoom scales that position a second time:
+ * at 125% a dock tooltip landed off the right edge of the screen (user screenshot), at 80% too far
+ * left. place() always writes top/left and then data-side/data-align; right after (before paint)
+ * we divide its top/left by the zoom. ROLLBACK: delete this block. */
+(function () {
+	if (!window.MutationObserver || !document.body) return;
+	const mine = new WeakMap(); // the values this fix wrote, so its own write is not fixed again
+	const zoom = () => parseFloat(document.documentElement.style.zoom) || 1;
+	function fix(el) {
+		const z = zoom();
+		if (z === 1 || !el.hasAttribute("data-side") || !el.hasAttribute("data-align")) return;
+		const t = el.style.top, l = el.style.left;
+		if (!t.endsWith("px") || !l.endsWith("px")) return;
+		const last = mine.get(el);
+		if (last && last.t === t && last.l === l) return;
+		const nt = Math.round(parseFloat(t) / z) + "px", nl = Math.round(parseFloat(l) / z) + "px";
+		mine.set(el, { t: nt, l: nl });
+		el.style.top = nt;
+		el.style.left = nl;
+	}
+	new MutationObserver((list) => {
+		for (const m of list) {
+			if (m.type === "attributes") fix(m.target);
+			else m.addedNodes.forEach((n) => n.nodeType === 1 && fix(n));
+		}
+	}).observe(document.body, { subtree: true, childList: true, attributes: true, attributeFilter: ["style", "data-side"] });
+})();

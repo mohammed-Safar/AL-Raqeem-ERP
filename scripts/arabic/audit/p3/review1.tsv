@@ -1,0 +1,34 @@
+1-18	Defines when payment is due (e.g. Net 30, 50% advance). Applied automatically on invoices for this customer.	يحدد موعد استحقاق الدفع (مثل Net 30، أو دفعة مقدمة بنسبة 50%). يُطبَّق تلقائيًا على الفواتير الخاصة بهذا العميل.	يحدد موعد استحقاق الدفع (مثل الاستحقاق خلال 30 يومًا، أو دفعة مقدمة بنسبة 50%). يُطبَّق تلقائيًا على الفواتير الخاصة بهذا العميل.	Untranslated English example "Net 30"
+1-25	Address HTML	عنوان HTML	HTML العنوان	Inconsistent order vs other "HTML ..." labels
+1-26	Contact HTML	جهة الاتصال HTML	HTML جهة الاتصال	Inconsistent order vs other "HTML ..." labels
+1-54	Blocks new transactions and further accounting entries on this customer's account. Only users with the role set in Company's "Roles Allowed to Set and Edit Frozen Account Entries" can transact.	يمنع المعاملات الجديدة والقيود المحاسبية الإضافية على حساب هذا العميل. يمكن فقط للمستخدمين الذين لديهم الدور المحدد في "الأدوار المسموح لها بتعيين وتعديل قيود الحساب المجمدة" الخاص بالشركة إجراء المعاملات.	يمنع المعاملات الجديدة والقيود المحاسبية الإضافية على حساب هذا العميل. ولا يمكن إجراء المعاملات إلا للمستخدمين الذين لديهم الدور المحدد في «الأدوار المسموح لها بتعيين وتعديل قيود الحسابات المجمّدة» في إعدادات الشركة.	Inconsistent with 1-104 for the same setting name; awkward phrasing
+1-90	Override the default payable / advance accounts on a per-company basis. Leave blank to use each company's defaults from Company settings.	تجاوز الحسابات الافتراضية للدائنين / الدفعات المقدمة على أساس كل شركة. اتركه فارغًا لاستخدام الإعدادات الافتراضية لكل شركة من إعدادات الشركة.	تجاوز الحسابات الافتراضية للذمم الدائنة / الدفعات المقدمة لكل شركة على حدة. اتركه فارغًا لاستخدام الإعدادات الافتراضية لكل شركة من إعدادات الشركة.	"Payable accounts" are الذمم الدائنة not "الدائنين" (creditors)
+1-111	Release Date	تاريخ الإفراج	تاريخ رفع الحظر	"Release" of a supplier block; الإفراج is a legal/customs term
+1-203	Enable to reserve a small sample from each batch for any analysis arising ahead	قم بالتمكين لحجز عينة صغيرة من كل دفعة لأي تحليل قد ينشأ لاحقاً	فعّل هذا الخيار لحجز عينة صغيرة من كل دفعة لأي تحليل قد يلزم لاحقاً	Awkward machine phrasing "قم بالتمكين"
+1-204	Maximum sample quantity that can be retained	الحد الأقصى لعدد العينات التي يمكن الاحتفاظ بها	الحد الأقصى لكمية العينة التي يمكن الاحتفاظ بها	Quantity vs count mistranslation
+1-243	Enable if a vendor manufactures this item for you. You can choose to provide them raw materials using the default BOM.	قم بالتمكين إذا كان المورد يصنّع هذا الصنف لصالحك. يمكنك اختيار تزويده بالمواد الخام باستخدام قائمة المواد الافتراضية.	فعّل هذا الخيار إذا كان المورد يصنّع هذا الصنف لصالحك. يمكنك اختيار تزويده بالمواد الخام باستخدام قائمة المواد الافتراضية.	Awkward "قم بالتمكين"
+1-245	Default Manufacturer Part No	رقم الجزء الافتراضي للشركة المصنعة	رقم قطعة الشركة المصنعة الافتراضي	"Part" = قطعة, consistent with 1-785
+1-308	Discounts to be applied in sequential ranges like buy 1 get 1, buy 2 get 2, buy 3 get 3 and so on	تُطبق الخصومات على دفعات متسلسلة مثل اشترِ قطعة واحصل على الثانية مجاناً، اشترِ قطعتين واحصل على الثانية مجاناً، اشترِ ثلاث قطع واحصل على الثالثة مجاناً، وهكذا.	تُطبَّق الخصومات على شرائح متسلسلة مثل: اشترِ 1 واحصل على 1، اشترِ 2 واحصل على 2، اشترِ 3 واحصل على 3، وهكذا.	Wrong meaning: "buy 2 get 2" translated as "get the second free"
+1-316	Percentage	نسب مئوية	نسبة مئوية	Option should be singular
+1-319	Price Discount Scheme	مخطط خصم السعر	نظام خصم السعر	Inconsistent with 1-299 "نظام خصم المنتج"
+1-337	If enabled, then system will only validate the pricing rule and not apply automatically. User has to manually set the discount percentage / margin / free items to validate the pricing rule	في حال تفعيل هذه الخاصية، سيقوم النظام فقط بالتحقق من صحة قاعدة التسعير ولن يتم تطبيقها تلقائيًا. يجب على المستخدم تحديد نسبة الخصم/هامش الربح/المنتجات المجانية يدويًا للتحقق من صحة قاعدة التسعير.	عند التفعيل، سيتحقق النظام من صحة قاعدة التسعير فقط ولن يطبّقها تلقائيًا. يجب على المستخدم تحديد نسبة الخصم/الهامش/الأصناف المجانية يدويًا للتحقق من صحة قاعدة التسعير.	"Margin" translated inconsistently (هامش ربح); "free items" should be الأصناف (glossary Item=صنف)
+1-341	Enable this checkbox even if you want to set the zero priority	قم بتمكين خانة الاختيار هذه حتى إذا كنت ترغب في تعيين الأولوية إلى الصفر	فعّل هذا الخيار حتى إذا أردت تعيين الأولوية إلى الصفر	Awkward machine translation
+1-364	Last Scanned Warehouse	آخر مستودع ممسوح	آخر مستودع تم مسحه ضوئياً	"ممسوح" means wiped/erased, not scanned
+1-426	Medium	متوسط	الوسيط	UTM medium (marketing channel), not "average/medium"
+1-431	Open	فتح	مفتوح	Status must be adjective, not the verb "to open"
+1-471	Total Weight	مجموع الأوزان	إجمالي الوزن	Plural/odd term; use الإجمالي consistent with 1-367
+1-511	Closed	مغلقة	مغلق	Gender: أمر بيع is masculine; also inconsistent with "مكتمل"
+1-517	Commission	بالعمولة	العمولة	Stray preposition "ب" breaks the section title
+1-540	Ordered Qty	الكمية المطلوبة	الكمية المطلوبة بأوامر الشراء	Identical Arabic to 1-542 "Requested Qty"; two different fields indistinguishable
+1-559	Delivery Note Item	صنف إذن التسليم	أصناف إذن التسليم	Field is the items table; plural expected
+1-597	Serial and Batch Bundle	حزمة التسلسل والدفعة	حزمة الأرقام التسلسلية والدفعات	Poor wording; "التسلسل" alone is not the serial number
+1-641	Sales Invoice Payment	دفع فاتورة المبيعات	مدفوعات فاتورة المبيعات	Table of payment rows; plural, avoids ambiguity with verb
+1-644	Changes	التغييرات	الباقي	In POS context this is the change given back to customer, not "changes"
+1-675	Partly Paid	مدفوعة جزئياً	مدفوع جزئياً	Gender inconsistent with glossary مدفوع and with 1-678
+1-677	Unpaid and Discounted	غير مدفوعة ومخصومة	غير مدفوع ومخصوم	Gender consistency with glossary (غير مدفوع)
+1-676	Unpaid	غير المدفوع	غير مدفوع	Glossary: Unpaid = غير مدفوع (no definite article)
+1-679	Overdue and Discounted	متأخرة ومخصومة	متأخر ومخصوم	Gender consistency with glossary (متأخر)
+1-684	Is Discounted	مخصومة	مخصوم	Gender consistency with other status options
+1-767	% Billed	% تمت الفوترة	% المفوتر	Inconsistent with 1-514 "% المبلغ المفوتر"; awkward
+1-768	% Received	% تم استلامه	% المستلم	Awkward; consistent with 1-512 style
+1-796	Accepted Warehouse	مستودع المقبول	مستودع المقبولات	Grammar; parallel to مستودع المرفوضات

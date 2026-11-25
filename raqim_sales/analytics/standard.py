@@ -14,6 +14,7 @@ HR = {
 	"description": "Employees, attendance, leave, overtime, payroll and advances.",
 	"roles": ["HR Manager", "HR User"],
 	"default_range": "",
+	"show_company_filter": 1,  # 2026-11-24: several companies -> pick one
 	"show_department_filter": 1,
 	"charts": [
 		("hr_active", "Active Employees", "Number", "third",
@@ -184,7 +185,7 @@ ACCOUNTS = {"key": "accounts", "title": "Accounts Dashboard", "description": "Ca
 		("o_profit_12m", "half"), ("a_expenses_12m", "half"),
 		("a_top_debtors", "half"), ("o_expenses_month", "half"))}
 CRM = {"key": "crm", "title": "CRM Dashboard", "description": "Leads, opportunities, pipeline and quotations.",
-	"roles": ["Sales Manager", "Sales User"], "charts": _charts(
+	"roles": ["Sales Manager", "Sales User"], "show_company_filter": 1, "charts": _charts(
 		("c_new_leads", "third"), ("s_quotes_open", "third"), ("c_won_lost", "third"),
 		("o_pipeline", "two_thirds"), ("c_leads_source", "third"),
 		("c_opps_month", "half"), ("c_by_owner", "half"),

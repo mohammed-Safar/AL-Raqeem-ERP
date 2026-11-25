@@ -40,7 +40,7 @@ app_include_css = [
     "/assets/raqim_sales/css/raqeem_fonts.css?v=33",
     "/assets/raqim_sales/css/raqeem_logo.css?v=39",
     "/assets/raqim_sales/css/raqeem_palette.css?v=33",
-    "/assets/raqim_sales/css/raqeem_theme.css?v=classic-content-1123c",
+    "/assets/raqim_sales/css/raqeem_theme.css?v=railicon-1125b",
     # dock icons drawn in CSS (ROLLBACK: delete the next line)
     "/assets/raqim_sales/css/raqeem_icons.css?v=50",
     "/assets/raqim_sales/css/raqeem_home.css?v=zoom2-1121a",
@@ -58,12 +58,12 @@ app_include_js = [
     # RAQEEM HR / RAQEEM CRM names + logo for the companion apps (ROLLBACK: delete the next line)
     "/assets/raqim_sales/js/raqeem_apps_brand.js?v=1",
     # RAQEEM «R» logo in the theme colour + coloured browser-tab icon
-    "/assets/raqim_sales/js/raqeem_logo.js?v=40",
+    "/assets/raqim_sales/js/raqeem_logo.js?v=41",
     # pinned dock: a collapsed sidebar folds to the icon rail instead of vanishing
     "/assets/raqim_sales/js/raqeem_sidebar_rail.js?v=33",
     # one header button -> panel with light/dark, theme colour and language
     # (replaces raqeem_theme_toggle.js, raqeem_accent.js, raqeem_lang_switch.js)
-    "/assets/raqim_sales/js/raqeem_quick_settings.js?v=zoom3-1121a",
+    "/assets/raqim_sales/js/raqeem_quick_settings.js?v=zoomtip-1125a",
     "/assets/raqim_sales/js/raqeem_sidebar.js?v=ph-1120a",
     # phone-only bottom bar (ROLLBACK: delete the next line)
     "/assets/raqim_sales/js/raqeem_tabbar.js?v=3",
@@ -75,7 +75,7 @@ app_include_js = [
     "/assets/raqim_sales/js/raqeem_icon_names.js?v=51",
     "/assets/raqim_sales/js/raqeem_icons.js?v=51",
     # dialog titles through __() (ROLLBACK: delete the next line)
-    "/assets/raqim_sales/js/raqeem_desk_i18n.js?v=1",
+    "/assets/raqim_sales/js/raqeem_desk_i18n.js?v=9",
     # full chart legends, wrapped instead of cut to "Net Cash from O..." (ROLLBACK: delete the next line)
     "/assets/raqim_sales/js/raqeem_chart_legend.js?v=2",
     # report tables: sideways scroll bar under the totals row (ROLLBACK: remove this line)
@@ -111,7 +111,7 @@ web_include_css = [
 ]
 # raqeem_login.js -> brand panel + language switch on the login page only
 web_include_js = [
-    "/assets/raqim_sales/js/raqeem_logo.js?v=40",
+    "/assets/raqim_sales/js/raqeem_logo.js?v=41",
     "/assets/raqim_sales/js/raqeem_login.js?v=teal-1120a"
 ]
 
@@ -170,6 +170,10 @@ website_context = {
 # 	"methods": "raqim_sales.utils.jinja_methods",
 # 	"filters": "raqim_sales.utils.jinja_filters"
 # }
+jinja = {
+	# Arabic amount in words on the RAQEEM print formats (raqim_sales/arabic_words.py)
+	"methods": ["raqim_sales.arabic_words.raqeem_amount_in_words"],
+}
 
 # Installation
 # ------------
@@ -288,6 +292,10 @@ after_install = "raqim_sales.crm_integration.after_install"
 # override_whitelisted_methods = {
 # 	"frappe.desk.doctype.event.event.get_events": "raqim_sales.event.get_events"
 # }
+override_whitelisted_methods = {
+	# Banking page translations (method missing in this Frappe -> HTTP 417); see web_inject.py
+	"frappe.translate.get_boot_translations": "raqim_sales.web_inject.get_boot_translations",
+}
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
@@ -398,12 +406,22 @@ doc_events = {
 	# Human Resources: an employee made from an accepted job offer -> applicant Hired + salary (ROLLBACK: delete the next line)
 	# + the onboarding checklist of a new employee (Lifecycle Settings) (ROLLBACK: delete the second entry)
 	"Employee": {"after_insert": ["raqim_sales.raqeem_hr.recruitment.employee_after_insert",
-		"raqim_sales.raqeem_hr.lifecycle.employee_after_insert"]},
+		"raqim_sales.raqeem_hr.lifecycle.employee_after_insert"],
+		# the employee's user gets the employee's company as default company (ROLLBACK: delete the next line)
+		"on_update": "raqim_sales.company_guard.user_company_from_employee"},
+	# lines at a zero price: warning on save, invoices cannot be submitted (raqim_sales/zero_rate.py) (ROLLBACK: delete these lines)
+	**{dt: {"validate": "raqim_sales.zero_rate.validate", "before_submit": "raqim_sales.zero_rate.before_submit"}
+		for dt in ("Quotation", "Sales Order", "Delivery Note", "Sales Invoice", "Supplier Quotation", "Purchase Order",
+			"Purchase Receipt", "Purchase Invoice")},
 	"Company": {
+		# no links to another company's accounts / warehouses / cost centres (ROLLBACK: delete the next line)
+		"validate": "raqim_sales.company_guard.validate",
 		"on_update": [
 			"raqim_sales.crm_integration.on_company_update",
 			# Human Resources: a new company gets its payroll / advance / loan / gratuity accounts (ROLLBACK: delete the next line)
 			"raqim_sales.raqeem_hr.company_accounts.on_company_update",
+			# Manufacturing: workstation cost components get this company's absorbed-cost account (ROLLBACK: delete the next line)
+			"raqim_sales.setup.workstation_cost_accounts",
 		]
 	},
 }

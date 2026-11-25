@@ -3591,11 +3591,6 @@ null
 "raqim_sales": {
 "miss": [
 [
-"apps/raqim_sales/raqim_sales/raqeem_hr/hrms_migration.py",
-"compensatory leave is earned through Compensatory Requests in Employee Affairs; enter the open balance there",
-null
-],
-[
 "apps/raqim_sales/raqim_sales/erp_crm.py",
 "doctype",
 null
@@ -3608,11 +3603,6 @@ null
 [
 "apps/raqim_sales/raqim_sales/analytics/export.py",
 "link_label",
-null
-],
-[
-"DocType: raqeem",
-"raqeem",
 null
 ]
 ],

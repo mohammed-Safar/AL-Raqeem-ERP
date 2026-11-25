@@ -1,0 +1,41 @@
+4-4	Working days only, unless the leave type counts weekends and holidays.	أيام العمل فقط، إلا إذا كان نوع الإجازة يحتسب العطل.	أيام العمل فقط، إلا إذا كان نوع الإجازة يحتسب عطلات نهاية الأسبوع والعطلات الرسمية.	"weekends" is lost
+4-16	Saved Charts	المخططات المحفوظة	الرسوم البيانية المحفوظة	glossary: Chart = رسم بياني
+4-18	Sales Dashboard	لوحة المبيعات	لوحة معلومات المبيعات	glossary: Dashboard = لوحة المعلومات; consistent with HR dashboard line
+4-19	Accounts Dashboard	لوحة الحسابات	لوحة معلومات الحسابات	glossary: Dashboard = لوحة المعلومات
+4-21	Owner Dashboard	لوحة المالك	لوحة معلومات المالك	glossary: Dashboard = لوحة المعلومات
+4-22	Ready Dashboards	اللوحات الجاهزة	لوحات المعلومات الجاهزة	glossary: Dashboard = لوحة المعلومات
+4-32	Salary Advance	السلف	سلف الرواتب	too generic; clashes with Expenses and Advances; Employee Advance = سلفة موظف
+4-57	Bank Clearance	التسوية البنكية	المقاصة البنكية	"التسوية البنكية" is Bank Reconciliation; two different features get the same name
+4-90	Lead Owner Efficiency	كفاءة مالك العميل المحتمل	كفاءة مسؤول العميل المحتمل	glossary: Lead Owner = مسؤول العميل المحتمل
+4-151	Work Order Summary	ملخص أوامر التصنيع	ملخص أوامر العمل	glossary: Work Order = أمر عمل
+4-175	First Response Time for Issues	وقت الاستجابة الأول للمشكلات	وقت الاستجابة الأول للبلاغات	inconsistent: Issue = بلاغ elsewhere (4-172, 4-649)
+4-192	Quality Procedure	إجراء الجودة	إجراءات الجودة	identical Arabic to Quality Action (4-198)
+4-198	Quality Action	إجراء الجودة	إجراء تصحيحي للجودة	duplicate of Quality Procedure; action here is corrective/preventive
+4-236	Naming	التسمية	التسمية والترقيم	"التسمية" is the glossary term for Label; avoid clash
+4-260	ToDo	المهام	المهام المطلوبة	clashes with Task = مهمة and with Jobs = المهام
+4-268	Dashboard Chart Source	مصدر رسم لوحة المعلومات	مصدر الرسم البياني للوحة المعلومات	consistency with Dashboard Chart line 4-244
+4-278	Grievance	تظلم	تظلم الموظف	inconsistent with Employee Grievance (4-279); also use one term
+4-279	Employee Grievance	شكوى الموظف	تظلم الموظف	Grievance = تظلم (4-278, 4-291); use one term
+4-309	Roster	جدول الورديات	جدول المناوبات	identical to Shift Schedule (4-319)
+4-394	Automation Trigger Queue	طابور مشغّلات الأتمتة	قائمة انتظار مشغّلات الأتمتة	inconsistent with Email Queue (قائمة انتظار)
+4-398	Milestone	المرحلة	معلم رئيسي	"المرحلة" is the glossary term for Stage
+4-474	Period Closing Voucher	قيد إقفال الفترة	سند إقفال الفترة	glossary: Voucher = سند
+4-476	Communication Logs	سجلات الاتصالات	سجلات المراسلات	Communication = المراسلات (4-95); الاتصالات means telecom
+4-485	Completed Work Orders	أوامر التصنيع المكتملة	أوامر العمل المكتملة	glossary: Work Order = أمر عمل
+4-492	Open Work Orders	أوامر التصنيع المفتوحة	أوامر العمل المفتوحة	glossary: Work Order = أمر عمل
+4-501	BOM Variance Report	تقرير فروقات قائمة المواد	تقرير انحرافات قائمة المواد	Variance rendered three ways (انحراف/تباين/فروقات); standardise on انحراف
+4-527	Product Bundle Balance	رصيد حزمة المنتجات	رصيد حزمة الأصناف	glossary: Item = صنف
+4-536	FIFO Queue vs Qty After Transaction Comparison	مقارنة بين قائمة الانتظار وفقًا لأسلوب FIFO والكمية بعد إتمام المعاملة	مقارنة قائمة FIFO بالكمية بعد المعاملة	wordy machine-style phrasing
+4-551	Incorrect Balance Qty After Transaction	كمية الرصيد غير صحيحة بعد العملية	كمية الرصيد غير الصحيحة بعد المعاملة	"Transaction" = المعاملة (4-536); grammar of الصفة
+4-605	Sales Person Target Variance Based On Item Group	تباين أهداف مندوب المبيعات حسب مجموعة الأصناف	انحراف أهداف مندوب المبيعات حسب مجموعة الأصناف	standardise Variance = انحراف
+4-610	Sales Partner Target Variance based on Item Group	تباين أهداف شريك المبيعات حسب مجموعة الأصناف	انحراف أهداف شريك المبيعات حسب مجموعة الأصناف	standardise Variance = انحراف
+4-623	POS Closing Entry	قيد إقفال نقطة البيع	قيد إغلاق نقطة البيع	glossary: POS Closing Entry = قيد إغلاق نقطة البيع
+4-624	Territory Target Variance Based On Item Group	تباين أهداف المنطقة حسب مجموعة الأصناف	انحراف أهداف المنطقة حسب مجموعة الأصناف	standardise Variance = انحراف
+4-648	Open Issues	المشكلات المفتوحة	البلاغات المفتوحة	inconsistent: Issue = بلاغ (4-649, 4-650, 4-735)
+4-655	WIP Work Orders	أوامر التصنيع قيد التنفيذ	أوامر العمل قيد التنفيذ	glossary: Work Order = أمر عمل
+4-677	New Lead (Last 1 Month)	عميل محتمل جديد (آخر 1 شهر)	عملاء محتملون جدد (آخر شهر)	awkward "آخر 1 شهر"; number-card count is plural
+4-692	Active RQ Worker	العمليات الخلفية النشطة	عمال RQ النشطون	inconsistent with RQ Worker = عامل RQ (4-200)
+4-728	Employee Exits (This Year)	خروج الموظفين (هذه السنة)	إنهاء خدمة الموظفين (هذه السنة)	consistent with Employee Exits (4-280) and Separation
+4-741	Pending Work Order	أمر تصنيع معلّق	أوامر العمل المعلّقة	glossary: Work Order = أمر عمل; chart is plural
+4-747	Work Order Analysis	تحليل أوامر التصنيع	تحليل أوامر العمل	glossary: Work Order = أمر عمل
+4-758	Won Opportunities	الفرص المكتسبة	الفرص المكسوبة	glossary: Won = مكسوبة (and 4-678)

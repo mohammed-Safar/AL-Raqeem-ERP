@@ -1,0 +1,43 @@
+3-0	Only leaf nodes are allowed in transaction	يُسمح في المعاملات بالعناصر الطرفية فقط (غير المجموعات)	يُسمح في المعاملات بالعقد الطرفية فقط (غير المجموعات)	'العناصر' conflicts with glossary Item=صنف; tree nodes = عقد
+3-6	Mention if non-standard receivable account applicable	اذكره إذا كان حساب ذمم مدينة غير القياسي منطبقاً	اذكر ذلك إذا كان ينطبق حساب ذمم مدينة غير قياسي	Ungrammatical/awkward phrasing
+3-88	CRM Availability Changed By	غيّر حالة التوفر في CRM	تغيير حالة التوفر في CRM بواسطة	'Changed By' rendered as a verb; should be a noun phrase
+3-108	If the user has any role checked, then the user becomes a "System User". "System User" has access to the desktop	إذا كان المستخدم لديه أي دور تم اختياره، فسيصبح المستخدم "مستخدم النظام". "مستخدم النظام" لديه حق الوصول إلى سطح المكتب	إذا حُدد للمستخدم أي دور، يصبح «مستخدم نظام». ولمستخدم النظام حق الوصول إلى المكتب	Awkward MT; 'desk' rendered سطح المكتب but المكتب elsewhere (Desk Settings)
+3-140	Actual End Date (via Timesheet)	تاريخ الإنتهاء الفعلي (عبر سجل الوقت)	تاريخ الانتهاء الفعلي (عبر سجل الوقت)	Spelling: الانتهاء has no hamza
+3-152	Gross Margin %	الهامش الإجمالي %	هامش الربح الإجمالي %	Inconsistent with Gross Margin = هامش الربح الإجمالي
+3-180	Template	القالب	قالب	Inconsistent with Is Template = قالب
+3-194	Dependent Tasks	المهام التابعة	المهام المعتمد عليها	'المهام التابعة' = subordinate tasks; field lists tasks this one depends on
+3-198	Raqeem Job Applicant	متقدم لوظيفة	متقدم للوظيفة	Glossary: Job Applicant = متقدم للوظيفة
+3-311	New Department	قسم جديد	القسم الجديد	Inconsistent with القسم الحالي / الفرع الجديد
+3-316	Position	الموضع	المنصب	'الموضع' means place/location; use المنصب
+3-357	Repaid	مسددة	مسدد	Gender: القرض is masculine
+3-403	For	لـ	الغرض	'لـ' alone is not a usable label
+3-428	How the Slabs Apply	طريقة تطبيق الفئات	طريقة تطبيق الشرائح	Glossary uses شريحة for slab/band (payroll tax bands)
+3-433	Slabs	الفئات	الشرائح	Glossary uses شريحة for slab/band
+3-478	Sent to Reviewer On	تاريخ الإرسال للمُقيِّم	تاريخ الإرسال إلى المراجع	Reviewer is المراجع elsewhere; here المُقيِّم (inconsistent)
+3-510	Failed	فشل	غير ناجح	'فشل' too harsh/poor for an interview result
+3-519	Posted On	تاريخ الترحيل	تاريخ النشر	Wrong meaning: الترحيل = ledger posting; job ad Posted On = تاريخ النشر
+3-528	Empty: each chart keeps its own period.	فارغ: كل مخطط يحتفظ بفترته.	فارغ: كل رسم بياني يحتفظ بفترته.	Glossary: Chart = رسم بياني (not مخطط)
+3-536	Charts	المخططات	الرسوم البيانية	Glossary: Chart = رسم بياني
+3-537	Arranged on the Analytics screen.	يُرتَّب من شاشة التحليلات.	تُرتَّب في شاشة التحليلات.	Wrong preposition/number agreement
+3-538	Raqeem Leave Encashment	صرف رصيد الإجازات	صرف بدل الإجازات	Glossary: Leave Encashment = صرف بدل الإجازة
+3-553	HR Manager Can Still Approve	يمكن لمدير الموارد البشرية الاعتماد رغم ذلك	يمكن لمدير الموارد البشرية الموافقة رغم ذلك	Glossary: approval = الموافقة; اعتماد = Submit
+3-560	Tick for leave such as sick leave, where every calendar day counts.	فعِّله لإجازات مثل المرضية، حيث يُحتسب كل يوم تقويمي.	فعِّل هذا الخيار للإجازات مثل الإجازة المرضية، حيث يُحتسب كل يوم تقويمي.	Awkward elided phrasing
+3-587	Advance	دفعة مقدمة	السلفة	'دفعة مقدمة' is a different term; document is سلفة
+3-605	In	ضمن	وقت الدخول	Wrong meaning: 'ضمن' = within; In = clock-in time
+3-607	Out	خروج	وقت الخروج	Parallel with وقت الدخول
+3-627	Overtime Approval	اعتماد العمل الإضافي	الموافقة على العمل الإضافي	Glossary: approval of a request = الموافقة, not اعتماد (Submit)
+3-628	Approved Overtime (Minutes)	الإضافي المعتمد (دقائق)	العمل الإضافي الموافق عليه (دقائق)	Approval wording; use full term العمل الإضافي
+3-630	Overtime Decided By	اعتمد الإضافي	وافق على العمل الإضافي	Approval wording (اعتمد = submitted)
+3-645	Deductions	استقطاعات	الاستقطاعات	Missing definite article; inconsistent with الاستحقاقات
+3-686	Salary Components	بنود الراتب	مكوّنات الراتب	Glossary: Salary Component = مكوّن الراتب (not بند)
+3-687	Basic Salary Component	بند الراتب الأساسي	مكوّن الراتب الأساسي	Glossary: مكوّن not بند
+3-689	Overtime Component	بند العمل الإضافي	مكوّن العمل الإضافي	Glossary: مكوّن not بند
+3-690	Late Deduction Component	بند خصم التأخير	مكوّن خصم التأخير	Glossary: مكوّن not بند
+3-701	Raqeem Shift Type	الوردية	نوع الوردية	Glossary: Shift Type = نوع الوردية
+3-714	Analytics Chart	مخطط تحليلي	رسم بياني تحليلي	Glossary: Chart = رسم بياني
+3-718	Area	المساحة	مساحي	Chart type adjective parallel to أعمدة/خطي/دائري
+3-722	Number	الرقم	رقم	Option label parallel to others (no article)
+3-765	Advance Repayment Component	بند سداد السلفة	مكوّن سداد السلفة	Glossary: مكوّن not بند
+3-767	Leave Encashment Component	بند صرف رصيد الإجازات	مكوّن صرف بدل الإجازة	Glossary: Leave Encashment = صرف بدل الإجازة; مكوّن
+3-780	Total Gross Pay	إجمالي الراتب الإجمالي	إجمالي الرواتب قبل الاستقطاع	Redundant 'إجمالي ... الإجمالي'
+3-781	Total Net Pay	إجمالي صافي الراتب	إجمالي صافي الرواتب	Run covers many slips: plural

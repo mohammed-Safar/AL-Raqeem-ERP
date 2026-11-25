@@ -6,6 +6,12 @@
 ]
 ],
 [
+"Actual size (Ctrl 0)",
+[
+"public/js/raqeem_quick_settings.js"
+]
+],
+[
 "Amount in words",
 [
 "templates/print/raqeem_document.html"
@@ -116,15 +122,9 @@
 ]
 ],
 [
-"Cheques Payable",
+"Classic",
 [
-"cheques_setup.py"
-]
-],
-[
-"Cheques Under Collection",
-[
-"cheques_setup.py"
+"public/js/raqeem_quick_settings.js"
 ]
 ],
 [
@@ -216,6 +216,12 @@
 ]
 ],
 [
+"Down",
+[
+"public/js/raqeem_dock_arrows.js"
+]
+],
+[
 "Due date",
 [
 "public/js/raqeem_form.js"
@@ -242,24 +248,28 @@
 [
 "Employee Claims Payable",
 [
+"raqeem_hr/company_accounts.py",
 "raqeem_hr/setup.py"
 ]
 ],
 [
 "Employee Loans",
 [
+"raqeem_hr/company_accounts.py",
 "raqeem_hr/setup.py"
 ]
 ],
 [
 "End of Service Benefits",
 [
+"raqeem_hr/company_accounts.py",
 "raqeem_hr/setup.py"
 ]
 ],
 [
 "End of Service Payable",
 [
+"raqeem_hr/company_accounts.py",
 "raqeem_hr/setup.py"
 ]
 ],
@@ -280,8 +290,13 @@
 [
 "analytics/page/analytics/analytics.js",
 "public/js/raqeem_sidebar.js",
-"raqeem_hr/page/my_affairs/my_affairs.js",
 "raqim_sales/page/raqeem_home/raqeem_home.js"
+]
+],
+[
+"Equal",
+[
+"public/js/raqeem_quick_settings.js"
 ]
 ],
 [
@@ -357,6 +372,12 @@
 ]
 ],
 [
+"Horizon",
+[
+"public/js/raqeem_quick_settings.js"
+]
+],
+[
 "House Rent Allowance",
 [
 "raqeem_hr/hrms_migration.py"
@@ -385,6 +406,12 @@
 "Invoices and quotations in a click",
 [
 "public/js/raqeem_login.js"
+]
+],
+[
+"Leave is counted with the holiday list; shifts on the default weekly off now also take the list's days off.",
+[
+"raqeem_hr/doctype/raqeem_attendance_settings/raqeem_attendance_settings.py"
 ]
 ],
 [
@@ -434,6 +461,12 @@
 "Meet with John Doe",
 [
 "public/js/raqeem_spa_keys.js"
+]
+],
+[
+"Minus",
+[
+"public/js/raqeem_quick_settings.js"
 ]
 ],
 [
@@ -488,6 +521,12 @@
 "Open customer",
 [
 "crm_deal_tools.js"
+]
+],
+[
+"Operating Costs Absorbed in Production",
+[
+"setup.py"
 ]
 ],
 [
@@ -546,9 +585,33 @@
 ]
 ],
 [
+"RAQEEM HR genders",
+[
+"raqeem_hr/setup.py"
+]
+],
+[
 "RAQEEM HR setup",
 [
 "raqeem_hr/setup.py"
+]
+],
+[
+"RAQEEM HR setup: unknown account {name}",
+[
+"raqeem_hr/setup.py"
+]
+],
+[
+"RAQEEM HR: accounts for company {c}",
+[
+"raqeem_hr/company_accounts.py"
+]
+],
+[
+"RAQEEM HR: accounts for company {doc.name}",
+[
+"raqeem_hr/company_accounts.py"
 ]
 ],
 [
@@ -585,6 +648,12 @@
 "RAQEEM HR: recruitment notification",
 [
 "raqeem_hr/recruitment.py"
+]
+],
+[
+"RAQEEM HR: repair settings accounts",
+[
+"raqeem_hr/setup.py"
 ]
 ],
 [
@@ -655,12 +724,6 @@
 ]
 ],
 [
-"RAQEEM cheques: company accounts",
-[
-"cheques_setup.py"
-]
-],
-[
 "RAQEEM: CRM deal tools script",
 [
 "crm_integration.py"
@@ -718,6 +781,7 @@
 [
 "Salary Income Tax Payable",
 [
+"raqeem_hr/company_accounts.py",
 "raqeem_hr/setup.py"
 ]
 ],
@@ -773,6 +837,12 @@
 "Tax Invoice",
 [
 "templates/print/raqeem_document.html"
+]
+],
+[
+"The weekly days off here ({0}) differ from the holiday list {1} of {2} ({3}). ",
+[
+"raqeem_hr/doctype/raqeem_attendance_settings/raqeem_attendance_settings.py"
 ]
 ],
 [
@@ -896,6 +966,12 @@
 "Your sales, stock and accounts in one place",
 [
 "public/js/raqeem_login.js"
+]
+],
+[
+"Zoom in (Ctrl +)",
+[
+"public/js/raqeem_quick_settings.js"
 ]
 ]
 ]

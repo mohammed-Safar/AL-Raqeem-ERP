@@ -226,3 +226,14 @@ def crm_dock():
 		"entries": entries,
 		"user": {"name": user.full_name or user.name, "image": user.user_image or ""},
 	}
+
+
+@frappe.whitelist()
+def get_boot_translations(v=None, lang=None):
+	"""ERPNext's Banking page asks for frappe.translate.get_boot_translations, which this Frappe
+	does not have (HTTP 417 in the console). Hooked in via override_whitelisted_methods.
+	Returns the same translations the desk gets; v (cache buster) is ignored."""
+	from frappe.translate import get_all_translations
+
+	lang = lang if lang in (frappe.get_all("Language", pluck="name") or [lang]) else None
+	return get_all_translations(lang or frappe.local.lang or "en")

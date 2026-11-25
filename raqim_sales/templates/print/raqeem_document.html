@@ -188,7 +188,8 @@
 		</tr>
 	</table>
 	{%- if doc.in_words %}
-	<div class="rq-words">{{ L("Amount in words", "المبلغ كتابةً") }}: <b>{{ doc.in_words }}</b></div>
+	{%- set words_total = doc.grand_total if (doc.disable_rounded_total or not doc.rounded_total) else doc.rounded_total -%}
+	<div class="rq-words">{{ L("Amount in words", "المبلغ كتابةً") }}: <b>{{ raqeem_amount_in_words(words_total, doc.currency) if rtl else doc.in_words }}</b></div>
 	{%- endif %}
 	{%- endif %}
 

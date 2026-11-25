@@ -36,6 +36,20 @@ def after_migrate():
 	set_dinar_format()
 	set_erpnext_dock()
 	allocate_advances_by_default()
+	same_rate_through_sales_cycle()
+	workstation_cost_accounts()
+	starter_lost_reasons()
+	default_company_when_single()
+	no_product_suggestions()
+
+
+def no_product_suggestions():
+	"""2026-11-24: Insights / CRM / Helpdesk "a prebuilt dashboard is available..." banners on the module
+	workspaces are English adverts (Insights is not translated and RAQEEM has its own Analytics).
+	Set once; System Settings > Disable Product Suggestion can be switched back on."""
+	if _once("raqeem_no_product_suggestions"):
+		frappe.db.set_single_value("System Settings", "disable_product_suggestion", 1)
+		frappe.db.set_default("disable_product_suggestion", "1")  # boot reads it from the defaults
 
 
 def allocate_advances_by_default():
@@ -49,6 +63,87 @@ def allocate_advances_by_default():
 		if frappe.db.get_value("Property Setter", {"doc_type": dt, "field_name": "allocate_advances_automatically",
 				"property": "default"}, "value") != "1":
 			make_property_setter(dt, "allocate_advances_automatically", "default", "1", "Text", validate_fields_for_doctype=False)
+
+
+def _once(key):
+	"""True the first time only (a manager's later choice is kept)."""
+	if frappe.db.get_default(key):
+		return False
+	frappe.db.set_default(key, "1")
+	return True
+
+
+def same_rate_through_sales_cycle():
+	"""2026-11-24: a quantity discount (pricing rule "5% from 5 units") was re-checked on each delivery / invoice: an
+	order of 8 delivered as 4 + 4 lost the discount and the invoice was then blocked as over-billing. Keeping the
+	order's rate through the cycle avoids it. Set once; switching it off again in Selling Settings is respected."""
+	if _once("raqeem_same_sales_rate_set"):
+		frappe.db.set_single_value("Selling Settings", {"maintain_same_sales_rate": 1, "maintain_same_rate_action": "Stop"})
+	if _once("raqeem_same_buying_rate_set"):
+		frappe.db.set_single_value("Buying Settings", {"maintain_same_rate": 1})
+
+
+def workstation_cost_accounts(doc=None, method=None):
+	"""2026-11-24: manufacturing with operations failed at "Manufacture" with only "Account is required": each
+	Workstation Operating Component needs an expense account per company. Every component gets, for every
+	company, an "absorbed operating costs" account (Expenses Included In Valuation), created when missing.
+	Also the Company on_update hook (doc = the company)."""
+	from raqim_sales.raqeem_hr.company_accounts import is_arabic
+
+	if not frappe.db.exists("DocType", "Workstation Operating Component"):
+		return
+	companies = [doc.name] if doc else frappe.get_all("Company", pluck="name")
+	for comp in frappe.get_all("Workstation Operating Component", pluck="name"):
+		c = frappe.get_doc("Workstation Operating Component", comp)
+		have = {r.company for r in c.get("accounts") or []}
+		changed = False
+		for company in companies:
+			if company in have or not frappe.db.exists("Account", {"company": company}):
+				continue
+			acc = (frappe.db.get_value("Account", {"company": company, "is_group": 0, "account_type": "Expenses Included In Valuation",
+					"account_name": ["in", ["تكاليف تشغيل محمّلة على الإنتاج", "Operating Costs Absorbed in Production"]]})
+				or _make_absorbed_account(company, is_arabic(company)))
+			if acc:
+				c.append("accounts", {"company": company, "expense_account": acc})
+				changed = True
+		if changed:
+			c.flags.ignore_permissions = True
+			c.save()
+
+
+def _make_absorbed_account(company, arabic):
+	parent = (frappe.db.get_value("Account", {"company": company, "is_group": 1, "account_name": ["in", ["مصروفات المخزون", "Stock Expenses"]]})
+		or frappe.db.get_value("Account", {"company": company, "is_group": 1, "root_type": "Expense"}, order_by="lft desc"))
+	if not parent:
+		return None
+	a = frappe.get_doc({"doctype": "Account", "company": company, "parent_account": parent, "is_group": 0,
+		"account_name": "تكاليف تشغيل محمّلة على الإنتاج" if arabic else "Operating Costs Absorbed in Production",
+		"account_type": "Expenses Included In Valuation", "root_type": "Expense",
+		"account_currency": frappe.get_cached_value("Company", company, "default_currency")})
+	a.flags.ignore_permissions = True
+	a.insert()
+	return a.name
+
+
+LOST_REASONS = ["السعر أعلى من المنافس", "اختار عرض منافس", "تأجيل أو إلغاء الميزانية", "لا يوجد رد من العميل", "مدة التوريد طويلة",
+	"المنتج غير متوفر"]
+
+
+def starter_lost_reasons():
+	"""2026-11-24: "Lost" on an opportunity / quotation asks for a reason, and both lists were empty."""
+	for dt, field in (("Opportunity Lost Reason", "lost_reason"), ("Quotation Lost Reason", "order_lost_reason")):
+		if frappe.db.exists("DocType", dt) and not frappe.db.count(dt):
+			for r in LOST_REASONS:
+				frappe.get_doc({"doctype": dt, field: r}).insert(ignore_permissions=True)
+
+
+def default_company_when_single():
+	"""2026-11-24: with no default company, new documents start empty. One company -> it is the default."""
+	companies = frappe.get_all("Company", pluck="name")
+	current = frappe.defaults.get_global_default("company")
+	if len(companies) == 1 and (not current or current not in companies):
+		frappe.db.set_single_value("Global Defaults", "default_company", companies[0])
+		frappe.defaults.set_global_default("company", companies[0])
 
 
 def set_erpnext_dock():

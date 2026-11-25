@@ -1,13 +1,13 @@
-"""RAQEEM Deal Analysis — Frappe CRM deals next to what ERPNext actually invoiced.
+"""RAQEEM Deal Analysis — ERPNext Opportunities next to what was actually invoiced.
 
-ERPNext's own sales reports read ERPNext Leads / Opportunities, so CRM deals never show up in
-them. This report fills that gap. Deals are grouped by the month they were created (or by
-owner / source / territory) and show: new, open, won, lost, win rate, won value, and, for won
-deals linked to an ERPNext customer, the amount invoiced to that customer from the day the deal
-was won, and how much of it is still unpaid.
+Opportunities are grouped by the month of their date (or by owner / source / territory /
+sales stage) and show: new, open, won, lost, win rate, won value, and, for won opportunities,
+the amount invoiced through them (Opportunity -> Quotation -> Sales Order -> Sales Invoice)
+and how much of it is still unpaid.
 
-Values are in the company currency (deal value x the deal's exchange rate).
-If one customer has several won deals, invoices after each deal's date count for each of them.
+Won = status "Converted". Lost = "Lost" or "Closed". Everything else is open.
+Values are in the company currency (base_opportunity_amount; if that is empty on a won
+opportunity, the total of its ordered quotations).
 """
 
 import frappe
@@ -16,40 +16,48 @@ from frappe.utils import flt, formatdate, getdate
 
 GROUPS = {
 	"Month": None,
-	"Deal Owner": "deal_owner",
-	"Source": "source",
+	"Opportunity Owner": "opportunity_owner",
+	"Source": "utm_source",
 	"Territory": "territory",
+	"Sales Stage": "sales_stage",
 }
+WON = ("Converted",)
+LOST = ("Lost", "Closed")
 
 
 def execute(filters=None):
 	filters = frappe._dict(filters or {})
 	group_by = filters.get("group_by") or "Month"
+	if group_by not in GROUPS:
+		group_by = "Month"
 
-	deals = _deals(filters)
-	types = dict(frappe.get_all("CRM Deal Status", fields=["name", "type"], as_list=True))
-	invoiced = _invoiced(deals, types)
+	opps = _opportunities(filters)
+	won_names = [o.name for o in opps if o.status in WON]
+	invoiced = _invoiced(won_names)
+	quoted = _ordered_quotation_value([o.name for o in opps if o.status in WON and not flt(o.base_opportunity_amount)])
 
 	rows = {}
-	for d in deals:
+	for o in opps:
 		if group_by == "Month":
-			key = getdate(d.creation).strftime("%Y-%m")
+			key = getdate(o.transaction_date or o.creation).strftime("%Y-%m")
+		elif group_by == "Opportunity Owner":
+			key = _owner_name(o.opportunity_owner) or _("Not set")
 		else:
-			key = d.get(GROUPS[group_by]) or _("Not set")
+			key = _(o.get(GROUPS[group_by])) if o.get(GROUPS[group_by]) else _("Not set")
 		r = rows.setdefault(
 			key,
 			frappe._dict(group=key, new=0, open=0, won=0, lost=0, won_value=0.0, invoiced=0.0, unpaid=0.0),
 		)
 		r.new += 1
-		kind = types.get(d.status)
-		if kind == "Won":
+		if o.status in WON:
 			r.won += 1
-			r.won_value += flt(d.deal_value) * (flt(d.exchange_rate) or 1)
-			inv = invoiced.get(d.name)
+			# no amount typed on the opportunity -> the value of its ordered quotation(s)
+			r.won_value += flt(o.base_opportunity_amount) or quoted.get(o.name, 0.0)
+			inv = invoiced.get(o.name)
 			if inv:
 				r.invoiced += inv[0]
 				r.unpaid += inv[1]
-		elif kind == "Lost":
+		elif o.status in LOST:
 			r.lost += 1
 		else:
 			r.open += 1
@@ -78,48 +86,75 @@ def _total(data):
 	return t
 
 
-def _deals(filters):
-	f = {}
+def _opportunities(filters):
+	f = {"docstatus": ["<", 2]}
+	if filters.get("company"):
+		f["company"] = filters.company
 	if filters.get("from_date") and filters.get("to_date"):
-		f["creation"] = ["between", [filters.from_date, filters.to_date + " 23:59:59"]]
+		f["transaction_date"] = ["between", [filters.from_date, filters.to_date]]
 	elif filters.get("from_date"):
-		f["creation"] = [">=", filters.from_date]
+		f["transaction_date"] = [">=", filters.from_date]
 	elif filters.get("to_date"):
-		f["creation"] = ["<=", filters.to_date + " 23:59:59"]
-	if filters.get("deal_owner"):
-		f["deal_owner"] = filters.deal_owner
+		f["transaction_date"] = ["<=", filters.to_date]
+	if filters.get("opportunity_owner"):
+		f["opportunity_owner"] = filters.opportunity_owner
 
-	fields = ["name", "creation", "status", "deal_owner", "source", "territory", "deal_value", "exchange_rate", "closed_date"]
-	if frappe.db.has_column("CRM Deal", "erpnext_customer"):
-		fields.append("erpnext_customer")
-	# get_list: only the deals this user may see
-	return frappe.get_list("CRM Deal", filters=f, fields=fields, limit_page_length=0)
+	fields = ["name", "creation", "transaction_date", "status", "base_opportunity_amount"]
+	fields += [v for v in GROUPS.values() if v]
+	# get_list: only the opportunities this user may see
+	return frappe.get_list("Opportunity", filters=f, fields=fields, limit_page_length=0)
 
 
-def _invoiced(deals, types):
-	"""deal -> (invoiced, unpaid) for won deals with an ERPNext customer."""
-	if not frappe.db.exists("DocType", "Sales Invoice") or not frappe.has_permission("Sales Invoice", "read"):
+_owners = {}
+
+
+def _owner_name(user):
+	if user and user not in _owners:
+		_owners[user] = frappe.db.get_value("User", user, "full_name") or user
+	return _owners.get(user)
+
+
+def _ordered_quotation_value(names):
+	"""opportunity -> base grand total of its submitted, ordered quotations."""
+	if not names:
 		return {}
+	return dict(
+		frappe.db.sql(
+			"""select opportunity, sum(base_grand_total) from `tabQuotation`
+			where opportunity in %(names)s and docstatus = 1
+				and status in ('Ordered', 'Partially Ordered')
+			group by opportunity""",
+			{"names": tuple(names)},
+		)
+	)
+
+
+def _invoiced(names):
+	"""opportunity -> (invoiced, unpaid) through Quotation -> Sales Order -> Sales Invoice."""
+	if not names or not frappe.has_permission("Sales Invoice", "read"):
+		return {}
+	rows = frappe.db.sql(
+		"""select distinct q.opportunity, si.name, si.base_grand_total, si.outstanding_amount
+		from `tabQuotation` q
+		join `tabSales Order Item` soi on soi.prevdoc_docname = q.name
+		join `tabSales Invoice Item` sii on sii.sales_order = soi.parent
+		join `tabSales Invoice` si on si.name = sii.parent
+		where q.opportunity in %(names)s and q.docstatus = 1
+			and si.docstatus = 1 and si.is_return = 0""",
+		{"names": tuple(names)},
+		as_dict=True,
+	)
 	out = {}
-	for d in deals:
-		customer = d.get("erpnext_customer")
-		if types.get(d.status) != "Won" or not customer:
-			continue
-		since = d.closed_date or getdate(d.creation)
-		row = frappe.db.sql(
-			"""select coalesce(sum(base_grand_total), 0), coalesce(sum(outstanding_amount), 0)
-			from `tabSales Invoice`
-			where customer = %s and docstatus = 1 and is_return = 0 and posting_date >= %s""",
-			(customer, since),
-		)[0]
-		out[d.name] = (flt(row[0]), flt(row[1]))
+	for r in rows:
+		a, b = out.get(r.opportunity, (0.0, 0.0))
+		out[r.opportunity] = (a + flt(r.base_grand_total), b + flt(r.outstanding_amount))
 	return out
 
 
 def _columns(group_by):
 	return [
 		{"fieldname": "group", "label": _(group_by), "fieldtype": "Data", "width": 160},
-		{"fieldname": "new", "label": _("Deals"), "fieldtype": "Int", "width": 80},
+		{"fieldname": "new", "label": _("Opportunities"), "fieldtype": "Int", "width": 100},
 		{"fieldname": "open", "label": _("Open", context="Deal"), "fieldtype": "Int", "width": 80},
 		{"fieldname": "won", "label": _("Won"), "fieldtype": "Int", "width": 80},
 		{"fieldname": "lost", "label": _("Lost"), "fieldtype": "Int", "width": 80},

@@ -1,0 +1,458 @@
+{
+"Journal Entry~قيد يومية": [
+[
+"Make Payment via Journal Entry",
+"الدفع عبر قيد يومية"
+],
+[
+"Inter Company Journal Entry",
+"قيد يومية بين الشركات"
+],
+[
+"Quick Journal Entry",
+"قيد يومية سريع"
+],
+[
+"Series for Asset Depreciation Entry (Journal Entry)",
+"سلسلة قيد إهلاك الأصول (قيد يومية)"
+],
+[
+"{0} is already a Reverse Journal Entry of {1}. Cancel it instead of reversing it.",
+"{0} هو بالفعل قيد يومية عكسي لـ {1}. ألغِه بدلاً من عكسه."
+],
+[
+"Account: <b>{0}</b> is capital Work in progress and can not be updated by Journal Entry",
+"الحساب: <b>{0}</b> حساب أعمال رأسمالية تحت التنفيذ ولا يمكن تحديثه بقيد يومية"
+],
+[
+"Book deferred entries via Journal Entry",
+"ترحيل القيود المؤجلة عبر قيد يومية"
+],
+[
+"Rows: {0} in {1} section are Invalid. Reference Name should point to a valid Payment Entry or Journal Entry.",
+"الصفوف: {0} في القسم {1} غير صالحة. يجب أن يشير اسم المرجع إلى سند دفع أو قيد يومية صالح."
+],
+[
+"Accrual Journal Entry for salaries from {0} to {1}",
+"قيد يومية استحقاق للرواتب من {0} إلى {1}"
+],
+[
+"Create Inter Company Journal Entry",
+"إنشاء قيد يومية بين الشركات"
+],
+[
+"Row #{0}: Reference Document Type must be one of Purchase Order, Purchase Invoice or Journal Entry",
+"الصف رقم {0}: يجب أن يكون نوع المستند المرجعي أمر شراء أو فاتورة مشتريات أو قيد يومية"
+],
+[
+"A Reverse Journal Entry {0} already exists for this Journal Entry.",
+"يوجد قيد يومية عكسي {0} بالفعل لقيد اليومية هذا."
+],
+[
+"Row #{0}: Reference Document Type must be one of Sales Order, Sales Invoice, Journal Entry or Dunning",
+"الصف رقم {0}: يجب أن يكون نوع المستند المرجعي أمر بيع أو فاتورة مبيعات أو قيد يومية أو خطاب مطالبة"
+],
+[
+"Create Journal Entry",
+"إنشاء قيد يومية"
+],
+[
+"This will submit Salary Slips and create accrual Journal Entry. Do you want to proceed?",
+"سيؤدي هذا إلى اعتماد قسائم الرواتب وإنشاء قيد يومية الاستحقاق. هل تريد المتابعة؟"
+],
+[
+"New Journal Entry will be posted for the difference amount. The Posting Date can be modified.",
+"سيتم تسجيل قيد يومية جديد بقيمة الفرق. ويمكن تعديل تاريخ الترحيل."
+],
+[
+"Journal Entry",
+"قيد يومية"
+],
+[
+"Default Bank / Cash account will be automatically updated in Salary Journal Entry when this mode is selected.",
+"سيُحدَّث حساب الخزنة / البنك الافتراضي تلقائيًا في قيد يومية الرواتب عند اختيار طريقة الدفع هذه."
+],
+[
+"For anything that isn't an invoice or a payment: accruals, depreciation, or fixing a mistake. See [Journal Entry](https://docs.frappe.io/erpnext/user/manual/en/journal-entry).",
+"لأي شيء ليس فاتورة أو دفعة: المستحقات، أو الإهلاك، أو تصحيح خطأ. راجع [قيد يومية](https://docs.frappe.io/erpnext/user/manual/en/journal-entry)."
+],
+[
+"Journal Entry for Scrap",
+"قيد يومية للتخريد"
+]
+],
+"Item~منتج": [
+[
+"Finished Good Item",
+"صنف المنتج النهائي"
+],
+[
+"Row #{0}: {1} is received but is neither the finished good nor a secondary item. Set its Secondary Item Type or remove the row.",
+"الصف #{0}: {1} مستلم لكنه ليس المنتج النهائي ولا صنفاً ثانوياً. عيّن نوع الصنف الثانوي أو احذف الصف."
+],
+[
+"If enabled, the Secondary Items generated against a Finished Good will also be added in the Stock Entry when delivering that Finished Good.",
+"عند التفعيل، تُضاف أيضاً الأصناف الثانوية الناتجة مع منتج نهائي إلى حركة المخزون عند تسليم ذلك المنتج النهائي."
+],
+[
+"A product or a service you sell. See [Item](https://docs.frappe.io/erpnext/user/manual/en/item).",
+"منتج أو خدمة تبيعها. راجع [صنف](https://docs.frappe.io/erpnext/user/manual/en/item)."
+],
+[
+"Qty of raw materials will be decided based on the qty of the Finished Goods Item",
+"تُحدَّد كمية المواد الخام بناءً على كمية صنف المنتج النهائي"
+],
+[
+"Row #{0}: Finished Good reference is mandatory for Secondary Item {1}.",
+"الصف رقم {0}: مرجع المنتج النهائي إلزامي للصنف الثانوي {1}."
+],
+[
+"Service Item Qty / Finished Good Qty",
+"كمية صنف الخدمة / كمية المنتج النهائي"
+],
+[
+"Row #{0}: Delivery of Item {1} is ensured by produced Serial No, but no Serial No is reserved against Sales Order {2}. Reserve the produced Serial Nos from the Sales Order.",
+"الصف #{0}: يتم ضمان تسليم الصنف {1} بواسطة الرقم التسلسلي المنتج، ولكن لم يتم حجز أي رقم تسلسلي مقابل أمر البيع {2}. قم بحجز الأرقام التسلسلية المنتجة من أمر البيع."
+],
+[
+"Note: If you want to use the finished good {0} as a raw material, then enable the 'Do Not Explode' checkbox in the Items table against the same raw material.",
+"ملاحظة: إذا أردت استخدام المنتج النهائي {0} كمادة خام، فعّل خيار «عدم التفصيل» في جدول الأصناف مقابل المادة الخام نفسها."
+],
+[
+"Qty of Finished Goods Item",
+"كمية صنف المنتج النهائي"
+],
+[
+"Row {0}: Item {1} is not the Finished Good of Purchase Order {2}.",
+"الصف {0}: الصنف {1} ليس المنتج النهائي لأمر الشراء {2}."
+],
+[
+"Qty of Finished Goods Item should be greater than 0.",
+"يجب أن تكون كمية صنف المنتج النهائي أكبر من 0."
+]
+],
+"Item~المنتج": [
+[
+"Finished Good Item",
+"صنف المنتج النهائي"
+],
+[
+"Row #{0}: {1} is received but is neither the finished good nor a secondary item. Set its Secondary Item Type or remove the row.",
+"الصف #{0}: {1} مستلم لكنه ليس المنتج النهائي ولا صنفاً ثانوياً. عيّن نوع الصنف الثانوي أو احذف الصف."
+],
+[
+"If enabled, the Secondary Items generated against a Finished Good will also be added in the Stock Entry when delivering that Finished Good.",
+"عند التفعيل، تُضاف أيضاً الأصناف الثانوية الناتجة مع منتج نهائي إلى حركة المخزون عند تسليم ذلك المنتج النهائي."
+],
+[
+"A product or a service you sell. See [Item](https://docs.frappe.io/erpnext/user/manual/en/item).",
+"منتج أو خدمة تبيعها. راجع [صنف](https://docs.frappe.io/erpnext/user/manual/en/item)."
+],
+[
+"Qty of raw materials will be decided based on the qty of the Finished Goods Item",
+"تُحدَّد كمية المواد الخام بناءً على كمية صنف المنتج النهائي"
+],
+[
+"Row #{0}: Finished Good reference is mandatory for Secondary Item {1}.",
+"الصف رقم {0}: مرجع المنتج النهائي إلزامي للصنف الثانوي {1}."
+],
+[
+"Service Item Qty / Finished Good Qty",
+"كمية صنف الخدمة / كمية المنتج النهائي"
+],
+[
+"Row #{0}: Delivery of Item {1} is ensured by produced Serial No, but no Serial No is reserved against Sales Order {2}. Reserve the produced Serial Nos from the Sales Order.",
+"الصف #{0}: يتم ضمان تسليم الصنف {1} بواسطة الرقم التسلسلي المنتج، ولكن لم يتم حجز أي رقم تسلسلي مقابل أمر البيع {2}. قم بحجز الأرقام التسلسلية المنتجة من أمر البيع."
+],
+[
+"Note: If you want to use the finished good {0} as a raw material, then enable the 'Do Not Explode' checkbox in the Items table against the same raw material.",
+"ملاحظة: إذا أردت استخدام المنتج النهائي {0} كمادة خام، فعّل خيار «عدم التفصيل» في جدول الأصناف مقابل المادة الخام نفسها."
+],
+[
+"Qty of Finished Goods Item",
+"كمية صنف المنتج النهائي"
+],
+[
+"Row {0}: Item {1} is not the Finished Good of Purchase Order {2}.",
+"الصف {0}: الصنف {1} ليس المنتج النهائي لأمر الشراء {2}."
+],
+[
+"Qty of Finished Goods Item should be greater than 0.",
+"يجب أن تكون كمية صنف المنتج النهائي أكبر من 0."
+]
+],
+"Amend~تعديل": [
+[
+"{0}: Cannot set Assign Amend if not Submittable",
+"{0}: لا يمكن تعيين «إسناد التعديل» إذا لم يكن قابلاً للاعتماد"
+],
+[
+"Amend",
+"تعديل"
+],
+[
+"{0}: Cannot set Amend without Cancel",
+"{0}: لا يمكن تعيين «التعديل» بدون «الإلغاء»"
+],
+[
+"Amendment Naming Override",
+"تجاوز تسمية التعديل"
+],
+[
+"{0}: Cannot set Submit, Cancel, Amend without Write",
+"{0}: لا يمكن تعيين «الاعتماد» و«الإلغاء» و«التعديل» بدون «الكتابة»"
+],
+[
+"Amend Counter",
+"عدّاد التعديل"
+],
+[
+"Default Amendment Naming",
+"تسمية التعديل الافتراضية"
+],
+[
+"Permissions are set on Roles and Document Types (called DocTypes) by setting rights like Read, Write, Create, Delete, Submit, Cancel, Amend, Report, Import, Export, Print, Email and Set User Permissions.",
+"تُعيَّن الصلاحيات على الأدوار وأنواع المستندات (DocTypes) بتحديد حقوق مثل القراءة والكتابة والإنشاء والحذف والاعتماد والإلغاء والتعديل والتقارير والاستيراد والتصدير والطباعة والبريد الإلكتروني وتعيين صلاحيات المستخدم."
+],
+[
+"Amendment Not Allowed",
+"التعديل غير مسموح به"
+],
+[
+"Update Amendment Naming",
+"تحديث تسمية التعديل"
+]
+],
+"Salary Slip~قسيمة الراتب": [
+[
+"Show Leave Balances in Salary Slip",
+"عرض أرصدة الإجازات في قسيمة الراتب"
+],
+[
+"Salary Slip Reference",
+"مرجع قسيمة الراتب"
+],
+[
+"Salary Slip submission is queued. It may take a few minutes",
+"تم وضع اعتماد قسيمة الراتب في قائمة الانتظار. قد يستغرق ذلك بضع دقائق"
+],
+[
+"Salary Slip Timesheet",
+"سجل الوقت لقسيمة الراتب"
+],
+[
+"Salary Slip",
+"قسيمة الراتب"
+],
+[
+"Paid via Salary Slip",
+"مدفوع عبر قسيمة الراتب"
+],
+[
+"Salary Slip creation is queued. It may take a few minutes",
+"تم وضع إنشاء قسيمة الراتب في قائمة الانتظار. قد يستغرق ذلك بضع دقائق"
+],
+[
+"Process leave encashment via a separate Payment Entry instead of Salary Slip",
+"معالجة صرف بدل الإجازة عبر سند دفع منفصل بدلاً من قسيمة الراتب"
+],
+[
+"<h3>Help</h3>\n\n<p>Notes:</p>\n\n<ol>\n<li>Use field <code>base</code> for using base salary of the Employee</li>\n<li>Use Salary Component abbreviations in conditions and formulas. <code>BS = Basic Salary</code></li>\n<li>Use field name for employee details in conditions and formulas. <code>Employment Type = employment_type</code><code>Branch = branch</code></li>\n<li>Use field name from Salary Slip in conditions and formulas. <code>Payment Days = payment_days</code><code>Leave without pay = leave_without_pay</code></li>\n<li>Direct Amount can also be entered based on Condition. See example 3</li></ol>\n\n<h4>Examples</h4>\n<ol>\n<li>Calculating Basic Salary based on <code>base</code>\n<pre><code>Condition: base &lt; 10000</code></pre>\n<pre><code>Formula: base * .2</code></pre></li>\n<li>Calculating HRA based on Basic Salary<code>BS</code> \n<pre><code>Condition: BS &gt; 2000</code></pre>\n<pre><code>Formula: BS * .1</code></pre></li>\n<li>Calculating TDS based on Employment Type<code>employment_type</code> \n<pre><code>Condition: employment_type==\"Intern\"</code></pre>\n<pre><code>Amount: 1000</code></pre></li>\n</ol>",
+"<h3>مساعدة</h3>\n\n<p>ملاحظات:</p>\n\n<ol>\n<li>استخدم الحقل <code>base</code> لاستخدام الراتب الأساسي للموظف</li>\n<li>استخدم اختصارات مكوّنات الراتب في الشروط والصيغ. <code>BS = الراتب الأساسي</code></li>\n<li>استخدم اسم الحقل لتفاصيل الموظف في الشروط والصيغ. <code>نوع التوظيف = employment_type</code><code>الفرع = branch</code></li>\n<li>استخدم اسم الحقل من قسيمة الراتب في الشروط والصيغ. <code>أيام الدفع = payment_days</code><code>إجازة بدون راتب = leave_without_pay</code></li>\n<li>يمكن أيضًا إدخال المبلغ المباشر بناءً على الشرط. انظر المثال 3</li></ol>\n\n<h4>أمثلة</h4>\n<ol>\n<li>حساب الراتب الأساسي بناءً على <code>base</code>\n<pre><code>الشرط: base &lt; 10000</code></pre>\n<pre><code>الصيغة: base * .2</code></pre></li>\n<li>حساب HRA بناءً على الراتب الأساسي <code>BS</code> \n<pre><code>الشرط: BS &gt; 2000</code></pre>\n<pre><code>الصيغة: BS * .1</code></pre></li>\n<li>حساب TDS بناءً على نوع التوظيف <code>employment_type</code> \n<pre><code>الشرط: employment_type==\"Intern\"</code></pre>\n<pre><code>المبلغ: 1000</code></pre></li>\n</ol>"
+],
+[
+"The date on which Salary Component with Amount will contribute for Earnings/Deduction in Salary Slip. ",
+"التاريخ الذي يساهم فيه مكوّن الراتب ذو المبلغ في الاستحقاقات/الاستقطاعات في قسيمة الراتب."
+],
+[
+"Submit Salary Slip",
+"اعتماد قسيمة الراتب"
+],
+[
+"Salary Slip Based on Timesheet",
+"قسيمة الراتب المبنية على سجل الوقت"
+],
+[
+"Preview Salary Slip",
+"معاينة قسيمة الراتب"
+],
+[
+"Total Working Days must be greater than zero. Please review Salary Slip {0}.",
+"يجب أن يكون إجمالي أيام العمل أكبر من صفر. يرجى مراجعة قسيمة الراتب {0}."
+],
+[
+"Cannot create Salary Slip: no active Salary Structure is assigned to employee {0}.",
+"تعذر إنشاء قسيمة الراتب: لا يوجد هيكل راتب نشط معيَّن للموظف {0}."
+],
+[
+"Email Salary Slip to Employee",
+"إرسال قسيمة الراتب إلى الموظف بالبريد الإلكتروني"
+],
+[
+"Salary Slip Loan",
+"قرض قسيمة الراتب"
+],
+[
+"Show Salary Slip",
+"عرض قسيمة الراتب"
+],
+[
+"Salary Slip not found.",
+"لم يتم العثور على قسيمة الراتب."
+],
+[
+"Pay via Salary Slip",
+"الدفع عبر قسيمة الراتب"
+],
+[
+"Salary Slip Leave",
+"إجازة قسيمة الراتب"
+],
+[
+"Salary Slip {0} failed for Payroll Entry {1}",
+"فشلت قسيمة الراتب {0} لمسير الرواتب {1}"
+],
+[
+"The Assigned Salary Structure {0} for the employee {1} is not configured for Salary Slip based on Timesheet.",
+"هيكل الراتب المعيَّن {0} للموظف {1} غير مهيأ لقسيمة الراتب المبنية على سجل الوقت."
+],
+[
+"There's no Employee with Salary Structure: {0}. Assign {1} to an Employee to preview Salary Slip",
+"لا يوجد موظف بهيكل الراتب: {0}. عيّن {1} لموظف لمعاينة قسيمة الراتب"
+],
+[
+"Salary Slip ID",
+"رقم قسيمة الراتب"
+],
+[
+"Raqeem Salary Slip",
+"قسيمة الراتب"
+],
+[
+"Salary Slip {0} failed. You can resolve the {1} and retry {0}.",
+"فشلت قسيمة الراتب {0}. يمكنك معالجة {1} ثم إعادة محاولة {0}."
+],
+[
+"The Assigned Salary Structure {0} for the employee {1} does not have a Salary Component configured for Salary Slip based on Timesheet.",
+"هيكل الراتب المعيَّن {0} للموظف {1} لا يحتوي على مكوّن راتب مهيأ لقسيمة الراتب المبنية على سجل الوقت."
+]
+],
+"Item~بند": [
+[
+"Asset Movement Item",
+"بند حركة الأصل"
+],
+[
+"Raqeem Expense Claim Item",
+"بند مطالبة المصروفات"
+],
+[
+"The CSV file needs a Level or an Item Number column.",
+"يحتاج ملف CSV إلى عمود للمستوى أو لرقم البند."
+],
+[
+"Vehicle Service Item",
+"بند صيانة المركبة"
+],
+[
+"STEP file (.step or .stp) or CSV file. A CSV file needs a Level or Item Number column, a Part Number or Part Name column, and a Quantity column.",
+"ملف STEP (‎.step أو ‎.stp) أو ملف CSV. يحتاج ملف CSV إلى عمود للمستوى أو رقم البند، وعمود لرقم القطعة أو اسم القطعة، وعمود للكمية."
+],
+[
+"Transaction Deletion Record Item",
+"بند سجل حذف المعاملات"
+]
+],
+"Quotation~عروض أسعار": [
+[
+"Material Requests for which Supplier Quotations are not created",
+"طلبات مواد لم تُنشأ لها عروض أسعار موردين"
+],
+[
+"Supplier Quotation Comparison",
+"مقارنة عروض أسعار الموردين"
+],
+[
+"Allows users to submit Supplier Quotations with zero quantity. Useful when rates are fixed but the quantities are not. Eg. Rate Contracts.",
+"يتيح للمستخدمين اعتماد عروض أسعار الموردين بكمية صفرية. مفيد عندما تكون الأسعار ثابتة والكميات غير ثابتة. مثال: عقود الأسعار."
+],
+[
+"New Quotations",
+"عروض أسعار جديدة"
+]
+],
+"Item~مادة": [
+[
+"Atleast one raw material for Finished Good Item {0} should be customer provided.",
+"يجب أن تكون مادة خام واحدة على الأقل للصنف النهائي {0} مقدَّمة من العميل."
+],
+[
+"Raw Material Item",
+"صنف مادة خام"
+],
+[
+"Note: If you want to use the finished good {0} as a raw material, then enable the 'Do Not Explode' checkbox in the Items table against the same raw material.",
+"ملاحظة: إذا أردت استخدام المنتج النهائي {0} كمادة خام، فعّل خيار «عدم التفصيل» في جدول الأصناف مقابل المادة الخام نفسها."
+],
+[
+"Raw Material Item Code",
+"رمز صنف المادة الخام"
+]
+],
+"Item~المادة": [
+[
+"Atleast one raw material for Finished Good Item {0} should be customer provided.",
+"يجب أن تكون مادة خام واحدة على الأقل للصنف النهائي {0} مقدَّمة من العميل."
+],
+[
+"Raw Material Item",
+"صنف مادة خام"
+],
+[
+"Note: If you want to use the finished good {0} as a raw material, then enable the 'Do Not Explode' checkbox in the Items table against the same raw material.",
+"ملاحظة: إذا أردت استخدام المنتج النهائي {0} كمادة خام، فعّل خيار «عدم التفصيل» في جدول الأصناف مقابل المادة الخام نفسها."
+],
+[
+"Raw Material Item Code",
+"رمز صنف المادة الخام"
+]
+],
+"Submit~إرسال": [
+[
+"Submit Feedback",
+"إرسال الملاحظات"
+],
+[
+"Checkout Order / Submit Order / New Order",
+"إتمام الطلب / إرسال الطلب / طلب جديد"
+]
+],
+"Territory~إقليم": [
+[
+"British Indian Ocean Territory",
+"الإقليم البريطاني في المحيط الهندي"
+]
+],
+"Territory~الإقليم": [
+[
+"British Indian Ocean Territory",
+"الإقليم البريطاني في المحيط الهندي"
+]
+],
+"Submit~تقديم": [
+[
+"Submit Proof",
+"تقديم إثبات"
+],
+[
+"Submit proof of exemptions",
+"تقديم إثبات الإعفاءات"
+]
+],
+"Attendance~دوام": [
+[
+"Shift & Attendance",
+"الدوام والحضور"
+]
+]
+}

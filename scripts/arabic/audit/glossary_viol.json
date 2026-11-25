@@ -663,12 +663,6 @@ true
 "Outstanding Cheques and Deposits to clear",
 "الشيكات والإيداعات المعلَّقة بانتظار التسوية",
 true
-],
-[
-"raqim_sales",
-"Invoice Outstanding",
-"المتبقي على الفاتورة",
-true
 ]
 ],
 "BOM": [
@@ -818,12 +812,6 @@ true
 "raqim_sales",
 "Leave type {0} cannot be taken as a half day",
 "لا يمكن أخذ {0} نصف يوم",
-true
-],
-[
-"raqim_sales",
-"Optional. Leave empty to record the cheque on the party's account; you can link it to invoices later with Payment Reconciliation.",
-"اختياري. اتركه فارغاً لتسجيل الشيك على حساب الطرف، ويمكنك ربطه بالفواتير لاحقاً من «مطابقة المدفوعات».",
 true
 ],
 [

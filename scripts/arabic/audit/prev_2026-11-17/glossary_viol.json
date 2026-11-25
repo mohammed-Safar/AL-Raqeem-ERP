@@ -1,0 +1,918 @@
+{
+"Project": [
+[
+"frappe",
+"<p>Set context before rendering a template. Example:</p><p>\n</p><div><pre><code>\ncontext.project = frappe.get_doc(\"Project\", frappe.form_dict.name)\n</code></pre></div>",
+"<p>قم بتعيين السياق قبل عرض القالب. مثال:</p><p>\n</p><div><pre><code>\ncontext.project = frappe.get_doc(\"Project\", frappe.form_dict.name)\n</code></pre></div>",
+false
+]
+],
+"Submit": [
+[
+"frappe",
+"All fields are necessary to submit the comment.",
+"جميع الحقول مطلوبة لإرسال التعليق.",
+true
+],
+[
+"frappe",
+"Enabling this will submit documents in background",
+"تفعيل هذا الخيار يعتمد المستندات في الخلفية",
+true
+],
+[
+"frappe",
+"If enabled, all responses on the web form will be submitted anonymously",
+"عند التفعيل، تُرسَل جميع الردود على نموذج الويب دون كشف هوية المرسل",
+true
+],
+[
+"frappe",
+"Submit an Issue",
+"الإبلاغ عن مشكلة",
+true
+],
+[
+"erpnext",
+"Checkout Order / Submit Order / New Order",
+"إتمام الطلب / إرسال الطلب / طلب جديد",
+true
+],
+[
+"erpnext",
+"Submit your Quotation",
+"أرسل عرض السعر",
+true
+],
+[
+"hrms",
+"Employee {0} already submitted an application {1} for the payroll period {2}",
+"الموظف {0} قدّم بالفعل طلبًا {1} لفترة الرواتب {2}",
+true
+],
+[
+"hrms",
+"Only interviewers can submit feedback",
+"يمكن للمُقابِلين فقط تقديم الملاحظات.",
+true
+],
+[
+"hrms",
+"Submit Feedback",
+"إرسال الملاحظات",
+true
+],
+[
+"hrms",
+"Submit Proof",
+"تقديم إثبات",
+true
+],
+[
+"hrms",
+"{0} is not allowed to submit Interview Feedback for the Interview: {1}",
+"لا يُسمح لـ {0} بتقديم تقييم المقابلة للمقابلة: {1}",
+true
+],
+[
+"db",
+"Total Declaration Submitted",
+"إجمالي الإقرارات المقدمة",
+true
+],
+[
+"db",
+"Submit proof of exemptions",
+"تقديم إثبات الإعفاءات",
+true
+],
+[
+"db",
+"An employee's claim for money they spent on work. The expense approver approves and submits it. See [Expense Claim](https://docs.frappe.io/hr/expense-claim).",
+"مطالبة الموظف باسترداد مبلغ أنفقه في العمل. يوافق عليها مسؤول الموافقة على المصروفات ويعتمدها. راجع [مطالبة مصروفات](https://docs.frappe.io/hr/expense-claim).",
+true
+],
+[
+"db",
+"An employee's request for time off. Their leave approver approves and submits it. See [Leave Application](https://docs.frappe.io/hr/leave-application).",
+"طلب الموظف الحصول على إجازة. يوافق عليه مسؤول الموافقة على الإجازات ويعتمده. راجع [طلب إجازة](https://docs.frappe.io/hr/leave-application).",
+true
+]
+],
+"Company": [
+[
+"frappe",
+"Enter the fieldname of the currency field or a cached value (e.g. Company:company:default_currency).",
+"أدخل اسم حقل العملة أو قيمة مخزنة مؤقتاً (مثال: Company:company:default_currency).",
+true
+],
+[
+"frappe",
+"Set the filters here. For example:\n<pre class=\"small text-muted\"><code>\n[{\n\tfieldname: \"company\",\n\tlabel: __(\"Company\"),\n\tfieldtype: \"Link\",\n\toptions: \"Company\",\n\tdefault: frappe.defaults.get_user_default(\"Company\"),\n\treqd: 1\n},\n{\n\tfieldname: \"account\",\n\tlabel: __(\"Account\"),\n\tfieldtype: \"Link\",\n\toptions: \"Account\",\n\treqd: 1\n}]\n</code></pre>",
+"قم بتعيين عوامل التصفية هنا. على سبيل المثال:\n<pre class=\"small text-muted\"><code>\n[{\n\tfieldname: \"company\",\n\tlabel: __(\"Company\"),\n\tfieldtype: \"Link\",\n\toptions: \"Company\",\n\tdefault: frappe.defaults.get_user_default(\"Company\"),\n\treqd: 1\n},\n{\n\tfieldname: \"account\",\n\tlabel: __(\"Account\"),\n\tfieldtype: \"Link\",\n\toptions: \"Account\",\n\treqd: 1\n}]\n</code></pre>",
+true
+]
+],
+"Workspace": [
+[
+"frappe",
+"IMAP is turned off for this mailbox. Turn it on in Gmail settings under Forwarding and POP/IMAP, or ask your Google Workspace admin.",
+"بروتوكول IMAP معطَّل لصندوق البريد هذا. فعّله من إعدادات Gmail ضمن «إعادة التوجيه و POP/IMAP»، أو اطلب ذلك من مسؤول Google Workspace لديكم.",
+true
+],
+[
+"frappe",
+"One entry on the dock. `link_type` says what kind of thing it opens, and each kind answers the two questions a click asks -- which page comes up and which shell comes up beside it -- in its own way. A `Sidebar` row *is* the shell: it selects that sidebar and opens its landing route. A `Workspace` row opens a page and derives its shell from the module that owns it. A `URL` row leaves the desk and has no shell at all. Every row also carries its own `icon` and `title`, so the rail reads the way its author wrote it -- blank at an upper layer means inherit. What a row points at *is* its identity, and none of it is stored: re-labelling cannot detach a row from itself, and re-pointing is not an edit but a different row. The same rows at all three layers -- the app's own dock, the site's arrangement and one person's -- told apart by the parent `Dock`, never by the row.",
+"مدخل واحد على شريط التطبيقات. يحدد `link_type` نوع ما يفتحه، وكل نوع يجيب بطريقته عن سؤالَي النقرة: أي صفحة تظهر وأي هيكل يظهر بجانبها. صف `Sidebar` هو الهيكل نفسه: يختار ذلك الشريط الجانبي ويفتح مساره الافتتاحي. صف `Workspace` يفتح صفحة ويستمد هيكله من الوحدة التي تملكها. صف `URL` يغادر سطح المكتب ولا هيكل له. ويحمل كل صف `icon` و`title` خاصين به، فيظهر الشريط كما كتبه صاحبه، والفراغ في طبقة أعلى يعني التوريث. ما يشير إليه الصف هو هويته، ولا يُخزَّن شيء منها: تغيير التسمية لا يفصل الصف عن أصله، وتغيير الوجهة ليس تعديلاً بل صف مختلف. الصفوف نفسها في الطبقات الثلاث (شريط التطبيق نفسه، وترتيب الموقع، وترتيب الشخص) ويُميَّز بينها بالأصل `Dock` لا بالصف.",
+true
+],
+[
+"frappe",
+"User Workspaces",
+"مساحات عمل المستخدم",
+true
+],
+[
+"frappe",
+"Your Google Workspace admin has blocked Frappe. Ask them to allow it under Security > API controls in the Google Admin console.",
+"حظر مسؤول Google Workspace لديكم Frappe. اطلب منه السماح به ضمن Security > API controls في لوحة Google Admin.",
+true
+]
+],
+"Naming Series": [
+[
+"frappe",
+"Naming Options:\n<ol><li><b>field:[fieldname]</b> - By Field</li><li><b>naming_series:</b> - By Naming Series (field called naming_series must be present)</li><li><b>Prompt</b> - Prompt user for a name</li><li><b>[series]</b> - Series by prefix (separated by a dot); for example PRE.#####</li>\n<li><b>format:EXAMPLE-{MM}morewords{fieldname1}-{fieldname2}-{#####}</b> - Replace all braced words (fieldnames, date words (DD, MM, YY), series) with their value. Outside braces, any characters can be used.</li></ol>",
+"خيارات التسمية:\n<ol><li><b>field:[اسم الحقل]</b> - حسب الحقل</li><li><b>naming_series:</b> - حسب Naming Series (يجب وجود حقل باسم naming_series)</li><li><b>Prompt</b> - مطالبة المستخدم بإدخال اسم</li><li><b>[سلسلة]</b> - سلسلة حسب البادئة (مفصولة بنقطة)؛ على سبيل المثال PRE.#####</li>\n<li><b>format:EXAMPLE-{MM}morewords{fieldname1}-{fieldname2}-{#####}</b> - استبدال جميع الكلمات بين الأقواس (أسماء الحقول، كلمات التاريخ (DD، MM، YY)، السلاسل) بقيمها. خارج الأقواس، يمكن استخدام أي أحرف.</li></ol>",
+false
+],
+[
+"frappe",
+"Naming Series mandatory",
+"سلسلة الترقيم إلزامية",
+true
+]
+],
+"Print Format": [
+[
+"frappe",
+"No Print Formats found",
+"لم يُعثر على تنسيقات طباعة",
+true
+]
+],
+"Cancel": [
+[
+"frappe",
+"Once submitted, submittable documents cannot be changed. They can only be Cancelled and Amended.",
+"بعد الاعتماد لا يمكن تغيير المستندات القابلة للاعتماد. يمكن فقط إلغاؤها وتعديلها.",
+true
+],
+[
+"frappe",
+"Simple Python Expression, Example: <code class=\"language-python\">status in (\"Closed\", \"Cancelled\")</code>",
+"تعبير Python بسيط، مثال: <code class=\"language-python\">status in (\"Closed\", \"Cancelled\")</code>",
+false
+],
+[
+"frappe",
+"{0} {1}: Submitted Record cannot be deleted. You must {2} Cancel {3} it first.",
+"{0} {1}: لا يمكن حذف سجل معتمد. يجب {2} إلغاؤه {3} أولاً.",
+true
+]
+],
+"DocType": [
+[
+"frappe",
+"Options 'Dynamic Link' type of field must point to another Link Field with options as 'DocType'",
+"الحقل من نوع «رابط ديناميكي» يجب أن تشير خياراته إلى حقل رابط آخر خياراته «DocType»",
+true
+]
+],
+"Quotation": [
+[
+"frappe",
+"Provide a list of allowed Doctypes for file uploads. Each line should contain one allowed Doctype. If unset, uploads to all doctypes are allowed. Example: <br>User<br>Item<br>Quotation",
+"أدخل قائمة بأنواع المستندات المسموح برفع الملفات إليها، نوعاً في كل سطر. إذا تُرك فارغاً، يُسمح بالرفع لجميع الأنواع. مثال: <br>User<br>Item<br>Quotation",
+true
+],
+[
+"crm",
+"Are you sure you want to reset 'Create Quotation from CRM Deal' Form Script?",
+"هل تريد بالتأكيد إعادة تعيين سكربت النموذج 'Create Quotation from CRM Deal'؟",
+true
+]
+],
+"Report": [
+[
+"frappe",
+"Report bug",
+"الإبلاغ عن خطأ",
+false
+],
+[
+"erpnext",
+"Report Error",
+"الإبلاغ عن خطأ",
+false
+],
+[
+"erpnext",
+"Report an Issue",
+"الإبلاغ عن مشكلة",
+true
+],
+[
+"erpnext",
+"Reports to",
+"المدير المباشر",
+true
+]
+],
+"Valuation Rate": [
+[
+"erpnext",
+"\"Customer Provided Item\" cannot have Valuation Rate",
+"لا يمكن أن يكون لـ«صنف مقدَّم من العميل» سعر تقييم",
+true
+],
+[
+"erpnext",
+"Allow Zero Valuation Rate",
+"السماح بسعر تقييم صفري",
+true
+],
+[
+"erpnext",
+"If the item is transacting as a Zero Valuation Rate item in this entry, please enable 'Allow Zero Valuation Rate' in the {0} Item table.",
+"إذا كان الصنف يُعامَل بسعر تقييم صفري في هذا القيد، يرجى تفعيل «السماح بسعر تقييم صفري» في جدول الأصناف {0}.",
+true
+],
+[
+"erpnext",
+"Item rate has been updated to zero as Allow Zero Valuation Rate is checked for item {0}",
+"تم تحديث سعر الصنف إلى صفر لأن «السماح بسعر تقييم صفري» محدد للصنف {0}",
+true
+],
+[
+"erpnext",
+"Items rate has been updated to zero as Allow Zero Valuation Rate is checked for the following items: {0}",
+"تم تحديث سعر الأصناف إلى صفر لأن «السماح بسعر تقييم صفري» محدد للأصناف التالية: {0}",
+true
+],
+[
+"erpnext",
+"Update BOM cost automatically via scheduler, based on the latest Valuation Rate/Price List Rate/Last Purchase Rate of raw materials",
+"تحديث تكلفة قائمة المواد تلقائياً عبر المجدول، بناءً على آخر سعر تقييم / سعر قائمة الأسعار / آخر سعر شراء للمواد الخام",
+true
+]
+],
+"Stock Entry": [
+[
+"erpnext",
+"<table class=\"table table-bordered table-condensed\">\n<thead>\n  <tr>\n         <th class=\"table-sr\" style=\"width: 50%;\">Child Document</th>\n         <th class=\"table-sr\" style=\"width: 50%;\">Non Child Document</th>\n   </tr>\n</thead>\n<tbody>\n<tr>\n         <td>\n                  <p> To access parent document field use parent.fieldname and to access child table document field use doc.fieldname </p>\n\n         </td>\n         <td>\n                    <p>To access document field use doc.fieldname </p>\n         </td>\n</tr>\n<tr>\n        <td>\n                   <p><b>Example: </b> parent.doctype == \"Stock Entry\" and doc.item_code == \"Test\" </p>\n\n        </td>\n         <td>\n                   <p><b>Example: </b> doc.doctype == \"Stock Entry\" and doc.purpose == \"Manufacture\"</p>    \n          </td>\n</tr>\n\n</tbody>\n</table>\n\n\n\n\n\n\n",
+"<table class=\"table table-bordered table-condensed\">\n<thead>\n  <tr>\n         <th class=\"table-sr\" style=\"width: 50%;\">مستند فرعي</th>\n         <th class=\"table-sr\" style=\"width: 50%;\">مستند غير فرعي</th>\n   </tr>\n</thead>\n<tbody>\n<tr>\n         <td>\n                  <p> للوصول إلى حقل المستند الأصل استخدم parent.fieldname، وللوصول إلى حقل مستند الجدول الفرعي استخدم doc.fieldname </p>\n\n         </td>\n         <td>\n                    <p>للوصول إلى حقل المستند استخدم doc.fieldname </p>\n         </td>\n</tr>\n<tr>\n        <td>\n                   <p><b>مثال: </b> parent.doctype == \"Stock Entry\" and doc.item_code == \"Test\" </p>\n\n        </td>\n         <td>\n                   <p><b>مثال: </b> doc.doctype == \"Stock Entry\" and doc.purpose == \"Manufacture\"</p>    \n          </td>\n</tr>\n\n</tbody>\n</table>",
+true
+]
+],
+"Stock": [
+[
+"erpnext",
+"<table class=\"table table-bordered table-condensed\">\n<thead>\n  <tr>\n         <th class=\"table-sr\" style=\"width: 50%;\">Child Document</th>\n         <th class=\"table-sr\" style=\"width: 50%;\">Non Child Document</th>\n   </tr>\n</thead>\n<tbody>\n<tr>\n         <td>\n                  <p> To access parent document field use parent.fieldname and to access child table document field use doc.fieldname </p>\n\n         </td>\n         <td>\n                    <p>To access document field use doc.fieldname </p>\n         </td>\n</tr>\n<tr>\n        <td>\n                   <p><b>Example: </b> parent.doctype == \"Stock Entry\" and doc.item_code == \"Test\" </p>\n\n        </td>\n         <td>\n                   <p><b>Example: </b> doc.doctype == \"Stock Entry\" and doc.purpose == \"Manufacture\"</p>    \n          </td>\n</tr>\n\n</tbody>\n</table>\n\n\n\n\n\n\n",
+"<table class=\"table table-bordered table-condensed\">\n<thead>\n  <tr>\n         <th class=\"table-sr\" style=\"width: 50%;\">مستند فرعي</th>\n         <th class=\"table-sr\" style=\"width: 50%;\">مستند غير فرعي</th>\n   </tr>\n</thead>\n<tbody>\n<tr>\n         <td>\n                  <p> للوصول إلى حقل المستند الأصل استخدم parent.fieldname، وللوصول إلى حقل مستند الجدول الفرعي استخدم doc.fieldname </p>\n\n         </td>\n         <td>\n                    <p>للوصول إلى حقل المستند استخدم doc.fieldname </p>\n         </td>\n</tr>\n<tr>\n        <td>\n                   <p><b>مثال: </b> parent.doctype == \"Stock Entry\" and doc.item_code == \"Test\" </p>\n\n        </td>\n         <td>\n                   <p><b>مثال: </b> doc.doctype == \"Stock Entry\" and doc.purpose == \"Manufacture\"</p>    \n          </td>\n</tr>\n\n</tbody>\n</table>",
+true
+],
+[
+"erpnext",
+"Capital Stock",
+"رأس المال",
+false
+],
+[
+"hrms",
+"Stock Options",
+"خيارات الأسهم",
+true
+]
+],
+"Account": [
+[
+"erpnext",
+"Account Pay Only",
+"يُصرف للمستفيد الأول فقط",
+true
+],
+[
+"erpnext",
+"Accounts Payable",
+"الذمم الدائنة",
+true
+],
+[
+"erpnext",
+"Accounts Payable Summary",
+"ملخص الذمم الدائنة",
+true
+],
+[
+"erpnext",
+"Accounts Receivable",
+"الذمم المدينة",
+true
+],
+[
+"erpnext",
+"Accounts Receivable / Payable Report",
+"تقرير الذمم المدينة / الدائنة",
+true
+],
+[
+"erpnext",
+"Accounts Receivable / Payable remarks length",
+"طول ملاحظات الذمم المدينة / الدائنة",
+true
+],
+[
+"erpnext",
+"Accounts Receivable Summary",
+"ملخص الذمم المدينة",
+true
+],
+[
+"erpnext",
+"Consolidated Accounts Payable",
+"الذمم الدائنة الموحدة",
+true
+],
+[
+"erpnext",
+"Consolidated Accounts Payable Summary",
+"ملخص الذمم الدائنة الموحدة",
+true
+],
+[
+"erpnext",
+"Consolidated Accounts Receivable",
+"الذمم المدينة الموحدة",
+true
+],
+[
+"erpnext",
+"Consolidated Accounts Receivable Summary",
+"ملخص الذمم المدينة الموحدة",
+true
+],
+[
+"erpnext",
+"Net Change in Accounts Payable",
+"صافي التغير في الذمم الدائنة",
+true
+],
+[
+"erpnext",
+"Net Change in Accounts Receivable",
+"صافي التغير في الذمم المدينة",
+true
+]
+],
+"Timesheet": [
+[
+"erpnext",
+"Add Timesheets",
+"إضافة سجلات وقت",
+true
+]
+],
+"Pricing Rule": [
+[
+"erpnext",
+"Apply Multiple Pricing Rules",
+"تطبيق عدة قواعد تسعير",
+true
+],
+[
+"erpnext",
+"Even if there are multiple Pricing Rules with highest priority, then following internal priorities are applied:",
+"حتى إن وُجدت عدة قواعد تسعير بالأولوية العليا، تُطبَّق الأولويات الداخلية التالية:",
+true
+],
+[
+"erpnext",
+"If two or more Pricing Rules are found based on the above conditions, Priority is applied. Priority is a number between 0 to 20 while default value is zero (blank). Higher number means it will take precedence if there are multiple Pricing Rules with same conditions.",
+"إذا وُجدت قاعدتا تسعير أو أكثر وفق الشروط أعلاه، تُطبَّق الأولوية. الأولوية رقم بين 0 و20 والقيمة الافتراضية صفر (فارغ). الرقم الأعلى يعني أن القاعدة تتقدم إذا وُجدت عدة قواعد تسعير بالشروط نفسها.",
+true
+]
+],
+"Item": [
+[
+"erpnext",
+"Asset Movement Item",
+"بند حركة الأصل",
+true
+],
+[
+"erpnext",
+"Report Line Items",
+"بنود التقرير",
+false
+],
+[
+"erpnext",
+"Repost Accounting Ledger Items",
+"إعادة ترحيل بنود دفتر الأستاذ المحاسبي",
+true
+],
+[
+"erpnext",
+"Repost Payment Ledger Items",
+"إعادة ترحيل بنود دفتر المدفوعات",
+true
+],
+[
+"erpnext",
+"STEP file (.step or .stp) or CSV file. A CSV file needs a Level or Item Number column, a Part Number or Part Name column, and a Quantity column.",
+"ملف STEP (‎.step أو ‎.stp) أو ملف CSV. يحتاج ملف CSV إلى عمود للمستوى أو رقم البند، وعمود لرقم القطعة أو اسم القطعة، وعمود للكمية.",
+true
+],
+[
+"erpnext",
+"The CSV file needs a Level or an Item Number column.",
+"يحتاج ملف CSV إلى عمود للمستوى أو لرقم البند.",
+true
+],
+[
+"erpnext",
+"Transaction Deletion Record Item",
+"بند سجل حذف المعاملات",
+true
+],
+[
+"erpnext",
+"Zero-Quantity Line Items",
+"بنود بكمية صفر",
+true
+]
+],
+"Draft": [
+[
+"erpnext",
+"Bank Draft",
+"شيك بنكي",
+true
+]
+],
+"Batch": [
+[
+"erpnext",
+"Batch ID is mandatory",
+"معرف الدُفعة إلزامي",
+false
+]
+],
+"Work Order": [
+[
+"erpnext",
+"Completed Work Orders",
+"أوامر التصنيع المكتملة",
+true
+],
+[
+"erpnext",
+"No. of parallel job cards which can be allowed on this workstation. Example: 2 would mean this workstation can process production for two Work Orders at a time.",
+"عدد بطاقات العمل المتوازية المسموح بها على محطة العمل هذه. مثال: 2 يعني أن محطة العمل هذه يمكنها معالجة إنتاج أمرَي عمل في وقت واحد.",
+false
+],
+[
+"erpnext",
+"Open Work Orders",
+"أوامر التصنيع المفتوحة",
+true
+],
+[
+"erpnext",
+"Pending Work Order",
+"أمر تصنيع معلّق",
+true
+],
+[
+"erpnext",
+"Planned Work Order",
+"أمر تصنيع مخطط",
+true
+],
+[
+"erpnext",
+"Work Order Analysis",
+"تحليل أوامر التصنيع",
+true
+],
+[
+"erpnext",
+"Work Order Item",
+"صنف أمر التصنيع",
+true
+],
+[
+"erpnext",
+"Work Order Operation",
+"عملية أمر التصنيع",
+true
+],
+[
+"erpnext",
+"Work Order Summary",
+"ملخص أوامر التصنيع",
+true
+],
+[
+"db",
+"WIP Work Orders",
+"أوامر التصنيع قيد التنفيذ",
+true
+]
+],
+"Credit Note": [
+[
+"erpnext",
+"Debit / Credit Note Posting Date",
+"تاريخ ترحيل الإشعار المدين / الدائن",
+true
+]
+],
+"Depreciation": [
+[
+"erpnext",
+"Depreciated Amount",
+"المبلغ المُهلَك",
+true
+],
+[
+"erpnext",
+"Fully Depreciated",
+"مُهلَك بالكامل",
+true
+],
+[
+"erpnext",
+"Is Fully Depreciated",
+"مُهلَك بالكامل",
+true
+],
+[
+"erpnext",
+"Partially Depreciated",
+"مُهلَك جزئيًا",
+true
+]
+],
+"Fiscal Year": [
+[
+"erpnext",
+"From Date and To Date lie in different Fiscal Year",
+"«من تاريخ» و«إلى تاريخ» يقعان في سنتين ماليتين مختلفتين",
+true
+]
+],
+"Debit Note": [
+[
+"erpnext",
+"Ignore System Generated Credit / Debit Notes",
+"تجاهل الإشعارات الدائنة / المدينة التي ينشئها النظام",
+true
+]
+],
+"Lead": [
+[
+"erpnext",
+"Item Lead Time",
+"مدة توريد الصنف",
+true
+],
+[
+"erpnext",
+"Lead Time",
+"مدة التوريد",
+true
+],
+[
+"erpnext",
+"Lead Time (Days)",
+"مدة التوريد (أيام)",
+true
+],
+[
+"erpnext",
+"Lead Time (in mins)",
+"مدة التنفيذ (بالدقائق)",
+true
+],
+[
+"erpnext",
+"Lead Time Date",
+"تاريخ مدة التوريد",
+true
+],
+[
+"erpnext",
+"Lead Time Days",
+"أيام مدة التوريد",
+true
+],
+[
+"erpnext",
+"Lead Time in days",
+"مدة التوريد بالأيام",
+true
+],
+[
+"erpnext",
+"Minimum stock level to maintain as a buffer. Used to calculate recommended reorder level: Reorder Level = Safety Stock + (Average Daily Consumption × Lead Time).",
+"أدنى مستوى مخزون يُحتفظ به كاحتياطي. يُستخدم لحساب حد إعادة الطلب الموصى به: حد إعادة الطلب = مخزون الأمان + (متوسط الاستهلاك اليومي × مدة التوريد).",
+true
+],
+[
+"erpnext",
+"Please delete Item Lead Time {0}, before merging {1} into {2}",
+"يرجى حذف مدة توريد الصنف {0} قبل دمج {1} في {2}",
+true
+],
+[
+"erpnext",
+"Please set an email id for the Lead {0}",
+"يرجى تحديد بريد إلكتروني للعميل المحتمل {0}",
+true
+],
+[
+"erpnext",
+"Supplier Lead Time (days)",
+"مدة توريد المورد (بالأيام)",
+true
+]
+],
+"UOM": [
+[
+"erpnext",
+"Item {0} quantity ({1} in stock UOM) does not match the BOM quantity {2}.",
+"كمية الصنف {0} ({1} بوحدة المخزون) لا تطابق كمية قائمة المواد {2}.",
+true
+]
+],
+"Outstanding": [
+[
+"erpnext",
+"Outstanding Cheques and Deposits to clear",
+"الشيكات والإيداعات المعلَّقة بانتظار التسوية",
+true
+],
+[
+"raqim_sales",
+"Invoice Outstanding",
+"المتبقي على الفاتورة",
+true
+]
+],
+"BOM": [
+[
+"erpnext",
+"Row #{0}: Item {1} has Operation {2}. Set a Routing to create BOMs with operations.",
+"الصف #{0}: الصنف {1} له العملية {2}. عيّن مسار تصنيع لإنشاء قوائم مواد بعمليات.",
+true
+],
+[
+"erpnext",
+"Sub-assembly BOM Count",
+"عدد قوائم مواد التجميع الفرعي",
+true
+],
+[
+"erpnext",
+"The BOMs of this design are being created. Wait until the status changes.",
+"جارٍ إنشاء قوائم مواد هذا التصميم. انتظر حتى تتغير الحالة.",
+true
+]
+],
+"Purchase Order": [
+[
+"erpnext",
+"Row {0}: Payment against Sales/Purchase Order should always be marked as advance",
+"الصف {0}: الدفع مقابل أمر بيع/شراء يجب أن يُعلَّم دائماً كدفعة مقدمة",
+true
+]
+],
+"Territory": [
+[
+"erpnext",
+"Simple Python Expression, Example: territory != 'All Territories'",
+"تعبير Python بسيط، مثال: territory != 'All Territories'",
+true
+],
+[
+"db",
+"British Indian Ocean Territory",
+"الإقليم البريطاني في المحيط الهندي",
+true
+],
+[
+"db",
+"French Southern Territories",
+"الأقاليم الجنوبية الفرنسية",
+true
+],
+[
+"db",
+"Palestinian Territory, Occupied",
+"فلسطين",
+true
+]
+],
+"Holiday": [
+[
+"erpnext",
+"e.g. \"Summer Holiday 2019 Offer 20\"",
+"مثال: \"عرض إجازة الصيف 2019 خصم 20\"",
+true
+]
+],
+"Dashboard": [
+[
+"raqim_sales",
+"All Dashboards",
+"كل اللوحات",
+true
+],
+[
+"raqim_sales",
+"Analytics Dashboard",
+"لوحة تحليلات",
+true
+],
+[
+"raqim_sales",
+"Dashboards shared with you will show here.",
+"ستظهر هنا اللوحات المشاركة معك.",
+true
+],
+[
+"raqim_sales",
+"Email This Dashboard Regularly",
+"إرسال هذه اللوحة بالبريد دوريًا",
+true
+],
+[
+"raqim_sales",
+"New Dashboard",
+"لوحة جديدة",
+true
+],
+[
+"raqim_sales",
+"Open Dashboard",
+"فتح اللوحة",
+true
+],
+[
+"db",
+"Sales Dashboard",
+"لوحة المبيعات",
+true
+],
+[
+"db",
+"Accounts Dashboard",
+"لوحة الحسابات",
+true
+],
+[
+"db",
+"Owner Dashboard",
+"لوحة المالك",
+true
+],
+[
+"db",
+"Ready Dashboards",
+"اللوحات الجاهزة",
+true
+]
+],
+"Leave": [
+[
+"raqim_sales",
+"Early Leave Before (Minutes of Grace)",
+"خروج مبكر قبل (دقائق السماح)",
+true
+],
+[
+"raqim_sales",
+"Leave empty for all departments",
+"اتركه فارغًا لجميع الأقسام",
+true
+],
+[
+"raqim_sales",
+"Leave empty for everyone.",
+"اتركه فارغًا للجميع.",
+true
+],
+[
+"raqim_sales",
+"Leave type {0} cannot be taken as a half day",
+"لا يمكن أخذ {0} نصف يوم",
+true
+],
+[
+"raqim_sales",
+"Optional. Leave empty to record the cheque on the party's account; you can link it to invoices later with Payment Reconciliation.",
+"اختياري. اتركه فارغاً لتسجيل الشيك على حساب الطرف، ويمكنك ربطه بالفواتير لاحقاً من «مطابقة المدفوعات».",
+true
+],
+[
+"hrms",
+"Optional. Leave blank to use the Mode of Payment set on this Advance, or the Company's Default Cash Account.",
+"اختياري. اتركه فارغًا لاستخدام طريقة الدفع المحددة في هذه السلفة، أو الحساب النقدي الافتراضي للشركة.",
+true
+]
+],
+"Attendance": [
+[
+"raqim_sales",
+"Only for employees who have an Attendance Device ID, on working days, when they are not on leave.",
+"فقط للموظفين الذين لديهم رقم في جهاز البصمة، في أيام العمل، وليسوا في إجازة.",
+true
+],
+[
+"raqim_sales",
+"These device IDs belong to no employee (set Attendance Device ID on the employee):",
+"هذه الأرقام لا تخص أي موظف (أدخل رقم جهاز البصمة في ملف الموظف):",
+true
+]
+],
+"Journal Entry": [
+[
+"raqim_sales",
+"Payment Journal Entry",
+"قيد الصرف",
+true
+],
+[
+"raqim_sales",
+"Payroll Journal Entry",
+"قيد الرواتب",
+true
+]
+],
+"Employee": [
+[
+"hrms",
+"Cannot cancel Shift Assignment: {0} as it is linked to Employee Checkin: {1}",
+"لا يمكن إلغاء تعيين الوردية: {0} لأنه مرتبط بسجل الحضور: {1}",
+true
+],
+[
+"hrms",
+"Employee Checkin",
+"سجل الحضور",
+true
+],
+[
+"hrms",
+"Employee Separation Template",
+"قالب إنهاء الخدمة",
+true
+],
+[
+"hrms",
+"Strictly based on Log Type in Employee Checkin",
+"يعتمد بشكل صارم على نوع السجل في سجل الحضور",
+true
+],
+[
+"db",
+"A punch from a biometric device or the mobile app. Auto attendance turns these into attendance. See [Employee Checkin](https://docs.frappe.io/hr/employee-checkin).",
+"بصمة من جهاز بيومتري أو من تطبيق الجوال. يحوّلها الحضور التلقائي إلى حضور. راجع [سجل الحضور](https://docs.frappe.io/hr/employee-checkin).",
+true
+]
+],
+"Cost Center": [
+[
+"hrms",
+"Payroll Cost Centers",
+"مراكز تكلفة الرواتب",
+true
+]
+],
+"Shift": [
+[
+"hrms",
+"You can not request for your Default Shift: {0}",
+"لا يمكنك طلب ورديتك الافتراضية: {0}",
+true
+],
+[
+"db",
+"Shift & Attendance",
+"الدوام والحضور",
+true
+]
+]
+}

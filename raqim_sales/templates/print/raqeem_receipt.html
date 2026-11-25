@@ -70,7 +70,7 @@
 			</tr>
 			<tr>
 				<td colspan="2" class="rq-small" style="padding-top: 6px">
-					{{ frappe.utils.money_in_words(doc.get(amount_field), amount_currency) }}
+					{{ raqeem_amount_in_words(doc.get(amount_field), amount_currency) if rtl else frappe.utils.money_in_words(doc.get(amount_field), amount_currency) }}
 				</td>
 			</tr>
 		</table>
