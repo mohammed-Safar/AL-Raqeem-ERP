@@ -223,6 +223,8 @@
 			}));
 			if (marks.length && series[0]) series[0].markLine = { symbol: "none", silent: true, data: marks };
 			const y_labels = !show_values;
+			// long names (top customers / items) overlap and half get hidden: drop them all; the name shows on hover / tap (user 2026-11-26). Dates / months keep their labels.
+			const hide_names = !time && labels.some((l) => tr(l).length > 10);
 			return {
 				...this.base(L),
 				tooltip: { ...this.base(L).tooltip, trigger: "axis", axisPointer: { type: series.some((s) => s.type === "bar") ? "shadow" : "line",
@@ -233,7 +235,7 @@
 				grid: { left: 6, right: end_labels ? 110 : 10, top: sets.length > 1 ? 36 : show_values ? 24 : 14, bottom: 4, containLabel: true },
 				xAxis: { type: "category", data: labels, boundaryGap: series.some((s) => s.type === "bar"),
 					axisLine: { lineStyle: { color: L.base } }, axisTick: { show: false },
-					axisLabel: { color: L.ink2, hideOverlap: true, fontSize: 12, formatter: (s) => iso(s) } },
+					axisLabel: { show: !hide_names, color: L.ink2, hideOverlap: true, fontSize: 12, formatter: (s) => iso(s) } },
 				yAxis: { type: "value", show: y_labels, splitLine: { show: false }, axisLine: { show: false }, axisTick: { show: false },
 					axisLabel: { color: L.ink2, fontSize: 11, formatter: (v) => this.fmt_axis(v) } },
 				series,

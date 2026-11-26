@@ -40,10 +40,10 @@ app_include_css = [
     "/assets/raqim_sales/css/raqeem_fonts.css?v=33",
     "/assets/raqim_sales/css/raqeem_logo.css?v=39",
     "/assets/raqim_sales/css/raqeem_palette.css?v=33",
-    "/assets/raqim_sales/css/raqeem_theme.css?v=legend-1126b",
+    "/assets/raqim_sales/css/raqeem_theme.css?v=faint-1126c",
     # dock icons drawn in CSS (ROLLBACK: delete the next line)
     "/assets/raqim_sales/css/raqeem_icons.css?v=50",
-    "/assets/raqim_sales/css/raqeem_home.css?v=bgblur-1126a",
+    "/assets/raqim_sales/css/raqeem_home.css?v=faint-1126c",
     "/assets/raqim_sales/css/raqeem_form.css?v=zoom2-1121a",
     "/assets/raqim_sales/css/raqeem_list.css?v=47",
     "/assets/raqim_sales/css/raqeem_mobile.css?v=4",
@@ -79,7 +79,7 @@ app_include_js = [
     # full chart legends, wrapped instead of cut to "Net Cash from O..." (ROLLBACK: delete the next line)
     "/assets/raqim_sales/js/raqeem_chart_legend.js?v=2",
     # 2026-11-25: every chart drawn with ECharts, calm editorial style (ROLLBACK: delete the next line)
-    "/assets/raqim_sales/js/raqeem_echarts.js?v=5",
+    "/assets/raqim_sales/js/raqeem_echarts.js?v=6",
     # report tables: sideways scroll bar under the totals row (ROLLBACK: remove this line)
     "/assets/raqim_sales/js/raqeem_dt_scroll.js?v=1",
     # report filters in Arabic: show the whole first row, not only "Company" (ROLLBACK: delete the next line)
@@ -88,7 +88,7 @@ app_include_js = [
     "/assets/raqim_sales/js/raqeem_dt_autofit.js?v=1",
     # open the desk section the CRM dock asked for (?rq_module=...) (ROLLBACK: delete the next line)
     "/assets/raqim_sales/js/raqeem_open_module.js?v=1",
-    "/assets/raqim_sales/js/raqeem_crm_desk.js?v=3",
+    # raqeem_crm_desk.js removed 2026-11-26: Frappe CRM app uninstalled (ERPNext CRM is used)
     "/assets/raqim_sales/js/raqeem_banking_desk.js?v=2",
     # "Analyse" (chart icon + menu item) on every list -> Analytics builder (ROLLBACK: delete the next line)
     "/assets/raqim_sales/js/raqeem_analytics_list.js?v=1",
