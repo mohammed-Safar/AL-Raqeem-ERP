@@ -480,4 +480,9 @@ html[data-theme="dark"] .rq-tile-note.tone-warn { color: #fbbf24; }
 background:var(--rq-accent);-webkit-mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2728%27%20height%3D%2748%27%20viewBox%3D%270%200%2028%2048%27%3E%3Cpath%20d%3D%27M14%200L28%208V24L14%2032L0%2024V8ZM14%2032V48%27%20fill%3D%27none%27%20stroke%3D%27%23000%27%20stroke-width%3D%27.6%27/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%2728%27%20height%3D%2748%27%20viewBox%3D%270%200%2028%2048%27%3E%3Cpath%20d%3D%27M14%200L28%208V24L14%2032L0%2024V8ZM14%2032V48%27%20fill%3D%27none%27%20stroke%3D%27%23000%27%20stroke-width%3D%27.6%27/%3E%3C/svg%3E");opacity:0.075;}
 html[data-theme="dark"] .rq-home::before{opacity:0.075;}
 /* 2026-11-26: hexagons 50% fainter (opacity .15 -> .075), kept sharp; blur tried and dropped (user). */
+/* 2026-11-26: hexagons 30% smaller (tile 28x48 -> 19.6x33.6) and the same size at every page zoom
+   (--rq-zinv = 1/zoom, set by raqeem_quick_settings.js) (user). */
+.rq-home::before{-webkit-mask-size:calc(19.6px * var(--rq-zinv, 1)) calc(33.6px * var(--rq-zinv, 1));mask-size:calc(19.6px * var(--rq-zinv, 1)) calc(33.6px * var(--rq-zinv, 1));}
+/* 2026-11-26: pinned like every other page: the hexagons stay still when the Home menu scrolls (user). */
+.rq-home::before{position:fixed;}
 /* ---- end home texture ---- */
